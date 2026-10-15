@@ -55,6 +55,8 @@ export interface Blueprint {
   fulfillable?: Record<string, Record<string, { blueprint: string; title: L10n; label: L10n }>>;
   deadlines: Record<string, DeadlinePlacement>;
   events: Record<string, EventDef>;
+  /** Where a procedure's warnings appear (pitfall id -> level id); the rest go on the route level. */
+  notes?: Record<string, string>;
 }
 
 export function blueprintFromData(data: unknown, where = "blueprint"): Blueprint {
@@ -106,6 +108,18 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
         if (place.counting === "nth-day" && r.unit !== "day") add("BAD_COUNTING", `${routeId}:${d.id}`);
       }
     }
+  }
+  // Every translated text has only language keys: an unquoted comma in YAML flow style silently cuts
+  // a title and adds a stray key ("{ pl: A, B }" -> pl: "A", "B": null).
+  const texts: unknown[] = [bp.title, bp.routeLevel.title, ...bp.levels.flatMap((l) => [l.title, ...Object.values(l.taskTitles ?? {}), ...(l.crossCase ?? []).map((x) => x.label)]),
+    ...Object.values(bp.events).map((e) => e.label), ...Object.values(bp.fulfillable ?? {}).flatMap((c) => Object.values(c).flatMap((x) => [x.title, x.label]))];
+  for (const t of texts) {
+    const keys = t && typeof t === "object" ? Object.keys(t) : [];
+    if (!keys.includes("pl") || keys.some((k) => !["pl", "en", "uk", "ru"].includes(k))) add("BAD_TEXT", JSON.stringify(t));
+  }
+  for (const [pitfallId, levelId] of Object.entries(bp.notes ?? {})) {
+    if (!levelIds.has(levelId) && levelId !== bp.routeLevel.id) add("UNKNOWN_LEVEL", `note ${pitfallId} -> ${levelId}`);
+    if (!bp.routes.some((r) => reg.procedures.get(r)?.pitfalls?.some((x) => x.id === pitfallId))) add("UNKNOWN_PITFALL", pitfallId);
   }
   for (const [routeId, conds] of Object.entries(bp.fulfillable ?? {})) {
     const p = reg.procedures.get(routeId);

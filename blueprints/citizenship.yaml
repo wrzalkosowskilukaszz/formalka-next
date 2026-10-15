@@ -23,8 +23,8 @@ levels:
       application: { pl: Wniosek na formularzu z ministerstwa }
       translations: { pl: "Tłumaczenia dokumentów w obcym języku (jeśli takie dołączasz)" }
       language-proof: { pl: Dowód znajomości języka polskiego }
-      photos: { pl: Zdjęcia każdej osoby, której dotyczy wniosek }
-      supporting-documents: { pl: Dokumenty o Tobie, źródłach utrzymania i małżonku }
+      photos: { pl: "Zdjęcia każdej osoby, której dotyczy wniosek" }
+      supporting-documents: { pl: "Dokumenty o Tobie, źródłach utrzymania i małżonku" }
       ancestors: { pl: "Dokumenty o przodkach (jeśli mieli obywatelstwo polskie)" }
       consents: { pl: "Zgoda drugiego z rodziców (jeśli wniosek obejmuje dziecko)" }
   - id: payment
@@ -50,6 +50,24 @@ fulfillable:
       blueprint: language-certificate
       title: { pl: Certyfikat z polskiego }
       label: { pl: "Uznanie wymaga dowodu znajomości polskiego. Możesz go zdobyć: państwowy egzamin z polskiego." }
+notes:
+  # grant (nadanie)
+  visa-consul: filing
+  consular-fee: payment
+  where-the-act-says: filing
+  post-signature: filing
+  other-costs: payment
+  children-both-parents: documents
+  children-one-parent: documents
+  children-16: documents
+  child-only-application: documents
+  keep-documents-valid: decision
+  no-appeal: decision
+  no-time-limit: decision
+  # recognition (uznanie)
+  post-secondary-school: documents
+  children: documents
+  grant-no-time-limit-no-appeal: route
 deadlines:
   decision-time: { level: decision, counting: kpa, role: office }
   appeal: { level: after-refusal, counting: kpa, role: user }

@@ -1,0 +1,114 @@
+# Evaluation scenarios for the Living Case engine and, later, for the H1 benchmark (docs 11 §5).
+# Each scenario: the user's words (DRAFT: to be rewritten by native writers in PL, UK, EN and RU), the
+# facts a person would confirm, recorded events, and what the plan must and must not contain.
+# Reference plans are computed by the engine from these facts and exported to reference-plans/ as
+# plain text for blind scoring. A person (the owner) must review each reference plan before the
+# benchmark runs: the engine is only as right as the registry.
+- id: cit-01-resident-b1-choice
+  blueprint: citizenship
+  text: "Mieszkam w Polsce od pięciu lat na pobycie stałym, mam certyfikat B1. Chcę zostać obywatelem."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: three_years, citizenship.language: "yes", citizenship.where_lives: poland_legal }
+  expect: { route: choice }
+- id: cit-01b-resident-b1-recognition
+  blueprint: citizenship
+  text: "Mieszkam w Warszawie od pięciu lat na pobycie stałym, mam B1, wybieram uznanie przez wojewodę."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: three_years, citizenship.language: "yes", citizenship.where_lives: poland_legal }
+  routeChoice: citizenship-recognition
+  place: { teryt: "1465011", name: Warszawa }
+  expect:
+    route: decided
+    procedure: citizenship-recognition
+    levels: { documents: available, payment: locked, filing: locked, decision: locked }
+    fees: [[decision, 1000]]
+    offices: { filing: [uw-mazowiecki] }
+- id: cit-02-no-b1
+  blueprint: citizenship
+  text: "Mam pobyt stały od czterech lat, ale nie mam jeszcze certyfikatu z polskiego."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: three_years, citizenship.language: "no", citizenship.where_lives: poland_legal }
+  routeChoice: citizenship-recognition
+  expect:
+    route: decided
+    levels: { "prerequisite:polish-language": available, documents: available, filing: locked }
+    reasonIncludes: { filing: "Certyfikat z polskiego" }
+- id: cit-03-married-to-pole
+  blueprint: citizenship
+  text: "Od trzech lat jestem żoną Polaka, mam pobyt stały od dwóch lat i certyfikat B1."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: married_or_stateless, citizenship.language: "yes", citizenship.where_lives: poland_legal }
+  expect: { route: choice }
+- id: cit-04-visa
+  blueprint: citizenship
+  text: "Jestem w Polsce na wizie i chciałbym dostać polskie obywatelstwo."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "no", citizenship.where_lives: poland_visa }
+  expect:
+    route: decided
+    procedure: citizenship-grant
+    notes: { filing: [visa-consul], payment: [consular-fee] }
+    noFees: true
+- id: cit-05-lost
+  blueprint: citizenship
+  text: "Miałem polskie obywatelstwo, ale je straciłem. Mieszkam za granicą."
+  facts: { citizenship.ever_polish: lost, citizenship.permanent_title: "no", citizenship.where_lives: abroad }
+  expect: { route: none, notes: { route: [restoration] } }
+- id: cit-06-refused
+  blueprint: citizenship
+  text: "Złożyłem wniosek o uznanie 30 listopada, a 20 maja dostałem odmowę."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: three_years, citizenship.language: "yes", citizenship.where_lives: poland_legal }
+  routeChoice: citizenship-recognition
+  events: [{ type: filing, date: "2026-11-30", by: user }, { type: decision_delivered, date: "2027-05-20", outcome: refused, by: user }]
+  expect:
+    route: decided
+    levels: { decision: done, after-refusal: available }
+    deadlines: { appeal: "2027-06-03", court: "2027-06-21" }
+- id: res-01-work
+  blueprint: residence-card
+  text: "Dostałem pracę w Polsce i potrzebuję karty pobytu."
+  facts: { pobyt_czasowy.purpose: work }
+  expect:
+    route: decided
+    fees: [[stamp-duty-work, 440], [card, 100]]
+    levels: { documents: available, payment: available, attachment: available, filing: locked }
+- id: res-02-study
+  blueprint: residence-card
+  text: "Studiuję w Krakowie i chcę złożyć wniosek o kartę pobytu."
+  facts: { pobyt_czasowy.purpose: study }
+  expect:
+    fees: [[stamp-duty, 340], [card, 100]]
+    tasks: { documents: [university-attachment] }
+- id: res-03-family-abroad
+  blueprint: residence-card
+  text: "Moja żona jest jeszcze na Ukrainie, chcę złożyć dla niej wniosek o pobyt."
+  facts: { pobyt_czasowy.purpose: family_abroad }
+  expect:
+    levelIds: [route, documents, payment, who-files, filing, summons, card]
+    forbidden: ["Złóż wniosek w systemie MOS", "Zaświadczenie o złożeniu"]
+- id: addr-01-non-eu-warsaw
+  blueprint: address-registration
+  text: "Przeprowadziłem się do Warszawy 28 października, jestem z Indii. Jak się zameldować?"
+  facts: { zameldowanie.citizen_group: other, zameldowanie.stay: temporary }
+  place: { teryt: "1465011", name: Warszawa }
+  events: [{ type: arrival_at_address, date: "2026-10-28", by: user }]
+  expect:
+    deadlines: { other-citizens: "2026-11-01" }
+    deadlineIds: [other-citizens]
+    officeCount: { file: 18 }
+- id: addr-02-eu
+  blueprint: address-registration
+  text: "Jestem Niemką, mieszkam w Polsce od 28 października."
+  facts: { zameldowanie.citizen_group: eu_efta, zameldowanie.stay: temporary }
+  events: [{ type: arrival_at_address, date: "2026-10-28", by: user }]
+  expect: { deadlineIds: [eu-efta], deadlines: { eu-efta: "2026-11-27" } }
+- id: addr-03-pole-spouse
+  blueprint: address-registration
+  text: "Jestem żoną Polaka, pochodzę z Indii, chcę się zameldować."
+  facts: { zameldowanie.citizen_group: other, zameldowanie.stay: temporary }
+  expect: { deadlineIds: [other-citizens] }
+- id: addr-04-unsure-group
+  blueprint: address-registration
+  text: "Nie wiem, czy to ma znaczenie, ale chcę się zameldować."
+  facts: { zameldowanie.citizen_group: __unknown__, zameldowanie.stay: temporary }
+  expect: { deadlineIds: [other-citizens, eu-efta], unsure: [zameldowanie.citizen_group] }
+- id: lang-01-certificate
+  blueprint: language-certificate
+  text: "Potrzebuję certyfikatu B1 do obywatelstwa."
+  facts: {}
+  expect: { levelIds: [route, pick-session, register, pay, exam, result] }

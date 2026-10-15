@@ -30,6 +30,6 @@ deadlines:
   other-citizens: { level: file, counting: nth-day, role: user }
   eu-efta: { level: file, counting: nth-day, role: user }
 events:
-  arrival_at_address: { label: { pl: Dzień, od którego mieszkasz pod tym adresem } }
+  arrival_at_address: { label: { pl: "Dzień, od którego mieszkasz pod tym adresem" } }
   filing: { label: { pl: Dzień złożenia formularza w urzędzie } }
   registered: { label: { pl: Dzień zameldowania } }

@@ -16,7 +16,7 @@ levels:
     title: { pl: Dokumenty }
     documents: true
     taskTitles:
-      photo: { pl: Zdjęcie (plik do 2,5 MB) }
+      photo: { pl: "Zdjęcie (plik do 2,5 MB)" }
       travel-document: { pl: Skan wszystkich stron paszportu }
       payment-confirmations: { pl: Potwierdzenia obu opłat }
       employer-attachment: { pl: Załącznik od pracodawcy (wypełnia go w MOS) }
@@ -31,7 +31,7 @@ levels:
     steps: { temporary-residence: [pay-fees, paper-pay] }
     fees: true
   - id: attachment
-    title: { pl: Załącznik od pracodawcy, uczelni lub organizatora }
+    title: { pl: "Załącznik od pracodawcy, uczelni lub organizatora" }
     steps: { temporary-residence: ask-for-attachment }
   - id: who-files
     title: { pl: Kto składa wniosek }
@@ -60,4 +60,4 @@ deadlines:
 events:
   filing: { label: { pl: Data złożenia wniosku } }
   decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused] }
-  system_restored: { label: { pl: Dzień, w którym MOS znów działa } }
+  system_restored: { label: { pl: "Dzień, w którym MOS znów działa" } }

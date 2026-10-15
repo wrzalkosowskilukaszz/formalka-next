@@ -25,6 +25,7 @@ export function validatePlan(plan: CasePlan, reg: Registry, state: CaseState): {
       : kind === "fee-exemption" ? (() => { const [f, x] = id.split("/"); return p.fees.find((y) => y.id === f)?.exemptions?.find((e) => e.id === x)?.statement.quotes.length; })()
       : kind === "deadline" ? p.deadlines.find((d) => d.id === id)?.rule.quotes.length
       : kind === "condition" ? p.applicability.conditions?.find((c) => c.id === id)?.statement.quotes.length
+      : kind === "pitfall" ? p.pitfalls?.find((x) => x.id === id)?.statement.quotes.length
       : kind === "applicability" ? 1
       : 0;
     return found ? null : `no quoted ${kind} ${id} in ${pid}`;
@@ -46,6 +47,7 @@ export function validatePlan(plan: CasePlan, reg: Registry, state: CaseState): {
       const bad = resolve(d.ruleRef); if (bad) add("NO_RULE_REF", `deadline:${d.id}`, bad);
       if (d.due && !state.events.some((e) => e.type === d.from)) add("DATE_WITHOUT_EVENT", `deadline:${d.id}`, d.from);
     }
+    for (const n of l.notes) { const bad = resolve(n.ruleRef); if (bad) add("NO_RULE_REF", `note:${n.id}`, bad); }
     for (const dep of l.dependsOn) if (!ids.has(dep)) add("UNKNOWN_DEPENDENCY", l.id, dep);
     if (l.state === "locked" && !l.reason?.ruleRef) add("LOCK_WITHOUT_BASIS", l.id);
     if (l.state === "returned" && !l.reason?.ruleRef) add("RETURN_WITHOUT_BASIS", l.id);

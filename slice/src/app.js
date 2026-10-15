@@ -214,9 +214,11 @@ function dock(c, p) {
       <dl class="kv">${assumptions}</dl>
       ${c.state.place ? `<p class="reason">Miejscowość: ${esc(c.state.place.name)}</p>` : ''}
       ${unsure ? `<p class="reason">Do potwierdzenia:</p><ul class="reason">${unsure}</ul>` : ''}
+      ${notesHtml(p.levels[0].notes.filter((n) => n.important), 3)}
       <label class="row"><input type="checkbox" id="consent" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy</label>
       <div class="row"><button class="btn" data-approve>Zatwierdzam plan</button><button class="btn ghost" data-tab="map">Zobacz mapę</button></div></div>`;
   }
+  if (c.stage === 'stuck') return `${notesHtml(p.levels[0].notes)}<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
   return `<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
 }
 
@@ -269,8 +271,13 @@ function nowView(c, p) {
     .map((x) => `<button class="mini" data-focus="${x.id}">${esc(x.title.pl)}</button>`).join('');
   return `<div class="card"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(STATE_PL[l.state])}</span></div>
       <h3>${esc(l.title.pl)}</h3>${l.reason ? `<p class="reason">${esc(l.reason.text.pl)}</p>` : ''}
-      ${tasks}${fees}${deadlines}${office}${done}${returns}${fixed}${plans}</div>
+      ${tasks}${fees}${deadlines}${office}${done}${returns}${fixed}${plans}${notesHtml(l.notes)}</div>
     ${others ? `<div class="card"><p class="reason">Równolegle możesz zająć się:</p><div class="row">${others}</div></div>` : ''}`;
+}
+function notesHtml(notes, max = 6) {
+  if (!notes?.length) return '';
+  const src = (q) => q?.length ? ` <details><summary>Źródło</summary><blockquote>${esc(q[0].text)}</blockquote><a href="${esc(q[0].page)}" target="_blank" rel="noopener noreferrer">${esc(host(q[0].page))}</a></details>` : '';
+  return `<div class="notes"><p class="when">${icon('warning-circle')} Warto wiedzieć</p><ul>${notes.slice(0, max).map((n) => `<li class="${n.important ? 'imp' : ''}">${esc(n.statement.value.pl)}${src(n.statement.quotes)}</li>`).join('')}</ul>${notes.length > max ? `<p class="when">I jeszcze ${notes.length - max} w przewodniku.</p>` : ''}</div>`;
 }
 function eventForm(bp, type, label) {
   const outs = bp.events[type]?.outcomes;

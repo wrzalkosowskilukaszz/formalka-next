@@ -31,7 +31,10 @@ export interface Procedure {
   checkedAt?: string; applicability: { rule?: Rule; conditions?: { id: string; rule: Rule; statement: Statement }[] };
   requiredFacts?: string[]; steps: Step[]; documents: Doc[]; fees: Fee[]; deadlines: Deadline[];
   handoff?: { when: L10n; options: unknown[] }; related?: string[];
+  pitfalls?: Pitfall[];
 }
+/** A warning the guide shows ("Warto wiedzieć"), often for one situation only. */
+export interface Pitfall { id: string; important?: boolean; statement: Statement; condition?: Rule; seeProcedures?: string[] }
 export interface FactOption { value: string; label: L10n }
 export interface FactDef {
   key: string; kind: string; question: L10n; whyWeAsk?: L10n; unknownHelp?: L10n; options?: FactOption[];
@@ -65,6 +68,7 @@ function checkProcedure(p: Procedure, file: string): Procedure {
   for (const d of p.documents) need(d.namePl?.quotes?.length, `${p.id} document ${d.id}: no quote`);
   for (const f of p.fees) need(typeof f.amountPln?.value === "number" && f.amountPln.quotes?.length, `${p.id} fee ${f.id}: no quoted amount`);
   for (const d of p.deadlines) need(d.rule?.value?.kind && d.rule.quotes?.length, `${p.id} deadline ${d.id}: no quoted rule`);
+  for (const x of p.pitfalls ?? []) need(x.statement?.quotes?.length, `${p.id} pitfall ${x.id}: no quote`);
   return p;
 }
 

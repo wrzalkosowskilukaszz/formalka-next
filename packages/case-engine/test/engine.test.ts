@@ -1,6 +1,7 @@
 // Case engine v2 tests over the real registry snapshots (reference/, formalka@04057ef).
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { runScenarios } from "../eval/run.ts";
 import {
   addMonths, agenda, type AgendaItem, type Blueprint, type CaseState, checkBlueprint, DEFAULT_PREFS, dueDate,
   easter, loadBlueprint, loadRegistry, msg, nextQuestion, nextWorkingDayIfClosed, outOfQuiet, PHRASES_NEVER,
@@ -284,4 +285,21 @@ test("alternatives travel together; a later step done closes the steps before it
   assert.deepEqual(filed.levels.map((l) => [l.id, l.state]), [
     ["route", "done"], ["fill-in", "done"], ["owner-confirms", "done"], ["file", "done"], ["registered", "available"],
   ]);
+});
+
+test("warnings: the guide's own notes for this person, on the right level, important first", () => {
+  const visa = planCase(CIT, reg, S({ "citizenship.permanent_title": "no", "citizenship.ever_polish": "no", "citizenship.where_lives": "poland_visa" }));
+  const notesOf = (p: ReturnType<typeof planCase>, id: string) => p.levels.find((l) => l.id === id)!.notes.map((n) => n.id);
+  assert.ok(notesOf(visa, "filing").includes("visa-consul"));
+  assert.deepEqual(notesOf(visa, "decision").slice(0, 2), ["no-appeal", "no-time-limit"]);
+  assert.ok(!notesOf(visa, "decision").includes("keep-documents-valid"), "a note for legal residents only stays out");
+  const lost = planCase(CIT, reg, S({ "citizenship.permanent_title": "no", "citizenship.ever_polish": "lost", "citizenship.where_lives": "abroad" }));
+  assert.equal(lost.route.status, "none");
+  assert.ok(notesOf(lost, "route").includes("restoration"), "no route, but the restoration warning reaches the person");
+  for (const p of [visa, lost]) assert.equal(validatePlan(p, reg, S({})).ok, true);
+});
+
+test("evaluation scenarios: every reference plan meets its expectations", () => {
+  const failed = runScenarios().filter((r) => !r.ok).map((r) => `${r.id}: ${r.failures.join("; ")}`);
+  assert.deepEqual(failed, []);
 });

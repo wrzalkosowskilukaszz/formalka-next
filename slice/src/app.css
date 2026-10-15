@@ -88,3 +88,6 @@ blockquote { margin: var(--s2) 0; padding-left: var(--s3); border-left: 2px soli
 .notif { width: min(26rem, 92vw); background: color-mix(in srgb, #fff 90%, transparent); color: #111; border-radius: var(--r-container); padding: var(--s3); margin-bottom: var(--s2); text-align: left; border: 0; display: block; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 .albo { font-size: var(--t-xs); color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.06em; padding: var(--s1) 0 0; }
+.notes { margin-top: var(--s3); padding-top: var(--s2); border-top: 1px solid var(--line); font-size: var(--t-sm); }
+.notes ul { padding-left: var(--s4); display: grid; gap: var(--s2); margin-top: var(--s1); }
+.notes li.imp { font-weight: var(--w-medium); }

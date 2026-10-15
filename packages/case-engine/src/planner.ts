@@ -4,7 +4,7 @@
 // says so; a date exists only after the user recorded the event it counts from.
 import { type Blueprint, type LevelDef, stepsOf } from "./blueprint.ts";
 import { type Due, dueDate, type Iso } from "./dates.ts";
-import type { L10n, Procedure, Quote, Registry, Statement } from "./registry.ts";
+import type { L10n, Pitfall, Procedure, Quote, Registry, Statement } from "./registry.ts";
 import { ruleRef } from "./registry.ts";
 import { type OfficeAnswer, officesFor, type Place } from "./offices.ts";
 import { type Answers, evaluate, type Outcome, type Rule, UNKNOWN } from "./rules.ts";
@@ -47,12 +47,18 @@ export interface PlanDeadline {
   id: string; ruleRef: string; levelId: string; role: "user" | "office"; outcome: "applies" | "unknown";
   description: L10n; from: string; amount: number; unit: string; due?: Due; quotes: Quote[];
 }
+export interface PlanNote {
+  id: string; procedureId: string; ruleRef: string; important: boolean; outcome: "applies" | "unknown";
+  statement: Statement; seeProcedures?: string[];
+}
 export interface PlanLevel {
   id: string; order: number; title: L10n; state: LevelState; waiting: boolean;
   /** Why it is locked or returned, in plain words, with the registry item behind it. */
   reason?: { text: L10n; ruleRef?: string };
   dependsOn: string[]; parallelWith: string[];
   tasks: PlanTask[]; fees: PlanFee[]; deadlines: PlanDeadline[];
+  /** The guide's warnings for this level ("Warto wiedzieć"), important ones first. */
+  notes: PlanNote[];
   stepRef?: string; completesWith?: string;
   /** Where to go for this level's step, from the registry's office layer. */
   office?: OfficeAnswer;
@@ -145,7 +151,7 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
   const routeLevel: PlanLevel = {
     id: bp.routeLevel.id, order: 0, title: bp.routeLevel.title,
     state: route.status === "decided" ? "done" : Object.keys(state.facts).length ? "in_progress" : "available",
-    waiting: false, dependsOn: [], parallelWith: [], tasks: [], fees: [], deadlines: [],
+    waiting: false, dependsOn: [], parallelWith: [], tasks: [], fees: [], deadlines: [], notes: [],
     ...(route.status === "choice"
       ? { reason: { text: { pl: "Pasuje więcej niż jedna droga. Wybór należy do Ciebie." } } }
       : route.status === "unsure"
@@ -165,7 +171,7 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
       levels.push({
         id: l.id, order: order++, title: l.title, state: "unconfirmed", waiting: !!l.waiting,
         dependsOn: order === 2 ? [routeLevel.id] : [levels.at(-1)!.id], parallelWith: [],
-        tasks: [], fees: [], deadlines: [],
+        tasks: [], fees: [], deadlines: [], notes: [],
       });
     }
   } else {
@@ -175,7 +181,7 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
     for (const pre of route.prerequisites) {
       levels.push({
         id: `prerequisite:${pre.condition}`, order: order++, title: pre.title, state: "available",
-        waiting: false, dependsOn: [routeLevel.id], parallelWith: [], fees: [], deadlines: [],
+        waiting: false, dependsOn: [routeLevel.id], parallelWith: [], fees: [], deadlines: [], notes: [],
         reason: { text: pre.label, ruleRef: ruleRef(reg, p.id, "condition", pre.condition) },
         tasks: [{
           id: `${p.id}:condition:${pre.condition}`, levelId: `prerequisite:${pre.condition}`, kind: "step",
@@ -276,14 +282,31 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
       if (stepless && l.documents) docLevels.push(l.id);
       levels.push({
         id: l.id, order: order++, title: l.title, state: "available", waiting: !!l.waiting,
-        dependsOn: deps, parallelWith: [], tasks, fees, deadlines,
+        dependsOn: deps, parallelWith: [], tasks, fees, deadlines, notes: [],
         ...(step ? { stepRef: ref("step", step.id) } : {}),
         ...(step?.officeKind ? { office: officesFor(reg, step.officeKind, state.place) } : {}),
         ...(l.completesWith ? { completesWith: l.completesWith } : {}),
       });
     }
     settleStates(bp, levels, state);
+    for (const x of p.pitfalls ?? []) {
+      const e = evaluate(x.condition, state.facts);
+      if (e.outcome === "does_not_apply") continue;
+      noteUnsure(x.condition, `note:${x.id}`);
+      const target = levels.find((l) => l.id === bp.notes?.[x.id]) ?? routeLevel;
+      target.notes.push(noteOf(reg, p.id, x, e.outcome));
+    }
   }
+  if (route.status !== "decided") {
+    // Undecided: only the warnings written for this person's situation (a condition that applies),
+    // e.g. restoration of citizenship for someone who lost it.
+    for (const c of route.candidates) {
+      for (const x of reg.procedures.get(c.procedureId)?.pitfalls ?? []) {
+        if (x.condition && evaluate(x.condition, state.facts).outcome === "applies") routeLevel.notes.push(noteOf(reg, c.procedureId, x, "applies"));
+      }
+    }
+  }
+  for (const l of levels) l.notes.sort((a, b) => Number(b.important) - Number(a.important));
   markParallel(levels);
   return {
     blueprintId: bp.id, registryVersion: reg.version,
@@ -294,6 +317,14 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
       .filter(([, v]) => v !== UNKNOWN).map(([fact, value]) => ({ fact, value: value as string | boolean }))
       .sort((a, b) => a.fact.localeCompare(b.fact)),
     inputsHash: hashInputs(bp, reg, state),
+  };
+}
+
+function noteOf(reg: Registry, procedureId: string, x: Pitfall, outcome: Outcome): PlanNote {
+  return {
+    id: x.id, procedureId, ruleRef: ruleRef(reg, procedureId, "pitfall", x.id), important: !!x.important,
+    outcome: outcome === "unknown" ? "unknown" : "applies", statement: x.statement,
+    ...(x.seeProcedures?.length ? { seeProcedures: x.seeProcedures } : {}),
   };
 }
 
