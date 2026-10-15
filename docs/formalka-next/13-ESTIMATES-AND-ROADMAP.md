@@ -88,6 +88,24 @@ Slice 1 plus the AI layer is smaller than what was already built.
   - the case engine on real content;
   - the pdf-lib port.
 
+### 4c. Second data point: the lab's first night (2026-10-15/16)
+In one evening session, with Claude writing and no parallel agents, the lab produced [FACT, from this repository's history]:
+- `packages/case-engine` with 5 blueprints, about 1,600 lines of engine and blueprint code, 20 tests and 17 evaluation scenarios over the real snapshots;
+- a functional slice (`slice/`) driven by the engine;
+- 17 reference plans for the H1 benchmark.
+
+Against §2 this covers most of row 1 (case engine, 30 / 50 / 90 h) and part of row 9 (evaluation harness, 15 / 25 / 45 h) at hand-coding pace.
+
+This supports the order of magnitude in §4a [HYPOTHESIS; the session's exact duration wasn't measured, and the commit times don't show it]. It doesn't shorten anything that doesn't compress:
+- the owner's review of the blueprints and reference plans;
+- the interviews;
+- the content work to bring procedures to the plannable bar.
+
+Still undone in row 1:
+- the KPA counting rules quoted from the act (16 §9);
+- persistence, encryption and native notifications (rows 3 and 6);
+- the move into Formalka's monorepo as reviewed PRs (§6).
+
 ### 4b. Hand-coding pace (original estimate, kept for comparison)
 
 The owner's weekly capacity is not known [**OPEN**: owner].

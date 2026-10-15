@@ -35,14 +35,18 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 - **Owner decisions:** concept approved with the prototype first; phones first (Android and iOS); prototype in a separate session; one consent per case for the proactive advisor.
 - **Experience prototype:** v1 covers brief 15 §4 end to end; private link reported to the owner (`prototype/`).
 - **Living Case engine** (`packages/case-engine`, doc 16):
-  - blueprints for 4 case types over Formalka's real content;
-  - a level map with honest states;
+  - blueprints for 5 case types over Formalka's real content (citizenship, residence card, address registration, language certificate, PESEL);
+  - a level map with honest states (locked only with a reason from the procedure's own order);
   - routes the user chooses, or reaches through another case;
-  - deadlines from recorded events;
+  - deadlines only from recorded events;
+  - offices from the registry's office layer, by the user's city (Warsaw, Kraków);
+  - the guides' warnings placed on the right level;
   - an independent validator;
-  - the proactive advisor agenda;
-  - 16 tests, 11 injected faults caught;
-  - a 315 KB browser build for the prototype.
+  - the proactive advisor agenda (quiet hours, one notification a day, consent per case);
+  - 20 tests and 17 evaluation scenarios, all passing; 11 injected faults caught;
+  - a browser build used by the slice and offered to the prototype.
+- **Functional slice** (`slice/`): the engine driving a phone screen end to end (questions with "Nie wiem", route choice, map, "Teraz", events, the advisor's agenda with time travel). Private link reported to the owner.
+- **Evaluation set** (`packages/case-engine/eval/`): reference plans in plain Polish for the blind H1 benchmark, to be reviewed by the owner before any run.
 
 ## 3. Decisions recommended (ADRs in `adr/`, all "Proposed")
 
@@ -119,14 +123,14 @@ The hand-coding figures below are kept for comparison.
 - **O10** Your weekly hours.
 
 ## 8. Next 10 engineering actions (no production changes)
-1. Calibrate the estimates against Formalka's BUILD-PLAN and git history; update 13 §2.
-2. Port S1 to the real address-registration content at 504a210, and later at the D-01 merge: load the YAML, not the fixture; run reg-01…05.
-3. Write verified quotes for the PESEL branch of the template (replace the S1 placeholders) via `source-researcher`.
+1. ~~Calibrate the estimates against Formalka's BUILD-PLAN and git history; update 13 §2.~~ Done: 13 §4a, with a second data point in 13 §4c.
+2. ~~Port S1 to the real address-registration content at 504a210, and later at the D-01 merge: load the YAML, not the fixture; run reg-01…05.~~ Done in the case engine, against the snapshots at formalka@04057ef (after the D-01 merge); the address-registration scenarios are in the evaluation set.
+3. ~~Write verified quotes for the PESEL branch of the template (replace the S1 placeholders) via `source-researcher`.~~ Superseded: the PESEL blueprint uses Formalka's published PESEL procedure and its quotes; no new quotes were needed.
 4. Add the validator's identifying-fact and allowed-value checks as a property test over every published fact catalogue (offline).
 5. Port S3 to pdf-lib with generated appearance streams; test in Android WebView and iOS Safari (synthetic data).
 6. Inventory the permanent-stay registration form (hash, fields, never-fill list).
-7. Draft the concept-test wireflow (structured vs. free-text intake; named vs. unnamed companion) as static HTML in the lab, with no backend.
-8. Write 10 of the 40 benchmark scenarios with the reference plans; leave the four-language texts to native writers.
+7. Draft the concept-test wireflow (structured vs. free-text intake; named vs. unnamed companion) as static HTML in the lab, with no backend. Partly done: the experience prototype and the functional slice exist; the A/B variants for the concept test do not.
+8. ~~Write 10 of the 40 benchmark scenarios with the reference plans; leave the four-language texts to native writers.~~ Done: 17 scenarios with reference plans (`packages/case-engine/eval/`), awaiting the owner's review.
 9. Measure the registry bundle size for `arrive-register-address` and design the version check (ETag) that replaces a changes feed for slice 1.
 10. Draft the interview guide (A5 timing first, A4, A9) and the office questions (A6, O6) for the owner to run.
 
