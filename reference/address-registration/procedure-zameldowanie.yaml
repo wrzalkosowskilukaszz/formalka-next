@@ -1,0 +1,646 @@
+# Address registration (zameldowanie) for foreigners, permanent or temporary, hand-authored
+# from the gov.pl card (one page holding every branch: EU/EFTA or not, permanent or temporary)
+# with the Warsaw and Kraków place layers (PESEL-02, ADR-0011). Registering also gives a PESEL
+# number (see the PESEL guide's "register instead" warning).
+#
+# Every quote names the official page it comes from (`page`); the `load-procedures` job
+# resolves it to the latest snapshot of that page and publishes only if every quote is found
+# there. Polish statements are verbatim official wording; en/uk are our translations of it.
+#
+# The gov.pl card repeats some sentences in several branches; each quote here is used only
+# under the condition its branch states (citizen group, kind of stay).
+#
+# Known conflict: for people in Poland visa-free, gov.pl and Kraków list a residence document
+# besides the travel document, while Warsaw asks only for the travel document. The act's art. 43
+# ust. 3 (in force in its Dz.U. 2025 poz. 1794 wording since 27 April 2026) is quoted too, without
+# our reading of it (rule 4). Legal audit 2026-10-02: the act (Dz.U. 2026 poz. 384) is stricter
+# than gov.pl's "over 3 months": non-EU foreigners register any stay over 30 days.
+
+- id: zameldowanie-foreigner
+  domain: zameldowanie
+  related: [pesel-application]
+  riskClass: B
+  verificationLevel: sources_disagree
+  checkedAt: "2026-10-01"
+  title:
+    pl: Zameldowanie cudzoziemca
+    en: Registering your address (zameldowanie)
+    uk: Реєстрація адреси (zameldowanie)
+    ru: Регистрация адреса (zameldowanie)
+  summary:
+    pl: Jak zameldować się na pobyt stały albo czasowy pod adresem, pod którym mieszkasz. Z meldunkiem możesz też dostać numer PESEL.
+    en: How to register your permanent or temporary stay at the address where you live. Registering can also get you a PESEL number.
+    uk: Як зареєструвати постійне або тимчасове перебування за адресою, де ви живете. З реєстрацією ви можете також отримати номер PESEL.
+    ru: Как зарегистрировать постоянное или временное пребывание по адресу, где вы живете. С регистрацией вы можете также получить номер PESEL.
+  applicability:
+    conditions:
+      - id: lives-in-poland
+        statement:
+          value:
+            pl: "Cudzoziemcy są zwolnieni z obowiązku meldunkowego, jeżeli okres ich pobytu na terytorium Rzeczypospolitej Polskiej nie przekracza 30 dni."
+            en: "Foreigners don't have to register if their stay in Poland doesn't exceed 30 days."
+            uk: "Іноземці звільнені від обов'язку реєстрації, якщо їхнє перебування на території Польщі не перевищує 30 днів."
+            ru: "Иностранцы освобождены от обязанности регистрации, если их пребывание на территории Польши не превышает 30 дней."
+          quotes:
+            - page: &act https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf
+              text: "Cudzoziemcy są zwolnieni z obowiązku meldunkowego, jeżeli okres ich pobytu na terytorium Rzeczypospolitej Polskiej nie przekracza 30 dni."
+            - page: &govpl https://www.gov.pl/web/gov/zamelduj-sie-na-pobyt-staly-dla-cudzoziemcow
+              text: "Jeśli mieszkasz w Polsce – zamelduj się na pobyt stały lub czasowy (czyli powyżej 3 miesięcy)."
+  requiredFacts:
+    - zameldowanie.citizen_group
+    - zameldowanie.stay
+  steps:
+    - id: fill-in
+      title:
+        pl: Wypełnij formularz meldunkowy
+        en: Fill in the registration form
+        uk: Заповніть реєстраційний бланк
+        ru: Заполните регистрационный бланк
+      description:
+        pl: Formularz zgłoszenia pobytu stałego albo czasowego pobierzesz ze strony albo wypełnisz w urzędzie gminy.
+        en: Download the form for a permanent or a temporary stay, or fill it in at the municipal office.
+        uk: Бланк для постійного або тимчасового перебування можна завантажити або заповнити в управлінні гміни.
+        ru: Бланк для постоянного или временного пребывания можно скачать или заполнить в управлении гмины.
+      channels: [in_person]
+      links:
+        # The official forms (EL/ZC/1, EL/ZPS/1; verified 2026-10-03: PDF, Polish and English),
+        # also on Documents.
+        - &formTemporary
+          url: https://www.gov.pl/attachment/606f2b47-0c11-4744-a2b4-9eab57c2fbb8
+          title:
+            pl: Pobierz formularz zgłoszenia pobytu czasowego (PDF, po polsku i angielsku)
+            en: Download the temporary stay registration form (PDF, Polish and English)
+            uk: Завантажити бланк реєстрації тимчасового перебування (PDF, польською та англійською)
+            ru: Скачать бланк регистрации временного пребывания (PDF, на польском и английском)
+        - &formPermanent
+          url: https://www.gov.pl/attachment/82958602-cf7d-4d31-8911-627a1566075f
+          title:
+            pl: Pobierz formularz zgłoszenia pobytu stałego (PDF, po polsku i angielsku)
+            en: Download the permanent stay registration form (PDF, Polish and English)
+            uk: Завантажити бланк реєстрації постійного перебування (PDF, польською та англійською)
+            ru: Скачать бланк регистрации постоянного пребывания (PDF, на польском и английском)
+      quotes:
+        - page: *govpl
+          text: "formularz zgłoszenia pobytu stałego, plik PDF 1,74 MB lub formularz zgłoszenia pobytu czasowego, plik PDF 1,73 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu;"
+    - id: owner-confirms
+      title:
+        pl: Poproś właściciela o potwierdzenie na formularzu
+        en: Ask the owner to confirm on the form
+        uk: Попросіть власника підтвердити на бланку
+        ru: Попросите собственника подтвердить на бланке
+      description:
+        pl: Właściciel mieszkania albo inna osoba lub firma z tytułem prawnym do niego potwierdza na formularzu, że tam mieszkasz.
+        en: The owner of the flat, or another person or company with a legal title to it, confirms on the form that you live there.
+        uk: Власник житла або інша особа чи компанія, що має на нього правовий титул, підтверджує на бланку, що ви там живете.
+        ru: Собственник жилья или другое лицо либо компания, имеющие юридическое право на это жилье, подтверждают на бланке, что вы там живете.
+      dependsOn: [fill-in]
+      channels: [in_person]
+      quotes:
+        - page: *govpl
+          text: "Na formularzu, który przyniesiesz do urzędu, właściciel lub inny podmiot, który ma tytuł prawny do mieszkania, musi potwierdzić, że przebywasz w tym lokalu."
+    - id: file
+      title:
+        pl: Złóż formularz w urzędzie gminy
+        en: File the form at the municipal office
+        uk: Подайте бланк в управлінні гміни
+        ru: Подайте бланк в управлении гмины
+      description:
+        pl: W urzędzie gminy, w której mieszkasz; pokaż tam dokumenty wymienione w części „Dokumenty”. Przez internet mogą to zrobić tylko obywatele UE i EFTA oraz członkowie ich rodzin, z profilem zaufanym albo kwalifikowanym podpisem.
+        en: At the municipal office of the place where you live; there, show the documents listed under “Documents”. Only EU and EFTA citizens and their family members can do this online, with a Trusted Profile (Profil Zaufany) or a qualified e-signature.
+        uk: В управлінні гміни, де ви живете; покажіть там документи, перелічені в розділі «Документи». Онлайн це можуть зробити лише громадяни ЄС і ЄАВТ та члени їхніх сімей, з довіреним профілем (Profil Zaufany) або кваліфікованим підписом.
+        ru: В управлении гмины, где вы живете; покажите там документы, перечисленные в разделе «Документы». Онлайн это могут сделать только граждане ЕС и ЕАСТ и члены их семей, с доверенным профилем (Profil Zaufany) или квалифицированной подписью.
+      dependsOn: [owner-confirms]
+      channels: [in_person, online]
+      officeKind: municipal_office
+      quotes:
+        - page: *govpl
+          text: "W urzędzie gminy, na terenie której mieszkasz."
+        - page: *govpl
+          text: "Złóż w urzędzie formularz meldunkowy i okaż pozostałe dokumenty."
+        - page: *govpl
+          text: "Jeśli chcesz złożyć formularz przez Internet, potrzebujesz profilu zaufanego lub kwalifikowanego certyfikatu podpisu elektronicznego."
+    - id: registered
+      title:
+        pl: Urzędnik melduje Cię od razu
+        en: The official registers you straight away
+        uk: Посадовець реєструє вас одразу
+        ru: Сотрудник регистрирует вас сразу
+      dependsOn: [file]
+      channels: [in_person]
+      officeKind: municipal_office
+      quotes:
+        - page: *govpl
+          text: "Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia."
+  documents:
+    - id: form-temporary
+      condition: { fact: zameldowanie.stay, eq: temporary }
+      namePl:
+        value: formularz zgłoszenia pobytu czasowego
+        quotes:
+          - page: *govpl
+            text: "formularz zgłoszenia pobytu czasowego, plik PDF 1,73 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu,"
+      description:
+        pl: Do zameldowania na pobyt czasowy, z potwierdzeniem właściciela.
+        en: For registering a temporary stay, with the owner's confirmation.
+        uk: Для реєстрації тимчасового перебування, з підтвердженням власника.
+        ru: Для регистрации временного пребывания, с подтверждением собственника.
+      form: original
+      links: [*formTemporary]
+      # Content audit of F14: the official page names one form per kind of stay ("… lub …").
+      alternativeTo: [form-permanent]
+    - id: form-permanent
+      condition: { fact: zameldowanie.stay, eq: permanent }
+      namePl:
+        value: formularz zgłoszenia pobytu stałego
+        quotes:
+          - page: *govpl
+            text: "formularz zgłoszenia pobytu stałego, plik PDF 1,74 MB lub formularz zgłoszenia pobytu czasowego, plik PDF 1,73 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu;"
+      description:
+        pl: Do zameldowania na pobyt stały, z potwierdzeniem właściciela.
+        en: For registering a permanent stay, with the owner's confirmation.
+        uk: Для реєстрації постійного перебування, з підтвердженням власника.
+        ru: Для регистрации постоянного пребывания, с подтверждением собственника.
+      form: original
+      links: [*formPermanent]
+    - id: identity-eu
+      condition: { fact: zameldowanie.citizen_group, eq: eu_efta }
+      namePl:
+        value: ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo
+        quotes:
+          - page: *govpl
+            text: "ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo,"
+      description:
+        pl: Dla obywateli UE i EFTA.
+        en: For EU and EFTA citizens.
+        uk: Для громадян ЄС і ЄАВТ.
+        ru: Для граждан ЕС и ЕАСТ.
+      form: original
+    - id: family-card
+      condition: { fact: zameldowanie.citizen_group, eq: eu_efta }
+      namePl:
+        value: ważną kartę pobytu członka rodziny obywatela UE
+        quotes:
+          - page: *govpl
+            text: "ważną kartę stałego pobytu członka rodziny obywatela UE albo\n- ważną kartę pobytu członka rodziny obywatela UE albo\n- inny dokument, który potwierdzi, że jesteś członkiem rodziny obywatela UE;"
+      description:
+        pl: Tylko dla członków rodziny obywatela UE, razem z ważnym dokumentem podróży; albo karta stałego pobytu albo inny dokument potwierdzający, że jesteś członkiem rodziny.
+        en: Only for family members of an EU citizen, together with a valid travel document; or the permanent residence card; or another document confirming you're a family member.
+        uk: Лише для членів сім'ї громадянина ЄС, разом із дійсним проїзним документом; або карта постійного перебування, або інший документ, що підтверджує, що ви член сім'ї.
+        ru: Только для членов семьи гражданина ЕС, вместе с действительным проездным документом; или карта постоянного пребывания, или другой документ, подтверждающий, что вы член семьи.
+      form: original
+    - id: travel-document
+      condition: { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+      namePl:
+        value: ważny dokument podróży
+        quotes:
+          # Permanent stay (non-EU branch) and temporary stay (non-EU branch).
+          - page: *govpl
+            text: "- ważny dokument podróży;\n- JEDEN z poniższych dokumentów:"
+          - page: *govpl
+            text: "- ważny dokument podróży,\n- wizę."
+      description:
+        pl: Ważny dokument podróży. Dla osób spoza UE, EFTA i Szwajcarii, także obywateli Wielkiej Brytanii.
+        en: A valid travel document. For people from outside the EU, EFTA and Switzerland, including UK citizens.
+        uk: Дійсний проїзний документ. Для осіб з-поза ЄС, ЄАВТ і Швейцарії, зокрема громадян Великої Британії.
+        ru: Действительный проездной документ. Для людей из-за пределов ЕС, ЕАСТ и Швейцарии, в том числе граждан Великобритании.
+      form: original
+    - id: uk-residence-document
+      condition: { fact: zameldowanie.citizen_group, eq: uk_wa }
+      namePl:
+        value: ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu
+        quotes:
+          - page: *act
+            text: "Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej, dokonując zameldowania na pobyt stały, przedstawia ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu, a członek jego rodziny, o którym mowa w art. 10 ust. 1 lit. e i f tej umowy, przedstawia ważną kartę pobytową lub ważną kartę stałego pobytu."
+          - page: *act
+            text: "Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b lub d Umowy o Wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej, dokonując zameldowania się na pobyt czasowy, przedstawia ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu, a członek jego rodziny, o którym mowa w art. 10 ust. 1 lit. e i f tej umowy, przedstawia ważną kartę pobytową lub ważną kartę stałego pobytu."
+      description:
+        pl: Dla obywateli Wielkiej Brytanii objętych umową o wystąpieniu; członek rodziny pokazuje ważną kartę pobytową albo kartę stałego pobytu. Razem z ważnym dokumentem podróży.
+        en: For UK citizens covered by the Withdrawal Agreement; a family member shows a valid residence card (karta pobytowa) or permanent residence card. Together with a valid travel document.
+        uk: Для громадян Великої Британії, на яких поширюється Угода про вихід; член сім'ї показує дійсну карту перебування або карту постійного перебування. Разом із дійсним проїзним документом.
+        ru: Для граждан Великобритании, на которых распространяется Соглашение о выходе; член семьи показывает действительную карту пребывания или карту постоянного пребывания. Вместе с действительным проездным документом.
+      form: original
+    - id: visa
+      condition:
+        all:
+          - { fact: zameldowanie.citizen_group, eq: other }
+          - { fact: zameldowanie.stay, eq: temporary }
+      namePl:
+        value: wizę
+        quotes:
+          - page: *govpl
+            text: "- wizę.\nJeśli jesteś w Polsce w ramach ruchu bezwizowego albo czekasz na wydanie decyzji w sprawie udzielenia zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE i jednocześnie złożyłeś w terminie wniosek o wydanie takiego zezwolenia, przygotuj:"
+      description:
+        pl: Do zameldowania na pobyt czasowy, jeśli jesteś w Polsce na podstawie wizy.
+        en: For registering a temporary stay, if you're in Poland on a visa.
+        uk: Для реєстрації тимчасового перебування, якщо ви перебуваєте в Польщі на підставі візи.
+        ru: Для регистрации временного пребывания, если вы находитесь в Польше на основании визы.
+      # "One of these, depending on your situation" (UX audit F14): the official page lists
+      # them as alternatives for different situations, never both.
+      alternativeTo: [visa-free-or-waiting]
+      form: original
+    - id: visa-free-or-waiting
+      condition:
+        all:
+          - { fact: zameldowanie.citizen_group, eq: other }
+          - { fact: zameldowanie.stay, eq: temporary }
+      namePl:
+        value: tymczasowe zaświadczenie tożsamości cudzoziemca
+        quotes:
+          - page: &mos-act https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Cudzoziemiec dokonujący zameldowania się na pobyt czasowy przedstawia wizę, a w przypadku gdy wjazd cudzoziemca nastąpił na podstawie umowy przewidującej zniesienie lub ograniczenie obowiązku posiadania wizy albo cudzoziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079 i 1794) – dokument podróży, tymczasowe zaświadczenie tożsamości cudzoziemca, kartę pobytu, dokument „zgoda na pobyt tolerowany” albo zezwolenie na pobyt czasowy, zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub decyzję o nadaniu statusu uchodźcy w Rzeczypospolitej Polskiej, udzieleniu w Rzeczypospolitej Polskiej ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych albo zgody na pobyt tolerowany."
+          - page: *govpl
+            text: "Jeśli jesteś w Polsce w ramach ruchu bezwizowego albo czekasz na wydanie decyzji w sprawie udzielenia zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE i jednocześnie złożyłeś w terminie wniosek o wydanie takiego zezwolenia, przygotuj:\n- ważny dokument podróży,\n- JEDEN z poniższych dokumentów:\n- tymczasowe zaświadczenie tożsamości cudzoziemca,\n- kartę pobytu,\n- zgodę na pobyt tolerowany,\n- zezwolenie na pobyt czasowy,\n- zezwolenie na pobyt stały,\n- zezwolenie na pobyt rezydenta długoterminowego UE,\n- decyzję o nadaniu statusu uchodźcy w Polsce, udzieleniu w Polsce ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych albo zgody na pobyt tolerowany."
+          # General statement in the card's intro; supports the referral to the office, not a rule
+          # for this case (content re-audit of F14).
+          - page: *govpl
+            text: "Dokumenty, które potwierdzają prawo do twojego pobytu w Polsce, musisz pokazać w urzędzie."
+      description:
+        pl: "Zamiast wizy, jeśli jesteś w Polsce w ramach ruchu bezwizowego albo czekasz na decyzję o zezwoleniu na pobyt, o które wystąpiono w terminie. Wystarczy JEDEN z tych dokumentów: to zaświadczenie, karta pobytu, zgoda na pobyt tolerowany, zezwolenie na pobyt czasowy, zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE albo decyzja o nadaniu statusu uchodźcy w Polsce, udzieleniu w Polsce ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych lub zgody na pobyt tolerowany. Jeśli nie masz wizy i żadna z tych dwóch sytuacji Cię nie dotyczy, zapytaj w urzędzie gminy, jakie dokumenty potwierdzające prawo do pobytu masz pokazać."
+        en: "Instead of a visa, if you're in Poland visa-free or waiting for a decision on a residence permit you applied for in time. ONE of these is enough: this certificate, a residence card, a tolerated stay consent, a temporary residence permit, a permanent residence permit, an EU long-term resident permit, or a decision granting refugee status or subsidiary protection in Poland, or consent to a humanitarian or tolerated stay. If you have no visa and neither situation fits you, ask the municipal office which documents confirming your right to stay you need to show."
+        uk: "Замість візи, якщо ви в Польщі в межах безвізового режиму або чекаєте на рішення щодо дозволу на перебування, про який подали заяву вчасно. Достатньо ОДНОГО з цих документів: ця довідка, карта побиту, згода на толероване перебування, дозвіл на тимчасове перебування, дозвіл на постійне перебування, дозвіл на перебування довгострокового резидента ЄС або рішення про надання статусу біженця в Польщі, додаткового захисту в Польщі, згоди на перебування з гуманітарних причин чи згоди на толероване перебування. Якщо у вас немає візи і жодна з цих двох ситуацій вас не стосується, запитайте в управлінні гміни, які документи, що підтверджують право на перебування, потрібно показати."
+        ru: "Вместо визы, если вы в Польше в рамках безвизового режима или ждете решения о разрешении на пребывание, заявление на которое подали вовремя. Достаточно ОДНОГО из этих документов: эта справка, карта побыту, согласие на толерированное пребывание, разрешение на временное пребывание, разрешение на постоянное пребывание, разрешение на пребывание долгосрочного резидента ЕС или решение о предоставлении статуса беженца в Польше, дополнительной защиты в Польше, согласия на пребывание по гуманитарным причинам или согласия на толерированное пребывание. Если у вас нет визы и ни одна из этих двух ситуаций вас не касается, спросите в управлении гмины, какие документы, подтверждающие право на пребывание, нужно показать."
+      form: original
+    - id: permanent-stay-document
+      condition:
+        all:
+          - { fact: zameldowanie.citizen_group, eq: other }
+          - { fact: zameldowanie.stay, eq: permanent }
+      namePl:
+        value: kartę pobytu wydaną w związku z udzieleniem zezwolenia na pobyt stały
+        quotes:
+          - page: *govpl
+            text: "kartę pobytu wydaną w związku z udzieleniem zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego UE, zgody na pobyt ze względów humanitarnych, ochrony uzupełniającej albo nadaniem statusu uchodźcy w Polsce,"
+      description:
+        pl: Do zameldowania na pobyt stały wystarczy JEDEN dokument z oficjalnej listy, na przykład karta pobytu wydana w związku z udzieleniem zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego UE, zgody na pobyt ze względów humanitarnych, ochrony uzupełniającej albo nadaniem statusu uchodźcy w Polsce.
+        en: "For registering a permanent stay, ONE document from the official list is enough, for example a residence card issued because you were granted one of these: a permanent residence permit, an EU long-term resident permit, consent to a stay on humanitarian grounds, subsidiary protection, or refugee status in Poland."
+        uk: Для реєстрації постійного перебування достатньо ОДНОГО документа з офіційного списку, наприклад карти побиту, виданої у зв'язку з дозволом на постійне перебування, дозволом на перебування довгострокового резидента ЄС, згодою на перебування з гуманітарних причин, додатковим захистом або наданням статусу біженця в Польщі.
+        ru: Для регистрации постоянного пребывания достаточно ОДНОГО документа из официального списка, например карты побыту, выданной в связи с разрешением на постоянное пребывание, разрешением на пребывание долгосрочного резидента ЕС, согласием на пребывание по гуманитарным причинам, дополнительной защитой или предоставлением статуса беженца в Польше.
+      form: original
+    - id: lease
+      namePl:
+        value: umowę cywilnoprawną, na przykład umowę najmu
+        quotes:
+          - page: *govpl
+            text: "jeśli jesteś właścicielem lub masz inny tytuł prawny do mieszkania, w którym chcesz się zameldować – przynieś JEDEN z dokumentów, który to potwierdzi, na przykład:\n- umowę cywilnoprawną, na przykład umowę najmu,"
+      description:
+        pl: Jeśli jesteś właścicielem albo masz inny tytuł prawny do mieszkania (na przykład umowę najmu). Zamiast umowy może to być na przykład odpis z księgi wieczystej, decyzja albo orzeczenie sądu.
+        en: If you're the owner of the flat or have another legal title to it (for example a rental agreement). Instead of a contract it can be, for example, a land register extract, an administrative decision or a court ruling.
+        uk: Якщо ви власник або маєте інший правовий титул на житло (наприклад, договір оренди). Замість договору це може бути, наприклад, витяг із книги нерухомості, адміністративне рішення або рішення суду.
+        ru: Если вы собственник или имеете другое юридическое право на жилье (например, договор аренды). Вместо договора это может быть, например, выписка из поземельной книги, административное решение или решение суда.
+      # "One of these, depending on your situation" (UX audit F14): the official page lists
+      # them as alternatives for different situations, never both.
+      alternativeTo: [owner-title]
+      form: original
+    - id: owner-title
+      namePl:
+        value: dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu
+        quotes:
+          - page: *govpl
+            text: "jeśli NIE jesteś właścicielem i nie masz innego tytułu prawnego do mieszkania, w którym chcesz się zameldować:\n- dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu,"
+      description:
+        pl: Zamiast dokumentu powyżej, jeśli nie masz tytułu prawnego do mieszkania; dokument właściciela.
+        en: Instead of the document above, if you have no legal title to the flat yourself; the owner's document.
+        uk: Замість документа вище, якщо ви самі не маєте правового титулу на житло; документ власника.
+        ru: Вместо документа выше, если у вас самих нет юридического права на жилье; документ собственника.
+      form: original
+  fees:
+    - id: free
+      purpose:
+        pl: Zameldowanie
+        en: The registration
+        uk: Реєстрація
+        ru: Регистрация
+      amountPln:
+        value: 0
+        quotes:
+          - page: *govpl
+            text: "Usługa zameldowania jest bezpłatna."
+    - id: temporary-certificate
+      optional: true
+      condition:
+        all:
+          - { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+          - { fact: zameldowanie.stay, eq: temporary }
+      purpose:
+        pl: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać
+        en: The certificate of a temporary registration, if you want one
+        uk: Довідка про тимчасову реєстрацію, якщо вона вам потрібна
+        ru: Справка о временной регистрации, если она вам нужна
+      amountPln:
+        value: 17
+        quotes:
+          - page: *govpl
+            text: "Zaświadczenie o zameldowaniu na pobyt czasowy – 17 zł."
+    - id: temporary-certificate-eu
+      optional: true
+      condition:
+        all:
+          - { fact: zameldowanie.citizen_group, eq: eu_efta }
+          - { fact: zameldowanie.stay, eq: temporary }
+      purpose:
+        pl: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie
+        en: The certificate of a temporary registration, if you want one; free only when the system registers you automatically
+        uk: Довідка про тимчасову реєстрацію, якщо вона вам потрібна; безкоштовна лише тоді, коли система реєструє вас автоматично
+        ru: Справка о временной регистрации, если она вам нужна; бесплатна только тогда, когда система регистрирует вас автоматически
+      amountPln:
+        value: 17
+        quotes:
+          - page: *govpl
+            text: "na pobyt czasowy – 17 zł (bezpłatnie tylko wtedy, gdy system melduje cię automatycznie),"
+    - id: further-certificate
+      optional: true
+      purpose:
+        pl: Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze
+        en: Any further registration certificate, for example if you lose the first one
+        uk: Кожна наступна довідка про реєстрацію, наприклад, якщо ви загубили першу
+        ru: Каждая следующая справка о регистрации, например, если вы потеряли первую
+      amountPln:
+        value: 17
+        quotes:
+          - page: *govpl
+            text: "każde kolejne zaświadczenie, na przykład gdy zgubisz zaświadczenie wydane przy zameldowaniu, kosztuje 17 zł."
+  deadlines:
+    - id: other-citizens
+      condition: { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+      description:
+        pl: Dla cudzoziemców spoza UE, EFTA i Szwajcarii, także obywateli Wielkiej Brytanii; liczy się od dnia zamieszkania pod adresem. Członek rodziny obywatela UE, EFTA lub Szwajcarii ma 30 dni. Członek rodziny obywatela polskiego ma 30 dni tylko w przypadkach wymienionych w ustawie o obywatelach UE i członkach ich rodzin, a w większości z nich trzeba spełnić łącznie kilka warunków; w innych przypadkach też ma 4 dni. Jeśli nie masz pewności, zapytaj w urzędzie gminy, zanim miną 4 dni.
+        en: For foreigners from outside the EU, EFTA and Switzerland, including UK citizens; counted from the day you move in at the address. A family member of an EU, EFTA or Swiss citizen has 30 days. A family member of a Polish citizen has 30 days only in the cases listed in the act on EU citizens and their families, and most of these cases have several conditions that must all be met; otherwise they also have 4 days. If you're not sure, ask the municipal office before the 4 days run out.
+        uk: Для іноземців з-поза ЄС, ЄАВТ і Швейцарії, зокрема громадян Великої Британії; відлік від дня заселення за адресою. Член сім'ї громадянина ЄС, ЄАВТ або Швейцарії має 30 днів. Член сім'ї громадянина Польщі має 30 днів лише у випадках, перелічених у законі про громадян ЄС та їхні родини, і в більшості з них треба виконати одразу кілька умов; в інших випадках він теж має 4 дні. Якщо ви не впевнені, запитайте в управлінні гміни, поки не минули 4 дні.
+        ru: Для иностранцев не из ЕС, ЕАСТ и Швейцарии, в том числе граждан Великобритании; отсчет со дня заселения по адресу. Член семьи гражданина ЕС, ЕАСТ или Швейцарии имеет 30 дней. Член семьи гражданина Польши имеет 30 дней только в случаях, перечисленных в законе о гражданах ЕС и их семьях, и в большинстве из них нужно выполнить сразу несколько условий; в остальных случаях он тоже имеет 4 дня. Если вы не уверены, спросите в управлении гмины, пока не прошли 4 дня.
+      rule:
+        value: { kind: relative, amount: 4, unit: day, from: arrival_at_address }
+        quotes:
+          - page: *govpl
+            text: "Najpóźniej w 4 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować."
+          - page: *act
+            text: "Cudzoziemiec niewymieniony w ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej, ma obowiązek zameldować się w miejscu pobytu stałego lub czasowego najpóźniej czwartego dnia, licząc od dnia przybycia do tego miejsca."
+          # Art. 41 ust. 2 and 2a: the 30 days for family members, and for family members of a
+          # Polish citizen only as the 2006 act's art. 2 pkt 4 lit. b defines them.
+          - page: *act
+            text: &art41-2 "Członek rodziny cudzoziemca, o którym mowa w ust. 1, niebędący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej, jest obowiązany zameldować się w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca."
+          - page: *act
+            text: &art41-2a "Przepis ust. 2 stosuje się także do członka rodziny obywatela Rzeczypospolitej Polskiej, o którym mowa w art. 2 pkt 4 lit. b ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2025 r. poz. 1164 i 1794)."
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/1065/text.pdf
+            text: "w przypadku członka rodziny obywatela Rzeczypospolitej Polskiej – cudzoziemca niebędącego obywatelem UE:"
+      consequence:
+        value:
+          pl: "Cudzoziemiec niebędący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej, który nie dopełnia ciążącego na nim obowiązku meldunkowego, podlega karze grzywny."
+          en: "A foreigner who isn't a citizen of an EU or EFTA (EEA) state or of Switzerland and doesn't meet the registration obligation is liable to a fine."
+          uk: "Іноземець, який не є громадянином держави ЄС, ЄАВТ (сторони угоди про ЄЕП) або Швейцарії і не виконує обов'язку реєстрації, підлягає штрафу."
+          ru: "Иностранец, который не является гражданином государства ЕС, ЕАСТ (стороны соглашения о ЕЭП) или Швейцарии и не выполняет обязанность регистрации, подлежит штрафу."
+        quotes:
+          - page: *act
+            text: "Cudzoziemiec niebędący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej, który nie dopełnia ciążącego na nim obowiązku meldunkowego, podlega karze grzywny."
+    - id: eu-efta
+      condition: { fact: zameldowanie.citizen_group, eq: eu_efta }
+      description:
+        pl: Obywatele UE, EFTA i Szwajcarii oraz członkowie ich rodzin, od dnia zamieszkania pod adresem.
+        en: EU, EFTA and Swiss citizens and their family members, from the day you move in at the address.
+        uk: Громадяни ЄС, ЄАВТ і Швейцарії та члени їхніх сімей, від дня заселення за адресою.
+        ru: Граждане ЕС, ЕАСТ и Швейцарии и члены их семей, со дня заселения по адресу.
+      rule:
+        value: { kind: relative, amount: 30, unit: day, from: arrival_at_address }
+        quotes:
+          - page: *govpl
+            text: "najpóźniej w 30 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować,"
+  variations:
+    - id: warszawa
+      territory: ["1465011"]
+      note:
+        value:
+          pl: "Osobiście w dowolnej delegaturze Biura Administracji i Spraw Obywatelskich w Warszawie."
+          en: "In person at any district office (delegatura) of the Office of Administration and Civic Affairs in Warsaw."
+          uk: "Особисто в будь-якому районному відділенні (delegatura) Бюро адміністрації та громадянських справ у Варшаві."
+          ru: "Лично в любом районном отделении (delegatura) Бюро администрации и гражданских дел в Варшаве."
+        quotes:
+          - page: &warszawa https://warszawa19115.pl/-/zameldowanie-na-pobyt-czasowy-cudzoziemcow-w-tym-obywateli-panstw-czlonkowskich-unii-europejskiej-ue-i-czlonkow-ich-rodzin
+            text: "Osobiście w dowolnej delegaturze Biura Administracji i Spraw Obywatelskich w Warszawie."
+      differs:
+        value:
+          pl: "przebywasz w Polsce w ramach ruchu bezwizowego – przygotuj:\n- ważny dokument podróży"
+          en: "If you're in Poland visa-free, prepare: a valid travel document."
+          uk: "Якщо ви перебуваєте в Польщі в межах безвізового режиму, підготуйте: дійсний проїзний документ."
+          ru: "Если вы находитесь в Польше в рамках безвизового режима, подготовьте: действительный проездной документ."
+        quotes:
+          - page: *warszawa
+            text: "przebywasz w Polsce w ramach ruchu bezwizowego – przygotuj:\n- ważny dokument podróży"
+      officeIds:
+        - warszawa-baiso-bemowo
+        - warszawa-baiso-bialoleka
+        - warszawa-baiso-bielany
+        - warszawa-baiso-mokotow
+        - warszawa-baiso-ochota
+        - warszawa-baiso-praga-poludnie
+        - warszawa-baiso-praga-polnoc
+        - warszawa-baiso-rembertow
+        - warszawa-baiso-srodmiescie
+        - warszawa-baiso-targowek
+        - warszawa-baiso-ursus
+        - warszawa-baiso-ursynow
+        - warszawa-baiso-wawer
+        - warszawa-baiso-wesola
+        - warszawa-baiso-wilanow
+        - warszawa-baiso-wlochy
+        - warszawa-baiso-wola
+        - warszawa-baiso-zoliborz
+    - id: krakow
+      territory: ["1261011"]
+      note:
+        value:
+          pl: "Zabierz dokumenty i udaj się do lokalizacji Urzędu Miasta Krakowa właściwej ze względu na położenie nieruchomości."
+          en: "Take the documents to the Kraków city office location responsible for the district where the property is."
+          uk: "Візьміть документи й ідіть до відділення міської управи Кракова, яке обслуговує район, де розташоване житло."
+          ru: "Возьмите документы и идите в отделение городской управы Кракова, ответственное за район, где находится жилье."
+        quotes:
+          - page: &krakow https://www.bip.krakow.pl/uslugi/SA-12&metka=1
+            text: "Zabierz dokumenty i udaj się do lokalizacji Urzędu Miasta Krakowa właściwej ze względu na położenie nieruchomości."
+      officeIds:
+        - krakow-wsa-i-vii
+        - krakow-wsa-viii-xiii
+        - krakow-wsa-xiv-xviii
+  pitfalls:
+    - id: pesel-automatic
+      important: true
+      statement:
+        value:
+          pl: "Dostaniesz numer PESEL z urzędu – jeśli zameldujesz się w Polsce na pobyt powyżej 30 dni."
+          en: "You'll get a PESEL number automatically if you register your address in Poland for a stay of more than 30 days."
+          uk: "Ви отримаєте номер PESEL автоматично, якщо зареєструєтеся в Польщі на перебування понад 30 днів."
+          ru: "Вы получите номер PESEL автоматически, если зарегистрируетесь в Польше на пребывание более 30 дней."
+        quotes:
+          - page: https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow
+            text: "Dostaniesz numer PESEL z urzędu – jeśli zameldujesz się w Polsce na pobyt powyżej 30 dni."
+    - id: deadline-short
+      important: true
+      condition: { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+      statement:
+        value:
+          pl: "Najpóźniej w 4 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować."
+          en: "At the latest on the 4th day, counting from the day you move in at the address where you want to register."
+          uk: "Не пізніше 4-го дня, рахуючи від дня заселення в житло, де ви хочете зареєструватися."
+          ru: "Не позднее 4-го дня, считая со дня заселения в жилье, где вы хотите зарегистрироваться."
+        quotes:
+          - page: *govpl
+            text: "Najpóźniej w 4 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować."
+    - id: no-online
+      important: true
+      condition: { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+      statement:
+        value:
+          pl: "Uwaga! Jeśli nie jesteś obywatelem państwa członkowskiego UE albo EFTA i nie jesteś członkiem rodziny takiego obywatela, nie możesz zameldować się przez Internet."
+          en: "Note: if you're not a citizen of an EU or EFTA member state and not a family member of one, you can't register online."
+          uk: "Увага! Якщо ви не громадянин держави-члена ЄС або ЄАВТ і не член сім'ї такого громадянина, ви не можете зареєструватися онлайн."
+          ru: "Внимание! Если вы не гражданин государства-члена ЕС или ЕАСТ и не член семьи такого гражданина, вы не можете зарегистрироваться онлайн."
+        quotes:
+          - page: *govpl
+            text: "Uwaga! Jeśli nie jesteś obywatelem państwa członkowskiego UE albo EFTA i nie jesteś członkiem rodziny takiego obywatela, nie możesz zameldować się przez Internet."
+    - id: no-pesel-in-person
+      condition: { fact: zameldowanie.citizen_group, eq: other }
+      statement:
+        value:
+          pl: "Możesz się zameldować osobiście lub przez pełnomocnika. Swojego pełnomocnictwa możesz mu udzielić wyłącznie na piśmie.\nJeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście."
+          en: "You can register in person or through a proxy, whom you can authorise only in writing. But if you don't have a PESEL number, come to the office in person."
+          uk: "Ви можете зареєструватися особисто або через уповноважену особу, довіреність якій можна дати лише письмово. Але якщо у вас немає номера PESEL, прийдіть до установи особисто."
+          ru: "Вы можете зарегистрироваться лично или через уполномоченное лицо, доверенность которому можно дать только письменно. Но если у вас нет номера PESEL, придите в учреждение лично."
+        quotes:
+          - page: *govpl
+            text: "Możesz się zameldować osobiście lub przez pełnomocnika. Swojego pełnomocnictwa możesz mu udzielić wyłącznie na piśmie.\nJeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście."
+    - id: stay-over-30-days
+      important: true
+      condition: { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+      statement:
+        value:
+          pl: "Jeśli mieszkasz w danym miejscu tylko czasowo, a planowany okres przebywania pod tym adresem jest dłuższy niż 3 miesiące (pobyt czasowy, dotyczy obywateli UE, EFTA, Konfederacji Szwajcarskiej lub członków ich rodzin) lub więcej niż 30 dni (pobyt czasowy, dotyczy obywateli niekwalifikujących się do powyższej grupy)."
+          en: "You register a temporary stay if you live at an address only temporarily and plan to stay there for more than 3 months (citizens of the EU, EFTA or Switzerland and their family members) or for more than 30 days (people who don't belong to that group)."
+          uk: "Ви реєструєте тимчасове перебування, якщо живете за адресою лише тимчасово і плануєте пробути там понад 3 місяці (громадяни ЄС, ЄАВТ чи Швейцарії та члени їхніх сімей) або понад 30 днів (особи, які не належать до цієї групи)."
+          ru: "Вы регистрируете временное пребывание, если живете по адресу лишь временно и планируете пробыть там более 3 месяцев (граждане ЕС, ЕАСТ или Швейцарии и члены их семей) или более 30 дней (лица, не относящиеся к этой группе)."
+        quotes:
+          - page: https://www.bip.krakow.pl/uslugi/SA-12&metka=1
+            text: "Jeśli mieszkasz w danym miejscu tylko czasowo, a planowany okres przebywania pod tym adresem jest dłuższy niż 3 miesiące (pobyt czasowy, dotyczy obywateli UE, EFTA, Konfederacji Szwajcarskiej lub członków ich rodzin) lub więcej niż 30 dni (pobyt czasowy, dotyczy obywateli niekwalifikujących się do powyższej grupy)."
+          - page: *act
+            text: "Cudzoziemiec niewymieniony w ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej, ma obowiązek zameldować się w miejscu pobytu stałego lub czasowego najpóźniej czwartego dnia, licząc od dnia przybycia do tego miejsca."
+          - page: *act
+            text: *art41-2
+          - page: *act
+            text: *art41-2a
+    - id: no-valid-passport
+      condition:
+        all:
+          - { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+          - { fact: zameldowanie.stay, eq: temporary }
+      statement:
+        value:
+          pl: "W szczególnie uzasadnionym przypadku, gdy cudzoziemiec dokonujący zameldowania się na pobyt czasowy nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość."
+          en: "In particularly justified cases, if you are registering a temporary stay and have no valid travel document and no way of getting one, you may show another document that confirms your identity."
+          uk: "В особливо обґрунтованих випадках, якщо ви реєструєте тимчасове перебування і не маєте дійсного проїзного документа та не можете його отримати, ви можете показати інший документ, що підтверджує вашу особу."
+          ru: "В особо обоснованных случаях, если вы регистрируете временное пребывание и у вас нет действительного проездного документа и нет возможности его получить, вы можете предъявить другой документ, удостоверяющий личность."
+        quotes:
+          - page: *mos-act
+            text: "W szczególnie uzasadnionym przypadku, gdy cudzoziemiec dokonujący zameldowania się na pobyt czasowy nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość."
+    - id: declared-period
+      condition:
+        all:
+          - { not: { fact: zameldowanie.citizen_group, eq: eu_efta } }
+          - { fact: zameldowanie.stay, eq: temporary }
+      statement:
+        value:
+          pl: "Deklarowany przez cudzoziemca niewymienionego w ust. 1–2a okres pobytu czasowego pod określonym adresem nie może przekroczyć okresu, w którym cudzoziemiec ten może legalnie przebywać na terytorium Rzeczypospolitej Polskiej, zgodnie z dokumentem potwierdzającym jego prawo pobytu."
+          en: "If you're not one of the foreigners listed in paragraphs 1–2a of the article (citizens of the EU, EFTA or Switzerland, their family members, and some family members of Polish citizens), the period of temporary stay you declare at an address can't be longer than the time you may legally stay in Poland under the document that confirms your right to stay."
+          uk: "Якщо ви не належите до іноземців, перелічених у частинах 1–2а цієї статті закону (громадяни ЄС, ЄАВТ чи Швейцарії, члени їхніх сімей і деякі члени сімей громадян Польщі), задекларований вами строк тимчасового перебування за адресою не може бути довшим, ніж час, протягом якого ви можете легально перебувати в Польщі згідно з документом, що підтверджує ваше право на перебування."
+          ru: "Если вы не относитесь к иностранцам, перечисленным в частях 1–2а этой статьи закона (граждане ЕС, ЕАСТ или Швейцарии, члены их семей и некоторые члены семей граждан Польши), заявленный вами срок временного пребывания по адресу не может быть дольше, чем время, в течение которого вы можете легально находиться в Польше согласно документу, подтверждающему ваше право на пребывание."
+        quotes:
+          - page: *act
+            text: "Deklarowany przez cudzoziemca niewymienionego w ust. 1–2a okres pobytu czasowego pod określonym adresem nie może przekroczyć okresu, w którym cudzoziemiec ten może legalnie przebywać na terytorium Rzeczypospolitej Polskiej, zgodnie z dokumentem potwierdzającym jego prawo pobytu."
+          - page: https://warszawa19115.pl/-/zameldowanie-na-pobyt-czasowy-cudzoziemcow-w-tym-obywateli-panstw-czlonkowskich-unii-europejskiej-ue-i-czlonkow-ich-rodzin
+            text: "Jeśli nie jesteś obywatelem państwa UE, EFTA lub Konfederacji Szwajcarskiej, ani członkiem rodziny takiego obywatela, deklarowany przez Ciebie okres pobytu pod określonym adresem nie może być dłuższy niż okres, przez który możesz legalnie przebywać w Polsce."
+    - id: short-stay
+      statement:
+        value:
+          pl: "Nie musisz się meldować, jeśli wiesz, że twój pobyt w Polsce nie będzie trwał dłużej niż 30 dni – na przykład, gdy spędzasz w Polsce urlop."
+          en: "You don't have to register if you know your stay in Poland won't last longer than 30 days, for example when you're on holiday in Poland."
+          uk: "Вам не потрібно реєструватися, якщо ви знаєте, що ваше перебування в Польщі триватиме не довше 30 днів, наприклад, коли ви у відпустці в Польщі."
+          ru: "Вам не нужно регистрироваться, если вы знаете, что ваше пребывание в Польше продлится не дольше 30 дней, например, когда вы в отпуске в Польше."
+        quotes:
+          - page: *govpl
+            text: "Nie musisz się meldować, jeśli wiesz, że twój pobyt w Polsce nie będzie trwał dłużej niż 30 dni – na przykład, gdy spędzasz w Polsce urlop."
+    - id: no-owner-confirmation
+      important: true
+      statement:
+        value:
+          pl: "Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy."
+          en: "If you have trouble getting a legal title to the flat or the owner's confirmation, you can still file the registration form."
+          uk: "Якщо у вас проблема з отриманням правового титулу на житло або підтвердження власника, ви все одно можете подати реєстраційний бланк."
+          ru: "Если у вас проблема с получением юридического права на жилье или подтверждения собственника, вы все равно можете подать регистрационный бланк."
+        quotes:
+          - page: *govpl
+            text: "Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy."
+    # The rest of the official "Problem z zameldowaniem" list: where to file and the statement
+    # (content audit of b2bd10d; PESEL journey step 3, owner 2026-10-05).
+    - id: no-owner-where
+      statement:
+        value:
+          pl: "złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,"
+          en: "If you have no document showing your right to the flat or the owner won't confirm, file the registration form at the municipal office of the gmina where the property is."
+          uk: "Якщо такого документа немає або власник не підтверджує, подайте реєстраційний бланк в управлінні гміни, на території якої розташована нерухомість."
+          ru: "Если такого документа нет или собственник не подтверждает, подайте регистрационный бланк в управлении гмины, на территории которой находится недвижимость."
+        quotes:
+          - page: *govpl
+            text: "złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,"
+    - id: no-owner-statement
+      statement:
+        value:
+          pl: "do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,"
+          en: "Attach to the registration form a written statement telling the office why you don't have the required documents."
+          uk: "Додайте до реєстраційного бланка письмове пояснення, чому у вас немає потрібних документів."
+          ru: "Приложите к регистрационному бланку письменное объяснение, почему у вас нет нужных документов."
+        quotes:
+          - page: *govpl
+            text: "do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,"
+    - id: no-owner-procedure
+      statement:
+        value:
+          pl: "urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu."
+          en: "Without the owner's confirmation, the office runs an administrative procedure to establish whether you live at the address. If you do, it issues an administrative decision registering you."
+          uk: "Без підтвердження власника установа проведе адміністративну процедуру й встановить, чи ви живете за цією адресою. Якщо так, вона видасть адміністративне рішення про реєстрацію."
+          ru: "Без подтверждения собственника учреждение проведет административную процедуру и установит, живете ли вы по этому адресу. Если да, оно выдаст административное решение о регистрации."
+        quotes:
+          - page: *govpl
+            text: "urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu."
+    - id: one-place
+      statement:
+        value:
+          pl: "Nie możesz mieć meldunku jednocześnie w 2 miejscach pobytu stałego albo 2 miejscach pobytu czasowego."
+          en: "You can't be registered at 2 permanent or 2 temporary addresses at the same time."
+          uk: "Не можна бути зареєстрованим одночасно за 2 адресами постійного або 2 адресами тимчасового перебування."
+          ru: "Нельзя быть зарегистрированным одновременно по 2 адресам постоянного или 2 адресам временного пребывания."
+        quotes:
+          - page: *govpl
+            text: "Nie możesz mieć meldunku jednocześnie w 2 miejscach pobytu stałego albo 2 miejscach pobytu czasowego."
+  outcome:
+    value:
+      pl: "Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia."
+      en: "The official registers you as soon as they receive your form."
+      uk: "Посадовець зареєструє вас одразу після отримання вашого реєстраційного бланка."
+      ru: "Сотрудник зарегистрирует вас сразу после получения вашего регистрационного бланка."
+    quotes:
+      - page: *govpl
+        text: "Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia."
+  handoff:
+    when:
+      pl: Jeśli nie zdążysz w terminie, właściciel nie chce potwierdzić Twojego pobytu albo urząd odmawia zameldowania. W sprawie terminu możesz też zapytać w urzędzie gminy.
+      en: If you've missed the deadline, the owner won't confirm that you live there, or the office refuses to register you. About the deadline you can also ask the municipal office.
+      uk: Якщо ви не встигли в строк, власник не хоче підтвердити ваше проживання або установа відмовляє в реєстрації. Щодо строку можна також запитати в управлінні гміни.
+      ru: Если вы не успели в срок, собственник не хочет подтвердить ваше проживание или учреждение отказывает в регистрации. По поводу срока можно также спросить в управлении гмины.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная юридическая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/2026/384
+  sourceIds: [eli-ewidencja-ludnosci, eli-cudzoziemcy-mos, eli-obywatele-ue, gov-pl-zameldowanie-cudzoziemcy, gov-pl-pesel-cudzoziemcy, warszawa-19115-cudzoziemcy, krakow-bip-cudzoziemcy]

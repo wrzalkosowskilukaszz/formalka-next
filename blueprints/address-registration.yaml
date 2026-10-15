@@ -1,0 +1,33 @@
+# Case blueprint: address registration (zameldowanie) for a foreigner. One route. The deadline reads
+# "najpóźniej w N dniu od zamieszkania": whether the move-in day is day 1 is open (06 §7 Q3), so the
+# engine keeps both readings and reminds on the earlier one.
+id: address-registration
+title: { pl: Zameldowanie }
+caretaker: { name: Asia }
+routes: [zameldowanie-foreigner]
+routeLevel:
+  id: route
+  title: { pl: Twoja sytuacja }
+levels:
+  - id: fill-in
+    title: { pl: Formularz }
+    steps: { zameldowanie-foreigner: fill-in }
+  - id: owner-confirms
+    title: { pl: Potwierdzenie właściciela }
+    steps: { zameldowanie-foreigner: owner-confirms }
+  - id: file
+    title: { pl: Wizyta w urzędzie gminy }
+    steps: { zameldowanie-foreigner: file }
+    documents: true
+    fees: true
+    submits: true
+    completesWith: registered
+  - id: registered
+    title: { pl: Zameldowanie }
+    steps: { zameldowanie-foreigner: registered }
+deadlines:
+  other-citizens: { level: file, counting: nth-day, role: user }
+  eu-efta: { level: file, counting: nth-day, role: user }
+events:
+  arrival_at_address: { label: { pl: Dzień, od którego mieszkasz pod tym adresem } }
+  registered: { label: { pl: Dzień zameldowania } }

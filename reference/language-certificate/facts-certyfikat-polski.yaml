@@ -1,0 +1,52 @@
+# Intake questions for the Polish language certificate guide. Category answers only (ADR-0009);
+# "I don't know" is always offered (rule 6). The purpose decides which proofs count (design
+# review, 2026-10-02); for citizenship, a certificate from a school taught in Polish can replace
+# the exam certificate.
+
+- key: certyfikat.purpose
+  kind: choice
+  question:
+    pl: Do czego ta osoba potrzebuje certyfikatu?
+    en: What does this person need the certificate for?
+    uk: Для чого цій особі потрібен сертифікат?
+    ru: Для чего этому человеку нужен сертификат?
+  whyWeAsk:
+    pl: Przy uznaniu za obywatela polskiego i przy zezwoleniu rezydenta długoterminowego UE liczą się różne dokumenty.
+    en: Different documents count for recognition as a Polish citizen and for the EU long-term resident permit.
+    uk: Для визнання громадянином Польщі та для дозволу довгострокового резидента ЄС підходять різні документи.
+    ru: Для признания гражданином Польши и для разрешения долгосрочного резидента ЕС подходят разные документы.
+  unknownHelp:
+    pl: Pokażemy, jakie dokumenty liczą się przy obywatelstwie, a jakie przy zezwoleniu UE.
+    en: We'll show which documents count for citizenship and which for the EU permit.
+    uk: Ми покажемо, які документи підходять для громадянства, а які для дозволу ЄС.
+    ru: Мы покажем, какие документы подходят для гражданства, а какие для разрешения ЕС.
+  options:
+    - value: citizenship
+      label: { pl: Do uznania za obywatela polskiego, en: For recognition as a Polish citizen, uk: Для визнання громадянином Польщі, ru: Для признания гражданином Польши }
+    - value: eu_long_term
+      label: { pl: Do zezwolenia rezydenta długoterminowego UE, en: For an EU long-term resident permit, uk: Для дозволу довгострокового резидента ЄС, ru: Для разрешения долгосрочного резидента ЕС }
+    - value: other
+      label: { pl: Do czegoś innego, en: For something else, uk: Для чогось іншого, ru: Для чего-то другого }
+
+- key: certyfikat.school_in_polish
+  kind: choice
+  question:
+    pl: Czy ta osoba ukończyła szkołę w Polsce albo szkołę za granicą z polskim językiem wykładowym (szkołę, nie uczelnię ani szkołę policealną)?
+    en: Has this person finished a school in Poland, or a school abroad taught in Polish (a school, not a university or a post-secondary school)?
+    uk: Чи закінчила ця особа школу в Польщі або школу за кордоном з польською мовою навчання (школу, а не університет чи післясередню школу)?
+    ru: Есть ли у этого человека свидетельство об окончании школы в Польше или школы за границей с польским языком обучения (школу, а не вуз или послесреднюю школу)?
+  whyWeAsk:
+    pl: Przy uznaniu za obywatela polskiego świadectwo takiej szkoły może zastąpić certyfikat.
+    en: For recognition as a Polish citizen, a certificate from such a school can take the place of the language certificate.
+    uk: Для визнання громадянином Польщі свідоцтво такої школи може замінити сертифікат.
+    ru: Для признания гражданином Польши свидетельство такой школы может заменить сертификат.
+  unknownHelp:
+    pl: Pokażemy, jakie świadectwa ustawa o obywatelstwie przyjmuje zamiast certyfikatu.
+    en: We'll show which school certificates the citizenship act accepts instead of the language certificate.
+    uk: Ми покажемо, які свідоцтва закон про громадянство приймає замість сертифіката.
+    ru: Мы покажем, какие свидетельства закон о гражданстве принимает вместо сертификата.
+  options:
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }

@@ -1,0 +1,684 @@
+# PESEL number for foreigners: the standalone application (nadanie numeru PESEL na wniosek),
+# hand-authored from the gov.pl service card, with the Warsaw and Kraków city layers
+# (PESEL-01, ADR-0011). The other way to a PESEL, address registration (zameldowanie), is its
+# own procedure (next).
+#
+# Every quote names the official page it comes from (`page`); the `load-procedures` job
+# resolves it to the latest snapshot of that page and publishes only if every quote is found
+# there. Polish statements are verbatim official wording; en/uk are our translations of it.
+#
+# Known conflict (JOURNEYS.md §5): Kraków's card SA-34 still says anyone may file through a
+# proxy, while the gov.pl card and Warsaw say that people other than EU/EFTA/Swiss/UK citizens
+# and their families must file in person since 1 January 2026. We show the national rule to
+# everyone, and Kraków's wording as `differs` in its place layer, next to it, so the guide is
+# marked "sources disagree" (rule 4).
+
+- id: pesel-application
+  domain: pesel
+  related: [zameldowanie-foreigner]
+  riskClass: A
+  verificationLevel: sources_disagree
+  checkedAt: "2026-10-01"
+  title:
+    pl: Numer PESEL na wniosek
+    en: Getting a PESEL number by application
+    uk: Номер PESEL за заявою
+    ru: Номер PESEL по заявлению
+  summary:
+    pl: Jak dostać numer PESEL, jeśli nie możesz się zameldować, a urząd go od Ciebie wymaga. Wniosek składasz w urzędzie gminy.
+    en: How to get a PESEL number if you can't register your address and an office requires one from you. You file the application at a municipal office.
+    uk: Як отримати номер PESEL, якщо ви не можете зареєструвати адресу, а установа його вимагає. Заяву подають в управлінні гміни.
+    ru: Как получить номер PESEL, если вы не можете зарегистрировать адрес, а учреждение его требует. Заявление подают в управлении гмины.
+  applicability:
+    rule: { fact: pesel.stay_over_30, eq: "no" }
+    conditions:
+      - id: cannot-register-and-required
+        rule: { fact: pesel.stay_over_30, eq: "no" }
+        # Partial twice over: we don't ask whether an office requires the number (UX audit F9),
+        # and "no" to pesel.stay_over_30 stands in for the official "nie możesz się zameldować"
+        # (a stay of 30 days or less is exempt from registration, not barred from it; content
+        # audit 2026-10-05). The quote is always shown verbatim.
+        partial: true
+        statement:
+          value:
+            pl: "Jeśli nie możesz się zameldować, a jakiś urząd wymaga od ciebie numeru PESEL – złóż wniosek."
+            en: "If you can't register your address and an office requires a PESEL number from you, file an application."
+            uk: "Якщо ви не можете зареєструвати адресу, а якась установа вимагає від вас номер PESEL, подайте заяву."
+            ru: "Если вы не можете зарегистрировать адрес, а какое-либо учреждение требует от вас номер PESEL, подайте заявление."
+          quotes:
+            - page: &govpl https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow
+              text: "Jeśli nie możesz się zameldować, a jakiś urząd wymaga od ciebie numeru PESEL – złóż wniosek."
+  requiredFacts:
+    - pesel.has_number
+    - pesel.temporary_protection
+    - pesel.stay_over_30
+    - pesel.citizen_group
+  steps:
+    - id: fill-in
+      title:
+        pl: Wypełnij wniosek
+        en: Fill in the application
+        uk: Заповніть заяву
+        ru: Заполните заявление
+      description:
+        pl: Wniosek pobierzesz ze strony albo dostaniesz w urzędzie gminy. Podpisz go własnoręcznie.
+        en: Download the application form or get it at the municipal office. Sign it by hand.
+        uk: Бланк заяви можна завантажити або отримати в управлінні гміни. Підпишіть його власноруч.
+        ru: Бланк заявления можно скачать или получить в управлении гмины. Подпишите его собственноручно.
+      channels: [in_person]
+      # The official form (EL/W/1, verified 2026-10-03: PDF, Polish), also on Documents.
+      links:
+        - &form
+          url: https://www.gov.pl/attachment/2098ee8f-6401-4bf6-b046-626377a446a9
+          title:
+            pl: Pobierz wniosek o nadanie numeru PESEL (PDF, po polsku)
+            en: Download the PESEL application form (PDF, in Polish)
+            uk: Завантажити заяву про присвоєння номера PESEL (PDF, польською)
+            ru: Скачать заявление о присвоении номера PESEL (PDF, на польском)
+      quotes:
+        - page: *govpl
+          text: "wniosek o nadanie numeru PESEL – otwórz plik w nowym oknie – pobierz i wypełnij w domu. Możesz też dostać go w urzędzie gminy,"
+        - page: *govpl
+          text: "Wniosek należy własnoręcznie podpisać."
+    - id: file
+      title:
+        pl: Złóż wniosek w urzędzie gminy
+        en: File the application at a municipal office
+        uk: Подайте заяву в управлінні гміни
+        ru: Подайте заявление в управлении гмины
+      description:
+        pl: Możesz wybrać dowolny urząd gminy w Polsce.
+        en: You can choose any municipal office in Poland.
+        uk: Можна обрати будь-яке управління гміни в Польщі.
+        ru: Можно выбрать любое управление гмины в Польше.
+      dependsOn: [fill-in]
+      channels: [in_person]
+      officeKind: municipal_office
+      quotes:
+        - page: *govpl
+          text: "Złóż wniosek w dowolnym urzędzie gminy – jeśli nie możesz się zameldować, a potrzebujesz numeru PESEL."
+    - id: notification
+      title:
+        pl: Odbierz powiadomienie o nadaniu numeru PESEL
+        en: Receive the notice that a PESEL number was assigned
+        uk: Отримайте повідомлення про присвоєння номера PESEL
+        ru: Получите уведомление о присвоении номера PESEL
+      dependsOn: [file]
+      channels: [in_person]
+      officeKind: municipal_office
+      quotes:
+        - page: *govpl
+          text: "Urzędnik przyjmie twoje zgłoszenie od razu. Jeśli jest podstawa do nadania numeru PESEL – dostaniesz powiadomienie o nadaniu numeru PESEL."
+  documents:
+    - id: application
+      namePl:
+        value: wniosek o nadanie numeru PESEL
+        quotes:
+          - page: *govpl
+            text: "wniosek o nadanie numeru PESEL – otwórz plik w nowym oknie – pobierz i wypełnij w domu. Możesz też dostać go w urzędzie gminy,"
+      description:
+        pl: Formularz wniosku, podpisany własnoręcznie.
+        en: The application form, signed by hand.
+        uk: Бланк заяви, підписаний власноруч.
+        ru: Бланк заявления, подписанный собственноручно.
+      form: original
+      links: [*form]
+    # "One of these" (PESEL journey step 6, owner 2026-10-05): the act lists the travel document
+    # for everyone, another ID with citizenship for EU/EFTA/Swiss citizens, and another ID only
+    # in a specially justified case; one block of text read as "bring all of these".
+    - id: identity
+      namePl:
+        value: ważny dokument podróży
+        quotes:
+          - page: &act https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf
+            text: "Podstawę rejestracji danych cudzoziemca stanowi ważny dokument podróży, a w przypadku obywatela państwa członkowskiego Unii Europejskiej, obywatela państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub obywatela Konfederacji Szwajcarskiej – również inny dokument potwierdzający tożsamość i obywatelstwo."
+          - page: *govpl
+            text: "dokument, który potwierdzi twoją tożsamość i inne dane, które wpiszesz we wniosku."
+          - page: &krakow-doc https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+            text: "Dowód osobisty lub paszport (do wglądu)."
+      description:
+        pl: Na przykład paszport.
+        en: For example, a passport.
+        uk: Наприклад, паспорт.
+        ru: Например, паспорт.
+      form: original
+    - id: identity-eu
+      condition: { not: { fact: pesel.citizen_group, eq: other } }
+      alternativeTo: [identity]
+      namePl:
+        value: inny dokument potwierdzający tożsamość i obywatelstwo
+        quotes:
+          - page: *krakow-doc
+            text: "Przygotuj ważny dokument podróży lub – jeśli jesteś obywatelem państwa członkowskiego UE, EFTA lub Konfederacji Szwajcarskiej - inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo (dowód osobisty)."
+          - page: *act
+            text: "Podstawę rejestracji danych cudzoziemca stanowi ważny dokument podróży, a w przypadku obywatela państwa członkowskiego Unii Europejskiej, obywatela państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub obywatela Konfederacji Szwajcarskiej – również inny dokument potwierdzający tożsamość i obywatelstwo."
+      description:
+        pl: Tylko sami obywatele UE, EFTA i Szwajcarii, na przykład dowód osobisty. Przepis nie wymienia tu obywateli Wielkiej Brytanii ani członków rodziny.
+        en: Only for citizens of EU and EFTA countries and Switzerland themselves, for example an identity card. The act doesn't name UK citizens or family members here.
+        uk: Лише для самих громадян ЄС, ЄАВТ і Швейцарії, наприклад посвідчення особи. Закон тут не згадує громадян Великої Британії чи членів сім'ї.
+        ru: Только для самих граждан ЕС, ЕАСТ и Швейцарии, например удостоверение личности. Закон здесь не называет граждан Великобритании или членов семьи.
+      form: original
+    - id: identity-exceptional
+      alternativeTo: [identity]
+      namePl:
+        value: inny dokument potwierdzający tożsamość
+        quotes:
+          - page: *act
+            text: "W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, podstawę rejestracji danych może stanowić inny dokument potwierdzający tożsamość."
+      description:
+        pl: Wyjątkowo, gdy nie masz ważnego dokumentu podróży i nie możesz go zdobyć. To szczególnie uzasadniony przypadek, więc zapytaj w urzędzie gminy, czy Twój dokument wystarczy.
+        en: Exceptionally, if you have no valid travel document and can't get one. It's for a specially justified case, so ask the municipal office whether your document will do.
+        uk: Винятково, якщо у вас немає чинного проїзного документа і ви не можете його отримати. Це особливо обґрунтований випадок, тож запитайте в управлінні гміни, чи підійде ваш документ.
+        ru: В исключительных случаях, если у вас нет действительного проездного документа и вы не можете его получить. Это особо обоснованный случай, поэтому спросите в управлении гмины, подойдёт ли ваш документ.
+      form: original
+    # Not an alternative: the other details in the application need their documents too (gov.pl,
+    # act art. 18 ust. 2 "udokumentowane dane"; content audit of cd16aa2).
+    - id: other-data
+      namePl:
+        value: oryginalne dokumenty (do wglądu) potwierdzające pozostałe dane
+        quotes:
+          - page: *krakow-doc
+            text: "Przygotuj oryginalne dokumenty (do wglądu) potwierdzające pozostałe dane, jeśli zawarłeś je we wniosku (stanu cywilnego) – (szczegóły w sekcji „Wymagane dokumenty”)."
+          - page: *govpl
+            text: "dokument, który potwierdzi twoją tożsamość i inne dane, które wpiszesz we wniosku."
+          - page: *act
+            text: "Wniosek o nadanie numeru PESEL zawiera wskazanie podstawy prawnej oraz udokumentowane dane, o których mowa w art. 8 pkt 1–9, 11–13, 15 i 22–24a, z uwzględnieniem art. 9 i art. 12."
+      description:
+        pl: Dokumenty potwierdzające inne dane, które wpiszesz we wniosku, na przykład o stanie cywilnym. Zapytaj w urzędzie, które dokładnie.
+        en: Documents confirming the other details you write in the application, for example your civil status. Ask the office which ones exactly.
+        uk: Документи, що підтверджують інші дані, які ви впишете в заяву, наприклад про сімейний стан. Запитайте в установі, які саме.
+        ru: Документы, подтверждающие другие данные, которые вы впишете в заявление, например о семейном положении. Спросите в учреждении, какие именно.
+      form: original
+  fees:
+    - id: free
+      purpose:
+        pl: Wniosek o nadanie numeru PESEL
+        en: The PESEL application
+        uk: Заява про присвоєння PESEL
+        ru: Заявление о присвоении PESEL
+      amountPln:
+        value: 0
+        quotes:
+          - page: *govpl
+            text: "Usługa jest bezpłatna."
+    # The register check (PESEL journey step 2): only for someone who has, or may have, a number.
+    - id: check-online-free
+      optional: true
+      condition: { fact: pesel.has_number, eq: "yes" }
+      purpose:
+        pl: Sprawdzenie danych w rejestrze PESEL i pobranie zaświadczenia online
+        en: Checking your data in the PESEL register and downloading the certificate online
+        uk: Онлайн-перевірка даних у реєстрі PESEL і завантаження довідки
+        ru: Онлайн-проверка данных в реестре PESEL и скачивание справки
+      amountPln:
+        value: 0
+        quotes:
+          - page: &sprawdz https://www.gov.pl/web/gov/sprawdz-swoje-dane-w-rejestrze-pesel
+            text: "Usługa jest bezpłatna."
+    - id: check-office-certificate
+      optional: true
+      condition: { fact: pesel.has_number, eq: "yes" }
+      purpose:
+        pl: Zaświadczenie z rejestru PESEL w urzędzie gminy, za każdą osobę
+        en: Certificate from the PESEL register at a municipal office, per person
+        uk: Довідка з реєстру PESEL в управлінні гміни, за кожну особу
+        ru: Справка из реестра PESEL в управлении гмины, за каждого человека
+      amountPln:
+        value: 17
+        quotes:
+          - page: *sprawdz
+            text: "Opłata skarbowa wynosi 17 zł za każdą osobę."
+  deadlines:
+    # The PESEL UKR deadline, for a reader under temporary protection (journey test of cd16aa2: it
+    # was only in "worth knowing", while Deadlines showed the 7 days of the other application).
+    # It runs from arrival: people who already hold PESEL UKR (phase-out act DU/2026/203 art. 24
+    # pkt 2) or the UDSC certificate (art. 20) have other rules, as the PESEL UKR guide says.
+    - id: ukr-application
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      description:
+        pl: Na wniosek o numer PESEL ze statusem UKR po przyjeździe, licząc od dnia przekroczenia granicy Polski. Kto ma już PESEL ze statusem UKR albo zaświadczenie UDSC o ochronie czasowej, ma osobne zasady, opisane w przewodniku o PESEL ze statusem UKR.
+        en: For the application for a PESEL with UKR status after arriving, counted from the day you cross the Polish border. People who already have a PESEL with UKR status or the UDSC certificate of temporary protection have their own rules, described in the guide on PESEL with UKR status.
+        uk: На заяву на PESEL зі статусом UKR після приїзду, від дня перетину кордону Польщі. Для тих, хто вже має PESEL зі статусом UKR або довідку UDSC про тимчасовий захист, діють окремі правила, описані в путівнику про PESEL зі статусом UKR.
+        ru: На заявление на PESEL со статусом UKR после приезда, со дня пересечения границы Польши. Для тех, у кого уже есть PESEL со статусом UKR или справка UDSC о временной защите, действуют отдельные правила, описанные в путеводителе о PESEL со статусом UKR.
+      rule:
+        value: { kind: relative, amount: 30, unit: day, from: border_crossing }
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf
+            text: "Wniosek, o którym mowa w ust. 1, składa się w terminie 30 dni od dnia przekroczenia granicy Rzeczypospolitej Polskiej."
+      consequence:
+        value:
+          pl: "1) cudzoziemiec nie złożył wniosku, o którym mowa w art. 110a ust. 1, w terminie określonym w art. 110a ust. 2;"
+          en: "Temporary protection ends if the person doesn't file the application for a PESEL with UKR status within those 30 days."
+          uk: "Тимчасовий захист припиняється, якщо особа не подала заяву на PESEL зі статусом UKR протягом цих 30 днів."
+          ru: "Временная защита прекращается, если человек не подал заявление на PESEL со статусом UKR в течение этих 30 дней."
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf
+            text: "Ochrona czasowa wygasa, w przypadku gdy:"
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf
+            text: "1) cudzoziemiec nie złożył wniosku, o którym mowa w art. 110a ust. 1, w terminie określonym w art. 110a ust. 2;"
+    - id: fix-missing
+      description:
+        pl: Na usunięcie braków we wniosku, jeśli urząd Cię do tego wezwie.
+        en: To complete the application if the office asks you to.
+        uk: На усунення недоліків заяви, якщо установа вас про це попросить.
+        ru: На устранение недостатков заявления, если учреждение попросит вас об этом.
+      rule:
+        value: { kind: relative, amount: 7, unit: day, from: request_delivered }
+        quotes:
+          - page: *act
+            text: "Jeżeli wniosek nie spełnia wymogów, o których mowa w ust. 2, należy wezwać wnioskodawcę do usunięcia braków w terminie 7 dni z pouczeniem, że ich nieusunięcie spowoduje pozostawienie wniosku bez rozpoznania."
+          - page: https://warszawa19115.pl/-/nadanie-numeru-pesel-na-wniosek-cudzoziemca-ktory-nie-jest-obywatelem-krajow-ue-efta-wielkiej-brytanii-lub-czlonkiem-ich-rodzin
+            text: "Jeżeli wniosek nie będzie spełniał wymogów określonych w przepisach, wezwiemy Cię do usunięcia braków. Jeśli tego nie zrobisz w ciągu 7 dni, Twój wniosek zostawimy bez rozpoznania."
+      consequence:
+        value:
+          pl: "Jeżeli wniosek nie spełnia wymogów, o których mowa w ust. 2, należy wezwać wnioskodawcę do usunięcia braków w terminie 7 dni z pouczeniem, że ich nieusunięcie spowoduje pozostawienie wniosku bez rozpoznania."
+          en: "If the application doesn't meet the requirements, the office asks you to complete it within 7 days. If you don't, the application won't be considered."
+          uk: "Якщо заява не відповідає вимогам, установа попросить усунути недоліки протягом 7 днів. Якщо їх не усунуто, заяву залишать без розгляду."
+          ru: "Если заявление не соответствует требованиям, учреждение попросит устранить недостатки в течение 7 дней. Если они не устранены, заявление оставят без рассмотрения."
+        quotes:
+          - page: *act
+            text: "Jeżeli wniosek nie spełnia wymogów, o których mowa w ust. 2, należy wezwać wnioskodawcę do usunięcia braków w terminie 7 dni z pouczeniem, że ich nieusunięcie spowoduje pozostawienie wniosku bez rozpoznania."
+  variations:
+    - id: warszawa
+      territory: ["1465011"]
+      note:
+        value:
+          pl: "Wniosek musisz złożyć osobiście w dowolnej delegaturze Biura Administracji i Spraw Obywatelskich w Warszawie."
+          en: "You must file the application in person at any district office (delegatura) of the Office of Administration and Civic Affairs in Warsaw."
+          uk: "Заяву потрібно подати особисто в будь-якому районному відділенні (delegatura) Бюро адміністрації та громадянських справ у Варшаві."
+          ru: "Заявление нужно подать лично в любом районном отделении (delegatura) Бюро администрации и гражданских дел в Варшаве."
+        quotes:
+          - page: &warszawa https://warszawa19115.pl/-/nadanie-numeru-pesel-na-wniosek-cudzoziemca-ktory-nie-jest-obywatelem-krajow-ue-efta-wielkiej-brytanii-lub-czlonkiem-ich-rodzin
+            text: "Wniosek musisz złożyć osobiście w dowolnej delegaturze Biura Administracji i Spraw Obywatelskich w Warszawie."
+      officeIds:
+        - warszawa-baiso-bemowo
+        - warszawa-baiso-bialoleka
+        - warszawa-baiso-bielany
+        - warszawa-baiso-mokotow
+        - warszawa-baiso-ochota
+        - warszawa-baiso-praga-poludnie
+        - warszawa-baiso-praga-polnoc
+        - warszawa-baiso-rembertow
+        - warszawa-baiso-srodmiescie
+        - warszawa-baiso-targowek
+        - warszawa-baiso-ursus
+        - warszawa-baiso-ursynow
+        - warszawa-baiso-wawer
+        - warszawa-baiso-wesola
+        - warszawa-baiso-wilanow
+        - warszawa-baiso-wlochy
+        - warszawa-baiso-wola
+        - warszawa-baiso-zoliborz
+    - id: krakow
+      territory: ["1261011"]
+      note:
+        value:
+          pl: "Sprawa załatwiana jest niezwłocznie, nie później niż w terminie 30 dni od złożenia wniosku."
+          en: "The matter is handled without delay, no later than 30 days after you file the application."
+          uk: "Справу розглядають невідкладно, не пізніше ніж через 30 днів після подання заяви."
+          ru: "Дело рассматривают безотлагательно, не позднее чем через 30 дней после подачи заявления."
+        quotes:
+          - page: &krakow https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+            text: "Sprawa załatwiana jest niezwłocznie, nie później niż w terminie 30 dni od złożenia wniosku."
+      differs:
+        value:
+          pl: "Możesz złożyć wniosek osobiście lub może to zrobić w Twoim imieniu pełnomocnik."
+          en: "You can file the application in person, or a proxy can do it on your behalf."
+          uk: "Ви можете подати заяву особисто, або це може зробити від вашого імені уповноважена особа."
+          ru: "Вы можете подать заявление лично, или это может сделать от вашего имени уполномоченное лицо."
+        quotes:
+          - page: *krakow
+            text: "Możesz złożyć wniosek osobiście lub może to zrobić w Twoim imieniu pełnomocnik."
+      officeIds:
+        - krakow-wsa-i-vii
+        - krakow-wsa-viii-xiii
+        - krakow-wsa-xiv-xviii
+  pitfalls:
+    # Someone who has, or may have, a number: the quoted ways to check it (PESEL journey step 2).
+    # Situational, not "most important": they matter only after "yes" or "don't know", and the
+    # summary's check-first notice leads there (code, copy and content reviews of 19d54a5). The
+    # official check assumes the person knows their number ("Każdy, kto ma numer PESEL"), so the
+    # office request line is quoted too, and the 17 zł is in fees with its purpose.
+    - id: check-online
+      condition: { fact: pesel.has_number, eq: "yes" }
+      statement:
+        value:
+          pl: "Teraz możesz sprawdzić, jakie dane twoje lub twojego dziecka są przetwarzane w rejestrze PESEL, i pobrać zaświadczenie online."
+          en: "You can now check online what data about you or your child is held in the PESEL register, and download a certificate."
+          uk: "Тепер ви можете онлайн перевірити, які ваші дані чи дані вашої дитини обробляються в реєстрі PESEL, і завантажити довідку."
+          ru: "Теперь вы можете онлайн проверить, какие ваши данные или данные вашего ребёнка обрабатываются в реестре PESEL, и скачать справку."
+        quotes:
+          - page: *sprawdz
+            text: "Teraz możesz sprawdzić, jakie dane twoje lub twojego dziecka są przetwarzane w rejestrze PESEL, i pobrać zaświadczenie online."
+    - id: check-online-login
+      condition: { fact: pesel.has_number, eq: "yes" }
+      statement:
+        value:
+          pl: "Aby pobrać ten dokument – potrzebujesz profilu zaufanego, podpisu kwalifikowanego lub e-dowodu."
+          en: "To download the certificate online, you need a Trusted Profile (profil zaufany), a qualified electronic signature or a Polish electronic ID card."
+          uk: "Щоб завантажити довідку онлайн, потрібен довірений профіль (profil zaufany), кваліфікований електронний підпис або польське електронне посвідчення особи."
+          ru: "Чтобы скачать справку онлайн, нужен доверенный профиль (profil zaufany), квалифицированная электронная подпись или польское электронное удостоверение личности."
+        quotes:
+          - page: *sprawdz
+            text: "Aby pobrać ten dokument – potrzebujesz profilu zaufanego, podpisu kwalifikowanego lub e-dowodu."
+    - id: check-online-e-doreczenia
+      condition: { fact: pesel.has_number, eq: "yes" }
+      statement:
+        value:
+          pl: "Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń."
+          en: "Since 1 January 2026, you can check your data and download the certificate online only through e-Delivery (e-Doręczenia)."
+          uk: "З 1 січня 2026 року перевірити дані й завантажити довідку онлайн можна лише через електронне вручення (e-Doręczenia)."
+          ru: "С 1 января 2026 года проверить данные и скачать справку онлайн можно только через электронное вручение (e-Doręczenia)."
+        quotes:
+          - page: *sprawdz
+            text: "Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń."
+    - id: check-at-office
+      condition: { fact: pesel.has_number, eq: "yes" }
+      statement:
+        value:
+          pl: "Zaświadczenie, jakie dane twoje lub twojego dziecka są przetwarzane w rejestrze PESEL, możesz też uzyskać w dowolnym urzędzie gminy."
+          en: "At any municipal office, you can also get a certificate showing what data about you or your child is held in the PESEL register."
+          uk: "Довідку про те, які ваші дані чи дані вашої дитини обробляються в реєстрі PESEL, можна також отримати в будь-якому управлінні гміни."
+          ru: "Справку о том, какие ваши данные или данные вашего ребёнка обрабатываются в реестре PESEL, можно также получить в любом управлении гмины."
+        quotes:
+          - page: *sprawdz
+            text: "Zaświadczenie, jakie dane twoje lub twojego dziecka są przetwarzane w rejestrze PESEL, możesz też uzyskać w dowolnym urzędzie gminy."
+    - id: check-at-office-request
+      condition: { fact: pesel.has_number, eq: "yes" }
+      statement:
+        value:
+          pl: "Napisz wniosek i podaj w nim swoje imię i nazwisko, numer PESEL oraz adres korespondencyjny."
+          en: "At the office, write a request with your first name and surname, your PESEL number and your postal address."
+          uk: "В управлінні напишіть заяву і вкажіть у ній своє ім'я та прізвище, номер PESEL і адресу для листування."
+          ru: "В управлении напишите заявление и укажите в нём своё имя и фамилию, номер PESEL и почтовый адрес."
+        quotes:
+          - page: *sprawdz
+            text: "Napisz wniosek i podaj w nim swoje imię i nazwisko, numer PESEL oraz adres korespondencyjny."
+    - id: in-person
+      important: true
+      condition: { not: { fact: pesel.citizen_group, eq: eu_efta_ch_uk } }
+      statement:
+        value:
+          # UX audit F10: the sentence began mid-way ("wniosek … musisz złożyć osobiście"); the
+          # whole span names who it is for, so it holds for "I don't know" too (content audit).
+          pl: "Jeśli nie jesteś:\n- obywatelem państwa członkowskiego Unii Europejskiej,\n- obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) - strony umowy o Europejskim Obszarze Gospodarczym,\n- obywatelem Konfederacji Szwajcarskiej bądź członkiem jego rodziny,\n- obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm. 12 ), bądź członkiem jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy\nwniosek o nadanie numeru PESEL musisz złożyć osobiście w dowolnym organie gminy. Nie dotyczy to dzieci urodzonych na terytorium Rzeczypospolitej Polskiej."
+          en: "If you belong to none of these groups: citizens of a European Union member state, of a European Free Trade Association (EFTA) member state that is a party to the Agreement on the European Economic Area, or of the Swiss Confederation, and their family members; citizens of the United Kingdom covered by Article 10(1)(b) or (d) of the UK Withdrawal Agreement, and their family members covered by Article 10(1)(e) or (f) of that agreement: you must file the PESEL application in person at any municipal authority. This does not apply to children born in Poland."
+          uk: "Якщо ви не належите до жодної з цих груп: громадяни держав-членів Європейського Союзу, держав-членів Європейської асоціації вільної торгівлі (ЄАВТ), які є сторонами Угоди про Європейський економічний простір, чи Швейцарської Конфедерації та члени їхніх сімей; громадяни Сполученого Королівства, на яких поширюється ст. 10 ч. 1 п. b або d Угоди про вихід Сполученого Королівства з ЄС, та члени їхніх сімей, на яких поширюється ст. 10 ч. 1 п. e або f цієї угоди: заяву про присвоєння номера PESEL потрібно подати особисто в будь-якому органі гміни. Це не стосується дітей, народжених на території Польщі."
+          ru: "Если вы не относитесь ни к одной из этих групп: граждане государств-членов Европейского союза, государств-членов Европейской ассоциации свободной торговли (ЕАСТ), которые являются сторонами Соглашения о Европейской экономической зоне, или Швейцарской Конфедерации и члены их семей; граждане Соединенного Королевства, на которых распространяется ст. 10 ч. 1 п. b или d Соглашения о выходе Соединенного Королевства из ЕС, и члены их семей, на которых распространяется ст. 10 ч. 1 п. e или f этого соглашения: заявление о присвоении номера PESEL нужно подать лично в любом органе гмины. Это не касается детей, родившихся на территории Польши."
+        quotes:
+          - page: *govpl
+            text: "Jeśli nie jesteś:\n- obywatelem państwa członkowskiego Unii Europejskiej,\n- obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) - strony umowy o Europejskim Obszarze Gospodarczym,\n- obywatelem Konfederacji Szwajcarskiej bądź członkiem jego rodziny,\n- obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm. 12 ), bądź członkiem jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy\nwniosek o nadanie numeru PESEL musisz złożyć osobiście w dowolnym organie gminy. Nie dotyczy to dzieci urodzonych na terytorium Rzeczypospolitej Polskiej."
+          - page: *act
+            text: "Jeżeli osoba, której dotyczy wniosek o nadanie numeru PESEL, określona w art. 7 ust. 2, jest cudzoziemcem niebędącym:"
+          - page: *act
+            text: "– wymagane jest jej osobiste stawiennictwo, z wyjątkiem dzieci urodzonych na terytorium Rzeczypospolitej Polskiej."
+    # PESEL UKR: its own application, filed within 30 days of crossing the border (protection act
+    # art. 110a, consolidated text Dz.U. 2026 poz. 862), and not the CUKR residence card (owner,
+    # 2026-10-05; PESEL journey step 5).
+    - id: ukr-route
+      important: true
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      statement:
+        value:
+          pl: "Beneficjentowi ochrony czasowej na wniosek złożony w dowolnym organie gminy na terytorium Rzeczypospolitej Polskiej, nadaje się numer PESEL, o którym mowa w art. 15 ustawy z dnia 24 września 2010 r. o ewidencji ludności (Dz. U. z 2026 r. poz. 384), ze statusem UKR, o którym mowa w art. 8 pkt 24a lit. d ustawy z dnia 24 września 2010 r. o ewidencji ludności."
+          en: "A person under temporary protection is given a PESEL number with UKR status on an application filed at any municipal office in Poland."
+          uk: "Особі під тимчасовим захистом номер PESEL зі статусом UKR присвоюють за заявою, поданою в будь-якому органі гміни в Польщі."
+          ru: "Лицу под временной защитой номер PESEL со статусом UKR присваивают по заявлению, поданному в любой орган гмины в Польше."
+        quotes:
+          - page: &protection https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf
+            text: "Beneficjentowi ochrony czasowej na wniosek złożony w dowolnym organie gminy na terytorium Rzeczypospolitej Polskiej, nadaje się numer PESEL, o którym mowa w art. 15 ustawy z dnia 24 września 2010 r. o ewidencji ludności (Dz. U. z 2026 r. poz. 384), ze statusem UKR, o którym mowa w art. 8 pkt 24a lit. d ustawy z dnia 24 września 2010 r. o ewidencji ludności."
+          - page: *protection
+            text: "Do wniosku, o którym mowa w ust. 1, stosuje się przepisy rozdziału 5a ustawy z dnia 24 września 2010 r. o ewidencji ludności."
+    - id: ukr-deadline
+      important: true
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      statement:
+        value:
+          pl: "Wniosek, o którym mowa w ust. 1, składa się w terminie 30 dni od dnia przekroczenia granicy Rzeczypospolitej Polskiej."
+          en: "The application for a PESEL with UKR status must be filed within 30 days of crossing the Polish border."
+          uk: "Заяву на PESEL зі статусом UKR подають протягом 30 днів від дня перетину кордону Польщі."
+          ru: "Заявление на PESEL со статусом UKR подают в течение 30 дней со дня пересечения границы Польши."
+        quotes:
+          - page: *protection
+            text: "Wniosek, o którym mowa w ust. 1, składa się w terminie 30 dni od dnia przekroczenia granicy Rzeczypospolitej Polskiej."
+    # Arrivals before 5 March 2026 with the certificate confirming temporary protection, issued by
+    # the Head of UDSC (art. 110 ust. 5 as in force then; DU/2026/203 art. 20 ust. 4, reproduced in
+    # the DU/2026/862 announcement; content audits of c1da125 and cd16aa2). No text says how the
+    # 30-day loss rule applies to them: we say nothing about it.
+    - id: ukr-earlier-arrivals
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "Jeżeli cudzoziemiec, któremu przed dniem wejścia w życie niniejszej ustawy wydano zaświadczenie, o którym mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, które do dnia wejścia w życie niniejszej ustawy nie zostało unieważnione, w okresie od dnia 24 lutego 2022 r. i przed wejściem w życie niniejszej ustawy przybył legalnie na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, może być mu nadany na jego wniosek numer PESEL ze statusem UKR bez konieczności ponownego przybycia na terytorium Rzeczypospolitej Polskiej."
+          en: "Someone who came to Poland legally from Ukraine because of the war from 24 February 2022 and before 5 March 2026 (when the act took effect), and who was issued the certificate confirming temporary protection by the Head of the Office for Foreigners (UDSC) (art. 110 ust. 5) that wasn't cancelled by then, can be given a PESEL with UKR status on application without entering Poland again."
+          uk: "Особі, яка законно приїхала до Польщі з України через війну з 24 лютого 2022 р. і раніше 5 березня 2026 р. (коли закон набрав чинності) і якій Голова Управління у справах іноземців (UDSC) видав довідку про тимчасовий захист (ст. 110 ч. 5), не анульовану до того часу, можуть присвоїти PESEL зі статусом UKR за заявою без повторного в'їзду до Польщі."
+          ru: "Лицу, которое законно приехало в Польшу из Украины из-за войны с 24 февраля 2022 г. и раньше 5 марта 2026 г. (когда закон вступил в силу) и которому Глава Управления по делам иностранцев (UDSC) выдал справку о временной защите (ст. 110 ч. 5), не аннулированную до того времени, могут присвоить PESEL со статусом UKR по заявлению без повторного въезда в Польшу."
+        quotes:
+          - page: *protection
+            text: "Jeżeli cudzoziemiec, któremu przed dniem wejścia w życie niniejszej ustawy wydano zaświadczenie, o którym mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, które do dnia wejścia w życie niniejszej ustawy nie zostało unieważnione, w okresie od dnia 24 lutego 2022 r. i przed wejściem w życie niniejszej ustawy przybył legalnie na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, może być mu nadany na jego wniosek numer PESEL ze statusem UKR bez konieczności ponownego przybycia na terytorium Rzeczypospolitej Polskiej."
+    # A child born in Poland to a parent under temporary protection is covered too (art. 106 ust. 2,
+    # with art. 2 pkt 1a). No source we hold gives such a child's deadline: we say nothing about it.
+          - page: *protection
+            text: "W przypadkach, o których mowa w ust. 1, Szef Urzędu do Spraw Cudzoziemców unieważnia zaświadczenie, o którym mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, w sposób określony w art. 110 ust. 10a ustawy zmienianej w art. 4."
+          - page: *protection
+            text: "Ustawa wchodzi w życie z dniem 5 marca 2026 r., z wyjątkiem:"
+    - id: ukr-child-born-in-poland
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "Za legalny uznaje się także pobyt dziecka urodzonego na terytorium Rzeczypospolitej Polskiej, którego rodzicem jest beneficjent ochrony czasowej, o ile dziecko nie jest obywatelem polskim ani obywatelem innego państwa członkowskiego Unii Europejskiej."
+          en: "The stay of a child born in Poland to a parent under temporary protection is also legal, unless the child is a Polish citizen or a citizen of another EU member state."
+          uk: "Законним також вважається перебування дитини, народженої в Польщі, батько чи мати якої перебуває під тимчасовим захистом, якщо дитина не є громадянином Польщі чи іншої держави-члена ЄС."
+          ru: "Законным также считается пребывание ребёнка, родившегося в Польше, родитель которого находится под временной защитой, если ребёнок не является гражданином Польши или другого государства-члена ЕС."
+        quotes:
+          - page: *protection
+            text: "Za legalny uznaje się także pobyt dziecka urodzonego na terytorium Rzeczypospolitej Polskiej, którego rodzicem jest beneficjent ochrony czasowej, o ile dziecko nie jest obywatelem polskim ani obywatelem innego państwa członkowskiego Unii Europejskiej."
+          # The child can be the subject of the PESEL UKR application (act 384 art. 44a ust. 6
+          # pkt 20 lit. c, which says "przez matkę"; art. 106 ust. 2 says "którego rodzicem").
+          - page: *act
+            text: "c) dzieckiem urodzonym na terytorium Rzeczypospolitej Polskiej przez matkę, będącą beneficjentem ochrony czasowej w rozumieniu ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej,"
+    - id: ukr-deadline-missed
+      important: true
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "1) cudzoziemiec nie złożył wniosku, o którym mowa w art. 110a ust. 1, w terminie określonym w art. 110a ust. 2;"
+          en: "Temporary protection ends if the person doesn't file the application for a PESEL with UKR status within those 30 days."
+          uk: "Тимчасовий захист припиняється, якщо особа не подала заяву на PESEL зі статусом UKR протягом цих 30 днів."
+          ru: "Временная защита прекращается, если человек не подал заявление на PESEL со статусом UKR в течение этих 30 дней."
+        quotes:
+          # The lead-in first, so the Polish reads "protection ends if: 1) …" (code and content
+          # reviews of cd16aa2).
+          - page: *protection
+            text: "Ochrona czasowa wygasa, w przypadku gdy:"
+          - page: *protection
+            text: "1) cudzoziemiec nie złożył wniosku, o którym mowa w art. 110a ust. 1, w terminie określonym w art. 110a ust. 2;"
+    - id: ukr-military
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "Jednocześnie, tymczasową ochronę, która trwa obecnie, przyznaje się jedynie tym osobom, które wypełniły swoje obowiązki wojskowe w Ukrainie, po przedstawieniu w stosownych przypadkach, odpowiedniego dowodu. Przepis ten ma zastosowanie już od 5 sierpnia 2026 r.\nOgraniczenia dotyczącego wypełnienia obowiązków wojskowych nie stosuje się do osób korzystających z tymczasowej ochrony w danym państwie członkowskim przed 4 sierpnia 2026 r. oraz w tym dniu, i nieprzerwanie zachowujących status ochronny w tym państwie członkowskim."
+          en: "At the same time, the current temporary protection is granted only to people who have fulfilled their military obligations in Ukraine, on presenting suitable proof where applicable. This rule applies from 5 August 2026.\nThe military obligations condition doesn't apply to people who were benefiting from temporary protection in that member state before and on 4 August 2026 and have kept that status without a break."
+          uk: "Водночас тимчасовий захист, що триває зараз, надається лише особам, які виконали свої військові обов'язки в Україні, з поданням у відповідних випадках належного доказу. Це правило застосовується з 5 серпня 2026 р.\nОбмеження щодо виконання військових обов'язків не застосовується до осіб, які користувалися тимчасовим захистом у цій державі-члені до 4 серпня 2026 р. та в цей день і безперервно зберігають статус захисту в цій державі-члені."
+          ru: "Вместе с тем временная защита, которая действует сейчас, предоставляется только лицам, которые выполнили свои воинские обязанности в Украине, с предъявлением в соответствующих случаях надлежащего доказательства. Это правило применяется с 5 августа 2026 г.\nОграничение, касающееся выполнения воинских обязанностей, не применяется к лицам, которые пользовались временной защитой в данном государстве-члене до 4 августа 2026 г. и в этот день и непрерывно сохраняют статус защиты в этом государстве-члене."
+        quotes:
+          - page: https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-marca-2028-r
+            text: "Jednocześnie, tymczasową ochronę, która trwa obecnie, przyznaje się jedynie tym osobom, które wypełniły swoje obowiązki wojskowe w Ukrainie, po przedstawieniu w stosownych przypadkach, odpowiedniego dowodu. Przepis ten ma zastosowanie już od 5 sierpnia 2026 r.\nOgraniczenia dotyczącego wypełnienia obowiązków wojskowych nie stosuje się do osób korzystających z tymczasowej ochrony w danym państwie członkowskim przed 4 sierpnia 2026 r. oraz w tym dniu, i nieprzerwanie zachowujących status ochronny w tym państwie członkowskim."
+    - id: ukr-not-cukr
+      condition: { fact: pesel.temporary_protection, eq: "yes" }
+      seeProcedures: [cukr]
+      statement:
+        value:
+          pl: "Karta pobytu CUKR to dokument potwierdzający udzielenie zezwolenia na pobyt czasowy, na specjalnych warunkach, wydawany na 3 lata. Wydawana jest osobom ze statusem UKR, które zdecydują się przejść z ochrony czasowej na zezwolenie na pobyt czasowy."
+          en: "The CUKR residence card is a document confirming a temporary residence permit granted on special terms, issued for 3 years. It is issued to people with UKR status who decide to move from temporary protection to a temporary residence permit."
+          uk: "Карта побиту CUKR є документом, що підтверджує надання дозволу на тимчасове перебування на особливих умовах; її видають на 3 роки. Її видають особам зі статусом UKR, які вирішили перейти з тимчасового захисту на дозвіл на тимчасове перебування."
+          ru: "Карта побыту CUKR является документом, подтверждающим предоставление разрешения на временное пребывание на особых условиях; её выдают на 3 года. Её выдают лицам со статусом UKR, которые решили перейти с временной защиты на разрешение на временное пребывание."
+        quotes:
+          - page: https://www.gov.pl/web/udsc/CUKR-procedura
+            text: "Karta pobytu CUKR to dokument potwierdzający udzielenie zezwolenia na pobyt czasowy, na specjalnych warunkach, wydawany na 3 lata. Wydawana jest osobom ze statusem UKR, które zdecydują się przejść z ochrony czasowej na zezwolenie na pobyt czasowy."
+    - id: no-appeal
+      # About assigning a number on application, not about a registration decision: hidden for a
+      # stay over 30 days, where the landlord-refusal route ends in a decision (content audit of
+      # b2bd10d). We say nothing about appealing that decision: no page we hold does.
+      condition: { not: { fact: pesel.stay_over_30, eq: "yes" } }
+      statement:
+        value:
+          pl: "W tej sprawie nie możesz się odwołać."
+          en: "You can't appeal in this matter (assigning a PESEL is a technical act, not a decision)."
+          uk: "У цій справі оскаржити не можна (присвоєння PESEL є технічною дією, а не рішенням)."
+          ru: "В этом деле обжаловать нельзя (присвоение PESEL является технической операцией, а не решением)."
+        quotes:
+          - page: *warszawa
+            text: "W tej sprawie nie możesz się odwołać."
+          - page: *act
+            text: "Nadanie numeru PESEL jest czynnością materialno-techniczną."
+    # Who the application is for (PESEL journey step 4, owner 2026-10-05): a separate law must
+    # require the number (act art. 7 ust. 2 with art. 16 ust. 2). Kraków's service card says it in
+    # plain words; the act is the supporting quote. No source we hold says what an employer's
+    # request counts as, so we say nothing about it beyond the gov.pl line below.
+    - id: who-applies
+      important: true
+      statement:
+        value:
+          pl: "Usługa dotyczy cudzoziemców, którzy na podstawie odrębnych przepisów zobowiązani są do posiadania numeru PESEL, a nie mogą dokonać zameldowania na terenie Polski."
+          en: "This service is for foreigners who are required by other laws to have a PESEL number but can't register an address in Poland."
+          uk: "Ця послуга для іноземців, які за іншими законами зобов'язані мати номер PESEL, але не можуть зареєструвати адресу в Польщі."
+          ru: "Эта услуга для иностранцев, которые по другим законам обязаны иметь номер PESEL, но не могут зарегистрировать адрес в Польше."
+        quotes:
+          - page: *krakow
+            text: "Usługa dotyczy cudzoziemców, którzy na podstawie odrębnych przepisów zobowiązani są do posiadania numeru PESEL, a nie mogą dokonać zameldowania na terenie Polski."
+          - page: *act
+            text: "W rejestrze PESEL mogą być gromadzone dane osób obowiązanych na podstawie odrębnych przepisów do posiadania numeru PESEL."
+          - page: *act
+            text: "Osobie, o której mowa w art. 7 ust. 2, numer PESEL nadaje się na jej wniosek."
+    - id: legal-basis
+      important: true
+      statement:
+        value:
+          pl: "Pamiętaj! We wniosku wpisz faktyczną podstawę prawną, z której wynika obowiązek posiadania numeru PESEL. Jeśli jakiś urząd (na przykład ZUS czy urząd skarbowy) wymaga podania numeru PESEL – powinien wskazać ci również podstawę prawną."
+          en: "Remember: in the application, write the actual legal basis that requires you to have a PESEL number. If an office (for example ZUS or the tax office) asks for your PESEL number, it should also tell you the legal basis."
+          uk: "Пам'ятайте: у заяві впишіть фактичну правову підставу, з якої випливає обов'язок мати номер PESEL. Якщо якась установа (наприклад, ZUS чи податкова) вимагає номер PESEL, вона має вказати й правову підставу."
+          ru: "Помните: в заявлении укажите фактическое правовое основание, из которого следует обязанность иметь номер PESEL. Если какое-либо учреждение (например, ZUS или налоговая) требует номер PESEL, оно должно указать и правовое основание."
+        quotes:
+          - page: *govpl
+            text: "Pamiętaj! We wniosku wpisz faktyczną podstawę prawną, z której wynika obowiązek posiadania numeru PESEL. Jeśli jakiś urząd (na przykład ZUS czy urząd skarbowy) wymaga podania numeru PESEL – powinien wskazać ci również podstawę prawną."
+          - page: *act
+            text: "Wniosek o nadanie numeru PESEL zawiera wskazanie podstawy prawnej oraz udokumentowane dane, o których mowa w art. 8 pkt 1–9, 11–13, 15 i 22–24a, z uwzględnieniem art. 9 i art. 12."
+    - id: register-instead
+      important: true
+      condition: { fact: pesel.stay_over_30, eq: "yes" }
+      statement:
+        value:
+          pl: "Dostaniesz numer PESEL z urzędu – jeśli zameldujesz się w Polsce na pobyt powyżej 30 dni."
+          en: "You'll get a PESEL number automatically if you register your address in Poland for a stay of more than 30 days."
+          uk: "Ви отримаєте номер PESEL автоматично, якщо зареєструєтеся в Польщі на перебування понад 30 днів."
+          ru: "Вы получите номер PESEL автоматически, если зарегистрируетесь в Польше на пребывание более 30 дней."
+        quotes:
+          - page: *govpl
+            text: "Dostaniesz numer PESEL z urzędu – jeśli zameldujesz się w Polsce na pobyt powyżej 30 dni."
+    # A landlord who won't confirm the stay is an obstacle inside registration, not a reason to
+    # apply instead (owner, 2026-10-05; PESEL journey step 3). Quoted from the gov.pl
+    # registration card, next to the automatic-number line, with a link to our registration guide.
+    - id: landlord-refuses
+      condition: { fact: pesel.stay_over_30, eq: "yes" }
+      seeProcedures: [zameldowanie-foreigner]
+      statement:
+        value:
+          pl: "Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy."
+          en: "If it's hard to get a document showing your right to the flat (legal title) or the owner's confirmation, you can still file the registration form."
+          uk: "Якщо вам важко отримати документ, що підтверджує право на житло, або підтвердження власника, ви все одно можете подати реєстраційний бланк."
+          ru: "Если вам трудно получить документ, подтверждающий право на жильё, или подтверждение собственника, вы всё равно можете подать регистрационный бланк."
+        quotes:
+          - page: &zamel https://www.gov.pl/web/gov/zamelduj-sie-na-pobyt-staly-dla-cudzoziemcow
+            text: "Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy."
+    - id: landlord-refuses-where
+      condition: { fact: pesel.stay_over_30, eq: "yes" }
+      statement:
+        value:
+          pl: "złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,"
+          en: "If you have no document showing your right to the flat or the owner won't confirm, file the registration form at the municipal office of the gmina where the property is."
+          uk: "Якщо такого документа немає або власник не підтверджує, подайте реєстраційний бланк в управлінні гміни, на території якої розташована нерухомість."
+          ru: "Если такого документа нет или собственник не подтверждает, подайте регистрационный бланк в управлении гмины, на территории которой находится недвижимость."
+        quotes:
+          - page: *zamel
+            text: "złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,"
+    - id: landlord-refuses-statement
+      condition: { fact: pesel.stay_over_30, eq: "yes" }
+      statement:
+        value:
+          pl: "do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,"
+          en: "Attach to the registration form a written statement telling the office why you don't have the required documents."
+          uk: "Додайте до реєстраційного бланка письмове пояснення, чому у вас немає потрібних документів."
+          ru: "Приложите к регистрационному бланку письменное объяснение, почему у вас нет нужных документов."
+        quotes:
+          - page: *zamel
+            text: "do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,"
+    - id: landlord-refuses-decision
+      condition: { fact: pesel.stay_over_30, eq: "yes" }
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu."
+          en: "The office then runs an administrative procedure to establish whether you live at the address where you want to register. If you do, it issues an administrative decision registering you."
+          uk: "Тоді установа проведе адміністративну процедуру й встановить, чи ви живете за цією адресою. Якщо так, вона видасть адміністративне рішення про реєстрацію."
+          ru: "Тогда учреждение проведёт административную процедуру и установит, живёте ли вы по этому адресу. Если да, оно выдаст административное решение о регистрации."
+        quotes:
+          - page: *zamel
+            text: "urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu."
+    - id: eu-three-months
+      # The gov.pl registration card gives EU/EFTA/Swiss citizens and their families a 3-month
+      # line for temporary registration, while the PESEL card speaks of 30 days. We don't settle
+      # it: we quote it for that group next to the 30-day question (content audit 2026-10-05).
+      condition: { fact: pesel.citizen_group, eq: eu_efta_ch_uk }
+      statement:
+        value:
+          pl: "jeśli mieszkasz w Polsce czasowo przez ponad 3 miesiące pod konkretnym adresem – zamelduj się tam na pobyt czasowy."
+          en: "If you live in Poland temporarily for more than 3 months at a specific address, register there for a temporary stay."
+          uk: "Якщо ви тимчасово живете в Польщі понад 3 місяці за конкретною адресою, зареєструйтеся там на тимчасове перебування."
+          ru: "Если вы временно живёте в Польше более 3 месяцев по конкретному адресу, зарегистрируйтесь там на временное пребывание."
+        quotes:
+          - page: *zamel
+            text: "jeśli mieszkasz w Polsce czasowo przez ponad 3 miesiące pod konkretnym adresem – zamelduj się tam na pobyt czasowy."
+    - id: missing-items
+      statement:
+        value:
+          pl: "Jeśli we wniosku będą jakieś braki – dostaniesz wiadomość, żeby je uzupełnić. Urząd może nie rozpatrzyć twojego wniosku – jeśli wniosek nie będzie spełniał wymogów urzędowych."
+          en: "If something is missing from the application, you'll be told to complete it. The office might not consider your application if it doesn't meet the official requirements."
+          uk: "Якщо в заяві будуть недоліки, вам повідомлять, щоб ви їх виправили. Установа може не розглянути заяву, якщо вона не відповідатиме офіційним вимогам."
+          ru: "Если в заявлении будут недостатки, вам сообщат, чтобы вы их исправили. Учреждение может не рассмотреть заявление, если оно не будет соответствовать официальным требованиям."
+        quotes:
+          - page: *govpl
+            text: "Jeśli we wniosku będą jakieś braki – dostaniesz wiadomość, żeby je uzupełnić. Urząd może nie rozpatrzyć twojego wniosku – jeśli wniosek nie będzie spełniał wymogów urzędowych."
+  outcome:
+    value:
+      pl: "Jeśli jest podstawa do nadania numeru PESEL – dostaniesz powiadomienie o nadaniu numeru PESEL."
+      en: "If there is a basis for assigning a PESEL number, you'll receive a notice that it was assigned."
+      uk: "Якщо є підстава для присвоєння номера PESEL, ви отримаєте повідомлення про присвоєння номера PESEL."
+      ru: "Если есть основание для присвоения номера PESEL, вы получите уведомление о присвоении номера PESEL."
+    quotes:
+      - page: *govpl
+        text: "Jeśli jest podstawa do nadania numeru PESEL – dostaniesz powiadomienie o nadaniu numeru PESEL."
+  handoff:
+    when:
+      pl: Jeśli nie wiesz, jaką podstawę prawną wpisać, albo urząd nie przyjmuje wniosku. Także gdy dziecko urodziło się w Polsce, a jego rodzic ma ochronę czasową, albo minął termin na wniosek o PESEL ze statusem UKR. Oficjalne teksty, które mamy, nie mówią, od kiedy liczy się termin dla takiego dziecka.
+      en: If you don't know which legal basis to write, or the office won't accept the application. Also when a child was born in Poland to a parent with temporary protection, or the deadline for the PESEL with UKR status has passed. The official texts we hold don't say from when the deadline counts for such a child.
+      uk: Якщо ви не знаєте, яку правову підставу вписати, або установа не приймає заяву. Також якщо дитина народилася в Польщі, а її батько чи мати має тимчасовий захист, або минув строк для заяви на PESEL зі статусом UKR. Офіційні тексти, які ми маємо, не кажуть, від коли рахується строк для такої дитини.
+      ru: Если вы не знаете, какое правовое основание указать, или учреждение не принимает заявление. Также если ребёнок родился в Польше, а его родитель имеет временную защиту, или прошёл срок для заявления на PESEL со статусом UKR. Официальные тексты, которые у нас есть, не говорят, с какого момента считается срок для такого ребёнка.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная юридическая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/2026/384
+    - eli: DU/2026/862
+  sourceIds: [gov-pl-pesel-cudzoziemcy, gov-pl-zameldowanie-cudzoziemcy, gov-pl-sprawdz-dane-pesel, warszawa-19115-cudzoziemcy, krakow-bip-cudzoziemcy, eli-ewidencja-ludnosci, eli-ochrona-cudzoziemcow, udsc-karta-pobytu-cukr]

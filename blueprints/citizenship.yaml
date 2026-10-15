@@ -1,0 +1,61 @@
+# Case blueprint: Polish citizenship. Two alternative routes from the registry; each one's own
+# applicability rule decides whether it applies. When both apply, the user chooses: the engine
+# never picks a route for a person. Task titles below are editorial shortenings of the registry's own
+# descriptions (owner to check); the official document name stays visible under each title.
+id: citizenship
+title: { pl: Obywatelstwo polskie }
+caretaker: { name: Maciek }
+routes: [citizenship-recognition, citizenship-grant]
+routeLevel:
+  id: route
+  title: { pl: Ustalenie drogi }
+levels:
+  - id: documents
+    title: { pl: Dokumenty }
+    steps: { citizenship-recognition: collect-documents, citizenship-grant: collect-documents }
+    documents: true
+    crossCase:
+      - document: language-proof
+        procedure: polish-language-certificate
+        blueprint: language-certificate
+        label: { pl: "Nie masz jeszcze certyfikatu z polskiego? To osobna sprawa: egzamin państwowy." }
+    taskTitles:
+      application: { pl: Wniosek na formularzu z ministerstwa }
+      translations: { pl: "Tłumaczenia dokumentów w obcym języku (jeśli takie dołączasz)" }
+      language-proof: { pl: Dowód znajomości języka polskiego }
+      photos: { pl: Zdjęcia każdej osoby, której dotyczy wniosek }
+      supporting-documents: { pl: Dokumenty o Tobie, źródłach utrzymania i małżonku }
+      ancestors: { pl: "Dokumenty o przodkach (jeśli mieli obywatelstwo polskie)" }
+      consents: { pl: "Zgoda drugiego z rodziców (jeśli wniosek obejmuje dziecko)" }
+  - id: payment
+    title: { pl: Opłata }
+    steps: { citizenship-recognition: pay, citizenship-grant: pay }
+    fees: true
+  - id: filing
+    title: { pl: Złożenie wniosku }
+    steps: { citizenship-recognition: file, citizenship-grant: file }
+    submits: true
+    completesWith: filing
+  - id: decision
+    title: { pl: Czekasz na urząd }
+    steps: { citizenship-recognition: decision, citizenship-grant: decision }
+    waiting: true
+    completesWith: decision_delivered
+  - id: after-refusal
+    title: { pl: Po odmowie }
+    when: { event: decision_delivered, outcome: refused }
+fulfillable:
+  citizenship-recognition:
+    polish-language:
+      blueprint: language-certificate
+      title: { pl: Certyfikat z polskiego }
+      label: { pl: "Uznanie wymaga dowodu znajomości polskiego. Możesz go zdobyć: państwowy egzamin z polskiego." }
+deadlines:
+  decision-time: { level: decision, counting: kpa, role: office }
+  appeal: { level: after-refusal, counting: kpa, role: user }
+  court: { level: after-refusal, counting: kpa, role: user }
+  fix-gaps: { level: documents, counting: kpa, role: user, returns: true }
+events:
+  filing: { label: { pl: Data złożenia wniosku } }
+  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused] }
+  request_delivered: { label: { pl: Data doręczenia wezwania do uzupełnienia braków } }

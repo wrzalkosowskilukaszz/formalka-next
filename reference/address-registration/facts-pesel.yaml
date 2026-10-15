@@ -1,0 +1,120 @@
+# Intake questions for the PESEL guide (PESEL-01). Validated by the `Fact` schema in
+# packages/domain/src/knowledge/facts.ts. Category answers only, never identifying data
+# (ADR-0009). "I don't know" is always offered and never stored as a value (rule 6).
+# The questions are about the person the PESEL is for: you, or someone you help.
+
+- key: pesel.has_number
+  kind: choice
+  # Asked first (PESEL journey step 2, owner 2026-10-05): someone who may already have a number
+  # is pointed at checking it before anything else. No official text says "don't apply again",
+  # so this answer never decides the route: it opens a navigational notice in the summary and
+  # the quoted ways to check (gov.pl "Sprawdź swoje dane w rejestrze PESEL").
+  question:
+    pl: Czy ta osoba ma już numer PESEL?
+    en: Does this person already have a PESEL number?
+    uk: Чи вже має ця особа номер PESEL?
+    ru: Есть ли уже у этого человека номер PESEL?
+  whyWeAsk:
+    pl: Numer PESEL bywa nadawany automatycznie, na przykład przy zameldowaniu, więc ta osoba może go już mieć. Wtedy warto najpierw sprawdzić dane w rejestrze PESEL, zanim złożysz wniosek.
+    en: A PESEL number is sometimes given automatically, for example when an address is registered (zameldowanie), so this person may already have one. If so, it's worth checking the data in the PESEL register before you apply.
+    uk: Номер PESEL іноді присвоюють автоматично, наприклад під час реєстрації адреси (zameldowanie), тож ця особа вже може його мати. Тоді варто спершу перевірити дані в реєстрі PESEL, а потім подавати заяву.
+    ru: Номер PESEL иногда присваивают автоматически, например при регистрации адреса (zameldowanie), поэтому у этого человека он уже может быть. Тогда стоит сначала проверить данные в реестре PESEL, а потом подавать заявление.
+  unknownHelp:
+    pl: Pokażemy oficjalne sposoby sprawdzenia danych w rejestrze PESEL. Są opisane dla osoby, która zna swój numer. Żeby się dowiedzieć, czy ta osoba ma numer, zapytaj w urzędzie gminy.
+    en: We'll show the official ways to check data in the PESEL register. They're described for someone who knows their number. To find out whether this person has one, ask at a municipal office (urząd gminy).
+    uk: Ми покажемо офіційні способи перевірити дані в реєстрі PESEL. Їх описано для людини, яка знає свій номер. Щоб дізнатися, чи має ця особа номер, запитайте в управлінні гміни.
+    ru: Мы покажем официальные способы проверить данные в реестре PESEL. Они описаны для человека, который знает свой номер. Чтобы узнать, есть ли у этого человека номер, спросите в управлении гмины.
+  options:
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+
+- key: pesel.temporary_protection
+  kind: choice
+  # PESEL UKR is its own application under the protection act (art. 110a, Dz.U. 2026 poz. 862),
+  # not the application this guide describes, and not the CUKR residence card (owner,
+  # 2026-10-05; PESEL journey step 5). We ask about the basis of stay, never infer it from
+  # citizenship or language (rule 5). The answer never decides the route: it shows the quoted
+  # UKR rules.
+  question:
+    pl: Czy ta osoba korzysta albo chce korzystać w Polsce z ochrony czasowej, bo przyjechała z Ukrainy z powodu wojny albo urodziła się w Polsce, a jej rodzic ma ochronę czasową?
+    en: Does this person have, or want, temporary protection in Poland, because they came from Ukraine because of the war, or were born in Poland to a parent with temporary protection?
+    uk: Чи має або хоче мати ця особа тимчасовий захист у Польщі, бо приїхала з України через війну або народилася в Польщі, а її батько чи мати має тимчасовий захист?
+    ru: Есть ли или нужна ли этому человеку временная защита в Польше, потому что он приехал из Украины из-за войны или родился в Польше, а его родитель имеет временную защиту?
+  whyWeAsk:
+    pl: "Kto przyjeżdża do Polski i chce korzystać z ochrony czasowej, składa inny wniosek niż ten z tego przewodnika: o numer PESEL ze statusem UKR, w krótkim terminie od przekroczenia granicy Polski. Kto ma już PESEL ze statusem UKR albo zaświadczenie UDSC o ochronie czasowej, ma osobne zasady. PESEL ze statusem UKR to nie to samo co karta pobytu CUKR."
+    en: "Someone who comes to Poland and wants temporary protection files a different application from the one in this guide: for a PESEL number with UKR status, within a short time of crossing the Polish border. Someone who already has a PESEL with UKR status, or a UDSC certificate of temporary protection, has their own rules. A PESEL with UKR status is not the same as the CUKR residence card."
+    uk: "Хто приїжджає до Польщі й хоче мати тимчасовий захист, подає іншу заяву, ніж описана в цьому путівнику: на номер PESEL зі статусом UKR, у короткий строк після перетину кордону Польщі. Для тих, хто вже має PESEL зі статусом UKR або довідку UDSC про тимчасовий захист, діють окремі правила. PESEL зі статусом UKR не те саме, що карта побиту CUKR."
+    ru: "Кто приезжает в Польшу и хочет получить временную защиту, подаёт другое заявление, не то, что описано в этом путеводителе: на номер PESEL со статусом UKR, в короткий срок после пересечения границы Польши. Для тех, у кого уже есть PESEL со статусом UKR или справка UDSC о временной защите, действуют отдельные правила. PESEL со статусом UKR не то же самое, что карта побыту CUKR."
+  unknownHelp:
+    pl: Pokażemy oficjalne zasady wniosku o PESEL ze statusem UKR, żeby można było sprawdzić, czy dotyczą tej osoby.
+    en: We'll show the official rules for the PESEL with UKR status, so you can check whether they apply to this person.
+    uk: Ми покажемо офіційні правила заяви на PESEL зі статусом UKR, щоб можна було перевірити, чи стосуються вони цієї особи.
+    ru: Мы покажем официальные правила заявления на PESEL со статусом UKR, чтобы можно было проверить, касаются ли они этого человека.
+  options:
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }
+
+- key: pesel.stay_over_30
+  kind: choice
+  # An observable fact instead of "can this person register?", which asked the reader for a
+  # legal judgment (PESEL journey brief, owner 2026-10-05). The gov.pl card ties the automatic
+  # number to registering "na pobyt powyżej 30 dni", and the act's 30 days count the whole stay
+  # in Poland (art. 42 ust. 2), so the question asks about the whole stay at a specific address,
+  # now or planned (content audit and copy review, 2026-10-05). It does not say the person can
+  # register: legal-stay documents still decide that at the office. A landlord who won't sign is
+  # an obstacle inside registration, not a reason to apply (gov.pl registration card, 11.03.2026).
+  question:
+    pl: Czy ta osoba mieszka albo zamieszka w Polsce pod konkretnym adresem, a cały jej pobyt w Polsce potrwa dłużej niż 30 dni?
+    en: Does this person live, or will they live, at a specific address in Poland, and will their whole stay in Poland last more than 30 days?
+    uk: Чи живе або житиме ця особа в Польщі за конкретною адресою, і чи триватиме все її перебування в Польщі понад 30 днів?
+    ru: Живёт или будет жить этот человек в Польше по конкретному адресу, и продлится ли всё его пребывание в Польше более 30 дней?
+  whyWeAsk:
+    pl: Urząd podaje, że kto zamelduje się w Polsce na taki pobyt, dostaje numer PESEL automatycznie, bez osobnego wniosku. Kto nie może się zameldować, a potrzebuje numeru, składa wniosek. Obie zasady pokazujemy w oficjalnym brzmieniu.
+    en: The office says that someone who registers an address (zameldowanie) for a stay like this gets a PESEL number automatically, without a separate application. Someone who can't register but needs a number applies for one. We show both rules in the official wording.
+    uk: Установа зазначає, що хто зареєструє адресу (zameldowanie) на таке перебування, отримує номер PESEL автоматично, без окремої заяви. Хто не може зареєструватися, але потребує номера, подає заяву. Обидва правила ми показуємо в офіційному формулюванні.
+    ru: Учреждение указывает, что кто зарегистрирует адрес (zameldowanie) на такое пребывание, получает номер PESEL автоматически, без отдельного заявления. Кто не может зарегистрироваться, но нуждается в номере, подаёт заявление. Оба правила мы показываем в официальной формулировке.
+  unknownHelp:
+    pl: Pokażemy obie drogi do numeru PESEL, przez zameldowanie i przez wniosek, w oficjalnym brzmieniu, żeby łatwo było je porównać.
+    en: We'll show both ways to a PESEL number, through address registration and by application, in the official wording, so you can compare them.
+    uk: Ми покажемо обидва шляхи до номера PESEL, через реєстрацію адреси і через заяву, в офіційному формулюванні, щоб ви могли їх порівняти.
+    ru: Мы покажем оба пути к номеру PESEL, через регистрацию адреса и через заявление, в официальной формулировке, чтобы их было легко сравнить.
+  options:
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }
+
+- key: pesel.citizen_group
+  kind: citizenship_group
+  question:
+    pl: Czy ta osoba jest obywatelem UE, EFTA lub Szwajcarii, obywatelem Wielkiej Brytanii objętym umową o wystąpieniu z UE, albo członkiem rodziny takiego obywatela?
+    en: Is this person a citizen of the EU, EFTA or Switzerland, a UK citizen covered by the Withdrawal Agreement, or a family member of one?
+    uk: Чи є ця особа громадянином ЄС, ЄАВТ чи Швейцарії, громадянином Великої Британії, на якого поширюється Угода про вихід, або членом сім'ї такого громадянина?
+    ru: Является ли этот человек гражданином ЕС, ЕАСТ или Швейцарии, гражданином Великобритании, на которого распространяется Соглашение о выходе, или членом семьи такого гражданина?
+  whyWeAsk:
+    pl: Urząd podaje osobną zasadę składania wniosku dla tych obywateli i dla wszystkich innych.
+    en: The office states a separate rule on how to file for these citizens and for everyone else.
+    uk: Установа називає окреме правило подання заяви для цих громадян і для всіх інших.
+    ru: Учреждение называет отдельное правило подачи заявления для этих граждан и для всех остальных.
+  unknownHelp:
+    pl: Pokażemy tę zasadę w oficjalnym brzmieniu, z listą grup, których dotyczy.
+    en: We'll show this rule in the official wording, with the list of groups it covers.
+    uk: Ми покажемо це правило в офіційному формулюванні, зі списком груп, яких воно стосується.
+    ru: Мы покажем это правило в официальной формулировке, со списком групп, к которым оно относится.
+  options:
+    - value: eu_efta_ch_uk
+      label:
+        pl: Tak
+        en: "Yes"
+        uk: Так
+        ru: Да
+    - value: other
+      label:
+        pl: Nie
+        en: "No"
+        uk: Ні
+        ru: Нет

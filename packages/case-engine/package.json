@@ -1,0 +1,9 @@
+{
+  "name": "@formalka-next/case-engine",
+  "private": true,
+  "type": "module",
+  "description": "Lab prototype of the Living Case engine: verified procedures + case blueprints -> levels, states, deadlines and the advisor's proactive agenda. Pure functions, runs on the device. Node 22.18+ runs the TypeScript directly.",
+  "engines": { "node": ">=22.18" },
+  "scripts": { "test": "node --test \"test/*.test.ts\"" },
+  "dependencies": { "yaml": "2.9.1" }
+}

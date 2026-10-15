@@ -1,0 +1,389 @@
+# The state certificate of Polish as a foreign language (certyfikat znajomości języka polskiego),
+# from the evidence pack docs/knowledge/VERIFICATION-certyfikat-polski-2026-10-02.md. The citizenship
+# guide (recognition) and the EU long-term resident guide require Polish at B1 or higher and point
+# here. Sources: the act on the Polish language (consolidated Dz.U. 2026 poz. 81, chapter 2a), the
+# exam regulation (Dz.U. 2025 poz. 217), the State Commission's site (certyfikatpolski.pl), and the
+# act changing the system from 1 January 2027 (Dz.U. 2026 poz. 676).
+# The exam price is a ceiling in euro set by the act; each exam centre sets its own price. The
+# fee section takes amounts in złoty only, so the ceiling is a quoted warning instead.
+# Polish statements are verbatim official wording; en/uk/ru are our translations.
+
+- id: polish-language-certificate
+  domain: citizenship
+  related: [citizenship-recognition, eu-long-term-resident]
+  riskClass: B
+  verificationLevel: auto_structured
+  checkedAt: "2026-10-02"
+  title:
+    pl: Certyfikat znajomości języka polskiego
+    en: Polish language certificate (state exam)
+    uk: Сертифікат знання польської мови (державний іспит)
+    ru: Сертификат знания польского языка (государственный экзамен)
+  summary:
+    pl: Państwowy certyfikat znajomości polskiego. Przy uznaniu za obywatela polskiego certyfikat na wymaganym poziomie potwierdza znajomość języka (świadectwo szkoły też się liczy), a przy zezwoleniu rezydenta długoterminowego UE jest jednym z przyjmowanych dokumentów. Jak wybrać sesję i ośrodek, zapisać się, jak wygląda egzamin, ile może kosztować i co zmienia nowa ustawa.
+    en: The state certificate of Polish. For recognition as a Polish citizen, a certificate at the required level proves your Polish (a school certificate counts too), and for the EU long-term resident permit it is one of the accepted documents. How to pick a session and a centre, sign up, what the exam is like, what it can cost, and what a new act changes.
+    uk: Державний сертифікат знання польської. Для визнання громадянином Польщі сертифікат потрібного рівня підтверджує знання мови (свідоцтво школи теж підходить), а для дозволу довгострокового резидента ЄС він є одним із прийнятих документів. Як вибрати сесію й центр, записатися, який вигляд має іспит, скільки він може коштувати і що змінює новий закон.
+    ru: Государственный сертификат знания польского. Для признания гражданином Польши сертификат нужного уровня подтверждает знание языка (свидетельство школы тоже подходит), а для разрешения долгосрочного резидента ЕС он является одним из принимаемых документов. Как выбрать сессию и центр, записаться, как проходит экзамен, сколько он может стоить и что меняет новый закон.
+  applicability:
+    conditions:
+      - id: who-can-take-it
+        statement:
+          value:
+            pl: "Cudzoziemiec lub obywatel polski na stałe zamieszkały za granicą może uzyskać urzędowe poświadczenie znajomości języka polskiego jako obcego po zdaniu egzaminu z języka polskiego jako obcego"
+            en: "A foreigner, or a Polish citizen living abroad permanently, can get the official confirmation of Polish as a foreign language after passing the exam in Polish as a foreign language."
+            uk: "Іноземець або громадянин Польщі, який постійно проживає за кордоном, може отримати офіційне підтвердження знання польської мови як іноземної після складання іспиту з польської мови як іноземної."
+            ru: "Иностранец или гражданин Польши, постоянно проживающий за границей, может получить официальное подтверждение знания польского языка как иностранного после сдачи экзамена по польскому языку как иностранному."
+          quotes:
+            - page: &act https://api.sejm.gov.pl/eli/acts/DU/2026/81/text.pdf
+              text: "Cudzoziemiec lub obywatel polski na stałe zamieszkały za granicą może uzyskać urzędowe poświadczenie znajomości języka polskiego jako obcego po zdaniu egzaminu z języka polskiego jako obcego"
+      - id: the-certificate
+        statement:
+          value:
+            pl: "Urzędowym poświadczeniem znajomości języka polskiego jako obcego jest certyfikat znajomości języka polskiego"
+            en: "The official confirmation is the certificate of Polish, issued by the State Commission for Certifying Proficiency in Polish as a Foreign Language. Exams are held by centres the minister licenses."
+            uk: "Офіційним підтвердженням є сертифікат знання польської мови, який видає Державна комісія з підтвердження знання польської мови як іноземної. Іспити проводять центри, яким міністр надав право."
+            ru: "Официальным подтверждением является сертификат знания польского языка, который выдает Государственная комиссия по подтверждению знания польского языка как иностранного. Экзамены проводят центры, которым министр предоставил право."
+          quotes:
+            - page: *act
+              text: "Urzędowym poświadczeniem znajomości języka polskiego jako obcego jest certyfikat znajomości języka polskiego, zwany dalej „certyfikatem”, wydawany przez Państwową Komisję do spraw Poświadczania Znajomości Języka Polskiego jako Obcego, zwaną dalej „Komisją”."
+            - page: *act
+              text: "Minister właściwy do spraw szkolnictwa wyższego i nauki po zasięgnięciu opinii Komisji nadaje, w drodze decyzji administracyjnej, uprawnienie do organizowania egzaminów z języka polskiego jako obcego na określonym poziomie biegłości językowej na wniosek:"
+            - page: *act
+              text: "Listę podmiotów uprawnionych oraz informacje o terminach i miejscach przeprowadzania egzaminów publikuje się w Biuletynie Informacji Publicznej na stronie podmiotowej ministra właściwego do spraw szkolnictwa wyższego i nauki."
+  exclusions: []
+  requiredFacts: [certyfikat.purpose, certyfikat.school_in_polish]
+  steps:
+    - id: pick-session
+      title:
+        pl: Wybierz poziom i sesję egzaminacyjną
+        en: Choose the level and an exam session
+        uk: Виберіть рівень і сесію іспитів
+        ru: Выберите уровень и экзаменационную сессию
+      description:
+        pl: "Do uznania za obywatela polskiego i do zezwolenia rezydenta długoterminowego UE potrzebny jest co najmniej poziom B1 (szczegóły w części „Warto wiedzieć”). Opublikowane terminy sesji: 5 i 6 grudnia 2026 r. (B1 dla dorosłych, B2 dla dzieci i młodzieży), a w 2027 r. 6 i 7 lutego, 10 i 11 kwietnia, 12 i 13 czerwca, 2 i 3 października oraz 27 i 28 listopada. Nie każda sesja obejmuje wszystkie poziomy: sprawdź poziomy w brzmieniu urzędowym poniżej."
+        en: "Recognition as a Polish citizen and the EU long-term resident permit need at least level B1 (details under \"Worth knowing\"). Published session dates: 5 and 6 December 2026 (B1 for adults, B2 for children and young people), then in 2027: 6 and 7 February, 10 and 11 April, 12 and 13 June, 2 and 3 October, and 27 and 28 November. Not every session offers every level: check the levels in the official wording below."
+        uk: "Для визнання громадянином Польщі та дозволу довгострокового резидента ЄС потрібен щонайменше рівень B1 (подробиці в розділі «Варто знати»). Опубліковані дати сесій: 5 і 6 грудня 2026 року (B1 для дорослих, B2 для дітей і молоді), а у 2027 році 6 і 7 лютого, 10 і 11 квітня, 12 і 13 червня, 2 і 3 жовтня та 27 і 28 листопада. Не кожна сесія охоплює всі рівні: перевірте рівні в офіційному формулюванні нижче."
+        ru: "Для признания гражданином Польши и разрешения долгосрочного резидента ЕС нужен уровень не ниже B1 (подробности в разделе «Полезно знать»). Опубликованные даты сессий: 5 и 6 декабря 2026 года (B1 для взрослых, B2 для детей и молодежи), а в 2027 году 6 и 7 февраля, 10 и 11 апреля, 12 и 13 июня, 2 и 3 октября, а также 27 и 28 ноября. Не каждая сессия охватывает все уровни: проверьте уровни в официальной формулировке ниже."
+      channels: [online]
+      quotes:
+        - page: https://certyfikatpolski.pl/terminy-sesji-egzaminacyjnych-w-2026-roku/
+          text: "- 5-6 grudnia 2026 r. (sobota-niedziela) poziom B1 - w grupie dostosowanej do potrzeb osób dorosłych oraz B2 – w grupie dostosowanej do potrzeb dzieci i młodzieży."
+        - page: &y2027 https://certyfikatpolski.pl/terminy-sesji-egzaminacyjnych-w-2027-roku/
+          text: "- 6-7 lutego 2027 r. – poziomy B1 i B2 w grupie dostosowanej do potrzeb osób dorosłych;"
+        - page: *y2027
+          text: "- 10-11 kwietnia 2027 r. – poziomy B1, B2 i C1 w grupie dostosowanej do potrzeb osób dorosłych;"
+        - page: *y2027
+          text: "- 12-13 czerwca 2027 r. – poziomy B1 i B2 w grupie dostosowanej do potrzeb osób dorosłych oraz B1 i B2 w grupie dostosowanej do potrzeb dzieci i młodzieży;"
+        - page: *y2027
+          text: "- 2-3 października 2027 r. – poziomy B1 i C2 w grupie dostosowanej do potrzeb osób dorosłych;"
+        - page: *y2027
+          text: "- 27-28 listopada 2027 r. – poziomy B1 i C1 w grupie dostosowanej do potrzeb osób dorosłych oraz B2 w grupie dostosowanej do potrzeb dzieci i młodzieży."
+    - id: register-at-centre
+      title:
+        pl: Zapisz się w ośrodku egzaminacyjnym
+        en: Sign up at an exam centre
+        uk: Запишіться в екзаменаційному центрі
+        ru: Запишитесь в экзаменационном центре
+      description:
+        pl: Wybierasz ośrodek z listy na daną sesję i zapisujesz się na jego stronie, w terminie, który ośrodek wyznacza. Listy ośrodków i zapisy ruszają na dwa miesiące przed egzaminem. Ośrodek musi Cię zarejestrować najpóźniej miesiąc przed egzaminem, więc zapisz się wcześnie.
+        en: You pick a centre from the list for that session and sign up on its website, within the window the centre sets. The centre lists and sign-up open two months before the exam. The centre has to register you at the latest one month before the exam, so sign up early.
+        uk: Ви вибираєте центр зі списку на цю сесію і записуєтеся на його сайті в строк, який встановлює центр. Списки центрів і запис відкриваються за два місяці до іспиту. Центр має зареєструвати вас не пізніше ніж за місяць до іспиту, тож записуйтеся заздалегідь.
+        ru: Вы выбираете центр из списка на эту сессию и записываетесь на его сайте в срок, который устанавливает центр. Списки центров и запись открываются за два месяца до экзамена. Центр должен зарегистрировать вас не позднее чем за месяц до экзамена, поэтому записывайтесь заранее.
+      dependsOn: [pick-session]
+      channels: [online]
+      quotes:
+        - page: &signup https://certyfikatpolski.pl/rejestracja-na-egzamin/
+          text: "Proszę wybrać z poniższej listy ośrodek, w którym planuje Pan/Pani zdawać egzamin."
+        - page: *signup
+          text: "Proszę wejść na stronę wybranego ośrodka i dokonać rejestracji w terminie wyznaczonym przez ośrodek."
+        - page: *signup
+          text: "Listy ośrodków organizujących egzamin w danej sesji publikowane są na 2 miesiące przed egzaminem. Wtedy też zaczyna się rejestracja w poszczególnych ośrodkach."
+        - page: &reg https://api.sejm.gov.pl/eli/acts/DU/2025/217/text.pdf
+          text: "Podmiot uprawniony nie później niż na miesiąc przed terminem egzaminu dokonuje rejestracji osoby zamierzającej przystąpić do egzaminu przez wprowadzenie danych, o których mowa w art. 11g ust. 3 ustawy, oraz danych dotyczących egzaminu do elektronicznej bazy prowadzonej przez Komisję."
+    - id: pay-centre
+      title:
+        pl: Zapłać ośrodkowi za egzamin
+        en: Pay the centre for the exam
+        uk: Сплатіть центру за іспит
+        ru: Оплатите центру экзамен
+      description:
+        pl: Płacisz na konto ośrodka, w którym jest Twoja rejestracja; dane do przelewu i termin płatności podaje ośrodek. Bez opłaty nie ma rejestracji.
+        en: You pay to the account of the centre where you signed up; the centre gives the transfer details and the payment date. Without payment there is no registration.
+        uk: Ви платите на рахунок центру, де записалися; реквізити й строк оплати вказує центр. Без оплати реєстрації немає.
+        ru: Вы платите на счет центра, где записались; реквизиты и срок оплаты указывает центр. Без оплаты регистрации нет.
+      dependsOn: [register-at-centre]
+      channels: [online]
+      quotes:
+        - page: *signup
+          text: "Proszę dokonać opłaty za egzamin na konto ośrodka, w którym została dokonana rejestracja. Dane do przelewu znajdzie Pan/Pani na stronie ośrodka."
+        - page: &faq https://certyfikatpolski.pl/najczesciej-zadawane-pytania/
+          text: "Termin rejestracji rozpoczyna się nie wcześniej, niż na 2 miesiące przed egzaminem, z kolei termin płatności ustala każdy ośrodek egzaminacyjny indywidulanie, informacja zamieszczana jest na stronie www ośrodka."
+        - page: *act
+          text: "Warunkiem rejestracji jest uiszczenie podmiotowi uprawnionemu opłaty za przystąpienie do egzaminu."
+    - id: sit-exam
+      title:
+        pl: Przystąp do części pisemnej i ustnej
+        en: Take the written and the oral part
+        uk: Складіть письмову та усну частини
+        ru: Сдайте письменную и устную части
+      description:
+        pl: Na poziomie B1 dla dorosłych część pisemna sprawdza słuchanie, czytanie, gramatykę i pisanie; w części ustnej losujesz zestaw zadań i wykonujesz je przed komisją. Weź dokument tożsamości, jaki wskazał ośrodek. Tak wygląda egzamin według obecnego rozporządzenia; od 1 stycznia 2027 r. zasady ma określić nowe rozporządzenie, którego jeszcze nie ogłoszono (stan na 2 października 2026 r.).
+        en: At level B1 for adults, the written part tests listening, reading, grammar and writing; in the oral part you draw a set of tasks and do them in front of the examiners. Bring the ID document the centre named. This is the exam under the current regulation; from 1 January 2027 a new regulation is to set the rules, and it had not been published as of 2 October 2026.
+        uk: На рівні B1 для дорослих письмова частина перевіряє аудіювання, читання, граматику й письмо; в усній частині ви витягуєте один із наборів завдань і виконуєте їх перед комісією. Візьміть документ, що посвідчує особу, який вказав центр. Так іспит виглядає за чинним розпорядженням; з 1 січня 2027 року правила має визначити нове розпорядження, яке станом на 2 жовтня 2026 року ще не оприлюднено.
+        ru: На уровне B1 для взрослых письменная часть проверяет аудирование, чтение, грамматику и письмо; в устной части вы вытягиваете один из наборов заданий и выполняете их перед комиссией. Возьмите документ, удостоверяющий личность, который указал центр. Так экзамен выглядит по действующему распоряжению; с 1 января 2027 года правила должно определить новое распоряжение, которое по состоянию на 2 октября 2026 года еще не опубликовано.
+      dependsOn: [pay-centre]
+      channels: [in_person]
+      quotes:
+        - page: *act
+          text: "Egzamin składa się z części pisemnej i części ustnej."
+        - page: *reg
+          text: "na poziomie B1 trwa nie dłużej niż 190 minut i składa się z modułów polegających na sprawdzeniu: – rozumienia ze słuchu, – rozumienia tekstów pisanych, – poprawności gramatycznej, – umiejętności pisania,"
+        - page: *reg
+          text: "b) na poziomach B1 i B2 trwa nie dłużej niż 15 minut,"
+        - page: &structure https://certyfikatpolski.pl/o-egzaminie/struktura-egzaminu/
+          text: "Zdający losują jeden z trzech zestawów, z których każdy składa się z dwóch lub trzech zadań, a następnie wykonują zadania przed komisją."
+    - id: result
+      title:
+        pl: Odbierz wynik i certyfikat
+        en: Get the result and the certificate
+        uk: Отримайте результат і сертифікат
+        ru: Получите результат и сертификат
+      description:
+        pl: Wynik na piśmie przekazuje ośrodek w ciągu trzech dni od otrzymania protokołu egzaminu. Certyfikat wydaje Komisja w ciągu 30 dni od otrzymania protokołu i przekazuje go ośrodkowi, a ośrodek niezwłocznie doręcza go Tobie. To terminy z obecnego rozporządzenia. Jeśli ośrodek zarejestrował Cię od 1 stycznia 2027 r., Komisja przekaże certyfikat w ciągu 30 dni od wniesienia przez ośrodek opłaty za certyfikat.
+        en: The centre gives you the result in writing within three days of getting the exam protocol. The Commission issues the certificate within 30 days of getting the protocol and sends it to the centre, which hands it to you without delay. These are the deadlines in the current regulation. If the centre registered you on or after 1 January 2027, the Commission sends the certificate within 30 days of the centre paying the certificate fee.
+        uk: Центр письмово передає вам результат протягом трьох днів після отримання протоколу іспиту. Комісія видає сертифікат протягом 30 днів після отримання протоколу і передає його центру, а центр невідкладно вручає його вам. Це строки за чинним розпорядженням. Якщо центр зареєстрував вас 1 січня 2027 року або пізніше, Комісія передасть сертифікат протягом 30 днів після сплати центром збору за сертифікат.
+        ru: Центр письменно передает вам результат в течение трех дней после получения протокола экзамена. Комиссия выдает сертификат в течение 30 дней после получения протокола и передает его центру, а центр незамедлительно вручает его вам. Это сроки по действующему распоряжению. Если центр зарегистрировал вас 1 января 2027 года или позже, Комиссия передаст сертификат в течение 30 дней после оплаты центром сбора за сертификат.
+      dependsOn: [sit-exam]
+      channels: [post]
+      quotes:
+        - page: *reg
+          text: "Podmiot uprawniony przekazuje zdającemu informację o wyniku egzaminu w postaci pisemnej, w terminie trzech dni od dnia doręczenia mu przez komisję egzaminacyjną protokołu z egzaminu."
+        - page: *reg
+          text: "Komisja wydaje i przekazuje podmiotowi uprawnionemu certyfikaty dla osób, które zdały egzamin, w terminie 30 dni od dnia otrzymania protokołu egzaminu wraz z załącznikami."
+        - page: *reg
+          text: "Podmiot uprawniony niezwłocznie doręcza certyfikaty osobom, które zdały egzamin."
+        - page: &act2027 https://api.sejm.gov.pl/eli/acts/DU/2026/676/text.pdf
+          text: "Komisja przekazuje podmiotowi uprawnionemu certyfikaty osób, które zdały egzamin, w terminie 30 dni od dnia przekazania przez podmiot uprawniony opłat, o których mowa w ust. 4c pkt 2."
+  documents:
+    - id: id-document
+      namePl:
+        value: dokumentu potwierdzającego tożsamość
+        quotes:
+          - page: *reg
+            text: "rodzaju dokumentu potwierdzającego tożsamość, który osoba zamierzająca przystąpić do egzaminu jest obowiązana okazać przed przystąpieniem do egzaminu"
+      description:
+        pl: Ten, który ośrodek wskazał przed egzaminem.
+        en: The one the centre named before the exam.
+        uk: Той, який центр вказав перед іспитом.
+        ru: Тот, который центр указал перед экзаменом.
+  fees: []
+  deadlines:
+    - id: recheck
+      description:
+        pl: Jeśli nie zgadzasz się z wynikiem części pisemnej, możesz złożyć do Komisji wniosek o ponowne sprawdzenie w ciągu 21 dni od otrzymania informacji o wyniku, na piśmie, pocztą albo osobiście w siedzibie NAWA (Narodowej Agencji Wymiany Akademickiej), z potwierdzeniem opłaty. Przy wysyłce pocztą liczy się data stempla. Do czasu decyzji Komisja wstrzymuje wydanie certyfikatu. W tym samym terminie możesz poprosić ośrodek o wgląd w kopię swojej pracy. To zasady dla osób zarejestrowanych przed 1 stycznia 2027 r.
+        en: If you disagree with the result of the written part, you can ask the Commission to check it again within 21 days of receiving the result, in writing, by post or in person at NAWA (Polish National Agency for Academic Exchange), with proof of payment. For a request sent by post, the postmark date counts. Until the Commission decides, the certificate is held back. Within the same 21 days you can ask the centre to see a copy of your paper. These are the rules for people registered before 1 January 2027.
+        uk: Якщо ви не згодні з результатом письмової частини, можна подати до Комісії заяву про повторну перевірку протягом 21 дня від отримання результату, письмово, поштою або особисто в NAWA (Національному агентстві академічного обміну), з підтвердженням оплати. Якщо заяву надіслано поштою, рахується дата поштового штемпеля. До рішення Комісії видачу сертифіката зупиняють. Протягом тих самих 21 дня можна попросити центр показати копію вашої роботи. Це правила для осіб, зареєстрованих до 1 січня 2027 року.
+        ru: Если вы не согласны с результатом письменной части, можно подать в Комиссию заявление о повторной проверке в течение 21 дня с получения результата, письменно, по почте или лично в NAWA (Национальном агентстве академического обмена), с подтверждением оплаты. Если заявление отправлено по почте, считается дата почтового штемпеля. До решения Комиссии выдачу сертификата приостанавливают. В течение тех же 21 дня можно попросить центр показать копию вашей работы. Это правила для людей, зарегистрированных до 1 января 2027 года.
+      rule:
+        value: { kind: relative, amount: 21, unit: day, from: result_notice }
+        quotes:
+          - page: *act
+            text: "Osoba, która przystąpiła do egzaminu, może w terminie 21 dni od dnia otrzymania informacji o wyniku egzaminu złożyć do Komisji wniosek o ponowne sprawdzenie części pisemnej egzaminu."
+          - page: &procedures https://certyfikatpolski.pl/o-egzaminie/procedury/
+            text: "Do czasu rozpatrzenia wniosku przez Komisję wstrzymuje się wydanie certyfikatu."
+          - page: *procedures
+            text: "Wypełniony wniosek należy przesłać pocztą bądź złożyć osobiście w siedzibie NAWA (ul. Polna 40, 00-635 Warszawa)."
+          - page: *procedures
+            text: "Wniosek nie zostanie rozpatrzony przez Komisję, jeżeli został złożony po ustawowym terminie (w przypadku wniosków wysłanych pocztą decyduje data stempla pocztowego)."
+          - page: *reg
+            text: "Na wniosek zdającego złożony w terminie 21 dni od dnia otrzymania informacji o wyniku egzaminu podmiot uprawniony, który organizował ten egzamin, jest obowiązany udostępnić zdającemu do wglądu kopię pracy egzaminacyjnej."
+  variations: []
+  pitfalls:
+    - id: price
+      important: true
+      statement:
+        value:
+          pl: "Opłata za przystąpienie do egzaminu nie może być wyższa niż równowartość w walucie kraju, w którym egzamin jest przeprowadzany:"
+          en: "The price is set by each exam centre. The act only caps it: for levels B1 and B2 for adults, at most the equivalent of 150 euro in the currency of the country where the exam takes place. If you pay in zloty, the euro amount is converted at the National Bank of Poland's average euro rate from the last day of the month before the month you pay. Ask the centre for its price. These are the rules for people registered before 1 January 2027."
+          uk: "Ціну встановлює кожен екзаменаційний центр. Закон лише обмежує її: для рівнів B1 і B2 для дорослих не більше еквівалента 150 євро у валюті країни, де проводиться іспит. У разі оплати в злотих суму в євро перераховують за середнім курсом Національного банку Польщі на останній день місяця перед оплатою. Фактичну ціну уточнюйте в центрі. Це правила для осіб, зареєстрованих до 1 січня 2027 року."
+          ru: "Цену устанавливает каждый экзаменационный центр. Закон лишь ограничивает ее: для уровней B1 и B2 для взрослых не более эквивалента 150 евро в валюте страны, где проводится экзамен. При оплате в злотых сумму в евро пересчитывают по среднему курсу Национального банка Польши на последний день месяца перед оплатой. Фактическую цену уточняйте в центре. Это правила для людей, зарегистрированных до 1 января 2027 года."
+        quotes:
+          - page: *act
+            text: "Opłata za przystąpienie do egzaminu nie może być wyższa niż równowartość w walucie kraju, w którym egzamin jest przeprowadzany:"
+          - page: *act
+            text: "3) 150 euro – w odniesieniu do poziomów B1 i B2 w grupie dostosowanej do potrzeb osób dorosłych;"
+          - page: *act
+            text: "W przypadku uiszczania opłat, o których mowa w ust. 4 i 6, w złotych, równowartość danej kwoty w euro oblicza się przy zastosowaniu średniego kursu euro ogłoszonego przez Narodowy Bank Polski ostatniego dnia miesiąca poprzedzającego miesiąc, w którym opłata jest uiszczana."
+          - page: &fees https://certyfikatpolski.pl/o-egzaminie/oplaty-za-egzamin/
+            text: "Egzaminy są odpłatne, ale wysokość opłat ustala każdy z ośrodków egzaminacyjnych (podmiotów uprawnionych), nie przekraczając maksymalnej sumy za egzamin na danym poziomie zaawansowania, określonej przez ustawodawcę:"
+          - page: *faq
+            text: "Wysokość opłaty egzaminacyjnej ustala każdy ośrodek indywidulanie, przy czym opłata nie może być wyższa niż:"
+    - id: pass-mark
+      important: true
+      statement:
+        value:
+          pl: "B1 – jest uzyskanie co najmniej 50 % punktów z każdego modułu części pisemnej egzaminu oraz z części ustnej egzaminu,"
+          en: "To pass at level B1 (adults) you need at least 50% of the points in each written module, and at least 50% in the oral part. A strong score in one module doesn't make up for a weak one. This is the current regulation; from 1 January 2027 a new regulation is to set the pass marks, and it had not been published as of 2 October 2026."
+          uk: "Щоб скласти іспит на рівні B1 (дорослі), потрібно щонайменше 50 % балів з кожного модуля письмової частини і щонайменше 50 % з усної частини. Високий результат в одному модулі не компенсує слабкий в іншому. Так визначає чинне розпорядження; з 1 січня 2027 року прохідні пороги має встановити нове розпорядження, яке станом на 2 жовтня 2026 року ще не оприлюднено."
+          ru: "Чтобы сдать экзамен на уровне B1 (взрослые), нужно не менее 50 % баллов по каждому модулю письменной части и не менее 50 % по устной части. Высокий результат в одном модуле не компенсирует слабый в другом. Так определяет действующее распоряжение; с 1 января 2027 года проходные пороги должно установить новое распоряжение, которое по состоянию на 2 октября 2026 года еще не опубликовано."
+        quotes:
+          - page: *reg
+            text: "na poziomach biegłości językowej w grupie dostosowanej do potrzeb osób dorosłych:"
+          - page: *reg
+            text: "B1 – jest uzyskanie co najmniej 50 % punktów z każdego modułu części pisemnej egzaminu oraz z części ustnej egzaminu,"
+    - id: age-groups
+      statement:
+        value:
+          pl: "Do egzaminu certyfikatowego z języka polskiego jako obcego w grupie dostosowanej do potrzeb osób dorosłych mogą przystąpić osoby, które w dniu egzaminu mają ukończone 18 lat."
+          en: "According to the Commission, the adult group is for people who are 18 or older on the day of the exam; the group for children and young people is for ages 14 to 17. The official pages don't say whether the voivodeship office accepts a B1 from the group for young people; ask the voivodeship office."
+          uk: "За даними Комісії, група для дорослих призначена для осіб, яким у день іспиту виповнилося 18 років; група для дітей і молоді призначена для віку від 14 до 17 років. Офіційні сторінки не кажуть, чи приймає воєводське управління рівень B1 з групи для молоді; запитайте у воєводському управлінні."
+          ru: "По данным Комиссии, группа для взрослых предназначена для людей, которым в день экзамена исполнилось 18 лет; группа для детей и молодежи предназначена для возраста от 14 до 17 лет. Официальные страницы не говорят, принимает ли воеводское управление уровень B1 из группы для молодежи; спросите в воеводском управлении."
+        quotes:
+          - page: &who https://certyfikatpolski.pl/o-egzaminie/kto-moze-zdawac-egzamin/
+            text: "Do egzaminu certyfikatowego z języka polskiego jako obcego w grupie dostosowanej do potrzeb osób dorosłych mogą przystąpić osoby, które w dniu egzaminu mają ukończone 18 lat."
+          - page: *who
+            text: "Do egzaminu certyfikatowego z języka polskiego jako obcego w grupie dostosowanej do potrzeb dzieci i młodzieży mogą przystąpić osoby w wieku 14 – 17 lat."
+    - id: no-expiry
+      statement:
+        value:
+          pl: "Certyfikat ważny jest bezterminowo."
+          en: "The certificate doesn't expire."
+          uk: "Сертифікат дійсний безстроково."
+          ru: "Сертификат действителен бессрочно."
+        quotes:
+          - page: *faq
+            text: "Certyfikat ważny jest bezterminowo."
+    - id: retake
+      statement:
+        value:
+          pl: "Nie ma określonego czasu, który należy odczekać po niezaliczonym egzaminie, w związku z czym można do niego przystąpić już w kolejnej sesji egzaminacyjnej."
+          en: "If you fail, there's no waiting period: you can take the exam again at the next session."
+          uk: "Якщо ви не склали іспит, чекати не потрібно: можна скласти його знову вже на наступній сесії."
+          ru: "Если вы не сдали экзамен, ждать не нужно: можно сдать его снова уже на следующей сессии."
+        quotes:
+          - page: *faq
+            text: "Nie ma określonego czasu, który należy odczekać po niezaliczonym egzaminie, w związku z czym można do niego przystąpić już w kolejnej sesji egzaminacyjnej."
+    - id: recheck-fee
+      statement:
+        value:
+          pl: "Wysokość opłaty za rozpatrzenie wniosku wynosi 20 euro albo równowartość tej kwoty w złotych."
+          en: "A request to check the written part again costs 20 euro, or its equivalent in zloty. These are the rules for people registered before 1 January 2027."
+          uk: "Заява про повторну перевірку письмової частини коштує 20 євро або еквівалент у злотих. Це правила для осіб, зареєстрованих до 1 січня 2027 року."
+          ru: "Заявление о повторной проверке письменной части стоит 20 евро или эквивалент в злотых. Это правила для людей, зарегистрированных до 1 января 2027 года."
+        quotes:
+          - page: *act
+            text: "Wysokość opłaty za rozpatrzenie wniosku wynosi 20 euro albo równowartość tej kwoty w złotych."
+    - id: school-instead-of-exam
+      important: true
+      condition: { all: [{ fact: certyfikat.purpose, in: [citizenship] }, { fact: certyfikat.school_in_polish, eq: "yes" }] }
+      statement:
+        value:
+          pl: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+          en: "For recognition as a Polish citizen, the citizenship act also accepts a certificate from a school in Poland or from a school abroad taught in Polish, so you may not need the exam. A post-secondary (policealna) school certificate doesn't count."
+          uk: "Для визнання громадянином Польщі закон про громадянство приймає також свідоцтво школи в Польщі або школи за кордоном з польською мовою навчання, тож іспит може бути не потрібен. Свідоцтво післясередньої школи не підходить."
+          ru: "Для признания гражданином Польши закон о гражданстве принимает также свидетельство школы в Польше или школы за границей с польским языком обучения, поэтому экзамен может быть не нужен. Свидетельство послесредней школы не подходит."
+        quotes:
+          - page: &citizenship https://api.sejm.gov.pl/eli/acts/DU/2025/1611/text.pdf
+            text: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+          - page: *citizenship
+            text: "Znajomości języka polskiego, o której mowa w ust. 2, nie potwierdza świadectwo ukończenia szkoły policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2025 r. poz. 1043 i 1160)."
+    - id: ask-the-office
+      statement:
+        value:
+          pl: "Informacje w tej sprawie można uzyskać w lokalnym urzędzie wojewódzkim rozpatrującym wnioski o nadanie obywatelstwa (Wydział ds. Cudzoziemców)."
+          en: "Asked which exam level is enough for citizenship, the Commission sends readers to the local voivodeship office that handles citizenship applications (its foreigners' department). For recognition as a Polish citizen (by the voivode), the citizenship act requires B1 or higher, except for minors in the two cases it lists. For a grant by the President, the act asks only for information about your Polish and sets no level."
+          uk: "На питання, якого рівня іспиту достатньо для громадянства, Комісія відсилає до місцевого воєводського управління, що розглядає заяви про громадянство (відділ у справах іноземців). Для визнання громадянином (воєводою) закон про громадянство вимагає рівня щонайменше B1, крім неповнолітніх у двох названих у ньому випадках. Для надання громадянства Президентом закон вимагає лише інформації про знання польської і рівня не визначає."
+          ru: "На вопрос, какого уровня экзамена достаточно для гражданства, Комиссия отсылает в местное воеводское управление, которое рассматривает заявления о гражданстве (отдел по делам иностранцев). Для признания гражданином (воеводой) закон о гражданстве требует уровня не ниже B1, кроме несовершеннолетних в двух названных в нем случаях. Для предоставления гражданства Президентом закон требует только информации о знании польского и уровня не устанавливает."
+        quotes:
+          - page: *faq
+            text: "Jaki poziom egzaminu wystarczy do ubiegania się o obywatelstwo polskie?"
+          - page: *faq
+            text: "Informacje w tej sprawie można uzyskać w lokalnym urzędzie wojewódzkim rozpatrującym wnioski o nadanie obywatelstwa (Wydział ds. Cudzoziemców)."
+          - page: *citizenship
+            text: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+          - page: *citizenship
+            text: "informację o znajomości przez cudzoziemca języka polskiego;"
+    - id: certificate-without-exam
+      statement:
+        value:
+          pl: "– może otrzymać, na wniosek, certyfikat bez konieczności zdania egzaminu."
+          en: "Some people can get the certificate without the exam, on request through NAWA (Polish National Agency for Academic Exchange): among others, those with a doctorate written and defended in Polish at a Polish university, graduates of studies taught in Polish at a Polish university, and graduates of certain secondary schools in Poland or schools abroad taught in Polish. This certificate is not the same as a school certificate: for recognition as a Polish citizen, the act accepts a school certificate directly, but not a university diploma."
+          uk: "Деякі люди можуть отримати сертифікат без іспиту, за заявою через NAWA (Національне агентство академічного обміну): зокрема ті, хто має ступінь доктора за дисертацією, написаною й захищеною польською мовою в польському університеті, випускники навчання польською мовою в польському університеті та випускники певних середніх шкіл у Польщі або шкіл за кордоном з польською мовою навчання. Цей сертифікат не те саме, що свідоцтво школи: для визнання громадянином Польщі закон приймає безпосередньо свідоцтво школи, але не диплом університету."
+          ru: "Некоторые люди могут получить сертификат без экзамена, по заявлению через NAWA (Национальное агентство академического обмена): в частности те, у кого есть степень доктора за диссертацию, написанную и защищенную на польском языке в польском вузе, выпускники обучения на польском языке в польском вузе и выпускники определенных средних школ в Польше или школ за границей с польским языком обучения. Этот сертификат не то же самое, что свидетельство школы: для признания гражданином Польши закон принимает непосредственно свидетельство школы, но не диплом вуза."
+        quotes:
+          - page: *act
+            text: "– może otrzymać, na wniosek, certyfikat bez konieczności zdania egzaminu."
+          - page: *act
+            text: "uzyskał stopień doktora na podstawie rozprawy doktorskiej napisanej i obronionej w języku polskim w uczelni lub podmiocie, działających w systemie szkolnictwa wyższego i nauki Rzeczypospolitej Polskiej"
+          - page: *act
+            text: "studia prowadzone w języku polskim w uczelni działającej w systemie szkolnictwa wyższego i nauki Rzeczypospolitej Polskiej"
+          - page: *act
+            text: "Wniosek o wydanie certyfikatu, o którym mowa w art. 11a ust. 4, składa się do Komisji za pośrednictwem Narodowej Agencji Wymiany Akademickiej, działającej na podstawie ustawy z dnia 7 lipca 2017 r. o Narodowej Agencji Wymiany Akademickiej (Dz. U. z 2025 r. poz. 1643)."
+    - id: other-certificates-eu-only
+      statement:
+        value:
+          pl: "certyfikaty następujących instytucji:"
+          en: "For the EU long-term resident permit, certificates from ECL and TELC also count, besides this state certificate. For recognition as a Polish citizen they don't: the citizenship act accepts only this state certificate or a school certificate."
+          uk: "Для дозволу довгострокового резидента ЄС, крім цього державного сертифіката, підходять також сертифікати ECL і TELC. Для визнання громадянином Польщі не підходять: закон про громадянство приймає лише цей державний сертифікат або свідоцтво школи."
+          ru: "Для разрешения долгосрочного резидента ЕС, кроме этого государственного сертификата, подходят также сертификаты ECL и TELC. Для признания гражданином Польши не подходят: закон о гражданстве принимает только этот государственный сертификат или свидетельство школы."
+        quotes:
+          - page: &eu https://api.sejm.gov.pl/eli/acts/DU/2023/1076/text.pdf
+            text: "certyfikat znajomości języka polskiego, o którym mowa w art. 11a ust. 2 ustawy z dnia 7 października 1999 r. o języku polskim"
+          - page: *eu
+            text: "certyfikaty następujących instytucji:"
+          - page: *eu
+            text: "European Consortium for the Certificate of Attainment in Modern Languages (ECL),"
+          - page: *eu
+            text: "telc GmbH, WBT Weiterbildungs-Testsysteme GmbH (TELC);"
+          - page: *citizenship
+            text: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+    - id: changes-2027
+      important: true
+      statement:
+        value:
+          pl: "Do osób zarejestrowanych w bazie, o której mowa w art. 11g ust. 2 ustawy zmienianej w art. 1, w brzmieniu dotychczasowym, przed dniem wejścia w życie niniejszej ustawy, stosuje się przepisy dotychczasowe."
+          en: "Changes from 1 January 2027 (the act is already published). If the centre registered you before 1 January 2027, today's rules still apply to you. For everyone else: the exam price cap becomes a share of the average wage in the third quarter of the year before the exam, as announced by Statistics Poland: 7% for levels B1 and B2 in the older group. The certificate costs 100 zloty, and so does a duplicate; after you pass, you pay it to the centre within 7 days of learning that you passed. You can ask the Commission to re-check the written part within 21 days of receiving your result; the fee for this becomes 20% of the maximum exam fee, paid to NAWA's bank account in zloty within 7 days of the request. A lost or destroyed certificate can be replaced on request within 25 years of receiving it. The groups are split by age: the older group, for people who are 16 or older on the exam day, can take levels A1 to C2; the younger group, for those under 16, levels A1 to B2."
+          uk: "Зміни з 1 січня 2027 року (закон уже опубліковано). Якщо центр зареєстрував вас до 1 січня 2027 року, до вас і далі застосовують чинні правила. Для інших: граничну ціну іспиту визначатимуть як частку середньої зарплати за третій квартал року перед іспитом, яку оголошує Головне статистичне управління: 7 % для рівнів B1 і B2 у старшій групі. Сертифікат коштуватиме 100 злотих, дублікат так само; після складання іспиту ви платите центру протягом 7 днів від отримання інформації, що склали. Заяву до Комісії про повторну перевірку письмової частини можна подати протягом 21 дня від отримання інформації про результат; збір за це становитиме 20 % максимальної ціни іспиту; його сплачують на рахунок NAWA в злотих протягом 7 днів від подання заяви. Загублений або знищений сертифікат можна буде замінити за заявою протягом 25 років від його отримання. Групи ділитимуть за віком: у старшій групі, для тих, кому в день іспиту виповнилося 16 років, можна складати рівні від A1 до C2; у молодшій, для тих, кому ще немає 16, рівні від A1 до B2."
+          ru: "Изменения с 1 января 2027 года (закон уже опубликован). Если центр зарегистрировал вас до 1 января 2027 года, к вам по-прежнему применяют действующие правила. Для остальных: предельную цену экзамена будут определять как долю средней зарплаты за третий квартал года перед экзаменом, которую объявляет Главное статистическое управление: 7 % для уровней B1 и B2 в старшей группе. Сертификат будет стоить 100 злотых, дубликат столько же; после сдачи экзамена вы платите центру в течение 7 дней с получения информации, что сдали. Заявление в Комиссию о повторной проверке письменной части можно подать в течение 21 дня с получения информации о результате; сбор за это составит 20 % максимальной цены экзамена; его платят на счет NAWA в злотых в течение 7 дней с подачи заявления. Утерянный или уничтоженный сертификат можно будет заменить по заявлению в течение 25 лет с его получения. Группы будут делить по возрасту: в старшей группе, для тех, кому в день экзамена исполнилось 16 лет, можно сдавать уровни от A1 до C2; в младшей, для тех, кому еще нет 16, уровни от A1 до B2."
+        quotes:
+          - page: *act2027
+            text: "Ustawa wchodzi w życie z dniem 1 stycznia 2027 r., z wyjątkiem art. 1 pkt 2 lit. b i d, które wchodzą w życie po upływie 14 dni od dnia ogłoszenia."
+          - page: *act2027
+            text: "Do osób zarejestrowanych w bazie, o której mowa w art. 11g ust. 2 ustawy zmienianej w art. 1, w brzmieniu dotychczasowym, przed dniem wejścia w życie niniejszej ustawy, stosuje się przepisy dotychczasowe."
+          - page: *act2027
+            text: "– przeciętnego wynagrodzenia w 3 kwartale roku kalendarzowego poprzedzającego rok, w którym jest przeprowadzany egzamin, ogłaszanego przez Prezesa Głównego Urzędu Statystycznego na podstawie art. 20 pkt 2 ustawy z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2025 r. poz. 1749 oraz z 2026 r. poz. 26 i 425)."
+          - page: *act2027
+            text: "3) B1 i B2 w grupie, o której mowa w art. 11a ust. 3 pkt 1 – 7 %,"
+          - page: *act2027
+            text: "Za wydanie certyfikatu i duplikatu certyfikatu pobiera się opłatę w wysokości 100 zł, przy czym opłatę wnosi się na rachunek bankowy:"
+          - page: *act2027
+            text: "2) podmiotu uprawnionego do organizowania egzaminu, zwanego dalej „podmiotem uprawnionym”, w terminie 7 dni od dnia otrzymania informacji o zdaniu egzaminu – w przypadku certyfikatu, o którym mowa w ust. 4a."
+          - page: *act2027
+            text: "Osoba, która przystąpiła do egzaminu, może, w terminie 21 dni od dnia otrzymania informacji o wyniku egzaminu, złożyć do Komisji wniosek o ponowne sprawdzenie i ocenę pracy z części pisemnej egzaminu. NAWA dokonuje oceny formalnej wniosku. Wniosek przekazuje się na adres NAWA."
+          - page: *act2027
+            text: "Za ponowne sprawdzenie i ocenę pracy z części pisemnej egzaminu pobiera się opłatę w wysokości 20 % maksymalnej wysokości opłaty za przystąpienie do danego egzaminu, określonej w art. 11g ust. 5. Opłatę wnosi się na rachunek bankowy NAWA w złotych, w terminie 7 dni od dnia złożenia wniosku, o którym mowa w ust. 1."
+          - page: *act2027
+            text: "W przypadku zniszczenia lub utraty certyfikatu, na wniosek osoby, która go otrzymała, złożony niepóźniej niż w terminie 25 lat od dnia jego otrzymania, wydaje się duplikat certyfikatu."
+          - page: *act2027
+            text: "1) A1, A2, B1, B2, C1 i C2 – w grupie dostosowanej do potrzeb osób, które w dniu przystąpienia do egzaminu ukończyły 16. rok życia,"
+          - page: *act2027
+            text: "2) A1, A2, B1 i B2 – w grupie dostosowanej do potrzeb osób, które w dniu przystąpienia do egzaminu nie ukończyły 16. roku życia"
+  handoff:
+    when:
+      pl: Jeśli urząd nie chce przyjąć Twojego certyfikatu albo świadectwa szkoły jako dowodu znajomości polskiego.
+      en: If the office won't accept your language certificate or school certificate as proof of Polish.
+      uk: Якщо установа не хоче прийняти ваш сертифікат або свідоцтво школи як доказ знання польської.
+      ru: Если учреждение не хочет принять ваш сертификат или свидетельство школы как доказательство знания польского.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная юридическая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/1999/999
+  sourceIds: [eli-ustawa-o-jezyku-polskim, eli-rozporzadzenie-egzaminy-jpjo, eli-nowelizacja-jezyk-polski-2027, certyfikatpolski-egzamin, eli-obywatelstwo, eli-jezyk-polski-rezydent]

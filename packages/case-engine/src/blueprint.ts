@@ -1,0 +1,129 @@
+// Case blueprints: how a verified procedure (or a choice between procedures) becomes a map of levels.
+// A blueprint adds no facts. It only places the registry's own steps, documents, fees and deadlines
+// on levels, names the levels, declares which events the user can record, and links related cases.
+// The static check below proves that nothing of a procedure is lost or invented on the way.
+import { readFileSync } from "node:fs";
+import { parse } from "yaml";
+import type { Counting } from "./dates.ts";
+import type { L10n, Registry } from "./registry.ts";
+
+export interface LevelDef {
+  id: string;
+  title: L10n;
+  /** Per route procedure: the step this level stands for. A level without steps holds deadlines only. */
+  steps?: Record<string, string>;
+  /** This level collects the route procedure's documents as its tasks. */
+  documents?: boolean;
+  /** This level shows the route procedure's fees. */
+  fees?: boolean;
+  /** The office decides; the user can't finish this level by effort. */
+  waiting?: boolean;
+  /** Submitting the application happens here: every route condition must hold by then. */
+  submits?: boolean;
+  /** Marking the level done records this event, with its date. */
+  completesWith?: string;
+  /** The level exists only after this event (and outcome) is recorded. */
+  when?: { event: string; outcome?: string };
+  /** Other cases this level can open, e.g. the language exam for the language proof. */
+  crossCase?: { document: string; procedure: string; blueprint?: string; label: L10n }[];
+  /** Editorial short titles for tasks (owner-checked wording; the official name stays visible). */
+  taskTitles?: Record<string, L10n>;
+}
+export interface DeadlinePlacement {
+  level: string;
+  counting: Counting;
+  /** "user": something the user must do by then. "office": what the office has (no "you must"). */
+  role: "user" | "office";
+  /** Recording this deadline's start event sends the level back ("returned"). */
+  returns?: boolean;
+}
+export interface EventDef { label: L10n; outcomes?: string[] }
+export interface Blueprint {
+  id: string;
+  title: L10n;
+  caretaker: { name: string };
+  /** Alternative procedures; their own applicability rules decide which apply. */
+  routes: string[];
+  routeLevel: { id: string; title: L10n };
+  levels: LevelDef[];
+  /**
+   * Route conditions a person can still meet through another case, e.g. the language proof for
+   * recognition through the language-certificate case. Such a route is "reachable", never "applies".
+   */
+  fulfillable?: Record<string, Record<string, { blueprint: string; title: L10n; label: L10n }>>;
+  deadlines: Record<string, DeadlinePlacement>;
+  events: Record<string, EventDef>;
+}
+
+export function loadBlueprint(file: string): Blueprint {
+  const bp = parse(readFileSync(file, "utf8")) as Blueprint;
+  if (!bp?.id || !Array.isArray(bp.routes) || !Array.isArray(bp.levels)) throw new Error(`${file}: not a blueprint`);
+  bp.deadlines ??= {};
+  bp.events ??= {};
+  return bp;
+}
+
+export interface BlueprintIssue { code: string; detail: string }
+
+/**
+ * Static check of a blueprint against the registry. Every step, document, fee and deadline of every
+ * route must land on exactly one level; every reference must exist; every event a deadline starts
+ * from must be recordable. An empty list means the map loses and invents nothing.
+ */
+export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
+  const issues: BlueprintIssue[] = [];
+  const add = (code: string, detail: string) => issues.push({ code, detail });
+  const levelIds = new Set(bp.levels.map((l) => l.id));
+  if (levelIds.has(bp.routeLevel.id)) add("DUPLICATE_LEVEL", bp.routeLevel.id);
+  for (const routeId of bp.routes) {
+    const p = reg.procedures.get(routeId);
+    if (!p) { add("UNKNOWN_PROCEDURE", routeId); continue; }
+    const stepUse = new Map<string, number>();
+    for (const l of bp.levels) {
+      const stepId = l.steps?.[routeId];
+      if (stepId === undefined) continue;
+      if (!p.steps.some((s) => s.id === stepId)) add("UNKNOWN_STEP", `${routeId}:${stepId} (level ${l.id})`);
+      stepUse.set(stepId, (stepUse.get(stepId) ?? 0) + 1);
+    }
+    for (const s of p.steps) {
+      const n = stepUse.get(s.id) ?? 0;
+      if (n !== 1) add(n ? "STEP_ON_SEVERAL_LEVELS" : "STEP_NOT_PLACED", `${routeId}:${s.id}`);
+    }
+    const docLevels = bp.levels.filter((l) => l.documents && l.steps?.[routeId] !== undefined);
+    if (p.documents.length && docLevels.length !== 1) add("DOCUMENTS_NOT_PLACED_ONCE", `${routeId}: ${docLevels.length} levels`);
+    const feeLevels = bp.levels.filter((l) => l.fees && l.steps?.[routeId] !== undefined);
+    if (p.fees.length && feeLevels.length !== 1) add("FEES_NOT_PLACED_ONCE", `${routeId}: ${feeLevels.length} levels`);
+    for (const d of p.deadlines) {
+      const place = bp.deadlines[d.id];
+      if (!place) { add("DEADLINE_NOT_PLACED", `${routeId}:${d.id}`); continue; }
+      if (!levelIds.has(place.level)) add("UNKNOWN_LEVEL", `deadline ${d.id} -> ${place.level}`);
+      const r = d.rule.value;
+      if (r.kind === "relative") {
+        if (!bp.events[r.from]) add("EVENT_NOT_RECORDABLE", `${routeId}:${d.id} starts from "${r.from}"`);
+        if (place.counting === "nth-day" && r.unit !== "day") add("BAD_COUNTING", `${routeId}:${d.id}`);
+      }
+    }
+  }
+  for (const [routeId, conds] of Object.entries(bp.fulfillable ?? {})) {
+    const p = reg.procedures.get(routeId);
+    if (!bp.routes.includes(routeId) || !p) { add("UNKNOWN_PROCEDURE", `fulfillable ${routeId}`); continue; }
+    for (const condId of Object.keys(conds)) {
+      if (!p.applicability.conditions?.some((c) => c.id === condId)) add("UNKNOWN_CONDITION", `${routeId}:${condId}`);
+    }
+  }
+  for (const l of bp.levels) {
+    if (l.when && !bp.events[l.when.event]) add("EVENT_NOT_RECORDABLE", `level ${l.id} when ${l.when.event}`);
+    if (l.completesWith && !bp.events[l.completesWith]) add("EVENT_NOT_RECORDABLE", `level ${l.id} completes with ${l.completesWith}`);
+    for (const x of l.crossCase ?? []) {
+      if (!reg.procedures.has(x.procedure)) add("UNKNOWN_PROCEDURE", `cross-case ${x.procedure}`);
+      if (!bp.routes.some((r) => reg.procedures.get(r)?.documents.some((d) => d.id === x.document))) {
+        add("UNKNOWN_DOCUMENT", `cross-case document ${x.document}`);
+      }
+    }
+    if (!l.steps || Object.keys(l.steps).length === 0) {
+      const holds = Object.values(bp.deadlines).some((d) => d.level === l.id);
+      if (!holds) add("EMPTY_LEVEL", l.id);
+    }
+  }
+  return issues;
+}

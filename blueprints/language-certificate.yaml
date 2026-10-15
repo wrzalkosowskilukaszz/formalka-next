@@ -1,0 +1,32 @@
+# Case blueprint: the state certificate in Polish. Linked from citizenship (the language proof).
+# NOTE: the exam-date quotes of this procedure failed the quote gate on 2026-10-15 (the official page
+# changed), so its session dates are stale until the guide is updated in production.
+id: language-certificate
+title: { pl: Certyfikat z języka polskiego }
+caretaker: { name: Maciek }
+routes: [polish-language-certificate]
+routeLevel:
+  id: route
+  title: { pl: Po co Ci certyfikat }
+levels:
+  - id: pick-session
+    title: { pl: Wybór sesji }
+    steps: { polish-language-certificate: pick-session }
+  - id: register
+    title: { pl: Zapis w ośrodku }
+    steps: { polish-language-certificate: register-at-centre }
+  - id: pay
+    title: { pl: Opłata w ośrodku }
+    steps: { polish-language-certificate: pay-centre }
+  - id: exam
+    title: { pl: Egzamin }
+    steps: { polish-language-certificate: sit-exam }
+    documents: true
+  - id: result
+    title: { pl: Wynik i certyfikat }
+    steps: { polish-language-certificate: result }
+    completesWith: result_notice
+deadlines:
+  recheck: { level: result, counting: kpa, role: user }
+events:
+  result_notice: { label: { pl: Data otrzymania wyniku } }

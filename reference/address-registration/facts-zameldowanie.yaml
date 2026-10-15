@@ -1,0 +1,76 @@
+# Intake questions for the address registration guide (PESEL-02). Category answers only
+# (ADR-0009); "I don't know" is always offered and never stored as a value (rule 6). The
+# official pages give different documents and deadlines for these groups, so the guide asks.
+
+- key: zameldowanie.citizen_group
+  kind: citizenship_group
+  question:
+    pl: Która grupa dotyczy tej osoby?
+    en: Which group does this person belong to?
+    uk: Яка група стосується цієї особи?
+    ru: Какая группа относится к этому человеку?
+  whyWeAsk:
+    pl: Od odpowiedzi zależą dokumenty, termin i możliwość zameldowania przez internet. Jeśli ta osoba jest członkiem rodziny obywatela polskiego i sama nie jest obywatelem innego państwa UE, wybierz „Żadna z tych grup” albo „Nie wiem” i sprawdź w sekcji „Terminy”, który termin jej dotyczy.
+    en: The answer decides the documents, the deadline and whether online registration is possible. If this person is a family member of a Polish citizen and not a citizen of another EU country themselves, choose “None of these” or “I don't know” and check “Deadlines” to see which deadline applies.
+    uk: Від відповіді залежать документи, строк і можливість зареєструватися онлайн. Якщо ця особа є членом сім'ї громадянина Польщі і сама не є громадянином іншої держави ЄС, виберіть «Жодна з цих груп» або «Не знаю» і перевірте в розділі «Строки», який строк її стосується.
+    ru: От ответа зависят документы, срок и возможность зарегистрироваться онлайн. Если этот человек является членом семьи гражданина Польши и сам не является гражданином другого государства ЕС, выберите «Ни одна из этих групп» или «Не знаю» и проверьте в разделе «Сроки», какой срок к нему относится.
+  unknownHelp:
+    pl: Pokażemy wszystkie wersje w oficjalnym brzmieniu, żeby łatwo było je porównać.
+    en: We'll show every version in the official wording, so you can compare them.
+    uk: Ми покажемо всі варіанти в офіційному формулюванні, щоб ви могли їх порівняти.
+    ru: Мы покажем все варианты в официальной формулировке, чтобы их было легко сравнить.
+  options:
+    # D-01 (owner, 2026-10-15; G-zameldowanie-01, FG-01): a Pole is an EU citizen, so the label says
+    # "other than Poland"; gov.pl's own option is "członkiem rodziny takiego cudzoziemca". A non-EU family
+    # member of a Pole picks "other" (4 days unless the act's cases apply, art. 41 ust. 2a).
+    - value: eu_efta
+      label:
+        pl: Obywatel innego państwa UE niż Polska, EFTA lub Szwajcarii albo członek rodziny takiego obywatela
+        en: A citizen of an EU country other than Poland, of an EFTA country or of Switzerland, or a family member of one
+        uk: Громадянин іншої держави ЄС (не Польщі), ЄАВТ чи Швейцарії або член сім'ї такого громадянина
+        ru: Гражданин другого государства ЕС (не Польши), ЕАСТ или Швейцарии или член семьи такого гражданина
+    # Legal audit 2026-10-02: UK citizens covered by the Withdrawal Agreement show other documents
+    # (act art. 43 ust. 1a, 3a) but have the 4-day deadline, like everyone outside art. 41 ust. 1–2a.
+    - value: uk_wa
+      label:
+        pl: Obywatel Wielkiej Brytanii objęty umową o wystąpieniu z UE albo członek jego rodziny
+        en: A UK citizen covered by the Withdrawal Agreement, or a family member of one
+        uk: Громадянин Великої Британії, на якого поширюється Угода про вихід, або член його сім'ї
+        ru: Гражданин Великобритании, на которого распространяется Соглашение о выходе, или член его семьи
+    - value: other
+      label:
+        pl: Żadna z tych grup (także członek rodziny obywatela polskiego, który sam nie jest obywatelem UE)
+        en: None of these (also a family member of a Polish citizen who isn't an EU citizen themselves)
+        uk: Жодна з цих груп (також член сім'ї громадянина Польщі, який сам не є громадянином ЄС)
+        ru: Ни одна из этих групп (также член семьи гражданина Польши, который сам не является гражданином ЕС)
+
+- key: zameldowanie.stay
+  kind: choice
+  question:
+    pl: Na jaki pobyt ta osoba chce się zameldować?
+    en: What kind of stay does this person want to register?
+    uk: На яке перебування ця особа хоче зареєструватися?
+    ru: На какое пребывание этот человек хочет зарегистрироваться?
+  whyWeAsk:
+    pl: Formularz i dokumenty są inne dla pobytu stałego i czasowego.
+    en: The form and the documents differ for a permanent and a temporary stay.
+    uk: Бланк і документи відрізняються для постійного і тимчасового перебування.
+    ru: Бланк и документы отличаются для постоянного и временного пребывания.
+  unknownHelp:
+    pl: Pokażemy oba formularze i obie listy dokumentów.
+    en: We'll show both forms and both document lists.
+    uk: Ми покажемо обидва бланки та обидва списки документів.
+    ru: Мы покажем оба бланка и оба списка документов.
+  options:
+    - value: permanent
+      label:
+        pl: Stały (pod tym adresem mieszka na stałe)
+        en: Permanent (this address is their permanent home)
+        uk: Постійне (за цією адресою живе постійно)
+        ru: Постоянное (живет по этому адресу постоянно)
+    - value: temporary
+      label:
+        pl: Czasowy (mieszka pod tym adresem przez jakiś czas)
+        en: Temporary (they live at this address for a while)
+        uk: Тимчасове (живе за цією адресою певний час)
+        ru: Временное (живет по этому адресу какое-то время)
