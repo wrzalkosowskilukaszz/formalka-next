@@ -78,7 +78,7 @@ Events the blueprints accept:
 | Any case (advisor) | `visit_planned` and `call_planned`, each with `{ date, time, level }` |
 
 ## Limits (honest)
-- **Content.** Only 5 procedures are snapshotted. The residence card has no verified guide here.
+- **Content.** Only 6 procedures are snapshotted: address registration, PESEL, citizenship by recognition and by grant, the language certificate, and temporary residence (the residence card).
 - **Dates.** The KPA counting and the holiday list are implemented from memory and marked [UNVERIFIED]. Quote them from the acts (ELI) before any product use. Reminders always use the earlier date, so a wrong shift can only make a reminder early, never late.
 - **Citizenship content.** It was checked in a first pass only (October inventory). Show values as labelled examples.
 - **Office data.** No office addresses or phone numbers (not in the snapshots).
