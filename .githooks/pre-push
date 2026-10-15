@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Lab safety (ADR-N001): this repository may only push to its own private remote.
+# Production (wrzalkosowskilukaszz/formalka) must never receive lab commits.
+url="$2"
+case "$url" in
+  *github.com/wrzalkosowskilukaszz/formalka-next|*github.com/wrzalkosowskilukaszz/formalka-next.git) exit 0 ;;
+  *) echo "pre-push: refusing to push the Formalka Next lab to '$url' (only formalka-next is allowed)" >&2; exit 1 ;;
+esac
