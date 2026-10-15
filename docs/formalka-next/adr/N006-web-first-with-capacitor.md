@@ -29,3 +29,9 @@ React Native would double the UI work for one developer and weaken desktop, wher
 
 ## Revisit when
 Web platforms ship scheduled notifications, or the native shell's maintenance outweighs its use.
+
+## Amendment (2026-10-15, owner)
+"Celujemy w telefony głównie" (we target phones mainly), and the owner's proactive-advisor vision makes on-device reminders the core of the product, not an add-on. So:
+- **Android and iOS apps from the first public test**, not iOS later. Apple Developer Program: $99/year.
+- **The web build stays for desktop:** reading and printing.
+- **Proactivity:** one per-case consent ("Maciek may add reminders and calendar entries for this case") replaces a tap per reminder. Every action is visible in the case history, and the consent can be revoked.

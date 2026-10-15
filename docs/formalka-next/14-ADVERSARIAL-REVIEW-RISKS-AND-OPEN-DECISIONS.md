@@ -74,7 +74,7 @@ This is the strongest case against Formalka Next that the author could build. It
 |---|---|---|---|
 | O1 | Proceed to Phase 1 (validation, no product code)? | Yes / no / change scope | Yes; it costs mostly your time and answers A1, A4, A5, A7, A8 |
 | O2 | Pilot | Address registration + PESEL / residence permit / citizenship | Address registration + PESEL (13 §1) |
-| O3 | Platform | PWA only / React Native / web + Capacitor | Web + Capacitor; Android internal test first (09 §3) |
+| O3 | Platform | PWA only / React Native / web + Capacitor | **Decided (owner, 2026-10-15): phones first.** Web + Capacitor, Android and iOS apps from the first public test (N006 amendment) |
 | O4 | Local-first, no account (keeps ADR-0009) | Keep / allow optional sync later | Keep for slice 1; revisit only if H4 fails |
 | O5 | AI in slice 1 | None / extraction only / extraction + companion | None in slice 1; extraction in Phase 4 if A7 holds; companion capped and optional |
 | O6 | Day-count reading (06 §7 Q3) | Ask a free law clinic / ask an office / keep both readings | Keep both readings (reminder on the earlier), and ask an office and a clinic in Phase 1 |
