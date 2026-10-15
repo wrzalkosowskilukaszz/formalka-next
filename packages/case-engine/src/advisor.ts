@@ -133,8 +133,18 @@ function basisOf(l: PlanLevel): string[] {
 function visitPack(plan: CasePlan, level: PlanLevel) {
   const docs = plan.levels.flatMap((l) => l.tasks).filter((t) => t.kind === "document" && t.status !== "not_needed");
   const fees = plan.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === "applies");
+  // Alternatives travel together: "A albo B", never two separate requirements.
+  const seen = new Set<string>();
+  const bring: string[] = [];
+  for (const t of docs) {
+    if (seen.has(t.id)) continue;
+    const group = [t, ...docs.filter((o) => o !== t && t.alternatives?.includes(o.id))];
+    group.forEach((g) => seen.add(g.id));
+    const text = group.map((g) => g.title.pl).join(" albo ");
+    bring.push(group.some((g) => g.outcome === "unknown") ? `${text} (sprawdź, czy Cię dotyczy)` : text);
+  }
   return {
-    bring: docs.map((t) => (t.outcome === "unknown" ? `${t.title.pl} (sprawdź, czy Cię dotyczy)` : t.title.pl)),
+    bring,
     fees: fees.map((f) => (f.exemption?.outcome === "applies" ? `${f.purpose.pl}: zwolnienie (szczegóły w planie)` : `${f.purpose.pl}: ${f.amountPln} zł`)),
     basis: [...basisOf(level), ...docs.map((t) => t.ruleRef), ...fees.map((f) => f.ruleRef)],
   };

@@ -37,12 +37,25 @@ export function scoreFacts(bp: Blueprint, reg: Registry, state: CaseState): Map<
   return score;
 }
 
-/** The fact to ask next, or null when no answer could change the plan (or the cap is reached). */
+/**
+ * The fact to ask next, or null when no answer could change the plan (or the cap is reached).
+ * The weights pick the most decisive fact; then, within the procedure that asks it, the content's own
+ * question order wins (an option may refer to an earlier answer, e.g. "na tym tytule").
+ */
 export function nextQuestion(bp: Blueprint, reg: Registry, state: CaseState, asked: number, cap = 12): string | null {
   if (asked >= cap) return null;
+  const scores = scoreFacts(bp, reg, state);
   const order = bp.routes.flatMap((r) => reg.procedures.get(r)?.requiredFacts ?? []);
   const rank = (f: string) => (order.includes(f) ? order.indexOf(f) : order.length);
-  const ranked = [...scoreFacts(bp, reg, state)].filter(([f, s]) => s > 0 && reg.facts.has(f))
+  const ranked = [...scores].filter(([f, s]) => s > 0 && reg.facts.has(f))
     .sort((a, b) => b[1] - a[1] || rank(a[0]) - rank(b[0]) || a[0].localeCompare(b[0]));
-  return ranked[0]?.[0] ?? null;
+  const top = ranked[0]?.[0];
+  if (!top) return null;
+  for (const routeId of bp.routes) {
+    const required = reg.procedures.get(routeId)?.requiredFacts ?? [];
+    if (!required.includes(top)) continue;
+    const earlier = required.slice(0, required.indexOf(top)).find((f) => (scores.get(f) ?? 0) > 0 && reg.facts.has(f));
+    if (earlier) return earlier;
+  }
+  return top;
 }

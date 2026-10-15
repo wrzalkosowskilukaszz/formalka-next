@@ -110,6 +110,7 @@ test("questions: only what can change the plan; never twice; Nie wiem counts as 
     facts[q] = answers[q] ?? UNKNOWN;
   }
   assert.ok(asked.length <= 5, `asked ${asked.length}`);
+  assert.ok(asked.indexOf("citizenship.permanent_title") < asked.indexOf("citizenship.group"), `content order kept: ${asked.join(" > ")}`);
   assert.equal(planCase(CIT, reg, S(facts)).route.status, "choice");
   assert.equal(nextQuestion(CIT, reg, S({}), 12), null, "cap");
   assert.notEqual(nextQuestion(CIT, reg, S({ "citizenship.permanent_title": UNKNOWN })), "citizenship.permanent_title");
@@ -222,7 +223,10 @@ test("advisor: the office's time passing is told once, as information; a quiet w
   const passed = items.find((i) => i.kind === "office_deadline_passed")!;
   assert.equal(passed.fireAt, "2027-06-01T09:00");
   assert.doesNotMatch(passed.message.pl, /musisz|odwołaj/i);
-  assert.ok(items.some((i) => i.kind === "nudge"));
+  assert.ok(!items.some((i) => i.kind === "nudge"), "after filing nothing is the user's to do: no nudge");
+  const idle = S(facts, { ...ACTIVE, routeChoice: "citizenship-recognition" });
+  const idleItems = agenda({ caseId: "c2", bp: CIT, plan: planCase(CIT, reg, idle), state: idle, prefs: CONSENT, now: { date: "2027-01-10", time: "12:00" }, lastActivity: "2026-12-01" });
+  assert.deepEqual(idleItems.map((i) => [i.kind, i.fireAt]), [["nudge", "2027-01-11T10:00"]]);
   assert.equal(outOfQuiet("2026-10-30T21:30", DEFAULT_PREFS.quiet), "2026-10-31T08:00");
   assert.equal(outOfQuiet("2026-10-30T06:00", DEFAULT_PREFS.quiet), "2026-10-30T08:00");
 });
@@ -262,4 +266,22 @@ test("offices: only from the registry's office layer, by the user's city; visit 
   const prep = agenda({ caseId: "c3", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs: CONSENT, now: NOW }).find((i) => i.kind === "visit_prep")!;
   assert.match(prep.message.pl, /Urzędy dla miejscowości Warszawa: 18/);
   assert.match(prep.message.pl, /Rezerwacja wizyty: https:\/\/rezerwacje\.um\.warszawa\.pl\//);
+});
+
+test("alternatives travel together; a later step done closes the steps before it", () => {
+  const facts = { "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" };
+  const st = S(facts, { ...ACTIVE, events: [
+    { type: "arrival_at_address", date: "2026-10-28", by: "user" },
+    { type: "visit_planned", date: "2026-10-30", time: "10:00", level: "file", by: "user" },
+  ] });
+  const p = planCase(ADDR, reg, st);
+  const visa = p.levels.flatMap((l) => l.tasks).find((t) => t.id.endsWith(":visa"))!;
+  assert.deepEqual(visa.alternatives, ["zameldowanie-foreigner:document:visa-free-or-waiting"]);
+  const prep = agenda({ caseId: "c4", bp: ADDR, plan: p, state: st, prefs: CONSENT, now: NOW }).find((i) => i.kind === "visit_prep")!;
+  assert.match(prep.message.pl, /wizę albo /);
+  assert.match(prep.message.pl, /umowę cywilnoprawną[^\n]* albo /);
+  const filed = planCase(ADDR, reg, { ...st, events: [...st.events, { type: "filing", date: "2026-10-30", by: "user" }] });
+  assert.deepEqual(filed.levels.map((l) => [l.id, l.state]), [
+    ["route", "done"], ["fill-in", "done"], ["owner-confirms", "done"], ["file", "done"], ["registered", "available"],
+  ]);
 });

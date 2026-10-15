@@ -35,6 +35,8 @@ export interface PlanTask {
   description?: L10n; ruleRef: string; outcome: "applies" | "unknown"; missingFacts: string[];
   status: TaskStatus; quotes: Quote[];
   crossCase?: { procedure: string; blueprint?: string; label: L10n };
+  /** Other documents that can stand in for this one ("A albo B"), from the registry's alternativeTo. */
+  alternatives?: string[];
 }
 export interface PlanFee {
   id: string; ruleRef: string; purpose: L10n; amountPln: number; optional: boolean;
@@ -219,12 +221,15 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
           noteUnsure(d.condition, `document:${d.id}`);
           const id = `${p.id}:document:${d.id}`;
           const x = l.crossCase?.find((c) => c.document === d.id);
+          const alts = [...new Set([...(d.alternativeTo ?? []), ...p.documents.filter((o) => o.alternativeTo?.includes(d.id)).map((o) => o.id)])]
+            .map((a) => `${p.id}:document:${a}`);
           tasks.push({
             id, levelId: l.id, kind: "document", title: l.taskTitles?.[d.id] ?? { pl: d.namePl.value },
             officialName: d.namePl.value, description: d.description, ruleRef: ref("document", d.id),
             outcome: e.outcome === "unknown" ? "unknown" : "applies", missingFacts: e.missing,
             status: state.tasks[id] ?? "todo", quotes: d.namePl.quotes,
             ...(x ? { crossCase: { procedure: x.procedure, blueprint: x.blueprint, label: x.label } } : {}),
+            ...(alts.length ? { alternatives: alts } : {}),
           });
         }
       } else if (step) {
@@ -319,8 +324,16 @@ function deadlinesFor(
 
 function settleStates(bp: Blueprint, levels: PlanLevel[], state: CaseState) {
   const byId = new Map(levels.map((l) => [l.id, l]));
+  // A later step the user recorded as done implies the steps it depends on were done too
+  // (an office doesn't take an application whose earlier steps are missing).
+  const implied = new Set<string>();
+  const mark = (id: string) => {
+    for (const d of byId.get(id)?.dependsOn ?? []) if (!implied.has(d)) { implied.add(d); mark(d); }
+  };
+  for (const l of levels) if (l.completesWith && lastEvent(state, l.completesWith)) mark(l.id);
   const done = (l: PlanLevel): boolean => {
     if (l.order === 0) return l.state === "done";
+    if (implied.has(l.id)) return true;
     if (l.completesWith) return !!lastEvent(state, l.completesWith);
     if (!l.tasks.length) return false;
     return l.tasks.every((t) => t.status === "done" || t.status === "not_needed");
