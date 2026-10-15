@@ -43,7 +43,7 @@ Formalka can produce the *official* registration form already filled with the us
 - Consent to pass contact data to the register is the user's legal choice, so it is never pre-ticked.
 
 ## Limitations
-- **Tool:** this used pypdf in Python, while production would use pdf-lib in the web view or Capacitor. Not tested on a phone [S3b, 13 §PR-6].
+- **Tool:** this used pypdf in Python, while production would use pdf-lib in the web view or Capacitor. Not tested on a phone [S3b; 13 §6, PR 6].
 - **Rendering:** the appearance relies on `NeedAppearances`. Some viewers, iOS Quick Look among them [UNVERIFIED], may not regenerate appearances, so production should generate appearance streams.
 - **Scope:** one form. The permanent-stay form and other offices' forms are not inventoried.
 - **Office acceptance:** whether offices accept a printed form filled by software is **OPEN**. Ask 2–3 offices (14 §6).

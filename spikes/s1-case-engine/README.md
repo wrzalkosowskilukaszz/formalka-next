@@ -73,7 +73,7 @@ Each fault fails at least one test. The `applyApproved` guard survived at first;
 - the code is about 390 lines with no dependencies.
 
 ## Limitations
-- **One procedure and a toy template.** It does not show how many real procedures meet the plannable bar (06 §1). That is the main open cost driver.
+- **One procedure and a toy template.** It does not show how many real procedures meet the plannable bar (06 §2). That is the main open cost driver.
 - **The rule language is the production one plus a `prefix` shorthand for TERYT.** Production uses place layers, not prefixes.
 - **The day-count reading is unresolved (06 §7 Q3).** The spike computes both readings and reminds on the earlier one. Which reading is legally right is OPEN.
 - **"Nie wiem" gives no reminder at all.** Design choice to confirm: remind on the earliest candidate date with neutral text ("sprawdź termin"), or show only the in-app attention list (03 F4).

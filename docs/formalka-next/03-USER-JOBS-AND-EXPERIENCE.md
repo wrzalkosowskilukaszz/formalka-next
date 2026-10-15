@@ -35,7 +35,7 @@ Nationality never sets tone, persona or assumptions.
 2. **Interviews (45 min, in the person's language with an interpreter where needed):** last procedure walked through on a timeline; where they lost time; what they paid for; what they would never share with an app.
 3. **Concept test (paper or clickable wireflow, no AI):** the plan and focus view for J1/J4; comprehension of "your case stays on your phone".
 4. **Synthesis:** every quote tagged to a job above; jobs re-ranked by evidence. Interviews are reported as interviews, never mixed with desk research.
-5. **Decision:** confirm or change the pilot (05 §17 / 14 §2) and H2, H4, H5.
+5. **Decision:** confirm or change the pilot (13 §1) and H2, H4, H5.
 
 ## 3. Three experience models
 

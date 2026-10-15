@@ -34,7 +34,7 @@ A procedure becomes **plannable** only when all of these hold:
 | P7 | Forms used by `fill_form` tasks have a reviewed form template (hash + field map) | Validator |
 | P8 | Verification level `checked` (owner's editorial check), or `sources_disagree` with every position quoted | Existing level |
 
-Address registration is the closest candidate (after D-01 and the redesign's phase 0); see 14 §2.
+Address registration is the closest candidate (after D-01 and the redesign's phase 0); see 13 §1.
 
 ## 3. Rule representation
 
