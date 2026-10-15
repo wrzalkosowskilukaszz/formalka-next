@@ -111,6 +111,7 @@ function followUp(c, itemId, answerId) {
 // ——— rendering ———
 function render() {
   renderTester();
+  if (!S.home) $('#notice').hidden = true;
   const st = $('#stage');
   if (S.home || !cur()) { st.innerHTML = homeView(); wireHome(); }
   else { st.innerHTML = caseView(cur()); wireCase(cur()); }
@@ -123,7 +124,7 @@ function renderTester() {
     <button class="tbtn" data-t="reset" aria-label="Reset">${icon('arrow-counter-clockwise')}</button>`;
   $('.tester').onclick = (e) => {
     const b = e.target.closest('[data-t]'); if (!b) return;
-    if (b.dataset.t === 'reset') { location.reload(); return; }
+    if (b.dataset.t === 'reset') { Object.assign(S, { cases: [], current: null, clock: { date: '2026-10-19', time: '10:00' }, delivered: new Set(), lock: [], home: true }); render(); return; }
     travel(Number(b.dataset.t));
   };
 }
@@ -152,7 +153,7 @@ function startFromText(text) {
   const t = text.toLowerCase();
   const hit = INTENTS.find((i) => i.words.some((w) => t.includes(w)));
   if (hit) { newCase(hit.id); if (cur()) cur().log.splice(cur().log.length - 2, 0, { who: 'me', text }); render(); return; }
-  alert('Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie i certyfikat z polskiego.');
+  const n = $('#notice'); n.textContent = 'Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie i certyfikat z polskiego.'; n.hidden = false;
 }
 
 function caseView(c) {
