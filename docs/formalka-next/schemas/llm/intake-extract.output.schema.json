@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "formalka-next/llm/intake-extract.output",
+  "title": "Intake extraction (LLM output). Candidates only: nothing here changes a plan until the user confirms.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["templates", "facts", "conflicts", "unmatched", "identifyingDataSeen"],
+  "properties": {
+    "templates": {
+      "type": "array", "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["templateId", "confidence", "evidence"],
+        "properties": {
+          "templateId": { "type": "string", "description": "Must be one of the ids given in the prompt" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence": { "type": "string", "description": "Verbatim span of the (masked) user text" }
+        }
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["key", "value", "confidence", "evidence"],
+        "properties": {
+          "key": { "type": "string", "description": "A fact catalogue key given in the prompt; identifying keys are never offered" },
+          "value": { "type": "string", "description": "An option value of that key, or __unknown__" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence": { "type": "string", "description": "Verbatim span of the masked user text that states it" }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["key", "values", "evidence"],
+        "properties": {
+          "key": { "type": "string" },
+          "values": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "unmatched": {
+      "type": "array", "description": "Statements that matter but match no option; kept as notes, never coerced",
+      "items": { "type": "string" }
+    },
+    "identifyingDataSeen": {
+      "type": "boolean", "description": "True if the input still contained identifying data after masking; the app then discards the response and re-masks"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "formalka-next/llm/companion-answer.output",
+  "title": "Companion answer (LLM output). Explains and proposes; never changes state.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["answer", "citations", "proposals", "uncertainty", "handoff"],
+  "properties": {
+    "answer": { "type": "string", "description": "Plain-language answer in the case language" },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["ruleRef"],
+        "properties": { "ruleRef": { "type": "string", "description": "procedureId:version:itemKind:itemId present in the brief" } }
+      }
+    },
+    "proposals": {
+      "type": "array", "description": "Queued for user approval (07); unknown kinds are dropped",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["kind", "target", "summary"],
+        "properties": {
+          "kind": { "enum": ["mark_task_done", "change_fact", "run_tool", "add_note"] },
+          "target": { "type": "string" },
+          "args": { "type": "object" },
+          "summary": { "type": "string" }
+        }
+      }
+    },
+    "uncertainty": { "enum": ["none", "depends_on_unknown_fact", "sources_disagree", "not_in_registry"] },
+    "handoff": { "type": ["string", "null"], "description": "Handoff option id from the procedure when the question needs a person" }
+  }
+}

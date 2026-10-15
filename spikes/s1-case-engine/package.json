@@ -1,0 +1,7 @@
+{
+  "name": "s1-case-engine",
+  "private": true,
+  "type": "module",
+  "description": "Spike S1: deterministic planner, validator, question selector, replan diff and reminders over a snapshot of Formalka's address-registration rules. No dependencies; Node 22.18+ runs the TypeScript directly.",
+  "scripts": { "test": "node --test \"test/*.test.ts\"" }
+}

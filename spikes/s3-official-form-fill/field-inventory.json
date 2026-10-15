@@ -1,0 +1,562 @@
+{
+ "source": "https://www.gov.pl/attachment/606f2b47-0c11-4744-a2b4-9eab57c2fbb8",
+ "document": "formularz zgłoszenia pobytu czasowego (gov.pl attachment linked from content/procedures/zameldowanie.yaml)",
+ "downloaded": "2026-10-15",
+ "sha256": "04ab2fbb7559df1035640f54d8a5af9d1df5314330a26d621f7ad2e674e72b24",
+ "pages": 3,
+ "xfa": false,
+ "encrypted": false,
+ "fieldCount": 110,
+ "fields": [
+  {
+   "name": "nazwisko",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "imię (imiona)",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "pierwsza cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "druga cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "trzecia cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "czwarta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "piąta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "szósta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "siódma cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "ósma cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dziewiąta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dziesiąta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "jedenasta cyfra PESEL",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kraj urodzenia",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia dzień pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia dzień druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia miesiąc pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia miesiąc druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia rok pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia rok druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia rok trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data urodzenia rok czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "miejsce urodzenia",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kraj miejsca zamieszkania",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "pierwsza cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "druga cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "trzecia cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "czwarta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "piąta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "szósta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "siódma cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "adres poczty elektronicznej",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "wyrażam zgodę na przekazanie do rejestru danych kontaktowych imienia, nazwiska, numeru PESEL oraz",
+   "type": "/Btn",
+   "maxLen": null
+  },
+  {
+   "name": "ulica",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu piąta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu szósta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu siódma cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu ósma cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer domu dziewiąta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kod pocztowy druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kod pocztowy trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kod pocztowy czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kod pocztowy pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "kod pocztowy piąta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "miejscowość dzielnica",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "gmina",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "województwo",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa dzień pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa dzień druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa miesiąc pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa miesiąć druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa rok pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa rok druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa rok trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data początkowa rok czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa dzień pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa dzień druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa miesiąc pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa miesiąc druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa rok druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa rok trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa rok pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "data końcowa rok czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "imię pełnomocnika",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela miejscowość",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data dzień druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data dzień pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data miesiąc pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data miesiąc druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data rok pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data rok druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data rok trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie właściciela data rok czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data dzień druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data dzień pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data rok druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data rok trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data rok pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data rok czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "ósma cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dziewiąta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dziesiąta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "jedenasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dwunasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "trzynasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "czternasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "piętnasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "szesnasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "siedemansta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "osiemnasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dziewiętnasta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "dwudziesta cyfra numeru telefonu komórkowego",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu trzecia cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu czwarta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu piąta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu szósta cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "numer lokalu siódma cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data miesiąc pierwsza cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie data miesiac druga cyfra",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "n",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "z",
+   "type": "/Btn",
+   "maxLen": null
+  },
+  {
+   "name": "oświadczenie osoby zgłaszającej miejscowość",
+   "type": "/Tx",
+   "maxLen": null
+  },
+  {
+   "name": "wyrażam zgodę na przekazanie do rejestru danych kontaktowych numeru telefonu komórkowego",
+   "type": "/Btn",
+   "maxLen": null
+  },
+  {
+   "name": "wyrażam zgodę na przekazanie do rejestru danych kontaktowych adresu poczty elektronicznej",
+   "type": "/Btn",
+   "maxLen": null
+  }
+ ]
+}

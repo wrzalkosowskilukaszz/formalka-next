@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "formalka-next/validator-report",
+  "title": "Plan validator report (deterministic). A plan is proposable only when status = pass.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "checkedAt", "registryVersions", "violations"],
+  "properties": {
+    "status": { "enum": ["pass", "fail"] },
+    "checkedAt": { "type": "string" },
+    "registryVersions": { "type": "object", "additionalProperties": { "type": "integer" } },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["code", "itemId", "detail"],
+        "properties": {
+          "code": { "enum": ["NO_RULE_REF", "RULE_NOT_PUBLISHED", "RULE_WITHDRAWN", "QUOTE_MISSING", "DEADLINE_WITHOUT_BASIS",
+                             "CYCLE", "UNKNOWN_DEPENDENCY", "FACT_NOT_IN_CATALOGUE", "IDENTIFYING_FACT", "STALE_SOURCE_DATE",
+                             "TRANSLATION_GATE_OPEN", "TEMPLATE_NOT_PLANNABLE"] },
+          "itemId": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -8,3 +8,6 @@ node_modules/
 .next/
 dist/
 coverage/
+# Official forms and anything filled from them stay out of git (spike S3)
+*.pdf
+__pycache__/
