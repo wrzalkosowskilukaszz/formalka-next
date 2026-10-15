@@ -31,6 +31,19 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 
 **Recommendation:** Phase 1 (validation) now, with no product code. Phase 2 only through the gates in 13 §5.
 
+## 2a. Progress on 2026-10-15/16 (night)
+- **Owner decisions:** concept approved with the prototype first; phones first (Android and iOS); prototype in a separate session; one consent per case for the proactive advisor.
+- **Experience prototype:** v1 covers brief 15 §4 end to end; private link reported to the owner (`prototype/`).
+- **Living Case engine** (`packages/case-engine`, doc 16):
+  - blueprints for 4 case types over Formalka's real content;
+  - a level map with honest states;
+  - routes the user chooses, or reaches through another case;
+  - deadlines from recorded events;
+  - an independent validator;
+  - the proactive advisor agenda;
+  - 16 tests, 11 injected faults caught;
+  - a 315 KB browser build for the prototype.
+
 ## 3. Decisions recommended (ADRs in `adr/`, all "Proposed")
 
 | ADR | Decision |
@@ -42,6 +55,8 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 | N005 | The companion is an optional persona over one stateless engine, capped; no external actions (no level 3) |
 | N006 | One React web app + Capacitor shells (Android first); the guide site unchanged |
 | N007 | Slice 1 = address registration + PESEL, without AI; slice 2 = residence permit, only if H1 and H6 hold |
+| N008 | Each case type is a blueprint over verified procedures; locks only from the procedure's order, shown with their reason |
+| N009 | The advisor acts by itself on the device (one consent per case), with quiet hours, one notification a day and no claimed actions |
 
 ## 4. Reuse of today's Formalka (01 §4)
 Reused largely as is:
@@ -144,7 +159,9 @@ The hand-coding figures below are kept for comparison.
 | 12 | Cost model (`tools/cost-model.mjs`) |
 | 13 | Estimates, pilot choice, roadmap, PR sequence |
 | 14 | Adversarial review, risks, open decisions |
-| `adr/` | N001–N007 |
+| `adr/` | N001–N009 |
+| 15 | Prototype brief |
+| 16 | The Living Case engine (built) |
 | `diagrams/` | Slice 1 sequence; what leaves the device |
 | `schemas/` | Case store, registry additions, LLM output schemas, validator report |
 | `test-scenarios/` | Draft scenarios |
