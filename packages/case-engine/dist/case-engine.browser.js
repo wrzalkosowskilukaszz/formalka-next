@@ -373,6 +373,117 @@
     return s === void 0 ? [] : Array.isArray(s) ? s : [s];
   }
 
+  // src/rules.ts
+  var UNKNOWN = "__unknown__";
+  function evaluate(rule, a) {
+    if (!rule) return { outcome: "applies", missing: [] };
+    if ("all" in rule) return combine(rule.all.map((r) => evaluate(r, a)), "all");
+    if ("any" in rule) return combine(rule.any.map((r) => evaluate(r, a)), "any");
+    if ("not" in rule) {
+      const c = evaluate(rule.not, a);
+      const outcome = c.outcome === "unknown" ? "unknown" : c.outcome === "applies" ? "does_not_apply" : "applies";
+      return { outcome, missing: c.missing };
+    }
+    const v = Object.hasOwn(a, rule.fact) ? a[rule.fact] : void 0;
+    if (v === void 0 || v === UNKNOWN) return { outcome: "unknown", missing: [rule.fact] };
+    const ok = "eq" in rule ? v === rule.eq : "in" in rule ? rule.in.includes(v) : String(v).startsWith(rule.prefix);
+    return { outcome: ok ? "applies" : "does_not_apply", missing: [] };
+  }
+  function combine(cs, kind) {
+    const decisive = kind === "all" ? "does_not_apply" : "applies";
+    if (cs.some((c) => c.outcome === decisive)) return { outcome: decisive, missing: [] };
+    if (cs.some((c) => c.outcome === "unknown"))
+      return { outcome: "unknown", missing: [...new Set(cs.flatMap((c) => c.missing))] };
+    return { outcome: kind === "all" ? "applies" : "does_not_apply", missing: [] };
+  }
+
+  // src/intake.ts
+  var TOPIC = {
+    "citizenship.ever_polish": /obywatelstw/i,
+    "citizenship.where_lives": /mieszkam|przebywam|jestem w Polsce|za granic/i,
+    "citizenship.permanent_title": /poby[tc]\w* stał|stałego pobytu|rezydent\w* długoterminow/i,
+    "citizenship.language": /certyfikat|\b[BC][12]\b/i,
+    "certyfikat.purpose": /obywatelstw|rezydent\w* długoterminow/i,
+    "pobyt_czasowy.purpose": /prac|studi|żon|mąż|męż|rodzin|dzieck|dzieci|syn|córk/i,
+    "zameldowanie.stay": /zameld|meldun/i,
+    "zameldowanie.citizen_group": /obywatel/i,
+    "pesel.citizen_group": /obywatel/i,
+    "pesel.stay_over_30": /\b(?:rok|lat|lata|miesi\w*|tydzie\w*|tygodni\w*|dni)\b/i,
+    "pesel.has_number": /PESEL/i,
+    "pesel.temporary_protection": /ochron\w* czasow|\bC?UKR\b/i
+  };
+  function factsAsked(bp2, reg2) {
+    return [...new Set(bp2.routes.flatMap((r) => reg2.procedures.get(r)?.requiredFacts ?? []))].filter((f) => reg2.facts.has(f));
+  }
+  function checkCandidates(text, raw, asked, reg2, state) {
+    const out = { candidates: [], rejected: [] };
+    const ok = [];
+    for (const c of raw) {
+      const options = reg2.facts.get(c.fact)?.options?.map((o) => o.value) ?? [];
+      const code = !asked.includes(c.fact) ? "NOT_ASKED" : !TOPIC[c.fact] ? "ALWAYS_ASKED" : state?.facts[c.fact] !== void 0 ? "ANSWERED" : c.value === UNKNOWN || !options.includes(c.value) ? "BAD_VALUE" : c.evidence.trim().length < 3 || !text.includes(c.evidence) ? "NOT_VERBATIM" : !TOPIC[c.fact].test(c.evidence) ? "OFF_TOPIC" : null;
+      if (code) out.rejected.push({ candidate: c, code });
+      else ok.push(c);
+    }
+    for (const c of ok) {
+      const clash = ok.some((d) => d.fact === c.fact && d.value !== c.value);
+      if (clash) out.rejected.push({ candidate: c, code: "CONFLICT" });
+      else if (!out.candidates.some((d) => d.fact === c.fact)) out.candidates.push(c);
+    }
+    return out;
+  }
+  function confirmCandidates(state, candidates, confirmed) {
+    const facts = { ...state.facts };
+    for (const c of candidates) if (confirmed.includes(c.fact) && facts[c.fact] === void 0) facts[c.fact] = c.value;
+    return { ...state, facts };
+  }
+  var RULES = [
+    { fact: "citizenship.ever_polish", value: "lost", re: /miał\w* polskie obywatelstwo[^.]{0,30}straci\w*/i },
+    { fact: "citizenship.ever_polish", value: "no", re: /nigdy nie miał\w* (?:polskiego obywatelstwa|obywatelstwa polskiego)/i, negative: true },
+    { fact: "citizenship.where_lives", value: "poland_visa", re: /(?:jestem|przebywam|mieszkam) w Polsce na wiz\w*/i },
+    { fact: "citizenship.where_lives", value: "poland_legal", re: /mieszkam w Polsce[^.]{0,40}na (?:pobycie|karcie pobytu)/i },
+    { fact: "citizenship.where_lives", value: "abroad", re: /mieszkam za granicą/i },
+    // "na pobycie stałym" (living on it), not "na pobyt stały" (what one registers for: zameldowanie).
+    { fact: "citizenship.permanent_title", value: "yes", re: /mam (?:pobyt\w* stał\w*|zezwolenie na pobyt stały|prawo stałego pobytu|kartę stałego pobytu)|na pobycie stałym/i },
+    { fact: "citizenship.permanent_title", value: "no", re: /nie mam (?:jeszcze )?(?:pobytu stałego|zezwolenia na pobyt stały)/i, negative: true },
+    { fact: "citizenship.language", value: "yes", re: /mam (?:już )?(?:certyfikat\w*(?: z polskiego)?(?: (?:na poziomie )?[BC][12])?|[BC][12])\b/i },
+    { fact: "citizenship.language", value: "yes", re: /mam [^.]{0,40}? i (?:certyfikat\w*(?: z polskiego)?(?: [BC][12])?|[BC][12])\b/i },
+    { fact: "citizenship.language", value: "no", re: /nie mam (?:jeszcze )?certyfikat\w*/i, negative: true },
+    { fact: "certyfikat.purpose", value: "citizenship", re: /certyfikat\w*[^.]{0,20} do obywatelstwa/i },
+    { fact: "pobyt_czasowy.purpose", value: "seasonal", re: /prac\w* sezonow\w*/i },
+    { fact: "pobyt_czasowy.purpose", value: "work", re: /(?:dostał\w*|mam|znalazł\w*) pracę|pracuję(?! sezonowo)/i },
+    { fact: "pobyt_czasowy.purpose", value: "study", re: /studiuję|(?:na|dostał\w* się na) studia/i },
+    { fact: "pobyt_czasowy.purpose", value: "family_abroad", re: /(?:żona|mąż|córka|syn|dziecko|dzieci) (?:jest|są|mieszka|mieszkają|został\w*) (?:jeszcze |nadal |wciąż )?(?:za granicą|poza Polską|na Ukrainie|w Ukrainie|na Białorusi|w Indiach)/i },
+    { fact: "zameldowanie.stay", value: "permanent", re: /zameld\w*[^.]{0,20} na pobyt stały/i },
+    { fact: "zameldowanie.stay", value: "temporary", re: /zameld\w*[^.]{0,20} na pobyt czasowy/i },
+    { fact: "zameldowanie.citizen_group", value: "eu_efta", re: /jestem obywatel\w* (?:UE|Unii Europejskiej|państwa UE|EFTA|Szwajcarii)/i },
+    { fact: "pesel.citizen_group", value: "eu_efta_ch_uk", re: /jestem obywatel\w* (?:UE|Unii Europejskiej|państwa UE|EFTA|Szwajcarii)/i },
+    { fact: "pesel.stay_over_30", value: "yes", re: /na (?:rok|(?:dwa|trzy|kilka) lata|\d+ lat|(?:kilka|\d+) miesięcy|pół roku)\b/i },
+    { fact: "pesel.stay_over_30", value: "no", re: /na (?:kilka dni|tydzień|dwa tygodnie|\d+ dni)\b/i },
+    { fact: "pesel.has_number", value: "no", re: /nie mam (?:jeszcze )?(?:numeru )?PESEL/i, negative: true },
+    { fact: "pesel.has_number", value: "yes", re: /mam (?:już )?(?:numer )?PESEL/i },
+    { fact: "pesel.temporary_protection", value: "yes", re: /(?:mam|korzystam z) (?:status\w* )?(?:ochron\w* czasow\w*|C?UKR)\b/i },
+    { fact: "pesel.temporary_protection", value: "no", re: /nie (?:mam|korzystam z) (?:status\w* )?(?:ochron\w* czasow\w*|C?UKR)\b/i, negative: true }
+  ];
+  var baselineExtractor = {
+    id: "baseline-pl-1",
+    extract(text, facts) {
+      const out = [];
+      for (const r of RULES) {
+        if (!facts.includes(r.fact)) continue;
+        for (const m of text.matchAll(new RegExp(r.re.source, `${r.re.flags}g`))) {
+          const before = text.slice(Math.max(0, (m.index ?? 0) - 8), m.index);
+          if (!r.negative && /(?:^|[^\p{L}])nie\s+$/iu.test(before)) continue;
+          out.push({ fact: r.fact, value: r.value, evidence: m[0], by: this.id });
+        }
+      }
+      return out;
+    }
+  };
+  function intake(bp2, reg2, text, state, extractor = baselineExtractor) {
+    const asked = factsAsked(bp2, reg2);
+    return checkCandidates(text, extractor.extract(text, asked), asked, reg2, state);
+  }
+
   // src/registry.ts
   function need(cond, what) {
     if (!cond) throw new Error(`registry: ${what}`);
@@ -433,30 +544,6 @@
       source: "office"
     }));
     return { offices, needsPlace: false, noneForPlace: offices.length === 0 };
-  }
-
-  // src/rules.ts
-  var UNKNOWN = "__unknown__";
-  function evaluate(rule, a) {
-    if (!rule) return { outcome: "applies", missing: [] };
-    if ("all" in rule) return combine(rule.all.map((r) => evaluate(r, a)), "all");
-    if ("any" in rule) return combine(rule.any.map((r) => evaluate(r, a)), "any");
-    if ("not" in rule) {
-      const c = evaluate(rule.not, a);
-      const outcome = c.outcome === "unknown" ? "unknown" : c.outcome === "applies" ? "does_not_apply" : "applies";
-      return { outcome, missing: c.missing };
-    }
-    const v = Object.hasOwn(a, rule.fact) ? a[rule.fact] : void 0;
-    if (v === void 0 || v === UNKNOWN) return { outcome: "unknown", missing: [rule.fact] };
-    const ok = "eq" in rule ? v === rule.eq : "in" in rule ? rule.in.includes(v) : String(v).startsWith(rule.prefix);
-    return { outcome: ok ? "applies" : "does_not_apply", missing: [] };
-  }
-  function combine(cs, kind) {
-    const decisive = kind === "all" ? "does_not_apply" : "applies";
-    if (cs.some((c) => c.outcome === decisive)) return { outcome: decisive, missing: [] };
-    if (cs.some((c) => c.outcome === "unknown"))
-      return { outcome: "unknown", missing: [...new Set(cs.flatMap((c) => c.missing))] };
-    return { outcome: kind === "all" ? "applies" : "does_not_apply", missing: [] };
   }
 
   // src/planner.ts
@@ -1009,6 +1096,9 @@
       const key = nextQuestion(bp(blueprintId), reg, state, asked, cap);
       return key ? { key, ...reg.facts.get(key) } : null;
     },
+    /** Fact candidates from the person's own words (on the device); nothing changes until they confirm. */
+    intake: (blueprintId, text, state) => intake(bp(blueprintId), reg, text, state),
+    confirmCandidates,
     agenda: (input) => agenda({ ...input, bp: bp(input.blueprintId) }),
     msg,
     dayPl,

@@ -13,7 +13,8 @@ node slice/build.mjs                                            # slice/dist/ind
 Open `slice/dist/index.html` in any browser, or use the private Artifact link from the session report. The build reuses the prototype's vendored Geist font and icons (licences in `prototype/vendor/`) and Formalka's tokens.
 
 ## What you can do
-1. **Start a case.** Use "Co dziś załatwiamy?" (keywords: obywatelstwo, karta pobytu, zameldowanie, certyfikat) or a chip. Four cases come from four blueprints.
+1. **Start a case.** Use "Co dziś załatwiamy?" (keywords: obywatelstwo, karta pobytu, zameldowanie, certyfikat, PESEL) or a chip. Five cases come from five blueprints.
+   - **Describe it in your own words** ("Mieszkam w Polsce od pięciu lat na pobycie stałym, mam certyfikat B1, chcę obywatelstwo"). A card shows what was understood: your words, the official question and the option. Confirm or reject each one; only confirmed facts enter the plan, and only the rest is asked. This runs on the device, without AI (`FormalkaEngine.intake`).
 2. **Answer the questions.** They are the official ones from Formalka's fact catalogue, in the content's own order, only as many as the plan needs. "Nie wiem" is always there, with "Dlaczego pytamy?".
 3. **Choose a route** when several fit (citizenship: recognition or grant). The differences shown come from the sources. A route reachable through another case (recognition without B1) says so.
 4. **Pick a city** (Warszawa, Kraków, …) so the plan can show the office from the registry's office layer: quoted addresses, opening hours and the booking link. Other cities get an honest "nie mamy w źródłach".
@@ -28,12 +29,15 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
 ## Checked (2026-10-16)
 A headless walk at 390×844, in light, dark and reduced motion, went through:
 - the citizenship route choice;
-- the address registration with Warsaw: deadline, offices, visit, time travel, lock screen, follow-up, plan update.
+- the address registration with Warsaw: deadline, offices, visit, time travel, lock screen, follow-up, plan update;
+- intake from a description (three candidates; two confirmed, one rejected and then asked), a second case started from the home screen, and the PESEL redirect to address registration.
 
 It found 0 errors, 0 network requests and no horizontal scroll.
+
+**Fixed on 2026-10-16:** once a case had been opened, a description typed on the home screen was lost. The case view's change handler outlived the view and re-rendered the page before the form could submit. Each render now clears the previous view's handlers.
 
 ## Limits
 - **Values.** They are examples from Formalka's guides as of 15.10.2026. Citizenship and temporary residence have open inventory findings.
 - **Office data.** No office phone numbers exist in the registry, and municipal offices only for Warsaw and Kraków.
-- **Free text.** The chat recognises only the case keywords. Real conversation (AI) is Phase 4.
+- **Free text.** The first description is read for facts by a narrow Polish baseline (no AI). Later chat messages recognise only the case keywords. Real conversation (AI) is Phase 4.
 - **Simulated features.** The forms, the PDF filling, real notifications and the calendar are not in the slice; they are simulated or covered by spike S3.

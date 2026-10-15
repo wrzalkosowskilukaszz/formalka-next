@@ -9,3 +9,4 @@ export * from "./rules.ts";
 export * from "./validator.ts";
 export * from "./node.ts";
 export * from "./offices.ts";
+export * from "./intake.ts";

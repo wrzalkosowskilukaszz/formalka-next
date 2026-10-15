@@ -94,7 +94,7 @@ Guards, each with a test:
 **Consent model** (owner, 2026-10-15): **one consent per case** at plan approval ("Maciek może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy"). After that the advisor acts without asking; every action is in the case history and revocable.
 
 ## 7. Quality evidence (2026-10-16)
-- **20 tests** on the real snapshots, all passing, including the 17 evaluation scenarios.
+- **25 tests** on the real snapshots, all passing, including the 17 evaluation scenarios and the intake checks (§9a).
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -107,7 +107,15 @@ Guards, each with a test:
   - "Nie wiem" asked again;
   - a holiday missing;
   - a step not placed.
-- `checkBlueprint`: 0 issues for all 4 blueprints.
+- **7 more faults in intake** were injected, one at a time; each was caught:
+  - the topic check removed;
+  - the negation check removed (or made to ignore word boundaries);
+  - conflicting values kept;
+  - evidence not checked verbatim;
+  - candidates applied without confirmation;
+  - a compound fact made extractable;
+  - "na pobyt stały" (registration) read as a residence permit.
+- `checkBlueprint`: 0 issues for all 5 blueprints.
 - `validatePlan` passes on every plan in the tests and rejects a tampered ref, an invented date, a guessed nationality, and a lock without basis.
 
 ## 7a. Warnings and the evaluation set
@@ -117,7 +125,7 @@ Guards, each with a test:
 - **Evaluation set** (`packages/case-engine/eval/`): 17 scenarios with expectations, run inside the test suite (17/17). `node eval/run.ts --write` exports a reference plan per scenario in plain Polish, with the source of every value, for the blind H1 benchmark (11 §5). The user texts are drafts for native writers, and the owner reviews each reference plan before any benchmark run.
 
 ## 8. Browser build
-- `node tools/build-browser.mjs --locales pl` builds `dist/case-engine.browser.js`: 315 KB, the engine plus the registry snapshot and the 4 blueprints, global `FormalkaEngine`, no network.
+- `node tools/build-browser.mjs --locales pl` builds `dist/case-engine.browser.js`: 353 KB, the engine plus the registry snapshot and the 5 blueprints, global `FormalkaEngine`, no network.
 - The experience prototype (`prototype/`) can render its map from it instead of a script. The prototype session was told on 2026-10-15 at about 23:40.
 
 ## 9. Not done / open
@@ -126,6 +134,46 @@ Guards, each with a test:
   - no phone numbers in the registry, so no "zadzwoń pod numer X" yet;
   - no municipal offices outside Warsaw and Kraków;
   - the Masovian Voivodeship Office has no website in the registry (a production content gap).
-- **AI layer:** the AI intake (free text → fact candidates) is not built (Phase 4); the companion's free-form answers are not built.
+- **AI layer:** the intake harness exists with a non-AI baseline (§9a). An LLM extractor and the companion's free-form answers are not built (Phase 4).
 - **Content:** citizenship and temporary residence carry open inventory findings, so their values appear as labelled examples only.
 - **Gaps outside the engine:** the changes feed, persistence (case store), encryption and native notifications are outside the engine (09 §2).
+
+## 9a. Intake: the person's words → facts they confirm (`intake.ts`, 2026-10-16)
+The owner's picture starts with a conversation ("pill bar morphing into a chat"). This is the part of the conversation that turns words into a plan, built so an LLM can later replace the extractor without being trusted.
+
+**The flow:**
+1. The person describes the situation in their own words.
+2. An extractor proposes **fact candidates**: a fact, a value and the words it came from.
+3. `checkCandidates` drops what fails the checks below.
+4. The person sees each survivor as their words, the official question and the option, and confirms or rejects it.
+5. Only confirmed facts enter the case. Everything else is asked as usual, so a missed fact costs one question, never a wrong plan.
+
+**What the checker enforces, whatever the extractor:**
+- **Asked facts only.** A fact this case doesn't ask is dropped.
+- **Compound facts are always asked.** An option that joins several conditions (`citizenship.group`: years, income, housing) is never proposed; the person picks it from the official list.
+- **Allowed values only.** "Nie wiem" is never proposed; that answer is the person's to give.
+- **Verbatim evidence.** The evidence must appear in the person's text word for word.
+- **On topic.** The evidence must be about the fact. **Language and origin are not citizenship** (rule 5): a citizenship group needs the word "obywatel", and temporary protection needs "ochrona czasowa" or "UKR". "Jestem z Indii", "Jestem Niemką" or "piszę po ukraińsku" propose nothing. The extractor never receives the interface language or the place.
+- **Ambiguity.** Two values for one fact propose neither ("studiuję i pracuję").
+- **No overwrite.** An answer already given is never overwritten.
+
+**The baseline** (`baseline-pl-1`) is deliberately narrow:
+- it is Polish only;
+- it maps only phrases that state a fact outright to words in the option's own label;
+- it skips a phrase negated by "nie" (as a word: "mieszkanie na rok" is not a negation).
+
+On the 17 scenarios it scores 16 correct, 0 wrong, 1 extra and 30 missed: recall 35%, precision 100% (`eval/REPORT.md`, intake section).
+
+What the scores show:
+- **Precision is the number that matters** [INFERENCE]: a wrong candidate might be confirmed in a hurry, while a missed one costs a single question.
+- **Recall is the LLM's job in Phase 4.** It is measured on the same harness, with the same checker in front of it, under the 11 §2 thresholds.
+
+**In the slice:** the first description on the home screen runs intake. The card "Z Twojego opisu rozumiem tyle" shows each candidate with the person's clause, the official question and the option, and Tak / Nie buttons.
+
+**Privacy:** the text is read on the device and is not stored in the case; only confirmed facts are (ADR-0009).
+
+**Open:**
+- the Ukrainian, Russian and English baselines (or an LLM extractor);
+- intake from later chat messages, not just the first;
+- extracting the city (TERYT), which the person still picks.
+

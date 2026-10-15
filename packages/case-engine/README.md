@@ -10,7 +10,7 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 20 tests incl. 17 evaluation scenarios
+npm test                         # 25 tests incl. 17 evaluation scenarios and the intake checks
 npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
@@ -19,7 +19,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 
 | Module | Job |
 |---|---|
-| `blueprint.ts` | Places every step, document, fee and deadline of a procedure on a level. `checkBlueprint` proves nothing is lost or invented (all 3 blueprints pass) |
+| `blueprint.ts` | Places every step, document, fee and deadline of a procedure on a level. `checkBlueprint` proves nothing is lost or invented (all 5 blueprints pass) |
 | `planner.ts` | Settles the route and builds levels with honest states, dependencies and parallel levels (below) |
 | `questions.ts` | The next question: the fact that would change the most in the plan. No fixed count; "Nie wiem" is an answer and never asked twice; a cap of 12 |
 | `validator.ts` | Independent check: every item resolves to a quoted registry item of this registry version; no date without its event; no lock or "returned" without a basis; facts in the catalogue with allowed values (no nationality guessed from language) |
@@ -27,6 +27,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 | `messages.ts` | Polish templates. Gender-neutral, "asystent AI", never "umówiłem / wysłałem / złożyłem / wszystko już wiem" (a test scans every message) |
 | `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57 [UNVERIFIED]), the two readings of "najpóźniej w N dniu", Polish holidays (Easter-based [UNVERIFIED list]) |
 | `offices.ts` | Which office, from the registry's office layer and the user's city (TERYT, on the device): quoted addresses, hours, booking links; voivodeship offices by their registry TERYT code. Never a guessed address |
+| `intake.ts` | The person's own words → fact candidates they confirm one by one. Any extractor (the Polish baseline today, an LLM later) passes `checkCandidates`: only facts this case asks, only allowed values, evidence quoted verbatim from the text and on the fact's topic (so language or origin never becomes citizenship or protection). Compound facts (`citizenship.group`) are always asked |
 | `browser.ts` | The browser entry with the data embedded |
 
 **Route** (`planner.ts`) can be:
@@ -68,6 +69,9 @@ state.tasks["citizenship-recognition:document:photos"] = "done";
 E.agenda({ caseId: "c1", blueprintId: "citizenship", plan: E.plan("citizenship", state), state,
   prefs: { ...E.DEFAULT_PREFS, consent: true }, now: { date: "2026-10-19", time: "18:40" } });
 // -> [{ id, kind, fireAt, channel: "notification"|"in_app", lockScreen, message: {pl}, basis: [ruleRef], answers? }]
+const { candidates } = E.intake("citizenship", "Mam pobyt stały i certyfikat B1.", state);
+// -> [{ fact, value, evidence: "Mam pobyt stały", by: "baseline-pl-1" }, …]: show each with the question and option label
+Object.assign(state, E.confirmCandidates(state, candidates, ["citizenship.permanent_title"])); // only what the person confirmed
 ```
 
 Events the blueprints accept:
@@ -84,4 +88,5 @@ Events the blueprints accept:
 - **Dates.** The KPA counting and the holiday list are implemented from memory and marked [UNVERIFIED]. Quote them from the acts (ELI) before any product use. Reminders always use the earlier date, so a wrong shift can only make a reminder early, never late.
 - **Citizenship content.** It was checked in a first pass only (October inventory). Show values as labelled examples.
 - **Office data.** Offices exist only for Warsaw and Kraków (municipal) and the 16 voivodeship offices (name and website only). The registry has no phone numbers.
+- **Intake.** The baseline reads Polish only and proposes only what a sentence states outright (recall 35%, precision 100% on the 17 scenarios, `eval/REPORT.md`). Everything it misses is simply asked.
 - **Hashing.** The FNV-1a hash is for the lab; production would use SHA-256.

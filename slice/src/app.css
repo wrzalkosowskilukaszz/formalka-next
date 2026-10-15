@@ -56,6 +56,8 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .card { background: var(--raised); border: 1px solid var(--line); border-radius: var(--r-container); padding: var(--s4); margin-bottom: var(--s3); }
 .card h3 { font-size: var(--t-md); margin-bottom: var(--s2); }
 .q { font-weight: var(--w-medium); margin-bottom: var(--s3); }
+.cand { border-top: 1px solid var(--line); padding-top: var(--s3); margin-top: var(--s3); }
+.cand blockquote { margin-top: 0; }
 .opts { display: grid; gap: var(--s2); }
 .opt { text-align: left; border: 1px solid var(--line-strong); background: var(--canvas); border-radius: var(--r-control); padding: var(--s2) var(--s3); min-height: var(--target); }
 .opt.dk { border-style: dashed; }

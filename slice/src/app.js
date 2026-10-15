@@ -8,6 +8,13 @@ const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const icon = (n) => `<span class="icon" aria-hidden="true">${ICONS[n] ?? ''}</span>`;
 const cap = (t) => (t ? t[0].toUpperCase() + t.slice(1) : t);
+// The part of the person's sentence around a phrase, so a short match ("na rok") reads in context.
+const clause = (text, ev) => {
+  const i = text.indexOf(ev); if (i < 0) return ev;
+  const a = Math.max(...[...'.,;!?'].map((p) => text.lastIndexOf(p, i - 1))) + 1;
+  const ends = [...'.,;!?'].map((p) => text.indexOf(p, i + ev.length)).filter((x) => x >= 0);
+  return text.slice(a, ends.length ? Math.min(...ends) : text.length).trim();
+};
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 
 const STATE_PL = {
@@ -52,7 +59,7 @@ function touch(c) { c.lastActivity = S.clock.date; }
 // The next step of intake: a question, the route choice, the city, or the plan summary.
 function advance(c) {
   const p = plan(c);
-  if (c.stage === 'case') return;
+  if (c.stage === 'case' || c.stage === 'confirm') return;
   const q = E.nextQuestion(c.bpId, c.state, c.asked);
   if (q) { c.stage = 'intake'; c.pending = q.key; return; }
   c.pending = null;
@@ -114,6 +121,7 @@ function render() {
   renderTester();
   if (!S.home) $('#notice').hidden = true;
   const st = $('#stage');
+  st.onclick = st.onsubmit = st.onchange = null; // a view's handlers never outlive it
   if (S.home || !cur()) { st.innerHTML = homeView(); wireHome(); }
   else { st.innerHTML = caseView(cur()); wireCase(cur()); }
   renderLock();
@@ -140,7 +148,8 @@ function homeView() {
   return `<section class="start">
       <div class="mark">${icon('file-text')}</div>
       <h1>${S.cases.length ? 'Twoje sprawy' : 'Co dziś załatwiamy?'}</h1>
-      <form class="pill" id="goal"><input id="goal-in" placeholder="Np. chcę złożyć wniosek o obywatelstwo" aria-label="Co dziś załatwiamy?" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>
+      <form class="pill" id="goal"><input id="goal-in" placeholder="Np. mam pobyt stały i B1, chcę obywatelstwo" aria-label="Co dziś załatwiamy?" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>
+      <p class="note">Możesz opisać sytuację własnymi słowami. Nie podawaj imienia, numerów dokumentów ani adresu.</p>
       <div class="chips">${INTENTS.map((i) => `<button class="chip" data-intent="${i.id}">${esc(E.blueprint(i.id).title.pl)}</button>`).join('')}</div>
       <p class="note">Działający wycinek: każdy krok liczy silnik ze sprawdzonych treści Formalki (${esc(E.registryVersion)}). Kwoty i terminy to przykłady z przewodników, stan na 15.10.2026. Bez AI i bez sieci.</p>
     </section>${list ? `<div>${list}</div>` : ''}`;
@@ -153,7 +162,13 @@ function wireHome() {
 function startFromText(text) {
   const t = text.toLowerCase();
   const hit = INTENTS.find((i) => i.words.some((w) => t.includes(w)));
-  if (hit) { newCase(hit.id); if (cur()) cur().log.splice(cur().log.length - 2, 0, { who: 'me', text }); render(); return; }
+  if (hit) {
+    newCase(hit.id); const c = cur(); c.log.splice(c.log.length - 2, 0, { who: 'me', text });
+    // The person's words, read on the device: proposals only, confirmed one by one (FormalkaEngine.intake).
+    const r = E.intake(c.bpId, text, c.state);
+    if (r.candidates.length) { c.candidates = r.candidates; c.decided = {}; c.said = text; c.stage = 'confirm'; c.pending = null; }
+    render(); return;
+  }
   const n = $('#notice'); n.textContent = 'Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie, PESEL i certyfikat z polskiego.'; n.hidden = false;
 }
 
@@ -177,6 +192,18 @@ function chatView(c, p) {
 }
 
 function dock(c, p) {
+  if (c.stage === 'confirm') {
+    const rows = c.candidates.map((x) => {
+      const f = E.fact(x.fact); const o = f.options.find((y) => y.value === x.value);
+      const d = c.decided[x.fact];
+      return `<div class="cand"><blockquote>„${esc(clause(c.said, x.evidence))}”</blockquote>
+        <p><strong>${esc(f.question.pl)}</strong><br>${esc(o.label.pl)}</p>
+        ${d === undefined ? `<div class="row"><button class="mini" data-cand="${esc(x.fact)}" data-ok="1">${icon('check')} Tak, zgadza się</button><button class="mini" data-cand="${esc(x.fact)}" data-ok="0">Nie</button></div>`
+          : `<p class="reason">${d ? `${icon('check')} Potwierdzone` : 'Zapytam o to osobno'}</p>`}</div>`;
+    }).join('');
+    return `<div class="card"><p class="q">Z Twojego opisu rozumiem tyle:</p>
+      <p class="reason">Sprawdź każdą rzecz. Do planu trafi tylko to, co potwierdzisz. Opis zostaje na Twoim telefonie.</p>${rows}</div>`;
+  }
   if (c.stage === 'intake' && c.pending) {
     const f = E.fact(c.pending);
     return `<div class="card"><p class="q">${esc(f.question.pl)}</p>
@@ -325,6 +352,16 @@ function wireCase(c) {
     if (t.dataset.home !== undefined) { S.home = true; render(); return; }
     if (t.dataset.tab) { c.tab = t.dataset.tab; render(); return; }
     if (t.dataset.ans) { answer(c, c.pending, t.dataset.ans, t.dataset.label); return; }
+    if (t.dataset.cand) {
+      c.decided[t.dataset.cand] = t.dataset.ok === '1'; touch(c);
+      if (c.candidates.every((x) => c.decided[x.fact] !== undefined)) {
+        const yes = c.candidates.filter((x) => c.decided[x.fact]).map((x) => x.fact);
+        c.state = E.confirmCandidates(c.state, c.candidates, yes);
+        say(c, 'bot', yes.length ? `Dziękuję. Potwierdzone z Twojego opisu: ${yes.length}. Zapytam tylko o resztę.` : 'Dobrze, zapytam o wszystko po kolei.');
+        c.candidates = null; c.said = null; c.stage = 'intake'; advance(c);
+      }
+      render(); return;
+    }
     if (t.dataset.route) { c.state.routeChoice = t.dataset.route; say(c, 'me', `Wybieram: ${E.procedure(t.dataset.route).title.pl}`); touch(c); advance(c); render(); return; }
     if (t.dataset.place !== undefined) {
       const pl = PLACES.find((x) => x.teryt === t.dataset.place);
@@ -365,7 +402,7 @@ function wireCase(c) {
   st.onchange = (e) => {
     if (e.target.id === 'consent' || e.target.id === 'consent2') c.prefs.consent = e.target.checked;
     if (e.target.id === 'detail') c.prefs.lockScreenDetail = e.target.checked;
-    if (e.target.id !== 'consent') render();
+    if (e.target.id === 'consent2' || e.target.id === 'detail') render();
   };
 }
 
