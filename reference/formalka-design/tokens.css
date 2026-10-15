@@ -1,0 +1,147 @@
+/*
+ * Formalka design tokens: the single source of truth for every visual value.
+ * Rules that use them: docs/design/UI-RULES.md. Enforced by lib/ui-lint.test.ts: no other
+ * stylesheet may contain a raw colour, font size, weight, radius, shadow, z-index or duration.
+ *
+ * Colour has a job, never decoration (and every state also has words and a shape, WCAG 1.4.1):
+ *   ink      text                      action   the primary button (ink-black: one per screen)
+ *   go       the brand accent (a deep Polish red): links, the active place, brand marks
+ *   attention "differs from your answer", deadlines (dark amber: never confused with the red)
+ *   signal   "you are here" on the route map, and nothing else
+ *   done     the reader marked a plan task done (green), always with a check icon and the word
+ * Red and white without flag stripes, emblem or gov.pl's look (product rule 10).
+ */
+:root {
+  color-scheme: light dark;
+
+  /* ── Colour: surfaces. A cool off-white canvas (no paper, no pure white). ── */
+  --canvas: #f8f9fb;
+  --raised: #ffffff;
+  --well: #eef1f4;
+  --well-strong: #e3e7ec;
+
+  /* ── Colour: text. Each passes 4.5:1 on --canvas, --raised and --well. ── */
+  --ink: #12161b;
+  --ink-2: #434b56;
+  --ink-3: #5c6571;
+
+  /* ── Colour: lines. --line divides; --line-strong bounds a control (3:1, WCAG 1.4.11). ── */
+  --line: #e2e6eb;
+  --line-strong: #7e8792;
+
+  /* ── Colour: the accent and the meanings. ── */
+  --go: #b4182f;
+  --go-strong: #8f1124;
+  --go-soft: #fbe9ec;
+  --on-go: #ffffff;
+  /* The primary action is ink, not red: red stays the brand's, used sparingly (owner, 2026-10-01). */
+  --action: #12161b;
+  --action-strong: #2c333c;
+  --on-action: #ffffff;
+  --attention: #855400;
+  --attention-soft: #fbf1dc;
+  --signal: #f4b6c0;
+  /* The reader's own "done" on a plan task (owner, 2026-10-06: the state was too subtle). Never
+     alone: always with a check icon and the word "Załatwione" (WCAG 1.4.1). */
+  --done: #1d6b38;
+  --done-soft: #e6f4ea;
+  --on-done: #ffffff;
+  /* Behind a modal drawer. */
+  --scrim: rgb(10 14 19 / 0.4);
+
+  /* ── Type: Geist, one family. Few sizes with clear jumps (each ≥ 1.2×). ── */
+  --font: var(--nf-geist), "Segoe UI", system-ui, sans-serif;
+  --t-xs: 0.8125rem; /* 13 */
+  --t-sm: 0.9375rem; /* 15: meta, notes */
+  --t-md: 1.0625rem; /* 17: body */
+  --t-lg: 1.3125rem; /* 21: section titles */
+  --t-xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.375rem); /* page titles */
+  --t-2xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem); /* the home question */
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-strong: 600;
+  --track-display: -0.035em;
+  --track-heading: -0.02em;
+  --leading-tight: 1.1;
+  --leading-heading: 1.2;
+  --leading-body: 1.55;
+
+  /* ── Space: an 8-point scale with a 4 for optical steps. ── */
+  --s1: 0.25rem; /* 4 */
+  --s2: 0.5rem; /* 8 */
+  --s3: 0.75rem; /* 12 */
+  --s4: 1rem; /* 16: the phone gutter */
+  --s5: 1.5rem; /* 24 */
+  --s6: 2rem; /* 32 */
+  --s7: 3rem; /* 48 */
+  --s8: 4.5rem; /* 72 */
+  --s9: 6rem; /* 96 */
+
+  /* ── Shape lock: controls are pills, containers 16, small inner parts 10. ── */
+  --r-control: 999px;
+  --r-container: 16px;
+  --r-inner: 10px;
+
+  /* ── Elevation: only for what floats above the page (raised panels, drawer, bar). ── */
+  --e1: 0 1px 2px rgb(18 22 27 / 0.06);
+  --e2: 0 1px 2px rgb(18 22 27 / 0.04), 0 6px 20px rgb(18 22 27 / 0.06);
+  --e3: 0 16px 48px rgb(18 22 27 / 0.16), 0 2px 8px rgb(18 22 27 / 0.08);
+
+  /* ── Motion: short, for feedback and state changes only. ── */
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 260ms;
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* ── Layers: the only z-index values. ── */
+  --z-raised: 1;
+  --z-header: 20;
+  --z-bar: 30;
+  --z-drawer: 40;
+  --z-skip: 50;
+
+  /* ── Layout. ── */
+  --measure: 38rem; /* ~70 characters of body text */
+  --container: 76rem;
+  --target: 44px; /* the smallest thing a finger must hit (WCAG 2.5.5) */
+  --focus: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0e1216;
+    --raised: #151a20;
+    --well: #1b2128;
+    --well-strong: #242b33;
+    --ink: #edf0f3;
+    --ink-2: #b7bfc9;
+    --ink-3: #9aa3ae;
+    --line: #262d35;
+    --line-strong: #67727e;
+    --go: #ff7a8a;
+    --go-strong: #ffa3ae;
+    --go-soft: #3a141b;
+    --on-go: #2a070d;
+    --action: #edf0f3;
+    --action-strong: #ffffff;
+    --on-action: #0e1216;
+    --attention: #e6b04d;
+    --attention-soft: #2e230f;
+    --signal: #7a2a36;
+    --done: #6cc98b;
+    --done-soft: #12281a;
+    --on-done: #0b1d11;
+    --scrim: rgb(0 0 0 / 0.6);
+    --e1: 0 1px 2px rgb(0 0 0 / 0.4);
+    --e2: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 20px rgb(0 0 0 / 0.35);
+    --e3: 0 16px 48px rgb(0 0 0 / 0.55), 0 2px 8px rgb(0 0 0 / 0.4);
+  }
+}
+
+/*
+ * The printed page's margins (the sample letter, WAIT-1a). A page box takes no custom properties,
+ * so the length is written here, with the other raw values, rather than in a component.
+ */
+@page {
+  margin: 18mm;
+}

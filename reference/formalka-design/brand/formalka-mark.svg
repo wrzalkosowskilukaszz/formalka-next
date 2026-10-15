@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img"><title>Formalka</title><defs><linearGradient id="msh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient></defs>
+<rect x="9" y="7" width="12" height="35" rx="2.5" fill="#8f1124"/>
+<rect x="9" y="22" width="22" height="9" rx="2.5" fill="#b4182f"/>
+<rect x="9" y="31" width="12" height="3.5" fill="url(#msh)"/>
+<rect x="9" y="17" width="12" height="3.5" fill="url(#msh)"/>
+<path d="M11.5 7H33l6 6v1.5a2.5 2.5 0 0 1-2.5 2.5h-25A2.5 2.5 0 0 1 9 14.5v-5A2.5 2.5 0 0 1 11.5 7Z" fill="#d9384b"/>
+<path d="M33 7v4.5a1.5 1.5 0 0 0 1.5 1.5H39Z" fill="#ffffff"/><path d="M33 7 39 13" stroke="#8f1124" stroke-width=".6" stroke-opacity=".5"/></svg>

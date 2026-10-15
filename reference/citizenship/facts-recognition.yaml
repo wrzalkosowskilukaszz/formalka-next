@@ -1,0 +1,107 @@
+# Intake questions for the Polish citizenship guide, recognition route (GUIDES-01 (4)).
+# Validated by the `Fact` schema. Category answers only, never identifying data (ADR-0009).
+# "I don't know" is always offered and never stored as a value (rule 6). The questions are
+# about the person who would become a citizen: you, or someone you help.
+
+- key: citizenship.permanent_title
+  kind: stay_basis
+  question:
+    pl: Czy ta osoba ma zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE albo prawo stałego pobytu?
+    en: Does this person have a permanent residence permit, an EU long-term resident permit, or a right of permanent residence?
+    uk: Чи має ця особа дозвіл на постійне перебування, дозвіл на перебування довгострокового резидента ЄС або право постійного перебування?
+    ru: Есть ли у этого человека разрешение на постоянное пребывание, разрешение на пребывание долгосрочного резидента ЕС или право постоянного пребывания?
+  whyWeAsk:
+    pl: Uznanie za obywatela polskiego dotyczy osób z jednym z tych tytułów pobytowych.
+    en: Recognition as a Polish citizen concerns people who hold one of these residence titles.
+    uk: Визнання громадянином Польщі стосується осіб, які мають одну з цих підстав перебування.
+    ru: Признание гражданином Польши касается людей, у которых есть одно из этих оснований пребывания.
+  unknownHelp:
+    pl: Pokażemy warunki w oficjalnym brzmieniu.
+    en: We'll show the conditions in the official wording.
+    uk: Ми покажемо умови в офіційному формулюванні.
+    ru: Мы покажем условия в официальной формулировке.
+  options:
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }
+
+- key: citizenship.group
+  kind: choice
+  question:
+    pl: Która sytuacja najlepiej opisuje tę osobę?
+    en: Which situation best describes this person?
+    uk: Яка ситуація найкраще описує цю особу?
+    ru: Какая ситуация лучше всего описывает этого человека?
+  whyWeAsk:
+    pl: Ustawa wymienia kilka grup osób, które mogą zostać uznane za obywateli polskich; każda ma inne warunki.
+    en: The act lists several groups of people who can be recognised as Polish citizens; each has its own conditions.
+    uk: Закон перелічує кілька груп осіб, яких можна визнати громадянами Польщі; для кожної діють свої умови.
+    ru: Закон перечисляет несколько групп людей, которых можно признать гражданами Польши; для каждой действуют свои условия.
+  unknownHelp:
+    pl: Pokażemy pełną listę grup w oficjalnym brzmieniu.
+    en: We'll show the full list of groups in the official wording.
+    uk: Ми покажемо повний список груп в офіційному формулюванні.
+    ru: Мы покажем полный список групп в официальной формулировке.
+  options:
+    - value: three_years
+      label:
+        pl: Mieszka w Polsce na tym tytule nieprzerwanie od co najmniej 3 lat i ma tu stabilne i regularne źródło dochodu oraz tytuł prawny do mieszkania
+        en: Has lived in Poland on that title without a break for at least 3 years, with a stable and regular income and a legal right to occupy a home here
+        uk: Живе в Польщі з цією підставою без перерви щонайменше 3 роки, має тут стабільне й регулярне джерело доходу та правову підставу для проживання в житлі
+        ru: Живет в Польше на этом основании без перерыва не менее 3 лет, имеет здесь стабильный и регулярный источник дохода и правовое основание для проживания в жилье
+    - value: married_or_stateless
+      label:
+        pl: Mieszka w Polsce na tym tytule nieprzerwanie od co najmniej 2 lat i od co najmniej 3 lat jest w małżeństwie z obywatelem polskim albo nie ma żadnego obywatelstwa
+        en: Has lived in Poland on that title without a break for at least 2 years, and has been married to a Polish citizen for at least 3 years or has no citizenship at all
+        uk: Живе в Польщі з цією підставою без перерви щонайменше 2 роки і щонайменше 3 роки перебуває в шлюбі з громадянином Польщі або не має жодного громадянства
+        ru: Живет в Польше на этом основании без перерыва не менее 2 лет и не менее 3 лет состоит в браке с гражданином Польши или не имеет никакого гражданства
+    - value: refugee
+      label:
+        pl: Mieszka w Polsce nieprzerwanie od co najmniej 2 lat na pobycie stałym uzyskanym w związku ze statusem uchodźcy nadanym w Polsce
+        en: Has lived in Poland without a break for at least 2 years on a permanent residence permit obtained through refugee status granted in Poland
+        uk: Живе в Польщі без перерви щонайменше 2 роки на підставі дозволу на постійне перебування, отриманого у зв'язку зі статусом біженця, наданим у Польщі
+        ru: Живет в Польше без перерыва не менее 2 лет на основании разрешения на постоянное пребывание, полученного в связи со статусом беженца, предоставленным в Польше
+    - value: polish_origin
+      label:
+        pl: Mieszka w Polsce nieprzerwanie od co najmniej roku na pobycie stałym uzyskanym w związku z polskim pochodzeniem albo Kartą Polaka
+        en: Has lived in Poland without a break for at least a year on a permanent residence permit obtained through Polish origin or a Karta Polaka
+        uk: Живе в Польщі без перерви щонайменше рік на підставі дозволу на постійне перебування, отриманого у зв'язку з польським походженням або Картою поляка
+        ru: Живет в Польше без перерыва не менее года на основании разрешения на постоянное пребывание, полученного в связи с польским происхождением или Картой поляка
+    - value: ten_years
+      label:
+        pl: Mieszka w Polsce nieprzerwanie i legalnie od co najmniej 10 lat, ma jeden z tych tytułów, stabilne i regularne źródło dochodu oraz tytuł prawny do mieszkania
+        en: Has lived in Poland without a break and legally for at least 10 years, holds one of those titles, with a stable and regular income and a legal right to occupy a home
+        uk: Живе в Польщі без перерви й легально щонайменше 10 років, має одну з цих підстав, стабільне й регулярне джерело доходу та правову підставу для проживання в житлі
+        ru: Живет в Польше без перерыва и легально не менее 10 лет, имеет одно из этих оснований, стабильный и регулярный источник дохода и правовое основание для проживания в жилье
+    - value: minor_child
+      label:
+        pl: Małoletnie dziecko, którego jedno z rodziców jest obywatelem polskim albo któremu przywrócono obywatelstwo polskie, a drugie z rodziców (bez obywatelstwa polskiego) zgadza się na uznanie
+        en: A minor child, one of whose parents is a Polish citizen or had Polish citizenship restored, and whose other parent (not a Polish citizen) consents to the recognition
+        uk: Неповнолітня дитина, один із батьків якої є громадянином Польщі або якому відновили польське громадянство, а другий із батьків (без польського громадянства) згоден на визнання
+        ru: Несовершеннолетний ребенок, у которого один из родителей является гражданином Польши или имеет восстановленное польское гражданство, а второй родитель (без польского гражданства) согласен на признание
+    - value: none
+      label: { pl: Żadna z tych, en: None of these, uk: Жодна з цих, ru: Ничего из этого }
+
+- key: citizenship.language
+  kind: has_credential
+  question:
+    pl: Czy ta osoba ma urzędowe poświadczenie znajomości polskiego co najmniej na poziomie B1 albo świadectwo szkoły w Polsce lub szkoły z polskim językiem wykładowym (świadectwo szkoły policealnej się nie liczy)?
+    en: Does this person have an official certificate of Polish at level B1 or higher, or a school certificate from a school in Poland or a school taught in Polish (a post-secondary school certificate doesn't count)?
+    uk: Чи має ця особа офіційне посвідчення знання польської мови щонайменше на рівні B1 або свідоцтво школи в Польщі чи школи з польською мовою навчання (свідоцтво післясередньої школи не враховується)?
+    ru: Есть ли у этого человека официальное подтверждение знания польского языка не ниже уровня B1 или аттестат школы в Польше либо школы с польским языком обучения (аттестат послесредней школы не учитывается)?
+  whyWeAsk:
+    pl: Ustawa wymaga potwierdzenia znajomości języka polskiego, z wyjątkiem małoletnich dzieci, których jedno z rodziców jest obywatelem polskim albo któremu przywrócono obywatelstwo polskie.
+    en: The act requires proof of Polish, except for minor children one of whose parents is a Polish citizen or had Polish citizenship restored.
+    uk: Закон вимагає підтвердження знання польської, крім неповнолітніх дітей, один із батьків яких є громадянином Польщі або якому відновили польське громадянство.
+    ru: Закон требует подтвердить знание польского языка, кроме несовершеннолетних детей, у которых один из родителей является гражданином Польши или имеет восстановленное польское гражданство.
+  unknownHelp:
+    pl: Pokażemy wymóg w oficjalnym brzmieniu.
+    en: We'll show the requirement in the official wording.
+    uk: Ми покажемо вимогу в офіційному формулюванні.
+    ru: Мы покажем требование в официальной формулировке.
+  options:
+    - value: "yes"
+      label: { pl: Tak, en: "Yes", uk: Так, ru: Да }
+    - value: "no"
+      label: { pl: Nie, en: "No", uk: Ні, ru: Нет }

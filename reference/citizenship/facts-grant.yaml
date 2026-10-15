@@ -1,0 +1,80 @@
+# Intake questions for the Polish citizenship guide, grant by the President (GUIDES-01 (5)).
+# Validated by the `Fact` schema. Category answers only, never identifying data (ADR-0009).
+# "I don't know" is always offered and never stored as a value (rule 6). The questions are
+# about the person who would become a citizen: you, or someone you help.
+
+- key: citizenship.ever_polish
+  kind: choice
+  question:
+    pl: Czy ta osoba miała kiedykolwiek obywatelstwo polskie?
+    en: Has this person ever had Polish citizenship?
+    uk: Чи мала ця особа колись польське громадянство?
+    ru: Было ли у этого человека когда-либо польское гражданство?
+  whyWeAsk:
+    pl: Prezydent nadaje obywatelstwo cudzoziemcom, czyli osobom bez obywatelstwa polskiego. Wniosek pyta też o obywatelstwo polskie w przeszłości. Jeśli ta osoba ma już obywatelstwo polskie, może zamiast tego poprosić wojewodę o jego potwierdzenie.
+    en: The President grants citizenship to foreigners, that is, people without Polish citizenship. The application also asks about any Polish citizenship in the past. If this person already has Polish citizenship, they can ask the voivode to confirm it instead.
+    uk: Президент надає громадянство іноземцям, тобто особам без польського громадянства. У заяві також питають про польське громадянство в минулому. Якщо ця особа вже має польське громадянство, вона може натомість попросити воєводу його підтвердити.
+    ru: Президент предоставляет гражданство иностранцам, то есть людям без польского гражданства. В заявлении также спрашивают о польском гражданстве в прошлом. Если у этого человека уже есть польское гражданство, он может вместо этого попросить воеводу его подтвердить.
+  unknownHelp:
+    pl: Pokażemy wszystko, co może dotyczyć tej osoby, także to, że można poprosić wojewodę o potwierdzenie, czy ma ona obywatelstwo polskie.
+    en: We'll show everything that may apply, including that you can ask the voivode to confirm whether this person has Polish citizenship.
+    uk: Ми покажемо все, що може стосуватися цієї особи, зокрема те, що можна попросити воєводу підтвердити, чи має вона польське громадянство.
+    ru: Мы покажем все, что может касаться этого человека, в том числе то, что можно попросить воеводу подтвердить, есть ли у него польское гражданство.
+  options:
+    - value: "no"
+      label: { pl: "Nie, nigdy", en: "No, never", uk: "Ні, ніколи", ru: "Нет, никогда" }
+    - value: lost
+      label:
+        pl: Tak, ale je utraciła
+        en: Yes, but has lost it
+        uk: Так, але втратила його
+        ru: Да, но гражданство утрачено
+    - value: "yes"
+      label:
+        pl: Tak, ma je teraz
+        en: Yes, has it now
+        uk: Так, має його зараз
+        ru: Да, есть сейчас
+
+- key: citizenship.where_lives
+  kind: stay_basis
+  question:
+    pl: Gdzie mieszka ta osoba i na jakiej podstawie jest w Polsce?
+    en: Where does this person live, and on what basis are they in Poland?
+    uk: Де живе ця особа і на якій підставі перебуває в Польщі?
+    ru: Где живет этот человек и на каком основании находится в Польше?
+  whyWeAsk:
+    pl: Od tego zależy, czy wniosek składa się przez wojewodę, czy przez konsula, i ile kosztuje.
+    en: This decides whether the application goes through the voivode or a consul, and what it costs.
+    uk: Від цього залежить, чи заяву подають через воєводу, чи через консула, і скільки це коштує.
+    ru: От этого зависит, подают ли заявление через воеводу или через консула, и сколько это стоит.
+  unknownHelp:
+    pl: "Pokażemy obie drogi: przez wojewodę i przez konsula."
+    en: "We'll show both routes: through the voivode and through a consul."
+    uk: "Ми покажемо обидва шляхи: через воєводу і через консула."
+    ru: "Мы покажем оба пути: через воеводу и через консула."
+  options:
+    - value: poland_legal
+      label:
+        pl: W Polsce legalnie, na przykład z kartą pobytu (nie na wizie ani w ruchu bezwizowym)
+        en: In Poland legally, for example with a residence card (not on a visa or visa-free)
+        uk: У Польщі легально, наприклад з картою побиту (не за візою і не в безвізовому режимі)
+        ru: В Польше легально, например с картой побыту (не по визе и не в безвизовом режиме)
+    - value: poland_visa
+      label:
+        pl: W Polsce na wizie albo w ruchu bezwizowym
+        en: In Poland on a visa or visa-free
+        uk: У Польщі за візою або в безвізовому режимі
+        ru: В Польше по визе или в безвизовом режиме
+    - value: poland_no_stay
+      label:
+        pl: W Polsce, bez ważnej podstawy pobytu
+        en: In Poland, with no valid residence status
+        uk: У Польщі, без чинної підстави перебування
+        ru: В Польше, без действующего основания для пребывания
+    - value: abroad
+      label:
+        pl: Za granicą
+        en: Abroad
+        uk: За кордоном
+        ru: За границей

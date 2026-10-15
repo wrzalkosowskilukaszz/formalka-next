@@ -1,0 +1,366 @@
+# Polish citizenship: recognition as a Polish citizen (uznanie za obywatela polskiego) by the
+# voivode, GUIDES-01 (4), 2026-10-02. The route for people who already live in Poland on a
+# permanent title. Grant by the President and confirmation of citizenship are signposted here
+# and get their own guides later. Sources: MSWiA's service cards on gov.pl, the citizenship act
+# (consolidated text Dz.U. 2025 poz. 1611) and the stamp duty act. Evidence pack:
+# docs/knowledge/VERIFICATION-citizenship-2026-10-02.md. Polish statements are verbatim
+# official wording; en/uk are our translations of it.
+
+- id: citizenship-recognition
+  domain: citizenship
+  related: [free-legal-aid]
+  riskClass: C
+  verificationLevel: auto_structured
+  checkedAt: "2026-10-02"
+  title:
+    pl: Obywatelstwo polskie przez uznanie
+    en: Polish citizenship by recognition
+    uk: Польське громадянство через визнання
+    ru: Польское гражданство через признание
+  summary:
+    pl: Jak zostać uznanym za obywatela polskiego, jeśli masz zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE albo prawo stałego pobytu. Kto może, jakie są warunki, ile to kosztuje i kiedy wojewoda decyduje.
+    en: How to be recognised as a Polish citizen if you have a permanent residence permit, an EU long-term resident permit or a right of permanent residence. Who can apply, the conditions, the cost, and when the voivode decides.
+    uk: Як отримати визнання громадянином Польщі, якщо ви маєте дозвіл на постійне перебування, дозвіл на перебування довгострокового резидента ЄС або право постійного перебування. Хто може подати заяву, які умови, скільки це коштує і коли воєвода ухвалює рішення.
+    ru: Как получить признание гражданином Польши, если у вас есть разрешение на постоянное пребывание, разрешение на пребывание долгосрочного резидента ЕС или право постоянного пребывания. Кто может подать заявление, какие условия, сколько это стоит и когда воевода принимает решение.
+  applicability:
+    rule: { fact: citizenship.permanent_title, eq: "yes" }
+    conditions:
+      - id: qualifying-group
+        rule: { fact: citizenship.group, in: [three_years, married_or_stateless, refugee, polish_origin, ten_years, minor_child] }
+        statement:
+          value:
+            pl: "Stosownie do art. 30 ust. 1 ustawy z dnia 2 kwietnia 2009 r. o obywatelstwie polskim, za obywatela polskiego uznaje się:\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 3 lat na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, który posiada w Rzeczypospolitej Polskiej stabilne i regularne źródło dochodu oraz tytuł prawny do zajmowania lokalu mieszkalnego;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 2 lat na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, który:\npozostaje co najmniej od 3 lat w związku małżeńskim zawartym z obywatelem polskim lub\nnie posiada żadnego obywatelstwa;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 2 lat na podstawie zezwolenia na pobyt stały, które uzyskał w związku z posiadaniem statusu uchodźcy nadanego w Rzeczypospolitej Polskiej;\nmałoletniego cudzoziemca przebywającego na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, którego jedno z rodziców jest obywatelem polskim, a drugie z rodziców, nieposiadające obywatelstwa polskiego, wyraziło zgodę na to uznanie;\nmałoletniego cudzoziemca przebywającego na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, którego co najmniej jednemu z rodziców zostało przywrócone obywatelstwo polskie, a drugie z rodziców, nieposiadające obywatelstwa polskiego, wyraziło zgodę na to uznanie;\ncudzoziemca przebywającego nieprzerwanie i legalnie na terytorium Rzeczypospolitej Polskiej co najmniej od 10 lat, który spełnia łącznie następujące warunki:\nposiada zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub prawo stałego pobytu,\nposiada w Rzeczypospolitej Polskiej stabilne i regularne źródło dochodu oraz tytuł prawny do zajmowania lokalu mieszkalnego;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od roku na podstawie zezwolenia na pobyt stały, które uzyskał w związku z polskim pochodzeniem lub posiadaną Kartą Polaka."
+            en: "Under art. 30(1) of the act on Polish citizenship, the following are recognised as Polish citizens:\n- a foreigner who has stayed in Poland without a break for at least 3 years on a permanent residence permit, an EU long-term resident permit or a right of permanent residence, with a stable and regular income in Poland and a legal right to occupy a home;\n- a foreigner who has stayed in Poland without a break for at least 2 years on one of those titles and has been married to a Polish citizen for at least 3 years, or has no citizenship;\n- a foreigner who has stayed in Poland without a break for at least 2 years on a permanent residence permit obtained through refugee status granted in Poland;\n- a minor foreigner staying in Poland on one of those titles, one of whose parents is a Polish citizen (or had Polish citizenship restored) and the other parent, not a Polish citizen, has consented;\n- a foreigner who has stayed in Poland without a break and legally for at least 10 years, holds one of those titles, and has a stable and regular income and a legal right to occupy a home;\n- a foreigner who has stayed in Poland without a break for at least a year on a permanent residence permit obtained through Polish origin or a Karta Polaka."
+            uk: "Відповідно до ст. 30 ч. 1 закону про польське громадянство громадянином Польщі визнається:\n- іноземець, який безперервно перебуває в Польщі щонайменше 3 роки на підставі дозволу на постійне перебування, дозволу довгострокового резидента ЄС або права постійного перебування, має в Польщі стабільне й регулярне джерело доходу та правову підставу для проживання в житлі;\n- іноземець, який безперервно перебуває в Польщі щонайменше 2 роки на одній із цих підстав і щонайменше 3 роки перебуває в шлюбі з громадянином Польщі або не має жодного громадянства;\n- іноземець, який безперервно перебуває в Польщі щонайменше 2 роки на підставі дозволу на постійне перебування, отриманого у зв'язку зі статусом біженця, наданим у Польщі;\n- неповнолітній іноземець, який перебуває в Польщі на одній із цих підстав, один із батьків якого є громадянином Польщі (або відновив польське громадянство), а другий, не будучи громадянином Польщі, дав на це згоду;\n- іноземець, який безперервно й легально перебуває в Польщі щонайменше 10 років, має одну з цих підстав, стабільне й регулярне джерело доходу та правову підставу для проживання в житлі;\n- іноземець, який безперервно перебуває в Польщі щонайменше рік на підставі дозволу на постійне перебування, отриманого у зв'язку з польським походженням або Картою поляка."
+            ru: "Согласно ст. 30 ч. 1 закона о польском гражданстве гражданином Польши признается:\n- иностранец, который непрерывно находится в Польше не менее 3 лет на основании разрешения на постоянное пребывание, разрешения на пребывание долгосрочного резидента ЕС или права постоянного пребывания, имеет в Польше стабильный и регулярный источник дохода и правовое основание для проживания в жилье;\n- иностранец, который непрерывно находится в Польше не менее 2 лет на одном из этих оснований и не менее 3 лет состоит в браке с гражданином Польши или не имеет никакого гражданства;\n- иностранец, который непрерывно находится в Польше не менее 2 лет на основании разрешения на постоянное пребывание, полученного в связи со статусом беженца, предоставленным в Польше;\n- несовершеннолетний иностранец, который находится в Польше на одном из этих оснований, один из родителей которого является гражданином Польши (или ему восстановили польское гражданство), а другой родитель, не являющийся гражданином Польши, дал на это согласие;\n- иностранец, который непрерывно и легально находится в Польше не менее 10 лет, имеет одно из этих оснований, стабильный и регулярный источник дохода и правовое основание для проживания в жилье;\n- иностранец, который непрерывно находится в Польше не менее года на основании разрешения на постоянное пребывание, полученного в связи с польским происхождением или Картой поляка."
+          quotes:
+            - page: &uznanie https://www.gov.pl/web/mswia/popros-o-uznanie-za-polskiego-obywatela
+              text: "Stosownie do art. 30 ust. 1 ustawy z dnia 2 kwietnia 2009 r. o obywatelstwie polskim, za obywatela polskiego uznaje się:\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 3 lat na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, który posiada w Rzeczypospolitej Polskiej stabilne i regularne źródło dochodu oraz tytuł prawny do zajmowania lokalu mieszkalnego;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 2 lat na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, który:\npozostaje co najmniej od 3 lat w związku małżeńskim zawartym z obywatelem polskim lub\nnie posiada żadnego obywatelstwa;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od 2 lat na podstawie zezwolenia na pobyt stały, które uzyskał w związku z posiadaniem statusu uchodźcy nadanego w Rzeczypospolitej Polskiej;\nmałoletniego cudzoziemca przebywającego na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, którego jedno z rodziców jest obywatelem polskim, a drugie z rodziców, nieposiadające obywatelstwa polskiego, wyraziło zgodę na to uznanie;\nmałoletniego cudzoziemca przebywającego na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej lub prawa stałego pobytu, którego co najmniej jednemu z rodziców zostało przywrócone obywatelstwo polskie, a drugie z rodziców, nieposiadające obywatelstwa polskiego, wyraziło zgodę na to uznanie;\ncudzoziemca przebywającego nieprzerwanie i legalnie na terytorium Rzeczypospolitej Polskiej co najmniej od 10 lat, który spełnia łącznie następujące warunki:\nposiada zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub prawo stałego pobytu,\nposiada w Rzeczypospolitej Polskiej stabilne i regularne źródło dochodu oraz tytuł prawny do zajmowania lokalu mieszkalnego;\ncudzoziemca przebywającego nieprzerwanie na terytorium Rzeczypospolitej Polskiej co najmniej od roku na podstawie zezwolenia na pobyt stały, które uzyskał w związku z polskim pochodzeniem lub posiadaną Kartą Polaka."
+      - id: polish-language
+        rule: { any: [{ fact: citizenship.language, eq: "yes" }, { fact: citizenship.group, eq: minor_child }] }
+        statement:
+          value:
+            pl: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+            en: "A foreigner applying for recognition as a Polish citizen, except minors in the groups of children, must have knowledge of Polish confirmed by an official certificate at level B1 or higher, by a certificate of completing a school in Poland, or by a certificate of completing a school abroad taught in Polish."
+            uk: "Іноземець, який подає заяву про визнання громадянином Польщі, за винятком неповнолітніх із груп дітей, повинен мати знання польської мови, підтверджене офіційним посвідченням на рівні щонайменше B1, свідоцтвом про закінчення школи в Польщі або свідоцтвом про закінчення школи за кордоном з польською мовою навчання."
+            ru: "Иностранец, который подает заявление о признании гражданином Польши, за исключением несовершеннолетних из групп детей, должен знать польский язык, что подтверждается официальным удостоверением на уровне не ниже B1, свидетельством об окончании школы в Польше или свидетельством об окончании школы за границей с польским языком обучения."
+          quotes:
+            - page: &act https://api.sejm.gov.pl/eli/acts/DU/2025/1611/text.pdf
+              text: "Cudzoziemiec ubiegający się o uznanie za obywatela polskiego, z wyłączeniem cudzoziemca, o którym mowa w ust. 1 pkt 4 i 5, jest obowiązany posiadać znajomość języka polskiego potwierdzoną urzędowym poświadczeniem, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r. poz. 622), na poziomie biegłości językowej co najmniej B1, świadectwem ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwem ukończenia szkoły za granicą z wykładowym językiem polskim."
+            - page: *act
+              text: "Znajomości języka polskiego, o której mowa w ust. 2, nie potwierdza świadectwo ukończenia szkoły policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2025 r. poz. 1043 i 1160)."
+  exclusions:
+    - id: security
+      statement:
+        value:
+          pl: "Cudzoziemcowi odmawia się uznania za obywatela polskiego, w przypadku gdy: 1) nie spełnia wymogów, o których mowa w art. 30; 2) nabycie przez niego obywatelstwa polskiego stanowi zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+          en: "Recognition as a Polish citizen is refused if the foreigner doesn't meet the requirements of art. 30, or if their acquiring Polish citizenship threatens the defence or security of the state, or public safety and order."
+          uk: "У визнанні громадянином Польщі відмовляють, якщо іноземець не відповідає вимогам ст. 30 або якщо набуття ним польського громадянства загрожує обороні чи безпеці держави або громадській безпеці й порядку."
+          ru: "В признании гражданином Польши отказывают, если иностранец не соответствует требованиям ст. 30 или если приобретение им польского гражданства угрожает обороне или безопасности государства либо общественной безопасности и порядку."
+        quotes:
+          - page: *act
+            text: "Cudzoziemcowi odmawia się uznania za obywatela polskiego, w przypadku gdy: 1) nie spełnia wymogów, o których mowa w art. 30; 2) nabycie przez niego obywatelstwa polskiego stanowi zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+          - page: *uznanie
+            text: "Pamiętaj! Wojewoda może odmówić uznania za polskiego obywatela, jeśli stanowiłoby to zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+  requiredFacts:
+    - citizenship.permanent_title
+    - citizenship.group
+    - citizenship.language
+  steps:
+    - id: collect-documents
+      title:
+        pl: Zbierz dokumenty
+        en: Collect the documents
+        uk: Зберіть документи
+        ru: Соберите документы
+      description:
+        pl: Listę dokumentów podaje urząd wojewódzki właściwy dla Twojego miejsca zamieszkania. Dokumenty w obcym języku dołączasz z tłumaczeniem przysięgłym albo konsularnym.
+        en: The voivodeship office for where you live publishes the list of documents. Documents in a foreign language go with a sworn or consular translation.
+        uk: Перелік документів публікує воєводське управління за вашим місцем проживання. Документи іноземною мовою додають із присяжним або консульським перекладом.
+        ru: Перечень документов публикует воеводское управление по вашему месту жительства. Документы на иностранном языке прилагают с присяжным или консульским переводом.
+      channels: [in_person]
+      quotes:
+        - page: *uznanie
+          text: "Zbierz wszystkie potrzebne dokumenty. Szczegóły znajdziesz na stronie internetowej właściwego dla Ciebie urzędu wojewódzkiego."
+        - page: *uznanie
+          text: "Takie tłumaczenie musi być wykonane przez tłumacza przysięgłego lub przez konsula RP."
+    - id: pay
+      title:
+        pl: Zapłać opłatę skarbową
+        en: Pay the stamp duty
+        uk: Сплатіть гербовий збір
+        ru: Оплатите гербовый сбор
+      description:
+        pl: Numer konta jest na stronie urzędu wojewódzkiego.
+        en: The account number is on the voivodeship office's website.
+        uk: Номер рахунку є на сайті воєводського управління.
+        ru: Номер счета есть на сайте воеводского управления.
+      dependsOn: [collect-documents]
+      channels: [online]
+      quotes:
+        - page: *uznanie
+          text: "Na stronie internetowej urzędu wojewódzkiego znajdziesz numer konta."
+    - id: file
+      title:
+        pl: Złóż wniosek do wojewody
+        en: File the application with the voivode
+        uk: Подайте заяву воєводі
+        ru: Подайте заявление воеводе
+      description:
+        pl: Osobiście albo pocztą, do wojewody właściwego dla Twojego miejsca zamieszkania.
+        en: In person or by post, to the voivode for where you live.
+        uk: Особисто або поштою, воєводі за вашим місцем проживання.
+        ru: Лично или по почте, воеводе по вашему месту жительства.
+      dependsOn: [pay]
+      channels: [in_person, post]
+      officeKind: voivodeship_office
+      quotes:
+        - page: *uznanie
+          text: "Wniosek możesz złożyć osobiście albo wysłać pocztą do wojewody – właściwego dla Twojego miejsca zamieszkania."
+    - id: decision
+      title:
+        pl: Czekaj na decyzję wojewody
+        en: Wait for the voivode's decision
+        uk: Чекайте на рішення воєводи
+        ru: Ждите решения воеводы
+      description:
+        pl: Przed decyzją urząd pyta policję, Agencję Bezpieczeństwa Wewnętrznego i inne instytucje, czy nabycie przez Ciebie obywatelstwa polskiego nie stanowi zagrożenia dla obronności lub bezpieczeństwa państwa albo dla bezpieczeństwa i porządku publicznego. Od decyzji możesz się odwołać do Ministra Spraw Wewnętrznych i Administracji, a od jego decyzji złożyć skargę do sądu administracyjnego.
+        en: Before deciding, the office asks the police, the Internal Security Agency and other institutions whether your acquiring Polish citizenship would threaten the defence or security of the state, or public safety and order. You can appeal the decision to the Minister of the Interior and Administration, and then complain about the minister's decision to an administrative court.
+        uk: Перед рішенням управління запитує поліцію, Агентство внутрішньої безпеки та інші установи, чи не становить набуття вами польського громадянства загрози для обороноздатності чи безпеки держави або для громадської безпеки й порядку. Рішення можна оскаржити до міністра внутрішніх справ і адміністрації, а рішення міністра можна оскаржити до адміністративного суду.
+        ru: Перед решением управление запрашивает полицию, Агентство внутренней безопасности и другие учреждения, не представляет ли приобретение вами польского гражданства угрозы для обороноспособности или безопасности государства либо для общественной безопасности и порядка. Решение можно обжаловать министру внутренних дел и администрации, а решение министра можно обжаловать в административном суде.
+      dependsOn: [file]
+      channels: [post]
+      officeKind: voivodeship_office
+      quotes:
+        - page: *uznanie
+          text: "Przed wydaniem decyzji w sprawie urząd zwraca się do Komendanta Stołecznego lub Komendanta Wojewódzkiego Policji, Dyrektora Delegatury Agencji Bezpieczeństwa Wewnętrznego, a także do innych instytucji i organów o udzielenie informacji, czy nabycie przez Ciebie obywatelstwa polskiego nie stanowi zagrożenia dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+        - page: *uznanie
+          text: "Jeśli nie zgadzasz się z decyzją wojewody, możesz złożyć odwołanie do Ministra Spraw Wewnętrznych i Administracji (MSWiA)."
+        - page: *uznanie
+          text: "Jeśli nie zgadzasz się z decyzją MSWiA, masz prawo zaskarżyć ją do sądu administracyjnego."
+  documents:
+    - id: application
+      namePl:
+        value: Wniosek o uznanie za obywatela polskiego
+        quotes:
+          - page: *uznanie
+            text: "Wniosek o uznanie za obywatela polskiego."
+      description:
+        pl: Wzór wniosku jest na stronie ministerstwa.
+        en: The form is on the ministry's page.
+        uk: Зразок заяви є на сторінці міністерства.
+        ru: Образец заявления есть на странице министерства.
+    - id: translations
+      namePl:
+        value: Tłumaczenie zagranicznych dokumentów na język polski
+        quotes:
+          - page: *uznanie
+            text: "Tłumaczenie zagranicznych dokumentów na język polski - jeśli załączasz do wniosku dokumenty wydane w języku obcym."
+      description:
+        pl: Jeśli dołączasz dokumenty w obcym języku; tłumaczenie przysięgłe albo konsula.
+        en: If you attach documents in a foreign language; by a sworn translator or a consul.
+        uk: Якщо ви додаєте документи іноземною мовою; переклад присяжного перекладача або консула.
+        ru: Если вы прилагаете документы на иностранном языке; перевод присяжного переводчика или консула.
+    - id: language-proof
+      condition: { fact: citizenship.group, in: [three_years, married_or_stateless, refugee, polish_origin, ten_years] }
+      namePl:
+        value: urzędowe poświadczenie, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim
+        quotes:
+          - page: *act
+            text: "urzędowe poświadczenie, o którym mowa w art. 11a ustawy z dnia 7 października 1999 r. o języku polskim, świadectwo ukończenia szkoły w Rzeczypospolitej Polskiej lub świadectwo ukończenia szkoły za granicą z wykładowym językiem polskim, w przypadku gdy jest wymagane"
+      description:
+        pl: Certyfikat znajomości polskiego co najmniej B1 albo świadectwo szkoły w Polsce lub szkoły z polskim językiem wykładowym (nie świadectwo szkoły policealnej).
+        en: A certificate of Polish at level B1 or higher, or a certificate from a school in Poland or a school taught in Polish (not a post-secondary school certificate).
+        uk: Сертифікат знання польської щонайменше B1 або свідоцтво школи в Польщі чи школи з польською мовою навчання (не свідоцтво післясередньої школи).
+        ru: Сертификат знания польского не ниже B1 или свидетельство школы в Польше либо школы с польским языком обучения (не свидетельство послесредней школы).
+    - id: photos
+      namePl:
+        value: fotografie osób objętych wnioskiem
+        quotes:
+          - page: *act
+            text: "fotografie osób objętych wnioskiem."
+      description:
+        pl: Zdjęcia każdej osoby, której dotyczy wniosek.
+        en: Photos of everyone the application covers.
+        uk: Фотографії кожної особи, якої стосується заява.
+        ru: Фотографии каждого человека, которого касается заявление.
+  fees:
+    - id: decision
+      purpose:
+        pl: Opłata skarbowa za decyzję o uznaniu za obywatela polskiego
+        en: Stamp duty for the decision on recognition as a Polish citizen
+        uk: Гербовий збір за рішення про визнання громадянином Польщі
+        ru: Гербовый сбор за решение о признании гражданином Польши
+      amountPln:
+        value: 1000
+        quotes:
+          - page: &duty https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf
+            text: "Decyzja w przedmiocie nabycia obywatelstwa polskiego w trybie uznania za obywatela polskiego oraz przywrócenia obywatelstwa polskiego 1000 zł"
+      exemptions:
+        - id: minor-children
+          rule: { fact: citizenship.group, eq: minor_child }
+          statement:
+            value:
+              pl: "decyzja wydana na podstawie art. 30 ust. 1 pkt 4 i 5 ustawy z dnia 2 kwietnia 2009 r. o obywatelstwie polskim"
+              en: "Exempt: a decision for a minor child under art. 30(1) points 4 and 5 of the act (the groups of children)."
+              uk: "Звільнено: рішення щодо неповнолітньої дитини на підставі ст. 30 ч. 1 п. 4 і 5 закону (групи дітей)."
+              ru: "Освобождено: решение в отношении несовершеннолетнего ребенка на основании ст. 30 ч. 1 п. 4 и 5 закона (группы детей)."
+            quotes:
+              - page: *duty
+                text: "Decyzja w przedmiocie nabycia obywatelstwa polskiego w trybie uznania za obywatela polskiego oraz przywrócenia obywatelstwa polskiego 1000 zł decyzja wydana na podstawie art. 30 ust. 1 pkt 4 i 5 ustawy z dnia 2 kwietnia 2009 r. o obywatelstwie polskim"
+  deadlines:
+    - id: decision-time
+      description:
+        pl: Tyle ma wojewoda na decyzję, licząc od wpływu wniosku. Według ministerstwa w uzasadnionych przypadkach termin może zostać wydłużony.
+        en: How long the voivode has to decide, counted from when the application arrives. According to the ministry, the time can be extended in justified cases.
+        uk: Стільки має воєвода на рішення, рахуючи від надходження заяви. За даними міністерства, в обґрунтованих випадках строк можуть продовжити.
+        ru: Столько времени есть у воеводы на решение, считая со дня поступления заявления. По данным министерства, в обоснованных случаях срок могут продлить.
+      rule:
+        value: { kind: relative, amount: 6, unit: month, from: filing }
+        quotes:
+          - page: *act
+            text: "Załatwienie spraw innych niż wymienione w ust. 1 i 2 następuje w terminie 6 miesięcy od dnia wpływu wniosku do organu właściwego do wydania decyzji."
+          - page: *uznanie
+            text: "Wojewoda ma 6 miesięcy na wydanie decyzji. W uzasadnionych przypadkach termin ten może zostać wydłużony."
+    - id: appeal
+      description:
+        pl: Na odwołanie do ministra, od dnia otrzymania decyzji, na piśmie.
+        en: To appeal to the minister, in writing, from the day you receive the decision.
+        uk: На оскарження до міністра, письмово, від дня отримання рішення.
+        ru: На обжалование министру, письменно, со дня получения решения.
+      rule:
+        value: { kind: relative, amount: 14, unit: day, from: decision_delivered }
+        quotes:
+          - page: *uznanie
+            text: "Powinieneś to zrobić w formie pisemnej, w ciągu 14 dni, od kiedy otrzymasz decyzję."
+    - id: court
+      description:
+        pl: Na skargę do sądu administracyjnego na decyzję ministra, od jej otrzymania; skargę składasz za pośrednictwem MSWiA.
+        en: To complain to an administrative court about the minister's decision, from receiving it; you file it through the ministry.
+        uk: На скаргу до адміністративного суду на рішення міністра, від його отримання; скаргу подають через міністерство.
+        ru: На жалобу в административный суд на решение министра, со дня его получения; жалобу подают через министерство.
+      rule:
+        value: { kind: relative, amount: 30, unit: day, from: decision_delivered }
+        quotes:
+          - page: *uznanie
+            text: "Powinieneś to zrobić w ciągu 30 dni od otrzymania decyzji Ministra. Pismo ze skargą złóż za pośrednictwem MSWiA."
+  variations: []
+  pitfalls:
+    - id: dual-citizenship
+      important: true
+      statement:
+        value:
+          pl: "Obywatel polski posiadający równocześnie obywatelstwo innego państwa ma wobec Rzeczypospolitej Polskiej takie same prawa i obowiązki jak osoba posiadająca wyłącznie obywatelstwo polskie."
+          en: "A Polish citizen who also holds another country's citizenship has the same rights and duties towards Poland as someone who holds only Polish citizenship."
+          uk: "Громадянин Польщі, який одночасно має громадянство іншої держави, має щодо Польщі такі самі права й обов'язки, як особа, що має лише польське громадянство."
+          ru: "Гражданин Польши, который одновременно имеет гражданство другого государства, имеет по отношению к Польше такие же права и обязанности, как человек, у которого есть только польское гражданство."
+        quotes:
+          - page: *act
+            text: "Obywatel polski posiadający równocześnie obywatelstwo innego państwa ma wobec Rzeczypospolitej Polskiej takie same prawa i obowiązki jak osoba posiadająca wyłącznie obywatelstwo polskie."
+    - id: other-citizenship-not-invoked
+      statement:
+        value:
+          pl: "Obywatel polski nie może wobec władz Rzeczypospolitej Polskiej powoływać się ze skutkiem prawnym na posiadane równocześnie obywatelstwo innego państwa i na wynikające z niego prawa i obowiązki."
+          en: "A Polish citizen cannot rely, with legal effect, on another citizenship they also hold, or on the rights and duties that come from it, towards the Polish authorities."
+          uk: "Громадянин Польщі не може перед органами влади Польщі з правовим наслідком посилатися на одночасне громадянство іншої держави та на пов'язані з ним права й обов'язки."
+          ru: "Гражданин Польши не может перед органами власти Польши с правовыми последствиями ссылаться на одновременно имеющееся у него гражданство другого государства и на вытекающие из него права и обязанности."
+        quotes:
+          - page: *act
+            text: "Obywatel polski nie może wobec władz Rzeczypospolitej Polskiej powoływać się ze skutkiem prawnym na posiadane równocześnie obywatelstwo innego państwa i na wynikające z niego prawa i obowiązki."
+    - id: post-secondary-school
+      important: true
+      statement:
+        value:
+          pl: "Znajomości języka polskiego, o której mowa w ust. 2, nie potwierdza świadectwo ukończenia szkoły policealnej"
+          en: "A post-secondary school (szkoła policealna) certificate doesn't prove knowledge of Polish for recognition."
+          uk: "Свідоцтво про закінчення післясередньої школи (szkoła policealna) не підтверджує знання польської для визнання."
+          ru: "Свидетельство об окончании послесредней школы (szkoła policealna) не подтверждает знание польского для признания."
+        quotes:
+          - page: *act
+            text: "Znajomości języka polskiego, o której mowa w ust. 2, nie potwierdza świadectwo ukończenia szkoły policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2025 r. poz. 1043 i 1160)."
+    - id: unbroken-stay
+      important: true
+      statement:
+        value:
+          pl: "Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej stanowiący podstawę do udzielenia mu zezwolenia na pobyt stały uznaje się za nieprzerwany, jeżeli żadna z przerw w nim nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie przekroczyły łącznie 10 miesięcy w okresach stanowiących podstawę do udzielenia mu zezwolenia na pobyt stały, chyba że przerwa była spowodowana:"
+          en: "How an 'unbroken' stay is judged (the citizenship act points to this rule of the Act on Foreigners): a stay counts as unbroken if no break was longer than 6 months and all breaks together didn't exceed 10 months, unless a break had one of the reasons the act lists."
+          uk: "Як оцінюють «безперервне» перебування (закон про громадянство відсилає до цього правила Закону про іноземців): перебування вважають безперервним, якщо жодна перерва не була довшою за 6 місяців, а всі перерви разом не перевищили 10 місяців, хіба що перерва мала одну з причин, перелічених у законі."
+          ru: "Как оценивают «непрерывное» пребывание (закон о гражданстве отсылает к этому правилу Закона об иностранцах): пребывание считают непрерывным, если ни один перерыв не был дольше 6 месяцев, а все перерывы вместе не превысили 10 месяцев, если только перерыв не был вызван одной из причин, перечисленных в законе."
+        quotes:
+          - page: *act
+            text: "Do ustalenia, czy cudzoziemiec przebywa nieprzerwanie na terytorium Rzeczypospolitej Polskiej, stosuje się przepis art. 195 ust. 4 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach"
+          - page: &foreigners https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf
+            text: "Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej stanowiący podstawę do udzielenia mu zezwolenia na pobyt stały uznaje się za nieprzerwany, jeżeli żadna z przerw w nim nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie przekroczyły łącznie 10 miesięcy w okresach stanowiących podstawę do udzielenia mu zezwolenia na pobyt stały, chyba że przerwa była spowodowana:"
+    - id: grant-case-ends-recognition
+      statement:
+        value:
+          pl: "W przypadku gdy wniosek o uznanie cudzoziemca za obywatela polskiego został złożony w czasie, gdy wobec tego cudzoziemca jest prowadzone postępowanie o nadanie obywatelstwa polskiego, postępowanie w sprawie o uznanie za obywatela polskiego umarza się."
+          en: "If the application for recognition is filed while a case for a grant of Polish citizenship is pending for the same person, the recognition case is discontinued."
+          uk: "Якщо заяву про визнання подано тоді, коли щодо цієї ж особи триває справа про надання польського громадянства, провадження про визнання припиняють."
+          ru: "Если заявление о признании подано, когда в отношении того же человека ведется дело о предоставлении польского гражданства, производство о признании прекращают."
+        quotes:
+          - page: *act
+            text: "W przypadku gdy wniosek o uznanie cudzoziemca za obywatela polskiego został złożony w czasie, gdy wobec tego cudzoziemca jest prowadzone postępowanie o nadanie obywatelstwa polskiego, postępowanie w sprawie o uznanie za obywatela polskiego umarza się."
+    - id: children
+      statement:
+        value:
+          pl: "Nadanie obywatelstwa polskiego jednemu z rodziców, uznanie go za obywatela polskiego oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod jego władzą rodzicielską, w przypadku gdy: 1) drugiemu z rodziców nie przysługuje władza rodzicielska; 2) drugie z rodziców złożyło oświadczenie o wyrażeniu zgody na nabycie lub utratę przez małoletniego obywatelstwa polskiego."
+          en: "Children can be included in the application, even if they don't live in Poland. When only one parent is recognised, a minor child under their parental authority is covered only if the other parent has no parental authority or has declared consent; a child aged 16 or over must also consent."
+          uk: "Дітей можна включити до заяви, навіть якщо вони не живуть у Польщі. Якщо визнають лише одного з батьків, неповнолітня дитина під його батьківською владою охоплюється, лише якщо другий з батьків не має батьківської влади або заявив про згоду; дитина, якій виповнилося 16 років, також має дати згоду."
+          ru: "Детей можно включить в заявление, даже если они не живут в Польше. Если признают только одного из родителей, несовершеннолетний ребенок под его родительской властью охватывается, только если второй родитель не имеет родительской власти или заявил о согласии; ребенок, которому исполнилось 16 лет, тоже должен дать согласие."
+        quotes:
+          - page: *uznanie
+            text: "Jeśli masz małoletnie dzieci, możesz je objąć wnioskiem – nawet gdy dzieci nie mieszkają w Polsce."
+          - page: *act
+            text: "Nadanie obywatelstwa polskiego jednemu z rodziców, uznanie go za obywatela polskiego oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod jego władzą rodzicielską, w przypadku gdy: 1) drugiemu z rodziców nie przysługuje władza rodzicielska; 2) drugie z rodziców złożyło oświadczenie o wyrażeniu zgody na nabycie lub utratę przez małoletniego obywatelstwa polskiego."
+          - page: *act
+            text: "Do nadania obywatelstwa polskiego małoletniemu, który ukończył 16 lat, uznania go za obywatela polskiego oraz utraty przez niego obywatelstwa polskiego wskutek wyrażenia zgody na zrzeczenie się obywatelstwa przez jego rodziców jest wymagane oświadczenie o wyrażeniu zgody złożone przez małoletniego."
+    - id: grant-by-president
+      statement:
+        value:
+          pl: "Złóż wniosek do Prezydenta o nadanie polskiego obywatelstwa\nJak załatwić sprawę?\nW urzędzie lub konsulacie.\nKto może skorzystać z usługi?\nOsoba, która nigdy nie posiadała obywatelstwa polskiego."
+          en: "Apply to the President for a grant of Polish citizenship\nHow is it done?\nAt an office or a consulate.\nWho can use this service?\nA person who has never held Polish citizenship."
+          uk: "Подайте заяву Президенту про надання польського громадянства\nЯк це зробити?\nВ установі або консульстві.\nХто може скористатися послугою?\nОсоба, яка ніколи не мала польського громадянства."
+          ru: "Подайте заявление Президенту о предоставлении польского гражданства\nКак это сделать?\nВ учреждении или консульстве.\nКто может воспользоваться услугой?\nЧеловек, который никогда не имел польского гражданства."
+        quotes:
+          - page: &nadanie https://www.gov.pl/web/mswia/uzyskaj-polskie-obywatelstwo
+            text: "Złóż wniosek do Prezydenta o nadanie polskiego obywatelstwa\nJak załatwić sprawę?\nW urzędzie lub konsulacie.\nKto może skorzystać z usługi?\nOsoba, która nigdy nie posiadała obywatelstwa polskiego."
+    - id: grant-no-time-limit-no-appeal
+      statement:
+        value:
+          pl: "Ile będziesz czekać?\nPrezydent RP nie jest związany żadnymi terminami w sprawach o nadanie obywatelstwa polskiego.\nJak możesz się odwołać?\nNie możesz się odwołać. Postanowienia Prezydenta RP są ostateczne."
+          en: "How long will you wait?\nThe President is not bound by any time limits in cases of granting Polish citizenship.\nHow can you appeal?\nYou can't appeal. The President's decisions are final."
+          uk: "Скільки чекати?\nПрезидент не зв'язаний жодними строками у справах про надання польського громадянства.\nЯк оскаржити?\nОскаржити не можна. Рішення Президента остаточні."
+          ru: "Сколько ждать?\nПрезидент не связан никакими сроками в делах о предоставлении польского гражданства.\nКак обжаловать?\nОбжаловать нельзя. Решения Президента окончательны."
+        quotes:
+          - page: *nadanie
+            text: "Ile będziesz czekać?\nPrezydent RP nie jest związany żadnymi terminami w sprawach o nadanie obywatelstwa polskiego.\nJak możesz się odwołać?\nNie możesz się odwołać. Postanowienia Prezydenta RP są ostateczne."
+    - id: confirmation
+      statement:
+        value:
+          pl: "Złóż wniosek do wojewody o potwierdzenie posiadania lub utraty obywatelstwa polskiego\nPotrzebujesz urzędowego potwierdzenia, że posiadasz obywatelstwo polskie lub go nie posiadasz? Tu znajdziesz potrzebne informacje.\nKto może skorzystać z usługi?\nKażdy, kto ma lub miał polskie obywatelstwo oraz podmiot, który ma w tym interes prawny lub też ciąży na nim obowiązek uzyskania potwierdzenia posiadania obywatelstwa polskiego."
+          en: "Apply to the voivode for confirmation of having or losing Polish citizenship\nDo you need official confirmation that you hold Polish citizenship, or that you don't? Here is the information you need.\nWho can use this service?\nAnyone who has or had Polish citizenship, and any body with a legal interest in it or a duty to obtain confirmation of Polish citizenship."
+          uk: "Подайте заяву воєводі про підтвердження наявності або втрати польського громадянства\nПотрібне офіційне підтвердження, що ви маєте польське громадянство або не маєте його? Тут потрібна інформація.\nХто може скористатися послугою?\nКожен, хто має або мав польське громадянство, а також суб'єкт, який має в цьому правовий інтерес або зобов'язаний отримати підтвердження польського громадянства."
+          ru: "Подайте заявление воеводе о подтверждении наличия или утраты польского гражданства\nНужно официальное подтверждение, что у вас есть польское гражданство или его нет? Здесь нужная информация.\nКто может воспользоваться услугой?\nКаждый, у кого есть или было польское гражданство, а также субъект, у которого есть в этом правовой интерес или который обязан получить подтверждение польского гражданства."
+        quotes:
+          - page: &potwierdzenie https://www.gov.pl/web/mswia/potwierdzenie-posiadania-lub-utraty-obywatelstwa-polskiego
+            text: "Złóż wniosek do wojewody o potwierdzenie posiadania lub utraty obywatelstwa polskiego\nPotrzebujesz urzędowego potwierdzenia, że posiadasz obywatelstwo polskie lub go nie posiadasz? Tu znajdziesz potrzebne informacje.\nKto może skorzystać z usługi?\nKażdy, kto ma lub miał polskie obywatelstwo oraz podmiot, który ma w tym interes prawny lub też ciąży na nim obowiązek uzyskania potwierdzenia posiadania obywatelstwa polskiego."
+  handoff:
+    when:
+      pl: Jeśli nie wiesz, do której grupy należysz, czy Twój pobyt był nieprzerwany albo wojewoda odmówił. Polskie strony urzędowe nie mówią, czy zachowasz dotychczasowe obywatelstwo. To zależy od prawa tamtego państwa, więc zapytaj w jego konsulacie.
+      en: If you're not sure which group you belong to or whether your stay counts as unbroken, or the voivode refused. The Polish official pages don't say whether you keep your current citizenship. That depends on the other country's law, so ask its consulate.
+      uk: Якщо ви не впевнені, до якої групи належите або чи ваше перебування було безперервним, або воєвода відмовив. Польські офіційні сторінки не кажуть, чи збережете ви теперішнє громадянство. Це залежить від законодавства тієї держави, тож запитайте в її консульстві.
+      ru: Если вы не уверены, к какой группе относитесь или было ли ваше пребывание непрерывным, или воевода отказал. Польские официальные страницы не говорят, сохраните ли вы нынешнее гражданство. Это зависит от законодательства того государства, поэтому спросите в его консульстве.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная правовая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/2012/161
+  sourceIds: [mswia-obywatelstwo, eli-obywatelstwo, eli-oplata-skarbowa, eli-ustawa-o-cudzoziemcach]

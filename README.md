@@ -11,4 +11,4 @@ workspace). Owner: Łukasz. Started 2026-10-15.
   enable it after cloning with `git config core.hooksPath .githooks`);
 - code or content taken from Formalka is a read-only snapshot with its source commit noted.
 
-Start with [`docs/formalka-next/00-EXECUTIVE-DECISIONS.md`](docs/formalka-next/00-EXECUTIVE-DECISIONS.md).
+Start with [`docs/formalka-next/00-EXECUTIVE-DECISIONS.md`](docs/formalka-next/00-EXECUTIVE-DECISIONS.md). The current task is the experience prototype: [`docs/formalka-next/15-PROTOTYPE-BRIEF.md`](docs/formalka-next/15-PROTOTYPE-BRIEF.md).

@@ -1,0 +1,540 @@
+# Polish citizenship: grant by the President of Poland (nadanie obywatelstwa polskiego),
+# GUIDES-01 (5), 2026-10-02. For a foreigner (someone without Polish citizenship): MSWiA's card
+# says "never had", the act grants to "a foreigner" and expects former citizens (art. 18, art. 20
+# ust. 1 pkt 4, art. 23), so the guide shows both, is labelled "sources disagree", and a former
+# citizen's answer is shown as unsettled against MSWiA's wording (UX audit F1, 2026-10-03). No list of conditions; the President
+# decides with no time limit and no appeal. Content audit 2026-10-02 (19 findings) applied. Sources: MSWiA's service card on gov.pl, the citizenship act (consolidated text
+# Dz.U. 2025 poz. 1611) and the stamp duty act. Evidence pack:
+# docs/knowledge/VERIFICATION-citizenship-2026-10-02.md (route 2). Polish statements are
+# verbatim official wording; en/uk are our translations of it.
+
+- id: citizenship-grant
+  domain: citizenship
+  related: [citizenship-recognition, free-legal-aid]
+  riskClass: C
+  verificationLevel: sources_disagree
+  checkedAt: "2026-10-02"
+  title:
+    pl: Obywatelstwo polskie nadane przez Prezydenta
+    en: Polish citizenship granted by the President
+    uk: Польське громадянство, надане Президентом
+    ru: Польское гражданство, предоставленное Президентом
+  summary:
+    pl: Jak poprosić Prezydenta RP o nadanie obywatelstwa polskiego. Kto może złożyć wniosek, gdzie, ile to kosztuje i czego się spodziewać.
+    en: How to ask the President of Poland to grant you Polish citizenship. Who can apply, where, the cost, and what to expect.
+    uk: Як попросити Президента Польщі надати польське громадянство. Хто може подати заяву, де, скільки це коштує і чого очікувати.
+    ru: Как попросить Президента Польши предоставить польское гражданство. Кто может подать заявление, где, сколько это стоит и чего ожидать.
+  applicability:
+    rule: { fact: citizenship.ever_polish, in: ["no", lost] }
+    conditions:
+      # Eligibility, from the act: the President grants citizenship to a foreigner (art. 18), so
+      # both "never had it" and "had it and lost it" fit. What the application must say about a
+      # former citizenship (art. 20 ust. 1 pkt 4) is application content, not a condition: it is
+      # with the documents ("ancestors"). UX audit F1, 2026-10-03.
+      - id: foreigner
+        rule: { fact: citizenship.ever_polish, in: ["no", lost] }
+        statement:
+          value:
+            pl: "Prezydent Rzeczypospolitej Polskiej może nadać cudzoziemcowi obywatelstwo polskie."
+            en: "The President of the Republic of Poland may grant Polish citizenship to a foreigner."
+            uk: "Президент Республіки Польща може надати іноземцю польське громадянство."
+            ru: "Президент Республики Польша может предоставить иностранцу польское гражданство."
+          quotes:
+            - page: &act https://api.sejm.gov.pl/eli/acts/DU/2025/1611/text.pdf
+              text: "Prezydent Rzeczypospolitej Polskiej może nadać cudzoziemcowi obywatelstwo polskie."
+            # The act and a voivode's own document list expect former citizens to apply (content
+            # audit of F1, 2026-10-03): the evidence for the act's side of the disagreement.
+            - page: *act
+              text: "informacje o posiadaniu obywatelstwa polskiego w przeszłości, jego utracie oraz dacie nabycia obywatelstwa innego państwa;"
+            - page: https://www.gov.pl/web/uw-pomorski/nadanie-obywatelstwa-polskiego-przez-prezydenta-rp
+              text: "Dokumenty świadczące o posiadaniu przez wnioskodawcę obywatelstwa polskiego w przeszłości, jego utracie oraz dacie nabycia obywatelstwa obcego;"
+      # MSWiA's card is narrower than the act ("never had"). For a former citizen the two
+      # differ, so that answer is shown as unsettled, not as failing (owner/legal review pending,
+      # docs/plan/verifications/UXA-1-F1-grant-conditions.md).
+      - id: never-polish
+        rule: { fact: citizenship.ever_polish, eq: "no" }
+        unsettled: { fact: citizenship.ever_polish, eq: lost }
+        statement:
+          value:
+            pl: "Kto może skorzystać z usługi?\nOsoba, która nigdy nie posiadała obywatelstwa polskiego."
+            en: "Who can use this service?\nA person who has never held Polish citizenship."
+            uk: "Хто може скористатися послугою?\nОсоба, яка ніколи не мала польського громадянства."
+            ru: "Кто может воспользоваться услугой?\nЧеловек, который никогда не имел польского гражданства."
+          quotes:
+            - page: &nadanie https://www.gov.pl/web/mswia/uzyskaj-polskie-obywatelstwo
+              text: "Kto może skorzystać z usługi?\nOsoba, która nigdy nie posiadała obywatelstwa polskiego."
+  requiredFacts:
+    - citizenship.ever_polish
+    - citizenship.where_lives
+  steps:
+    - id: collect-documents
+      title:
+        pl: Zbierz dokumenty
+        en: Collect the documents
+        uk: Зберіть документи
+        ru: Соберите документы
+      description:
+        pl: Listę dokumentów podaje urząd wojewódzki albo konsulat, przez który złożysz wniosek. Dokumenty w obcym języku dołączasz z tłumaczeniem przysięgłym albo konsularnym.
+        en: The voivodeship office or consulate you'll file through publishes the list of documents. Documents in a foreign language go with a sworn or consular translation.
+        uk: Перелік документів публікує воєводське управління або консульство, через яке ви подаватимете заяву. Документи іноземною мовою додають із присяжним або консульським перекладом.
+        ru: Перечень документов публикует воеводское управление или консульство, через которое вы будете подавать заявление. Документы на иностранном языке прилагают с присяжным или консульским переводом.
+      channels: [in_person]
+      quotes:
+        - page: *nadanie
+          text: "Zbierz wszystkie potrzebne dokumenty. Szczegóły znajdziesz na stronie internetowej właściwego dla Ciebie urzędu wojewódzkiego lub konsulatu."
+        - page: *nadanie
+          text: "Takie tłumaczenie musi być wykonane przez tłumacza przysięgłego lub konsula RP."
+    - id: pay
+      title:
+        pl: Zapłać opłatę
+        en: Pay the fee
+        uk: Сплатіть збір
+        ru: Оплатите сбор
+      description:
+        pl: Opłatę skarbową, jeśli składasz wniosek przez wojewodę, albo opłatę konsularną, jeśli składasz go przez konsula. Jak zapłacić, podaje urząd albo konsulat.
+        en: Stamp duty if you file through the voivode, or the consular fee if you file through a consul. The office or consulate says how to pay.
+        uk: Гербовий збір, якщо подаєте заяву через воєводу, або консульський збір, якщо подаєте її через консула. Як сплатити, повідомляє управління або консульство.
+        ru: Гербовый сбор, если подаете заявление через воеводу, или консульский сбор, если подаете его через консула. Как оплатить, сообщает управление или консульство.
+      dependsOn: [collect-documents]
+      channels: [in_person]
+      quotes:
+        - page: *nadanie
+          text: "Zapłać opłatę skarbową lub opłatę konsularną. Szczegóły znajdziesz na stronie internetowej właściwego dla Ciebie urzędu wojewódzkiego lub konsulatu."
+    - id: file
+      title:
+        pl: Złóż wniosek przez wojewodę albo konsula
+        en: File the application through the voivode or a consul
+        uk: Подайте заяву через воєводу або консула
+        ru: Подайте заявление через воеводу или консула
+      description:
+        pl: Jeśli mieszkasz w Polsce legalnie, ale nie na wizie ani w ruchu bezwizowym, składasz wniosek przez wojewodę właściwego dla Twojego miejsca zamieszkania. Jeśli mieszkasz za granicą albo jesteś w Polsce na wizie lub w ruchu bezwizowym, składasz go przez polskiego konsula. Możesz to zrobić osobiście albo pocztą, z podpisem poświadczonym przez notariusza lub konsula.
+        en: If you live in Poland legally, and not on a visa or visa-free, file through the voivode for where you live. If you live abroad, or you're in Poland on a visa or visa-free, file through a Polish consul. You can file in person, or by post with your signature certified by a notary or a consul.
+        uk: Якщо ви легально живете в Польщі, але не за візою і не в безвізовому режимі, подаєте заяву через воєводу за вашим місцем проживання. Якщо живете за кордоном або перебуваєте в Польщі за візою чи в безвізовому режимі, подаєте її через польського консула. Подати можна особисто або поштою, з підписом, засвідченим нотаріусом чи консулом.
+        ru: Если вы легально живете в Польше, но не по визе и не в безвизовом режиме, подаете заявление через воеводу по вашему месту жительства. Если живете за границей или находитесь в Польше по визе или в безвизовом режиме, подаете его через польского консула. Подать можно лично или по почте, с подписью, заверенной нотариусом или консулом.
+      dependsOn: [pay]
+      channels: [in_person, post]
+      quotes:
+        - page: *nadanie
+          text: "Złóż wniosek do urzędu wojewódzkiego albo konsulatu."
+        - page: *nadanie
+          text: "Do wojewody właściwego ze względu na Twoje miejsce zamieszkania - jeśli legalnie mieszkasz w Polsce."
+        - page: *nadanie
+          text: "Do konsula - jeśli mieszkasz za granicą."
+        - page: *act
+          text: "Wniosek o nadanie obywatelstwa polskiego składa się, za pośrednictwem wojewody lub konsula, osobiście lub korespondencyjnie z podpisem urzędowo poświadczonym."
+        - page: *act
+          text: "Przepis art. 9 pkt 1 stosuje się odpowiednio."
+        - page: *act
+          text: "a) wojewodą właściwym ze względu na miejsce zamieszkania − od obywatela polskiego zamieszkałego na terytorium Rzeczypospolitej Polskiej oraz od cudzoziemca przebywającego legalnie na terytorium Rzeczypospolitej Polskiej, z wyłączeniem pobytu na podstawie wizy lub w ruchu bezwizowym,"
+        - page: &pomorskie https://www.gov.pl/web/uw-pomorski/nadanie-obywatelstwa-polskiego-przez-prezydenta-rp
+          text: "Osoby przebywające w Polsce na podstawie wizylub w ruchu bezwizowym składają wniosek jedynie za pośrednictwem polskiego konsula właściwego dla swojego stałego miejsca zamieszkania."
+    - id: decision
+      title:
+        pl: Czekaj na postanowienie Prezydenta
+        en: Wait for the President's decision
+        uk: Чекайте на постанову Президента
+        ru: Ждите постановления Президента
+      description:
+        pl: Wojewoda albo konsul przekazuje wniosek Prezydentowi wraz ze swoją opinią, przez ministra spraw wewnętrznych. Zanim minister przekaże wniosek, pyta policję, Agencję Bezpieczeństwa Wewnętrznego, a w razie potrzeby inne organy, i sporządza własną opinię. Akt nadania obywatelstwa albo zaświadczenie o odmowie dostaniesz od urzędu wojewódzkiego lub konsulatu, przez który składasz wniosek.
+        en: The voivode or consul sends the application, with their own opinion, to the President through the interior minister. Before passing it on, the minister asks the police, the Internal Security Agency and, where needed, other bodies, and prepares their own opinion. You get the act of grant, or a certificate of refusal, from the office or consulate you filed through.
+        uk: Воєвода або консул передає заяву Президентові разом зі своєю думкою, через міністра внутрішніх справ. Перш ніж передати заяву, міністр запитує поліцію, Агентство внутрішньої безпеки, а за потреби інші органи, і готує власну думку. Акт надання громадянства або довідку про відмову ви отримаєте від управління чи консульства, через яке подавали заяву.
+        ru: Воевода или консул передает заявление Президенту вместе со своим мнением, через министра внутренних дел. Прежде чем передать заявление, министр запрашивает полицию, Агентство внутренней безопасности, а при необходимости другие органы, и готовит собственное мнение. Акт о предоставлении гражданства или справку об отказе вы получите от управления или консульства, через которое подавали заявление.
+      dependsOn: [file]
+      channels: [in_person, post]
+      quotes:
+        - page: *act
+          text: "Wojewoda i konsul przekazują Prezydentowi Rzeczypospolitej Polskiej, za pośrednictwem ministra właściwego do spraw wewnętrznych, wniosek o nadanie obywatelstwa polskiego wraz z dokumentami wymaganymi na podstawie art. 20 ust. 4 oraz własną opinią."
+        - page: *act
+          text: "Minister właściwy do spraw wewnętrznych, przed przekazaniem wniosku Prezydentowi Rzeczypospolitej Polskiej, zwraca się do Komendanta Głównego Policji, Szefa Agencji Bezpieczeństwa Wewnętrznego, a w razie potrzeby do innych organów, o udzielenie informacji, które mogą mieć istotne znaczenie w sprawie o nadanie obywatelstwa polskiego, i sporządza opinię dotyczącą wniosku."
+        - page: *nadanie
+          text: "Czekaj na odpowiedź. Akt nadania obywatelstwa lub zaświadczenie o odmowie nadania obywatelstwa dostaniesz od organu, do którego składałeś wniosek (urzędu wojewódzkiego lub konsulatu)."
+  documents:
+    - id: application
+      namePl:
+        value: Wniosek o nadanie obywatelstwa polskiego
+        quotes:
+          - page: *nadanie
+            text: "Wniosek o nadanie obywatelstwa polskiego."
+      description:
+        pl: Wzór wniosku jest na stronie ministerstwa. We wniosku podajesz między innymi źródła utrzymania, osiągnięcia zawodowe, znajomość języka polskiego i uzasadnienie.
+        en: The form is on the ministry's page. Among other things, it asks about your means of support, professional achievements, knowledge of Polish, and why you are applying.
+        uk: Зразок заяви є на сторінці міністерства. У заяві, серед іншого, зазначають джерела утримання, професійні досягнення, знання польської мови та обґрунтування.
+        ru: Образец заявления есть на странице министерства. В заявлении, среди прочего, указывают источники средств к существованию, профессиональные достижения, знание польского языка и обоснование.
+    - id: supporting-documents
+      namePl:
+        value: dokumenty potwierdzające dane i informacje zawarte we wniosku
+        quotes:
+          - page: *act
+            text: "dokumenty potwierdzające dane i informacje zawarte we wniosku, o których mowa w ust. 1 pkt 1, 5, 7 lub ust. 2;"
+      description:
+        pl: O Tobie, o źródłach utrzymania, osiągnięciach i działalności oraz o małżonku; jeśli wniosek obejmuje dziecko, także o dziecku.
+        en: About you, your means of support, achievements and activities, and your spouse; if the application covers a child, about the child too.
+        uk: Про вас, джерела утримання, досягнення й діяльність, а також про чоловіка чи дружину; якщо заява охоплює дитину, то й про дитину.
+        ru: О вас, об источниках средств к существованию, достижениях и деятельности, а также о супруге; если заявление охватывает ребенка, то и о ребенке.
+    - id: ancestors
+      namePl:
+        value: posiadane dokumenty potwierdzające informacje
+        quotes:
+          - page: *act
+            text: "posiadane dokumenty potwierdzające informacje, o których mowa w ust. 1 pkt 3 i 4;"
+          - page: *act
+            text: "informacje o rodzicach cudzoziemca i dalszych wstępnych, jeżeli posiadali obywatelstwo polskie;"
+          - page: *act
+            text: "informacje o posiadaniu obywatelstwa polskiego w przeszłości, jego utracie oraz dacie nabycia obywatelstwa innego państwa;"
+      description:
+        pl: O rodzicach albo dalszych przodkach, jeśli mieli obywatelstwo polskie, i o Twoim wcześniejszym obywatelstwie polskim, jeśli takie było. Dołączasz te, które masz.
+        en: About your parents or other ancestors who had Polish citizenship, and about your own former Polish citizenship, if any. Attach the ones you have.
+        uk: Про батьків або дальших предків, якщо вони мали польське громадянство, і про ваше колишнє польське громадянство, якщо воно було. Додаєте ті, що маєте.
+        ru: О родителях или более далеких предках, если у них было польское гражданство, и о вашем прежнем польском гражданстве, если оно было. Прилагаете те, что у вас есть.
+    - id: photos
+      namePl:
+        value: fotografie osób objętych wnioskiem
+        quotes:
+          - page: *act
+            text: "fotografie osób objętych wnioskiem."
+      description:
+        pl: Zdjęcia każdej osoby, której dotyczy wniosek.
+        en: Photos of everyone the application covers.
+        uk: Фотографії кожної особи, якої стосується заява.
+        ru: Фотографии каждого человека, которого касается заявление.
+    - id: translations
+      namePl:
+        value: Tłumaczenia zagranicznych dokumentów na język polski
+        quotes:
+          - page: *nadanie
+            text: "Tłumaczenia zagranicznych dokumentów na język polski - jeśli załączasz do wniosku dokumenty wydane w języku obcym."
+      description:
+        pl: Jeśli dołączasz dokumenty w obcym języku; tłumaczenie przysięgłe albo konsularne.
+        en: If you attach documents in a foreign language; a sworn or consular translation.
+        uk: Якщо ви додаєте документи іноземною мовою; присяжний або консульський переклад.
+        ru: Если вы прилагаете документы на иностранном языке; присяжный или консульский перевод.
+    - id: consents
+      namePl:
+        value: oświadczenia o wyrażeniu zgody na nabycie obywatelstwa
+        quotes:
+          - page: *act
+            text: "2) informację, czy i przed jakim organem zostały złożone oświadczenia o wyrażeniu zgody na nabycie obywatelstwa, o których mowa w art. 7 ust. 2 pkt 2 i art. 8."
+          - page: *act
+            text: "Nadanie obywatelstwa polskiego jednemu z rodziców, uznanie go za obywatela polskiego oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod jego władzą rodzicielską, w przypadku gdy: 1) drugiemu z rodziców nie przysługuje władza rodzicielska; 2) drugie z rodziców złożyło oświadczenie o wyrażeniu zgody na nabycie lub utratę przez małoletniego obywatelstwa polskiego."
+      description:
+        pl: Jeśli wniosek obejmuje dziecko. Zgoda drugiego z rodziców (gdy obywatelstwo dostaje tylko jedno; nie jest potrzebna, jeśli drugiemu z rodziców nie przysługuje władza rodzicielska) i zgoda dziecka, które ukończyło 16 lat. Składa się je osobiście w urzędzie wojewódzkim lub konsulacie albo pocztą z podpisem urzędowo poświadczonym; we wniosku podajesz, czy i gdzie zostały złożone.
+        en: "If the application covers a child: the other parent's consent (when only one parent is getting citizenship; not needed if the other parent has no parental authority) and the consent of a child aged 16 or over. Each is given in person at a voivodeship office or consulate, or by post with an officially certified signature. The application says whether and where they were given."
+        uk: Якщо заява охоплює дитину. Згода другого з батьків (коли громадянство отримує лише один; не потрібна, якщо другий із батьків не має батьківської влади) і згода дитини, якій виповнилося 16 років. Їх подають особисто у воєводському управлінні чи консульстві або поштою з офіційно засвідченим підписом; у заяві зазначають, чи і де їх подано.
+        ru: Если заявление охватывает ребенка. Согласие второго родителя (когда гражданство получает только один; не нужно, если второй родитель не имеет родительской власти) и согласие ребенка, которому исполнилось 16 лет. Их подают лично в воеводском управлении или консульстве либо по почте с официально заверенной подписью; в заявлении указывают, подавались ли они и где.
+  fees:
+    - id: filing
+      purpose:
+        pl: Opłata skarbowa za przyjęcie wniosku przez wojewodę
+        en: Stamp duty when the voivode accepts the application
+        uk: Гербовий збір за прийняття заяви воєводою
+        ru: Гербовый сбор за принятие заявления воеводой
+      condition: { fact: citizenship.where_lives, eq: poland_legal }
+      amountPln:
+        value: 1669
+        quotes:
+          - page: &duty https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf
+            text: "Przyjęcie przez wojewodę wniosku o nadanie obywatelstwa polskiego przez Prezydenta Rzeczypospolitej Polskiej 1669 zł"
+  deadlines:
+    - id: fix-gaps
+      description:
+        pl: Na uzupełnienie braków we wniosku, jeśli urząd albo konsulat Cię o to wezwie. Liczy się od dnia otrzymania wezwania.
+        en: To supply what's missing from the application, if the office or consulate asks you to. Counted from the day you receive the request.
+        uk: На усунення недоліків заяви, якщо управління або консульство вас про це попросить. Рахують від дня отримання вимоги.
+        ru: На устранение недостатков заявления, если управление или консульство вас об этом попросит. Считают со дня получения требования.
+      rule:
+        value: { kind: relative, amount: 30, unit: day, from: request_delivered }
+        quotes:
+          - page: *act
+            text: "Jeżeli wniosek nie spełnia wymagań określonych w art. 20 ust. 1, 2 lub 3 lub nie dołączono do niego dokumentów, o których mowa w art. 20 ust. 4, organ przyjmujący wniosek wzywa wnioskodawcę do usunięcia braków, w terminie 30 dni od dnia otrzymania wezwania z pouczeniem, że nieusunięcie tych braków spowoduje pozostawienie wniosku bez rozpoznania."
+      consequence:
+        value:
+          pl: "nieusunięcie tych braków spowoduje pozostawienie wniosku bez rozpoznania"
+          en: "If what's missing isn't supplied, the application won't be considered."
+          uk: "Якщо недоліки не усунуто, заяву залишать без розгляду."
+          ru: "Если недостатки не устранены, заявление оставят без рассмотрения."
+        quotes:
+          - page: *act
+            text: "Jeżeli wniosek nie spełnia wymagań określonych w art. 20 ust. 1, 2 lub 3 lub nie dołączono do niego dokumentów, o których mowa w art. 20 ust. 4, organ przyjmujący wniosek wzywa wnioskodawcę do usunięcia braków, w terminie 30 dni od dnia otrzymania wezwania z pouczeniem, że nieusunięcie tych braków spowoduje pozostawienie wniosku bez rozpoznania."
+  outcome:
+    value:
+      pl: "Cudzoziemiec nabywa obywatelstwo polskie w dniu wydania przez Prezydenta Rzeczypospolitej Polskiej postanowienia o nadaniu obywatelstwa polskiego."
+      en: "The foreigner acquires Polish citizenship on the day the President of Poland issues the decision granting it."
+      uk: "Іноземець набуває польського громадянства в день видання Президентом Польщі постанови про надання громадянства."
+      ru: "Иностранец приобретает польское гражданство в день издания Президентом Польши постановления о предоставлении гражданства."
+    quotes:
+      - page: *act
+        text: "Cudzoziemiec nabywa obywatelstwo polskie w dniu wydania przez Prezydenta Rzeczypospolitej Polskiej postanowienia o nadaniu obywatelstwa polskiego."
+  variations: []
+  pitfalls:
+    - id: no-appeal
+      important: true
+      statement:
+        value:
+          pl: "Nie możesz się odwołać. Postanowienia Prezydenta RP są ostateczne."
+          en: "You can't appeal. The President's decisions are final."
+          uk: "Оскаржити не можна. Постанови Президента остаточні."
+          ru: "Обжаловать нельзя. Постановления Президента окончательны."
+        quotes:
+          - page: *nadanie
+            text: "Jak możesz się odwołać?\nNie możesz się odwołać. Postanowienia Prezydenta RP są ostateczne."
+    - id: no-time-limit
+      important: true
+      statement:
+        value:
+          pl: "Prezydent RP nie jest związany żadnymi terminami w sprawach o nadanie obywatelstwa polskiego."
+          en: "The President is not bound by any time limit in cases of granting Polish citizenship."
+          uk: "Президент не зв'язаний жодними строками у справах про надання польського громадянства."
+          ru: "Президент не связан никакими сроками в делах о предоставлении польского гражданства."
+        quotes:
+          - page: *nadanie
+            text: "Ile będziesz czekać?\nPrezydent RP nie jest związany żadnymi terminami w sprawach o nadanie obywatelstwa polskiego."
+    - id: pending-recognition-ends
+      important: true
+      statement:
+        value:
+          pl: "W przypadku gdy wniosek o nadanie obywatelstwa polskiego cudzoziemcowi został złożony w czasie, gdy wobec tego cudzoziemca jest prowadzone postępowanie o uznanie za obywatela polskiego albo postępowanie o przywrócenie obywatelstwa polskiego, postępowanie o uznanie za obywatela polskiego albo postępowanie o przywrócenie obywatelstwa polskiego umarza się."
+          en: "If the grant application is filed while the same person's case for recognition as a Polish citizen, or for restoring Polish citizenship, is still open, that case is discontinued."
+          uk: "Якщо заяву про надання громадянства подано, поки щодо цієї ж особи ще триває провадження про визнання громадянином Польщі або про відновлення польського громадянства, це провадження припиняють."
+          ru: "Если заявление о предоставлении гражданства подано, пока в отношении того же человека еще ведется производство о признании гражданином Польши или о восстановлении польского гражданства, это производство прекращают."
+        quotes:
+          - page: *act
+            text: "W przypadku gdy wniosek o nadanie obywatelstwa polskiego cudzoziemcowi został złożony w czasie, gdy wobec tego cudzoziemca jest prowadzone postępowanie o uznanie za obywatela polskiego albo postępowanie o przywrócenie obywatelstwa polskiego, postępowanie o uznanie za obywatela polskiego albo postępowanie o przywrócenie obywatelstwa polskiego umarza się."
+    # Former citizens: restoration is a separate route in the act, and a pending grant case ends a
+    # restoration application (content audit of F1, 2026-10-03). Official wording only; which
+    # route suits a person is for the office or free legal aid (handoff).
+    - id: restoration
+      important: true
+      condition: { fact: citizenship.ever_polish, eq: lost }
+      statement:
+        value:
+          pl: "Cudzoziemcowi, który utracił obywatelstwo polskie przed dniem 1 stycznia 1999 r. na podstawie:\n1) art. 11 lub 13 ustawy z dnia 20 stycznia 1920 r. o obywatelstwie Państwa Polskiego (Dz. U. poz. 44, z 1932 r. poz. 896, z 1934 r. poz. 976, z 1938 r. poz. 548 oraz z 1946 r. poz. 106),\n2) art. 11 lub 12 ustawy z dnia 8 stycznia 1951 r. o obywatelstwie polskim (Dz. U. poz. 25),\n3) art. 13, 14 lub 15 ustawy z dnia 15 lutego 1962 r. o obywatelstwie polskim (Dz. U. z 2000 r. poz. 353, z późn. zm.3))\n– przywraca się obywatelstwo polskie, na jego wniosek."
+          en: "The act also has restoration (art. 38): Polish citizenship is restored, on application, to a foreigner who lost it before 1 January 1999 under the provisions it lists (from the citizenship acts of 1920, 1951 and 1962)."
+          uk: "У законі є також відновлення (ст. 38): польське громадянство відновлюють, на заяву, іноземцю, який втратив його до 1 січня 1999 р. на підставах, які в ньому перелічено (із законів про громадянство 1920, 1951 і 1962 років)."
+          ru: "В законе есть также восстановление (ст. 38): польское гражданство восстанавливают, по заявлению, иностранцу, который утратил его до 1 января 1999 г. по основаниям, которые в нем перечислены (из законов о гражданстве 1920, 1951 и 1962 годов)."
+        quotes:
+          - page: *act
+            text: "Cudzoziemcowi, który utracił obywatelstwo polskie przed dniem 1 stycznia 1999 r. na podstawie:\n1) art. 11 lub 13 ustawy z dnia 20 stycznia 1920 r. o obywatelstwie Państwa Polskiego (Dz. U. poz. 44, z 1932 r. poz. 896, z 1934 r. poz. 976, z 1938 r. poz. 548 oraz z 1946 r. poz. 106),\n2) art. 11 lub 12 ustawy z dnia 8 stycznia 1951 r. o obywatelstwie polskim (Dz. U. poz. 25),\n3) art. 13, 14 lub 15 ustawy z dnia 15 lutego 1962 r. o obywatelstwie polskim (Dz. U. z 2000 r. poz. 353, z późn. zm.3))\n– przywraca się obywatelstwo polskie, na jego wniosek."
+    # Restoration is not automatic: art. 38 ust. 2 and 3 list when it is refused (content re-check,
+    # 2026-10-03). Ust. 2 is split by a page footnote in the PDF, so ust. 3 is quoted and ust. 2
+    # pointed to.
+    - id: restoration-refused
+      important: true
+      condition: { fact: citizenship.ever_polish, eq: lost }
+      statement:
+        value:
+          pl: "Nie przywraca się obywatelstwa polskiego cudzoziemcowi, jeżeli stanowi to zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+          en: "Citizenship is not restored to a foreigner if that would threaten national defence or state security, or public safety and order (art. 38(3); art. 38(2) lists further cases)."
+          uk: "Громадянство не відновлюють іноземцю, якщо це загрожує обороноздатності або безпеці держави чи охороні громадської безпеки і порядку (ст. 38 ч. 3; ст. 38 ч. 2 перелічує й інші випадки)."
+          ru: "Гражданство не восстанавливают иностранцу, если это угрожает обороноспособности или безопасности государства либо охране общественной безопасности и порядка (ст. 38 ч. 3; ст. 38 ч. 2 перечисляет и другие случаи)."
+        quotes:
+          - page: *act
+            text: "Nie przywraca się obywatelstwa polskiego cudzoziemcowi, jeżeli stanowi to zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego."
+    - id: restoration-ends
+      important: true
+      condition: { fact: citizenship.ever_polish, eq: lost }
+      statement:
+        value:
+          pl: "W przypadku gdy wniosek o przywrócenie obywatelstwa polskiego został złożony w czasie, gdy wobec cudzoziemca objętego wnioskiem prowadzone jest postępowanie o nadanie obywatelstwa polskiego, postępowanie o przywrócenie obywatelstwa polskiego umarza się."
+          en: "If a restoration application is filed while a grant case for the same person is pending, the restoration case is discontinued (art. 41(1))."
+          uk: "Якщо заяву про відновлення подано, коли щодо цієї особи триває провадження про надання громадянства, провадження про відновлення припиняють (ст. 41 ч. 1)."
+          ru: "Если заявление о восстановлении подано, когда в отношении этого человека идет производство о предоставлении гражданства, производство о восстановлении прекращают (ст. 41 ч. 1)."
+        quotes:
+          - page: *act
+            text: "W przypadku gdy wniosek o przywrócenie obywatelstwa polskiego został złożony w czasie, gdy wobec cudzoziemca objętego wnioskiem prowadzone jest postępowanie o nadanie obywatelstwa polskiego, postępowanie o przywrócenie obywatelstwa polskiego umarza się."
+    - id: visa-consul
+      important: true
+      condition: { fact: citizenship.where_lives, eq: poland_visa }
+      statement:
+        value:
+          pl: "Osoby przebywające w Polsce na podstawie wizylub w ruchu bezwizowym składają wniosek jedynie za pośrednictwem polskiego konsula właściwego dla swojego stałego miejsca zamieszkania."
+          en: "According to the Pomorskie voivodeship office, people staying in Poland on a visa or visa-free file the application only through the Polish consul for their permanent place of residence."
+          uk: "За даними Поморського воєводського управління, особи, які перебувають у Польщі за візою або в безвізовому режимі, подають заяву лише через польського консула за місцем їхнього постійного проживання."
+          ru: "По данным Поморского воеводского управления, люди, которые находятся в Польше по визе или в безвизовом режиме, подают заявление только через польского консула по месту своего постоянного проживания."
+        quotes:
+          - page: *pomorskie
+            text: "Osoby przebywające w Polsce na podstawie wizylub w ruchu bezwizowym składają wniosek jedynie za pośrednictwem polskiego konsula właściwego dla swojego stałego miejsca zamieszkania."
+    - id: where-the-act-says
+      condition: { fact: citizenship.where_lives, in: [poland_visa, poland_no_stay] }
+      statement:
+        value:
+          pl: "osobiście do protokołu przed:\na) wojewodą właściwym ze względu na miejsce zamieszkania − od obywatela polskiego zamieszkałego na terytorium Rzeczypospolitej Polskiej oraz od cudzoziemca przebywającego legalnie na terytorium Rzeczypospolitej Polskiej, z wyłączeniem pobytu na podstawie wizy lub w ruchu bezwizowym,\nb) konsulem − od osoby zamieszkałej za granicą;"
+          en: "What the act says about where to file (art. 9 point 1, applied to grant applications by art. 21(1)): in person, to be recorded by:\na) the voivode for the place of residence: from a Polish citizen living in Poland and from a foreigner staying in Poland legally, except a stay on a visa or visa-free travel,\nb) a consul: from a person living abroad."
+          uk: "Що закон каже про місце подання (ст. 9 п. 1, яку ст. 21 ч. 1 застосовує до заяв про надання): особисто до протоколу перед:\nа) воєводою за місцем проживання: від громадянина Польщі, який проживає в Польщі, та від іноземця, який легально перебуває в Польщі, крім перебування за візою або в безвізовому режимі,\nб) консулом: від особи, яка проживає за кордоном."
+          ru: "Что закон говорит о месте подачи (ст. 9 п. 1, которую ст. 21 ч. 1 применяет к заявлениям о предоставлении): лично, под протокол, перед:\nа) воеводой по месту жительства: от гражданина Польши, который проживает в Польше, и от иностранца, который легально находится в Польше, кроме пребывания по визе или в безвизовом режиме,\nб) консулом: от человека, который проживает за границей."
+        quotes:
+          - page: *act
+            text: "osobiście do protokołu przed:\na) wojewodą właściwym ze względu na miejsce zamieszkania − od obywatela polskiego zamieszkałego na terytorium Rzeczypospolitej Polskiej oraz od cudzoziemca przebywającego legalnie na terytorium Rzeczypospolitej Polskiej, z wyłączeniem pobytu na podstawie wizy lub w ruchu bezwizowym,\nb) konsulem − od osoby zamieszkałej za granicą;"
+          - page: *act
+            text: "Przepis art. 9 pkt 1 stosuje się odpowiednio."
+    - id: consular-fee
+      alsoIn: fees
+      important: true
+      condition: { fact: citizenship.where_lives, in: [abroad, poland_visa] }
+      statement:
+        value:
+          pl: "Jeśli składasz wniosek w konsulacie, zapłacisz wg taksy konsularnej. Na miejscu lub na stronie internetowej dowiesz się, w jaki sposób możesz zapłacić."
+          en: "If you file at a consulate, you pay according to the consular fee schedule. You'll find out how to pay there or on its website."
+          uk: "Якщо подаєте заяву в консульстві, платите за консульським тарифом. Як сплатити, дізнаєтеся на місці або на його сайті."
+          ru: "Если подаете заявление в консульстве, платите по консульскому тарифу. Как оплатить, узнаете на месте или на его сайте."
+        quotes:
+          - page: *nadanie
+            text: "Jeśli składasz wniosek w konsulacie, zapłacisz wg taksy konsularnej. Na miejscu lub na stronie internetowej dowiesz się, w jaki sposób możesz zapłacić."
+    - id: post-signature
+      statement:
+        value:
+          pl: "Pamiętaj! Jeśli przesyłasz wniosek pocztą, potrzebujesz urzędowo poświadczonego podpisu. Podpis może poświadczyć notariusz lub konsul."
+          en: "Remember: if you send the application by post, your signature must be officially certified. A notary or a consul can certify it."
+          uk: "Пам'ятайте: якщо надсилаєте заяву поштою, ваш підпис має бути офіційно засвідчений. Засвідчити його може нотаріус або консул."
+          ru: "Помните: если отправляете заявление по почте, ваша подпись должна быть официально заверена. Заверить ее может нотариус или консул."
+        quotes:
+          - page: *nadanie
+            text: "Pamiętaj! Jeśli przesyłasz wniosek pocztą, potrzebujesz urzędowo poświadczonego podpisu. Podpis może poświadczyć notariusz lub konsul."
+    - id: other-costs
+      alsoIn: fees
+      statement:
+        value:
+          pl: "Koszt tłumaczenia dokumentów, jeśli załączasz do wniosku dokumenty w języku obcym. Koszt tłumaczenia zależy od stawki tłumacza.\nKoszt uwierzytelnienia dokumentów - jeśli do wniosku załączasz kopie dokumentów. Koszt zależy od stawki notariusza lub taksy konsularnej.\nOpłata za notarialne poświadczenie podpisu – jeśli przesyłasz wniosek pocztą. Opłatę pobierze notariusz."
+          en: "The cost of translating documents, if you attach documents in a foreign language; it depends on the translator's rate.\nThe cost of certifying documents, if you attach copies; it depends on the notary's rate or the consular fee schedule.\nThe fee for a notary certifying your signature, if you send the application by post; the notary charges it."
+          uk: "Вартість перекладу документів, якщо ви додаєте документи іноземною мовою; залежить від ставки перекладача.\nВартість засвідчення документів, якщо ви додаєте копії; залежить від ставки нотаріуса або консульського тарифу.\nПлата за нотаріальне засвідчення підпису, якщо надсилаєте заяву поштою; її стягує нотаріус."
+          ru: "Стоимость перевода документов, если вы прилагаете документы на иностранном языке; зависит от ставки переводчика.\nСтоимость заверения документов, если вы прилагаете копии; зависит от ставки нотариуса или консульского тарифа.\nПлата за нотариальное заверение подписи, если отправляете заявление по почте; ее взимает нотариус."
+        quotes:
+          - page: *nadanie
+            text: "Koszt tłumaczenia dokumentów, jeśli załączasz do wniosku dokumenty w języku obcym. Koszt tłumaczenia zależy od stawki tłumacza.\nKoszt uwierzytelnienia dokumentów - jeśli do wniosku załączasz kopie dokumentów. Koszt zależy od stawki notariusza lub taksy konsularnej.\nOpłata za notarialne poświadczenie podpisu – jeśli przesyłasz wniosek pocztą. Opłatę pobierze notariusz."
+    - id: children-both-parents
+      statement:
+        value:
+          pl: "Jeśli oboje rodzice dostaną polskie obywatelstwo w tej samej dacie - ich dzieci, które nie skończyły jeszcze 18 lat, też dostaną polskie obywatelstwo."
+          en: "If both parents get Polish citizenship on the same date, their children under 18 get it too."
+          uk: "Якщо обоє батьків отримають польське громадянство в один день, їхні діти, яким ще не виповнилося 18 років, теж його отримають."
+          ru: "Если оба родителя получат польское гражданство в один день, их дети, которым еще не исполнилось 18 лет, тоже его получат."
+        quotes:
+          - page: *nadanie
+            text: "Jeśli oboje rodzice dostaną polskie obywatelstwo w tej samej dacie - ich dzieci, które nie skończyły jeszcze 18 lat, też dostaną polskie obywatelstwo."
+          - page: *act
+            text: "Nadanie obywatelstwa polskiego rodzicom, uznanie ich za obywateli polskich oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod ich władzą rodzicielską."
+    - id: children-one-parent
+      statement:
+        value:
+          pl: "Nadanie obywatelstwa polskiego jednemu z rodziców, uznanie go za obywatela polskiego oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod jego władzą rodzicielską, w przypadku gdy: 1) drugiemu z rodziców nie przysługuje władza rodzicielska; 2) drugie z rodziców złożyło oświadczenie o wyrażeniu zgody na nabycie lub utratę przez małoletniego obywatelstwa polskiego."
+          en: "When only one parent is granted Polish citizenship, it covers a minor child under that parent's parental authority if either: 1) the other parent has no parental authority; or 2) the other parent has declared consent to the child acquiring Polish citizenship."
+          uk: "Коли польське громадянство надають лише одному з батьків, воно охоплює неповнолітню дитину під його батьківською владою, якщо: 1) другий із батьків не має батьківської влади; або 2) другий із батьків заявив про згоду на набуття дитиною польського громадянства."
+          ru: "Когда польское гражданство предоставляют только одному из родителей, оно охватывает несовершеннолетнего ребенка под его родительской властью, если: 1) второй родитель не имеет родительской власти; или 2) второй родитель заявил о согласии на приобретение ребенком польского гражданства."
+        quotes:
+          - page: *act
+            text: "Nadanie obywatelstwa polskiego jednemu z rodziców, uznanie go za obywatela polskiego oraz wyrażenie zgody na zrzeczenie się obywatelstwa polskiego obejmuje małoletniego pozostającego pod jego władzą rodzicielską, w przypadku gdy: 1) drugiemu z rodziców nie przysługuje władza rodzicielska; 2) drugie z rodziców złożyło oświadczenie o wyrażeniu zgody na nabycie lub utratę przez małoletniego obywatelstwa polskiego."
+          - page: *nadanie
+            text: "Jeśli jedno z rodziców dostanie polskie obywatelstwo - jego dzieci, które nie skończyły jeszcze 18 lat, dostaną polskie obywatelstwo tylko gdy:"
+    - id: children-16
+      statement:
+        value:
+          pl: "Do nadania obywatelstwa polskiego małoletniemu, który ukończył 16 lat, uznania go za obywatela polskiego oraz utraty przez niego obywatelstwa polskiego wskutek wyrażenia zgody na zrzeczenie się obywatelstwa przez jego rodziców jest wymagane oświadczenie o wyrażeniu zgody złożone przez małoletniego."
+          en: "A child aged 16 or over must declare their own consent to being granted Polish citizenship. They can do it in person at the voivodeship office or consulate, or by post with an officially certified signature."
+          uk: "Дитина, якій виповнилося 16 років, має сама заявити про згоду на надання їй польського громадянства. Це можна зробити особисто у воєводському управлінні чи консульстві або поштою з офіційно засвідченим підписом."
+          ru: "Ребенок, которому исполнилось 16 лет, должен сам заявить о согласии на предоставление ему польского гражданства. Это можно сделать лично в воеводском управлении или консульстве либо по почте с официально заверенной подписью."
+        quotes:
+          - page: *act
+            text: "Do nadania obywatelstwa polskiego małoletniemu, który ukończył 16 lat, uznania go za obywatela polskiego oraz utraty przez niego obywatelstwa polskiego wskutek wyrażenia zgody na zrzeczenie się obywatelstwa przez jego rodziców jest wymagane oświadczenie o wyrażeniu zgody złożone przez małoletniego."
+          - page: *nadanie
+            text: "Mogą to zrobić osobiście w urzędzie wojewódzkim lub konsulacie albo drogą korespondencyjną z podpisem urzędowo poświadczonym."
+    - id: child-only-application
+      statement:
+        value:
+          pl: "Nadanie obywatelstwa polskiego małoletniemu cudzoziemcowi następuje na wniosek jego przedstawicieli ustawowych."
+          en: "Polish citizenship is granted to a minor foreigner on the application of their legal representatives. The Pomorskie office says an application for a child alone must be signed by both parents."
+          uk: "Польське громадянство неповнолітньому іноземцю надають за заявою його законних представників. Поморське управління зазначає, що заяву лише для дитини мають підписати обоє батьків."
+          ru: "Польское гражданство несовершеннолетнему иностранцу предоставляют по заявлению его законных представителей. Поморское управление указывает, что заявление только для ребенка должны подписать оба родителя."
+        quotes:
+          - page: *act
+            text: "Nadanie obywatelstwa polskiego małoletniemu cudzoziemcowi następuje na wniosek jego przedstawicieli ustawowych."
+          - page: *pomorskie
+            text: "wniosek o nadanie obywatelstwa polskiego tylko dla małoletniego dziecka musi być podpisany przez oboje rodziców."
+    - id: doubt-already-polish
+      statement:
+        value:
+          pl: "W przypadku gdy na podstawie dokumentów dołączonych do wniosku o nadanie obywatelstwa polskiego wojewoda poweźmie wątpliwość, czy cudzoziemiec nie posiada obywatelstwa polskiego, wszczyna z urzędu postępowanie w sprawie potwierdzenia posiadania obywatelstwa polskiego."
+          en: "If the documents attached to the grant application make the voivode suspect that the foreigner already has Polish citizenship, the voivode opens a case to confirm it on their own initiative."
+          uk: "Якщо на підставі доданих до заяви документів у воєводи виникне сумнів, чи іноземець уже не має польського громадянства, воєвода з власної ініціативи розпочинає провадження про підтвердження польського громадянства."
+          ru: "Если на основании приложенных к заявлению документов у воеводы возникнет сомнение, нет ли у иностранца уже польского гражданства, воевода по собственной инициативе начинает производство о подтверждении польского гражданства."
+        quotes:
+          - page: *act
+            text: "W przypadku gdy na podstawie dokumentów dołączonych do wniosku o nadanie obywatelstwa polskiego wojewoda poweźmie wątpliwość, czy cudzoziemiec nie posiada obywatelstwa polskiego, wszczyna z urzędu postępowanie w sprawie potwierdzenia posiadania obywatelstwa polskiego."
+    - id: already-polish
+      statement:
+        value:
+          pl: "W przypadku stwierdzenia w toku postępowania w sprawie potwierdzenia posiadania obywatelstwa polskiego, że cudzoziemiec posiada obywatelstwo polskie, wojewoda wydaje decyzję o potwierdzeniu posiadania obywatelstwa polskiego, zaś wnioskowi o nadanie obywatelstwa polskiego nie nadaje się dalszego biegu."
+          en: "If that confirmation case finds that the foreigner has Polish citizenship, the voivode issues a decision confirming it, and the grant application goes no further."
+          uk: "Якщо в ході провадження про підтвердження встановлено, що іноземець має польське громадянство, воєвода ухвалює рішення про підтвердження, а заява про надання далі не розглядається."
+          ru: "Если в ходе производства о подтверждении установлено, что у иностранца есть польское гражданство, воевода принимает решение о подтверждении, а заявление о предоставлении дальше не рассматривается."
+        quotes:
+          - page: *act
+            text: "W przypadku stwierdzenia w toku postępowania w sprawie potwierdzenia posiadania obywatelstwa polskiego, że cudzoziemiec posiada obywatelstwo polskie, wojewoda wydaje decyzję o potwierdzeniu posiadania obywatelstwa polskiego, zaś wnioskowi o nadanie obywatelstwa polskiego nie nadaje się dalszego biegu."
+    - id: dual-citizenship
+      statement:
+        value:
+          pl: "Obywatel polski posiadający równocześnie obywatelstwo innego państwa ma wobec Rzeczypospolitej Polskiej takie same prawa i obowiązki jak osoba posiadająca wyłącznie obywatelstwo polskie."
+          en: "A Polish citizen who also holds another country's citizenship has the same rights and duties towards Poland as someone who holds only Polish citizenship."
+          uk: "Громадянин Польщі, який одночасно має громадянство іншої держави, має щодо Польщі такі самі права й обов'язки, як особа, що має лише польське громадянство."
+          ru: "Гражданин Польши, который одновременно имеет гражданство другого государства, имеет по отношению к Польше такие же права и обязанности, как человек, у которого есть только польское гражданство."
+        quotes:
+          - page: *act
+            text: "Obywatel polski posiadający równocześnie obywatelstwo innego państwa ma wobec Rzeczypospolitej Polskiej takie same prawa i obowiązki jak osoba posiadająca wyłącznie obywatelstwo polskie."
+    - id: other-citizenship-not-invoked
+      statement:
+        value:
+          pl: "Obywatel polski nie może wobec władz Rzeczypospolitej Polskiej powoływać się ze skutkiem prawnym na posiadane równocześnie obywatelstwo innego państwa i na wynikające z niego prawa i obowiązki."
+          en: "A Polish citizen cannot rely, with legal effect, on another citizenship they also hold, or on the rights and duties that come from it, towards the Polish authorities."
+          uk: "Громадянин Польщі не може перед органами влади Польщі з правовим наслідком посилатися на одночасне громадянство іншої держави та на пов'язані з ним права й обов'язки."
+          ru: "Гражданин Польши не может перед органами власти Польши с правовыми последствиями ссылаться на одновременно имеющееся у него гражданство другого государства и на вытекающие из него права и обязанности."
+        quotes:
+          - page: *act
+            text: "Obywatel polski nie może wobec władz Rzeczypospolitej Polskiej powoływać się ze skutkiem prawnym na posiadane równocześnie obywatelstwo innego państwa i na wynikające z niego prawa i obowiązki."
+    - id: any-time
+      statement:
+        value:
+          pl: "Kiedy złożyć wniosek?\nW dowolnym momencie."
+          en: "When to apply?\nAt any time."
+          uk: "Коли подавати заяву?\nУ будь-який момент."
+          ru: "Когда подавать заявление?\nВ любой момент."
+        quotes:
+          - page: *nadanie
+            text: "Kiedy złożyć wniosek?\nW dowolnym momencie."
+    - id: keep-documents-valid
+      condition: { fact: citizenship.where_lives, eq: poland_legal }
+      statement:
+        value:
+          pl: "Przez cały okres rozpatrywania wniosku w Kancelarii Prezydenta RP należy posiadać ważny dokument paszportowy albo dokument podróży oraz ważną kartę pobytu,"
+          en: "According to the Pomorskie voivodeship office, for the whole time the President's Chancellery is considering the application, you must hold a valid passport or travel document and a valid residence card."
+          uk: "За даними Поморського воєводського управління, протягом усього часу розгляду заяви в Канцелярії Президента потрібно мати чинний паспорт або проїзний документ і чинну карту побиту."
+          ru: "По данным Поморского воеводского управления, в течение всего времени рассмотрения заявления в Канцелярии Президента нужно иметь действительный паспорт или проездной документ и действительную карту побыту."
+        quotes:
+          - page: *pomorskie
+            text: "Przez cały okres rozpatrywania wniosku w Kancelarii Prezydenta RP należy posiadać ważny dokument paszportowy albo dokument podróży oraz ważną kartę pobytu,"
+    - id: confirmation
+      statement:
+        value:
+          pl: "Złóż wniosek do wojewody o potwierdzenie posiadania lub utraty obywatelstwa polskiego\nPotrzebujesz urzędowego potwierdzenia, że posiadasz obywatelstwo polskie lub go nie posiadasz? Tu znajdziesz potrzebne informacje.\nKto może skorzystać z usługi?\nKażdy, kto ma lub miał polskie obywatelstwo oraz podmiot, który ma w tym interes prawny lub też ciąży na nim obowiązek uzyskania potwierdzenia posiadania obywatelstwa polskiego."
+          en: "Apply to the voivode for confirmation of having or losing Polish citizenship\nDo you need official confirmation that you hold Polish citizenship, or that you don't? The ministry's page on this service has the information you need.\nWho can use this service?\nAnyone who has or had Polish citizenship, and any body with a legal interest in it or a duty to obtain confirmation of Polish citizenship."
+          uk: "Подайте заяву воєводі про підтвердження наявності або втрати польського громадянства\nПотрібне офіційне підтвердження, що ви маєте польське громадянство або не маєте його? Потрібну інформацію ви знайдете на сторінці міністерства про цю послугу.\nХто може скористатися послугою?\nКожен, хто має або мав польське громадянство, а також суб'єкт, який має в цьому правовий інтерес або зобов'язаний отримати підтвердження польського громадянства."
+          ru: "Подайте заявление воеводе о подтверждении наличия или утраты польского гражданства\nНужно официальное подтверждение, что у вас есть польское гражданство или его нет? Нужную информацию вы найдете на странице министерства об этой услуге.\nКто может воспользоваться услугой?\nКаждый, у кого есть или было польское гражданство, а также субъект, у которого есть в этом правовой интерес или который обязан получить подтверждение польского гражданства."
+        quotes:
+          - page: https://www.gov.pl/web/mswia/potwierdzenie-posiadania-lub-utraty-obywatelstwa-polskiego
+            text: "Złóż wniosek do wojewody o potwierdzenie posiadania lub utraty obywatelstwa polskiego\nPotrzebujesz urzędowego potwierdzenia, że posiadasz obywatelstwo polskie lub go nie posiadasz? Tu znajdziesz potrzebne informacje.\nKto może skorzystać z usługi?\nKażdy, kto ma lub miał polskie obywatelstwo oraz podmiot, który ma w tym interes prawny lub też ciąży na nim obowiązek uzyskania potwierdzenia posiadania obywatelstwa polskiego."
+  handoff:
+    when:
+      pl: Jeśli nie wiesz, czy lepsza będzie droga przez uznanie u wojewody, czy nadanie przez Prezydenta, albo czy ktoś z Twoich przodków nie przekazał Ci już obywatelstwa polskiego. Polskie strony urzędowe nie mówią, czy zachowasz dotychczasowe obywatelstwo. To zależy od prawa tamtego państwa, więc zapytaj w jego konsulacie.
+      en: If you're not sure whether recognition by the voivode or a grant by the President suits you better, or whether you might already have Polish citizenship through your ancestors. The Polish official pages don't say whether you keep your current citizenship. That depends on the other country's law, so ask its consulate.
+      uk: Якщо ви не впевнені, що вам краще підходить, визнання воєводою чи надання Президентом, або чи не маєте ви вже польського громадянства через предків. Польські офіційні сторінки не кажуть, чи збережете ви теперішнє громадянство. Це залежить від законодавства тієї держави, тож запитайте в її консульстві.
+      ru: Если вы не уверены, что вам больше подходит, признание воеводой или предоставление Президентом, или нет ли у вас уже польского гражданства через предков. Польские официальные страницы не говорят, сохраните ли вы нынешнее гражданство. Это зависит от законодательства того государства, поэтому спросите в его консульстве.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная правовая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/2012/161
+  sourceIds: [mswia-obywatelstwo, eli-obywatelstwo, eli-oplata-skarbowa, uw-pomorski-obywatelstwo]
