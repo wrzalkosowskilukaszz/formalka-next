@@ -2,7 +2,7 @@
 // Pure and deterministic: no I/O, no clock, no LLM. Every task, fee and deadline points at the
 // registry item it comes from (ruleRef); a level is locked only where the procedure's own step order
 // says so; a date exists only after the user recorded the event it counts from.
-import type { Blueprint, LevelDef } from "./blueprint.ts";
+import { type Blueprint, type LevelDef, stepsOf } from "./blueprint.ts";
 import { type Due, dueDate, type Iso } from "./dates.ts";
 import type { L10n, Procedure, Quote, Registry, Statement } from "./registry.ts";
 import { ruleRef } from "./registry.ts";
@@ -181,16 +181,30 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
     }
     const firstLevelDeps = route.prerequisites.map((x) => `prerequisite:${x.condition}`);
     const stepLevel = new Map<string, string>();
-    for (const l of bp.levels) { const s = l.steps?.[p.id]; if (s) stepLevel.set(s, l.id); }
+    for (const l of bp.levels) for (const s of stepsOf(l, p.id)) stepLevel.set(s, l.id);
+    const docLevels: string[] = [];
     for (const l of bp.levels) {
       if (l.when) {
         const ev = lastEvent(state, l.when.event);
         if (!ev || (l.when.outcome && ev.outcome !== l.when.outcome)) continue;
       }
-      const stepId = l.steps?.[p.id];
-      const step = stepId ? p.steps.find((s) => s.id === stepId) : undefined;
+      // Of the level's alternative steps, the first one whose own condition may apply.
+      let step: (typeof p.steps)[number] | undefined;
+      let stepEval = { outcome: "applies" as Outcome, missing: [] as string[] };
+      const alternatives = stepsOf(l, p.id);
+      for (const id of alternatives) {
+        const s = p.steps.find((x) => x.id === id)!;
+        const e = evaluate(s.condition, state.facts);
+        if (e.outcome === "does_not_apply") continue;
+        step = s; stepEval = e;
+        e.missing.forEach((f) => open.add(f));
+        noteUnsure(s.condition, `step:${s.id}`);
+        break;
+      }
+      if (alternatives.length && !step) continue; // none of its steps applies to this person
       const deadlines = deadlinesFor(bp, reg, p, l, state, noteUnsure, open);
-      if (!step && !deadlines.length) continue; // nothing of this route belongs here
+      const stepless = !alternatives.length;
+      if (stepless && !deadlines.length && !l.documents && !l.fees) continue;
       const tasks: PlanTask[] = [];
       if (l.documents) {
         for (const d of p.documents) {
@@ -212,8 +226,8 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
         const id = `${p.id}:step:${step.id}`;
         tasks.push({
           id, levelId: l.id, kind: "step", title: step.title, description: step.description,
-          ruleRef: ref("step", step.id), outcome: "applies", missingFacts: [],
-          status: state.tasks[id] ?? "todo", quotes: step.quotes,
+          ruleRef: ref("step", step.id), outcome: stepEval.outcome === "unknown" ? "unknown" : "applies",
+          missingFacts: stepEval.missing, status: state.tasks[id] ?? "todo", quotes: step.quotes,
         });
       }
       const fees: PlanFee[] = [];
@@ -246,8 +260,10 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
         if (parent) deps.push(parent.id);
       }
       if (!deps.length) deps.push(routeLevel.id);
-      // A route condition met through another case is needed to submit, not to prepare.
-      if (l.submits) deps.push(...firstLevelDeps);
+      // A route condition met through another case is needed to submit, not to prepare; so are the
+      // documents of a documents-only level (they are part of the application).
+      if (l.submits) deps.push(...firstLevelDeps, ...docLevels.filter((d) => !deps.includes(d)));
+      if (stepless && l.documents) docLevels.push(l.id);
       levels.push({
         id: l.id, order: order++, title: l.title, state: "available", waiting: !!l.waiting,
         dependsOn: deps, parallelWith: [], tasks, fees, deadlines,

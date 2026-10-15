@@ -23,6 +23,20 @@ for (const name of readdirSync(join(lab, "blueprints")).filter((n) => n.endsWith
   const b = parse(readFileSync(join(lab, "blueprints", name), "utf8"));
   blueprints[b.id] = b;
 }
+// `--locales pl` keeps only the listed languages in every translated text (the prototype is Polish).
+const arg = process.argv.indexOf("--locales");
+const keep = arg > 0 ? new Set(process.argv[arg + 1].split(",")) : null;
+const LOCALES = ["pl", "en", "uk", "ru"];
+const strip = (v) => {
+  if (Array.isArray(v)) return v.map(strip);
+  if (v && typeof v === "object") {
+    const isText = "pl" in v && Object.keys(v).every((k) => LOCALES.includes(k));
+    return Object.fromEntries(Object.entries(v).filter(([k]) => !keep || !isText || keep.has(k)).map(([k, x]) => [k, strip(x)]));
+  }
+  return v;
+};
+procedures.splice(0, procedures.length, ...procedures.map(strip));
+facts.splice(0, facts.length, ...facts.map(strip));
 const readme = readFileSync(join(ref, "README.md"), "utf8");
 const version = `formalka@${/at \*\*([0-9a-f]{7,})\*\*/.exec(readme)?.[1] ?? "unknown"}`;
 mkdirSync(join(pkg, "dist"), { recursive: true });
@@ -33,4 +47,4 @@ await build({
   banner: { js: `/* Formalka Next case engine + registry ${version} (lab build; synthetic use only). */` },
 });
 const size = readFileSync(join(pkg, "dist", "case-engine.browser.js")).length;
-console.log(`built dist/case-engine.browser.js ${(size / 1024).toFixed(0)} KB, registry ${version}, blueprints: ${Object.keys(blueprints).join(", ")}`);
+console.log(`built dist/case-engine.browser.js ${(size / 1024).toFixed(0)} KB, registry ${version}, locales ${keep ? [...keep].join(",") : "all"}, blueprints: ${Object.keys(blueprints).join(", ")}`);

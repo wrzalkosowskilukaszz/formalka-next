@@ -1,0 +1,63 @@
+# Case blueprint: temporary residence permit and the residence card (zezwolenie na pobyt czasowy,
+# karta pobytu). One procedure with two ways of filing that its own step conditions choose: online in
+# MOS, or on paper when the application concerns a family member still abroad. A level stands for
+# whichever of its alternative steps applies. Task titles are editorial shortenings of the registry's
+# descriptions (owner to check). The October 2026 inventory left open findings in this guide: show its
+# values as labelled examples only.
+id: residence-card
+title: { pl: Karta pobytu }
+caretaker: { name: Asia }
+routes: [temporary-residence]
+routeLevel:
+  id: route
+  title: { pl: Cel pobytu }
+levels:
+  - id: documents
+    title: { pl: Dokumenty }
+    documents: true
+    taskTitles:
+      photo: { pl: Zdjęcie (plik do 2,5 MB) }
+      travel-document: { pl: Skan wszystkich stron paszportu }
+      payment-confirmations: { pl: Potwierdzenia obu opłat }
+      employer-attachment: { pl: Załącznik od pracodawcy (wypełnia go w MOS) }
+      university-attachment: { pl: Załącznik od uczelni (wypełnia go w MOS) }
+      internship-attachment: { pl: Załącznik od organizatora stażu lub wolontariatu }
+      paper-passport-copy: { pl: Kopia paszportu osoby za granicą }
+      paper-photo: { pl: Zdjęcie osoby za granicą }
+      paper-consent: { pl: Zgoda osoby za granicą (formularz urzędowy) }
+      paper-supporting: { pl: Dokumenty potwierdzające dane z wniosku }
+  - id: payment
+    title: { pl: Opłaty }
+    steps: { temporary-residence: [pay-fees, paper-pay] }
+    fees: true
+  - id: attachment
+    title: { pl: Załącznik od pracodawcy, uczelni lub organizatora }
+    steps: { temporary-residence: ask-for-attachment }
+  - id: who-files
+    title: { pl: Kto składa wniosek }
+    steps: { temporary-residence: paper-who-files }
+  - id: filing
+    title: { pl: Złożenie wniosku }
+    steps: { temporary-residence: [file-in-mos, paper-attachments] }
+    submits: true
+    completesWith: filing
+  - id: confirmation
+    title: { pl: Zaświadczenie o złożeniu }
+    steps: { temporary-residence: print-certificate }
+  - id: summons
+    title: { pl: Wezwanie z urzędu }
+    steps: { temporary-residence: [fingerprints, paper-missing] }
+  - id: decision
+    title: { pl: Czekasz na decyzję }
+    steps: { temporary-residence: decision }
+    waiting: true
+    completesWith: decision_delivered
+  - id: card
+    title: { pl: Karta pobytu }
+    steps: { temporary-residence: [card, paper-card] }
+deadlines:
+  outage: { level: filing, counting: kpa, role: user }
+events:
+  filing: { label: { pl: Data złożenia wniosku } }
+  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused] }
+  system_restored: { label: { pl: Dzień, w którym MOS znów działa } }

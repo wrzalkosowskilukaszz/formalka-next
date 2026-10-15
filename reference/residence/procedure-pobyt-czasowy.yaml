@@ -1,0 +1,1363 @@
+# Temporary residence permit (zezwolenie na pobyt czasowy), GUIDES-01: the national route,
+# hand-authored from UDSC's MOS pages and its launch notice. Fees come from the stamp duty act
+# itself (consolidated text Dz.U. 2025 poz. 1154, annex part III), corroborated by the
+# Warmińsko-Mazurski voivodeship page that lists the same amounts (source priority: the act,
+# then UDSC, then an office page). UDSC's MOS page gives only "340 to 640 zł" for temporary and
+# permanent permits together; the act is the specific source, so its amounts are shown.
+# No place layer yet (plan-guardian): voivodeships differ, the national rule comes first.
+# Legal audit 2026-10-02: the Act on Foreigners (consolidated Dz.U. 2025 poz. 1079) as amended by
+# the MOS reform (Dz.U. 2025 poz. 1794, not yet consolidated) and by Dz.U. 2026 poz. 203 (art. 113c).
+# Polish statements are verbatim official wording; en/uk are our translations.
+
+- id: temporary-residence
+  domain: residence
+  related: [mos-filing]
+  riskClass: C
+  verificationLevel: auto_structured
+  checkedAt: "2026-10-01"
+  title:
+    pl: Zezwolenie na pobyt czasowy
+    en: Temporary residence permit
+    uk: Дозвіл на тимчасове перебування
+    ru: Разрешение на временное пребывание
+  summary:
+    pl: Jak złożyć wniosek o zezwolenie na pobyt czasowy, ile kosztuje i co dzieje się po złożeniu. Większość wniosków składa się tylko przez internet, w systemie MOS; kilka rodzajów nadal na papierze.
+    en: How to apply for a temporary residence permit, what it costs and what happens after you file. Most applications are filed online only, in MOS; a few kinds still go on paper.
+    uk: Як подати заяву на дозвіл на тимчасове перебування, скільки це коштує і що відбувається після подання. Більшість заяв подають лише онлайн, у системі MOS; кілька видів і далі подають на папері.
+    ru: Как подать заявление на разрешение на временное пребывание, сколько это стоит и что происходит после подачи. Большинство заявлений подают только онлайн, в системе MOS; несколько видов по-прежнему подают на бумаге.
+  applicability:
+    conditions: []
+  exclusions:
+    - id: eu-citizens-and-families
+      statement:
+        value:
+          pl: "obywateli państw członkowskich Unii Europejskiej, państw członkowskich Europejskiego Stowarzyszenia Wolnego Handlu (EFTA) – stron umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej oraz członków ich rodzin, którzy do nich dołączają lub z nimi przebywają;"
+          en: "The Act on Foreigners doesn't apply to citizens of EU countries, of EFTA countries that are party to the EEA agreement, or of Switzerland, nor to their family members who join them or live with them."
+          uk: "Закон про іноземців не застосовується до громадян держав ЄС, держав ЄАВТ, що є сторонами угоди про ЄЕП, або Швейцарії, а також до членів їхніх родин, які приєднуються до них або перебувають із ними."
+          ru: "Закон об иностранцах не применяется к гражданам государств ЕС, государств ЕАСТ, являющихся сторонами соглашения о ЕЭП, или Швейцарии, а также к членам их семей, которые присоединяются к ним или находятся вместе с ними."
+        quotes:
+          - page: &foreigners https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf
+            text: "Ustawy nie stosuje się do:"
+          - page: *foreigners
+            text: "obywateli państw członkowskich Unii Europejskiej, państw członkowskich Europejskiego Stowarzyszenia Wolnego Handlu (EFTA) – stron umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej oraz członków ich rodzin, którzy do nich dołączają lub z nimi przebywają;"
+  requiredFacts: [pobyt_czasowy.purpose]
+  steps:
+    - id: pay-fees
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+        en: Pay the stamp duty and the card fee before you file
+        uk: Сплатіть гербовий збір і плату за карту до подання заяви
+        ru: Оплатите гербовый сбор и плату за карту до подачи заявления
+      description:
+        pl: Dwie osobne opłaty, na dwa osobne konta. Potwierdzenia dołączasz do wniosku.
+        en: Two separate payments, to two separate accounts. You attach the confirmations to the application.
+        uk: Два окремі платежі на два окремі рахунки. Підтвердження додаєте до заяви.
+        ru: Два отдельных платежа на два отдельных счета. Подтверждения прикладываете к заявлению.
+      channels: [online]
+      quotes:
+        - page: &wm https://www.gov.pl/web/uw-warminsko-mazurski/cudzoziemcy---zezwolenia-na-pobyt-czasowy-na-terytorium-rp
+          text: "Opłata skarbowa jest należnością, którą należy uiścić z góry pod rygorem zwrotu wniosku o udzielenie zezwolenia na pobyt."
+        - page: &fees https://www.gov.pl/web/udsc/informacja-o-oplatach
+          text: "Do wniosku o udzielenie zezwolenia na pobyt czasowy, stały i rezydenta długoterminowego UE w systemie MOS musisz dołączyć potwierdzenia dokonania opłaty skarbowej (w wysokości zależnej od rodzaju zezwolenia – od 340 zł do 640 zł) oraz opłaty za wydanie karty pobytu (100 zł) - pamiętaj, że są to osobne opłaty i należy ich dokonać na osobne konta."
+    - id: ask-for-attachment
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+        en: If needed, ask your employer, university or internship organiser for their attachment
+        uk: Якщо потрібно, попросіть роботодавця, університет або організатора стажування про додаток
+        ru: Если нужно, попросите работодателя, университет или организатора стажировки о приложении
+      description:
+        pl: W formularzu podajesz ich adres e-mail; dostają link do części wniosku, którą sami wypełniają i podpisują. Bez niej wniosku nie da się złożyć, a na podpis można czekać długo.
+        en: In the form you give their e-mail address; they get a link to the part of the application they fill in and sign themselves. Without it the application can't be filed, and the signature can take a long time.
+        uk: У формі ви вказуєте їхню електронну адресу; вони отримують посилання на частину заяви, яку самі заповнюють і підписують. Без неї заяву не можна подати, а підпису можна чекати довго.
+        ru: В форме вы указываете их адрес электронной почты; они получают ссылку на часть заявления, которую сами заполняют и подписывают. Без нее заявление нельзя подать, а подписи можно ждать долго.
+      channels: [online]
+      quotes:
+        - page: &info https://www.gov.pl/web/udsc/info-mos
+          text: "Podczas wypełniania wniosku będziesz musiał podać adres e-mail pracodawcy, jednostki prowadzącej studia albo organizatora stażu lub wolontariatu. Na ten adres zostanie wysłany odnośnik z częścią z właściwym załącznikiem do wniosku przeznaczonym do wypełnienia i podpisania przez ten podmiot. Będzie to konieczne do skutecznego złożenia wniosku;"
+        - page: *info
+          text: "Pamiętaj, że jeśli do wniosku konieczne jest dołączenie załącznika podpisanego przez inną osobę (np. pracodawcę), możesz oczekiwać przez długi czas na uzyskanie tego podpisu."
+    - id: file-in-mos
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Złóż wniosek w systemie MOS
+        en: File the application in MOS
+        uk: Подайте заяву в системі MOS
+        ru: Подайте заявление в системе MOS
+      description:
+        pl: Konto, formularz, załączniki i podpis krok po kroku opisuje nasz przewodnik po MOS.
+        en: Our MOS guide walks through the account, the form, the attachments and the signature.
+        uk: Обліковий запис, форму, вкладення й підпис крок за кроком описує наш путівник по MOS.
+        ru: Учетную запись, форму, вложения и подпись шаг за шагом описывает наш путеводитель по MOS.
+      dependsOn: [pay-fees]
+      channels: [online]
+      seeProcedures: [mos-filing]
+      links:
+        - url: https://www.mos.cudzoziemcy.gov.pl/
+          title:
+            pl: Portal MOS
+            en: The MOS portal
+            uk: Портал MOS
+            ru: Портал MOS
+      quotes:
+        - page: *info
+          text: "Od 27 kwietnia 2026 r. wniosek o udzielenie zezwolenia na pobyt w Polsce (pobyt czasowy, stały i rezydenta długoterminowego UE) możesz złożyć wyłącznie w formie elektronicznej, za pomocą dedykowanego portalu MOS, dostępnego poprzez przeglądarkę internetową."
+    - id: print-certificate
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Pobierz zaświadczenie o złożeniu wniosku
+        en: Download the certificate confirming your application
+        uk: Завантажте довідку про подання заяви
+        ru: Скачайте справку о подаче заявления
+      description:
+        pl: Pobierasz je z MOS, gdy pracownik urzędu wojewódzkiego sprawdzi wniosek. Zastępuje dawny stempel w paszporcie. Ustawa wiąże je ze złożeniem wniosku w terminie i bez braków formalnych (albo z ich uzupełnieniem w terminie).
+        en: You download it from MOS once a voivodeship office employee has checked the application. It replaces the old stamp in the passport. The act ties it to filing on time and without formal gaps (or filling them in time).
+        uk: Ви завантажуєте її з MOS, коли працівник воєводського управління перевірить заяву. Вона замінює колишній штамп у паспорті. Закон пов'язує її з поданням заяви вчасно і без формальних недоліків (або з їх усуненням у строк).
+        ru: Вы скачиваете ее из MOS, когда сотрудник воеводского управления проверит заявление. Она заменяет прежний штамп в паспорте. Закон связывает ее с подачей заявления вовремя и без формальных недостатков (или с их устранением в срок).
+      dependsOn: [file-in-mos]
+      channels: [online]
+      quotes:
+        - page: *info
+          text: "Po weryfikacji i zatwierdzeniu wniosku przez pracownika urzędu wojewódzkiego będziesz mógł pobrać z systemu i wydrukować zaświadczenie o złożeniu wniosku o udzielenie zezwolenia na pobyt w Polsce, które zastąpi dotychczasowy stempel w paszporcie."
+        - page: &mos-act https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie zezwolenia na pobyt czasowy;"
+    - id: fingerprints
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Staw się na wezwanie wojewody (odciski palców, paszport)
+        en: Go to the voivodeship office when summoned (fingerprints, passport)
+        uk: З'явіться на виклик воєводи (відбитки пальців, паспорт)
+        ru: Явитесь по вызову воеводы (отпечатки пальцев, паспорт)
+      description:
+        pl: Składasz odciski palców i wzór podpisu, pokazujesz oryginał paszportu i w razie potrzeby uzupełniasz wniosek.
+        en: You give fingerprints and a specimen signature, show the original passport and, if needed, complete the application.
+        uk: Ви здаєте відбитки пальців і зразок підпису, показуєте оригінал паспорта і за потреби доповнюєте заяву.
+        ru: Вы сдаете отпечатки пальцев и образец подписи, показываете оригинал паспорта и при необходимости дополняете заявление.
+      dependsOn: [file-in-mos]
+      channels: [in_person]
+      officeKind: voivodeship_office
+      quotes:
+        - page: *info
+          text: "Wojewoda prowadzący sprawę wezwie Cię do osobistego stawiennictwa, abyś złożył odciski palców i wzór podpisu oraz okazał oryginał paszportu, a w razie konieczności – uzupełnił informacje zawarte we wniosku lub dołączył dodatkowe dokumenty."
+    - id: decision
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Odbierz decyzję wojewody
+        en: Receive the voivode's decision
+        uk: Отримайте рішення воєводи
+        ru: Получите решение воеводы
+      description:
+        pl: "Wojewoda wysyła decyzję na wskazany przez Ciebie adres do doręczeń: Twój albo pełnomocnika, jeśli go masz. Odwołanie wysyłasz poza MOS, na papierze albo na adres e-doręczeń wojewody; termin podaje decyzja."
+        en: "The voivode sends the decision to the address for official letters you gave (adres do doręczeń): yours, or your proxy's if you have one. An appeal goes outside MOS, on paper or to the voivode's e-Delivery (e‑Doręczenia) address; the decision states the deadline."
+        uk: "Воєвода надсилає рішення на адресу для листування (adres do doręczeń), яку ви вказали: вашу або вашої уповноваженої особи, якщо вона у вас є. Оскарження надсилають поза MOS, на папері або на адресу воєводи для електронного вручення (e‑Doręczenia); строк зазначено в рішенні."
+        ru: "Воевода отправляет решение на адрес для корреспонденции (adres do doręczeń), который вы указали: ваш или вашего уполномоченного лица, если оно у вас есть. Жалобу на решение отправляют вне MOS, на бумаге или на адрес воеводы для электронного вручения (e‑Doręczenia); срок указан в решении."
+      dependsOn: [fingerprints]
+      quotes:
+        - page: *info
+          text: "Wojewoda prowadzący sprawę wyśle decyzję na wskazany przez Ciebie adres do doręczeń (Twój lub pełnomocnika, jeśli go posiadasz)."
+        - page: https://www.gov.pl/web/udsc/mos-qa
+          text: "Nie, odwołanie będziesz musiał wysłać poza portalem MOS, wysyłając pismo w formie papierowej albo w formie elektronicznej na adres e-doręczeń wojewody."
+    # CJ-02 (journey audit 2026-10-05): the card is collected in person (art. 248 as amended by
+    # the MOS reform); the decision is delivered to the address for service, a separate event.
+    - id: card
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      title:
+        pl: Odbierz kartę pobytu
+        en: Collect the residence card
+        uk: Заберіть карту побиту
+        ru: Заберите карту побыту
+      description:
+        pl: Kartę pobytu odbierasz osobiście i pokazujesz ważny dokument podróży (na przykład paszport). Jeśli nie masz ważnego dokumentu podróży i nie możesz go uzyskać, w szczególnie uzasadnionym przypadku możesz pokazać inny dokument potwierdzający tożsamość. Kartę dziecka, które w dniu odbioru nie ma 13 lat, odbiera rodzic albo opiekun i pokazuje swój ważny dokument tożsamości. Dziecko musi przy tym być, jeśli w dniu złożenia wniosku miało już 6 lat; młodsze nie musi. Jeśli przy składaniu wniosku wojewoda zwolnił Cię z osobistego stawiennictwa z powodu choroby lub niepełnosprawności (potwierdzonych zaświadczeniem lekarskim), nie musisz odbierać karty osobiście; przepisy nie mówią, jak wtedy ją dostajesz, więc zapytaj w urzędzie wojewódzkim.
+        en: You collect the residence card in person and show a valid travel document (such as a passport). If you have no valid travel document and can't get one, in a particularly justified case you may show another identity document. If the child is under 13 on the day the card is collected, a parent or guardian collects it and shows their own valid identity document. The child must come too if they were already 6 on the day the application was filed; a younger child doesn't have to. If the voivode excused you from coming in person for the application because of illness or disability (confirmed by a medical certificate), you don't have to collect the card in person; the law doesn't say how you get it then, so ask the voivodeship office.
+        uk: Карту побиту забираєте особисто і показуєте чинний проїзний документ (наприклад, паспорт). Якщо у вас немає чинного проїзного документа і ви не можете його отримати, в особливо обґрунтованому випадку можна показати інший документ, що посвідчує особу. Карту дитини, якій у день отримання ще немає 13 років, забирає батько, мати або опікун і показує свій чинний документ, що посвідчує особу. Дитина має бути присутня, якщо в день подання заяви їй уже виповнилося 6 років; молодшій дитині приходити не обов'язково. Якщо під час подання заяви воєвода звільнив вас від особистої явки через хворобу чи інвалідність (підтверджені медичною довідкою), забирати карту особисто не потрібно; закон не каже, як тоді її отримати, тож запитайте у воєводському управлінні.
+        ru: Карту побыту забираете лично и показываете действительный проездной документ (например, паспорт). Если у вас нет действительного проездного документа и вы не можете его получить, в особо обоснованном случае можно показать другой документ, удостоверяющий личность. Карту ребенка, которому в день получения еще нет 13 лет, забирает родитель или опекун и показывает свой действительный документ, удостоверяющий личность. Ребенок должен присутствовать, если в день подачи заявления ему уже исполнилось 6 лет; младшему ребенку приходить не обязательно. Если при подаче заявления воевода освободил вас от личной явки из-за болезни или инвалидности (подтвержденных медицинской справкой), забирать карту лично не нужно; закон не говорит, как тогда ее получить, поэтому спросите в воеводском управлении.
+      dependsOn: [decision]
+      channels: [in_person]
+      quotes:
+        - page: *mos-act
+          text: "Cudzoziemiec odbiera kartę pobytu osobiście, chyba że w stosunku do tego cudzoziemca odstąpiono od wezwania do osobistego stawiennictwa na podstawie art. 106h ust. 1, art. 203h ust. 1 lub art. 219h ust. 1."
+        - page: *mos-act
+          text: "Cudzoziemiec, odbierając kartę pobytu, okazuje ważny dokument podróży."
+        - page: *mos-act
+          text: "W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może okazać inny dokument potwierdzający tożsamość."
+        - page: *mos-act
+          text: "będącego osobą małoletnią, która do dnia złożenia wniosku o udzielenie zezwolenia na pobyt czasowy nie ukończyła 6. roku życia;"
+        - page: *mos-act
+          text: "który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty, nie może stawić się osobiście w urzędzie wojewódzkim."
+        - page: *mos-act
+          text: "W przypadku gdy karta pobytu została wydana cudzoziemcowi będącemu osobą małoletnią, która nie ukończyła 13. roku życia do dnia jej odbioru, albo osobą ubezwłasnowolnioną całkowicie, odbioru karty pobytu dokonuje odpowiednio rodzic, opiekun albo kurator, po okazaniu ważnego dokumentu potwierdzającego jego tożsamość."
+        - page: *mos-act
+          text: "osobą małoletnią, która ukończyła 6. rok życia do dnia złożenia wniosku o:"
+        - page: *mos-act
+          text: "– wymaga obecności tej osoby."
+    # Family member still abroad (UX audit F3): the family member in Poland files on paper with the
+    # voivode of their own place of stay (art. 106j, 106l, 104 ust. 1b of the MOS reform). Evidence:
+    # docs/knowledge/VERIFICATION-family-abroad-2026-10-03.md. Forms, fees' timing and what happens
+    # after the decision are not stated nationally, so the guide sends the reader to the office.
+    - id: paper-pay
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      title:
+        pl: "Gdy wniosek dotyczy osoby za granicą: zapłać opłatę skarbową, zanim członek rodziny w Polsce złoży wniosek"
+        en: "If the application is for a person abroad: pay the stamp duty before the family member in Poland files"
+        uk: "Якщо заява стосується особи за кордоном: сплатіть гербовий збір, перш ніж член сім'ї в Польщі подасть заяву"
+        ru: "Если заявление касается человека за границей: оплатите гербовый сбор до того, как член семьи в Польше подаст заявление"
+      description:
+        pl: Kwotę podaje sekcja Opłaty. Strony urzędowe, które sprawdziliśmy, nie podają, kiedy przy tym wniosku płaci się za kartę pobytu; zapytaj w urzędzie wojewódzkim.
+        en: The Fees section gives the amount. The official pages we checked don't say when the residence card fee is paid for this application; ask the voivodeship office.
+        uk: Суму наведено в розділі «Збори». Офіційні сторінки, які ми перевірили, не вказують, коли для цієї заяви платять за карту побиту; запитайте у воєводському управлінні.
+        ru: Сумма указана в разделе «Сборы». Официальные страницы, которые мы проверили, не указывают, когда для этого заявления платят за карту побыту; спросите в воеводском управлении.
+      quotes:
+        - page: *wm
+          text: "Opłata skarbowa jest należnością, którą należy uiścić z góry pod rygorem zwrotu wniosku o udzielenie zezwolenia na pobyt."
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Wezwanie, o którym mowa w ust. 5, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków formalnych wniosku na podstawie art. 64 § 2 Kodeksu postępowania administracyjnego lub wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy."
+    - id: paper-who-files
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      title:
+        pl: "Gdy wniosek dotyczy osoby za granicą: składa go na papierze członek rodziny w Polsce"
+        en: "If the application is for a person abroad: the family member in Poland files it on paper"
+        uk: "Якщо заява стосується особи за кордоном: її подає на папері член сім'ї в Польщі"
+        ru: "Если заявление касается человека за границей: его подает на бумаге член семьи в Польше"
+      description:
+        pl: Nie w systemie MOS. Członek rodziny składa go u wojewody tam, gdzie sam przebywa w Polsce. Zapytaj w tym urzędzie wojewódzkim, na jakim formularzu i czy można go wysłać pocztą.
+        en: Not in MOS. The family member files it with the voivode of the region where they are staying in Poland. Ask that voivodeship office which form to use and whether it can be sent by post.
+        uk: Не в системі MOS. Член сім'ї подає її воєводі за місцем свого перебування в Польщі. Уточніть у цьому воєводському управлінні, який потрібен бланк і чи можна надіслати заяву поштою.
+        ru: Не в системе MOS. Член семьи подает его воеводе по месту своего пребывания в Польше. Уточните в этом воеводском управлении, какой нужен бланк и можно ли отправить заявление почтой.
+      officeKind: voivodeship_office
+      quotes:
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Wniosek o udzielenie cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, członek rodziny rozdzielonej składa w postaci papierowej na formularzu zawierającym:"
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej, udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu członka rodziny rozdzielonej, w drodze decyzji."
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "członek rodziny rozdzielonej – cudzoziemca zamieszkującego na terytorium Rzeczypospolitej Polskiej, który występuje z wnioskiem o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej, lub obywatela polskiego, obywatela innego państwa członkowskiego Unii Europejskiej, państwa członkowskiego Europejskiego Stowarzyszenia Wolnego Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia, zamieszkującego na terytorium Rzeczypospolitej Polskiej, który występuje z wnioskiem o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej;"
+    - id: paper-attachments
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      title:
+        pl: "Gdy wniosek dotyczy osoby za granicą: dołącz kopię jej paszportu, jej zdjęcie i zgodę"
+        en: "If the application is for a person abroad: attach a copy of their passport, their photo and their consent"
+        uk: "Якщо заява стосується особи за кордоном: додайте копію її паспорта, її фото і згоду"
+        ru: "Если заявление касается человека за границей: приложите копию его паспорта, его фото и согласие"
+      description:
+        pl: Osoba za granicą wyraża zgodę na urzędowym formularzu. Zgoda nie jest potrzebna, jeśli członek rodziny w Polsce jest jej przedstawicielem ustawowym. Dołącz też dokumenty, które potwierdzają dane z wniosku.
+        en: The person abroad gives consent on an official form. It isn't needed if the family member in Poland is their legal representative. Also attach documents that prove what the application says.
+        uk: Особа за кордоном дає згоду на офіційному бланку. Згода не потрібна, якщо член сім'ї в Польщі є її законним представником. Додайте також документи, що підтверджують дані із заяви.
+        ru: Человек за границей дает согласие на официальном бланке. Согласие не нужно, если член семьи в Польше является его законным представителем. Приложите также документы, подтверждающие данные из заявления.
+      dependsOn: [paper-who-files]
+      quotes:
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Członek rodziny rozdzielonej, składając wniosek o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, przedstawia kopię ważnego dokumentu podróży cudzoziemca oraz dołącza do wniosku aktualną fotografię cudzoziemca i zgodę na złożenie przez członka rodziny rozdzielonej wniosku o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną lub zezwolenia na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, wyrażoną na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1, chyba że członek rodziny rozdzielonej jest przedstawicielem ustawowym cudzoziemca."
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Do wniosku o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, członek rodziny rozdzielonej dodatkowo dołącza dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się o udzielenie zezwolenia, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6."
+    - id: paper-missing
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      title:
+        pl: "Gdy wniosek dotyczy osoby za granicą: wojewoda wezwie do dosłania brakującej kopii paszportu, zdjęcia albo zgody"
+        en: "If the application is for a person abroad: the voivode will ask for a missing passport copy, photo or consent"
+        uk: "Якщо заява стосується особи за кордоном: воєвода попросить надіслати копію паспорта, фото або згоду, яких бракує"
+        ru: "Если заявление касается человека за границей: воевода попросит дослать недостающую копию паспорта, фото или согласие"
+      description:
+        pl: Wojewoda daje co najmniej 14 dni od doręczenia pisma na dosłanie kopii paszportu, zdjęcia albo zgody. Przy tym wniosku od osoby za granicą nie pobiera się odcisków palców ani wzoru podpisu.
+        en: The voivode gives at least 14 days from the day the letter is delivered to send the passport copy, photo or consent. For this application, no fingerprints or signature specimen are taken from the person abroad.
+        uk: Воєвода дає щонайменше 14 днів від дня вручення листа, щоб надіслати копію паспорта, фото або згоду. Для цієї заяви в особи за кордоном не беруть відбитків пальців і зразка підпису.
+        ru: Воевода дает не менее 14 дней со дня вручения письма, чтобы дослать копию паспорта, фото или согласие. Для этого заявления у человека за границей не берут отпечатки пальцев и образец подписи.
+      dependsOn: [paper-attachments]
+      quotes:
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "Jeżeli do wniosku o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, nie zostały dołączone dokumenty, o których mowa w ust. 3, wojewoda wzywa członka rodziny rozdzielonej do ich przedłożenia w terminie nie krótszym niż 14 dni od dnia doręczenia wezwania."
+        - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+          text: "W przypadku złożenia wniosku o udzielenie cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, od tego cudzoziemca nie pobiera się odcisków linii papilarnych ani wzoru podpisu."
+    # CJ-02 content audit: on this route the first card is not issued ex officio; it is issued on
+    # the person's own application (art. 229 ust. 4 pkt 1 and 1c), and art. 106h (the waiver)
+    # doesn't apply (art. 106j), so the generic card step above is excluded here.
+    - id: paper-card
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      title:
+        pl: "Gdy wniosek dotyczył osoby za granicą: o pierwszą kartę pobytu ta osoba składa osobny wniosek"
+        en: "If the application was for a person abroad: that person applies separately for the first residence card"
+        uk: "Якщо заява стосувалася особи за кордоном: ця особа окремо подає заяву на першу карту побиту"
+        ru: "Если заявление касалось человека за границей: этот человек отдельно подает заявление на первую карту побыту"
+      description:
+        pl: Po udzieleniu zezwolenia pierwszej karty pobytu nie wydaje się z urzędu, tylko na wniosek tej osoby. Kartę wydaje wojewoda, który udzielił zezwolenia; jak złożyć wniosek, krajowe źródła, które mamy, nie mówią, więc zapytaj w tym urzędzie wojewódzkim. Kartę odbiera się osobiście i pokazuje ważny dokument podróży.
+        en: Once the permit is granted, the first residence card is not issued automatically but on that person's application. The card is issued by the voivode who granted the permit; the national sources we have don't say how to apply, so ask that voivodeship office. The card is collected in person, showing a valid travel document.
+        uk: Після надання дозволу першу карту побиту видають не автоматично, а за заявою цієї особи. Карту видає воєвода, який надав дозвіл; як подати заяву, національні джерела, які ми маємо, не кажуть, тож запитайте в цьому воєводському управлінні. Карту забирають особисто, показавши чинний проїзний документ.
+        ru: После выдачи разрешения первую карту побыту выдают не автоматически, а по заявлению этого человека. Карту выдает воевода, который выдал разрешение; как подать заявление, национальные источники, которые у нас есть, не говорят, поэтому спросите в этом воеводском управлении. Карту забирают лично, показав действительный проездной документ.
+      dependsOn: [paper-missing]
+      quotes:
+        - page: *foreigners
+          text: "Pierwszą kartę pobytu w przypadku cudzoziemca, który:"
+        - page: *foreigners
+          text: "uzyskał zezwolenie na pobyt czasowy w celu połączenia się z rodziną, a w dniu złożenia wniosku o udzielenie mu tego zezwolenia przebywał poza granicami Rzeczypospolitej Polskiej, lub"
+        - page: *foreigners
+          text: "uzyskał zezwolenie na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, a w dniu złożenia wniosku o udzielenie mu tego zezwolenia przebywał poza granicami Rzeczypospolitej Polskiej, lub"
+        - page: *foreigners
+          text: "– wydaje się na wniosek cudzoziemca."
+        - page: *foreigners
+          text: "Kartę pobytu wydaje lub odmawia jej wydania wojewoda, który udzielił cudzoziemcowi zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE."
+        - page: *mos-act
+          text: "Cudzoziemiec, odbierając kartę pobytu, okazuje ważny dokument podróży."
+  documents:
+    - id: photo
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      namePl:
+        value: aktualną fotografię w formacie cyfrowym
+        quotes:
+          - page: &qa https://www.gov.pl/web/udsc/mos-qa
+            text: "aktualną fotografię w formacie cyfrowym;"
+      description:
+        pl: Jako plik, do 2,5 MB.
+        en: As a file, up to 2.5 MB.
+        uk: Як файл, до 2,5 МБ.
+        ru: Как файл, до 2,5 МБ.
+    - id: travel-document
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      namePl:
+        value: odwzorowanie cyfrowe (skan lub zdjęcie) wszystkich stron ważnego dokumentu podróży
+        quotes:
+          - page: *qa
+            text: "odwzorowanie cyfrowe (skan lub zdjęcie) wszystkich stron ważnego dokumentu podróży;"
+      description:
+        pl: Wszystkie strony paszportu, nie tylko strona ze zdjęciem.
+        en: Every page of the passport, not just the photo page.
+        uk: Усі сторінки паспорта, а не лише сторінка з фото.
+        ru: Все страницы паспорта, а не только страница с фото.
+    - id: payment-confirmations
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      namePl:
+        value: potwierdzenie dokonania płatności
+        quotes:
+          - page: *qa
+            text: "potwierdzenie dokonania płatności (skan dokumentu lub elektroniczne potwierdzenie przelewu): opłaty w wysokości 100 zł za wydanie karty pobytu oraz opłaty skarbowej w za udzielenie zezwolenia na pobyt (od 340 zł do 640 zł, w zależności od rodzaju zezwolenia);"
+      description:
+        pl: Obu opłat, skan albo potwierdzenie przelewu.
+        en: For both fees, a scan or the transfer confirmation.
+        uk: За обидва збори, скан або підтвердження переказу.
+        ru: За оба сбора, скан или подтверждение перевода.
+    # The three attachments are named by who fills them in (agent dry run, 2026-10-10: all three
+    # read "załącznik podpisany elektronicznie przez", cut where UDSC's list begins). UDSC's page
+    # splits each name into a lead-in and a list item, which no single quote can carry, so the
+    # names are the act's own words (art. 106 ust. 2, 5 and 7 as amended by Dz.U. 2025 poz.
+    # 1794). UDSC's list stays quoted: it says the attachment is signed electronically.
+    - id: employer-attachment
+      condition: { fact: pobyt_czasowy.purpose, in: [work, business] }
+      namePl:
+        value: wypełniony przez podmiot powierzający mu pracę załącznik
+        quotes:
+          - page: *mos-act
+            text: "Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy i pracę, zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji, zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE albo zezwolenia na pobyt czasowy w celu prowadzenia działalności gospodarczej, jeżeli celem pobytu cudzoziemca jest wykonywanie pracy przez pełnienie funkcji w zarządzie spółki z ograniczoną odpowiedzialnością lub spółki akcyjnej, którą utworzył lub której udziały lub akcje objął lub nabył, lub prowadzenie spraw spółki komandytowej lub komandytowo-akcyjnej przez komplementariusza, lub działanie w charakterze prokurenta, dołącza do wniosku o udzielenie zezwolenia na pobyt czasowy wypełniony przez podmiot powierzający mu pracę załącznik zawierający:"
+          - page: *info
+            text: "załącznik podpisany elektronicznie przez:\n- pracodawcę – w przypadku wniosku o udzielenie zezwolenia:\n- na pobyt czasowy i pracę,"
+          - page: *info
+            text: "na pobyt czasowy w celu prowadzenia działalności gospodarczej udziela się cudzoziemcowi, którego celem pobytu jest wykonywanie pracy poprzez pełnienie funkcji w zarządzie spółki z ograniczoną odpowiedzialnością lub spółki akcyjnej, którą utworzył lub której udziały lub akcje objął lub nabył, lub prowadzenie spraw spółki komandytowej lub komandytowo-akcyjnej przez komplementariusza, lub działanie w charakterze prokurenta,"
+      description:
+        pl: Od pracodawcy, który wypełnia i podpisuje go w MOS. Przy własnej firmie dotyczy to pracy w zarządzie spółki z o.o. lub S.A., prowadzenia spraw spółki komandytowej lub komandytowo-akcyjnej jako komplementariusz albo działania jako prokurent.
+        en: An attachment that the employer fills in and signs in MOS. For your own business, this applies when you work on the board of a limited liability or joint-stock company, run a limited or limited joint-stock partnership as its general partner, or act as a commercial proxy (prokurent).
+        uk: Додаток, який роботодавець заповнює і підписує в MOS. Для власного бізнесу це стосується роботи в правлінні товариства з обмеженою відповідальністю або акціонерного товариства, ведення справ командитного чи командитно-акціонерного товариства як повного товариша або дій як прокурент (prokurent).
+        ru: Приложение, которое работодатель заполняет и подписывает в MOS. Для собственного бизнеса это касается работы в правлении общества с ограниченной ответственностью или акционерного общества, ведения дел коммандитного или коммандитно-акционерного товарищества в качестве полного товарища или действий в качестве прокуриста (prokurent).
+    - id: university-attachment
+      condition: { fact: pobyt_czasowy.purpose, eq: study }
+      namePl:
+        value: wypełniony przez jednostkę prowadzącą studia załącznik
+        quotes:
+          - page: *mos-act
+            text: "Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy w celu kształcenia się na studiach dołącza do wniosku o udzielenie zezwolenia na pobyt czasowy wypełniony przez jednostkę prowadzącą studia załącznik zawierający:"
+          - page: *info
+            text: "jednostkę prowadzącą studia – w przypadku wniosku o udzielenie zezwolenia na pobyt czasowy w celu kształcenia się na studiach;"
+          - page: *info
+            text: "załącznik podpisany elektronicznie przez:"
+      description:
+        pl: Od uczelni, która wypełnia i podpisuje go w MOS.
+        en: An attachment that the university fills in and signs in MOS.
+        uk: Додаток, який університет заповнює і підписує в MOS.
+        ru: Приложение, которое университет заполняет и подписывает в MOS.
+    - id: internship-attachment
+      condition: { fact: pobyt_czasowy.purpose, eq: internship }
+      namePl:
+        value: wypełniony przez organizatora stażu lub jednostkę organizacyjną, na rzecz której cudzoziemiec ma wykonywać świadczenia jako wolontariusz, załącznik
+        quotes:
+          - page: *mos-act
+            text: "Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy dla stażysty lub zezwolenia na pobyt czasowy dla wolontariusza dołącza do wniosku o udzielenie zezwolenia na pobyt czasowy wypełniony przez organizatora stażu lub jednostkę organizacyjną, na rzecz której cudzoziemiec ma wykonywać świadczenia jako wolontariusz, załącznik zawierający:"
+          - page: *info
+            text: "organizatora stażu lub wolontariatu – w przypadku wniosku o udzielnie zezwolenia na pobyt czasowy w celu odbycia stażu lub wolontariatu."
+          - page: *info
+            text: "załącznik podpisany elektronicznie przez:"
+      description:
+        pl: Od organizatora stażu albo wolontariatu, który wypełnia i podpisuje go w MOS.
+        en: An attachment that the internship or volunteering organiser fills in and signs in MOS.
+        uk: Додаток, який організатор стажування або волонтерства заповнює і підписує в MOS.
+        ru: Приложение, которое организатор стажировки или волонтерства заполняет и подписывает в MOS.
+    - id: paper-passport-copy
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      namePl:
+        value: kopię ważnego dokumentu podróży cudzoziemca
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Członek rodziny rozdzielonej, składając wniosek o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, przedstawia kopię ważnego dokumentu podróży cudzoziemca oraz dołącza do wniosku aktualną fotografię cudzoziemca i zgodę na złożenie przez członka rodziny rozdzielonej wniosku o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną lub zezwolenia na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, wyrażoną na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1, chyba że członek rodziny rozdzielonej jest przedstawicielem ustawowym cudzoziemca."
+      description:
+        pl: "Gdy wniosek dotyczy osoby za granicą: kopia jej ważnego paszportu (dokumentu podróży)."
+        en: "If the application is for a person abroad: a copy of their valid passport (travel document)."
+        uk: "Якщо заява стосується особи за кордоном: копія її чинного паспорта (проїзного документа)."
+        ru: "Если заявление касается человека за границей: копия его действительного паспорта (проездного документа)."
+    - id: paper-photo
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      namePl:
+        value: aktualną fotografię cudzoziemca
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Członek rodziny rozdzielonej, składając wniosek o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, przedstawia kopię ważnego dokumentu podróży cudzoziemca oraz dołącza do wniosku aktualną fotografię cudzoziemca i zgodę na złożenie przez członka rodziny rozdzielonej wniosku o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną lub zezwolenia na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, wyrażoną na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1, chyba że członek rodziny rozdzielonej jest przedstawicielem ustawowym cudzoziemca."
+      description:
+        pl: "Gdy wniosek dotyczy osoby za granicą: jej zdjęcie. Ile zdjęć i w jakim formacie, sprawdź w urzędzie wojewódzkim."
+        en: "If the application is for a person abroad: their photo. Check with the voivodeship office how many and in what format."
+        uk: "Якщо заява стосується особи за кордоном: її фото. Скільки фото і в якому форматі, уточніть у воєводському управлінні."
+        ru: "Если заявление касается человека за границей: его фото. Сколько фото и в каком формате, уточните в воеводском управлении."
+    - id: paper-consent
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      namePl:
+        value: zgodę na złożenie przez członka rodziny rozdzielonej wniosku
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Członek rodziny rozdzielonej, składając wniosek o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, przedstawia kopię ważnego dokumentu podróży cudzoziemca oraz dołącza do wniosku aktualną fotografię cudzoziemca i zgodę na złożenie przez członka rodziny rozdzielonej wniosku o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną lub zezwolenia na pobyt czasowy, o którym mowa w art. 160 pkt 1, 3, 4 lub 6, wyrażoną na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1, chyba że członek rodziny rozdzielonej jest przedstawicielem ustawowym cudzoziemca."
+      description:
+        pl: "Gdy wniosek dotyczy osoby za granicą: jej zgoda, wyrażona na urzędowym formularzu. Nie jest potrzebna, jeśli członek rodziny w Polsce jest jej przedstawicielem ustawowym."
+        en: "If the application is for a person abroad: their consent, given on the official form. Not needed if the family member in Poland is their legal representative."
+        uk: "Якщо заява стосується особи за кордоном: її згода, надана на офіційному бланку. Не потрібна, якщо член сім'ї в Польщі є її законним представником."
+        ru: "Если заявление касается человека за границей: его согласие, данное на официальном бланке. Не нужно, если член семьи в Польше является его законным представителем."
+    - id: paper-supporting
+      condition: { fact: pobyt_czasowy.purpose, eq: family_abroad }
+      namePl:
+        value: dokumenty niezbędne do potwierdzenia danych zawartych we wniosku
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Do wniosku o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, członek rodziny rozdzielonej dodatkowo dołącza dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się o udzielenie zezwolenia, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6."
+      description:
+        pl: "Gdy wniosek dotyczy osoby za granicą: dokumenty, które potwierdzają dane z wniosku. O pełną listę zapytaj w urzędzie wojewódzkim."
+        en: "If the application is for a person abroad: documents that prove what the application says. Ask the voivodeship office for the full list."
+        uk: "Якщо заява стосується особи за кордоном: документи, що підтверджують дані із заяви. Повний перелік уточніть у воєводському управлінні."
+        ru: "Если заявление касается человека за границей: документы, подтверждающие данные из заявления. Полный перечень уточните в воеводском управлении."
+  fees:
+    - id: stamp-duty
+      condition: { fact: pobyt_czasowy.purpose, in: [study, internship, family, family_abroad, business, short, other] }
+      purpose:
+        pl: Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski)
+        en: Stamp duty for a temporary residence permit (the basic rate, e.g. studies, family, a business; also a short stay for reasons other than a summons by an authority or Poland's interest)
+        uk: Гербовий збір за дозвіл на тимчасове перебування (базова ставка, напр. навчання, сім'я, бізнес; також коротке перебування з інших причин, ніж виклик органом влади чи інтерес Польщі)
+        ru: Гербовый сбор за разрешение на временное пребывание (базовая ставка, напр. учеба, семья, бизнес; также краткое пребывание по иным причинам, чем вызов органом власти или интерес Польши)
+      amountPln:
+        value: 340
+        quotes:
+          - page: &act https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf
+            text: "2. Zezwolenie na pobyt czasowy,\nz wyłączeniem zezwolenia udzielonego\nna podstawie art. 181 ust. 1 oraz\nart. 185a ustawy z dnia 12 grudnia\n2013 r. o cudzoziemcach (Dz. U.\nz 2025 r. poz. 1079)\n340 zł"
+          - page: *act
+            text: "2a. Zezwolenie, o którym mowa w art. 181\nust. 1 ustawy z dnia 12 grudnia 2013 r.\no cudzoziemcach, wydane na podstawie:\n1) pkt 1 i 3 85 zł\n2) pkt 2 340 zł"
+          - page: *wm
+            text: "340 zł:\n- Zezwolenie na pobyt czasowy - inne okoliczności (pozostałe przypadki) np.:\n- prowadzenie działalności gospodarczej,\n- podjęcie nauki, podjęcie studiów\n- pobyt/ połączenie z rodziną"
+      exemptions:
+        - id: temporary-protection-and-others
+          statement:
+            value:
+              pl: "zezwolenie udzielane cudzoziemcowi korzystającemu z ochrony czasowej"
+              en: "No stamp duty for a permit granted to a foreigner who has temporary protection (and for some other permits the act lists)."
+              uk: "Без гербового збору для дозволу, що надається іноземцю, який користується тимчасовим захистом (і для деяких інших дозволів, перелічених у законі)."
+              ru: "Без гербового сбора для разрешения, предоставляемого иностранцу, который пользуется временной защитой (и для некоторых других разрешений, перечисленных в законе)."
+            quotes:
+              - page: *act
+                text: "340 zł 1) zezwolenie, o którym mowa w art. 160 pkt 4, 5 lub 6, art. 176 i art. 186 ust. 1 pkt 8 i 9 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach 2) zezwolenie udzielane cudzoziemcowi korzystającemu z ochrony czasowej"
+    - id: stamp-duty-work
+      condition: { fact: pobyt_czasowy.purpose, eq: work }
+      purpose:
+        pl: Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE)
+        en: Stamp duty for a temporary residence and work permit, or for work in a highly qualified profession (EU Blue Card)
+        uk: Гербовий збір за дозвіл на перебування і роботу або на роботу за професією, що вимагає високої кваліфікації (Блакитна карта ЄС)
+        ru: Гербовый сбор за разрешение на временное пребывание и работу или на работу по профессии, требующей высокой квалификации (Голубая карта ЕС)
+      amountPln:
+        value: 440
+        quotes:
+          - page: *act
+            text: "Zezwolenie, o którym mowa w art. 114\nust. 1 i 1a, art. 127, art. 137a, art. 139a\nust. 1 i art. 139o ust. 1 ustawy z dnia\n12 grudnia 2013 r. o cudzoziemcach\n440 zł"
+          - page: *wm
+            text: "440 zł :\n- Zezwolenie na pobyt czasowy i pracę;\n- Zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji;"
+    - id: stamp-duty-seasonal
+      condition: { fact: pobyt_czasowy.purpose, eq: seasonal }
+      purpose:
+        pl: Opłata skarbowa za zezwolenie na pobyt czasowy ze względu na pracę sezonową
+        en: Stamp duty for a temporary residence permit for seasonal work
+        uk: Гербовий збір за дозвіл на тимчасове перебування для сезонної роботи
+        ru: Гербовый сбор за разрешение на временное пребывание для сезонной работы
+      amountPln:
+        value: 170
+        quotes:
+          - page: *act
+            text: "2c. Zezwolenie, o którym mowa w art. 185a\nustawy z dnia 12 grudnia 2013 r.\no cudzoziemcach\n170 zł"
+          - page: *wm
+            text: "170 zł:\n- Zezwolenie na pobyt czasowy ze względu na pracę sezonową"
+    - id: stamp-duty-short
+      condition: { fact: pobyt_czasowy.purpose, eq: short }
+      purpose:
+        pl: Opłata skarbowa za krótki pobyt, gdy musisz osobiście stawić się przed polskim organem albo Twojej obecności wymaga interes Polski
+        en: Stamp duty for a short stay when you must appear in person before a Polish authority, or Poland's interest requires your presence
+        uk: Гербовий збір за коротке перебування, коли ви маєте особисто з'явитися до польського органу влади або вашої присутності вимагає інтерес Польщі
+        ru: Гербовый сбор за краткое пребывание, когда вы должны лично явиться в польский орган власти или вашего присутствия требует интерес Польши
+      amountPln:
+        value: 85
+        quotes:
+          - page: *act
+            text: "2a. Zezwolenie, o którym mowa w art. 181\nust. 1 ustawy z dnia 12 grudnia 2013 r.\no cudzoziemcach, wydane na podstawie:\n1) pkt 1 i 3 85 zł\n2) pkt 2 340 zł"
+          - page: *wm
+            text: "85 zł:\n- Zezwolenie na pobyt czasowy ze względu na okoliczności wymagające krótkotrwałego pobytu cudzoziemca na terytorium RP, jeżeli przebywa na terytorium:\n- jest zobowiązany do osobistego stawiennictwa przed polskim organem w władzy publicznej,\n- obecność cudzoziemca na terytorium RP wymaga interes RP"
+    - id: card
+      purpose:
+        pl: Wydanie karty pobytu
+        en: Issuing the residence card
+        uk: Видача карти побиту
+        ru: Выдача карты побыту
+      amountPln:
+        value: 100
+        quotes:
+          - page: *info
+            text: "Jedyne koszty, jakie poniesiesz, to opłata skarbowa przy składaniu wniosku (w wysokości zależnej od rodzaju zezwolenia – od 340 zł do 640 zł) oraz opłata za wydanie karty pobytu (100 zł)."
+  deadlines:
+    - id: outage
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      description:
+        pl: Tylko gdy MOS nie działa w ostatnim dniu Twojego legalnego pobytu. Najpóźniej w 3. dniu roboczym po dniu, w którym MOS naprawiono; wniosek uznaje się wtedy za złożony w pierwszym dniu awarii.
+        en: Only if MOS is down on the last day of your legal stay. No later than the 3rd working day after the day MOS is fixed; your application then counts as filed on the first day of the outage.
+        uk: Лише якщо MOS не працює в останній день вашого легального перебування. Не пізніше 3-го робочого дня після дня, коли MOS полагодили; заява тоді вважається поданою в перший день збою.
+        ru: Только если MOS не работает в последний день вашего легального пребывания. Не позднее 3-го рабочего дня после дня, когда работу MOS восстановили; заявление тогда считается поданным в первый день сбоя.
+      rule:
+        value: { kind: relative, amount: 3, unit: working_day, from: system_restored }
+        quotes:
+          - page: *qa
+            text: "W takiej sytuacji wniosek powinieneś złożyć najpóźniej w ciągu 3 dni roboczych następujących po dniu, w którym usunięto niedostępność systemu. Jako datę złożenia wniosku uznany zostanie pierwszy dzień niedostępności systemu,"
+          - page: *mos-act
+            text: "W przypadku nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 225a ust. 1, powodującego brak możliwości złożenia wniosków, o których mowa w art. 225a ust. 1, w terminie określonym odpowiednio w art. 105 ust. 1, art. 202 ust. 1 lub art. 218a ust. 1 wniosek składa się najpóźniej w 3. dniu roboczym następującym po dniu, w którym usunięto nieprawidłowości. W takim przypadku wniosek uznaje się za złożony w pierwszym dniu nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 225a ust. 1."
+  variations: []
+  pitfalls:
+    # Alert #42 (2026-10-07): the Ukraine-aid act suspends this time limit for every foreigner until
+    # 4 March 2027 (art. 100d ust. 1). What that means for a reminder or a court complaint is disputed
+    # (docs/knowledge/VERIFICATION-slow-proceedings-2026-10-07.md, on branch claude/backlog-inventory until merged), so the guide states the rule and
+    # hands the reader to free legal aid instead of naming a remedy.
+    - id: decision-time-suspended
+      important: true
+      seeProcedures: [free-legal-aid]
+      statement:
+        value:
+          pl: "W okresie do dnia 4 marca 2027 r. bieg terminów na załatwienie spraw dotyczących:"
+          en: "Until 4 March 2027 the time limits the law gives the voivode to decide residence permit cases don't run: they don't start, and one already running is suspended. This applies to every foreigner, not only to citizens of Ukraine. How this affects your case, and whether anything can be done about a long wait, is a question for free legal aid."
+          uk: "До 4 березня 2027 р. строки, які закон дає воєводі на рішення у справах про дозволи на перебування, не плинуть: вони не починаються, а той, що вже почався, зупиняється. Це стосується всіх іноземців, а не лише громадян України. Як це впливає на вашу справу і чи можна щось зробити, якщо вона триває довго, пояснить безоплатна правова допомога."
+          ru: "До 4 марта 2027 г. сроки, которые закон даёт воеводе на решение по делам о разрешениях на пребывание, не текут: они не начинаются, а уже начавшийся приостанавливается. Это касается всех иностранцев, а не только граждан Украины. Как это влияет на ваше дело и можно ли что-то сделать, если оно длится долго, объяснит бесплатная юридическая помощь."
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf
+            text: "W okresie do dnia 4 marca 2027 r. bieg terminów na załatwienie spraw dotyczących:"
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf
+            text: "1) udzielenia cudzoziemcowi: a) zezwolenia na pobyt czasowy, b) zezwolenia na pobyt stały, c) zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, 2) zmiany: a) zezwolenia na pobyt czasowy i pracę, b) zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji, 3) cofnięcia cudzoziemcowi: a) zezwolenia na pobyt czasowy, b) zezwolenia na pobyt stały, c) zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej – w postępowaniach prowadzonych przez wojewodę nie rozpoczyna się, a rozpoczęty ulega zawieszeniu na ten okres."
+    # Was an applicability "condition"; it is how the application is filed, not who may apply, and it
+    # doesn't hold for a family member still abroad (paper, art. 106j and 106l): UX audit F3.
+    - id: online-only
+      important: true
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      statement:
+        value:
+          pl: "Od 27 kwietnia 2026 r. wniosek o udzielenie zezwolenia na pobyt w Polsce (pobyt czasowy, stały i rezydenta długoterminowego UE) możesz złożyć wyłącznie w formie elektronicznej, za pomocą dedykowanego portalu MOS, dostępnego poprzez przeglądarkę internetową."
+          en: "Since 27 April 2026 you can file an application for a residence permit in Poland (temporary, permanent or EU long-term resident) only electronically, through the dedicated MOS portal, which you open in a web browser."
+          uk: "З 27 квітня 2026 р. заяву на дозвіл на перебування в Польщі (тимчасове, постійне або довгострокового резидента ЄС) можна подати лише в електронній формі, через спеціальний портал MOS, який відкривається у веббраузері."
+          ru: "С 27 апреля 2026 г. заявление на разрешение на пребывание в Польше (временное, постоянное или долгосрочного резидента ЕС) можно подать только в электронной форме, через специальный портал MOS, который открывается в веб-браузере."
+        quotes:
+          - page: *info
+            text: "Od 27 kwietnia 2026 r. wniosek o udzielenie zezwolenia na pobyt w Polsce (pobyt czasowy, stały i rezydenta długoterminowego UE) możesz złożyć wyłącznie w formie elektronicznej, za pomocą dedykowanego portalu MOS, dostępnego poprzez przeglądarkę internetową."
+    - id: file-in-legal-stay
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      important: true
+      statement:
+        value:
+          pl: "Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt czasowy nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej."
+          en: "You must file the application for a temporary residence permit no later than the last day of your legal stay in Poland."
+          uk: "Заяву на дозвіл на тимчасове перебування потрібно подати не пізніше останнього дня вашого легального перебування в Польщі."
+          ru: "Заявление на разрешение на временное пребывание нужно подать не позднее последнего дня вашего легального пребывания в Польше."
+        quotes:
+          - page: *mos-act
+            text: "Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt czasowy nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej."
+    - id: legal-stay-while-pending
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      important: true
+      statement:
+        value:
+          pl: "pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia, w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna."
+          en: "If you file on time and your application has no formal gaps (or you fill them in time), your stay in Poland counts as legal from the day you file until the decision becomes final. This doesn't apply if the case is suspended at your own request."
+          uk: "Якщо ви подали заяву вчасно і вона не має формальних недоліків (або ви усунули їх у строк), ваше перебування в Польщі вважається легальним від дня подання заяви до дня, коли рішення стане остаточним. Це не діє, якщо провадження зупинено на ваше прохання."
+          ru: "Если вы подали заявление вовремя и в нем нет формальных недостатков (или вы устранили их в срок), ваше пребывание в Польше считается легальным со дня подачи заявления до дня, когда решение станет окончательным. Это не действует, если производство приостановлено по вашей просьбе."
+        quotes:
+          - page: *foreigners
+            text: "Jeżeli termin na złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy został zachowany i wniosek nie zawiera braków formalnych lub braki formalne zostały uzupełnione w terminie:"
+          - page: *foreigners
+            text: "pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia, w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna."
+          - page: *foreigners
+            text: "Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy na wniosek strony."
+    - id: no-show-ends-case
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      important: true
+      statement:
+        value:
+          pl: "O ile nie zachodzą podstawy do pozostawienia bez rozpoznania wniosku cudzoziemca o udzielenie mu zezwolenia na pobyt czasowy, do jego zwrotu lub odmowy wszczęcia postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, wojewoda umarza postępowanie w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, w przypadku gdy cudzoziemiec:\n1) nie stawił się mimo prawidłowego wezwania, o którym mowa w art. 106e ust. 1 lub art. 106g;"
+          en: "If you don't come when properly summoned, or you come but don't give your fingerprints, a specimen signature or your passport, the voivode discontinues the case. (If there are grounds to return the application, leave it unexamined or refuse to open the case, the voivode does that instead.) If the office can't take your fingerprints on the day for reasons on its side, the case goes on: the voivode sets a new date, at least 7 days after you receive the summons. If you don't come then, the case is discontinued. Each exception covers only its own requirement. Not coming doesn't end the case for a child under 6, or for someone who can't come because of an illness or disability confirmed by a specialist's certificate. Missing fingerprints don't end it for a child under 6, for someone from whom taking them is physically impossible, or for someone who can't come because of an illness or disability. A missing signature doesn't end it for a child under 13, or for someone who can't sign because of an illness or disability. The passport rule has no exception: if you are excused from coming because of an illness or disability, you must send a certified copy of your passport when asked, unless you attached one when you filed."
+          uk: "Якщо ви не з'явитеся на належний виклик або з'явитеся, але не здасте відбитки пальців, зразок підпису чи паспорт, воєвода припиняє провадження. (Якщо є підстави повернути заяву, залишити її без розгляду чи відмовити в порушенні провадження, воєвода робить це замість припинення.) Якщо установа не може зняти відбитки пальців того дня з причин на її боці, провадження триває: воєвода призначає нову дату, не раніше ніж через 7 днів після того, як ви отримаєте виклик. Якщо ви тоді не з'явитеся, провадження припиняють. Кожен виняток стосується лише своєї вимоги. Неявка не припиняє провадження для дитини до 6 років або для того, хто не може з'явитися через хворобу чи інвалідність, підтверджені довідкою лікаря-спеціаліста. Відсутність відбитків пальців не припиняє його для дитини до 6 років, для того, у кого зняти їх фізично неможливо, або для того, хто не може з'явитися через хворобу чи інвалідність. Відсутність зразка підпису не припиняє його для дитини до 13 років або для того, хто не може підписатися через хворобу чи інвалідність. Для паспорта винятку немає: якщо вас звільнено від явки через хворобу чи інвалідність, ви маєте надіслати засвідчену копію паспорта на вимогу, хіба що ви додали її під час подання заяви."
+          ru: "Если вы не явитесь по надлежащему вызову или явитесь, но не сдадите отпечатки пальцев, образец подписи или паспорт, воевода прекращает производство. (Если есть основания вернуть заявление, оставить его без рассмотрения или отказать в возбуждении производства, воевода делает это вместо прекращения.) Если учреждение не может снять отпечатки пальцев в тот день по причинам на его стороне, производство продолжается: воевода назначает новую дату, не ранее чем через 7 дней после того, как вы получите вызов. Если вы тогда не явитесь, производство прекращают. Каждое исключение касается только своего требования. Неявка не прекращает производство для ребенка до 6 лет или для того, кто не может явиться из-за болезни или инвалидности, подтвержденных справкой врача-специалиста. Отсутствие отпечатков пальцев не прекращает его для ребенка до 6 лет, для того, у кого снять их физически невозможно, или для того, кто не может явиться из-за болезни или инвалидности. Отсутствие образца подписи не прекращает его для ребенка до 13 лет или для того, кто не может расписаться из-за болезни или инвалидности. Для паспорта исключения нет: если вас освободили от явки из-за болезни или инвалидности, вы должны прислать заверенную копию паспорта по требованию, разве что вы приложили ее при подаче заявления."
+        quotes:
+          - page: *mos-act
+            text: "O ile nie zachodzą podstawy do pozostawienia bez rozpoznania wniosku cudzoziemca o udzielenie mu zezwolenia na pobyt czasowy, do jego zwrotu lub odmowy wszczęcia postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, wojewoda umarza postępowanie w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, w przypadku gdy cudzoziemiec:\n1) nie stawił się mimo prawidłowego wezwania, o którym mowa w art. 106e ust. 1 lub art. 106g;"
+          - page: *mos-act
+            text: "2) nie złożył odcisków linii papilarnych pomimo osobistego stawiennictwa, chyba że zachodzi przypadek, o którym mowa w art. 106g;"
+          - page: *mos-act
+            text: "3) nie złożył wzoru podpisu pomimo osobistego stawiennictwa;"
+          - page: *mos-act
+            text: "4) nie przedstawił ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku, o którym mowa w art. 106a ust. 2, pomimo osobistego stawiennictwa lub odpisu jednego z takich dokumentów w przypadku, o którym mowa w art. 106h ust. 3 pkt 1."
+          - page: *mos-act
+            text: "W przypadku gdy z przyczyn zależnych od wojewody nie jest możliwe pobranie odcisków linii papilarnych od cudzoziemca ubiegającego się o zezwolenie na pobyt czasowy w dniu, w którym nastąpiło jego osobiste stawiennictwo, wojewoda wyznacza termin na ich złożenie nie krótszy niż 7 dni od dnia doręczenia wezwania."
+          - page: *mos-act
+            text: "1) pkt 1 nie stosuje się w przypadku, o którym mowa w art. 106h ust. 1;"
+          - page: *mos-act
+            text: "2) pkt 2 nie stosuje się w przypadku, o którym mowa w art. 106b ust. 2;"
+          - page: *mos-act
+            text: "3) pkt 3 nie stosuje się w przypadku, o którym mowa w art. 106b ust. 3."
+          - page: *mos-act
+            text: "1) który do dnia złożenia wniosku o udzielenie zezwolenia na pobyt czasowy nie ukończył 6. roku życia;"
+          - page: *mos-act
+            text: "1) będącego osobą małoletnią, która do dnia złożenia wniosku o udzielenie zezwolenia na pobyt czasowy nie ukończyła 6. roku życia;"
+          - page: *mos-act
+            text: "2) który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty, nie może stawić się osobiście w urzędzie wojewódzkim."
+          - page: *mos-act
+            text: "2) od którego pobranie odcisków linii papilarnych jest fizycznie niemożliwe;"
+          - page: *mos-act
+            text: "3) który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty (Dz. U. z 2024 r. poz. 1287 i 1897 oraz z 2025 r. poz. 619, 769 i 1301), nie może stawić się osobiście na wezwanie wojewody."
+          - page: *mos-act
+            text: "1) do dnia złożenia wniosku o udzielenie zezwolenia na pobyt czasowy nie ukończył 13. roku życia;"
+          - page: *mos-act
+            text: "2) z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty, nie może złożyć podpisu samodzielnie."
+          - page: *mos-act
+            text: "W przypadku, o którym mowa w ust. 1 pkt 2, wojewoda wzywa cudzoziemca w terminie nie krótszym niż 7 dni od dnia doręczenia wezwania do przedstawienia:"
+          - page: *mos-act
+            text: "1) odpisu ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku, o którym mowa w art. 106a ust. 2, poświadczonego za zgodność z oryginałem zgodnie z art. 76a § 2 Kodeksu postępowania administracyjnego, chyba że taki odpis został dołączony do wniosku cudzoziemca o udzielenie mu zezwolenia na pobyt czasowy;"
+    - id: no-refund
+      statement:
+        value:
+          pl: "W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt czasowy lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt czasowy, uiszczona należna opłata skarbowa za udzielenie zezwolenia na pobyt czasowy nie podlega zwrotowi."
+          en: "If the voivode refuses the permit or discontinues the case, the stamp duty you paid is not refunded."
+          uk: "Якщо воєвода відмовить у дозволі або припинить провадження, сплачений гербовий збір не повертається."
+          ru: "Если воевода откажет в разрешении или прекратит производство, уплаченный гербовый сбор не возвращается."
+        quotes:
+          - page: &phaseout https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf
+            text: "W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt czasowy lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt czasowy, uiszczona należna opłata skarbowa za udzielenie zezwolenia na pobyt czasowy nie podlega zwrotowi."
+    - id: card-fee-relief
+      statement:
+        value:
+          pl: "Ulga w opłacie, o której mowa w ust. 1, wynosi 50 % kwoty określonej w przepisach wydanych na podstawie art. 239 ust. 1."
+          en: "The card fee is halved (a 50% relief) for foreigners in a difficult financial situation, for those staying to study at a secondary school or university in Poland, and for children under 16. Ask the office what proves it."
+          uk: "Плату за карту зменшують наполовину (пільга 50 %) для іноземців у скрутному матеріальному становищі, для тих, хто перебуває для навчання в середній школі чи університеті в Польщі, і для дітей до 16 років. Запитайте в установі, чим це підтвердити."
+          ru: "Плату за карту уменьшают вдвое (льгота 50 %) для иностранцев в трудном материальном положении, для тех, кто находится в Польше для учебы в средней школе или университете, и для детей до 16 лет. Спросите в учреждении, чем это подтвердить."
+        quotes:
+          - page: *foreigners
+            text: "Ulga w opłacie, o której mowa w ust. 1, wynosi 50 % kwoty określonej w przepisach wydanych na podstawie art. 239 ust. 1."
+          - page: *foreigners
+            text: "1) którzy znajdują się w trudnej sytuacji materialnej;"
+          - page: *foreigners
+            text: "2) których celem pobytu jest pobieranie nauki w szkole ponadpodstawowej i szkole wyższej na terytorium Rzeczypospolitej Polskiej;"
+          - page: *foreigners
+            text: "małoletnim, którzy w dniu złożenia wniosku o wydanie lub wymianę dokumentu, o którym mowa w art. 226, lub – w przypadku wydawania pierwszej karty pobytu – do dnia złożenia wniosku o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE, nie ukończyli 16. roku życia."
+    - id: dont-wait
+      condition: { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }
+      important: true
+      statement:
+        value:
+          pl: "Zwracamy uwagę, aby nie czekać ze złożeniem wniosku do ostatniego dnia legalnego pobytu. Może się okazać, że w jeden dzień nie będziesz w stanie dołączyć do wniosku wszystkich niezbędnych dokumentów."
+          en: "Don't wait until the last day of your legal stay to file. You may not manage to attach every document you need in one day."
+          uk: "Не чекайте з поданням заяви до останнього дня легального перебування. Може виявитися, що за один день ви не встигнете додати всі потрібні документи."
+          ru: "Не ждите с подачей заявления до последнего дня легального пребывания. Может оказаться, что за один день вы не успеете приложить все нужные документы."
+        quotes:
+          - page: *info
+            text: "Zwracamy uwagę, aby nie czekać ze złożeniem wniosku do ostatniego dnia legalnego pobytu. Może się okazać, że w jeden dzień nie będziesz w stanie dołączyć do wniosku wszystkich niezbędnych dokumentów."
+    - id: fee-in-advance
+      important: true
+      statement:
+        value:
+          pl: "Oznacza to, że jeśli nie opłacisz opłaty skarbowej przed złożeniem wniosku, zostaniesz wezwany przez wojewodę do jej uiszczenia w terminie mogącym wynosić od 7 do 14 dni, co znacznie wydłuży proces postępowania. Jeśli zaś nie zastosujesz się do wezwania, musisz się liczyć z tym, że wojewoda zwróci Twój wniosek w drodze postanowienia. Na postanowienie to przysługuje zażalenie."
+          en: "According to the voivodeship office in Olsztyn: if you don't pay the stamp duty before filing, the voivode will ask you to pay it within a period of 7 to 14 days, which makes the case much longer. If you don't, expect the voivode to return your application by a ruling (postanowienie). You can appeal that ruling (zażalenie)."
+          uk: "За даними Вармінсько-Мазурського воєводського управління: якщо ви не сплатите гербовий збір до подання заяви, воєвода викличе вас сплатити його в строк від 7 до 14 днів, що значно подовжить розгляд. Якщо ви цього не зробите, будьте готові до того, що воєвода поверне вашу заяву постановою (postanowienie). Цю постанову можна оскаржити (zażalenie)."
+          ru: "По данным Варминьско-Мазурского воеводского управления: если вы не оплатите гербовый сбор до подачи заявления, воевода вызовет вас оплатить его в срок от 7 до 14 дней, что значительно удлинит рассмотрение. Если вы этого не сделаете, будьте готовы к тому, что воевода вернет ваше заявление постановлением (postanowienie). Это постановление можно обжаловать (zażalenie)."
+        quotes:
+          - page: *wm
+            text: "Oznacza to, że jeśli nie opłacisz opłaty skarbowej przed złożeniem wniosku, zostaniesz wezwany przez wojewodę do jej uiszczenia w terminie mogącym wynosić od 7 do 14 dni, co znacznie wydłuży proces postępowania. Jeśli zaś nie zastosujesz się do wezwania, musisz się liczyć z tym, że wojewoda zwróci Twój wniosek w drodze postanowienia. Na postanowienie to przysługuje zażalenie."
+    - id: paper-exceptions
+      important: true
+      # Shown for work (intra-company transfers), a family abroad, other purposes and "I don't know".
+      condition: { not: { fact: pobyt_czasowy.purpose, in: [seasonal, study, internship, family, business, short] } }
+      statement:
+        value:
+          pl: "Wnioski o udzielenie zezwolenia na pobyt czasowy:\n- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,\nnadal należy składać w wersji papierowej, na dotychczasowych zasadach."
+          en: "These temporary residence applications still go on paper, not through MOS: work as an intra-company transfer; long-term mobility of a manager, specialist or trainee within an intra-company transfer; joining family when the person concerned is outside Poland; and, when they are outside Poland, certain family members of Polish or EU citizens or of UK citizens covered by the Withdrawal Agreement, or people living a family life with them (as the notice lists them)."
+          uk: "Ці заяви на тимчасове перебування й далі подають на папері, а не через MOS: робота в рамках внутрішньокорпоративного переведення; довгострокова мобільність керівника, спеціаліста або стажера в рамках такого переведення; возз'єднання з сім'єю, коли особа, якої стосується заява, перебуває за межами Польщі; а також, коли вони перебувають за межами Польщі, окремі члени сімей громадян Польщі, ЄС або громадян Великої Британії, на яких поширюється Угода про вихід, чи особи, які ведуть із ними сімейне життя."
+          ru: "Эти заявления на временное пребывание по-прежнему подают на бумаге, а не через MOS: работа в рамках внутрикорпоративного перевода; долгосрочная мобильность руководителя, специалиста или стажера в рамках такого перевода; воссоединение с семьей, когда лицо, которого касается заявление, находится за пределами Польши; а также, когда они находятся за пределами Польши, отдельные члены семей граждан Польши, ЕС или граждан Великобритании, на которых распространяется Соглашение о выходе, или лица, которые ведут с ними семейную жизнь."
+        quotes:
+          - page: &start https://www.gov.pl/web/udsc/informacja-o-uruchomieniu-systemu-teleinformatycznego-mos--portalu-do-skladania-wnioskow-o-udzielenie-zezwolenia-na-pobyt-w-polsce-w-formie-elektronicznej
+            text: "Wnioski o udzielenie zezwolenia na pobyt czasowy:\n- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,\nnadal należy składać w wersji papierowej, na dotychczasowych zasadach."
+    # Content re-check of F3 (2026-10-04): UDSC's notice above is broader in wording than the act.
+    # The act's paper list (art. 106j) names art. 159 ust. 1 and art. 160 pkt 1, 3, 4, 6, not
+    # art. 158 (a Polish citizen's spouse), whose paper application is left unexamined (art. 106c
+    # ust. 5). Official wording only; which permit applies is for the office or free legal aid.
+    - id: paper-scope
+      important: true
+      condition: { not: { fact: pobyt_czasowy.purpose, in: [seasonal, study, internship, family, business, short] } }
+      statement:
+        value:
+          pl: "Przepisów art. 105 ust. 1 i art. 106–106i nie stosuje się do wniosku o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 i art. 139o ust. 1, oraz zezwolenia, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej."
+          en: "The act lists which applications aren't covered by art. 105 ust. 1 and art. 106–106i (the rule to file by the last day of legal stay, and the rules for filing through MOS): the intra-company transfer permit and the long-term mobility permit within an intra-company transfer (art. 139a, 139o), and, for a person outside Poland, temporary residence under art. 159 ust. 1 (family of a foreigner who lives in Poland) or art. 160 pkt 1, 3, 4 or 6 (certain other family members of a Polish, EU, EFTA or UK citizen who lives in Poland, for example a dependant or someone living a family life with them). The permit for a family member of a Polish citizen under art. 158, such as a spouse, isn't on this list. If you aren't sure which permit applies, ask the voivodeship office or free legal aid before you file."
+          uk: "Закон перелічує, на які заяви не поширюються ст. 105 ч. 1 і ст. 106–106i (правило подати заяву до останнього дня легального перебування і правила подання через MOS): дозвіл для внутрішньокорпоративного переведення і дозвіл на довгострокову мобільність у межах такого переведення (ст. 139a, 139o), а також, щодо особи за межами Польщі, тимчасове перебування за ст. 159 ч. 1 (сім'я іноземця, який живе в Польщі) або ст. 160 п. 1, 3, 4 чи 6 (окремі інші члени сім'ї громадянина Польщі, ЄС, ЄАВТ або Великої Британії, який живе в Польщі, наприклад утриманець або особа, яка веде з ним сімейне життя). Дозволу для члена сім'ї громадянина Польщі за ст. 158, наприклад подружжя, у цьому переліку немає. Якщо не впевнені, який дозвіл вам підходить, запитайте у воєводському управлінні або скористайтеся безоплатною правовою допомогою, перш ніж подавати заяву."
+          ru: "Закон перечисляет, на какие заявления не распространяются ст. 105 ч. 1 и ст. 106–106i (правило подать заявление до последнего дня легального пребывания и правила подачи через MOS): разрешение для внутрикорпоративного перевода и разрешение на долгосрочную мобильность в рамках такого перевода (ст. 139a, 139o), а также, в отношении человека за пределами Польши, временное пребывание по ст. 159 ч. 1 (семья иностранца, который живет в Польше) или ст. 160 п. 1, 3, 4 или 6 (отдельные другие члены семьи гражданина Польши, ЕС, ЕАСТ или Великобритании, который живет в Польше, например иждивенец или человек, который ведет с ним семейную жизнь). Разрешения для члена семьи гражданина Польши по ст. 158, например супруга, в этом перечне нет. Если не уверены, какое разрешение вам подходит, спросите в воеводском управлении или обратитесь за бесплатной юридической помощью, прежде чем подавать заявление."
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf
+            text: "Przepisów art. 105 ust. 1 i art. 106–106i nie stosuje się do wniosku o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 i art. 139o ust. 1, oraz zezwolenia, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej."
+          - page: *foreigners
+            text: "Zezwolenia na pobyt czasowy dla członka rodziny obywatela Rzeczypospolitej Polskiej udziela się cudzoziemcowi, gdy:"
+    # WAIT-1a (2026-10-07): "Waiting for a decision or card", shown in its own section of the web
+    # guide (apps/web/lib/waiting.ts decides which warnings go there and in what order). Evidence:
+    # docs/knowledge/VERIFICATION-wait-1a-sources-2026-10-07.md and its quotes record. Conditions
+    # on the three waiting questions only mark the official wording as matching the reader's stage,
+    # filing route or office; nothing here says the reader's stay is legal (owner clarification 1).
+    - id: wait-cukr-ends-case
+      statement:
+        value:
+          pl: "Jeżeli obywatel Ukrainy złożył wniosek o wydanie karty pobytu w przypadku, o którym mowa w art. 42c, postępowanie w sprawie udzielenia mu zezwolenia na pobyt czasowy, wszczęte na podstawie wniosku tego obywatela Ukrainy i niezakończone przed dniem złożenia przez niego wniosku o wydanie karty pobytu, umarza się z mocy prawa."
+          en: "If a citizen of Ukraine has applied for a residence card under art. 42c (the CUKR card), their temporary residence permit case, started on their own application and not ended before the day they applied for the card, is discontinued by law."
+          uk: "Якщо громадянин України подав заяву про видачу карти побиту у випадку, передбаченому ст. 42c (карта CUKR), провадження щодо надання йому дозволу на тимчасове перебування, розпочате за його заявою і не завершене до дня подання заяви про карту, припиняється в силу закону."
+          ru: "Если гражданин Украины подал заявление о выдаче карты побыту в случае, предусмотренном ст. 42c (карта CUKR), производство о выдаче ему разрешения на временное пребывание, начатое по его заявлению и не завершенное до дня подачи заявления о карте, прекращается в силу закона."
+        quotes:
+          - page: &ukr-aid https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf
+            text: "Jeżeli obywatel Ukrainy złożył wniosek o wydanie karty pobytu w przypadku, o którym mowa w art. 42c, postępowanie w sprawie udzielenia mu zezwolenia na pobyt czasowy, wszczęte na podstawie wniosku tego obywatela Ukrainy i niezakończone przed dniem złożenia przez niego wniosku o wydanie karty pobytu, umarza się z mocy prawa."
+    - id: wait-paper-kinds
+      statement:
+        value:
+          pl: "Wnioski o udzielenie zezwolenia na pobyt czasowy:\n- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,\nnadal należy składać w wersji papierowej, na dotychczasowych zasadach."
+          en: "These temporary residence applications still go on paper, not through MOS: work as an intra-company transfer; long-term mobility of a manager, specialist or trainee within an intra-company transfer; joining family when the person concerned is outside Poland; and, when they are outside Poland, certain family members of Polish or EU citizens or of UK citizens covered by the Withdrawal Agreement, or people living a family life with them."
+          uk: "Ці заяви на тимчасове перебування й далі подають на папері, а не через MOS: робота в рамках внутрішньокорпоративного переведення; довгострокова мобільність керівника, спеціаліста або стажера в рамках такого переведення; возз'єднання з сім'єю, коли особа, якої стосується заява, перебуває за межами Польщі; а також, коли вони перебувають за межами Польщі, окремі члени сімей громадян Польщі, ЄС або громадян Великої Британії, на яких поширюється Угода про вихід, чи особи, які ведуть із ними сімейне життя."
+          ru: "Эти заявления на временное пребывание по-прежнему подают на бумаге, а не через MOS: работа в рамках внутрикорпоративного перевода; долгосрочная мобильность руководителя, специалиста или стажера в рамках такого перевода; воссоединение с семьей, когда лицо, которого касается заявление, находится за пределами Польши; а также, когда они находятся за пределами Польши, отдельные члены семей граждан Польши, ЕС или граждан Великобритании, на которых распространяется Соглашение о выходе, или лица, которые ведут с ними семейную жизнь."
+        quotes:
+          - page: *info
+            text: "Wnioski o udzielenie zezwolenia na pobyt czasowy:\n- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;\n- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;\n- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,\nnadal należy składać w wersji papierowej, na dotychczasowych zasadach."
+    - id: wait-stage-decision-delivered
+      condition: { not: { fact: pobyt_czasowy.waiting_for, in: [decision, card] } }
+      statement:
+        value:
+          pl: "Wojewoda prowadzący sprawę wyśle decyzję na wskazany przez Ciebie adres do doręczeń (Twój lub pełnomocnika, jeśli go posiadasz)."
+          en: "The voivode handling the case will send the decision to the address for official letters you gave (yours, or your proxy's if you have one)."
+          uk: "Воєвода, який веде справу, надішле рішення на вказану вами адресу для листування (вашу або вашої уповноваженої особи, якщо вона у вас є)."
+          ru: "Воевода, который ведет дело, отправит решение на указанный вами адрес для корреспонденции (ваш или вашего уполномоченного лица, если оно у вас есть)."
+        quotes:
+          - page: *info
+            text: "Wojewoda prowadzący sprawę wyśle decyzję na wskazany przez Ciebie adres do doręczeń (Twój lub pełnomocnika, jeśli go posiadasz)."
+    - id: wait-which-office
+      condition: { not: { fact: pobyt_czasowy.office, in: [mazowieckie, other] } }
+      statement:
+        value:
+          pl: "Zezwolenia na pobyt czasowy udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu cudzoziemca, w drodze decyzji."
+          en: "A temporary residence permit is granted or refused, by a decision, by the voivode of the region where the foreigner is staying. Some permits follow other rules: for an intra-company transfer or long-term mobility, the voivode of the host entity's seat; for a family member still abroad, the voivode of the region where the family member in Poland is staying."
+          uk: "Дозвіл на тимчасове перебування надає або відмовляє в ньому, рішенням, воєвода за місцем перебування іноземця. Для деяких дозволів правила інші: для внутрішньокорпоративного переведення чи довгострокової мобільності це воєвода за місцезнаходженням приймаючої організації; для члена сім'ї, який ще за кордоном, воєвода за місцем перебування члена сім'ї в Польщі."
+          ru: "Разрешение на временное пребывание выдает или отказывает в нем, решением, воевода по месту пребывания иностранца. Для некоторых разрешений правила другие: для внутрикорпоративного перевода или долгосрочной мобильности это воевода по месту нахождения принимающей организации; для члена семьи, который еще за границей, воевода по месту пребывания члена семьи в Польше."
+        quotes:
+          - page: *mos-act
+            text: "Zezwolenia na pobyt czasowy udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu cudzoziemca, w drodze decyzji."
+          - page: *mos-act
+            text: "Zezwolenia na pobyt czasowy, o którym mowa w art. 139a ust. 1 i art. 139o ust. 1, udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na siedzibę jednostki przyjmującej, w drodze decyzji."
+          - page: *mos-act
+            text: "Zezwolenia na pobyt czasowy, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej, udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu członka rodziny rozdzielonej, w drodze decyzji."
+    - id: wait-mazowiecki-case-number
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Pamiętaj! Dokumenty do złożonych wniosków dosyłaj dopiero po nadaniu przez urząd numeru sprawy, który otrzymasz smsem lub e-mailem."
+          en: "The Mazowiecki office says: send documents for an application you've filed only after the office has given it a case number, which you'll receive by text message or e-mail."
+          uk: "Мазовецьке управління зазначає: документи до поданої заяви досилайте лише після того, як управління присвоїть справі номер; його ви отримаєте текстовим повідомленням на телефон або електронним листом."
+          ru: "Мазовецкое управление указывает: документы к поданному заявлению досылайте только после того, как управление присвоит делу номер; его вы получите текстовым сообщением на телефон или по электронной почте."
+        quotes:
+          - page: &maz-ed https://www.gov.pl/web/uw-mazowiecki/zaloz-konto-do-e-doreczen--to-niezbedne-do-doreczania-pism-i-komunikacji-z-nami
+            text: "Pamiętaj! Dokumenty do złożonych wniosków dosyłaj dopiero po nadaniu przez urząd numeru sprawy, który otrzymasz smsem lub e-mailem."
+    # The decision stage: when an application counts as filed and what each document proves.
+    - id: wait-filed-when
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: decision }, { not: { fact: pobyt_czasowy.filed_via, eq: paper_before_mos } }] }
+      statement:
+        value:
+          pl: "Wniosek o udzielenie zezwolenia na pobyt czasowy uznaje się za złożony w przypadku, gdy zostaną spełnione łącznie następujące warunki:"
+          en: "An application for a temporary residence permit counts as filed only when both of these are met: the application and its attachments were signed with a qualified electronic signature, a personal signature (podpis osobisty) or a trusted signature (podpis zaufany); and you receive the official confirmation of receipt (UPO), or your parent, guardian or curator does, if they filed it for you as the law allows."
+          uk: "Заява на дозвіл на тимчасове перебування вважається поданою лише тоді, коли виконано обидві умови: заяву з додатками підписано кваліфікованим електронним підписом, особистим підписом (podpis osobisty) або довіреним підписом; і ви отримали офіційне підтвердження отримання (UPO) або його отримали ваші батьки, опікун або куратор, якщо вони подали заяву за вас, як дозволяє закон."
+          ru: "Заявление на разрешение на временное пребывание считается поданным, только когда выполнены оба условия: заявление с приложениями подписано квалифицированной электронной подписью, личной подписью (podpis osobisty) или доверенной подписью; и вы получили официальное подтверждение получения (UPO) или его получили ваши родители, опекун или куратор, если они подали заявление за вас, как позволяет закон."
+        quotes:
+          - page: *mos-act
+            text: "Wniosek o udzielenie zezwolenia na pobyt czasowy uznaje się za złożony w przypadku, gdy zostaną spełnione łącznie następujące warunki:"
+          - page: *mos-act
+            text: "1) wniosek o udzielenie zezwolenia na pobyt czasowy wraz z załącznikami do tego wniosku został opatrzony kwalifikowanym podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym zgodnie z ust. 3 i 4;"
+          - page: *mos-act
+            text: "2) cudzoziemiec albo osoba, która w imieniu cudzoziemca złożyła wniosek w przypadku, o którym mowa w art. 105 ust. 2, otrzyma urzędowe poświadczenie odbioru wniosku o udzielenie zezwolenia na pobyt czasowy."
+    - id: wait-upo-technical
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: decision }, { not: { fact: pobyt_czasowy.filed_via, eq: paper_before_mos } }] }
+      statement:
+        value:
+          pl: "Otrzymane UPO jest dowodem na poprawność techniczną złożonego wniosku i odebraniu go przez system."
+          en: "The UPO you receive proves that the application was technically correct and that the system received it. Whether the data and attachments in the application are correct is checked by an employee of the voivodeship office."
+          uk: "Отримане UPO є доказом технічної правильності поданої заяви і того, що система її отримала. Правильність даних і додатків у заяві перевіряє працівник воєводського управління."
+          ru: "Полученное UPO является доказательством технической правильности поданного заявления и того, что система его получила. Правильность данных и приложений в заявлении проверяет сотрудник воеводского управления."
+        quotes:
+          - page: *qa
+            text: "Otrzymane UPO jest dowodem na poprawność techniczną złożonego wniosku i odebraniu go przez system."
+          - page: *qa
+            text: "Poprawność danych we wniosku oraz załączników będzie natomiast weryfikował pracownik urzędu wojewódzkiego."
+    - id: wait-certificate
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: decision }, { not: { fact: pobyt_czasowy.filed_via, eq: paper_before_mos } }] }
+      statement:
+        value:
+          pl: "Jeśli dane i załączniki będą poprawne, będziesz mógł pobrać zaświadczenie o złożeniu wniosku pobytowego, które zastępuje wcześniejszy stempel w paszporcie."
+          en: "If the data and attachments are correct, you'll be able to download the certificate that your residence application was filed; it replaces the old passport stamp. Under the act, the certificate states that the application was filed and on what date, and prints the act's rule on legal stay while the case is pending, with its exception."
+          uk: "Якщо дані й додатки правильні, ви зможете завантажити довідку про подання заяви на перебування; вона замінює колишній штамп у паспорті. За законом довідка зазначає, що заяву подано і коли, та містить текст правила закону про легальне перебування під час розгляду справи разом із винятком."
+          ru: "Если данные и приложения правильные, вы сможете скачать справку о подаче заявления на пребывание; она заменяет прежний штамп в паспорте. По закону справка указывает, что заявление подано и когда, и содержит текст правила закона о легальном пребывании во время рассмотрения дела вместе с исключением."
+        quotes:
+          - page: *qa
+            text: "Jeśli dane i załączniki będą poprawne, będziesz mógł pobrać zaświadczenie o złożeniu wniosku pobytowego, które zastępuje wcześniejszy stempel w paszporcie."
+          - page: *mos-act
+            text: "Zaświadczenie, o którym mowa w ust. 1 pkt 1, zawiera:"
+          - page: *mos-act
+            text: "3) informację, że wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy został złożony, oraz datę złożenia wniosku;"
+          - page: *mos-act
+            text: "4) treść ust. 1 pkt 2 i ust. 2;"
+    - id: wait-paper-stamp
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: decision }, { not: { fact: pobyt_czasowy.filed_via, eq: mos } }] }
+      statement:
+        value:
+          pl: "1) wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla potwierdzającego złożenie wniosku o udzielenie zezwolenia na pobyt czasowy;"
+          en: "Applications filed on paper, before the MOS reform, follow the earlier rules. Under them, when the application was filed on time and had no formal gaps (or they were filled in time), the voivode put a stamp in the foreigner's passport confirming that the application was filed."
+          uk: "Заяви, подані на папері до реформи MOS, розглядають за попередніми правилами. За ними, якщо заяву подано вчасно і вона не мала формальних недоліків (або їх усунули в строк), воєвода ставив у паспорт іноземця штамп, що підтверджує подання заяви."
+          ru: "Заявления, поданные на бумаге до реформы MOS, рассматривают по прежним правилам. По ним, если заявление подано вовремя и в нем не было формальных недостатков (или их устранили в срок), воевода ставил в паспорт иностранца штамп, подтверждающий подачу заявления."
+        quotes:
+          - page: *foreigners
+            text: "Jeżeli termin na złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy został zachowany i wniosek nie zawiera braków formalnych lub braki formalne zostały uzupełnione w terminie:"
+          - page: *foreigners
+            text: "1) wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla potwierdzającego złożenie wniosku o udzielenie zezwolenia na pobyt czasowy;"
+          - page: *mos-act
+            text: "Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i niezakończonych przed dniem wejścia w życie art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–49, 50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz art. 18 ust. 1 i 2 stosuje się przepisy dotychczasowe."
+    - id: wait-paper-before-mos
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: decision }, { not: { fact: pobyt_czasowy.filed_via, eq: mos } }] }
+      statement:
+        value:
+          pl: "Jeśli Twój wniosek wpłynął do urzędu wojewódzkiego przed 27 kwietnia 2026 r., czyli przed dniem uruchomienia nowego portalu MOS, Twoja sprawa będzie rozpatrywana - nie będziesz musiał umarzać postępowania i składać nowego wniosku o udzielenie zezwolenia na pobyt w Polsce poprzez portal MOS."
+          en: "If your application reached the voivodeship office before 27 April 2026, the day the new MOS portal started, your case will be examined: you don't have to end the case and file a new application through MOS. Paper applications that were posted but hadn't reached the office before 27 April 2026 won't be examined (they are left unexamined): the posting date doesn't count."
+          uk: "Якщо ваша заява надійшла до воєводського управління до 27 квітня 2026 р., тобто до дня запуску нового порталу MOS, вашу справу розглянуть: вам не потрібно припиняти провадження і подавати нову заяву через MOS. Паперові заяви, які надіслали, але які не надійшли до управління до 27 квітня 2026 р., не розглядатимуть (їх залишать без розгляду): дата відправлення не має значення."
+          ru: "Если ваше заявление поступило в воеводское управление до 27 апреля 2026 г., то есть до дня запуска нового портала MOS, ваше дело рассмотрят: вам не нужно прекращать производство и подавать новое заявление через MOS. Бумажные заявления, которые отправили, но которые не поступили в управление до 27 апреля 2026 г., рассматривать не будут (их оставят без рассмотрения): дата отправки не учитывается."
+        quotes:
+          - page: *qa
+            text: "Jeśli Twój wniosek wpłynął do urzędu wojewódzkiego przed 27 kwietnia 2026 r., czyli przed dniem uruchomienia nowego portalu MOS, Twoja sprawa będzie rozpatrywana - nie będziesz musiał umarzać postępowania i składać nowego wniosku o udzielenie zezwolenia na pobyt w Polsce poprzez portal MOS."
+          - page: *info
+            text: "Wnioski o udzielenie zezwolenia na pobyt czasowy, pobyt stały i pobyt rezydenta długoterminowego UE w wersji papierowej, które zostały wysłane i nie wpłynęły do urzędów wojewódzkich przed 27 kwietnia 2026 r., nie będą rozpatrywane (wnioski będą pozostawione bez rozpoznania) – nie będzie liczyła się data nadania przesyłki pocztowej."
+    # Time limits and remedies (owner clarification 6): the statute, the ministry's practice and
+    # the courts' reading as the RPO relays it, each attributed and dated in apps/web/lib/waiting.ts.
+    # No conclusion of our own, no docket numbers, no ponaglenie draft.
+    - id: wait-remedies-statute
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Zaprzestanie czynności przez organ prowadzący postępowanie w sprawach, o których mowa w ust. 1, lub ich dokonywanie z opóźnieniem, w okresie, o którym mowa w ust. 1, nie może być podstawą wywodzenia środków prawnych dotyczących bezczynności, przewlekłości lub naruszenia prawa strony do rozpoznania sprawy bez zbędnej zwłoki."
+          en: "If, during the suspension period, the authority stops working on these cases or acts late, that cannot be the basis for legal remedies about inaction, overlong proceedings or a breach of the party's right to have the case dealt with without undue delay."
+          uk: "Якщо протягом періоду зупинення строків орган припиняє дії в цих справах або вчиняє їх із запізненням, це не може бути підставою для правових засобів щодо бездіяльності, затягування провадження чи порушення права сторони на розгляд справи без зайвої затримки."
+          ru: "Если в период приостановления сроков орган прекращает действия по этим делам или совершает их с опозданием, это не может быть основанием для правовых средств в связи с бездействием, затягиванием производства или нарушением права стороны на рассмотрение дела без излишней задержки."
+        quotes:
+          - page: *ukr-aid
+            text: "Zaprzestanie czynności przez organ prowadzący postępowanie w sprawach, o których mowa w ust. 1, lub ich dokonywanie z opóźnieniem, w okresie, o którym mowa w ust. 1, nie może być podstawą wywodzenia środków prawnych dotyczących bezczynności, przewlekłości lub naruszenia prawa strony do rozpoznania sprawy bez zbędnej zwłoki."
+    - id: wait-remedies-mswia-udsc
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Natomiast Szef Urzędu do Spraw Cudzoziemców, który jako organ administracji publicznej wyższego stopnia w stosunku do wojewodów w sprawach objętych zakresem przedmiotowym art. 100d ustawy specjalnej, nie posiadając kompetencji do dokonywania kontroli konstytucyjności przepisów ustawowych w taki sposób jak sądy administracyjne w związku z byciem organem właściwym w sprawach rozpatrywania ponagleń na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodów (art. 37 § 1 K.p.a.), jest w dalszym ciągu obowiązany do stosowania przepisu art. 100d ustawy specjalnej."
+          en: "The Head of the Office for Foreigners is the voivodes' higher authority in the cases art. 100d covers and rules on ponaglenia about their inaction or overlong proceedings. Unlike the administrative courts, the Head can't review whether a statute is constitutional, and so is still obliged to apply art. 100d. The ministry also writes that art. 100c and 100d apply only to the cases they list that voivodes handle."
+          uk: "Голова Управління у справах іноземців є органом вищого рівня щодо воєвод у справах, які охоплює ст. 100d, і розглядає ponaglenia (формальні нагадування про бездіяльність або затягування провадження воєводами). На відміну від адміністративних судів, він не може перевіряти конституційність законів, тож і далі зобов'язаний застосовувати ст. 100d. Міністерство також пише, що ст. 100c і 100d стосуються лише перелічених у них справ, які ведуть воєводи."
+          ru: "Глава Управления по делам иностранцев является органом высшей инстанции по отношению к воеводам в делах, которые охватывает ст. 100d, и рассматривает ponaglenia (формальные напоминания о бездействии или затягивании производства воеводами). В отличие от административных судов, он не может проверять конституционность законов, поэтому по-прежнему обязан применять ст. 100d. Министерство также пишет, что ст. 100c и 100d касаются только перечисленных в них дел, которые ведут воеводы."
+        quotes:
+          - page: &mswia https://bip.brpo.gov.pl/sites/default/files/2026-08/Odpowiedz_MSWiA_cudzoziemcy_legalizacja_pobytu_przewleklosc_30_06_2026.pdf
+            text: "Natomiast Szef Urzędu do Spraw Cudzoziemców, który jako organ administracji publicznej wyższego stopnia w stosunku do wojewodów w sprawach objętych zakresem przedmiotowym art. 100d ustawy specjalnej, nie posiadając kompetencji do dokonywania kontroli konstytucyjności przepisów ustawowych w taki sposób jak sądy administracyjne w związku z byciem organem właściwym w sprawach rozpatrywania ponagleń na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodów (art. 37 § 1 K.p.a.), jest w dalszym ciągu obowiązany do stosowania przepisu art. 100d ustawy specjalnej."
+          - page: *mswia
+            text: "Przepisy art. 100c i art. 100d ustawy specjalnej mają zastosowanie wyłącznie do postępowań w sprawach administracyjnych w nich określonych, prowadzonych przez wojewodów."
+    - id: wait-remedies-mswia-courts
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Tym samym pomimo formalnego obowiązywania przepisu art. 100d ustawy specjalnej oraz faktu, że aktualnie wciąż trwa okres, jaki objęty jest tym terminem (do dnia 4 marca 2027 r.), istnieje wysokie prawdopodobieństwo, że wojewódzki sąd administracyjny, który będzie rozpatrywał skargę na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodę w sprawie objętej zakresem przedmiotowym tego przepisu, w odniesieniu do okresu bezczynności lub przewlekłości występujących po dniu 30 czerwca 2024 r., odmówi zastosowania tego przepisu i rozpozna skargę z jego pominięciem."
+          en: "Even though art. 100d is formally in force and the period it covers (until 4 March 2027) is still running, it is highly likely that a voivodeship administrative court hearing a complaint about a voivode's inaction or overlong proceedings in a case the provision covers will, for inaction or delay after 30 June 2024, refuse to apply it and decide the complaint without it."
+          uk: "Хоча ст. 100d формально чинна і період, який вона охоплює (до 4 березня 2027 р.), ще триває, існує висока ймовірність, що воєводський адміністративний суд, розглядаючи скаргу на бездіяльність або затягування провадження воєводою у справі, яку охоплює це положення, щодо бездіяльності чи затягування після 30 червня 2024 р. відмовиться його застосовувати і розгляне скаргу без нього."
+          ru: "Хотя ст. 100d формально действует и период, который она охватывает (до 4 марта 2027 г.), еще продолжается, высока вероятность, что воеводский административный суд, рассматривая жалобу на бездействие или затягивание производства воеводой по делу, которое охватывает это положение, в отношении бездействия или затягивания после 30 июня 2024 г. откажется его применять и рассмотрит жалобу без него."
+        quotes:
+          - page: *mswia
+            text: "Tym samym pomimo formalnego obowiązywania przepisu art. 100d ustawy specjalnej oraz faktu, że aktualnie wciąż trwa okres, jaki objęty jest tym terminem (do dnia 4 marca 2027 r.), istnieje wysokie prawdopodobieństwo, że wojewódzki sąd administracyjny, który będzie rozpatrywał skargę na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodę w sprawie objętej zakresem przedmiotowym tego przepisu, w odniesieniu do okresu bezczynności lub przewlekłości występujących po dniu 30 czerwca 2024 r., odmówi zastosowania tego przepisu i rozpozna skargę z jego pominięciem."
+    - id: wait-remedies-rpo-nsa
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Ponadto, jak wskazał NSA, wspomniany przepis ustawy o pomocy obywatelom Ukrainy nie stanowi podstawy do wyłączenia kontroli przez sądy administracyjne skarg na bezczynności organu lub przewlekłe prowadzenie postępowania."
+          en: "The RPO writes that, as the Supreme Administrative Court (NSA) pointed out, this provision of the Ukraine aid act is no basis for excluding administrative courts' review of complaints about an authority's inaction or overlong proceedings. It may affect how a complaint is judged, but not whether it may be filed, which the law on administrative court proceedings governs (art. 53 § 2b): a ponaglenie without formal defects, filed first, is enough."
+          uk: "Уповноважений пише, що, як зазначив Вищий адміністративний суд, це положення закону про допомогу громадянам України не є підставою для виключення контролю адміністративних судів за скаргами на бездіяльність органу чи затягування провадження. Воно може впливати на оцінку скарги по суті, але не на те, чи можна її подати; це регулює закон про провадження в адміністративних судах (ст. 53 § 2b): достатньо попередньо подати ponaglenie без формальних недоліків."
+          ru: "Уполномоченный пишет, что, как указал Высший административный суд, это положение закона о помощи гражданам Украины не является основанием для исключения контроля административных судов за жалобами на бездействие органа или затягивание производства. Оно может влиять на оценку жалобы по существу, но не на то, можно ли ее подать; это регулирует закон о производстве в административных судах (ст. 53 § 2b): достаточно предварительно подать ponaglenie без формальных недостатков."
+        quotes:
+          - page: &rpo https://bip.brpo.gov.pl/sites/default/files/2026-06/Do_MSWiA_cudzoziemcy_legalizacja_pobytu_przewleklosc_1_06_2026.pdf
+            text: "Ponadto, jak wskazał NSA, wspomniany przepis ustawy o pomocy obywatelom Ukrainy nie stanowi podstawy do wyłączenia kontroli przez sądy administracyjne skarg na bezczynności organu lub przewlekłe prowadzenie postępowania."
+          - page: *rpo
+            text: "Regulacja ta może mieć wpływ na merytoryczną ocenę skargi, jednak nie może stanowić o dopuszczalności jej wniesienia, która uregulowana została w art. 53 § 2b ustawy z dnia 30 sierpnia 2002 r. – Prawo o postępowaniu przed sądami administracyjnymi4."
+          - page: *rpo
+            text: "Oznacza to, że wystarczające jest tutaj uprzednie wniesienie pozbawionego braków formalnych ponaglenia."
+    - id: wait-remedies-cjeu
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Jednocześnie pragnę poinformować, że resort spraw wewnętrznych i administracji obecnie oczekuje na rozstrzygnięcie w sprawie C-254/25 prowadzonej przed Europejskim Trybunałem Sprawiedliwości Unii Europejskiej (TSUE) – przywołanej w wystąpieniu Pana Rzecznika – dotyczącej odpowiedzi na pytania prejudycjalne skierowane do TSUE przez Wojewódzki Sąd Administracyjny w Gliwicach, odnośnie do art. 100c i 100d ustawy pomocowej."
+          en: "The interior ministry wrote that it was waiting for the Court of Justice of the EU (CJEU) to decide case C-254/25, on questions about art. 100c and 100d of the Ukraine aid act referred to it by the voivodeship administrative court in Gliwice."
+          uk: "Міністерство внутрішніх справ писало, що чекає на рішення Суду справедливості ЄС у справі C-254/25 щодо питань про ст. 100c і 100d закону про допомогу громадянам України, які йому поставив воєводський адміністративний суд у Глівіце."
+          ru: "Министерство внутренних дел писало, что ждет решения Суда Европейского союза по делу C-254/25 по вопросам о ст. 100c и 100d закона о помощи гражданам Украины, которые ему задал воеводский административный суд в Гливице."
+        quotes:
+          - page: https://bip.brpo.gov.pl/pl/content/rpo-cudzoziemcy-legalizacja-pobytu-przewleklosc-mswia-ponowne
+            text: "Jednocześnie pragnę poinformować, że resort spraw wewnętrznych i administracji obecnie oczekuje na rozstrzygnięcie w sprawie C-254/25 prowadzonej przed Europejskim Trybunałem Sprawiedliwości Unii Europejskiej (TSUE) – przywołanej w wystąpieniu Pana Rzecznika – dotyczącej odpowiedzi na pytania prejudycjalne skierowane do TSUE przez Wojewódzki Sąd Administracyjny w Gliwicach, odnośnie do art. 100c i 100d ustawy pomocowej."
+    # A ponaglenie is a formal remedy, kept apart from an ordinary inquiry: who rules on it, and the
+    # official template (linked, never drafted by us).
+    - id: wait-ponaglenie-authority
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Szef Urzędu jest organem wyższego stopnia w rozumieniu przepisów Kodeksu postępowania administracyjnego w stosunku do wojewody w sprawach uregulowanych w ustawach, o których mowa w ust. 1 pkt 1."
+          en: "In the matters governed by the Act on Foreigners (and the other acts it lists), the Head of the Office for Foreigners is the voivode's higher authority under the Code of Administrative Procedure."
+          uk: "У справах, які регулює Закон про іноземців (та інші перелічені в ньому закони), Голова Управління у справах іноземців є органом вищого рівня щодо воєводи в розумінні Кодексу адміністративного провадження."
+          ru: "В делах, которые регулирует Закон об иностранцах (и другие перечисленные в нем законы), Глава Управления по делам иностранцев является органом высшей инстанции по отношению к воеводе в смысле Кодекса административного производства."
+        quotes:
+          - page: *foreigners
+            text: "Szef Urzędu jest organem wyższego stopnia w rozumieniu przepisów Kodeksu postępowania administracyjnego w stosunku do wojewody w sprawach uregulowanych w ustawach, o których mowa w ust. 1 pkt 1."
+    - id: wait-ponaglenie-where
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Ponaglenie wnosi się:"
+          en: "A ponaglenie is filed with the higher authority, through the authority handling the case."
+          uk: "Ponaglenie подають до органу вищого рівня через орган, який веде справу."
+          ru: "Ponaglenie подают в орган высшей инстанции через орган, который ведет дело."
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf
+            text: "Ponaglenie wnosi się:"
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf
+            text: "1) do organu wyższego stopnia za pośrednictwem organu prowadzącego postępowanie;"
+    - id: wait-ponaglenie-too-early
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Jeżeli ponaglenie zostało wniesione przed upływem terminu określonego w art. 35 albo przepisach szczególnych, organ prowadzący postępowanie pozostawia ponaglenie bez rozpoznania."
+          en: "If a ponaglenie is filed before the time limit in art. 35 of the Code (or in specific rules) has passed, the authority handling the case leaves it unexamined. A ponaglenie must give its reasons."
+          uk: "Якщо ponaglenie подано до спливу строку, визначеного ст. 35 Кодексу (або спеціальними правилами), орган, який веде справу, залишає його без розгляду. Ponaglenie має містити обґрунтування."
+          ru: "Если ponaglenie подано до истечения срока, определенного ст. 35 Кодекса (или специальными правилами), орган, который ведет дело, оставляет его без рассмотрения. Ponaglenie должно содержать обоснование."
+        quotes:
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf
+            text: "Jeżeli ponaglenie zostało wniesione przed upływem terminu określonego w art. 35 albo przepisach szczególnych, organ prowadzący postępowanie pozostawia ponaglenie bez rozpoznania."
+          - page: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf
+            text: "Ponaglenie zawiera uzasadnienie."
+    - id: wait-ponaglenie-no-notice
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "W okresie, o którym mowa w ust. 1:"
+          en: "During the suspension period (until 4 March 2027), the rules on an authority's inaction, and on its duty to tell the party that a case wasn't dealt with on time, don't apply to these cases."
+          uk: "У період зупинення строків (до 4 березня 2027 р.) правила про бездіяльність органу і про його обов'язок повідомити сторону, що справу не вирішено вчасно, до цих справ не застосовуються."
+          ru: "В период приостановления сроков (до 4 марта 2027 г.) правила о бездействии органа и о его обязанности сообщить стороне, что дело не решено вовремя, к этим делам не применяются."
+        quotes:
+          - page: *ukr-aid
+            text: "W okresie, o którym mowa w ust. 1:"
+          - page: *ukr-aid
+            text: "1) przepisów o bezczynności organu oraz o obowiązku organu prowadzącego postępowanie w sprawach, o których mowa w ust. 1, do powiadamiania strony lub uczestnika postępowania o niezałatwieniu sprawy w terminie nie stosuje się;"
+    - id: wait-ponaglenie-template
+      condition: { fact: pobyt_czasowy.waiting_for, eq: decision }
+      statement:
+        value:
+          pl: "Wzór ponaglenia"
+          en: "biznes.gov.pl publishes a ponaglenie template („Wzór ponaglenia”). The service is free; a stamp duty of 17 zł applies only to a power of attorney, if someone represents you. It doesn't apply if your representative is your husband, wife, child, parent, grandparent, grandchild or sibling."
+          uk: "Портал biznes.gov.pl публікує зразок ponaglenia („Wzór ponaglenia”). Послуга безкоштовна; гербовий збір 17 зл. сплачують лише за довіреність, якщо вас хтось представляє. Він не стягується, якщо вашим представником є чоловік, дружина, дитина, батько чи мати, дідусь, бабуся, онук чи онука, брат або сестра."
+          ru: "Портал biznes.gov.pl публикует образец ponaglenia („Wzór ponaglenia”). Услуга бесплатная; гербовый сбор 17 зл. платят только за доверенность, если вас кто-то представляет. Он не взимается, если вашим представителем является муж, жена, ребенок, отец или мать, дедушка, бабушка, внук или внучка, брат или сестра."
+        quotes:
+          - page: &biznes https://www.biznes.gov.pl/pl/portal/ou590
+            text: "Wzór ponaglenia"
+          - page: *biznes
+            text: "Usługa jest bezpłatna."
+          - page: *biznes
+            text: "17 zł – opłata skarbowa za pełnomocnictwo (jeśli cię dotyczy)"
+          - page: *biznes
+            text: "Opłata nie obowiązuje cię, jeśli twoim pełnomocnikiem jest mąż, żona, dziecko, rodzic, dziadek, babcia, wnuk lub rodzeństwo."
+    # The card stage (owner clarification: decision and card never conflated). Art. 100d names
+    # permit cases, not the card, so none of the remedies above is shown here.
+    - id: wait-card-ex-officio
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: card }, { not: { fact: pobyt_czasowy.purpose, eq: family_abroad } }] }
+      statement:
+        value:
+          pl: "Pierwszą kartę pobytu i europejski dokument podróży do celów powrotu wydaje się z urzędu."
+          en: "The first residence card is issued ex officio: you don't apply for it separately. A residence card is issued to a foreigner who has been granted, among others, a temporary residence permit."
+          uk: "Першу карту побиту видають з власної ініціативи органу: окремо подавати заяву на неї не потрібно. Карту побиту видають іноземцю, якому надано, зокрема, дозвіл на тимчасове перебування."
+          ru: "Первую карту побыту выдают по инициативе органа: отдельно подавать заявление на нее не нужно. Карту побыту выдают иностранцу, которому выдано, в частности, разрешение на временное пребывание."
+        quotes:
+          - page: *mos-act
+            text: "Pierwszą kartę pobytu i europejski dokument podróży do celów powrotu wydaje się z urzędu."
+          - page: *foreigners
+            text: "Kartę pobytu wydaje się cudzoziemcowi, któremu udzielono:"
+          - page: *foreigners
+            text: "1) zezwolenia na pobyt czasowy;"
+    - id: wait-card-in-person
+      condition: { fact: pobyt_czasowy.waiting_for, eq: card }
+      statement:
+        value:
+          pl: "Cudzoziemiec odbiera kartę pobytu osobiście, chyba że w stosunku do tego cudzoziemca odstąpiono od wezwania do osobistego stawiennictwa na podstawie art. 106h ust. 1, art. 203h ust. 1 lub art. 219h ust. 1."
+          en: "You collect the residence card in person, unless you were excused from the summons to come in person for your application. When you collect it, you show a valid travel document; in a particularly justified case, if you have none and can't get one, another identity document. For a child under 13 on the collection day, or a fully incapacitated person, a parent, guardian or curator collects the card and shows their own identity document. A child who was already 6 when the application was filed, and a fully incapacitated person, must be present."
+          uk: "Карту побиту ви забираєте особисто, якщо вас не звільнили від виклику на особисту явку у справі вашої заяви. Забираючи її, ви показуєте чинний проїзний документ; в особливо обґрунтованому випадку, якщо його немає і отримати його неможливо, інший документ, що посвідчує особу. За дитину, якій у день отримання ще немає 13 років, або за повністю недієздатну особу карту забирає батько, мати, опікун або куратор і показує свій документ, що посвідчує особу. Дитина, якій на день подання заяви вже виповнилося 6 років, і недієздатна особа мають бути присутні."
+          ru: "Карту побыту вы забираете лично, если вас не освободили от вызова на личную явку по вашему заявлению. Забирая ее, вы показываете действительный проездной документ; в особо обоснованном случае, если его нет и получить его невозможно, другой документ, удостоверяющий личность. За ребенка, которому в день получения еще нет 13 лет, или за полностью недееспособного человека карту забирает родитель, опекун или куратор и показывает свой документ, удостоверяющий личность. Ребенок, которому на день подачи заявления уже исполнилось 6 лет, и недееспособный человек должны присутствовать."
+        quotes:
+          - page: *mos-act
+            text: "Cudzoziemiec odbiera kartę pobytu osobiście, chyba że w stosunku do tego cudzoziemca odstąpiono od wezwania do osobistego stawiennictwa na podstawie art. 106h ust. 1, art. 203h ust. 1 lub art. 219h ust. 1."
+          - page: *mos-act
+            text: "Cudzoziemiec, odbierając kartę pobytu, okazuje ważny dokument podróży."
+          - page: *mos-act
+            text: "W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może okazać inny dokument potwierdzający tożsamość."
+          - page: *mos-act
+            text: "W przypadku gdy karta pobytu została wydana cudzoziemcowi będącemu osobą małoletnią, która nie ukończyła 13. roku życia do dnia jej odbioru, albo osobą ubezwłasnowolnioną całkowicie, odbioru karty pobytu dokonuje odpowiednio rodzic, opiekun albo kurator, po okazaniu ważnego dokumentu potwierdzającego jego tożsamość."
+          - page: *mos-act
+            text: "osobą małoletnią, która ukończyła 6. rok życia do dnia złożenia wniosku o:"
+          - page: *mos-act
+            text: "– wymaga obecności tej osoby."
+    - id: wait-card-pickup-mazowiecki
+      condition: { all: [{ fact: pobyt_czasowy.waiting_for, eq: card }, { fact: pobyt_czasowy.office, eq: mazowieckie }] }
+      statement:
+        value:
+          pl: "Skrzynka będzie Ci potrzebna między innymi do otrzymywania wezwań, informacji o terminach osobistego stawiennictwa w celu pobrania odcisków palców czy informacji o terminie odbioru karty pobytu kierowanych do Ciebie przez urząd."
+          en: "The Mazowiecki office says you'll need an e‑Doręczenia mailbox, among other things, to receive the summonses, the dates to come in person for fingerprints and the date to collect your residence card that the office sends you."
+          uk: "Мазовецьке управління зазначає: скринька e‑Doręczenia знадобиться вам, зокрема, щоб отримувати від управління виклики, дати особистої явки для зняття відбитків пальців і дату, коли можна забрати карту побиту."
+          ru: "Мазовецкое управление указывает: ящик e‑Doręczenia понадобится вам, в частности, чтобы получать от управления вызовы, даты личной явки для снятия отпечатков пальцев и дату, когда можно забрать карту побыту."
+        quotes:
+          - page: *maz-ed
+            text: "Skrzynka będzie Ci potrzebna między innymi do otrzymywania wezwań, informacji o terminach osobistego stawiennictwa w celu pobrania odcisków palców czy informacji o terminie odbioru karty pobytu kierowanych do Ciebie przez urząd."
+    # Checking the status: MOS shows none; the Mazowiecki phone line (undated page, 2017 project);
+    # for other offices we have no verified route and the web section says so.
+    - id: wait-mos-no-status
+      condition: { not: { fact: pobyt_czasowy.filed_via, eq: paper_before_mos } }
+      statement:
+        value:
+          pl: "Czy portal MOS poinformuje mnie o konieczności uzupełnienia dokumentów lub o aktualnym statusie sprawy?\nNie. O konieczności osobistego stawiennictwa i uzupełnienia dokumentów poinformuje Cię pracownik urzędu wojewódzkiego."
+          en: "Will the MOS portal tell me that I need to add documents, or what my case's current status is? No. An employee of the voivodeship office will tell you if you need to come in person or add documents."
+          uk: "Чи повідомить портал MOS, що потрібно доповнити документи, або який поточний статус справи? Ні. Про потребу з'явитися особисто чи доповнити документи вас повідомить працівник воєводського управління."
+          ru: "Сообщит ли портал MOS, что нужно дополнить документы, или какой текущий статус дела? Нет. О необходимости явиться лично или дополнить документы вам сообщит сотрудник воеводского управления."
+        quotes:
+          - page: *qa
+            text: "Czy portal MOS poinformuje mnie o konieczności uzupełnienia dokumentów lub o aktualnym statusie sprawy?\nNie. O konieczności osobistego stawiennictwa i uzupełnienia dokumentów poinformuje Cię pracownik urzędu wojewódzkiego."
+    - id: wait-udsc-line
+      statement:
+        value:
+          pl: "Sprawy związane z wydawaniem zezwoleń na pobyt, pracę oraz rejestracją zaproszeń dla cudzoziemców są realizowane przez wydziały spraw cudzoziemców oraz wydziały spraw obywatelskich i cudzoziemców w urzędach wojewódzkich. W przypadku pytań związanych z tego typu postępowaniami należy kontaktować się z właściwym urzędem wojewódzkim."
+          en: "The Office for Foreigners (UDSC) says: residence and work permits and invitations for foreigners are handled by the foreigners' departments of the voivodeship offices. For questions about these cases, contact the competent voivodeship office."
+          uk: "Управління у справах іноземців (UDSC) зазначає: дозволами на перебування, роботу та реєстрацією запрошень для іноземців займаються відділи у справах іноземців воєводських управлінь. З питаннями щодо таких справ звертайтеся до відповідного воєводського управління."
+          ru: "Управление по делам иностранцев (UDSC) указывает: разрешениями на пребывание, работу и регистрацией приглашений для иностранцев занимаются отделы по делам иностранцев воеводских управлений. С вопросами по таким делам обращайтесь в соответствующее воеводское управление."
+        quotes:
+          - page: https://www.gov.pl/web/udsc/dane-kontaktowe
+            text: "Sprawy związane z wydawaniem zezwoleń na pobyt, pracę oraz rejestracją zaproszeń dla cudzoziemców są realizowane przez wydziały spraw cudzoziemców oraz wydziały spraw obywatelskich i cudzoziemców w urzędach wojewódzkich. W przypadku pytań związanych z tego typu postępowaniami należy kontaktować się z właściwym urzędem wojewódzkim."
+    - id: wait-udsc-helplines
+      condition: { not: { fact: pobyt_czasowy.office, eq: mazowieckie } }
+      statement:
+        value:
+          pl: "Infolinie dla cudzoziemców"
+          en: "The Office for Foreigners (UDSC) publishes a list of helplines for foreigners („Infolinie dla cudzoziemców”), with lines of several voivodeship offices."
+          uk: "Управління у справах іноземців (UDSC) публікує перелік гарячих ліній для іноземців („Infolinie dla cudzoziemców”), зокрема лінії кількох воєводських управлінь."
+          ru: "Управление по делам иностранцев (UDSC) публикует список горячих линий для иностранцев („Infolinie dla cudzoziemców”), в том числе линии нескольких воеводских управлений."
+        quotes:
+          - page: https://www.gov.pl/web/udsc/infolinie-dla-cudzoziemcow
+            text: "Infolinie dla cudzoziemców"
+    - id: wait-mazowiecki-status-line
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Dzwoniąc pod numer (22) 695 67 73 sprawdzisz nie tylko status swojej sprawy ale także uzyskasz odpowiedzi na najczęściej zadawane pytania."
+          en: "By calling (22) 695 67 73 you can check your case's status and also get answers to the most common questions. If you applied to make your stay legal, you check the status by typing your case number on the phone's keypad."
+          uk: "Зателефонувавши за номером (22) 695 67 73, ви можете перевірити статус своєї справи, а також отримати відповіді на найчастіші запитання. Якщо ви подали заяву про легалізацію перебування, статус перевіряють, ввівши номер справи на клавіатурі телефону."
+          ru: "Позвонив по номеру (22) 695 67 73, вы можете проверить статус своего дела, а также получить ответы на самые частые вопросы. Если вы подали заявление о легализации пребывания, статус проверяют, введя номер дела на клавиатуре телефона."
+        quotes:
+          - page: &maz-status https://www.gov.pl/web/uw-mazowiecki/jak-sprawdzic-status-sprawy
+            text: "Dzwoniąc pod numer (22) 695 67 73 sprawdzisz nie tylko status swojej sprawy ale także uzyskasz odpowiedzi na najczęściej zadawane pytania."
+          - page: *maz-status
+            text: "Jeśli złożyłeś wniosek o legalizację pobytu, możesz w prosty sposób sprawdzić status swojej sprawy wpisując jej numer na klawiaturze numerycznej telefonu, zgodnie z przykładem zaprezentowanym powyżej."
+    - id: wait-mazowiecki-helpline-no-status
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Infolinia dla Obywatela nie udziela informacji dotyczących procedur wewnętrznych poszczególnych wydziałów oraz statusów spraw prowadzonych przez urząd."
+          en: "The office's Citizen Helpline („Infolinia dla Obywatela”) gives no information on case statuses or on its departments' internal procedures. Neither does its information desk."
+          uk: "Інфолінія для громадян („Infolinia dla Obywatela”) не надає інформації про статуси справ чи внутрішні процедури окремих відділів. Інформаційний пункт управління також не надає такої інформації."
+          ru: "Горячая линия для граждан („Infolinia dla Obywatela”) не дает информации о статусах дел или внутренних процедурах отдельных отделов. Информационный пункт управления также не дает такой информации."
+        quotes:
+          - page: &maz-contact https://www.gov.pl/web/uw-mazowiecki/dane-kontaktowe
+            text: "Infolinia dla Obywatela nie udziela informacji dotyczących procedur wewnętrznych poszczególnych wydziałów oraz statusów spraw prowadzonych przez urząd."
+          - page: *maz-contact
+            text: "Punkt informacyjny nie udziela informacji dotyczących procedur wewnętrznych poszczególnych wydziałów oraz statusów spraw prowadzonych przez urząd."
+    - id: wait-file-inspection
+      statement:
+        value:
+          pl: "Strona ma prawo wglądu w akta sprawy, sporządzania z nich notatek, kopii lub odpisów."
+          en: "As a party to the case you have the right to see the case file and to make notes, copies or extracts from it. This is done at the authority's premises, with one of its employees present. The authority may also let you do it in its online system, after you log in."
+          uk: "Як сторона справи ви маєте право ознайомлюватися з матеріалами справи, робити з них нотатки, копії чи витяги. Це відбувається в приміщенні органу в присутності його працівника. Орган може також дозволити це у своїй онлайн-системі після входу."
+          ru: "Как сторона дела вы имеете право знакомиться с материалами дела, делать из них заметки, копии или выписки. Это происходит в помещении органа в присутствии его сотрудника. Орган может также разрешить это в своей онлайн-системе после входа."
+        quotes:
+          - page: &kpa https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf
+            text: "Strona ma prawo wglądu w akta sprawy, sporządzania z nich notatek, kopii lub odpisów."
+          - page: *kpa
+            text: "Czynności określone w § 1 są dokonywane w lokalu organu administracji publicznej w obecności pracownika tego organu."
+          - page: *kpa
+            text: "Organ administracji publicznej może zapewnić stronie dokonanie czynności, o których mowa w § 1, w swoim systemie teleinformatycznym, po uwierzytelnieniu strony w sposób określony w art. 20a ust. 1 albo 2 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne."
+    # Asking in writing: an ordinary inquiry is a podanie (KPA art. 63), backed by the duty to inform
+    # (art. 9). No statutory answer deadline was found (art. 237's month is for a skarga, not shown).
+    - id: wait-duty-to-inform
+      statement:
+        value:
+          pl: "Organy administracji publicznej są obowiązane do należytego i wyczerpującego informowania stron o okolicznościach faktycznych i prawnych, które mogą mieć wpływ na ustalenie ich praw i obowiązków będących przedmiotem postępowania administracyjnego."
+          en: "Public authorities must inform the parties properly and fully about the facts and the law that may affect their rights and obligations in the proceedings."
+          uk: "Органи публічної адміністрації зобов'язані належно і вичерпно інформувати сторони про фактичні та правові обставини, які можуть вплинути на їхні права та обов'язки, що є предметом провадження."
+          ru: "Органы публичной администрации обязаны надлежащим образом и исчерпывающе информировать стороны о фактических и правовых обстоятельствах, которые могут повлиять на их права и обязанности, являющиеся предметом производства."
+        quotes:
+          - page: *kpa
+            text: "Organy administracji publicznej są obowiązane do należytego i wyczerpującego informowania stron o okolicznościach faktycznych i prawnych, które mogą mieć wpływ na ustalenie ich praw i obowiązków będących przedmiotem postępowania administracyjnego."
+    - id: wait-podanie-forms
+      statement:
+        value:
+          pl: "Podania (żądania, wyjaśnienia, odwołania, zażalenia) wnosi się na piśmie, za pomocą telefaksu lub ustnie do protokołu."
+          en: "Letters to an authority (each one a podanie: requests, explanations, appeals, complaints) are filed in writing, by fax, or orally to be put on record."
+          uk: "Звернення до органу (кожне з них є podanie: вимоги, пояснення, оскарження, скарги) подають письмово, факсом або усно до протоколу."
+          ru: "Обращения в орган (каждое из них является podanie: требования, объяснения, обжалования, жалобы) подают письменно, по факсу или устно в протокол."
+        quotes:
+          - page: *kpa
+            text: "Podania (żądania, wyjaśnienia, odwołania, zażalenia) wnosi się na piśmie, za pomocą telefaksu lub ustnie do protokołu."
+    - id: wait-podanie-minimum
+      statement:
+        value:
+          pl: "Podanie powinno zawierać co najmniej wskazanie osoby, od której pochodzi, jej adres, również w przypadku złożenia podania w postaci elektronicznej, i żądanie oraz czynić zadość innym wymaganiom ustalonym w przepisach szczególnych."
+          en: "A letter must at least say who it is from, give that person's address (also when it is filed electronically) and say what is asked for, and meet any other requirements of specific rules. If it gives no address and the authority can't find one in the data it has, the letter is left unexamined."
+          uk: "Звернення має містити щонайменше зазначення особи, від якої воно надходить, її адресу (також у разі подання в електронній формі) і вимогу, а також відповідати іншим вимогам спеціальних правил. Якщо адресу не зазначено і орган не може встановити її з наявних даних, звернення залишають без розгляду."
+          ru: "Обращение должно содержать как минимум указание лица, от которого оно исходит, его адрес (также при подаче в электронной форме) и требование, а также отвечать другим требованиям специальных правил. Если адрес не указан и орган не может установить его по имеющимся данным, обращение оставляют без рассмотрения."
+        quotes:
+          - page: *kpa
+            text: "Podanie powinno zawierać co najmniej wskazanie osoby, od której pochodzi, jej adres, również w przypadku złożenia podania w postaci elektronicznej, i żądanie oraz czynić zadość innym wymaganiom ustalonym w przepisach szczególnych."
+          - page: *kpa
+            text: "Jeżeli w podaniu nie wskazano adresu wnoszącego i nie ma możności ustalenia tego adresu na podstawie posiadanych danych, podanie pozostawia się bez rozpoznania."
+    - id: wait-paper-signed
+      statement:
+        value:
+          pl: "Podanie wniesione na piśmie albo ustnie do protokołu powinno być podpisane przez wnoszącego, a protokół ponadto przez pracownika, który go sporządził."
+          en: "A letter filed on paper, or orally for the record, should be signed by the person filing it (and the record also by the employee who wrote it)."
+          uk: "Звернення, подане письмово або усно до протоколу, має бути підписане особою, яка його подає (а протокол також працівником, який його склав)."
+          ru: "Обращение, поданное письменно или устно в протокол, должно быть подписано лицом, которое его подает (а протокол также сотрудником, который его составил)."
+        quotes:
+          - page: *kpa
+            text: "Podanie wniesione na piśmie albo ustnie do protokołu powinno być podpisane przez wnoszącego, a protokół ponadto przez pracownika, który go sporządził."
+    - id: wait-electronic-address
+      statement:
+        value:
+          pl: "Podania utrwalone w postaci elektronicznej wnosi się na adres do doręczeń elektronicznych lub za pośrednictwem konta w systemie teleinformatycznym organu administracji publicznej."
+          en: "An electronic letter is filed to the authority's address for electronic delivery (e‑Doręczenia) or through an account in the authority's own online system."
+          uk: "Звернення в електронній формі подають на адресу для електронного вручення (e‑Doręczenia) або через обліковий запис в онлайн-системі самого органу."
+          ru: "Обращение в электронной форме подают на адрес для электронного вручения (e‑Doręczenia) или через учетную запись в онлайн-системе самого органа."
+        quotes:
+          - page: *kpa
+            text: "Podania utrwalone w postaci elektronicznej wnosi się na adres do doręczeń elektronicznych lub za pośrednictwem konta w systemie teleinformatycznym organu administracji publicznej."
+    - id: wait-no-email
+      important: true
+      statement:
+        value:
+          pl: "Jeżeli przepisy odrębne nie stanowią inaczej, podania wniesione na adres poczty elektronicznej organu administracji publicznej pozostawia się bez rozpoznania."
+          en: "Unless specific rules say otherwise, a letter sent to an authority's e-mail address is left unexamined."
+          uk: "Якщо окремі правила не передбачають іншого, звернення, надіслані на адресу електронної пошти органу, залишають без розгляду."
+          ru: "Если отдельные правила не предусматривают иного, обращения, отправленные на адрес электронной почты органа, оставляют без рассмотрения."
+        quotes:
+          - page: *kpa
+            text: "Jeżeli przepisy odrębne nie stanowią inaczej, podania wniesione na adres poczty elektronicznej organu administracji publicznej pozostawia się bez rozpoznania."
+    - id: wait-mos-not-channel
+      important: true
+      statement:
+        value:
+          pl: "Czy poprzez portal MOS mogę komunikować się z urzędem wojewódzkim?\nNie."
+          en: "Can I communicate with the voivodeship office through the MOS portal? No."
+          uk: "Чи можу я спілкуватися з воєводським управлінням через портал MOS? Ні."
+          ru: "Могу ли я общаться с воеводским управлением через портал MOS? Нет."
+        quotes:
+          - page: *qa
+            text: "Czy poprzez portal MOS mogę komunikować się z urzędem wojewódzkim?\nNie."
+    - id: wait-epuap-ended
+      statement:
+        value:
+          pl: "Doręczenie korespondencji nadanej przez osobę fizyczną lub podmiot niebędący podmiotem publicznym, będące użytkownikami konta w ePUAP, do podmiotu publicznego posiadającego elektroniczną skrzynkę podawczą w ePUAP, w ramach usługi udostępnianej w ePUAP, jest równoważne w skutkach prawnych z doręczeniem przy wykorzystaniu publicznej usługi rejestrowanego doręczenia elektronicznego do dnia 31 grudnia 2025 r."
+          en: "A letter sent through ePUAP by a private person to a public body's ePUAP box had the same legal effect as e‑Doręczenia only until 31 December 2025. The digital affairs ministry announced that from January 2026 e‑Doręczenia is the basic way to deliver official letters electronically, and ePUAP is used only where the law says so."
+          uk: "Лист, надісланий приватною особою через ePUAP до скриньки органу в ePUAP, мав таку саму юридичну силу, як e‑Doręczenia, лише до 31 грудня 2025 р. Міністерство цифровізації повідомило, що з січня 2026 р. e‑Doręczenia є основним способом електронного вручення офіційних листів, а ePUAP застосовують лише у випадках, визначених законом."
+          ru: "Письмо, отправленное частным лицом через ePUAP в ящик органа в ePUAP, имело ту же юридическую силу, что и e‑Doręczenia, только до 31 декабря 2025 г. Министерство цифровизации сообщило, что с января 2026 г. e‑Doręczenia являются основным способом электронного вручения официальных писем, а ePUAP применяют только в случаях, указанных в законе."
+        quotes:
+          - page: &edor-act https://api.sejm.gov.pl/eli/acts/DU/2026/3/text.pdf
+            text: "Doręczenie korespondencji nadanej przez osobę fizyczną lub podmiot niebędący podmiotem publicznym, będące użytkownikami konta w ePUAP, do podmiotu publicznego posiadającego elektroniczną skrzynkę podawczą w ePUAP, w ramach usługi udostępnianej w ePUAP, jest równoważne w skutkach prawnych z doręczeniem przy wykorzystaniu publicznej usługi rejestrowanego doręczenia elektronicznego do dnia 31 grudnia 2025 r."
+          - page: https://www.gov.pl/web/cyfryzacja/od-stycznia-2026-r-zmienia-sie-cyfrowa-korespondencja-z-urzedami--zaplanowane-prace-techniczne
+            text: "Od 1 stycznia 2026 r. e-Doręczenia staną się podstawowym sposobem elektronicznego doręczania pism urzędowych, a ePUAP będzie stosowany wyłącznie w przypadkach wskazanych w przepisach."
+    - id: wait-edoreczenia-free
+      statement:
+        value:
+          pl: "Korespondencja wysyłana do podmiotu publicznego za pomocą publicznej usługi rejestrowanego doręczenia elektronicznego (PURDE) jest darmowa dla wszystkich."
+          en: "Letters sent to a public body through the public registered e-delivery service (e‑Doręczenia) are free for everyone."
+          uk: "Листи до органу влади через публічну послугу зареєстрованого електронного вручення (e‑Doręczenia) безкоштовні для всіх."
+          ru: "Письма в орган власти через публичную услугу регистрируемого электронного вручения (e‑Doręczenia) бесплатны для всех."
+        quotes:
+          - page: https://www.gov.pl/web/e-doreczenia/najwazniejsze-informacje-dla-obywatela
+            text: "Korespondencja wysyłana do podmiotu publicznego za pomocą publicznej usługi rejestrowanego doręczenia elektronicznego (PURDE) jest darmowa dla wszystkich."
+    - id: wait-edoreczenia-own-address
+      statement:
+        value:
+          pl: "Możesz złożyć wniosek o adres do e-Doręczeń u operatora wyznaczonego lub kwalifikowanych dostawców usług."
+          en: "To send through e‑Doręczenia you need your own e‑Doręczenia address. You can apply for one with the designated postal operator or with qualified service providers. If you don't have a mailbox yet, an online service that needs this channel will ask you to create the address."
+          uk: "Щоб надсилати через e‑Doręczenia, потрібна власна адреса e‑Doręczenia. Подати заяву на неї можна в призначеного поштового оператора або в кваліфікованих постачальників послуг. Якщо скриньки у вас ще немає, онлайн-послуга, яка потребує цього каналу, запропонує створити адресу."
+          ru: "Чтобы отправлять через e‑Doręczenia, нужен собственный адрес e‑Doręczenia. Подать заявление на него можно у назначенного почтового оператора или у квалифицированных поставщиков услуг. Если ящика у вас еще нет, онлайн-услуга, которой нужен этот канал, предложит создать адрес."
+        quotes:
+          - page: https://www.gov.pl/web/e-doreczenia/najwazniejsze-informacje-dla-obywatela
+            text: "Możesz złożyć wniosek o adres do e-Doręczeń u operatora wyznaczonego lub kwalifikowanych dostawców usług."
+          - page: https://www.gov.pl/web/e-doreczenia/najwazniejsze-informacje-dla-obywatela
+            text: "Jeśli nie masz jeszcze skrzynki do e-Doręczeń, podczas załatwiania spraw online, które wymagają wysyłki tym kanałem, system poprosi Cię o utworzenie adresu do doręczeń elektronicznych (ADE)."
+    - id: wait-confirmation
+      statement:
+        value:
+          pl: "Organ administracji publicznej jest obowiązany potwierdzić wniesienie podania, jeżeli wnoszący tego zażąda."
+          en: "The authority must confirm that a letter was filed if the person filing it asks for this."
+          uk: "Орган зобов'язаний підтвердити подання звернення, якщо особа, яка його подає, цього вимагає."
+          ru: "Орган обязан подтвердить подачу обращения, если лицо, которое его подает, этого требует."
+        quotes:
+          - page: *kpa
+            text: "Organ administracji publicznej jest obowiązany potwierdzić wniesienie podania, jeżeli wnoszący tego zażąda."
+    - id: wait-edoreczenia-proof
+      statement:
+        value:
+          pl: "Dowód otrzymania jest wystawiany po:"
+          en: "A proof of receipt is issued once a letter reaches the public body's address for electronic delivery."
+          uk: "Підтвердження отримання видається, щойно лист надійде на адресу для електронного вручення органу."
+          ru: "Подтверждение получения выдается, как только письмо поступит на адрес для электронного вручения органа."
+        quotes:
+          - page: *edor-act
+            text: "Dowód otrzymania jest wystawiany po:"
+          - page: *edor-act
+            text: "2) wpłynięciu korespondencji na adres do doręczeń elektronicznych podmiotu publicznego;"
+    # Mazowiecki's own rules (owner clarification 4): addresses, the letter title and signature,
+    # MOS cases electronic only. Never applied to another office.
+    - id: wait-mazowiecki-post-address
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Adres korespondencyjny urzędu\nMazowiecki Urząd Wojewódzki w Warszawie\nPl. Bankowy 3/5\n00-950 Warszawa"
+          en: "The office's postal address: „Mazowiecki Urząd Wojewódzki w Warszawie, Pl. Bankowy 3/5, 00-950 Warszawa”."
+          uk: "Поштова адреса управління: „Mazowiecki Urząd Wojewódzki w Warszawie, Pl. Bankowy 3/5, 00-950 Warszawa”."
+          ru: "Почтовый адрес управления: „Mazowiecki Urząd Wojewódzki w Warszawie, Pl. Bankowy 3/5, 00-950 Warszawa”."
+        quotes:
+          - page: *maz-contact
+            text: "Adres korespondencyjny urzędu\nMazowiecki Urząd Wojewódzki w Warszawie\nPl. Bankowy 3/5\n00-950 Warszawa"
+    - id: wait-mazowiecki-ede-address
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Adres do e-doręczeń: AE:PL-96129-72086-CJUVW-29"
+          en: "The office's e‑Doręczenia address: „AE:PL-96129-72086-CJUVW-29”"
+          uk: "Адреса управління в e‑Doręczenia: „AE:PL-96129-72086-CJUVW-29”"
+          ru: "Адрес управления в e‑Doręczenia: „AE:PL-96129-72086-CJUVW-29”"
+        quotes:
+          - page: *maz-contact
+            text: "Adres do e-doręczeń: AE:PL-96129-72086-CJUVW-29"
+    - id: wait-mazowiecki-edoreczenia-setup
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Załóż adres i skrzynkę do doręczeń elektronicznych e-Doręczeń."
+          en: "The Mazowiecki office asks you to set up an e‑Doręczenia address and mailbox. Its steps: get a PESEL number, set up a Trusted Profile (profil zaufany), then apply for the address online on the gov.pl e‑Doręczenia page, sign the application electronically and activate the mailbox."
+          uk: "Мазовецьке управління просить створити адресу і скриньку e‑Doręczenia. Його кроки: отримати номер PESEL, створити довірений профіль (profil zaufany), потім подати заяву на адресу онлайн на сторінці e‑Doręczenia на gov.pl, підписати заяву електронно і активувати скриньку."
+          ru: "Мазовецкое управление просит создать адрес и ящик e‑Doręczenia. Его шаги: получить номер PESEL, создать доверенный профиль (profil zaufany), затем подать заявление на адрес онлайн на странице e‑Doręczenia на gov.pl, подписать заявление электронно и активировать ящик."
+        quotes:
+          - page: *maz-ed
+            text: "Załóż adres i skrzynkę do doręczeń elektronicznych e-Doręczeń."
+          - page: *maz-ed
+            text: "- Uzyskaj numer PESEL https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow(link is external)."
+          - page: *maz-ed
+            text: "- Załóż profil zaufany https://pz.gov.pl/pz/registerMainPage(link is external)."
+          - page: *maz-ed
+            text: "- Złóż wniosek elektronicznie i uzyskaj adres do e-Doręczeń:"
+          - page: *maz-ed
+            text: "- sprawdź wniosek i podpisz go elektronicznie;"
+          - page: *maz-ed
+            text: "- kliknij Aktywuj skrzynkę;"
+    - id: wait-mazowiecki-templates
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Korzystaj z wzorów pism zamieszczonych na naszej stronie internetowej w zakładce https://migrant.wsc.mazowieckie.pl/pl/pliki-do-pobrania/327"
+          en: "The Mazowiecki office asks you to use the letter templates on its own website (the address of the tab is in the official wording)."
+          uk: "Мазовецьке управління просить користуватися зразками листів на його власному сайті (адреса вкладки є в офіційному формулюванні)."
+          ru: "Мазовецкое управление просит пользоваться образцами писем на его собственном сайте (адрес вкладки есть в официальной формулировке)."
+        quotes:
+          - page: *maz-ed
+            text: "Korzystaj z wzorów pism zamieszczonych na naszej stronie internetowej w zakładce https://migrant.wsc.mazowieckie.pl/pl/pliki-do-pobrania/327"
+    - id: wait-mazowiecki-title
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Wszelkie przesyłane pisma dotyczące spraw w toku, muszą być zatytułowane w następujący sposób:"
+          en: "Every letter you send about a pending case must be titled with the case number and the foreigner's first name and surname; when you send through e‑Doręczenia, that goes in the title of the message. In the letter itself, add the foreigner's date of birth, citizenship and current address. One electronic letter = one case."
+          uk: "Кожен лист щодо справи, що триває, має мати заголовок із номером справи та ім'ям і прізвищем іноземця; якщо ви надсилаєте через e‑Doręczenia, це пишуть у темі відправлення. У самому листі додайте дату народження, громадянство й поточну адресу проживання іноземця. Один електронний лист = одна справа."
+          ru: "Каждое письмо по текущему делу должно иметь заголовок с номером дела и именем и фамилией иностранца; если вы отправляете через e‑Doręczenia, это пишут в теме отправления. В самом письме добавьте дату рождения, гражданство и текущий адрес проживания иностранца. Одно электронное письмо = одно дело."
+        quotes:
+          - page: *maz-ed
+            text: "Wszelkie przesyłane pisma dotyczące spraw w toku, muszą być zatytułowane w następujący sposób:"
+          - page: *maz-ed
+            text: "Pamiętaj, że wysyłając przez e-Doręczenia pisma i dokumenty do spraw zawsze wpisuj w tytuł przesyłki:"
+          - page: *maz-ed
+            text: "- numer sprawy,"
+          - page: *maz-ed
+            text: "- imię i nazwisko cudzoziemca."
+          - page: *maz-ed
+            text: "W treści załączonego do przesyłki pisma, oprócz powyższych danych, dopisz datę urodzenia, obywatelstwo i aktualny adres zamieszkania cudzoziemca."
+          - page: *maz-ed
+            text: "1 pismo elektroniczne = 1 sprawa."
+    - id: wait-mazowiecki-signature
+      condition: { fact: pobyt_czasowy.office, eq: mazowieckie }
+      statement:
+        value:
+          pl: "Dokumenty wymagające Twojego podpisu, musisz podpisać własnym profilem zaufanym lub osobistym podpisem certyfikowanym (kwalifikowanym)."
+          en: "Documents that need your signature must be signed with your own Trusted Profile (profil zaufany) or a personal certified (qualified) signature."
+          uk: "Документи, які потребують вашого підпису, треба підписати власним довіреним профілем (profil zaufany) або особистим сертифікованим (кваліфікованим) підписом."
+          ru: "Документы, которые требуют вашей подписи, нужно подписать собственным доверенным профилем (profil zaufany) или личной сертифицированной (квалифицированной) подписью."
+        quotes:
+          - page: *maz-ed
+            text: "Dokumenty wymagające Twojego podpisu, musisz podpisać własnym profilem zaufanym lub osobistym podpisem certyfikowanym (kwalifikowanym)."
+    - id: wait-mazowiecki-mos-electronic
+      condition: { all: [{ fact: pobyt_czasowy.office, eq: mazowieckie }, { not: { fact: pobyt_czasowy.filed_via, eq: paper_before_mos } }] }
+      statement:
+        value:
+          pl: "Po uruchomieniu nowego systemu MOS, do wniosków złożonych elektronicznie za pośrednictwem tego systemu, dokumenty wysyłaj wyłącznie elektronicznie. Nie przesyłaj dokumentów papierowych pocztą tradycyjną."
+          en: "Since the new MOS system started, for applications filed electronically through it, send documents electronically only. Don't send paper documents by post."
+          uk: "Після запуску нової системи MOS до заяв, поданих через неї в електронній формі, надсилайте документи лише електронно. Не надсилайте паперових документів звичайною поштою."
+          ru: "После запуска новой системы MOS к заявлениям, поданным через нее в электронной форме, отправляйте документы только в электронном виде. Не отправляйте бумажные документы обычной почтой."
+        quotes:
+          - page: *maz-ed
+            text: "Po uruchomieniu nowego systemu MOS, do wniosków złożonych elektronicznie za pośrednictwem tego systemu, dokumenty wysyłaj wyłącznie elektronicznie. Nie przesyłaj dokumentów papierowych pocztą tradycyjną."
+  handoff:
+    when:
+      pl: Jeśli nie wiesz, o jakie zezwolenie wnioskować, albo urząd wezwie Cię do uzupełnienia wniosku. Pomocy przy składaniu wniosku udziela też urząd wojewódzki, do którego go składasz.
+      en: If you're not sure which permit to apply for, or the office asks you to complete your application. The voivodeship office you're filing with also helps with filing.
+      uk: Якщо ви не впевнені, на який дозвіл подавати заяву, або установа вимагає доповнити заяву. Допомогу з поданням заяви надає також воєводське управління, куди ви її подаєте.
+      ru: Если вы не уверены, на какое разрешение подавать заявление, или учреждение требует дополнить заявление. Помощь с подачей заявления оказывает также воеводское управление, куда вы его подаете.
+    options:
+      - id: free-legal-aid
+        kind: free_legal_aid
+        name:
+          pl: Nieodpłatna pomoc prawna
+          en: Free legal aid (state programme)
+          uk: Безоплатна правова допомога (державна програма)
+          ru: Бесплатная юридическая помощь (государственная программа)
+        link: { url: https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna }
+  nextProcedures: []
+  legalBasis:
+    - eli: DU/2006/1635
+    - eli: DU/2013/1650
+    - eli: DU/2022/583
+  sourceIds: [udsc-karta-pobytu-cukr, udsc-pobyt-czasowy, uw-warminsko-mazurski-pobyt-czasowy, eli-oplata-skarbowa, eli-ustawa-o-cudzoziemcach, eli-cudzoziemcy-mos, eli-wygaszenie-ukr, eli-pomoc-obywatelom-ukrainy, eli-kpa, eli-doreczenia-elektroniczne, udsc, uw-mazowiecki-oczekiwanie-na-decyzje, gov-pl-e-doreczenia, biznes-ponaglenie, rpo-przewleklosc-legalizacja-pobytu]

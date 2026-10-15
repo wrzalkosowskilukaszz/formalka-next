@@ -226,3 +226,18 @@ test("advisor: the office's time passing is told once, as information; a quiet w
   assert.equal(outOfQuiet("2026-10-30T21:30", DEFAULT_PREFS.quiet), "2026-10-31T08:00");
   assert.equal(outOfQuiet("2026-10-30T06:00", DEFAULT_PREFS.quiet), "2026-10-30T08:00");
 });
+
+test("residence card: the purpose picks MOS or paper; documents are needed to submit", () => {
+  const RES = bp("residence-card");
+  assert.deepEqual(checkBlueprint(RES, reg), []);
+  const work = planCase(RES, reg, S({ "pobyt_czasowy.purpose": "work" }));
+  assert.deepEqual(work.levels.map((l) => l.id), ["route", "documents", "payment", "attachment", "filing", "confirmation", "summons", "decision", "card"]);
+  assert.deepEqual(work.levels.find((l) => l.id === "payment")!.fees.map((f) => [f.id, f.amountPln]), [["stamp-duty-work", 440], ["card", 100]]);
+  assert.deepEqual(work.levels.find((l) => l.id === "filing")!.dependsOn, ["payment", "documents"]);
+  assert.deepEqual(work.levels.find((l) => l.id === "documents")!.parallelWith, ["payment", "attachment"]);
+  const abroad = planCase(RES, reg, S({ "pobyt_czasowy.purpose": "family_abroad" }));
+  assert.deepEqual(abroad.levels.map((l) => l.id), ["route", "documents", "payment", "who-files", "filing", "summons", "card"]);
+  assert.ok(abroad.levels.flatMap((l) => l.tasks).every((t) => !/mos/i.test(t.id)), "no MOS step on the paper path");
+  for (const p of [work, abroad]) assert.equal(validatePlan(p, reg, S({})).ok, true);
+  assert.equal(nextQuestion(RES, reg, S({}), 0), "pobyt_czasowy.purpose");
+});

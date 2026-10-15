@@ -1,0 +1,180 @@
+# Intake question for the temporary residence permit guide (GUIDES-01). A category answer only
+# (ADR-0009); "I don't know" is always offered (rule 6). The official pages give a different
+# stamp duty and different attachments depending on the purpose of the stay.
+
+- key: pobyt_czasowy.purpose
+  kind: choice
+  question:
+    pl: W jakim celu ta osoba chce mieszkać w Polsce?
+    en: Why does this person want to live in Poland?
+    uk: З якою метою ця особа хоче проживати в Польщі?
+    ru: С какой целью этот человек хочет жить в Польше?
+  whyWeAsk:
+    pl: Od celu pobytu zależy wysokość opłaty skarbowej i to, czy ktoś inny (pracodawca, uczelnia) musi podpisać załącznik do wniosku.
+    en: The purpose decides the stamp duty and whether someone else (an employer, a university) has to sign an attachment to the application.
+    uk: Від мети перебування залежить розмір гербового збору і те, чи має хтось інший (роботодавець, університет) підписати додаток до заяви.
+    ru: От цели пребывания зависит размер гербового сбора и то, должен ли кто-то другой (работодатель, вуз) подписать приложение к заявлению.
+  unknownHelp:
+    pl: Pokażemy wszystkie opłaty i załączniki w oficjalnym brzmieniu, z opisem, kiedy każdy dotyczy.
+    en: We'll show every fee and attachment in the official wording, with when each one applies.
+    uk: Ми покажемо всі збори й додатки в офіційному формулюванні, з поясненням, коли кожен із них застосовується.
+    ru: Мы покажем все сборы и приложения в официальной формулировке, с описанием, когда применяется каждое из них.
+  options:
+    - value: work
+      label:
+        pl: Praca (zezwolenie na pobyt czasowy i pracę albo Niebieska Karta UE)
+        en: Work (temporary residence and work permit, or EU Blue Card)
+        uk: Робота (дозвіл на тимчасове перебування та роботу або Блакитна карта ЄС)
+        ru: Работа (разрешение на временное пребывание и работу или Голубая карта ЕС)
+    - value: seasonal
+      label:
+        pl: Praca sezonowa
+        en: Seasonal work
+        uk: Сезонна робота
+        ru: Сезонная работа
+    - value: study
+      label:
+        pl: Studia
+        en: University studies
+        uk: Навчання в університеті
+        ru: Учеба в вузе
+    - value: internship
+      label:
+        pl: Staż albo wolontariat
+        en: An internship or volunteering
+        uk: Стажування або волонтерство
+        ru: Стажировка или волонтерство
+    - value: family
+      label:
+        pl: Rodzina (połączenie z rodziną), a ta osoba jest już w Polsce
+        en: Family (joining family), and this person is already in Poland
+        uk: Сім'я (возз'єднання з родиною), і ця особа вже в Польщі
+        ru: Семья (воссоединение с семьей), и этот человек уже в Польше
+    # Content audit 2026-10-02: a family application for someone still outside Poland is filed
+    # on paper by the family member in Poland, not in MOS (act art. 106j, 106l; UDSC's notice).
+    # Content audits of F3 (2026-10-04): the paper route covers art. 159 ust. 1 (family of a
+    # foreigner living in Poland) and art. 160 pkt 1, 3, 4, 6 (certain family of a Polish, EU,
+    # EFTA or UK citizen), not art. 158 (a Polish citizen's spouse); the label names both groups
+    # and the "paper-scope" warning separates art. 158.
+    - value: family_abroad
+      label:
+        pl: Rodzina, a ta osoba jest jeszcze za granicą (połączenie z cudzoziemcem mieszkającym w Polsce; też niektórzy członkowie rodziny obywatela Polski, UE lub Wielkiej Brytanii)
+        en: Family, and this person is still outside Poland (joining a foreigner who lives in Poland; also certain family members of a Polish, EU or UK citizen)
+        uk: Сім'я, і ця особа ще за кордоном (возз'єднання з іноземцем, який живе в Польщі; також окремі члени сім'ї громадянина Польщі, ЄС або Великої Британії)
+        ru: Семья, и этот человек еще за границей (воссоединение с иностранцем, который живет в Польше; также отдельные члены семьи гражданина Польши, ЕС или Великобритании)
+    - value: business
+      label:
+        pl: Własna firma albo praca w zarządzie spółki
+        en: Your own business, or work on a company's board
+        uk: Власний бізнес або робота в правлінні компанії
+        ru: Собственный бизнес или работа в правлении компании
+    - value: short
+      label:
+        pl: Krótki pobyt z konkretnego powodu (na przykład wezwanie do urzędu)
+        en: A short stay for a specific reason (for example, summoned by an authority)
+        uk: Коротке перебування з конкретної причини (наприклад, виклик до органу влади)
+        ru: Короткое пребывание по конкретной причине (например, вызов в учреждение)
+    - value: other
+      label:
+        pl: Inny cel
+        en: Another purpose
+        uk: Інша мета
+        ru: Другая цель
+
+# WAIT-1a (2026-10-07): the "waiting for a decision or card" section of the guide. Category answers
+# only (ADR-0009); "I don't know" is always offered (rule 6). These three are asked in that section
+# only (apps/web/lib/waiting.ts), never in "Your situation". Evidence:
+# docs/knowledge/VERIFICATION-wait-1a-sources-2026-10-07.md.
+
+- key: pobyt_czasowy.waiting_for
+  kind: choice
+  question:
+    pl: Na co teraz czekasz w tej sprawie?
+    en: What are you waiting for now in this case?
+    uk: На що ви зараз чекаєте в цій справі?
+    ru: Чего вы сейчас ждете в этом деле?
+  whyWeAsk:
+    pl: Decyzja wojewody i karta pobytu to dwa różne etapy. Każdy ma inne przepisy i inne pytania do urzędu.
+    en: The voivode's decision and the residence card are two different stages. Each has its own rules and its own questions to ask the office.
+    uk: Рішення воєводи і карта побиту є двома різними етапами. Для кожного свої правила і свої запитання до управління.
+    ru: Решение воеводы и карта побыту являются двумя разными этапами. У каждого свои правила и свои вопросы к управлению.
+  unknownHelp:
+    pl: "Najpierw podpowiemy, po czym rozpoznać, na którym etapie jesteś. Niżej oba etapy są zwinięte, każdy pod własnym nagłówkiem: otwórz ten, który Cię dotyczy, albo oba."
+    en: "First we'll say how to tell which stage you're at. Below, both stages are folded under their own headings: open the one that fits you, or both."
+    uk: "Спершу підкажемо, як зрозуміти, на якому ви етапі. Нижче обидва етапи згорнуто, кожен під своїм заголовком: відкрийте той, що вас стосується, або обидва."
+    ru: "Сначала подскажем, как понять, на каком вы этапе. Ниже оба этапа свернуты, каждый под своим заголовком: откройте тот, что относится к вам, или оба."
+  options:
+    - value: decision
+      label:
+        pl: Na decyzję wojewody w sprawie zezwolenia
+        en: The voivode's decision on the permit
+        uk: Рішення воєводи щодо дозволу
+        ru: Решение воеводы по разрешению
+    - value: card
+      label:
+        pl: Na kartę pobytu, bo mam już decyzję o udzieleniu zezwolenia
+        en: The residence card, because I already have the decision granting the permit
+        uk: Карту побиту, бо рішення про надання дозволу в мене вже є
+        ru: Карту побыту, потому что решение о выдаче разрешения у меня уже есть
+
+- key: pobyt_czasowy.filed_via
+  kind: choice
+  question:
+    pl: Jak został złożony wniosek?
+    en: How was the application filed?
+    uk: Як було подано заяву?
+    ru: Как было подано заявление?
+  whyWeAsk:
+    pl: Od tego zależy, który dokument potwierdza złożenie wniosku i jakie zasady stosuje urząd.
+    en: How you filed decides which document confirms the filing and which rules apply to your case.
+    uk: Від цього залежить, який документ підтверджує подання заяви і які правила застосовує управління.
+    ru: От этого зависит, какой документ подтверждает подачу заявления и какие правила применяет управление.
+  unknownHelp:
+    pl: Pokażemy obie drogi, każdą w oficjalnym brzmieniu. Jeśli masz konto w MOS i pobrany z niego dokument UPO, wniosek złożono w MOS.
+    en: We'll show both ways, each in the official wording. If you have a MOS account and a UPO document downloaded from it, the application was filed in MOS.
+    uk: Ми покажемо обидва способи, кожен в офіційному формулюванні. Якщо у вас є обліковий запис у MOS і завантажений звідти документ UPO, заяву подано в MOS.
+    ru: Мы покажем оба способа, каждый в официальной формулировке. Если у вас есть учетная запись в MOS и скачанный оттуда документ UPO, заявление подано в MOS.
+  options:
+    - value: mos
+      label:
+        pl: Przez internet, w systemie MOS
+        en: Online, in MOS
+        uk: Онлайн, у системі MOS
+        ru: Онлайн, в системе MOS
+    - value: paper_before_mos
+      label:
+        pl: Na papierze, zanim wnioski zaczęto składać w MOS
+        en: On paper, before applications moved to MOS
+        uk: На папері, ще до того, як заяви почали подавати в MOS
+        ru: На бумаге, еще до того, как заявления начали подавать в MOS
+
+- key: pobyt_czasowy.office
+  kind: choice
+  question:
+    pl: Który urząd wojewódzki prowadzi Twoją sprawę?
+    en: Which voivodeship office handles your case?
+    uk: Яке воєводське управління веде вашу справу?
+    ru: Какое воеводское управление ведет ваше дело?
+  whyWeAsk:
+    pl: Mazowiecki Urząd Wojewódzki opisuje na swoich stronach, jak pisać do niego w toku sprawy. Stron innych urzędów jeszcze nie sprawdziliśmy, więc ich nie opisujemy.
+    en: The Mazowiecki Voivodeship Office describes on its pages how to write to it while a case is pending. We haven't checked other offices' pages yet, so we don't describe them.
+    uk: Мазовецьке воєводське управління описує на своїх сторінках, як писати до нього, поки справа триває. Сторінок інших управлінь ми ще не перевірили, тож їх не описуємо.
+    ru: Мазовецкое воеводское управление описывает на своих страницах, как писать ему, пока дело рассматривается. Страницы других управлений мы еще не проверили, поэтому их не описываем.
+  unknownHelp:
+    pl: "Pokażemy zasady wspólne dla wszystkich urzędów i podpowiemy, po czym poznać, który urząd prowadzi Twoją sprawę. Jeśli okaże się, że to Mazowiecki Urząd Wojewódzki, wróć i wybierz go: ten urząd ma też własne zasady."
+    en: "We'll show the rules common to all offices and tell you how to find out which office handles your case. If it turns out to be the Mazowiecki Voivodeship Office, come back and choose it: that office also has its own rules."
+    uk: "Ми покажемо правила, спільні для всіх управлінь, і підкажемо, як дізнатися, яке управління веде вашу справу. Якщо виявиться, що це Мазовецьке воєводське управління, поверніться і виберіть його: це управління має також власні правила."
+    ru: "Мы покажем правила, общие для всех управлений, и подскажем, как узнать, какое управление ведет ваше дело. Если окажется, что это Мазовецкое воеводское управление, вернитесь и выберите его: у этого управления есть также собственные правила."
+  options:
+    - value: mazowieckie
+      label:
+        pl: Mazowiecki Urząd Wojewódzki w Warszawie
+        en: The Mazowiecki Voivodeship Office in Warsaw
+        uk: Мазовецьке воєводське управління у Варшаві
+        ru: Мазовецкое воеводское управление в Варшаве
+    - value: other
+      label:
+        pl: Inny urząd wojewódzki
+        en: Another voivodeship office
+        uk: Інше воєводське управління
+        ru: Другое воеводское управление

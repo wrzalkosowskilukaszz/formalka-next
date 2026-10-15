@@ -8,8 +8,12 @@ import type { L10n, Registry } from "./registry.ts";
 export interface LevelDef {
   id: string;
   title: L10n;
-  /** Per route procedure: the step this level stands for. A level without steps holds deadlines only. */
-  steps?: Record<string, string>;
+  /**
+   * Per route procedure: the step this level stands for, or alternative steps of which the
+   * procedure's own conditions pick one (e.g. online in MOS or on paper). A level without steps
+   * holds documents or deadlines only.
+   */
+  steps?: Record<string, string | string[]>;
   /** This level collects the route procedure's documents as its tasks. */
   documents?: boolean;
   /** This level shows the route procedure's fees. */
@@ -78,18 +82,19 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
     if (!p) { add("UNKNOWN_PROCEDURE", routeId); continue; }
     const stepUse = new Map<string, number>();
     for (const l of bp.levels) {
-      const stepId = l.steps?.[routeId];
-      if (stepId === undefined) continue;
-      if (!p.steps.some((s) => s.id === stepId)) add("UNKNOWN_STEP", `${routeId}:${stepId} (level ${l.id})`);
-      stepUse.set(stepId, (stepUse.get(stepId) ?? 0) + 1);
+      for (const stepId of stepsOf(l, routeId)) {
+        if (!p.steps.some((s) => s.id === stepId)) add("UNKNOWN_STEP", `${routeId}:${stepId} (level ${l.id})`);
+        stepUse.set(stepId, (stepUse.get(stepId) ?? 0) + 1);
+      }
     }
     for (const s of p.steps) {
       const n = stepUse.get(s.id) ?? 0;
       if (n !== 1) add(n ? "STEP_ON_SEVERAL_LEVELS" : "STEP_NOT_PLACED", `${routeId}:${s.id}`);
     }
-    const docLevels = bp.levels.filter((l) => l.documents && l.steps?.[routeId] !== undefined);
+    const holds = (l: LevelDef) => !l.steps || stepsOf(l, routeId).length > 0;
+    const docLevels = bp.levels.filter((l) => l.documents && holds(l));
     if (p.documents.length && docLevels.length !== 1) add("DOCUMENTS_NOT_PLACED_ONCE", `${routeId}: ${docLevels.length} levels`);
-    const feeLevels = bp.levels.filter((l) => l.fees && l.steps?.[routeId] !== undefined);
+    const feeLevels = bp.levels.filter((l) => l.fees && holds(l));
     if (p.fees.length && feeLevels.length !== 1) add("FEES_NOT_PLACED_ONCE", `${routeId}: ${feeLevels.length} levels`);
     for (const d of p.deadlines) {
       const place = bp.deadlines[d.id];
@@ -119,9 +124,15 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
       }
     }
     if (!l.steps || Object.keys(l.steps).length === 0) {
-      const holds = Object.values(bp.deadlines).some((d) => d.level === l.id);
+      const holds = l.documents || l.fees || Object.values(bp.deadlines).some((d) => d.level === l.id);
       if (!holds) add("EMPTY_LEVEL", l.id);
     }
   }
   return issues;
+}
+
+/** The step ids a level stands for on a route (one, several alternatives, or none). */
+export function stepsOf(l: LevelDef, routeId: string): string[] {
+  const s = l.steps?.[routeId];
+  return s === undefined ? [] : Array.isArray(s) ? s : [s];
 }

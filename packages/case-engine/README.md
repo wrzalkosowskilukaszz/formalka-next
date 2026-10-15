@@ -10,8 +10,8 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 15 tests on the real snapshots (Node 22.18+, no build step)
-node tools/build-browser.mjs     # dist/case-engine.browser.js: engine + data, global FormalkaEngine
+npm test                         # 16 tests on the real snapshots (Node 22.18+, no build step)
+node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
 
 ## What it does
@@ -54,7 +54,7 @@ node tools/build-browser.mjs     # dist/case-engine.browser.js: engine + data, g
 ```js
 const E = window.FormalkaEngine;
 E.registryVersion            // "formalka@04057ef"
-E.blueprintIds               // ["address-registration", "citizenship", "language-certificate"]
+E.blueprintIds               // ["address-registration", "citizenship", "language-certificate", "residence-card"]
 const state = { facts: {}, tasks: {}, events: [], approved: false }; // routeChoice when the user picks a route
 const q = E.nextQuestion("citizenship", state, askedCount);       // { key, question, whyWeAsk, options, unknownHelp } | null
 state.facts[q.key] = "yes" /* or E.UNKNOWN for "Nie wiem" */;
