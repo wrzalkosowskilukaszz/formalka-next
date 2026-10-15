@@ -241,3 +241,25 @@ test("residence card: the purpose picks MOS or paper; documents are needed to su
   for (const p of [work, abroad]) assert.equal(validatePlan(p, reg, S({})).ok, true);
   assert.equal(nextQuestion(RES, reg, S({}), 0), "pobyt_czasowy.purpose");
 });
+
+test("offices: only from the registry's office layer, by the user's city; visit messages carry them", () => {
+  const WAW = { teryt: "1465011", name: "Warszawa" }, KRK = { teryt: "1261011", name: "Kraków" };
+  const facts = { "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" };
+  const fileLevel = (place?: typeof WAW) => planCase(ADDR, reg, S(facts, { place })).levels.find((l) => l.id === "file")!;
+  assert.equal(fileLevel().office?.needsPlace, true);
+  const waw = fileLevel(WAW).office!;
+  assert.equal(waw.offices.length, 18);
+  assert.ok(waw.offices.every((o) => o.address?.quotes.length && o.booking === "https://rezerwacje.um.warszawa.pl/"));
+  assert.equal(fileLevel(KRK).office!.offices.length, 3);
+  assert.equal(fileLevel({ teryt: "0264011", name: "Wrocław" }).office!.noneForPlace, true);
+  const vo = (place: typeof WAW) => planCase(CIT, reg, S({ ...RESIDENT, "citizenship.language": "yes" }, { routeChoice: "citizenship-recognition", place })).levels.find((l) => l.id === "filing")!.office!.offices[0];
+  assert.deepEqual([vo(WAW).id, vo(WAW).source, vo(WAW).website], ["uw-mazowiecki", "institution", undefined]); // the registry has no website for it
+  assert.deepEqual([vo(KRK).id, vo(KRK).website], ["uw-malopolski", "https://www.malopolska.uw.gov.pl/"]);
+  const st = S(facts, { ...ACTIVE, place: WAW, events: [
+    { type: "arrival_at_address", date: "2026-10-28", by: "user" },
+    { type: "visit_planned", date: "2026-10-30", time: "10:00", level: "file", by: "user" },
+  ] });
+  const prep = agenda({ caseId: "c3", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs: CONSENT, now: NOW }).find((i) => i.kind === "visit_prep")!;
+  assert.match(prep.message.pl, /Urzędy dla miejscowości Warszawa: 18/);
+  assert.match(prep.message.pl, /Rezerwacja wizyty: https:\/\/rezerwacje\.um\.warszawa\.pl\//);
+});

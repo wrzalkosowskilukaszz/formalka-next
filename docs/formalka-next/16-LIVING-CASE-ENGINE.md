@@ -93,7 +93,7 @@ Guards, each with a test:
 **Consent model** (owner, 2026-10-15): **one consent per case** at plan approval ("Maciek może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy"). After that the advisor acts without asking; every action is in the case history and revocable.
 
 ## 7. Quality evidence (2026-10-16)
-- **16 tests** on the real snapshots, all passing.
+- **17 tests** on the real snapshots, all passing.
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -115,7 +115,10 @@ Guards, each with a test:
 
 ## 9. Not done / open
 - **Unverified rules:** the KPA counting and the holiday list (§5).
-- **Office data:** offices (addresses, phones, booking) are not in the snapshots, so no "zadzwoń pod numer X" yet. Production has an office registry (21 offices synced on 2026-10-15); snapshotting it is the next step.
+- **Office data:** offices come from Formalka's office layer (`offices.ts`, added in the night): Warsaw (18 delegations) and Kraków (3 offices), with quoted addresses, hours and booking links, and the voivodeship office by its registry TERYT code. Gaps:
+  - no phone numbers in the registry, so no "zadzwoń pod numer X" yet;
+  - no municipal offices outside Warsaw and Kraków;
+  - the Masovian Voivodeship Office has no website in the registry (a production content gap).
 - **AI layer:** the AI intake (free text → fact candidates) is not built (Phase 4); the companion's free-form answers are not built.
 - **Content:** citizenship and temporary residence carry open inventory findings, so their values appear as labelled examples only.
 - **Gaps outside the engine:** the changes feed, persistence (case store), encryption and native notifications are outside the engine (09 §2).

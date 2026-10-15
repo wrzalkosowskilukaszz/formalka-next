@@ -10,7 +10,7 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 16 tests on the real snapshots (Node 22.18+, no build step)
+npm test                         # 17 tests on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
 
@@ -25,6 +25,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 | `advisor.ts` | What Maciek does without being asked (below) |
 | `messages.ts` | Polish templates. Gender-neutral, "asystent AI", never "umówiłem / wysłałem / złożyłem / wszystko już wiem" (a test scans every message) |
 | `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57 [UNVERIFIED]), the two readings of "najpóźniej w N dniu", Polish holidays (Easter-based [UNVERIFIED list]) |
+| `offices.ts` | Which office, from the registry's office layer and the user's city (TERYT, on the device): quoted addresses, hours, booking links; voivodeship offices by their registry TERYT code. Never a guessed address |
 | `browser.ts` | The browser entry with the data embedded |
 
 **Route** (`planner.ts`) can be:
@@ -55,7 +56,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 const E = window.FormalkaEngine;
 E.registryVersion            // "formalka@04057ef"
 E.blueprintIds               // ["address-registration", "citizenship", "language-certificate", "residence-card"]
-const state = { facts: {}, tasks: {}, events: [], approved: false }; // routeChoice when the user picks a route
+const state = { facts: {}, tasks: {}, events: [], approved: false, place: { teryt: "1465011", name: "Warszawa" } }; // routeChoice when the user picks a route
 const q = E.nextQuestion("citizenship", state, askedCount);       // { key, question, whyWeAsk, options, unknownHelp } | null
 state.facts[q.key] = "yes" /* or E.UNKNOWN for "Nie wiem" */;
 const plan = E.plan("citizenship", state);                          // { route, levels[], openFacts, unsure, assumptions, status }
@@ -81,5 +82,5 @@ Events the blueprints accept:
 - **Content.** Only 6 procedures are snapshotted: address registration, PESEL, citizenship by recognition and by grant, the language certificate, and temporary residence (the residence card).
 - **Dates.** The KPA counting and the holiday list are implemented from memory and marked [UNVERIFIED]. Quote them from the acts (ELI) before any product use. Reminders always use the earlier date, so a wrong shift can only make a reminder early, never late.
 - **Citizenship content.** It was checked in a first pass only (October inventory). Show values as labelled examples.
-- **Office data.** No office addresses or phone numbers (not in the snapshots).
+- **Office data.** Offices exist only for Warsaw and Kraków (municipal) and the 16 voivodeship offices (name and website only). The registry has no phone numbers.
 - **Hashing.** The FNV-1a hash is for the lab; production would use SHA-256.

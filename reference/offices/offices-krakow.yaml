@@ -1,0 +1,54 @@
+# Kraków: the population records units (Referaty Ewidencji Ludności i Dowodów Osobistych) of
+# the Wydział Spraw Administracyjnych, as listed on the city's PESEL service card (SA-34).
+
+- id: krakow-wsa-i-vii
+  institutionId: um-krakow
+  sourceId: krakow-bip-cudzoziemcy
+  name:
+    pl: "Referat Ewidencji Ludności i Dowodów Osobistych dla Dzielnic I-VII (Śródmieście, Krowodrza)"
+    en: "Population records office, Śródmieście, Krowodrza"
+    uk: "Відділ обліку населення, Śródmieście, Krowodrza"
+  address:
+    value: "al. Powstania Warszawskiego 10, 31-541 Kraków, Centrum Administracyjne, I piętro"
+    quotes:
+      - page: https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+        text: "al. Powstania Warszawskiego 10, 31-541 Kraków, Centrum Administracyjne, I piętro"
+  openingHours: &krakow-hours
+    value: "poniedziałek-środa i piątek: 7.40 – 18.00, czwartek: 8.00 – 18.00"
+    quotes:
+      - page: https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+        text: "poniedziałek-środa i piątek: 7.40 – 18.00, czwartek: 8.00 – 18.00"
+  jurisdiction: ["1261011"]
+  booking: { url: "https://umawianiewizyt.um.krakow.pl/branch/49" }
+
+- id: krakow-wsa-viii-xiii
+  institutionId: um-krakow
+  sourceId: krakow-bip-cudzoziemcy
+  name:
+    pl: "Referat Ewidencji Ludności i Dowodów Osobistych dla Dzielnic VIII-XIII (Podgórze)"
+    en: "Population records office, Podgórze"
+    uk: "Відділ обліку населення, Podgórze"
+  address:
+    value: "ul. Wielicka 28A, 30-553 Kraków"
+    quotes:
+      - page: https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+        text: "ul. Wielicka 28A, 30-553 Kraków"
+  openingHours: *krakow-hours
+  jurisdiction: ["1261011"]
+  booking: { url: "https://umawianiewizyt.um.krakow.pl/branch/53" }
+
+- id: krakow-wsa-xiv-xviii
+  institutionId: um-krakow
+  sourceId: krakow-bip-cudzoziemcy
+  name:
+    pl: "Referat Ewidencji Ludności i Dowodów Osobistych dla Dzielnic XIV-XVIII (Nowa Huta)"
+    en: "Population records office, Nowa Huta"
+    uk: "Відділ обліку населення, Nowa Huta"
+  address:
+    value: "os. Zgody 2, 31-949 Kraków"
+    quotes:
+      - page: https://www.bip.krakow.pl/uslugi/SA-34&metka=1
+        text: "os. Zgody 2, 31-949 Kraków"
+  openingHours: *krakow-hours
+  jurisdiction: ["1261011"]
+  booking: { url: "https://umawianiewizyt.um.krakow.pl/branch/10" }

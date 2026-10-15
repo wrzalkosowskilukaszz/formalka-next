@@ -7,11 +7,14 @@ import { type Blueprint, blueprintFromData, checkBlueprint } from "./blueprint.t
 import { dayPl, dueRangePl, msg, PHRASES_NEVER } from "./messages.ts";
 import { type CasePlan, type CaseState, planCase } from "./planner.ts";
 import { nextQuestion } from "./questions.ts";
-import { type FactDef, type Procedure, registryFromData } from "./registry.ts";
+import { type FactDef, type Institution, type Office, type Procedure, registryFromData } from "./registry.ts";
 import { UNKNOWN } from "./rules.ts";
 import { validatePlan } from "./validator.ts";
 
-const reg = registryFromData(data.procedures as unknown as Procedure[][], data.facts as unknown as FactDef[][], data.version);
+const reg = registryFromData(
+  data.procedures as unknown as Procedure[][], data.facts as unknown as FactDef[][], data.version,
+  data.offices as unknown as Office[][], data.institutions as unknown as Institution[],
+);
 const blueprints = new Map<string, Blueprint>(
   Object.entries(data.blueprints).map(([id, b]) => [id, blueprintFromData(b, id)]),
 );

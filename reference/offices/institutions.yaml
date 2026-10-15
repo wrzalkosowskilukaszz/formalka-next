@@ -1,0 +1,169 @@
+# Institutions that publish registered sources. Loaded by `load-content` (P1-06).
+# kinds: ministry, central_agency, voivodeship_office, county_office, municipal_office, other_public
+- id: mc
+  namePl: Ministerstwo Cyfryzacji
+  kind: ministry
+  website: { url: "https://www.gov.pl/web/cyfryzacja" }
+- id: mswia
+  namePl: Ministerstwo Spraw Wewnętrznych i Administracji
+  kind: ministry
+  website: { url: "https://www.gov.pl/web/mswia" }
+- id: ms
+  namePl: Ministerstwo Sprawiedliwości
+  kind: ministry
+  website: { url: "https://www.gov.pl/web/sprawiedliwosc" }
+- id: mrit
+  namePl: Ministerstwo Rozwoju i Technologii
+  kind: ministry
+  website: { url: "https://www.gov.pl/web/rozwoj-technologia" }
+- id: udsc
+  namePl: Urząd do Spraw Cudzoziemców
+  kind: central_agency
+  website: { url: "https://www.gov.pl/web/udsc" }
+- id: kancelaria-sejmu
+  namePl: Kancelaria Sejmu
+  kind: other_public
+  website: { url: "https://www.sejm.gov.pl/" }
+- id: gus
+  namePl: Główny Urząd Statystyczny
+  kind: central_agency
+  website: { url: "https://stat.gov.pl/" }
+- id: psz
+  namePl: Publiczne służby zatrudnienia
+  kind: other_public
+  website: { url: "https://psz.praca.gov.pl/" }
+- id: pip
+  namePl: Państwowa Inspekcja Pracy
+  kind: central_agency
+  website: { url: "https://www.pip.gov.pl/" }
+- id: zus
+  namePl: Zakład Ubezpieczeń Społecznych
+  kind: central_agency
+  website: { url: "https://www.zus.pl/" }
+- id: mz
+  namePl: Ministerstwo Zdrowia
+  kind: ministry
+  website: { url: "https://www.gov.pl/web/zdrowie" }
+- id: nfz
+  namePl: Narodowy Fundusz Zdrowia
+  kind: central_agency
+  website: { url: "https://www.nfz.gov.pl/" }
+- id: kas
+  namePl: Krajowa Administracja Skarbowa
+  kind: central_agency
+  website: { url: "https://www.gov.pl/web/kas" }
+- id: straz-graniczna
+  namePl: Straż Graniczna
+  kind: central_agency
+  website: { url: "https://www.strazgraniczna.pl/" }
+- id: uw-mazowiecki
+  namePl: Mazowiecki Urząd Wojewódzki w Warszawie
+  kind: voivodeship_office
+  teryt: "14"
+- id: uw-dolnoslaski
+  namePl: Dolnośląski Urząd Wojewódzki we Wrocławiu
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/dolnoslaski-uw" }
+  teryt: "02"
+- id: uw-warminsko-mazurski
+  namePl: Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-warminsko-mazurski" }
+  teryt: "28"
+- id: uw-malopolski
+  namePl: Małopolski Urząd Wojewódzki w Krakowie
+  kind: voivodeship_office
+  website: { url: "https://www.malopolska.uw.gov.pl/" }
+  teryt: "12"
+- id: uw-lubelski
+  namePl: Lubelski Urząd Wojewódzki w Lublinie
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-lubelski" }
+  teryt: "06"
+- id: uw-lubuski
+  namePl: Lubuski Urząd Wojewódzki w Gorzowie Wielkopolskim
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-lubuski" }
+  teryt: "08"
+- id: uw-lodzki
+  namePl: Łódzki Urząd Wojewódzki w Łodzi
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-lodzki" }
+  teryt: "10"
+- id: uw-opolski
+  namePl: Opolski Urząd Wojewódzki w Opolu
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-opolski" }
+  teryt: "16"
+- id: uw-podkarpacki
+  namePl: Podkarpacki Urząd Wojewódzki w Rzeszowie
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-podkarpacki" }
+  teryt: "18"
+- id: uw-podlaski
+  namePl: Podlaski Urząd Wojewódzki w Białymstoku
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-podlaski" }
+  teryt: "20"
+- id: uw-pomorski
+  namePl: Pomorski Urząd Wojewódzki w Gdańsku
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-pomorski" }
+  teryt: "22"
+- id: uw-slaski
+  namePl: Śląski Urząd Wojewódzki w Katowicach
+  kind: voivodeship_office
+  website: { url: "https://www.katowice.uw.gov.pl/" }
+  teryt: "24"
+- id: uw-swietokrzyski
+  namePl: Świętokrzyski Urząd Wojewódzki w Kielcach
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-swietokrzyski" }
+  teryt: "26"
+- id: uw-wielkopolski
+  namePl: Wielkopolski Urząd Wojewódzki w Poznaniu
+  kind: voivodeship_office
+  website: { url: "https://www.poznan.uw.gov.pl/" }
+  teryt: "30"
+- id: uw-zachodniopomorski
+  namePl: Zachodniopomorski Urząd Wojewódzki w Szczecinie
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-zachodniopomorski" }
+  teryt: "32"
+- id: uw-kujawsko-pomorski
+  namePl: Kujawsko-Pomorski Urząd Wojewódzki w Bydgoszczy
+  kind: voivodeship_office
+  website: { url: "https://www.gov.pl/web/uw-kujawsko-pomorski" }
+  teryt: "04"
+- id: um-warszawa
+  namePl: Urząd m.st. Warszawy
+  kind: municipal_office
+  website: { url: "https://warszawa19115.pl/" }
+  teryt: "1465011"
+- id: up-warszawa
+  namePl: Urząd Pracy m.st. Warszawy
+  kind: county_office
+  website: { url: "https://warszawa.praca.gov.pl/" }
+- id: up-wroclaw
+  namePl: Powiatowy Urząd Pracy we Wrocławiu
+  kind: county_office
+  website: { url: "https://wroclaw.praca.gov.pl/" }
+  teryt: "0264011"
+- id: um-wroclaw
+  namePl: Urząd Miejski Wrocławia
+  kind: municipal_office
+  website: { url: "https://bip.um.wroc.pl/" }
+  teryt: "0264011"
+- id: um-krakow
+  namePl: Urząd Miasta Krakowa
+  kind: municipal_office
+  website: { url: "https://www.bip.krakow.pl/" }
+  teryt: "1261011"
+- id: pkpzjpjo
+  namePl: Państwowa Komisja do spraw Poświadczania Znajomości Języka Polskiego jako Obcego
+  kind: other_public
+  website: { url: "https://certyfikatpolski.pl/" }
+- id: rpo
+  namePl: Rzecznik Praw Obywatelskich
+  kind: other_public
+  website: { url: "https://bip.brpo.gov.pl/" }

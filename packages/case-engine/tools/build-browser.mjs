@@ -9,13 +9,16 @@ import { parse } from "yaml";
 const pkg = join(dirname(fileURLToPath(import.meta.url)), "..");
 const lab = join(pkg, "..", "..");
 const ref = join(lab, "reference");
-const procedures = [], facts = [];
+const procedures = [], facts = [], offices = [];
+let institutions = [];
 for (const sub of readdirSync(ref, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort()) {
   for (const name of readdirSync(join(ref, sub)).sort()) {
     if (!name.endsWith(".yaml")) continue;
     const text = () => readFileSync(join(ref, sub, name), "utf8");
     if (name.startsWith("procedure-")) procedures.push(parse(text()));
     else if (name.startsWith("facts-")) facts.push(parse(text()));
+    else if (name.startsWith("offices-")) offices.push(parse(text()));
+    else if (name === "institutions.yaml") institutions = parse(text());
   }
 }
 const blueprints = {};
@@ -36,11 +39,12 @@ const strip = (v) => {
   return v;
 };
 procedures.splice(0, procedures.length, ...procedures.map(strip));
+offices.splice(0, offices.length, ...offices.map(strip));
 facts.splice(0, facts.length, ...facts.map(strip));
 const readme = readFileSync(join(ref, "README.md"), "utf8");
 const version = `formalka@${/at \*\*([0-9a-f]{7,})\*\*/.exec(readme)?.[1] ?? "unknown"}`;
 mkdirSync(join(pkg, "dist"), { recursive: true });
-writeFileSync(join(pkg, "dist", "data.json"), JSON.stringify({ version, builtAt: new Date().toISOString().slice(0, 10), procedures, facts, blueprints }));
+writeFileSync(join(pkg, "dist", "data.json"), JSON.stringify({ version, builtAt: new Date().toISOString().slice(0, 10), procedures, facts, offices, institutions, blueprints }));
 await build({
   entryPoints: [join(pkg, "src", "browser.ts")], bundle: true, format: "iife", platform: "browser",
   target: "es2020", outfile: join(pkg, "dist", "case-engine.browser.js"), legalComments: "none",

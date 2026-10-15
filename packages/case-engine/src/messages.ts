@@ -37,10 +37,17 @@ export const msg = {
     `Dziś mija bezpieczny termin na krok „${levelTitle}”. ${description}`,
   officeDeadlinePassed: (description: string) =>
     `Minął czas, jaki według przepisów ma urząd: ${description} Jeśli nie masz jeszcze odpowiedzi, możesz zapytać w urzędzie, na jakim etapie jest sprawa.`,
-  visitPrep: (time: string, levelTitle: string, bring: string[], fees: string[]) =>
+  visitPrep: (time: string, levelTitle: string, bring: string[], fees: string[], office: string[] = []) =>
     [`Jutro o ${time}: ${levelTitle}. Weź ze sobą:`, ...bring.map((b) => `• ${b}`),
       ...(fees.length ? ["Opłaty:", ...fees.map((f) => `• ${f}`)] : []),
+      ...office,
       "Każda pozycja ma w planie swoje źródło."].join("\n"),
+  officeOne: (name: string, address: string, hours?: string) =>
+    `Urząd: ${name}, ${address}${hours ? `. Godziny: ${hours}` : ""}.`,
+  officeMany: (n: number, place: string) => `Urzędy dla miejscowości ${place}: ${n}. Adresy i godziny są w planie.`,
+  officeWebsite: (name: string, url: string) => `Urząd: ${name}. Adres i godziny przyjęć sprawdź na jego stronie: ${url}`,
+  booking: (url: string) => `Rezerwacja wizyty: ${url}`,
+  officeUnknown: () => "Nie mamy w naszych źródłach adresu urzędu dla Twojej miejscowości. Sprawdź go na stronie urzędu.",
   visitMorning: (time: string, levelTitle: string) =>
     `Dziś o ${time}: ${levelTitle}. Lista rzeczy do zabrania jest w planie. Powodzenia!`,
   followUp: () => "Jak poszło w urzędzie? Daj znać, a zaktualizuję plan.",

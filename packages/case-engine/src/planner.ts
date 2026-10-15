@@ -6,6 +6,7 @@ import { type Blueprint, type LevelDef, stepsOf } from "./blueprint.ts";
 import { type Due, dueDate, type Iso } from "./dates.ts";
 import type { L10n, Procedure, Quote, Registry, Statement } from "./registry.ts";
 import { ruleRef } from "./registry.ts";
+import { type OfficeAnswer, officesFor, type Place } from "./offices.ts";
 import { type Answers, evaluate, type Outcome, type Rule, UNKNOWN } from "./rules.ts";
 
 export type TaskStatus = "todo" | "in_progress" | "done" | "not_needed";
@@ -23,6 +24,8 @@ export interface CaseState {
   tasks: Record<string, TaskStatus>;
   events: RecordedEvent[];
   approved?: boolean;
+  /** City-level place (TERYT), for the office. Not a catalogue fact; non-identifying; on the device. */
+  place?: Place;
 }
 export type LevelState =
   | "unconfirmed" | "locked" | "available" | "in_progress" | "waiting_office" | "returned" | "done";
@@ -49,6 +52,8 @@ export interface PlanLevel {
   dependsOn: string[]; parallelWith: string[];
   tasks: PlanTask[]; fees: PlanFee[]; deadlines: PlanDeadline[];
   stepRef?: string; completesWith?: string;
+  /** Where to go for this level's step, from the registry's office layer. */
+  office?: OfficeAnswer;
 }
 export interface RouteCandidate {
   procedureId: string; title: L10n;
@@ -268,6 +273,7 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
         id: l.id, order: order++, title: l.title, state: "available", waiting: !!l.waiting,
         dependsOn: deps, parallelWith: [], tasks, fees, deadlines,
         ...(step ? { stepRef: ref("step", step.id) } : {}),
+        ...(step?.officeKind ? { office: officesFor(reg, step.officeKind, state.place) } : {}),
         ...(l.completesWith ? { completesWith: l.completesWith } : {}),
       });
     }
@@ -365,7 +371,7 @@ export function factsOf(rule: Rule): string[] {
 
 function hashInputs(bp: Blueprint, reg: Registry, s: CaseState): string {
   const text = JSON.stringify([
-    bp.id, reg.version, s.routeChoice ?? null, !!s.approved,
+    bp.id, reg.version, s.routeChoice ?? null, !!s.approved, s.place?.teryt ?? null,
     Object.entries(s.facts).sort(), Object.entries(s.tasks).sort(),
     [...s.events].map((e) => [e.type, e.date, e.time ?? "", e.outcome ?? "", e.by]).sort(),
   ]);

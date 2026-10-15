@@ -83,7 +83,7 @@ export function agenda(input: AgendaInput): AgendaItem[] {
       continue;
     }
     const { bring, fees, basis } = visitPack(plan, level);
-    push("visit_prep", addDays(e.date, -1), "18:00", msg.visitPrep(e.time, level.title.pl, bring, fees), basis, level.id);
+    push("visit_prep", addDays(e.date, -1), "18:00", msg.visitPrep(e.time, level.title.pl, bring, fees, officeLines(level, state)), basis, level.id);
     push("visit_morning", e.date, "08:00", msg.visitMorning(e.time, level.title.pl), basis, level.id);
     push("follow_up", e.date, plusHours(e.time, 3), msg.followUp(), basis, level.id, msg.followUpAnswers);
   }
@@ -138,6 +138,24 @@ function visitPack(plan: CasePlan, level: PlanLevel) {
     fees: fees.map((f) => (f.exemption?.outcome === "applies" ? `${f.purpose.pl}: zwolnienie (szczegóły w planie)` : `${f.purpose.pl}: ${f.amountPln} zł`)),
     basis: [...basisOf(level), ...docs.map((t) => t.ruleRef), ...fees.map((f) => f.ruleRef)],
   };
+}
+
+/** The office part of a visit message: only what the registry holds, with its links. */
+function officeLines(level: PlanLevel, state: CaseState): string[] {
+  const o = level.office;
+  if (!o || o.needsPlace) return [];
+  if (o.noneForPlace) return [msg.officeUnknown()];
+  const lines: string[] = [];
+  if (o.offices.length === 1) {
+    const x = o.offices[0];
+    lines.push(x.address ? msg.officeOne(x.name.pl, x.address.value, x.openingHours?.value)
+      : x.website ? msg.officeWebsite(x.name.pl, x.website) : `Urząd: ${x.name.pl}.`);
+  } else {
+    lines.push(msg.officeMany(o.offices.length, state.place?.name ?? ""));
+  }
+  const bookings = [...new Set(o.offices.map((x) => x.booking).filter((u): u is string => !!u))];
+  if (bookings.length === 1) lines.push(msg.booking(bookings[0]));
+  return lines;
 }
 
 function plusHours(time: string, h: number): string {

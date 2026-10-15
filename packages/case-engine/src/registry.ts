@@ -36,11 +36,19 @@ export interface FactOption { value: string; label: L10n }
 export interface FactDef {
   key: string; kind: string; question: L10n; whyWeAsk?: L10n; unknownHelp?: L10n; options?: FactOption[];
 }
+export interface Office {
+  id: string; institutionId: string; name: L10n; address?: Quoted<string>; openingHours?: Quoted<string>;
+  /** TERYT units the office serves. */
+  jurisdiction: string[]; booking?: { url: string };
+}
+export interface Institution { id: string; namePl: string; kind: string; website?: { url: string }; teryt?: string }
 export interface Registry {
   /** Where the content comes from, e.g. "formalka@04057ef"; part of every ruleRef. */
   version: string;
   procedures: Map<string, Procedure>;
   facts: Map<string, FactDef>;
+  offices: Office[];
+  institutions: Map<string, Institution>;
 }
 
 function need(cond: unknown, what: string): asserts cond {
@@ -61,7 +69,10 @@ function checkProcedure(p: Procedure, file: string): Procedure {
 }
 
 /** Builds a registry from already-parsed content (the browser build embeds it as JSON). */
-export function registryFromData(procedureLists: Procedure[][], factLists: FactDef[][], version: string): Registry {
+export function registryFromData(
+  procedureLists: Procedure[][], factLists: FactDef[][], version: string,
+  officeLists: Office[][] = [], institutionList: Institution[] = [],
+): Registry {
   const procedures = new Map<string, Procedure>();
   const facts = new Map<string, FactDef>();
   for (const list of procedureLists) {
@@ -76,7 +87,12 @@ export function registryFromData(procedureLists: Procedure[][], factLists: FactD
       facts.set(f.key, f);
     }
   }
-  return { version, procedures, facts };
+  const offices = officeLists.flat();
+  for (const o of offices) {
+    need(o.id && o.institutionId && Array.isArray(o.jurisdiction), `office without id, institution or jurisdiction`);
+    for (const q of [o.address, o.openingHours]) if (q) need(q.quotes?.length, `office ${o.id}: unquoted address or hours`);
+  }
+  return { version, procedures, facts, offices, institutions: new Map(institutionList.map((i) => [i.id, i])) };
 }
 
 /** `procedure@registryVersion:kind:item`: what every plan item points at. */

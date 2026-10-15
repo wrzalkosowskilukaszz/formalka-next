@@ -1,0 +1,300 @@
+# Offices (P1-14 subset): where to go, per city. Validated by the `Office` schema
+# (packages/domain/src/knowledge/office.ts) and loaded by the `load-procedures` job: every
+# address and opening hours value must appear in its quote, every quote must be on the latest
+# snapshot of its official page, and every booking link must be in the link registry.
+# `jurisdiction` lists the TERYT units an office serves (here: the whole city).
+#
+# Warsaw: the city's district offices (delegatury Biura Administracji i Spraw Obywatelskich)
+# for population records (ewidencja ludności), as listed on warszawa19115.pl.
+
+- id: warszawa-baiso-bemowo
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Bemowo"
+    en: "District office, Bemowo"
+    uk: "Районне відділення, Bemowo"
+  address:
+    value: "ul. Powstańców Śląskich 70, 01-381 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Powstańców Śląskich 70, 01-381 Warszawa"
+  openingHours: &warszawa-hours
+    value: "poniedziałek: 8.00–18.00 wtorek–piątek: 8.00–16.00"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Interesantów przyjmujemy: poniedziałek: 8.00–18.00 wtorek–piątek: 8.00–16.00"
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-bialoleka
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Białołęka"
+    en: "District office, Białołęka"
+    uk: "Районне відділення, Białołęka"
+  address:
+    value: "ul. Modlińska 197, 03-122 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Modlińska 197, 03-122 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-bielany
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Bielany"
+    en: "District office, Bielany"
+    uk: "Районне відділення, Bielany"
+  address:
+    value: "ul. Żeromskiego 29, 01-882 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Żeromskiego 29, 01-882 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-mokotow
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Mokotów"
+    en: "District office, Mokotów"
+    uk: "Районне відділення, Mokotów"
+  address:
+    value: "ul. Rakowiecka 25/27, 05-517 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "sprawy związane z meldunkami, dowodami osobistymi oraz wyborami: ul. Rakowiecka 25/27, 05-517 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-ochota
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Ochota"
+    en: "District office, Ochota"
+    uk: "Районне відділення, Ochota"
+  address:
+    value: "ul. Grójecka 17a, 02-021 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Grójecka 17a, 02-021 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-praga-poludnie
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Praga-Południe"
+    en: "District office, Praga-Południe"
+    uk: "Районне відділення, Praga-Południe"
+  address:
+    value: "ul. Grochowska 274, 03-841 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Grochowska 274, 03-841 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-praga-polnoc
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Praga-Północ"
+    en: "District office, Praga-Północ"
+    uk: "Районне відділення, Praga-Północ"
+  address:
+    value: "ul. Ks. I. Kłopotowskiego 15, 03-708 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Ks. I. Kłopotowskiego 15, 03-708 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-rembertow
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Rembertów"
+    en: "District office, Rembertów"
+    uk: "Районне відділення, Rembertów"
+  address:
+    value: "Al. gen. A. Chruściela \"Montera\" 28, 04-401 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Al. gen. A. Chruściela \"Montera\" 28, 04-401 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-srodmiescie
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Wydział Ewidencji Ludności i Rejestracji Pojazdów dla Dzielnicy Śródmieście"
+    en: "District office, Śródmieście"
+    uk: "Районне відділення, Śródmieście"
+  address:
+    value: "ul. Kruczkowskiego 2, 00-412"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Kruczkowskiego 2, 00-412 Warszawae"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-targowek
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Targówek"
+    en: "District office, Targówek"
+    uk: "Районне відділення, Targówek"
+  address:
+    value: "ul. Kondratowicza 20, 00-983 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Kondratowicza 20, 00-983 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-ursus
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Ursus"
+    en: "District office, Ursus"
+    uk: "Районне відділення, Ursus"
+  address:
+    value: "Pl. Czerwca 1976 r. nr 1, 02-495 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Pl. Czerwca 1976 r. nr 1, 02-495 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-ursynow
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Ursynów"
+    en: "District office, Ursynów"
+    uk: "Районне відділення, Ursynów"
+  address:
+    value: "Al. Komisji Edukacji Narodowej 61, 02-777 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Al. Komisji Edukacji Narodowej 61, 02-777 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-wawer
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Wawer"
+    en: "District office, Wawer"
+    uk: "Районне відділення, Wawer"
+  address:
+    value: "ul. Żegańska 1, 04-713 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. Żegańska 1, 04-713 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-wesola
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Wesoła"
+    en: "District office, Wesoła"
+    uk: "Районне відділення, Wesoła"
+  address:
+    value: "ul. 1 Praskiego Pułku 33, 05-075 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. 1 Praskiego Pułku 33, 05-075 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-wilanow
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Wilanów"
+    en: "District office, Wilanów"
+    uk: "Районне відділення, Wilanów"
+  address:
+    value: "ul. F. Klimczaka 2, 02-797 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. F. Klimczaka 2, 02-797 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-wlochy
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Włochy"
+    en: "District office, Włochy"
+    uk: "Районне відділення, Włochy"
+  address:
+    value: "Al. Krakowska 257, 02-133 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Al. Krakowska 257, 02-133 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-wola
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Wola"
+    en: "District office, Wola"
+    uk: "Районне відділення, Wola"
+  address:
+    value: "Al. „Solidarności” 90, 01-003 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "Al. „Solidarności” 90, 01-003 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
+
+- id: warszawa-baiso-zoliborz
+  institutionId: um-warszawa
+  sourceId: warszawa-19115-cudzoziemcy
+  name:
+    pl: "Delegatura dla Dzielnicy Żoliborz"
+    en: "District office, Żoliborz"
+    uk: "Районне відділення, Żoliborz"
+  address:
+    value: "ul. J. Słowackiego 6/8, 01-627 Warszawa"
+    quotes:
+      - page: https://warszawa19115.pl/-/sprawdz-gdzie-sie-zameldujesz-wyrobisz-dowod-osobisty-prawo-jazdy-i-zarejestrujesz-pojazd
+        text: "ul. J. Słowackiego 6/8, 01-627 Warszawa"
+  openingHours: *warszawa-hours
+  jurisdiction: ["1465011"]
+  booking: { url: "https://rezerwacje.um.warszawa.pl/" }
