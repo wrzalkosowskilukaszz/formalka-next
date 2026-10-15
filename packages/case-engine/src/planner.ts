@@ -11,6 +11,8 @@ import { type Answers, evaluate, type Outcome, type Rule, UNKNOWN } from "./rule
 export type TaskStatus = "todo" | "in_progress" | "done" | "not_needed";
 export interface RecordedEvent {
   type: string; date: Iso; time?: string; outcome?: string;
+  /** The level an event belongs to (a planned visit or call). */
+  level?: string;
   /** Who says so: the user, or official evidence the user has (a stamp, a letter). */
   by: "user" | "evidence";
 }
