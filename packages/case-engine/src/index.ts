@@ -7,3 +7,4 @@ export * from "./questions.ts";
 export * from "./registry.ts";
 export * from "./rules.ts";
 export * from "./validator.ts";
+export * from "./node.ts";

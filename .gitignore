@@ -11,3 +11,6 @@ coverage/
 # Official forms and anything filled from them stay out of git (spike S3)
 *.pdf
 __pycache__/
+# The case engine's browser bundle is committed so the prototype can build without npm (tools/build-browser.mjs)
+!packages/case-engine/dist/
+packages/case-engine/dist/data.json

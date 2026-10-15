@@ -2,8 +2,6 @@
 // A blueprint adds no facts. It only places the registry's own steps, documents, fees and deadlines
 // on levels, names the levels, declares which events the user can record, and links related cases.
 // The static check below proves that nothing of a procedure is lost or invented on the way.
-import { readFileSync } from "node:fs";
-import { parse } from "yaml";
 import type { Counting } from "./dates.ts";
 import type { L10n, Registry } from "./registry.ts";
 
@@ -55,9 +53,9 @@ export interface Blueprint {
   events: Record<string, EventDef>;
 }
 
-export function loadBlueprint(file: string): Blueprint {
-  const bp = parse(readFileSync(file, "utf8")) as Blueprint;
-  if (!bp?.id || !Array.isArray(bp.routes) || !Array.isArray(bp.levels)) throw new Error(`${file}: not a blueprint`);
+export function blueprintFromData(data: unknown, where = "blueprint"): Blueprint {
+  const bp = data as Blueprint;
+  if (!bp?.id || !Array.isArray(bp.routes) || !Array.isArray(bp.levels)) throw new Error(`${where}: not a blueprint`);
   bp.deadlines ??= {};
   bp.events ??= {};
   return bp;

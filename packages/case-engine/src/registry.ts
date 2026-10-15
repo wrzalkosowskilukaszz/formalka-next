@@ -1,9 +1,6 @@
 // The verified procedure registry, read from Formalka's own content format (snapshots in
 // reference/, formalka@04057ef). Read-only: the engine never changes a procedure. Only the fields the
 // engine needs are typed; everything is checked at the boundary, and a malformed file fails loudly.
-import { readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
-import { parse } from "yaml";
 import type { Rule } from "./rules.ts";
 
 export interface L10n { pl: string; en?: string; uk?: string; ru?: string }
@@ -63,25 +60,20 @@ function checkProcedure(p: Procedure, file: string): Procedure {
   return p;
 }
 
-/** Reads every `procedure-*.yaml` and `facts-*.yaml` one folder below `dir`. */
-export function loadRegistry(dir: string, version: string): Registry {
+/** Builds a registry from already-parsed content (the browser build embeds it as JSON). */
+export function registryFromData(procedureLists: Procedure[][], factLists: FactDef[][], version: string): Registry {
   const procedures = new Map<string, Procedure>();
   const facts = new Map<string, FactDef>();
-  for (const sub of readdirSync(dir, { withFileTypes: true })) {
-    if (!sub.isDirectory()) continue;
-    for (const name of readdirSync(join(dir, sub.name))) {
-      const file = join(dir, sub.name, name);
-      if (name.startsWith("procedure-") && name.endsWith(".yaml")) {
-        for (const p of parse(readFileSync(file, "utf8")) as Procedure[]) {
-          need(!procedures.has(p.id), `duplicate procedure ${p.id}`);
-          procedures.set(p.id, checkProcedure(p, file));
-        }
-      } else if (name.startsWith("facts-") && name.endsWith(".yaml")) {
-        for (const f of parse(readFileSync(file, "utf8")) as FactDef[]) {
-          need(typeof f?.key === "string" && f.question?.pl, `${file}: fact without key or question`);
-          facts.set(f.key, f);
-        }
-      }
+  for (const list of procedureLists) {
+    for (const p of list) {
+      need(!procedures.has(p.id), `duplicate procedure ${p.id}`);
+      procedures.set(p.id, checkProcedure(p, p.id));
+    }
+  }
+  for (const list of factLists) {
+    for (const f of list) {
+      need(typeof f?.key === "string" && f.question?.pl, `fact without key or question`);
+      facts.set(f.key, f);
     }
   }
   return { version, procedures, facts };
