@@ -22,6 +22,7 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
 6. **Work the case:**
    - **Teraz:** the current level's tasks with their sources and "albo" alternatives; fees; deadlines (record the date they count from); the office; "Mam umówioną wizytę"; "Przypomnij, żeby zadzwonić" (honest wording: no booking is claimed).
    - **Mapa:** every level with its state, lock reason and parallel levels.
+   - **Teczka:** every document of the case in one checklist, with "albo" alternatives grouped, the source and "Mam" / "Nie dotyczy". Documents can be gathered while their level is locked; ticking them never unlocks a step. Below it: the fees in this case (examples) and the case history (recorded dates). Nothing is uploaded.
    - **Maciek/Asia działa:** what the advisor will do by itself, and when.
 7. **Move time** with the tester strip (+1/+3/+7 dni). The advisor's notifications appear on a simulated lock screen (generic text by default); its messages land in the chat. "Jak poszło?" answers update the plan.
 8. **Open the related case** from a task (citizenship → language certificate), or write "karta pobytu" in the chat to start a second case with Asia.
@@ -30,7 +31,8 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
 A headless walk at 390×844, in light, dark and reduced motion, went through:
 - the citizenship route choice;
 - the address registration with Warsaw: deadline, offices, visit, time travel, lock screen, follow-up, plan update;
-- intake from a description (three candidates; two confirmed, one rejected and then asked), a second case started from the home screen, and the PESEL redirect to address registration.
+- intake from a description (three candidates; two confirmed, one rejected and then asked), a second case started from the home screen, and the PESEL redirect to address registration;
+- the Teczka for address registration with Warsaw (grouped alternatives, a document ticked while its level is locked; the level stays locked).
 
 It found 0 errors, 0 network requests and no horizontal scroll.
 

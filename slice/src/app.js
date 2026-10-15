@@ -174,7 +174,7 @@ function startFromText(text) {
 
 function caseView(c) {
   const p = plan(c); const v = E.validate(p, c.state);
-  const tabs = [['chat', 'Rozmowa'], ['map', 'Mapa'], ...(c.state.approved ? [['now', 'Teraz'], ['acts', `${c.who} działa`]] : [])];
+  const tabs = [['chat', 'Rozmowa'], ['map', 'Mapa'], ['folder', 'Teczka'], ...(c.state.approved ? [['now', 'Teraz'], ['acts', `${c.who} działa`]] : [])];
   if (!tabs.some(([k]) => k === c.tab)) c.tab = 'chat';
   return `<div class="head"><button class="back" data-home aria-label="Twoje sprawy">${icon('arrow-left')}</button>
       <h2>${esc(c.title)}</h2><span class="who">${esc(c.who)} · asystent AI</span></div>
@@ -182,7 +182,7 @@ function caseView(c) {
       <span class="when">${p.status === 'active' ? 'aktywny' : 'projekt planu'}</span></div>
     <div class="strip" aria-label="Mapa w skrócie">${p.levels.map((l) => `<span class="node" data-s="${l.state}" title="${esc(STATE_PL[l.state])}">${icon(STATE_ICON[l.state])} ${esc(l.title.pl)}</span>`).join('')}</div>
     <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${c.tab === k}">${esc(n)}</button>`).join('')}</div>
-    ${c.tab === 'chat' ? chatView(c, p) : c.tab === 'map' ? mapView(c, p) : c.tab === 'now' ? nowView(c, p) : actsView(c, p)}`;
+    ${c.tab === 'chat' ? chatView(c, p) : c.tab === 'map' ? mapView(c, p) : c.tab === 'folder' ? folderView(c, p) : c.tab === 'now' ? nowView(c, p) : actsView(c, p)}`;
 }
 
 function chatView(c, p) {
@@ -270,6 +270,37 @@ function focusLevel(c, p) {
   const f = c.focus && p.levels.find((l) => l.id === c.focus);
   return f ?? p.levels.find((l) => l.order > 0 && ['returned', 'in_progress', 'available'].includes(l.state))
     ?? p.levels.find((l) => l.state === 'waiting_office') ?? p.levels.at(-1);
+}
+
+// Teczka: every document of the case in one list, with its status, its "albo" alternatives and source,
+// plus what has happened so far. Documents can be gathered while their level is locked (the lock guards
+// the step, e.g. the visit, not the gathering). A checklist only: no files are uploaded or stored (ADR-0009).
+function folderView(c, p) {
+  const bp = E.blueprint(c.bpId);
+  const docs = p.levels.flatMap((l) => l.tasks.filter((t) => t.kind === 'document').map((t) => ({ t, l })));
+  const ok = (t) => t.status === 'done' || t.status === 'not_needed';
+  const groups = [];
+  for (const d of docs) {
+    const g = groups.find((x) => x.some((y) => y.t.alternatives?.includes(d.t.id) || d.t.alternatives?.includes(y.t.id)));
+    if (g) g.push(d); else groups.push([d]);
+  }
+  const ready = groups.filter((g) => g.some((d) => ok(d.t))).length;
+  const rows = groups.map((g) => {
+    const doneHere = g.some((d) => ok(d.t));
+    const items = g.map(({ t, l }) => `<div class="t">${esc(cap(t.title.pl))}${t.outcome === 'unknown' ? ' <span class="maybe">sprawdź, czy Cię dotyczy</span>' : ''}
+        <div class="when">${esc(l.title.pl)}${t.quotes?.length ? ` · <a href="${esc(t.quotes[0].page)}" target="_blank" rel="noopener noreferrer">${esc(host(t.quotes[0].page))}</a>` : ''}</div>
+        ${doneHere || l.state === 'unconfirmed' ? '' : `<div class="row"><button class="mini" data-task="${esc(t.id)}" data-st="done">Mam</button>${t.outcome === 'unknown' ? `<button class="mini" data-task="${esc(t.id)}" data-st="not_needed">Nie dotyczy</button>` : ''}</div>`}</div>`).join('<div class="albo">albo</div>');
+    return `<div class="task doc ${doneHere ? 'done' : ''}">${items}${doneHere ? `<p class="reason">${icon('check')} ${g.find((d) => d.t.status === 'done') ? 'Masz' : 'Nie dotyczy'}</p>` : ''}</div>`;
+  }).join('');
+  const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome !== 'unknown' && f.exemption?.outcome !== 'applies');
+  const total = fees.reduce((n, f) => n + f.amountPln, 0);
+  const history = [...c.state.events].sort((a, b) => a.date.localeCompare(b.date))
+    .map((e) => `<li>${esc(E.dayPl(e.date))}: ${esc(bp.events[e.type]?.label.pl ?? e.type)}${e.outcome ? ` (${esc(e.outcome === 'refused' ? 'odmowa' : e.outcome === 'granted' ? 'pozytywna' : e.outcome)})` : ''}</li>`).join('');
+  return `<div class="card"><h3>Teczka</h3>
+      <p class="reason">${docs.length ? `Gotowe: ${ready} z ${groups.length}. ` : ''}To lista do odhaczania. Niczego tu nie wgrywasz; dokumenty zostają u Ciebie.</p>
+      ${rows || '<p class="reason">Ta sprawa nie wymaga dokumentów albo zależą one od odpowiedzi.</p>'}
+      ${total ? `<p class="reason">Opłaty w tej sprawie (przykład z przewodnika): <strong>${total} zł</strong></p>` : ''}</div>
+    ${history ? `<div class="card"><h3>Historia sprawy</h3><ul class="reason">${history}</ul></div>` : ''}`;
 }
 
 function nowView(c, p) {
