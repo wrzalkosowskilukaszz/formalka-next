@@ -10,7 +10,8 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 17 tests on the real snapshots (Node 22.18+, no build step)
+npm test                         # 20 tests incl. 17 evaluation scenarios
+npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
 
@@ -55,7 +56,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 ```js
 const E = window.FormalkaEngine;
 E.registryVersion            // "formalka@04057ef"
-E.blueprintIds               // ["address-registration", "citizenship", "language-certificate", "residence-card"]
+E.blueprintIds               // ["address-registration", "citizenship", "language-certificate", "pesel", "residence-card"]
 const state = { facts: {}, tasks: {}, events: [], approved: false, place: { teryt: "1465011", name: "Warszawa" } }; // routeChoice when the user picks a route
 const q = E.nextQuestion("citizenship", state, askedCount);       // { key, question, whyWeAsk, options, unknownHelp } | null
 state.facts[q.key] = "yes" /* or E.UNKNOWN for "Nie wiem" */;

@@ -112,3 +112,16 @@
   text: "Potrzebuję certyfikatu B1 do obywatelstwa."
   facts: {}
   expect: { levelIds: [route, pick-session, register, pay, exam, result] }
+- id: pesel-01-short-stay
+  blueprint: pesel
+  text: "Jestem w Polsce na krótko, ale bank wymaga ode mnie numeru PESEL."
+  facts: { pesel.stay_over_30: "no", pesel.citizen_group: other, pesel.has_number: "no", pesel.temporary_protection: "no" }
+  expect:
+    route: decided
+    levelIds: [route, fill-in, file, notification]
+    notes: { file: [in-person] }
+- id: pesel-02-long-stay
+  blueprint: pesel
+  text: "Wynajmuję mieszkanie na rok i potrzebuję PESEL."
+  facts: { pesel.stay_over_30: "yes" }
+  expect: { route: none, notes: { route: [register-instead, landlord-refuses] } }

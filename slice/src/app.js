@@ -20,6 +20,7 @@ const INTENTS = [
   { id: 'residence-card', words: ['karta pobytu', 'karty pobytu', 'kartę pobytu', 'karte pobytu', 'pobyt czasowy', 'zezwolenie na pobyt'] },
   { id: 'address-registration', words: ['zameld', 'meldun', 'meldow'] },
   { id: 'language-certificate', words: ['certyfikat', 'egzamin z polskiego', 'b1', 'znajomości polskiego'] },
+  { id: 'pesel', words: ['pesel'] },
 ];
 const PLACES = [
   { teryt: '1465011', name: 'Warszawa' }, { teryt: '1261011', name: 'Kraków' },
@@ -153,7 +154,7 @@ function startFromText(text) {
   const t = text.toLowerCase();
   const hit = INTENTS.find((i) => i.words.some((w) => t.includes(w)));
   if (hit) { newCase(hit.id); if (cur()) cur().log.splice(cur().log.length - 2, 0, { who: 'me', text }); render(); return; }
-  const n = $('#notice'); n.textContent = 'Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie i certyfikat z polskiego.'; n.hidden = false;
+  const n = $('#notice'); n.textContent = 'Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie, PESEL i certyfikat z polskiego.'; n.hidden = false;
 }
 
 function caseView(c) {
@@ -218,7 +219,7 @@ function dock(c, p) {
       <label class="row"><input type="checkbox" id="consent" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy</label>
       <div class="row"><button class="btn" data-approve>Zatwierdzam plan</button><button class="btn ghost" data-tab="map">Zobacz mapę</button></div></div>`;
   }
-  if (c.stage === 'stuck') return `${notesHtml(p.levels[0].notes)}<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
+  if (c.stage === 'stuck') return `${notesHtml(p.levels[0].notes)}${(E.blueprint(c.bpId).related ?? []).map((r) => `<div class="row"><button class="btn ghost" data-cross="${esc(r.blueprint)}">${icon('arrow-square-out')} ${esc(r.label.pl)}</button></div>`).join('')}<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
   return `<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
 }
 

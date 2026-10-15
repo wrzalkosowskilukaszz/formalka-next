@@ -22,7 +22,7 @@ The planner joins the three into a **map of levels**. The AI's place (Phase 4) i
 It never creates a level, a task, a fee or a date (ADR-N004).
 
 ## 2. Blueprints (the owner's "mapped roadmaps")
-Four blueprints exist, all passing the static check against the snapshots:
+Five blueprints exist, all passing the static check against the snapshots:
 
 | Blueprint | Procedures | What it shows |
 |---|---|---|
@@ -30,6 +30,7 @@ Four blueprints exist, all passing the static check against the snapshots:
 | `residence-card` | temporary residence permit | One level standing for **alternative steps**: online in MOS, or on paper for a family member abroad, chosen by the procedure's own conditions. Documents ‖ fees ‖ employer attachment, then filing |
 | `address-registration` | registration for foreigners (with D-01) | The two readings of "najpóźniej w 4./30. dniu" |
 | `language-certificate` | the state certificate in Polish | The case that unlocks recognition. Its exam dates are stale (quote gate failed on 2026-10-15) |
+| `pesel` | PESEL on application | Someone staying over 30 days is told by the guide's own warning to register an address instead (PESEL then comes from the office); the related case opens with one tap |
 
 **Mapping cost** [FACT, tonight]: each blueprint took 20–40 minutes, because the registry already holds the steps' order and conditions. This supports estimate 12 §5 (6–16 h per procedure), where the hours go into making the *procedure* verified, not into the map.
 
@@ -93,7 +94,7 @@ Guards, each with a test:
 **Consent model** (owner, 2026-10-15): **one consent per case** at plan approval ("Maciek może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy"). After that the advisor acts without asking; every action is in the case history and revocable.
 
 ## 7. Quality evidence (2026-10-16)
-- **17 tests** on the real snapshots, all passing.
+- **20 tests** on the real snapshots, all passing, including the 17 evaluation scenarios.
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -108,6 +109,12 @@ Guards, each with a test:
   - a step not placed.
 - `checkBlueprint`: 0 issues for all 4 blueprints.
 - `validatePlan` passes on every plan in the tests and rejects a tampered ref, an invented date, a guessed nationality, and a lock without basis.
+
+## 7a. Warnings and the evaluation set
+- **Warnings.** The guides' pitfalls ("Warto wiedzieć") become notes on the right level, important ones first (blueprint `notes` places them). A route that doesn't fit still carries the warnings written for that person:
+  - restoration of citizenship for someone who lost it;
+  - "zamelduj się zamiast tego" for a long stay.
+- **Evaluation set** (`packages/case-engine/eval/`): 17 scenarios with expectations, run inside the test suite (17/17). `node eval/run.ts --write` exports a reference plan per scenario in plain Polish, with the source of every value, for the blind H1 benchmark (11 §5). The user texts are drafts for native writers, and the owner reviews each reference plan before any benchmark run.
 
 ## 8. Browser build
 - `node tools/build-browser.mjs --locales pl` builds `dist/case-engine.browser.js`: 315 KB, the engine plus the registry snapshot and the 4 blueprints, global `FormalkaEngine`, no network.

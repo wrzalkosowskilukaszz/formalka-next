@@ -57,6 +57,8 @@ export interface Blueprint {
   events: Record<string, EventDef>;
   /** Where a procedure's warnings appear (pitfall id -> level id); the rest go on the route level. */
   notes?: Record<string, string>;
+  /** Cases to offer when this one doesn't fit, e.g. address registration instead of a PESEL application. */
+  related?: { blueprint: string; label: L10n }[];
 }
 
 export function blueprintFromData(data: unknown, where = "blueprint"): Blueprint {
@@ -112,7 +114,7 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
   // Every translated text has only language keys: an unquoted comma in YAML flow style silently cuts
   // a title and adds a stray key ("{ pl: A, B }" -> pl: "A", "B": null).
   const texts: unknown[] = [bp.title, bp.routeLevel.title, ...bp.levels.flatMap((l) => [l.title, ...Object.values(l.taskTitles ?? {}), ...(l.crossCase ?? []).map((x) => x.label)]),
-    ...Object.values(bp.events).map((e) => e.label), ...Object.values(bp.fulfillable ?? {}).flatMap((c) => Object.values(c).flatMap((x) => [x.title, x.label]))];
+    ...Object.values(bp.events).map((e) => e.label), ...(bp.related ?? []).map((r) => r.label), ...Object.values(bp.fulfillable ?? {}).flatMap((c) => Object.values(c).flatMap((x) => [x.title, x.label]))];
   for (const t of texts) {
     const keys = t && typeof t === "object" ? Object.keys(t) : [];
     if (!keys.includes("pl") || keys.some((k) => !["pl", "en", "uk", "ru"].includes(k))) add("BAD_TEXT", JSON.stringify(t));

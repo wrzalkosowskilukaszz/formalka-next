@@ -1,0 +1,40 @@
+# Case blueprint: a PESEL number on application (for people who can't get it by registering an
+# address). The procedure's own rule decides: someone staying over 30 days at an address registers
+# instead, and the guide's warning "register-instead" says so; the related case is address
+# registration. Temporary protection (UKR) has its own guide in production, not snapshotted here.
+id: pesel
+title: { pl: Numer PESEL }
+caretaker: { name: Asia }
+routes: [pesel-application]
+routeLevel:
+  id: route
+  title: { pl: Czy to Twoja droga }
+related:
+  - blueprint: address-registration
+    label: { pl: "Zamieszkasz pod adresem na dłużej niż 30 dni? Zamelduj się: PESEL dostaniesz wtedy z urzędu." }
+levels:
+  - id: fill-in
+    title: { pl: Wniosek }
+    steps: { pesel-application: fill-in }
+  - id: file
+    title: { pl: Wizyta w urzędzie gminy }
+    steps: { pesel-application: file }
+    documents: true
+    fees: true
+    submits: true
+    completesWith: filing
+  - id: notification
+    title: { pl: Numer PESEL }
+    steps: { pesel-application: notification }
+    completesWith: pesel_assigned
+deadlines:
+  ukr-application: { level: file, counting: kpa, role: user }
+  fix-missing: { level: file, counting: kpa, role: user, returns: true }
+notes:
+  in-person: file
+  missing-items: file
+events:
+  border_crossing: { label: { pl: Dzień przekroczenia granicy } }
+  request_delivered: { label: { pl: Dzień doręczenia wezwania do uzupełnienia } }
+  filing: { label: { pl: Dzień złożenia wniosku } }
+  pesel_assigned: { label: { pl: Dzień nadania numeru PESEL } }
