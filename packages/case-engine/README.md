@@ -25,7 +25,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 | `validator.ts` | Independent check: every item resolves to a quoted registry item of this registry version; no date without its event; no lock or "returned" without a basis; facts in the catalogue with allowed values (no nationality guessed from language) |
 | `advisor.ts` | What Maciek does without being asked (below) |
 | `messages.ts` | Polish templates. Gender-neutral, "asystent AI", never "umówiłem / wysłałem / złożyłem / wszystko już wiem" (a test scans every message) |
-| `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57 [UNVERIFIED]), the two readings of "najpóźniej w N dniu", Polish holidays (Easter-based [UNVERIFIED list]) |
+| `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57, quoted from the act on 2026-10-16), the two readings of "najpóźniej w N dniu", Polish days off (Easter-based; art. 1 of the act on days off work, quoted) |
 | `offices.ts` | Which office, from the registry's office layer and the user's city (TERYT, on the device): quoted addresses, hours, booking links; voivodeship offices by their registry TERYT code. Never a guessed address |
 | `intake.ts` | The person's own words → fact candidates they confirm one by one. Any extractor (the Polish baseline today, an LLM later) passes `checkCandidates`: only facts this case asks, only allowed values, evidence quoted verbatim from the text and on the fact's topic (so language or origin never becomes citizenship or protection). Compound facts (`citizenship.group`) are always asked |
 | `browser.ts` | The browser entry with the data embedded |
@@ -85,7 +85,7 @@ Events the blueprints accept:
 
 ## Limits (honest)
 - **Content.** Only 6 procedures are snapshotted: address registration, PESEL, citizenship by recognition and by grant, the language certificate, and temporary residence (the residence card).
-- **Dates.** The KPA counting and the holiday list are implemented from memory and marked [UNVERIFIED]. Quote them from the acts (ELI) before any product use. Reminders always use the earlier date, so a wrong shift can only make a reminder early, never late.
+- **Dates.** The KPA counting and the holiday list were checked against the acts' consolidated texts on 2026-10-16 (`docs/formalka-next/verifications/DATES-2026-10-16.md`). The "najpóźniej w N dniu" reading is still open, so both dates are kept. Reminders always use the earlier date, so a wrong shift can only make a reminder early, never late.
 - **Citizenship content.** It was checked in a first pass only (October inventory). Show values as labelled examples.
 - **Office data.** Offices exist only for Warsaw and Kraków (municipal) and the 16 voivodeship offices (name and website only). The registry has no phone numbers.
 - **Intake.** The baseline reads Polish only and proposes only what a sentence states outright (recall 35%, precision 100% on the 17 scenarios, `eval/REPORT.md`). Everything it misses is simply asked.

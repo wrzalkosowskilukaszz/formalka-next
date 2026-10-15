@@ -60,9 +60,9 @@ The route is decided by the procedures' **own** applicability rules and conditio
 
 ## 5. Dates (deadline counting)
 - **Due dates:** only from an event the user recorded (`by: user`) or has evidence of (`by: evidence`). There is no date without its event, and the validator checks this.
-- **"kpa" counting:** days don't count the event day; months end on the same day number or the last day of the month; an end on a Saturday or a holiday moves to the next working day. This is KPA art. 57 §1, §3, §4 [UNVERIFIED: implemented from memory, to quote from the act via ELI before product use].
+- **"kpa" counting:** days don't count the event day; months end on the same day number or the last day of the month (years likewise, so 29 February ends on 28 February); an end on a Saturday or a day off work moves to the next working day. [FACT: KPA art. 57 §1, §3, §3a, §4, quoted from Dz.U. 2025 poz. 1691 via the Sejm ELI API on 2026-10-16, `verifications/DATES-2026-10-16.md`]
 - **"nth-day" counting** ("najpóźniej w N dniu"): both readings (06 §7 Q3).
-- **Holidays:** computed (Easter-based) [UNVERIFIED list, incl. 24 December from 2025].
+- **Holidays:** computed (Easter-based). [FACT: art. 1 of the act on days off work, Dz.U. 2025 poz. 296; 24 December since 1 February 2025, Dz.U. 2024 poz. 1965; checked on 2026-10-16.] Not modelled: an epidemic day off set by the Prime Minister (art. 1a).
 - **Safety rule:** reminders always use the **earlier** date (`earliest`). A wrong shift can only make a reminder early, never late.
 
 ## 6. The advisor acts (`advisor.ts`)
@@ -129,7 +129,7 @@ Guards, each with a test:
 - The experience prototype (`prototype/`) can render its map from it instead of a script. The prototype session was told on 2026-10-15 at about 23:40.
 
 ## 9. Not done / open
-- **Unverified rules:** the KPA counting and the holiday list (§5).
+- **Rules:** the KPA counting and the holiday list were quoted from the acts on 2026-10-16 (§5). The reading of "najpóźniej w N dniu" for address registration is still open (06 §7 Q3).
 - **Office data:** offices come from Formalka's office layer (`offices.ts`, added in the night): Warsaw (18 delegations) and Kraków (3 offices), with quoted addresses, hours and booking links, and the voivodeship office by its registry TERYT code. Gaps:
   - no phone numbers in the registry, so no "zadzwoń pod numer X" yet;
   - no municipal offices outside Warsaw and Kraków;

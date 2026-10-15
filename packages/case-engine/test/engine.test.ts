@@ -164,6 +164,20 @@ function addressAgenda(extra: Partial<CaseState> = {}, prefs = CONSENT, now = NO
 }
 const allText = (items: AgendaItem[]) => items.map((i) => `${i.message.pl} ${i.lockScreen}`).join("\n").toLowerCase();
 
+test("dates: the rules as quoted from KPA art. 57 and the act on days off work (verified 2026-10-16)", () => {
+  // §1: the event day doesn't count; §4: an end on a Saturday moves to the next working day.
+  assert.deepEqual(dueDate("2026-10-03", 14, "day", "kpa"), { earliest: "2026-10-17", latest: "2026-10-19", counting: "kpa", shifted: true });
+  // §3: no such day in the last month, so its last day; §3a: 29 February a year on ends on 28 February.
+  assert.equal(dueDate("2026-01-31", 1, "month", "kpa").earliest, "2026-02-28");
+  assert.equal(dueDate("2028-02-29", 1, "year", "kpa").earliest, "2029-02-28");
+  // Art. 1: 13 named days plus 24 December from 1 February 2025; Sundays by the weekday.
+  assert.equal(polishHolidays(2024).size, 13);
+  assert.ok(!polishHolidays(2024).has("2024-12-24"));
+  assert.equal(polishHolidays(2026).size, 14);
+  assert.ok(polishHolidays(2026).has("2026-05-24"), "Pentecost Sunday 2026");
+  assert.equal(nextWorkingDayIfClosed("2026-10-18"), "2026-10-19", "Sunday");
+});
+
 test("advisor: a draft plan does nothing; an approved one plans the deadline by itself", () => {
   const st = S({ "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" }, { events: [{ type: "arrival_at_address", date: "2026-10-28", by: "user" }] });
   assert.deepEqual(agenda({ caseId: "c1", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs: CONSENT, now: NOW }), []);

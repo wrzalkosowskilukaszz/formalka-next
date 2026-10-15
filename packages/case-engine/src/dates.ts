@@ -3,13 +3,13 @@
 //
 // Counting rules used here (see docs/formalka-next/16-LIVING-CASE-ENGINE.md §4):
 // - "kpa": a period in days does not count the day of the event; a period in months ends on the day
-//   with the same number, or the month's last day; an end on a Saturday or a public holiday moves to
-//   the next working day. This follows the Code of Administrative Procedure (KPA) art. 57 §1, §3, §4
-//   [UNVERIFIED here: to quote from the act via ELI before any product use].
+//   with the same number, or the month's last day (years: the same, so 29 February ends on 28 February);
+//   an end on a Saturday or a day off work moves to the next working day. KPA art. 57 §1, §3, §3a, §4,
+//   quoted from Dz.U. 2025 poz. 1691 on 2026-10-16 (docs/formalka-next/verifications/DATES-2026-10-16.md).
 // - "nth-day": "najpóźniej w N dniu od X" (address registration): whether day X is day 1 is open
 //   (06 §7 Q3), so both readings are returned.
-// The holiday list below follows the act on days off work [UNVERIFIED: to quote via ELI; 24 December
-// as a day off from 2025 is ASSUMED from the 2024 amendment].
+// The days off follow art. 1 of the act on days off work, quoted from Dz.U. 2025 poz. 296 on 2026-10-16;
+// 24 December since 1 February 2025 (Dz.U. 2024 poz. 1965). Not modelled: art. 1a (an epidemic day off).
 
 export type Iso = string;
 export type Unit = "day" | "working_day" | "month" | "year";
