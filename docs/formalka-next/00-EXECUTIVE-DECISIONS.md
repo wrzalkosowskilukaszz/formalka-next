@@ -75,7 +75,14 @@ New:
   - Apple $99/year at the iOS phase.
 - **The real cost is people's time:** 6–16 h to make one guide plannable, then 0.5–2 h a month to keep it current.
 
-## 6. Estimates (13, uncalibrated)
+## 6. Estimates (13)
+**Recalibrated (13 §4a):** Formalka itself was built in about 2.5 weeks with Claude writing the code. On that pace:
+- slice 1 without AI takes about 2–4 weeks of engineering;
+- a private alpha takes about **2–3 months of calendar**, bound by the interviews, the owner's reviews and usage limits, not by the coding.
+
+The hand-coding figures below are kept for comparison.
+
+
 - **Slice 1 without AI:** 255 / 470 / 855 h (optimistic / realistic / pessimistic).
 - **To a private alpha:** 370 / 690 / 1,270 h, plus about 120–180 owner hours.
 - **Calendar:**

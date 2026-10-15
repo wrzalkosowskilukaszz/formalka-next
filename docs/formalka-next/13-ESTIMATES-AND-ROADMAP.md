@@ -64,6 +64,32 @@ All estimates are **HYPOTHESES**. They are not calibrated against Formalka's own
 
 ## 4. Calendar
 
+### 4a. Calibration against Formalka's own history (2026-10-15, supersedes the solo figures in 4b)
+The hours in §2 are at a hand-coding pace. Formalka's real pace with Claude writing the code is much faster [FACT, from the repository]:
+- the first ADRs are dated 2026-09-30;
+- by 2026-10-15, `main` has 297 commits, 71 merges, about 52,000 lines of TypeScript in `apps/` and `packages/`, 17 procedures with quotes, 4 languages and 480 e2e tests;
+- that is about 2.5 weeks of calendar time.
+
+Slice 1 plus the AI layer is smaller than what was already built.
+
+**Recalibrated calendar [HYPOTHESIS; one data point, and that pace used many parallel agents, which the owner has since reduced to save usage]:**
+
+| | Engineering | What doesn't compress |
+|---|---|---|
+| Slice 1 without AI | about 2–4 weeks | Owner review of every PR; content to the plannable bar |
+| AI layer | about 1–2 weeks | The evaluation set needs native writers |
+| Private alpha (Android, invites) | about 1–2 weeks | Play internal-testing setup |
+| Phase 1 validation | — | Recruiting and running 12–15 interviews: about 3–6 weeks of real time |
+| H6 measurement | — | 2 months of real time, by definition |
+
+**Path to a private alpha: about 2–3 months.**
+- The binding constraints are the research, the owner's review time and usage limits, not the coding.
+- The coding can run in parallel with Phase 1 only for work that Phase 1 can't invalidate:
+  - the case engine on real content;
+  - the pdf-lib port.
+
+### 4b. Hand-coding pace (original estimate, kept for comparison)
+
 The owner's weekly capacity is not known [**OPEN**: owner].
 - **Formula:** weeks = (engineering hours + owner hours) / weekly capacity, with review as the gate.
 - **Solo (owner + Claude):**
