@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "node --test \"test/*.test.ts\"",
-    "eval": "node eval/run.ts --write"
+    "eval": "node eval/run.ts --write",
+    "mutate": "node tools/mutate.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"

@@ -20,7 +20,7 @@
     "reference/offices/offices-warszawa.yaml": "c0926cad4c010299",
     "reference/residence/facts-pobyt-czasowy.yaml": "16783b22f4cdd420",
     "reference/residence/procedure-pobyt-czasowy.yaml": "f57f43c4c81b7afc",
-    "blueprints/address-registration.yaml": "57641842838034f2",
+    "blueprints/address-registration.yaml": "3707ef55e337186d",
     "blueprints/citizenship.yaml": "cce241663dd62027",
     "blueprints/language-certificate.yaml": "859dab7f2193b1f9",
     "blueprints/pesel.yaml": "9acb538e899bfbcd",
@@ -28,6 +28,6 @@
   },
   "bundle": {
     "file": "case-engine.browser.js",
-    "sha256": "b36aa1b496fd5a7d1f1aaa3b610e83e35f1fd4cfe08e296c303586d9ac610aef"
+    "sha256": "d29a0aef18cb23e1f598b3e97417bafe149c603642d18b4b96faa90140756b3f"
   }
 }

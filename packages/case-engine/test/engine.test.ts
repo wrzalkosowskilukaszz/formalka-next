@@ -140,6 +140,9 @@ test("questions: only what can change the plan; never twice; Nie wiem counts as 
   assert.equal(planCase(CIT, reg, S(facts)).route.status, "choice");
   assert.equal(nextQuestion(CIT, reg, S({}), 12), null, "cap");
   assert.notEqual(nextQuestion(CIT, reg, S({ "citizenship.permanent_title": UNKNOWN })), "citizenship.permanent_title");
+  // A decided route still asking about documents and deadlines: a "Nie wiem" is never asked again.
+  assert.equal(nextQuestion(ADDR, reg, S({ "zameldowanie.citizen_group": UNKNOWN }), 1), "zameldowanie.stay");
+  assert.equal(nextQuestion(ADDR, reg, S({ "zameldowanie.citizen_group": UNKNOWN, "zameldowanie.stay": UNKNOWN }), 2), null);
 });
 
 test("address registration (D-01): EU 30 days, others 4; both readings of the nth day", () => {
@@ -352,7 +355,7 @@ test("address registration (audit F4): the family card only if it applies; filin
   const eu = planCase(ADDR, reg, S({ "zameldowanie.citizen_group": "eu_efta", "zameldowanie.stay": "temporary" }));
   const card = eu.levels.flatMap((l) => l.tasks).find((t) => t.id.endsWith(":family-card"))!;
   assert.equal(card.outcome, "unknown", "an EU citizen is not told to bring a family member's card");
-  assert.match(card.onlyIf!.pl, /członkiem rodziny/);
+  assert.match(card.onlyIf!.pl, /^Tylko dla członka rodziny/, "neutral: fits your own case and one handled for someone else");
   assert.equal(eu.levels.flatMap((l) => l.tasks).find((t) => t.id.endsWith(":identity-eu"))!.outcome, "applies");
   const fresh = planCase(ADDR, reg, S({ "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" }, ACTIVE));
   const file = fresh.levels.find((l) => l.id === "file")!;

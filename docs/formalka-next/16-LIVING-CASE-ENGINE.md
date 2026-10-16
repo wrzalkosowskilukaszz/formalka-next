@@ -132,33 +132,14 @@ Five of these errors come from the production registry itself. They are proposed
 
 ## 7. Quality evidence (2026-10-16)
 - **39 tests** on the real snapshots, all passing, including the 18 evaluation scenarios (each now runs the content check too), the intake checks (§9a), the replan checks (§6b) and the audit fixes (§6c).
-- **11 targeted faults** were injected, one at a time; each was caught:
-  - an unknown deadline notifying;
-  - quiet hours removed;
-  - consent ignored;
-  - a draft plan acting;
-  - a prerequisite not blocking submission;
-  - the engine picking a route;
-  - "returned" never shown;
-  - a date without its event;
-  - "Nie wiem" asked again;
-  - a holiday missing;
-  - a step not placed.
-- **9 more faults in intake** were injected, one at a time; each was caught:
-  - the topic check removed;
-  - the negation check removed (or made to ignore word boundaries);
-  - conflicting values kept;
-  - evidence not checked verbatim;
-  - candidates applied without confirmation;
-  - a compound fact made extractable;
-  - "na pobyt stały" (registration) read as a residence permit;
-  - (city) a name inside a longer word counted ("Gdańskiej");
-  - (city) the first of two named cities taken.
-- **4 faults in the replan** were injected; each was caught:
-  - done work listed as removed;
-  - a replan resetting `done`;
-  - "now certain" tasks not shown;
-  - a route change hidden.
+- **34 faults, reproducible.** `tools/mutations.mjs` lists them and `npm run mutate` applies each alone, runs the whole suite and restores the file. Result on 2026-10-16: 34 of 34 caught (`eval/MUTATIONS.md`, one row per fault). The faults:
+  - the advisor's guards (4);
+  - the planner's rules, including the audit fixes F2–F4 (8);
+  - questions, dates and wording (5);
+  - the blueprint, structural and content checks (4);
+  - intake (9);
+  - the replan (4).
+- **Correction.** Before the runner existed, these claims came from one-off manual runs that left no log, so an auditor couldn't reproduce them (audit, 2026-10-16). The runner then showed that one of them was wrong: "'Nie wiem' asked again" was not caught, because no test covered a route that was decided and still asking. That test now exists.
 - `checkBlueprint`: 0 issues for all 5 blueprints.
 - `validatePlan` passes on every plan in the tests and rejects a tampered ref, an invented date, a guessed nationality, and a lock without basis.
 

@@ -30,7 +30,7 @@ levels:
 # The EU group joins citizens and their family members; the card is for family members only.
 onlyIf:
   family-card:
-    label: { pl: "Tylko jeśli jesteś członkiem rodziny obywatela UE, EFTA lub Szwajcarii." }
+    label: { pl: "Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii." }
     basis: "potwierdzi, że jesteś członkiem rodziny obywatela UE"
 # The guide says filing doesn't have to wait for the owner's confirmation.
 optionalAfter:

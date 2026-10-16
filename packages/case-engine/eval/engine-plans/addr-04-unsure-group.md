@@ -25,7 +25,7 @@ Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 ## Wizyta w urzędzie gminy (locked) — Najpierw: Formularz.
 - formularz zgłoszenia pobytu czasowego [gov.pl]
 - ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo (jeśli dotyczy) [gov.pl]
-- ważną kartę pobytu członka rodziny obywatela UE (Tylko jeśli jesteś członkiem rodziny obywatela UE, EFTA lub Szwajcarii.) [gov.pl]
+- ważną kartę pobytu członka rodziny obywatela UE (Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.) [gov.pl]
 - ważny dokument podróży (jeśli dotyczy) [gov.pl]
 - ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu (jeśli dotyczy) [api.sejm.gov.pl]
 - wizę albo tymczasowe zaświadczenie tożsamości cudzoziemca (jeśli dotyczy) [gov.pl]

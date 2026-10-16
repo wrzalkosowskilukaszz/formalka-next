@@ -23,7 +23,7 @@ Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 ## Wizyta w urzędzie gminy (locked) — Najpierw: Formularz.
 - formularz zgłoszenia pobytu czasowego [gov.pl]
 - ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo [gov.pl]
-- ważną kartę pobytu członka rodziny obywatela UE (Tylko jeśli jesteś członkiem rodziny obywatela UE, EFTA lub Szwajcarii.) [gov.pl]
+- ważną kartę pobytu członka rodziny obywatela UE (Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.) [gov.pl]
 - umowę cywilnoprawną, na przykład umowę najmu albo dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [gov.pl]
 - Opłata: Zameldowanie: 0 zł [gov.pl]
 - Opłata: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie: 17 zł (opcjonalnie) [gov.pl]
