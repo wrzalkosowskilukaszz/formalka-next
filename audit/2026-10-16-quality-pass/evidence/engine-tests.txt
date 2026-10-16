@@ -1,0 +1,89 @@
+# cd packages/case-engine && npm test
+# 2026-10-16T21:49Z commit 4146ddb node v22.22.0
+
+# Subtest: blueprints: every step, document, fee and deadline lands on exactly one level
+ok 1 - blueprints: every step, document, fee and deadline lands on exactly one level
+# Subtest: route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure
+ok 2 - route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure
+# Subtest: map: the certificate runs alongside the documents; submitting waits for both
+ok 3 - map: the certificate runs alongside the documents; submitting waits for both
+# Subtest: map: fees and their source; the recognition fee is quoted
+ok 4 - map: fees and their source; the recognition fee is quoted
+# Subtest: events: filing starts the office's time; a refusal opens the appeal level with dates
+ok 5 - events: filing starts the office's time; a refusal opens the appeal level with dates
+# Subtest: decisions: a residence card only after a positive decision; a refusal never opens it
+ok 6 - decisions: a residence card only after a positive decision; a refusal never opens it
+# Subtest: returned: a request to fill gaps sends the documents back until the fix is submitted
+ok 7 - returned: a request to fill gaps sends the documents back until the fix is submitted
+# Subtest: questions: only what can change the plan; never twice; Nie wiem counts as an answer
+ok 8 - questions: only what can change the plan; never twice; Nie wiem counts as an answer
+# Subtest: address registration (D-01): EU 30 days, others 4; both readings of the nth day
+ok 9 - address registration (D-01): EU 30 days, others 4; both readings of the nth day
+# Subtest: validator: tampered refs, invented dates, guessed nationality, locks without basis
+ok 10 - validator: tampered refs, invented dates, guessed nationality, locks without basis
+# Subtest: dates: Easter, holidays, month ends, KPA shift and the two nth-day readings
+ok 11 - dates: Easter, holidays, month ends, KPA shift and the two nth-day readings
+# Subtest: dates: the rules as quoted from KPA art. 57 and the act on days off work (verified 2026-10-16)
+ok 12 - dates: the rules as quoted from KPA art. 57 and the act on days off work (verified 2026-10-16)
+# Subtest: advisor: a draft plan does nothing; an approved one plans the deadline by itself
+ok 13 - advisor: a draft plan does nothing; an approved one plans the deadline by itself
+# Subtest: advisor: a deadline that may not apply never notifies; no consent keeps all in the app
+ok 14 - advisor: a deadline that may not apply never notifies; no consent keeps all in the app
+# Subtest: advisor: a planned visit gets preparation, the morning and a follow-up; quiet hours hold
+ok 15 - advisor: a planned visit gets preparation, the morning and a follow-up; quiet hours hold
+# Subtest: advisor: stable ids, generic lock screen, and never a claim of booking, sending or filing
+ok 16 - advisor: stable ids, generic lock screen, and never a claim of booking, sending or filing
+# Subtest: copy: dates after "do" in the genitive; words about the assistant agree with its persona
+ok 17 - copy: dates after "do" in the genitive; words about the assistant agree with its persona
+# Subtest: advisor: the office's time passing is told once, as information; a quiet week gets a nudge
+ok 18 - advisor: the office's time passing is told once, as information; a quiet week gets a nudge
+# Subtest: residence card: the purpose picks MOS or paper; documents are needed to submit
+ok 19 - residence card: the purpose picks MOS or paper; documents are needed to submit
+# Subtest: offices: only from the registry's office layer, by the user's city; visit messages carry them
+ok 20 - offices: only from the registry's office layer, by the user's city; visit messages carry them
+# Subtest: alternatives travel together; a later step done closes the steps before it
+ok 21 - alternatives travel together; a later step done closes the steps before it
+# Subtest: address registration (audit F4): the family card only if it applies; filing doesn't wait for the owner
+ok 22 - address registration (audit F4): the family card only if it applies; filing doesn't wait for the owner
+# Subtest: warnings: the guide's own notes for this person, on the right level, important first
+ok 23 - warnings: the guide's own notes for this person, on the right level, important first
+# Subtest: evaluation scenarios: every reference plan meets its expectations
+ok 24 - evaluation scenarios: every reference plan meets its expectations
+# Subtest: intake: the baseline proposes no wrong value on any scenario, and quotes the person's own words
+ok 25 - intake: the baseline proposes no wrong value on any scenario, and quotes the person's own words
+# Subtest: intake: language and origin never become citizenship or protection
+ok 26 - intake: language and origin never become citizenship or protection
+# Subtest: intake: the checker drops what isn't asked, isn't an option, isn't verbatim, or is always asked
+ok 27 - intake: the checker drops what isn't asked, isn't an option, isn't verbatim, or is always asked
+# Subtest: intake: negation, need and ambiguity propose nothing
+ok 28 - intake: negation, need and ambiguity propose nothing
+# Subtest: intake: a candidate changes nothing until the person confirms it
+ok 29 - intake: a candidate changes nothing until the person confirms it
+# Subtest: intake: the city, only when exactly one known city is named, never a street
+ok 30 - intake: the city, only when exactly one known city is named, never a street
+# Subtest: replan: a confirmed stay narrows the documents, in words the person can check
+ok 31 - replan: a confirmed stay narrows the documents, in words the person can check
+# Subtest: replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
+ok 32 - replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
+# Subtest: replan: no change is an empty diff; a route change is named
+ok 33 - replan: no change is an empty diff; a route change is named
+# Subtest: verify: the engine's own plans pass both checks (each evaluation scenario runs them too)
+ok 34 - verify: the engine's own plans pass both checks (each evaluation scenario runs them too)
+# Subtest: verify: content changed behind valid references is caught; the structural check alone passes it
+ok 35 - verify: content changed behind valid references is caught; the structural check alone passes it
+# Subtest: voice: every question a blueprint can ask speaks to the person, with no third person left
+ok 36 - voice: every question a blueprint can ask speaks to the person, with no third person left
+# Subtest: voice: nothing in the person's voice needs their gender (no miałeś/miałaś)
+ok 37 - voice: nothing in the person's voice needs their gender (no miałeś/miałaś)
+# Subtest: voice: same options, values and numbers as the registry; only known facts and values are reworded
+ok 38 - voice: same options, values and numbers as the registry; only known facts and values are reworded
+# Subtest: voice: for someone else the registry's own wording is used, unchanged
+ok 39 - voice: for someone else the registry's own wording is used, unchanged
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1492.473787

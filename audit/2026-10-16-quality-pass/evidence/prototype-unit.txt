@@ -1,0 +1,53 @@
+# node --test prototype/test/*.test.mjs
+# 2026-10-16T21:50Z commit 4146ddb node v22.22.0
+
+# Subtest: D1: app.css uses tokens only (colour, type, radius, motion, layers)
+ok 1 - D1: app.css uses tokens only (colour, type, radius, motion, layers)
+# Subtest: no text size token below 12 px
+ok 2 - no text size token below 12 px
+# Subtest: norm folds Polish letters and punctuation
+ok 3 - norm folds Polish letters and punctuation
+# Subtest: polarity: yes, no and "Nie wiem"; strict mode for approval cards
+ok 4 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
+# Subtest: audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+ok 5 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+# Subtest: yes or no questions: a bare word is taken, a sentence is asked back
+ok 6 - yes or no questions: a bare word is taken, a sentence is asked back
+# Subtest: options with words: the matching one, or the tied ones to choose from
+ok 7 - options with words: the matching one, or the tied ones to choose from
+# Subtest: the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+ok 8 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+# Subtest: whose case: someone else is named first; otherwise the person speaks of themselves
+ok 9 - whose case: someone else is named first; otherwise the person speaks of themselves
+# Subtest: what it does not follow stays unknown; questions about the question are recognised
+ok 10 - what it does not follow stays unknown; questions about the question are recognised
+# Subtest: days and hours in words (the clock starts on Monday 19.10.2026)
+ok 11 - days and hours in words (the clock starts on Monday 19.10.2026)
+# Subtest: day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 12 - day and hour chips: a typed day or hour picks its chip; another one is reported
+# Subtest: "Jak poszło?" in the person's words
+ok 13 - "Jak poszło?" in the person's words
+# Subtest: audit F7: personal numbers are masked before the person's words are shown
+ok 14 - audit F7: personal numbers are masked before the person's words are shown
+# Subtest: case intents: a case that is part of another named case gives way to it
+ok 15 - case intents: a case that is part of another named case gives way to it
+# Subtest: an answer that fits no option: the reply reasons over the words, never picks for the person
+ok 16 - an answer that fits no option: the reply reasons over the words, never picks for the person
+# Subtest: waiting for the office: the need is read from the words, not as a new application
+ok 17 - waiting for the office: the need is read from the words, not as a new application
+# Subtest: correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+ok 18 - correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+# Subtest: round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+ok 19 - round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+# Subtest: study scope: the groups left out are named, not guessed
+ok 20 - study scope: the groups left out are named, not guessed
+# Subtest: round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+ok 21 - round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 214.09384
