@@ -14,7 +14,18 @@ Labels used throughout:
 This package holds:
 - this report;
 - `screens/`: screenshots from the automated walkthrough;
-- `evidence/`: the raw test outputs behind every number below.
+- `evidence/`: the raw test outputs behind every number below;
+- `source/`: the full source of the repository at the reported commit (without this `audit/` folder). It includes:
+  - the engine;
+  - the five blueprints;
+  - the 17 evaluation scenarios and reference plans;
+  - all test code;
+  - the prototype;
+  - the documents;
+  - the content snapshots.
+
+  Section 6.1 maps every number to its inputs and its test code.
+- `MANIFEST.sha256`: a checksum for every file in the package.
 
 ## 1. What we ask you to judge
 
@@ -22,6 +33,7 @@ This package holds:
 2. **The active assistant.** Is the experience honest? It proposes actions after every reply, reads typed answers on the device and keeps a memory on the phone, without crossing the privacy line (ADR-0009, ADR-N002)?
 3. **Learning from use.** Is the proposal sound (ADR-N010)? The owner asked that the assistant learn from every user's answers. We propose a way that never collects cases.
 4. **Readiness.** Is the lab ready for Phase 1 (interviews and the concept test with this prototype)? What must change first?
+5. **Evaluation method.** The 17 reference plans are the engine's own output, to be checked by people against the official sources (section 6.1). Is that review enough for the H1 benchmark, or does it need answers written independently by an expert?
 
 ## 2. Where we are (summary)
 
@@ -147,6 +159,32 @@ The e2e scenarios check every screen for:
 - no never-say phrase, no em dash, no internal identifier.
 
 They also run at 1280 px in the phone frame. They cover all five case types (scenarios A–E in `prototype/README.md`).
+
+### 6.1 Where each number comes from
+
+All paths are relative to `source/formalka-next-<commit>/` in the package, or to the repository root.
+
+| Number | Inputs | Test code | Output |
+|---|---|---|---|
+| Engine 31/31 | `blueprints/*.yaml`, `reference/**`, `packages/case-engine/src/*.ts` | `packages/case-engine/test/engine.test.ts`, `intake.test.ts`, `replan.test.ts` | `evidence/engine-tests.txt` |
+| Evaluation 17/17 | `packages/case-engine/eval/scenarios.yaml` (17 scenarios: the person's words, confirmed facts, events, expectations) | `packages/case-engine/eval/run.ts` (`npm run eval`) | `packages/case-engine/eval/REPORT.md`, `packages/case-engine/eval/reference-plans/*.md` (17 files) |
+| Spike S1 14/14 | `spikes/s1-case-engine/src` | `spikes/s1-case-engine/test` | `evidence/s1-tests.txt` |
+| Engine bundle | `packages/case-engine/src`, `reference/`, `blueprints/` | `packages/case-engine/tools/build-browser.mjs --locales pl` | `evidence/bundle.txt` (SHA-256) |
+| Prototype reader 9/9 | `prototype/src/js/35-understand.js`, `10-cases.js`, `00-base.js` | `prototype/test/understand.test.mjs`, `prototype/test/load.mjs` | `evidence/prototype-unit.txt` |
+| Prototype lint | `prototype/src/js/*.js` | `prototype/test/lint.mjs` | `evidence/prototype-lint.txt` |
+| Prototype e2e 5/5 | `prototype/dist/index.html`, built by `prototype/build.mjs` from `prototype/src` and the engine bundle | `prototype/test/e2e.mjs` | `evidence/e2e-reduced-motion.txt`, `evidence/e2e-motion.txt` |
+
+**The reference plans are the engine's own output.** FACT: `eval/run.ts` runs each scenario through the engine and writes the resulting plan in plain Polish (header of `eval/scenarios.yaml`). They are therefore:
+- not an independent ground truth;
+- not yet reviewed: the scenarios' "situations" are drafts for native writers to rewrite;
+- not yet reference answers. They become reference answers only after the owner, or a domain expert, checks each one against the official sources.
+
+INFERENCE: until that review, the 17/17 result shows only that the engine meets the expectations written into `scenarios.yaml`, not that the plans are right. The H1 benchmark must not run before the review (doc 11 §5).
+
+**Clean reproduction.** FACT: the source archive was extracted into an empty folder on 16.10, its dependencies were installed with `npm ci`, and every check above was rerun (`evidence/clean-checkout.txt`):
+- all results were the same;
+- the engine bundle had the same SHA-256 as the committed one;
+- `npm run eval` rewrote the 17 reference plans and `REPORT.md` byte for byte.
 
 **Defects found and fixed by these tests** (they show what the suite catches):
 - A typed "Mam certyfikat B1" in a citizenship case started a separate certificate case. Words now update the open case first.
@@ -276,11 +314,14 @@ They also run at 1280 px in the phone frame. They cover all five case types (sce
 
 ## 12. How to reproduce
 
+From the package (no repository access needed):
 ```
-git clone https://github.com/wrzalkosowskilukaszz/formalka-next && cd formalka-next   # private: access via the owner
-(cd packages/case-engine && npm ci && npm test)
+cd source/formalka-next-<commit>
+(cd packages/case-engine && npm ci && npm test && npm run eval)
 (cd spikes/s1-case-engine && npm test)
 node prototype/build.mjs && open prototype/dist/index.html
 node --test prototype/test/*.test.mjs && node prototype/test/lint.mjs && node prototype/test/e2e.mjs
 ```
-You need Node 22.18 or later. Playwright and ESLint can be global installs. The prototype is also available as a private link that the owner can share.
+With repository access, `git clone https://github.com/wrzalkosowskilukaszz/formalka-next` instead (private; access through the owner).
+
+You need Node 22.18 or later. `npm ci` needs the public npm registry; it installs 3 packages, one of them the `yaml` parser. Playwright and ESLint can be global installs. The prototype is also available as a private link that the owner can share.
