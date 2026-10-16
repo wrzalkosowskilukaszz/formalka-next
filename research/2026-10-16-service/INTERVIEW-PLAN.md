@@ -4,6 +4,8 @@
 
 **Purpose:** confirm, refute or re-rank the loss points (L1–L14) and assumptions (A1–A18) in doc 18, from people's real past cases. Nothing here tests the app.
 
+**Time:** 50 minutes with the "other matters" question (§3.4).
+
 ## 1. Who
 
 | Segment | Number | Why |
@@ -42,11 +44,16 @@ That is 14 people plus 2 experts. Include people with lower digital skills, peop
    - **Office (L9).** "Skąd wiedziałeś(-aś), do którego urzędu iść? Czy rezerwowałeś(-aś) wizytę?"
    - **PESEL (L11, L12).** "Kto poprosił Cię o PESEL? Czy ktoś podał podstawę prawną?"
    - **After (L13).** "Jak dowiedziałeś(-aś) się, że masz PESEL? Co zrobiłeś(-aś) z zaświadczeniem?"
-4. **Trust and help (10 min).**
+4. **Other matters (5 min, for doc 19's order).**
+   - "Jakie inne sprawy urzędowe załatwiałeś(-aś) w pierwszym roku w Polsce?"
+   - "Która była najtrudniejsza, najdroższa albo najbardziej stresująca, i dlaczego?"
+
+   Record each matter in the doc 19 §3 numbering, with the person's own words for why it was hard.
+5. **Trust and help (10 min).**
    - "Komu ufałeś(-aś), a komu nie? Dlaczego?"
    - "Czego nigdy nie wpisał(a)byś do aplikacji w telefonie?"
    - "Gdyby ktoś miał Ci przypominać o terminach, kto i jak?"
-5. **Close (5 min).** Ask what they would tell a friend arriving next week. Thank them; pay the incentive if the owner approved one.
+6. **Close (5 min).** Ask what they would tell a friend arriving next week. Thank them; pay the incentive if the owner approved one.
 
 **Landlords** get their own short guide on the same pattern: the last time a tenant asked for registration; their fears; what they signed; what they were told by whom.
 
