@@ -1,13 +1,13 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T15:25Z commit 9d2ae9a node v22.22.0
+# 2026-10-16T15:34Z commit 25cfc14 node v22.22.0
 
-built: dist/index.html 748 KB, build 0d4206b2a32d, engine a0988a9702344e56, formalka@04057ef
-e036b6ad31eb79ac1f4a7f1765a767e0095b36957b4c44ee4ddc23d03e362c94  prototype/dist/index.html
-ab6acd251582b72d1ff366dfde780465ac739a61ed2fc33a6f49977941cad9ee  prototype/dist/artifact.html
+built: dist/index.html 748 KB, build c133758503d2, engine a0988a9702344e56, formalka@04057ef
+b42e9ebf9d3e022aa0495613a1c016383096d2ccc0585e2209ba8e09c1fccc14  prototype/dist/index.html
+ed369cd96741c3bad6359a4ec2da3a24935b797952d1179c4db0ffa9594e889f  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "0d4206b2a32d",
+  "build": "c133758503d2",
   "registry": "formalka@04057ef",
   "engine": "a0988a9702344e56",
   "engineBundle": {
@@ -22,13 +22,13 @@ two builds identical: yes
     "src/js/10-cases.js": "144300f948caff3d",
     "src/js/20-chat.js": "45c5e54b3797cd53",
     "src/js/25-shell.js": "452f89eb93f0b312",
-    "src/js/30-intake.js": "efe5b4522777fc98",
+    "src/js/30-intake.js": "3aba7dd1157e2c3c",
     "src/js/35-understand.js": "33b5fbd679597f5c",
     "src/js/40-case.js": "7b4180767a23c102",
     "src/js/45-guide.js": "b8b08eeab73fa1e3",
     "src/js/46-waiting.js": "9e38c549dab5e146",
     "src/js/50-time.js": "73209c257a57c3b3",
-    "src/js/60-screens.js": "f9a585a1ac04e546",
+    "src/js/60-screens.js": "74aadf614d45965b",
     "src/js/90-boot.js": "e2841f9cfa7ab013",
     "src/tokens-dark.css": "50bf0ed8d81cf162",
     "src/tokens.css": "26138b4cec34e3fb",
@@ -92,7 +92,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "e036b6ad31eb79ac1f4a7f1765a767e0095b36957b4c44ee4ddc23d03e362c94",
-    "artifact.html": "ab6acd251582b72d1ff366dfde780465ac739a61ed2fc33a6f49977941cad9ee"
+    "index.html": "b42e9ebf9d3e022aa0495613a1c016383096d2ccc0585e2209ba8e09c1fccc14",
+    "artifact.html": "ed369cd96741c3bad6359a4ec2da3a24935b797952d1179c4db0ffa9594e889f"
   }
 }

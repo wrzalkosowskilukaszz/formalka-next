@@ -1,11 +1,12 @@
 # node prototype/test/e2e.mjs --motion (full animations)
-# 2026-10-16T15:26Z commit 9d2ae9a node v22.22.0
+# 2026-10-16T15:35Z commit 25cfc14 node v22.22.0
 
 ok   A-citizenship-words (25.0 s)
-ok   B-registration-warsaw (30.6 s)
-ok   C-personas-and-handoff (31.8 s)
-ok   D-route-and-office (20.6 s)
+ok   B-registration-warsaw (29.7 s)
+ok   C-personas-and-handoff (31.9 s)
+ok   D-route-and-office (20.7 s)
 ok   E-lock-screen-and-desktop (18.0 s)
-ok   F-study-mode (19.5 s)
-ok   G-waiting-for-office (7.9 s)
-7/7 scenarios passed
+ok   F-study-mode (20.1 s)
+ok   G-waiting-for-office (10.3 s)
+ok   H-home-input-open (3.9 s)
+8/8 scenarios passed
