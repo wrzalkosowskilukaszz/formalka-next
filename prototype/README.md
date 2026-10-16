@@ -207,11 +207,15 @@ The chat always has a back button; with no case yet, it returns home.
   - a long list of answers uses tighter cards (still 44 px targets);
   - the panel takes at most 55% of the screen.
 
-## Test script for sessions with people (audit of 16.10, Phase 1)
+## Test script for sessions with people (Phase 1; revised 16.10, round 2 correction)
 
-**What this round can show:** qualitative problems with 5 to 8 people, in Polish. It cannot show:
+**Status: a draft.** Neither the owner nor the auditor has approved it. It scores answers against `audit/2026-10-16-round2/reference/`, which is itself a draft awaiting independent subject-matter review. Until a named reviewer signs that review:
+- sessions may run only as usability pilots;
+- correctness (measure 1) is recorded but not reported as a result.
+
+**What this round can show:** qualitative problems with 5 to 8 people, in Polish, on one journey (address registration). It cannot show:
 - a statistical advantage;
-- retention (H2: there is no lasting memory, and time travel is not a return);
+- retention (H2): memory lasts for the session only, and learning beyond the device (ADR-N010 levels 2 and 3) stays off;
 - that the UA, RU or EN versions work.
 
 Recruit future users, including people with lower digital skills.
@@ -226,52 +230,129 @@ Recruit future users, including people with lower digital skills.
 Never ask for document numbers or copies of letters. Notes stay out of this repository: it is public at the time of writing.
 
 ### Before each session
-- Study mode on. A separate browser profile with no saved logins. A fresh page (reset or reload) for each participant.
-- Give the participant a card with a **fictional identity**: name, citizenship group, address in Warsaw, move-in date. No real data: the masking catches only some numbers.
-- Agree what is recorded, where it is kept and when it is deleted. Keep recordings and notes out of the repository.
-- Say, in these words or close to them: "To prototyp. Asystent nie korzysta z modelu językowego: to, co napiszesz, czyta prosty czytnik w telefonie. Formularz, przypomnienia, ekran blokady i pamięć są symulowane. Nic nie zostanie zarezerwowane, wysłane ani złożone, a po odświeżeniu strony wszystko znika."
-- If the goal is to learn what people expect from a language model, run that as a separate session. This one measures the prototype as it is.
+- **Prototype:** study mode on (`#badanie`). It offers address registration only and shows the study's scope. Use a separate browser profile with no saved logins, and a fresh page (Reset) for each task.
+- **Paper:** checklist A from `audit/2026-10-16-round2/reference/CHECKLISTS.md`, printed. Scoring sheet B, one per participant.
+- **Office check:** before the first session, the moderator looks up on the City of Warsaw's site which office handles registration for Mokotów and for Wola (OPEN-5). The answer goes on the scoring sheet.
+- **Consent:** agree what is recorded, where it is kept and when it is deleted. Recordings and notes stay out of the repository.
+- **Disclosure,** read aloud in these words or close to them, before the first task:
 
-### The task (read aloud; a concrete goal)
-"Od 15 października mieszkasz w wynajętym mieszkaniu w Warszawie, na Mokotowie. Chcesz się tam zameldować. Dowiedz się z aplikacji, co trzeba zrobić, do kiedy i w którym urzędzie."
+  > To prototyp do badania, a nie prawdziwa usługa. Wszystko na karcie jest wymyślone: nie wpisuj nic o sobie. Asystent to program, a nie urzędnik ani prawnik; nie korzysta z modelu językowego. To, co napiszesz, czyta prosty czytnik. Przypomnienia, ekran blokady, formularz i data w aplikacji (poniedziałek, 19 października 2026) są symulowane. Nic nie zostanie wysłane, zarezerwowane ani złożone, a po odświeżeniu strony wszystko znika. Terminy i dokumenty to przykłady z przewodników, które dopiero sprawdzamy: to nie jest porada prawna.
 
-Observe without leading. Help only when the participant is stuck, and count each time you do.
+- Run a separate session if the goal is to learn what people expect from a language model. This one measures the prototype as it is.
 
-During the session, bring in these moments when the participant gets there:
-1. **A wrong answer to correct.** The identity card leaves the length of stay to the moderator. When the plan card appears, before approval, say: "Okazuje się, że zostajesz tam tylko na rok." The participant corrects it: "Popraw odpowiedzi" asks the questions again.
-   - After approval, the prototype cannot change an answer already given: the reader proposes only facts not yet answered (OPEN, `audit/2026-10-16/RESPONSE.md`).
-   - So keep this moment before approval.
-2. **"Nie wiem".** The card does not say which citizenship group applies; see whether "Nie wiem" is found and what the participant does next.
-3. **The owner will not confirm.** "Właściciel nie chce podpisać potwierdzenia na formularzu. Co teraz?" The plan lets filing go ahead without it, as the guide says (engine fix 35f22bf).
-4. **A return after a break.** Talk about something else for five minutes, then: "Wróć do sprawy. Co jest teraz do zrobienia?" Then move the clock three days on and let the participant answer "Jak poszło?".
+### Fictional identity cards (in-scope groups only)
+The study covers what the reference comparison did not exclude (`COMPARISON.md`, D1–D6): an EU citizen, and a non-EU citizen with a national visa. A card never shows a name; the participant is "Ty". The expected answers come from the draft reference and are scored only after its review.
 
-### What to measure (audit, five measures)
-1. Does the participant name the right next step, office, documents and deadline conditions?
-   - Score it against the independent reference for this path (`packages/case-engine/eval/independent/`, addr-01 to addr-04).
-   - OPEN: the reference is not written yet, and correctness cannot be scored until it is.
-2. How often did the moderator help? How many misreadings by the reader? How many confirmations were accepted without reading?
-3. Does the participant know that nothing was sent, booked or saved for tomorrow?
-4. The time to the first correct, useful result, not to a success screen.
-5. Can the participant safely find their way again after a changed fact or an office's request?
+**Card A: EU citizen** (reference R1; after moment M1, R2)
 
-High confidence without a correct next step counts as a negative result.
+> Masz obywatelstwo Portugalii. Od czwartku 15 października 2026 mieszkasz w wynajętym mieszkaniu w Warszawie, na Mokotowie (adres wymyślony: ul. Przykładowa 1). Masz pisemną umowę najmu na dwa lata. Właściciel zgodzi się potwierdzić, że tu mieszkasz. Chcesz tu zostać na stałe.
 
-### Questions after the task
-1. "Co trzeba teraz zrobić w tej sprawie, do kiedy i gdzie?" (measure 1)
-2. "Co aplikacja zrobiła, a czego nie zrobiła?" (measure 3)
-3. "Co było niejasne albo co trzeba było zgadywać?"
+Expected (draft reference):
+- **Next action:** fill in the permanent-stay form; the owner confirms on it.
+- **Bring:** a passport or another valid document that confirms identity and citizenship; the lease. With the lease alone, score per item 8 (OPEN-12).
+- **Office:** the municipal office for Mokotów.
+- **Deadline:** the 30th day, 13.11 or 14.11. 14.11 is a Saturday, so plan for 13.11 (OPEN-1, OPEN-2).
+- **Channel:** in person or online.
+- **Fees:** free.
 
-### Comparison
-First compare with a **plain checklist** of the same verified information for this path. Only then compare with a general chatbot that gets the same facts. Otherwise it is unclear whether the value comes from the case's memory and state, or just from ordered content. OPEN: the checklist is not prepared yet.
+**Card B: non-EU citizen with a visa** (reference R4; moments M2 and M3, R7 and R8)
+
+> Masz obywatelstwo Indii i wizę krajową (typ D) do pracy. Od soboty 17 października 2026 wynajmujesz pokój w Warszawie, na Woli (adres wymyślony: ul. Przykładowa 2), od prywatnej osoby, bez pisemnej umowy. Masz umowę o pracę na rok. Nie masz numeru PESEL.
+
+Expected (draft reference):
+- **Next action:** fill in the form; the owner confirms on it.
+- **Bring:** a valid travel document **and** the visa; the owner's title document.
+- **Office:** the municipal office for Wola.
+- **Deadline:** the 4th day, 20.10 or 21.10. Today in the app is 19.10, so this is urgent; plan for 20.10.
+- **Channel:** in person only, and personally (no PESEL, so no proxy).
+- **Fees:** registration is free; the certificate for temporary stay is 17 zł, optional.
+
+### Conditions and order (the checklist first)
+Each participant does two tasks:
+- card A in one condition and card B in the other;
+- one condition is checklist A on paper (the comparison), the other is the prototype.
+
+Rotate the four orders across participants:
+- checklist A, then app B;
+- app A, then checklist B;
+- checklist B, then app A;
+- app B, then checklist A.
+
+A comparison with a general chatbot is **not** part of this round. It comes later, and only if the comparison with the checklist shows that the app adds something. Otherwise it stays unclear whether any value comes from the case's state or just from ordered content.
+
+### The task (read aloud; the same words in both conditions)
+> Na karcie jest Twoja sytuacja. Chcesz się zameldować pod tym adresem. Korzystając z tego, co masz przed sobą, ustal, co robisz najpierw, do kiedy, gdzie i co ze sobą zabierasz. Kiedy będziesz gotowy, powiedz mi to własnymi słowami.
+
+The task names no screen, button or word from the app.
+
+**Help:** observe without leading. Help only when the participant is stuck, and use the lowest level that works. Record every time you help: the level and a one-line reason.
+1. "Co byś teraz zrobił(a)?"
+2. "Gdzie byś tego szukał(a)?"
+3. Point to the place.
+
+### Moments (the same sentence in both conditions)
+Each moment comes after the participant's first full answer.
+
+**M1. Error recovery** (card A).
+
+> Okazuje się, że na karcie był błąd: zostajesz w Warszawie tylko na rok, a nie na stałe. Czy coś się zmienia?
+
+- **Expected:** the temporary-stay form instead of the permanent one; the deadline and office stay the same; the certificate now costs 17 zł, optional.
+- **In the app:** the plan is already approved, so a correction goes through "Twoje odpowiedzi → Popraw", or by typing that an answer was wrong. The prototype shows what would change, marks the affected steps "Do ponownego sprawdzenia", and changes nothing without approval.
+- **Record:**
+  - whether the participant found the correction, and how;
+  - whether they read the proposed change before approving;
+  - the answer after it, and the time it took.
+
+**M2. An uncertain answer** (card B).
+
+> Nie wiesz jeszcze, czy po roku zostaniesz w Polsce na stałe.
+
+- **Expected:** the deadline does not change (4th day). The form depends on the intention to stay; the participant picks one knowingly or asks at the office (reference R7).
+- **Record:** whether "Nie wiem" was used or found, and whether the participant saw that the deadline is unaffected.
+
+**M3. No confirmation from the owner** (card B).
+
+> Właściciel pokoju nie chce potwierdzić na formularzu, że tu mieszkasz. Co teraz?
+
+- **Expected:** file anyway, on time, with a statement of why the confirmation is missing. The office then runs an administrative procedure and decides; it does not register at once (reference R8, D10). How long that takes is OPEN-8: do not score it.
+
+### What to measure
+Score on sheet B (`CHECKLISTS.md`) against the reviewed reference, per participant and condition.
+1. **The correct next action** (item 1), plus office, deadline, channel, documents and fees (items 2–10).
+   - High confidence (4–5) with a wrong next action counts as a negative result.
+   - "The lease alone" is scored as uncertain (OPEN-12), never as wrong.
+2. **Error recovery** (M1, and M3 in the app):
+   - recovered correctly, recovered wrongly, or did not recover;
+   - the time it took;
+   - in the app, whether the proposed change was read before approval.
+3. **Moderator help:** a count by level, with reasons.
+4. **Understanding of the limits** (item 11), asked after each app task:
+   - "Czy coś zostało wysłane do urzędu albo zarezerwowane?" Expected: no.
+   - "Czy jutro ta sprawa będzie w aplikacji?" Expected: no; it lasts for this session only.
+   - "Czy to porada prawna? Kto Ci odpowiadał?" Expected: no; an AI program, not an official.
+   - "Czy wszystko, co aplikacja pokazała, jest pewne?" Expected: no. Look for the day-count readings, "Może Cię dotyczyć", "sprawdź" and the study's scope.
+
+Also record:
+- confirmations given in under 2 seconds on a card with content (from the recording);
+- the reader's misreadings: what was typed and what the app took it to mean;
+- every place where the app was wrong against the reference. A wrong group deadline, a wrong office, or a claim that something was sent or booked is **critical**: stop that task and note it.
+
+### After each session
+- **Debrief:** tell the participant that the data were fictional. Give them the correct answers from the reviewed reference, including what is still open.
+- **Questions:**
+  - "Co było niejasne albo co trzeba było zgadywać?"
+  - "Z czego wolał(a)byś korzystać, z listy czy z aplikacji, i dlaczego?"
 
 ### The gate after this round
-- Go on with this one procedure only with evidence of:
-  - useful progress;
+- Continue with this one procedure only with evidence of:
+  - correct next actions, at least on par with the checklist;
+  - recovery from a changed fact;
   - understanding of the limits;
   - a maintenance cost that can be borne.
-- Any unfixed critical error in the studied path blocks wider use.
+- Any critical error in the studied path blocks wider use until it is fixed **and** re-checked by someone other than its author.
 - The targets in doc 11 are working goals, not proven standards.
-- A round of 5 to 8 people approves neither an alpha nor production.
+- This round approves neither a beta nor production.
 - H6 (maintenance cost) is measured separately, with a log of content changes and the time to verify and republish them.
 
 ## Brief §4 moments in v4

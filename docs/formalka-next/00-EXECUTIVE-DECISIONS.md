@@ -68,7 +68,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - conditional GO for moderated tests on fictional cases;
   - NO-GO for real cases.
 
-  The prototype's findings (F1 wording, F5, F7, F8) are fixed, and the test script follows the audit's Phase 1 section. Waiting on the owner:
+  The prototype's findings (F1 wording, F5, F7, F8) were changed in the lab and are not independently verified; a regression run found more failures in variants (`audit/2026-10-16-round2/regressions/`, branch `lab/round2-correction`). The test script follows the audit's Phase 1 section. Waiting on the owner:
   - **the repository is public, while ADR-N001 says private;**
   - the independent reference for address registration;
   - the review of the second-person wording;

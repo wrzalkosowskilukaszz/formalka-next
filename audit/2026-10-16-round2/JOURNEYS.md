@@ -68,7 +68,7 @@ Changed after the owner's tests of 16.10 ("za dużo informacji naraz"). The type
 
 **Gaps:**
 - the reader is a word matcher, and real phrasing will often miss;
-- after approval, an answer already given cannot be changed (RESPONSE §6).
+- after approval, an answer already given cannot be changed (RESPONSE §6). Changed on 16.10 on `lab/round2-correction`: the correction flow, e2e scenario I.
 
 ## B. Address registration in Warsaw (dark mode)
 

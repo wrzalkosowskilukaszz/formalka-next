@@ -29,16 +29,18 @@ Neither session wrote to the production repository.
 
 ## 2. Findings
 
+> **Note, 16.10 (owner's critical correction).** "Changed in the lab" means the lab made a change and its own tests pass. It is not an independent verification. A later regression run on `6b3d874` found failures in variants beyond the audit's inputs: `audit/2026-10-16-round2/regressions/`.
+
 | | Finding | Reproduced? | Owner | Status | Commits |
 |---|---|---|---|---|---|
-| F1 | The validator does not check content | FACT: yes, 4 of the 5 mutations, on `85688fd`. A fee of 999 999 zł, an invented task, all tasks and fees removed, and an invented office each returned `ok: true` with no violations | Engine; prototype wording | Fixed | `19c1619` (engine), `a97ce20`, `e0a03a6` (prototype) |
-| F2 | Wrong decision events and outcomes | FACT: yes, both. cit-06 counted the appeal and the court complaint from the same `decision_delivered`. A refused residence decision left the card level `available` | Engine | Fixed | `1532bbe` |
-| F3 | A missing exemption rule became a granted exemption | FACT: yes. res-02 showed "zwolnienie" instead of 340 zł | Engine; prototype display | Fixed | `1532bbe` (engine), `e0a03a6` (prototype) |
-| F4 | Address registration mixes document groups; a process variant becomes a lock | Reported reproduced by the engine session (doc 16 §6c); not repeated here | Engine | Fixed | `35f22bf` |
-| F5 | The reader accepts ambiguous consent and negated actions | FACT: yes, all five inputs in the audit's table | Prototype | Fixed | `a97ce20` |
-| F6 | The 17 plans are not an independent reference | FACT: yes. `eval/run.ts` made them with the same engine | Engine (rename, facts); owner (the reference) | Partly fixed. The independent reference is OPEN | `f3dc5da` |
-| F7 | Privacy is described too broadly | FACT: yes. The typed PESEL was put in the chat before the filter ran. The repository is public | Prototype; owner (visibility) | Fixed in the prototype. Repository visibility is OPEN (owner) | `a97ce20`, `e0a03a6`, this response §3 |
-| F8 | Promises and metrics can reward apparent success | INFERENCE: agreed on every point | Prototype; engine (dates, manifest) | Fixed, except the measures that need the independent reference | `1532bbe`, `f3dc5da` (engine), `a97ce20`, `e0a03a6`, the test script in `prototype/README.md` |
+| F1 | The validator does not check content | FACT: yes, 4 of the 5 mutations, on `85688fd`. A fee of 999 999 zł, an invented task, all tasks and fees removed, and an invented office each returned `ok: true` with no violations | Engine; prototype wording | Changed in the lab; not independently verified | `19c1619` (engine), `a97ce20`, `e0a03a6` (prototype) |
+| F2 | Wrong decision events and outcomes | FACT: yes, both. cit-06 counted the appeal and the court complaint from the same `decision_delivered`. A refused residence decision left the card level `available` | Engine | Changed in the lab; not independently verified | `1532bbe` |
+| F3 | A missing exemption rule became a granted exemption | FACT: yes. res-02 showed "zwolnienie" instead of 340 zł | Engine; prototype display | Changed in the lab; not independently verified | `1532bbe` (engine), `e0a03a6` (prototype) |
+| F4 | Address registration mixes document groups; a process variant becomes a lock | Reported reproduced by the engine session (doc 16 §6c); not repeated here | Engine | Changed in the lab; not independently verified | `35f22bf` |
+| F5 | The reader accepts ambiguous consent and negated actions | FACT: yes, all five inputs in the audit's table | Prototype | Changed in the lab; not independently verified | `a97ce20` |
+| F6 | The 17 plans are not an independent reference | FACT: yes. `eval/run.ts` made them with the same engine | Engine (rename, facts); owner (the reference) | Partly changed. The independent reference is OPEN | `f3dc5da` |
+| F7 | Privacy is described too broadly | FACT: yes. The typed PESEL was put in the chat before the filter ran. The repository is public | Prototype; owner (visibility) | Changed in the prototype; not independently verified. Repository visibility is OPEN (owner) | `a97ce20`, `e0a03a6`, this response §3 |
+| F8 | Promises and metrics can reward apparent success | INFERENCE: agreed on every point | Prototype; engine (dates, manifest) | Changed in the lab; not independently verified, except the measures that need the independent reference | `1532bbe`, `f3dc5da` (engine), `a97ce20`, `e0a03a6`, the test script in `prototype/README.md` |
 
 ### F1. Content check
 - **Engine (`19c1619`).** `verifyContent` is a second check, kept apart from the structural `validatePlan`. It checks:
@@ -233,6 +235,7 @@ In order of urgency:
 
 ## 6. Open work (not decisions)
 
+- **Superseded on 16.10 (owner's decision; branch `lab/round2-correction`).** A confirmed answer can now be corrected after approval: "Popraw" in "Twoje odpowiedzi", or typed words. The person sees a proposed plan diff and approves it or keeps the plan. The history keeps the old answer, the new one and the decision. Until then, the affected steps are marked "Do ponownego sprawdzenia", with no actions offered there, and reminders wait. The text below records the state on `6b3d874`.
 - **After approval, an answer already given cannot be changed.** The reader proposes only facts not yet answered (`intake` rejects `ANSWERED`). Before approval, "Popraw odpowiedzi" asks again. The test script keeps the correction moment before approval.
   - Changing an answered fact after approval needs:
     - a proposal card, like ADR-N003;

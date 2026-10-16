@@ -5,6 +5,14 @@
 **Prepared by:** Claude for the owner, Łukasz.
 **Your audit reviewed:** `895a6aa`.
 
+> **Update, 16.10 (branch `lab/round2-correction`, not merged).** The status words below are the lab's own. None of them is an independent verification, and passing tests written by the same assistant are not approval. The owner asked for a critical correction of this round:
+> - correcting a confirmed answer after approval is now built, with a proposed plan diff, explicit approval and history;
+> - a draft reference from primary sources, compared with the engine: `reference/` (D1–D10);
+> - a regression run against `6b3d874` found 7 failures in variants beyond your inputs, 64/71: `regressions/`;
+> - the revised session script is in `prototype/README.md`.
+>
+> The package you received was built before this update and is unchanged.
+
 Labels: FACT (checked, with its source or command), INFERENCE, HYPOTHESIS, ASSUMPTION, OPEN.
 
 ## Package contents
@@ -64,14 +72,14 @@ The full answer is in `RESPONSE.md` §2. Reproduction before fixing:
 
 | | Status | Still open |
 |---|---|---|
-| F1 | Fixed | The check compares with the registry; errors in the registry itself need the independent reference |
-| F2 | Fixed | User statements vs. legal acceptance: implied levels are marked; legal acceptance stays a separate event where the procedure has one |
-| F3 | Fixed | — |
-| F4 | Fixed in the lab | The online channel is not modelled; five registry errors are proposed to production, not applied |
-| F5 | Fixed | The reader is still a matcher (FACT: 15 unit tests); real phrasing will miss |
-| F6 | Partly | The independent reference is not written (OPEN: who) |
-| F7 | Fixed in the prototype | The repository is public; ADR-N001 says private (OPEN: the owner) |
-| F8 | Fixed | H2 and H6 are not measured; the plain checklist for the comparison is not prepared |
+| F1 | Changed in the lab; not independently verified | The check compares with the registry; errors in the registry itself need the independent reference. On `6b3d874` a swapped source and an altered quote passed (`regressions/`); changed on the branch |
+| F2 | Changed in the lab; not independently verified | User statements vs. legal acceptance: implied levels are marked; legal acceptance stays a separate event where the procedure has one |
+| F3 | Changed in the lab; not independently verified | — |
+| F4 | Changed in the lab; not independently verified | The online channel is not modelled; five registry errors are proposed to production, not applied. The reference comparison found more (D1–D10) |
+| F5 | Changed in the lab; not independently verified | The reader is still a matcher; real phrasing will miss. On `6b3d874`, 5 of the variants failed (a passive negation, a two-digit year, a detached year); changed on the branch |
+| F6 | Partly | A draft reference exists (`reference/`), written by Claude: not independent. The independent review is OPEN (who) |
+| F7 | Changed in the prototype; not independently verified | The repository is public; ADR-N001 says private (OPEN: the owner) |
+| F8 | Changed in the lab; not independently verified | H2 and H6 are not measured. A draft checklist for the comparison exists (`reference/CHECKLISTS.md`), awaiting review |
 
 ## 4. Evidence on this commit
 
@@ -104,7 +112,7 @@ Not independently established:
   - notifications, the lock screen and calendar writes;
   - the interactive form is a mock.
 - **Coverage:** offices with addresses exist only for Warsaw and Kraków; Polish only.
-- **Correcting answers.** After approval, an answer already given cannot be changed (owner decision, RESPONSE §6).
+- **Correcting answers.** On `6b3d874`, after approval, an answer already given could not be changed. The owner reversed that on 16.10: the branch `lab/round2-correction` lets a person correct it, with a proposed diff, explicit approval and history.
 
 ## 6. Decisions waiting on the owner
 
@@ -113,7 +121,7 @@ Not independently established:
 3. Review of the second-person wording (`packages/case-engine/src/voice.ts`).
 4. ADR-N010: your three decisions (level 1 GO as session memory; levels 2 and 3 NO-GO).
 5. Named assistants: test them as a hypothesis, or drop them from the sessions.
-6. Correcting a confirmed answer after approval. The engine supports it; the UI permission is the owner's call.
+6. Correcting a confirmed answer after approval. Decided by the owner on 16.10 (allowed: diff, explicit approval, history); built on `lab/round2-correction`, not merged.
 7. The production content proposals, to be taken to Formalka production outside the lab.
 8. The map's final design (the owner asked for a more attractive, better placed map on 16.10).
 9. What "beta" means (doc 17 §0): the assumption is the roadmap's private alpha with slice 1.
