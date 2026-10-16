@@ -1,0 +1,84 @@
+# Dz.U. 2025 poz. 1794, art. 5 (changes to the act on population records) and art. 19 (entry into force); Komunikat MSWiA, M.P. 2026 poz. 370 (the date)
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf (sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11); https://api.sejm.gov.pl/eli/acts/MP/2026/370/text.pdf (sha256 f4b7223353479968b7083516cf62ad9414e4c032803b6cb56d9400193448b85e); retrieved 2026-10-16
+# Result (FACT): UEL art. 8 pkt 24, art. 10 ust. 8, art. 23i ust. 1a, art. 23j ust. 2 pkt 2 lit. b and art. 43 ust. 3 and 5, as amended, apply from 27 April 2026.
+
+     Art. 5. W ustawie z dnia 24 września 2010 r. o ewidencji ludności (Dz. U. z 2025 r. poz. 274, 1006, 1176, 1191, 1216
+i 1301) wprowadza się następujące zmiany:
+1)   w art. 8 w pkt 24 po wyrazach „lub innego ważnego dokumentu potwierdzającego tożsamość i obywatelstwo” dodaje się
+     wyrazy „albo innego ważnego dokumentu potwierdzającego tożsamość – w przypadku, o którym mowa w art. 10 ust. 8”;
+2)   w art. 10 dodaje się ust. 8 w brzmieniu:
+         „8. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży ani nie
+     ma możliwości jego uzyskania, podstawę rejestracji danych może stanowić inny dokument potwierdzający tożsamość.”;
+3)   w art. 23i po ust. 1 dodaje się ust. 1a w brzmieniu:
+           „1a. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży lub
+     innego dokumentu potwierdzającego tożsamość i obywatelstwo ani nie ma możliwości ich uzyskania, tożsamość wniosko-
+     dawcy będącego cudzoziemcem można potwierdzić na podstawie innego dokumentu potwierdzającego tożsamość.”;
+4)   w art. 23j w ust. 2 w pkt 2 w lit. b po wyrazach „lub innego dokumentu potwierdzającego tożsamość i obywatelstwo”
+     dodaje się wyrazy „albo innego dokumentu potwierdzającego tożsamość – w przypadku, o którym mowa w art. 10 ust. 8,”;
+5)   w art. 43:
+     a)   ust. 3 otrzymuje brzmienie:
+                 „3. Cudzoziemiec dokonujący zameldowania się na pobyt czasowy przedstawia wizę, a w przypadku gdy
+          wjazd cudzoziemca nastąpił na podstawie umowy przewidującej zniesienie lub ograniczenie obowiązku posiada-
+          nia wizy albo cudzoziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2,
+          art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r.
+          poz. 1079 i 1794) – dokument podróży, tymczasowe zaświadczenie tożsamości cudzoziemca, kartę pobytu, doku-
+          ment „zgoda na pobyt tolerowany” albo zezwolenie na pobyt czasowy, zezwolenie na pobyt stały, zezwolenie na
+          pobyt rezydenta długoterminowego Unii Europejskiej lub decyzję o nadaniu statusu uchodźcy w Rzeczypospolitej
+          Polskiej, udzieleniu w Rzeczypospolitej Polskiej ochrony uzupełniającej, zgody na pobyt ze względów humani-
+          tarnych albo zgody na pobyt tolerowany.”,
+     b) dodaje się ust. 5 w brzmieniu:
+                „5. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec dokonujący zameldowania się na pobyt czasowy
+          nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może przedstawić inny dokument
+          potwierdzający tożsamość.”.
+
+      Art. 6. W ustawie z dnia 6 marca 2018 r. o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób za-
+granicznych w obrocie gospodarczym na terytorium Rzeczypospolitej Polskiej (Dz. U. z 2025 r. poz. 89, 619 i 621) w art. 4
+w ust. 2 w pkt 5 wyrazy „na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+ziemcach lub na podstawie umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku
+
+[...]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+3)   art. 1 pkt 42, 43, 44 lit. a, pkt 45, 46, 51, 59 lit. a tiret pierwsze, pkt 60 lit. a, pkt 61 lit. a i pkt 63, które wchodzą w życie
+     z dniem 1 kwietnia 2026 r.;
+4)   art. 8 pkt 2 i 3, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+
+                                                                                 Prezydent Rzeczypospolitej Polskiej: K. Nawrocki
+
+----- M.P. 2026 poz. 370 -----
+                         MONITOR POLSKI
+                         DZIENNIK URZĘDOWY RZECZYPOSPOLITEJ POLSKIEJ
+                                        Warszawa, dnia 10 kwietnia 2026 r.
+                                                              Poz. 370
+                                                          K O M UN IK A T
+                        M IN I S TR A SPR AW W E WN Ę TR Z NY CH I AD M IN I S TR ACJ I 1)
+                                                      z dnia 10 kwietnia 2026 r.
+w sprawie określenia dnia wdrożenia rozwiązań technicznych umożliwiających stosowanie przepisów wskazanych
+w art. 17 ust. 1 ustawy z dnia 21 listopada 2025 r. o zmianie ustawy o cudzoziemcach oraz niektórych innych ustaw
+     Na podstawie art. 17 ust. 1 ustawy z dnia 21 listopada 2025 r. o zmianie ustawy o cudzoziemcach oraz niektórych in-
+nych ustaw (Dz. U. poz. 1794) ogłasza się, co następuje:
+      Dzień wdrożenia rozwiązań technicznych umożliwiających stosowanie przepisów:
+1)    art. 3 pkt 2a, art. 7 ust. 4, art. 13 pkt 11, 17–18b, 18d–19a i 27–30, art. 64a ust. 1 i 10–12, art. 104 ust. 1–1b, art. 105–106l,
+      art. 107 ust. 1, art. 108 ust. 1 pkt 1 i ust. 3–10, art. 112a ust. 2 pkt 3, ust. 3 pkt 2 i ust. 3a, art. 114 ust. 1 pkt 4 i ust. 4b,
+      art. 120a ust. 1–3, art. 139l ust. 2, art. 139t ust. 2, art. 168 ust. 2, art. 168a ust. 2, art. 202–203i, art. 204 ust. 1, art. 206
+      ust. 1 pkt 1 i ust. 3–9, art. 210 ust. 2 pkt 3, art. 218a–219i, art. 222 ust. 1, art. 222a–222g, art. 225a–225i, art. 228 pkt 2,
+      art. 244 ust. 3, art. 246 ust. 3, art. 248 ust. 1–2a, 4 i 5, art. 279 oraz art. 282 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+      ziemcach (Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203),
+2)    art. 12d ust. 3a i 6–8 ustawy z dnia 9 listopada 2000 r. o repatriacji (Dz. U. z 2026 r. poz. 90),
+3)    art. 8 pkt 24, art. 10 ust. 8, art. 23i ust. 1a, art. 23j ust. 2 pkt 2 lit. b oraz art. 43 ust. 3 i 5 ustawy z dnia 24 września
+      2010 r. o ewidencji ludności (Dz. U. z 2026 r. poz. 384),
+4)    art. 4 ust. 2 pkt 5 ustawy z dnia 6 marca 2018 r. o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób
+      zagranicznych w obrocie gospodarczym na terytorium Rzeczypospolitej Polskiej (Dz. U. z 2025 r. poz. 89, 619, 621
+      i 1794),
+5)    art. 343a ust. 1 pkt 3 ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce (Dz. U. z 2024 r. poz. 1571,
+      z późn. zm.2)),
+6)    art. 1 ust. 3 pkt 5 ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746 i 1794
+      oraz z 2026 r. poz. 451),
+7)    art. 3 ust. 1 pkt 18 i ust. 3 pkt 2 ustawy z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzo-
+      ziemcom na terytorium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794 oraz z 2026 r. poz. 203 i 473)
+– określa się na 27 kwietnia 2026 r.
