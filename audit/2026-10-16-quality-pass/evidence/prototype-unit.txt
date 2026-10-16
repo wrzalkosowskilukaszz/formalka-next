@@ -1,5 +1,5 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-16T21:50Z commit 4146ddb node v22.22.0
+# 2026-10-16T22:15Z commit 835ccdf node v22.22.0
 
 # Subtest: D1: app.css uses tokens only (colour, type, radius, motion, layers)
 ok 1 - D1: app.css uses tokens only (colour, type, radius, motion, layers)
@@ -50,4 +50,4 @@ ok 21 - round 2 regressions: a passive or uncertain filing is never read as file
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 214.09384
+# duration_ms 186.137665
