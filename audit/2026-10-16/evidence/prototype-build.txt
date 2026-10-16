@@ -1,13 +1,13 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T14:21Z commit 5406c11 node v22.22.0
+# 2026-10-16T14:32Z commit 4fac23a node v22.22.0
 
-built: dist/index.html 734 KB, build b138a0873cac, engine bd6eb50d2c94474e, formalka@04057ef
-f9b4738d60893a12feffe48a055378a1d1c95971932bcdb00ebd09d2c48e0a3e  prototype/dist/index.html
-74835c21b64a92c2e2facad89579f21342769ab2b4f1b5f23eb1de01fde44b0d  prototype/dist/artifact.html
+built: dist/index.html 737 KB, build c77525880cb6, engine bd6eb50d2c94474e, formalka@04057ef
+6513d38f94adc3e46d1c3a0adb6da15c0783362f8b183690fa4cc046b5cc91a7  prototype/dist/index.html
+c46016e010bf923a687117c4f8ca77dc89f93bb8274e4048c8573293f172d6d9  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "b138a0873cac",
+  "build": "c77525880cb6",
   "registry": "formalka@04057ef",
   "engine": "bd6eb50d2c94474e",
   "engineBundle": {
@@ -22,8 +22,8 @@ two builds identical: yes
     "src/js/10-cases.js": "424f83ba27b3bea4",
     "src/js/20-chat.js": "59460483e62bb7cb",
     "src/js/25-shell.js": "452f89eb93f0b312",
-    "src/js/30-intake.js": "f556e02b58bf26bf",
-    "src/js/35-understand.js": "c09b0d8bba70188a",
+    "src/js/30-intake.js": "4a237a499c066f31",
+    "src/js/35-understand.js": "f1d3a1faa82bd00b",
     "src/js/40-case.js": "244a6f22cd9a3cb0",
     "src/js/45-guide.js": "018fd3a9a4f8f7ef",
     "src/js/50-time.js": "73209c257a57c3b3",
@@ -91,7 +91,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "f9b4738d60893a12feffe48a055378a1d1c95971932bcdb00ebd09d2c48e0a3e",
-    "artifact.html": "74835c21b64a92c2e2facad89579f21342769ab2b4f1b5f23eb1de01fde44b0d"
+    "index.html": "6513d38f94adc3e46d1c3a0adb6da15c0783362f8b183690fa4cc046b5cc91a7",
+    "artifact.html": "c46016e010bf923a687117c4f8ca77dc89f93bb8274e4048c8573293f172d6d9"
   }
 }

@@ -1,5 +1,5 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-16T14:21Z commit 5406c11 node v22.22.0
+# 2026-10-16T14:32Z commit 4fac23a node v22.22.0
 
 # Subtest: norm folds Polish letters and punctuation
 ok 1 - norm folds Polish letters and punctuation
@@ -27,11 +27,13 @@ ok 11 - "Jak poszło?" in the person's words
 ok 12 - audit F7: personal numbers are masked before the person's words are shown
 # Subtest: case intents: a case that is part of another named case gives way to it
 ok 13 - case intents: a case that is part of another named case gives way to it
-# tests 13
+# Subtest: an answer that fits no option: the reply reasons over the words, never picks for the person
+ok 14 - an answer that fits no option: the reply reasons over the words, never picks for the person
+# tests 14
 # suites 0
-# pass 13
+# pass 14
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 132.313354
+# duration_ms 129.163702
