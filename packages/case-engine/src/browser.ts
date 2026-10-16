@@ -8,6 +8,7 @@ import { confirmCandidates, intake, placeCandidate } from "./intake.ts";
 import { dayPl, dueRangePl, msg, PHRASES_NEVER } from "./messages.ts";
 import { type CasePlan, type CaseState, planCase } from "./planner.ts";
 import { nextQuestion } from "./questions.ts";
+import { applyReplan, diffPlans } from "./replan.ts";
 import { type FactDef, type Institution, type Office, type Procedure, registryFromData } from "./registry.ts";
 import { UNKNOWN } from "./rules.ts";
 import { validatePlan } from "./validator.ts";
@@ -46,6 +47,8 @@ export const FormalkaEngine = {
   /** Fact candidates from the person's own words (on the device); nothing changes until they confirm. */
   intake: (blueprintId: string, text: string, state?: CaseState) => intake(bp(blueprintId), reg, text, state),
   confirmCandidates, placeCandidate,
+  /** After approval a change is a proposal: what it would change, by stable ids; done work is never undone. */
+  diffPlans, applyReplan,
   agenda: (input: Omit<AgendaInput, "bp"> & { blueprintId: string }) => agenda({ ...input, bp: bp(input.blueprintId) }),
   msg, dayPl, dueRangePl, PHRASES_NEVER, DEFAULT_PREFS, UNKNOWN,
 };

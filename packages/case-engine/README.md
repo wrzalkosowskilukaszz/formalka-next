@@ -10,7 +10,7 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 27 tests incl. 17 evaluation scenarios and the intake checks
+npm test                         # 30 tests incl. 17 evaluation scenarios, intake and replan checks
 npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
@@ -28,6 +28,7 @@ node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engin
 | `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57, quoted from the act on 2026-10-16), the two readings of "najpóźniej w N dniu", Polish days off (Easter-based; art. 1 of the act on days off work, quoted) |
 | `offices.ts` | Which office, from the registry's office layer and the user's city (TERYT, on the device): quoted addresses, hours, booking links; voivodeship offices by their registry TERYT code. Never a guessed address |
 | `intake.ts` | The person's own words → fact candidates they confirm one by one. Any extractor (the Polish baseline today, an LLM later) passes `checkCandidates`: only facts this case asks, only allowed values, evidence quoted verbatim from the text and on the fact's topic (so language or origin never becomes citizenship or protection). Compound facts (`citizenship.group`) are always asked |
+| `replan.ts` | After approval a change is a proposal (ADR-N003): `diffPlans` lists, by stable ids, what it adds, removes, makes certain, keeps as history (done work) and changes in fees, deadlines, offices and the route. `applyReplan` never resets `done` |
 | `browser.ts` | The browser entry with the data embedded |
 
 **Route** (`planner.ts`) can be:
@@ -74,6 +75,9 @@ const { candidates } = E.intake("citizenship", "Mam pobyt stały i certyfikat B1
 Object.assign(state, E.confirmCandidates(state, candidates, ["citizenship.permanent_title"])); // only what the person confirmed
 E.placeCandidate("Przeprowadziłem się do Warszawy", [{ teryt: "1465011", name: "Warszawa", forms: ["Warszawa", "Warszawie", "Warszawy"] }]);
 // -> { place: { teryt, name }, evidence: "Warszawy" } | null (null when no city or two cities are named)
+const diff = E.diffPlans(E.plan("address-registration", state), E.plan("address-registration", proposed), state.tasks);
+// -> { route?, tasks: { added, nowCertain, removed, keptAsHistory }, fees, deadlines, offices, levels, empty }
+if (approvedByPerson) state = { ...proposed, tasks: E.applyReplan(state.tasks, diff) };
 ```
 
 Events the blueprints accept:

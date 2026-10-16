@@ -28,6 +28,7 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
    - **Mapa:** every level with its state, lock reason and parallel levels.
    - **Teczka:** every document of the case in one checklist, with "albo" alternatives grouped, the source and "Mam" / "Nie dotyczy". Documents can be gathered while their level is locked; ticking them never unlocks a step. Below it: the fees in this case (examples) and the case history (recorded dates). Nothing is uploaded.
    - **Maciek/Asia działa:** what the advisor will do by itself, and when.
+   - **Change something after approval:** write it in the chat ("Chcę się zameldować na pobyt czasowy"). After you confirm the fact, a card shows what the change would do to the plan (new, now certain, no longer needed, done kept in the history, fees, deadlines, office). "Zatwierdzam zmianę" or "Zostaw jak było".
 7. **Move time** with the tester strip (+1/+3/+7 dni). The advisor's notifications appear on a simulated lock screen (generic text by default); its messages land in the chat. "Jak poszło?" answers update the plan.
 8. **Open the related case** from a task (citizenship → language certificate), or write "karta pobytu" in the chat to start a second case with Asia.
 
@@ -37,7 +38,8 @@ A headless walk at 390×844, in light, dark and reduced motion, went through:
 - the address registration with Warsaw: deadline, offices, visit, time travel, lock screen, follow-up, plan update;
 - intake from a description (three candidates; two confirmed, one rejected and then asked), a second case started from the home screen, and the PESEL redirect to address registration;
 - the Teczka for address registration with Warsaw (grouped alternatives, a document ticked while its level is locked; the level stays locked);
-- the city from the description, a stay typed under a question, a reload (the case comes back; the stored data holds neither the name typed in the description nor the description), the case picker, and "Usuń" (storage empty afterwards).
+- the city from the description, a stay typed under a question, a reload (the case comes back; the stored data holds neither the name typed in the description nor the description), the case picker, and "Usuń" (storage empty afterwards);
+- a change after approval (address registration, stay "Nie wiem" → "czasowy"): the proposal lists 3 documents now certain and 2 no longer needed, survives a reload, and once approved the Teczka has 4 groups instead of 5 with the ticked passport still done.
 
 It found 0 errors, 0 network requests and no horizontal scroll.
 
@@ -46,6 +48,6 @@ It found 0 errors, 0 network requests and no horizontal scroll.
 ## Limits
 - **Values.** They are examples from Formalka's guides as of 15.10.2026. Citizenship and temporary residence have open inventory findings.
 - **Office data.** No office phone numbers exist in the registry, and municipal offices only for Warsaw and Kraków.
-- **Free text.** Descriptions and words typed under questions are read for facts by a narrow Polish baseline (no AI). After the plan is approved, messages recognise only case keywords (a change then is a replan, ADR-N003). Real conversation (AI) is Phase 4.
+- **Free text.** Descriptions and words typed under questions are read for facts by a narrow Polish baseline (no AI). After the plan is approved, what the words change is shown as a proposal first (ADR-N003). Real conversation (AI) is Phase 4.
 - **Storage.** This is browser storage in a lab page, without encryption. The product's store (row 3 in 13 §2) adds encryption and export/import.
 - **Simulated features.** The forms, the PDF filling, real notifications and the calendar are not in the slice; they are simulated or covered by spike S3.

@@ -94,7 +94,8 @@ function persist() {
   try {
     if (!S.cases.length) { localStorage.removeItem(KEY); return; }
     const cases = S.cases.map((c) => ({
-      ...c, candidates: null, said: null, decided: null, stage: c.stage === 'confirm' ? 'intake' : c.stage,
+      ...c, candidates: null, said: null, decided: null,
+      stage: c.stage === 'confirm' ? (c.state.approved ? 'case' : 'intake') : c.stage,
       log: c.log.map((m) => (m.free ? { who: 'me', text: 'Twój opis (treści nie zapisujemy)', free: true } : m)),
     }));
     localStorage.setItem(KEY, JSON.stringify({ registry: E.registryVersion, cases, current: S.current, clock: S.clock, delivered: [...S.delivered], lock: S.lock }));
@@ -264,6 +265,22 @@ function dock(c, p) {
     }).join('');
     return `<div class="card"><p class="q">Z Twojego opisu rozumiem tyle:</p>
       <p class="reason">Sprawdź każdą rzecz. Do planu trafi tylko to, co potwierdzisz. Opis zostaje na Twoim telefonie.</p>${rows}</div>`;
+  }
+  if (c.stage === 'replan') {
+    const d = c.replan.diff;
+    const li = (label, xs, f = (x) => cap(x.title.pl)) => (xs.length ? `<p class="reason">${label}</p><ul class="reason">${xs.map((x) => `<li>${esc(f(x))}</li>`).join('')}</ul>` : '');
+    const proc = (id) => (id ? E.procedure(id)?.title.pl ?? id : '—');
+    return `<div class="card"><p class="q">Ta zmiana zmieni Twój plan. Sprawdź, zanim zatwierdzisz:</p>
+      ${d.route ? `<p class="reason">Droga: ${esc(proc(d.route.from))} → <strong>${esc(proc(d.route.to))}</strong></p>` : ''}
+      ${li('Nowe w planie:', d.tasks.added)}${li('Już wiadomo, że potrzebne:', d.tasks.nowCertain)}${li('Nie będzie potrzebne:', d.tasks.removed)}
+      ${li('Zrobione, zostaje w historii:', d.tasks.keptAsHistory)}
+      ${li('Nowe opłaty:', d.fees.added, (f) => `${f.title.pl}: ${f.amountPln} zł`)}${li('Opłaty, które odpadają:', d.fees.removed, (f) => `${f.title.pl}: ${f.amountPln} zł`)}
+      ${li('Zmienione opłaty:', d.fees.changed, (f) => `${f.title.pl}: ${f.from} zł → ${f.to} zł`)}
+      ${li('Nowe terminy:', d.deadlines.added)}${li('Terminy, które odpadają:', d.deadlines.removed)}
+      ${li('Zmienione terminy:', d.deadlines.changed, (x) => `${x.title.pl}: ${x.from ? E.dayPl(x.from) : '—'} → ${x.to ? E.dayPl(x.to) : '—'}`)}
+      ${li('Inny urząd:', d.offices, (o) => o.title.pl)}
+      ${li('Poziomy:', d.levels.state, (l) => `${l.title.pl}: ${STATE_PL[l.from]} → ${STATE_PL[l.to]}`)}
+      <div class="row"><button class="btn" data-replan="yes">Zatwierdzam zmianę</button><button class="btn ghost" data-replan="no">Zostaw jak było</button></div></div>`;
   }
   if (c.stage === 'intake' && c.pending) {
     const f = E.fact(c.pending);
@@ -449,13 +466,29 @@ function wireCase(c) {
       c.decided[t.dataset.cand] = t.dataset.ok === '1'; touch(c);
       if (c.candidates.every((x) => c.decided[x.fact] !== undefined)) {
         const yes = c.candidates.filter((x) => c.decided[x.fact]).map((x) => x.fact);
-        c.state = E.confirmCandidates(c.state, c.candidates.filter((x) => x.fact !== 'place'), yes);
+        let next = E.confirmCandidates(c.state, c.candidates.filter((x) => x.fact !== 'place'), yes);
         const pl = c.candidates.find((x) => x.fact === 'place' && c.decided.place);
-        if (pl) { c.state.place = pl.place; c.placeAsked = true; }
-        say(c, 'bot', yes.length ? `Dziękuję. Potwierdzone z Twojego opisu: ${yes.length}. Zapytam tylko o resztę.` : 'Dobrze, zapytam o wszystko po kolei.');
-        c.candidates = null; c.said = null; c.stage = 'intake'; advance(c);
+        if (pl) { next = { ...next, place: pl.place }; c.placeAsked = true; }
+        c.candidates = null; c.said = null;
+        if (c.state.approved) {
+          // After approval a change is a proposal: what it would change, approved or not by the person (ADR-N003).
+          const diff = E.diffPlans(plan(c), E.plan(c.bpId, next), c.state.tasks);
+          if (diff.empty) { say(c, 'bot', 'To nic nie zmienia w Twoim planie.'); c.stage = 'case'; }
+          else { c.replan = { next, diff }; c.stage = 'replan'; }
+        } else {
+          c.state = next;
+          say(c, 'bot', yes.length ? `Dziękuję. Potwierdzone z Twojego opisu: ${yes.length}. Zapytam tylko o resztę.` : 'Dobrze, zapytam o wszystko po kolei.');
+          c.stage = 'intake'; advance(c);
+        }
       }
       render(); return;
+    }
+    if (t.dataset.replan) {
+      if (t.dataset.replan === 'yes') {
+        c.state = { ...c.replan.next, tasks: E.applyReplan(c.state.tasks, c.replan.diff) };
+        say(c, 'sys', `Plan zmieniony: ${E.dayPl(S.clock.date)}. Zrobione rzeczy zostają w historii.`);
+      } else say(c, 'sys', 'Plan bez zmian.');
+      c.replan = null; c.stage = 'case'; touch(c); render(); return;
     }
     if (t.dataset.route) { c.state.routeChoice = t.dataset.route; say(c, 'me', `Wybieram: ${E.procedure(t.dataset.route).title.pl}`); touch(c); advance(c); render(); return; }
     if (t.dataset.place !== undefined) {
@@ -466,7 +499,7 @@ function wireCase(c) {
     if (t.dataset.askplace !== undefined) { c.stage = 'place'; c.tab = 'chat'; render(); return; }
     if (t.dataset.approve !== undefined) {
       c.prefs.consent = $('#consent')?.checked ?? c.prefs.consent; c.state.approved = true; c.stage = 'case'; c.tab = 'now'; touch(c);
-      say(c, 'sys', `Plan zatwierdzony ${E.dayPl(S.clock.date)}.${c.prefs.consent ? ` ${c.who} będzie sam dodawać przypomnienia.` : ''}`); render(); return;
+      say(c, 'sys', `Plan zatwierdzony: ${E.dayPl(S.clock.date)}.${c.prefs.consent ? ` ${c.who} będzie sam dodawać przypomnienia.` : ''}`); render(); return;
     }
     if (t.dataset.focus) { c.focus = t.dataset.focus; c.tab = 'now'; render(); return; }
     if (t.dataset.task) { c.state.tasks[t.dataset.task] = t.dataset.st; touch(c); render(); return; }
@@ -484,8 +517,8 @@ function wireCase(c) {
       // Another case only when the words name exactly one other case and not this one.
       const ids = intentsIn(text);
       if (ids.length === 1 && ids[0] !== c.bpId) { newCase(ids[0], c.title); offerIntake(cur(), text); render(); return; }
-      // Before approval, more of the person's words can still answer questions (after it, a change is a replan: ADR-N003).
-      if (c.stage !== 'case' && c.stage !== 'confirm' && offerIntake(c, text)) { render(); return; }
+      // More of the person's words can answer questions; after approval, what they change is a proposal (ADR-N003).
+      if (c.stage !== 'confirm' && c.stage !== 'replan' && offerIntake(c, text)) { render(); return; }
       say(c, 'bot', 'W tym wycinku odpowiadam tylko tym, co jest w planie (zadania, opłaty, terminy, urzędy, każde ze źródłem). Rozmowa z AI dojdzie w fazie 4.');
       render(); return;
     }

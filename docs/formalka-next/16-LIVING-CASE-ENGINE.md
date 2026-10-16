@@ -93,8 +93,26 @@ Guards, each with a test:
 
 **Consent model** (owner, 2026-10-15): **one consent per case** at plan approval ("Maciek może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy"). After that the advisor acts without asking; every action is in the case history and revocable.
 
+## 6b. Changes after approval (`replan.ts`, ADR-N003)
+After a plan is approved, a change becomes a **proposal** the person approves, never a silent rewrite. Examples:
+- a fact confirmed from their words;
+- a route choice;
+- later, a new registry version.
+
+`diffPlans(approved, proposed, tasks)` compares the two plans by stable ids and lists, in plain titles:
+- the route, from → to;
+- tasks added, tasks that **now certainly apply** (were "sprawdź, czy Cię dotyczy"), tasks no longer needed;
+- **done tasks the new plan no longer has, kept as history**;
+- fees and deadlines added, removed or changed (dates);
+- a different office;
+- level state changes.
+
+`applyReplan` never resets `done`, even from a tampered diff. A removed task's other status is cleared, so if it ever comes back it starts fresh.
+
+**In the slice:** after approval, words typed in the chat go through intake. Once the person confirms them, a "Ta zmiana zmieni Twój plan" card shows the diff, with "Zatwierdzam zmianę" and "Zostaw jak było". A change that alters nothing says so.
+
 ## 7. Quality evidence (2026-10-16)
-- **27 tests** on the real snapshots, all passing, including the 17 evaluation scenarios and the intake checks (§9a).
+- **30 tests** on the real snapshots, all passing, including the 17 evaluation scenarios, the intake checks (§9a) and the replan checks (§6b).
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -117,6 +135,11 @@ Guards, each with a test:
   - "na pobyt stały" (registration) read as a residence permit;
   - (city) a name inside a longer word counted ("Gdańskiej");
   - (city) the first of two named cities taken.
+- **4 faults in the replan** were injected; each was caught:
+  - done work listed as removed;
+  - a replan resetting `done`;
+  - "now certain" tasks not shown;
+  - a route change hidden.
 - `checkBlueprint`: 0 issues for all 5 blueprints.
 - `validatePlan` passes on every plan in the tests and rejects a tampered ref, an invented date, a guessed nationality, and a lock without basis.
 
@@ -181,6 +204,5 @@ What the scores show:
 
 **Open:**
 - the Ukrainian, Russian and English baselines (or an LLM extractor);
-- after approval, new facts from words would be a replan diff the person approves (ADR-N003); not built;
 - a TERYT dictionary for all places (the slice knows four cities).
 
