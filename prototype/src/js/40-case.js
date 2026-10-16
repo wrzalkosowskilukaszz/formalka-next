@@ -190,6 +190,25 @@ function officeHtml(o, c) {
     ${x.website ? `<a href="${esc(x.website)}" target="_blank" rel="noopener noreferrer">Strona urzędu</a>` : ''}${x.booking ? ` · <a href="${esc(x.booking)}" target="_blank" rel="noopener noreferrer">Rezerwacja wizyty</a>` : ''}</li>`).join('');
   return `<ul class="offices">${list}</ul>${o.offices.length > 3 ? `<p class="meta">I jeszcze ${o.offices.length - 3} w tej miejscowości.</p>` : ''}`;
 }
+// Round 2 reference (COMPARISON D3, D10): the registry keeps these notes on the route level, where they
+// are easy to miss, while the steps they qualify say otherwise ("Urzędnik melduje Cię od razu"). They are
+// shown on the step they qualify: the registry's words, with only the condition in front ours.
+const NOTES_AT = {
+  'address-registration': [
+    { level: 'file', note: 'no-pesel-in-person' },
+    { level: 'file', note: 'no-owner-statement', lead: 'Jeśli właściciel nie potwierdzi Twojego pobytu na formularzu:', unless: 'owner-confirms' },
+    { level: 'registered', note: 'no-owner-procedure', lead: 'Jeśli właściciel nie potwierdzi Twojego pobytu na formularzu, nie zakładaj, że urząd zamelduje Cię od razu:', unless: 'owner-confirms' },
+  ],
+};
+function placedNotes(c, p, l) {
+  const all = p.levels.flatMap((x) => x.notes);
+  return (NOTES_AT[c.bpId] ?? []).filter((x) => x.level === l.id && p.levels.find((y) => y.id === x.unless)?.state !== 'done').map((x) => {
+    const n = all.find((y) => y.id === x.note);
+    if (!n) return '';
+    const lead = [n.outcome === 'unknown' ? 'Może Cię dotyczyć.' : '', x.lead ?? ''].filter(Boolean).join(' ');
+    return `<p class="mock-note placed-note">${icon('warning-circle')}<span>${lead ? `<b>${esc(lead)}</b> ` : ''}${esc(n.statement.value.pl.replace(/,\s*$/, '.'))} ${srcLink(n.statement.quotes)}</span></p>`;
+  }).join('');
+}
 function notesHtml(notes, max = 3) {
   if (!notes?.length) return '';
   return `<details class="card notes"><summary>${icon('warning-circle')} Warto wiedzieć (${notes.length})</summary><ul class="bul">${notes.slice(0, max).map((n) => `<li>${esc(n.statement.value.pl)} ${n.statement.quotes?.length ? `<span class="src">${srcLink(n.statement.quotes)}</span>` : ''}</li>`).join('')}</ul>${notes.length > max ? `<p class="meta">Pozostałe w przewodniku Formalki.</p>` : ''}</details>`;
@@ -215,6 +234,8 @@ function focusView(c) {
   const dls = shownDeadlines(c, l);
   if (dls.length) sections.push(`<section class="sec"><h2 class="sec-h">Terminy</h2>${dls.map((d) => deadlineRow(c, d)).join('')}</section>`);
   if (l.office) sections.push(`<section class="sec"><h2 class="sec-h">Gdzie</h2><article class="card">${officeHtml(l.office, c)}</article></section>`);
+  const placed = placedNotes(c, p, l);
+  if (placed) sections.push(placed);
   const actions = [];
   if (c.state.approved && l.state !== 'unconfirmed' && l.state !== 'done' && (l.office || l.completesWith)) {
     const ev = c.state.events.find((e) => e.type === 'visit_planned' && e.level === l.id);
@@ -293,7 +314,7 @@ function openLevel(c, id) {
     <p>${esc(levelLine(l))}.</p>
     ${l.tasks.length ? `<section class="sec"><h3 class="sec-h">Zadania</h3><ul class="bul">${l.tasks.map((t) => `<li>${esc(cap(t.title.pl))}${isDone(t) ? ' (gotowe)' : ''}</li>`).join('')}</ul></section>` : ''}
     ${l.fees.map(feeRow).join('')}${shownDeadlines(c, l).map((d) => `<article class="card"><p>${esc(d.description.pl)}</p>${d.due ? `<b>${esc(dueRange(d.due))}</b>` : `<p class="meta">Liczy się od: ${esc(eventLabel(c, d.from))}</p>`}${cite(d.quotes, 'Termin z przewodnika Formalki.')}</article>`).join('')}
-    ${l.office ? `<article class="card">${officeHtml(l.office, c)}</article>` : ''}${notesHtml(l.notes, 6)}
+    ${l.office ? `<article class="card">${officeHtml(l.office, c)}</article>` : ''}${placedNotes(c, p, l)}${notesHtml(l.notes, 6)}
     ${canGo ? `<button type="button" class="btn btn-accent btn-block" id="lv-go">Przejdź do tego poziomu</button>` : ''}`, (sh) => {
     const g = $('#lv-go', sh); if (g) g.onclick = () => { closeLayer(); c.focus = id; S.view = 'focus'; S.active = c.id; if (S.screen === 'case') drawCase(); else go('case', 'fwd'); };
     wireActions(sh, c);

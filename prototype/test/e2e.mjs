@@ -250,6 +250,8 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   await t.say('mieszkam w Warszawie');
   await t.heard(/Warszawa/);
   await t.approvePlan(false);
+  // Round 2 reference D3: another foreigner sees the no-PESEL in-person rule on the visit step itself.
+  assert.match(await page.evaluate(() => placedNotes(S.cases[0], plan(S.cases[0]), plan(S.cases[0]).levels.find((l) => l.id === 'file'))), /Jeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście/);
   const guide = await t.bot(/Na tym etapie/);
   assert.ok(await guide.locator('a.act[href*="gov.pl"][target="_blank"]').count() >= 1, 'download link to the official form');
   assert.ok(await guide.locator('.act', { hasText: 'Wypełnij tutaj' }).count() === 1, 'interactive fill');
@@ -572,6 +574,19 @@ await scenario('I-correct-an-answer', {}, async (t, page) => {
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').waitFor({ timeout: 8000 });
   assert.match(await page.locator('.study-note').first().innerText(), /Zakres badania[\s\S]*nie opieraj się na nich/);
   await t.shot('answers');
+  // Round 2 reference D10: without the owner's confirmation the last step is not "od razu"; the registry's
+  // own note says so on that step. D3: the no-PESEL note is for other foreigners only.
+  await page.evaluate(() => openLevel(S.cases[0], 'registered'));
+  await t.sheet(/^Zameldowanie$/);
+  assert.match(await page.locator('.sheet-body').innerText(), /Urzędnik melduje Cię od razu/);
+  assert.match(await page.locator('.sheet-body .placed-note').innerText(), /nie zakładaj, że urząd zamelduje Cię od razu: urząd przeprowadzi postępowanie administracyjne/);
+  await t.closeSheet();
+  await page.evaluate(() => openLevel(S.cases[0], 'file'));
+  await t.sheet(/Wizyta w urzędzie gminy/);
+  const fileSheet = await page.locator('.sheet-body').innerText();
+  assert.match(fileSheet, /dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów\./);
+  assert.doesNotMatch(fileSheet, /nie masz numeru PESEL/, 'an EU citizen is not told the non-EU in-person rule');
+  await t.closeSheet();
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').click();
   await page.locator('.screen.chat').waitFor({ timeout: 8000 });
   await t.bot(/Poprawiasz odpowiedź na pytanie/);
