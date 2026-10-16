@@ -8,7 +8,7 @@ const SCREENS = {
   home() {
     const el = h(`<section class="screen home pad">
       <div class="brandrow">${mark()}<span class="word">formalka</span><span class="tag">prototyp, dane przykładowe</span></div>
-      ${STUDY ? `<p class="study-note">${icon('info')}<span><b>Badanie</b> Wpisuj tylko dane wymyślone. Nic nie zostanie wysłane, zarezerwowane ani zapisane na stałe; przypomnienia i formularz są symulowane, a asystent nie korzysta z modelu językowego.</span></p>` : ''}
+      ${STUDY ? `<p class="study-note">${icon('info')}<span><b>Badanie</b> Wpisuj tylko dane wymyślone. Nic nie zostanie wysłane, zarezerwowane ani zapisane na stałe; przypomnienia i formularz są symulowane, a asystent nie korzysta z modelu językowego. ${esc(STUDY_SCOPE)}</span></p>` : ''}
       <div class="home-top">
         <h1 class="home-q">Co dziś załatwiamy?</h1>
         <p class="home-lead">Opisz sprawę własnymi słowami. Asystent AI ułoży z Tobą plan i sam przypomni, co dalej.</p>

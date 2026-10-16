@@ -264,7 +264,10 @@ test("advisor: stable ids, generic lock screen, and never a claim of booking, se
 
 test("copy: dates after \"do\" in the genitive; words about the assistant agree with its persona", () => {
   assert.equal(dueRangePl("2026-11-18", "2026-11-18"), "do środy, 18 listopada");
-  assert.equal(dueRangePl("2026-10-31", "2026-11-01", "nth-day"), "do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni)");
+  assert.equal(dueRangePl("2026-10-31", "2026-11-01", "nth-day"), "do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni; sobota, 31 października i niedziela, 1 listopada to dni wolne od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)");
+  // Round 2 reference, D7: a day off is named, the date is not moved.
+  assert.equal(dueRangePl("2026-10-18", "2026-10-19", "nth-day"), "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)");
+  assert.equal(dueRangePl("2026-11-26", "2026-11-27", "nth-day"), "do czwartku, 26 listopada (najpóźniej do piątku, 27 listopada, zależnie od tego, jak liczyć dni)");
   // KPA/PPSA: one legal date; a Saturday end moves, and the text says why instead of offering two readings (audit F8).
   assert.equal(dueRangePl("2027-05-30", "2027-05-31", "kpa"), "do poniedziałku, 31 maja (niedziela, 30 maja to dzień wolny od pracy, więc termin przesuwa się na następny dzień roboczy)");
   assert.deepEqual(dueDate("2026-10-03", 14, "day", "plain"), { earliest: "2026-10-17", latest: "2026-10-17", counting: "plain" }, "no basis: one plain date, never moved later");

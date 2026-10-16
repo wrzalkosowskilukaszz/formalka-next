@@ -200,3 +200,18 @@ test('correcting a confirmed answer: what it touches, and typed corrections only
   assert.ok(app.ASKS_FIX.test(app.norm('chcę poprawić odpowiedź')));
   assert.ok(!app.ASKS_FIX.test(app.norm('Ile to kosztuje?')));
 });
+
+test('round 2 reference D7: an open-reading deadline on a day off warns, and the date stays', () => {
+  const t = app.dueRange({ earliest: '2026-10-18', latest: '2026-10-19', counting: 'nth-day' });
+  assert.match(t, /^do niedzieli, 18 października \(najpóźniej do poniedziałku, 19 października/, 'the dates are not moved');
+  assert.match(t, /niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny/);
+  // 11 November is a public holiday: the later reading falls on it.
+  assert.match(app.dueRange({ earliest: '2026-11-10', latest: '2026-11-11', counting: 'nth-day' }), /środa, 11 listopada to dzień wolny od pracy/);
+  assert.doesNotMatch(app.dueRange({ earliest: '2026-11-26', latest: '2026-11-27', counting: 'nth-day' }), /dzień wolny|dni wolne/);
+  // KPA and PPSA keep their own wording: there the legal date moves.
+  assert.match(app.dueRange({ earliest: '2027-05-30', latest: '2027-05-31', counting: 'kpa' }), /termin przesuwa się/);
+});
+
+test('study scope: the groups left out are named, not guessed', () => {
+  for (const w of [/obywatela UE, EFTA lub Szwajcarii/, /z wizą krajową/, /członków rodziny/, /Wielkiej Brytanii/, /wjazdu bez wizy/, /pobytu stałego osób spoza UE/, /nie są jeszcze sprawdzone/]) assert.match(app.STUDY_SCOPE, w);
+});

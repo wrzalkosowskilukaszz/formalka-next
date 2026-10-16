@@ -206,6 +206,7 @@ function focusView(c) {
   if (needsRecheck(c, l)) inHero.push(recheckChip());
   if (l.id !== cur.id) inHero.push(`<button type="button" class="btn btn-ghost-w btn-sm" data-focuslv="">Wróć do „${esc(cur.title.pl)}”</button>`);
   const sections = [];
+  if (STUDY) sections.push(`<p class="study-note">${icon('info')}<span><b>Zakres badania</b> ${esc(STUDY_SCOPE)}</span></p>`);
   if (c.pendingFix) sections.push(pendingBanner(c));
   const stale = staleOf(p);
   if (stale) sections.push(`<p class="mock-note stale">${icon('warning-circle')}<span>${esc(stale.text)} <a href="${esc(stale.url)}" target="_blank" rel="noopener noreferrer">${esc(stale.label)}</a></span></p>`);

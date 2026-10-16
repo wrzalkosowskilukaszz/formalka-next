@@ -21,6 +21,9 @@ const typeOf = (bpId) => CASE_TYPES.find((t) => t.id === bpId);
 let STUDY = false;
 const STUDY_TYPES = ['address-registration'];
 const caseTypes = () => (STUDY ? CASE_TYPES.filter((t) => STUDY_TYPES.includes(t.id)) : CASE_TYPES);
+// The groups the study covers (round 2 reference, COMPARISON.md D1-D6): where the engine and the draft
+// reference disagree, the situation is left out of the study instead of guessed.
+const STUDY_SCOPE = 'Badanie obejmuje tylko obywatela UE, EFTA lub Szwajcarii oraz obywatela innego państwa z wizą krajową, na pobyt czasowy. Dla członków rodziny, obywateli Wielkiej Brytanii, wjazdu bez wizy i pobytu stałego osób spoza UE informacje w aplikacji nie są jeszcze sprawdzone: nie opieraj się na nich.';
 
 // Cities for the office lookup. TERYT codes [ASSUMPTION: standard GUS codes]. The registry has
 // municipal offices for Warsaw and Kraków and the 16 voivodeship offices (name and website).

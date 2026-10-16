@@ -459,6 +459,7 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.waitForFunction(() => document.querySelectorAll('.ex').length === 1, null, { timeout: 8000 });
   // The build id ties a session's screenshots to one build (dist/manifest.json; audit F8).
   assert.match(await page.locator('.home-foot .build').innerText(), /Wersja prototypu [0-9a-f]{12}, silnik [0-9a-f]{16}/);
+  assert.match(await page.locator('.study-note').innerText(), /Badanie obejmuje tylko obywatela UE, EFTA lub Szwajcarii oraz obywatela innego państwa z wizą krajową/);
   await t.shot('study-home');
   // The home input never dead-ends (owner, 16.10): a case outside the study leads into the chat, which
   // says so and offers the one case it leads.
@@ -569,6 +570,7 @@ await scenario('I-correct-an-answer', {}, async (t, page) => {
   // Teraz lists the answers, each with "Popraw".
   await t.nav('#chat-back', 'case');
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').waitFor({ timeout: 8000 });
+  assert.match(await page.locator('.study-note').first().innerText(), /Zakres badania[\s\S]*nie opieraj się na nich/);
   await t.shot('answers');
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').click();
   await page.locator('.screen.chat').waitFor({ timeout: 8000 });

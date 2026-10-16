@@ -3,7 +3,7 @@
 // never claim a booking, sending or filing that did not happen; never "wszystko już wiem"; neutral
 // grammatical gender towards the person (no "złożyłeś/złożyłaś"); no topic on the lock screen unless
 // the user wants it.
-import { type Counting, weekday, type Iso } from "./dates.ts";
+import { type Counting, isWorkingDay, weekday, type Iso } from "./dates.ts";
 
 const MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
 const DAYS = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
@@ -28,7 +28,12 @@ export function dayPlGen(iso: Iso): string {
 export function dueRangePl(earliest: Iso, latest: Iso, counting?: Counting): string {
   if (earliest === latest) return `do ${dayPlGen(earliest)}`;
   if (counting === "kpa" || counting === "ppsa") return `do ${dayPlGen(latest)} (${dayPl(earliest)} to dzień wolny od pracy, więc termin przesuwa się na następny dzień roboczy)`;
-  return `do ${dayPlGen(earliest)} (najpóźniej do ${dayPlGen(latest)}, zależnie od tego, jak liczyć dni)`;
+  // Whether an open-reading deadline moves past a day off is not settled in the sources (round 2
+  // reference, OPEN-2), so the date stays; the text only warns that the office may be closed then.
+  const closed = [earliest, latest].filter((d) => !isWorkingDay(d)).map((d) => dayPl(d));
+  const warn = !closed.length ? ""
+    : `; ${closed.join(" i ")} to ${closed.length > 1 ? "dni wolne" : "dzień wolny"} od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej`;
+  return `do ${dayPlGen(earliest)} (najpóźniej do ${dayPlGen(latest)}, zależnie od tego, jak liczyć dni${warn})`;
 }
 
 /**

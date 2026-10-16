@@ -32,7 +32,7 @@ Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 - Opłata: Zameldowanie: 0 zł [gov.pl]
 - Opłata: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać: 17 zł (opcjonalnie) [gov.pl]
 - Opłata: Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze: 17 zł (opcjonalnie) [gov.pl]
-- Termin: 4 dni od „Dzień, od którego mieszkasz pod tym adresem”, do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni) [gov.pl]
+- Termin: 4 dni od „Dzień, od którego mieszkasz pod tym adresem”, do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni; sobota, 31 października i niedziela, 1 listopada to dni wolne od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej) [gov.pl]
 - Urząd: Delegatura dla Dzielnicy Bemowo, ul. Powstańców Śląskich 70, 01-381 Warszawa
 - Urząd: Delegatura dla Dzielnicy Białołęka, ul. Modlińska 197, 03-122 Warszawa
 - Urząd: Delegatura dla Dzielnicy Bielany, ul. Żeromskiego 29, 01-882 Warszawa
