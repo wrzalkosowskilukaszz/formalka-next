@@ -24,7 +24,7 @@ const SCREENS = {
           <li><span class="tile-ic sm">${icon('map-trifold')}</span><span><b>Zatwierdź plan</b><small>Kroki, dokumenty, opłaty i urzędy, każde ze źródłem</small></span></li>
           <li><span class="tile-ic sm">${icon('bell')}</span><span><b>Asystent pilnuje</b><small>Przypomina i proponuje, co dalej. Każdą sprawę prowadzi osobny asystent AI</small></span></li>
         </ol></section>`}
-      <p class="home-foot">Formalka to niezależna usługa, nie urząd. Asystenci to AI. Plan powstaje ze sprawdzonych treści Formalki (${esc(E.registryVersion)}). W prototypie nic nie wychodzi z telefonu.</p></section>`);
+      <footer class="home-foot">${icon('info')}<p>Formalka to niezależna usługa, nie urząd. Asystenci to AI. Plan powstaje ze sprawdzonych treści Formalki (${esc(E.registryVersion)}). W prototypie nic nie wychodzi z telefonu.</p></footer></section>`);
     const input = $('#home-t', el);
     $$('[data-type]', el).forEach((b) => { b.onclick = () => {
       const ex = S.cases.find((c) => c.bpId === b.dataset.type);

@@ -182,7 +182,15 @@ ul, ol { padding: 0; list-style: none; }
 .home-q { font-size: var(--t-3xl); font-weight: var(--w-strong); letter-spacing: var(--track-display); line-height: var(--leading-tight); text-wrap: balance; }
 .hl { display: inline-block; padding: 0 0.22em 0.04em; border-radius: 0.28em; background: var(--accent); color: var(--on-accent); }
 .home-lead { color: var(--ink-2); max-width: 22rem; }
-.home-foot { margin-top: auto; font-size: var(--t-2xs); color: var(--ink-3); line-height: 1.4; }
+/* The disclaimer as a footer: a soft grey band from edge to edge at the bottom of the home screen. */
+.home-foot {
+  margin: auto calc(max(18px, env(safe-area-inset-left, 0px)) * -1) calc(var(--s5) * -1);
+  padding: var(--s4) max(18px, env(safe-area-inset-right, 0px)) calc(var(--s4) + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px));
+  display: flex; gap: var(--s2); align-items: flex-start;
+  background: var(--well); border-top: 1px solid var(--line);
+  font-size: var(--t-2xs); color: var(--ink-3); line-height: 1.45;
+}
+.home-foot .icon { width: 14px; height: 14px; margin-top: 1px; }
 .home .ask { background: var(--well); box-shadow: none; }
 /* Home (owner, 2026-10-16): the question, the pill right under it, then case types in a horizontal scroll. */
 .home-top { display: flex; flex-direction: column; gap: var(--s3); margin-top: var(--s5); }
