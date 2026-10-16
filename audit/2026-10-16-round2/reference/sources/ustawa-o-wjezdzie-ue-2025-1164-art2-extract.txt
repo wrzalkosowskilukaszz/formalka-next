@@ -1,0 +1,73 @@
+# Ustawa z 14.07.2006 o wjeździe… obywateli państw członkowskich UE i członków ich rodzin, tekst jednolity: Dz.U. 2025 poz. 1164
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1164/text.pdf, retrieved 2026-10-16, sha256 91ead21207f82aa7ad08da9633f33d3c71c97a1e0ccb50221ebc1e563fa09dec
+# Extract: art. 2 pkt 3–4 (definitions of obywatel UE and członek rodziny)
+
+        Art. 2. Użyte w ustawie określenia oznaczają:
+1)      granica – granicę państwową Rzeczypospolitej Polskiej w rozumieniu przepisów ustawy z dnia 12 października 1990 r.
+        o ochronie granicy państwowej (Dz. U. z 2025 r. poz. 184);
+2)      dokument podróży – dokument podróży w rozumieniu przepisów ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach
+        (Dz. U. z 2024 r. poz. 769, 1222 i 1688 oraz z 2025 r. poz. 619, 621 i 622);
+3)      obywatel UE – cudzoziemca:
+        a)   obywatela państwa członkowskiego Unii Europejskiej,
+        b) obywatela państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy
+           o Europejskim Obszarze Gospodarczym,
+        c)   obywatela Konfederacji Szwajcarskiej,
+        d) obywatela Zjednoczonego Królestwa;
+
+4)   członek rodziny:
+     a)   w przypadku członka rodziny obywatela UE, o którym mowa w pkt 3 lit. a–c – cudzoziemca będącego lub nie-
+          będącego obywatelem UE:
+          – małżonka obywatela UE,
+          – bezpośredniego zstępnego obywatela UE lub jego małżonka, w wieku do 21 lat lub pozostającego na utrzyma-
+            niu obywatela UE lub jego małżonka,
+          – bezpośredniego wstępnego obywatela UE lub jego małżonka, pozostającego na utrzymaniu obywatela UE lub
+            jego małżonka,
+          – bezpośredniego wstępnego małoletniego obywatela UE, sprawującego faktyczną opiekę nad tym małoletnim
+            obywatelem UE i na którego utrzymaniu ten małoletni obywatel UE pozostaje,
+     b) w przypadku członka rodziny obywatela Rzeczypospolitej Polskiej – cudzoziemca niebędącego obywatelem UE:
+          – małżonka obywatela Rzeczypospolitej Polskiej w przypadku spełnienia łącznie następujących warunków:
+             – – obywatel Rzeczypospolitej Polskiej bezpośrednio przed przyjazdem na terytorium Rzeczypospolitej Pol-
+                 skiej posiadał prawo pobytu powyżej 3 miesięcy lub prawo stałego pobytu w innym państwie członkow-
+                 skim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+                 stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub Zjednoczonym
+                 Królestwie Wielkiej Brytanii i Irlandii Północnej,
+             – – związek małżeński z obywatelem Rzeczypospolitej Polskiej został zawarty przed pobytem w innym pań-
+                 stwie członkowskim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym
+                 Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub
+                 Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej lub w trakcie pobytu w tym państwie,
+             – – obywatel Rzeczypospolitej Polskiej zamierza ponownie zamieszkać na terytorium Rzeczypospolitej Pol-
+                 skiej na stałe,
+          – małżonka obywatela Rzeczypospolitej Polskiej posiadającego poprzednio obywatelstwo innego państwa człon-
+            kowskiego Unii Europejskiej, państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu
+            (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub Zjednoczo-
+            nego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+          – bezpośredniego zstępnego obywatela Rzeczypospolitej Polskiej lub jego małżonka, w wieku do 21 lat lub
+            pozostającego na utrzymaniu obywatela Rzeczypospolitej Polskiej lub jego małżonka, w przypadku spełnienia
+            łącznie następujących warunków:
+             – – obywatel Rzeczypospolitej Polskiej bezpośrednio przed przyjazdem na terytorium Rzeczypospolitej Pol-
+                 skiej posiadał prawo pobytu powyżej 3 miesięcy lub prawo stałego pobytu w innym państwie członkow-
+                 skim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+                 stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub Zjednoczonym
+                 Królestwie Wielkiej Brytanii i Irlandii Północnej,
+             – – życie rodzinne z obywatelem Rzeczypospolitej Polskiej zostało rozwinięte lub umocnione przed pobytem
+                 w innym państwie członkowskim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia
+                 o Wolnym Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji
+                 Szwajcarskiej lub Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej lub w trakcie pobytu
+                 w tym państwie,
+             – – obywatel Rzeczypospolitej Polskiej zamierza ponownie zamieszkać na terytorium Rzeczypospolitej Pol-
+                 skiej na stałe,
+          – bezpośredniego wstępnego obywatela Rzeczypospolitej Polskiej lub jego małżonka, pozostającego na utrzy-
+            maniu obywatela Rzeczypospolitej Polskiej lub jego małżonka, w przypadku spełnienia łącznie następujących
+            warunków:
+             – – obywatel Rzeczypospolitej Polskiej bezpośrednio przed przyjazdem na terytorium Rzeczypospolitej Pol-
+                 skiej posiadał prawo pobytu powyżej 3 miesięcy lub prawo stałego pobytu w innym państwie członkow-
+                 skim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+                 stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub Zjednoczonym
+                 Królestwie Wielkiej Brytanii i Irlandii Północnej,
+Dziennik Ustaw                                                     –5–                                                         Poz. 1164
+
+               – – życie rodzinne z obywatelem Rzeczypospolitej Polskiej zostało rozwinięte lub umocnione przed pobytem
+                   w innym państwie członkowskim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia
+                   o Wolnym Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji
+                   Szwajcarskiej lub Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej lub w trakcie pobytu
+                   w tym państwie,

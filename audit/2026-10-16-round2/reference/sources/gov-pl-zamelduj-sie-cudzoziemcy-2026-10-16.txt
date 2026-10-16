@@ -1,0 +1,284 @@
+# gov.pl: Zamelduj się na pobyt stały lub czasowy (dla cudzoziemców). Page states: Ostatnia aktualizacja: 11.03.2026 10:27
+# Source: https://www.gov.pl/web/gov/zamelduj-sie-na-pobyt-staly-dla-cudzoziemcow, retrieved 2026-10-16, sha256 of HTML f9091cdffe785a50e17d86d8369710d61848def28228d6732e4958b2300c23c6
+# Text extracted from the page's <main>; the page is a wizard: sections for (1) EU/EFTA citizens and family members, online and in person, and (2) citizens of other states, permanent and temporary.
+
+
+Gov.pl
+Zamelduj się na pobyt stały lub czasowy (dla cudzoziemców)
+Zamelduj się na pobyt stały lub czasowy (dla cudzoziemców)
+Aby sprawdzić, jak zameldować się na pobyt stały lub czasowy, odpowiedz na pytania poniżej.
+Odpowiedz na kilka prostych pytań.
+Otrzymasz odpowiednie informacje.
+START
+Jesteś:
+obywatelem państwa członkowskiego Unii Europejskiej, EFTA lub członkiem rodziny takiego cudzoziemca
+obywatelem innego państwa
+WSTECZ
+DALEJ
+Na jaki pobyt chcesz się zameldować?
+stały
+czasowy
+WSTECZ
+DALEJ
+Jeśli mieszkasz w Polsce – zamelduj się na pobyt stały lub czasowy (czyli powyżej 3 miesięcy).  
+Nie musisz się meldować, jeśli wiesz, że twój pobyt w Polsce nie będzie trwał dłużej niż 30 dni – na przykład, gdy spędzasz w Polsce urlop.
+Uwaga! Jeśli nie jesteś obywatelem państwa członkowskiego UE albo EFTA i nie jesteś członkiem rodziny takiego obywatela, nie możesz zameldować się przez Internet.
+Dokumenty, które potwierdzają prawo do twojego pobytu w Polsce, musisz pokazać w urzędzie.
+Informacje:
+Przez internet
+W urzędzie
+Teraz możesz zameldować się bez udziału urzędnika. Możesz też zameldować swoje dziecko, jeśli przy jego danych wpisano twój numer PESEL.
+Jeśli chcesz złożyć formularz przez Internet, potrzebujesz profilu zaufanego lub kwalifikowanego certyfikatu podpisu elektronicznego. Sprawdź, jak założyć profil zaufany. Jeśli jesteś obywatelem polskim i zgłaszasz zameldowanie w imieniu cudzoziemca – możesz też użyć certyfikatu podpisu osobistego (ma go w e-dowodzie osoba, która we wniosku o e-dowód, zaznaczyła, że chce mieć certyfikat podpisu osobistego). 
+Zamelduj się 
+Kto może zameldować się bez udziału urzędnika
+Aby zameldować się bez udziału urzędnika, musisz: 
+być właścicielem lokalu, w którym się meldujesz, lub mieć do niego inny tytuł prawny oraz
+widnieć w księdze wieczystej tego lokalu.
+Bez udziału urzędnika możesz zameldować również swoje niepełnoletnie dziecko, jeśli w rejestrze PESEL przy jego danych wpisano twój numer PESEL. Jeśli w księdze wieczystej są dane twoje lub twojego dziecka i adres lokalu się zgadza – system zamelduje dziecko automatycznie.
+Kto składa dokumenty
+Możesz się zameldować osobiście lub przez pełnomocnika.
+Jeśli chcesz, by pełnomocnik zameldował cię przez internet, udziel mu pełnomocnictwa elektronicznego i podpisz je elektronicznie.
+Pełnomocnictwo możesz też przesłać do urzędu w inny sposób – skorzystaj z pisma ogólnego.
+Rodzic, opiekun prawny lub opiekun faktyczny, który sprawuje opiekę w miejscu wspólnego pobytu, może zameldować osobę, która:
+nie ma zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+ma ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Co musisz przygotować
+dane logowania do profilu zaufanego i telefon komórkowy. Jeśli jesteś obywatelem polskim i zgłaszasz zameldowanie w imieniu cudzoziemca – możesz użyć e-dowodu, jeśli masz w nim certyfikat podpisu osobistego (ma go w e-dowodzie osoba, która we wniosku o e-dowód, zaznaczyła, że chce mieć certyfikat podpisu osobistego);
+jeśli jesteś właścicielem lub masz inny tytuł prawny do mieszkania, w którym chcesz się zameldować – numer księgi wieczystej tego lokalu. Jeśli dane nie będą zgodne z danymi w księdze wieczystej, zobaczysz komunikat, że nie możesz skorzystać z automatycznego zameldowania, a twoje zgłoszenie zostanie wysłane do urzędu. W takim przypadku dołącz JEDEN z dokumentów elektronicznych, który potwierdzi, że masz tytuł prawny do lokalu, na przykład:  
+umowę cywilnoprawną, na przykład umowę najmu,
+odpis z księgi wieczystej albo wyciąg z działów I i II księgi wieczystej,
+decyzję administracyjną,
+orzeczenie sądu;
+jeśli NIE jesteś właścicielem i nie masz innego tytułu prawnego do mieszkania, w którym chcesz się zameldować – dołącz dokument elektroniczny:
+oświadczenie właściciela lub innego podmiotu, który ma tytuł prawny do mieszkania i potwierdza twój pobyt w lokalu,
+dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu.
+Jeśli nie masz dokumentów w formie elektronicznej, dołącz ich odwzorowanie cyfrowe, na przykład skany.
+Jeśli meldujesz inną osobę, musisz mieć dodatkowo:
+dokument, który potwierdza, że masz uprawnienia do działania w jej imieniu (np. pełnomocnictwo, orzeczenie sądu o ustanowieniu opieki, oświadczenie, że opiekujesz się osobą niepełnoletnią lub niepełnosprawną i macie to samo miejsce pobytu).
+Jeśli jesteś członkiem rodziny obywatela państwa członkowskiego UE albo EFTA – musisz pokazać w urzędzie dokument, który to potwierdzi (na przykład ważną kartę stałego pobytu członka rodziny obywatela UE albo ważną kartę pobytu członka rodziny obywatela UE).
+Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela (lub ich skanów), nadal możesz wysłać zgłoszenie. Szczegóły znajdziesz w sekcji Problem z zameldowaniem – co robić.
+Co musisz zrobić
+Przygotuj potrzebne dane i dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Kliknij przycisk Zamelduj się.
+Przeniesiesz się na stronę login.gov.pl.
+Wybierz sposób logowania.
+Wypełnij formularz.
+Jeśli meldujesz siebie lub swoje niepełnoletnie dziecko, po wpisaniu danych system pokieruje cię do właściwej usługi. 
+Jeśli dane są zgodne z księgą wieczystą, system zamelduje cię automatycznie od razu po wysłaniu zgłoszenia. Zaznacz, jeśli chcesz otrzymać zaświadczenie o zameldowaniu na pobyt czasowy. Jeśli system melduje cię automatycznie, zaświadczenie jest bezpłatne i otrzymasz je na skrzynkę Gov (ePUAP).
+Jeśli dane nie są zgodne z księgą wieczystą lub meldujesz inną osobę – dołącz odpowiednie dokumenty. Zostaną one ocenione przez urzędnika (szczegóły znajdziesz w sekcji Co musisz przygotować). Jeśli zaznaczysz, że chcesz dostać zaświadczenie o zameldowaniu na pobyt czasowy, dołącz potwierdzenie płatności za zaświadczenie. Możesz też wybrać, w jaki sposób chcesz je dostać: pocztą, osobiście czy elektronicznie na ePUAP. Informację o opłatach za zaświadczenie znajdziesz w sekcji Ile zapłacisz.
+Podpisz i wyślij zgłoszenie. Potwierdzenie otrzymasz na swoją skrzynkę ePUAP.
+Możesz sprawdzić adres zameldowania swój i swojego dziecka w usłudze Sprawdź dane swoje lub swojego dziecka w rejestrze PESEL i pobierz zaświadczenie.
+Kiedy składasz dokumenty
+najpóźniej w 30 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować,
+jeśli mieszkasz na stałe pod konkretnym adresem – zamelduj się na pobyt stały,
+jeśli mieszkasz w Polsce czasowo przez ponad 3 miesiące pod konkretnym adresem – zamelduj się tam na pobyt czasowy. 
+Nie możesz mieć meldunku jednocześnie w 2 miejscach pobytu stałego albo 2 miejscach pobytu czasowego. 
+Możesz natomiast mieć jednocześnie jeden meldunek na pobyt stały i jeden na pobyt czasowy pod różnymi adresami.
+Gdzie składasz dokumenty
+Do urzędu gminy, na terenie której mieszkasz.
+Jednocześnie z zameldowaniem możesz wymeldować się z dotychczasowego miejsca pobytu stałego i czasowego. 
+Ile zapłacisz
+Usługa zameldowania jest bezpłatna.
+Zaświadczenie o zameldowaniu:
+na pobyt stały – bezpłatne,
+na pobyt czasowy –  17 zł (bezpłatnie tylko wtedy, gdy system melduje cię automatycznie),
+każde kolejne zaświadczenie, na przykład gdy zgubisz zaświadczenie wydane przy zameldowaniu, kosztuje 17 zł.
+Sprawdź na stronie internetowej urzędu gminy, w którym się meldujesz, na jakie konto wpłacić pieniądze.
+Ile będziesz czekać
+Jeśli meldujesz siebie lub swoje niepełnoletnie dziecko i dane są zgodne z księgą wieczystą, w której widniejesz ty lub dziecko – od razu otrzymasz informację o zameldowaniu (bez udziału urzędnika).
+Jeśli dane twoje lub dziecka nie są zgodne z księgą wieczystą lub meldujesz inną osobę i dołączysz wszystkie potrzebne dokumenty – urzędnik zamelduje cię lub tę osobę od razu po otrzymaniu twojego zgłoszenia.
+Jeśli do formularza załączysz cyfrowe odwzorowania dokumentów – urzędnik może poprosić cię o ich oryginały i zamelduje cię dopiero po wyjaśnieniu wszystkich wątpliwości.
+Problem z zameldowaniem – co robić
+Może się zdarzyć, że nie masz tytułu prawnego do lokalu, w którym chcesz się zameldować, albo właściciel lokalu nie chce potwierdzić na formularzu zameldowania, że w nim mieszkasz. Co możesz zrobić?
+wyślij zgłoszenie do urzędu gminy, na terenie której położona jest nieruchomość,
+do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,
+urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu. 
+Podstawa prawna
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Kto składa dokumenty
+Możesz się zameldować osobiście lub przez pełnomocnika. Swojego pełnomocnictwa możesz mu udzielić wyłącznie na piśmie.
+Rodzic, opiekun prawny lub opiekun faktyczny, który sprawuje opiekę w miejscu wspólnego pobytu, może zameldować osobę, która:
+nie ma zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+ma ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Co musisz przygotować
+formularz zgłoszenia pobytu stałego, plik PDF 1,74 MB  lub formularz zgłoszenia pobytu czasowego, plik PDF 1,73 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu;
+jeśli jesteś obywatelem państwa członkowskiego UE albo EFTA – przygotuj:
+ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo,
+jeśli jesteś członkiem rodziny obywatela państwa członkowskiego UE albo EFTA – przygotuj:
+ważny dokument podróży oraz:
+ważną kartę stałego pobytu członka rodziny obywatela UE albo
+ważną kartę pobytu członka rodziny obywatela UE albo
+inny dokument, który potwierdzi, że jesteś członkiem rodziny obywatela UE;
+jeśli jesteś właścicielem lub masz inny tytuł prawny do mieszkania, w którym chcesz się zameldować – przynieś JEDEN z dokumentów, który to potwierdzi, na przykład:  
+umowę cywilnoprawną, na przykład umowę najmu,
+odpis z księgi wieczystej albo wyciąg z działów I i II księgi wieczystej,
+decyzję administracyjną,
+orzeczenie sądu;
+jeśli NIE jesteś właścicielem i nie masz innego tytułu prawnego do mieszkania, w którym chcesz się zameldować:
+dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu,
+jeśli meldujesz inną osobę, musisz mieć dodatkowo: 
+dokument, który potwierdza, że masz uprawnienia do działania w jej imieniu (np. pełnomocnictwo, orzeczenie sądu o ustanowieniu opieki, oświadczenie, że opiekujesz się osobą niepełnoletnią lub niepełnosprawną i macie to samo miejsce pobytu).
+dokument tożsamości.
+Na formularzu, który przyniesiesz do urzędu, właściciel lub inny podmiot, który ma tytuł prawny do mieszkania, musi potwierdzić, że przebywasz w tym lokalu. 
+Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela (lub ich skanów), nadal możesz wysłać zgłoszenie. Szczegóły znajdziesz w sekcji Problem z zameldowaniem – co robić.
+Co musisz zrobić
+Przygotuj wszystkie potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Jeśli meldujesz się na pobyt czasowy i chcesz otrzymać zaświadczenie o zameldowaniu – zapłać za nie. Szczegóły znajdziesz w sekcji Ile zapłacisz. 
+Złóż w urzędzie formularz meldunkowy i okaż pozostałe dokumenty. Szczegóły znajdziesz w sekcji Gdzie składasz dokumenty.
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia.
+Kiedy składasz dokumenty
+najpóźniej w 30 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować,
+jeśli mieszkasz na stałe pod konkretnym adresem – zamelduj się na pobyt stały,
+jeśli mieszkasz w Polsce czasowo przez ponad 3 miesiące pod konkretnym adresem – zamelduj się tam na pobyt czasowy. 
+Nie możesz mieć meldunku jednocześnie w 2 miejscach pobytu stałego albo 2 miejscach pobytu czasowego.
+Możesz natomiast mieć jednocześnie jeden meldunek na pobyt stały i jeden na pobyt czasowy pod różnymi adresami.
+Gdzie składasz dokumenty
+W urzędzie gminy, na terenie której mieszkasz.
+Jednocześnie z zameldowaniem możesz wymeldować się z dotychczasowego miejsca pobytu stałego i czasowego. 
+Ile zapłacisz
+Usługa zameldowania jest bezpłatna.
+Zaświadczenie o zameldowaniu:
+na pobyt stały – bezpłatne,
+na pobyt czasowy –  17 zł (bezpłatnie tylko wtedy, gdy system melduje cię automatycznie),
+każde kolejne zaświadczenie, na przykład gdy zgubisz zaświadczenie wydane przy zameldowaniu, kosztuje 17 zł.
+Sprawdź na stronie internetowej urzędu gminy, w którym się meldujesz, na jakie konto wpłacić pieniądze.
+Ile będziesz czekać
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia.
+Po zameldowaniu na pobyt stały urzędnik wyda ci zaświadczenie o zameldowaniu. Jeśli meldujesz się na pobyt czasowy i chcesz dostać zaświadczenie – powiedz to urzędnikowi.
+Problem z zameldowaniem – co robić
+Może się zdarzyć, że nie masz tytułu prawnego do lokalu, w którym chcesz się zameldować, albo właściciel lokalu nie chce potwierdzić na formularzu zameldowania, że w nim mieszkasz. Co możesz zrobić?
+złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,
+do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,
+urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu. 
+Podstawa prawna
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Ostatnia aktualizacja: 11.03.2026 10:27
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji
+Informacje:
+Kto składa dokumenty
+Możesz się zameldować osobiście lub przez pełnomocnika. Swojego pełnomocnictwa możesz mu udzielić wyłącznie na piśmie.
+Jeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście.
+Rodzic, opiekun prawny lub opiekun faktyczny, który sprawuje opiekę w miejscu wspólnego pobytu, może zameldować osobę, która:
+nie ma zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+ma ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Jeśli jednak ta osoba nie ma numeru PESEL – musi przyjść do urzędu osobiście.
+Co musisz przygotować
+formularz zgłoszenia pobytu stałego, plik PDF 1,74 MB  – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu;
+ważny dokument podróży;
+JEDEN z poniższych dokumentów:
+kartę pobytu wydaną w związku z udzieleniem zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego UE, zgody na pobyt ze względów humanitarnych, ochrony uzupełniającej albo nadaniem statusu uchodźcy w Polsce,
+zgodę na pobyt tolerowany,
+zezwolenie na pobyt stały,
+zezwolenie na pobyt rezydenta długoterminowego UE,
+decyzję o nadaniu statusu uchodźcy w RP, udzieleniu w RP ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych albo zgody na pobyt tolerowany;
+jeśli jesteś właścicielem lub masz inny tytuł prawny do mieszkania, w którym chcesz się zameldować – przynieś JEDEN z dokumentów, który to potwierdzi, na przykład:  
+umowę cywilnoprawną, na przykład umowę najmu,
+odpis z księgi wieczystej albo wyciąg z działów I i II księgi wieczystej,
+decyzję administracyjną,
+orzeczenie sądu;
+jeśli NIE jesteś właścicielem i nie masz innego tytułu prawnego do mieszkania, w którym chcesz się zameldować:
+dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu,
+jeśli meldujesz inną osobę, musisz mieć dodatkowo: 
+dokument, który potwierdza, że masz uprawnienia do działania w jej imieniu (np. pełnomocnictwo, orzeczenie sądu o ustanowieniu opieki, oświadczenie, że opiekujesz się osobą niepełnoletnią lub niepełnosprawną i macie to samo miejsce pobytu).
+dokument tożsamości.
+Na formularzu, który przyniesiesz do urzędu, właściciel lub inny podmiot, który ma tytuł prawny do mieszkania, musi potwierdzić, że przebywasz w tym lokalu. 
+Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy. Szczegóły znajdziesz w sekcji Problem z zameldowaniem – co robić.
+Co musisz zrobić
+Przygotuj wszystkie potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Złóż w urzędzie formularz meldunkowy i okaż pozostałe dokumenty. Szczegóły znajdziesz w sekcji Gdzie składasz dokumenty.
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia.
+Kiedy składasz dokumenty
+Najpóźniej w 4 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować.
+Gdzie składasz dokumenty
+W urzędzie gminy, na terenie której mieszkasz.
+Jednocześnie z zameldowaniem możesz wymeldować się z dotychczasowego miejsca pobytu stałego i czasowego. 
+Ile zapłacisz
+Usługa zameldowania jest bezpłatna.
+Zaświadczenie o zameldowaniu:
+pierwsze zaświadczenie – bezpłatne,
+każde kolejne zaświadczenie, na przykład gdy zgubisz zaświadczenie wydane przy zameldowaniu, kosztuje 17 zł.
+Sprawdź na stronie internetowej urzędu gminy, w którym się meldujesz, na jakie konto wpłacić pieniądze.
+Ile będziesz czekać
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia. 
+Problem z zameldowaniem – co robić
+Może się zdarzyć, że nie masz tytułu prawnego do lokalu, w którym chcesz się zameldować, albo właściciel lokalu nie chce potwierdzić na formularzu zameldowania, że w nim mieszkasz. Co możesz zrobić?
+złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,
+do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,
+urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu. 
+Podstawa prawna
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Ostatnia aktualizacja: 11.03.2026 10:27
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji
+Informacje:
+Kto składa dokumenty
+Możesz się zameldować osobiście lub przez pełnomocnika. Swojego pełnomocnictwa możesz mu udzielić wyłącznie na piśmie.
+Jeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście.
+Rodzic, opiekun prawny lub opiekun faktyczny, który sprawuje opiekę w miejscu wspólnego pobytu, może zameldować osobę, która:
+nie ma zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+ma ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Jeśli jednak ta osoba nie ma numeru PESEL – musi przyjść do urzędu osobiście.
+Co musisz przygotować
+formularz zgłoszenia pobytu czasowego, plik PDF 1,73 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Możesz też poprosić urzędnika, żeby wydrukował wypełniony formularz z systemu,
+ważny dokument podróży,
+wizę.
+Jeśli jesteś w Polsce w ramach ruchu bezwizowego albo czekasz na wydanie decyzji w sprawie udzielenia zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE i jednocześnie złożyłeś w terminie wniosek o wydanie takiego zezwolenia, przygotuj:
+ważny dokument podróży,
+JEDEN z poniższych dokumentów:
+tymczasowe zaświadczenie tożsamości cudzoziemca,
+kartę pobytu,
+zgodę na pobyt tolerowany,
+zezwolenie na pobyt czasowy,
+zezwolenie na pobyt stały,
+zezwolenie na pobyt rezydenta długoterminowego UE,
+decyzję o nadaniu statusu uchodźcy w Polsce, udzieleniu w Polsce ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych albo zgody na pobyt tolerowany.
+jeśli jesteś właścicielem lub masz inny tytuł prawny do mieszkania, w którym chcesz się zameldować – przynieś JEDEN z dokumentów, który to potwierdzi, na przykład:  
+umowę cywilnoprawną, na przykład umowę najmu,
+odpis z księgi wieczystej albo wyciąg z działów I i II księgi wieczystej,
+decyzję administracyjną,
+orzeczenie sądu,
+jeśli NIE jesteś właścicielem i nie masz innego tytułu prawnego do mieszkania, w którym chcesz się zameldować:
+dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu,
+jeśli meldujesz inną osobę, musisz mieć dodatkowo: 
+dokument, który potwierdza, że masz uprawnienia do działania w jej imieniu (np. pełnomocnictwo, orzeczenie sądu o ustanowieniu opieki, oświadczenie, że opiekujesz się osobą niepełnoletnią lub niepełnosprawną i macie to samo miejsce pobytu).
+dokument tożsamości.
+Na formularzu, który przyniesiesz do urzędu, właściciel lub inny podmiot, który ma tytuł prawny do mieszkania, musi potwierdzić, że przebywasz w tym lokalu. 
+Jeśli masz problem z uzyskaniem tytułu prawnego do lokalu lub oświadczenia właściciela, nadal możesz złożyć formularz meldunkowy. Szczegóły znajdziesz w sekcji Problem z zameldowaniem – co robić.
+Co musisz zrobić
+Przygotuj wszystkie potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Jeśli chcesz otrzymać zaświadczenie o zameldowaniu na pobyt czasowy – zapłać za nie. Szczegóły znajdziesz w sekcji Ile zapłacisz. 
+Złóż w urzędzie formularz meldunkowy i okaż pozostałe dokumenty. Szczegóły znajdziesz w sekcji Gdzie składasz dokumenty.
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia.
+Kiedy składasz dokumenty
+Najpóźniej w 4 dniu od zamieszkania w Polsce, w lokalu, w którym chcesz się zameldować.
+Gdzie składasz dokumenty
+W urzędzie gminy, na terenie której mieszkasz.
+Jednocześnie z zameldowaniem możesz wymeldować się z dotychczasowego miejsca pobytu stałego i czasowego. 
+Ile zapłacisz
+Usługa zameldowania jest bezpłatna.
+Zaświadczenie o zameldowaniu na pobyt czasowy – 17 zł.
+Sprawdź na stronie internetowej urzędu gminy, w którym się meldujesz, na jakie konto wpłacić pieniądze.
+Ile będziesz czekać
+Urzędnik zamelduje cię od razu po otrzymaniu twojego zgłoszenia. 
+Problem z zameldowaniem – co robić
+Może się zdarzyć, że nie masz tytułu prawnego do lokalu, w którym chcesz się zameldować, albo właściciel lokalu nie chce potwierdzić na formularzu zameldowania, że w nim mieszkasz. Co możesz zrobić?
+złóż formularz meldunkowy w urzędzie gminy, na terenie której położona jest nieruchomość,
+do zgłoszenia dołącz oświadczenie, w którym poinformujesz urząd, dlaczego nie masz wymaganych dokumentów,
+urząd przeprowadzi postępowanie administracyjne i ustali, czy mieszkasz w lokalu, w którym chcesz się zameldować. Jeżeli tak – wyda decyzję administracyjną o zameldowaniu. 
+Podstawa prawna
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Ostatnia aktualizacja: 11.03.2026 10:27
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji
+Twoje odpowiedzi
+Jesteś:
+ Zmień odpowiedź
+Na jaki pobyt chcesz się zameldować?
+ Zmień odpowiedź
+Zacznij od początku
+{"register":{"columns":[]}}

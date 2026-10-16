@@ -1,0 +1,152 @@
+
+## R1 EU citizen, permanent
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu stałego [albo: 1]; ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo; ważną kartę pobytu członka rodziny obywatela UE [sprawdź] [Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.]; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R2 EU citizen, temporary
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu czasowego [albo: 1]; ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo; ważną kartę pobytu członka rodziny obywatela UE [sprawdź] [Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.]; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R3 family member of an EU citizen (same group in the engine)
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu czasowego [albo: 1]; ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo; ważną kartę pobytu członka rodziny obywatela UE [sprawdź] [Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.]; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R4/R5 non-EU, temporary
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu czasowego [albo: 1]; ważny dokument podróży; wizę [albo: 1]; tymczasowe zaświadczenie tożsamości cudzoziemca [albo: 1]; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R6 non-EU, permanent
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu stałego [albo: 1]; ważny dokument podróży; kartę pobytu wydaną w związku z udzieleniem zezwolenia na pobyt stały; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R7 group unknown
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu czasowego [albo: 1]; ważny dokument podróży lub inny ważny dokument, który potwierdzi twoją tożsamość i obywatelstwo [sprawdź]; ważną kartę pobytu członka rodziny obywatela UE [sprawdź] [Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii.]; ważny dokument podróży [sprawdź]; ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu [sprawdź]; wizę [sprawdź] [albo: 1]; tymczasowe zaświadczenie tożsamości cudzoziemca [sprawdź] [albo: 1]; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)" [może nie dotyczyć]; eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)" [może nie dotyczyć]
+    fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R9 family member of a Polish citizen (the option label puts them in "other")
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu stałego [albo: 1]; ważny dokument podróży; kartę pobytu wydaną w związku z udzieleniem zezwolenia na pobyt stały; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person
+
+## R10 UK Withdrawal Agreement
+route: decided zameldowanie-foreigner
+- route [done] Twoja sytuacja
+    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+- fill-in [available] Formularz
+    tasks: Wypełnij formularz meldunkowy
+- owner-confirms [locked] Potwierdzenie właściciela
+    tasks: Poproś właściciela o potwierdzenie na formularzu
+- file [locked] Wizyta w urzędzie gminy
+    tasks: formularz zgłoszenia pobytu czasowego [albo: 1]; ważny dokument podróży; ważne zaświadczenie o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu; umowę cywilnoprawną, na przykład umowę najmu [albo: 1]; dokument, który potwierdza tytuł prawny do mieszkania właściciela lub innego podmiotu [albo: 1]
+    deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
+    fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
+    office: 18 offices
+    important notes: no-owner-confirmation
+- registered [locked] Zameldowanie
+    tasks: Urzędnik melduje Cię od razu
+    office: 18 offices
+channels by step: fill-in:in_person owner-confirms:in_person file:in_person/online registered:in_person

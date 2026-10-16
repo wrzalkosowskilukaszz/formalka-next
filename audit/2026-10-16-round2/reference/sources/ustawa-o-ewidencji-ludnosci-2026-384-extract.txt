@@ -1,0 +1,239 @@
+# Ustawa o ewidencji ludności, tekst jednolity: Dz.U. 2026 poz. 384 (obwieszczenie z 12.03.2026, stan prawny na 10.03.2026)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb
+# Extract: art. 24–28, 31, 40–43, 59 (pdftotext -layout; page furniture left in)
+
+                                                       Rozdział 4
+                                         Obowiązek meldunkowy obywateli polskich
+    Art. 24. 1. Obywatel polski przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany wykonywać obo-
+wiązek meldunkowy określony w ustawie.
+      2. Obowiązek meldunkowy polega na:
+1)    zameldowaniu się w miejscu pobytu stałego lub czasowego;
+
+
+20) Dodany przez art. 2 ustawy z dnia 5 sierpnia 2025 r. o zmianie ustawy o ubezpieczeniach obowiązkowych, Ubezpieczeniowym Fun-
+    duszu Gwarancyjnym i Polskim Biurze Ubezpieczycieli Komunikacyjnych oraz ustawy o ewidencji ludności (Dz. U. poz. 1176), która
+    weszła w życie z dniem 27 listopada 2025 r.
+21) W brzmieniu ustalonym przez art. 4 pkt 1 ustawy z dnia 25 czerwca 2025 r. o zmianie ustawy o informatyzacji działalności podmiotów
+
+    realizujących zadania publiczne oraz niektórych innych ustaw (Dz. U. poz. 1006), która weszła w życie z dniem 9 sierpnia 2025 r.
+Dziennik Ustaw                                            – 18 –                                                 Poz. 384
+
+2)   wymeldowaniu się z miejsca pobytu stałego lub czasowego;
+3)   zgłoszeniu wyjazdu poza granice Rzeczypospolitej Polskiej oraz powrotu z wyjazdu poza granice Rzeczypospolitej
+     Polskiej, z uwzględnieniem art. 36.
+     3. Za osobę nieposiadającą zdolności do czynności prawnych lub posiadającą ograniczoną zdolność do czynności praw-
+nych obowiązek meldunkowy wykonuje jej przedstawiciel ustawowy, opiekun prawny lub inna osoba sprawująca nad nią
+faktyczną opiekę w miejscu ich wspólnego pobytu.
+     4. Obowiązku meldunkowego można dopełnić przez pełnomocnika legitymującego się pełnomocnictwem udzielonym
+w formie, o której mowa w art. 33 § 2 ustawy z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego (Dz. U.
+z 2025 r. poz. 1691), po potwierdzeniu przez pełnomocnika jego tożsamości za pomocą dokumentu tożsamości albo po
+uwierzytelnieniu pełnomocnika na zasadach określonych w ustawie z dnia 17 lutego 2005 r. o informatyzacji działalności
+podmiotów realizujących zadania publiczne.
+     5. (uchylony)
+     6. W przypadku żołnierzy w czynnej służbie wojskowej, z wyłączeniem żołnierzy terytorialnej służby wojskowej, obo-
+wiązek meldunkowy:
+1)   polegający na zameldowaniu się w miejscu pobytu czasowego lub wymeldowaniu się z takiego miejsca jest wykony-
+     wany w miejscu pełnienia tej służby u dowódcy jednostki wojskowej, a w miejscu pobytu czasowego w obiekcie woj-
+     skowym u komendanta (kierownika, szefa, dowódcy) obiektu;
+2)   polegający na zgłoszeniu wyjazdu poza granice Rzeczypospolitej Polskiej oraz powrotu z tego wyjazdu jest wykony-
+     wany w miejscu pełnienia tej służby u dowódcy jednostki wojskowej.
+     7. Wykonanie obowiązku meldunkowego w przypadkach, o których mowa w ust. 6, następuje poprzez stwierdzenie
+tego faktu w rozkazie dowódcy jednostki wojskowej lub w książce zameldowań komendanta obiektu wojskowego i nie
+wymaga zgłoszenia w organie gminy oraz ujęcia w rejestrze PESEL i rejestrach mieszkańców.
+     Art. 25. 1. Pobytem stałym jest zamieszkanie w określonej miejscowości pod oznaczonym adresem z zamiarem sta-
+łego przebywania.
+    2. Pobytem czasowym jest przebywanie bez zamiaru zmiany miejsca pobytu stałego w innej miejscowości pod ozna-
+czonym adresem lub w tej samej miejscowości, lecz pod innym adresem.
+     3. Miejscem pobytu stałego lub czasowego osoby zatrudnionej na statku żeglugi śródlądowej lub morskiej albo
+zamieszkującej w związku z wykonywaniem pracy w ruchomym urządzeniu mieszkalnym, jest siedziba pracodawcy zatrud-
+niającego tę osobę.
+     4. Ilekroć w ustawie jest mowa o pobycie czasowym obywatela polskiego należy przez to rozumieć przebywanie poza
+miejscem pobytu stałego przez okres ponad 3 miesięcy.
+     Art. 26. 1. Adres określa się przez podanie:
+1)   w gminach, które uzyskały status miasta – nazwy miasta (dzielnicy), ulicy, numeru domu i lokalu – jeżeli jest wydzie-
+     lony, nazwy województwa oraz kodu pocztowego;
+2)   w pozostałych gminach – nazwy miejscowości, ulicy, jeżeli w miejscowości występuje podział na ulice, numeru domu
+     i lokalu – jeżeli jest wydzielony, nazwy gminy, nazwy województwa oraz kodu pocztowego.
+     2. Adres, o którym mowa w ust. 1, w rejestrze PESEL oraz w rejestrze mieszkańców uzupełnia się o identyfikatory
+krajowego rejestru urzędowego podziału terytorialnego kraju „TERYT”.
+    Art. 27. 1. Obywatel polski przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany zameldować się
+w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+     2. Równocześnie można mieć jedno miejsce pobytu stałego i jedno miejsce pobytu czasowego.
+     Art. 28. 1. Obywatel polski dokonuje zameldowania na pobyt stały lub czasowy na piśmie utrwalonym w postaci:
+1)   papierowej – na formularzu opatrzonym własnoręcznym podpisem, w organie gminy właściwym ze względu na poło-
+     żenie nieruchomości, w której zamieszkuje, przedstawiając do wglądu dowód osobisty lub paszport, albo
+2)   elektronicznej – na formularzu opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo pod-
+     pisem osobistym, umożliwiającym wprowadzenie danych do rejestru PESEL przez organ, o którym mowa w pkt 1, pod
+     warunkiem otrzymania dowodu, o którym mowa w art. 41 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektro-
+     nicznych (Dz. U. z 2026 r. poz. 3).
+Dziennik Ustaw                                           – 19 –                                                 Poz. 384
+
+     2. Obywatel polski dokonujący zameldowania na pobyt stały lub czasowy na piśmie utrwalonym w postaci papierowej
+przedstawia potwierdzenie pobytu w lokalu, dokonane przez właściciela lub inny podmiot dysponujący tytułem prawnym
+do lokalu na formularzu zgłoszenia pobytu stałego lub formularzu zgłoszenia pobytu czasowego, oraz – do wglądu – doku-
+ment potwierdzający tytuł prawny do lokalu tego właściciela lub podmiotu.
+     2a. Obywatel polski dokonujący zameldowania na pobyt stały lub czasowy na piśmie utrwalonym w postaci elektro-
+nicznej dołącza do formularza dokument elektroniczny potwierdzający jego tytuł prawny do lokalu, a w razie niemożności
+jego uzyskania – odwzorowanie cyfrowe tego dokumentu, a obywatel nieposiadający tytułu prawnego do lokalu dołącza do
+formularza dokument elektroniczny zawierający oświadczenie właściciela lub innego podmiotu dysponującego tytułem
+prawnym do lokalu potwierdzające pobyt w lokalu oraz dokument potwierdzający tytuł prawny do lokalu tego właściciela
+lub podmiotu, a w razie niemożności ich uzyskania – odwzorowanie cyfrowe tych dokumentów.
+      2b. Dokumentem potwierdzającym tytuł prawny do lokalu może być w szczególności umowa cywilnoprawna, odpis
+z księgi wieczystej albo wyciąg z działów I i II księgi wieczystej, decyzja administracyjna lub orzeczenie sądu.
+    2c. Organ gminy przechowuje dokument potwierdzający tytuł prawny do lokalu albo odwzorowanie cyfrowe tego
+dokumentu, dołączony w postaci, o której mowa w ust. 2a, wyłącznie do czasu zakończenia czynności meldunkowych.
+     2d. W przypadku dołączenia odwzorowania cyfrowego dokumentów, w szczególności dokumentów, o których mowa
+w ust. 2a, organ gminy w razie uzasadnionych wątpliwości może żądać okazania oryginałów tych dokumentów.
+     2e. Obywatel polski może dokonać zameldowania na pobyt stały lub czasowy przy użyciu usługi elektronicznej udo-
+stępnionej przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu w sposób określony w art. 20a ust. 1
+ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne.
+     2f. Zameldowania przy użyciu usługi, o której mowa w ust. 2e, może dokonać obywatel polski, który jest właścicielem
+nieruchomości lub dysponuje innym tytułem prawnym do lokalu, w którym dokonuje zameldowania, ujawnionym w księdze
+wieczystej, po podaniu numeru księgi wieczystej. Organem rejestrującym dane jest w tym przypadku minister właściwy
+do spraw informatyzacji.
+     2g. Jedno z rodziców może dokonać zameldowania dziecka pozostającego pod jego władzą rodzicielską przy użyciu
+usługi, o której mowa w ust. 2e, jeżeli w rejestrze PESEL przy danych dziecka zamieszczono numer PESEL tego z rodzi-
+ców, które dokonuje zameldowania.
+    2h. Zameldowanie w przypadku, o którym mowa w ust. 2g, wymaga złożenia przez tego z rodziców, które dokonuje
+zameldowania, oświadczenia o pozostawaniu dziecka pod jego władzą rodzicielską.
+     2i. Oświadczenie, o którym mowa w ust. 2h, składa się pod rygorem odpowiedzialności karnej za złożenie fałszywego
+oświadczenia. Składający oświadczenie zamieszcza w nim klauzulę następującej treści: „Jestem świadomy odpowiedzial-
+ności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej
+za złożenie fałszywego oświadczenia.
+      2j. Potwierdzenie prawa własności nieruchomości lub innego tytułu prawnego do lokalu, o którym mowa w ust. 2f,
+następuje automatycznie na podstawie danych zgromadzonych w systemie teleinformatycznym, o którym mowa w art. 251
+ust. 1 ustawy z dnia 6 lipca 1982 r. o księgach wieczystych i hipotece (Dz. U. z 2025 r. poz. 341, 1669, 1792 i 1793 oraz
+z 2026 r. poz. 119), po pozytywnej weryfikacji danych w zakresie imienia, nazwiska i numeru PESEL osoby, która jest
+właścicielem nieruchomości lub dysponuje innym tytułem prawnym do lokalu, a także danych dotyczących adresu nie-
+ruchomości i numeru księgi wieczystej z danymi zgromadzonymi w tym systemie.
+     2k. Jeżeli nie jest możliwa weryfikacja, o której mowa w ust. 2j, zgłoszenie zameldowania jest realizowane w sposób,
+o którym mowa w ust. 1 pkt 2.
+     3. Przy zameldowaniu na pobyt czasowy należy wskazać deklarowany okres pobytu w tym miejscu.
+    4. Zameldowanie na pobyt stały lub czasowy służy wyłącznie celom ewidencyjnym i ma na celu potwierdzenie faktu
+pobytu osoby w miejscu, w którym się zameldowała.
+     Art. 29. Zameldowania w stosunku do dzieci osób, o których mowa w art. 7 ust. 1 pkt 1, urodzonych na terytorium
+Rzeczypospolitej Polskiej, dokonuje z urzędu kierownik urzędu stanu cywilnego sporządzający akt urodzenia. Zameldowanie
+na pobyt stały lub czasowy następuje z dniem sporządzenia aktu urodzenia, w miejscu stałego albo czasowego pobytu rodzi-
+ców albo tego z rodziców, u którego dziecko faktycznie przebywa.
+    Art. 31. 1. Jeżeli dane zgłoszone do zameldowania lub wymeldowania budzą wątpliwości o zameldowaniu lub wymel-
+dowaniu rozstrzyga organ gminy w drodze decyzji administracyjnej.
+    2. Wątpliwości co do stałego lub czasowego charakteru pobytu osoby pod deklarowanym adresem rozstrzyga organ
+gminy w drodze decyzji administracyjnej.
+     Art. 32. 1. Organ dokonujący zameldowania na pobyt stały wydaje z urzędu osobie zaświadczenie o zameldowaniu
+
+                                                              Rozdział 5
+                                             Obowiązek meldunkowy cudzoziemców
+     Art. 40. 1. Cudzoziemiec przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany wykonywać obowią-
+zek meldunkowy na zasadach określonych w art. 24, art. 25 ust. 1–3, art. 26, art. 27 ust. 2, art. 28 oraz w art. 30–39, jeżeli
+przepisy niniejszego rozdziału nie stanowią inaczej.
+     2. Cudzoziemiec, o którym mowa w art. 41 ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej jest obowią-
+zany wykonywać obowiązek meldunkowy na zasadach określonych w art. 24–26, art. 27 ust. 2, art. 28 oraz w art. 30–39, jeżeli
+przepisy niniejszego rozdziału nie stanowią inaczej.
+       3.22) Jeżeli zameldowania w miejscu pobytu stałego lub czasowego dokonuje cudzoziemiec:
+1)     niewymieniony w art. 41 ust. 1–2a lub
+2)     niebędący obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10
+       ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Euro-
+       pejskiej i Europejskiej Wspólnoty Energii Atomowej, bądź członkiem jego rodziny, o którym mowa w art. 10 ust. 1
+       lit. e lub f tej umowy
+– nieposiadający numeru PESEL, wymagane jest jego osobiste stawiennictwo.
+    Art. 41. 1. Cudzoziemiec będący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa człon-
+kowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodar-
+czym lub obywatelem Konfederacji Szwajcarskiej, przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany
+zameldować się w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+     2. Członek rodziny cudzoziemca, o którym mowa w ust. 1, niebędący obywatelem państwa członkowskiego Unii
+Europejskiej, obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy
+o Europejskim Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej, jest obowiązany zameldować się
+w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+       2a. Przepis ust. 2 stosuje się także do członka rodziny obywatela Rzeczypospolitej Polskiej, o którym mowa w art. 2 pkt 4
+lit. b ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego
+terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2025 r. poz. 1164 i 1794).
+    3. Cudzoziemiec niewymieniony w ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej, ma obowiązek
+zameldować się w miejscu pobytu stałego lub czasowego najpóźniej czwartego dnia, licząc od dnia przybycia do tego miejsca.
+      4. Deklarowany przez cudzoziemca niewymienionego w ust. 1–2a okres pobytu czasowego pod określonym adresem
+nie może przekroczyć okresu, w którym cudzoziemiec ten może legalnie przebywać na terytorium Rzeczypospolitej Pol-
+skiej, zgodnie z dokumentem potwierdzającym jego prawo pobytu.
+     Art. 42. 1. Od wykonywania obowiązku meldunkowego zwolnieni są, pod warunkiem wzajemności, szefowie i człon-
+kowie personelu przedstawicielstw dyplomatycznych oraz urzędów konsularnych państw obcych, łącznie z członkami ich
+rodzin pozostającymi z nimi we wspólnocie domowej, a także inne osoby na podstawie ustaw, umów lub powszechnie
+ustalonych zwyczajów międzynarodowych.
+     2. Cudzoziemcy są zwolnieni z obowiązku meldunkowego, jeżeli okres ich pobytu na terytorium Rzeczypospolitej
+Polskiej nie przekracza 30 dni.
+
+
+22)   Dodany przez art. 6 pkt 2 ustawy, o której mowa w odnośniku 14; wszedł w życie z dniem 1 stycznia 2026 r.
+Dziennik Ustaw                                                 – 25 –                                                     Poz. 384
+
+     Art. 43. 1. Cudzoziemiec dokonujący zameldowania na pobyt stały przedstawia kartę pobytu wydaną w związku
+z udzieleniem zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, zgody na
+pobyt ze względów humanitarnych, ochrony uzupełniającej, albo nadaniem statusu uchodźcy w Rzeczypospolitej Polskiej,
+dokument „zgoda na pobyt tolerowany” albo zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego
+Unii Europejskiej, decyzję o nadaniu statusu uchodźcy w Rzeczypospolitej Polskiej, udzieleniu w Rzeczypospolitej Polskiej
+ochrony uzupełniającej, zgody na pobyt ze względów humanitarnych albo zgody na pobyt tolerowany.
+      1a.23) Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europej-
+skiej Wspólnoty Energii Atomowej, dokonując zameldowania na pobyt stały, przedstawia ważne zaświadczenie o zareje-
+strowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu, a członek jego rodziny, o którym mowa
+w art. 10 ust. 1 lit. e i f tej umowy, przedstawia ważną kartę pobytową lub ważną kartę stałego pobytu.
+      2. Cudzoziemiec, o którym mowa w art. 41 ust. 1, dokonujący zameldowania na pobyt stały przedstawia ważny doku-
+ment podróży lub inny dokument potwierdzający jego tożsamość i obywatelstwo, a cudzoziemiec, o którym mowa w art. 41
+ust. 2, dokonujący zameldowania na pobyt stały przedstawia ważny dokument podróży oraz ważną kartę stałego pobytu albo
+ważną kartę pobytową, a gdy brak takiej możliwości – przedstawia inny dokument potwierdzający, że jest on członkiem
+rodziny obywatela Unii Europejskiej.
+     3.24) Cudzoziemiec dokonujący zameldowania się na pobyt czasowy przedstawia wizę, a w przypadku gdy wjazd cudzo-
+ziemca nastąpił na podstawie umowy przewidującej zniesienie lub ograniczenie obowiązku posiadania wizy albo cudzo-
+ziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 1 pkt 2 ustawy
+z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203) lub na podstawie
+umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na
+pobyt rezydenta długoterminowego Unii Europejskiej – dokument podróży, tymczasowe zaświadczenie tożsamości cudzo-
+ziemca, kartę pobytu, dokument „zgoda na pobyt tolerowany” albo zezwolenie na pobyt czasowy, zezwolenie na pobyt stały,
+zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub decyzję o nadaniu statusu uchodźcy w Rzeczy-
+pospolitej Polskiej, udzieleniu w Rzeczypospolitej Polskiej ochrony uzupełniającej, zgody na pobyt ze względów humani-
+tarnych albo zgody na pobyt tolerowany.
+      3.25) Cudzoziemiec dokonujący zameldowania się na pobyt czasowy przedstawia wizę, a w przypadku gdy wjazd
+cudzoziemca nastąpił na podstawie umowy przewidującej zniesienie lub ograniczenie obowiązku posiadania wizy
+albo cudzoziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2, art. 206
+ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079
+i 1794 oraz z 2026 r. poz. 203) – dokument podróży, tymczasowe zaświadczenie tożsamości cudzoziemca, kartę
+pobytu, dokument „zgoda na pobyt tolerowany” albo zezwolenie na pobyt czasowy, zezwolenie na pobyt stały ,
+zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub decyzję o nadaniu statusu uchodźcy w Rzeczy-
+pospolitej Polskiej, udzieleniu w Rzeczypospolitej Polskiej ochrony uzupełniającej, zgody na pobyt ze względów
+humanitarnych albo zgody na pobyt tolerowany.
+     3a.26) Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+lub d Umowy o Wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Euro-
+pejskiej Wspólnoty Energii Atomowej, dokonując zameldowania się na pobyt czasowy, przedstawia ważne zaświadczenie
+o zarejestrowaniu pobytu albo ważny dokument potwierdzający prawo stałego pobytu, a członek jego rodziny, o którym
+mowa w art. 10 ust. 1 lit. e i f tej umowy, przedstawia ważną kartę pobytową lub ważną kartę stałego pobytu.
+      4. Cudzoziemiec, o którym mowa w art. 41 ust. 1, dokonujący zameldowania na pobyt czasowy przedstawia ważny
+dokument podróży lub inny ważny dokument potwierdzający jego tożsamość i obywatelstwo, a cudzoziemiec, o którym
+mowa w art. 41 ust. 2, dokonujący zameldowania na pobyt czasowy przedstawia ważny dokument podróży oraz ważną kartę
+stałego pobytu lub ważną kartę pobytową, a gdy brak takiej możliwości – przedstawia inny dokument potwierdzający, że
+jest on członkiem rodziny obywatela Unii Europejskiej.
+    5.27) W szczególnie uzasadnionym przypadku, gdy cudzoziemiec dokonujący zameldowania się na pobyt cza-
+sowy nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może przedstawić inny doku-
+ment potwierdzający tożsamość.
+      Art. 44. (uchylony)
+
+23) W brzmieniu ustalonym przez art. 6 pkt 3 lit. a ustawy, o której mowa w odnośniku 14; weszła w życie z dniem 1 stycznia 2026 r.
+24) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 25.
+25) W brzmieniu ustalonym przez art. 5 pkt 5 lit. a ustawy, o której mowa w odnośniku 4; wejdzie w życie z dniem określonym w komu-
+
+    nikacie, o którym mowa w art. 17 tej ustawy.
+26) Ze zmianą wprowadzoną przez art. 6 pkt 3 lit. b ustawy, o której mowa w odnośniku 14; weszła w życie z dniem 1 stycznia 2026 r.
+27) Dodany przez art. 5 pkt 5 lit. b ustawy, o której mowa w odnośniku 4; wejdzie w życie z dniem określonym w komunikacie, o którym
+
+    mowa w art. 17 tej ustawy.
+Dziennik Ustaw                                                   – 26 –                                        Poz. 384
+
+                                                            Rozdział 5a28)
+                                                            Rozdział 7
+                                                         Przepisy karne
+     Art. 59. 1. Cudzoziemiec niebędący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa
+członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospo-
+darczym lub obywatelem Konfederacji Szwajcarskiej, który nie dopełnia ciążącego na nim obowiązku meldunkowego, pod-
+lega karze grzywny.
+     2. Przepisu ust. 1 nie stosuje się do cudzoziemca będącego członkiem rodziny obywatela państwa członkowskiego Unii
+Europejskiej, obywatela państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy
+o Europejskim Obszarze Gospodarczym lub obywatela Konfederacji Szwajcarskiej.
+      Art. 60. Postępowania w sprawach, o których mowa w art. 59, prowadzi się na podstawie przepisów ustawy z dnia
+24 sierpnia 2001 r. – Kodeks postępowania w sprawach o wykroczenia (Dz. U. z 2025 r. poz. 860, 1178, 1661, 1814, 1818
+i 1872).
