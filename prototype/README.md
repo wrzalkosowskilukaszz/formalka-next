@@ -32,9 +32,9 @@ The home footer shows the build id and the engine hash, so screenshots from a se
 
 | Command | What it checks |
 |---|---|
-| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (14 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person |
+| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (15 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
-| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Six scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-F>` for one scenario |
+| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Seven scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-G>` for one scenario |
 
 The end-to-end scenarios:
 - **A:** citizenship in the person's own words, consent on, a change after approval that opens a second route; a typed PESEL is masked and a not-understood question gets no action.
@@ -50,6 +50,10 @@ The end-to-end scenarios:
   - a filing recorded with the form never marked shows the form level as "Zakładamy, że zrobione", not as done; the owner's confirmation becomes "Pominięte" and is never the current step;
   - the plan card names its check without overclaiming;
   - memory is named as session memory.
+- **G:** waiting for the office. "Potrzebuję przyspieszyć wydanie karty pobytu" gets:
+  - an answer about delay first: a ponaglenie, the official template, the art. 100d caveat;
+  - no new-application question before that;
+  - the plan only on request ("Nie teraz", then "Ułóż jednak plan").
 
 Every screen in every scenario is checked for:
 - no console errors and no network requests;
@@ -75,6 +79,7 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 | `35-understand` | The on-device reader of typed answers |
 | `40-case` | Start, Teraz, Mapa, history, calendar, Teczka, events, visits, the call flow, the mock form |
 | `45-guide` | The active assistant: what it proposes now; offices and maps; answers to the person's questions |
+| `46-waiting` | Waiting for the office: what the registry says about delay, a ponaglenie and the card stage |
 | `50-time` | Time travel, the agenda's messages, the lock screen, "Jak poszło?" |
 | `60-screens`, `90-boot` | The screen table, boot and reset |
 
@@ -147,7 +152,16 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
    - "Nie wiem" leads to a hand-off with free legal aid, not a guess;
    - an exemption the answers don't establish is quoted as something to check, and the full fee stays (audit F3);
    - content the snapshot marks as possibly outdated (the language exam dates) is flagged wherever it appears, with the official page to check.
-7. **Session memory** ("Co Asia pamięta w tej sesji" in the case history) holds:
+7. **Waiting for the office** (`46-waiting`, owner, 16.10). "Potrzebuję przyspieszyć wydanie karty pobytu" is about a case already filed, so the assistant answers that first, and only from the registry's waiting content:
+   - it cannot speed the office up;
+   - it asks the registry's own question: waiting for the decision or for the card;
+   - at the decision stage, a ponaglenie in the law's words: where it goes, who rules on it, and that one filed too early is left unexamined, with the official template (biznes.gov.pl, a free service);
+   - a folded caveat: the special provision (art. 100d) and how the ministry, the RPO and the courts read it, each quoted and attributed, with no conclusion of our own;
+   - at the card stage, what the guides say about the card, and that they describe a ponaglenie for the decision stage only;
+   - free legal aid to judge whether a ponaglenie makes sense; the assistant does not judge it.
+
+   The plan of the whole case comes after, only if the person wants it.
+8. **Session memory** ("Co Asia pamięta w tej sesji" in the case history) holds:
    - what the person confirmed from their own words;
    - the city;
    - the hour they last picked, offered first next time.
@@ -166,6 +180,11 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 
   Reset keeps the mode; the same button turns it off.
 - **Reset** (the round arrow) clears everything back to the start animation.
+
+**Layout while a question is open** (owner, 16.10: "chaos"):
+- the case bar folds to one line (progress and the case's name; the map is one tap away);
+- a long list of answers uses a smaller question and tighter cards (still 44 px targets);
+- the question panel takes at most 55% of the screen.
 
 ## Test script for sessions with people (audit of 16.10, Phase 1)
 
@@ -257,7 +276,7 @@ First compare with a **plain checklist** of the same verified information for th
   - the independent reference is not written yet;
   - five registry errors behind the findings are only proposed to production (`docs/formalka-next/PRODUCTION-CONTENT-PROPOSALS-2026-10-16.md`);
   - only address registration is meant for sessions.
-- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 14 unit tests). It will miss many real phrasings. A model may replace it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
+- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 15 unit tests). It will miss many real phrasings. A model may replace it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
 - **Privacy, by environment.**
   - Locally: the prototype's code makes no requests in the tested scenarios (FACT: e2e).
   - Not shown: what the hosting platform of the private Artifact logs.

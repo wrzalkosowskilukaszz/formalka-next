@@ -90,7 +90,7 @@ Neither session wrote to the production repository.
 - **Still open:** the online channel is not modelled. It needs steps in the registry, which is production content, so it waits for the owner.
 
 ### F5. Reader
-All five inputs from the audit are unit tests now (`prototype/test/understand.test.mjs`, 14 tests):
+All five inputs from the audit are unit tests now (`prototype/test/understand.test.mjs`, 15 tests):
 
 | Input | Before | Now |
 |---|---|---|
@@ -197,7 +197,7 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
 5. **"31 tests and 17 scenarios"** are not additive: the scenarios run inside one of the tests. Today:
    - the engine has 39 tests, with the 18 scenarios inside them;
    - spike S1 has 14 tests;
-   - the prototype has 14 unit tests and 6 e2e scenarios.
+   - the prototype has 15 unit tests and 7 e2e scenarios.
 6. **"24 injected faults caught"** could not be reproduced from the package: there was no runner and no log per fault. The number is withdrawn.
    - It is replaced by a runner (`f4ead1f`). `npm run mutate` applies each fault alone, runs the whole suite each time, restores the file and writes `eval/MUTATIONS.md`.
    - FACT: 36/36 caught, rerun by this session (`evidence/engine-mutations.txt`).
