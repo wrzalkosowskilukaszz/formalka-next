@@ -61,6 +61,15 @@
   --lock-fg-2: #dbe5ff;
   --lock-card: rgb(255 255 255 / 0.2);
 
+  /* Assistant colours: one per case (owner, 2026-10-16). White initials pass 4.5:1 on both stops,
+     so the same values serve the dark theme. */
+  --persona-1a: #2559e8; --persona-1b: #0d2f9e;
+  --persona-2a: #6a3fd6; --persona-2b: #3d1d93;
+  --persona-3a: #0e7c86; --persona-3b: #075159;
+  --persona-4a: #c0306a; --persona-4b: #7d1640;
+  --persona-5a: #b45309; --persona-5b: #7c2d12;
+  --persona-6a: #0f7a4f; --persona-6b: #064e33;
+
   /* The logo's own reds (BRAND.md). */
   --mark-1: #8f1124;
   --mark-2: #b4182f;

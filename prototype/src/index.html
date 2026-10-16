@@ -11,8 +11,8 @@
       <div class="statusbar" aria-hidden="true"><span id="sb-time">18:40</span><span class="sb-icons"><span class="sig"><i style="height:4px"></i><i style="height:6px"></i><i style="height:9px"></i><i style="height:12px"></i></span><span class="bat"></span></span></div>
       <div class="tester-strip pad" role="region" aria-label="Panel testera, nie jest częścią aplikacji">
         <span class="tester-clock" id="clock"></span>
-        <button class="tbtn" id="t-forward" type="button"></button>
-        <button class="tbtn icon-only" id="t-reset" type="button" aria-label="Reset prototypu"></button>
+        <button class="tbtn" data-travel="3" data-label="Przewiń o 3 dni" type="button"></button>
+        <button class="tbtn icon-only" data-reset type="button" aria-label="Reset prototypu"></button>
       </div>
       <main id="stage"></main>
       <nav id="tabbar" aria-label="Główna nawigacja"></nav>
@@ -24,11 +24,14 @@
     <h2>Panel testera</h2>
     <p>Nie jest częścią aplikacji. Czas w prototypie:</p>
     <p class="tp-clock" id="tp-clock"></p>
-    <button class="tbtn" id="tp-forward" type="button"></button>
-    <button class="tbtn" id="tp-reset" type="button"></button>
-    <p class="meta">Dane przykładowe. Nic nie wychodzi z przeglądarki: brak sieci, AI i zapisu.</p>
+    <div class="tp-row"><button class="tbtn" data-travel="1" type="button"></button><button class="tbtn" data-travel="3" type="button"></button><button class="tbtn" data-travel="7" type="button"></button></div>
+    <button class="tbtn" data-reset data-label="Reset prototypu" type="button"></button>
+    <p class="meta">Dane przykładowe. Nic nie wychodzi z przeglądarki: brak sieci, AI i zapisu. Asystent nie jest modelem językowym: plan, terminy i przypomnienia liczy silnik spraw, a odpowiedzi pisane własnymi słowami czyta prosty czytnik na telefonie.</p>
   </aside>
 </div>
+<script>
+/*__ENGINE__*/
+</script>
 <script>
 /*__JS__*/
 </script>

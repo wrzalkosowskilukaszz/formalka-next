@@ -1,5 +1,7 @@
 // Builds the prototype into one self-contained HTML file (no network at runtime).
 // Usage: node prototype/build.mjs   Output: prototype/dist/index.html (standalone page)
+//   Inputs: src/index.html, src/tokens*.css, src/app.css, src/js/*.js (in name order), vendor/ (font,
+//   icons) and the case engine bundle ../packages/case-engine/dist/case-engine.browser.js.
 //                                           prototype/dist/artifact.html (body fragment for a private Artifact)
 import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -22,8 +24,17 @@ const icons = {};
 for (const f of readdirSync(join(root, 'vendor/icons'))) {
   icons[f.replace(/\.svg$/, '')] = read(`vendor/icons/${f}`).trim();
 }
-const js = read('src/app.js').replace('/*__ICONS__*/ {}', JSON.stringify(icons));
-const fragment = read('src/index.html').replace('/*__CSS__*/', () => css).replace('/*__JS__*/', () => js);
+// The app is split into ordered modules (src/js/00-*.js ... 90-*.js) that share one script scope.
+const modules = readdirSync(join(root, 'src/js')).filter((f) => f.endsWith('.js')).sort();
+const app = modules.map((f) => `/* ── src/js/${f} ── */\n${read(`src/js/${f}`)}`).join('\n');
+if (!app.includes('/*__ICONS__*/ {}')) throw new Error('icon placeholder missing in src/js');
+const js = app.replace('/*__ICONS__*/ {}', () => JSON.stringify(icons));
+// The case engine (packages/case-engine, built and checked by its own tests) runs before the app.
+const engine = read('../packages/case-engine/dist/case-engine.browser.js');
+for (const [name, code] of [['engine', engine], ['app', js]]) {
+  if (/<\/script/i.test(code)) throw new Error(`${name} contains a closing script tag`);
+}
+const fragment = read('src/index.html').replace('/*__CSS__*/', () => css).replace('/*__ENGINE__*/', () => engine).replace('/*__JS__*/', () => js);
 
 const standalone = `<!doctype html>
 <html lang="pl">
