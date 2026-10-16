@@ -106,7 +106,7 @@ function drawStatus(slot) {
   const v = E.validate(p, c.state);
   const lvl = S.statusL;
   slot.innerHTML = `<section class="status" data-l="${lvl}" aria-label="Status sprawy">
-    <button type="button" id="st-t" aria-expanded="${lvl > 1}"><span class="live" aria-hidden="true"></span><span class="tx"><b>${esc(c.title)}:</b> ${esc(cur.title.pl)}</span>${icon('caret-down')}</button>
+    <button type="button" id="st-t" aria-expanded="${lvl > 1}"><span class="live" aria-hidden="true"></span><span class="tx">${cur.title.pl === c.title ? `<b>Teraz:</b> ${esc(cur.title.pl)}` : `<b>${esc(c.title)}:</b> ${esc(cur.title.pl)}`}</span>${icon('caret-down')}</button>
     ${lvl > 1 ? `<ul class="lay">
       <li>${icon('map-trifold')}<span>Poziom ${i} z ${n}: ${esc(levelLine(cur))}.</span></li>
       <li>${icon('calendar-dots')}<span>${next ? `Następne: ${esc(next.title)}, ${esc(dshort(next.at.slice(0, 10)))} ${hm(next.at.slice(11, 16))}` : 'Brak wpisów w kalendarzu.'}</span></li>

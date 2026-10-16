@@ -98,7 +98,7 @@ function guidance(c) {
       else if (o.offices?.length) {
         const withAddr = o.offices.filter((x) => x.address);
         lines.push(withAddr.length > 1
-          ? `W naszych źródłach jest ${withAddr.length} ${plural(withAddr.length, 'urząd', 'urzędy', 'urzędów')} dla miejscowości ${c.state.place?.name ?? ''}, z podziałem na dzielnice, z adresami i godzinami.`
+          ? `W naszych źródłach ${plural(withAddr.length, 'jest', 'są', 'jest')} ${withAddr.length} ${plural(withAddr.length, 'urząd', 'urzędy', 'urzędów')} dla miejscowości ${c.state.place?.name ?? ''}, z podziałem na dzielnice, z adresami i godzinami.`
           : `Urząd: ${o.offices[0].name.pl}${o.offices[0].address ? `, ${o.offices[0].address.value}` : '. Adres i godziny są na jego stronie'}.`);
         A.push({ kind: 'offices', levelId: l.id, label: withAddr.length > 1 ? 'Urzędy i mapa' : 'Urząd', ic: 'map-pin' });
       } else lines.push(E.msg.officeUnknown());
@@ -110,7 +110,7 @@ function guidance(c) {
       if (o.needsPlace) { lines.push(`Potem: „${ahead.title.pl}”. Podaj miejscowość, a pokażę urzędy z naszych źródeł.`); A.push({ kind: 'place', label: 'Podaj miejscowość', ic: 'map-pin' }); }
       else if (o.offices?.length) {
         const n = o.offices.length;
-        lines.push(n > 1 ? `Potem: „${ahead.title.pl}”. W Twojej miejscowości jest ${n} ${plural(n, 'urząd', 'urzędy', 'urzędów')}, z podziałem na dzielnice, z adresami i godzinami.` : `Potem: „${ahead.title.pl}” w urzędzie: ${o.offices[0].name.pl}.`);
+        lines.push(n > 1 ? `Potem: „${ahead.title.pl}”. W Twojej miejscowości ${plural(n, 'jest', 'są', 'jest')} ${n} ${plural(n, 'urząd', 'urzędy', 'urzędów')}, z podziałem na dzielnice, z adresami i godzinami.` : `Potem: „${ahead.title.pl}” w urzędzie: ${o.offices[0].name.pl}.`);
         A.push({ kind: 'offices', levelId: ahead.id, label: n > 1 ? 'Urzędy i mapa' : 'Urząd', ic: 'map-pin' });
       }
     }
