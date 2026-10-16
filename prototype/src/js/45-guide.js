@@ -213,6 +213,7 @@ async function answerFees(c) {
   const total = fees.reduce((s, x) => s + x.f.amountPln, 0);
   await say(c, `<p>Opłaty urzędowe w tym planie: <b>${total} zł</b>. To przykład z przewodnika Formalki, stan na 15.10.2026.</p>
     <ul>${fees.map(({ f, l }) => `<li>${f.amountPln} zł: ${esc(f.purpose.pl)} (${esc(l.title.pl)})</li>`).join('')}</ul>
+    ${fees.filter(({ f }) => f.exemption?.outcome === 'unknown').map(({ f }) => `<p class="meta">${esc(maybeExempt(f))}</p>`).join('')}
     ${cite(fees[0].f.quotes, 'Jak i gdzie zapłacić, jest w źródle.')}
     ${actsHTML(c, [{ kind: 'focus', levelId: fees[0].l.id, label: 'Pokaż ten krok', ic: 'coins', primary: true }, { kind: 'map', label: 'Mapa sprawy', ic: 'map-trifold' }])}`);
 }

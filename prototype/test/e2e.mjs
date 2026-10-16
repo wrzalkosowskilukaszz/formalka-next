@@ -456,6 +456,8 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.locator('.tester-strip [data-study]').click();
   await page.locator('.study-note').waitFor({ timeout: 8000 });
   await page.waitForFunction(() => document.querySelectorAll('.ex').length === 1, null, { timeout: 8000 });
+  // The build id ties a session's screenshots to one build (dist/manifest.json; audit F8).
+  assert.match(await page.locator('.home-foot .build').innerText(), /Wersja prototypu [0-9a-f]{12}, silnik [0-9a-f]{16}/);
   await page.fill('#home-t', 'Ogarnij mi temat karty pobytu');
   await page.press('#home-t', 'Enter');
   await t.toast(/tylko zameldowanie/);
@@ -464,7 +466,7 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.locator('.sys', { hasText: 'nie korzysta z modelu językowego' }).waitFor({ timeout: 8000 });
   await t.autoIntake([[/miejscowości/, /Warszawa/]]);
   const card = await page.locator('.dock').innerText();
-  assert.ok(!/Plan sprawdzony/.test(card) && /nie weryfikacja prawna/.test(card), 'the plan card does not overclaim');
+  assert.ok(!/Plan sprawdzony/.test(card) && /zgodny z przewodnikami/.test(card) && /nie jest weryfikacja prawna/.test(card), 'the plan card names what the check covers and does not overclaim');
   await t.approvePlan(false);
   await page.locator('#chat-av').click();
   await page.locator('.sheet-body', { hasText: 'pamięta w tej sesji' }).waitFor({ timeout: 8000 });

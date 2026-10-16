@@ -114,7 +114,7 @@ function drawStatus(slot) {
       ${lvl < 3 ? '<li><button type="button" class="more" id="st-more">Pokaż szczegóły i źródła</button></li>' : ''}</ul>` : ''}
     ${lvl > 2 ? `<ul class="lay">
       <li>${icon('signpost')}<span>Droga: ${esc(routeTitle(p) || c.title)}${c.state.place ? `, ${esc(c.state.place.name)}` : ''}.</span></li>
-      <li>${icon(v.ok ? 'list-checks' : 'warning-circle')}<span>${v.ok ? 'Każdy element wskazuje źródło (techniczna kontrola odwołań, nie weryfikacja prawna)' : `Kontrola źródeł nie przeszła (${v.violations.length})`}. Przewodniki Formalki ${esc(E.registryVersion)}, stan na 15.10.2026.</span></li>
+      <li>${icon(v.ok ? 'list-checks' : 'warning-circle')}<span>${v.ok ? 'Plan zgodny z przewodnikami Formalki (kontrola zgodności, nie weryfikacja prawna)' : `Plan niezgodny z przewodnikami (${v.violations.length})`}. Przewodniki Formalki ${esc(E.registryVersion)}, stan na 15.10.2026.</span></li>
       <li>${icon('clock-counter-clockwise')}<span>Pełny dziennik działań: dotknij awatara u góry.</span></li></ul>` : ''}
   </section>`;
   $('#st-t', slot).onclick = () => { S.statusL = lvl > 1 ? 1 : 2; drawStatus(slot); };

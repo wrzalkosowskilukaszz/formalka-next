@@ -8,6 +8,8 @@
  */
 const E = window.FormalkaEngine;
 const ICONS = /*__ICONS__*/ {};
+// The build id and what it is made of (prototype/build.mjs writes the full list to dist/manifest.json).
+const BUILD = /*__BUILD__*/ null;
 
 /* ── DOM and text helpers ──────────────────────────────────────────────────── */
 const $ = (s, r = document) => r.querySelector(s);
@@ -74,7 +76,7 @@ const dlong = (iso) => `${DAYS[wd(iso)]}, ${Number(iso.slice(8, 10))} ${MON_G[Nu
 const hm = (time) => time.replace(/^0(\d):/, '$1:');
 const stamp = (clock) => `${clock.date}T${clock.time}`;
 // "do środy, 18 listopada" (the engine's dueRangePl puts the date after "do" in the genitive).
-const dueRange = (due) => E.dueRangePl(due.earliest, due.latest);
+const dueRange = (due) => E.dueRangePl(due.earliest, due.latest, due.counting);
 const fromStamp = (s) => ({ date: s.slice(0, 10), time: s.slice(11, 16) });
 
 /* ── The brand mark (BRAND.md): three sheets of paper, the top one folded. ── */

@@ -191,6 +191,7 @@ ul, ol { padding: 0; list-style: none; }
   font-size: var(--t-2xs); color: var(--ink-3); line-height: 1.45;
 }
 .home-foot .icon { width: 14px; height: 14px; margin-top: 1px; }
+.home-foot .build { display: block; margin-top: var(--s2); font-variant-numeric: tabular-nums; }
 .home .ask { background: var(--well); box-shadow: none; }
 /* Home (owner, 2026-10-16): the question, the pill right under it, then case types in a horizontal scroll. */
 .study-note { display: flex; gap: var(--s2); align-items: flex-start; padding: var(--s3) var(--s4); border-radius: var(--r-tile); background: var(--attention-soft); color: var(--ink); font-size: var(--t-xs); line-height: 1.4; }

@@ -25,7 +25,7 @@ const SCREENS = {
           <li><span class="tile-ic sm">${icon('map-trifold')}</span><span><b>Zatwierdź plan</b><small>Kroki, dokumenty, opłaty i urzędy, każde ze źródłem</small></span></li>
           <li><span class="tile-ic sm">${icon('bell')}</span><span><b>Asystent pilnuje</b><small>Przypomina i proponuje, co dalej. Każdą sprawę prowadzi osobny asystent AI</small></span></li>
         </ol></section>`}
-      <footer class="home-foot">${icon('info')}<p>Formalka to niezależna usługa, nie urząd. Plan powstaje z przewodników Formalki (${esc(E.registryVersion)}); kwoty, terminy i urzędy to przykłady, nie porada prawna. W prototypie asystent nie korzysta z modelu językowego, a dane sprawy nie są nigdzie wysyłane. Linki do urzędów i map otwierają strony poza aplikacją.</p></footer></section>`);
+      <footer class="home-foot">${icon('info')}<p>Formalka to niezależna usługa, nie urząd. Plan powstaje z przewodników Formalki (${esc(E.registryVersion)}); kwoty, terminy i urzędy to przykłady, nie porada prawna. W prototypie asystent nie korzysta z modelu językowego, a kod prototypu nie wysyła danych sprawy. Linki do urzędów i map otwierają strony poza aplikacją.<span class="build">Wersja prototypu ${esc(BUILD?.id ?? 'dev')}, silnik ${esc(BUILD?.engine ?? '')}</span></p></footer></section>`);
     const input = $('#home-t', el);
     $$('[data-type]', el).forEach((b) => { b.onclick = () => {
       const ex = S.cases.find((c) => c.bpId === b.dataset.type);

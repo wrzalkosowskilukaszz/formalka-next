@@ -160,12 +160,14 @@ function taskRow(c, l, t, i) {
   if (t.crossCase?.blueprint) extra.push(`<button type="button" class="chip chip-sm" data-crosscase="${esc(t.crossCase.blueprint)}">${icon('arrow-square-out')} ${esc(t.crossCase.label.pl)}</button>`);
   return `${albo}<li><button type="button" class="task press${isDone(t) ? ' is-done' : ''}" ${readOnly ? 'disabled' : `data-task="${esc(t.id)}" data-st="${isDone(t) ? 'todo' : 'done'}"`} aria-pressed="${isDone(t)}">
       <span class="tick">${tickSvg}</span><span class="tx"><span>${esc(cap(t.title.pl))}${t.outcome === 'unknown' ? ' <em class="maybe">sprawdź, czy Cię dotyczy</em>' : ''}</span>
-      ${meta ? `<small>${esc(meta)}</small>` : ''}${t.status === 'not_needed' ? '<small>Nie dotyczy albo masz dokument zamienny</small>' : ''}</span></button>
+      ${t.onlyIf ? `<small>${esc(t.onlyIf.pl)}</small>` : ''}${meta ? `<small>${esc(meta)}</small>` : ''}${t.status === 'not_needed' ? '<small>Nie dotyczy albo masz dokument zamienny</small>' : ''}</span></button>
     ${extra.length || t.quotes?.length ? `<div class="task-actions">${extra.join('')}${t.quotes?.length ? `<span class="src">${icon('info')} ${srcLink(t.quotes)}</span>` : ''}</div>` : ''}</li>`;
 }
+// Audit F3: an exemption the facts don't establish is named, never granted; the full amount stays.
+const maybeExempt = (f) => `Przewodnik przewiduje też zwolnienie z opłaty: „${f.exemption.statement.value.pl}”. Z Twoich odpowiedzi to nie wynika, więc liczę pełną kwotę.`;
 function feeRow(f) {
   const amount = f.exemption?.outcome === 'applies' ? 'zwolnienie' : `${f.amountPln} zł`;
-  return `<article class="card fee-card"><div class="fee"><b>${esc(amount)}</b><span>${esc(f.purpose.pl)}${f.optional ? ' (opcjonalnie)' : ''}${f.outcome === 'unknown' ? ' · zależy od odpowiedzi' : ''}</span></div>${cite(f.quotes)}</article>`;
+  return `<article class="card fee-card"><div class="fee"><b>${esc(amount)}</b><span>${esc(f.purpose.pl)}${f.optional ? ' (opcjonalnie)' : ''}${f.outcome === 'unknown' ? ' · zależy od odpowiedzi' : ''}</span></div>${f.exemption?.outcome === 'unknown' ? `<p class="meta">${esc(maybeExempt(f))}</p>` : ''}${cite(f.quotes)}</article>`;
 }
 function deadlineRow(c, d) {
   const due = d.due ? `<b>${d.role === 'office' ? 'Urząd ma czas' : 'Termin'} ${esc(dueRange(d.due))}</b>` : '';
