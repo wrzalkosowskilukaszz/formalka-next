@@ -181,10 +181,21 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
   Reset keeps the mode; the same button turns it off.
 - **Reset** (the round arrow) clears everything back to the start animation.
 
-**Layout while a question is open** (owner, 16.10: "chaos"):
-- the case bar folds to one line (progress and the case's name; the map is one tap away);
-- a long list of answers uses a smaller question and tighter cards (still 44 px targets);
-- the question panel takes at most 55% of the screen.
+**Less at once** (owner, 16.10: "chaos", "za dużo informacji naraz"). Type sizes are unchanged: body 17 px, questions 21 px, options 15 px, from the tokens. The changes cut what shows at once:
+- **First screen of a case:**
+  - the prototype notice is one line (the full explanation stays in the home footer);
+  - the case bar appears with the first answer that builds the plan, not at 0%;
+  - no "Tworzymy Twoją sprawę" note.
+- **The chat:**
+  - with one assistant, no name row above its messages: the header already names it;
+  - name rows return when several assistants share the chat;
+  - a time shows only when the minute changes.
+- **While a question is open:**
+  - the case bar folds to one line, with the progress and the case's name; the map is one tap away;
+  - progress shows once, in the bar (the question panel no longer repeats it);
+  - a question longer than 70 characters is set at body size;
+  - a long list of answers uses tighter cards (still 44 px targets);
+  - the panel takes at most 55% of the screen.
 
 ## Test script for sessions with people (audit of 16.10, Phase 1)
 
@@ -260,7 +271,7 @@ First compare with a **plain checklist** of the same verified information for th
 | 1 | Start, "Co dziś załatwiamy?", the pill | Splash, then home: the question, the pill, five case types in a row, "Jak to działa" |
 | 2 | The assistant introduces itself, AI disclosed | Chat header and the first message ("asystent AI", "asystentka AI"), and the notice that the prototype uses no language model |
 | 3 | Route finding with "Nie wiem" and free text | Citizenship: questions from the engine, typed answers, route choice in words or by card |
-| 4 | The live-building map | The slim case bar above the chat and the "Mapa sprawy" notes |
+| 4 | The live-building map | The slim case bar above the chat, from the first answer that builds the plan, and the "Mapa sprawy" notes |
 | 5 | Plan, approve, consent | The plan card: whose case, route, open items, fees, the check, consent switch. It also takes a short list of typed answers ("zatwierdzam", "włącz przypomnienia") |
 | 6 | Focus and Map | Teraz with "… proponuje"; Mapa as a timeline with locks, reasons, parallel levels and waiting |
 | 7 | Form to the Teczka | "Wypełnij tutaj": a labelled mock, a draft PDF in the Teczka |
