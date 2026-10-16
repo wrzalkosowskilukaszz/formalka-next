@@ -1,5 +1,5 @@
-# Clean-room reproduction from the source archive (git archive of commit e1e3d67), extracted into an empty folder
-# 2026-10-16T15:04Z node v22.22.0 npm 10.9.4
+# Clean-room reproduction from the source archive (git archive of commit 6b62c27), extracted into an empty folder
+# 2026-10-16T15:17Z node v22.22.0 npm 10.9.4
 
 $ cd packages/case-engine && npm ci && npm test
 # tests 39
@@ -21,23 +21,24 @@ built dist/case-engine.browser.js 374 KB, registry formalka@04057ef, locales pl,
 committed: 7c25ab7e69d76546c879f3d443cbf012f2721d9291a6913bc90185f6b15d9bbf
 
 $ node prototype/build.mjs && sha256sum prototype/dist/index.html
-built: dist/index.html 739 KB, build 02a4d7e55b53, engine 4f03d3478d04d6be, formalka@04057ef
-5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781  prototype/dist/index.html
-in the working copy: 5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781
+built: dist/index.html 747 KB, build 968dc143597d, engine 4f03d3478d04d6be, formalka@04057ef
+6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739  prototype/dist/index.html
+in the working copy: 6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739
 
 $ node --test prototype/test/*.test.mjs
-# tests 14
-# pass 14
+# tests 15
+# pass 15
 # fail 0
 
 $ node prototype/test/lint.mjs
-lint clean: 11 modules
+lint clean: 12 modules
 
 $ node prototype/test/e2e.mjs
-ok   A-citizenship-words (6.3 s)
-ok   B-registration-warsaw (8.4 s)
-ok   C-personas-and-handoff (6.5 s)
+ok   A-citizenship-words (6.5 s)
+ok   B-registration-warsaw (8.5 s)
+ok   C-personas-and-handoff (6.6 s)
 ok   D-route-and-office (7.0 s)
-ok   E-lock-screen-and-desktop (6.7 s)
-ok   F-study-mode (2.8 s)
-6/6 scenarios passed
+ok   E-lock-screen-and-desktop (6.6 s)
+ok   F-study-mode (2.9 s)
+ok   G-waiting-for-office (1.3 s)
+7/7 scenarios passed

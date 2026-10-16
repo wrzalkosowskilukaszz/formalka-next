@@ -1,13 +1,13 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T15:01Z commit e1e3d67 node v22.22.0
+# 2026-10-16T15:14Z commit 6b62c27 node v22.22.0
 
-built: dist/index.html 739 KB, build 02a4d7e55b53, engine 4f03d3478d04d6be, formalka@04057ef
-5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781  prototype/dist/index.html
-4f983766472781bc79ec47dbcd22f9fbf8d2e3d7f5b2e2f3d51665de5916e483  prototype/dist/artifact.html
+built: dist/index.html 747 KB, build 968dc143597d, engine 4f03d3478d04d6be, formalka@04057ef
+6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739  prototype/dist/index.html
+802a548916f988ac79536000fb1e01d2a9742285fe5a9f81e9bad1a2f65b360f  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "02a4d7e55b53",
+  "build": "968dc143597d",
   "registry": "formalka@04057ef",
   "engine": "4f03d3478d04d6be",
   "engineBundle": {
@@ -16,16 +16,17 @@ two builds identical: yes
   },
   "inputs": {
     "../packages/case-engine/dist/case-engine.browser.js": "7c25ab7e69d76546",
-    "src/app.css": "49ce081bf43cd8c9",
+    "src/app.css": "1ec6139ecd116f63",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
-    "src/js/10-cases.js": "4fa9ec5cd910250c",
+    "src/js/10-cases.js": "144300f948caff3d",
     "src/js/20-chat.js": "59460483e62bb7cb",
     "src/js/25-shell.js": "452f89eb93f0b312",
-    "src/js/30-intake.js": "4a237a499c066f31",
+    "src/js/30-intake.js": "6fd350f0cc080b41",
     "src/js/35-understand.js": "f1d3a1faa82bd00b",
     "src/js/40-case.js": "7b4180767a23c102",
     "src/js/45-guide.js": "b8b08eeab73fa1e3",
+    "src/js/46-waiting.js": "9e38c549dab5e146",
     "src/js/50-time.js": "73209c257a57c3b3",
     "src/js/60-screens.js": "f9a585a1ac04e546",
     "src/js/90-boot.js": "e2841f9cfa7ab013",
@@ -91,7 +92,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781",
-    "artifact.html": "4f983766472781bc79ec47dbcd22f9fbf8d2e3d7f5b2e2f3d51665de5916e483"
+    "index.html": "6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739",
+    "artifact.html": "802a548916f988ac79536000fb1e01d2a9742285fe5a9f81e9bad1a2f65b360f"
   }
 }
