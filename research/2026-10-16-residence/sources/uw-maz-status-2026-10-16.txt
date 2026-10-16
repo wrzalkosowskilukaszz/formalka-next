@@ -1,0 +1,11 @@
+# Mazowiecki UW: jak sprawdzić status sprawy
+# Source: https://www.gov.pl/web/uw-mazowiecki/jak-sprawdzic-status-sprawy, retrieved 2026-10-16, html sha256 5aeeb79abc7c28eb14b725fa2dbce495b0099b5a8ab84ad550becda4440fd540
+# Text of the page's main element; navigation removed.
+
+Powrót
+Jak sprawdzić status sprawy?
+Як перевірити статус справи
+Wydział Spraw Cudzoziemców Mazowieckiego Urzędu Wojewódzkiego uruchomił Migrant Concact Center. Dzwoniąc pod numer (22) 695 67 73 sprawdzisz nie tylko status swojej sprawy ale także uzyskasz odpowiedzi na najczęściej zadawane pytania. 
+Jeśli złożyłeś wniosek o legalizację pobytu, możesz w prosty sposób sprawdzić status swojej sprawy wpisując jej numer na klawiaturze numerycznej telefonu, zgodnie z przykładem zaprezentowanym powyżej. 
+Projekt nr 13/7-2017/OG-FAMI np. "Cudzoziemiec w Centrum Uwagi", współfinansowany z Funduszu Azylu, Migracji i Integracji 
+Wyłączna odpowiedzialność za wyrażone opinie spoczywa na autorze i Komisja Europejska oraz Ministerstwo Spraw Wewnętrznych i Administracji nie ponoszą odpowiedzialności za sposób wykorzystania udostępnionych informacji.

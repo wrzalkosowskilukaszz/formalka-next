@@ -1,0 +1,31 @@
+# UdSC: Informacje o opłatach (opłata skarbowa, karta pobytu)
+# Source: https://www.gov.pl/web/udsc/informacja-o-oplatach, retrieved 2026-10-16, html sha256 90d47c23ff3e3141d126e8d81c2ea80fb4aea97bee7a8d38b4285e3df5af87c5
+# Text of the page's main element; navigation removed.
+
+Powrót
+Informacje o opłatach: opłacie skarbowej za udzielenie zezwolenia na pobyt i opłacie za wydanie karty pobytu
+Informujemy o obowiązku dokonania opłat: opłaty skarbowej za udzielenie zezwolenia na pobyt oraz opłaty za wydanie karty pobytu oraz dołączenie potwierdzeń do wniosków o udzielenie zezwolenia na pobyt składanych w systemie MOS.
+Do wniosku o udzielenie zezwolenia na pobyt czasowy, stały i rezydenta długoterminowego UE w systemie MOS musisz dołączyć potwierdzenia dokonania opłaty skarbowej  (w wysokości zależnej od rodzaju zezwolenia – od 340 zł do 640 zł) oraz opłaty za wydanie karty pobytu (100 zł) - pamiętaj, że są to osobne opłaty i należy ich dokonać na osobne konta.
+Potwierdzeniem dokonania opłaty może być:
+- elektroniczne potwierdzenie przelewu,
+- skan potwierdzenia przelewu,
+- czytelna fotografia potwierdzenia przelewu.
+Zachęcamy do załączania elektronicznego potwierdzenia przelewu – wybierając tę formę, unikniesz konieczności dostarczenia do urzędu wojewódzkiego zeskanowanego lub sfotografowanego potwierdzenia przelewu.
+WAŻNE! Pamiętaj, że wymaganej opłaty nie dokonasz w systemie MOS.
+Informacje na temat numerów kont bankowych do dokonania wymaganych opłat znajdziesz na stronie internetowej właściwego urzędu wojewódzkiego oraz poniżej. 
+Dolnośląski Urząd Wojewódzki we Wrocławiu
+Kujawsko-Pomorski Urząd Wojewódzki w Bydgoszczy
+Lubelski Urząd Wojewódzki w Lublinie
+Lubuski Urząd Wojewódzki w Gorzowie Wielkopolskim
+Łódzki Urząd Wojewódzki w Łodzi
+Małopolski Urząd Wojewódzki w Krakowie
+Mazowiecki Urząd Wojewódzki w Warszawie
+Opolski Urząd Wojewódzki w Opolu
+Podkarpacki Urząd Wojewódzki w Rzeszowie
+Podlaski Urząd Wojewódzki w Białymstoku
+Pomorski Urząd Wojewódzki w Gdańsku
+Śląski Urząd Wojewódzki w Katowicach
+Świętokrzyski Urząd Wojewódzki w Kielcach
+Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie
+Wielkopolski Urząd Wojewódzki w Poznaniu
+Zachodniopomorski Urząd Wojewódzki w Szczecinie

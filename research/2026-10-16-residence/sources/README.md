@@ -8,6 +8,17 @@ Collected on 16.10.2026 by Claude, from api.sejm.gov.pl:
 
 **What production already holds (FACT, `reference/residence/procedure-pobyt-czasowy.yaml`, header):** a legal audit of 2026-10-02 of the act as amended by 1794 and 2026/203, `checkedAt: 2026-10-01`. Its quotes cite the 1794 text for the filing certificate ("wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku…").
 
+**Extracts in this folder (16.10.2026):**
+- the act on foreigners:
+  - art. 98–112a (base text);
+  - purposes and the card: art. 114–120, 144, 158–160, 226–229, 244–248;
+  - Dz.U. 2025 poz. 1794: the new art. 104–120a and art. 226–248;
+- KPA art. 35–37, 57–58 and 127–130: time limits, ponaglenie, appeal. No amendments after 7.11.2025, per api.sejm.gov.pl;
+- the stamp duty act: residence permit fees, with its later amendments checked;
+- UdSC pages: MOS, MOS Q&A, fees (including the 100 zł card fee), helplines;
+- the Warmińsko-Mazurski voivode's page on temporary permits;
+- the Mazowiecki voivode's page on case status.
+
 **Next steps (the doc 19 §5 pipeline):**
 1. gov.pl and UdSC pages for each purpose (work, study, family), plus the fees act.
 2. A draft reference by case.

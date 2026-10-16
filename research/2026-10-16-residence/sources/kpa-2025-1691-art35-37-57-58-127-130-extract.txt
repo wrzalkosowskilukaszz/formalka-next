@@ -1,0 +1,139 @@
+# Kodeks postępowania administracyjnego, Dz.U. 2025 poz. 1691 (consolidated, 7.11.2025): art. 35-37 (time limits, ponaglenie), art. 57-58 (counting, restoring a deadline), art. 127-130 (appeal)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf, retrieved 2026-10-16, sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b. Amendments after 7.11.2025: none listed by api.sejm.gov.pl on 2026-10-16 (tools/sources/amendments.mjs DU/1960/168 2025-11-07).
+
+     Art. 35. § 1. Organy administracji publicznej obowiązane są załatwiać sprawy bez zbędnej zwłoki.
+     § 2. Niezwłocznie powinny być załatwiane sprawy, które mogą być rozpatrzone w oparciu o dowody przedstawione
+przez stronę łącznie z żądaniem wszczęcia postępowania lub w oparciu o fakty i dowody powszechnie znane albo znane
+z urzędu organowi, przed którym toczy się postępowanie, bądź możliwe do ustalenia na podstawie danych, którymi rozporządza
+ten organ.
+     § 3. Załatwienie sprawy wymagającej postępowania wyjaśniającego powinno nastąpić nie później niż w ciągu miesiąca,
+a sprawy szczególnie skomplikowanej – nie później niż w ciągu dwóch miesięcy od dnia wszczęcia postępowania, zaś w po-
+stępowaniu odwoławczym – w ciągu miesiąca od dnia otrzymania odwołania.
+Dziennik Ustaw                                             –9–                                                   Poz. 1691
+
+     § 3a. Załatwienie sprawy w postępowaniu uproszczonym powinno nastąpić niezwłocznie, nie później niż w terminie
+miesiąca od dnia wszczęcia postępowania.
+     § 4. Przepisy szczególne mogą określać inne terminy niż określone w § 3 i 3a.
+     § 5. Do terminów określonych w przepisach poprzedzających nie wlicza się terminów przewidzianych w przepisach
+prawa dla dokonania określonych czynności, okresów doręczania z wykorzystaniem publicznej usługi hybrydowej, o której
+mowa w art. 2 pkt 7 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych (Dz. U. z 2024 r. poz. 1045 i 1841),
+okresów zawieszenia postępowania, okresu trwania mediacji oraz okresów opóźnień spowodowanych z winy strony albo
+przyczyn niezależnych od organu.
+      Art. 36. § 1. O każdym przypadku niezałatwienia sprawy w terminie organ administracji publicznej jest obowiązany
+zawiadomić strony, podając przyczyny zwłoki, wskazując nowy termin załatwienia sprawy oraz pouczając o prawie do wnie-
+sienia ponaglenia.
+     § 2. Ten sam obowiązek ciąży na organie administracji publicznej również w przypadku zwłoki w załatwieniu sprawy
+z przyczyn niezależnych od organu.
+     Art. 37. § 1. Stronie służy prawo do wniesienia ponaglenia, jeżeli:
+1)   nie załatwiono sprawy w terminie określonym w art. 35 lub przepisach szczególnych ani w terminie wskazanym zgodnie
+     z art. 36 § 1 (bezczynność);
+2)   postępowanie jest prowadzone dłużej niż jest to niezbędne do załatwienia sprawy (przewlekłość).
+     § 2. Ponaglenie zawiera uzasadnienie.
+     § 3. Ponaglenie wnosi się:
+1)   do organu wyższego stopnia za pośrednictwem organu prowadzącego postępowanie;
+2)   do organu prowadzącego postępowanie – jeżeli nie ma organu wyższego stopnia.
+     § 3a. Jeżeli ponaglenie zostało wniesione przed upływem terminu określonego w art. 35 albo przepisach szczególnych,
+organ prowadzący postępowanie pozostawia ponaglenie bez rozpoznania. Przepisów § 4–8 nie stosuje się.
+     § 4. Organ prowadzący postępowanie jest obowiązany przekazać ponaglenie organowi wyższego stopnia bez zbędnej
+zwłoki, nie później niż w terminie siedmiu dni od dnia jego otrzymania. Organ przekazuje ponaglenie wraz z niezbędnymi
+odpisami akt sprawy. Przekazując ponaglenie, organ jest obowiązany ustosunkować się do niego.
+     § 5. Organ, o którym mowa w § 3, rozpatruje ponaglenie w terminie siedmiu dni od dnia jego otrzymania.
+     § 6. Organ rozpatrujący ponaglenie wydaje postanowienie, w którym:
+1)   wskazuje, czy organ rozpatrujący sprawę dopuścił się bezczynności lub przewlekłego prowadzenia postępowania,
+     stwierdzając jednocześnie, czy miało ono miejsce z rażącym naruszeniem prawa;
+2)   w przypadku stwierdzenia bezczynności lub przewlekłości:
+     a)   zobowiązuje organ rozpatrujący sprawę do załatwienia sprawy, wyznaczając termin do jej załatwienia, jeżeli
+          postępowanie jest niezakończone,
+     b) zarządza wyjaśnienie przyczyn i ustalenie osób winnych bezczynności lub przewlekłości, a w razie potrzeby także
+        podjęcie środków zapobiegających bezczynności lub przewlekłości w przyszłości.
+     § 7. Organ rozpatrujący ponaglenie może z urzędu zmienić postanowienie, o którym mowa w § 6, wyznaczając dłuższy
+termin zakończenia postępowania, jeżeli wyjdą na jaw istotne dla sprawy nowe okoliczności faktyczne lub nowe dowody,
+wymagające dłuższego postępowania, nieznane w momencie wyznaczania terminu.
+     § 8. W przypadku, o którym mowa w § 3 pkt 2, przepisów § 4, 6 i 7 nie stosuje się. W przypadku stwierdzenia bez-
+czynności lub przewlekłości organ prowadzący postępowanie niezwłocznie załatwia sprawę oraz zarządza wyjaśnienie przy-
+czyn i ustalenie osób winnych bezczynności lub przewlekłości, a w razie potrzeby także podjęcie środków zapobiegających
+bezczynności lub przewlekłości w przyszłości.
+[...]
+    Art. 57. § 1. Jeżeli początkiem terminu określonego w dniach jest pewne zdarzenie, przy obliczaniu tego terminu nie
+uwzględnia się dnia, w którym zdarzenie nastąpiło. Upływ ostatniego z wyznaczonej liczby dni uważa się za koniec terminu.
+    § 2. Terminy określone w tygodniach kończą się z upływem tego dnia w ostatnim tygodniu, który nazwą odpowiada
+początkowemu dniowi terminu.
+    § 3. Terminy określone w miesiącach kończą się z upływem tego dnia w ostatnim miesiącu, który odpowiada począt-
+kowemu dniowi terminu, a gdyby takiego dnia w ostatnim miesiącu nie było – w ostatnim dniu tego miesiąca.
+    § 3a. Terminy określone w latach kończą się z upływem tego dnia w ostatnim roku, który odpowiada początkowemu
+dniowi terminu, a gdyby takiego dnia w ostatnim roku nie było – w dniu poprzedzającym bezpośrednio ten dzień.
+     § 4. Jeżeli koniec terminu do wykonania czynności przypada na dzień uznany ustawowo za wolny od pracy lub na
+sobotę, termin upływa następnego dnia, który nie jest dniem wolnym od pracy ani sobotą.
+     § 5. Termin uważa się za zachowany, jeżeli przed jego upływem pismo zostało:
+1)   wysłane na adres do doręczeń elektronicznych organu administracji publicznej, a nadawca otrzymał dowód otrzymania,
+     o którym mowa w art. 41 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych;
+2)   nadane w polskiej placówce pocztowej operatora wyznaczonego w rozumieniu ustawy z dnia 23 listopada 2012 r. –
+     Prawo pocztowe albo placówce pocztowej operatora świadczącego pocztowe usługi powszechne w innym państwie
+     członkowskim Unii Europejskiej, Konfederacji Szwajcarskiej albo państwie członkowskim Europejskiego Porozumienia
+     o Wolnym Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym;
+3)   złożone w polskim urzędzie konsularnym;
+4)   złożone przez żołnierza w dowództwie jednostki wojskowej;
+5)   złożone przez członka załogi statku morskiego kapitanowi statku;
+6)   złożone przez osobę pozbawioną wolności w administracji zakładu karnego.
+     Art. 58. § 1. W razie uchybienia terminu należy przywrócić termin na prośbę zainteresowanego, jeżeli uprawdopodobni,
+że uchybienie nastąpiło bez jego winy.
+     § 2. Prośbę o przywrócenie terminu należy wnieść w ciągu siedmiu dni od dnia ustania przyczyny uchybienia terminu.
+Jednocześnie z wniesieniem prośby należy dopełnić czynności, dla której określony był termin.
+     § 3. Przywrócenie terminu do złożenia prośby przewidzianej w § 2 jest niedopuszczalne.
+    Art. 59. § 1. O przywróceniu terminu postanawia właściwy w sprawie organ administracji publicznej. Od postanowienia
+o odmowie przywrócenia terminu służy zażalenie.
+    § 2. O przywróceniu terminu do wniesienia odwołania lub zażalenia postanawia ostatecznie organ właściwy do rozpatrzenia
+odwołania lub zażalenia.
+     Art. 60. Przed rozpatrzeniem prośby o przywrócenie terminu do wniesienia odwołania lub zażalenia organ administracji
+publicznej na żądanie strony może wstrzymać wykonanie decyzji lub postanowienia.
+
+                                                        DZIAŁ II
+                                                      Postępowanie
+
+                                                      Rozdział 1
+                                                Wszczęcie postępowania
+     Art. 61. § 1. Postępowanie administracyjne wszczyna się na żądanie strony lub z urzędu.
+     § 2. Organ administracji publicznej może ze względu na szczególnie ważny interes strony wszcząć z urzędu postępo-
+wanie także w sprawie, w której przepis prawa wymaga wniosku strony. Organ obowiązany jest uzyskać na to zgodę strony
+w toku postępowania, a w razie nieuzyskania zgody – postępowanie umorzyć.
+     § 3. Datą wszczęcia postępowania na żądanie strony jest dzień doręczenia żądania organowi administracji publicznej.
+     § 3a. Datą wszczęcia postępowania na żądanie strony wniesione drogą elektroniczną jest dzień wystawienia dowodu
+otrzymania, o którym mowa w art. 41 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych.
+Dziennik Ustaw                                             – 15 –                                                 Poz. 1691
+
+[...]
+      Art. 127. § 1. Od decyzji wydanej w pierwszej instancji służy stronie odwołanie tylko do jednej instancji.
+     § 1a. Decyzja wydana w pierwszej instancji, od której uzasadnienia organ odstąpił z powodu uwzględnienia w całości
+żądania strony, jest ostateczna.
+    § 2. Właściwy do rozpatrzenia odwołania jest organ administracji publicznej wyższego stopnia, chyba że ustawa prze-
+widuje inny organ odwoławczy.
+
+
+10) W brzmieniu ustalonym przez art. 1 pkt 6 ustawy, o której mowa w odnośniku 3.
+11) W brzmieniu ustalonym przez art. 1 pkt 7 lit. a ustawy, o której mowa w odnośniku 3.
+12) W brzmieniu ustalonym przez art. 1 pkt 7 lit. b ustawy, o której mowa w odnośniku 3.
+Dziennik Ustaw                                                  – 29 –                                           Poz. 1691
+
+      § 3. Od decyzji wydanej w pierwszej instancji przez ministra lub samorządowe kolegium odwoławcze nie służy odwo-
+łanie, jednakże strona niezadowolona z decyzji może zwrócić się do tego organu z wnioskiem o ponowne rozpatrzenie
+sprawy; do wniosku tego stosuje się odpowiednio przepisy dotyczące odwołań od decyzji.
+       § 4. (uchylony)
+    Art. 127a. § 1. Przed upływem terminu do wniesienia odwołania strona może zrzec się prawa do wniesienia odwołania
+wobec organu administracji publicznej, który wydał decyzję.
+      § 2. Z dniem doręczenia organowi administracji publicznej oświadczenia o zrzeczeniu się prawa do wniesienia odwo-
+łania przez ostatnią ze stron postępowania, decyzja staje się ostateczna i prawomocna.
+      Art. 128. Odwołanie nie wymaga szczegółowego uzasadnienia. Wystarczy, jeżeli z odwołania wynika, że strona nie
+jest zadowolona z wydanej decyzji. Przepisy szczególne mogą ustalać inne wymogi co do treści odwołania.
+    Art. 129. § 1. Odwołanie wnosi się do właściwego organu odwoławczego za pośrednictwem organu, który wydał
+decyzję.
+     § 2. Odwołanie wnosi się w terminie czternastu dni od dnia doręczenia decyzji stronie, a gdy decyzja została ogłoszona
+ustnie – od dnia jej ogłoszenia stronie.
+       § 3. Przepisy szczególne mogą przewidywać inne terminy do wniesienia odwołania.
+       Art. 130. § 1. Przed upływem terminu do wniesienia odwołania decyzja nie ulega wykonaniu.
+       § 2. Wniesienie odwołania w terminie wstrzymuje wykonanie decyzji.
+       § 3. Przepisów § 1 i 2 nie stosuje się w przypadkach, gdy:
+1)     decyzji został nadany rygor natychmiastowej wykonalności (art. 108);
+2)     decyzja podlega natychmiastowemu wykonaniu z mocy ustawy.
+     § 4. Decyzja podlega wykonaniu przed upływem terminu do wniesienia odwołania, jeżeli jest zgodna z żądaniem wszyst-
+kich stron lub jeżeli wszystkie strony zrzekły się prawa do wniesienia odwołania.
+       Art. 131. O wniesieniu odwołania organ administracji publicznej, który wydał decyzję, zawiadomi strony.

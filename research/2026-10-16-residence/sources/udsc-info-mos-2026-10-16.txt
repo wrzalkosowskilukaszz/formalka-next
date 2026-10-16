@@ -1,0 +1,58 @@
+# UdSC: Informacja na temat systemu MOS
+# Source: https://www.gov.pl/web/udsc/info-mos, retrieved 2026-10-16, html sha256 d52e6e0285bc3a970210728c0b5247a5550e149c759c4a64ede1419f69ad4b18
+# Text of the page's main element; navigation removed.
+
+Powrót
+Informacja na temat systemu teleinformatycznego MOS - portalu do składania wniosków o udzielenie zezwolenia na pobyt w Polsce w formie elektronicznej
+Informujemy, że system teleinformatyczny MOS (Moduł Obsługi Spraw), umożliwiający elektroniczne składanie wniosków, o których mowa w art. 225a ust. 1 ustawy o cudzoziemcach, czyli wniosków o udzielenie zezwolenia na:
+- pobyt czasowy, 
+- pobyt stały, 
+- pobyt rezydenta długoterminowego UE 
+ został uruchomiony 27 kwietnia 2026 r.
+Od tej pory składanie wniosków o udzielenie zezwolenia na pobyt czasowy, pobyt stały i pobyt rezydenta długoterminowego UE możliwe jest wyłącznie elektronicznie, za pośrednictwem portalu MOS, dostępnego pod adresem: https://mos.cudzoziemcy.gov.pl
+Wnioski o udzielenie zezwolenia na pobyt czasowy, pobyt stały i pobyt rezydenta długoterminowego UE w wersji papierowej, które zostały wysłane i nie wpłynęły do urzędów wojewódzkich przed 27 kwietnia 2026 r., nie będą rozpatrywane (wnioski będą pozostawione bez rozpoznania) – nie będzie liczyła się data nadania przesyłki pocztowej.
+Wnioski o udzielenie zezwolenia na pobyt czasowy:
+- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,
+nadal należy składać w wersji papierowej, na dotychczasowych zasadach.
+Zachęcamy do zapoznania się z informacjami dotyczącymi nowego systemu MOS, z odpowiedziami na najczęściej zadawane pytania oraz innymi materiałami informacyjnymi dotyczącymi legalnej migracji. Materiały dostępne są także w innych wersjach językowych.
+Jak złożyć wniosek o udzielenie zezwolenia na pobyt w Polsce?
+Od 27 kwietnia 2026 r. wniosek o udzielenie zezwolenia na pobyt w Polsce (pobyt czasowy, stały i rezydenta długoterminowego UE) możesz złożyć wyłącznie w formie elektronicznej, za pomocą dedykowanego portalu MOS, dostępnego poprzez przeglądarkę internetową. Nie musisz dokonywać rezerwacji terminu na złożenie wniosku ani stać w kolejkach – możesz to zrobić w dogodnym dla siebie miejscu i czasie. Możesz także przerwać wypełnianie wniosku, zapisać wprowadzone dane i edytować ponownie.
+Dostęp do systemu MOS jest bezpłatny. Wniosek możesz złożyć samodzielnie, bez konieczności korzystania z odpłatnych usług pośredników. Jedyne koszty, jakie poniesiesz, to opłata skarbowa przy składaniu wniosku (w wysokości zależnej od rodzaju zezwolenia – od 340 zł do 640 zł) oraz opłata za wydanie karty pobytu (100 zł).
+Aby złożyć wniosek o udzielenie zezwolenia na pobyt w Polsce, musisz:
+- założyć konto użytkownika w nowym systemie MOS; jeśli miałeś konto w poprzedniej wersji systemu MOS, musisz utworzyć nowe konto;
+- osobiście zalogować się do portalu MOS za pośrednictwem login.gov.pl (po kliknięciu „zaloguj” nastąpi przekierowanie) i wypełnić właściwy formularz wniosku o udzielenie zezwolenia na pobyt w Polsce;
+Nigdy nie podawaj nikomu informacji służących do logowania na login.gov.pl. Może to wpłynąć na bezpieczeństwo Twoich danych!
+-  dodać wymagane załączniki:
+- aktualną fotografię w formacie cyfrowym;
+- odwzorowanie cyfrowe (skan lub zdjęcie) wszystkich stron ważnego dokumentu podróży;
+- potwierdzenie dokonania płatności (skan dokumentu lub elektroniczne potwierdzenie przelewu): opłaty w wysokości 100 zł za wydanie karty pobytu oraz opłaty skarbowej w za udzielenie zezwolenia na pobyt);
+- załącznik podpisany elektronicznie przez:
+- pracodawcę – w przypadku wniosku o udzielenie zezwolenia:
+- na pobyt czasowy i pracę, 
+- na pobyt czasowy w celu prowadzenia działalności gospodarczej udziela się cudzoziemcowi, którego celem pobytu jest wykonywanie pracy poprzez pełnienie funkcji w zarządzie spółki z ograniczoną odpowiedzialnością lub spółki akcyjnej, którą utworzył lub której udziały lub akcje objął lub nabył, lub prowadzenie spraw spółki komandytowej lub komandytowo-akcyjnej przez komplementariusza, lub działanie w charakterze prokurenta,
+- w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE tzw. Niebieska Karta UE lub Blue Card;
+- jednostkę prowadzącą studia – w przypadku wniosku o udzielenie zezwolenia na pobyt czasowy w celu kształcenia się na studiach;
+- organizatora stażu lub wolontariatu – w przypadku wniosku o udzielnie zezwolenia na pobyt czasowy w celu odbycia stażu lub wolontariatu.
+Podczas wypełniania wniosku będziesz musiał podać adres e-mail pracodawcy, jednostki prowadzącej studia albo organizatora stażu lub wolontariatu. Na ten adres zostanie wysłany odnośnik z częścią z właściwym załącznikiem do wniosku przeznaczonym do wypełnienia i podpisania przez ten podmiot. Będzie to konieczne do skutecznego złożenia wniosku;
+ podpisać elektroniczne wniosek – konieczne będzie posiadanie profilu zaufanego, kwalifikowanego podpisu elektronicznego lub podpisu osobistego.
+Po poprawnym podpisaniu i wysłaniu wniosku możesz zapisać go w formatach PDF i XML oraz pobrać Urzędowe Poświadczenie Odbioru (UPO).
+Co dalej?
+Po weryfikacji i zatwierdzeniu wniosku przez pracownika urzędu wojewódzkiego będziesz mógł pobrać z systemu i wydrukować zaświadczenie o złożeniu wniosku o udzielenie zezwolenia na pobyt w Polsce, które zastąpi dotychczasowy stempel w paszporcie. Służby odpowiedzialne za kontrolę legalności pobytu będą miały informację o złożonym przez Ciebie wniosku.
+Wojewoda prowadzący sprawę wezwie Cię do osobistego stawiennictwa, abyś złożył odciski palców i wzór podpisu oraz okazał oryginał paszportu, a w razie konieczności – uzupełnił informacje zawarte we wniosku lub dołączył dodatkowe dokumenty.
+Wojewoda prowadzący sprawę wyśle decyzję na wskazany przez Ciebie adres do doręczeń (Twój lub pełnomocnika, jeśli go posiadasz).
+Inne ważne informacje
+- W nowym portalu MOS konieczne jest utworzenie nowego konta użytkownika. Konta użytkowników z poprzedniej wersji MOS nie zostały przeniesione do nowego portalu MOS. Dane użytkowników zostaną usunięte.
+- Prosimy o upewnienie się, że posiadasz aktywny profil zaufany, kwalifikowany podpis elektroniczny lub podpis osobisty, niezbędny do podpisania wniosku w systemie.
+- Zwracamy uwagę, aby nie czekać ze złożeniem wniosku do ostatniego dnia legalnego pobytu. Może się okazać, że w jeden dzień nie będziesz w stanie dołączyć do wniosku wszystkich niezbędnych dokumentów.
+Szczególnie zachęcamy do wcześniejszego złożenia wniosków, które wymagają podpisania załącznika przez inną osobę, czyli przez:
+- pracodawcę – w przypadku wniosku o udzielenie zezwolenia:
+- na pobyt czasowy i pracę, 
+- na pobyt czasowy w celu prowadzenia działalności gospodarczej udziela się cudzoziemcowi, którego celem pobytu jest wykonywanie pracy poprzez pełnienie funkcji w zarządzie spółki z ograniczoną odpowiedzialnością lub spółki akcyjnej, którą utworzył lub której udziały lub akcje objął lub nabył, lub prowadzenie spraw spółki komandytowej lub komandytowo-akcyjnej przez komplementariusza, lub działanie w charakterze prokurenta,
+- w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE tzw. Niebieska Karta UE lub Blue Card;
+- jednostkę prowadzącą studia – w przypadku wniosku o udzielenie zezwolenia na pobyt czasowy w celu kształcenia się na studiach;
+- organizatora stażu lub wolontariatu – w przypadku wniosku o udzielnie zezwolenia na pobyt czasowy w celu odbycia stażu lub wolontariatu.
+Pamiętaj, że jeśli do wniosku konieczne jest dołączenie załącznika podpisanego przez inną osobę (np. pracodawcę), możesz oczekiwać przez długi czas na uzyskanie tego podpisu. 

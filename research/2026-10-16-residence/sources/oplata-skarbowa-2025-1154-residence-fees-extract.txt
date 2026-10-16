@@ -1,0 +1,51 @@
+# Ustawa o opłacie skarbowej, Dz.U. 2025 poz. 1154 (consolidated, 11.08.2025): Part III items 2-4 (residence permits)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf, retrieved 2026-10-16, sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac.
+# Amendments after 11.08.2025 (api.sejm.gov.pl, 2026-10-16): 2025/1847, 2025/1795, 2026/912, 2026/846, 2026/875 (from 2027-01-01), 2026/1206 (from 2027-01-11). A text search of 2026/846 and 2026/875 for 'zezwolenie na pobyt' and 'cudzoziem' found nothing; the others' titles concern building, animal health, a metropolitan union and banking (not checked in full).
+
+      III.        Wydanie zezwolenia (pozwolenia, koncesji)
+                  1.   Zezwolenie na zawarcie małżeństwa,                   39 zł
+                       o którym mowa w art. 4 Kodeksu
+                       rodzinnego i opiekuńczego
+                  2.   Zezwolenie na pobyt czasowy,                         340 zł          1)   zezwolenie, o którym mowa
+                       z wyłączeniem zezwolenia udzielonego                                      w art. 160 pkt 4, 5 lub 6,
+                       na podstawie art. 181 ust. 1 oraz                                         art. 176 i art. 186 ust. 1 pkt 8
+                       art. 185a ustawy z dnia 12 grudnia                                        i 9 ustawy z dnia 12 grudnia
+                       2013 r. o cudzoziemcach (Dz. U.                                           2013 r. o cudzoziemcach
+                       z 2025 r. poz. 1079)                                                 2)   zezwolenie udzielane
+                                                                                                 cudzoziemcowi
+                                                                                                 korzystającemu z ochrony
+                                                                                                 czasowej
+                  2a. Zezwolenie, o którym mowa w art. 181
+                      ust. 1 ustawy z dnia 12 grudnia 2013 r.
+                      o cudzoziemcach, wydane na podstawie:
+                       1)    pkt 1 i 3                                      85 zł
+                       2)    pkt 2                                          340 zł
+
+                  2b.15) Zezwolenie, o którym mowa w art. 114               440 zł
+                        ust. 1 i 1a, art. 127, art. 137a, art. 139a
+                        ust. 1 i art. 139o ust. 1 ustawy z dnia
+                        12 grudnia 2013 r. o cudzoziemcach
+                  2c. Zezwolenie, o którym mowa w art. 185a                 170 zł
+                      ustawy z dnia 12 grudnia 2013 r.
+                      o cudzoziemcach
+                  2d. Zmiana zezwolenia na pobyt czasowy                    220 zł
+                      i pracę w przypadku, o którym mowa
+                      w art. 120 ust. 1 ustawy z dnia
+                      12 grudnia 2013 r. o cudzoziemcach
+                  3.   Zezwolenie na pobyt stały                            640 zł          zezwolenie udzielane:
+                                                                                            1) członkowi najbliższej
+                                                                                                rodziny repatrianta
+                                                                                            2) cudzoziemcowi, któremu
+                                                                                                udzielono azylu
+                                                                                            3)   posiadaczowi Karty Polaka,
+                                                                                                 zamierzającemu osiedlić się
+                                                                                                 na terytorium Rzeczypospolitej
+                                                                                                 Polskiej na stałe
+                                                                                            4)   na podstawie art. 195 ust. 1
+                                                                                                 pkt 10 ustawy z dnia
+                                                                                                 12 grudnia 2013 r.
+                                                                                                 o cudzoziemcach
+                  4.   Zezwolenie na pobyt rezydenta                        640 zł
+                       długoterminowego Unii Europejskiej
+                  5.   (uchylony)
+
