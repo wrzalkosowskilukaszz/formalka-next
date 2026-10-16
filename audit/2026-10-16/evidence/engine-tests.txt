@@ -1,5 +1,5 @@
 # cd packages/case-engine && npm test
-# 2026-10-16T12:23Z commit e186333 node v22.22.0
+# 2026-10-16T13:36Z commit 3f9bd50 node v22.22.0
 
 ok 1 - blueprints: every step, document, fee and deadline lands on exactly one level
 ok 2 - route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure
@@ -32,6 +32,10 @@ ok 28 - intake: the city, only when exactly one known city is named, never a str
 ok 29 - replan: a confirmed stay narrows the documents, in words the person can check
 ok 30 - replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
 ok 31 - replan: no change is an empty diff; a route change is named
-# tests 31
-# pass 31
+ok 32 - voice: every question a blueprint can ask speaks to the person, with no third person left
+ok 33 - voice: nothing in the person's voice needs their gender (no miałeś/miałaś)
+ok 34 - voice: same options, values and numbers as the registry; only known facts and values are reworded
+ok 35 - voice: for someone else the registry's own wording is used, unchanged
+# tests 35
+# pass 35
 # fail 0

@@ -1,15 +1,14 @@
-# Clean-room reproduction from the source archive (git archive of commit 895a6aa), extracted into an empty folder
-# 2026-10-16T13:17Z node v22.22.0 npm 10.9.4
+# Clean-room reproduction from the source archive (git archive of commit 3f9bd50), extracted into an empty folder
+# 2026-10-16T13:39Z node v22.22.0 npm 10.9.4
 
 $ cd packages/case-engine && npm ci && npm test
-# tests 31
-# pass 31
+# tests 35
+# pass 35
 # fail 0
 
 $ cd packages/case-engine && npm run eval
-> node eval/run.ts --write
-
 17/17 pass
+eval output identical to the archive: yes
 
 $ cd spikes/s1-case-engine && npm test
 # tests 14
@@ -17,15 +16,16 @@ $ cd spikes/s1-case-engine && npm test
 # fail 0
 
 $ cd packages/case-engine && node tools/build-browser.mjs --locales pl && sha256sum dist/case-engine.browser.js
-built dist/case-engine.browser.js 358 KB, registry formalka@04057ef, locales pl, blueprints: address-registration, citizenship, language-certificate, pesel, residence-card
-e201b547bee1a1df51d7d30c623307c96200ab8126bda96b8b4e40466e07b7ea  dist/case-engine.browser.js
+built dist/case-engine.browser.js 364 KB, registry formalka@04057ef, locales pl, blueprints: address-registration, citizenship, language-certificate, pesel, residence-card
+3464d1d65800adc0bff3daf5f37b779408e8403f0af9d9bcd998bd26e6be2079  dist/case-engine.browser.js
+committed: 3464d1d65800adc0bff3daf5f37b779408e8403f0af9d9bcd998bd26e6be2079
 
 $ node prototype/build.mjs
-built: dist/index.html 707 KB
+built: dist/index.html 718 KB
 
 $ node --test prototype/test/*.test.mjs
-# tests 9
-# pass 9
+# tests 11
+# pass 11
 # fail 0
 
 $ node prototype/test/lint.mjs
@@ -33,8 +33,8 @@ lint clean: 11 modules
 
 $ node prototype/test/e2e.mjs
 ok   A-citizenship-words (6.6 s)
-ok   B-registration-warsaw (7.9 s)
-ok   C-personas-and-handoff (5.9 s)
-ok   D-route-and-office (6.8 s)
-ok   E-lock-screen-and-desktop (6.3 s)
+ok   B-registration-warsaw (8.6 s)
+ok   C-personas-and-handoff (6.4 s)
+ok   D-route-and-office (7.1 s)
+ok   E-lock-screen-and-desktop (6.8 s)
 5/5 scenarios passed
