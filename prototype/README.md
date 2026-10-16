@@ -16,7 +16,7 @@ A clickable, phone-first prototype of the "Living Case" app (brief: `docs/formal
 
 | Command | What it checks |
 |---|---|
-| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers: yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents (9 tests) |
+| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers: yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person (11 tests) |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
 | `node prototype/build.mjs && node prototype/test/e2e.mjs` | Five scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-E>` for one scenario |
 
@@ -74,14 +74,20 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 ## What the v4 assistant does
 
 1. **One assistant per case.** Each case gets its own assistant: one model with a different name and avatar colour (Maciek, Asia, Ola, Kuba, Ewa, Tomek). The blueprint suggests a name; if another case already uses it, the next free one is taken. It is never chosen by the person's language or origin (rule 4). It always says it is an AI assistant, "nie urzędnik".
-2. **Every reply ends with an action.** The only exception is when the plan is done. Actions come from the plan:
+2. **Whose case.** After the introduction the assistant asks: "Załatwiasz to dla siebie czy dla kogoś innego?".
+   - The person's first words may already say it ("abym złożył…", "dla mamy").
+   - For the person's own case, questions speak to them ("Czy mieszkasz…").
+   - For someone else's case, they use the registry's own wording ("Czy ta osoba mieszka…"), and the case is marked "sprawa kogoś innego".
+   - The plan card can change it.
+   - The wording comes from the engine (`E.nextQuestion(…, voice)`, `E.voiced`).
+3. **Every reply ends with an action.** The only exception is when the plan is done. Actions come from the plan:
    - fill the form here (a labelled mock that saves a draft PDF to the Teczka);
    - open the official form (the registry's download links; they open in a new tab);
    - offices by district, with the address, hours, a Google Maps button and the booking and website links;
    - a visit or call reminder, or recording a date the engine counts from;
    - the document list, the calendar or the map.
    No action ever claims a booking, a sending or a filing.
-3. **Every answer can be typed** (`35-understand`). The reader:
+4. **Every answer can be typed** (`35-understand`). The reader:
    - takes a bare "tak" or "nie" when the question is yes or no;
    - asks back ("Dobrze rozumiem?") when a sentence only suggests an answer;
    - shows only the options that fit when several do;
@@ -91,12 +97,12 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
    - notices a PESEL or document number and does not keep it.
 
    Words that answer the case's own questions ("mam certyfikat B1") update the case. They never start another case.
-4. **Honest about what it doesn't know:**
+5. **Honest about what it doesn't know:**
    - service prices, such as a sworn translator, are not in the sources, so they are not given;
    - offices have no phone numbers in the sources, so none are shown;
    - "Nie wiem" leads to a hand-off with free legal aid, not a guess;
    - content the snapshot marks as possibly outdated (the language exam dates) is flagged wherever it appears, with the official page to check.
-5. **On-device memory** ("Co Asia pamięta" in the case history) holds what the person confirmed from their own words, the city, and the hour they last picked, which is offered first next time. Nothing leaves the phone. Learning across people is a separate, open decision (ADR-N010).
+6. **On-device memory** ("Co Asia pamięta" in the case history) holds what the person confirmed from their own words, the city, and the hour they last picked, which is offered first next time. Nothing leaves the phone. Learning across people is a separate, open decision (ADR-N010).
 
 ## Tester controls
 
@@ -144,7 +150,7 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 
 ## Limits (honest)
 
-- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 9 unit tests). It will miss many real phrasings. A model replaces it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
+- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 11 unit tests). It will miss many real phrasings. A model replaces it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
 - **Forms:**
   - the interactive form is a labelled mock;
   - filling the real official PDFs is proven separately in spike S3;

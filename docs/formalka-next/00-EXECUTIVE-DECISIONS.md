@@ -54,10 +54,11 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 - **Changes after approval are proposals** (ADR-N003, doc 16 §6b): the person sees what a change would add, remove or make certain, with done work kept as history, and approves it or keeps the plan.
 - **Experience prototype v4** (16.10, `prototype/`): the design-led app now runs on the case engine for all five case types.
   - One AI assistant per case.
+  - Questions speak to the person ("Czy masz…"). The app first asks whether the case is the person's own or someone else's; only for someone else's case is the registry's "ta osoba" wording used (owner, 16.10; `packages/case-engine/src/voice.ts`, owner review of the wording pending).
   - An action under every reply: the form here or the official form; offices by district with maps, hours and booking; visits, calls and dates.
   - Every answer can be typed, read on the device and confirmed.
   - The assistant's memory stays on the phone.
-  - Tests: 9 unit tests, lint, and 5 end-to-end scenarios in both motion modes.
+  - Tests: 11 unit tests, lint, and 5 end-to-end scenarios in both motion modes.
   - Auditor package: `audit/2026-10-16/STATUS.md`.
 - **Learning from use** (ADR-N010, Proposed): the owner asked that the assistant learn from every user's answers. The proposal:
   - the device memory, which is built;

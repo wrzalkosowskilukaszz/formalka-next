@@ -60,7 +60,7 @@ This package holds:
 | Decisions | `docs/formalka-next/adr/N001`–`N010` | All "Proposed". N010 (learning from use) is new | Table in section 9 |
 | Verified content | `reference/` | Read-only snapshots of Formalka's procedures, offices and design tokens, each with its source commit | Never edited; nothing copied back |
 | Case blueprints | `blueprints/*.yaml` | 5 case types over verified procedures: citizenship, residence card, address registration, PESEL, Polish language certificate | Loaded by the engine |
-| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 31/31 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`). 24 injected faults were each caught (doc 16 §7) |
+| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 35/35 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`). 24 injected faults were each caught (doc 16 §7) |
 | Evaluation set | `packages/case-engine/eval/` | 17 scenarios with plain-Polish reference plans for the blind H1 benchmark | FACT: 17/17 pass (`eval/REPORT.md`). The owner's review is pending; the benchmark has not been run |
 | Spike S1 | `spikes/s1-case-engine` | The first deterministic planner and validator | FACT: 14/14 tests, mutation-checked |
 | Spike S3 | `spikes/s3-official-form-fill` | Filling the real registration PDF | FACT (15.10): 42 fields filled and read back with 0 mismatches, 0 forbidden fields filled |
@@ -143,11 +143,11 @@ the person: answers, confirms, approves, records what happened
 
 | Check | Command | Result |
 |---|---|---|
-| Engine tests (incl. 17 evaluation scenarios, intake, replan) | `cd packages/case-engine && npm test` | FACT: 31/31 pass (`evidence/engine-tests.txt`) |
+| Engine tests (incl. 17 evaluation scenarios, intake, replan) | `cd packages/case-engine && npm test` | FACT: 35/35 pass (`evidence/engine-tests.txt`) |
 | Engine bundle reproducible | `cd packages/case-engine && node tools/build-browser.mjs --locales pl`, then `git status` | FACT: byte-identical to the committed bundle when built from that folder. Built from the repository root, only the source-path comments differ (`evidence/bundle.txt`) |
 | Spike S1 | `cd spikes/s1-case-engine && npm test` | FACT: 14/14 pass (`evidence/s1-tests.txt`) |
 | Deadline rules | Quoted from the acts via the Sejm's ELI API | FACT: KPA art. 57 and the days-off list checked against Dz.U. 2025 poz. 1691 and poz. 296 on 16.10 (`docs/formalka-next/verifications/DATES-2026-10-16.md`). OPEN: the "najpóźniej w N dniu" reading (doc 06 §7 Q3); the engine shows both dates and reminds on the earlier one |
-| Prototype reader unit tests | `node --test prototype/test/*.test.mjs` | FACT: 9/9 pass (`evidence/prototype-unit.txt`) |
+| Prototype reader unit tests | `node --test prototype/test/*.test.mjs` | FACT: 11/11 pass (`evidence/prototype-unit.txt`) |
 | Prototype lint (modules as one script) | `node prototype/test/lint.mjs` | FACT: clean, 11 modules (`evidence/prototype-lint.txt`) |
 | Prototype end to end, reduced motion | `node prototype/build.mjs && node prototype/test/e2e.mjs` | FACT: 5/5 scenarios (`evidence/e2e-reduced-motion.txt`) |
 | Prototype end to end, full motion | `node prototype/test/e2e.mjs --motion` | FACT: 5/5 scenarios (`evidence/e2e-motion.txt`) |
@@ -166,11 +166,11 @@ All paths are relative to `source/formalka-next-<commit>/` in the package, or to
 
 | Number | Inputs | Test code | Output |
 |---|---|---|---|
-| Engine 31/31 | `blueprints/*.yaml`, `reference/**`, `packages/case-engine/src/*.ts` | `packages/case-engine/test/engine.test.ts`, `intake.test.ts`, `replan.test.ts` | `evidence/engine-tests.txt` |
+| Engine 35/35 | `blueprints/*.yaml`, `reference/**`, `packages/case-engine/src/*.ts` | `packages/case-engine/test/engine.test.ts`, `intake.test.ts`, `replan.test.ts`, `voice.test.ts` | `evidence/engine-tests.txt` |
 | Evaluation 17/17 | `packages/case-engine/eval/scenarios.yaml` (17 scenarios: the person's words, confirmed facts, events, expectations) | `packages/case-engine/eval/run.ts` (`npm run eval`) | `packages/case-engine/eval/REPORT.md`, `packages/case-engine/eval/reference-plans/*.md` (17 files) |
 | Spike S1 14/14 | `spikes/s1-case-engine/src` | `spikes/s1-case-engine/test` | `evidence/s1-tests.txt` |
 | Engine bundle | `packages/case-engine/src`, `reference/`, `blueprints/` | `packages/case-engine/tools/build-browser.mjs --locales pl` | `evidence/bundle.txt` (SHA-256) |
-| Prototype reader 9/9 | `prototype/src/js/35-understand.js`, `10-cases.js`, `00-base.js` | `prototype/test/understand.test.mjs`, `prototype/test/load.mjs` | `evidence/prototype-unit.txt` |
+| Prototype reader 11/11 | `prototype/src/js/35-understand.js`, `10-cases.js`, `00-base.js` | `prototype/test/understand.test.mjs`, `prototype/test/load.mjs` | `evidence/prototype-unit.txt` |
 | Prototype lint | `prototype/src/js/*.js` | `prototype/test/lint.mjs` | `evidence/prototype-lint.txt` |
 | Prototype e2e 5/5 | `prototype/dist/index.html`, built by `prototype/build.mjs` from `prototype/src` and the engine bundle | `prototype/test/e2e.mjs` | `evidence/e2e-reduced-motion.txt`, `evidence/e2e-motion.txt` |
 
@@ -272,6 +272,7 @@ INFERENCE: until that review, the 17/17 result shows only that the engine meets 
 - blue instead of green;
 - a modern look with game mechanics only as an accent;
 - one assistant per case;
+- questions speak to the person ("Czy masz…"), and "ta osoba" is used only for a case handled for someone else. The app asks whose case it is at the start. The second-person wording sits in `packages/case-engine/src/voice.ts`: the meaning stays the registry's, a test guards the conditions, options and numbers, and the owner's review is pending;
 - an action after every reply;
 - typed answers everywhere.
 
