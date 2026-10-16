@@ -60,7 +60,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - Every answer can be typed, read on the device and confirmed. Consent with consequences is taken only from a short list of full answers (audit F5).
   - Session memory, until a reload or reset; the prototype's code sends no case data.
   - Study mode: address registration only, for moderated sessions on fictional cases.
-  - Tests: 13 unit tests, lint, and 6 end-to-end scenarios in both motion modes.
+  - Tests: 14 unit tests, lint, and 6 end-to-end scenarios in both motion modes.
   - Auditor package: `audit/2026-10-16/STATUS.md`.
 - **External audit (2026-10-16), the verdict accepted** (`audit/2026-10-16/RESPONSE.md`):
   - GO for problem interviews;

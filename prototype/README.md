@@ -32,7 +32,7 @@ The home footer shows the build id and the engine hash, so screenshots from a se
 
 | Command | What it checks |
 |---|---|
-| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (13 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers |
+| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (14 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
 | `node prototype/build.mjs && node prototype/test/e2e.mjs` | Six scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-F>` for one scenario |
 
@@ -46,6 +46,7 @@ The end-to-end scenarios:
   - only address registration is offered;
   - the build id is shown;
   - the no-language-model notice appears;
+  - an answer that fits no option ("Przyjechałem z Kolumbii, a co dalej?") gets a reply that explains, and no group is read from origin;
   - the plan card names its check without overclaiming;
   - memory is named as session memory.
 
@@ -126,7 +127,14 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
      - it skips a negated day ("jutro nie mogę, w piątek o 10" means Friday);
      - it asks when two days remain;
      - the confirmation always shows the full date with the year;
-   - reads "Jak poszło?" in words ("złożyłem wniosek", "brakowało dokumentu"). A negated action ("nie złożyłem") is never read as done.
+   - reads "Jak poszło?" in words ("złożyłem wniosek", "brakowało dokumentu"). A negated action ("nie złożyłem") is never read as done;
+   - when the words fit no option, it does not stop at "Nie jestem pewien" (owner, 16.10). It says that it chooses nothing for the person, then:
+     - names what it noticed: another case ("Wspominasz o innej sprawie: PESEL"), a question back, or doubt;
+     - says why it asks: the first sentence of the registry's "Dlaczego pytamy?";
+     - offers one-word answers ("Stały" albo "Czasowy"), only words the reader itself maps to exactly one option;
+     - says what "Nie wiem" does, in the registry's words.
+
+     It still matches words; it does not reason like a language model. Where someone comes from never becomes a group (rule 4).
 
    Words that answer the case's own questions ("mam certyfikat B1") update the case. They never start another case.
 5. **Personal numbers are masked before they are shown.** A typed PESEL, IBAN, ID card or passport number, phone number or e-mail appears as "•••" in the chat, and the reply does not repeat it. The patterns are narrow: other personal data (a name, an address) is not caught, so sessions use fictional data only (audit F7).
@@ -246,7 +254,7 @@ First compare with a **plain checklist** of the same verified information for th
   - the independent reference is not written yet;
   - five registry errors behind the findings are only proposed to production (`docs/formalka-next/PRODUCTION-CONTENT-PROPOSALS-2026-10-16.md`);
   - only address registration is meant for sessions.
-- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 13 unit tests). It will miss many real phrasings. A model may replace it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
+- **No language model.** The reader in `35-understand.js` is a small deterministic matcher (FACT: 14 unit tests). It will miss many real phrasings. A model may replace it later behind the same contract: proposals only, confirmed by the person (doc 16 §9a, ADR-N004).
 - **Privacy, by environment.**
   - Locally: the prototype's code makes no requests in the tested scenarios (FACT: e2e).
   - Not shown: what the hosting platform of the private Artifact logs.

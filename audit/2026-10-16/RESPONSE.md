@@ -85,7 +85,7 @@ Neither session wrote to the production repository.
   - the label is not in the voice of someone else's case ("jesteś" stays for a case handled for another person). It is noted for the engine session.
 
 ### F5. Reader
-All five inputs from the audit are unit tests now (`prototype/test/understand.test.mjs`, 13 tests):
+All five inputs from the audit are unit tests now (`prototype/test/understand.test.mjs`, 14 tests):
 
 | Input | Before | Now |
 |---|---|---|
@@ -99,7 +99,11 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
 - Hedges and contradictions are never read as consent.
 - A confirmation always shows the full date with the year.
 - When two days remain, the reader asks.
-- We did not add a language model to hide these errors (the audit's advice).
+- We did not add a language model to hide these errors (the audit's advice). The owner confirmed this on 16.10. An answer that fits no option still gets no guess, but the reply now explains:
+  - what it noticed;
+  - why the question matters;
+  - which single words the reader takes;
+  - what "Nie wiem" does.
 
 ### F6. Reference
 - `eval/reference-plans/` is now `eval/engine-plans/`: the generator's own output, regression snapshots only.
@@ -188,7 +192,7 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
 5. **"31 tests and 17 scenarios"** are not additive: the scenarios run inside one of the tests. Today:
    - the engine has 39 tests, with the 18 scenarios inside them;
    - spike S1 has 14 tests;
-   - the prototype has 13 unit tests and 6 e2e scenarios.
+   - the prototype has 14 unit tests and 6 e2e scenarios.
 6. **"24 injected faults caught"** cannot be reproduced from the package: there is no runner and no log per fault. The 8 F1 mutations are now tests (`verify.test.ts`); the rest of the 24 claim stays unproven (OPEN for the engine session: add a runner or withdraw the number).
 7. **Commit identity.** The package named `895a6aa`, its logs `e186333`, and the messages `9b3c66f`. From now on:
    - one commit per evidence set;
