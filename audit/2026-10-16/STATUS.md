@@ -48,7 +48,7 @@ This package holds:
 | Decisions | `docs/formalka-next/adr/N001`–`N010` | All "Proposed". N010 (learning from use) is new | Table in section 9 |
 | Verified content | `reference/` | Read-only snapshots of Formalka's procedures, offices and design tokens, each with its source commit | Never edited; nothing copied back |
 | Case blueprints | `blueprints/*.yaml` | 5 case types over verified procedures: citizenship, residence card, address registration, PESEL, Polish language certificate | Loaded by the engine |
-| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 30/30 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`) |
+| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 30/30 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`). 24 injected faults were each caught (doc 16 §7) |
 | Evaluation set | `packages/case-engine/eval/` | 17 scenarios with plain-Polish reference plans for the blind H1 benchmark | FACT: 17/17 pass (`eval/REPORT.md`). The owner's review is pending; the benchmark has not been run |
 | Spike S1 | `spikes/s1-case-engine` | The first deterministic planner and validator | FACT: 14/14 tests, mutation-checked |
 | Spike S3 | `spikes/s3-official-form-fill` | Filling the real registration PDF | FACT (15.10): 42 fields filled and read back with 0 mismatches, 0 forbidden fields filled |
@@ -134,6 +134,7 @@ the person: answers, confirms, approves, records what happened
 | Engine tests (incl. 17 evaluation scenarios, intake, replan) | `cd packages/case-engine && npm test` | FACT: 30/30 pass (`evidence/engine-tests.txt`) |
 | Engine bundle reproducible | `cd packages/case-engine && node tools/build-browser.mjs --locales pl`, then `git status` | FACT: byte-identical to the committed bundle when built from that folder. Built from the repository root, only the source-path comments differ (`evidence/bundle.txt`) |
 | Spike S1 | `cd spikes/s1-case-engine && npm test` | FACT: 14/14 pass (`evidence/s1-tests.txt`) |
+| Deadline rules | Quoted from the acts via the Sejm's ELI API | FACT: KPA art. 57 and the days-off list checked against Dz.U. 2025 poz. 1691 and poz. 296 on 16.10 (`docs/formalka-next/verifications/DATES-2026-10-16.md`). OPEN: the "najpóźniej w N dniu" reading (doc 06 §7 Q3); the engine shows both dates and reminds on the earlier one |
 | Prototype reader unit tests | `node --test prototype/test/*.test.mjs` | FACT: 9/9 pass (`evidence/prototype-unit.txt`) |
 | Prototype lint (modules as one script) | `node prototype/test/lint.mjs` | FACT: clean, 11 modules (`evidence/prototype-lint.txt`) |
 | Prototype end to end, reduced motion | `node prototype/build.mjs && node prototype/test/e2e.mjs` | FACT: 5/5 scenarios (`evidence/e2e-reduced-motion.txt`) |
@@ -152,6 +153,7 @@ They also run at 1280 px in the phone frame. They cover all five case types (sce
 - A change after approval that opened a second route produced a plan with no route. The person now picks the route first; a change that leaves no route keeps the plan.
 - The office's request ("urząd prosi o uzupełnienie") could not be recorded while waiting for the office. Recorded dates could not be undone.
 - Time travel stayed disabled right after approval. The tester panel overflowed on wide screens. The district filter did not hide offices.
+- Exam session dates that the snapshot marks as possibly outdated were shown without a warning. This came from the engine session's content notes, not from a test. The plan card, Teraz and the guidance now say so and link to the official page; scenario C checks it.
 
 ## 7. Known limits
 
@@ -160,7 +162,18 @@ They also run at 1280 px in the phone frame. They cover all five case types (sce
   - the interactive form is a mock;
   - filling the real PDF is proven only in spike S3 (synthetic data), not in the app;
   - inside the Artifact, file downloads are blocked by the sandbox, so "Pobierz" opens the official PDF in a new tab.
-- **FACT:** district offices exist only for Warsaw and Kraków in the registry snapshot. Voivodeship offices have a name and website only. No office has a phone number.
+- **FACT, content gaps in the snapshot (formalka@04057ef, `reference/README.md`):**
+  - district offices exist only for Warsaw and Kraków;
+  - voivodeship offices have a name and website only, and the Masovian one has no website;
+  - no office has a phone number;
+  - the language-certificate exam dates failed Formalka's quote gate on 15.10, so the app flags them as possibly outdated;
+  - citizenship and temporary residence have open inventory findings, so their values are shown only as labelled examples.
+- **FACT, not built yet:**
+  - a language-model extractor;
+  - intake in Ukrainian, Russian or English;
+  - native notifications;
+  - an encrypted device store. The functional slice keeps confirmed facts in plain browser storage and never stores free text; the prototype stores nothing.
+- **FACT:** replanning covers changes of facts only. Changes of the registry version (the changes feed) are not wired yet.
 - **Prototype shortcut:** the visit in the call flow is fixed three days ahead so that time travel lands on it.
 - **Engine copy issues, worked around in the prototype and reported to the engine owner:**
   - the intro says "asystent" for every assistant;
@@ -225,7 +238,7 @@ They also run at 1280 px in the phone frame. They cover all five case types (sce
 ## 10. Plan
 
 **Next two weeks (no product code):**
-1. The owner reviews the 17 reference plans, then the blind H1 benchmark is run (doc 11).
+1. The owner reviews the 17 reference plans and the five blueprints, then the blind H1 benchmark is run (doc 11).
 2. Five to eight moderated sessions with the v4 prototype, using the test script in `prototype/README.md`. Measure:
    - task time;
    - the misunderstanding rate for typed answers;

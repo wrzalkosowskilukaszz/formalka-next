@@ -94,7 +94,8 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 4. **Honest about what it doesn't know:**
    - service prices, such as a sworn translator, are not in the sources, so they are not given;
    - offices have no phone numbers in the sources, so none are shown;
-   - "Nie wiem" leads to a hand-off with free legal aid, not a guess.
+   - "Nie wiem" leads to a hand-off with free legal aid, not a guess;
+   - content the snapshot marks as possibly outdated (the language exam dates) is flagged wherever it appears, with the official page to check.
 5. **On-device memory** ("Co Asia pamięta" in the case history) holds what the person confirmed from their own words, the city, and the hour they last picked, which is offered first next time. Nothing leaves the phone. Learning across people is a separate, open decision (ADR-N010).
 
 ## Tester controls
