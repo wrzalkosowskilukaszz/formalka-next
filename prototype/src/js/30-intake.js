@@ -353,12 +353,16 @@ function free(text) {
   const personal = looksPersonal(text);
   const named = personal ? [] : intentsIn(text);
   const fresh = named.filter((id) => !S.cases.some((c) => c.bpId === id));
-  const c = C();
+  let c = C();
   // Words that answer this case's questions ("mam certyfikat B1") update this case, not start another.
   const own = !!c && !personal && hasWords(c, text);
+  // Otherwise words that name another case already open go to that case.
+  const known = own || fresh.length ? null : named.map((id) => S.cases.find((x) => x.bpId === id)).find(Boolean);
+  if (known && known !== c) { S.active = known.id; c = known; }
   if (!own && fresh.length === 1 && !(c && named.includes(c.bpId))) return runFlow('case', () => startCase(fresh[0], text));
   if (!own && fresh.length > 1) return runFlow('pick', () => pickCase(fresh, text));
-  if (!c) { sys(`Tej sprawy nie prowadzimy jeszcze krok po kroku. ${STUDY ? 'W tym badaniu prowadzimy tylko zameldowanie.' : `W prototypie są: ${CASE_TYPES.map((x) => x.short).join(', ')}.`}`); return null; }
+  // No case yet and none named: not a dead end, but the cases the prototype leads, to pick from.
+  if (!c) return runFlow('pick', () => pickCase(caseTypes().map((x) => x.id), text, STUDY ? 'W tym badaniu prowadzimy tylko zameldowanie. Zaczynamy?' : 'Nie rozpoznaję w tych słowach sprawy, którą prowadzę krok po kroku. Od której zaczynamy?'));
   return runFlow('free', async () => {
     await think(c);
     if (personal) {
@@ -411,8 +415,8 @@ function free(text) {
 }
 // A number that looks like a PESEL or a document number (rule 8: no personal data needed).
 
-async function pickCase(ids, text) {
-  sys('Twój opis pasuje do kilku spraw. Którą zaczynamy?');
+async function pickCase(ids, text, lead = 'Twój opis pasuje do kilku spraw. Którą zaczynamy?') {
+  sys(lead);
   const r = await panel(`<p class="dock-q" tabindex="-1" data-focus>Którą sprawę zaczynamy?</p><div class="opts cards">${ids.map((x) => `<button type="button" class="chip chip-card" data-pick="${x}">${icon(typeOf(x)?.ic || 'files')}<span>${esc(E.blueprint(x).title.pl)}</span></button>`).join('')}</div>`,
     (t) => { const m = intentsIn(t).filter((x) => ids.includes(x)); return m.length === 1 ? m[0] : null; });
   if (!r.typed) me(E.blueprint(r.value).title.pl);

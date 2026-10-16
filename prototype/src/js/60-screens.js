@@ -37,20 +37,21 @@ const SCREENS = {
       e.preventDefault();
       const v = input.value.trim();
       if (!v) { input.focus(); return; }
-      const ids = intentsIn(v).filter((id) => !S.cases.some((c) => c.bpId === id));
-      if (!ids.length) { toast(intentsIn(v).length ? 'Tę sprawę już masz. Otwórz ją z listy spraw.' : STUDY ? 'W tym badaniu prowadzimy tylko zameldowanie.' : `Tej sprawy nie prowadzimy jeszcze krok po kroku. W prototypie: ${CASE_TYPES.map((x) => x.short).join(', ')}.`, 'info'); return; }
-      me(v);
-      if (ids.length === 1) runFlow('case', () => startCase(ids[0], v));
-      else { go('chat', 'fwd'); runFlow('pick', () => pickCase(ids, v)); }
+      // The one input always leads into the conversation (owner, 16.10: no dead ends on home). Words that
+      // name a case already open go to that case; anything else is answered in the chat.
+      const named = intentsIn(v);
+      const known = named.map((id) => S.cases.find((c) => c.bpId === id)).filter(Boolean);
+      if (known.length && named.every((id) => S.cases.some((c) => c.bpId === id))) S.active = known[0].id;
+      go('chat', 'fwd');
+      free(v);
     };
     return el;
   },
   chat() {
     const names = [...new Set(S.cases.map((c) => c.who))];
     const shown = names.length ? names.slice(0, 3) : [];
-    const canBack = S.cases.length > 0;
     const el = h(`<section class="screen chat">
-      <header class="appbar pad">${canBack ? `<button type="button" class="circle-btn" id="chat-back" aria-label="Wróć">${icon('arrow-left')}</button>` : ''}
+      <header class="appbar pad"><button type="button" class="circle-btn" id="chat-back" aria-label="Wróć">${icon('arrow-left')}</button>
         ${shown.length ? `<button type="button" class="av-btn" id="chat-av" aria-label="Dziennik działań asystenta"><span class="avatars">${shown.map((n) => avatar(n, '', names.length === 1)).join('')}</span></button>` : ''}
         <span class="ttl"><b>${names.length > 1 ? esc(names.join(', ')) : names.length ? esc(names[0]) : 'Formalka'}</b><span>${names.length > 1 ? 'asystenci AI Twoich spraw, nie urzędnicy' : names.length ? `${esc(who(names[0]).role)}, nie urzędnik` : 'asystent AI'}</span></span>
       </header><div class="status-slot pad"></div><div class="builder-slot pad"></div></section>`);
@@ -59,7 +60,8 @@ const SCREENS = {
     dw.append(dockEl);
     el.append(dw);
     const b = $('#chat-back', el);
-    if (b) b.onclick = () => { const c = C(); if (c?.state.approved) { S.view = 'focus'; go('case', 'back'); } else go('world', 'back'); };
+    // No case yet (the home input led here): back to home.
+    if (b) b.onclick = () => { const c = C(); if (c?.state.approved) { S.view = 'focus'; go('case', 'back'); } else go(S.cases.length ? 'world' : 'home', 'back'); };
     const av = $('#chat-av', el);
     if (av) av.onclick = () => openHistory(C() || S.cases[0]);
     requestAnimationFrame(mountBuilder);

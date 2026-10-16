@@ -458,11 +458,15 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.waitForFunction(() => document.querySelectorAll('.ex').length === 1, null, { timeout: 8000 });
   // The build id ties a session's screenshots to one build (dist/manifest.json; audit F8).
   assert.match(await page.locator('.home-foot .build').innerText(), /Wersja prototypu [0-9a-f]{12}, silnik [0-9a-f]{16}/);
+  await t.shot('study-home');
+  // The home input never dead-ends (owner, 16.10): a case outside the study leads into the chat, which
+  // says so and offers the one case it leads.
   await page.fill('#home-t', 'Ogarnij mi temat karty pobytu');
   await page.press('#home-t', 'Enter');
-  await t.toast(/tylko zameldowanie/);
-  await t.shot('study-home');
-  await page.locator('[data-type="address-registration"]').click();
+  await page.locator('.sys', { hasText: 'W tym badaniu prowadzimy tylko zameldowanie' }).waitFor({ timeout: 8000 });
+  assert.equal(await page.locator('.dock [data-pick]').count(), 1, 'only the study case is offered');
+  await t.shot('study-offer');
+  await page.locator('.dock [data-pick="address-registration"]').click();
   await page.locator('.sys', { hasText: 'nie korzysta z modelu językowego' }).waitFor({ timeout: 8000 });
   await t.q(/dla siebie czy dla kogoś/);
   await t.say('dla siebie');
@@ -529,6 +533,23 @@ await scenario('G-waiting-for-office', {}, async (t, page) => {
   await t.say('Ułóż jednak plan');
   await t.q(/W jakim celu chcesz mieszkać w Polsce/);
   await t.shot('waiting-then-plan');
+  // From home, words that name a case already open go to that case (no "Tę sprawę już masz").
+  await t.nav('#chat-back', 'world');
+  await t.nav('#w-new', 'home');
+  await page.fill('#home-t', 'Kiedy będzie decyzja w sprawie karty pobytu?');
+  await page.press('#home-t', 'Enter');
+  await t.q(/Na co teraz czekasz/);
+  assert.equal(await page.locator('.toast').count(), 0, 'no toast instead of an answer');
+});
+
+/* ── H: the home input with words that name no case: the chat offers the cases, and back goes home ── */
+await scenario('H-home-input-open', {}, async (t, page) => {
+  await page.fill('#home-t', 'cześć, mam pytanie');
+  await page.press('#home-t', 'Enter');
+  await page.locator('.sys', { hasText: 'Nie rozpoznaję w tych słowach sprawy' }).waitFor({ timeout: 8000 });
+  assert.equal(await page.locator('.dock [data-pick]').count(), 5, 'the five cases to pick from');
+  await t.shot('home-unknown');
+  await t.nav('#chat-back', 'home');
 });
 
 await browser.close();
