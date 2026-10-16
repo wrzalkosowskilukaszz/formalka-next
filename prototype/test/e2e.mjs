@@ -82,6 +82,29 @@ async function checkScreen(page) {
       never: never.filter((p) => shown.includes(p.toLowerCase())),
       emDash: shown.includes('—'),
       rawIds: shown.match(/\b[a-z]+_[a-z_]+\b/g) ?? [],
+      // Screen contracts (doc 18 §5.3): what each screen must always show.
+      contract: (() => {
+        const miss = [];
+        const scr = document.querySelector('#app .screen:last-of-type');
+        const txt = (sel) => document.querySelector(sel)?.innerText ?? '';
+        if (S.screen === 'chat' && !/asystent(?:ka)? AI/.test(txt('.screen.chat .appbar'))) miss.push('chat: the assistant is named as an AI');
+        if (S.screen === 'home' && !document.querySelector('#home-t')) miss.push('home: the input');
+        if (S.screen === 'home' && STUDY && !/Badanie obejmuje tylko/.test(txt('.study-note'))) miss.push('home: the study scope');
+        const c = S.cases.find((x) => x.id === S.active);
+        if (S.screen === 'case' && c?.state.approved && S.view === 'focus') {
+          if (!document.querySelector('#case-body .hero')) miss.push('Teraz: the current step');
+          if (c.pendingFix && !document.querySelector('#case-body .mock-note.recheck')) miss.push('Teraz: the pending correction');
+          if (STUDY && !/Zakres badania/.test(txt('#case-body'))) miss.push('Teraz: the study scope');
+        }
+        if (S.screen === 'case' && c?.state.approved && S.view === 'map') {
+          const cards = [...document.querySelectorAll('#case-body .tl-card')];
+          if (!cards.length) miss.push('Mapa: the steps');
+          for (const k of cards) if (!/Poziom \d/.test(k.innerText)) miss.push(`Mapa: a step without its place: ${k.innerText.slice(0, 30)}`);
+        }
+        if (S.screen === 'teczka' && S.cases.some((x) => x.state.approved) && !/Tylko na tym telefonie/.test(scr?.innerText ?? '')) miss.push('Teczka: where the list lives');
+        if (S.screen === 'calendar') for (const e of document.querySelectorAll('.appt-status')) if (!e.textContent.trim()) miss.push('Kalendarz: an entry without its origin');
+        return miss;
+      })(),
       // D11: nothing cut off at the sides, outside rows built to scroll sideways.
       clipped: [...document.querySelectorAll('#app *')].filter((el) => el.children.length === 0 && el.offsetParent !== null && (el.textContent.trim() || el.matches('svg, button, a, input')))
         .filter((el) => { for (let p = el.parentElement; p; p = p.parentElement) { const ox = getComputedStyle(p).overflowX; if (ox === 'auto' || ox === 'scroll') return false; } return true; })
@@ -116,6 +139,8 @@ async function checkScreen(page) {
   if (process.env.REPORT_TARGETS && r.primaries.length > 1) SMALL.add(`PRIMARIES ${r.primaries.length}: ${r.primaries.join(' | ')}`);
   else if (!process.env.REPORT_TARGETS) assert.ok(r.primaries.length <= 1, `D9: more than one primary action in view: ${r.primaries.join(' | ')}`);
   else assert.deepEqual([...r.small], [], 'D3: a touch target under 44 px');
+  if (process.env.REPORT_TARGETS) for (const x of r.contract) SMALL.add(`CONTRACT ${x}`);
+  else assert.deepEqual([...r.contract], [], 'a screen contract (doc 18 §5.3)');
   const axe = await axeIssues(page);
   if (process.env.REPORT_TARGETS) for (const x of axe) SMALL.add(`AXE ${x}`);
   else assert.deepEqual(axe, [], 'D2: accessibility issues (axe-core, serious or critical)');
