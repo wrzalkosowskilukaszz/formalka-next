@@ -13,7 +13,8 @@ const AGENDA_TITLE = {
 };
 const AGENDA_ICON = { call_reminder: 'phone', visit_prep: 'list-checks', visit_morning: 'buildings', follow_up: 'chat-circle-dots', deadline_warning: 'hourglass-simple', deadline_today: 'warning-circle', office_deadline_passed: 'hourglass-simple', nudge: 'bell', rule_change: 'info' };
 function agendaFor(c, now = S.clock) {
-  if (!c.state.approved) return [];
+  // Reminders wait while a correction is undecided: they may rest on the answer being corrected.
+  if (!c.state.approved || c.pendingFix) return [];
   return E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: plan(c), state: c.state, prefs: c.prefs, now, lastActivity: c.lastActivity, persona: personaOf(c) });
 }
 function entries() {
@@ -202,8 +203,10 @@ function focusView(c) {
   const inHero = [];
   if (l.tasks.length) inHero.push(`<div class="mini-route" aria-hidden="true">${l.tasks.map((t, k) => `${k ? `<i class="${isDone(l.tasks[k - 1]) ? 'on' : ''}"></i>` : ''}<span class="md ${isDone(t) ? 'done' : ''}"></span>`).join('')}</div>`);
   inHero.push(`<p>${esc(levelLine(l))}</p>`);
+  if (needsRecheck(c, l)) inHero.push(recheckChip());
   if (l.id !== cur.id) inHero.push(`<button type="button" class="btn btn-ghost-w btn-sm" data-focuslv="">Wróć do „${esc(cur.title.pl)}”</button>`);
   const sections = [];
+  if (c.pendingFix) sections.push(pendingBanner(c));
   const stale = staleOf(p);
   if (stale) sections.push(`<p class="mock-note stale">${icon('warning-circle')}<span>${esc(stale.text)} <a href="${esc(stale.url)}" target="_blank" rel="noopener noreferrer">${esc(stale.label)}</a></span></p>`);
   if (l.tasks.length) sections.push(`<section class="sec"><h2 class="sec-h">Zadania</h2><ul class="list">${l.tasks.map((t, k) => taskRow(c, l, t, k)).join('')}</ul></section>`);
@@ -224,6 +227,8 @@ function focusView(c) {
   if (actions.length) sections.push(`<section class="sec"><h2 class="sec-h">Twoje kroki</h2>${actions.join('')}</section>`);
   const par = l.parallelWith.map((id) => p.levels.find((x) => x.id === id)).filter(Boolean);
   if (par.length) sections.push(`<section class="sec"><h2 class="sec-h">Równolegle</h2>${par.map((x) => `<button type="button" class="tl-side" data-focuslv="${x.id}"><span class="tile-ic sm">${icon(levelIcon(x))}</span><span class="tx"><small>Możesz równolegle</small><b>${esc(x.title.pl)}</b><span>${esc(levelLine(x))}</span></span>${icon('caret-right', 'chev')}</button>`).join('')}</section>`);
+  const ans = answersHTML(c);
+  if (ans) sections.push(ans);
   if (p.unsure.length) sections.push(`<section class="card"><h3>Do potwierdzenia</h3><ul class="open-list">${p.unsure.map((u) => `<li><span class="q">?</span><span>${esc(factOf(c, u.fact)?.question.pl ?? u.fact)}</span></li>`).join('')}</ul></section>`);
   if (l.notes?.length) sections.push(notesHtml(l.notes));
   const gd = l.id === cur.id && c.state.approved ? guidance(c) : null;
@@ -253,12 +258,12 @@ function timeline(c, sheetMode = false) {
   const card = (l, k) => {
     if (l.id === cur) {
       const done = l.tasks.filter(isDone).length;
-      return `<div class="tl-card now${hl.includes(l.id) ? ' highlight' : ''}"><span class="k">Poziom ${k} · teraz</span><b>${esc(l.title.pl)}</b><p>${esc(levelLine(l))}</p>
+      return `<div class="tl-card now${hl.includes(l.id) ? ' highlight' : ''}"><span class="k">Poziom ${k} · teraz</span><b>${esc(l.title.pl)}</b><p>${esc(levelLine(l))}</p>${needsRecheck(c, l) ? recheckChip() : ''}
         ${l.tasks.length ? `<span class="prog" aria-hidden="true"><i style="width:${Math.round((done / l.tasks.length) * 100)}%"></i></span>` : ''}
         <span class="tl-act">${sheetMode ? '' : `<button type="button" class="btn btn-white btn-sm" data-focuslv="${l.id}">Przejdź do zadań</button>`}<button type="button" class="btn btn-ghost-w btn-sm" data-lv="${l.id}">Szczegóły</button></span></div>`;
     }
     return `<button type="button" class="tl-card ${l.state}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}"><span class="k">Poziom ${k}</span>
-      <b>${esc(l.title.pl)}</b>${stateChip(l)}<span class="tl-text">${l.state === 'locked' ? icon('lock-simple') : ''}${esc(levelLine(l))}</span></button>`;
+      <b>${esc(l.title.pl)}</b>${stateChip(l)}${needsRecheck(c, l) ? recheckChip() : ''}<span class="tl-text">${l.state === 'locked' ? icon('lock-simple') : ''}${esc(levelLine(l))}</span></button>`;
   };
   const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
   const total = fees.reduce((s, f) => s + f.amountPln, 0);
@@ -308,7 +313,7 @@ function openHistory(c) {
       <span class="switch-label" id="h-consent-l"><b>Pomoc z wyprzedzeniem</b>${esc(c.who)} ${c.prefs.consent ? `może ${who(c.who).sam} dodawać przypomnienia i wpisy w kalendarzu do tej sprawy.` : 'nie wysyła powiadomień; przypomnienia zostają w aplikacji.'}</span></div>
     <div class="switch-row"><button type="button" class="switch" role="switch" aria-checked="${c.prefs.lockScreenDetail}" id="h-detail" aria-labelledby="h-detail-l"></button>
       <span class="switch-label" id="h-detail-l"><b>Temat sprawy na ekranie blokady</b>${c.prefs.lockScreenDetail ? 'Widoczny.' : 'Ukryty (domyślnie): na ekranie blokady tylko ogólny tekst.'}</span></div>
-    <section class="sec"><h3 class="sec-h">Co ${esc(c.who)} zrobi ${who(c.who).sam}</h3>${upcoming.length ? `<ul class="agenda">${upcoming.map((it) => `<li class="ag"><span class="tile-ic">${icon(AGENDA_ICON[it.kind] || 'bell')}</span><span class="tx"><b>${esc(AGENDA_TITLE[it.kind] || it.kind)}</b><span>${it.channel === 'notification' ? 'Powiadomienie' : 'W aplikacji'} · ${dshort(it.fireAt.slice(0, 10))}</span></span><span class="time">${hm(it.fireAt.slice(11, 16))}</span></li>`).join('')}</ul>` : '<p class="meta">Na razie nic. Zapisz datę, od której liczy się termin, albo zaplanuj wizytę.</p>'}</section>
+    <section class="sec"><h3 class="sec-h">Co ${esc(c.who)} zrobi ${who(c.who).sam}</h3>${c.pendingFix ? '<p class="meta">Przypomnienia czekają na Twoją decyzję o poprawce odpowiedzi.</p>' : upcoming.length ? `<ul class="agenda">${upcoming.map((it) => `<li class="ag"><span class="tile-ic">${icon(AGENDA_ICON[it.kind] || 'bell')}</span><span class="tx"><b>${esc(AGENDA_TITLE[it.kind] || it.kind)}</b><span>${it.channel === 'notification' ? 'Powiadomienie' : 'W aplikacji'} · ${dshort(it.fireAt.slice(0, 10))}</span></span><span class="time">${hm(it.fireAt.slice(11, 16))}</span></li>`).join('')}</ul>` : '<p class="meta">Na razie nic. Zapisz datę, od której liczy się termin, albo zaplanuj wizytę.</p>'}</section>
     <section class="sec"><h3 class="sec-h">Co ${esc(c.who)} pamięta w tej sesji</h3>${c.memory.length ? `<ul class="bul">${c.memory.map((m) => `<li>${esc(m)}</li>`).join('')}</ul>` : '<p class="meta">Na razie nic poza odpowiedziami w planie.</p>'}
       <p class="meta">Tylko na tym telefonie i tylko do odświeżenia strony albo resetu: prototyp niczego nie zapisuje na stałe. Nic z tego nie jest nigdzie wysyłane.</p></section>
     <section class="sec"><h3 class="sec-h">Historia</h3><ul class="list">${c.history.map((e, i) => `<li class="row${e.revoked ? ' revoked' : ''}"><span class="sq">${e.by === 'you' ? icon('user') : avatar(c.who, 'sm')}</span><span class="tx"><b>${esc(e.text)}</b><span class="meta">${e.by === 'you' ? 'Ty' : esc(c.who)} · ${dshort(e.at.slice(0, 10))} ${hm(e.at.slice(11, 16))}${e.revoked ? ' · cofnięte' : ''}</span></span>${e.event && !e.revoked ? `<button type="button" class="btn btn-quiet btn-sm" data-undo="${i}">Cofnij</button>` : ''}</li>`).join('')}</ul></section>`;
@@ -453,6 +458,9 @@ function wireActions(root, ctx = null) {
   $$('[data-focuslv]', root).forEach((b) => { b.onclick = () => { const c = caseOf(b); c.focus = b.dataset.focuslv || null; S.view = 'focus'; closeLayer(); drawCase(); }; });
   $$('[data-lv]', root).forEach((b) => { b.onclick = () => openLevel(caseOf(b), b.dataset.lv); });
   $$('[data-v2]', root).forEach((b) => { b.onclick = () => { S.view = b.dataset.v2; drawCase(); }; });
+  $$('[data-fix]', root).forEach((b) => { b.onclick = () => { const c = caseOf(b); S.active = c.id; closeLayer(); go('chat', 'fwd'); runFlow('fix', () => correctFact(c, b.dataset.fix)); }; });
+  $$('[data-unfix]', root).forEach((b) => { b.onclick = () => { const c = caseOf(b); logAct(c, 'Poprawka wycofana'); c.pendingFix = null; toast('Poprawka wycofana. Plan bez zmian.', 'arrow-counter-clockwise'); drawCase(); }; });
+  $$('[data-tochat]', root).forEach((b) => { b.onclick = () => { S.active = caseOf(b).id; go('chat', 'fwd'); }; });
   $$('[data-plan]', root).forEach((b) => { b.onclick = () => { const [kind, lv] = b.dataset.plan.split('|'); planTime(caseOf(b), kind, lv); }; });
   $$('[data-askplace]', root).forEach((b) => { b.onclick = () => pickPlace(caseById(b.dataset.askplace)); });
   $$('[data-fixed]', root).forEach((b) => { b.onclick = () => { const c = caseOf(b); recordEvent(c, 'fix_submitted', S.clock.date); afterChange(c); }; });

@@ -114,7 +114,9 @@ async function readWords(c, text) {
 // After approval a change is a proposal: what it would add, remove or make certain (ADR-N003).
 // When the change opens a second route, the person picks the route first; when it leaves no route
 // from the sources, the plan stays as it is and the assistant says so.
-async function proposeChange(c, next) {
+// Returns 'yes', 'no', 'empty' (nothing changes) or 'unrouted' (no route from the sources).
+// With opts.fix (a corrected answer), the card names the correction and an empty diff still asks.
+async function proposeChange(c, next, opts = {}) {
   let np = E.plan(c.bpId, next);
   if (np.route.status === 'choice' && !np.route.procedureId) {
     await say(c, 'Z tą zmianą pasuje więcej niż jedna droga. Najpierw wybierz drogę, potem pokażę, co się zmieni.');
@@ -124,32 +126,49 @@ async function proposeChange(c, next) {
   if (np.route.status === 'unsure' || np.route.status === 'none' || !np.route.procedureId) {
     const proc = E.procedure(plan(c).route.procedureId);
     const aid = proc?.handoff?.options?.find((o) => o.link?.url);
-    await say(c, `<p>Z tą zmianą nie ustalę drogi z naszych źródeł, więc plan zostaje bez zmian.</p>${actsHTML(c, aid ? [{ kind: 'link', url: aid.link.url, label: aid.name?.pl ?? 'Nieodpłatna pomoc prawna' }] : guidance(c).actions.slice(0, 2))}`);
-    return;
+    const acts = actsHTML(c, aid ? [{ kind: 'link', url: aid.link.url, label: aid.name?.pl ?? 'Nieodpłatna pomoc prawna' }] : []);
+    if (opts.fix) await say(c, `<p>Z poprawioną odpowiedzią nasze źródła nie wskazują drogi. Plan opierał się na odpowiedzi, którą poprawiasz, więc cały wymaga ponownego sprawdzenia. Nie zgaduję.</p>${acts}`);
+    else await say(c, `<p>Z tą zmianą nie ustalę drogi z naszych źródeł, więc plan zostaje bez zmian.</p>${acts || actsHTML(c, guidance(c).actions.slice(0, 2))}`);
+    return 'unrouted';
   }
   const diff = E.diffPlans(plan(c), np, c.state.tasks);
-  if (diff.empty) { await say(c, 'To nic nie zmienia w Twoim planie.'); return; }
+  if (diff.empty && opts.fix) {
+    const r = await panel(`<p class="dock-q" tabindex="-1" data-focus>Poprawka ${esc(opts.fix)} nic nie zmienia w planie. Zapisać poprawioną odpowiedź?</p>
+      <div class="ap-act"><button type="button" class="btn btn-quiet" data-pick="no">Zostaw jak było</button><button type="button" class="btn btn-accent" data-pick="yes">Zapisz poprawkę</button></div>`,
+    (t) => { const pol = polarity(norm(t), true); return pol === 'no' || pol === 'dk' ? 'no' : pol === 'yes' ? 'yes' : null; }, c);
+    if (r.value === 'yes') { c.state = { ...next, tasks: c.state.tasks }; if (!r.typed) me('Zapisz poprawkę'); await say(c, 'Zapisane. Plan bez zmian.'); return 'yes'; }
+    if (!r.typed) me('Zostaw jak było');
+    await say(c, 'Odpowiedź zostaje, plan bez zmian.');
+    return 'no';
+  }
+  if (diff.empty) { await say(c, 'To nic nie zmienia w Twoim planie.'); return 'empty'; }
   const li = (label, xs, f = (x) => cap(x.title.pl)) => (xs?.length ? `<p class="meta">${label}</p><ul class="bul">${xs.map((x) => `<li>${esc(f(x))}</li>`).join('')}</ul>` : '');
   const proc = (id) => (id ? E.procedure(id)?.title.pl ?? id : 'brak');
   const r = await panel(`<section class="stack" style="padding-block:0;gap:var(--s3)">
-    <p class="dock-q" tabindex="-1" data-focus>Ta zmiana zmieni Twój plan. Sprawdź, zanim zatwierdzisz</p>
+    <p class="dock-q" tabindex="-1" data-focus>${opts.fix ? `Poprawka ${esc(opts.fix)} zmieni Twój plan. Sprawdź, zanim zatwierdzisz` : 'Ta zmiana zmieni Twój plan. Sprawdź, zanim zatwierdzisz'}</p>
     ${diff.route ? `<p class="meta">Droga: ${esc(proc(diff.route.from))} → <b>${esc(proc(diff.route.to))}</b></p>` : ''}
     ${li('Nowe w planie:', diff.tasks.added)}${li('Już wiadomo, że potrzebne:', diff.tasks.nowCertain)}${li('Nie będzie potrzebne:', diff.tasks.removed)}
     ${li('Zrobione, zostaje w historii:', diff.tasks.keptAsHistory)}
     ${li('Nowe opłaty:', diff.fees.added, (f) => `${f.title.pl}: ${f.amountPln} zł`)}${li('Opłaty, które odpadają:', diff.fees.removed, (f) => `${f.title.pl}: ${f.amountPln} zł`)}
     ${li('Zmienione opłaty:', diff.fees.changed, (f) => `${f.title.pl}: ${f.from} zł → ${f.to} zł`)}
-    ${li('Nowe terminy:', diff.deadlines.added)}${li('Terminy, które odpadają:', diff.deadlines.removed)}
+    ${li('Nowe terminy:', diff.deadlines.added)}${li('Terminy, które odpadają:', diff.deadlines.removed)}${li('Zmienione terminy:', diff.deadlines.changed)}
     ${li('Inny urząd:', diff.offices, (o) => o.title.pl)}
     ${li('Poziomy:', diff.levels.state, (l) => `${l.title.pl}: ${STATE[l.from]} → ${STATE[l.to]}`)}
     <div class="ap-act"><button type="button" class="btn btn-quiet" data-pick="no">Zostaw jak było</button><button type="button" class="btn btn-accent" data-pick="yes">Zatwierdzam zmianę</button></div></section>`,
   (t) => { const n = norm(t), pol = polarity(n, true); return pol === 'no' || pol === 'dk' ? 'no' : pol === 'yes' || /^(?:zmien|zmien plan)$/.test(n) ? 'yes' : null; }, c);
   if (r.value === 'yes') {
     c.state = { ...next, tasks: E.applyReplan(c.state.tasks, diff) };
-    logAct(c, 'Plan zmieniony po Twojej zmianie sytuacji. Zrobione rzeczy zostają w historii');
+    logAct(c, opts.fix ? 'Plan zmieniony po poprawce odpowiedzi. Zrobione rzeczy zostają w historii' : 'Plan zmieniony po Twojej zmianie sytuacji. Zrobione rzeczy zostają w historii');
     if (!r.typed) me('Zatwierdzam zmianę');
+    if (opts.fix) c.pendingFix = null;
     await say(c, 'Plan zmieniony. Zrobione rzeczy zostają w historii.');
     postGuide(c, true);
-  } else { if (!r.typed) me('Zostaw jak było'); await say(c, `<p>Plan bez zmian.</p>${actsHTML(c, guidance(c).actions)}`); }
+    return 'yes';
+  }
+  if (!r.typed) me('Zostaw jak było');
+  if (opts.fix) c.pendingFix = null;
+  await say(c, `<p>Plan bez zmian.</p>${actsHTML(c, guidance(c).actions)}`);
+  return 'no';
 }
 
 // Several routes fit: the person picks, with the differences from the sources (the engine never picks).
@@ -391,6 +410,12 @@ function free(text) {
     }
     // "Ułóż plan", after the plan was put off: back to the questions.
     if (!c.state.approved && S.building !== c.id && /(?:^| )(?:uloz\w*|zaplanuj\w*|plan\w*|dalej|wracamy|kontynuuj\w*)(?= |$)/.test(norm(text))) return resumeIntake(c);
+    // A confirmed answer given again with another value, or "pomyliłem się": a correction, never silent.
+    if (c.state.approved && !c.pendingFix) {
+      const fix = correctionIn(c, text);
+      if (fix) return offerCorrection(c, fix, text);
+      if (ASKS_FIX.test(norm(text))) return chooseCorrection(c);
+    }
     if (!c.state.approved) {
       if (!(await readWords(c, text))) await notSure(c, 'Wróćmy do planu: odpowiedz na pytanie poniżej, przyciskiem albo własnymi słowami.');
       return resumeIntake(c, null);

@@ -179,3 +179,24 @@ test('waiting for the office: the need is read from the words, not as a new appl
   for (const t of ['Potrzebuję przyspieszyć wydanie karty pobytu', 'Długo czekam na decyzję', 'kiedy będzie decyzja?', 'jak napisać ponaglenie', 'Nadal nie ma decyzji w mojej sprawie']) assert.ok(app.readWaiting(t), t);
   for (const t of ['Ogarnij mi temat karty pobytu', 'Chcę złożyć wniosek o kartę pobytu', 'Muszę się zameldować', 'czekam']) assert.ok(!app.readWaiting(t), t);
 });
+
+test('correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence', () => {
+  const E = app.E;
+  const st = { facts: { 'zameldowanie.citizen_group': 'eu_efta', 'zameldowanie.stay': 'permanent' }, events: [], tasks: {}, approved: true };
+  const cur = E.plan('address-registration', st);
+  const next = { ...st, facts: { ...st.facts, 'zameldowanie.stay': 'temporary' } };
+  const diff = E.diffPlans(cur, E.plan('address-registration', next), st.tasks);
+  const touched = [...app.affectedBy(diff, cur.levels)];
+  assert.ok(!diff.empty && touched.length > 0, 'a different stay changes the plan');
+  assert.ok(touched.every((id) => cur.levels.some((l) => l.id === id)), 'only levels of the plan');
+  assert.equal(app.affectedBy({ ...diff, route: { from: 'a', to: 'b' } }, cur.levels).size, cur.levels.length, 'a route change touches every level');
+  const c = { bpId: 'address-registration', state: st, voice: 'you' };
+  const fix = app.correctionIn(c, 'chcę się zameldować na pobyt czasowy');
+  assert.equal(fix?.fact, 'zameldowanie.stay');
+  assert.equal(fix?.value, 'temporary');
+  assert.equal(app.correctionIn(c, 'chcę się zameldować na pobyt stały'), null, 'the same value is not a correction');
+  assert.equal(app.correctionIn(c, 'pomyliłem się'), null, 'no value without evidence');
+  assert.ok(app.ASKS_FIX.test(app.norm('Pomyliłem się w odpowiedzi')));
+  assert.ok(app.ASKS_FIX.test(app.norm('chcę poprawić odpowiedź')));
+  assert.ok(!app.ASKS_FIX.test(app.norm('Ile to kosztuje?')));
+});

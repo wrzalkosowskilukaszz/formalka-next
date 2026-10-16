@@ -67,7 +67,7 @@ function newCase(bpId) {
     id: `c${++S.seq}`, bpId, title: bp.title.pl, who: assignPersona(bp.caretaker.name).name, icon: typeOf(bpId)?.ic || 'files',
     state: { facts: {}, tasks: {}, events: [], approved: false }, asked: 0, placeAsked: false,
     prefs: { ...E.DEFAULT_PREFS }, history: [], files: [], delivered: new Set(), deliveredLog: [], answered: {},
-    lastActivity: S.clock.date, preview: '', pending: null, stuck: false, memory: [], awaiting: null, guided: null,
+    lastActivity: S.clock.date, preview: '', pending: null, pendingFix: null, stuck: false, memory: [], awaiting: null, guided: null,
     voice: 'you', // whose case: "you" (the person's own) or "other" (handled for someone else)
   };
   S.cases.push(c);

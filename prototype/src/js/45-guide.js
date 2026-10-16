@@ -52,6 +52,11 @@ function openEventSheet(c, type, label) {
 // What the assistant proposes for the case right now: lines of text and actions.
 function guidance(c) {
   const p = plan(c);
+  // A correction waits for the person's decision: nothing is proposed on what it may change.
+  if (c.pendingFix) {
+    const names = p.levels.filter((l) => needsRecheck(c, l)).map((l) => `„${l.title.pl}”`);
+    return { lines: [`Czeka Twoja decyzja o poprawce odpowiedzi. Do tego czasu ${c.pendingFix.all ? 'cały plan wymaga' : `${names.join(', ')} ${names.length > 1 ? 'wymagają' : 'wymaga'}`} ponownego sprawdzenia, więc nic tam nie proponuję, a przypomnienia czekają.`], actions: [] };
+  }
   if (p.levels.every(settled)) return { lines: ['Wszystkie kroki z planu są zrobione. Jeśli coś się zmieni, napisz, a sprawdzę, co to zmienia w planie.'], actions: [] };
   const l = currentLevel(p);
   const lines = [], A = [];

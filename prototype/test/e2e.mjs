@@ -553,6 +553,78 @@ await scenario('H-home-input-open', {}, async (t, page) => {
   await t.nav('#chat-back', 'home');
 });
 
+/* ── I: correcting a confirmed answer after approval: diff, explicit approval, history, recheck marks ── */
+await scenario('I-correct-an-answer', {}, async (t, page) => {
+  await page.locator('.tester-strip [data-study]').click();
+  await page.locator('.study-note').waitFor({ timeout: 8000 });
+  await page.locator('[data-type="address-registration"]').click();
+  await t.q(/dla siebie czy dla kogoś/);
+  await t.chip(/^Dla siebie$/);
+  await t.q(/Która grupa Cię dotyczy/);
+  await t.chip(/Obywatel innego państwa UE/);
+  await t.q(/Na jaki pobyt/);
+  await t.chip(/^Stały/);
+  await t.autoIntake([[/miejscowości/, /Warszawa/]]);
+  await t.approvePlan(false);
+  // Teraz lists the answers, each with "Popraw".
+  await t.nav('#chat-back', 'case');
+  await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').waitFor({ timeout: 8000 });
+  await t.shot('answers');
+  await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').click();
+  await page.locator('.screen.chat').waitFor({ timeout: 8000 });
+  await t.bot(/Poprawiasz odpowiedź na pytanie/);
+  await t.q(/Na jaki pobyt/);
+  await t.chip(/^Czasowy/);
+  await page.locator('.dock [data-pick="yes"]').waitFor({ timeout: 12000 });
+  assert.match(await page.locator('.dock').innerText(), /Poprawka „Na jaki pobyt[^”]*”: Stały[^→]*→ Czasowy/);
+  await t.shot('correction-diff');
+  // Undecided: the affected steps are marked, nothing is proposed there, reminders wait.
+  await t.nav('#chat-back', 'case');
+  await page.locator('.mock-note.recheck').waitFor({ timeout: 8000 });
+  assert.ok(await page.locator('.answers-sec [data-fix][disabled]').count() >= 1, 'no second correction while one is open');
+  await t.shot('recheck-banner');
+  // The stay changes the filing step's form: that step, and only that one, is marked on the map.
+  await page.locator('.seg [data-v="map"]').click();
+  await page.locator('.tl').waitFor({ timeout: 8000 });
+  assert.match(await page.locator('.tl-card', { hasText: 'Wizyta w urzędzie gminy' }).first().innerText(), /Do ponownego sprawdzenia/);
+  assert.equal(await page.locator('.tl-card', { hasText: 'Formularz' }).first().locator('.state-chip.recheck').count(), 0, 'an unchanged step is not marked');
+  await t.shot('recheck-map');
+  await page.locator('.seg [data-v="focus"]').click();
+  await page.locator('#o-hist').click();
+  await t.sheet(/Historia/);
+  assert.match(await page.locator('.sheet-body').innerText(), /Przypomnienia czekają na Twoją decyzję o poprawce/);
+  assert.match(await page.locator('.sheet-body').innerText(), /Poprawka odpowiedzi czeka na decyzję/);
+  await t.closeSheet();
+  await page.locator('[data-tochat]').click();
+  await page.locator('.screen.chat').waitFor({ timeout: 8000 });
+  await page.locator('.dock [data-pick="yes"]').click();
+  await t.bot(/Plan zmieniony/);
+  await t.nav('#chat-back', 'case');
+  assert.equal(await page.locator('.mock-note.recheck').count(), 0, 'no marks once decided');
+  assert.match(await page.locator('.answers-sec').innerText(), /Czasowy/);
+  await page.locator('#o-hist').click();
+  await t.sheet(/Historia/);
+  const hist = await page.locator('.sheet-body').innerText();
+  assert.match(hist, /Poprawka zatwierdzona: „Na jaki pobyt[^”]*”: Stały[^→]*→ Czasowy/);
+  assert.match(hist, /Poprawka odpowiedzi czeka na decyzję/, 'the proposal stays in the history');
+  await t.closeSheet();
+  // Typed: "pomyliłem się" opens the answers; the person keeps the plan this time.
+  await t.nav('#o-chat', 'chat');
+  await t.say('pomyliłem się w jednej odpowiedzi');
+  await page.locator('.dock [data-pick="zameldowanie.citizen_group"]').click();
+  await t.q(/Która grupa Cię dotyczy/);
+  await t.chip(/Żadna z tych grup/);
+  await page.locator('.dock [data-pick="no"]').waitFor({ timeout: 12000 });
+  await page.locator('.dock [data-pick="no"]').click();
+  await t.bot(/Plan bez zmian/);
+  await t.nav('#chat-back', 'case');
+  assert.match(await page.locator('.answers-sec').innerText(), /Obywatel innego państwa UE/, 'the kept answer stays');
+  await page.locator('#o-hist').click();
+  await t.sheet(/Historia/);
+  assert.match(await page.locator('.sheet-body').innerText(), /Poprawka odrzucona, plan bez zmian/);
+  await t.closeSheet();
+});
+
 await browser.close();
 let failed = 0;
 for (const r of results) {
