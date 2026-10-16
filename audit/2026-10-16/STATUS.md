@@ -1,5 +1,9 @@
 # Formalka Next: status for the auditor
 
+> **After the audit (16.10.2026):** the answer to each finding, the claims for each environment and the errata to this report are in `RESPONSE.md`. This report stays as it was sent, so the audit can be traced to it. Two errata matter most:
+> - the repository is public, not a "private lab";
+> - "Plan sprawdzony" overstated the check.
+
 **Date:** 16.10.2026.
 **Repository:** `wrzalkosowskilukaszz/formalka-next` (private lab), branch `main`.
 **Prepared by:** Claude for the owner, Łukasz.

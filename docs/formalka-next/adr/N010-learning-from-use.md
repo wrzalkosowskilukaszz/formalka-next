@@ -1,6 +1,6 @@
 # ADR-N010: The assistant learns from use without collecting cases
 
-- **Status:** Proposed (owner's request of 2026-10-16; the on-device part is built in the prototype)
+- **Status:** Proposed (owner's request of 2026-10-16). The external audit of 2026-10-16 proposed a decision for each level; it waits for the owner (section "Audit")
 - **Date:** 2026-10-16
 - **Deciders:** Łukasz (owner), Claude. An auditor's review is requested before any part beyond the device is built.
 
@@ -15,14 +15,20 @@ Three standing rules limit how that can work:
 So "learning" cannot mean training a model on people's conversations, or moving facts from one person's case into another person's plan.
 
 ## Decision
-Learning happens at three levels. Only level 1 exists today.
+Learning happens at three levels. Only level 1 exists today, as session memory in the prototype. The audit's names for the levels are clearer than "learning":
+- level 1: the person's memory on the device, which is not model learning;
+- level 2: a controlled improvement of the reader's phrase list;
+- level 3: a signal to re-check content.
 
-1. **On the device (built in the prototype).** The assistant keeps what the person confirmed and uses it:
+1. **On the device (session memory in the prototype).** The assistant keeps what the person confirmed and uses it:
    - facts from their own words, each confirmed on a card;
    - the city;
    - the hour they last picked, offered first next time.
 
-   The case history shows it ("Co … pamięta"). It never leaves the phone, and deleting the case deletes it.
+   The case history shows it ("Co … pamięta w tej sesji").
+   - In the prototype it lasts until a reload or reset, and the last hour is shared by all cases in the session.
+   - The prototype's code does not send it anywhere.
+   - Lasting memory in the product needs the verified store first (ADR-N002): keys, backups, deletion and device loss. Deleting a case must delete its memory, with a test of that contract.
 2. **Better understanding, by people, with consent (proposed).** When the assistant does not understand a phrase, the phone can offer: "Wyślij ten zwrot, żeby asystent rozumiał go następnym razem". Rules:
    - one tap per phrase, never a standing setting;
    - the phrase is masked on the device first (`packages/domain/privacy`), with no case, no city and no identifiers;
@@ -47,9 +53,29 @@ Learning happens at three levels. Only level 1 exists today.
 - Level 1 adds no cost and no risk beyond what the device already holds.
 
 ## Open (owner and auditor)
+- **O-L0:** Adopt the audit's three decisions (section "Audit")? Claude recommends yes.
 - **O-L1:** Build level 2 at all? If so, in the private alpha (Phase 5) or later?
 - **O-L2:** The retention for unreviewed phrases, and who reviews them.
 - **O-L3:** Level 3 counters: worth the privacy cost for the content team's signal?
+
+## Audit (2026-10-16)
+The external audit proposed one decision per level (`audit/2026-10-16/RESPONSE.md` §5.6). Claude recommends adopting them as written. **OPEN:** the owner's confirmation.
+
+| Level | Decision | Conditions |
+|---|---|---|
+| 1. The person's memory on the device | **GO in a limited Phase 1** | Called session memory in v4. The person can correct and reset it. No real identifying data. Lasting product memory needs its own check of the store, keys, backups, deletion and device loss |
+| 2. Sending phrases the reader missed | **NO-GO for collection in Phase 1; deferred** | First: manual research and synthetic regressions. Before any launch:<br>• a preview of the exact payload after masking;<br>• editing;<br>• a content limit;<br>• a documented recipient and retention for every copy and log;<br>• disclosure tests;<br>• no automatic rollout of phrases |
+| 3. Outcome counters | **NO-GO for now** | First name the editorial decision each counter would change. No text, no rare combinations, no exact times. Check the metadata and the real aggregation: k ≥ 20 at publication does not protect the raw events on the way |
+
+Points from the audit that change this ADR's reasoning:
+- **Masking does not prove anonymisation.** A record without a name can still identify a person through its content, metadata or a combination of events (EDPB on anonymisation and pseudonymisation).
+- **"30 days", "k ≥ 20" and "1 hour a week" are assumptions**, not results. Before level 2 or 3, the ADR must name:
+  - access;
+  - logs and backups;
+  - deletion;
+  - abuse control;
+  - how a wrong phrase-list change is withdrawn.
+- **Learning is not banned by rule 1.** Improving extraction is not the same as using answers as a source of law. The ban on using conversations stays as an architecture and privacy choice. Formalka's value can be tested without any model learning.
 
 ## Revisit when
 - The alpha shows the reader misses more than about 1 in 5 typed answers (measure "Nie jestem pewien" replies on the device, locally).

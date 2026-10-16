@@ -56,17 +56,28 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 - **Experience prototype v4** (16.10, `prototype/`): the design-led app now runs on the case engine for all five case types.
   - One AI assistant per case.
   - Questions speak to the person ("Czy masz…"). The app first asks whether the case is the person's own or someone else's; only for someone else's case is the registry's "ta osoba" wording used (owner, 16.10; `packages/case-engine/src/voice.ts`, owner review of the wording pending).
-  - An action under every reply: the form here or the official form; offices by district with maps, hours and booking; visits, calls and dates.
-  - Every answer can be typed, read on the device and confirmed.
-  - The assistant's memory stays on the phone.
-  - Tests: 11 unit tests, lint, and 5 end-to-end scenarios in both motion modes.
+  - Replies that answer propose the next step: the form here or the official form; offices by district with maps, hours and booking; visits, calls and dates. Unclear or refused answers ask to clarify, with no action (audit F8).
+  - Every answer can be typed, read on the device and confirmed. Consent with consequences is taken only from a short list of full answers (audit F5).
+  - Session memory, until a reload or reset; the prototype's code sends no case data.
+  - Study mode: address registration only, for moderated sessions on fictional cases.
+  - Tests: 13 unit tests, lint, and 6 end-to-end scenarios in both motion modes.
   - Auditor package: `audit/2026-10-16/STATUS.md`.
+- **External audit (2026-10-16), the verdict accepted** (`audit/2026-10-16/RESPONSE.md`):
+  - GO for problem interviews;
+  - conditional GO for moderated tests on fictional cases;
+  - NO-GO for real cases.
+
+  The prototype's findings (F1 wording, F5, F7, F8) are fixed, and the test script follows the audit's Phase 1 section. Waiting on the owner:
+  - **the repository is public, while ADR-N001 says private;**
+  - the independent reference for address registration;
+  - the review of the second-person wording;
+  - the ADR-N010 decisions.
 - **Learning from use** (ADR-N010, Proposed): the owner asked that the assistant learn from every user's answers. The proposal:
-  - the device memory, which is built;
+  - the device memory (session memory in the prototype);
   - reviewed, masked phrases with one-tap consent;
   - anonymous outcome counters that trigger content checks.
 
-  Never training on conversations, never facts from users. Levels 2 and 3 await the owner and an auditor.
+  Never training on conversations, never facts from users. The audit proposes: level 1 GO as session memory; levels 2 and 3 NO-GO for now. The owner decides.
 
 ## 3. Decisions recommended (ADRs in `adr/`, all "Proposed")
 
@@ -81,7 +92,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 | N007 | Slice 1 = address registration + PESEL, without AI; slice 2 = residence permit, only if H1 and H6 hold |
 | N008 | Each case type is a blueprint over verified procedures; locks only from the procedure's order, shown with their reason |
 | N009 | The advisor acts by itself on the device (one consent per case), with quiet hours, one notification a day and no claimed actions |
-| N010 | The assistant learns from use without collecting cases: device memory now; reviewed phrases and anonymous outcome counters only with consent and the owner's decision |
+| N010 | The assistant learns from use without collecting cases: session memory on the device now; reviewed phrases and outcome counters NO-GO for now (audit, 16.10) |
 
 ## 4. Reuse of today's Formalka (01 §4)
 Reused largely as is:
