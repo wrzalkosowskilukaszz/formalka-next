@@ -576,7 +576,7 @@ async function callFlow(c) {
   const p = plan(c);
   const l = p.levels.find((x) => x.state !== 'done' && (x.office || x.completesWith));
   if (!l) return;
-  await say(c, `Wniosek, na razie szkic z makiety, jest w Teczce. Następny krok w urzędzie: „${esc(l.title.pl)}”.`);
+  await say(c, `Ćwiczenie na makiecie jest w Teczce. Do urzędu potrzebny jest oficjalny formularz: pobierz wzór, wypełnij go ręcznie i odhacz zadanie, gdy będzie gotowy. Następny krok w urzędzie: „${esc(l.title.pl)}”.`);
   await say(c, esc(E.msg.cannotBook()));
   const days = [1, 2].map((n) => isoAdd(S.clock.date, n));
   const d = await ask({ c, q: 'Na który dzień przypomnienie?', dk: false, anyWhen: 'day', placeholder: 'Albo napisz, na przykład: w środę',
@@ -617,7 +617,7 @@ function openForm(c, taskId) {
   layer.innerHTML = `<div class="full" role="dialog" aria-modal="true" aria-labelledby="form-h">
     <header class="appbar pad"><button type="button" class="circle-btn" id="form-close" aria-label="Zamknij">${icon('x')}</button><span class="ttl"><b id="form-h">${esc(t.officialName || cap(t.title.pl))}</b><span>Makieta formularza</span></span></header>
     <div class="scroll pad"><div class="stack">
-    <p class="mock-note">${icon('info')}<span><b>Makieta, nie oficjalny formularz.</b> ${esc(t.description?.pl || '')} Wypełnianie prawdziwych PDF sprawdzamy osobno (spike S3). Wpisuj dane przykładowe.${t.quotes?.length ? ` Źródło: ${srcLink(t.quotes)}.` : ''}</span></p>
+    <p class="mock-note">${icon('info')}<span><b>Makieta do ćwiczenia, nie oficjalny formularz.</b> ${esc(t.description?.pl || '')} Do urzędu zanieś oficjalny wzór, wypełniony ręcznie: nie wiemy jeszcze, czy urzędy przyjmują formularze wypełnione przez aplikację. Wpisuj dane przykładowe.${t.quotes?.length ? ` Źródło: ${srcLink(t.quotes)}.` : ''}</span></p>
     <form id="mock-form" novalidate style="display:flex;flex-direction:column;gap:var(--s4)">
       <section class="form-sec"><h2>Dane osoby</h2>
         <div class="field"><label for="f-name">Imię</label><input id="f-name" name="name" autocomplete="off"><span class="err" hidden>Wpisz imię.</span></div>
@@ -625,7 +625,7 @@ function openForm(c, taskId) {
         <div class="field"><label for="f-birth">Data urodzenia</label><input id="f-birth" name="birth" inputmode="numeric" placeholder="dd.mm.rrrr" autocomplete="off"></div></section>
       ${answers.length ? `<section class="form-sec"><h2>Z Twoich odpowiedzi</h2><ul class="answers-list">${answers.map(([q, a]) => `<li><span class="meta">${esc(q)}</span><b>${esc(a)}</b></li>`).join('')}</ul><span class="from">${icon('chat-circle-dots')} Przepisane z rozmowy.</span></section>` : ''}
       <button type="button" class="btn btn-quiet" id="form-sample">Wypełnij przykładowymi danymi</button>
-      <button type="submit" class="btn btn-accent btn-knob press"><span class="knob">${icon('folder-simple')}</span>Zapisz szkic PDF w Teczce</button>
+      <button type="submit" class="btn btn-accent btn-knob press"><span class="knob">${icon('folder-simple')}</span>Zapisz ćwiczenie w Teczce</button>
       <p class="meta">Teczka jest tylko na tym telefonie. W prototypie znika po resecie.</p>
     </form></div></div></div>`;
   $('#form-close', layer).onclick = closeLayer;
@@ -636,16 +636,16 @@ function openForm(c, taskId) {
     let bad = null;
     ['name', 'sur'].forEach((n) => { const err = f[n].parentElement.querySelector('.err'); const miss = !f[n].value.trim(); err.hidden = !miss; f[n].setAttribute('aria-invalid', String(miss)); if (miss && !bad) bad = f[n]; });
     if (bad) { bad.focus(); return; }
-    setTask(c, t.id, 'done');
+    // Practice never completes the task: the official form is still to be filled in by hand (doc 18, R4).
     const lv = plan(c).levels.find((x) => x.tasks.some((y) => y.id === t.id));
-    const fileName = `${norm(t.officialName || lv?.title.pl || 'wniosek').split(' ').slice(0, 3).join('-')}-szkic.pdf`;
+    const fileName = `${norm(t.officialName || lv?.title.pl || 'wniosek').split(' ').slice(0, 3).join('-')}-makieta.pdf`;
     c.files = c.files.filter((x) => x.name !== fileName);
-    c.files.unshift({ name: fileName, kind: 'Szkic z makiety, nie oficjalny wniosek', at: stamp(S.clock), icon: 'file-text',
+    c.files.unshift({ name: fileName, kind: 'Ćwiczenie na makiecie, nie do urzędu', at: stamp(S.clock), icon: 'file-text',
       fields: [['Formularz', t.officialName || t.title.pl], ['Imię i nazwisko', `${f.name.value.trim()} ${f.sur.value.trim()}`], ...answers.slice(0, 3)] });
-    logAct(c, 'Szkic wniosku zapisany w Teczce');
+    logAct(c, 'Ćwiczenie na makiecie formularza zapisane w Teczce');
     if (!c.state.events.some((x) => x.type === 'call_planned' || x.type === 'visit_planned')) {
       c.pending = 'call';
-      c.preview = 'Wniosek jest w Teczce. Ustawić przypomnienie o telefonie do urzędu?';
+      c.preview = 'Ćwiczenie jest w Teczce. Ustawić przypomnienie o telefonie do urzędu?';
     }
     $('.full', layer).append(h(`<div class="saving" aria-hidden="true"><span class="fly">${icon('file-text')}</span></div>`));
     later(1000, () => { layer.innerHTML = ''; toast(`Zapisano w Teczce: ${fileName}`, 'folder-simple-fill'); afterChange(c); });

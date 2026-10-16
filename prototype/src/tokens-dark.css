@@ -31,5 +31,8 @@
   --e2: 0 1px 3px rgb(0 0 0 / 0.3), 0 10px 30px rgb(0 0 0 / 0.35);
   --e3: 0 24px 64px rgb(0 0 0 / 0.6), 0 4px 12px rgb(0 0 0 / 0.4);
   --e-hero: 0 18px 40px rgb(10 40 160 / 0.45);
+  --e-accent: 0 8px 20px rgb(10 40 160 / 0.45);
+  --e-dock: 0 -8px 30px rgb(0 0 0 / 0.35);
+  --e-bar: 0 12px 32px rgb(0 0 0 / 0.45);
   --glass: rgb(30 35 44 / 0.72);
   --glass-line: rgb(255 255 255 / 0.08);

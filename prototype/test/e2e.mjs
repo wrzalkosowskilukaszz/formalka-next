@@ -29,7 +29,7 @@ const results = [];
 const ONLY = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
 async function scenario(name, opts, fn) {
   if (ONLY && !name.startsWith(ONLY)) return;
-  const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, colorScheme: opts.scheme || 'light', reducedMotion: MOTION ? 'no-preference' : 'reduce' });
+  const page = await browser.newPage({ viewport: opts.viewport || { width: 390, height: 844 }, deviceScaleFactor: opts.scale || 2, colorScheme: opts.scheme || 'light', reducedMotion: MOTION ? 'no-preference' : 'reduce' });
   const errors = [], requests = [];
   page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
   page.on('console', (m) => { if (m.type() === 'error') errors.push(`console: ${m.text()}`); });
@@ -43,6 +43,7 @@ async function scenario(name, opts, fn) {
   const started = Date.now();
   try {
     await page.goto(URL_);
+    if (opts.textZoom) await page.addStyleTag({ content: `html { font-size: ${opts.textZoom * 100}% !important; }` });
     await page.locator('#home-t').waitFor({ timeout: 8000 });
     await fn(t, page);
     await checkScreen(page);
@@ -70,6 +71,28 @@ async function checkScreen(page) {
       never: never.filter((p) => shown.includes(p.toLowerCase())),
       emDash: shown.includes('—'),
       rawIds: shown.match(/\b[a-z]+_[a-z_]+\b/g) ?? [],
+      // D11: nothing cut off at the sides, outside rows built to scroll sideways.
+      clipped: [...document.querySelectorAll('#app *')].filter((el) => el.children.length === 0 && el.offsetParent !== null && (el.textContent.trim() || el.matches('svg, button, a, input')))
+        .filter((el) => { for (let p = el.parentElement; p; p = p.parentElement) { const ox = getComputedStyle(p).overflowX; if (ox === 'auto' || ox === 'scroll') return false; } return true; })
+        .filter((el) => { const r = el.getBoundingClientRect(); return r.width > 0 && (r.right > innerWidth + 1 || r.left < -1); })
+        .slice(0, 5).map((el) => `${el.tagName.toLowerCase()}.${[...el.classList].join('.')} "${el.textContent.trim().slice(0, 24)}"`),
+      // D9: one primary action in view.
+      // What the eye sees as primary: the accent fill, in view, not covered by a full-screen layer.
+      primaries: (() => {
+        const probe = document.createElement('i'); probe.style.background = 'var(--accent)'; document.body.append(probe);
+        const accent = getComputedStyle(probe).backgroundColor; probe.remove();
+        const covered = !!document.querySelector('#layer .full');
+        return [...document.querySelectorAll('#app button, #app a, #layer button, #layer a')]
+          .filter((el) => { const r = el.getBoundingClientRect(); return el.offsetParent !== null && r.bottom > 0 && r.top < innerHeight && !el.closest('.tester-strip') && !(covered && el.closest('#app')); })
+          .filter((el) => getComputedStyle(el).backgroundColor === accent && !el.matches('.send, [role=switch]'))
+          .map((el) => `${el.textContent.trim().slice(0, 30)}`);
+      })(),
+      // D3: touch targets. Links inside running text are exempt (WCAG 2.5.8 "inline").
+      small: [...document.querySelectorAll('#app button, #app a[href], #app input:not([type=hidden]), #app select, #app [role=switch], #layer button, #layer a[href], #layer input, #tabbar button')]
+        .filter((el) => el.offsetParent !== null && !el.closest('p, li > span, .cite, .src, .tester-strip, .tester-panel') && !el.disabled)
+        .map((el) => { const r = el.getBoundingClientRect(); return { r, el }; })
+        .filter(({ r }) => r.width > 0 && (r.width < 44 || r.height < 44))
+        .map(({ r, el }) => `${el.tagName.toLowerCase()}.${[...el.classList].join('.')}${el.id ? `#${el.id}` : ''} ${Math.round(r.width)}x${Math.round(r.height)}`),
     };
   });
   assert.equal(r.overflow, '', 'horizontal overflow');
@@ -77,7 +100,15 @@ async function checkScreen(page) {
   assert.deepEqual(r.never, [], 'never-say phrase shown');
   assert.equal(r.emDash, false, 'em dash shown');
   assert.deepEqual([...r.rawIds], [], 'an internal identifier shown as text');
+  if (process.env.REPORT_TARGETS) for (const x of r.small) SMALL.add(x);
+  if (process.env.REPORT_TARGETS && r.primaries.length > 1) SMALL.add(`PRIMARIES ${r.primaries.length}: ${r.primaries.join(' | ')}`);
+  else if (!process.env.REPORT_TARGETS) assert.ok(r.primaries.length <= 1, `D9: more than one primary action in view: ${r.primaries.join(' | ')}`);
+  else assert.deepEqual([...r.small], [], 'D3: a touch target under 44 px');
+  if (process.env.REPORT_TARGETS) for (const x of r.clipped) SMALL.add(`CLIPPED ${x}`);
+  else assert.deepEqual([...r.clipped], [], 'D11: content cut off at the side');
 }
+const SMALL = new Set();
+process.on('exit', () => { if (process.env.REPORT_TARGETS) console.log([...SMALL].sort().join('\n')); });
 
 function makeHelpers(page, name, shot) {
   const dock = page.locator('.dock');
@@ -254,7 +285,10 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   assert.match(await page.evaluate(() => placedNotes(S.cases[0], plan(S.cases[0]), plan(S.cases[0]).levels.find((l) => l.id === 'file'))), /Jeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście/);
   const guide = await t.bot(/Na tym etapie/);
   assert.ok(await guide.locator('a.act[href*="gov.pl"][target="_blank"]').count() >= 1, 'download link to the official form');
-  assert.ok(await guide.locator('.act', { hasText: 'Wypełnij tutaj' }).count() === 1, 'interactive fill');
+  // Doc 18, R4: the official blank comes first; the in-app form is practice on a mock.
+  assert.ok(await guide.locator('a.act.act-primary[href*="gov.pl"]').count() === 1, 'the official form is the primary action');
+  assert.ok(await guide.locator('.act', { hasText: 'Przećwicz na makiecie' }).count() === 1, 'practice on the mock');
+  assert.match(await guide.innerText(), /do urzędu się nie nadaje/);
   await t.shot('guide-form');
   await t.act(/Urzędy i mapa/);
   await t.sheet(/Urzędy: Warszawa/);
@@ -269,11 +303,14 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   const visible = await page.locator('.office:visible').count();
   assert.ok(visible >= 1 && visible < offices, `district filter (${visible})`);
   await t.closeSheet();
-  await t.act(/Wypełnij tutaj/);
+  await t.act(/Przećwicz na makiecie/);
   await page.locator('#form-sample').click();
   await t.shot('form');
   await page.locator('#mock-form [type="submit"]').click();
   await t.toast(/Zapisano w Teczce/);
+  // Practice never ticks the form task: the official form is still to be filled in by hand.
+  assert.ok(await page.evaluate(() => plan(S.cases[0]).levels.find((l) => l.id === 'fill-in').state !== 'done'), 'the form step stays open after practice');
+  await t.bot(/Do urzędu potrzebny jest oficjalny formularz/);
   // Right after the form the assistant offers the call reminder, every answer typed.
   await t.q(/Na który dzień/);
   await t.say('jutro');
@@ -305,7 +342,7 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   await page.locator('.ag', { hasText: 'Odebrać tłumaczenie' }).first().waitFor({ timeout: 8000 });
   await t.shot('calendar');
   await t.tab('teczka');
-  await page.locator('.doc', { hasText: /szkic\.pdf/ }).waitFor({ timeout: 8000 });
+  await page.locator('.doc', { hasText: /makieta\.pdf/ }).waitFor({ timeout: 8000 });
   await t.shot('teczka');
   // Three days on: no consent, so no lock-screen notifications; the messages wait in the chat.
   await page.locator('.tester-strip [data-travel="3"]').click();
@@ -512,6 +549,32 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.locator('.study-note').waitFor({ state: 'detached', timeout: 8000 });
   await page.waitForFunction(() => document.querySelectorAll('.ex').length === 5, null, { timeout: 8000 });
 });
+
+/* ── Z: zoom and reflow (D11; WCAG 2.2 1.4.10 at 320 CSS px, and 1.4.4 text at 200% on the phone). Nothing may
+   be cut off or need sideways scrolling (checkScreen runs on every step). ── */
+const zoomed = async (t, page) => {
+  await page.locator('[data-type="address-registration"]').click();
+  await t.q(/dla siebie czy dla kogoś/);
+  await t.chip(/^Dla siebie$/);
+  await t.q(/Która grupa Cię dotyczy/);
+  await t.chip(/Obywatel innego państwa UE/);
+  await t.q(/Na jaki pobyt/);
+  await t.chip(/^Czasowy/);
+  await t.autoIntake([[/miejscowości/, /Warszawa/]]);
+  await t.shot('plan');
+  await t.approvePlan(false);
+  await t.nav('#chat-back', 'case');
+  await t.shot('teraz');
+  await page.locator('.seg [data-v="map"]').click();
+  await page.locator('.tl').waitFor({ timeout: 8000 });
+  await t.shot('map');
+  await t.tab('teczka');
+  await t.shot('teczka');
+  await t.tab('calendar');
+  await t.shot('calendar');
+};
+await scenario('Z1-reflow-320', { viewport: { width: 320, height: 640 } }, zoomed);
+await scenario('Z2-text-200', { textZoom: 2 }, zoomed);
 
 /* ── G: waiting for the office (owner, 16.10): the person's need first, from the registry ── */
 await scenario('G-waiting-for-office', {}, async (t, page) => {

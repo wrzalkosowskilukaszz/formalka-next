@@ -33,6 +33,7 @@
   --on-hero: #ffffff;
   --on-hero-2: #d7e3ff;
   --hero-glass: rgb(255 255 255 / 0.16);
+  --hero-glass-strong: rgb(255 255 255 / 0.22);
   --hero-line: rgb(255 255 255 / 0.45);
 
   /* Frosted chrome (tab bar), after Muse and Liquid Glass. */
@@ -85,6 +86,7 @@
   --t-xl: 1.75rem;
   --t-2xl: 2.25rem;
   --t-3xl: 2.75rem;
+  --t-clock: 5.5rem; /* the lock screen's time */
   --w-regular: 400;
   --w-medium: 500;
   --w-strong: 600;
@@ -107,15 +109,31 @@
   --r-card: 28px;
   --r-tile: 20px;
   --r-inner: 14px;
+  --r-sm: 8px; /* small pills, a bubble's tail */
+  --r-hair: 2px; /* bars and hairlines */
+  --r-device: 58px; /* the desktop phone frame */
+  --r-screen: 47px;
 
   --e1: 0 1px 2px rgb(15 18 23 / 0.05);
   --e2: 0 1px 3px rgb(15 18 23 / 0.04), 0 10px 30px rgb(15 18 23 / 0.07);
   --e3: 0 24px 64px rgb(15 18 23 / 0.2), 0 4px 12px rgb(15 18 23 / 0.08);
   --e-hero: 0 18px 40px rgb(20 70 230 / 0.32);
+  --e-accent: 0 8px 20px rgb(29 92 255 / 0.28);
+  --e-knob: 0 2px 8px rgb(0 0 0 / 0.2);
+  --e-dock: 0 -8px 30px rgb(15 18 23 / 0.07);
+  --e-bar: 0 12px 32px rgb(10 14 22 / 0.14);
+  --e-device: 0 40px 80px rgb(10 14 22 / 0.28), inset 0 0 0 2px rgb(255 255 255 / 0.06);
 
   --dur-fast: 140ms;
   --dur: 240ms;
   --dur-slow: 420ms;
+  --dur-enter: 520ms; /* a sheet, a card or a screen arriving */
+  --dur-long: 900ms; /* a drawn line, the typing dots */
+  --dur-fly: 1100ms; /* saving to the Teczka */
+  --dur-loop: 2600ms; /* the current step's pulse */
+  --stagger: 120ms; /* between items entering one after another */
+  --dur-reduced: 200ms; /* the fades left under reduced motion */
+  --dur-none: 1ms;
   --ease: cubic-bezier(0.32, 0.72, 0, 1);
   --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 

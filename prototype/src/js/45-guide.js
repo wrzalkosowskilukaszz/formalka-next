@@ -16,7 +16,7 @@ const mapsUrl = (o) => `https://www.google.com/maps/search/?api=1&query=${encode
 const ACTS = new Map();
 let ACT_SEQ = 0;
 function actHTML(c, a) {
-  if (a.kind === 'link') return `<a class="chip chip-sm act" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${icon(a.ic || 'arrow-square-out')} ${esc(a.label)}</a>`;
+  if (a.kind === 'link') return `<a class="chip chip-sm act${a.primary ? ' act-primary' : ''}" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${icon(a.ic || 'arrow-square-out')} ${esc(a.label)}</a>`;
   const id = `a${++ACT_SEQ}`;
   ACTS.set(id, { ...a, cid: c.id });
   return `<button type="button" class="chip chip-sm act${a.primary ? ' act-primary' : ''}" data-do="${id}">${icon(a.ic || 'arrow-right')} ${esc(a.label)}</button>`;
@@ -77,13 +77,15 @@ function guidance(c) {
     if (form) {
       const links = taskLinks(form);
       const name = form.officialName || form.title.pl;
-      const here = 'wypełnić go tutaj i zapisać szkic PDF w Teczce, żeby później go wydrukować';
+      // Doc 18, R4: offices' acceptance of software-filled forms is unknown, so the official blank comes
+      // first and the in-app form is practice on a mock, never the document for the office.
+      const practice = 'Możesz też najpierw przećwiczyć wypełnianie tutaj, na makiecie z przykładowymi danymi; do urzędu się nie nadaje';
       lines.push(`${form.officialName ? `Na tym etapie wypełniasz dokument: ${name}.` : `Na tym etapie: ${name.charAt(0).toLowerCase()}${name.slice(1)}.`} ${links.length
-        ? `Możesz pobrać wzór z oficjalnej strony, wydrukować go i wypełnić ręcznie${isFormable(form) ? `, albo ${here}` : ''}.`
-        : `Wzoru nie mamy jako pliku: jest na oficjalnej stronie.${isFormable(form) ? ` Możesz też ${here}.` : ''}`}`);
-      if (isFormable(form)) A.push({ kind: 'form', taskId: form.id, label: 'Wypełnij tutaj', ic: 'file-text', primary: true });
-      links.slice(0, 2).forEach((x) => A.push({ kind: 'link', url: x.url, label: x.label.replace(/^Pobierz /, 'Pobierz '), ic: 'arrow-square-out' }));
-      if (!links.length && form.quotes?.length) A.push({ kind: 'link', url: form.quotes[0].page, label: `Strona ze wzorem (${host(form.quotes[0].page)})` });
+        ? 'Pobierz wzór z oficjalnej strony, wydrukuj go i wypełnij ręcznie.'
+        : 'Wzoru nie mamy jako pliku: jest na oficjalnej stronie.'}${isFormable(form) ? ` ${practice}.` : ''}`);
+      links.slice(0, 2).forEach((x, k) => A.push({ kind: 'link', url: x.url, label: x.label, ic: 'arrow-square-out', primary: k === 0 }));
+      if (!links.length && form.quotes?.length) A.push({ kind: 'link', url: form.quotes[0].page, label: `Strona ze wzorem (${host(form.quotes[0].page)})`, primary: true });
+      if (isFormable(form)) A.push({ kind: 'form', taskId: form.id, label: 'Przećwicz na makiecie', ic: 'file-text' });
     }
     const docs = open.filter((t) => t.kind === 'document' && t !== form);
     if (docs.length) {
@@ -172,7 +174,7 @@ function openOffices(c, levelId) {
   if (!o || !o.offices?.length) { toast(E.msg.officeUnknown(), 'info'); return; }
   const item = (x) => `<li class="office" data-q="${esc(`${x.name.pl} ${x.address?.value ?? ''}`.toLowerCase())}"><b>${esc(x.name.pl)}</b>
     ${x.address ? `<span>${icon('map-pin')} ${esc(x.address.value)}</span>` : ''}${x.openingHours ? `<span>${icon('clock')} ${esc(x.openingHours.value)}</span>` : ''}
-    <div class="acts">${x.address ? `<a class="chip chip-sm act act-primary" href="${esc(mapsUrl(x))}" target="_blank" rel="noopener noreferrer">${icon('map-trifold')} Mapa</a>` : ''}
+    <div class="acts">${x.address ? `<a class="chip chip-sm act" href="${esc(mapsUrl(x))}" target="_blank" rel="noopener noreferrer">${icon('map-trifold')} Mapa</a>` : ''}
       ${x.booking ? `<a class="chip chip-sm act" href="${esc(x.booking)}" target="_blank" rel="noopener noreferrer">${icon('calendar-check')} Rezerwacja wizyty</a>` : ''}
       ${x.website ? `<a class="chip chip-sm act" href="${esc(x.website)}" target="_blank" rel="noopener noreferrer">${icon('arrow-square-out')} Strona urzędu</a>` : ''}</div>
     ${x.address?.quotes?.length ? `<span class="cite">${icon('info')}<span>Adres i godziny ze źródła: ${srcLink(x.address.quotes)}</span></span>` : ''}</li>`;
@@ -270,10 +272,10 @@ async function answerForm(c) {
   if (!t) { await say(c, `<p>Na otwartych poziomach nie ma formularza do wypełnienia.</p>${actsHTML(c, guidance(c).actions.slice(0, 2))}`); return; }
   const links = taskLinks(t);
   const A = [];
-  if (isFormable(t)) A.push({ kind: 'form', taskId: t.id, label: 'Wypełnij tutaj', ic: 'file-text', primary: true });
-  links.slice(0, 2).forEach((x) => A.push({ kind: 'link', url: x.url, label: x.label }));
-  if (!links.length && t.quotes?.length) A.push({ kind: 'link', url: t.quotes[0].page, label: `Strona ze wzorem (${host(t.quotes[0].page)})` });
-  await say(c, `<p>Dokument: <b>${esc(t.officialName || cap(t.title.pl))}</b>. ${links.length ? 'Wzór pobierzesz z oficjalnej strony, wydrukujesz i wypełnisz ręcznie.' : 'Wzoru nie mamy jako pliku: jest na oficjalnej stronie.'}${isFormable(t) ? ' Możesz też wypełnić go tutaj: szkic PDF zapiszę w Teczce, żeby można go było później wydrukować.' : ''}</p>${actsHTML(c, A)}`);
+  links.slice(0, 2).forEach((x, k) => A.push({ kind: 'link', url: x.url, label: x.label, primary: k === 0 }));
+  if (!links.length && t.quotes?.length) A.push({ kind: 'link', url: t.quotes[0].page, label: `Strona ze wzorem (${host(t.quotes[0].page)})`, primary: true });
+  if (isFormable(t)) A.push({ kind: 'form', taskId: t.id, label: 'Przećwicz na makiecie', ic: 'file-text' });
+  await say(c, `<p>Dokument: <b>${esc(t.officialName || cap(t.title.pl))}</b>. ${links.length ? 'Wzór pobierzesz z oficjalnej strony, wydrukujesz i wypełnisz ręcznie.' : 'Wzoru nie mamy jako pliku: jest na oficjalnej stronie.'}${isFormable(t) ? ' Możesz też najpierw przećwiczyć wypełnianie na makiecie z przykładowymi danymi. Makieta nie nadaje się do urzędu.' : ''}</p>${actsHTML(c, A)}`);
 }
 async function answerOffice(c) {
   const p = plan(c);
