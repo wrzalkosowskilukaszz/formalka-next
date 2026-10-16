@@ -1,5 +1,5 @@
 # cd packages/case-engine && node tools/build-browser.mjs --locales pl; git status --short -- packages; sha256sum
-# 2026-10-16T19:05Z commit dac718b node v22.22.0
+# 2026-10-16T19:18Z commit 6b3d874 node v22.22.0
 
 # Run from packages/case-engine: esbuild writes source paths relative to the working directory, so a build from the repository root differs only in those path comments.
 
