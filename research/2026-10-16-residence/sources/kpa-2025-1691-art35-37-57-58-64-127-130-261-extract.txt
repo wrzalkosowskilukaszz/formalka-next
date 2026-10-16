@@ -1,4 +1,4 @@
-# Kodeks postępowania administracyjnego, Dz.U. 2025 poz. 1691 (consolidated, 7.11.2025): art. 35-37 (time limits, ponaglenie), art. 57-58 (counting, restoring a deadline), art. 127-130 (appeal)
+# Kodeks postępowania administracyjnego, Dz.U. 2025 poz. 1691 (consolidated, 7.11.2025): art. 35-37 (time limits, ponaglenie), art. 57-58 (counting, restoring a deadline), art. 64 (formal defects), art. 127-130 (appeal), art. 261 (fees paid in advance)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf, retrieved 2026-10-16, sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b. Amendments after 7.11.2025: none listed by api.sejm.gov.pl on 2026-10-16 (tools/sources/amendments.mjs DU/1960/168 2025-11-07).
 
      Art. 35. § 1. Organy administracji publicznej obowiązane są załatwiać sprawy bez zbędnej zwłoki.
@@ -137,3 +137,20 @@ ustnie – od dnia jej ogłoszenia stronie.
      § 4. Decyzja podlega wykonaniu przed upływem terminu do wniesienia odwołania, jeżeli jest zgodna z żądaniem wszyst-
 kich stron lub jeżeli wszystkie strony zrzekły się prawa do wniesienia odwołania.
        Art. 131. O wniesieniu odwołania organ administracji publicznej, który wydał decyzję, zawiadomi strony.
+[...]
+     Art. 64. § 1. Jeżeli w podaniu nie wskazano adresu wnoszącego i nie ma możności ustalenia tego adresu na podstawie
+posiadanych danych, podanie pozostawia się bez rozpoznania.
+     § 2. Jeżeli podanie nie spełnia innych wymagań ustalonych w przepisach prawa, należy wezwać wnoszącego do usunięcia
+braków w wyznaczonym terminie, nie krótszym niż siedem dni, z pouczeniem, że nieusunięcie tych braków spowoduje
+pozostawienie podania bez rozpoznania.
+[...]
+     Art. 261. § 1. Jeżeli strona nie wpłaciła należności tytułem opłat i kosztów postępowania, które zgodnie z przepisami
+powinny być uiszczone z góry, organ administracji publicznej prowadzący postępowanie wyznaczy jej termin do wniesienia
+tych należności. Termin ten nie może być krótszy niż siedem dni, a dłuższy niż czternaście dni.
+     § 2. Jeżeli w wyznaczonym terminie należności nie zostaną uiszczone, podanie podlega zwrotowi lub czynność uzależ-
+niona od opłaty zostanie zaniechana.
+     § 3. Na postanowienie w sprawie zwrotu podania służy zażalenie.
+     § 4. Organ powinien jednak załatwić podanie mimo nieuiszczenia należności:
+1)   jeżeli za niezwłocznym załatwieniem przemawiają względy społeczne lub wzgląd na ważny interes strony;
+2)   jeżeli wniesienie podania stanowi czynność, dla której jest ustanowiony termin zawity;
+3)   jeżeli podanie wniosła osoba zamieszkała za granicą.

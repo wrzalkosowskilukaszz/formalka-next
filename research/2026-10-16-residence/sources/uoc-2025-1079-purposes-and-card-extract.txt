@@ -1,7 +1,7 @@
 # Ustawa o cudzoziemcach, Dz.U. 2025 poz. 1079 (consolidated, 25.07.2025): purposes and the card
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-16, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0
 # Extract: art. 114-120 (work: single permit and its change), art. 144 (study), art. 158-160 (family), art. 226-229 and 244-248 (the residence card). pdftotext -layout.
-# As amended from 27.04.2026 by Dz.U. 2025 poz. 1794 art. 1 pkt 16-17 (art. 114, 120a) and pkt 42-50 (art. 226-248); see the amendment extracts. Not the law in force on its own.
+# As amended by Dz.U. 2025 poz. 1794: art. 1 pkt 16-17 (art. 114, 120a) and pkt 44 lit. b, 47-50 (art. 228 pkt 2, 244, 246, 248) from 27.04.2026; pkt 42-46 (art. 226-229 and cross-references) from 1.04.2026 (its art. 19 pkt 2-3, M.P. 2026 poz. 370); see the amendment extracts. Not the law in force on its own.
 
 === art. 114-120 ===
     Art. 114. 1. Zezwolenia na pobyt czasowy i pracę udziela się, gdy celem pobytu cudzoziemca na terytorium Rzeczy-
