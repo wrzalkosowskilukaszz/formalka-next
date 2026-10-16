@@ -680,6 +680,10 @@ await scenario('I-correct-an-answer', {}, async (t, page) => {
   const card = await page.evaluate(() => [...teczkaScreen().querySelectorAll('.doc-row')].map((r) => r.textContent).find((x) => /kartę pobytu członka rodziny/i.test(x)) ?? '');
   assert.match(card, /sprawdź, czy Cię dotyczy/);
   assert.match(card, /Tylko dla członka rodziny obywatela UE/);
+  await page.evaluate(() => openLevel(S.cases[0], 'file'));
+  await t.sheet(/Wizyta w urzędzie gminy/);
+  assert.match(await page.locator('.sheet-body li', { hasText: /kartę pobytu członka rodziny/i }).first().innerText(), /sprawdź, czy Cię dotyczy[\s\S]*Tylko dla członka rodziny/);
+  await t.closeSheet();
   // Teraz lists the answers, each with "Popraw".
   await t.nav('#chat-back', 'case');
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').waitFor({ timeout: 8000 });

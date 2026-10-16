@@ -315,7 +315,7 @@ function openLevel(c, id) {
   sheet(l.title.pl, `<div style="display:flex;gap:var(--s3);align-items:center"><span class="tile-ic">${icon(levelIcon(l))}</span>${stateChip(l)}</div>
     ${l.reason ? `<p class="mock-note">${icon(l.state === 'locked' ? 'lock-simple' : 'info')}<span>${esc(l.reason.text.pl)}</span></p>` : ''}
     <p>${esc(levelLine(l))}.</p>
-    ${l.tasks.length ? `<section class="sec"><h3 class="sec-h">Zadania</h3><ul class="bul">${l.tasks.map((t) => `<li>${esc(cap(t.title.pl))}${isDone(t) ? ' (gotowe)' : ''}</li>`).join('')}</ul></section>` : ''}
+    ${l.tasks.length ? `<section class="sec"><h3 class="sec-h">Zadania</h3><ul class="bul">${l.tasks.map((t) => `<li>${esc(cap(t.title.pl))}${isDone(t) ? ' (gotowe)' : ''}${t.outcome === 'unknown' ? ' <em class="maybe">sprawdź, czy Cię dotyczy</em>' : ''}${t.onlyIf ? `<br><small>${esc(t.onlyIf.pl)}</small>` : ''}</li>`).join('')}</ul></section>` : ''}
     ${l.fees.map(feeRow).join('')}${shownDeadlines(c, l).map((d) => `<article class="card"><p>${esc(d.description.pl)}</p>${d.due ? `<b>${esc(dueRange(d.due))}</b>` : `<p class="meta">Liczy się od: ${esc(eventLabel(c, d.from))}</p>`}${cite(d.quotes, 'Termin z przewodnika Formalki.')}</article>`).join('')}
     ${l.office ? `<article class="card">${officeHtml(l.office, c)}</article>` : ''}${placedNotes(c, p, l)}${notesHtml(l.notes, 6)}
     ${canGo ? `<button type="button" class="btn btn-accent btn-block" id="lv-go">Przejdź do tego poziomu</button>` : ''}`, (sh) => {
