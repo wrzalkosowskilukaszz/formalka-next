@@ -591,7 +591,7 @@ function openForm(c, taskId) {
         <div class="field"><label for="f-name">Imię</label><input id="f-name" name="name" autocomplete="off"><span class="err" hidden>Wpisz imię.</span></div>
         <div class="field"><label for="f-sur">Nazwisko</label><input id="f-sur" name="sur" autocomplete="off"><span class="err" hidden>Wpisz nazwisko.</span></div>
         <div class="field"><label for="f-birth">Data urodzenia</label><input id="f-birth" name="birth" inputmode="numeric" placeholder="dd.mm.rrrr" autocomplete="off"></div></section>
-      ${answers.length ? `<section class="form-sec"><h2>Z Twoich odpowiedzi</h2><ul class="answers-list">${answers.map(([q, a]) => `<li><span class="meta">${esc(q)}</span><b>${esc(a)}</b></li>`).join('')}</ul><span class="from">${icon('chat-circle-dots')} Przepisane z rozmowy. Możesz je zmienić w czacie.</span></section>` : ''}
+      ${answers.length ? `<section class="form-sec"><h2>Z Twoich odpowiedzi</h2><ul class="answers-list">${answers.map(([q, a]) => `<li><span class="meta">${esc(q)}</span><b>${esc(a)}</b></li>`).join('')}</ul><span class="from">${icon('chat-circle-dots')} Przepisane z rozmowy.</span></section>` : ''}
       <button type="button" class="btn btn-quiet" id="form-sample">Wypełnij przykładowymi danymi</button>
       <button type="submit" class="btn btn-accent btn-knob press"><span class="knob">${icon('folder-simple')}</span>Zapisz szkic PDF w Teczce</button>
       <p class="meta">Teczka jest tylko na tym telefonie. W prototypie znika po resecie.</p>
