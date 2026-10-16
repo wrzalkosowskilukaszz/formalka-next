@@ -15,8 +15,16 @@ async function startCase(bpId, text) {
   }
   await say(c, esc(E.msg.intro(personaOf(c), c.title)), 600);
   await askWhom(c, text);
+  // "Potrzebuję przyspieszyć wydanie karty" is about a case already filed: that need comes first.
+  if (text && readWaiting(text) && hasWaiting(c) && !(await waitingFlow(c))) { pauseIntake(c); return; }
   if (text) await readWords(c, text);
   await intakeLoop(c);
+}
+// The plan waits until the person asks for it; the case stays, and typing resumes the questions.
+function pauseIntake(c) {
+  S.building = null;
+  mountBuilder();
+  logAct(c, 'Plan sprawy odłożony na później');
 }
 
 // Whose case it is (owner, 2026-10-16): the questions speak to the person, or ask about someone else.
@@ -372,6 +380,13 @@ function free(text) {
       await say(c, `<p>Nie jestem ${gendered(c, 'pewien', 'pewna')}, jak poszło. Wybierz jedną odpowiedź:</p><div class="opts fu">${E.msg.followUpAnswers.map((a) => `<button type="button" class="chip chip-sm" data-fu="${esc(fu)}" data-case="${c.id}" data-a="${esc(a.id)}">${esc(a.label)}</button>`).join('')}</div>`);
       return;
     }
+    if (readWaiting(text) && hasWaiting(c)) {
+      const more = await waitingFlow(c);
+      if (!c.state.approved) { if (more) return resumeIntake(c, null); return pauseIntake(c); }
+      return;
+    }
+    // "Ułóż plan", after the plan was put off: back to the questions.
+    if (!c.state.approved && S.building !== c.id && /(?:^| )(?:uloz\w*|zaplanuj\w*|plan\w*|dalej|wracamy|kontynuuj\w*)(?= |$)/.test(norm(text))) return resumeIntake(c);
     if (!c.state.approved) {
       if (!(await readWords(c, text))) await notSure(c, 'Wróćmy do planu: odpowiedz na pytanie poniżej, przyciskiem albo własnymi słowami.');
       return resumeIntake(c, null);

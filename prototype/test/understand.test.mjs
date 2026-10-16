@@ -174,3 +174,8 @@ test('an answer that fits no option: the reply reasons over the words, never pic
   assert.match(app.reflect({ c, options: stay }, 'potrzebuję też numeru PESEL'), /Wspominasz o innej sprawie: PESEL/);
   assert.match(app.reflect({ c, options: stay }, 'wynajmuję od znajomego'), /Wystarczy jedno słowo, na przykład „Stały” albo „Czasowy”/);
 });
+
+test('waiting for the office: the need is read from the words, not as a new application', () => {
+  for (const t of ['Potrzebuję przyspieszyć wydanie karty pobytu', 'Długo czekam na decyzję', 'kiedy będzie decyzja?', 'jak napisać ponaglenie', 'Nadal nie ma decyzji w mojej sprawie']) assert.ok(app.readWaiting(t), t);
+  for (const t of ['Ogarnij mi temat karty pobytu', 'Chcę złożyć wniosek o kartę pobytu', 'Muszę się zameldować', 'czekam']) assert.ok(!app.readWaiting(t), t);
+});

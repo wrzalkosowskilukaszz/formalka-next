@@ -505,6 +505,32 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.waitForFunction(() => document.querySelectorAll('.ex').length === 5, null, { timeout: 8000 });
 });
 
+/* ── G: waiting for the office (owner, 16.10): the person's need first, from the registry ── */
+await scenario('G-waiting-for-office', {}, async (t, page) => {
+  await page.fill('#home-t', 'Potrzebuję przyspieszyć wydanie karty pobytu');
+  await page.press('#home-t', 'Enter');
+  await t.heard(/Twoja sprawa/);
+  await t.bot(/Nie przyspieszę tego za Ciebie/);
+  await t.q(/Na co teraz czekasz/);
+  assert.ok(!/W jakim celu/.test(await page.locator('.dock').innerText()), 'no new-application question before the need is answered');
+  await t.shot('waiting-question');
+  await t.chip(/Na decyzję wojewody/);
+  await t.bot(/Ponaglenie wnosi się: 1\) do organu wyższego stopnia/);
+  const answer = page.locator('.msg.bot', { hasText: 'Ponaglenie wnosi się' }).last();
+  assert.equal(await answer.locator('a.act[href="https://www.biznes.gov.pl/pl/portal/ou590"]').count(), 1, 'the official template, linked');
+  assert.match(await answer.innerText(), /art\. 100d/, 'the special provision is flagged');
+  assert.match(await answer.innerText(), /Nie oceniam, czy ponaglenie ma sens/);
+  await t.shot('waiting-answer');
+  // The plan waits until the person wants it; typing later resumes the questions.
+  await t.q(/Ułożyć plan całej sprawy/);
+  await t.chip(/^Nie teraz$/);
+  await page.locator('.dock .chip-q').first().waitFor({ timeout: 12000 });
+  assert.equal(await page.locator('.builder').count(), 0, 'no case bar while the plan waits');
+  await t.say('Ułóż jednak plan');
+  await t.q(/W jakim celu chcesz mieszkać w Polsce/);
+  await t.shot('waiting-then-plan');
+});
+
 await browser.close();
 let failed = 0;
 for (const r of results) {

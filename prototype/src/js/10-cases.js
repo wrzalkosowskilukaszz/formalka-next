@@ -180,7 +180,8 @@ function mapChange(before, after) {
 function progressOf(c, p = plan(c)) {
   if (c.state.approved) return 1;
   const open = p.openFacts.length + (p.route.status === 'choice' && !c.state.routeChoice ? 1 : 0);
-  const done = Object.keys(c.state.facts).length + (c.state.routeChoice ? 1 : 0);
+  // Facts the plan never asks for (where the person is in a waiting case) are not progress on the plan.
+  const done = Object.keys(c.state.facts).filter((k) => k !== 'pobyt_czasowy.waiting_for').length + (c.state.routeChoice ? 1 : 0);
   return open === 0 ? 0.95 : Math.min(0.9, done / (done + open));
 }
 
