@@ -1,0 +1,15 @@
+# node --test prototype/test/*.test.mjs
+# 2026-10-16T12:10Z commit 37bfaaa node v22.22.0
+
+ok 1 - norm folds Polish letters and punctuation
+ok 2 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
+ok 3 - yes or no questions: a bare word is taken, a sentence is asked back
+ok 4 - options with words: the matching one, or the tied ones to choose from
+ok 5 - what it does not follow stays unknown; questions about the question are recognised
+ok 6 - days and hours in words (the clock starts on Monday 19.10.2026)
+ok 7 - day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 8 - "Jak poszło?" in the person's words
+ok 9 - case intents: a case that is part of another named case gives way to it
+# tests 9
+# pass 9
+# fail 0

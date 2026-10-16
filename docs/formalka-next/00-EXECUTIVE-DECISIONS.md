@@ -52,6 +52,19 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 - **Teczka** in the slice: every document in one checklist, with alternatives, fees and the case history.
 - **The case lives on the device** (slice): kept in the browser only; free text is never stored, only confirmed facts. The city and later words go through intake as well.
 - **Changes after approval are proposals** (ADR-N003, doc 16 §6b): the person sees what a change would add, remove or make certain, with done work kept as history, and approves it or keeps the plan.
+- **Experience prototype v4** (16.10, `prototype/`): the design-led app now runs on the case engine for all five case types.
+  - One AI assistant per case.
+  - An action under every reply: the form here or the official form; offices by district with maps, hours and booking; visits, calls and dates.
+  - Every answer can be typed, read on the device and confirmed.
+  - The assistant's memory stays on the phone.
+  - Tests: 9 unit tests, lint, and 5 end-to-end scenarios in both motion modes.
+  - Auditor package: `audit/2026-10-16/STATUS.md`.
+- **Learning from use** (ADR-N010, Proposed): the owner asked that the assistant learn from every user's answers. The proposal:
+  - the device memory, which is built;
+  - reviewed, masked phrases with one-tap consent;
+  - anonymous outcome counters that trigger content checks.
+
+  Never training on conversations, never facts from users. Levels 2 and 3 await the owner and an auditor.
 
 ## 3. Decisions recommended (ADRs in `adr/`, all "Proposed")
 
@@ -66,6 +79,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
 | N007 | Slice 1 = address registration + PESEL, without AI; slice 2 = residence permit, only if H1 and H6 hold |
 | N008 | Each case type is a blueprint over verified procedures; locks only from the procedure's order, shown with their reason |
 | N009 | The advisor acts by itself on the device (one consent per case), with quiet hours, one notification a day and no claimed actions |
+| N010 | The assistant learns from use without collecting cases: device memory now; reviewed phrases and anonymous outcome counters only with consent and the owner's decision |
 
 ## 4. Reuse of today's Formalka (01 §4)
 Reused largely as is:
@@ -168,7 +182,7 @@ The hand-coding figures below are kept for comparison.
 | 12 | Cost model (`tools/cost-model.mjs`) |
 | 13 | Estimates, pilot choice, roadmap, PR sequence |
 | 14 | Adversarial review, risks, open decisions |
-| `adr/` | N001–N009 |
+| `adr/` | N001–N010 |
 | 15 | Prototype brief |
 | 16 | The Living Case engine (built) |
 | `diagrams/` | Slice 1 sequence; what leaves the device |

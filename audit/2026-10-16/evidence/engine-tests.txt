@@ -1,0 +1,36 @@
+# cd packages/case-engine && npm test
+# 2026-10-16T12:10Z commit 37bfaaa node v22.22.0
+
+ok 1 - blueprints: every step, document, fee and deadline lands on exactly one level
+ok 2 - route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure
+ok 3 - map: the certificate runs alongside the documents; submitting waits for both
+ok 4 - map: fees and their source; the recognition fee is quoted
+ok 5 - events: filing starts the office's time; a refusal opens the appeal level with dates
+ok 6 - returned: a request to fill gaps sends the documents back until the fix is submitted
+ok 7 - questions: only what can change the plan; never twice; Nie wiem counts as an answer
+ok 8 - address registration (D-01): EU 30 days, others 4; both readings of the nth day
+ok 9 - validator: tampered refs, invented dates, guessed nationality, locks without basis
+ok 10 - dates: Easter, holidays, month ends, KPA shift and the two nth-day readings
+ok 11 - dates: the rules as quoted from KPA art. 57 and the act on days off work (verified 2026-10-16)
+ok 12 - advisor: a draft plan does nothing; an approved one plans the deadline by itself
+ok 13 - advisor: a deadline that may not apply never notifies; no consent keeps all in the app
+ok 14 - advisor: a planned visit gets preparation, the morning and a follow-up; quiet hours hold
+ok 15 - advisor: stable ids, generic lock screen, and never a claim of booking, sending or filing
+ok 16 - advisor: the office's time passing is told once, as information; a quiet week gets a nudge
+ok 17 - residence card: the purpose picks MOS or paper; documents are needed to submit
+ok 18 - offices: only from the registry's office layer, by the user's city; visit messages carry them
+ok 19 - alternatives travel together; a later step done closes the steps before it
+ok 20 - warnings: the guide's own notes for this person, on the right level, important first
+ok 21 - evaluation scenarios: every reference plan meets its expectations
+ok 22 - intake: the baseline proposes no wrong value on any scenario, and quotes the person's own words
+ok 23 - intake: language and origin never become citizenship or protection
+ok 24 - intake: the checker drops what isn't asked, isn't an option, isn't verbatim, or is always asked
+ok 25 - intake: negation, need and ambiguity propose nothing
+ok 26 - intake: a candidate changes nothing until the person confirms it
+ok 27 - intake: the city, only when exactly one known city is named, never a street
+ok 28 - replan: a confirmed stay narrows the documents, in words the person can check
+ok 29 - replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
+ok 30 - replan: no change is an empty diff; a route change is named
+# tests 30
+# pass 30
+# fail 0

@@ -1,0 +1,20 @@
+# cd spikes/s1-case-engine && npm test
+# 2026-10-16T12:10Z commit 37bfaaa node v22.22.0
+
+ok 1 - rules: three-valued, Kleene and/or, unknown is never a match
+ok 2 - reg-01: the plan has every task in order, each with a ruleRef, and passes the validator
+ok 3 - determinism: same inputs give the same plan and hash; fact order does not matter
+ok 4 - no confirmed move-in date: no due date and no reminder (dates are never guessed)
+ok 5 - reg-02: 'Nie wiem' keeps both deadline branches, marked unknown, and no reminder fires
+ok 6 - questions: what changes the plan most comes first; stop when nothing left can change it
+ok 7 - adv-02: the validator rejects a value outside the catalogue (e.g. a nationality guessed from language)
+ok 8 - validator: an injected task, a fabricated due date, an unknown fact and identifying data all fail
+ok 9 - validator: a cycle and a withdrawn procedure version fail
+ok 10 - reg-03: changing the city changes only the office of the visit task
+ok 11 - reg-04: changing the stay type swaps documents; the done task stays done
+ok 12 - route change: done work is kept as history, open work becomes not needed only on approval
+ok 13 - reminders: the day before the earliest reading, 09:00 Warsaw, generic text, stable ids
+ok 14 - byNthDay: both readings, across month ends, leap days and the DST change
+# tests 14
+# pass 14
+# fail 0
