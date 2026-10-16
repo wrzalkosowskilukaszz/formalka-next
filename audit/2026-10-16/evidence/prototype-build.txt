@@ -1,13 +1,13 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T19:18Z commit 6b3d874 node v22.22.0
+# 2026-10-16T19:29Z commit a5bc979 node v22.22.0
 
-built: dist/index.html 748 KB, build 4bb540339030, engine a0988a9702344e56, formalka@04057ef
-e2c14108b92a0f11c126c54c8b345e76b240ef537f9fdf6cf35a9482645e87d3  prototype/dist/index.html
-2a6939ba6d6ee55ac8db8127b7cdd3011573229264af62a2a0682ba89d6b00de  prototype/dist/artifact.html
+built: dist/index.html 749 KB, build 35e3171fed70, engine a0988a9702344e56, formalka@04057ef
+12ab236ac9c9a252474fc39876bf25e99402cd5ea1a5411fb67df87b499dcb3b  prototype/dist/index.html
+47a9215e180c19d2624fd85ef256efc859beff4762101d80908f0adb81508a89  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "4bb540339030",
+  "build": "35e3171fed70",
   "registry": "formalka@04057ef",
   "engine": "a0988a9702344e56",
   "engineBundle": {
@@ -16,11 +16,11 @@ two builds identical: yes
   },
   "inputs": {
     "../packages/case-engine/dist/case-engine.browser.js": "2a110e4500d2d244",
-    "src/app.css": "3380dedf13035acb",
+    "src/app.css": "c31c0e0ccba309d9",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
     "src/js/10-cases.js": "144300f948caff3d",
-    "src/js/20-chat.js": "45c5e54b3797cd53",
+    "src/js/20-chat.js": "84e7b861adf39da8",
     "src/js/25-shell.js": "452f89eb93f0b312",
     "src/js/30-intake.js": "3aba7dd1157e2c3c",
     "src/js/35-understand.js": "33b5fbd679597f5c",
@@ -92,7 +92,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "e2c14108b92a0f11c126c54c8b345e76b240ef537f9fdf6cf35a9482645e87d3",
-    "artifact.html": "2a6939ba6d6ee55ac8db8127b7cdd3011573229264af62a2a0682ba89d6b00de"
+    "index.html": "12ab236ac9c9a252474fc39876bf25e99402cd5ea1a5411fb67df87b499dcb3b",
+    "artifact.html": "47a9215e180c19d2624fd85ef256efc859beff4762101d80908f0adb81508a89"
   }
 }
