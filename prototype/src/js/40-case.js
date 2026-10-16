@@ -105,7 +105,7 @@ function caseRow(c) {
     : !c.state.approved ? (S.building === c.id ? 'Tworzymy plan' : 'Plan czeka na Twoje odpowiedzi')
       : `Teraz: ${currentLevel(p).title.pl}`;
   return `<li><button type="button" class="crow press" data-case="${c.id}"><span class="tile-ic">${icon(c.icon)}</span>
-    <span class="tx"><b>${esc(c.title)}</b><span>${esc(next)}</span></span>${avatar(c.who, 'sm')}${icon('caret-right', 'chev')}</button></li>`;
+    <span class="tx"><b>${esc(c.title)}</b><span>${esc(next)}${forOther(c) ? ' · dla kogoś innego' : ''}</span></span>${avatar(c.who, 'sm')}${icon('caret-right', 'chev')}</button></li>`;
 }
 
 /* ── One case: Teraz (focus) and Mapa ──────────────────────────────────────── */
@@ -114,7 +114,7 @@ function caseScreen() {
   if (!c) return worldScreen();
   const el = h(`<section class="screen case">
     <header class="appbar pad"><button type="button" class="circle-btn" id="to-world" aria-label="Wróć do Start">${icon('arrow-left')}</button>
-      <span class="ttl"><b>${esc(c.title)}</b><span>Prowadzi ${esc(c.who)}, ${esc(who(c.who).role)}</span></span>
+      <span class="ttl"><b>${esc(c.title)}</b><span>Prowadzi ${esc(c.who)}, ${esc(who(c.who).role)}${forOther(c) ? ' · sprawa kogoś innego' : ''}</span></span>
       <button type="button" class="circle-btn" id="o-hist" aria-label="Historia sprawy">${icon('clock-counter-clockwise')}</button>
       <button type="button" class="circle-btn" id="o-chat" aria-label="Napisz do ${esc(who(c.who).gen)}">${avatar(c.who, 'sm')}${c.preview ? '<span class="dot-badge"></span>' : ''}</button></header>
     <div class="pad" style="padding-block:var(--s2)"><div class="seg" role="group" aria-label="Widok sprawy" data-v="${S.view}"><span class="thumb"></span>
@@ -222,7 +222,7 @@ function focusView(c) {
   if (actions.length) sections.push(`<section class="sec"><h2 class="sec-h">Twoje kroki</h2>${actions.join('')}</section>`);
   const par = l.parallelWith.map((id) => p.levels.find((x) => x.id === id)).filter(Boolean);
   if (par.length) sections.push(`<section class="sec"><h2 class="sec-h">Równolegle</h2>${par.map((x) => `<button type="button" class="tl-side" data-focuslv="${x.id}"><span class="tile-ic sm">${icon(levelIcon(x))}</span><span class="tx"><small>Możesz równolegle</small><b>${esc(x.title.pl)}</b><span>${esc(levelLine(x))}</span></span>${icon('caret-right', 'chev')}</button>`).join('')}</section>`);
-  if (p.unsure.length) sections.push(`<section class="card"><h3>Do potwierdzenia</h3><ul class="open-list">${p.unsure.map((u) => `<li><span class="q">?</span><span>${esc(E.fact(u.fact)?.question.pl ?? u.fact)}</span></li>`).join('')}</ul></section>`);
+  if (p.unsure.length) sections.push(`<section class="card"><h3>Do potwierdzenia</h3><ul class="open-list">${p.unsure.map((u) => `<li><span class="q">?</span><span>${esc(factOf(c, u.fact)?.question.pl ?? u.fact)}</span></li>`).join('')}</ul></section>`);
   if (l.notes?.length) sections.push(notesHtml(l.notes));
   const gd = l.id === cur.id && c.state.approved ? guidance(c) : null;
   const card = gd && gd.actions.length ? `<section class="assist" aria-label="${esc(c.who)} proponuje"><div class="assist-h">${avatar(c.who, 'sm', true)}<b>${esc(c.who)} proponuje</b></div>
@@ -578,7 +578,7 @@ function openForm(c, taskId) {
   const t = plan(c).levels.flatMap((l) => l.tasks).find((x) => x.id === taskId);
   if (!c || !t) return;
   const p = plan(c);
-  const answers = p.assumptions.map((a) => { const f = E.fact(a.fact); return [f?.question.pl ?? a.fact, f?.options?.find((o) => o.value === a.value)?.label.pl ?? String(a.value)]; });
+  const answers = p.assumptions.map((a) => { const f = factOf(c, a.fact); return [f?.question.pl ?? a.fact, f?.options?.find((o) => o.value === a.value)?.label.pl ?? String(a.value)]; });
   const layer = $('#layer');
   layer.innerHTML = `<div class="full" role="dialog" aria-modal="true" aria-labelledby="form-h">
     <header class="appbar pad"><button type="button" class="circle-btn" id="form-close" aria-label="Zamknij">${icon('x')}</button><span class="ttl"><b id="form-h">${esc(t.officialName || cap(t.title.pl))}</b><span>Makieta formularza</span></span></header>

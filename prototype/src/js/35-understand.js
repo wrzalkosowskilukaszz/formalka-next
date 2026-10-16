@@ -13,7 +13,7 @@ const gendered = (c, m, f) => (who(c.who).sam === 'sama' ? f : m);
 
 // Everyday and first-person words mapped onto the words the official labels use.
 const SYN = [
-  [/\bmam\b|\bmamy\b/g, 'ma'], [/\bjestem\b|\bjestesmy\b/g, 'jest'], [/\bstraci/g, 'utraci'],
+  [/\bmam\b|\bmamy\b|\bmasz\b/g, 'ma'], [/\bjestem\b|\bjestesmy\b|\bjestes\b/g, 'jest'], [/\bstraci/g, 'utraci'],
   [/\bpracuj\w*|\brobot\w*/g, 'praca'], [/\bstudiuj\w*|\buczelni\w*|\buniwersyte\w*/g, 'studia'],
   [/\bzon[aeyi]\b|\bzona\w*|\bmaz\b|\bmeza\b|\bmezem\b|\bdzieci\w*|\bdzieck\w*|\bcork\w*|\bsyn\w*/g, 'rodzina'],
   [/\bdzialalnos\w*|\bspolk\w*/g, 'firma'], [/\bna zawsze\b|\bna dobre\b/g, 'na stale'],
@@ -24,7 +24,14 @@ const stem = (w) => (/^\d+$/.test(w) ? w : w.slice(0, 4));
 function wordsOf(s) {
   let n = ` ${norm(s)} `;
   for (const [re, to] of SYN) n = n.replace(re, to);
-  return [...new Set(n.split(' ').filter((w) => (w.length > 1 || /^\d$/.test(w)) && !STOP.has(w)).map(stem))];
+  const ws = n.split(' ').filter(Boolean);
+  const out = [];
+  for (let i = 0; i < ws.length; i++) {
+    // "nie mam" is not "mam": a negated word becomes a word of its own.
+    if (ws[i] === 'nie' && ws[i + 1]) { out.push(`nie${stem(ws[++i])}`); continue; }
+    if ((ws[i].length > 1 || /^\d$/.test(ws[i])) && !STOP.has(ws[i])) out.push(stem(ws[i]));
+  }
+  return [...new Set(out)];
 }
 // A label's "(nie na wizie...)" says what the option is not; its words must not match it.
 const labelCore = (label) => String(label).replace(/\(\s*nie\b[^)]*\)/gi, ' ');
@@ -110,6 +117,17 @@ function readAnswer(text, options) {
   if (pool !== real && pool.length === 1) return { type: 'option', o: pool[0], sure: tw.length <= 1 };
   if (pool !== real) return { type: 'some', os: pool };
   return { type: 'none' };
+}
+
+// Whose case, in the person's words: "dla mamy", "moja żona", "dla kogoś" (someone else) or "dla siebie",
+// "abym złożył" (their own). Someone else is checked first: "chcę pomóc mamie" names the mother.
+const OTHER_RE = /(?:^| )(?:mam(?:a|y|ie|e|o)|tat(?:a|y|e|o)|tacie|ojc\w*|matk\w*|zon[aeyio]|zonie|maz|meza|mezowi|syn\w*|cork\w*|dzieck\w*|dzieci\w*|brat\w*|siostr\w*|babci\w*|babcia|dziad\w*|rodzic\w*|partner\w*|kolezank\w*|koleg\w*|znajom\w*|sasiad\w*|klient\w*|kogos|innej osoby|inna osoba|czyims)(?= |$)/;
+const SELF_RE = /(?:^| )(?:dla siebie|siebie|dla mnie|ja|sam|sama|moja sprawa|osobiscie|chce|musze|potrzebuje|mieszkam|jestem|abym|zebym|moge|planuje|przeprowadzilem|przeprowadzilam|przyjechalem|przyjechalam)(?= |$)/;
+function readWhom(text) {
+  const n = norm(text);
+  if (OTHER_RE.test(n)) return 'other';
+  if (SELF_RE.test(n)) return 'you';
+  return null;
 }
 
 // "Jak poszło?" in the person's words. Order matters: "nie udało się, brakowało..." is "missing".

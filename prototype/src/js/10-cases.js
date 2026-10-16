@@ -63,11 +63,15 @@ function newCase(bpId) {
     state: { facts: {}, tasks: {}, events: [], approved: false }, asked: 0, placeAsked: false,
     prefs: { ...E.DEFAULT_PREFS }, history: [], files: [], delivered: new Set(), deliveredLog: [], answered: {},
     lastActivity: S.clock.date, preview: '', pending: null, stuck: false, memory: [], awaiting: null, guided: null,
+    voice: 'you', // whose case: "you" (the person's own) or "other" (handled for someone else)
   };
   S.cases.push(c);
   return c;
 }
 const plan = (c) => E.plan(c.bpId, c.state);
+// A fact's question and option labels as this case speaks: to the person, or about someone else.
+const factOf = (c, key) => { const f = E.fact(key); return f ? E.voiced(f, c.voice) : null; };
+const forOther = (c) => c.voice === 'other';
 const touch = (c) => { c.lastActivity = S.clock.date; };
 const logAct = (c, text, extra = {}) => c.history.unshift({ at: stamp(S.clock), text, by: 'you', ...extra });
 

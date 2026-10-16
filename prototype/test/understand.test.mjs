@@ -5,8 +5,9 @@ import assert from 'node:assert/strict';
 import { loadApp } from './load.mjs';
 
 const app = loadApp();
-const opts = (key) => app.E.fact(key).options.map((o) => ({ label: o.label.pl, value: o.value }));
-const read = (text, key) => { const r = app.readAnswer(text, opts(key)); return { type: r.type, value: r.o?.value, sure: r.sure, values: r.os ? [...r.os.map((o) => o.value)] : undefined }; };
+// Options as the app shows them: "you" (the person's own case, the default) or "other" (the registry's wording).
+const opts = (key, voice = 'other') => app.E.voiced(app.E.fact(key), voice).options.map((o) => ({ label: o.label.pl, value: o.value }));
+const read = (text, key, voice) => { const r = app.readAnswer(text, opts(key, voice)); return { type: r.type, value: r.o?.value, sure: r.sure, values: r.os ? [...r.os.map((o) => o.value)] : undefined }; };
 
 test('norm folds Polish letters and punctuation', () => {
   assert.equal(app.norm('Łódź, Kraków!'), 'lodz krakow');
@@ -48,6 +49,26 @@ test('options with words: the matching one, or the tied ones to choose from', ()
   assert.equal(read('studiuję', 'pobyt_czasowy.purpose').value, 'study');
   assert.equal(read('na stałe', 'zameldowanie.stay').value, 'permanent');
   assert.deepEqual(read('mieszkam w Polsce od 3 lat', 'citizenship.group').values, ['three_years', 'married_or_stateless']);
+});
+
+test('the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")', () => {
+  assert.equal(read('mam polskie obywatelstwo', 'citizenship.ever_polish', 'you').value, 'yes');
+  assert.equal(read('straciłem je', 'citizenship.ever_polish', 'you').value, 'lost');
+  assert.deepEqual(read('mieszkam w Polsce od 3 lat', 'citizenship.group', 'you').values, ['three_years', 'married_or_stateless']);
+  assert.equal(read('na stałe', 'zameldowanie.stay', 'you').value, 'permanent');
+  // Both family options mention Poland, so the reader offers the two instead of guessing.
+  assert.deepEqual(read('jestem już w Polsce, chodzi o rodzinę', 'pobyt_czasowy.purpose', 'you').values, ['family', 'family_abroad']);
+});
+
+test('whose case: someone else is named first; otherwise the person speaks of themselves', () => {
+  assert.equal(app.readWhom('dla siebie'), 'you');
+  assert.equal(app.readWhom('przyszedł czas, abym złożył papiery na obywatelstwo'), 'you');
+  assert.equal(app.readWhom('Muszę się zameldować'), 'you');
+  assert.equal(app.readWhom('dla mamy'), 'other');
+  assert.equal(app.readWhom('chcę pomóc mamie z kartą pobytu'), 'other');
+  assert.equal(app.readWhom('moja żona potrzebuje PESEL'), 'other');
+  assert.equal(app.readWhom('dla kogoś innego'), 'other');
+  assert.equal(app.readWhom('Ogarnij temat karty pobytu'), null);
 });
 
 test('what it does not follow stays unknown; questions about the question are recognised', () => {

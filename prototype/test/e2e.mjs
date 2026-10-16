@@ -163,7 +163,9 @@ await scenario('A-citizenship-words', {}, async (t, page) => {
   await page.fill('#home-t', 'przyszedł czas, abym złożył papiery na obywatelstwo polskie');
   await page.press('#home-t', 'Enter');
   await t.bot(/Dzień dobry, jestem Maciek/);
-  await t.q(/kiedykolwiek obywatelstwo/);
+  // "abym złożył" says it is the person's own case, so the questions speak to them.
+  await t.heard(/Twoja sprawa/);
+  await t.q(/Czy kiedykolwiek przysługiwało Ci obywatelstwo polskie/);
   await t.say('nigdy nie miałem polskiego obywatelstwa');
   await t.card(/Z Twojego opisu/);
   await t.shot('words-card');
@@ -175,13 +177,13 @@ await scenario('A-citizenship-words', {}, async (t, page) => {
   await t.say('mieszkam w Polsce od 3 lat');
   await t.bot(/pasują do 2 odpowiedzi/);
   await t.shot('two-fit');
-  await t.chip(/co najmniej 3 lat i ma tu/);
+  await t.chip(/co najmniej 3 lat i masz tu/);
   await t.q(/poświadczenie znajomości polskiego/);
   await t.say('dlaczego o to pytasz?');
   await t.q(/poświadczenie znajomości polskiego/);
   await t.say('nie wiem');
   await t.heard(/Nie wiem/);
-  await t.q(/Gdzie mieszka ta osoba/);
+  await t.q(/Gdzie mieszkasz/);
   await t.say('mam kartę pobytu');
   await t.card(/Dobrze rozumiem/);
   await t.yes();
@@ -191,6 +193,7 @@ await scenario('A-citizenship-words', {}, async (t, page) => {
   await page.locator('#consent[aria-checked="true"]').waitFor({ timeout: 8000 });
   await t.say('zatwierdzam');
   await t.bot(/Plan zatwierdzony/);
+  assert.ok(!(await page.locator('.log').innerText()).includes('ta osoba'), 'the person\'s own case never says "ta osoba"');
   await page.locator('.builder').waitFor({ state: 'detached', timeout: 8000 });
   await page.locator('.status').waitFor({ timeout: 8000 });
   await t.bot(/Teraz: „Dokumenty”/);
@@ -232,7 +235,9 @@ await scenario('A-citizenship-words', {}, async (t, page) => {
 await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   await page.locator('[data-type="address-registration"]').click();
   await t.bot(/Dzień dobry, jestem Asia, asystentka AI/);
-  await t.q(/Która grupa/);
+  await t.q(/dla siebie czy dla kogoś/);
+  await t.chip(/^Dla siebie$/);
+  await t.q(/Która grupa Cię dotyczy/);
   await t.chip(/Żadna z tych grup/);
   await t.q(/Na jaki pobyt/);
   await t.say('na stałe');
@@ -320,6 +325,8 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
 await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await page.locator('[data-type="pesel"]').click();
   await t.bot(/jestem Asia/);
+  await t.chip(/^Dla siebie$/);
+  await t.q(/Czy mieszkasz albo zamieszkasz/);
   await t.chip(/^Nie wiem$/);
   await t.bot(/Bez tych odpowiedzi nie ustalę drogi/);
   await t.shot('stuck');
@@ -331,8 +338,12 @@ await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await t.nav('#to-world', 'world');
   await t.nav('#w-new', 'home');
   await page.locator('[data-type="residence-card"]').click();
-  await t.q(/W jakim celu/);
-  await t.say('przyjechałem do pracy sezonowej');
+  // A case for someone else: the questions use the registry's own "ta osoba" wording.
+  await t.q(/dla siebie czy dla kogoś/);
+  await t.say('to dla mojej mamy');
+  await t.heard(/Dla kogoś innego/);
+  await t.q(/W jakim celu ta osoba chce mieszkać w Polsce/);
+  await t.say('przyjechała do pracy sezonowej');
   await t.card(/Z Twojego opisu|Dobrze rozumiem/);
   await t.yes();
   await t.autoIntake();
@@ -354,6 +365,7 @@ await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await t.nav('#to-world', 'world');
   const rows = await page.locator('.crow').count();
   assert.equal(rows, 4, 'four cases');
+  assert.equal(await page.locator('.crow', { hasText: 'dla kogoś innego' }).count(), 1, 'the residence card is marked as someone else\'s case');
   const colours = await page.locator('.crow .avatar').evaluateAll((els) => els.map((e) => [...e.classList].find((c) => /^av-\d$/.test(c))));
   assert.equal(new Set(colours).size, 4, `four assistant colours (${colours.join(', ')})`);
   const names = await page.locator('.crow .avatar').evaluateAll((els) => els.map((e) => e.textContent));

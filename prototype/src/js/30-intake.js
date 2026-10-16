@@ -10,15 +10,37 @@ async function startCase(bpId, text) {
   updateBuilder(c, true);
   mapNote(`Tworzymy Twoją sprawę: ${c.title}`);
   await say(c, esc(E.msg.intro(personaOf(c), c.title)), 600);
+  await askWhom(c, text);
   if (text) await readWords(c, text);
   await intakeLoop(c);
+}
+
+// Whose case it is (owner, 2026-10-16): the questions speak to the person, or ask about someone else.
+// The person's first words may already say it ("dla mamy", "abym złożył"); otherwise it is asked once.
+async function askWhom(c, text) {
+  const said = text ? readWhom(text) : null;
+  if (said) {
+    c.voice = said;
+    heard(c, said === 'you' ? 'Twoja sprawa' : 'sprawa kogoś innego');
+  } else {
+    const a = await ask({ c, q: 'Załatwiasz to dla siebie czy dla kogoś innego?', dk: false,
+      why: 'Żeby dobrze pytać: o Ciebie albo o tę osobę. Plan, źródła i przypomnienia są takie same; przypomnienia dostajesz Ty.',
+      options: [{ label: 'Dla siebie', value: 'you' }, { label: 'Dla kogoś innego, na przykład z rodziny', value: 'other' }],
+      words: (t) => !!readWhom(t), hint: 'Napisz na przykład „dla siebie” albo „dla mamy”.' });
+    c.voice = a.value === '__text__' ? readWhom(a.text) : a.value;
+    if (a.value === '__text__') heard(c, c.voice === 'you' ? 'Dla siebie' : 'Dla kogoś innego');
+  }
+  if (forOther(c)) {
+    remember(c, 'Sprawa kogoś innego: pytania dotyczą tej osoby, przypomnienia dostajesz Ty.');
+    await say(c, 'Dobrze. Będę pytać o tę osobę, a plan ułożymy dla niej. Kroki i przypomnienia trafią do Ciebie.', 300);
+  }
 }
 
 // The next step until the plan can be approved: a question, the route choice, the city, or the plan.
 async function intakeLoop(c) {
   for (;;) {
     const before = plan(c);
-    const q = E.nextQuestion(c.bpId, c.state, c.asked);
+    const q = E.nextQuestion(c.bpId, c.state, c.asked, 12, c.voice);
     if (q) {
       const options = (q.options ?? []).map((o) => ({ label: o.label.pl, value: o.value }));
       const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, options,
@@ -52,7 +74,7 @@ async function readWords(c, text) {
   const yes = [];
   let place = null;
   for (const x of cands) {
-    const f = x.fact === 'place' ? null : E.fact(x.fact);
+    const f = x.fact === 'place' ? null : factOf(c, x.fact);
     const ok = await approve({ c, kicker: 'Z Twojego opisu', ic: 'chat-circle-dots',
       title: f ? (f.options?.find((o) => o.value === x.value)?.label.pl ?? String(x.value)) : x.place.name,
       sub: f ? f.question.pl : 'Miejscowość, tylko po to, by wskazać urząd',
@@ -208,7 +230,7 @@ async function planApproval(c) {
   await say(c, esc(E.msg.planReady(p.unsure.length)), 600);
   const ok = guard();
   const rows = p.assumptions.map((a) => {
-    const f = E.fact(a.fact);
+    const f = factOf(c, a.fact);
     return `<li><span class="meta">${esc(f?.question.pl ?? a.fact)}</span><b>${esc(f?.options?.find((o) => o.value === a.value)?.label.pl ?? String(a.value))}</b></li>`;
   }).join('');
   const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
@@ -217,8 +239,9 @@ async function planApproval(c) {
     showDock(`<section aria-labelledby="plan-h" class="plan-card">
       <h2 id="plan-h" class="dock-q" tabindex="-1" data-focus>Twój pierwszy plan</h2>
       <ul class="list">
+        <li class="row"><span class="sq">${icon(forOther(c) ? 'users' : 'user')}</span><span class="tx"><b>${forOther(c) ? 'Sprawa kogoś innego' : 'Twoja sprawa'}</b><span class="meta">${forOther(c) ? 'Pytania dotyczyły tej osoby' : 'Pytania dotyczyły Ciebie'}</span></span><button type="button" class="btn btn-ghost btn-sm" id="whom">Zmień</button></li>
         <li class="row"><span class="sq">${icon('signpost')}</span><span class="tx"><b>${esc(routeTitle(p) || c.title)}</b><span class="meta">${p.levels.length - 1} ${plural(p.levels.length - 1, 'poziom', 'poziomy', 'poziomów')} na mapie${c.state.place ? `. Miejscowość: ${esc(c.state.place.name)}` : ''}</span></span></li>
-        ${p.unsure.length ? `<li class="row"><span class="sq">${icon('question')}</span><span class="tx"><b>Do potwierdzenia (${p.unsure.length})</b><span class="meta">${p.unsure.map((u) => esc(E.fact(u.fact)?.question.pl ?? u.fact)).join('<br>')}</span></span></li>` : ''}
+        ${p.unsure.length ? `<li class="row"><span class="sq">${icon('question')}</span><span class="tx"><b>Do potwierdzenia (${p.unsure.length})</b><span class="meta">${p.unsure.map((u) => esc(factOf(c, u.fact)?.question.pl ?? u.fact)).join('<br>')}</span></span></li>` : ''}
         ${staleOf(p) ? `<li class="row"><span class="sq">${icon('warning-circle')}</span><span class="tx"><b>Część dat może być nieaktualna</b><span class="meta">${esc(staleOf(p).text)}</span></span></li>` : ''}
         ${total ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłaty: ${total} zł</b><span class="meta">Przykład z przewodnika Formalki, stan na 15.10.2026</span></span></li>` : ''}
         <li class="row"><span class="sq">${icon(v.ok ? 'seal-check' : 'warning-circle')}</span><span class="tx"><b>${v.ok ? 'Plan sprawdzony' : `Plan nie przeszedł kontroli (${v.violations.length})`}</b><span class="meta">${v.ok ? 'Każdy element ma źródło w sprawdzonych treściach Formalki' : 'Nie pokażę planu, który nie przeszedł kontroli'}</span></span></li>
@@ -244,6 +267,7 @@ async function planApproval(c) {
     };
     sw.onclick = () => setConsent(sw.getAttribute('aria-checked') !== 'true');
     $('#planmap', dockEl).onclick = () => openMapSheet(c);
+    $('#whom', dockEl).onclick = () => { if (done || !ok()) return; me(forOther(c) ? 'To moja sprawa' : 'To sprawa kogoś innego'); finish('whom'); };
     $('#redo', dockEl).onclick = () => { if (done || !ok()) return; me('Popraw odpowiedzi'); finish('redo'); };
     $('#approve', dockEl).onclick = () => approveNow();
     $('form', dockEl).onsubmit = async (e) => {
@@ -273,6 +297,11 @@ async function planApproval(c) {
   });
   if (verdict.words) { await readWords(c, verdict.words); return false; }
   if (verdict === 'redo') { restartIntake(c); return false; }
+  if (verdict === 'whom') {
+    c.voice = forOther(c) ? 'you' : 'other';
+    await say(c, forOther(c) ? 'Dobrze, to sprawa kogoś innego. Odpowiedzi zostają, zmienia się tylko to, jak pytam.' : 'Dobrze, to Twoja sprawa. Odpowiedzi zostają, zmienia się tylko to, jak pytam.', 300);
+    return false;
+  }
   c.state.approved = true;
   S.building = null;
   logAct(c, `Plan zatwierdzony: ${routeTitle(p) || c.title}`);
