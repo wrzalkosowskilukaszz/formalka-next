@@ -8,10 +8,10 @@ async function startCase(bpId, text) {
   await sleep(380);
   if (S.cases.length > 1) addMsg('join', `${esc(c.who)} dołącza do rozmowy`, c);
   updateBuilder(c, true);
-  mapNote(`Tworzymy Twoją sprawę: ${c.title}`);
+  // One short line (owner, 16.10: less at once). The longer explanation is in the home footer.
   if (!S.disclosed) {
     S.disclosed = true;
-    sys('Prototyp: asystent nie korzysta z modelu językowego. Plan liczy silnik z przewodników Formalki, a odpowiedzi pisane własnymi słowami czyta prosty czytnik na telefonie.');
+    sys('Prototyp: asystent nie korzysta z modelu językowego.');
   }
   await say(c, esc(E.msg.intro(personaOf(c), c.title)), 600);
   await askWhom(c, text);
@@ -56,7 +56,7 @@ async function intakeLoop(c) {
     if (q) {
       const options = (q.options ?? []).map((o) => ({ label: o.label.pl, value: o.value }));
       const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, help: q.unknownHelp?.pl, options,
-        long: options.some((o) => o.label.length > 34), prog: progressOf(c, before), words: (t) => hasWords(c, t) });
+        long: options.some((o) => o.label.length > 34), words: (t) => hasWords(c, t) });
       touch(c);
       if (a.value === '__text__') { await readWords(c, a.text); continue; }
       const unknown = a.value === UNKNOWN_CHOICE;

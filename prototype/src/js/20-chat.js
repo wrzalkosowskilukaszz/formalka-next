@@ -1,21 +1,33 @@
 /* ── The conversation: one log for all cases, a dock with one question at a time ── */
-let logEl, dockEl, lastSpeaker;
+let logEl, dockEl, lastSpeaker, lastTime;
 function newChat() {
   logEl = h('<div class="log pad" role="log" aria-live="polite" aria-label="Rozmowa"></div>');
   dockEl = h('<div class="dock" aria-label="Pytanie i odpowiedź"></div>');
   lastSpeaker = null;
+  lastTime = null;
   logEl.addEventListener('click', onLogClick);
   dockEl.addEventListener('click', (e) => { const b = e.target.closest('[data-do]'); if (b) doAction(b.dataset.do); });
 }
 function scrollLog() { requestAnimationFrame(() => logEl.scrollTo({ top: logEl.scrollHeight, behavior: RM.matches ? 'auto' : 'smooth' })); }
 const speakerKey = (c) => `${c.who}|${c.id}`;
-const nameRow = (c) => `<div class="msg-name">${avatar(c.who, 'sm')}<span>${esc(c.who)} · ${esc(who(c.who).role)}${S.cases.length > 1 ? ` · ${esc(c.title)}` : ''}</span></div>`;
+const nameRow = (c) => `<div class="msg-name">${avatar(c.who, 'sm')}<span>${esc(c.who)} · ${esc(who(c.who).role)} · ${esc(c.title)}</span></div>`;
+// Less at once (owner, 16.10): with one assistant the header already names it, so a name row appears
+// only once several assistants share the conversation; and a time only when the minute changes.
+function markSpeaker(c) {
+  if (lastSpeaker !== speakerKey(c) && S.cases.length > 1) logEl.append(h(nameRow(c)));
+  lastSpeaker = speakerKey(c);
+}
+function timeTag(time) {
+  if (time === lastTime) return '';
+  lastTime = time;
+  return `<span class="time">${hm(time)}</span>`;
+}
 
 function addMsg(kind, html, c = null, time = S.clock.time) {
-  if (kind === 'bot' && lastSpeaker !== speakerKey(c)) logEl.append(h(nameRow(c)));
+  if (kind === 'bot') markSpeaker(c);
   if (kind === 'sys') logEl.append(h(`<p class="sys plain enter">${html}</p>`));
   else if (kind === 'join') logEl.append(h(`<p class="sys enter">${avatar(c.who, 'sm')}${html}</p>`));
-  else logEl.append(h(`<div class="msg ${kind} enter">${html}<span class="time">${hm(time)}</span></div>`));
+  else logEl.append(h(`<div class="msg ${kind} enter">${html}${timeTag(time)}</div>`));
   lastSpeaker = kind === 'bot' ? speakerKey(c) : kind;
   scrollLog();
 }
@@ -32,8 +44,7 @@ function textHtml(t) {
   return out;
 }
 async function say(c, html, wait = 420) {
-  if (lastSpeaker !== speakerKey(c)) logEl.append(h(nameRow(c)));
-  lastSpeaker = speakerKey(c);
+  markSpeaker(c);
   const t = h(`<div class="typing" role="status"><span class="sr">${esc(c.who)} odpowiada</span><i></i><i></i><i></i></div>`);
   logEl.append(t); scrollLog();
   await sleep(wait);
@@ -84,11 +95,11 @@ async function ask(o) {
   }
 }
 // Shows the question once; resolves with the option picked, or { typed } with the person's words.
-function askOnce({ c, q, why, options = [], text = true, placeholder = 'Albo napisz własnymi słowami', long = false, prog = null }) {
+// One progress indicator: the case bar above the chat (the dock no longer repeats it).
+function askOnce({ c, q, why, options = [], text = true, placeholder = 'Albo napisz własnymi słowami', long = false }) {
   const ok = guard();
   return new Promise((res) => {
-    showDock(`${prog != null ? `<p class="dock-step">${icon('map-trifold')}<span>Plan sprawy</span><span class="bar"><i style="width:${Math.round(prog * 100)}%"></i></span></p>` : ''}
-      ${q ? `<p class="dock-q" id="dq" tabindex="-1" data-focus>${esc(q)}</p>` : ''}
+    showDock(`${q ? `<p class="dock-q${q.length > 70 ? ' long' : ''}" id="dq" tabindex="-1" data-focus>${esc(q)}</p>` : ''}
       ${why ? `<details class="dock-why"><summary>Dlaczego pytamy?</summary><p>${esc(why)}</p></details>` : ''}
       <div class="opts${long ? ' cards' : ''}" role="group" ${q ? 'aria-labelledby="dq"' : 'aria-label="Odpowiedzi"'}>${options.map((x, i) => optHTML(x, i, long)).join('')}</div>
       ${text ? askBar(placeholder) : ''}`);
@@ -210,6 +221,8 @@ function updateBuilder(c, animate = true, changed = []) {
   });
   for (const [id, el] of BN) if (!seen.has(id)) { el.remove(); BN.delete(id); }
   const prog = progressOf(c, p);
+  // The bar appears with the first answer that builds the plan; before that it would only say 0%.
+  builderEl.hidden = !c.state.approved && prog === 0 && !c.state.routeChoice;
   $('.ring .fg', builderEl).style.strokeDashoffset = String(1 - prog);
   $('.ring span', builderEl).textContent = `${Math.round(prog * 100)}%`;
 }

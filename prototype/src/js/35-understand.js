@@ -164,8 +164,7 @@ function readFollowUp(text) {
 
 /* ── How the assistant shows that it read the answer ───────────────────────── */
 async function think(c, ms = 520) {
-  if (lastSpeaker !== speakerKey(c)) logEl.append(h(nameRow(c)));
-  lastSpeaker = speakerKey(c);
+  markSpeaker(c);
   const t = h(`<div class="typing reading" role="status"><i></i><i></i><i></i><span>${esc(c.who)} czyta Twoją odpowiedź</span></div>`);
   logEl.append(t); scrollLog();
   await sleep(ms);

@@ -278,6 +278,8 @@ ul, ol { padding: 0; list-style: none; }
 .dock-step .bar i { display: block; height: 100%; background: var(--accent); border-radius: 2px; transition: width var(--dur-slow) var(--ease); }
 .dock-q { font-size: var(--t-lg); font-weight: var(--w-strong); letter-spacing: var(--track-heading); line-height: var(--leading-heading); text-wrap: balance; }
 .dock-q:focus { outline: none; }
+/* A long question reads better at body size: still the strongest text on the sheet, but not shouting. */
+.dock-q.long { font-size: var(--t-md); line-height: 1.35; }
 .dock-why { font-size: var(--t-sm); color: var(--ink-2); line-height: 1.4; margin-top: -4px; }
 .opts { display: flex; flex-wrap: wrap; gap: var(--s2); }
 .opts.cards { flex-direction: column; flex-wrap: nowrap; }
@@ -620,7 +622,7 @@ html[data-nav="back"]::view-transition-new(root) { animation-name: slideFromLeft
    name) so the chat and the question are not crowded. The map notes in the chat still say what changed;
    tapping the bar still opens the map. */
 .screen.chat:has(.dock .dock-q) .builder { padding-block: 6px; margin-bottom: var(--s1); }
-.screen.chat:has(.dock .dock-q) .b-nodes { display: none; }
+.screen.chat:has(.dock .dock-q) .b-nodes, .screen.chat:has(.dock .dock-q) .b-title small { display: none; }
 .screen.chat:has(.dock .dock-q) .builder .ring.sm { width: 32px; height: 32px; }
 .screen.chat:has(.dock .dock-q) .builder .ring span { font-size: 0.625rem; }
 .bn { position: relative; width: 26px; height: 26px; border-radius: 9px; display: grid; place-items: center; flex: none; background: var(--accent-soft); color: var(--accent); transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), opacity var(--dur) var(--ease); }
