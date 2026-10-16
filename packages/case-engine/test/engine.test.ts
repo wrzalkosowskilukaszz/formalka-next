@@ -342,9 +342,27 @@ test("alternatives travel together; a later step done closes the steps before it
   assert.match(prep.message.pl, /wizę albo /);
   assert.match(prep.message.pl, /umowę cywilnoprawną[^\n]* albo /);
   const filed = planCase(ADDR, reg, { ...st, events: [...st.events, { type: "filing", date: "2026-10-30", by: "user" }] });
+  // Filing implies the form was filled in, not that the owner confirmed: the guide allows filing without it (audit F4).
   assert.deepEqual(filed.levels.map((l) => [l.id, l.state]), [
-    ["route", "done"], ["fill-in", "done"], ["owner-confirms", "done"], ["file", "done"], ["registered", "available"],
+    ["route", "done"], ["fill-in", "done"], ["owner-confirms", "available"], ["file", "done"], ["registered", "available"],
   ]);
+});
+
+test("address registration (audit F4): the family card only if it applies; filing doesn't wait for the owner", () => {
+  const eu = planCase(ADDR, reg, S({ "zameldowanie.citizen_group": "eu_efta", "zameldowanie.stay": "temporary" }));
+  const card = eu.levels.flatMap((l) => l.tasks).find((t) => t.id.endsWith(":family-card"))!;
+  assert.equal(card.outcome, "unknown", "an EU citizen is not told to bring a family member's card");
+  assert.match(card.onlyIf!.pl, /członkiem rodziny/);
+  assert.equal(eu.levels.flatMap((l) => l.tasks).find((t) => t.id.endsWith(":identity-eu"))!.outcome, "applies");
+  const fresh = planCase(ADDR, reg, S({ "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" }, ACTIVE));
+  const file = fresh.levels.find((l) => l.id === "file")!;
+  assert.deepEqual(file.dependsOn, ["fill-in"], "the form, not the owner's confirmation");
+  assert.ok(file.notes.some((n) => n.id === "no-owner-confirmation"), "the guide's own words say why");
+  // Each correction needs words from the registry's own quotes.
+  const bad = structuredClone(ADDR);
+  bad.onlyIf!["family-card"].basis = "dowolny tekst";
+  bad.optionalAfter![0].basis = "bez potwierdzenia wszystko wolno";
+  assert.deepEqual(checkBlueprint(bad, reg).map((i) => i.code).sort(), ["ONLY_IF_WITHOUT_BASIS", "OPTIONAL_WITHOUT_BASIS"]);
 });
 
 test("warnings: the guide's own notes for this person, on the right level, important first", () => {

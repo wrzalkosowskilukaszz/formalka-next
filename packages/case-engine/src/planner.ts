@@ -37,6 +37,8 @@ export interface PlanTask {
   crossCase?: { procedure: string; blueprint?: string; label: L10n };
   /** Other documents that can stand in for this one ("A albo B"), from the registry's alternativeTo. */
   alternatives?: string[];
+  /** Who it is for, when the facts can't tell (blueprint onlyIf): shown with "sprawdź, czy Cię dotyczy". */
+  onlyIf?: L10n;
 }
 export interface PlanFee {
   id: string; ruleRef: string; purpose: L10n; amountPln: number; optional: boolean;
@@ -232,13 +234,15 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
           noteUnsure(d.condition, `document:${d.id}`);
           const id = `${p.id}:document:${d.id}`;
           const x = l.crossCase?.find((c) => c.document === d.id);
+          const only = bp.onlyIf?.[d.id];
           const alts = [...new Set([...(d.alternativeTo ?? []), ...p.documents.filter((o) => o.alternativeTo?.includes(d.id)).map((o) => o.id)])]
             .map((a) => `${p.id}:document:${a}`);
           tasks.push({
             id, levelId: l.id, kind: "document", title: l.taskTitles?.[d.id] ?? { pl: d.namePl.value },
             officialName: d.namePl.value, description: d.description, ruleRef: ref("document", d.id),
-            outcome: e.outcome === "unknown" ? "unknown" : "applies", missingFacts: e.missing,
+            outcome: e.outcome === "unknown" || only ? "unknown" : "applies", missingFacts: e.missing,
             status: state.tasks[id] ?? "todo", quotes: d.namePl.quotes,
+            ...(only ? { onlyIf: only.label } : {}),
             ...(x ? { crossCase: { procedure: x.procedure, blueprint: x.blueprint, label: x.label } } : {}),
             ...(alts.length ? { alternatives: alts } : {}),
           });
@@ -277,7 +281,12 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
           fees.push(fee);
         }
       }
-      const deps = (step?.dependsOn ?? []).map((s) => stepLevel.get(s)).filter((x): x is string => !!x);
+      // A relaxed order (optionalAfter) skips one step but keeps what that step itself waits for: filing
+      // without the owner's confirmation still needs the filled-in form.
+      const relaxed = (bp.optionalAfter ?? []).filter((o) => o.level === l.id).map((o) => o.on);
+      const depSteps = (ids: string[]): string[] => ids.flatMap((s) =>
+        relaxed.includes(stepLevel.get(s) ?? "") ? depSteps(p.steps.find((x) => x.id === s)?.dependsOn ?? []) : [s]);
+      const deps = [...new Set(depSteps(step?.dependsOn ?? []).map((s) => stepLevel.get(s)).filter((x): x is string => !!x))];
       if (l.when) {
         const parent = bp.levels.find((x) => x.completesWith === l.when!.event);
         if (parent) deps.push(parent.id);

@@ -69,6 +69,18 @@ export interface Blueprint {
   fulfillable?: Record<string, Record<string, { blueprint: string; title: L10n; label: L10n }>>;
   deadlines: Record<string, DeadlinePlacement>;
   events: Record<string, EventDef>;
+  /**
+   * A document whose registry condition covers more people than need it (the EU family member's card for
+   * everyone in the EU group): the facts can't tell, so it shows as "check if it applies" with `label`.
+   * `basis` must appear verbatim in the document's own quote (audit F4, 2026-10-16).
+   */
+  onlyIf?: Record<string, { label: L10n; basis: string }>;
+  /**
+   * A step order the procedure's own text relaxes ("nadal możesz złożyć formularz meldunkowy" without the
+   * owner's confirmation): `level` doesn't wait for `on`. `basis` must appear verbatim in one of the
+   * procedure's quotes (audit F4).
+   */
+  optionalAfter?: { level: string; on: string; basis: string }[];
   /** Where a procedure's warnings appear (pitfall id -> level id); the rest go on the route level. */
   notes?: Record<string, string>;
   /** Cases to offer when this one doesn't fit, e.g. address registration instead of a PESEL application. */
@@ -128,6 +140,20 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
         if (!bp.events[from]) add("EVENT_NOT_RECORDABLE", `${routeId}:${d.id} starts from "${from}"`);
         if (place.counting === "nth-day" && r.unit !== "day") add("BAD_COUNTING", `${routeId}:${d.id}`);
       }
+    }
+  }
+  // Corrections to the registry's mapping need words from its own quotes.
+  for (const routeId of bp.routes) {
+    const p = reg.procedures.get(routeId);
+    if (!p) continue;
+    const allQuotes = [...p.steps.flatMap((x) => x.quotes), ...p.documents.flatMap((x) => x.namePl.quotes),
+      ...(p.pitfalls ?? []).flatMap((x) => x.statement.quotes)].map((q) => q.text);
+    for (const [docId, o] of Object.entries(bp.onlyIf ?? {})) {
+      const d = p.documents.find((x) => x.id === docId);
+      if (d && !(o.basis && d.namePl.quotes.some((q) => q.text.includes(o.basis)))) add("ONLY_IF_WITHOUT_BASIS", `${routeId}:${docId}`);
+    }
+    for (const o of bp.optionalAfter ?? []) {
+      if (!o.basis || !allQuotes.some((t) => t.includes(o.basis))) add("OPTIONAL_WITHOUT_BASIS", `${routeId}:${o.level}<-${o.on}`);
     }
   }
   // Every translated text has only language keys: an unquoted comma in YAML flow style silently cuts

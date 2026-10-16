@@ -90,12 +90,23 @@ function planText(sc: Scenario, p: CasePlan, bp: Blueprint): string {
   if (p.route.status === "choice") out.push("Pasuje więcej niż jedna droga; wybór należy do osoby: " + p.route.candidates.filter((c) => c.outcome !== "does_not_apply" && c.outcome !== "unknown").map((c) => `${c.title.pl}${c.outcome === "reachable" ? " (po spełnieniu warunku)" : ""}`).join("; ") + ".");
   for (const l of p.levels) {
     out.push("", `## ${l.title.pl} (${l.state})${l.reason ? ` — ${l.reason.text.pl}` : ""}`);
-    for (const t of l.tasks) out.push(`- ${t.title.pl}${t.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(t.quotes)}`);
+    // Alternatives stay together ("A albo B"), as the person must read them (audit F4).
+    const shown = new Set<string>();
+    for (const t of l.tasks) {
+      if (shown.has(t.id)) continue;
+      const group = [t, ...l.tasks.filter((y) => y.id !== t.id && (t.alternatives?.includes(y.id) || y.alternatives?.includes(t.id)))];
+      for (const g of group) shown.add(g.id);
+      const why = t.onlyIf ? ` (${t.onlyIf.pl})` : t.outcome === "unknown" ? " (jeśli dotyczy)" : "";
+      out.push(`- ${group.map((g) => g.title.pl).join(" albo ")}${why}${src(t.quotes)}`);
+    }
     for (const f of l.fees) out.push(`- Opłata: ${f.purpose.pl}: ${f.exemption?.outcome === "applies" ? "zwolnienie" : `${f.amountPln} zł`}${f.optional ? " (opcjonalnie)" : ""}${src(f.quotes)}`);
     const UNIT: Record<string, string> = { day: "dni", working_day: "dni roboczych", month: "mies.", year: "lat" };
     for (const d of l.deadlines) out.push(`- Termin${d.role === "office" ? " urzędu" : ""}: ${d.amount} ${UNIT[d.unit] ?? d.unit} od „${bp.events[d.from]?.label.pl ?? d.from}”${d.due ? `, ${dueRangePl(d.due.earliest, d.due.latest, d.due.counting)}` : ""}${d.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(d.quotes)}`);
     for (const o of l.office?.offices.slice(0, 3) ?? []) out.push(`- Urząd: ${o.name.pl}${o.address ? `, ${o.address.value}` : ""}`);
-    for (const n of l.notes.filter((y) => y.important)) out.push(`- Uwaga: ${n.statement.value.pl.split("\n")[0]}${src(n.statement.quotes)}`);
+    for (const n of l.notes.filter((y) => y.important)) {
+      const text = n.statement.value.pl.split("\n")[0];
+      out.push(`- ${/^uwaga/i.test(text) ? "" : "Uwaga: "}${text}${src(n.statement.quotes)}`);
+    }
   }
   return out.join("\n") + "\n";
 }
