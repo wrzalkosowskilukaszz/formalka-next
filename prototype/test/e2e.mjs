@@ -484,6 +484,14 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.locator('#chat-av').click();
   await page.locator('.sheet-body', { hasText: 'pamięta w tej sesji' }).waitFor({ timeout: 8000 });
   await t.closeSheet();
+  // Filing recorded with the form never marked: the form level is assumed done, not proven (engine `implied`).
+  await page.evaluate(() => recordEvent(S.cases[0], 'filing', S.clock.date));
+  await t.nav('#chat-back', 'case');
+  await page.locator('.seg [data-v="map"]').click();
+  await page.locator('.tl').waitFor({ timeout: 8000 });
+  const formCard = await page.locator('.tl-card', { hasText: 'Formularz' }).first().innerText();
+  assert.match(formCard, /Zakładamy, że zrobione/);
+  await t.shot('map-implied');
   // Reset keeps the study mode; the tester turns it off with the same button.
   await page.locator('.tester-strip [data-reset]').click();
   await page.locator('.study-note').waitFor({ timeout: 8000 });

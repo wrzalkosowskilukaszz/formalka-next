@@ -106,7 +106,12 @@ const STATE = {
   waiting_office: 'Czekasz na urząd', returned: 'Urząd prosi o uzupełnienie', done: 'Zrobione',
 };
 const ST_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', returned: 'arrow-u-up-left', done: 'check', unconfirmed: 'question', in_progress: 'clock-counter-clockwise' };
+// A level done only by inference (a later step was recorded, nothing proves this one) is not shown as
+// proven: the engine marks it `implied` (audit F2 follow-up), and the app says "zakładamy".
+const stateText = (l) => (l.implied ? 'Zakładamy, że zrobione' : STATE[l.state]);
 const chip = (state, text) => `<span class="state-chip ${state}">${ST_ICON[state] ? icon(ST_ICON[state]) : ''}${esc(text || STATE[state] || state)}</span>`;
+// An assumed level gets its own look (dashed, no tick), so it never reads as proven.
+const stateChip = (l) => (l.implied ? chip('implied', stateText(l)) : chip(l.state));
 const LEVEL_ICON = {
   route: 'signpost', documents: 'files', 'fill-in': 'file-text', 'owner-confirms': 'user', payment: 'coins', pay: 'coins',
   filing: 'stamp', file: 'stamp', decision: 'seal-check', confirmation: 'check-circle', summons: 'bell', card: 'identification-card',
@@ -136,7 +141,7 @@ function levelLine(l) {
   const office = l.deadlines.find((d) => d.role === 'office' && d.due);
   if (l.state === 'waiting_office') return office ? `Urząd ma czas ${dueRange(office.due)}` : 'Czekasz na urząd';
   if (l.state === 'unconfirmed') return 'Zależy od Twoich odpowiedzi';
-  if (l.state === 'done') return 'Zrobione';
+  if (l.state === 'done') return l.implied ? 'Zapisano późniejszy krok, więc zakładamy, że ten też jest zrobiony' : 'Zrobione';
   const user = l.deadlines.find((d) => d.role === 'user' && d.due);
   if (user) return `Termin ${dueRange(user.due)}`;
   if (l.tasks.length) return `${l.tasks.filter(isDone).length} z ${l.tasks.length} gotowe`;

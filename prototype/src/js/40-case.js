@@ -245,7 +245,7 @@ function timeline(c, sheetMode = false) {
   const hl = S.highlight || [];
   const curIdx = Math.max(0, groups.findIndex((g) => [g.main, ...g.side].some((l) => l.id === cur)));
   const prog = groups.length > 1 ? Math.round((curIdx / (groups.length - 1)) * 100) : 0;
-  const node = (l) => `<span class="tl-node ${l.state}${l.id === cur ? ' here' : ''}" aria-hidden="true">${icon(l.id === cur ? levelIcon(l) : l.state === 'done' ? 'check' : ST_ICON[l.state] && l.state !== 'unconfirmed' ? ST_ICON[l.state] : levelIcon(l))}</span>`;
+  const node = (l) => `<span class="tl-node ${l.implied ? 'implied' : l.state}${l.id === cur ? ' here' : ''}" aria-hidden="true">${icon(l.id === cur || l.implied ? levelIcon(l) : l.state === 'done' ? 'check' : ST_ICON[l.state] && l.state !== 'unconfirmed' ? ST_ICON[l.state] : levelIcon(l))}</span>`;
   const side = (l) => `<button type="button" class="tl-side ${l.state}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}">
       <span class="tile-ic sm">${icon(levelIcon(l))}</span><span class="tx"><small>Równolegle</small><b>${esc(l.title.pl)}</b><span>${esc(levelLine(l))}</span></span>${icon('caret-right', 'chev')}</button>`;
   const card = (l, k) => {
@@ -256,7 +256,7 @@ function timeline(c, sheetMode = false) {
         <span class="tl-act">${sheetMode ? '' : `<button type="button" class="btn btn-white btn-sm" data-focuslv="${l.id}">Przejdź do zadań</button>`}<button type="button" class="btn btn-ghost-w btn-sm" data-lv="${l.id}">Szczegóły</button></span></div>`;
     }
     return `<button type="button" class="tl-card ${l.state}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}"><span class="k">Poziom ${k}</span>
-      <b>${esc(l.title.pl)}</b>${chip(l.state)}<span class="tl-text">${l.state === 'locked' ? icon('lock-simple') : ''}${esc(levelLine(l))}</span></button>`;
+      <b>${esc(l.title.pl)}</b>${stateChip(l)}<span class="tl-text">${l.state === 'locked' ? icon('lock-simple') : ''}${esc(levelLine(l))}</span></button>`;
   };
   const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
   const total = fees.reduce((s, f) => s + f.amountPln, 0);
@@ -280,7 +280,7 @@ function openLevel(c, id) {
   const l = p.levels.find((x) => x.id === id);
   if (!l) return;
   const canGo = c.state.approved && l.order > 0 && l.state !== 'unconfirmed';
-  sheet(l.title.pl, `<div style="display:flex;gap:var(--s3);align-items:center"><span class="tile-ic">${icon(levelIcon(l))}</span>${chip(l.state)}</div>
+  sheet(l.title.pl, `<div style="display:flex;gap:var(--s3);align-items:center"><span class="tile-ic">${icon(levelIcon(l))}</span>${stateChip(l)}</div>
     ${l.reason ? `<p class="mock-note">${icon(l.state === 'locked' ? 'lock-simple' : 'info')}<span>${esc(l.reason.text.pl)}</span></p>` : ''}
     <p>${esc(levelLine(l))}.</p>
     ${l.tasks.length ? `<section class="sec"><h3 class="sec-h">Zadania</h3><ul class="bul">${l.tasks.map((t) => `<li>${esc(cap(t.title.pl))}${isDone(t) ? ' (gotowe)' : ''}</li>`).join('')}</ul></section>` : ''}
