@@ -10,7 +10,7 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 25 tests incl. 17 evaluation scenarios and the intake checks
+npm test                         # 27 tests incl. 17 evaluation scenarios and the intake checks
 npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
@@ -72,6 +72,8 @@ E.agenda({ caseId: "c1", blueprintId: "citizenship", plan: E.plan("citizenship",
 const { candidates } = E.intake("citizenship", "Mam pobyt stały i certyfikat B1.", state);
 // -> [{ fact, value, evidence: "Mam pobyt stały", by: "baseline-pl-1" }, …]: show each with the question and option label
 Object.assign(state, E.confirmCandidates(state, candidates, ["citizenship.permanent_title"])); // only what the person confirmed
+E.placeCandidate("Przeprowadziłem się do Warszawy", [{ teryt: "1465011", name: "Warszawa", forms: ["Warszawa", "Warszawie", "Warszawy"] }]);
+// -> { place: { teryt, name }, evidence: "Warszawy" } | null (null when no city or two cities are named)
 ```
 
 Events the blueprints accept:

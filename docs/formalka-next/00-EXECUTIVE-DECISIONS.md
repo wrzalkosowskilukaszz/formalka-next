@@ -43,7 +43,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - the guides' warnings placed on the right level;
   - an independent validator;
   - the proactive advisor agenda (quiet hours, one notification a day, consent per case);
-  - 26 tests and 17 evaluation scenarios, all passing; 18 injected faults caught;
+  - 27 tests and 17 evaluation scenarios, all passing; 20 injected faults caught;
   - a browser build used by the slice and offered to the prototype.
 - **Functional slice** (`slice/`): the engine driving a phone screen end to end (questions with "Nie wiem", route choice, map, "Teraz", events, the advisor's agenda with time travel). Private link reported to the owner.
 - **Evaluation set** (`packages/case-engine/eval/`): reference plans in plain Polish for the blind H1 benchmark, to be reviewed by the owner before any run.

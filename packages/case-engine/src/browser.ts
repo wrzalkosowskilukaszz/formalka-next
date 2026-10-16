@@ -4,7 +4,7 @@
 import data from "../dist/data.json" with { type: "json" };
 import { agenda, type AgendaInput, DEFAULT_PREFS } from "./advisor.ts";
 import { type Blueprint, blueprintFromData, checkBlueprint } from "./blueprint.ts";
-import { confirmCandidates, intake } from "./intake.ts";
+import { confirmCandidates, intake, placeCandidate } from "./intake.ts";
 import { dayPl, dueRangePl, msg, PHRASES_NEVER } from "./messages.ts";
 import { type CasePlan, type CaseState, planCase } from "./planner.ts";
 import { nextQuestion } from "./questions.ts";
@@ -45,7 +45,7 @@ export const FormalkaEngine = {
   },
   /** Fact candidates from the person's own words (on the device); nothing changes until they confirm. */
   intake: (blueprintId: string, text: string, state?: CaseState) => intake(bp(blueprintId), reg, text, state),
-  confirmCandidates,
+  confirmCandidates, placeCandidate,
   agenda: (input: Omit<AgendaInput, "bp"> & { blueprintId: string }) => agenda({ ...input, bp: bp(input.blueprintId) }),
   msg, dayPl, dueRangePl, PHRASES_NEVER, DEFAULT_PREFS, UNKNOWN,
 };

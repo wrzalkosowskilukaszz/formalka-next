@@ -1,6 +1,7 @@
 // Formalka Next, functional slice. Every question, level, state, fee, deadline, office and reminder on
 // screen comes from FormalkaEngine (packages/case-engine): Formalka's verified content + blueprints.
-// No AI, no network, no storage: state lives in memory; the tester strip simulates time.
+// No AI and no network. The case lives on this device only (this browser's storage, ADR-N002); text the
+// person typed is never kept, only what they confirmed. The tester strip simulates time.
 'use strict';
 const E = window.FormalkaEngine;
 const ICONS = /*__ICONS__*/ {};
@@ -30,8 +31,10 @@ const INTENTS = [
   { id: 'pesel', words: ['pesel'] },
 ];
 const PLACES = [
-  { teryt: '1465011', name: 'Warszawa' }, { teryt: '1261011', name: 'Kraków' },
-  { teryt: '0264011', name: 'Wrocław' }, { teryt: '2261011', name: 'Gdańsk' },
+  { teryt: '1465011', name: 'Warszawa', forms: ['Warszawa', 'Warszawie', 'Warszawy', 'Warszawę', 'Warszawą'] },
+  { teryt: '1261011', name: 'Kraków', forms: ['Kraków', 'Krakowie', 'Krakowa', 'Krakowem'] },
+  { teryt: '0264011', name: 'Wrocław', forms: ['Wrocław', 'Wrocławiu', 'Wrocławia', 'Wrocławiem'] },
+  { teryt: '2261011', name: 'Gdańsk', forms: ['Gdańsk', 'Gdańsku', 'Gdańska', 'Gdańskiem'] },
 ]; // TERYT codes [ASSUMPTION: standard GUS codes]; only Warsaw and Kraków have municipal offices in the registry
 
 const S = { cases: [], current: null, clock: { date: '2026-10-19', time: '10:00' }, delivered: new Set(), lock: [], home: true };
@@ -83,6 +86,34 @@ function answer(c, key, value, label) {
   advance(c); render();
 }
 
+// ——— the case lives on this device (ADR-N002) ———
+// This browser's storage only, never a server. Free text is never kept: the log keeps a placeholder, and
+// the description's fragments (candidates) are dropped; only the facts the person confirmed remain.
+const KEY = 'formalka-next-slice-v1';
+function persist() {
+  try {
+    if (!S.cases.length) { localStorage.removeItem(KEY); return; }
+    const cases = S.cases.map((c) => ({
+      ...c, candidates: null, said: null, decided: null, stage: c.stage === 'confirm' ? 'intake' : c.stage,
+      log: c.log.map((m) => (m.free ? { who: 'me', text: 'Twój opis (treści nie zapisujemy)', free: true } : m)),
+    }));
+    localStorage.setItem(KEY, JSON.stringify({ registry: E.registryVersion, cases, current: S.current, clock: S.clock, delivered: [...S.delivered], lock: S.lock }));
+  } catch { /* storage blocked (private window, preview): the slice still works in memory */ }
+}
+function restore() {
+  try {
+    const d = JSON.parse(localStorage.getItem(KEY) ?? 'null');
+    if (!d?.cases?.length) return;
+    if (d.registry !== E.registryVersion) { S.notice = 'Treści Formalki się zmieniły od Twojej ostatniej wizyty. W produkcie zobaczysz, co się zmieniło w planie, i zatwierdzisz zmiany. W wycinku zaczynamy od nowa.'; return; }
+    Object.assign(S, { cases: d.cases, current: d.current, clock: d.clock, delivered: new Set(d.delivered), lock: d.lock, home: true });
+    for (const c of S.cases) if (c.stage === 'intake') advance(c);
+  } catch { /* unreadable: start empty */ }
+}
+function forget() {
+  try { localStorage.removeItem(KEY); } catch { /* nothing stored */ }
+  Object.assign(S, { cases: [], current: null, clock: { date: '2026-10-19', time: '10:00' }, delivered: new Set(), lock: [], home: true, forgetAsk: false });
+}
+
 // ——— time ———
 function travel(days) {
   const before = { ...S.clock };
@@ -125,6 +156,7 @@ function render() {
   if (S.home || !cur()) { st.innerHTML = homeView(); wireHome(); }
   else { st.innerHTML = caseView(cur()); wireCase(cur()); }
   renderLock();
+  persist();
 }
 
 function renderTester() {
@@ -133,7 +165,7 @@ function renderTester() {
     <button class="tbtn" data-t="reset" aria-label="Reset">${icon('arrow-counter-clockwise')}</button>`;
   $('.tester').onclick = (e) => {
     const b = e.target.closest('[data-t]'); if (!b) return;
-    if (b.dataset.t === 'reset') { Object.assign(S, { cases: [], current: null, clock: { date: '2026-10-19', time: '10:00' }, delivered: new Set(), lock: [], home: true }); render(); return; }
+    if (b.dataset.t === 'reset') { forget(); render(); return; }
     travel(Number(b.dataset.t));
   };
 }
@@ -150,26 +182,54 @@ function homeView() {
       <h1>${S.cases.length ? 'Twoje sprawy' : 'Co dziś załatwiamy?'}</h1>
       <form class="pill" id="goal"><input id="goal-in" placeholder="Np. mam pobyt stały i B1, chcę obywatelstwo" aria-label="Co dziś załatwiamy?" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>
       <p class="note">Możesz opisać sytuację własnymi słowami. Nie podawaj imienia, numerów dokumentów ani adresu.</p>
+      ${S.pick ? `<div class="card"><p class="q">Twój opis pasuje do kilku spraw. Którą zaczynamy?</p>
+        <div class="opts">${S.pick.ids.map((id) => `<button class="opt" data-pick="${id}">${esc(E.blueprint(id).title.pl)}</button>`).join('')}</div></div>` : ''}
       <div class="chips">${INTENTS.map((i) => `<button class="chip" data-intent="${i.id}">${esc(E.blueprint(i.id).title.pl)}</button>`).join('')}</div>
       <p class="note">Działający wycinek: każdy krok liczy silnik ze sprawdzonych treści Formalki (${esc(E.registryVersion)}). Kwoty i terminy to przykłady z przewodników, stan na 15.10.2026. Bez AI i bez sieci.</p>
-    </section>${list ? `<div>${list}</div>` : ''}`;
+      ${S.notice ? `<p class="note">${esc(S.notice)}</p>` : ''}
+    </section>${list ? `<div>${list}</div>
+      <div class="card"><p class="reason">Twoje sprawy są zapisane tylko w tej przeglądarce, na tym urządzeniu. Nie zapisujemy tego, co piszesz własnymi słowami, tylko to, co potwierdzisz.</p>
+        ${S.forgetAsk ? `<p class="q">Usunąć wszystkie sprawy z tego urządzenia? Tego nie da się cofnąć.</p><div class="row"><button class="btn" data-forget="yes">Usuń</button><button class="btn ghost" data-forget="no">Anuluj</button></div>`
+          : `<div class="row"><button class="btn ghost" data-forget="ask">Usuń sprawy z tego urządzenia</button></div>`}</div>` : ''}`;
 }
 function wireHome() {
   $('#goal').onsubmit = (e) => { e.preventDefault(); startFromText($('#goal-in').value); };
   for (const b of document.querySelectorAll('[data-intent]')) b.onclick = () => { newCase(b.dataset.intent); render(); };
   for (const b of document.querySelectorAll('[data-open]')) b.onclick = () => { S.current = b.dataset.open; S.home = false; render(); };
+  for (const b of document.querySelectorAll('[data-pick]')) b.onclick = () => startCase(b.dataset.pick, S.pick.text);
+  for (const b of document.querySelectorAll('[data-forget]')) b.onclick = () => {
+    if (b.dataset.forget === 'yes') forget(); else S.forgetAsk = b.dataset.forget === 'ask';
+    render();
+  };
+}
+// Which cases the words name. A case that is part of another named case's map (the language certificate
+// is a level of citizenship) gives way to it. Several separate cases ("zameldować się na pobyt czasowy"
+// names address registration and the residence permit): the person picks; the app never guesses.
+const partsOf = (id) => Object.values(E.blueprint(id).fulfillable ?? {}).flatMap((f) => Object.values(f).map((x) => x.blueprint));
+function intentsIn(text) {
+  const ids = INTENTS.filter((i) => i.words.some((w) => text.toLowerCase().includes(w))).map((i) => i.id);
+  return ids.filter((id) => !ids.some((other) => other !== id && partsOf(other).includes(id)));
+}
+function startCase(id, text) {
+  S.pick = null; newCase(id); const c = cur(); c.log.splice(c.log.length - 2, 0, { who: 'me', text, free: true });
+  offerIntake(c, text); render();
 }
 function startFromText(text) {
-  const t = text.toLowerCase();
-  const hit = INTENTS.find((i) => i.words.some((w) => t.includes(w)));
-  if (hit) {
-    newCase(hit.id); const c = cur(); c.log.splice(c.log.length - 2, 0, { who: 'me', text });
-    // The person's words, read on the device: proposals only, confirmed one by one (FormalkaEngine.intake).
-    const r = E.intake(c.bpId, text, c.state);
-    if (r.candidates.length) { c.candidates = r.candidates; c.decided = {}; c.said = text; c.stage = 'confirm'; c.pending = null; }
-    render(); return;
-  }
+  const ids = intentsIn(text);
+  if (ids.length === 1) { startCase(ids[0], text); return; }
+  if (ids.length > 1) { S.pick = { text, ids }; render(); return; }
   const n = $('#notice'); n.textContent = 'Tej sprawy nie prowadzimy jeszcze krok po kroku. W wycinku są: obywatelstwo, karta pobytu, zameldowanie, PESEL i certyfikat z polskiego.'; n.hidden = false;
+}
+
+// The person's words, read on the device: proposals only, confirmed one by one (FormalkaEngine.intake).
+// The city is proposed the same way, only to show the office.
+function offerIntake(c, text) {
+  const cands = [...E.intake(c.bpId, text, c.state).candidates];
+  const pc = c.state.place ? null : E.placeCandidate(text, PLACES);
+  if (pc) cands.push({ fact: 'place', value: pc.place.teryt, evidence: pc.evidence, place: pc.place });
+  if (!cands.length) return false;
+  c.candidates = cands; c.decided = {}; c.said = text; c.stage = 'confirm'; c.pending = null;
+  return true;
 }
 
 function caseView(c) {
@@ -194,7 +254,8 @@ function chatView(c, p) {
 function dock(c, p) {
   if (c.stage === 'confirm') {
     const rows = c.candidates.map((x) => {
-      const f = E.fact(x.fact); const o = f.options.find((y) => y.value === x.value);
+      const f = x.fact === 'place' ? { question: { pl: 'W jakiej miejscowości mieszkasz? (tylko po to, by wskazać urząd)' } } : E.fact(x.fact);
+      const o = x.fact === 'place' ? { label: { pl: x.place.name } } : f.options.find((y) => y.value === x.value);
       const d = c.decided[x.fact];
       return `<div class="cand"><blockquote>„${esc(clause(c.said, x.evidence))}”</blockquote>
         <p><strong>${esc(f.question.pl)}</strong><br>${esc(o.label.pl)}</p>
@@ -209,7 +270,8 @@ function dock(c, p) {
     return `<div class="card"><p class="q">${esc(f.question.pl)}</p>
       <div class="opts">${(f.options ?? []).map((o) => `<button class="opt" data-ans="${esc(o.value)}" data-label="${esc(o.label.pl)}">${esc(o.label.pl)}</button>`).join('')}
       <button class="opt dk" data-ans="__unknown__" data-label="Nie wiem">Nie wiem</button></div>
-      ${f.whyWeAsk ? `<details><summary>Dlaczego pytamy?</summary><p>${esc(f.whyWeAsk.pl)}</p></details>` : ''}</div>`;
+      ${f.whyWeAsk ? `<details><summary>Dlaczego pytamy?</summary><p>${esc(f.whyWeAsk.pl)}</p></details>` : ''}</div>
+      <form class="pill" id="ask"><input id="ask-in" placeholder="Albo napisz własnymi słowami" aria-label="Albo napisz własnymi słowami" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
   }
   if (c.stage === 'choice') {
     const cards = p.route.candidates.filter((x) => x.outcome === 'applies' || x.outcome === 'reachable').map((x) => {
@@ -387,7 +449,9 @@ function wireCase(c) {
       c.decided[t.dataset.cand] = t.dataset.ok === '1'; touch(c);
       if (c.candidates.every((x) => c.decided[x.fact] !== undefined)) {
         const yes = c.candidates.filter((x) => c.decided[x.fact]).map((x) => x.fact);
-        c.state = E.confirmCandidates(c.state, c.candidates, yes);
+        c.state = E.confirmCandidates(c.state, c.candidates.filter((x) => x.fact !== 'place'), yes);
+        const pl = c.candidates.find((x) => x.fact === 'place' && c.decided.place);
+        if (pl) { c.state.place = pl.place; c.placeAsked = true; }
         say(c, 'bot', yes.length ? `Dziękuję. Potwierdzone z Twojego opisu: ${yes.length}. Zapytam tylko o resztę.` : 'Dobrze, zapytam o wszystko po kolei.');
         c.candidates = null; c.said = null; c.stage = 'intake'; advance(c);
       }
@@ -416,9 +480,12 @@ function wireCase(c) {
     const f = e.target;
     if (f.id === 'ask') {
       const text = $('#ask-in').value.trim(); if (!text) return;
-      say(c, 'me', text); touch(c);
-      const hit = INTENTS.find((i) => i.words.some((w) => text.toLowerCase().includes(w)));
-      if (hit && hit.id !== c.bpId) { newCase(hit.id, c.title); render(); return; }
+      say(c, 'me', text, { free: true }); touch(c);
+      // Another case only when the words name exactly one other case and not this one.
+      const ids = intentsIn(text);
+      if (ids.length === 1 && ids[0] !== c.bpId) { newCase(ids[0], c.title); offerIntake(cur(), text); render(); return; }
+      // Before approval, more of the person's words can still answer questions (after it, a change is a replan: ADR-N003).
+      if (c.stage !== 'case' && c.stage !== 'confirm' && offerIntake(c, text)) { render(); return; }
       say(c, 'bot', 'W tym wycinku odpowiadam tylko tym, co jest w planie (zadania, opłaty, terminy, urzędy, każde ze źródłem). Rozmowa z AI dojdzie w fazie 4.');
       render(); return;
     }
@@ -455,4 +522,5 @@ function planTime(c, kind, levelId) {
   };
 }
 
+restore();
 render();

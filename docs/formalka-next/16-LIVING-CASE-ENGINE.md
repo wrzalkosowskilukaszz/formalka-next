@@ -94,7 +94,7 @@ Guards, each with a test:
 **Consent model** (owner, 2026-10-15): **one consent per case** at plan approval ("Maciek może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy"). After that the advisor acts without asking; every action is in the case history and revocable.
 
 ## 7. Quality evidence (2026-10-16)
-- **25 tests** on the real snapshots, all passing, including the 17 evaluation scenarios and the intake checks (§9a).
+- **27 tests** on the real snapshots, all passing, including the 17 evaluation scenarios and the intake checks (§9a).
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -107,14 +107,16 @@ Guards, each with a test:
   - "Nie wiem" asked again;
   - a holiday missing;
   - a step not placed.
-- **7 more faults in intake** were injected, one at a time; each was caught:
+- **9 more faults in intake** were injected, one at a time; each was caught:
   - the topic check removed;
   - the negation check removed (or made to ignore word boundaries);
   - conflicting values kept;
   - evidence not checked verbatim;
   - candidates applied without confirmation;
   - a compound fact made extractable;
-  - "na pobyt stały" (registration) read as a residence permit.
+  - "na pobyt stały" (registration) read as a residence permit;
+  - (city) a name inside a longer word counted ("Gdańskiej");
+  - (city) the first of two named cities taken.
 - `checkBlueprint`: 0 issues for all 5 blueprints.
 - `validatePlan` passes on every plan in the tests and rejects a tampered ref, an invented date, a guessed nationality, and a lock without basis.
 
@@ -172,8 +174,13 @@ What the scores show:
 
 **Privacy:** the text is read on the device and is not stored in the case; only confirmed facts are (ADR-0009).
 
+**Added on 2026-10-16:**
+- **The city.** `placeCandidate` proposes the city (TERYT, for the office) only when exactly one known city is named, by its own name forms ("do Warszawy"). A street ("ulicy Gdańskiej") never counts.
+- **Later words.** Words typed under any question before approval run the same intake. A confirmed fact may replace an earlier "Nie wiem" (the person now knows), never an answer they gave.
+- **On the device.** The slice keeps the case in the browser. The free text and its fragments are never stored, only confirmed facts.
+
 **Open:**
 - the Ukrainian, Russian and English baselines (or an LLM extractor);
-- intake from later chat messages, not just the first;
-- extracting the city (TERYT), which the person still picks.
+- after approval, new facts from words would be a replan diff the person approves (ADR-N003); not built;
+- a TERYT dictionary for all places (the slice knows four cities).
 

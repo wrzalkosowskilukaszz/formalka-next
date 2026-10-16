@@ -4,7 +4,7 @@ import { test } from "node:test";
 import { runIntake } from "../eval/run.ts";
 import {
   baselineExtractor, type CaseState, checkCandidates, confirmCandidates, type Extractor, type FactCandidate, factsAsked,
-  intake, loadBlueprint, loadRegistry, planCase, TOPIC,
+  intake, type KnownPlace, loadBlueprint, loadRegistry, placeCandidate, planCase, TOPIC,
 } from "../src/index.ts";
 
 const ROOT = new URL("../../../", import.meta.url).pathname;
@@ -85,4 +85,25 @@ test("intake: a candidate changes nothing until the person confirms it", () => {
   assert.notDeepEqual(planCase(CIT, reg, st).assumptions, before.assumptions);
   const kept = confirmCandidates(S({ "citizenship.language": "no" }), r.candidates, ["citizenship.language"]);
   assert.equal(kept.facts["citizenship.language"], "no", "an answer the person gave is never overwritten");
+  const unsure = S({ "citizenship.language": "__unknown__" });
+  const later = intake(CIT, reg, "Mam już certyfikat B1.", unsure);
+  assert.deepEqual(later.candidates.map((c) => [c.fact, c.value]), [["citizenship.language", "yes"]], "words after a Nie wiem are proposed");
+  assert.equal(confirmCandidates(unsure, later.candidates, ["citizenship.language"]).facts["citizenship.language"], "yes");
+  assert.equal(confirmCandidates(unsure, later.candidates, []).facts["citizenship.language"], "__unknown__", "not confirmed: still Nie wiem");
+});
+
+test("intake: the city, only when exactly one known city is named, never a street", () => {
+  const PLACES: KnownPlace[] = [
+    { teryt: "1465011", name: "Warszawa", forms: ["Warszawa", "Warszawie", "Warszawy", "Warszawę"] },
+    { teryt: "1261011", name: "Kraków", forms: ["Kraków", "Krakowie", "Krakowa"] },
+    { teryt: "2261011", name: "Gdańsk", forms: ["Gdańsk", "Gdańsku", "Gdańska"] },
+  ];
+  assert.deepEqual(placeCandidate("Przeprowadziłem się do Warszawy 28 października.", PLACES),
+    { place: { teryt: "1465011", name: "Warszawa" }, evidence: "Warszawy" });
+  assert.equal(placeCandidate("mieszkam w warszawie", PLACES)?.evidence, "warszawie", "the person's own casing");
+  assert.equal(placeCandidate("Przeprowadziłam się z Krakowa do Warszawy.", PLACES), null, "two cities: ask");
+  assert.equal(placeCandidate("Mieszkam przy ulicy Krakowskiej w Gdańsku.", PLACES)?.place.name, "Gdańsk", "a street name is not a city");
+  assert.equal(placeCandidate("Mieszkam przy ulicy Gdańskiej w Krakowie.", PLACES)?.place.name, "Kraków", "\"Gdańsk\" inside \"Gdańskiej\" is no match");
+  assert.equal(placeCandidate("Jestem Warszawianką.", PLACES), null);
+  assert.equal(placeCandidate("Chcę się zameldować.", PLACES), null);
 });

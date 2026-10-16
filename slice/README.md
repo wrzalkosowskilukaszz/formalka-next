@@ -2,7 +2,8 @@
 
 This is the advisor's step 3, "functional vertical slice": the Living Case experience with **real logic and no script**.
 - **What comes from the engine:** every question, level, state, lock reason, fee, deadline, office and reminder on screen comes from `packages/case-engine` (`FormalkaEngine`), i.e. from Formalka's verified content (`reference/`, formalka@04057ef) and the case blueprints (`blueprints/`).
-- **What it is not:** it has no AI, no network and no storage (state is in memory), and it is not product code.
+- **What it is not:** it has no AI and no network, and it is not product code.
+- **Where the case lives:** only in this browser on this device (local storage), never on a server. What the person types in their own words is never kept: only the facts they confirmed. "Usuń sprawy z tego urządzenia" deletes everything (with an in-page confirmation).
 - **The other prototype:** the design-led experience prototype is `prototype/` (scripted). The two are meant to be compared: the prototype shows how it should feel; the slice shows that the logic behind it holds.
 
 ## Run
@@ -15,6 +16,9 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
 ## What you can do
 1. **Start a case.** Use "Co dziś załatwiamy?" (keywords: obywatelstwo, karta pobytu, zameldowanie, certyfikat, PESEL) or a chip. Five cases come from five blueprints.
    - **Describe it in your own words** ("Mieszkam w Polsce od pięciu lat na pobycie stałym, mam certyfikat B1, chcę obywatelstwo"). A card shows what was understood: your words, the official question and the option. Confirm or reject each one; only confirmed facts enter the plan, and only the rest is asked. This runs on the device, without AI (`FormalkaEngine.intake`).
+   - **The city** in the description ("do Warszawy") is proposed the same way, only to show the office. Two cities named, or none: it is asked.
+   - **Several cases named** ("zameldować się na pobyt czasowy": address registration and the residence permit): you pick. A case that is part of another's map (the certificate within citizenship) gives way to it.
+   - **Under every question:** "Albo napisz własnymi słowami". The words are read the same way; they can also replace an earlier "Nie wiem", never an answer you gave.
 2. **Answer the questions.** They are the official ones from Formalka's fact catalogue, in the content's own order, only as many as the plan needs. "Nie wiem" is always there, with "Dlaczego pytamy?".
 3. **Choose a route** when several fit (citizenship: recognition or grant). The differences shown come from the sources. A route reachable through another case (recognition without B1) says so.
 4. **Pick a city** (Warszawa, Kraków, …) so the plan can show the office from the registry's office layer: quoted addresses, opening hours and the booking link. Other cities get an honest "nie mamy w źródłach".
@@ -32,7 +36,8 @@ A headless walk at 390×844, in light, dark and reduced motion, went through:
 - the citizenship route choice;
 - the address registration with Warsaw: deadline, offices, visit, time travel, lock screen, follow-up, plan update;
 - intake from a description (three candidates; two confirmed, one rejected and then asked), a second case started from the home screen, and the PESEL redirect to address registration;
-- the Teczka for address registration with Warsaw (grouped alternatives, a document ticked while its level is locked; the level stays locked).
+- the Teczka for address registration with Warsaw (grouped alternatives, a document ticked while its level is locked; the level stays locked);
+- the city from the description, a stay typed under a question, a reload (the case comes back; the stored data holds neither the name typed in the description nor the description), the case picker, and "Usuń" (storage empty afterwards).
 
 It found 0 errors, 0 network requests and no horizontal scroll.
 
@@ -41,5 +46,6 @@ It found 0 errors, 0 network requests and no horizontal scroll.
 ## Limits
 - **Values.** They are examples from Formalka's guides as of 15.10.2026. Citizenship and temporary residence have open inventory findings.
 - **Office data.** No office phone numbers exist in the registry, and municipal offices only for Warsaw and Kraków.
-- **Free text.** The first description is read for facts by a narrow Polish baseline (no AI). Later chat messages recognise only the case keywords. Real conversation (AI) is Phase 4.
+- **Free text.** Descriptions and words typed under questions are read for facts by a narrow Polish baseline (no AI). After the plan is approved, messages recognise only case keywords (a change then is a replan, ADR-N003). Real conversation (AI) is Phase 4.
+- **Storage.** This is browser storage in a lab page, without encryption. The product's store (row 3 in 13 §2) adds encryption and export/import.
 - **Simulated features.** The forms, the PDF filling, real notifications and the calendar are not in the slice; they are simulated or covered by spike S3.

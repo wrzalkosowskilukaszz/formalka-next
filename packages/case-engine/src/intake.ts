@@ -1,8 +1,9 @@
 // Intake from the person's own words: free text → fact candidates the person confirms (doc 16 §9a).
 // An extractor only proposes. A candidate becomes a fact when the person confirms it, never before,
 // and `checkCandidates` drops, whatever the extractor (this baseline today, an LLM later):
-// - a fact this case doesn't ask, or one that is always asked (no topic below: compound options such
-//   as citizenship.group, whose labels join several conditions a sentence rarely states);
+// - a fact this case doesn't ask, or one already answered ("Nie wiem" aside: the person may know now);
+// - a fact that is always asked (no topic below): compound options such as citizenship.group, whose
+//   labels join several conditions a sentence rarely states;
 // - a value outside the fact's options, or "Nie wiem" (that one is the person's to give);
 // - evidence that isn't the person's own words, verbatim;
 // - evidence off the fact's topic. Language and origin are not citizenship or status (rule 5): "piszę po
@@ -49,7 +50,7 @@ export function checkCandidates(text: string, raw: FactCandidate[], asked: reado
     const code: RejectCode | null =
       !asked.includes(c.fact) ? "NOT_ASKED"
       : !TOPIC[c.fact] ? "ALWAYS_ASKED"
-      : state?.facts[c.fact] !== undefined ? "ANSWERED"
+      : state?.facts[c.fact] !== undefined && state.facts[c.fact] !== UNKNOWN ? "ANSWERED"
       : c.value === UNKNOWN || !options.includes(c.value) ? "BAD_VALUE"
       : c.evidence.trim().length < 3 || !text.includes(c.evidence) ? "NOT_VERBATIM"
       : !TOPIC[c.fact].test(c.evidence) ? "OFF_TOPIC"
@@ -66,10 +67,13 @@ export function checkCandidates(text: string, raw: FactCandidate[], asked: reado
   return out;
 }
 
-/** Facts confirmed by the person go into the case; the rest are simply asked later. */
+/**
+ * Facts confirmed by the person go into the case; the rest are simply asked later. A confirmed fact may
+ * replace an earlier "Nie wiem" (the person now knows), never an answer they gave.
+ */
 export function confirmCandidates(state: CaseState, candidates: FactCandidate[], confirmed: readonly string[]): CaseState {
   const facts = { ...state.facts };
-  for (const c of candidates) if (confirmed.includes(c.fact) && facts[c.fact] === undefined) facts[c.fact] = c.value;
+  for (const c of candidates) if (confirmed.includes(c.fact) && (facts[c.fact] === undefined || facts[c.fact] === UNKNOWN)) facts[c.fact] = c.value;
   return { ...state, facts };
 }
 
@@ -123,6 +127,27 @@ export const baselineExtractor: Extractor = {
     return out;
   },
 };
+
+// ——— The city, for the office (a TERYT code; non-identifying, kept on the device) ———
+/** A place the app knows, with the Polish forms a sentence uses ("w Warszawie", "do Warszawy"). */
+export interface KnownPlace { teryt: string; name: string; forms: string[] }
+export interface PlaceCandidate { place: { teryt: string; name: string }; evidence: string }
+/**
+ * The city named in the person's words, proposed for confirmation like any fact. Exactly one known
+ * city must be named: "z Krakowa do Warszawy" names two, so nothing is proposed and the city is asked.
+ * A street or an address is never read (rule 8): only the city's own name forms match.
+ */
+export function placeCandidate(text: string, places: readonly KnownPlace[]): PlaceCandidate | null {
+  const hits: PlaceCandidate[] = [];
+  for (const p of places) {
+    for (const f of p.forms) {
+      const form = f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const m = new RegExp(`(?:^|[^\\p{L}])(${form})(?![\\p{L}])`, "iu").exec(text);
+      if (m) { hits.push({ place: { teryt: p.teryt, name: p.name }, evidence: m[1] }); break; }
+    }
+  }
+  return hits.length === 1 ? hits[0] : null;
+}
 
 export function intake(bp: Blueprint, reg: Registry, text: string, state?: CaseState, extractor: Extractor = baselineExtractor): IntakeResult {
   const asked = factsAsked(bp, reg);
