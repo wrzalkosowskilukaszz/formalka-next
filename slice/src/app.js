@@ -25,6 +25,8 @@ const STATE_PL = {
   unconfirmed: 'zależy od odpowiedzi', locked: 'zablokowany', available: 'możesz zacząć', in_progress: 'w toku',
   waiting_office: 'czekasz na urząd', returned: 'urząd prosi o uzupełnienie', done: 'zrobione',
 };
+// A level done only by inference (a later step was recorded) is not shown as proven (audit F2 follow-up).
+const stateLabel = (l) => (l.implied ? 'zakładamy, że zrobione' : STATE_PL[l.state]);
 const STATE_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', done: 'check', returned: 'arrow-u-up-left', unconfirmed: 'dots-three', available: 'arrow-up', in_progress: 'clock-counter-clockwise' };
 const INTENTS = [
   { id: 'citizenship', words: ['obywatelstw', 'obywatelem', 'polski paszport', 'paszport polski'] },
@@ -244,7 +246,7 @@ function caseView(c) {
       <h2>${esc(c.title)}</h2><span class="who">${esc(c.who)} · ${E.rolePl(c.persona ?? c.who)}</span></div>
     <div class="row" style="margin-top:0"><span class="badge ${v.ok ? 'ok' : 'bad'}">${v.ok ? `${icon('check')} Każdy element pochodzi z rejestru Formalki` : `Plan niezgodny z rejestrem (${v.violations.length})`}</span>
       <span class="when">${p.status === 'active' ? 'aktywny' : 'projekt planu'}</span></div>
-    <div class="strip" aria-label="Mapa w skrócie">${p.levels.map((l) => `<span class="node" data-s="${l.state}" title="${esc(STATE_PL[l.state])}">${icon(STATE_ICON[l.state])} ${esc(l.title.pl)}</span>`).join('')}</div>
+    <div class="strip" aria-label="Mapa w skrócie">${p.levels.map((l) => `<span class="node" data-s="${l.state}" title="${esc(stateLabel(l))}">${icon(STATE_ICON[l.state])} ${esc(l.title.pl)}</span>`).join('')}</div>
     <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${c.tab === k}">${esc(n)}</button>`).join('')}</div>
     ${c.tab === 'chat' ? chatView(c, p) : c.tab === 'map' ? mapView(c, p) : c.tab === 'folder' ? folderView(c, p) : c.tab === 'now' ? nowView(c, p) : actsView(c, p)}`;
 }
@@ -336,7 +338,7 @@ function mapView(c, p) {
   const lv = p.levels.map((l) => {
     const done = l.tasks.filter((t) => t.status === 'done' || t.status === 'not_needed').length;
     const due = l.deadlines.filter((d) => d.due).map((d) => `${d.role === 'office' ? 'urząd ma czas' : 'termin'} ${E.dueRangePl(d.due.earliest, d.due.latest, d.due.counting)}`).join('; ');
-    return `<li class="card" style="list-style:none"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(STATE_PL[l.state])}</span>
+    return `<li class="card" style="list-style:none"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(stateLabel(l))}</span>
         ${l.parallelWith.length ? `<span class="when">${icon('arrows-split')} równolegle z: ${esc(l.parallelWith.map((id) => p.levels.find((x) => x.id === id)?.title.pl).join(', '))}</span>` : ''}</div>
       <h3>${esc(l.title.pl)}</h3>
       ${l.reason ? `<p class="reason">${esc(l.reason.text.pl)}</p>` : ''}
@@ -410,7 +412,7 @@ function nowView(c, p) {
   const plans = l.office || l.completesWith ? `<div class="row"><button class="mini" data-visit="${l.id}">${icon('calendar-check')} Mam umówioną wizytę</button><button class="mini" data-call="${l.id}">${icon('bell-simple')} Przypomnij, żeby zadzwonić</button></div>` : '';
   const others = l.parallelWith.map((id) => p.levels.find((x) => x.id === id)).filter(Boolean)
     .map((x) => `<button class="mini" data-focus="${x.id}">${esc(x.title.pl)}</button>`).join('');
-  return `<div class="card"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(STATE_PL[l.state])}</span></div>
+  return `<div class="card"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(stateLabel(l))}</span></div>
       <h3>${esc(l.title.pl)}</h3>${l.reason ? `<p class="reason">${esc(l.reason.text.pl)}</p>` : ''}
       ${tasks}${fees}${deadlines}${office}${done}${returns}${fixed}${plans}${notesHtml(l.notes)}</div>
     ${others ? `<div class="card"><p class="reason">Równolegle możesz zająć się:</p><div class="row">${others}</div></div>` : ''}`;

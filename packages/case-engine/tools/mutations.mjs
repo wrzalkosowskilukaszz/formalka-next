@@ -28,6 +28,8 @@ export const MUTATIONS = [
     find: 'outcome: e.outcome === "unknown" || only ? "unknown" : "applies"', replace: 'outcome: e.outcome === "unknown" ? "unknown" : "applies"' },
   { id: "planner-optional-after-ignored", file: "src/planner.ts", what: "filing waits for the owner's confirmation (F4)",
     find: "const relaxed = (bp.optionalAfter ?? []).filter((o) => o.level === l.id).map((o) => o.on);", replace: "const relaxed: string[] = [];" },
+  { id: "planner-implied-unmarked", file: "src/planner.ts", what: "a step taken as done by inference shown as proven",
+    find: "if (implied.has(l.id) && !ownProof) l.implied = true;", replace: ";" },
   // Questions, dates, wording
   { id: "questions-nie-wiem-asked-again", file: "src/questions.ts", what: '"Nie wiem" asked again',
     find: ".filter((f) => state.facts[f] === undefined);", replace: '.filter((f) => state.facts[f] === undefined || state.facts[f] === "__unknown__");' },

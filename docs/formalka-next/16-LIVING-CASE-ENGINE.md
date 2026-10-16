@@ -132,9 +132,9 @@ Five of these errors come from the production registry itself. They are proposed
 
 ## 7. Quality evidence (2026-10-16)
 - **39 tests** on the real snapshots, all passing, including the 18 evaluation scenarios (each now runs the content check too), the intake checks (§9a), the replan checks (§6b) and the audit fixes (§6c).
-- **34 faults, reproducible.** `tools/mutations.mjs` lists them and `npm run mutate` applies each alone, runs the whole suite and restores the file. Result on 2026-10-16: 34 of 34 caught (`eval/MUTATIONS.md`, one row per fault). The faults:
+- **35 faults, reproducible.** `tools/mutations.mjs` lists them and `npm run mutate` applies each alone, runs the whole suite and restores the file. Result on 2026-10-16: 35 of 35 caught (`eval/MUTATIONS.md`, one row per fault; 35 since the `implied` marker). The faults:
   - the advisor's guards (4);
-  - the planner's rules, including the audit fixes F2–F4 (8);
+  - the planner's rules, including the audit fixes F2–F4 and the `implied` marker (9);
   - questions, dates and wording (5);
   - the blueprint, structural and content checks (4);
   - intake (9);

@@ -349,6 +349,9 @@ test("alternatives travel together; a later step done closes the steps before it
   assert.deepEqual(filed.levels.map((l) => [l.id, l.state]), [
     ["route", "done"], ["fill-in", "done"], ["owner-confirms", "available"], ["file", "done"], ["registered", "available"],
   ]);
+  // The form is taken as filled in because the filing was recorded; nothing proves it, so it is marked.
+  assert.deepEqual(filed.levels.filter((l) => l.implied).map((l) => l.id), ["fill-in"]);
+  assert.equal(filed.levels.find((l) => l.id === "file")!.implied, undefined, "the filing itself was recorded");
 });
 
 test("address registration (audit F4): the family card only if it applies; filing doesn't wait for the owner", () => {

@@ -55,6 +55,11 @@ export interface PlanNote {
 }
 export interface PlanLevel {
   id: string; order: number; title: L10n; state: LevelState; waiting: boolean;
+  /**
+   * Done only by inference: a later step was recorded (a filing), so the steps it needs are taken as
+   * done. Nothing proves it, so the app says "zakładamy", not "zrobione" (audit F2 follow-up).
+   */
+  implied?: boolean;
   /** Why it is locked or returned, in plain words, with the registry item behind it. */
   reason?: { text: L10n; ruleRef?: string };
   dependsOn: string[]; parallelWith: string[];
@@ -395,7 +400,11 @@ function settleStates(bp: Blueprint, levels: PlanLevel[], state: CaseState) {
     if (returning && !fixed) {
       l.state = "returned";
       l.reason = { text: { pl: "Urząd prosi o uzupełnienie braków. Termin liczy się od doręczenia wezwania." }, ruleRef: returning.ruleRef };
-    } else if (done(l)) l.state = "done";
+    } else if (done(l)) {
+      l.state = "done";
+      const ownProof = l.completesWith ? !!lastEvent(state, l.completesWith) : l.tasks.length > 0 && l.tasks.every((t) => t.status === "done" || t.status === "not_needed");
+      if (implied.has(l.id) && !ownProof) l.implied = true;
+    }
     else if (def?.requires && lastEvent(state, def.requires.event)?.outcome !== def.requires.outcome && !blocking.length) {
       l.state = "locked";
       l.reason = { text: { pl: "Dopiero po decyzji pozytywnej." }, ruleRef: l.stepRef };
