@@ -1,17 +1,37 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-16T13:37Z commit 3f9bd50 node v22.22.0
+# 2026-10-16T14:21Z commit 5406c11 node v22.22.0
 
+# Subtest: norm folds Polish letters and punctuation
 ok 1 - norm folds Polish letters and punctuation
+# Subtest: polarity: yes, no and "Nie wiem"; strict mode for approval cards
 ok 2 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
-ok 3 - yes or no questions: a bare word is taken, a sentence is asked back
-ok 4 - options with words: the matching one, or the tied ones to choose from
-ok 5 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
-ok 6 - whose case: someone else is named first; otherwise the person speaks of themselves
-ok 7 - what it does not follow stays unknown; questions about the question are recognised
-ok 8 - days and hours in words (the clock starts on Monday 19.10.2026)
-ok 9 - day and hour chips: a typed day or hour picks its chip; another one is reported
-ok 10 - "Jak poszło?" in the person's words
-ok 11 - case intents: a case that is part of another named case gives way to it
-# tests 11
-# pass 11
+# Subtest: audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+ok 3 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+# Subtest: yes or no questions: a bare word is taken, a sentence is asked back
+ok 4 - yes or no questions: a bare word is taken, a sentence is asked back
+# Subtest: options with words: the matching one, or the tied ones to choose from
+ok 5 - options with words: the matching one, or the tied ones to choose from
+# Subtest: the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+ok 6 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+# Subtest: whose case: someone else is named first; otherwise the person speaks of themselves
+ok 7 - whose case: someone else is named first; otherwise the person speaks of themselves
+# Subtest: what it does not follow stays unknown; questions about the question are recognised
+ok 8 - what it does not follow stays unknown; questions about the question are recognised
+# Subtest: days and hours in words (the clock starts on Monday 19.10.2026)
+ok 9 - days and hours in words (the clock starts on Monday 19.10.2026)
+# Subtest: day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 10 - day and hour chips: a typed day or hour picks its chip; another one is reported
+# Subtest: "Jak poszło?" in the person's words
+ok 11 - "Jak poszło?" in the person's words
+# Subtest: audit F7: personal numbers are masked before the person's words are shown
+ok 12 - audit F7: personal numbers are masked before the person's words are shown
+# Subtest: case intents: a case that is part of another named case gives way to it
+ok 13 - case intents: a case that is part of another named case gives way to it
+# tests 13
+# suites 0
+# pass 13
 # fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 132.313354
