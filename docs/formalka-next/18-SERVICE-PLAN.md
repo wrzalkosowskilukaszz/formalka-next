@@ -135,10 +135,10 @@ The same table for each function. "Restriction now" is what holds until the assu
 |---|---|
 | **Need** | S1–S5: do not miss the 4th or 30th day (L2); the visit (S5) |
 | **Assumptions** | **A13:** people want reminders for a short procedure and give consent knowingly (one switch per case). **A14:** the dates are right: both readings, and closed days (D7). **A15:** a reminder never reads as a legal guarantee ("bezpieczny termin" is not "the law says") |
-| **Harm if wrong** | A reminder on a Sunday for a closed office (the known D7 limit) sends a person to a closed door. A reminder read as a guarantee lets them file on the later reading and risk the fine (art. 59, non-EU) |
+| **Harm if wrong** | A reminder on a Sunday for a closed office sent a person to a closed door (fixed on `lab/quality-pass`: the last reminder comes on the last working day before). A reminder read as a guarantee lets them file on the later reading and risk the fine (art. 59, non-EU) |
 | **Test with people** | Sessions: whether consent was given by reading or by reflex (a confirmation under 2 s), and the limits question "Czy coś zostało zapisane na jutro?". Interviews: who reminded them before, and how they would want it (A13) |
 | **Who confirms** | A lawyer (the safe reading and wording of the fine). A privacy reviewer (lock-screen detail off by default; no topic on the lock screen) |
-| **Restriction now** | Simulated, in-app only; nothing is scheduled on a real device. The lock screen shows no topic unless the person chooses. The D7 limit (a reminder on a closed day) is listed and not hidden |
+| **Restriction now** | Simulated, in-app only; nothing is scheduled on a real device. The lock screen shows no topic unless the person chooses. A safe date on a day off gets its last reminder on the working day before; the date itself never moves |
 
 ### 4.6 Czekanie na urząd (waiting for the office)
 
@@ -159,17 +159,17 @@ No new components. The work is to **name what exists, state its rules, and test 
 
 | # | Rule (from DESIGN-BRIEF §3, §6 and CLAUDE.md) | Check | Status on this branch |
 |---|---|---|---|
-| D1 | Every visual value comes from `tokens.css` | A token lint over `app.css`: no raw colour, font size, radius or duration outside `var()` | **Not met.** FACT (measured 16.10): 10 raw colours, 11 raw font sizes (smallest 0.5625rem, about 9 px), 38 raw radii, 8 raw durations. Test to add; the values to fix |
-| D2 | Text contrast at WCAG 2.2 AA; states never by colour alone | axe-core in e2e on every screen, light and dark; a manual check by an accessibility auditor | Not automated. To add (a dev tool, not a feature) |
-| D3 | Touch targets ≥ 44 px | e2e: every button or link in `#app` measures ≥ 44×44 px, or has a listed exception | Partly in CSS; not tested |
+| D1 | Every visual value comes from `tokens.css` | `prototype/test/design.test.mjs`: no raw colour, font size, weight, radius, duration or z-index in `app.css`; no text token below 12 px | **Met on `lab/quality-pass`.** It was not met on 16.10: 103 raw values, including 9–11 px text |
+| D2 | Text contrast at WCAG 2.2 AA; states never by colour alone | axe-core 4.13.0 in e2e on every checked step (WCAG 2.0–2.2 A/AA rules), light and dark, both motion modes; a manual check by an accessibility auditor | **Automated on `lab/quality-pass`:** 0 serious or critical. The automated rules cannot judge everything; the manual audit stays |
+| D3 | Touch targets ≥ 44 px | e2e: every control measures ≥ 44×44 px; links inside running text and the tester's controls are exempt | **Met and tested on `lab/quality-pass`** |
 | D4 | Motion ≤ 200 ms and only to explain; reduced motion respected | e2e in both modes (exists: 9/9 each); a duration lint (D1) | Partly met (D1) |
 | D5 | Never claim an action that did not happen | `checkScreen`: the never-say list on every screen (exists) | Met for listed phrases |
 | D6 | No internal identifiers, no em dash, no horizontal overflow | `checkScreen` (exists) | Met |
 | D7 | Every fact shown has a source | Engine content check (exists); e2e: every fee, deadline and office card carries a source link | Engine met; the UI side is not asserted per card |
 | D8 | The assistant says it is an AI | e2e: intro and persona (exists, scenario B) | Met |
-| D9 | One primary action per screen on mobile | e2e: at most one `.btn-accent` visible per screen, with listed exceptions | Not tested |
+| D9 | One primary action per screen on mobile | e2e: at most one control with the accent fill in view (selected states and covered screens excluded) | **Met and tested on `lab/quality-pass`** |
 | D10 | Plain Polish: short sentences, second person, no jargon without its everyday word | A copy lint (sentence length, a banned-jargon list), plus a plain-language reviewer | Not tested |
-| D11 | Zoom to 200% without loss | e2e at 200% zoom (390 px viewport → about 195 CSS px wide): no overflow, no clipped controls | Not tested |
+| D11 | Reflow and text resize without loss (WCAG 1.4.10 at 320 CSS px; 1.4.4 text at 200%) | e2e scenarios Z1 and Z2: no sideways overflow and nothing cut off, on every step | **Met and tested on `lab/quality-pass`.** Overlap of elements is not measured; screenshots are checked by eye |
 | D12 | No government look-alike | A manual review against the owner's brand rules | Manual |
 
 ### 5.2 Components (what exists, named once)
@@ -252,7 +252,7 @@ These are listed so nobody measures success by app use alone. They are not colle
 
 | # | Question | Why we cannot settle it at a desk | Research that settles it | Restriction now | In place? |
 |---|---|---|---|---|---|
-| R1 | Day count and closed days for the 4th and 30th day (OPEN-1, OPEN-2) | The act's text allows two readings | A law clinic or the ministry; office practice from a clerk | Both dates shown; plan for the earlier; closed-day warning; the date never moved | Yes (D7). Limit: the reminder fires on the earliest date |
+| R1 | Day count and closed days for the 4th and 30th day (OPEN-1, OPEN-2) | The act's text allows two readings | A law clinic or the ministry; office practice from a clerk | Both dates shown; plan for the earlier; closed-day warning; the date never moved | Yes (D7). The last reminder moves to the last working day before a closed safe date (`lab/quality-pass`) |
 | R2 | Must a tenant with a lease still get the owner's confirmation (OPEN-12)? | The act and the cards do not settle it | A clerk, a lawyer | The app keeps the owner's step (safe course); the scoring never marks the lease alone wrong | Yes |
 | R3 | How long the no-owner procedure takes, and whether filing on time is enough (OPEN-8) | No source gives a time | A clerk, a lawyer | No time and no remedy shown; the procedure note placed on the step | Yes (D10) |
 | R4 | Do offices accept software-filled forms (A10)? | Office practice | 2–3 clerks | The form is a mock with sample data; the official blank is linked | Yes |

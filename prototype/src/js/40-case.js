@@ -8,10 +8,10 @@ const eventLabel = (c, type) => E.blueprint(c.bpId).events?.[type]?.label?.pl ??
 /* Calendar entries: what the assistant will do (agenda), visits from the person, own reminders. */
 const AGENDA_TITLE = {
   call_reminder: 'Zadzwoń do urzędu', visit_prep: 'Przygotowanie do wizyty', visit_morning: 'Dziś wizyta w urzędzie',
-  follow_up: 'Jak poszło w urzędzie?', deadline_warning: 'Zbliża się termin', deadline_today: 'Dziś mija termin',
+  follow_up: 'Jak poszło w urzędzie?', deadline_warning: 'Zbliża się termin', deadline_today: 'Dziś mija termin', deadline_last_workday: 'Ostatni dzień roboczy przed terminem',
   office_deadline_passed: 'Minął czas urzędu na odpowiedź', nudge: 'Przypomnienie o sprawie', rule_change: 'Zmiana w źródłach',
 };
-const AGENDA_ICON = { call_reminder: 'phone', visit_prep: 'list-checks', visit_morning: 'buildings', follow_up: 'chat-circle-dots', deadline_warning: 'hourglass-simple', deadline_today: 'warning-circle', office_deadline_passed: 'hourglass-simple', nudge: 'bell', rule_change: 'info' };
+const AGENDA_ICON = { call_reminder: 'phone', visit_prep: 'list-checks', visit_morning: 'buildings', follow_up: 'chat-circle-dots', deadline_warning: 'hourglass-simple', deadline_today: 'warning-circle', deadline_last_workday: 'warning-circle', office_deadline_passed: 'hourglass-simple', nudge: 'bell', rule_change: 'info' };
 function agendaFor(c, now = S.clock) {
   // Reminders wait while a correction is undecided: they may rest on the answer being corrected.
   if (!c.state.approved || c.pendingFix) return [];

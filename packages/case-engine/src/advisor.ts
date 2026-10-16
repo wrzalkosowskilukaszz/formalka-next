@@ -9,13 +9,13 @@
 // user scheduled themselves; without consent everything stays in the app; the lock screen shows no
 // topic unless the user turned that on; ids are stable, so rescheduling never duplicates.
 import type { Blueprint } from "./blueprint.ts";
-import { addDays, daysBetween, type Iso } from "./dates.ts";
+import { addDays, daysBetween, isWorkingDay, type Iso } from "./dates.ts";
 import { dayPl, dueRangePl, msg, type Persona } from "./messages.ts";
 import type { CasePlan, CaseState, PlanLevel } from "./planner.ts";
 import type { L10n } from "./registry.ts";
 
 export type AgendaKind =
-  | "deadline_warning" | "deadline_today" | "office_deadline_passed" | "visit_prep" | "visit_morning"
+  | "deadline_warning" | "deadline_today" | "deadline_last_workday" | "office_deadline_passed" | "visit_prep" | "visit_morning"
   | "follow_up" | "call_reminder" | "nudge" | "rule_change";
 export interface AgendaItem {
   id: string; caseId: string; kind: AgendaKind;
@@ -34,7 +34,7 @@ export interface AdvisorPrefs {
 export const DEFAULT_PREFS: AdvisorPrefs = { consent: false, lockScreenDetail: false, quiet: { from: "20:00", to: "08:00" } };
 
 const PRIORITY: Record<AgendaKind, number> = {
-  deadline_today: 100, deadline_warning: 80, visit_morning: 70, call_reminder: 65, visit_prep: 60,
+  deadline_today: 100, deadline_last_workday: 100, deadline_warning: 80, visit_morning: 70, call_reminder: 65, visit_prep: 60,
   follow_up: 50, rule_change: 45, office_deadline_passed: 40, nudge: 10,
 };
 /** Items the user asked for at a time they chose: never demoted by the one-a-day rule. */
@@ -71,8 +71,13 @@ export function agenda(input: AgendaInput): AgendaItem[] {
       const total = periodDays(d.amount, d.unit);
       const lead = total <= 7 ? 2 : total <= 30 ? 5 : total <= 90 ? 14 : 30;
       const warnOn = addDays(d.due.earliest, -lead);
-      push("deadline_warning", warnOn, "09:00", msg.deadlineWarning(lead, l.title.pl, dueRangePl(d.due.earliest, d.due.latest, d.due.counting), d.description.pl), [d.ruleRef], d.id);
-      push("deadline_today", d.due.earliest, "09:00", msg.deadlineToday(l.title.pl, d.description.pl), [d.ruleRef], d.id);
+      // An open-reading deadline whose safe date is a day off (round 2 reference, D7, OPEN-2): the last
+      // reminder comes on the last working day before it, and the date itself is never moved.
+      let last = d.due.earliest;
+      if (d.due.counting === "nth-day") while (!isWorkingDay(last)) last = addDays(last, -1);
+      if (warnOn < last) push("deadline_warning", warnOn, "09:00", msg.deadlineWarning(lead, l.title.pl, dueRangePl(d.due.earliest, d.due.latest, d.due.counting), d.description.pl), [d.ruleRef], d.id);
+      if (last === d.due.earliest) push("deadline_today", d.due.earliest, "09:00", msg.deadlineToday(l.title.pl, d.description.pl), [d.ruleRef], d.id);
+      else push("deadline_last_workday", last, "09:00", msg.deadlineLastWorkday(l.title.pl, dayPl(d.due.earliest), d.description.pl), [d.ruleRef], d.id);
     }
   }
 
@@ -111,7 +116,7 @@ export function agenda(input: AgendaInput): AgendaItem[] {
   for (const it of byPriority) {
     const day = it.fireAt.slice(0, 10);
     if (!prefs.consent) continue;
-    if (USER_TIMED.includes(it.kind) || it.kind === "deadline_today" || !notifiedOn.has(day)) {
+    if (USER_TIMED.includes(it.kind) || it.kind === "deadline_today" || it.kind === "deadline_last_workday" || !notifiedOn.has(day)) {
       notify.add(it.id);
       notifiedOn.add(day);
     }
@@ -186,7 +191,7 @@ export function outOfQuiet(fireAt: string, quiet: { from: string; to: string }):
 
 function shortOf(kind: AgendaKind): string {
   return {
-    deadline_warning: "zbliża się termin", deadline_today: "dziś mija termin", office_deadline_passed: "minął czas urzędu",
+    deadline_warning: "zbliża się termin", deadline_today: "dziś mija termin", deadline_last_workday: "ostatni dzień roboczy przed terminem", office_deadline_passed: "minął czas urzędu",
     visit_prep: "jutro wizyta", visit_morning: "dziś wizyta", follow_up: "jak poszło?", call_reminder: "pora zadzwonić",
     nudge: "następny krok", rule_change: "zmiana w źródłach",
   }[kind];

@@ -11,6 +11,12 @@ export const MUTATIONS = [
     find: "    if (!prefs.consent) continue;", replace: "    ;" },
   { id: "advisor-draft-acts", file: "src/advisor.ts", what: "a draft plan acts",
     find: 'if (plan.status !== "active") return [];', replace: ";" },
+  { id: "advisor-reminder-on-closed-day", file: "src/advisor.ts", what: "the last deadline reminder falls on a day off (D7)",
+    find: 'if (d.due.counting === "nth-day") while (!isWorkingDay(last)) last = addDays(last, -1);', replace: ";" },
+  { id: "messages-closed-day-unsaid", file: "src/messages.ts", what: "a deadline on a day off is not named (D7)",
+    find: "const closed = [earliest, latest].filter((d) => !isWorkingDay(d)).map((d) => dayPl(d));", replace: "const closed: string[] = [];" },
+  { id: "verify-source-not-compared", file: "src/verify.ts", what: "a swapped source or altered quote passes the content check (round 2 regressions)",
+    find: "const src = (x: { ruleRef: string; quotes: Quote[] }) => `${x.ruleRef}|${JSON.stringify(x.quotes)}`;", replace: "const src = (x: { ruleRef: string; quotes: Quote[] }) => (x ? \"\" : \"\");" },
   // The planner
   { id: "planner-prerequisite-not-blocking", file: "src/planner.ts", what: "a prerequisite case doesn't block submission",
     find: "if (l.submits) deps.push(...firstLevelDeps, ...docLevels", replace: "if (l.submits) deps.push(...docLevels" },

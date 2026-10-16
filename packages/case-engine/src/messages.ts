@@ -62,6 +62,8 @@ export const msg = {
     `Zostało ${days} ${days === 1 ? "dzień" : "dni"} na krok „${levelTitle}”: termin ${range}. ${description}`,
   deadlineToday: (levelTitle: string, description: string) =>
     `Dziś mija bezpieczny termin na krok „${levelTitle}”. ${description}`,
+  deadlineLastWorkday: (levelTitle: string, safeDay: string, description: string) =>
+    `Bezpieczny termin na krok „${levelTitle}” to ${safeDay}: dzień wolny od pracy, więc urząd może być wtedy nieczynny. Dziś jest ostatni dzień roboczy przed nim. ${description}`,
   officeDeadlinePassed: (description: string) =>
     `Minął czas, jaki według przepisów ma urząd: ${description} Jeśli nie masz jeszcze odpowiedzi, możesz zapytać w urzędzie, na jakim etapie jest sprawa.`,
   visitPrep: (time: string, levelTitle: string, bring: string[], fees: string[], office: string[] = []) =>

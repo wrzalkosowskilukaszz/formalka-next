@@ -210,11 +210,14 @@ test("advisor: a draft plan does nothing; an approved one plans the deadline by 
   const st = S({ "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" }, { events: [{ type: "arrival_at_address", date: "2026-10-28", by: "user" }] });
   assert.deepEqual(agenda({ caseId: "c1", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs: CONSENT, now: NOW }), []);
   const items = addressAgenda();
+  // The safe date, Saturday 31.10, is a day off (D7): the last reminder comes on Friday 30.10; the date stays.
   assert.deepEqual(items.map((i) => [i.kind, i.fireAt, i.channel]), [
     ["deadline_warning", "2026-10-29T09:00", "notification"],
-    ["deadline_today", "2026-10-31T09:00", "notification"],
+    ["deadline_last_workday", "2026-10-30T09:00", "notification"],
   ]);
   assert.match(items[0].message.pl, /31 października/);
+  assert.match(items[1].message.pl, /to sobota, 31 października: dzień wolny od pracy, więc urząd może być wtedy nieczynny\. Dziś jest ostatni dzień roboczy przed nim/);
+  assert.ok(!items.some((i) => i.kind === "deadline_today" && i.fireAt.startsWith("2026-10-31")), "never a deadline-day reminder on a closed day");
 });
 
 test("advisor: a deadline that may not apply never notifies; no consent keeps all in the app", () => {
@@ -233,8 +236,8 @@ test("advisor: a planned visit gets preparation, the morning and a follow-up; qu
     ["deadline_warning", "2026-10-29T09:00", "notification"],
     ["visit_prep", "2026-10-29T18:00", "notification"],
     ["visit_morning", "2026-10-30T08:00", "notification"],
-    ["follow_up", "2026-10-31T08:00", "in_app"], // 21:30 is quiet; the morning after, one-a-day keeps the deadline
-    ["deadline_today", "2026-10-31T09:00", "notification"],
+    ["deadline_last_workday", "2026-10-30T09:00", "notification"],
+    ["follow_up", "2026-10-31T08:00", "notification"], // 21:30 is quiet, so the morning after
   ]);
   const prep = items.find((i) => i.kind === "visit_prep")!;
   assert.match(prep.message.pl, /Weź ze sobą/);
