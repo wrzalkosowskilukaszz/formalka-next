@@ -29,28 +29,22 @@ const PLACES = [
 // Every case gets its own assistant: one model, a different name and avatar colour per case
 // (owner, 2026-10-16). The blueprint suggests a name; when another open case already has it, the next
 // free one from the pool is used. Never chosen by the person's nationality or language (rule 4).
+// The engine's Persona ({ name, feminine }) gives the words that agree with it: "asystentka AI", "sama".
 const PERSONAS = [
-  { name: 'Maciek', gen: 'Maćka', role: 'asystent AI', sam: 'sam', av: 'av-1' },
-  { name: 'Asia', gen: 'Asi', role: 'asystentka AI', sam: 'sama', av: 'av-2' },
-  { name: 'Ola', gen: 'Oli', role: 'asystentka AI', sam: 'sama', av: 'av-3' },
-  { name: 'Kuba', gen: 'Kuby', role: 'asystent AI', sam: 'sam', av: 'av-4' },
-  { name: 'Ewa', gen: 'Ewy', role: 'asystentka AI', sam: 'sama', av: 'av-5' },
-  { name: 'Tomek', gen: 'Tomka', role: 'asystent AI', sam: 'sam', av: 'av-6' },
-];
-const who = (name) => PERSONAS.find((x) => x.name === name) || { name, gen: name, role: 'asystent AI', sam: 'sam', av: 'av-1' };
+  { name: 'Maciek', gen: 'Maćka', feminine: false, av: 'av-1' },
+  { name: 'Asia', gen: 'Asi', feminine: true, av: 'av-2' },
+  { name: 'Ola', gen: 'Oli', feminine: true, av: 'av-3' },
+  { name: 'Kuba', gen: 'Kuby', feminine: false, av: 'av-4' },
+  { name: 'Ewa', gen: 'Ewy', feminine: true, av: 'av-5' },
+  { name: 'Tomek', gen: 'Tomka', feminine: false, av: 'av-6' },
+].map((p) => ({ ...p, role: E.rolePl(p), sam: E.selfPl(p) }));
+const who = (name) => PERSONAS.find((x) => x.name === name) || { name, gen: name, feminine: false, role: E.rolePl(name), sam: E.selfPl(name), av: 'av-1' };
+const personaOf = (c) => ({ name: c.who, feminine: who(c.who).feminine });
 function assignPersona(preferred) {
   const taken = new Set(S.cases.map((c) => c.who));
   return (!taken.has(preferred) && PERSONAS.find((x) => x.name === preferred)) || PERSONAS.find((x) => !taken.has(x.name)) || PERSONAS[S.cases.length % PERSONAS.length];
 }
 const avatar = (name, size = '', ai = false) => `<span class="avatar ${who(name).av} ${size}" aria-hidden="true">${esc(name[0])}${ai ? '<span class="ai">AI</span>' : ''}</span>`;
-// Engine text as the case's assistant says it: the engine writes with the blueprint's caretaker, and its
-// dates after "do" are in the nominative ("do środa"), which Polish puts in the genitive ("do środy").
-const DAY_GEN = Object.fromEntries(DAYS.map((d, i) => [d, DAYS_GEN[i]]));
-const asCase = (c, text) => {
-  const bpName = E.blueprint(c.bpId).caretaker.name;
-  const named = bpName === c.who ? String(text) : String(text).replace(new RegExp(`\\b${bpName}\\b`, 'g'), c.who);
-  return named.replace(new RegExp(`\\b(do|najpóźniej) (${DAYS.join('|')}),`, 'g'), (m, w, d) => `${w === 'do' ? 'do' : 'najpóźniej do'} ${DAY_GEN[d]},`);
-};
 
 /* ── App state (in memory; "Reset" clears it) ─────────────────────────────── */
 const START_CLOCK = { date: '2026-10-19', time: '18:40' }; // Monday; three days on is Thursday

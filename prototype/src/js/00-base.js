@@ -61,11 +61,8 @@ const dday = (iso) => `${DAYS[wd(iso)]} ${dnum(iso)}`;
 const dlong = (iso) => `${DAYS[wd(iso)]}, ${Number(iso.slice(8, 10))} ${MON_G[Number(iso.slice(5, 7)) - 1]}`;
 const hm = (time) => time.replace(/^0(\d):/, '$1:');
 const stamp = (clock) => `${clock.date}T${clock.time}`;
-// "do środy, 18 listopada": after "do" Polish needs the genitive, which the engine's dueRangePl lacks.
-const DAYS_GEN = ['niedzieli', 'poniedziałku', 'wtorku', 'środy', 'czwartku', 'piątku', 'soboty'];
-const untilDay = (iso) => `${DAYS_GEN[wd(iso)]}, ${Number(iso.slice(8, 10))} ${MON_G[Number(iso.slice(5, 7)) - 1]}`;
-const dueRange = (due) => (due.earliest === due.latest ? `do ${untilDay(due.latest)}`
-  : `do ${untilDay(due.earliest)} (najpóźniej do ${untilDay(due.latest)}, zależnie od tego, jak liczyć dni)`);
+// "do środy, 18 listopada" (the engine's dueRangePl puts the date after "do" in the genitive).
+const dueRange = (due) => E.dueRangePl(due.earliest, due.latest);
 const fromStamp = (s) => ({ date: s.slice(0, 10), time: s.slice(11, 16) });
 
 /* ── The brand mark (BRAND.md): three sheets of paper, the top one folded. ── */

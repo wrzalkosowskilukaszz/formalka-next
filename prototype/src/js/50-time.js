@@ -16,10 +16,10 @@ function travel(days) {
       const answers = it.answers && !c.answered[it.id]
         ? `<div class="opts fu">${it.answers.map((a) => `<button type="button" class="chip chip-sm" data-fu="${esc(it.id)}" data-case="${c.id}" data-a="${esc(a.id)}">${esc(a.label)}</button>`).join('')}</div>` : '';
       if (answers) c.awaiting = it.id;
-      addMsg('bot', `${textHtml(asCase(c, it.message.pl))}${answers || actsHTML(c, agendaActs(c, it))}<span class="meta when">${esc(dshort(t.date))}${it.channel === 'notification' ? ' · powiadomienie' : ' · w aplikacji'}</span>`, c, t.time);
+      addMsg('bot', `${textHtml(it.message.pl)}${answers || actsHTML(c, agendaActs(c, it))}<span class="meta when">${esc(dshort(t.date))}${it.channel === 'notification' ? ' · powiadomienie' : ' · w aplikacji'}</span>`, c, t.time);
       if (it.channel === 'notification') notes.push({ c, it });
       delivered++;
-      if (it.answers) c.preview = asCase(c, it.message.pl);
+      if (it.answers) c.preview = it.message.pl;
     }
   }
   renderClock();
@@ -32,9 +32,9 @@ function showLock(notes, before) {
   $('#toast').innerHTML = '';
   const layer = $('#layer');
   const text = ({ c, it }) => {
-    if (!c.prefs.lockScreenDetail) return asCase(c, it.lockScreen);
+    if (!c.prefs.lockScreenDetail) return it.lockScreen;
     const again = agendaFor(c, before).find((x) => x.id === it.id);
-    return asCase(c, again?.lockScreen || it.lockScreen);
+    return again?.lockScreen || it.lockScreen;
   };
   const draw = () => {
     const anyDetail = notes.some((n) => n.c.prefs.lockScreenDetail);

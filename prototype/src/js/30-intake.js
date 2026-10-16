@@ -9,8 +9,7 @@ async function startCase(bpId, text) {
   if (S.cases.length > 1) addMsg('join', `${esc(c.who)} dołącza do rozmowy`, c);
   updateBuilder(c, true);
   mapNote(`Tworzymy Twoją sprawę: ${c.title}`);
-  // The engine's intro says "asystent"; a case's assistant may be "asystentka" (persona, not the engine).
-  await say(c, esc(E.msg.intro(c.who, c.title).replace('asystent AI', who(c.who).role)), 600);
+  await say(c, esc(E.msg.intro(personaOf(c), c.title)), 600);
   if (text) await readWords(c, text);
   await intakeLoop(c);
 }

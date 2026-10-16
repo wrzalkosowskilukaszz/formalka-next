@@ -14,13 +14,13 @@ const AGENDA_TITLE = {
 const AGENDA_ICON = { call_reminder: 'phone', visit_prep: 'list-checks', visit_morning: 'buildings', follow_up: 'chat-circle-dots', deadline_warning: 'hourglass-simple', deadline_today: 'warning-circle', office_deadline_passed: 'hourglass-simple', nudge: 'bell', rule_change: 'info' };
 function agendaFor(c, now = S.clock) {
   if (!c.state.approved) return [];
-  return E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: plan(c), state: c.state, prefs: c.prefs, now, lastActivity: c.lastActivity });
+  return E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: plan(c), state: c.state, prefs: c.prefs, now, lastActivity: c.lastActivity, persona: personaOf(c) });
 }
 function entries() {
   const out = [];
   for (const c of S.cases) {
     for (const it of agendaFor(c)) {
-      out.push({ at: it.fireAt, title: AGENDA_TITLE[it.kind] || asCase(c, it.message.pl.split('\n')[0]), ic: AGENDA_ICON[it.kind] || 'bell', c,
+      out.push({ at: it.fireAt, title: AGENDA_TITLE[it.kind] || it.message.pl.split('\n')[0], ic: AGENDA_ICON[it.kind] || 'bell', c,
         sub: `${c.who} przypomni${it.channel === 'notification' ? ', powiadomienie' : ', w aplikacji'}` });
     }
     for (const ev of c.state.events.filter((e) => e.type === 'visit_planned')) {
@@ -529,7 +529,7 @@ function planTime(c, kind, levelId) {
       const lv = plan(c).levels.find((l) => l.id === levelId);
       const A = [{ kind: 'teczka', label: 'Co zabrać: Teczka', ic: 'folder-simple' }];
       if (lv?.office?.offices?.length) A.unshift({ kind: 'offices', levelId, label: kind === 'visit' ? 'Adres i mapa' : 'Urzędy i godziny', ic: 'map-pin' });
-      addMsg('bot', `<p>${esc(asCase(c, E.msg.reminderAdded(date, time, kind)))}</p>${actsHTML(c, A)}`, c);
+      addMsg('bot', `<p>${esc(E.msg.reminderAdded(date, time, kind))}</p>${actsHTML(c, A)}`, c);
       toast(kind === 'visit' ? 'Wizyta zapisana. Tester: możesz przewinąć czas.' : 'Przypomnienie dodane. Wizyta nie jest zarezerwowana.', kind === 'visit' ? 'calendar-check' : 'bell');
       afterChange(c);
     };
@@ -556,7 +556,7 @@ async function callFlow(c) {
   c.state.events.push(ev); touch(c);
   logAct(c, `Przypomnienie o telefonie: ${dday(d.value)}, ${hm(t.value)}`, { event: ev.id });
   learnHour(c, t.value);
-  await say(c, esc(asCase(c, E.msg.reminderAdded(d.value, t.value, 'call'))));
+  await say(c, esc(E.msg.reminderAdded(d.value, t.value, 'call')));
   const v = await ask({ c, q: 'Gdy umówisz wizytę, wpisz mi jej termin. Przypomnę, co zabrać.', dk: false, options: [{ label: 'Mam już termin', value: 'yes', yes: true }, { label: 'Później', value: '', no: true }] });
   if (!v.value) { await say(c, `<p>Dobrze. Gdy będziesz mieć termin, wpisz go tutaj.</p>${actsHTML(c, [later_[1]])}`); toast('Tester: możesz przewinąć czas.', 'fast-forward'); return; }
   const vd = isoAdd(S.clock.date, 3);
@@ -569,7 +569,7 @@ async function callFlow(c) {
   const A = [{ kind: 'teczka', label: 'Co zabrać: Teczka', ic: 'folder-simple', primary: true }];
   if (l.office?.offices?.length) A.push({ kind: 'offices', levelId: l.id, label: 'Adres i mapa', ic: 'map-pin' });
   A.push({ kind: 'calendar', label: 'Kalendarz', ic: 'calendar-dots' });
-  await say(c, `<p>${esc(asCase(c, E.msg.reminderAdded(vd, vt.value, 'visit')))}</p>${c.prefs.consent ? `<p>Mam Twoją zgodę, więc ${who(c.who).sam} dodam przypomnienia przed wizytą. Zobaczysz je w Kalendarzu i w historii sprawy.</p>` : ''}${actsHTML(c, A)}`);
+  await say(c, `<p>${esc(E.msg.reminderAdded(vd, vt.value, 'visit'))}</p>${c.prefs.consent ? `<p>Mam Twoją zgodę, więc ${who(c.who).sam} dodam przypomnienia przed wizytą. Zobaczysz je w Kalendarzu i w historii sprawy.</p>` : ''}${actsHTML(c, A)}`);
   toast('Tester: możesz teraz przewinąć czas o 3 dni.', 'fast-forward');
 }
 
