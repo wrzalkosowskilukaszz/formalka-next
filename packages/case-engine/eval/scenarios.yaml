@@ -58,7 +58,21 @@
   expect:
     route: decided
     levels: { decision: done, after-refusal: available }
-    deadlines: { appeal: "2027-06-03", court: "2027-06-21" }
+    deadlines: { appeal: "2027-06-03" }
+    deadlineIds: [decision-time, appeal]
+- id: cit-07-minister-refused
+  blueprint: citizenship
+  text: "Odwołałem się od odmowy wojewody, a 10 sierpnia Minister utrzymał odmowę w mocy."
+  facts: { citizenship.ever_polish: "no", citizenship.permanent_title: "yes", citizenship.group: three_years, citizenship.language: "yes", citizenship.where_lives: poland_legal }
+  routeChoice: citizenship-recognition
+  events:
+    - { type: filing, date: "2026-11-30", by: user }
+    - { type: decision_delivered, date: "2027-05-20", outcome: refused, by: user }
+    - { type: appeal_decision_delivered, date: "2027-08-10", outcome: refused, by: user }
+  expect:
+    route: decided
+    levels: { decision: done, after-refusal: done, after-appeal: available }
+    deadlines: { court: "2027-09-09" }
 - id: res-01-work
   blueprint: residence-card
   text: "Dostałem pracę w Polsce i potrzebuję karty pobytu."

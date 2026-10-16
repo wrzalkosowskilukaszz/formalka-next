@@ -6,6 +6,11 @@
 //   with the same number, or the month's last day (years: the same, so 29 February ends on 28 February);
 //   an end on a Saturday or a day off work moves to the next working day. KPA art. 57 §1, §3, §3a, §4,
 //   quoted from Dz.U. 2025 poz. 1691 on 2026-10-16 (docs/formalka-next/verifications/DATES-2026-10-16.md).
+// - "ppsa": a complaint to an administrative court. PPSA art. 83 §1 counts by the civil code (KC art. 111
+//   §2: the event day doesn't count; art. 112: months as above) and §2 moves an end on a Saturday or a day
+//   off to the next day: the same arithmetic as "kpa", on its own legal basis (verified 2026-10-16).
+// - "plain": a deadline whose counting rule we haven't verified: the plain count from the day after the
+//   event (the general rule in both codes), never moved later. One date, so a reminder is never late.
 // - "nth-day": "najpóźniej w N dniu od X" (address registration): whether day X is day 1 is open
 //   (06 §7 Q3), so both readings are returned.
 // The days off follow art. 1 of the act on days off work, quoted from Dz.U. 2025 poz. 296 on 2026-10-16;
@@ -13,7 +18,7 @@
 
 export type Iso = string;
 export type Unit = "day" | "working_day" | "month" | "year";
-export type Counting = "kpa" | "nth-day";
+export type Counting = "kpa" | "ppsa" | "plain" | "nth-day";
 export interface Due { earliest: Iso; latest: Iso; counting: Counting; shifted?: boolean }
 
 function parts(iso: Iso): [number, number, number] {
@@ -85,7 +90,8 @@ export function addWorkingDays(iso: Iso, n: number): Iso {
 /**
  * The due date of a relative deadline from a confirmed event date. `earliest` is the safe date for
  * reminders; `latest` is the last day under the more generous reading. They differ when the
- * reading is open (nth-day) or when the end moves past a weekend or holiday (kpa).
+ * reading is open (nth-day) or when the end moves past a weekend or holiday (kpa, ppsa: the legal date
+ * is then `latest`).
  */
 export function dueDate(from: Iso, amount: number, unit: Unit, counting: Counting): Due {
   if (counting === "nth-day") {
@@ -97,6 +103,7 @@ export function dueDate(from: Iso, amount: number, unit: Unit, counting: Countin
     : unit === "working_day" ? addWorkingDays(from, amount)
     : unit === "month" ? addMonths(from, amount)
     : addMonths(from, 12 * amount);
+  if (counting === "plain") return { earliest: base, latest: base, counting };
   const latest = nextWorkingDayIfClosed(base);
   return { earliest: base, latest, counting, ...(latest !== base ? { shifted: true } : {}) };
 }

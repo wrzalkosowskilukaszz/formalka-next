@@ -3,7 +3,7 @@
 // never claim a booking, sending or filing that did not happen; never "wszystko już wiem"; neutral
 // grammatical gender towards the person (no "złożyłeś/złożyłaś"); no topic on the lock screen unless
 // the user wants it.
-import { weekday, type Iso } from "./dates.ts";
+import { type Counting, weekday, type Iso } from "./dates.ts";
 
 const MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
 const DAYS = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
@@ -21,10 +21,14 @@ export function dayPlGen(iso: Iso): string {
   return `${DAYS_GEN[weekday(iso)]}, ${d} ${MONTHS[m - 1]}`;
 }
 
-export function dueRangePl(earliest: Iso, latest: Iso): string {
-  return earliest === latest
-    ? `do ${dayPlGen(earliest)}`
-    : `do ${dayPlGen(earliest)} (najpóźniej do ${dayPlGen(latest)}, zależnie od tego, jak liczyć dni)`;
+/**
+ * A due date in words. Only the "najpóźniej w N dniu" reading is open (two dates); a deadline counted by
+ * KPA or PPSA has one legal date, which moves past a weekend or a day off, and the text says why.
+ */
+export function dueRangePl(earliest: Iso, latest: Iso, counting?: Counting): string {
+  if (earliest === latest) return `do ${dayPlGen(earliest)}`;
+  if (counting === "kpa" || counting === "ppsa") return `do ${dayPlGen(latest)} (${dayPl(earliest)} to dzień wolny od pracy, więc termin przesuwa się na następny dzień roboczy)`;
+  return `do ${dayPlGen(earliest)} (najpóźniej do ${dayPlGen(latest)}, zależnie od tego, jak liczyć dni)`;
 }
 
 /**

@@ -23,7 +23,7 @@ Rejestr: formalka@04057ef. Droga: decided (Zezwolenie na pobyt czasowy).
 
 ## Opłaty (available)
 - Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek [gov.pl]
-- Opłata: Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski): zwolnienie [api.sejm.gov.pl]
+- Opłata: Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski): 340 zł [api.sejm.gov.pl]
 - Opłata: Wydanie karty pobytu: 100 zł [gov.pl]
 
 ## Załącznik od pracodawcy, uczelni lub organizatora (available)

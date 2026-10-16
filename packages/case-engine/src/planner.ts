@@ -201,6 +201,11 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
         const ev = lastEvent(state, l.when.event);
         if (!ev || (l.when.outcome && ev.outcome !== l.when.outcome)) continue;
       }
+      if (l.requires) {
+        // Another outcome was recorded (a refusal): this level is not reached on this path.
+        const ev = lastEvent(state, l.requires.event);
+        if (ev?.outcome && ev.outcome !== l.requires.outcome) continue;
+      }
       // Of the level's alternative steps, the first one whose own condition may apply.
       let step: (typeof p.steps)[number] | undefined;
       let stepEval = { outcome: "applies" as Outcome, missing: [] as string[] };
@@ -258,7 +263,9 @@ export function planCase(bp: Blueprint, reg: Registry, state: CaseState): CasePl
             optional: !!f.optional, outcome: e.outcome === "unknown" ? "unknown" : "applies", quotes: f.amountPln.quotes,
           };
           for (const x of f.exemptions ?? []) {
-            const ex = evaluate(x.rule, state.facts);
+            // An exemption the content can't express as a rule is never granted: it stays "check if it
+            // applies to you", and the full fee is shown (audit F3, 2026-10-16).
+            const ex = x.rule ? evaluate(x.rule, state.facts) : { outcome: "unknown" as Outcome, missing: [] as string[] };
             if (ex.outcome === "does_not_apply") continue;
             noteUnsure(x.rule, `fee:${f.id}`);
             fee.exemption = {
@@ -342,11 +349,12 @@ function deadlinesFor(
     noteUnsure(d.condition, `deadline:${d.id}`);
     const r = d.rule.value;
     if (r.kind !== "relative") continue; // fixed dates: shown by the guide, not computed here
-    const ev = lastEvent(state, r.from);
+    const from = place.from ?? r.from; // a blueprint correction, only with a basis in the rule's quote
+    const ev = lastEvent(state, from);
     out.push({
       id: d.id, ruleRef: ruleRef(reg, p.id, "deadline", d.id), levelId: l.id, role: place.role,
       outcome: e.outcome === "unknown" ? "unknown" : "applies", description: d.description,
-      from: r.from, amount: r.amount, unit: r.unit, quotes: d.rule.quotes,
+      from, amount: r.amount, unit: r.unit, quotes: d.rule.quotes,
       ...(ev ? { due: dueDate(ev.date, r.amount, r.unit, place.counting) } : {}),
     });
   }
@@ -379,7 +387,10 @@ function settleStates(bp: Blueprint, levels: PlanLevel[], state: CaseState) {
       l.state = "returned";
       l.reason = { text: { pl: "Urząd prosi o uzupełnienie braków. Termin liczy się od doręczenia wezwania." }, ruleRef: returning.ruleRef };
     } else if (done(l)) l.state = "done";
-    else if (blocking.length) {
+    else if (def?.requires && lastEvent(state, def.requires.event)?.outcome !== def.requires.outcome && !blocking.length) {
+      l.state = "locked";
+      l.reason = { text: { pl: "Dopiero po decyzji pozytywnej." }, ruleRef: l.stepRef };
+    } else if (blocking.length) {
       l.state = "locked";
       l.reason = { text: { pl: `Najpierw: ${blocking.map((b) => b.title.pl).join(", ")}.` }, ruleRef: l.stepRef };
     } else if (def?.waiting) l.state = "waiting_office";

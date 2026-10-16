@@ -26,6 +26,11 @@ export interface LevelDef {
   completesWith?: string;
   /** The level exists only after this event (and outcome) is recorded. */
   when?: { event: string; outcome?: string };
+  /**
+   * The level is reachable only with this outcome (a card only after a positive decision): locked until
+   * the event is recorded with it, and gone when the event comes with another outcome (audit F2).
+   */
+  requires?: { event: string; outcome: string };
   /** Other cases this level can open, e.g. the language exam for the language proof. */
   crossCase?: { document: string; procedure: string; blueprint?: string; label: L10n }[];
   /** Editorial short titles for tasks (owner-checked wording; the official name stays visible). */
@@ -38,8 +43,16 @@ export interface DeadlinePlacement {
   role: "user" | "office";
   /** Recording this deadline's start event sends the level back ("returned"). */
   returns?: boolean;
+  /**
+   * The start event, when the registry's rule names a wrong one. Allowed only with `fromBasis`: words
+   * that appear verbatim in the rule's own quote (checkBlueprint proves it), e.g. "od otrzymania decyzji
+   * Ministra" for a court complaint the registry starts from the first decision (audit F2, 2026-10-16).
+   */
+  from?: string;
+  fromBasis?: string;
 }
-export interface EventDef { label: L10n; outcomes?: string[] }
+/** Something that happens in the case, recorded by the person. A decision names its instance (1, 2). */
+export interface EventDef { label: L10n; outcomes?: string[]; instance?: number }
 export interface Blueprint {
   id: string;
   title: L10n;
@@ -106,8 +119,13 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
       if (!place) { add("DEADLINE_NOT_PLACED", `${routeId}:${d.id}`); continue; }
       if (!levelIds.has(place.level)) add("UNKNOWN_LEVEL", `deadline ${d.id} -> ${place.level}`);
       const r = d.rule.value;
+      if (place.from !== undefined) {
+        const basis = place.fromBasis ?? "";
+        if (!basis || !d.rule.quotes.some((q) => q.text.includes(basis))) add("FROM_WITHOUT_BASIS", `${routeId}:${d.id}`);
+      }
       if (r.kind === "relative") {
-        if (!bp.events[r.from]) add("EVENT_NOT_RECORDABLE", `${routeId}:${d.id} starts from "${r.from}"`);
+        const from = place.from ?? r.from;
+        if (!bp.events[from]) add("EVENT_NOT_RECORDABLE", `${routeId}:${d.id} starts from "${from}"`);
         if (place.counting === "nth-day" && r.unit !== "day") add("BAD_COUNTING", `${routeId}:${d.id}`);
       }
     }
@@ -133,6 +151,7 @@ export function checkBlueprint(bp: Blueprint, reg: Registry): BlueprintIssue[] {
   }
   for (const l of bp.levels) {
     if (l.when && !bp.events[l.when.event]) add("EVENT_NOT_RECORDABLE", `level ${l.id} when ${l.when.event}`);
+    if (l.requires && !bp.events[l.requires.event]?.outcomes?.includes(l.requires.outcome)) add("EVENT_NOT_RECORDABLE", `level ${l.id} requires ${l.requires.event}=${l.requires.outcome}`);
     if (l.completesWith && !bp.events[l.completesWith]) add("EVENT_NOT_RECORDABLE", `level ${l.id} completes with ${l.completesWith}`);
     for (const x of l.crossCase ?? []) {
       if (!reg.procedures.has(x.procedure)) add("UNKNOWN_PROCEDURE", `cross-case ${x.procedure}`);

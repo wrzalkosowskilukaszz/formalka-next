@@ -27,6 +27,6 @@ levels:
     steps: { polish-language-certificate: result }
     completesWith: result_notice
 deadlines:
-  recheck: { level: result, counting: kpa, role: user }
+  recheck: { level: result, counting: plain, role: user }
 events:
   result_notice: { label: { pl: Data otrzymania wyniku } }

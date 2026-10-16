@@ -71,7 +71,7 @@ export function agenda(input: AgendaInput): AgendaItem[] {
       const total = periodDays(d.amount, d.unit);
       const lead = total <= 7 ? 2 : total <= 30 ? 5 : total <= 90 ? 14 : 30;
       const warnOn = addDays(d.due.earliest, -lead);
-      push("deadline_warning", warnOn, "09:00", msg.deadlineWarning(lead, l.title.pl, dueRangePl(d.due.earliest, d.due.latest), d.description.pl), [d.ruleRef], d.id);
+      push("deadline_warning", warnOn, "09:00", msg.deadlineWarning(lead, l.title.pl, dueRangePl(d.due.earliest, d.due.latest, d.due.counting), d.description.pl), [d.ruleRef], d.id);
       push("deadline_today", d.due.earliest, "09:00", msg.deadlineToday(l.title.pl, d.description.pl), [d.ruleRef], d.id);
     }
   }

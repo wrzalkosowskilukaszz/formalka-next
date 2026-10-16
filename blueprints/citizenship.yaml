@@ -44,6 +44,12 @@ levels:
   - id: after-refusal
     title: { pl: Po odmowie }
     when: { event: decision_delivered, outcome: refused }
+    completesWith: appeal_decision_delivered
+  # The court complaint runs from the Minister's decision on the appeal, not from the first one
+  # (the registry rule's own quote: "od otrzymania decyzji Ministra"; audit F2, 2026-10-16).
+  - id: after-appeal
+    title: { pl: Po decyzji Ministra }
+    when: { event: appeal_decision_delivered, outcome: refused }
 fulfillable:
   citizenship-recognition:
     polish-language:
@@ -71,9 +77,10 @@ notes:
 deadlines:
   decision-time: { level: decision, counting: kpa, role: office }
   appeal: { level: after-refusal, counting: kpa, role: user }
-  court: { level: after-refusal, counting: kpa, role: user }
+  court: { level: after-appeal, counting: ppsa, role: user, from: appeal_decision_delivered, fromBasis: "od otrzymania decyzji Ministra" }
   fix-gaps: { level: documents, counting: kpa, role: user, returns: true }
 events:
   filing: { label: { pl: Data złożenia wniosku } }
-  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused] }
+  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused], instance: 1 }
+  appeal_decision_delivered: { label: { pl: Data doręczenia decyzji Ministra po odwołaniu }, outcomes: [granted, refused], instance: 2 }
   request_delivered: { label: { pl: Data doręczenia wezwania do uzupełnienia braków } }

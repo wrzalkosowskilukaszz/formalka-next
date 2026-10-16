@@ -28,8 +28,8 @@ levels:
     steps: { pesel-application: notification }
     completesWith: pesel_assigned
 deadlines:
-  ukr-application: { level: file, counting: kpa, role: user }
-  fix-missing: { level: file, counting: kpa, role: user, returns: true }
+  ukr-application: { level: file, counting: plain, role: user }
+  fix-missing: { level: file, counting: plain, role: user, returns: true }
 notes:
   in-person: file
   missing-items: file

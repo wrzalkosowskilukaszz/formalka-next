@@ -25,7 +25,11 @@ test("blueprints: every step, document, fee and deadline lands on exactly one le
   delete broken.levels[1].steps!["citizenship-grant"];
   delete broken.deadlines.appeal;
   const codes = checkBlueprint(broken, reg).map((i) => i.code).sort();
-  assert.deepEqual(codes, ["DEADLINE_NOT_PLACED", "FEES_NOT_PLACED_ONCE", "STEP_NOT_PLACED"]);
+  assert.deepEqual(codes, ["DEADLINE_NOT_PLACED", "EMPTY_LEVEL", "FEES_NOT_PLACED_ONCE", "STEP_NOT_PLACED"]);
+  // A corrected start event needs words from the rule's own quote.
+  const unsupported: Blueprint = structuredClone(CIT);
+  unsupported.deadlines.court.fromBasis = "od dnia doręczenia pierwszej decyzji";
+  assert.deepEqual(checkBlueprint(unsupported, reg).map((i) => i.code), ["FROM_WITHOUT_BASIS"]);
 });
 
 test("route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure", () => {
@@ -83,9 +87,30 @@ test("events: filing starts the office's time; a refusal opens the appeal level 
   const refused = { ...filed, events: [...filed.events, { type: "decision_delivered", date: "2027-05-20", outcome: "refused", by: "user" as const }] };
   const p2 = planCase(CIT, reg, refused);
   const after = p2.levels.find((l) => l.id === "after-refusal")!;
-  assert.deepEqual(after.deadlines.map((d) => [d.id, d.due?.latest]), [["appeal", "2027-06-03"], ["court", "2027-06-21"]]);
+  // The appeal runs from the voivode's decision; the court complaint only from the Minister's (audit F2).
+  assert.deepEqual(after.deadlines.map((d) => [d.id, d.due?.latest]), [["appeal", "2027-06-03"]]);
+  assert.equal(p2.levels.some((l) => l.id === "after-appeal"), false, "no court date before the Minister decides");
+  const minister = { ...refused, events: [...refused.events, { type: "appeal_decision_delivered", date: "2027-08-10", outcome: "refused", by: "user" as const }] };
+  const p3 = planCase(CIT, reg, minister);
+  assert.equal(state(p3)["after-refusal"], "done");
+  const court = p3.levels.find((l) => l.id === "after-appeal")!.deadlines;
+  assert.deepEqual(court.map((d) => [d.id, d.from, d.due?.latest]), [["court", "appeal_decision_delivered", "2027-09-09"]]);
   const granted = { ...filed, events: [...filed.events, { type: "decision_delivered", date: "2027-05-20", outcome: "granted", by: "user" as const }] };
   assert.equal(planCase(CIT, reg, granted).levels.some((l) => l.id === "after-refusal"), false);
+});
+
+test("decisions: a residence card only after a positive decision; a refusal never opens it", () => {
+  const RES = loadBlueprint(`${ROOT}blueprints/residence-card.yaml`);
+  const st = (outcome?: string) => S({ "pobyt_czasowy.purpose": "work" }, {
+    events: [{ type: "filing", date: "2026-11-02", by: "user" }, ...(outcome !== undefined ? [{ type: "decision_delivered", date: "2027-01-15", by: "user" as const, ...(outcome ? { outcome } : {}) }] : [])],
+  });
+  const card = (o?: string) => planCase(RES, reg, st(o)).levels.find((l) => l.id === "card");
+  assert.equal(card()?.state, "locked");
+  assert.equal(card("")?.state, "locked", "a decision recorded without its outcome doesn't open the card");
+  assert.match(card("")!.reason!.text.pl, /decyzji pozytywnej/);
+  assert.equal(card("granted")?.state, "available");
+  assert.equal(card("refused"), undefined, "a refusal: the card is not on this path");
+  assert.equal(planCase(RES, reg, st("refused")).levels.find((l) => l.id === "decision")?.state, "done");
 });
 
 test("returned: a request to fill gaps sends the documents back until the fix is submitted", () => {
@@ -236,7 +261,10 @@ test("advisor: stable ids, generic lock screen, and never a claim of booking, se
 
 test("copy: dates after \"do\" in the genitive; words about the assistant agree with its persona", () => {
   assert.equal(dueRangePl("2026-11-18", "2026-11-18"), "do środy, 18 listopada");
-  assert.equal(dueRangePl("2026-10-31", "2026-11-01"), "do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni)");
+  assert.equal(dueRangePl("2026-10-31", "2026-11-01", "nth-day"), "do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni)");
+  // KPA/PPSA: one legal date; a Saturday end moves, and the text says why instead of offering two readings (audit F8).
+  assert.equal(dueRangePl("2027-05-30", "2027-05-31", "kpa"), "do poniedziałku, 31 maja (niedziela, 30 maja to dzień wolny od pracy, więc termin przesuwa się na następny dzień roboczy)");
+  assert.deepEqual(dueDate("2026-10-03", 14, "day", "plain"), { earliest: "2026-10-17", latest: "2026-10-17", counting: "plain" }, "no basis: one plain date, never moved later");
   assert.match(msg.intro({ name: "Asia", feminine: true }, "Zameldowanie"), /jestem Asia, asystentka AI Formalki/);
   assert.match(msg.intro("Maciek", "Obywatelstwo polskie"), /jestem Maciek, asystent AI Formalki/);
   assert.deepEqual([rolePl({ name: "Ola", feminine: true }), selfPl({ name: "Ola", feminine: true }), selfPl("Maciek")], ["asystentka AI", "sama", "sam"]);

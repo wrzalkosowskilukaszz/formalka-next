@@ -36,7 +36,8 @@ export function runScenarios(file = `${ROOT}packages/case-engine/eval/scenarios.
     if (x.procedure && plan.route.procedureId !== x.procedure) f.push(`procedure ${plan.route.procedureId} ≠ ${x.procedure}`);
     for (const [id, s] of Object.entries(x.levels ?? {})) if (lv(id)?.state !== s) f.push(`level ${id}: ${lv(id)?.state ?? "missing"} ≠ ${s}`);
     if (x.levelIds && plan.levels.map((l) => l.id).join() !== x.levelIds.join()) f.push(`levels ${plan.levels.map((l) => l.id).join()} ≠ ${x.levelIds.join()}`);
-    const fees = plan.levels.flatMap((l) => l.fees).filter((y) => !y.optional).map((y) => [y.id, y.amountPln]);
+    // The effective amount the person is shown: 0 only when an exemption certainly applies.
+    const fees = plan.levels.flatMap((l) => l.fees).filter((y) => !y.optional).map((y) => [y.id, y.exemption?.outcome === "applies" ? 0 : y.amountPln]);
     if (x.fees && JSON.stringify(fees) !== JSON.stringify(x.fees)) f.push(`fees ${JSON.stringify(fees)} ≠ ${JSON.stringify(x.fees)}`);
     if (x.noFees && fees.length) f.push(`fees present: ${JSON.stringify(fees)}`);
     const dls = plan.levels.flatMap((l) => l.deadlines);
@@ -90,7 +91,7 @@ function planText(sc: Scenario, p: CasePlan, bp: Blueprint): string {
     for (const t of l.tasks) out.push(`- ${t.title.pl}${t.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(t.quotes)}`);
     for (const f of l.fees) out.push(`- Opłata: ${f.purpose.pl}: ${f.exemption?.outcome === "applies" ? "zwolnienie" : `${f.amountPln} zł`}${f.optional ? " (opcjonalnie)" : ""}${src(f.quotes)}`);
     const UNIT: Record<string, string> = { day: "dni", working_day: "dni roboczych", month: "mies.", year: "lat" };
-    for (const d of l.deadlines) out.push(`- Termin${d.role === "office" ? " urzędu" : ""}: ${d.amount} ${UNIT[d.unit] ?? d.unit} od „${bp.events[d.from]?.label.pl ?? d.from}”${d.due ? `, ${dueRangePl(d.due.earliest, d.due.latest)}` : ""}${d.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(d.quotes)}`);
+    for (const d of l.deadlines) out.push(`- Termin${d.role === "office" ? " urzędu" : ""}: ${d.amount} ${UNIT[d.unit] ?? d.unit} od „${bp.events[d.from]?.label.pl ?? d.from}”${d.due ? `, ${dueRangePl(d.due.earliest, d.due.latest, d.due.counting)}` : ""}${d.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(d.quotes)}`);
     for (const o of l.office?.offices.slice(0, 3) ?? []) out.push(`- Urząd: ${o.name.pl}${o.address ? `, ${o.address.value}` : ""}`);
     for (const n of l.notes.filter((y) => y.important)) out.push(`- Uwaga: ${n.statement.value.pl.split("\n")[0]}${src(n.statement.quotes)}`);
   }

@@ -54,10 +54,11 @@ levels:
     completesWith: decision_delivered
   - id: card
     title: { pl: Karta pobytu }
+    requires: { event: decision_delivered, outcome: granted }
     steps: { temporary-residence: [card, paper-card] }
 deadlines:
-  outage: { level: filing, counting: kpa, role: user }
+  outage: { level: filing, counting: plain, role: user }
 events:
   filing: { label: { pl: Data złożenia wniosku } }
-  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused] }
+  decision_delivered: { label: { pl: Data doręczenia decyzji }, outcomes: [granted, refused], instance: 1 }
   system_restored: { label: { pl: "Dzień, w którym MOS znów działa" } }
