@@ -203,3 +203,4 @@ The hand-coding figures below are kept for comparison.
 | `schemas/` | Case store, registry additions, LLM output schemas, validator report |
 | `test-scenarios/` | Draft scenarios |
 | `../../spikes/` | S1 case engine (`npm test`), S3 official form fill |
+| 17 | What is left to design before a beta: screens, content, system, privacy, operations, gates |
