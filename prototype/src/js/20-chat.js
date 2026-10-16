@@ -1,7 +1,7 @@
 /* ── The conversation: one log for all cases, a dock with one question at a time ── */
 let logEl, dockEl, lastSpeaker, lastTime;
 function newChat() {
-  logEl = h('<div class="log pad" role="log" aria-live="polite" aria-label="Rozmowa"></div>');
+  logEl = h('<div class="log pad" role="log" aria-live="polite" aria-label="Rozmowa" tabindex="0"></div>');
   dockEl = h('<div class="dock" aria-label="Pytanie i odpowiedź"></div>');
   lastSpeaker = null;
   lastTime = null;

@@ -58,6 +58,17 @@ async function scenario(name, opts, fn) {
 }
 
 // Checks that hold on every screen.
+// D2: axe-core on every checked step (WCAG 2.0–2.2 A and AA rules); serious and critical issues fail.
+const AXE = join(dirname(fileURLToPath(import.meta.url)), 'vendor/axe-core-4.13.0.min.js');
+async function axeIssues(page) {
+  if (!(await page.evaluate(() => !!window.axe))) await page.addScriptTag({ path: AXE });
+  // Colours are measured at rest: finite animations (fades, slides) finish first; loops are left alone.
+  await page.evaluate(() => Promise.race([Promise.all(document.getAnimations().filter((a) => a.effect?.getComputedTiming().iterations !== Infinity).map((a) => a.finished.catch(() => {}))), new Promise((r) => setTimeout(r, 1500))]));
+  const res = await page.evaluate(() => window.axe.run({ include: [['#app'], ['#layer']], exclude: [['.tester-strip'], ['.tester-panel']] },
+    { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'] }, resultTypes: ['violations'] }));
+  return res.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical')
+    .map((v) => `${v.impact} ${v.id}: ${v.nodes.slice(0, 3).map((n) => `${n.target.join(' ')}${n.any?.[0]?.data?.contrastRatio ? ` (${n.any[0].data.fgColor} on ${n.any[0].data.bgColor}, ${n.any[0].data.contrastRatio}:1 "${(n.html || '').replace(/<[^>]+>/g, '').slice(0, 30)}")` : ''}`).join(' | ')}`);
+}
 async function checkScreen(page) {
   const r = await page.evaluate(() => {
     const never = window.FormalkaEngine.PHRASES_NEVER;
@@ -81,10 +92,11 @@ async function checkScreen(page) {
       primaries: (() => {
         const probe = document.createElement('i'); probe.style.background = 'var(--accent)'; document.body.append(probe);
         const accent = getComputedStyle(probe).backgroundColor; probe.remove();
-        const covered = !!document.querySelector('#layer .full');
+        const covered = !!document.querySelector('#layer .full, #layer .sheet');
         return [...document.querySelectorAll('#app button, #app a, #layer button, #layer a')]
           .filter((el) => { const r = el.getBoundingClientRect(); return el.offsetParent !== null && r.bottom > 0 && r.top < innerHeight && !el.closest('.tester-strip') && !(covered && el.closest('#app')); })
-          .filter((el) => getComputedStyle(el).backgroundColor === accent && !el.matches('.send, [role=switch]'))
+          // A selected day, tab or filter is a state, not an action.
+          .filter((el) => getComputedStyle(el).backgroundColor === accent && !el.matches('.send, [role=switch], [aria-pressed=true], [aria-selected=true], [aria-current], .sel, .on'))
           .map((el) => `${el.textContent.trim().slice(0, 30)}`);
       })(),
       // D3: touch targets. Links inside running text are exempt (WCAG 2.5.8 "inline").
@@ -104,6 +116,9 @@ async function checkScreen(page) {
   if (process.env.REPORT_TARGETS && r.primaries.length > 1) SMALL.add(`PRIMARIES ${r.primaries.length}: ${r.primaries.join(' | ')}`);
   else if (!process.env.REPORT_TARGETS) assert.ok(r.primaries.length <= 1, `D9: more than one primary action in view: ${r.primaries.join(' | ')}`);
   else assert.deepEqual([...r.small], [], 'D3: a touch target under 44 px');
+  const axe = await axeIssues(page);
+  if (process.env.REPORT_TARGETS) for (const x of axe) SMALL.add(`AXE ${x}`);
+  else assert.deepEqual(axe, [], 'D2: accessibility issues (axe-core, serious or critical)');
   if (process.env.REPORT_TARGETS) for (const x of r.clipped) SMALL.add(`CLIPPED ${x}`);
   else assert.deepEqual([...r.clipped], [], 'D11: content cut off at the side');
 }
