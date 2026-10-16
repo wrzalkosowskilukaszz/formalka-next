@@ -200,8 +200,11 @@ The chat always has a back button; with no case yet, it returns home.
   - with one assistant, no name row above its messages: the header already names it;
   - name rows return when several assistants share the chat;
   - a time shows only when the minute changes.
+- **The case bar shows the route** (owner, 16.10: "trasa w pasku"):
+  - one dot per step, coloured by its state (done, now, depends on answers, locked, waiting, assumed, skipped);
+  - beside it, the step just added ("Nowy krok: Opłaty") or how many steps the map has;
+  - the same compact bar while a question is open; the full map is one tap away.
 - **While a question is open:**
-  - the case bar folds to one line, with the progress and the case's name; the map is one tap away;
   - progress shows once, in the bar (the question panel no longer repeats it);
   - a question longer than 70 characters is set at body size;
   - a long list of answers uses tighter cards (still 44 px targets);

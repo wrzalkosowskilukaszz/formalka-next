@@ -197,7 +197,7 @@ function makeBuilder(c) {
   BN.clear();
   builderEl = h(`<button type="button" class="builder" aria-label="Twoja sprawa buduje się na żywo. Otwórz mapę">
     <span class="ring sm" aria-hidden="true"><svg viewBox="0 0 40 40"><circle class="bg" cx="20" cy="20" r="16" fill="none" stroke-width="4"/><circle class="fg" cx="20" cy="20" r="16" fill="none" stroke-width="4" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg><span>0%</span></span>
-    <span class="b-main"><span class="b-title"><small>Tworzymy sprawę</small><b>${esc(c.title)}</b></span><span class="b-nodes"></span></span>
+    <span class="b-main"><span class="b-title"><b>${esc(c.title)}</b></span><span class="b-route"><span class="b-nodes"></span><span class="b-now"></span></span></span>
     ${icon('caret-right', 'b-go')}</button>`);
   builderEl.onclick = () => { const b = caseById(S.building) || c; openMapSheet(b); };
 }
@@ -206,6 +206,7 @@ function updateBuilder(c, animate = true, changed = []) {
   const p = plan(c);
   const row = $('.b-nodes', builderEl);
   const seen = new Set();
+  const added = [];
   let k = 0;
   p.levels.forEach((l, i) => {
     seen.add(l.id);
@@ -213,13 +214,17 @@ function updateBuilder(c, animate = true, changed = []) {
     const isNew = !el;
     if (isNew) { el = h('<span class="bn"></span>'); BN.set(l.id, el); }
     if (row.children[i] !== el) row.insertBefore(el, row.children[i] || null);
-    el.className = `bn ${l.state}${l.parallelWith.length ? ' par' : ''}`;
-    el.innerHTML = `${icon(levelIcon(l))}<span class="sr">${esc(l.title.pl)}: ${esc(STATE[l.state])}</span>`;
-    if (animate && isNew) { el.classList.add('is-new'); el.style.animationDelay = `${k++ * 90}ms`; }
+    el.className = `bn ${l.implied ? 'implied' : l.state}${l.parallelWith.length ? ' par' : ''}`;
+    el.innerHTML = `<span class="sr">${esc(l.title.pl)}: ${esc(stateText(l))}</span>`;
+    if (animate && isNew) { el.classList.add('is-new'); el.style.animationDelay = `${k++ * 90}ms`; added.push(l); }
     else if (animate && changed.includes(l.id)) el.classList.add('is-changed');
     later(1300, () => el.classList.remove('is-new', 'is-changed'));
   });
   for (const [id, el] of BN) if (!seen.has(id)) { el.remove(); BN.delete(id); }
+  // Beside the route: the step just added, else how many steps the map has so far.
+  const n = p.levels.length;
+  const total = `${n} ${plural(n, 'krok', 'kroki', 'kroków')} na mapie`;
+  $('.b-now', builderEl).innerHTML = added.length > 0 && added.length < n ? `<b>Nowy krok:</b> ${esc(added[added.length - 1].title.pl)}` : esc(total);
   const prog = progressOf(c, p);
   // The bar appears with the first answer that builds the plan; before that it would only say 0%.
   builderEl.hidden = !c.state.approved && prog === 0 && !c.state.routeChoice;
