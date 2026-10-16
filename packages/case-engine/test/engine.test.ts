@@ -228,6 +228,10 @@ test("advisor: stable ids, generic lock screen, and never a claim of booking, se
   for (const phrase of PHRASES_NEVER.filter((p) => p !== "masz umówioną wizytę")) assert.ok(!samples.includes(phrase), phrase);
   assert.match(msg.reminderAdded("2026-10-29", "12:00", "call"), /Wizyta nie jest jeszcze zarezerwowana/);
   assert.match(msg.intro("Maciek", "Obywatelstwo polskie"), /asystent AI/);
+  // Formalka's copy rule V13: no exclamation marks. And no promise the registry can't keep: it has no phone numbers.
+  assert.ok(!samples.includes("!"), "no exclamation marks");
+  assert.match(samples, /pora zadzwonić/, "the call reminder is among the samples");
+  assert.match(samples, /numeru telefonu urzędu nie mamy w naszych źródłach/);
 });
 
 test("advisor: the office's time passing is told once, as information; a quiet week gets a nudge", () => {

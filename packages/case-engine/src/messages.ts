@@ -26,7 +26,7 @@ export const PHRASES_NEVER = [
 
 export const msg = {
   intro: (name: string, caseTitle: string) =>
-    `Cześć! Jestem ${name}, asystent AI Formalki. Pomogę Ci poprowadzić sprawę: ${caseTitle}. Korzystam tylko z oficjalnych źródeł i przy każdej informacji pokażę, skąd ją mam.`,
+    `Dzień dobry, jestem ${name}, asystent AI Formalki. Pomogę Ci poprowadzić sprawę: ${caseTitle}. Korzystam tylko z oficjalnych źródeł i przy każdej informacji pokażę, skąd ją mam.`,
   planReady: (unsureCount: number) =>
     unsureCount === 0
       ? "Mam wystarczająco dużo informacji, żeby przygotować pierwszy plan. Sprawdź założenia, zanim zaczniemy."
@@ -49,7 +49,7 @@ export const msg = {
   booking: (url: string) => `Rezerwacja wizyty: ${url}`,
   officeUnknown: () => "Nie mamy w naszych źródłach adresu urzędu dla Twojej miejscowości. Sprawdź go na stronie urzędu.",
   visitMorning: (time: string, levelTitle: string) =>
-    `Dziś o ${time}: ${levelTitle}. Lista rzeczy do zabrania jest w planie. Powodzenia!`,
+    `Dziś o ${time}: ${levelTitle}. Lista rzeczy do zabrania jest w planie. Powodzenia.`,
   followUp: () => "Jak poszło w urzędzie? Daj znać, a zaktualizuję plan.",
   followUpAnswers: [
     { id: "filed", label: "Wniosek złożony" },
@@ -57,7 +57,7 @@ export const msg = {
     { id: "not_went", label: "Nie udało się" },
   ],
   callReminder: (levelTitle: string) =>
-    `Pora zadzwonić do urzędu w sprawie kroku „${levelTitle}”. Numer i godziny pracy są w karcie urzędu.`,
+    `Pora zadzwonić do urzędu w sprawie kroku „${levelTitle}”. Numeru telefonu urzędu nie mamy w naszych źródłach; znajdziesz go na stronie urzędu. Adres i godziny pracy, jeśli je mamy, są w karcie urzędu.`,
   nudge: (caseTitle: string, next: string) =>
     `Dawno nic się nie działo w sprawie „${caseTitle}”. Następny krok: ${next}. Zajrzysz?`,
   ruleChange: (procedureTitle: string) =>

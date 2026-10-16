@@ -104,7 +104,7 @@
     "jestem urz\u0119dnikiem"
   ];
   var msg = {
-    intro: (name, caseTitle) => `Cze\u015B\u0107! Jestem ${name}, asystent AI Formalki. Pomog\u0119 Ci poprowadzi\u0107 spraw\u0119: ${caseTitle}. Korzystam tylko z oficjalnych \u017Ar\xF3de\u0142 i przy ka\u017Cdej informacji poka\u017C\u0119, sk\u0105d j\u0105 mam.`,
+    intro: (name, caseTitle) => `Dzie\u0144 dobry, jestem ${name}, asystent AI Formalki. Pomog\u0119 Ci poprowadzi\u0107 spraw\u0119: ${caseTitle}. Korzystam tylko z oficjalnych \u017Ar\xF3de\u0142 i przy ka\u017Cdej informacji poka\u017C\u0119, sk\u0105d j\u0105 mam.`,
     planReady: (unsureCount) => unsureCount === 0 ? "Mam wystarczaj\u0105co du\u017Co informacji, \u017Ceby przygotowa\u0107 pierwszy plan. Sprawd\u017A za\u0142o\u017Cenia, zanim zaczniemy." : `Mam wystarczaj\u0105co du\u017Co informacji, \u017Ceby przygotowa\u0107 pierwszy plan. ${unsureCount === 1 ? "Jedna kwestia wymaga" : `${unsureCount} kwestie wymagaj\u0105`} jeszcze potwierdzenia. S\u0105 zaznaczone na mapie.`,
     deadlineWarning: (days, levelTitle, range, description) => `Zosta\u0142o ${days} ${days === 1 ? "dzie\u0144" : "dni"} na krok \u201E${levelTitle}\u201D: termin ${range}. ${description}`,
     deadlineToday: (levelTitle, description) => `Dzi\u015B mija bezpieczny termin na krok \u201E${levelTitle}\u201D. ${description}`,
@@ -121,14 +121,14 @@
     officeWebsite: (name, url) => `Urz\u0105d: ${name}. Adres i godziny przyj\u0119\u0107 sprawd\u017A na jego stronie: ${url}`,
     booking: (url) => `Rezerwacja wizyty: ${url}`,
     officeUnknown: () => "Nie mamy w naszych \u017Ar\xF3d\u0142ach adresu urz\u0119du dla Twojej miejscowo\u015Bci. Sprawd\u017A go na stronie urz\u0119du.",
-    visitMorning: (time, levelTitle) => `Dzi\u015B o ${time}: ${levelTitle}. Lista rzeczy do zabrania jest w planie. Powodzenia!`,
+    visitMorning: (time, levelTitle) => `Dzi\u015B o ${time}: ${levelTitle}. Lista rzeczy do zabrania jest w planie. Powodzenia.`,
     followUp: () => "Jak posz\u0142o w urz\u0119dzie? Daj zna\u0107, a zaktualizuj\u0119 plan.",
     followUpAnswers: [
       { id: "filed", label: "Wniosek z\u0142o\u017Cony" },
       { id: "missing", label: "Czego\u015B brakowa\u0142o" },
       { id: "not_went", label: "Nie uda\u0142o si\u0119" }
     ],
-    callReminder: (levelTitle) => `Pora zadzwoni\u0107 do urz\u0119du w sprawie kroku \u201E${levelTitle}\u201D. Numer i godziny pracy s\u0105 w karcie urz\u0119du.`,
+    callReminder: (levelTitle) => `Pora zadzwoni\u0107 do urz\u0119du w sprawie kroku \u201E${levelTitle}\u201D. Numeru telefonu urz\u0119du nie mamy w naszych \u017Ar\xF3d\u0142ach; znajdziesz go na stronie urz\u0119du. Adres i godziny pracy, je\u015Bli je mamy, s\u0105 w karcie urz\u0119du.`,
     nudge: (caseTitle, next) => `Dawno nic si\u0119 nie dzia\u0142o w sprawie \u201E${caseTitle}\u201D. Nast\u0119pny krok: ${next}. Zajrzysz?`,
     ruleChange: (procedureTitle) => `Zmieni\u0142y si\u0119 oficjalne informacje, na kt\xF3rych opiera si\u0119 Tw\xF3j plan (${procedureTitle}). Sprawd\u017Amy razem, co to zmienia.`,
     reminderAdded: (date, time, what) => what === "call" ? `Przypomnienie dodane: ${dayPl(date)}, ${time}, \u017Ceby zadzwoni\u0107 do urz\u0119du. Wizyta nie jest jeszcze zarezerwowana.` : `Przypomnienie dodane: ${dayPl(date)}, ${time}. To przypomnienie o wizycie, kt\xF3r\u0105 masz um\xF3wion\u0105 w urz\u0119dzie.`,
