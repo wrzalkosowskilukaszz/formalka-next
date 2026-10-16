@@ -32,9 +32,9 @@ The home footer shows the build id and the engine hash, so screenshots from a se
 
 | Command | What it checks |
 |---|---|
-| `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (15 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application |
+| `node --test prototype/test/*.test.mjs` | **Design rules** (`design.test.mjs`): every visual value in `app.css` comes from a token, and no text is below 12 px (`node prototype/test/design-rules.mjs` lists any violation with its line).<br>**The on-device reader** of typed answers:<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
-| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Eight scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-H>` for one scenario |
+| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Eleven scenarios in Chromium (below), at 390×844 unless stated. Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <letter>` for one scenario. `REPORT_TARGETS=1` lists the screen-check findings instead of failing |
 
 The end-to-end scenarios:
 - **A:** citizenship in the person's own words, consent on, a change after approval that opens a second route; a typed PESEL is masked and a not-understood question gets no action.
@@ -56,12 +56,18 @@ The end-to-end scenarios:
   - the plan only on request ("Nie teraz", then "Ułóż jednak plan");
   - from home, words that name the case already open go to it.
 - **H:** the home input with words that name no case leads into the chat, which offers the five cases; back returns home.
+- **I:** correcting a confirmed answer after approval: the proposed diff, the recheck marks, approval and refusal, history.
+- **Z1, Z2:** reflow at 320 CSS px (WCAG 1.4.10) and text at 200% on the phone (WCAG 1.4.4): the plan, Teraz, Mapa, Teczka and Kalendarz.
 
-Every screen in every scenario is checked for:
+Every checked step in every scenario is checked for:
 - no console errors and no network requests;
-- no horizontal overflow and every icon drawn;
+- no horizontal overflow, nothing cut off at the sides, and every icon drawn;
 - none of the engine's never-say phrases (`PHRASES_NEVER`);
-- no em dash and no internal identifier shown as text.
+- no em dash and no internal identifier shown as text;
+- touch targets of at least 44 px (doc 18 D3);
+- at most one primary action in view (D9);
+- accessibility with axe-core 4.13.0, WCAG 2.0–2.2 A and AA rules: no serious or critical issue (D2; `test/vendor/`);
+- the screen's contract: what it must always show (doc 18 §5.3).
 
 Playwright and ESLint come from a global install (`npm i -g playwright eslint`). In the cloud container they are preinstalled.
 

@@ -201,7 +201,7 @@ Each component gets a contract: what it shows, its states, the rules above that 
 | Teczka | The documents by case; "Tylko na tym telefonie" | e2e B opens it; the contract is not asserted |
 | Kalendarz | Only dates the person recorded or the plan computed, each with its source | e2e B opens it; per-item sources are not asserted |
 
-**Proposal (no new feature):** turn these contracts into one e2e test per screen, run on every scenario state. Today the checks are spread across the scenarios.
+**Done on `lab/quality-pass`:** these contracts are asserted on every checked e2e step (`checkScreen` in `prototype/test/e2e.mjs`). The Teczka's items and the calendar's per-item sources are checked as present, not yet against the plan.
 
 ## 6. Measures, with thresholds set before any session
 
