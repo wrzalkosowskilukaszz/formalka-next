@@ -33,7 +33,7 @@ Rejestr: formalka@04057ef. Droga: decided (Zezwolenie na pobyt czasowy).
 
 ## Złożenie wniosku (locked) — Najpierw: Opłaty, Dokumenty.
 - Złóż wniosek w systemie MOS [gov.pl]
-- Termin: 3 dni roboczych od „system_restored” [gov.pl]
+- Termin: 3 dni roboczych od „Dzień, w którym MOS znów działa” [gov.pl]
 
 ## Zaświadczenie o złożeniu (locked) — Najpierw: Złożenie wniosku.
 - Pobierz zaświadczenie o złożeniu wniosku [gov.pl]

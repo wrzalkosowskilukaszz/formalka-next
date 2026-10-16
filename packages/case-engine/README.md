@@ -10,10 +10,12 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 30 tests incl. 17 evaluation scenarios, intake and replan checks
+npm test                         # 31 tests incl. 17 evaluation scenarios, intake and replan checks
 npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
+
+The committed `dist/case-engine.browser.js` reproduces byte for byte only when built from `packages/case-engine` with `--locales pl`: esbuild writes source paths relative to the working directory into the bundle's comments.
 
 ## What it does
 

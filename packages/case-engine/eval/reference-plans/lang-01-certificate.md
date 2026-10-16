@@ -24,4 +24,4 @@ Rejestr: formalka@04057ef. Droga: decided (Certyfikat znajomości języka polski
 
 ## Wynik i certyfikat (locked) — Najpierw: Egzamin.
 - Odbierz wynik i certyfikat [api.sejm.gov.pl]
-- Termin: 21 dni od „result_notice” [api.sejm.gov.pl]
+- Termin: 21 dni od „Data otrzymania wyniku” [api.sejm.gov.pl]

@@ -3,7 +3,7 @@
 # engine keeps both readings and reminds on the earlier one.
 id: address-registration
 title: { pl: Zameldowanie }
-caretaker: { name: Asia }
+caretaker: { name: Asia, feminine: true }
 routes: [zameldowanie-foreigner]
 routeLevel:
   id: route

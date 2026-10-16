@@ -1,22 +1,40 @@
 // The advisor's words, in Polish, filled from the plan. Templates, not a model: no cost, no
 // hallucination, and every sentence can be reviewed once. Rules (brief 15 §3.7, product rule 10):
 // never claim a booking, sending or filing that did not happen; never "wszystko już wiem"; neutral
-// grammatical gender (no "złożyłeś/złożyłaś"); no topic on the lock screen unless the user wants it.
+// grammatical gender towards the person (no "złożyłeś/złożyłaś"); no topic on the lock screen unless
+// the user wants it.
 import { weekday, type Iso } from "./dates.ts";
 
 const MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
 const DAYS = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
+/** The weekday after "do" ("do środy, 18 listopada"); the month is already in the genitive. */
+const DAYS_GEN = ["niedzieli", "poniedziałku", "wtorku", "środy", "czwartku", "piątku", "soboty"];
 
 export function dayPl(iso: Iso, withWeekday = true): string {
   const [, m, d] = iso.split("-").map(Number);
   return `${withWeekday ? `${DAYS[weekday(iso)]}, ` : ""}${d} ${MONTHS[m - 1]}`;
 }
 
+/** "środy, 18 listopada": a date after "do". */
+export function dayPlGen(iso: Iso): string {
+  const [, m, d] = iso.split("-").map(Number);
+  return `${DAYS_GEN[weekday(iso)]}, ${d} ${MONTHS[m - 1]}`;
+}
+
 export function dueRangePl(earliest: Iso, latest: Iso): string {
   return earliest === latest
-    ? `do ${dayPl(earliest)}`
-    : `do ${dayPl(earliest)} (najpóźniej ${dayPl(latest)}, zależnie od tego, jak liczyć dni)`;
+    ? `do ${dayPlGen(earliest)}`
+    : `do ${dayPlGen(earliest)} (najpóźniej do ${dayPlGen(latest)}, zależnie od tego, jak liczyć dni)`;
 }
+
+/**
+ * The case's assistant as the person sees it: one model, with its own name in each case. The words
+ * about the assistant agree with it ("asystentka AI", "sama"); the words to the person stay neutral.
+ */
+export interface Persona { name: string; feminine?: boolean }
+const asPersona = (p: Persona | string): Persona => (typeof p === "string" ? { name: p } : p);
+export const rolePl = (p: Persona | string) => (asPersona(p).feminine ? "asystentka AI" : "asystent AI");
+export const selfPl = (p: Persona | string) => (asPersona(p).feminine ? "sama" : "sam");
 
 export const PHRASES_NEVER = [
   "umówiłem", "umówiłam", "umówiłe", "zarezerwowałem", "zarezerwowałam", "wysłałem", "wysłałam",
@@ -25,8 +43,8 @@ export const PHRASES_NEVER = [
 ];
 
 export const msg = {
-  intro: (name: string, caseTitle: string) =>
-    `Dzień dobry, jestem ${name}, asystent AI Formalki. Pomogę Ci poprowadzić sprawę: ${caseTitle}. Korzystam tylko z oficjalnych źródeł i przy każdej informacji pokażę, skąd ją mam.`,
+  intro: (who: Persona | string, caseTitle: string) =>
+    `Dzień dobry, jestem ${asPersona(who).name}, ${rolePl(who)} Formalki. Pomogę Ci poprowadzić sprawę: ${caseTitle}. Korzystam tylko z oficjalnych źródeł i przy każdej informacji pokażę, skąd ją mam.`,
   planReady: (unsureCount: number) =>
     unsureCount === 0
       ? "Mam wystarczająco dużo informacji, żeby przygotować pierwszy plan. Sprawdź założenia, zanim zaczniemy."

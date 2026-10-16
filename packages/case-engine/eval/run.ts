@@ -3,7 +3,7 @@
 // CLI: node eval/run.ts --write   (writes eval/REPORT.md and eval/reference-plans/*.md)
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parse } from "yaml";
-import { type CasePlan, type CaseState, dueRangePl, type FactCandidate, intake, loadBlueprint, loadRegistry, planCase, UNKNOWN, validatePlan } from "../src/index.ts";
+import { type Blueprint, type CasePlan, type CaseState, dueRangePl, type FactCandidate, intake, loadBlueprint, loadRegistry, planCase, UNKNOWN, validatePlan } from "../src/index.ts";
 
 const ROOT = new URL("../../../", import.meta.url).pathname;
 const reg = loadRegistry(`${ROOT}reference`, "formalka@04057ef");
@@ -26,7 +26,7 @@ export function runScenarios(file = `${ROOT}packages/case-engine/eval/scenarios.
     const bp = loadBlueprint(`${ROOT}blueprints/${sc.blueprint}.yaml`);
     const state: CaseState = { facts: sc.facts ?? {}, tasks: {}, events: sc.events ?? [], routeChoice: sc.routeChoice, place: sc.place };
     const plan = planCase(bp, reg, state);
-    const text = planText(sc, plan);
+    const text = planText(sc, plan, bp);
     const f: string[] = [];
     const x = sc.expect;
     const lv = (id: string) => plan.levels.find((l) => l.id === id);
@@ -80,7 +80,7 @@ export function runIntake(file = `${ROOT}packages/case-engine/eval/scenarios.yam
 }
 
 /** The reference plan in plain Polish, with the source of every value (for blind scoring). */
-function planText(sc: Scenario, p: CasePlan): string {
+function planText(sc: Scenario, p: CasePlan, bp: Blueprint): string {
   const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
   const src = (q?: { page: string }[]) => (q?.length ? ` [${host(q[0].page)}]` : "");
   const out = [`# ${sc.id}`, "", `Sytuacja (szkic, do przepisania przez native writers): „${sc.text}”`, "", `Rejestr: ${reg.version}. Droga: ${p.route.status}${p.route.procedureId ? ` (${reg.procedures.get(p.route.procedureId)?.title.pl})` : ""}.`];
@@ -90,7 +90,7 @@ function planText(sc: Scenario, p: CasePlan): string {
     for (const t of l.tasks) out.push(`- ${t.title.pl}${t.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(t.quotes)}`);
     for (const f of l.fees) out.push(`- Opłata: ${f.purpose.pl}: ${f.exemption?.outcome === "applies" ? "zwolnienie" : `${f.amountPln} zł`}${f.optional ? " (opcjonalnie)" : ""}${src(f.quotes)}`);
     const UNIT: Record<string, string> = { day: "dni", working_day: "dni roboczych", month: "mies.", year: "lat" };
-    for (const d of l.deadlines) out.push(`- Termin${d.role === "office" ? " urzędu" : ""}: ${d.amount} ${UNIT[d.unit] ?? d.unit} od „${d.from}”${d.due ? `, ${dueRangePl(d.due.earliest, d.due.latest)}` : ""}${d.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(d.quotes)}`);
+    for (const d of l.deadlines) out.push(`- Termin${d.role === "office" ? " urzędu" : ""}: ${d.amount} ${UNIT[d.unit] ?? d.unit} od „${bp.events[d.from]?.label.pl ?? d.from}”${d.due ? `, ${dueRangePl(d.due.earliest, d.due.latest)}` : ""}${d.outcome === "unknown" ? " (jeśli dotyczy)" : ""}${src(d.quotes)}`);
     for (const o of l.office?.offices.slice(0, 3) ?? []) out.push(`- Urząd: ${o.name.pl}${o.address ? `, ${o.address.value}` : ""}`);
     for (const n of l.notes.filter((y) => y.important)) out.push(`- Uwaga: ${n.statement.value.pl.split("\n")[0]}${src(n.statement.quotes)}`);
   }

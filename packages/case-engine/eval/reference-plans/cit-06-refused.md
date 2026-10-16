@@ -24,8 +24,8 @@ Rejestr: formalka@04057ef. Droga: decided (Obywatelstwo polskie przez uznanie).
 
 ## Czekasz na urząd (done)
 - Czekaj na decyzję wojewody [gov.pl]
-- Termin urzędu: 6 mies. od „filing”, do niedziela, 30 maja (najpóźniej poniedziałek, 31 maja, zależnie od tego, jak liczyć dni) [api.sejm.gov.pl]
+- Termin urzędu: 6 mies. od „Data złożenia wniosku”, do niedzieli, 30 maja (najpóźniej do poniedziałku, 31 maja, zależnie od tego, jak liczyć dni) [api.sejm.gov.pl]
 
 ## Po odmowie (available)
-- Termin: 14 dni od „decision_delivered”, do czwartek, 3 czerwca [gov.pl]
-- Termin: 30 dni od „decision_delivered”, do sobota, 19 czerwca (najpóźniej poniedziałek, 21 czerwca, zależnie od tego, jak liczyć dni) [gov.pl]
+- Termin: 14 dni od „Data doręczenia decyzji”, do czwartku, 3 czerwca [gov.pl]
+- Termin: 30 dni od „Data doręczenia decyzji”, do soboty, 19 czerwca (najpóźniej do poniedziałku, 21 czerwca, zależnie od tego, jak liczyć dni) [gov.pl]

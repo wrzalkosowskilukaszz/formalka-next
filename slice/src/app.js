@@ -45,13 +45,13 @@ const plan = (c) => E.plan(c.bpId, c.state);
 function newCase(bpId, from) {
   const bp = E.blueprint(bpId);
   const c = {
-    id: `c${S.cases.length + 1}`, bpId, title: bp.title.pl, who: bp.caretaker.name,
+    id: `c${S.cases.length + 1}`, bpId, title: bp.title.pl, who: bp.caretaker.name, persona: bp.caretaker,
     state: { facts: {}, tasks: {}, events: [], approved: false }, asked: 0, log: [], stage: 'intake',
     prefs: { ...E.DEFAULT_PREFS }, lastActivity: S.clock.date, tab: 'chat', focus: null, placeAsked: false,
   };
   S.cases.push(c); S.current = c.id; S.home = false;
   if (S.cases.length > 1) say(c, 'sys', `${c.who} dołącza do rozmowy.`);
-  say(c, 'bot', E.msg.intro(c.who, c.title));
+  say(c, 'bot', E.msg.intro(c.persona, c.title));
   if (from) say(c, 'sys', `Sprawa powiązana z: ${from}.`);
   say(c, 'sys', `Tworzymy Twoją sprawę: ${c.title}`);
   advance(c);
@@ -123,7 +123,7 @@ function travel(days) {
   const until = nowStr();
   for (const c of S.cases) {
     if (!c.state.approved) continue;
-    const items = E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: plan(c), state: c.state, prefs: c.prefs, now: before, lastActivity: c.lastActivity });
+    const items = E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: plan(c), state: c.state, prefs: c.prefs, now: before, lastActivity: c.lastActivity, persona: c.persona });
     for (const it of items.filter((i) => i.fireAt <= until && !S.delivered.has(i.id))) {
       S.delivered.add(it.id);
       say(c, 'bot', it.message.pl, { answers: it.answers, item: it.id, when: it.fireAt });
@@ -175,7 +175,7 @@ function homeView() {
   const list = S.cases.map((c) => {
     const p = plan(c);
     const next = p.levels.find((l) => l.order > 0 && ['returned', 'in_progress', 'available', 'waiting_office'].includes(l.state));
-    return `<button class="card opt" data-open="${c.id}" style="width:100%"><strong>${esc(c.title)}</strong> <span class="who">${esc(c.who)} · asystent AI</span>
+    return `<button class="card opt" data-open="${c.id}" style="width:100%"><strong>${esc(c.title)}</strong> <span class="who">${esc(c.who)} · ${E.rolePl(c.persona ?? c.who)}</span>
       <div class="reason">${next ? `${esc(next.title.pl)}: ${STATE_PL[next.state]}` : 'Plan w przygotowaniu'}</div></button>`;
   }).join('');
   return `<section class="start">
@@ -238,7 +238,7 @@ function caseView(c) {
   const tabs = [['chat', 'Rozmowa'], ['map', 'Mapa'], ['folder', 'Teczka'], ...(c.state.approved ? [['now', 'Teraz'], ['acts', `${c.who} działa`]] : [])];
   if (!tabs.some(([k]) => k === c.tab)) c.tab = 'chat';
   return `<div class="head"><button class="back" data-home aria-label="Twoje sprawy">${icon('arrow-left')}</button>
-      <h2>${esc(c.title)}</h2><span class="who">${esc(c.who)} · asystent AI</span></div>
+      <h2>${esc(c.title)}</h2><span class="who">${esc(c.who)} · ${E.rolePl(c.persona ?? c.who)}</span></div>
     <div class="row" style="margin-top:0"><span class="badge ${v.ok ? 'ok' : 'bad'}">${v.ok ? `${icon('check')} Plan sprawdzony: każdy element ma źródło` : `Plan nie przeszedł kontroli (${v.violations.length})`}</span>
       <span class="when">${p.status === 'active' ? 'aktywny' : 'projekt planu'}</span></div>
     <div class="strip" aria-label="Mapa w skrócie">${p.levels.map((l) => `<span class="node" data-s="${l.state}" title="${esc(STATE_PL[l.state])}">${icon(STATE_ICON[l.state])} ${esc(l.title.pl)}</span>`).join('')}</div>
@@ -247,7 +247,7 @@ function caseView(c) {
 }
 
 function chatView(c, p) {
-  const log = c.log.map((m) => `<div class="msg ${m.who === 'me' ? 'me' : m.who === 'sys' ? 'sys' : ''}">${m.who === 'bot' ? `<span class="from">${esc(c.who)} · asystent AI${m.when ? ` · ${esc(m.when.replace('T', ' '))}` : ''}</span>` : ''}${esc(m.text)}
+  const log = c.log.map((m) => `<div class="msg ${m.who === 'me' ? 'me' : m.who === 'sys' ? 'sys' : ''}">${m.who === 'bot' ? `<span class="from">${esc(c.who)} · ${E.rolePl(c.persona ?? c.who)}${m.when ? ` · ${esc(m.when.replace('T', ' '))}` : ''}</span>` : ''}${esc(m.text)}
       ${m.answers && !c.answered?.[m.item] ? `<div class="row">${m.answers.map((a) => `<button class="mini" data-fu="${esc(m.item)}" data-a="${a.id}">${esc(a.label)}</button>`).join('')}</div>` : ''}</div>`).join('');
   return `<div class="log">${log}</div>${dock(c, p)}`;
 }
@@ -322,7 +322,7 @@ function dock(c, p) {
       ${c.state.place ? `<p class="reason">Miejscowość: ${esc(c.state.place.name)}</p>` : ''}
       ${unsure ? `<p class="reason">Do potwierdzenia:</p><ul class="reason">${unsure}</ul>` : ''}
       ${notesHtml(p.levels[0].notes.filter((n) => n.important), 3)}
-      <label class="row"><input type="checkbox" id="consent" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może sam dodawać przypomnienia i wpisy w kalendarzu do tej sprawy</label>
+      <label class="row"><input type="checkbox" id="consent" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może ${E.selfPl(c.persona ?? c.who)} dodawać przypomnienia i wpisy w kalendarzu do tej sprawy</label>
       <div class="row"><button class="btn" data-approve>Zatwierdzam plan</button><button class="btn ghost" data-tab="map">Zobacz mapę</button></div></div>`;
   }
   if (c.stage === 'stuck') return `${notesHtml(p.levels[0].notes)}${(E.blueprint(c.bpId).related ?? []).map((r) => `<div class="row"><button class="btn ghost" data-cross="${esc(r.blueprint)}">${icon('arrow-square-out')} ${esc(r.label.pl)}</button></div>`).join('')}<form class="pill" id="ask"><input id="ask-in" placeholder="Napisz do: ${esc(c.who)}" autocomplete="off"><button class="send" aria-label="Wyślij">${icon('arrow-up')}</button></form>`;
@@ -432,10 +432,10 @@ function officeHtml(c, o) {
 }
 
 function actsView(c, p) {
-  const items = E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: p, state: c.state, prefs: c.prefs, now: S.clock, lastActivity: c.lastActivity });
+  const items = E.agenda({ caseId: c.id, blueprintId: c.bpId, plan: p, state: c.state, prefs: c.prefs, now: S.clock, lastActivity: c.lastActivity, persona: c.persona });
   const list = items.map((i) => `<li><div class="when">${esc(i.fireAt.replace('T', ' '))} · ${i.channel === 'notification' ? `${icon('bell-simple')} powiadomienie` : 'w aplikacji'}</div>
       <div>${esc(i.message.pl.split('\n')[0])}</div>${i.channel === 'notification' ? `<div class="when">Ekran blokady: „${esc(i.lockScreen)}”</div>` : ''}</li>`).join('');
-  return `<div class="card"><label class="row" style="margin-top:0"><input type="checkbox" id="consent2" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może sam dodawać przypomnienia i wpisy w kalendarzu</label>
+  return `<div class="card"><label class="row" style="margin-top:0"><input type="checkbox" id="consent2" ${c.prefs.consent ? 'checked' : ''}> ${esc(c.who)} może ${E.selfPl(c.persona ?? c.who)} dodawać przypomnienia i wpisy w kalendarzu</label>
       <label class="row"><input type="checkbox" id="detail" ${c.prefs.lockScreenDetail ? 'checked' : ''}> Pokazuj temat sprawy na ekranie blokady</label>
       <p class="note">Bez zgody wszystko zostaje w aplikacji. Najwyżej jedno powiadomienie dziennie na sprawę, nic między 20:00 a 08:00.</p></div>
     <div class="card"><h3>Co ${esc(c.who)} zrobi sam</h3>${list ? `<ul class="agenda">${list}</ul>` : '<p class="reason">Na razie nic: zapisz datę, od której liczy się termin, albo zaplanuj wizytę.</p>'}
@@ -499,7 +499,7 @@ function wireCase(c) {
     if (t.dataset.askplace !== undefined) { c.stage = 'place'; c.tab = 'chat'; render(); return; }
     if (t.dataset.approve !== undefined) {
       c.prefs.consent = $('#consent')?.checked ?? c.prefs.consent; c.state.approved = true; c.stage = 'case'; c.tab = 'now'; touch(c);
-      say(c, 'sys', `Plan zatwierdzony: ${E.dayPl(S.clock.date)}.${c.prefs.consent ? ` ${c.who} będzie sam dodawać przypomnienia.` : ''}`); render(); return;
+      say(c, 'sys', `Plan zatwierdzony: ${E.dayPl(S.clock.date)}.${c.prefs.consent ? ` ${c.who} będzie ${E.selfPl(c.persona ?? c.who)} dodawać przypomnienia.` : ''}`); render(); return;
     }
     if (t.dataset.focus) { c.focus = t.dataset.focus; c.tab = 'now'; render(); return; }
     if (t.dataset.task) { c.state.tasks[t.dataset.task] = t.dataset.st; touch(c); render(); return; }

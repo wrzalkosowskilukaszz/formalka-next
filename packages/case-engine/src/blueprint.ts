@@ -43,7 +43,8 @@ export interface EventDef { label: L10n; outcomes?: string[] }
 export interface Blueprint {
   id: string;
   title: L10n;
-  caretaker: { name: string };
+  /** The case's assistant: its name, and whether words about it are feminine ("asystentka AI"). */
+  caretaker: { name: string; feminine?: boolean };
   /** Alternative procedures; their own applicability rules decide which apply. */
   routes: string[];
   routeLevel: { id: string; title: L10n };

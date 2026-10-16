@@ -3,9 +3,9 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { runScenarios } from "../eval/run.ts";
 import {
-  addMonths, agenda, type AgendaItem, type Blueprint, type CaseState, checkBlueprint, DEFAULT_PREFS, dueDate,
+  addMonths, agenda, type AgendaItem, type Blueprint, type CaseState, checkBlueprint, DEFAULT_PREFS, dueDate, dueRangePl,
   easter, loadBlueprint, loadRegistry, msg, nextQuestion, nextWorkingDayIfClosed, outOfQuiet, PHRASES_NEVER,
-  planCase, polishHolidays, UNKNOWN, validatePlan,
+  planCase, polishHolidays, rolePl, selfPl, UNKNOWN, validatePlan,
 } from "../src/index.ts";
 
 const ROOT = new URL("../../../", import.meta.url).pathname;
@@ -157,10 +157,10 @@ test("dates: Easter, holidays, month ends, KPA shift and the two nth-day reading
 const ACTIVE = { approved: true };
 const NOW = { date: "2026-10-28", time: "12:00" };
 const CONSENT = { ...DEFAULT_PREFS, consent: true };
-function addressAgenda(extra: Partial<CaseState> = {}, prefs = CONSENT, now = NOW) {
+function addressAgenda(extra: Partial<CaseState> = {}, prefs = CONSENT, now = NOW, persona?: { name: string; feminine?: boolean }) {
   const st = S({ "zameldowanie.citizen_group": "other", "zameldowanie.stay": "temporary" },
     { ...ACTIVE, events: [{ type: "arrival_at_address", date: "2026-10-28", by: "user" }], ...extra });
-  return agenda({ caseId: "c1", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs, now });
+  return agenda({ caseId: "c1", bp: ADDR, plan: planCase(ADDR, reg, st), state: st, prefs, now, persona });
 }
 const allText = (items: AgendaItem[]) => items.map((i) => `${i.message.pl} ${i.lockScreen}`).join("\n").toLowerCase();
 
@@ -232,6 +232,20 @@ test("advisor: stable ids, generic lock screen, and never a claim of booking, se
   assert.ok(!samples.includes("!"), "no exclamation marks");
   assert.match(samples, /pora zadzwonić/, "the call reminder is among the samples");
   assert.match(samples, /numeru telefonu urzędu nie mamy w naszych źródłach/);
+});
+
+test("copy: dates after \"do\" in the genitive; words about the assistant agree with its persona", () => {
+  assert.equal(dueRangePl("2026-11-18", "2026-11-18"), "do środy, 18 listopada");
+  assert.equal(dueRangePl("2026-10-31", "2026-11-01"), "do soboty, 31 października (najpóźniej do niedzieli, 1 listopada, zależnie od tego, jak liczyć dni)");
+  assert.match(msg.intro({ name: "Asia", feminine: true }, "Zameldowanie"), /jestem Asia, asystentka AI Formalki/);
+  assert.match(msg.intro("Maciek", "Obywatelstwo polskie"), /jestem Maciek, asystent AI Formalki/);
+  assert.deepEqual([rolePl({ name: "Ola", feminine: true }), selfPl({ name: "Ola", feminine: true }), selfPl("Maciek")], ["asystentka AI", "sama", "sam"]);
+  assert.equal(ADDR.caretaker.feminine, true);
+  // One assistant per case: the app may give this case another name; every lock-screen line uses it.
+  const items = addressAgenda(), renamed = addressAgenda({}, CONSENT, NOW, { name: "Ola", feminine: true });
+  assert.ok(items.length > 0 && renamed.length === items.length);
+  assert.ok(items.every((i) => i.lockScreen.startsWith("Asia:")));
+  assert.ok(renamed.every((i) => i.lockScreen.startsWith("Ola:")), renamed.map((i) => i.lockScreen).join());
 });
 
 test("advisor: the office's time passing is told once, as information; a quiet week gets a nudge", () => {

@@ -6,7 +6,7 @@
 # values as labelled examples only.
 id: residence-card
 title: { pl: Karta pobytu }
-caretaker: { name: Asia }
+caretaker: { name: Asia, feminine: true }
 routes: [temporary-residence]
 routeLevel:
   id: route

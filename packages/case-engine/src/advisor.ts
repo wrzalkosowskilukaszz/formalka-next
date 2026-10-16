@@ -10,7 +10,7 @@
 // topic unless the user turned that on; ids are stable, so rescheduling never duplicates.
 import type { Blueprint } from "./blueprint.ts";
 import { addDays, daysBetween, type Iso } from "./dates.ts";
-import { dayPl, dueRangePl, msg } from "./messages.ts";
+import { dayPl, dueRangePl, msg, type Persona } from "./messages.ts";
 import type { CasePlan, CaseState, PlanLevel } from "./planner.ts";
 import type { L10n } from "./registry.ts";
 
@@ -45,6 +45,8 @@ export interface AgendaInput {
   now: { date: Iso; time: string };
   /** Last day the user did anything in this case. */
   lastActivity?: Iso;
+  /** The assistant's name in this case, when the app gives each case its own (else the blueprint's). */
+  persona?: Persona;
   /** Registry versions published since the plan was approved, for this case's procedures. */
   registryChanges?: { procedureTitle: string; publishedOn: Iso; ruleRef: string }[];
 }
@@ -52,7 +54,7 @@ export interface AgendaInput {
 export function agenda(input: AgendaInput): AgendaItem[] {
   const { caseId, bp, plan, state, prefs, now } = input;
   if (plan.status !== "active") return [];
-  const name = bp.caretaker.name;
+  const name = input.persona?.name ?? bp.caretaker.name;
   const items: Omit<AgendaItem, "channel" | "lockScreen">[] = [];
   const push = (kind: AgendaKind, date: Iso, time: string, text: string, basis: string[], key: string, answers?: AgendaItem["answers"]) =>
     items.push({ id: [caseId, kind, key, date].join("|"), caseId, kind, fireAt: `${date}T${time}`, message: { pl: text }, basis, ...(answers ? { answers } : {}) });

@@ -14,7 +14,7 @@ Rejestr: formalka@04057ef. Droga: decided (Obywatelstwo polskie nadane przez Pre
 - Zdjęcia każdej osoby, której dotyczy wniosek [api.sejm.gov.pl]
 - Tłumaczenia dokumentów w obcym języku (jeśli takie dołączasz) [gov.pl]
 - Zgoda drugiego z rodziców (jeśli wniosek obejmuje dziecko) [api.sejm.gov.pl]
-- Termin: 30 dni od „request_delivered” [api.sejm.gov.pl]
+- Termin: 30 dni od „Data doręczenia wezwania do uzupełnienia braków” [api.sejm.gov.pl]
 
 ## Opłata (locked) — Najpierw: Dokumenty.
 - Zapłać opłatę [gov.pl]

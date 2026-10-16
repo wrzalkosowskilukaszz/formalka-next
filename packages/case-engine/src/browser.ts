@@ -5,7 +5,7 @@ import data from "../dist/data.json" with { type: "json" };
 import { agenda, type AgendaInput, DEFAULT_PREFS } from "./advisor.ts";
 import { type Blueprint, blueprintFromData, checkBlueprint } from "./blueprint.ts";
 import { confirmCandidates, intake, placeCandidate } from "./intake.ts";
-import { dayPl, dueRangePl, msg, PHRASES_NEVER } from "./messages.ts";
+import { dayPl, dayPlGen, dueRangePl, msg, PHRASES_NEVER, rolePl, selfPl } from "./messages.ts";
 import { type CasePlan, type CaseState, planCase } from "./planner.ts";
 import { nextQuestion } from "./questions.ts";
 import { applyReplan, diffPlans } from "./replan.ts";
@@ -50,6 +50,6 @@ export const FormalkaEngine = {
   /** After approval a change is a proposal: what it would change, by stable ids; done work is never undone. */
   diffPlans, applyReplan,
   agenda: (input: Omit<AgendaInput, "bp"> & { blueprintId: string }) => agenda({ ...input, bp: bp(input.blueprintId) }),
-  msg, dayPl, dueRangePl, PHRASES_NEVER, DEFAULT_PREFS, UNKNOWN,
+  msg, dayPl, dayPlGen, dueRangePl, rolePl, selfPl, PHRASES_NEVER, DEFAULT_PREFS, UNKNOWN,
 };
 (globalThis as unknown as { FormalkaEngine: typeof FormalkaEngine }).FormalkaEngine = FormalkaEngine;

@@ -31,8 +31,8 @@ Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 - Opłata: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać: 17 zł (opcjonalnie) [gov.pl]
 - Opłata: Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie: 17 zł (opcjonalnie) [gov.pl]
 - Opłata: Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze: 17 zł (opcjonalnie) [gov.pl]
-- Termin: 4 dni od „arrival_at_address” (jeśli dotyczy) [gov.pl]
-- Termin: 30 dni od „arrival_at_address” (jeśli dotyczy) [gov.pl]
+- Termin: 4 dni od „Dzień, od którego mieszkasz pod tym adresem” (jeśli dotyczy) [gov.pl]
+- Termin: 30 dni od „Dzień, od którego mieszkasz pod tym adresem” (jeśli dotyczy) [gov.pl]
 
 ## Zameldowanie (locked) — Najpierw: Wizyta w urzędzie gminy.
 - Urzędnik melduje Cię od razu [gov.pl]

@@ -25,5 +25,5 @@ Rejestr: formalka@04057ef. Droga: decided (Obywatelstwo polskie przez uznanie).
 
 ## Czekasz na urząd (locked) — Najpierw: Złożenie wniosku.
 - Czekaj na decyzję wojewody [gov.pl]
-- Termin urzędu: 6 mies. od „filing” [api.sejm.gov.pl]
+- Termin urzędu: 6 mies. od „Data złożenia wniosku” [api.sejm.gov.pl]
 - Urząd: Mazowiecki Urząd Wojewódzki w Warszawie

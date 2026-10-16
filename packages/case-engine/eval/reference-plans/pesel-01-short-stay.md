@@ -17,7 +17,7 @@ Rejestr: formalka@04057ef. Droga: decided (Numer PESEL na wniosek).
 - inny dokument potwierdzający tożsamość [api.sejm.gov.pl]
 - oryginalne dokumenty (do wglądu) potwierdzające pozostałe dane [bip.krakow.pl]
 - Opłata: Wniosek o nadanie numeru PESEL: 0 zł [gov.pl]
-- Termin: 7 dni od „request_delivered” [api.sejm.gov.pl]
+- Termin: 7 dni od „Dzień doręczenia wezwania do uzupełnienia” [api.sejm.gov.pl]
 - Uwaga: Jeśli nie jesteś: [gov.pl]
 
 ## Numer PESEL (locked) — Najpierw: Wizyta w urzędzie gminy.
