@@ -1,5 +1,5 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-16T15:14Z commit 6b62c27 node v22.22.0
+# 2026-10-16T15:25Z commit 9d2ae9a node v22.22.0
 
 # Subtest: norm folds Polish letters and punctuation
 ok 1 - norm folds Polish letters and punctuation
@@ -38,4 +38,4 @@ ok 15 - waiting for the office: the need is read from the words, not as a new ap
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 173.737854
+# duration_ms 139.259026

@@ -1,29 +1,29 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T15:14Z commit 6b62c27 node v22.22.0
+# 2026-10-16T15:25Z commit 9d2ae9a node v22.22.0
 
-built: dist/index.html 747 KB, build 968dc143597d, engine 4f03d3478d04d6be, formalka@04057ef
-6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739  prototype/dist/index.html
-802a548916f988ac79536000fb1e01d2a9742285fe5a9f81e9bad1a2f65b360f  prototype/dist/artifact.html
+built: dist/index.html 748 KB, build 0d4206b2a32d, engine a0988a9702344e56, formalka@04057ef
+e036b6ad31eb79ac1f4a7f1765a767e0095b36957b4c44ee4ddc23d03e362c94  prototype/dist/index.html
+ab6acd251582b72d1ff366dfde780465ac739a61ed2fc33a6f49977941cad9ee  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "968dc143597d",
+  "build": "0d4206b2a32d",
   "registry": "formalka@04057ef",
-  "engine": "4f03d3478d04d6be",
+  "engine": "a0988a9702344e56",
   "engineBundle": {
     "file": "case-engine.browser.js",
-    "sha256": "7c25ab7e69d76546c879f3d443cbf012f2721d9291a6913bc90185f6b15d9bbf"
+    "sha256": "2a110e4500d2d244217081187838af1858e9da8498f50a5ca415a7878b86ac21"
   },
   "inputs": {
-    "../packages/case-engine/dist/case-engine.browser.js": "7c25ab7e69d76546",
-    "src/app.css": "1ec6139ecd116f63",
+    "../packages/case-engine/dist/case-engine.browser.js": "2a110e4500d2d244",
+    "src/app.css": "19d75e2a3cc67e7e",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
     "src/js/10-cases.js": "144300f948caff3d",
-    "src/js/20-chat.js": "59460483e62bb7cb",
+    "src/js/20-chat.js": "45c5e54b3797cd53",
     "src/js/25-shell.js": "452f89eb93f0b312",
-    "src/js/30-intake.js": "6fd350f0cc080b41",
-    "src/js/35-understand.js": "f1d3a1faa82bd00b",
+    "src/js/30-intake.js": "efe5b4522777fc98",
+    "src/js/35-understand.js": "33b5fbd679597f5c",
     "src/js/40-case.js": "7b4180767a23c102",
     "src/js/45-guide.js": "b8b08eeab73fa1e3",
     "src/js/46-waiting.js": "9e38c549dab5e146",
@@ -92,7 +92,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "6c556477ea0b189355b31db36338ba4353e26862f5f90dc124b7ada7ce26e739",
-    "artifact.html": "802a548916f988ac79536000fb1e01d2a9742285fe5a9f81e9bad1a2f65b360f"
+    "index.html": "e036b6ad31eb79ac1f4a7f1765a767e0095b36957b4c44ee4ddc23d03e362c94",
+    "artifact.html": "ab6acd251582b72d1ff366dfde780465ac739a61ed2fc33a6f49977941cad9ee"
   }
 }
