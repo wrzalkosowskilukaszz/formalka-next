@@ -1,0 +1,33 @@
+{
+  "registry": "formalka@04057ef",
+  "locales": [
+    "pl"
+  ],
+  "engine": "bd6eb50d2c94474e",
+  "sources": {
+    "reference/address-registration/facts-pesel.yaml": "5fb7b4bd13d63381",
+    "reference/address-registration/facts-zameldowanie.yaml": "e34e9eeb7baf6920",
+    "reference/address-registration/procedure-pesel.yaml": "e22061543722d236",
+    "reference/address-registration/procedure-zameldowanie.yaml": "80877aec2dfd2779",
+    "reference/citizenship/facts-grant.yaml": "3914e57b5b0b6030",
+    "reference/citizenship/facts-recognition.yaml": "ddd8dce09337ebf5",
+    "reference/citizenship/procedure-grant.yaml": "7196ff02adc286ae",
+    "reference/citizenship/procedure-recognition.yaml": "2fb44b23eb6c60a3",
+    "reference/language-certificate/facts-certyfikat-polski.yaml": "4df9005465ee40fd",
+    "reference/language-certificate/procedure-certyfikat-polski.yaml": "85f30dc16cbbc381",
+    "reference/offices/institutions.yaml": "3147a39f1f5dbea0",
+    "reference/offices/offices-krakow.yaml": "c271e11d60945510",
+    "reference/offices/offices-warszawa.yaml": "c0926cad4c010299",
+    "reference/residence/facts-pobyt-czasowy.yaml": "16783b22f4cdd420",
+    "reference/residence/procedure-pobyt-czasowy.yaml": "f57f43c4c81b7afc",
+    "blueprints/address-registration.yaml": "57641842838034f2",
+    "blueprints/citizenship.yaml": "cce241663dd62027",
+    "blueprints/language-certificate.yaml": "859dab7f2193b1f9",
+    "blueprints/pesel.yaml": "9acb538e899bfbcd",
+    "blueprints/residence-card.yaml": "7b98980deef724dd"
+  },
+  "bundle": {
+    "file": "case-engine.browser.js",
+    "sha256": "b36aa1b496fd5a7d1f1aaa3b610e83e35f1fd4cfe08e296c303586d9ac610aef"
+  }
+}

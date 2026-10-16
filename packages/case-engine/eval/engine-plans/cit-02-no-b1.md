@@ -1,6 +1,16 @@
 # cit-02-no-b1
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Mam pobyt stały od czterech lat, ale nie mam jeszcze certyfikatu z polskiego.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- Czy ta osoba miała kiedykolwiek obywatelstwo polskie? → Nie, nigdy
+- Czy ta osoba ma zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE albo prawo stałego pobytu? → Tak
+- Która sytuacja najlepiej opisuje tę osobę? → Mieszka w Polsce na tym tytule nieprzerwanie od co najmniej 3 lat i ma tu stabilne i regularne źródło dochodu oraz tytuł prawny do mieszkania
+- Czy ta osoba ma urzędowe poświadczenie znajomości polskiego co najmniej na poziomie B1 albo świadectwo szkoły w Polsce lub szkoły z polskim językiem wykładowym (świadectwo szkoły policealnej się nie liczy)? → Nie
+- Gdzie mieszka ta osoba i na jakiej podstawie jest w Polsce? → W Polsce legalnie, na przykład z kartą pobytu (nie na wizie ani w ruchu bezwizowym)
+- Wybrana droga: Obywatelstwo polskie przez uznanie
 
 Rejestr: formalka@04057ef. Droga: decided (Obywatelstwo polskie przez uznanie).
 

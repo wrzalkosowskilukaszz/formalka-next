@@ -46,7 +46,8 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - 30 tests and 17 evaluation scenarios, all passing; 24 injected faults caught;
   - a browser build used by the slice and offered to the prototype.
 - **Functional slice** (`slice/`): the engine driving a phone screen end to end (questions with "Nie wiem", route choice, map, "Teraz", events, the advisor's agenda with time travel). Private link reported to the owner.
-- **Evaluation set** (`packages/case-engine/eval/`): reference plans in plain Polish for the blind H1 benchmark, to be reviewed by the owner before any run.
+- **Evaluation set** (`packages/case-engine/eval/`): 18 scenarios. The engine's plans in plain Polish are in `engine-plans/`; they are the generator's output, not the benchmark reference. The independent reference (`eval/independent/`) is not written yet (audit F6).
+- **External audit (2026-10-16), engine findings F1–F4, F6, F8 fixed** (doc 16 §6c). Five registry errors behind them are proposed for production in `PRODUCTION-CONTENT-PROPOSALS-2026-10-16.md`, not applied.
 - **Intake harness** (doc 16 §9a): free text → fact candidates the person confirms one by one. The checker holds for any future LLM (verbatim, on-topic evidence; language and origin never become citizenship). The non-AI Polish baseline scores 0 wrong of 16 proposed on the scenarios.
 - **Deadline rules verified:** KPA art. 57 and the days-off list quoted from the acts via ELI (`verifications/DATES-2026-10-16.md`); the code already matched.
 - **Teczka** in the slice: every document in one checklist, with alternatives, fees and the case history.
@@ -150,7 +151,7 @@ The hand-coding figures below are kept for comparison.
 5. Port S3 to pdf-lib with generated appearance streams; test in Android WebView and iOS Safari (synthetic data).
 6. Inventory the permanent-stay registration form (hash, fields, never-fill list).
 7. Draft the concept-test wireflow (structured vs. free-text intake; named vs. unnamed companion) as static HTML in the lab, with no backend. Partly done: the experience prototype and the functional slice exist; the A/B variants for the concept test do not.
-8. ~~Write 10 of the 40 benchmark scenarios with the reference plans; leave the four-language texts to native writers.~~ Done: 17 scenarios with reference plans (`packages/case-engine/eval/`), awaiting the owner's review.
+8. ~~Write 10 of the 40 benchmark scenarios with the reference plans; leave the four-language texts to native writers.~~ Done: 18 scenarios with engine plans (`packages/case-engine/eval/`). They are not a reference: the independent reference is still to be written (audit F6).
 9. Measure the registry bundle size for `arrive-register-address` and design the version check (ETag) that replaces a changes feed for slice 1.
 10. Draft the interview guide (A5 timing first, A4, A9) and the office questions (A6, O6) for the owner to run.
 

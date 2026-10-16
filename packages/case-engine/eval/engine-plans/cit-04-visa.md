@@ -1,6 +1,13 @@
 # cit-04-visa
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Jestem w Polsce na wizie i chciałbym dostać polskie obywatelstwo.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- Czy ta osoba miała kiedykolwiek obywatelstwo polskie? → Nie, nigdy
+- Czy ta osoba ma zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE albo prawo stałego pobytu? → Nie
+- Gdzie mieszka ta osoba i na jakiej podstawie jest w Polsce? → W Polsce na wizie albo w ruchu bezwizowym
 
 Rejestr: formalka@04057ef. Droga: decided (Obywatelstwo polskie nadane przez Prezydenta).
 

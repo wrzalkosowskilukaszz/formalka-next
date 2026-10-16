@@ -111,8 +111,27 @@ After a plan is approved, a change becomes a **proposal** the person approves, n
 
 **In the slice:** after approval, words typed in the chat go through intake. Once the person confirms them, a "Ta zmiana zmieni Twój plan" card shows the diff, with "Zatwierdzam zmianę" and "Zostaw jak było". A change that alters nothing says so.
 
+## 6c. Fixes after the external audit (2026-10-16)
+An external audit of prototype v4 found engine errors the tests had not caught. Its verdict:
+- GO for problem interviews;
+- conditional GO for moderated tests on fictional cases;
+- NO-GO for anyone relying on the app for a real case.
+
+Each finding below was reproduced, fixed, then reverted once to prove its test catches it.
+
+| Finding | What was wrong | Fix |
+|---|---|---|
+| F1 | The validator checked structure only: a plan with valid references passed with a fee of 999 999 zł, a renamed task, missing items or an invented office | `verifyContent` (separate from the structural `validatePlan`) checks amounts, exemptions, start events, dates and offices against the registry and the events, and the whole plan against one recomputed from the same inputs. `E.validate` returns both checks, kept apart |
+| F2 | The court complaint was counted from the voivode's decision, and a refused residence decision opened the card level | Typed decision events with an instance (`appeal_decision_delivered` for the Minister's decision); the court complaint runs from it. The registry rule names the first decision, so the blueprint corrects the start event, allowed only with words from the rule's own quote. The card level has `requires: granted` |
+| F3 | An exemption with no rule counted as granted ("zwolnienie" instead of 340 zł) | An exemption without a rule is "sprawdź, czy Cię dotyczy" and the full fee is shown; the evaluation compares the effective amount |
+| F4 | Address registration: the EU family member's card was asked of every EU citizen; filing waited for the owner's confirmation; "albo" was lost in the plan text | `onlyIf`: the card shows as conditional, with who it is for. `optionalAfter`: filing doesn't wait for the owner, per the guide's own words. Both need a basis quoted from the registry. The plan text keeps "A albo B" |
+| F6 | The "reference plans" were the engine's own output, and the scenarios carry richer facts than their texts | Renamed `engine-plans/`; each lists the facts it assumed, for both systems; `eval/independent/README.md` defines the independent reference (none written yet) |
+| F8 | Dates said "zależnie od tego, jak liczyć dni" for a plain weekend shift; "kpa" counting was used without a basis; the bundle carried the build day | One legal date for KPA/PPSA, with the reason for a shift. Counting `ppsa` (verified) and `plain` (basis not verified: one date, never later). A content-hash manifest (`dist/manifest.json`, `E.manifest`) replaces `builtAt` |
+
+Five of these errors come from the production registry itself. They are proposed to the owner in `PRODUCTION-CONTENT-PROPOSALS-2026-10-16.md` and are not applied.
+
 ## 7. Quality evidence (2026-10-16)
-- **30 tests** on the real snapshots, all passing, including the 17 evaluation scenarios, the intake checks (§9a) and the replan checks (§6b).
+- **39 tests** on the real snapshots, all passing, including the 18 evaluation scenarios (each now runs the content check too), the intake checks (§9a), the replan checks (§6b) and the audit fixes (§6c).
 - **11 targeted faults** were injected, one at a time; each was caught:
   - an unknown deadline notifying;
   - quiet hours removed;
@@ -147,7 +166,7 @@ After a plan is approved, a change becomes a **proposal** the person approves, n
 - **Warnings.** The guides' pitfalls ("Warto wiedzieć") become notes on the right level, important ones first (blueprint `notes` places them). A route that doesn't fit still carries the warnings written for that person:
   - restoration of citizenship for someone who lost it;
   - "zamelduj się zamiast tego" for a long stay.
-- **Evaluation set** (`packages/case-engine/eval/`): 17 scenarios with expectations, run inside the test suite (17/17). `node eval/run.ts --write` exports a reference plan per scenario in plain Polish, with the source of every value, for the blind H1 benchmark (11 §5). The user texts are drafts for native writers, and the owner reviews each reference plan before any benchmark run.
+- **Evaluation set** (`packages/case-engine/eval/`): 18 scenarios with expectations, run inside the test suite (18/18). `node eval/run.ts --write` exports the engine's plan per scenario in plain Polish (`engine-plans/`), with the source of every value and the facts it assumed. These plans are not the benchmark reference (§6c F6); the H1 benchmark (11 §5) needs the independent reference in `eval/independent/`. The user texts are drafts for native writers.
 
 ## 8. Browser build
 - `node tools/build-browser.mjs --locales pl` builds `dist/case-engine.browser.js`: 353 KB, the engine plus the registry snapshot and the 5 blueprints, global `FormalkaEngine`, no network.

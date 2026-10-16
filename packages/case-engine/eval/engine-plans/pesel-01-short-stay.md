@@ -1,6 +1,14 @@
 # pesel-01-short-stay
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Jestem w Polsce na krótko, ale bank wymaga ode mnie numeru PESEL.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- Czy ta osoba mieszka albo zamieszka w Polsce pod konkretnym adresem, a cały jej pobyt w Polsce potrwa dłużej niż 30 dni? → Nie
+- Czy ta osoba jest obywatelem UE, EFTA lub Szwajcarii, obywatelem Wielkiej Brytanii objętym umową o wystąpieniu z UE, albo członkiem rodziny takiego obywatela? → Nie
+- Czy ta osoba ma już numer PESEL? → Nie
+- Czy ta osoba korzysta albo chce korzystać w Polsce z ochrony czasowej, bo przyjechała z Ukrainy z powodu wojny albo urodziła się w Polsce, a jej rodzic ma ochronę czasową? → Nie
 
 Rejestr: formalka@04057ef. Droga: decided (Numer PESEL na wniosek).
 

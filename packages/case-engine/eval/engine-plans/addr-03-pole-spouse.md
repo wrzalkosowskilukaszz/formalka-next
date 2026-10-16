@@ -1,6 +1,12 @@
 # addr-03-pole-spouse
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Jestem żoną Polaka, pochodzę z Indii, chcę się zameldować.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- Która grupa dotyczy tej osoby? → Żadna z tych grup (także członek rodziny obywatela polskiego, który sam nie jest obywatelem UE)
+- Na jaki pobyt ta osoba chce się zameldować? → Czasowy (mieszka pod tym adresem przez jakiś czas)
 
 Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 

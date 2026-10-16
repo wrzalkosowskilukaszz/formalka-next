@@ -34,7 +34,8 @@ const bp = (id: string) => {
 
 export const FormalkaEngine = {
   registryVersion: reg.version,
-  builtAt: data.builtAt,
+  /** What this build is made of: registry version, locales, engine and source hashes (dist/manifest.json adds the bundle's). */
+  manifest: data.manifest,
   blueprintIds: [...blueprints.keys()],
   blueprint: bp,
   procedure: (id: string) => reg.procedures.get(id),

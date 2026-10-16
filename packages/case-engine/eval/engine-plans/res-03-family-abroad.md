@@ -1,6 +1,11 @@
 # res-03-family-abroad
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Moja żona jest jeszcze na Ukrainie, chcę złożyć dla niej wniosek o pobyt.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- W jakim celu ta osoba chce mieszkać w Polsce? → Rodzina, a ta osoba jest jeszcze za granicą (połączenie z cudzoziemcem mieszkającym w Polsce; też niektórzy członkowie rodziny obywatela Polski, UE lub Wielkiej Brytanii)
 
 Rejestr: formalka@04057ef. Droga: decided (Zezwolenie na pobyt czasowy).
 

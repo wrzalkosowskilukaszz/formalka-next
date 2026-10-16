@@ -10,12 +10,12 @@ The Living Case engine:
 
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
-npm test                         # 31 tests incl. 17 evaluation scenarios, intake and replan checks
-npm run eval                     # eval/REPORT.md + eval/reference-plans/*.md (plain-Polish reference plans for blind scoring) on the real snapshots (Node 22.18+, no build step)
+npm test                         # 39 tests incl. 18 evaluation scenarios, intake, replan, content verification and the audit fixes
+npm run eval                     # eval/REPORT.md + eval/engine-plans/*.md (the engine's plans in plain Polish; not a benchmark reference, see eval/independent/README.md)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```
 
-The committed `dist/case-engine.browser.js` reproduces byte for byte only when built from `packages/case-engine` with `--locales pl`: esbuild writes source paths relative to the working directory into the bundle's comments.
+The committed `dist/case-engine.browser.js` reproduces byte for byte only when built from `packages/case-engine` with `--locales pl`: esbuild writes source paths relative to the working directory into the bundle's comments. `dist/manifest.json` identifies a build by content: the registry version, the hash of every source file and of the engine, and the bundle's sha256 (no build date).
 
 ## What it does
 
@@ -32,6 +32,7 @@ The committed `dist/case-engine.browser.js` reproduces byte for byte only when b
 | `intake.ts` | The person's own words → fact candidates they confirm one by one. Any extractor (the Polish baseline today, an LLM later) passes `checkCandidates`: only facts this case asks, only allowed values, evidence quoted verbatim from the text and on the fact's topic (so language or origin never becomes citizenship or protection). Compound facts (`citizenship.group`) are always asked |
 | `voice.ts` | Whose case it is (owner, 2026-10-16). Questions speak to the person by default ("Czy masz…"). For a case handled for someone else they keep the registry's wording ("Czy ta osoba ma…"). Only the grammatical person changes: same conditions, options and numbers, nothing gendered, quotes untouched. A test checks all of this for every fact a blueprint can ask. Owner review of the wording: pending |
 | `replan.ts` | After approval a change is a proposal (ADR-N003): `diffPlans` lists, by stable ids, what it adds, removes, makes certain, keeps as history (done work) and changes in fees, deadlines, offices and the route. `applyReplan` never resets `done` |
+| `verify.ts` | Content verification, apart from the structural check (audit F1): amounts, exemptions, start events, dates and offices against the registry and the events, and the plan against one recomputed from the same inputs |
 | `browser.ts` | The browser entry with the data embedded |
 
 **Route** (`planner.ts`) can be:
@@ -68,7 +69,9 @@ const q2 = E.nextQuestion("citizenship", state, askedCount, 12, "other"); // for
 E.voiced(E.fact("pesel.stay_over_30"), "you");                    // any fact's texts in either voice
 state.facts[q.key] = "yes" /* or E.UNKNOWN for "Nie wiem" */;
 const plan = E.plan("citizenship", state);                          // { route, levels[], openFacts, unsure, assumptions, status }
-E.validate(plan, state);                                            // { ok, violations } — don't show a failing plan
+E.validate(plan, state);                                            // { ok, violations, structure, content }: both checks, apart; never show a plan that fails either
+E.dueRangePl(due.earliest, due.latest, due.counting);               // "do poniedziałku, 31 maja (…dzień wolny…)"; two readings only for nth-day
+E.manifest;                                                         // { registry, locales, engine, sources }: what this build is made of
 state.approved = true;                                              // after "Zatwierdzam plan"
 state.events.push({ type: "filing", date: "2026-11-30", by: "user" });
 state.tasks["citizenship-recognition:document:photos"] = "done";

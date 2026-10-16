@@ -335,7 +335,7 @@ function dock(c, p) {
 function mapView(c, p) {
   const lv = p.levels.map((l) => {
     const done = l.tasks.filter((t) => t.status === 'done' || t.status === 'not_needed').length;
-    const due = l.deadlines.filter((d) => d.due).map((d) => `${d.role === 'office' ? 'urząd ma czas' : 'termin'} ${E.dueRangePl(d.due.earliest, d.due.latest)}`).join('; ');
+    const due = l.deadlines.filter((d) => d.due).map((d) => `${d.role === 'office' ? 'urząd ma czas' : 'termin'} ${E.dueRangePl(d.due.earliest, d.due.latest, d.due.counting)}`).join('; ');
     return `<li class="card" style="list-style:none"><div class="row" style="margin-top:0"><span class="state">${icon(STATE_ICON[l.state])} ${esc(STATE_PL[l.state])}</span>
         ${l.parallelWith.length ? `<span class="when">${icon('arrows-split')} równolegle z: ${esc(l.parallelWith.map((id) => p.levels.find((x) => x.id === id)?.title.pl).join(', '))}</span>` : ''}</div>
       <h3>${esc(l.title.pl)}</h3>
@@ -398,7 +398,7 @@ function nowView(c, p) {
   const deadlines = l.deadlines.map((d) => {
     const ev = bp.events[d.from];
     return `<div class="task"><div class="t">${esc(d.description.pl)}
-      ${d.due ? `<div><strong>${d.role === 'office' ? 'Urząd ma czas' : 'Termin'} ${esc(E.dueRangePl(d.due.earliest, d.due.latest))}</strong></div>`
+      ${d.due ? `<div><strong>${d.role === 'office' ? 'Urząd ma czas' : 'Termin'} ${esc(E.dueRangePl(d.due.earliest, d.due.latest, d.due.counting))}</strong></div>`
         : `<form class="row" data-event="${esc(d.from)}"><span class="when">Liczy się od: ${esc(ev?.label.pl ?? d.from)}</span><input type="date" value="${S.clock.date}" required><button class="mini">Zapisz datę</button></form>`}
       ${d.outcome === 'unknown' ? '<span class="maybe">może Cię nie dotyczyć: zależy od odpowiedzi</span>' : ''}${src(d.quotes)}</div></div>`;
   }).join('');

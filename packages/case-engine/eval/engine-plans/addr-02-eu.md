@@ -1,6 +1,13 @@
 # addr-02-eu
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Jestem Niemką, mieszkam w Polsce od 28 października.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
+- Która grupa dotyczy tej osoby? → Obywatel innego państwa UE niż Polska, EFTA lub Szwajcarii albo członek rodziny takiego obywatela
+- Na jaki pobyt ta osoba chce się zameldować? → Czasowy (mieszka pod tym adresem przez jakiś czas)
+- Dzień, od którego mieszkasz pod tym adresem: 2026-10-28
 
 Rejestr: formalka@04057ef. Droga: decided (Zameldowanie cudzoziemca).
 

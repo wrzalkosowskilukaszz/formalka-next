@@ -1,6 +1,10 @@
 # lang-01-certificate
 
+Plan silnika: wynik generatora, nie wzorzec do oceny (wzorzec: eval/independent/).
+
 Sytuacja (szkic, do przepisania przez native writers): „Potrzebuję certyfikatu B1 do obywatelstwa.”
+
+Fakty przyjęte w planie (w teście porównawczym oba systemy dostają ten sam opis i te same fakty):
 
 Rejestr: formalka@04057ef. Droga: decided (Certyfikat znajomości języka polskiego).
 
