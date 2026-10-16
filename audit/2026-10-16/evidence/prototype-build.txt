@@ -1,30 +1,30 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T14:32Z commit 4fac23a node v22.22.0
+# 2026-10-16T14:51Z commit b4c912b node v22.22.0
 
-built: dist/index.html 737 KB, build c77525880cb6, engine bd6eb50d2c94474e, formalka@04057ef
-6513d38f94adc3e46d1c3a0adb6da15c0783362f8b183690fa4cc046b5cc91a7  prototype/dist/index.html
-c46016e010bf923a687117c4f8ca77dc89f93bb8274e4048c8573293f172d6d9  prototype/dist/artifact.html
+built: dist/index.html 737 KB, build 17648673a8cc, engine bd46ca76b3a5f028, formalka@04057ef
+302d892b7bd63428ca9e4e68b014f3e8ad1560b3e1469d02337cdb50de2ab627  prototype/dist/index.html
+0f89df8e0a84376fe1023711f8f7a75cc95edb1ea8d64e16d6014c6ab148c1df  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "c77525880cb6",
+  "build": "17648673a8cc",
   "registry": "formalka@04057ef",
-  "engine": "bd6eb50d2c94474e",
+  "engine": "bd46ca76b3a5f028",
   "engineBundle": {
     "file": "case-engine.browser.js",
-    "sha256": "b36aa1b496fd5a7d1f1aaa3b610e83e35f1fd4cfe08e296c303586d9ac610aef"
+    "sha256": "08911564976cfdaa7e599b26e7776f5f3a5f153076302f4e93039e651f3819e3"
   },
   "inputs": {
-    "../packages/case-engine/dist/case-engine.browser.js": "b36aa1b496fd5a7d",
-    "src/app.css": "2f8ae985d998f2c0",
+    "../packages/case-engine/dist/case-engine.browser.js": "08911564976cfdaa",
+    "src/app.css": "7d4aa73b5badfaf2",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
-    "src/js/10-cases.js": "424f83ba27b3bea4",
+    "src/js/10-cases.js": "ef35794c37c7d04e",
     "src/js/20-chat.js": "59460483e62bb7cb",
     "src/js/25-shell.js": "452f89eb93f0b312",
     "src/js/30-intake.js": "4a237a499c066f31",
     "src/js/35-understand.js": "f1d3a1faa82bd00b",
-    "src/js/40-case.js": "244a6f22cd9a3cb0",
+    "src/js/40-case.js": "19f662b1a0c5a92e",
     "src/js/45-guide.js": "018fd3a9a4f8f7ef",
     "src/js/50-time.js": "73209c257a57c3b3",
     "src/js/60-screens.js": "f9a585a1ac04e546",
@@ -91,7 +91,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "6513d38f94adc3e46d1c3a0adb6da15c0783362f8b183690fa4cc046b5cc91a7",
-    "artifact.html": "c46016e010bf923a687117c4f8ca77dc89f93bb8274e4048c8573293f172d6d9"
+    "index.html": "302d892b7bd63428ca9e4e68b014f3e8ad1560b3e1469d02337cdb50de2ab627",
+    "artifact.html": "0f89df8e0a84376fe1023711f8f7a75cc95edb1ea8d64e16d6014c6ab148c1df"
   }
 }

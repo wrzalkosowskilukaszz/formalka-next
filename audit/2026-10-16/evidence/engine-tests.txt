@@ -1,5 +1,5 @@
 # cd packages/case-engine && npm test
-# 2026-10-16T14:32Z commit 4fac23a node v22.22.0
+# 2026-10-16T14:50Z commit b4c912b node v22.22.0
 
 # Subtest: blueprints: every step, document, fee and deadline lands on exactly one level
 ok 1 - blueprints: every step, document, fee and deadline lands on exactly one level
@@ -86,4 +86,4 @@ ok 39 - voice: for someone else the registry's own wording is used, unchanged
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 1528.27319
+# duration_ms 1753.826029
