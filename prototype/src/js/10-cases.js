@@ -104,8 +104,12 @@ const staleOf = (p) => STALE[p.route.procedureId] || null;
 const STATE = {
   unconfirmed: 'Zależy od odpowiedzi', locked: 'Zablokowany', available: 'Możesz zacząć', in_progress: 'W toku',
   waiting_office: 'Czekasz na urząd', returned: 'Urząd prosi o uzupełnienie', done: 'Zrobione',
+  // A step the guide lets the person skip, once the later step happened without it (engine 4ff614e). Not done.
+  skipped: 'Pominięte',
 };
-const ST_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', returned: 'arrow-u-up-left', done: 'check', unconfirmed: 'question', in_progress: 'clock-counter-clockwise' };
+const ST_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', returned: 'arrow-u-up-left', done: 'check', unconfirmed: 'question', in_progress: 'clock-counter-clockwise', skipped: 'fast-forward' };
+// Done or skipped: nothing is left to do on the level.
+const settled = (l) => l.state === 'done' || l.state === 'skipped';
 // A level done only by inference (a later step was recorded, nothing proves this one) is not shown as
 // proven: the engine marks it `implied` (audit F2 follow-up), and the app says "zakładamy".
 const stateText = (l) => (l.implied ? 'Zakładamy, że zrobione' : STATE[l.state]);
@@ -137,7 +141,7 @@ function levelGroups(p) {
 }
 // One line that says where the level stands.
 function levelLine(l) {
-  if (l.state === 'locked' || l.state === 'returned') return l.reason?.text.pl || STATE[l.state];
+  if (l.state === 'locked' || l.state === 'returned' || l.state === 'skipped') return l.reason?.text.pl || STATE[l.state];
   const office = l.deadlines.find((d) => d.role === 'office' && d.due);
   if (l.state === 'waiting_office') return office ? `Urząd ma czas ${dueRange(office.due)}` : 'Czekasz na urząd';
   if (l.state === 'unconfirmed') return 'Zależy od Twoich odpowiedzi';

@@ -52,7 +52,7 @@ function openEventSheet(c, type, label) {
 // What the assistant proposes for the case right now: lines of text and actions.
 function guidance(c) {
   const p = plan(c);
-  if (p.levels.every((l) => l.state === 'done')) return { lines: ['Wszystkie kroki z planu są zrobione. Jeśli coś się zmieni, napisz, a sprawdzę, co to zmienia w planie.'], actions: [] };
+  if (p.levels.every(settled)) return { lines: ['Wszystkie kroki z planu są zrobione. Jeśli coś się zmieni, napisz, a sprawdzę, co to zmienia w planie.'], actions: [] };
   const l = currentLevel(p);
   const lines = [], A = [];
   if (l.state === 'returned') {

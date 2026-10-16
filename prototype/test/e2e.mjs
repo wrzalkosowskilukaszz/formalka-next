@@ -491,6 +491,11 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await page.locator('.tl').waitFor({ timeout: 8000 });
   const formCard = await page.locator('.tl-card', { hasText: 'Formularz' }).first().innerText();
   assert.match(formCard, /Zakładamy, że zrobione/);
+  // The owner's confirmation the guide lets the person skip is "skipped" once the filing happened without it.
+  const ownerCard = await page.locator('.tl-card', { hasText: 'Potwierdzenie właściciela' }).first().innerText();
+  assert.match(ownerCard, /Pominięte/);
+  assert.match(ownerCard, /Nie jest już potrzebne: krok „Wizyta w urzędzie gminy” odbył się bez niego/);
+  assert.ok(!/Teraz: Potwierdzenie właściciela/.test(await page.locator('.tl-sum').innerText()), 'a skipped step is never the current one');
   await t.shot('map-implied');
   // Reset keeps the study mode; the tester turns it off with the same button.
   await page.locator('.tester-strip [data-reset]').click();

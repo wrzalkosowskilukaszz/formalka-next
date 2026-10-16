@@ -654,6 +654,7 @@ html[data-nav="back"]::view-transition-new(root) { animation-name: slideFromLeft
 .tl-node.here::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid var(--accent-2); animation: pulse 2600ms var(--ease) infinite; }
 .tl-node.locked { background: var(--well-strong); }
 .tl-node.unconfirmed, .tl-node.implied { background: var(--canvas); outline: 1.5px dashed var(--accent-2); outline-offset: -1.5px; color: var(--accent); }
+.tl-node.skipped { background: var(--canvas); outline: 1.5px dashed var(--line-strong); outline-offset: -1.5px; color: var(--ink-3); }
 .tl-node.returned { background: var(--attention-soft); color: var(--attention); }
 .tl-body { min-width: 0; display: flex; flex-direction: column; gap: var(--s2); }
 .tl-card { width: 100%; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border: 0; border-radius: 22px; background: var(--raised); box-shadow: var(--e1); color: var(--ink); text-align: left; transition: transform var(--dur-fast) var(--ease); }
@@ -697,7 +698,9 @@ button.tl-card:active, .tl-side:active { transform: scale(0.985); }
 .state-chip.done, .state-chip.confirmed { background: var(--done-soft); color: var(--done); }
 .state-chip.returned { background: var(--attention-soft); color: var(--attention); }
 .state-chip.locked { background: var(--well-strong); }
-.state-chip.unconfirmed, .state-chip.implied { background: transparent; outline: 1.5px dashed var(--line-strong); outline-offset: -1.5px; }
+.state-chip.unconfirmed, .state-chip.implied, .state-chip.skipped { background: transparent; outline: 1.5px dashed var(--line-strong); outline-offset: -1.5px; }
+.state-chip.skipped { color: var(--ink-3); }
+.tl-card.skipped b { text-decoration: line-through; text-decoration-color: var(--line-strong); color: var(--ink-3); }
 
 .flabel { font-size: var(--t-xs); font-weight: var(--w-medium); color: var(--ink-2); }
 .days { display: flex; gap: var(--s2); overflow-x: auto; scrollbar-width: none; padding-block: 2px; margin-inline: -2px; padding-inline: 2px; }

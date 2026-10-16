@@ -72,7 +72,7 @@ function heroCard(c) {
   const p = plan(c);
   const cur = currentLevel(p);
   const [i, n] = stepOf(p);
-  const mini = p.levels.map((l, k) => `${k ? `<i class="${p.levels[k - 1].state === 'done' ? 'on' : ''}"></i>` : ''}<span class="md ${l.state}${l.id === cur.id ? ' here' : ''}"></span>`).join('');
+  const mini = p.levels.map((l, k) => `${k ? `<i class="${settled(p.levels[k - 1]) ? 'on' : ''}"></i>` : ''}<span class="md ${l.state}${l.id === cur.id ? ' here' : ''}"></span>`).join('');
   const open = cur.state === 'locked' || cur.state === 'unconfirmed' ? null : cur.tasks.find((t) => !isDone(t));
   let action;
   if (open && isFormable(open)) action = `<button type="button" class="btn btn-white btn-knob btn-block press" data-form="${c.id}|${esc(open.id)}"><span class="knob">${icon('file-text')}</span>Wypełnij (makieta)</button>`;
@@ -241,7 +241,9 @@ function timeline(c, sheetMode = false) {
   const p = plan(c);
   const cur = c.state.approved ? currentLevel(p).id : null;
   const groups = levelGroups(p);
+  // Skipped levels leave the count: they were never needed, so they are neither done nor to do.
   const doneN = p.levels.filter((l) => l.state === 'done').length;
+  const allN = p.levels.filter((l) => l.state !== 'skipped').length;
   const hl = S.highlight || [];
   const curIdx = Math.max(0, groups.findIndex((g) => [g.main, ...g.side].some((l) => l.id === cur)));
   const prog = groups.length > 1 ? Math.round((curIdx / (groups.length - 1)) * 100) : 0;
@@ -263,7 +265,7 @@ function timeline(c, sheetMode = false) {
   const office = p.levels.map((l) => l.office).find((o) => o?.offices?.length);
   const facts = [total ? `${icon('coins')}${total} zł opłat` : '', office ? `${icon('buildings')}${esc(office.offices[0].name.pl)}` : '', p.route.procedureId ? `${icon('signpost')}${esc(routeTitle(p))}` : ''].filter(Boolean);
   return `<section class="tl-sum">
-      <span class="ring lg" role="img" aria-label="Zrobione poziomy: ${doneN} z ${p.levels.length}"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="6"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="6" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset:${1 - doneN / p.levels.length}"/></svg><span>${doneN}/${p.levels.length}</span></span>
+      <span class="ring lg" role="img" aria-label="Zrobione poziomy: ${doneN} z ${allN}"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="6"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="6" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset:${1 - doneN / allN}"/></svg><span>${doneN}/${allN}</span></span>
       <span class="tx"><small>${c.state.approved ? 'Twoja sprawa' : 'Plan w budowie'}</small><b>${esc(c.title)}</b><span>${cur ? `Teraz: ${esc(p.levels.find((l) => l.id === cur).title.pl)}` : 'Poziomy z przerywaną linią zależą od odpowiedzi'}</span></span>
     </section>
     ${facts.length ? `<div class="facts">${facts.map((f) => `<span>${f}</span>`).join('')}</div>` : ''}
