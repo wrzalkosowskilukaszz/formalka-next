@@ -1,5 +1,5 @@
 # cd packages/case-engine && npm run mutate (each fault alone, whole suite, file restored)
-# 2026-10-16T14:50Z commit b4c912b node v22.22.0
+# 2026-10-16T15:00Z commit e1e3d67 node v22.22.0
 
-35/35 faults caught
+36/36 faults caught
 eval/MUTATIONS.md unchanged: yes

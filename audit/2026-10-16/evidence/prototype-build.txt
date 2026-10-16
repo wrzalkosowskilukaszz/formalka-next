@@ -1,31 +1,31 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-16T14:51Z commit b4c912b node v22.22.0
+# 2026-10-16T15:01Z commit e1e3d67 node v22.22.0
 
-built: dist/index.html 737 KB, build 17648673a8cc, engine bd46ca76b3a5f028, formalka@04057ef
-302d892b7bd63428ca9e4e68b014f3e8ad1560b3e1469d02337cdb50de2ab627  prototype/dist/index.html
-0f89df8e0a84376fe1023711f8f7a75cc95edb1ea8d64e16d6014c6ab148c1df  prototype/dist/artifact.html
+built: dist/index.html 739 KB, build 02a4d7e55b53, engine 4f03d3478d04d6be, formalka@04057ef
+5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781  prototype/dist/index.html
+4f983766472781bc79ec47dbcd22f9fbf8d2e3d7f5b2e2f3d51665de5916e483  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "17648673a8cc",
+  "build": "02a4d7e55b53",
   "registry": "formalka@04057ef",
-  "engine": "bd46ca76b3a5f028",
+  "engine": "4f03d3478d04d6be",
   "engineBundle": {
     "file": "case-engine.browser.js",
-    "sha256": "08911564976cfdaa7e599b26e7776f5f3a5f153076302f4e93039e651f3819e3"
+    "sha256": "7c25ab7e69d76546c879f3d443cbf012f2721d9291a6913bc90185f6b15d9bbf"
   },
   "inputs": {
-    "../packages/case-engine/dist/case-engine.browser.js": "08911564976cfdaa",
-    "src/app.css": "7d4aa73b5badfaf2",
+    "../packages/case-engine/dist/case-engine.browser.js": "7c25ab7e69d76546",
+    "src/app.css": "49ce081bf43cd8c9",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
-    "src/js/10-cases.js": "ef35794c37c7d04e",
+    "src/js/10-cases.js": "4fa9ec5cd910250c",
     "src/js/20-chat.js": "59460483e62bb7cb",
     "src/js/25-shell.js": "452f89eb93f0b312",
     "src/js/30-intake.js": "4a237a499c066f31",
     "src/js/35-understand.js": "f1d3a1faa82bd00b",
-    "src/js/40-case.js": "19f662b1a0c5a92e",
-    "src/js/45-guide.js": "018fd3a9a4f8f7ef",
+    "src/js/40-case.js": "7b4180767a23c102",
+    "src/js/45-guide.js": "b8b08eeab73fa1e3",
     "src/js/50-time.js": "73209c257a57c3b3",
     "src/js/60-screens.js": "f9a585a1ac04e546",
     "src/js/90-boot.js": "e2841f9cfa7ab013",
@@ -91,7 +91,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "302d892b7bd63428ca9e4e68b014f3e8ad1560b3e1469d02337cdb50de2ab627",
-    "artifact.html": "0f89df8e0a84376fe1023711f8f7a75cc95edb1ea8d64e16d6014c6ab148c1df"
+    "index.html": "5d9ff1ffda6dc26d3abc1427a2a2e49783c1b0dd60263541245de30978fbe781",
+    "artifact.html": "4f983766472781bc79ec47dbcd22f9fbf8d2e3d7f5b2e2f3d51665de5916e483"
   }
 }
