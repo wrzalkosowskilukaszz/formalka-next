@@ -85,6 +85,7 @@ Neither session wrote to the production repository.
   - The label is now neutral, so it fits both voices: "Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii." (`f4ead1f`).
   - FACT: the engine plan for `citizen_group: eu_efta` marks the card `unknown` with this label, and the content check passes (checked on `e0a03a6` with the earlier wording).
 - `optionalAfter`: filing no longer waits for the owner's confirmation, per the guide's own words ("nadal możesz złożyć formularz meldunkowy"). The guide's notes on the route without confirmation sit on the filing level.
+- Once the filing is recorded without the confirmation, that step is `skipped` (`4ff614e`). It is not done and not the current step. The prototype shows "Pominięte", struck through, with the engine's reason. Nothing more is claimed about what the office does then: the quote we hold does not say.
 - "A albo B" is kept together in the plan text.
 - **Still open:** the online channel is not modelled. It needs steps in the registry, which is production content, so it waits for the owner.
 
@@ -198,8 +199,8 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
    - spike S1 has 14 tests;
    - the prototype has 14 unit tests and 6 e2e scenarios.
 6. **"24 injected faults caught"** could not be reproduced from the package: there was no runner and no log per fault. The number is withdrawn.
-   - It is replaced by a runner (`f4ead1f`). `npm run mutate` applies 35 faults one at a time, runs the whole suite each time, restores the file and writes `eval/MUTATIONS.md`.
-   - FACT: 35/35 caught, rerun by this session on `6b982ca`.
+   - It is replaced by a runner (`f4ead1f`). `npm run mutate` applies each fault alone, runs the whole suite each time, restores the file and writes `eval/MUTATIONS.md`.
+   - FACT: 36/36 caught, rerun by this session (`evidence/engine-mutations.txt`).
    - The runner showed that one earlier claim was false: "Nie wiem" asked again was not caught. A test now covers it.
 7. **Commit identity.** The package named `895a6aa`, its logs `e186333`, and the messages `9b3c66f`. From now on:
    - one commit per evidence set;
