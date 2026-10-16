@@ -61,7 +61,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - Session memory, until a reload or reset; the prototype's code sends no case data.
   - Study mode: address registration only, for moderated sessions on fictional cases.
   - Waiting for the office ("przyspieszyć wydanie karty"): the registry's own answer first (a ponaglenie, the official template, the art. 100d caveat), the plan only on request.
-  - Tests: 15 unit tests, lint, and 7 end-to-end scenarios in both motion modes.
+  - Tests: 15 unit tests, lint, and 8 end-to-end scenarios in both motion modes.
   - Auditor package: `audit/2026-10-16/STATUS.md`.
 - **External audit (2026-10-16), the verdict accepted** (`audit/2026-10-16/RESPONSE.md`):
   - GO for problem interviews;

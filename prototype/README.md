@@ -34,7 +34,7 @@ The home footer shows the build id and the engine hash, so screenshots from a se
 |---|---|
 | `node --test prototype/test/*.test.mjs` | The on-device reader of typed answers (15 tests):<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
-| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Seven scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-G>` for one scenario |
+| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Eight scenarios in Chromium at 390×844 (below). Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <A-H>` for one scenario |
 
 The end-to-end scenarios:
 - **A:** citizenship in the person's own words, consent on, a change after approval that opens a second route; a typed PESEL is masked and a not-understood question gets no action.
@@ -53,7 +53,9 @@ The end-to-end scenarios:
 - **G:** waiting for the office. "Potrzebuję przyspieszyć wydanie karty pobytu" gets:
   - an answer about delay first: a ponaglenie, the official template, the art. 100d caveat;
   - no new-application question before that;
-  - the plan only on request ("Nie teraz", then "Ułóż jednak plan").
+  - the plan only on request ("Nie teraz", then "Ułóż jednak plan");
+  - from home, words that name the case already open go to it.
+- **H:** the home input with words that name no case leads into the chat, which offers the five cases; back returns home.
 
 Every screen in every scenario is checked for:
 - no console errors and no network requests;
@@ -180,6 +182,13 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 
   Reset keeps the mode; the same button turns it off.
 - **Reset** (the round arrow) clears everything back to the start animation.
+
+**The home input never dead-ends** (owner, 16.10: "nie mogę nic wpisać"). Whatever is typed leads into the chat:
+- words that name a new case start it;
+- words that name a case already open go to that case (it used to say "Tę sprawę już masz");
+- words that name no case get the cases the prototype leads, to pick from (in study mode, only registration).
+
+The chat always has a back button; with no case yet, it returns home.
 
 **Less at once** (owner, 16.10: "chaos", "za dużo informacji naraz"). Type sizes are unchanged: body 17 px, questions 21 px, options 15 px, from the tokens. The changes cut what shows at once:
 - **First screen of a case:**

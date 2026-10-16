@@ -197,7 +197,7 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
 5. **"31 tests and 17 scenarios"** are not additive: the scenarios run inside one of the tests. Today:
    - the engine has 39 tests, with the 18 scenarios inside them;
    - spike S1 has 14 tests;
-   - the prototype has 15 unit tests and 7 e2e scenarios.
+   - the prototype has 15 unit tests and 8 e2e scenarios.
 6. **"24 injected faults caught"** could not be reproduced from the package: there was no runner and no log per fault. The number is withdrawn.
    - It is replaced by a runner (`f4ead1f`). `npm run mutate` applies each fault alone, runs the whole suite each time, restores the file and writes `eval/MUTATIONS.md`.
    - FACT: 36/36 caught, rerun by this session (`evidence/engine-mutations.txt`).
