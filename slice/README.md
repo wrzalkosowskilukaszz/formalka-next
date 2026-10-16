@@ -19,7 +19,7 @@ Open `slice/dist/index.html` in any browser, or use the private Artifact link fr
    - **The city** in the description ("do Warszawy") is proposed the same way, only to show the office. Two cities named, or none: it is asked.
    - **Several cases named** ("zameldować się na pobyt czasowy": address registration and the residence permit): you pick. A case that is part of another's map (the certificate within citizenship) gives way to it.
    - **Under every question:** "Albo napisz własnymi słowami". The words are read the same way; they can also replace an earlier "Nie wiem", never an answer you gave.
-2. **Answer the questions.** They are the official ones from Formalka's fact catalogue, in the content's own order, only as many as the plan needs. "Nie wiem" is always there, with "Dlaczego pytamy?".
+2. **Answer the questions.** They are the official ones from Formalka's fact catalogue, in the content's own order, only as many as the plan needs, and they speak to you ("Czy masz…"; the engine's voice layer, `E.voiced`, owner 2026-10-16). The slice handles your own case only; the prototype also asks whose case it is. "Nie wiem" is always there, with "Dlaczego pytamy?".
 3. **Choose a route** when several fit (citizenship: recognition or grant). The differences shown come from the sources. A route reachable through another case (recognition without B1) says so.
 4. **Pick a city** (Warszawa, Kraków, …) so the plan can show the office from the registry's office layer: quoted addresses, opening hours and the booking link. Other cities get an honest "nie mamy w źródłach".
 5. **Approve the plan,** optionally with the one per-case consent ("Maciek/Asia może sam dodawać przypomnienia").

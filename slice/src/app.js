@@ -16,6 +16,9 @@ const clause = (text, ev) => {
   const ends = [...'.,;!?'].map((p) => text.indexOf(p, i + ev.length)).filter((x) => x >= 0);
   return text.slice(a, ends.length ? Math.min(...ends) : text.length).trim();
 };
+// Questions speak to the person ("Czy mieszkasz…"): the engine's voice layer over the registry's wording.
+// The slice handles one's own case only; the prototype also asks whose case it is.
+const fact = (key) => { const f = E.fact(key); return f ? E.voiced(f, 'you') : f; };
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 
 const STATE_PL = {
@@ -81,7 +84,7 @@ function advance(c) {
 
 function answer(c, key, value, label) {
   c.state.facts[key] = value; c.asked++; touch(c);
-  say(c, 'bot', E.fact(key)?.question.pl ?? key);
+  say(c, 'bot', fact(key)?.question.pl ?? key);
   say(c, 'me', label);
   advance(c); render();
 }
@@ -255,7 +258,7 @@ function chatView(c, p) {
 function dock(c, p) {
   if (c.stage === 'confirm') {
     const rows = c.candidates.map((x) => {
-      const f = x.fact === 'place' ? { question: { pl: 'W jakiej miejscowości mieszkasz? (tylko po to, by wskazać urząd)' } } : E.fact(x.fact);
+      const f = x.fact === 'place' ? { question: { pl: 'W jakiej miejscowości mieszkasz? (tylko po to, by wskazać urząd)' } } : fact(x.fact);
       const o = x.fact === 'place' ? { label: { pl: x.place.name } } : f.options.find((y) => y.value === x.value);
       const d = c.decided[x.fact];
       return `<div class="cand"><blockquote>„${esc(clause(c.said, x.evidence))}”</blockquote>
@@ -283,7 +286,7 @@ function dock(c, p) {
       <div class="row"><button class="btn" data-replan="yes">Zatwierdzam zmianę</button><button class="btn ghost" data-replan="no">Zostaw jak było</button></div></div>`;
   }
   if (c.stage === 'intake' && c.pending) {
-    const f = E.fact(c.pending);
+    const f = fact(c.pending);
     return `<div class="card"><p class="q">${esc(f.question.pl)}</p>
       <div class="opts">${(f.options ?? []).map((o) => `<button class="opt" data-ans="${esc(o.value)}" data-label="${esc(o.label.pl)}">${esc(o.label.pl)}</button>`).join('')}
       <button class="opt dk" data-ans="__unknown__" data-label="Nie wiem">Nie wiem</button></div>
@@ -312,10 +315,10 @@ function dock(c, p) {
   }
   if (c.stage === 'summary') {
     const assumptions = p.assumptions.map((a) => {
-      const f = E.fact(a.fact); const o = f?.options?.find((x) => x.value === a.value);
+      const f = fact(a.fact); const o = f?.options?.find((x) => x.value === a.value);
       return `<dt>${esc(f?.question.pl ?? a.fact)}</dt><dd>${esc(o?.label.pl ?? String(a.value))}</dd>`;
     }).join('');
-    const unsure = p.unsure.map((u) => `<li>${esc(E.fact(u.fact)?.question.pl ?? u.fact)} (odpowiedź: „Nie wiem”)</li>`).join('');
+    const unsure = p.unsure.map((u) => `<li>${esc(fact(u.fact)?.question.pl ?? u.fact)} (odpowiedź: „Nie wiem”)</li>`).join('');
     const route = p.route.procedureId ? E.procedure(p.route.procedureId).title.pl : '';
     return `<div class="card"><h3>Pierwszy plan: ${esc(route)}</h3>
       <dl class="kv">${assumptions}</dl>
