@@ -1,0 +1,427 @@
+# Ustawa o cudzoziemcach, tekst jednolity Dz.U. 2025 poz. 1079 (obwieszczenie z 25.07.2025)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-16, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0
+# Extract: Dział V start, art. 98-112a (temporary residence permit, general rules). pdftotext -layout.
+# NOT the law in force on its own: Dz.U. 2025 poz. 1794 (in force 1.01.2026) rewrites art. 105-106a, adds 106b-106l and changes 104, 107, 108, 112a (see the amendment extract).
+
+                                                        DZIAŁ V
+
+                                        Zezwolenie na pobyt czasowy. Mobilność
+
+                                                        Rozdział 1
+                                                      Część ogólna
+      Art. 98. 1. Zezwolenia na pobyt czasowy cudzoziemcowi udziela się albo – w przypadkach, o których mowa w art. 160,
+art. 181 i art. 187 – można udzielić na jego wniosek, jeżeli spełnia wymogi określone ze względu na deklarowany cel pobytu,
+a okoliczności, które są podstawą ubiegania się o to zezwolenie, uzasadniają jego pobyt na terytorium Rzeczypospolitej
+Polskiej przez okres dłuższy niż 3 miesiące.
+     1a. Zezwolenia, o którym mowa w art. 139a ust. 1 i art. 139o ust. 1, udziela się na wniosek jednostki przyjmującej.
+    2. Zezwolenia na pobyt czasowy udziela się na okres niezbędny do realizacji celu pobytu cudzoziemca na terytorium
+Rzeczypospolitej Polskiej, nie dłuższy jednak niż 3 lata.
+    Art. 99. 1. Cudzoziemcowi odmawia się wszczęcia postępowania w sprawie udzielenia zezwolenia na pobyt czasowy,
+gdy w dniu złożenia wniosku o udzielenie tego zezwolenia:
+1)   posiada zezwolenie na pobyt stały lub zezwolenie na pobyt rezydenta długoterminowego UE lub
+2)   przebywa na terytorium Rzeczypospolitej Polskiej na podstawie wizy Schengen upoważniającej tylko do wjazdu na to
+     terytorium wydanej w celu, o którym mowa w art. 60 ust. 1 pkt 23, lub
+3)   przebywa na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt czasowy, udzielonego w przy-
+     padkach, o których mowa w art. 181 ust. 1, lub
+4)   przebywa na terytorium Rzeczypospolitej Polskiej na podstawie zgody na pobyt tolerowany lub zgody na pobyt ze
+     względów humanitarnych albo w związku z udzieleniem mu azylu, ochrony uzupełniającej lub ochrony czasowej lub
+     nadaniem mu statusu uchodźcy w Rzeczypospolitej Polskiej, lub
+5)   ubiega się o udzielenie ochrony międzynarodowej lub o udzielenie azylu, lub
+6)   jest zatrzymany, umieszczony w strzeżonym ośrodku lub w areszcie dla cudzoziemców lub stosuje się wobec niego
+     środek zapobiegawczy w postaci zakazu opuszczania kraju, lub
+7)   odbywa karę pozbawienia wolności lub jest tymczasowo aresztowany, lub
+8)   przebywa na terytorium Rzeczypospolitej Polskiej po tym, jak został zobowiązany do powrotu, i nie upłynął jeszcze
+     termin dobrowolnego wyjazdu określony w decyzji o zobowiązaniu cudzoziemca do powrotu, także w przypadku prze-
+     dłużenia tego terminu, lub
+9)   jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej w przypadkach, o których mowa w art. 299 ust. 6, lub
+10) przebywa poza granicami Rzeczypospolitej Polskiej.
+11) (uchylony)
+Dziennik Ustaw                                             – 57 –                                                  Poz. 1079
+
+     1a. Poza przypadkami, o których mowa w ust. 1, cudzoziemcowi odmawia się wszczęcia postępowania w sprawie
+udzielenia zezwolenia na pobyt czasowy, gdy przy składaniu wniosku o udzielenie mu tego zezwolenia albo w terminie,
+o którym mowa w art. 106 ust. 5, nie złożył odcisków linii papilarnych w celu wydania karty pobytu.
+     2. Przepisu ust. 1 pkt 10 nie stosuje się w przypadkach, o których mowa w art. 168 ust. 1 lub art. 168a ust. 1.
+     Art. 100. 1. Udzielenia zezwolenia na pobyt czasowy odmawia się cudzoziemcowi, gdy:
+1)   nie spełnia on wymogów udzielenia mu zezwolenia na pobyt czasowy ze względu na deklarowany cel pobytu lub
+     okoliczności, które są podstawą ubiegania się o to zezwolenie, nie uzasadniają jego pobytu na terytorium Rzeczy-
+     pospolitej Polskiej przez okres dłuższy niż 3 miesiące lub
+2)   obowiązuje wpis danych cudzoziemca do wykazu cudzoziemców, których pobyt jest na terytorium Rzeczypospolitej
+     Polskiej niepożądany, lub
+3)   jego dane znajdują się w Systemie Informacyjnym Schengen do celów odmowy wjazdu i pobytu, lub
+4)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego
+     lub zobowiązania wynikające z postanowień ratyfikowanych umów międzynarodowych obowiązujących Rzeczpospolitą
+     Polską, lub
+5)   w postępowaniu w sprawie udzielenia mu zezwolenia na pobyt czasowy:
+     a)   złożył on wniosek zawierający nieprawdziwe dane osobowe lub fałszywe informacje lub dołączył do niego doku-
+          menty zawierające takie dane lub informacje, lub
+     b) zeznał on nieprawdę lub zataił prawdę albo podrobił lub przerobił dokument w celu użycia go jako autentycznego
+        lub takiego dokumentu używał jako autentycznego, lub
+6)   zalega z uiszczeniem podatków, z wyjątkiem przypadków gdy uzyskał przewidziane prawem zwolnienie, odroczenie,
+     rozłożenie na raty zaległych płatności lub wstrzymanie w całości wykonania decyzji właściwego organu, lub
+7)   nie zwrócił kosztów związanych z wydaniem i wykonaniem decyzji o zobowiązaniu cudzoziemca do powrotu, które
+     zostały pokryte z budżetu państwa, lub
+8)   podlegając obowiązkowi leczenia na podstawie art. 40 ust. 1 ustawy z dnia 5 grudnia 2008 r. o zapobieganiu oraz zwal-
+     czaniu zakażeń i chorób zakaźnych u ludzi, nie wyraża zgody na to leczenie, lub
+9)   złożył wniosek podczas nielegalnego pobytu na terytorium Rzeczypospolitej Polskiej lub przebywa na tym terytorium
+     nielegalnie.
+     1a. W przypadku, o którym mowa w ust. 1 pkt 3, cudzoziemcowi można udzielić zezwolenia na pobyt czasowy, biorąc
+pod uwagę powody leżące u podstaw decyzji państwa obszaru Schengen, które dokonało wpisu do Systemu Informacyjnego
+Schengen, oraz uwzględniając zagrożenia, o których mowa w art. 27 lit. d rozporządzenia nr 2018/1861, jakie może powo-
+dować obecność danego cudzoziemca na terytorium państw obszaru Schengen.
+     1b. W przypadku, o którym mowa w ust. 1a, wojewoda lub Szef Urzędu w drugiej instancji, za pośrednictwem Komen-
+danta Głównego Policji:
+1)   przeprowadza z właściwym organem państwa, które dokonało wpisu do Systemu Informacyjnego Schengen, konsul-
+     tacje, o których mowa w art. 27 rozporządzenia nr 2018/1861;
+2)   informuje właściwy organ tego państwa obszaru Schengen o decyzji wydanej w sprawie udzielenia cudzoziemcowi
+     zezwolenia na pobyt czasowy lub o zamiarze udzielenia cudzoziemcowi zezwolenia na pobyt czasowy.
+    2. Cudzoziemcowi można odmówić udzielenia kolejnego zezwolenia na pobyt czasowy w przypadku niewykonania
+obowiązku, o którym mowa w art. 113, jeżeli wniosek o udzielenie kolejnego zezwolenia na pobyt czasowy złożył przed
+upływem 1 roku od upływu okresu ważności poprzedzającego go zezwolenia albo od dnia, w którym decyzja o cofnięciu
+zezwolenia na pobyt czasowy stała się ostateczna.
+     Art. 101. Zezwolenie na pobyt czasowy cofa się cudzoziemcowi, gdy:
+1)   ustał cel pobytu, który był powodem udzielenia zezwolenia na pobyt czasowy, lub
+2)   przestał on spełniać wymogi udzielenia mu zezwolenia na pobyt czasowy ze względu na deklarowany cel pobytu, lub
+3)   wystąpiła przynajmniej jedna z okoliczności, o których mowa w art. 100 ust. 1 pkt 2 lub 4–8.
+Dziennik Ustaw                                            – 58 –                                                 Poz. 1079
+
+     Art. 102. Zezwolenie na pobyt czasowy wygasa z mocy prawa z dniem uzyskania przez cudzoziemca kolejnego
+zezwolenia na pobyt czasowy, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego UE lub obywatel-
+stwa polskiego.
+     Art. 103. W postępowaniu w sprawie udzielenia cudzoziemcowi lub cofnięcia mu zezwolenia na pobyt czasowy przy
+wykonywaniu czynności mających na celu ustalenie okoliczności, o których mowa w art. 100 ust. 1 pkt 5, nie stosuje się
+przepisu art. 79 Kodeksu postępowania administracyjnego.
+     Art. 104. 1. Zezwolenia na pobyt czasowy, z wyjątkiem zezwoleń, o których mowa w art. 139a ust. 1 i art. 139o ust. 1,
+udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu cudzoziemca, w drodze decyzji.
+     2. Zezwolenie na pobyt czasowy cofa wojewoda, który go udzielił, w drodze decyzji.
+     3. Jeżeli zezwolenia na pobyt czasowy udzielił Szef Urzędu w drugiej instancji, zezwolenie to cofa wojewoda, który
+orzekał w sprawie udzielenia tego zezwolenia w pierwszej instancji.
+    Art. 105. 1. Cudzoziemiec, z wyjątkami określonymi w art. 139l ust. 1 i art. 139t ust. 1, składa wniosek o udzielenie
+mu zezwolenia na pobyt czasowy osobiście, nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczy-
+pospolitej Polskiej.
+     2. Jeżeli wniosek o udzielenie zezwolenia na pobyt czasowy nie został złożony przez cudzoziemca osobiście, woje-
+woda wzywa go do osobistego stawiennictwa w terminie nie krótszym niż 7 dni pod rygorem pozostawienia wniosku bez
+rozpoznania.
+     3. W przypadku cudzoziemca będącego:
+1)   osobą małoletnią – wniosek o udzielenie mu zezwolenia na pobyt czasowy składają rodzice lub ustanowieni przez sąd
+     opiekunowie albo jedno z rodziców lub jeden z ustanowionych przez sąd opiekunów;
+2)   osobą ubezwłasnowolnioną całkowicie – wniosek o udzielenie mu zezwolenia na pobyt czasowy składa opiekun
+     ustanowiony przez sąd;
+3)   osobą małoletnią bez opieki – wniosek o udzielenie mu zezwolenia na pobyt czasowy składa kurator.
+     4. Przy składaniu wniosku o udzielenie zezwolenia na pobyt czasowy cudzoziemcowi będącemu osobą małoletnią,
+która do dnia złożenia wniosku ukończyła 6. rok życia, jest wymagana jego obecność. Przepis ust. 2 stosuje się odpowiednio.
+      5. Wymogu osobistego stawiennictwa nie stosuje się w przypadkach, o których mowa w art. 168 ust. 1 lub art. 168a
+ust. 1. W takich przypadkach przepisów art. 106 ust. 4 i 5 nie stosuje się.
+      Art. 106. 1. Wniosek o udzielenie zezwolenia na pobyt czasowy, z wyjątkiem zezwoleń, o których mowa w art. 139a
+ust. 1 i art. 139o ust. 1, cudzoziemiec składa na formularzu zawierającym:
+1)   dane cudzoziemca lub informacje, o których mowa w art. 13, w zakresie niezbędnym do wydania zezwolenia;
+2)   (uchylony)
+3)   (uchylony)
+4)   (uchylony)
+5)   (uchylony)
+6)   imię, nazwisko, datę urodzenia oraz informacje o płci, obywatelstwie i miejscu zamieszkania członków rodziny
+     cudzoziemca zamieszkałych na terytorium Rzeczypospolitej Polskiej, z określeniem stopnia pokrewieństwa, a także
+     informację o ubieganiu się przez nich o zezwolenie na pobyt czasowy oraz o tym, czy pozostają na utrzymaniu
+     cudzoziemca;
+7)   informację o poprzednich pobytach oraz aktualnym pobycie cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+8)   informację o podróżach i pobytach zagranicznych cudzoziemca w okresie ostatnich 5 lat;
+9)   (uchylony)
+10) informację o środkach finansowych na pokrycie kosztów utrzymania cudzoziemca;
+11) informację o posiadanym przez cudzoziemca ubezpieczeniu zdrowotnym;
+12) informację o deklarowanym celu pobytu cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+13) informację o zatrzymaniu cudzoziemca, umieszczeniu go w strzeżonym ośrodku lub w areszcie dla cudzoziemców,
+    zakazie opuszczania przez niego kraju, odbywaniu kary pozbawienia wolności lub jego tymczasowym aresztowaniu;
+Dziennik Ustaw                                                  – 59 –                                                  Poz. 1079
+
+14) informację o zobowiązaniach cudzoziemca wynikających z orzeczeń sądowych, postanowień i decyzji administracyj-
+    nych, w tym o zobowiązaniach alimentacyjnych na terytorium Rzeczypospolitej Polskiej lub poza tym terytorium;
+15) wzór podpisu cudzoziemca;
+16) pisemne oświadczenie pod rygorem odpowiedzialności karnej za składanie fałszywych oświadczeń, że dane zawarte
+    we wniosku są prawdziwe.
+     1a. Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy i pracę, zezwolenia na pobyt czasowy
+w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji albo zezwolenia na pobyt czasowy w celu
+prowadzenia działalności gospodarczej, jeżeli celem jego pobytu jest wykonywanie pracy przez pełnienie funkcji w zarzą-
+dzie spółki z ograniczoną odpowiedzialnością lub spółki akcyjnej, którą utworzył lub której udziały lub akcje objął lub
+nabył, lub prowadzenie spraw spółki komandytowej lub komandytowo-akcyjnej przez komplementariusza, lub działanie
+w charakterze prokurenta, składając wniosek o udzielenie zezwolenia na pobyt czasowy dołącza do niego wypełniony przez
+podmiot powierzający pracę cudzoziemcowi załącznik zawierający: 49)
+1)14) informacje dotyczące podmiotu powierzającego pracę cudzoziemcowi i pracodawcy użytkownika:
+      a)         nazwę lub imię i nazwisko,
+      b) adres siedziby lub miejsce zamieszkania,
+      c)         podstawę prawną działalności, nazwę rejestru i numer wpisu w rejestrze, a w przypadku osób fizycznych niepro-
+                 wadzących działalności gospodarczej – nazwę dokumentu tożsamości, serię i numer,
+      d) numer PESEL,
+      e)         numer REGON;
+2)    informacje na temat pracy, która ma być powierzona cudzoziemcowi:
+      a)         stanowisko lub rodzaj pracy,
+      aa)50) zawód, zgodny z klasyfikacją zawodów i specjalności na potrzeby rynku pracy,
+      b) miejsce wykonywania pracy,
+      c)         podstawę prawną wykonywania pracy,
+      d) wymiar czasu pracy,
+      e)         wysokość wynagrodzenia,
+      f)         zakres podstawowych obowiązków na stanowisku pracy,
+      g)   14)
+                  okres, na jaki podmiot powierzający pracę cudzoziemcowi lub pracodawca użytkownik chce powierzyć cudzo-
+                 ziemcowi wykonywanie pracy;
+3)14) oświadczenie podmiotu powierzającego pracę cudzoziemcowi, pod rygorem odpowiedzialności karnej za składanie
+      fałszywych oświadczeń, w przedmiocie niekaralności za przestępstwa i wykroczenia, o których mowa w art. 117 pkt 1.
+      1b.14) W przypadku podmiotu powierzającego pracę cudzoziemcowi będącego osobą prawną albo jednostką organiza-
+cyjną nieposiadającą osobowości prawnej, oświadczenie, o którym mowa w ust. 1a pkt 3, składa osoba działająca w imieniu
+i na rzecz tego podmiotu.
+      1c.51) Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie
+wymagającym wysokich kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza
+Niebieskiej Karty UE, składając wniosek o udzielenie zezwolenia na pobyt czasowy, dołącza do niego załącznik zawiera-
+jący:
+1)    informacje dotyczące cudzoziemca:
+      a)         imię (imiona) i nazwisko,
+      b) datę urodzenia,
+      c)         obywatelstwo;
+
+49) Wprowadzenie do wyliczenia w brzmieniu ustalonym przez art. 96 pkt 8 lit. a ustawy, o której mowa w odnośniku 12.
+50) Dodana przez art. 96 pkt 8 lit. b ustawy, o której mowa w odnośniku 12.
+51) W brzmieniu ustalonym przez art. 1 pkt 7 ustawy, o której mowa w odnośniku 2.
+Dziennik Ustaw                                           – 60 –                                              Poz. 1079
+
+2)   informację o:
+     a)   posiadanych przez cudzoziemca wyższych kwalifikacjach zawodowych niezbędnych do wykonywania pracy
+          w przypadku zamiaru wykonywania pracy w zawodzie niebędącym zawodem regulowanym w rozumieniu art. 5
+          pkt 4 ustawy z dnia 22 grudnia 2015 r. o zasadach uznawania kwalifikacji zawodowych nabytych w państwach
+          członkowskich Unii Europejskiej (Dz. U. z 2023 r. poz. 334 oraz z 2025 r. poz. 619),
+     b) posiadanych przez cudzoziemca formalnych kwalifikacjach i spełnieniu innych warunków, które są wymagane,
+        w przypadku zamiaru wykonywania pracy w zawodzie regulowanym w rozumieniu art. 5 pkt 4 ustawy z dnia
+        22 grudnia 2015 r. o zasadach uznawania kwalifikacji zawodowych nabytych w państwach członkowskich Unii
+        Europejskiej,
+     c)   zamieszkiwaniu przez cudzoziemca w innym państwie członkowskim Unii Europejskiej co najmniej przez okres
+          12 miesięcy na podstawie wydanego przez to państwo dokumentu pobytowego, o którym mowa w art. 1 ust. 2
+          lit. a rozporządzenia nr 1030/2002, z adnotacją „Niebieska Karta UE”,
+     d) zamieszkiwaniu przez cudzoziemca w innym państwie członkowskim Unii Europejskiej co najmniej przez okres
+        6 miesięcy na podstawie wydanego przez to państwo dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a
+        rozporządzenia nr 1030/2002, z adnotacją „Niebieska Karta UE”, w związku z korzystaniem z mobilności długo-
+        terminowej posiadacza Niebieskiej Karty UE.
+     1d. Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy dla stażysty lub zezwolenia na pobyt cza-
+sowy dla wolontariusza, składając wniosek o udzielenie zezwolenia na pobyt czasowy, dołącza do niego załącznik zawiera-
+jący następujące informacje dotyczące organizatora stażu albo jednostki organizacyjnej, na rzecz której cudzoziemiec ma
+wykonywać świadczenia jako wolontariusz:
+1)   nazwę;
+2)   adres siedziby;
+3)   podstawę prawną działalności, nazwę rejestru i numer wpisu w rejestrze;
+4)   numer REGON.
+    1e. Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt czasowy w celu prowadzenia badań naukowych lub
+zezwolenia na pobyt czasowy w celu mobilności długoterminowej naukowca, składając wniosek o udzielenie zezwolenia na
+pobyt czasowy, dołącza do niego załącznik zawierający:
+1)   informacje dotyczące jednostki naukowej, mającej siedzibę na terytorium Rzeczypospolitej Polskiej:
+     a)   nazwę,
+     b) adres siedziby,
+     c)   podstawę prawną działalności, nazwę rejestru i numer wpisu w rejestrze,
+     d) numer REGON;
+2)   informację, czy cudzoziemiec jest objęty programem unijnym lub programem wielostronnym obejmującym środki
+     w zakresie mobilności lub porozumieniem między przynajmniej dwiema instytucjami szkolnictwa wyższego przewi-
+     dującym mobilność wewnątrzunijną, oraz informacje dotyczące tego programu lub porozumienia.
+      2. Składając wniosek o udzielenie zezwolenia na pobyt czasowy, cudzoziemiec przedstawia ważny dokument podróży
+i dołącza do wniosku:
+1)   aktualne fotografie;
+2)   dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się
+     o udzielenie zezwolenia na pobyt czasowy.
+     2a. Jeżeli do wniosku o udzielenie zezwolenia na pobyt czasowy nie zostały dołączone dokumenty, o których mowa
+w ust. 2, wojewoda wzywa cudzoziemca do ich przedłożenia w terminie nie krótszym niż 14 dni. Określając termin, woje-
+woda ocenia czas niezbędny do uzyskania przez cudzoziemca określonego dokumentu.
+     2b. Wezwanie, o którym mowa w ust. 2a, może nastąpić jednocześnie z wezwaniem do osobistego stawiennictwa
+na podstawie art. 105 ust. 2, wezwaniem do złożenia odcisków linii papilarnych lub wezwaniem do uzupełnienia braków
+formalnych wniosku o udzielenie zezwolenia na pobyt czasowy na podstawie art. 64 § 2 Kodeksu postępowania administra-
+cyjnego. W tym przypadku termin wyznaczony przez wojewodę na podstawie ust. 2a nie może być krótszy od najdłuższego
+z terminów określonych w tych wezwaniach.
+Dziennik Ustaw                                            – 61 –                                                Poz. 1079
+
+     3. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży i nie ma moż-
+liwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość.
+     4. Od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt czasowy pobiera się odciski linii papilarnych.
+     5. W przypadku gdy z przyczyn zależnych od wojewody nie jest możliwe pobranie odcisków linii papilarnych od cudzo-
+ziemca w dniu, w którym nastąpiło jego osobiste stawiennictwo, wojewoda wyznacza termin na ich złożenie, nie krótszy
+niż 7 dni.
+    Art. 106a. 1. Wniosek o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 lub art. 139o ust. 1, jednostka przyj-
+mująca składa na formularzu zawierającym:
+1)   dane cudzoziemca lub informacje, o których mowa w art. 13, w zakresie niezbędnym do wydania zezwolenia;
+2)   imię, nazwisko, datę urodzenia oraz informacje o płci, miejscu zamieszkania i obywatelstwie członków rodziny
+     cudzoziemca zamieszkałych na terytorium Rzeczypospolitej Polskiej lub zamierzających zamieszkiwać na tym teryto-
+     rium, z określeniem stopnia pokrewieństwa, a także informację o tym, czy pozostają na utrzymaniu cudzoziemca;
+3)   informację o zamierzonym miejscu pobytu cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+4)   informację o aktualnym miejscu pobytu cudzoziemca;
+5)   informację o poprzednich pobytach cudzoziemca na terytorium Rzeczypospolitej Polskiej oraz innych państw człon-
+     kowskich Unii Europejskiej;
+6)   informację o posiadanym przez cudzoziemca ubezpieczeniu zdrowotnym;
+7)   informacje dotyczące jednostki przyjmującej:
+     a)   nazwę,
+     b) adres siedziby,
+     c)   podstawę prawną działalności, nazwę rejestru i numer wpisu w rejestrze,
+     d) numer REGON;
+8)   informacje dotyczące pracodawcy macierzystego:
+     a)   nazwę,
+     b) adres siedziby,
+     c)   formę prawną działalności;
+9)   informację o powiązaniach między pracodawcą macierzystym a jednostką przyjmującą;
+10) informacje na temat pracy, która ma być powierzona cudzoziemcowi:
+     a)   stanowisko,
+     b) miejsce wykonywania pracy,
+     c)   podstawę prawną wykonywania pracy,
+     d) wymiar czasu pracy,
+     e)   wysokość wynagrodzenia,
+     f)   zakres podstawowych obowiązków na stanowisku pracy,
+     g) okres, w jakim cudzoziemiec będzie wykonywał pracę w jednostce przyjmującej;
+11) informację o planowanym czasie trwania przeniesienia wewnątrz przedsiębiorstwa w poszczególnych państwach człon-
+    kowskich Unii Europejskiej;
+12) informację o posiadaniu dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a rozporządzenia nr 1030/2002,
+    z adnotacją „ICT”, wydanego przez inne państwo członkowskie Unii Europejskiej;
+13) informację o przeniesieniach wewnątrz przedsiębiorstwa na terytorium Unii Europejskiej w okresie ostatnich 3 lat;
+14) informację o posiadanych przez cudzoziemca kwalifikacjach zawodowych i doświadczeniu, niezbędnych do wykony-
+    wania pracy w jednostce przyjmującej, oraz spełnianiu wymagań kwalifikacyjnych i innych warunków w przypadku
+    pracy w zawodzie regulowanym lub – w przypadku pracy w charakterze pracownika odbywającego staż – informację
+    o posiadanym dyplomie ukończenia studiów wyższych;
+Dziennik Ustaw                                             – 62 –                                                Poz. 1079
+
+15) informację o dotychczasowym zatrudnieniu w ramach tego samego przedsiębiorstwa lub tej samej grupy przedsię-
+    biorstw przed przeniesieniem wewnątrz przedsiębiorstwa;
+16) oświadczenie jednostki przyjmującej dotyczące okoliczności, o których mowa w art. 139a ust. 1 pkt 1 lit. f lub art. 139o
+    ust. 1 pkt 1 lit. d;
+17) informacje o okolicznościach, o których mowa w art. 139e pkt 2 lit. c–e lub art. 139r ust. 1 pkt 3–5;
+18) oświadczenie jednostki przyjmującej o okolicznościach, o których mowa w art. 139f ust. 1 pkt 4 lub art. 139s ust. 1
+    pkt 3, dotyczące pracodawcy macierzystego lub jednostki przyjmującej;
+19) pisemne oświadczenie, pod rygorem odpowiedzialności karnej za składanie fałszywych oświadczeń, że dane zawarte
+    we wniosku są prawdziwe.
+      2. Jednostka przyjmująca, składając wniosek o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 lub art. 139o
+ust. 1, przedstawia kopię ważnego dokumentu podróży cudzoziemca i dołącza do wniosku:
+1)   aktualne fotografie cudzoziemca;
+2)   dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się
+     o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 lub art. 139o ust. 1.
+     3. Jeżeli do wniosku o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 139a ust. 1 lub art. 139o ust. 1,
+nie zostały dołączone dokumenty, o których mowa w ust. 2, wojewoda wzywa jednostkę przyjmującą do ich przedłożenia
+w terminie nie krótszym niż 14 dni. Przepis art. 106 ust. 2a zdanie drugie stosuje się.
+    4. Wezwanie, o którym mowa w ust. 3, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków formalnych
+wniosku na podstawie art. 64 § 2 Kodeksu postępowania administracyjnego. W tym przypadku termin wyznaczony przez
+wojewodę na podstawie ust. 3 nie może być krótszy od terminu określonego do uzupełnienia braków formalnych wniosku.
+     Art. 107. 1. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+1)   wzór formularza wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy, o którym mowa w art. 106 ust. 1;
+1a) wzór załączników do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy, o których mowa w art. 106
+    ust. 1a i 1c–1e;
+1b) wzór formularza wniosków o udzielenie cudzoziemcowi zezwoleń na pobyt czasowy, o których mowa w art. 139a
+    ust. 1 oraz art. 139o ust. 1;
+2)   liczbę fotografii dołączanych do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy i szczegółowe
+     wymogi techniczne dotyczące fotografii dołączanych do wniosku;
+3)   wzór stempla potwierdzającego złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy;
+4)   sposób pobierania odcisków linii papilarnych w celu wydania karty pobytu;
+5)   sposób utrwalania danych umieszczanych w karcie pobytu i przekazywania ich do spersonalizowania karty pobytu.
+     2. W rozporządzeniu, o którym mowa w ust. 1, minister właściwy do spraw wewnętrznych uwzględni potrzebę zapew-
+nienia sprawności postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy i możliwości skutecz-
+nej weryfikacji przesłanek udzielenia tego zezwolenia.
+    Art. 108. 1. Jeżeli termin na złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy został za-
+chowany i wniosek nie zawiera braków formalnych lub braki formalne zostały uzupełnione w terminie:
+1)   wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla potwierdzającego złożenie wniosku o udzie-
+     lenie zezwolenia na pobyt czasowy;
+2)   pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia,
+     w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna.
+      2. Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi zezwo-
+lenia na pobyt czasowy na wniosek strony.
+      Art. 109. 1. Przed wydaniem decyzji o udzieleniu cudzoziemcowi zezwolenia na pobyt czasowy wojewoda zwraca się
+do komendanta oddziału Straży Granicznej, komendanta wojewódzkiego Policji, Szefa Agencji Bezpieczeństwa Wewnętrz-
+nego, a w razie potrzeby także do konsula właściwego ze względu na ostatnie miejsce zamieszkania cudzoziemca za granicą
+lub do innych organów z wnioskiem o przekazanie informacji, czy wjazd cudzoziemca na terytorium Rzeczypospolitej Polskiej
+i jego pobyt na tym terytorium mogą stanowić zagrożenie dla obronności lub bezpieczeństwa państwa lub ochrony bezpie-
+czeństwa i porządku publicznego.
+Dziennik Ustaw                                                   – 63 –                                           Poz. 1079
+
+    2. Komendanci, o których mowa w ust. 1, Szef Agencji Bezpieczeństwa Wewnętrznego lub konsul przekazują infor-
+mację, o której mowa w ust. 1, w terminie 30 dni od dnia otrzymania wniosku.
+    3. W szczególnie uzasadnionych przypadkach termin 30-dniowy może być przedłużony do 60 dni, o czym organ obo-
+wiązany do przekazania informacji zawiadamia wojewodę.
+    3a. Wymiana informacji między wojewodą a organami, o których mowa w ust. 1, może odbywać się za pomocą środ-
+ków komunikacji elektronicznej.
+     3b.52) W przypadku zezwolenia, o którym mowa w art. 137a, komendanci, o których mowa w ust. 1, Szef Agencji Bez-
+pieczeństwa Wewnętrznego lub konsul przekazują informację, o której mowa w ust. 1, w terminie 10 dni od dnia otrzymania
+wniosku.
+     3c.52) W szczególnie uzasadnionych przypadkach termin, o którym mowa w ust. 3b, może być przedłużony do 30 dni,
+o czym organ obowiązany do przekazania informacji zawiadamia wojewodę.
+     3d.52) W przypadku zezwolenia na pobyt czasowy w celu połączenia się z rodziną osoby będącej członkiem rodziny
+cudzoziemca zamieszkującego na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt czasowy w celu
+mobilności długoterminowej posiadacza Niebieskiej Karty UE komendanci, o których mowa w ust. 1, Szef Agencji Bezpie-
+czeństwa Wewnętrznego lub konsul przekazują informację, o której mowa w ust. 1, w terminie 7 dni roboczych od dnia
+otrzymania wniosku.
+     3e.52) W szczególnie uzasadnionych przypadkach termin, o którym mowa w ust. 3d, może być przedłużony do 30 dni
+roboczych, o czym organ obowiązany do przekazania informacji zawiadamia wojewodę.
+     4.53) Jeżeli organ obowiązany do przekazania informacji, o której mowa w ust. 1, nie przekaże informacji w terminach,
+o których mowa w ust. 2, 3 lub 3b–3e, uznaje się, że wymóg uzyskania informacji został spełniony.
+     4a. Jeżeli Szef Urzędu w drugiej instancji zamierza udzielić cudzoziemcowi zezwolenia na pobyt czasowy, a wojewoda
+nie zwrócił się z wnioskiem, o którym mowa w ust. 1, Szef Urzędu występuje z tym wnioskiem do organów wskazanych
+w ust. 1. Przepisy ust. 2–4 stosuje się odpowiednio.
+       5. Przepisu ust. 1 nie stosuje się do cudzoziemca, który w dniu złożenia wniosku nie ukończył 13. roku życia.
+   Art. 109a. Jeżeli dane cudzoziemca zostały umieszczone w Systemie Informacyjnym Schengen do celów, o których
+mowa w art. 3 ust. 1 rozporządzenia nr 2018/1860, wojewoda lub Szef Urzędu w drugiej instancji, za pośrednictwem
+Komendanta Głównego Policji:
+1)     zwraca się do właściwego organu państwa obszaru Schengen, które umieściło dane, o przeprowadzenie konsultacji,
+       o których mowa w art. 9 ust. 1 rozporządzenia nr 2018/1860, w przypadku gdy dane zostały umieszczone w związku
+       z decyzją właściwego organu tego państwa obszaru Schengen, której towarzyszy zakaz ponownego wjazdu;
+2)     informuje właściwy organ państwa obszaru Schengen, które umieściło dane, o decyzji wydanej w sprawie udzielenia
+       cudzoziemcowi zezwolenia na pobyt czasowy, w przypadku gdy dane zostały umieszczone w związku z decyzją właś-
+       ciwego organu tego państwa obszaru Schengen, której towarzyszy zakaz ponownego wjazdu;
+3)     informuje właściwy organ państwa obszaru Schengen, które umieściło dane, o zamiarze udzielenia zezwolenia na pobyt
+       czasowy lub o jego udzieleniu, w przypadku gdy dane zostały umieszczone w związku z decyzją właściwego organu
+       tego państwa obszaru Schengen, której nie towarzyszy zakaz ponownego wjazdu.
+     Art. 109b. 1. Jeżeli właściwy organ innego państwa obszaru Schengen występuje o przeprowadzenie konsultacji,
+o których mowa w art. 10 lub art. 11 rozporządzenia nr 2018/1860, a cudzoziemiec posiada zezwolenie na pobyt czasowy,
+wojewoda, który udzielił tego zezwolenia, a w przypadku gdy zezwolenia udzielił Szef Urzędu w drugiej instancji – woje-
+woda, który orzekał w sprawie w pierwszej instancji, ustala, czy zachodzą przesłanki cofnięcia tego zezwolenia.
+     2. W przypadku, o którym mowa w ust. 1, wojewoda przekazuje Komendantowi Głównemu Policji informację o wy-
+daniu cudzoziemcowi decyzji o cofnięciu zezwolenia na pobyt czasowy lub o braku podstaw do jego cofnięcia w terminie
+10 dni od dnia otrzymania wystąpienia o przeprowadzenie konsultacji, o których mowa w art. 10 lub art. 11 rozporządzenia
+nr 2018/1860.
+     3. Jeżeli nie jest możliwe zachowanie terminu, o którym mowa w ust. 2, wojewoda występuje przed jego upływem, za
+pośrednictwem Komendanta Głównego Policji, do właściwego organu innego państwa obszaru Schengen z wnioskiem
+o przedłużenie terminu, nie więcej jednak niż o 12 dni. Wniosek zawiera uzasadnienie. W takim przypadku wojewoda przeka-
+zuje Komendantowi Głównemu Policji informację, o której mowa w ust. 2, w terminie 2 dni przed końcem terminu określo-
+nego we wniosku.
+
+52)   Dodany przez art. 1 pkt 8 lit. a ustawy, o której mowa w odnośniku 2.
+53)   Ze zmianą wprowadzoną przez art. 1 pkt 8 lit. b ustawy, o której mowa w odnośniku 2.
+Dziennik Ustaw                                            – 64 –                                                 Poz. 1079
+
+     4. Komendant Główny Policji przekazuje właściwemu organowi innego państwa obszaru Schengen otrzymaną od
+wojewody informację, o której mowa w ust. 2, w terminie 14 dni od dnia wystąpienia o przeprowadzenie konsultacji, o któ-
+rych mowa w art. 10 lub art. 11 rozporządzenia nr 2018/1860, a w przypadku przedłużenia tego terminu – w terminie
+przedłużonym.
+     Art. 110. (uchylony)
+     Art. 111. 1. Jeżeli właściwy organ innego państwa obszaru Schengen występuje o przeprowadzenie konsultacji, o któ-
+rych mowa w art. 28 lub art. 29 rozporządzenia nr 2018/1861, wojewoda, który udzielił cudzoziemcowi zezwolenia na pobyt
+czasowy, a w przypadku gdy zezwolenia udzielił Szef Urzędu w drugiej instancji – wojewoda, który orzekał w sprawie
+w pierwszej instancji, ustala, czy zachodzą przesłanki cofnięcia cudzoziemcowi tego zezwolenia, biorąc pod uwagę powody
+leżące u podstaw decyzji państwa obszaru Schengen zamierzającego dokonać wpisu lub które dokonało wpisu do Systemu
+Informacyjnego Schengen, oraz uwzględniając zagrożenia, o których mowa w art. 28 lit. d lub art. 29 lit. d rozporządzenia
+nr 2018/1861, jakie może powodować obecność danego cudzoziemca na terytorium państw obszaru Schengen.
+     2. W przypadku, o którym mowa w ust. 1, wojewoda przekazuje Komendantowi Głównemu Policji informację o wy-
+daniu cudzoziemcowi decyzji o cofnięciu zezwolenia na pobyt czasowy lub o braku podstaw do jego cofnięcia w terminie
+10 dni od dnia otrzymania wystąpienia o przeprowadzenie konsultacji, o których mowa w art. 28 lub art. 29 rozporządzenia
+nr 2018/1861.
+     3. Jeżeli nie jest możliwe zachowanie terminu, o którym mowa w ust. 2, wojewoda występuje przed jego upływem, za
+pośrednictwem Komendanta Głównego Policji, do właściwego organu innego państwa obszaru Schengen z wnioskiem
+o przedłużenie terminu, nie więcej jednak niż o 12 dni. Wniosek zawiera uzasadnienie. W takim przypadku wojewoda prze-
+kazuje Komendantowi Głównemu Policji informację, o której mowa w ust. 2, w terminie 2 dni przed końcem terminu określo-
+nego we wniosku.
+    4. Komendant Główny Policji przekazuje właściwemu organowi innego państwa obszaru Schengen otrzymaną od woje-
+wody informację, o której mowa w ust. 2, w terminie 14 dni od dnia wystąpienia o przeprowadzenie konsultacji, o których
+mowa w art. 28 lub art. 29 rozporządzenia nr 2018/1861, a w przypadku przedłużenia tego terminu – w terminie przedłużonym.
+     Art. 112. (uchylony)
+     Art. 112a. 1. Decyzję w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy wydaje się w terminie 60 dni.
+     2. Termin, o którym mowa w ust. 1, biegnie od dnia, w którym nastąpiło ostatnie z następujących zdarzeń:
+1)   cudzoziemiec złożył wniosek o udzielenie zezwolenia na pobyt czasowy osobiście lub nastąpiło jego osobiste stawien-
+     nictwo w urzędzie wojewódzkim po złożeniu tego wniosku, chyba że wobec cudzoziemca nie stosuje się wymogu
+     osobistego stawiennictwa, lub
+2)   cudzoziemiec złożył wniosek o udzielenie zezwolenia na pobyt czasowy, który nie zawiera braków formalnych lub
+     zostały one uzupełnione, lub
+3)   cudzoziemiec przedłożył dokumenty, o których mowa w art. 106 ust. 2 pkt 2, lub wyznaczony przez wojewodę termin,
+     o którym mowa w art. 106 ust. 2a, upłynął bezskutecznie.
+     3. W przypadku postępowania w sprawie udzielenia zezwolenia na pobyt czasowy, o którym mowa w art. 139a ust. 1
+lub art. 139o ust. 1, termin, o którym mowa w ust. 1, biegnie od dnia, w którym nastąpiło ostatnie z następujących zdarzeń:
+1)   jednostka przyjmująca złożyła wniosek o udzielenie zezwolenia na pobyt czasowy, o którym mowa w art. 139a ust. 1
+     lub art. 139o ust. 1, który nie zawiera braków formalnych lub zostały one uzupełnione, lub
+2)   jednostka przyjmująca przedłożyła dokumenty, o których mowa w art. 106a ust. 2 pkt 2, lub wyznaczony przez woje-
+     wodę termin, o którym mowa w art. 106a ust. 3, upłynął bezskutecznie.
+     4. Postępowanie odwoławcze w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy kończy się w termi-
+nie 90 dni.
+     5. Jeżeli odwołanie nie spełnia wymogów przewidzianych przepisami prawa, termin, o którym mowa w ust. 4, biegnie
