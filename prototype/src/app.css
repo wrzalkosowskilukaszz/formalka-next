@@ -236,7 +236,7 @@ ul, ol { padding: 0; list-style: none; }
 .chat { background: var(--canvas); }
 .log { flex: 1; min-height: 0; overflow-y: auto; padding-block: var(--s3) var(--s4); display: flex; flex-direction: column; gap: 6px; scrollbar-width: none; }
 .log::-webkit-scrollbar { display: none; }
-.log > :first-child { margin-top: auto; }
+/* The conversation starts at the top, under the header (owner, 16.10); it scrolls to the latest message. */
 .msg-name { display: flex; align-items: center; gap: var(--s2); font-size: var(--t-2xs); color: var(--ink-3); margin: var(--s3) 0 2px; }
 .msg {
   max-width: 86%; padding: 11px 15px; border-radius: 22px; line-height: 1.42; font-size: var(--t-md);

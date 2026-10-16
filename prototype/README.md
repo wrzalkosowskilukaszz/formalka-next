@@ -196,6 +196,7 @@ The chat always has a back button; with no case yet, it returns home.
   - the case bar appears with the first answer that builds the plan, not at 0%;
   - no "Tworzymy Twoją sprawę" note.
 - **The chat:**
+  - it starts at the top, under the header, and scrolls to the latest message;
   - with one assistant, no name row above its messages: the header already names it;
   - name rows return when several assistants share the chat;
   - a time shows only when the minute changes.
