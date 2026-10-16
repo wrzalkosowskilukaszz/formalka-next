@@ -30,14 +30,15 @@ for (const [name, facts] of cases) {
     const tasks = l.tasks.map((t) => `${t.title.pl}${t.outcome === 'unknown' ? ' [sprawdź]' : ''}${t.onlyIf ? ` [${t.onlyIf.pl}]` : ''}${t.alternatives ? ` [albo: ${t.alternatives.length}]` : ''}`);
     const dls = l.deadlines.map((d) => `${d.id} ${d.amount} ${d.unit} from ${d.from}${d.due ? ` -> ${d.due.earliest}${d.due.latest !== d.due.earliest ? `..${d.due.latest}` : ''} (${d.due.counting}); text: "${E.dueRangePl(d.due.earliest, d.due.latest, d.due.counting)}"` : ''}${d.outcome === 'unknown' ? ' [może nie dotyczyć]' : ''}`);
     const fees = l.fees.map((f) => `${f.amountPln} zł ${f.purpose.pl}${f.optional ? ' (opcjonalnie)' : ''}`);
-    const notes = l.notes.filter((n) => n.important).map((n) => n.id);
+    // Every note, "!" marking the important ones (docs/solutions/2026-10-16-claimed-absence-without-searching.md).
+    const notes = l.notes.map((n) => `${n.id}${n.important ? '!' : ''}${n.outcome === 'unknown' ? '?' : ''}`);
     const office = l.office ? `${l.office.offices.length} offices${l.office.needsPlace ? ' (needs place)' : ''}` : '';
     console.log(`- ${l.id} [${l.state}] ${l.title.pl}`);
     if (tasks.length) console.log(`    tasks: ${tasks.join('; ')}`);
     if (dls.length) console.log(`    deadlines: ${dls.join('; ')}`);
     if (fees.length) console.log(`    fees: ${fees.join('; ')}`);
     if (office) console.log(`    office: ${office}`);
-    if (notes.length) console.log(`    important notes: ${notes.join(', ')}`);
+    if (notes.length) console.log(`    notes: ${notes.join(', ')}`);
   }
   const steps = E.procedure(p.route.procedureId)?.steps.map((s) => `${s.id}:${(s.channels ?? []).join('/')}`).join(' ');
   console.log(`channels by step: ${steps}`);

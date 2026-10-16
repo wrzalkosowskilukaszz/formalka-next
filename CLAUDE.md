@@ -27,3 +27,4 @@ This is the R&D lab for **Formalka Next** (a "Living Case" app: a personal virtu
 - Mark every claim as FACT (with source and date), INFERENCE, HYPOTHESIS, OPEN or ASSUMPTION.
 - Spikes: `spikes/<id>/` with a README that gives the hypothesis, input, expected behaviour, test, result, limitations and the decision consequence.
 - Spike S1 runs with `npm test` in `spikes/s1-case-engine` (Node 22.18+).
+- Lessons from mistakes live in `docs/solutions/` and are not loaded here. Before a task, run `node tools/lessons/slice.mjs <paths>` (or `--diff <ref>`) and follow what it prints; put it into any subagent's prompt. After fixing a mistake that could recur, add a lesson (format in its README) and run `node tools/lessons/index.mjs`. Prefer a test or lint to a rule.

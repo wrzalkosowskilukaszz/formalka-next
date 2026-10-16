@@ -2,7 +2,7 @@
 ## R1 EU citizen, permanent
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic
+    notes: pesel-automatic!, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -12,7 +12,7 @@ route: decided zameldowanie-foreigner
     deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -21,7 +21,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R2 EU citizen, temporary
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic
+    notes: pesel-automatic!, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -31,7 +31,7 @@ route: decided zameldowanie-foreigner
     deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -40,7 +40,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R3 family member of an EU citizen (same group in the engine)
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic
+    notes: pesel-automatic!, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -50,7 +50,7 @@ route: decided zameldowanie-foreigner
     deadlines: eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -59,7 +59,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R4/R5 non-EU, temporary
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+    notes: pesel-automatic!, deadline-short!, no-online!, stay-over-30-days!, no-pesel-in-person, no-valid-passport, declared-period, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -69,7 +69,7 @@ route: decided zameldowanie-foreigner
     deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -78,7 +78,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R6 non-EU, permanent
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+    notes: pesel-automatic!, deadline-short!, no-online!, stay-over-30-days!, no-pesel-in-person, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -88,7 +88,7 @@ route: decided zameldowanie-foreigner
     deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -97,7 +97,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R7 group unknown
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+    notes: pesel-automatic!, deadline-short!?, no-online!?, stay-over-30-days!?, no-pesel-in-person?, no-valid-passport?, declared-period?, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -107,7 +107,7 @@ route: decided zameldowanie-foreigner
     deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)" [może nie dotyczyć]; eu-efta 30 day from arrival_at_address -> 2026-11-13..2026-11-14 (nth-day); text: "do piątku, 13 listopada (najpóźniej do soboty, 14 listopada, zależnie od tego, jak liczyć dni; sobota, 14 listopada to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)" [może nie dotyczyć]
     fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać; bezpłatne tylko wtedy, gdy system melduje Cię automatycznie (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -116,7 +116,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R9 family member of a Polish citizen (the option label puts them in "other")
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+    notes: pesel-automatic!, deadline-short!, no-online!, stay-over-30-days!, no-pesel-in-person, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -126,7 +126,7 @@ route: decided zameldowanie-foreigner
     deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
@@ -135,7 +135,7 @@ channels by step: fill-in:in_person owner-confirms:in_person file:in_person/onli
 ## R10 UK Withdrawal Agreement
 route: decided zameldowanie-foreigner
 - route [done] Twoja sytuacja
-    important notes: pesel-automatic, deadline-short, no-online, stay-over-30-days
+    notes: pesel-automatic!, deadline-short!, no-online!, stay-over-30-days!, no-valid-passport, declared-period, short-stay, no-owner-where, no-owner-statement, no-owner-procedure, one-place
 - fill-in [available] Formularz
     tasks: Wypełnij formularz meldunkowy
 - owner-confirms [locked] Potwierdzenie właściciela
@@ -145,7 +145,7 @@ route: decided zameldowanie-foreigner
     deadlines: other-citizens 4 day from arrival_at_address -> 2026-10-18..2026-10-19 (nth-day); text: "do niedzieli, 18 października (najpóźniej do poniedziałku, 19 października, zależnie od tego, jak liczyć dni; niedziela, 18 października to dzień wolny od pracy, a urząd może być wtedy nieczynny, więc załatw to wcześniej)"
     fees: 0 zł Zameldowanie; 17 zł Zaświadczenie o zameldowaniu na pobyt czasowy, jeśli chcesz je dostać (opcjonalnie); 17 zł Każde kolejne zaświadczenie o zameldowaniu, na przykład gdy zgubisz pierwsze (opcjonalnie)
     office: 18 offices
-    important notes: no-owner-confirmation
+    notes: no-owner-confirmation!
 - registered [locked] Zameldowanie
     tasks: Urzędnik melduje Cię od razu
     office: 18 offices
