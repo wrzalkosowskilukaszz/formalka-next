@@ -1,54 +1,89 @@
 /*
- * Formalka tokens, copied from reference/formalka-design/tokens.css (snapshot formalka@04057ef).
- * Values are unchanged. The prototype adds only the lock-screen tokens at the end.
- * Dark values live in tokens-dark.css; build.mjs writes them into the two dark blocks
- * (system dark, and data-theme="dark") so a viewer's explicit theme wins both ways.
+ * Prototype tokens. Type, spacing and layer values come from Formalka
+ * (reference/formalka-design/tokens.css, snapshot formalka@04057ef).
+ * Colour, radius and motion follow the owner's direction of 2026-10-16:
+ * a native-app feel (references: DocSpot, EverSync), blue instead of green.
+ * The logo keeps its own reds. Dark values live in tokens-dark.css.
  */
 :root {
   color-scheme: light;
 
-  --canvas: #f8f9fb;
+  /* Surfaces: a soft grey ground so white cards read as objects. */
+  --canvas: #eef0f4;
   --raised: #ffffff;
-  --well: #eef1f4;
-  --well-strong: #e3e7ec;
+  --well: #f4f6f9;
+  --well-strong: #e4e8ee;
+  --page: #e2e5eb;
 
-  --ink: #12161b;
-  --ink-2: #434b56;
-  --ink-3: #5c6571;
+  --ink: #0f1217;
+  --ink-2: #474f5c;
+  --ink-3: #5d6572;
+  --line: #e2e6ec;
+  --line-strong: #8a93a1;
 
-  --line: #e2e6eb;
-  --line-strong: #7e8792;
+  /* The accent: a clear cobalt blue. */
+  --accent: #1d5cff;
+  --accent-2: #4d85ff;
+  --accent-strong: #0d3fd0;
+  --accent-soft: #e7eeff;
+  --on-accent: #ffffff;
+  --hero-a: #2f6dff;
+  --hero-b: #1446e6;
+  --hero-c: #0a2fae;
+  --on-hero: #ffffff;
+  --on-hero-2: #d7e3ff;
+  --hero-glass: rgb(255 255 255 / 0.16);
+  --hero-line: rgb(255 255 255 / 0.45);
 
-  --go: #b4182f;
-  --go-strong: #8f1124;
-  --go-soft: #fbe9ec;
-  --on-go: #ffffff;
-  --action: #12161b;
-  --action-strong: #2c333c;
+  /* Frosted chrome (tab bar), after Muse and Liquid Glass. */
+  --glass: rgb(255 255 255 / 0.72);
+  --glass-line: rgb(255 255 255 / 0.9);
+
+  /* The dark controls (tab bar, primary pill). */
+  --action: #14171c;
+  --action-strong: #2a2f37;
   --on-action: #ffffff;
-  --attention: #855400;
-  --attention-soft: #fbf1dc;
-  --signal: #f4b6c0;
-  --done: #1d6b38;
-  --done-soft: #e6f4ea;
+
+  /* Meanings. */
+  --attention: #8a5a00;
+  --attention-soft: #fdf1d8;
+  --done: #17803f;
+  --done-soft: #e2f5e9;
   --on-done: #ffffff;
-  --scrim: rgb(10 14 19 / 0.4);
+  --scrim: rgb(10 14 22 / 0.42);
+
+  /* Phone frame and lock screen (shown around the app on wide screens). */
+  --bezel: #121418;
+  --lock-a: #1d4fe0;
+  --lock-b: #0b1b52;
+  --lock-c: #4c86ff;
+  --lock-fg: #ffffff;
+  --lock-fg-2: #dbe5ff;
+  --lock-card: rgb(255 255 255 / 0.2);
+
+  /* The logo's own reds (BRAND.md). */
+  --mark-1: #8f1124;
+  --mark-2: #b4182f;
+  --mark-3: #d9384b;
+  --mark-fold: #ffffff;
 
   --font: "Geist", "Segoe UI", system-ui, sans-serif;
+  --t-2xs: 0.75rem;
   --t-xs: 0.8125rem;
   --t-sm: 0.9375rem;
   --t-md: 1.0625rem;
   --t-lg: 1.3125rem;
-  --t-xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.375rem);
-  --t-2xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+  --t-xl: 1.75rem;
+  --t-2xl: 2.25rem;
+  --t-3xl: 2.75rem;
   --w-regular: 400;
   --w-medium: 500;
   --w-strong: 600;
   --track-display: -0.035em;
   --track-heading: -0.02em;
-  --leading-tight: 1.1;
+  --leading-tight: 1.08;
   --leading-heading: 1.2;
-  --leading-body: 1.55;
+  --leading-body: 1.5;
 
   --s1: 0.25rem;
   --s2: 0.5rem;
@@ -58,20 +93,22 @@
   --s6: 2rem;
   --s7: 3rem;
   --s8: 4.5rem;
-  --s9: 6rem;
 
   --r-control: 999px;
-  --r-container: 16px;
-  --r-inner: 10px;
+  --r-card: 28px;
+  --r-tile: 20px;
+  --r-inner: 14px;
 
-  --e1: 0 1px 2px rgb(18 22 27 / 0.06);
-  --e2: 0 1px 2px rgb(18 22 27 / 0.04), 0 6px 20px rgb(18 22 27 / 0.06);
-  --e3: 0 16px 48px rgb(18 22 27 / 0.16), 0 2px 8px rgb(18 22 27 / 0.08);
+  --e1: 0 1px 2px rgb(15 18 23 / 0.05);
+  --e2: 0 1px 3px rgb(15 18 23 / 0.04), 0 10px 30px rgb(15 18 23 / 0.07);
+  --e3: 0 24px 64px rgb(15 18 23 / 0.2), 0 4px 12px rgb(15 18 23 / 0.08);
+  --e-hero: 0 18px 40px rgb(20 70 230 / 0.32);
 
-  --dur-fast: 120ms;
-  --dur: 200ms;
-  --dur-slow: 260ms;
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 420ms;
   --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   --z-raised: 1;
   --z-header: 20;
@@ -79,18 +116,6 @@
   --z-drawer: 40;
   --z-skip: 50;
 
-  --measure: 38rem;
   --target: 44px;
   --focus: 3px;
-
-  /* Prototype only: the simulated phone lock screen is dark in both themes. */
-  --lock-bg: #0e1216;
-  --lock-fg: #edf0f3;
-  --lock-fg-2: #b7bfc9;
-  --lock-card: #1b2128;
-  /* The brand mark's own sheet reds (BRAND.md), used only inside the logo. */
-  --mark-1: #8f1124;
-  --mark-2: #b4182f;
-  --mark-3: #d9384b;
-  --mark-fold: #ffffff;
 }

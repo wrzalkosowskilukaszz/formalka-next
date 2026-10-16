@@ -14,9 +14,28 @@ Layout:
 - `src/app.css` and `src/app.js` hold the prototype itself.
 - `vendor/` holds Geist (SIL OFL) and 25 Phosphor icons (MIT), with their licences.
 
+## v2: native-app redesign (owner feedback, 2026-10-16)
+
+The owner asked for a native phone app rather than a web page: a living, animated case world, a modern look (references: DocSpot, EverSync, Meta's Muse), blue instead of green, and game mechanics only as a subtle accent.
+
+- **Palette and chrome.** A cobalt-blue accent replaces Formalka's red everywhere except the logo (owner's decision; `src/tokens.css` says so). Type, spacing and layers stay Formalka's. A frosted tab bar has Start, Kalendarz, Czat and Teczka. On a wide screen the app sits in a phone frame, with the tester panel beside it.
+- **The world builds live.** During the questions, a blue panel above the chat grows the case:
+  - levels fly in, the road is drawn, and the grant route is crossed out;
+  - changed levels ripple, and a ring shows how ready the plan is;
+  - a caption says what changed and why.
+- **Muse-style mechanics.**
+  - Confirmations are approval cards with "Dodaj / Nie dodawaj", not chat questions.
+  - A three-layer status sits under the chat header: now, the process, then detail and sources.
+  - Tapping the assistant's avatar opens the activity log, where any action can be revoked.
+- **Start.** "Masz dziś 1 zadanie", the case hero card with its next step (swipe to mark done), a week strip, the next event as an appointment card, and the case list.
+- **Map.** A calm path with level tiles, side branches for parallel levels, a state chip on each level and a sheet with details. A "Lista" toggle gives a plain list. No points, badges or streaks.
+- **Kalendarz and Teczka.** A month grid with the case's events, and the documents saved on the device.
+
+The scripted content, facts and sources are unchanged from v1.
+
 ## Tester controls
 
-A dashed strip at the top is not part of the app:
+On a phone, a dashed strip at the top; on a wide screen, a dashed panel beside the phone frame. Neither is part of the app:
 - the simulated clock, which starts on Monday 19.10.2026, 18:40;
 - **Przewiń o 3 dni** (time travel), active after the citizenship plan is approved;
 - **Reset** (the round arrow), which clears everything back to the start animation.

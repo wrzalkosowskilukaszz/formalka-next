@@ -4,16 +4,31 @@
 <style>
 /*__CSS__*/
 </style>
-<div id="app">
-  <div class="tester" role="region" aria-label="Panel testera, nie jest częścią aplikacji">
-    <span class="tester-clock" id="clock"></span>
-    <button class="tbtn" id="t-forward" type="button"></button>
-    <button class="tbtn icon-only" id="t-reset" type="button" aria-label="Reset prototypu"></button>
+<div class="shell">
+  <div class="device">
+    <div class="island" aria-hidden="true"></div>
+    <div id="app">
+      <div class="statusbar" aria-hidden="true"><span id="sb-time">18:40</span><span class="sb-icons"><span class="sig"><i style="height:4px"></i><i style="height:6px"></i><i style="height:9px"></i><i style="height:12px"></i></span><span class="bat"></span></span></div>
+      <div class="tester-strip pad" role="region" aria-label="Panel testera, nie jest częścią aplikacji">
+        <span class="tester-clock" id="clock"></span>
+        <button class="tbtn" id="t-forward" type="button"></button>
+        <button class="tbtn icon-only" id="t-reset" type="button" aria-label="Reset prototypu"></button>
+      </div>
+      <main id="stage"></main>
+      <nav id="tabbar" aria-label="Główna nawigacja"></nav>
+      <div id="layer"></div>
+      <div id="toast" role="status" aria-live="polite"></div>
+    </div>
   </div>
-  <main id="stage"></main>
+  <aside class="tester-panel" aria-label="Panel testera, nie jest częścią aplikacji">
+    <h2>Panel testera</h2>
+    <p>Nie jest częścią aplikacji. Czas w prototypie:</p>
+    <p class="tp-clock" id="tp-clock"></p>
+    <button class="tbtn" id="tp-forward" type="button"></button>
+    <button class="tbtn" id="tp-reset" type="button"></button>
+    <p class="meta">Dane przykładowe. Nic nie wychodzi z przeglądarki: brak sieci, AI i zapisu.</p>
+  </aside>
 </div>
-<div id="layer"></div>
-<div id="toast" role="status" aria-live="polite"></div>
 <script>
 /*__JS__*/
 </script>
