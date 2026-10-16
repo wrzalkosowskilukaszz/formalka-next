@@ -232,7 +232,7 @@ Never ask for document numbers or copies of letters. Notes stay out of this repo
 ### Before each session
 - **Prototype:** study mode on (`#badanie`). It offers address registration only and shows the study's scope. Use a separate browser profile with no saved logins, and a fresh page (Reset) for each task.
 - **Paper:** checklist A from `audit/2026-10-16-round2/reference/CHECKLISTS.md`, printed. Scoring sheet B, one per participant.
-- **Office check:** before the first session, the moderator looks up on the City of Warsaw's site which office handles registration for Mokotów and for Wola (OPEN-5). The answer goes on the scoring sheet.
+- **Office:** in Warsaw any district office (delegatura of BAiSO) accepts the filing (OPEN-5, resolved 16.10 from warszawa19115.pl). Any of them is scored correct.
 - **Consent:** agree what is recorded, where it is kept and when it is deleted. Recordings and notes stay out of the repository.
 - **Disclosure,** read aloud in these words or close to them, before the first task:
 
@@ -250,7 +250,7 @@ The study covers what the reference comparison did not exclude (`COMPARISON.md`,
 Expected (draft reference):
 - **Next action:** fill in the permanent-stay form; the owner confirms on it.
 - **Bring:** a passport or another valid document that confirms identity and citizenship; the lease. With the lease alone, score per item 8 (OPEN-12).
-- **Office:** the municipal office for Mokotów.
+- **Office:** any Warsaw district office (delegatura of BAiSO); the nearest is fine.
 - **Deadline:** the 30th day, 13.11 or 14.11. 14.11 is a Saturday, so plan for 13.11 (OPEN-1, OPEN-2).
 - **Channel:** in person or online.
 - **Fees:** free.
@@ -262,7 +262,7 @@ Expected (draft reference):
 Expected (draft reference):
 - **Next action:** fill in the form; the owner confirms on it.
 - **Bring:** a valid travel document **and** the visa; the owner's title document.
-- **Office:** the municipal office for Wola.
+- **Office:** any Warsaw district office (delegatura of BAiSO).
 - **Deadline:** the 4th day, 20.10 or 21.10. Today in the app is 19.10, so this is urgent; plan for 20.10.
 - **Channel:** in person only, and personally (no PESEL, so no proxy).
 - **Fees:** registration is free; the certificate for temporary stay is 17 zł, optional.

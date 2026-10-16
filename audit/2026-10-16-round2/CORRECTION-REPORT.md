@@ -40,7 +40,7 @@ Evidence on `c3a9b00`, Node 22.22.0 (`evidence/`):
 1. **No independent review** of the reference and the checklists (F6). Until a named person with expertise signs the review sheet (§6 of the reference), correctness cannot be scored.
 2. **Open questions on the in-scope cards:**
    - OPEN-1 and OPEN-2 (day count, days off). Both dates are shown, with a warning.
-   - OPEN-5 (which Warsaw district office). The moderator checks it before the sessions.
+   - OPEN-5 (which Warsaw district office). Resolved after this report, on 16.10: any Warsaw district office (warszawa19115.pl).
    - OPEN-8 (the no-owner procedure). Not scored.
    - OPEN-11 (in person without PESEL).
    - OPEN-12 (a lease without the owner's confirmation). Scored as uncertain.

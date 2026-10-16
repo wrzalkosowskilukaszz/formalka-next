@@ -16,7 +16,7 @@ The audit recommends comparing the app first with a plain checklist of the same 
    - Obywatel innego państwa: najpóźniej czwartego dnia, licząc od tego dnia.
    - Nie jest jasne, czy dzień zamieszkania liczy się jako pierwszy. Licz tak, żeby zdążyć wcześniej.
    - Jeśli ostatni dzień wypada w weekend lub święto, urząd może być nieczynny. Idź wcześniej.
-3. **Gdzie?** W urzędzie gminy, na terenie której jest mieszkanie (w Warszawie: urząd dzielnicy).
+3. **Gdzie?** W urzędzie gminy, na terenie której jest mieszkanie. W Warszawie: w dowolnej delegaturze Biura Administracji i Spraw Obywatelskich (w każdej dzielnicy jest jedna). Wizytę można zarezerwować w systemie rezerwacji, ale nie trzeba.
 4. **Jak?**
    - Obywatel UE, EFTA lub Szwajcarii: w urzędzie albo przez internet (potrzebny profil zaufany lub podpis kwalifikowany).
    - Obywatel innego państwa: tylko w urzędzie. Jeśli nie masz numeru PESEL, osobiście.
@@ -44,7 +44,7 @@ One row per participant and condition (checklist, app, chatbot). Score against t
 | Item | Correct | Wrong | Missing | Marked as uncertain |
 |---|---|---|---|---|
 | 1. Next action named (e.g. "fill in the form and get the owner's confirmation") | | | | |
-| 2. Office: the right municipal (district) office for the address | | | | |
+| 2. Office: the municipal office for the address; in Warsaw, any district office (delegatura BAiSO) | | | | |
 | 3. Deadline: the right rule for the group (30th or 4th day) | | | | |
 | 4. Deadline: knows the day count is uncertain and plans for the earlier date | | | | |
 | 5. Deadline: notices that a closed office day may cut the time | | | | |
