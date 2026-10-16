@@ -1,0 +1,49 @@
+# node --test prototype/test/*.test.mjs
+# 2026-10-16T20:39Z commit c3a9b00 node v22.22.0
+
+# Subtest: norm folds Polish letters and punctuation
+ok 1 - norm folds Polish letters and punctuation
+# Subtest: polarity: yes, no and "Nie wiem"; strict mode for approval cards
+ok 2 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
+# Subtest: audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+ok 3 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+# Subtest: yes or no questions: a bare word is taken, a sentence is asked back
+ok 4 - yes or no questions: a bare word is taken, a sentence is asked back
+# Subtest: options with words: the matching one, or the tied ones to choose from
+ok 5 - options with words: the matching one, or the tied ones to choose from
+# Subtest: the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+ok 6 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+# Subtest: whose case: someone else is named first; otherwise the person speaks of themselves
+ok 7 - whose case: someone else is named first; otherwise the person speaks of themselves
+# Subtest: what it does not follow stays unknown; questions about the question are recognised
+ok 8 - what it does not follow stays unknown; questions about the question are recognised
+# Subtest: days and hours in words (the clock starts on Monday 19.10.2026)
+ok 9 - days and hours in words (the clock starts on Monday 19.10.2026)
+# Subtest: day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 10 - day and hour chips: a typed day or hour picks its chip; another one is reported
+# Subtest: "Jak poszło?" in the person's words
+ok 11 - "Jak poszło?" in the person's words
+# Subtest: audit F7: personal numbers are masked before the person's words are shown
+ok 12 - audit F7: personal numbers are masked before the person's words are shown
+# Subtest: case intents: a case that is part of another named case gives way to it
+ok 13 - case intents: a case that is part of another named case gives way to it
+# Subtest: an answer that fits no option: the reply reasons over the words, never picks for the person
+ok 14 - an answer that fits no option: the reply reasons over the words, never picks for the person
+# Subtest: waiting for the office: the need is read from the words, not as a new application
+ok 15 - waiting for the office: the need is read from the words, not as a new application
+# Subtest: correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+ok 16 - correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+# Subtest: round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+ok 17 - round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+# Subtest: study scope: the groups left out are named, not guessed
+ok 18 - study scope: the groups left out are named, not guessed
+# Subtest: round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+ok 19 - round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 149.17593

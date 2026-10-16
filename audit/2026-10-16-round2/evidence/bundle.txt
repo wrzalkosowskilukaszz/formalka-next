@@ -1,0 +1,10 @@
+# cd packages/case-engine && node tools/build-browser.mjs --locales pl; git status --short -- packages; sha256sum
+# 2026-10-16T20:39Z commit c3a9b00 node v22.22.0
+
+# Run from packages/case-engine: esbuild writes source paths relative to the working directory, so a build from the repository root differs only in those path comments.
+
+built dist/case-engine.browser.js 375 KB, registry formalka@04057ef, locales pl, blueprints: address-registration, citizenship, language-certificate, pesel, residence-card
+git status: '' (empty = identical to the commit)
+774e3197123e22e45c6828b2ed527492d44620c619f1d5bda57209b59e0681b3  packages/case-engine/dist/case-engine.browser.js
+774e3197123e22e45c6828b2ed527492d44620c619f1d5bda57209b59e0681b3  committed blob
+774e3197123e22e45c6828b2ed527492d44620c619f1d5bda57209b59e0681b3  dist/manifest.json bundle.sha256
