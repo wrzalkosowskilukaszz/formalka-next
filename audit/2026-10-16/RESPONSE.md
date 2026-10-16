@@ -68,7 +68,11 @@ Neither session wrote to the production repository.
   - cit-06 now ends at the appeal;
   - the new cit-07 covers the Minister's refusal;
   - both are in the evaluation set (18/18).
-- **Still open:** user statements stay apart from legal effects only where a level needs an outcome. "Złożyłem" still completes a level; it does not prove that the earlier requirements were met (the audit's last point under F2). This is noted for the engine session.
+- **A recorded later step no longer proves the earlier ones** (the audit's last point under F2).
+  - The engine marks a level done only by inference as `implied` (`6b982ca`): a later step such as the filing was recorded, and nothing proves this one.
+  - The prototype shows such a level as "Zakładamy, że zrobione", with a dashed chip and timeline node, never the tick of a proven step.
+  - FACT: e2e scenario F records a filing with the form never marked, and asserts this label on the form level.
+  - Legal acceptance (a filing certificate, for example) stays a separate level or event wherever the procedure has one.
 
 ### F3. Exemptions
 - **Engine.** An exemption with no rule has outcome `unknown`, never `applies`. The full fee is counted, and the evaluation compares the effective amount.
@@ -77,12 +81,12 @@ Neither session wrote to the production repository.
   > Przewodnik przewiduje też zwolnienie z opłaty: „…”. Z Twoich odpowiedzi to nie wynika, więc liczę pełną kwotę.
 
 ### F4. Address registration
-- `onlyIf`: the EU family member's card shows as conditional, with who it is for ("Tylko jeśli jesteś członkiem rodziny obywatela UE, EFTA lub Szwajcarii."). FACT: the engine plan for `citizen_group: eu_efta` on `e0a03a6` marks the card `unknown` with this label, and the content check passes.
+- `onlyIf`: the EU family member's card shows as conditional, with who it is for.
+  - The label is now neutral, so it fits both voices: "Tylko dla członka rodziny obywatela UE, EFTA lub Szwajcarii." (`f4ead1f`).
+  - FACT: the engine plan for `citizen_group: eu_efta` marks the card `unknown` with this label, and the content check passes (checked on `e0a03a6` with the earlier wording).
 - `optionalAfter`: filing no longer waits for the owner's confirmation, per the guide's own words ("nadal możesz złożyć formularz meldunkowy"). The guide's notes on the route without confirmation sit on the filing level.
 - "A albo B" is kept together in the plan text.
-- **Still open:**
-  - no model of the online channel;
-  - the label is not in the voice of someone else's case ("jesteś" stays for a case handled for another person). It is noted for the engine session.
+- **Still open:** the online channel is not modelled. It needs steps in the registry, which is production content, so it waits for the owner.
 
 ### F5. Reader
 All five inputs from the audit are unit tests now (`prototype/test/understand.test.mjs`, 14 tests):
@@ -193,7 +197,10 @@ All five inputs from the audit are unit tests now (`prototype/test/understand.te
    - the engine has 39 tests, with the 18 scenarios inside them;
    - spike S1 has 14 tests;
    - the prototype has 14 unit tests and 6 e2e scenarios.
-6. **"24 injected faults caught"** cannot be reproduced from the package: there is no runner and no log per fault. The 8 F1 mutations are now tests (`verify.test.ts`); the rest of the 24 claim stays unproven (OPEN for the engine session: add a runner or withdraw the number).
+6. **"24 injected faults caught"** could not be reproduced from the package: there was no runner and no log per fault. The number is withdrawn.
+   - It is replaced by a runner (`f4ead1f`). `npm run mutate` applies 35 faults one at a time, runs the whole suite each time, restores the file and writes `eval/MUTATIONS.md`.
+   - FACT: 35/35 caught, rerun by this session on `6b982ca`.
+   - The runner showed that one earlier claim was false: "Nie wiem" asked again was not caught. A test now covers it.
 7. **Commit identity.** The package named `895a6aa`, its logs `e186333`, and the messages `9b3c66f`. From now on:
    - one commit per evidence set;
    - the build manifests identify the bytes.
@@ -229,12 +236,9 @@ In order of urgency:
   - Changing an answered fact after approval needs:
     - a proposal card, like ADR-N003;
     - an engine rule for when a typed answer may replace a confirmed one.
-  - This is a design question for both sessions. It is not built now: the audit says no new features before the sessions.
-- **Engine session:**
-  - the `onlyIf` label in someone else's voice;
-  - user statements kept apart from legal effects (F2, last point);
-  - the online channel for registration (F4);
-  - the 24-fault claim (§4.6).
+  - The engine already supports the change itself (`E.diffPlans`, then the person approves). The missing piece is the UI's permission to replace a confirmed answer.
+  - It is the owner's decision. It is not built now: the audit says no new features before the sessions.
+- **Owner (production content):** the online channel for registration (F4).
 - **Slice:** masking and a privacy notice for its `localStorage` (§3).
 - **The plain checklist** for the comparison.
 - **The H6 maintenance log.**

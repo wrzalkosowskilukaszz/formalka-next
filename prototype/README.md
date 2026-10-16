@@ -47,6 +47,7 @@ The end-to-end scenarios:
   - the build id is shown;
   - the no-language-model notice appears;
   - an answer that fits no option ("Przyjechałem z Kolumbii, a co dalej?") gets a reply that explains, and no group is read from origin;
+  - a filing recorded with the form never marked shows the form level as "Zakładamy, że zrobione", not as done;
   - the plan card names its check without overclaiming;
   - memory is named as session memory.
 
@@ -87,6 +88,7 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
 | Questions, options, "Dlaczego pytamy?", the "Nie wiem" help | `E.nextQuestion` (the registry's fact catalogue, in the person's voice: `E.voiced`) |
 | Routes, levels, states, lock reasons, tasks, fees, deadlines, office lists | `E.plan` over the blueprints in `blueprints/` and the procedures in `reference/` |
 | "Plan zgodny z przewodnikami Formalki" | `E.validate`, two checks kept apart (audit F1):<br>• structure: every reference resolves;<br>• content: amounts, exemptions, dates and offices against the registry, and the plan against one recomputed from the same inputs.<br>The plan is shown only when both pass. It is not a legal verification: the guides themselves can be incomplete |
+| "Zakładamy, że zrobione" (a dashed chip, no tick) | `PlanLevel.implied`: a later step was recorded, and nothing proves this one (audit F2) |
 | Reminders, quiet hours, one notification a day, lock-screen text | `E.agenda` with the case's consent |
 | Facts from the person's own words | `E.intake`, every candidate confirmed on its own card (doc 16 §9a) |
 | A change after approval | `E.diffPlans` and `E.applyReplan`; the person approves it (ADR-N003) |
