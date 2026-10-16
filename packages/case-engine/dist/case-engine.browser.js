@@ -1157,7 +1157,7 @@
       question: "Czy kiedykolwiek przys\u0142ugiwa\u0142o Ci obywatelstwo polskie?",
       whyWeAsk: "Prezydent nadaje obywatelstwo cudzoziemcom, czyli osobom bez obywatelstwa polskiego. Wniosek pyta te\u017C o obywatelstwo polskie w przesz\u0142o\u015Bci. Je\u015Bli masz ju\u017C obywatelstwo polskie, mo\u017Cesz zamiast tego poprosi\u0107 wojewod\u0119 o jego potwierdzenie.",
       unknownHelp: "Poka\u017Cemy wszystko, co mo\u017Ce Ci\u0119 dotyczy\u0107, tak\u017Ce to, \u017Ce mo\u017Cna poprosi\u0107 wojewod\u0119 o potwierdzenie, czy masz obywatelstwo polskie.",
-      options: { lost: "Tak, ale ju\u017C go nie mam", yes: "Tak, mam je teraz" }
+      options: { lost: "Tak, ale je utracono", yes: "Tak, mam je teraz" }
     },
     "citizenship.group": {
       question: "Kt\xF3ra sytuacja najlepiej Ci\u0119 opisuje?",

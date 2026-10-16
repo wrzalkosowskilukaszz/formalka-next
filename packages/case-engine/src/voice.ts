@@ -23,7 +23,7 @@ export const YOU: Record<string, YouText> = {
     question: "Czy kiedykolwiek przysługiwało Ci obywatelstwo polskie?",
     whyWeAsk: "Prezydent nadaje obywatelstwo cudzoziemcom, czyli osobom bez obywatelstwa polskiego. Wniosek pyta też o obywatelstwo polskie w przeszłości. Jeśli masz już obywatelstwo polskie, możesz zamiast tego poprosić wojewodę o jego potwierdzenie.",
     unknownHelp: "Pokażemy wszystko, co może Cię dotyczyć, także to, że można poprosić wojewodę o potwierdzenie, czy masz obywatelstwo polskie.",
-    options: { lost: "Tak, ale już go nie mam", yes: "Tak, mam je teraz" },
+    options: { lost: "Tak, ale je utracono", yes: "Tak, mam je teraz" },
   },
   "citizenship.group": {
     question: "Która sytuacja najlepiej Cię opisuje?",
