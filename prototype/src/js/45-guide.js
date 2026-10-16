@@ -124,6 +124,8 @@ function guidance(c) {
     const cross = open.find((t) => t.crossCase?.blueprint && !S.cases.some((x) => x.bpId === t.crossCase.blueprint));
     if (cross) A.push({ kind: 'related', bpId: cross.crossCase.blueprint, label: cross.crossCase.label.pl, ic: 'arrow-square-out' });
   }
+  const stale = staleOf(p);
+  if (stale) { lines.push(stale.text); A.push({ kind: 'link', url: stale.url, label: stale.label, ic: 'warning-circle' }); }
   const par = l.parallelWith.map((id) => p.levels.find((x) => x.id === id)).filter((x) => x && ACTIVE.includes(x.state));
   if (par.length) { lines.push(`Równolegle możesz zająć się: ${par.map((x) => x.title.pl).join(', ')}.`); A.push({ kind: 'focus', levelId: par[0].id, label: par[0].title.pl, ic: 'arrows-split' }); }
   if (!A.length) A.push({ kind: 'focus', label: 'Pokaż, co teraz', ic: 'list-checks' });

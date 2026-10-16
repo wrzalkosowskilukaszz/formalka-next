@@ -90,6 +90,13 @@ function learnHour(c, time) {
 // Hour chips with the person's last hour added when it is not among them.
 const hours = (list) => (S.learned.hour && !list.includes(S.learned.hour) ? [...list, S.learned.hour].sort() : list);
 
+// Content the snapshot itself marks as possibly outdated (reference/README.md): the app says so wherever
+// the plan shows it, with the official page to check.
+const STALE = {
+  'polish-language-certificate': { text: 'Terminy sesji egzaminacyjnych w tym przewodniku mogą być nieaktualne: oficjalna strona zmieniła się 15.10.2026. Sprawdź je na stronie Państwowej Komisji.', url: 'https://certyfikatpolski.pl/', label: 'Terminy sesji (certyfikatpolski.pl)' },
+};
+const staleOf = (p) => STALE[p.route.procedureId] || null;
+
 /* ── Levels as the UI shows them ───────────────────────────────────────────── */
 const STATE = {
   unconfirmed: 'Zależy od odpowiedzi', locked: 'Zablokowany', available: 'Możesz zacząć', in_progress: 'W toku',

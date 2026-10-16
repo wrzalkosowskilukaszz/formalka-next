@@ -461,6 +461,8 @@ ul, ol { padding: 0; list-style: none; }
 .field .err { font-size: var(--t-2xs); color: var(--attention); }
 .mock-note { display: flex; gap: var(--s3); align-items: flex-start; padding: var(--s3) var(--s4); border-radius: var(--r-tile); background: var(--accent-soft); font-size: var(--t-sm); line-height: 1.4; }
 .mock-note .icon { color: var(--accent); margin-top: 2px; }
+.mock-note.stale { background: var(--attention-soft); }
+.mock-note.stale .icon { color: var(--attention); }
 .saving { position: absolute; inset: 0; display: grid; place-items: center; background: var(--scrim); animation: fadeIn var(--dur) var(--ease) both; }
 .saving .fly { width: 120px; height: 150px; border-radius: 18px 30px 18px 18px; background: var(--raised); box-shadow: var(--e3); display: grid; place-items: center; color: var(--accent); animation: flyToFolder 1100ms var(--ease) both; }
 .saving .fly .icon { width: 48px; height: 48px; }

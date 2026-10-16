@@ -346,7 +346,10 @@ await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await t.nav('#w-new', 'home');
   await page.locator('[data-type="language-certificate"]').click();
   await t.autoIntake();
+  // The snapshot marks the exam dates as possibly outdated: the plan card and the guidance say so.
+  await page.locator('.dock .row', { hasText: 'Część dat może być nieaktualna' }).waitFor({ timeout: 8000 });
   await t.approvePlan(false);
+  await t.bot(/mogą być nieaktualne/);
   await t.nav('#chat-back', 'case');
   await t.nav('#to-world', 'world');
   const rows = await page.locator('.crow').count();

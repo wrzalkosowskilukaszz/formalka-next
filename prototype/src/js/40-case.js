@@ -202,6 +202,8 @@ function focusView(c) {
   inHero.push(`<p>${esc(levelLine(l))}</p>`);
   if (l.id !== cur.id) inHero.push(`<button type="button" class="btn btn-ghost-w btn-sm" data-focuslv="">Wróć do „${esc(cur.title.pl)}”</button>`);
   const sections = [];
+  const stale = staleOf(p);
+  if (stale) sections.push(`<p class="mock-note stale">${icon('warning-circle')}<span>${esc(stale.text)} <a href="${esc(stale.url)}" target="_blank" rel="noopener noreferrer">${esc(stale.label)}</a></span></p>`);
   if (l.tasks.length) sections.push(`<section class="sec"><h2 class="sec-h">Zadania</h2><ul class="list">${l.tasks.map((t, k) => taskRow(c, l, t, k)).join('')}</ul></section>`);
   if (l.fees.length) sections.push(`<section class="sec"><h2 class="sec-h">Opłaty</h2>${l.fees.map(feeRow).join('')}</section>`);
   const dls = shownDeadlines(c, l);

@@ -220,6 +220,7 @@ async function planApproval(c) {
       <ul class="list">
         <li class="row"><span class="sq">${icon('signpost')}</span><span class="tx"><b>${esc(routeTitle(p) || c.title)}</b><span class="meta">${p.levels.length - 1} ${plural(p.levels.length - 1, 'poziom', 'poziomy', 'poziomów')} na mapie${c.state.place ? `. Miejscowość: ${esc(c.state.place.name)}` : ''}</span></span></li>
         ${p.unsure.length ? `<li class="row"><span class="sq">${icon('question')}</span><span class="tx"><b>Do potwierdzenia (${p.unsure.length})</b><span class="meta">${p.unsure.map((u) => esc(E.fact(u.fact)?.question.pl ?? u.fact)).join('<br>')}</span></span></li>` : ''}
+        ${staleOf(p) ? `<li class="row"><span class="sq">${icon('warning-circle')}</span><span class="tx"><b>Część dat może być nieaktualna</b><span class="meta">${esc(staleOf(p).text)}</span></span></li>` : ''}
         ${total ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłaty: ${total} zł</b><span class="meta">Przykład z przewodnika Formalki, stan na 15.10.2026</span></span></li>` : ''}
         <li class="row"><span class="sq">${icon(v.ok ? 'seal-check' : 'warning-circle')}</span><span class="tx"><b>${v.ok ? 'Plan sprawdzony' : `Plan nie przeszedł kontroli (${v.violations.length})`}</b><span class="meta">${v.ok ? 'Każdy element ma źródło w sprawdzonych treściach Formalki' : 'Nie pokażę planu, który nie przeszedł kontroli'}</span></span></li>
       </ul>
