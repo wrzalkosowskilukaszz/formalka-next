@@ -11,7 +11,7 @@ The Living Case engine:
 ```bash
 npm install                      # yaml (runtime in Node), esbuild (browser build)
 npm test                         # 39 tests incl. 18 evaluation scenarios, intake, replan, content verification and the audit fixes
-npm run mutate                   # applies each fault in tools/mutations.mjs alone, runs the tests, restores; eval/MUTATIONS.md (35/35)
+npm run mutate                   # applies each fault in tools/mutations.mjs alone, runs the tests, restores; eval/MUTATIONS.md (36/36)
 npm run eval                     # eval/REPORT.md + eval/engine-plans/*.md (the engine's plans in plain Polish; not a benchmark reference, see eval/independent/README.md)
 node tools/build-browser.mjs --locales pl   # dist/case-engine.browser.js: engine + data, global FormalkaEngine (omit --locales for pl,en,uk,ru)
 ```

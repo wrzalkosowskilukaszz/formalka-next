@@ -38,6 +38,7 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .node { flex: none; font-size: var(--t-xs); border-radius: var(--r-inner); padding: var(--s1) var(--s2); border: 1px solid var(--line-strong); background: var(--raised); white-space: nowrap; transition: background var(--dur) var(--ease); }
 .node[data-s="unconfirmed"] { border-style: dashed; color: var(--ink-3); }
 .node[data-s="locked"] { color: var(--ink-3); }
+.node[data-s="skipped"] { color: var(--ink-3); border-style: dashed; text-decoration: line-through; }
 .node[data-s="done"] { background: var(--done-soft); border-color: transparent; }
 .node[data-s="available"], .node[data-s="in_progress"] { border-color: var(--go); }
 .node[data-s="returned"] { background: var(--attention-soft); }

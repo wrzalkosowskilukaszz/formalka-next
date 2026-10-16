@@ -30,6 +30,8 @@ export const MUTATIONS = [
     find: "const relaxed = (bp.optionalAfter ?? []).filter((o) => o.level === l.id).map((o) => o.on);", replace: "const relaxed: string[] = [];" },
   { id: "planner-implied-unmarked", file: "src/planner.ts", what: "a step taken as done by inference shown as proven",
     find: "if (implied.has(l.id) && !ownProof) l.implied = true;", replace: ";" },
+  { id: "planner-skipped-left-available", file: "src/planner.ts", what: "a step skipped by the guide's own route still shown as to do",
+    find: '      before.state = "skipped";', replace: "      ;" },
   // Questions, dates, wording
   { id: "questions-nie-wiem-asked-again", file: "src/questions.ts", what: '"Nie wiem" asked again',
     find: ".filter((f) => state.facts[f] === undefined);", replace: '.filter((f) => state.facts[f] === undefined || state.facts[f] === "__unknown__");' },

@@ -28,7 +28,9 @@ export interface CaseState {
   place?: Place;
 }
 export type LevelState =
-  | "unconfirmed" | "locked" | "available" | "in_progress" | "waiting_office" | "returned" | "done";
+  | "unconfirmed" | "locked" | "available" | "in_progress" | "waiting_office" | "returned" | "done"
+  /** A step the procedure lets the person skip (optionalAfter) once the later step happened without it. */
+  | "skipped";
 
 export interface PlanTask {
   id: string; levelId: string; kind: "document" | "step"; title: L10n; officialName?: string;
@@ -414,6 +416,15 @@ function settleStates(bp: Blueprint, levels: PlanLevel[], state: CaseState) {
     } else if (def?.waiting) l.state = "waiting_office";
     else if (l.tasks.some((t) => t.status !== "todo")) l.state = "in_progress";
     else l.state = "available";
+  }
+  // A step the guide lets the person skip (optionalAfter) is no longer something to do once the later
+  // step was recorded without it: not "done" (nothing says it happened), not "available" either.
+  for (const o of bp.optionalAfter ?? []) {
+    const after = byId.get(o.level), before = byId.get(o.on);
+    if (after?.state === "done" && !after.implied && before && before.state !== "done") {
+      before.state = "skipped";
+      before.reason = { text: { pl: `Nie jest już potrzebne: krok „${after.title.pl}” odbył się bez niego.` }, ruleRef: before.stepRef };
+    }
   }
 }
 

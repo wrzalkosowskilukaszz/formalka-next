@@ -24,10 +24,11 @@ const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } 
 const STATE_PL = {
   unconfirmed: 'zależy od odpowiedzi', locked: 'zablokowany', available: 'możesz zacząć', in_progress: 'w toku',
   waiting_office: 'czekasz na urząd', returned: 'urząd prosi o uzupełnienie', done: 'zrobione',
+  skipped: 'pominięte: nie jest już potrzebne',
 };
 // A level done only by inference (a later step was recorded) is not shown as proven (audit F2 follow-up).
 const stateLabel = (l) => (l.implied ? 'zakładamy, że zrobione' : STATE_PL[l.state]);
-const STATE_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', done: 'check', returned: 'arrow-u-up-left', unconfirmed: 'dots-three', available: 'arrow-up', in_progress: 'clock-counter-clockwise' };
+const STATE_ICON = { locked: 'lock-simple', waiting_office: 'hourglass-simple', done: 'check', returned: 'arrow-u-up-left', unconfirmed: 'dots-three', available: 'arrow-up', in_progress: 'clock-counter-clockwise', skipped: 'fast-forward' };
 const INTENTS = [
   { id: 'citizenship', words: ['obywatelstw', 'obywatelem', 'polski paszport', 'paszport polski'] },
   { id: 'residence-card', words: ['karta pobytu', 'karty pobytu', 'kartę pobytu', 'karte pobytu', 'pobyt czasowy', 'zezwolenie na pobyt'] },

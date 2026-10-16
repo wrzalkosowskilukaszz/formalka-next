@@ -345,9 +345,10 @@ test("alternatives travel together; a later step done closes the steps before it
   assert.match(prep.message.pl, /wizę albo /);
   assert.match(prep.message.pl, /umowę cywilnoprawną[^\n]* albo /);
   const filed = planCase(ADDR, reg, { ...st, events: [...st.events, { type: "filing", date: "2026-10-30", by: "user" }] });
-  // Filing implies the form was filled in, not that the owner confirmed: the guide allows filing without it (audit F4).
+  // Filing implies the form was filled in, not that the owner confirmed: the guide allows filing without it
+  // (audit F4), so the owner's confirmation is skipped, not done and not still to do.
   assert.deepEqual(filed.levels.map((l) => [l.id, l.state]), [
-    ["route", "done"], ["fill-in", "done"], ["owner-confirms", "available"], ["file", "done"], ["registered", "available"],
+    ["route", "done"], ["fill-in", "done"], ["owner-confirms", "skipped"], ["file", "done"], ["registered", "available"],
   ]);
   // The form is taken as filled in because the filing was recorded; nothing proves it, so it is marked.
   assert.deepEqual(filed.levels.filter((l) => l.implied).map((l) => l.id), ["fill-in"]);

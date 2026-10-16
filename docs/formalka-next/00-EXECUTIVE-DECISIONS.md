@@ -43,7 +43,7 @@ The biggest quiet risk is A5: people may arrive after the 4-day registration dea
   - the guides' warnings placed on the right level;
   - an independent validator;
   - the proactive advisor agenda (quiet hours, one notification a day, consent per case);
-  - 39 tests and 18 evaluation scenarios, all passing; 35 faults caught, reproducible with `npm run mutate` (`eval/MUTATIONS.md`);
+  - 39 tests and 18 evaluation scenarios, all passing; 36 faults caught, reproducible with `npm run mutate` (`eval/MUTATIONS.md`);
   - a browser build used by the slice and offered to the prototype.
 - **Functional slice** (`slice/`): the engine driving a phone screen end to end (questions with "Nie wiem", route choice, map, "Teraz", events, the advisor's agenda with time travel). Private link reported to the owner.
 - **Evaluation set** (`packages/case-engine/eval/`): 18 scenarios. The engine's plans in plain Polish are in `engine-plans/`; they are the generator's output, not the benchmark reference. The independent reference (`eval/independent/`) is not written yet (audit F6).

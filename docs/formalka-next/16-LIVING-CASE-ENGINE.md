@@ -45,6 +45,7 @@ Five blueprints exist, all passing the static check against the snapshots:
 | `waiting_office` | The office decides | "Czekasz na urząd"; the effort is over |
 | `returned` | A request to fill gaps was delivered, until `fix_submitted` | "Urząd prosi o uzupełnienie", with the deadline from the delivery. Never "game over" |
 | `done` | All tasks done or not needed, or the level's event recorded | ✓ |
+| `skipped` | A step the guide lets the person skip (`optionalAfter`), once the later step was recorded without it (the owner's confirmation after a filing) | "Pominięte: nie jest już potrzebne". Not ✓: nothing says it happened |
 
 - **Parallel levels:** two levels are parallel when neither depends on the other. Example: the language certificate and the documents for citizenship; documents, fees and the employer's attachment for the residence card.
 - **Level types the engine handles:** route, prerequisite (another case), step, alternative steps, documents-only, deadline-only (appeal and court after a refusal).
@@ -132,9 +133,9 @@ Five of these errors come from the production registry itself. They are proposed
 
 ## 7. Quality evidence (2026-10-16)
 - **39 tests** on the real snapshots, all passing, including the 18 evaluation scenarios (each now runs the content check too), the intake checks (§9a), the replan checks (§6b) and the audit fixes (§6c).
-- **35 faults, reproducible.** `tools/mutations.mjs` lists them and `npm run mutate` applies each alone, runs the whole suite and restores the file. Result on 2026-10-16: 35 of 35 caught (`eval/MUTATIONS.md`, one row per fault; 35 since the `implied` marker). The faults:
+- **36 faults, reproducible.** `tools/mutations.mjs` lists them and `npm run mutate` applies each alone, runs the whole suite and restores the file. Result on 2026-10-16: 36 of 36 caught (`eval/MUTATIONS.md`, one row per fault). The faults:
   - the advisor's guards (4);
-  - the planner's rules, including the audit fixes F2–F4 and the `implied` marker (9);
+  - the planner's rules, including the audit fixes F2–F4, the `implied` marker and the `skipped` state (10);
   - questions, dates and wording (5);
   - the blueprint, structural and content checks (4);
   - intake (9);
