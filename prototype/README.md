@@ -29,7 +29,11 @@ The owner asked for a native phone app rather than a web page: a living, animate
   - Tapping the assistant's avatar opens the activity log, where any action can be revoked.
 - **Start.** "Masz dziś 1 zadanie", the case hero card with its next step (swipe to mark done), a week strip, the next event as an appointment card, and the case list.
 - **Map.** A calm path with level tiles, side branches for parallel levels, a state chip on each level and a sheet with details. A "Lista" toggle gives a plain list. No points, badges or streaks.
-- **Kalendarz and Teczka.** A month grid with the case's events, and the documents saved on the device.
+- **Kalendarz and Teczka.** A month grid with the case's events. You can add your own reminder (what, which case, day, hour) with "+" and delete it. Teczka shows the documents saved on the device.
+- **v3 (same day).**
+  - The map is now a timeline: a progress ring, key facts, one card per level with its state, and parallel levels nested under their anchor.
+  - The live builder is a slim bar above the chat; each change also appears as a short "Mapa sprawy" note in the conversation.
+  - The home screen is compact, with no empty gap.
 
 The scripted content, facts and sources are unchanged from v1.
 

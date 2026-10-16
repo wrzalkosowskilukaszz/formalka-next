@@ -79,7 +79,7 @@ let logEl, dockEl, lastSpeaker;
 
 function fresh() {
   return { screen: 'splash', clock: new Date(START), cases: {}, order: [], active: null, view: 'focus', mapList: false,
-    building: null, flow: null, lockTopic: false, highlight: null, travels: 0, calSel: null, calMonth: null };
+    building: null, flow: null, lockTopic: false, highlight: null, travels: 0, calSel: null, calMonth: null, custom: [] };
 }
 function newObyw() {
   return {
@@ -194,6 +194,7 @@ function events() {
     if (c.p.visit && c.p.morning && !revoked(c, 'morning')) E.push({ d: at(c.p.visit, 0, 7, 30), title: 'Co zabrać na wizytę', sub: `Przypomnienie od ${WHO[c.who].gen}`, ic: 'bell', c });
     if (c.p.decisionBy && !revoked(c, 'decision')) E.push({ d: c.p.decisionBy, title: 'Mija 6 miesięcy na decyzję', sub: `Przypomnienie od ${WHO[c.who].gen}`, ic: 'seal-check', c });
   }
+  for (const r of S.custom) E.push({ d: r.d, title: r.title, sub: 'Twoje przypomnienie', ic: 'bell', c: r.c ? S.cases[r.c] : null, custom: r.id });
   return E.sort((a, b) => a.d - b.d);
 }
 
@@ -342,143 +343,96 @@ async function answerNow(c) {
 function onLogClick(e) {
   const b = e.target.closest('[data-act]');
   if (!b) return;
+  if (b.dataset.act === 'mapsheet') { const c = S.cases[S.building] || C(); if (c) openMapSheet(c); return; }
   S.active = 'obyw';
   S.view = b.dataset.act === 'map' ? 'map' : 'focus';
   go('case', 'fwd');
 }
 
-/* ── World builder: the case grows on screen while Maciek asks ─────────────── */
+/* ── Case builder: a slim live bar above the chat; each change is also a note in the chat ── */
 let builderEl = null;
 const BN = new Map();
 const BN_STATE = new Map();
 function makeBuilder(c) {
   BN.clear(); BN_STATE.clear();
-  builderEl = h(`<section class="builder" aria-label="Twoja sprawa buduje się na żywo">
-    <div class="b-top"><span class="glass-ic">${icon(c.icon)}</span><span class="tx"><small>Tworzymy Twoją sprawę</small><b>${esc(c.title)}</b></span>
-      <span class="ring" role="img" aria-label="Plan gotowy w 0%"><svg viewBox="0 0 46 46"><circle class="bg" cx="23" cy="23" r="19" fill="none" stroke-width="5"/><circle class="fg" cx="23" cy="23" r="19" fill="none" stroke-width="5" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg><span>0%</span></span></div>
-    <div class="b-stage"><div class="b-canvas"><svg aria-hidden="true"></svg></div></div>
-    <p class="b-cap" aria-live="polite"></p></section>`);
-}
-function smooth(pts) {
-  if (!pts.length) return '';
-  let d = `M${pts[0][0]},${pts[0][1]}`;
-  for (let i = 1; i < pts.length; i++) {
-    const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
-    const mx = (x0 + x1) / 2;
-    d += ` C${mx},${y0} ${mx},${y1} ${x1},${y1}`;
-  }
-  return d;
-}
-function smoothV(pts) {
-  if (!pts.length) return '';
-  let d = `M${pts[0][0]},${pts[0][1]}`;
-  for (let i = 1; i < pts.length; i++) {
-    const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
-    const my = (y0 + y1) / 2;
-    d += ` C${x0},${my} ${x1},${my} ${x1},${y1}`;
-  }
-  return d;
+  builderEl = h(`<button type="button" class="builder" aria-label="Twoja sprawa buduje się na żywo. Otwórz mapę">
+    <span class="ring sm" aria-hidden="true"><svg viewBox="0 0 40 40"><circle class="bg" cx="20" cy="20" r="16" fill="none" stroke-width="4"/><circle class="fg" cx="20" cy="20" r="16" fill="none" stroke-width="4" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg><span>0%</span></span>
+    <span class="b-main"><span class="b-title"><small>Tworzymy sprawę</small><b>${esc(c.title)}</b></span><span class="b-nodes"></span></span>
+    ${icon('caret-right', 'b-go')}</button>`);
+  builderEl.onclick = () => openMapSheet(S.cases[S.building] || c);
 }
 function updateBuilder(c, animate = true) {
-  if (!builderEl || !builderEl.isConnected) return;
+  if (!builderEl) return;
   const L = levels(c);
-  const stage = $('.b-stage', builderEl), canvas = $('.b-canvas', builderEl), svg = $('svg', canvas);
-  const colW = 76, padX = 46;
-  const width = Math.max(stage.clientWidth, padX * 2 + (L.length - 1) * colW);
-  canvas.style.width = `${width}px`;
-  const pos = new Map();
-  let mainI = 0;
-  L.forEach((l, i) => {
-    const x = padX + i * colW;
-    const y = l.par ? 72 : (mainI++ % 2 ? 34 : 50);
-    pos.set(l.id, [x, y]);
-  });
-  // The main road is solid; side roads are dashed from the last main node before them.
-  const main = L.filter((l) => !l.par).map((l) => pos.get(l.id));
-  let branches = '';
-  let anchor = null;
-  L.forEach((l) => { if (!l.par) anchor = pos.get(l.id); else if (anchor) branches += `<path class="b-line dash" d="${smooth([anchor, pos.get(l.id)])}"/>`; });
-  svg.innerHTML = `${branches}<path class="b-line${animate ? ' draw' : ''}" pathLength="1" d="${smooth(main)}"/>`;
-  let newCount = 0;
+  const row = $('.b-nodes', builderEl);
   const seen = new Set();
-  L.forEach((l) => {
+  let k = 0;
+  L.forEach((l, i) => {
     seen.add(l.id);
     let el = BN.get(l.id);
-    const [x, y] = pos.get(l.id);
-    const tag = l.state === 'unconfirmed' ? '?' : ST_ICON[l.state] && l.state !== 'parallel' ? icon(ST_ICON[l.state]) : '';
-    const html = `<span class="disc">${icon(l.ic)}${tag ? `<span class="tag">${tag}</span>` : ''}</span><label>${esc(l.short)}</label><span class="sr">${esc(l.title)}: ${STATE[l.state]}</span>`;
     const isNew = !el;
-    if (isNew) {
-      el = h('<div class="bn"></div>');
-      el.style.transform = `translate(${x}px, ${y + 30}px)`;
-      canvas.append(el);
-      BN.set(l.id, el);
-    }
+    if (isNew) { el = h('<span class="bn"></span>'); BN.set(l.id, el); }
+    const before = row.children[i];
+    if (before !== el) row.insertBefore(el, before || null);
     const prev = BN_STATE.get(l.id);
-    el.innerHTML = html;
-    el.className = `bn ${l.state}`;
-    if (animate && isNew) { el.classList.add('is-new'); el.style.animationDelay = `${newCount++ * 110}ms`; }
-    if (animate && c.changed.has(l.id) && !isNew) el.classList.add('is-changed');
-    if (animate && prev && prev !== 'pruned' && l.state === 'pruned') el.classList.add('is-pruned-now');
+    el.className = `bn ${l.state}${l.par ? ' par' : ''}`;
+    el.innerHTML = `${icon(l.ic)}<span class="sr">${esc(l.title)}: ${STATE[l.state]}</span>`;
+    if (animate && isNew) { el.classList.add('is-new'); el.style.animationDelay = `${k++ * 90}ms`; }
+    else if (animate && (c.changed.has(l.id) || (prev && prev !== l.state))) el.classList.add('is-changed');
     BN_STATE.set(l.id, l.state);
-    requestAnimationFrame(() => requestAnimationFrame(() => { el.style.transform = `translate(${x}px, ${y}px)`; }));
-    later(1400, () => el.classList.remove('is-new', 'is-changed', 'is-pruned-now'));
+    later(1300, () => el.classList.remove('is-new', 'is-changed'));
   });
   for (const [id, el] of BN) if (!seen.has(id)) { el.remove(); BN.delete(id); }
-  const pct = Math.round(c.progress * 100);
   $('.ring .fg', builderEl).style.strokeDashoffset = String(1 - c.progress);
-  $('.ring span', builderEl).textContent = `${pct}%`;
-  $('.ring', builderEl).setAttribute('aria-label', `Plan gotowy w ${pct}%`);
-  const cap = $('.b-cap', builderEl);
-  const capHtml = `${icon('map-trifold')}<span>${esc(c.lastChange)}</span>`;
-  if (cap.dataset.t !== c.lastChange) { cap.dataset.t = c.lastChange; cap.innerHTML = capHtml; if (animate) { cap.classList.remove('swap'); void cap.offsetWidth; cap.classList.add('swap'); } }
-  const first = L.find((l) => c.changed.has(l.id));
-  if (first) { const [x] = pos.get(first.id); stage.scrollTo({ left: Math.max(0, x - stage.clientWidth / 2), behavior: RM.matches ? 'auto' : 'smooth' }); }
+  $('.ring span', builderEl).textContent = `${Math.round(c.progress * 100)}%`;
 }
-
 function change(c, ids, text, progress) {
   c.changed = new Set(ids);
   c.lastChange = text;
   if (progress != null) c.progress = progress;
   updateBuilder(c, true);
+  if (text && logEl) {
+    logEl.append(h(`<button type="button" class="mapnote enter" data-act="mapsheet">${icon('map-trifold')}<span><b>Mapa sprawy</b>${esc(text)}</span></button>`));
+    lastSpeaker = 'note';
+    scrollLog();
+  }
 }
 
-/* ── Path map: Milestones as game levels ───────────────────────────────────── */
-function pathMap(c) {
+/* ── Map: a timeline of levels (Milestones); the game is only a light accent ── */
+function timeline(c, sheetMode = false) {
   const L = levels(c);
   const cur = c.status === 'active' ? currentLevel(c).id : null;
+  const groups = [];
+  L.forEach((l) => { if (!l.par || !groups.length) groups.push({ main: l, side: [] }); else groups[groups.length - 1].side.push(l); });
+  const mains = groups.map((g) => g.main);
+  const doneN = mains.filter((l) => ['done', 'confirmed'].includes(l.state)).length;
   const hl = S.highlight || [];
-  const XM = [44, 58, 44, 58], XP = 118;
-  let y = 46, mi = 0;
-  const P = L.map((l) => {
-    const p = l.par ? { x: XP, y: y - 4 } : { x: XM[mi++ % XM.length], y };
-    y += l.par ? 90 : 108;
-    return p;
-  });
-  const H = y - 30;
-  const mainPts = L.map((l, i) => [l, P[i]]).filter(([l]) => !l.par).map(([, p]) => [p.x, p.y]);
-  let branches = '', anchor = null;
-  L.forEach((l, i) => { if (!l.par) anchor = [P[i].x, P[i].y]; else if (anchor) branches += `<path class="p-branch" d="M${anchor[0]},${anchor[1]} C${anchor[0]},${P[i].y} ${P[i].x - 40},${P[i].y} ${P[i].x},${P[i].y}"/>`; });
-  const nodes = L.map((l, i) => {
-    const here = cur === l.id;
-    const st = ST_ICON[l.state] && !['parallel', 'unconfirmed'].includes(l.state) ? `<span class="st">${icon(ST_ICON[l.state])}</span>` : '';
-    return `<li><button type="button" class="pn ${l.state}${l.par ? ' par' : ''}${here ? ' here' : ''}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}"
-        style="left:${P[i].x}px;top:${P[i].y - (l.par ? 21 : 26)}px;width:calc(100% - ${P[i].x}px);animation-delay:${i * 90}ms"
-        aria-label="${esc(l.title)}. ${STATE[l.state]}. ${esc(l.text)}">
-      <span class="disc">${icon(l.ic)}${st}${here ? `<span class="who">${avatar(c.who, 'sm')}</span>` : ''}</span>
-      <span class="lab"><b>${esc(l.title)}</b>${chip(l.state, l.par && l.state === 'parallel' ? (l.userStep ? 'Równolegle, Twój krok' : 'Równolegle') : null)}<span>${esc(l.text)}</span></span>
-    </button></li>`;
-  }).join('');
-  return `<div class="pmap" style="height:${H}px">
-      <svg height="${H}" aria-hidden="true"><path class="p-spine-bg" d="${smoothV(mainPts)}"/>${branches}<path class="p-spine draw" pathLength="1" d="${smoothV(mainPts)}"/></svg>
-      <ol aria-label="Mapa sprawy, poziomy po kolei">${nodes}</ol></div>`;
-}
-function listMap(c) {
-  return `<ol class="list" aria-label="Mapa sprawy jako lista">${levels(c).map((l) => `<li><button type="button" class="lrow${l.par ? ' par' : ''}" data-lv="${l.id}">
-    <span class="tile-ic">${icon(l.ic)}</span><span class="tx"><b>${esc(l.title)}</b>${chip(l.state)}<span>${esc(l.text)}</span></span>${icon('caret-right')}</button></li>`).join('')}</ol>`;
+  const prog = mains.length > 1 ? Math.round((Math.max(0, mains.findIndex((l) => l.id === cur)) / (mains.length - 1)) * 100) : 0;
+  const node = (l) => `<span class="tl-node ${l.state}${l.id === cur ? ' here' : ''}" aria-hidden="true">${l.id === cur ? icon(l.ic) : ['done', 'confirmed'].includes(l.state) ? icon('check') : icon(ST_ICON[l.state] && l.state !== 'unconfirmed' ? ST_ICON[l.state] : l.ic)}</span>`;
+  const side = (l) => `<button type="button" class="tl-side ${l.state}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}">
+      <span class="tile-ic sm">${icon(l.ic)}</span><span class="tx"><small>${l.state === 'pruned' ? 'Inna droga' : l.userStep ? 'Równolegle · Twój krok' : 'Równolegle'}</small><b>${esc(l.title)}</b><span>${esc(l.text)}</span></span>${icon('caret-right', 'chev')}</button>`;
+  const card = (l, n) => {
+    if (l.id === cur) {
+      const t = l.tasks;
+      const done = t ? t.filter((x) => x.done).length : 0;
+      return `<div class="tl-card now${hl.includes(l.id) ? ' highlight' : ''}"><span class="k">Poziom ${n} · teraz</span><b>${esc(l.title)}</b><p>${esc(l.text)}.</p>
+        ${t ? `<span class="prog" aria-hidden="true"><i style="width:${Math.round((done / t.length) * 100)}%"></i></span>` : ''}
+        <span class="tl-act">${sheetMode || !['docs', 'pay'].includes(l.id) ? '' : '<button type="button" class="btn btn-white btn-sm" data-v2="focus">Przejdź do zadań</button>'}<button type="button" class="btn btn-ghost-w btn-sm" data-lv="${l.id}">Szczegóły</button></span></div>`;
+    }
+    return `<button type="button" class="tl-card ${l.state}${hl.includes(l.id) ? ' highlight' : ''}" data-lv="${l.id}"><span class="k">Poziom ${n}</span>
+      <b>${esc(l.title)}</b>${chip(l.state)}
+      <span class="tl-text">${l.state === 'locked' ? `${icon('lock-simple')} ${esc(l.reason)}` : esc(l.text)}</span></button>`;
+  };
+  const known = c.id === 'obyw' && c.f.title === 'yes';
+  return `<section class="tl-sum">
+      <span class="ring lg" role="img" aria-label="Ukończone poziomy: ${doneN} z ${mains.length}"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="6"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="6" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset:${1 - doneN / mains.length}"/></svg><span>${doneN}/${mains.length}</span></span>
+      <span class="tx"><small>${c.status === 'active' ? 'Twoja sprawa' : c.status === 'draft' ? 'Szkic' : 'Plan w budowie'}</small><b>${esc(c.title)}</b><span>${cur ? `Teraz: ${esc(mains.find((l) => l.id === cur).title)}` : 'Poziomy z przerywaną linią są niepotwierdzone'}</span></span>
+    </section>
+    ${known ? `<div class="facts"><span>${icon('coins')}${FEE} zł opłaty</span><span>${icon('hourglass-simple')}Decyzja do 6 mies.</span>${c.f.voiv ? `<span>${icon('buildings')}${esc(voivode(c.f.voiv))}</span>` : ''}</div>` : ''}
+    <ol class="tl" style="--prog:${prog}%" aria-label="Poziomy sprawy po kolei">${groups.map((g, i) => `<li class="tl-item" style="animation-delay:${i * 70}ms">${node(g.main)}<div class="tl-body">${card(g.main, i + 1)}${g.side.map(side).join('')}</div></li>`).join('')}</ol>
+    ${known ? cite('uznanie') : ''}`;
 }
 const legend = () => `<ul class="legend" aria-label="Legenda stanów">${['available', 'parallel', 'locked', 'waiting', 'unconfirmed', 'returned', 'done', 'confirmed'].map((s) => `<li>${chip(s)}</li>`).join('')}</ul>`;
-
 /* ── Shell: navigation, tabs, layers ───────────────────────────────────────── */
 const TABS = [
   { id: 'world', label: 'Start', ic: 'house', on: 'house-fill' },
@@ -978,7 +932,7 @@ function mountBuilder() {
   const c = S.building && S.cases[S.building];
   if (!c || !builderEl) { slot.innerHTML = ''; return; }
   if (builderEl.parentNode !== slot) slot.append(builderEl);
-  requestAnimationFrame(() => updateBuilder(c, false));
+  updateBuilder(c, false);
 }
 function rerenderChat() { if (S.screen === 'chat') render(); }
 
@@ -991,15 +945,18 @@ const SCREENS = {
   home() {
     const el = h(`<section class="screen home pad">
       <div class="brandrow">${mark()}<span class="word">formalka</span><span class="tag">prototyp, dane przykładowe</span></div>
-      <div class="home-hero"><h1 class="home-q">Co dziś <span class="hl">załatwiamy</span>?</h1>
-        <p class="home-lead">Napisz, co masz do załatwienia w urzędzie. Asystent AI zbuduje z Tobą plan i sam przypomni, co dalej.</p></div>
-      <form class="ask" id="home-ask" autocomplete="off"><label class="sr" for="home-t">Co dziś załatwiamy?</label>
-        <input id="home-t" name="t" placeholder="Na przykład: obywatelstwo, karta pobytu" enterkeyhint="send">
-        <button class="send" type="submit" aria-label="Wyślij">${icon('arrow-up')}</button></form>
-      <div class="examples"><p>Albo dotknij przykładu:</p><div class="opts cards">
-        <button type="button" class="chip chip-card" data-ex="przyszedł czas, abym złożył papiery na obywatelstwo polskie">${icon('seal-check')}<span>przyszedł czas, abym złożył papiery na obywatelstwo polskie</span></button>
-        <button type="button" class="chip chip-card" data-ex="Ogarnij mi temat karty pobytu">${icon('identification-card')}<span>Ogarnij mi temat karty pobytu</span></button></div></div>
-      <p class="home-foot">Formalka to niezależna usługa, nie urząd. Asystenci to AI. W prototypie nic nie wychodzi z telefonu.</p></section>`);
+      <div class="home-mid">
+        <span class="home-avs" aria-hidden="true">${avatar('maciek', 'xl')}${avatar('asia', 'xl')}</span>
+        <h1 class="home-q">Co dziś <span class="hl">załatwiamy</span>?</h1>
+        <p class="home-lead">Opisz sprawę własnymi słowami. Asystent AI ułoży z Tobą plan i sam przypomni, co dalej.</p></div>
+      <div class="home-bottom">
+        <div class="ex-row" aria-label="Przykłady">
+          <button type="button" class="ex" data-ex="przyszedł czas, abym złożył papiery na obywatelstwo polskie"><span class="tile-ic">${icon('seal-check')}</span><b>Obywatelstwo</b><span>„przyszedł czas, abym złożył papiery na obywatelstwo polskie”</span></button>
+          <button type="button" class="ex" data-ex="Ogarnij mi temat karty pobytu"><span class="tile-ic">${icon('identification-card')}</span><b>Karta pobytu</b><span>„Ogarnij mi temat karty pobytu”</span></button></div>
+        <form class="ask" id="home-ask" autocomplete="off"><label class="sr" for="home-t">Co dziś załatwiamy?</label>
+          <input id="home-t" name="t" placeholder="Napisz, co masz do załatwienia" enterkeyhint="send">
+          <button class="send" type="submit" aria-label="Wyślij">${icon('arrow-up')}</button></form>
+        <p class="home-foot">Formalka to niezależna usługa, nie urząd. Asystenci to AI. W prototypie nic nie wychodzi z telefonu.</p></div></section>`);
     const input = $('#home-t', el);
     $$('[data-ex]', el).forEach((b) => { b.onclick = () => { input.value = b.dataset.ex; input.focus(); }; });
     $('#home-ask', el).onsubmit = (e) => {
@@ -1122,7 +1079,7 @@ function weekStrip(ev) {
   return `<div class="week">${[...Array(7)].map((_, i) => { const d = at(d0, i, 12); const has = ev.some((e) => sameDay(e.d, d)); return `<div class="d${sameDay(d, S.clock) ? ' today' : ''}">${DS[d.getDay()]}<b>${d.getDate()}</b>${has ? '<i></i><span class="sr">wydarzenie</span>' : ''}</div>`; }).join('')}</div>`;
 }
 function apptCard(e) {
-  return `<article class="appt"><div class="appt-top"><span class="tile-ic">${icon(e.ic)}</span><span class="tx"><b>${esc(e.title)}</b><span>${esc(e.c.title)}</span>
+  return `<article class="appt"><div class="appt-top"><span class="tile-ic">${icon(e.ic)}</span><span class="tx"><b>${esc(e.title)}</b><span>${esc(e.c ? e.c.title : 'Bez sprawy')}</span>
       <span class="appt-status">${icon(e.visit ? 'check-circle' : 'bell')} ${esc(e.sub)}</span></span></div>
     <div class="appt-row"><div><span class="sq">${icon('calendar-blank')}</span><span><small>Data</small><b>${dday(e.d)}</b></span></div>
       <div><span class="sq">${icon('clock')}</span><span><small>Godzina</small><b>${hm(e.d)}</b></span></div></div></article>`;
@@ -1162,16 +1119,12 @@ function drawCase(root = document) {
   wireCase(body, c);
   body.scrollTop = 0;
   if (S.highlight) {
-    later(600, () => { const hl = $('.pn.highlight'); if (hl) hl.scrollIntoView({ block: 'center', behavior: RM.matches ? 'auto' : 'smooth' }); });
+    later(600, () => { const hl = $('.highlight'); if (hl) hl.scrollIntoView({ block: 'center', behavior: RM.matches ? 'auto' : 'smooth' }); });
     S.highlight = null;
   }
 }
 function mapView(c) {
-  return `<div class="map-head"><h2 class="sec-h">Mapa sprawy</h2><div style="display:flex;gap:4px">
-      <button type="button" class="btn btn-ghost" id="map-mode">${icon(S.mapList ? 'map-trifold' : 'list-checks')} ${S.mapList ? 'Mapa' : 'Lista'}</button>
-      <button type="button" class="circle-btn flat" id="map-help" aria-label="Legenda">${icon('question')}</button></div></div>
-    <p class="meta">Każdy poziom to etap Twojej sprawy. Kłódka znaczy, że przewodnik wymaga wcześniej innego kroku. Dotknij poziomu, żeby zobaczyć szczegóły.</p>
-    ${S.mapList ? listMap(c) : pathMap(c)}`;
+  return `${timeline(c)}<button type="button" class="btn btn-ghost" id="map-help">${icon('question')} Co znaczą stany poziomów</button>`;
 }
 function taskRow(c, t) {
   if (t.id === 'form') {
@@ -1228,7 +1181,6 @@ function focusView(c) {
 function wireCase(root, c) {
   $$('[data-lv]', root).forEach((b) => { b.onclick = () => openLevel(c, b.dataset.lv); });
   $$('[data-v2]', root).forEach((b) => { b.onclick = () => { S.view = b.dataset.v2; drawCase(); }; });
-  const mm = $('#map-mode', root); if (mm) mm.onclick = () => { S.mapList = !S.mapList; drawCase(); };
   const mh = $('#map-help', root); if (mh) mh.onclick = () => sheet('Stany poziomów', `${legend()}<p class="meta">Gra tylko porządkuje sprawę: nie ma punktów ani odznak. Kłódki są tylko tam, gdzie przewodnik wymaga kolejności.</p>`);
   const mb = $('#m-banner', root); if (mb) mb.onclick = () => go('chat', 'fwd');
   $$('[data-task]', root).forEach((b) => {
@@ -1266,7 +1218,7 @@ function openLevel(c, id) {
   });
 }
 function openMapSheet(c) {
-  sheet(`Mapa: ${esc(c.title)}`, pathMap(c), (sh) => { $$('[data-lv]', sh).forEach((b) => { b.onclick = () => openLevel(c, b.dataset.lv); }); });
+  sheet('Mapa sprawy', `<div class="stack" style="padding-block:0">${timeline(c, true)}</div>`, (sh) => { $$('[data-lv]', sh).forEach((b) => { b.onclick = () => openLevel(c, b.dataset.lv); }); });
 }
 function openHistory(c) {
   if (!c) return;
@@ -1303,20 +1255,60 @@ function calendarScreen() {
   }
   const dayEv = ev.filter((e) => sameDay(e.d, sel));
   const upcoming = ev.filter((e) => e.d >= S.clock && !sameDay(e.d, sel));
-  const row = (e, i) => `<li class="ag" style="animation-delay:${i * 60}ms"><span class="tile-ic">${icon(e.ic)}</span><span class="tx"><b>${esc(e.title)}</b><span>${esc(e.sub)} · ${dshort(e.d)}</span></span><span class="time">${hm(e.d)}</span></li>`;
+  const row = (e, i) => `<li class="ag" style="animation-delay:${i * 60}ms"><span class="tile-ic">${icon(e.ic)}</span><span class="tx"><b>${esc(e.title)}</b><span>${esc(e.sub)}${e.c ? ` · ${esc(e.c.title)}` : ''} · ${dshort(e.d)}</span></span><span class="time">${hm(e.d)}</span>${e.custom ? `<button type="button" class="circle-btn flat sm" data-del="${e.custom}" aria-label="Usuń przypomnienie ${esc(e.title)}">${icon('x')}</button>` : ''}</li>`;
   const el = h(`<section class="screen calendar"><div class="scroll pad"><div class="stack">
-    <div class="greet"><span class="tx"><small>Wszystkie sprawy</small><b class="page-title">Kalendarz</b></span></div>
+    <div class="greet"><span class="tx"><small>Wszystkie sprawy</small><b class="page-title">Kalendarz</b></span><button type="button" class="circle-btn" id="cal-add" aria-label="Dodaj przypomnienie">${icon('plus')}</button></div>
     <div class="month"><div class="month-head"><button type="button" class="circle-btn flat" id="m-prev" aria-label="Poprzedni miesiąc">${icon('caret-left')}</button><b>${MON_N[base.getMonth()]} ${base.getFullYear()}</b><button type="button" class="circle-btn flat" id="m-next" aria-label="Następny miesiąc">${icon('caret-right')}</button></div>
       <div class="mgrid">${['P', 'W', 'Ś', 'C', 'P', 'S', 'N'].map((w) => `<span class="wd" aria-hidden="true">${w}</span>`).join('')}${cells.join('')}</div></div>
     <section class="sec"><div class="sec-head"><h2 class="sec-h">${sameDay(sel, S.clock) ? 'Dziś' : dday(sel)}</h2><span class="meta">wpisy: ${dayEv.length}</span></div>
-      ${dayEv.length ? `<ul class="agenda">${dayEv.map(row).join('')}</ul>` : '<p class="meta">Nic na ten dzień.</p>'}</section>
+      ${dayEv.length ? `<ul class="agenda">${dayEv.map(row).join('')}</ul>` : '<p class="meta">Nic na ten dzień.</p>'}
+      <button type="button" class="btn btn-quiet btn-block press" id="cal-add2">${icon('plus')} Dodaj przypomnienie${sameDay(sel, S.clock) ? ' na dziś' : `: ${dshort(sel)}`}</button></section>
     ${upcoming.length ? `<section class="sec"><h2 class="sec-h">Później</h2><ul class="agenda">${upcoming.map(row).join('')}</ul></section>` : ''}
     <p class="meta">Wpisy dodajesz Ty albo asystent, gdy ma Twoją zgodę. W prototypie nic nie trafia do kalendarza telefonu.</p>
   </div></div></section>`);
   $$('[data-d]', el).forEach((b) => { b.onclick = () => { S.calSel = new Date(base.getFullYear(), base.getMonth(), +b.dataset.d, 12); render(); }; });
+  $('#cal-add', el).onclick = () => addReminder(sel);
+  $('#cal-add2', el).onclick = () => addReminder(sel);
+  $$('[data-del]', el).forEach((b) => { b.onclick = () => { const r = S.custom.find((x) => x.id === b.dataset.del); S.custom = S.custom.filter((x) => x !== r); if (r && r.c) logAct(S.cases[r.c], `Usunięto przypomnienie: ${r.title}`); toast('Przypomnienie usunięte.', 'arrow-counter-clockwise'); render(); }; });
   $('#m-prev', el).onclick = () => { S.calMonth = new Date(base.getFullYear(), base.getMonth() - 1, 1); render(); };
   $('#m-next', el).onclick = () => { S.calMonth = new Date(base.getFullYear(), base.getMonth() + 1, 1); render(); };
   return el;
+}
+
+// The person's own reminder: what, which case, which day, what time.
+function addReminder(sel) {
+  const start = new Date(S.clock); start.setHours(12, 0, 0, 0);
+  const days = [...Array(14)].map((_, i) => at(start, i, 12));
+  let pick = days.findIndex((d) => sameDay(d, sel)); if (pick < 0) pick = 0;
+  let cs = S.order.find((id) => S.cases[id].status === 'active') || '';
+  sheet('Nowe przypomnienie', `<form id="rem-form" class="stack" style="padding-block:0;gap:var(--s4)" novalidate>
+      <div class="field"><label for="rem-t">Co przypomnieć</label><input id="rem-t" name="t" placeholder="Na przykład: odebrać tłumaczenie" autocomplete="off"><span class="err" hidden>Wpisz, o czym przypomnieć.</span></div>
+      <div class="field"><span class="flabel">Sprawa</span><div class="opts" id="rem-c">${[...S.order.map((id) => [id, S.cases[id].title]), ['', 'Bez sprawy']].map(([id, t]) => `<button type="button" class="chip chip-sm${id === cs ? ' picked' : ''}" data-c="${id}" aria-pressed="${id === cs}">${esc(t)}</button>`).join('')}</div></div>
+      <div class="field"><span class="flabel">Dzień</span><div class="days" id="rem-d">${days.map((d, i) => `<button type="button" class="chip chip-day${i === pick ? ' picked' : ''}" data-i="${i}" aria-pressed="${i === pick}" aria-label="${dday(d)}"><small>${DS[d.getDay()]}</small><b>${d.getDate()}</b><small>${MON_S[d.getMonth()]}</small></button>`).join('')}</div></div>
+      <div class="field"><label for="rem-h">Godzina</label><input id="rem-h" name="h" type="time" value="09:00"></div>
+      <p class="meta">W prototypie to symulacja: wpis pojawi się w zakładce Kalendarz, nie w kalendarzu telefonu.</p>
+      <button type="submit" class="btn btn-accent btn-block btn-knob press"><span class="knob">${icon('bell')}</span>Dodaj przypomnienie</button></form>`, (sh) => {
+    const pickIn = (wrap, attr, cb) => $$(`[data-${attr}]`, wrap).forEach((b) => { b.onclick = () => { $$('.chip', wrap).forEach((x) => { x.classList.remove('picked'); x.setAttribute('aria-pressed', 'false'); }); b.classList.add('picked'); b.setAttribute('aria-pressed', 'true'); cb(b.dataset[attr]); }; });
+    pickIn($('#rem-c', sh), 'c', (v) => { cs = v; });
+    pickIn($('#rem-d', sh), 'i', (v) => { pick = +v; });
+    $('#rem-d .picked', sh)?.scrollIntoView({ inline: 'center', block: 'nearest' });
+    $('#rem-form', sh).onsubmit = (e) => {
+      e.preventDefault();
+      const t = $('#rem-t', sh).value.trim();
+      const err = $('.err', sh);
+      if (!t) { err.hidden = false; $('#rem-t', sh).focus(); return; }
+      const [hh, mm] = ($('#rem-h', sh).value || '09:00').split(':').map(Number);
+      const d = at(days[pick], 0, hh, mm);
+      const id = 'r' + Date.now();
+      S.custom.push({ id, title: t, d, c: cs || null });
+      if (cs) logAct(S.cases[cs], `Twoje przypomnienie: ${t}, ${dday(d)}, ${hm(d)}`);
+      S.calSel = d; S.calMonth = new Date(d.getFullYear(), d.getMonth(), 1);
+      closeLayer();
+      toast(`Przypomnienie dodane: ${dshort(d)}, ${hm(d)}`, 'bell');
+      if (S.screen === 'calendar') render();
+    };
+    $('#rem-t', sh).focus();
+  });
 }
 
 function teczkaScreen() {
