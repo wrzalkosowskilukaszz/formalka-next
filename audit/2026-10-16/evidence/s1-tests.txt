@@ -1,5 +1,5 @@
 # cd spikes/s1-case-engine && npm test
-# 2026-10-16T12:10Z commit 37bfaaa node v22.22.0
+# 2026-10-16T12:23Z commit e186333 node v22.22.0
 
 ok 1 - rules: three-valued, Kleene and/or, unknown is never a match
 ok 2 - reg-01: the plan has every task in order, each with a ruleRef, and passes the validator

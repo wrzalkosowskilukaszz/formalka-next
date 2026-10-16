@@ -154,7 +154,9 @@ Playwright and ESLint come from a global install (`npm i -g playwright eslint`).
   - Where the procedure goes to the voivode, every city gets its voivodeship office, with name and website only.
   - Otherwise the assistant says it has no address and points to the office's website.
 - **Time.** The visit day in the call flow is fixed three days ahead, so that "Przewiń o 3 dni" lands on it (a prototype shortcut).
-- **Engine copy, worked around in the prototype and reported to the engine:**
-  - the intro says "asystent" for every assistant;
-  - dates after "do" are in the nominative ("do środa");
-  - reminder texts name the blueprint's caretaker, not the case's own assistant.
+- **Engine copy:** the prototype found three issues:
+  - the intro said "asystent" for every assistant;
+  - dates after "do" were in the nominative;
+  - reminders used the blueprint's caretaker name.
+
+  All three were fixed in the engine on 16.10 (6af321f). The prototype passes each case's assistant to the engine as a `Persona` and needs no workaround.

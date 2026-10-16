@@ -1,5 +1,5 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-16T12:16Z commit 1a78cfc node v22.22.0
+# 2026-10-16T12:23Z commit e186333 node v22.22.0
 
 ok 1 - norm folds Polish letters and punctuation
 ok 2 - polarity: yes, no and "Nie wiem"; strict mode for approval cards

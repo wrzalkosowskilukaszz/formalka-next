@@ -48,7 +48,7 @@ This package holds:
 | Decisions | `docs/formalka-next/adr/N001`–`N010` | All "Proposed". N010 (learning from use) is new | Table in section 9 |
 | Verified content | `reference/` | Read-only snapshots of Formalka's procedures, offices and design tokens, each with its source commit | Never edited; nothing copied back |
 | Case blueprints | `blueprints/*.yaml` | 5 case types over verified procedures: citizenship, residence card, address registration, PESEL, Polish language certificate | Loaded by the engine |
-| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 30/30 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`). 24 injected faults were each caught (doc 16 §7) |
+| Case engine | `packages/case-engine` | Pure TypeScript, about 1,600 lines:<br>• planner (levels, states, lock reasons);<br>• deadlines from recorded events (KPA counting);<br>• offices by city;<br>• validator;<br>• proactive agenda;<br>• intake from free text;<br>• replan diffs | FACT: 31/31 tests, including the 17 evaluation scenarios (`evidence/engine-tests.txt`). 24 injected faults were each caught (doc 16 §7) |
 | Evaluation set | `packages/case-engine/eval/` | 17 scenarios with plain-Polish reference plans for the blind H1 benchmark | FACT: 17/17 pass (`eval/REPORT.md`). The owner's review is pending; the benchmark has not been run |
 | Spike S1 | `spikes/s1-case-engine` | The first deterministic planner and validator | FACT: 14/14 tests, mutation-checked |
 | Spike S3 | `spikes/s3-official-form-fill` | Filling the real registration PDF | FACT (15.10): 42 fields filled and read back with 0 mismatches, 0 forbidden fields filled |
@@ -131,7 +131,7 @@ the person: answers, confirms, approves, records what happened
 
 | Check | Command | Result |
 |---|---|---|
-| Engine tests (incl. 17 evaluation scenarios, intake, replan) | `cd packages/case-engine && npm test` | FACT: 30/30 pass (`evidence/engine-tests.txt`) |
+| Engine tests (incl. 17 evaluation scenarios, intake, replan) | `cd packages/case-engine && npm test` | FACT: 31/31 pass (`evidence/engine-tests.txt`) |
 | Engine bundle reproducible | `cd packages/case-engine && node tools/build-browser.mjs --locales pl`, then `git status` | FACT: byte-identical to the committed bundle when built from that folder. Built from the repository root, only the source-path comments differ (`evidence/bundle.txt`) |
 | Spike S1 | `cd spikes/s1-case-engine && npm test` | FACT: 14/14 pass (`evidence/s1-tests.txt`) |
 | Deadline rules | Quoted from the acts via the Sejm's ELI API | FACT: KPA art. 57 and the days-off list checked against Dz.U. 2025 poz. 1691 and poz. 296 on 16.10 (`docs/formalka-next/verifications/DATES-2026-10-16.md`). OPEN: the "najpóźniej w N dniu" reading (doc 06 §7 Q3); the engine shows both dates and reminds on the earlier one |
@@ -175,12 +175,14 @@ They also run at 1280 px in the phone frame. They cover all five case types (sce
   - an encrypted device store. The functional slice keeps confirmed facts in plain browser storage and never stores free text; the prototype stores nothing.
 - **FACT:** replanning covers changes of facts only. Changes of the registry version (the changes feed) are not wired yet.
 - **Prototype shortcut:** the visit in the call flow is fixed three days ahead so that time travel lands on it.
-- **Engine copy issues, worked around in the prototype and reported to the engine owner:**
-  - the intro says "asystent" for every assistant;
-  - dates after "do" use the nominative ("do środa" for "do środy");
-  - reminder texts use the blueprint's caretaker name, not the case's assistant.
+- **Engine copy:** the prototype found five issues, all fixed in the engine on 16.10:
+  - exclamation marks (565afcc);
+  - a promised phone number the registry lacks (565afcc);
+  - the intro's "asystent" for female assistants (6af321f);
+  - the nominative after "do" (6af321f);
+  - the caretaker's name instead of the case's assistant in reminders (6af321f).
 
-  Two earlier issues (exclamation marks; a promised phone number) were fixed in the engine on 16.10 (commit 565afcc).
+  The prototype now passes each case's assistant to the engine as a `Persona`.
 - **Not verified (doc 00 §9):**
   - user need and willingness to pay;
   - H1;

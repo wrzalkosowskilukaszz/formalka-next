@@ -1,5 +1,5 @@
 # cd packages/case-engine && npm test
-# 2026-10-16T12:10Z commit 37bfaaa node v22.22.0
+# 2026-10-16T12:23Z commit e186333 node v22.22.0
 
 ok 1 - blueprints: every step, document, fee and deadline lands on exactly one level
 ok 2 - route: asks while a route is unsettled; a choice is the user's; Nie wiem leaves it unsure
@@ -16,21 +16,22 @@ ok 12 - advisor: a draft plan does nothing; an approved one plans the deadline b
 ok 13 - advisor: a deadline that may not apply never notifies; no consent keeps all in the app
 ok 14 - advisor: a planned visit gets preparation, the morning and a follow-up; quiet hours hold
 ok 15 - advisor: stable ids, generic lock screen, and never a claim of booking, sending or filing
-ok 16 - advisor: the office's time passing is told once, as information; a quiet week gets a nudge
-ok 17 - residence card: the purpose picks MOS or paper; documents are needed to submit
-ok 18 - offices: only from the registry's office layer, by the user's city; visit messages carry them
-ok 19 - alternatives travel together; a later step done closes the steps before it
-ok 20 - warnings: the guide's own notes for this person, on the right level, important first
-ok 21 - evaluation scenarios: every reference plan meets its expectations
-ok 22 - intake: the baseline proposes no wrong value on any scenario, and quotes the person's own words
-ok 23 - intake: language and origin never become citizenship or protection
-ok 24 - intake: the checker drops what isn't asked, isn't an option, isn't verbatim, or is always asked
-ok 25 - intake: negation, need and ambiguity propose nothing
-ok 26 - intake: a candidate changes nothing until the person confirms it
-ok 27 - intake: the city, only when exactly one known city is named, never a street
-ok 28 - replan: a confirmed stay narrows the documents, in words the person can check
-ok 29 - replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
-ok 30 - replan: no change is an empty diff; a route change is named
-# tests 30
-# pass 30
+ok 16 - copy: dates after "do" in the genitive; words about the assistant agree with its persona
+ok 17 - advisor: the office's time passing is told once, as information; a quiet week gets a nudge
+ok 18 - residence card: the purpose picks MOS or paper; documents are needed to submit
+ok 19 - offices: only from the registry's office layer, by the user's city; visit messages carry them
+ok 20 - alternatives travel together; a later step done closes the steps before it
+ok 21 - warnings: the guide's own notes for this person, on the right level, important first
+ok 22 - evaluation scenarios: every reference plan meets its expectations
+ok 23 - intake: the baseline proposes no wrong value on any scenario, and quotes the person's own words
+ok 24 - intake: language and origin never become citizenship or protection
+ok 25 - intake: the checker drops what isn't asked, isn't an option, isn't verbatim, or is always asked
+ok 26 - intake: negation, need and ambiguity propose nothing
+ok 27 - intake: a candidate changes nothing until the person confirms it
+ok 28 - intake: the city, only when exactly one known city is named, never a street
+ok 29 - replan: a confirmed stay narrows the documents, in words the person can check
+ok 30 - replan: done work stays in the history and is never reset; other statuses of removed tasks are cleared
+ok 31 - replan: no change is an empty diff; a route change is named
+# tests 31
+# pass 31
 # fail 0
