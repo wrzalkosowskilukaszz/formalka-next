@@ -3,7 +3,7 @@
 // CLI: node eval/run.ts --write   (writes eval/REPORT.md and eval/reference-plans/*.md)
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parse } from "yaml";
-import { type Blueprint, type CasePlan, type CaseState, dueRangePl, type FactCandidate, intake, loadBlueprint, loadRegistry, planCase, UNKNOWN, validatePlan } from "../src/index.ts";
+import { type Blueprint, type CasePlan, type CaseState, dueRangePl, type FactCandidate, intake, loadBlueprint, loadRegistry, planCase, UNKNOWN, validatePlan, verifyContent } from "../src/index.ts";
 
 const ROOT = new URL("../../../", import.meta.url).pathname;
 const reg = loadRegistry(`${ROOT}reference`, "formalka@04057ef");
@@ -32,6 +32,8 @@ export function runScenarios(file = `${ROOT}packages/case-engine/eval/scenarios.
     const lv = (id: string) => plan.levels.find((l) => l.id === id);
     const v = validatePlan(plan, reg, state);
     if (!v.ok) f.push(`validator: ${v.violations.map((y) => y.code).join(", ")}`);
+    const c = verifyContent(plan, bp, reg, state);
+    if (!c.ok) f.push(`content: ${c.violations.map((y) => `${y.code} ${y.item}`).join(", ")}`);
     if (x.route && plan.route.status !== x.route) f.push(`route ${plan.route.status} ≠ ${x.route}`);
     if (x.procedure && plan.route.procedureId !== x.procedure) f.push(`procedure ${plan.route.procedureId} ≠ ${x.procedure}`);
     for (const [id, s] of Object.entries(x.levels ?? {})) if (lv(id)?.state !== s) f.push(`level ${id}: ${lv(id)?.state ?? "missing"} ≠ ${s}`);

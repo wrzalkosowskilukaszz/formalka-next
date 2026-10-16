@@ -242,7 +242,7 @@ function caseView(c) {
   if (!tabs.some(([k]) => k === c.tab)) c.tab = 'chat';
   return `<div class="head"><button class="back" data-home aria-label="Twoje sprawy">${icon('arrow-left')}</button>
       <h2>${esc(c.title)}</h2><span class="who">${esc(c.who)} · ${E.rolePl(c.persona ?? c.who)}</span></div>
-    <div class="row" style="margin-top:0"><span class="badge ${v.ok ? 'ok' : 'bad'}">${v.ok ? `${icon('check')} Plan sprawdzony: każdy element ma źródło` : `Plan nie przeszedł kontroli (${v.violations.length})`}</span>
+    <div class="row" style="margin-top:0"><span class="badge ${v.ok ? 'ok' : 'bad'}">${v.ok ? `${icon('check')} Każdy element pochodzi z rejestru Formalki` : `Plan niezgodny z rejestrem (${v.violations.length})`}</span>
       <span class="when">${p.status === 'active' ? 'aktywny' : 'projekt planu'}</span></div>
     <div class="strip" aria-label="Mapa w skrócie">${p.levels.map((l) => `<span class="node" data-s="${l.state}" title="${esc(STATE_PL[l.state])}">${icon(STATE_ICON[l.state])} ${esc(l.title.pl)}</span>`).join('')}</div>
     <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${c.tab === k}">${esc(n)}</button>`).join('')}</div>

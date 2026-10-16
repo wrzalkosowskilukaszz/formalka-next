@@ -12,6 +12,7 @@ import { applyReplan, diffPlans } from "./replan.ts";
 import { type FactDef, type Institution, type Office, type Procedure, registryFromData } from "./registry.ts";
 import { UNKNOWN } from "./rules.ts";
 import { validatePlan } from "./validator.ts";
+import { verifyContent } from "./verify.ts";
 import { type Voice, voiced } from "./voice.ts";
 
 const reg = registryFromData(
@@ -39,7 +40,16 @@ export const FormalkaEngine = {
   procedure: (id: string) => reg.procedures.get(id),
   fact: (key: string) => reg.facts.get(key),
   plan: (blueprintId: string, state: CaseState): CasePlan => planCase(bp(blueprintId), reg, state),
-  validate: (plan: CasePlan, state: CaseState) => validatePlan(plan, reg, state),
+  /**
+   * Both checks, kept apart (audit F1): `structure` (references resolve, no date without its event, no
+   * lock without a basis) and `content` (amounts, exemptions, dates and offices against the registry,
+   * and the plan against one recomputed from the same inputs). `ok` only when both pass.
+   */
+  validate(plan: CasePlan, state: CaseState) {
+    const structure = validatePlan(plan, reg, state);
+    const content = verifyContent(plan, bp(plan.blueprintId), reg, state);
+    return { ok: structure.ok && content.ok, violations: [...structure.violations, ...content.violations], structure, content };
+  },
   /**
    * The next question, or null when nothing left can change the plan. It speaks to the person
    * ("you", the default) or, for a case handled for someone else ("other"), in the registry's wording.

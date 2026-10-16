@@ -1162,6 +1162,73 @@
     return plan.levels.some((l) => visit(l.id));
   }
 
+  // src/verify.ts
+  var lastEvent2 = (state, type) => state.events.filter((e) => e.type === type).sort((a, b) => a.date < b.date ? -1 : 1).at(-1);
+  var parseRef = (ref) => /^([^@]+)@[^:]+:([\w-]+):(.+)$/.exec(ref);
+  function verifyContent(plan, bp2, reg2, state) {
+    const v = [];
+    const add = (code, item, detail = "") => v.push({ code, item, detail });
+    for (const l of plan.levels) {
+      for (const f of l.fees) {
+        const m = parseRef(f.ruleRef);
+        const rf = m && reg2.procedures.get(m[1])?.fees.find((x) => x.id === f.id);
+        if (!rf) continue;
+        if (f.amountPln !== rf.amountPln.value) add("FEE_AMOUNT", `fee:${f.id}`, `${f.amountPln} \u2260 ${rf.amountPln.value}`);
+        if (f.exemption?.outcome === "applies") {
+          const x = rf.exemptions?.find((e) => e.id === f.exemption.id);
+          if (!x?.rule || evaluate(x.rule, state.facts).outcome !== "applies") add("EXEMPTION_WITHOUT_BASIS", `fee:${f.id}`, f.exemption.id);
+        }
+      }
+      for (const d of l.deadlines) {
+        const m = parseRef(d.ruleRef);
+        const rd = m && reg2.procedures.get(m[1])?.deadlines.find((x) => x.id === d.id);
+        const place = bp2.deadlines[d.id];
+        if (!rd || !place || rd.rule.value.kind !== "relative") continue;
+        const r = rd.rule.value;
+        const from = place.from ?? r.from;
+        if (d.from !== from) add("DEADLINE_START", `deadline:${d.id}`, `${d.from} \u2260 ${from}`);
+        if (d.amount !== r.amount || d.unit !== r.unit) add("DEADLINE_RULE", `deadline:${d.id}`, `${d.amount} ${d.unit}`);
+        const ev = lastEvent2(state, from);
+        const due = ev ? dueDate(ev.date, r.amount, r.unit, place.counting) : void 0;
+        if (due?.earliest !== d.due?.earliest || due?.latest !== d.due?.latest) add("DEADLINE_DATE", `deadline:${d.id}`, `${d.due?.latest} \u2260 ${due?.latest}`);
+      }
+      for (const o of l.office?.offices ?? []) {
+        const office = reg2.offices.find((x) => x.id === o.id);
+        const inst = reg2.institutions.get(o.id);
+        if (!office && !inst) {
+          add("OFFICE_NOT_IN_REGISTRY", `office:${o.id}`);
+          continue;
+        }
+        if (o.address && o.address.value !== office?.address?.value) add("OFFICE_ADDRESS", `office:${o.id}`, o.address.value);
+      }
+    }
+    const expected = planCase(bp2, reg2, state);
+    if (expected.route.status !== plan.route.status || expected.route.procedureId !== plan.route.procedureId) {
+      add("ROUTE_MISMATCH", "route", `${plan.route.status} ${plan.route.procedureId ?? ""}`);
+    }
+    const ids = (ls) => ls.map((l) => l.id).join();
+    if (ids(plan.levels) !== ids(expected.levels)) add("LEVELS_MISMATCH", plan.blueprintId, `${ids(plan.levels)} \u2260 ${ids(expected.levels)}`);
+    for (const want of expected.levels) {
+      const got = plan.levels.find((l) => l.id === want.id);
+      if (!got) continue;
+      if (got.state !== want.state) add("LEVEL_STATE", want.id, `${got.state} \u2260 ${want.state}`);
+      const compare = (kind, a, b, key) => {
+        for (const x of b) {
+          const y = a.find((z) => z.id === x.id);
+          if (!y) add("ITEM_MISSING", `${kind}:${x.id}`);
+          else if (key(y) !== key(x)) add("ITEM_CHANGED", `${kind}:${x.id}`, `${key(y)} \u2260 ${key(x)}`);
+        }
+        for (const y of a) if (!b.some((x) => x.id === y.id)) add("ITEM_EXTRA", `${kind}:${y.id}`);
+      };
+      compare("task", got.tasks, want.tasks, (t) => `${t.title.pl}|${t.outcome}|${t.status}`);
+      compare("fee", got.fees, want.fees, (f) => `${f.amountPln}|${f.outcome}|${f.exemption?.outcome ?? ""}`);
+      compare("deadline", got.deadlines, want.deadlines, (d) => `${d.from}|${d.due?.earliest ?? ""}|${d.due?.latest ?? ""}`);
+      compare("note", got.notes, want.notes, (n) => `${n.important}`);
+      compare("office", got.office?.offices ?? [], want.office?.offices ?? [], (o) => `${o.name.pl}|${o.address?.value ?? ""}`);
+    }
+    return { ok: v.length === 0, violations: v };
+  }
+
   // src/voice.ts
   var YOU = {
     "certyfikat.purpose": {
@@ -1268,7 +1335,16 @@
     procedure: (id) => reg.procedures.get(id),
     fact: (key) => reg.facts.get(key),
     plan: (blueprintId, state) => planCase(bp(blueprintId), reg, state),
-    validate: (plan, state) => validatePlan(plan, reg, state),
+    /**
+     * Both checks, kept apart (audit F1): `structure` (references resolve, no date without its event, no
+     * lock without a basis) and `content` (amounts, exemptions, dates and offices against the registry,
+     * and the plan against one recomputed from the same inputs). `ok` only when both pass.
+     */
+    validate(plan, state) {
+      const structure = validatePlan(plan, reg, state);
+      const content = verifyContent(plan, bp(plan.blueprintId), reg, state);
+      return { ok: structure.ok && content.ok, violations: [...structure.violations, ...content.violations], structure, content };
+    },
     /**
      * The next question, or null when nothing left can change the plan. It speaks to the person
      * ("you", the default) or, for a case handled for someone else ("other"), in the registry's wording.

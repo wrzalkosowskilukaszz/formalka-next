@@ -12,3 +12,4 @@ export * from "./offices.ts";
 export * from "./intake.ts";
 export * from "./voice.ts";
 export * from "./replan.ts";
+export * from "./verify.ts";
