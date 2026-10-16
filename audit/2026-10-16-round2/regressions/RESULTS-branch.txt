@@ -1,0 +1,223 @@
+Regressions for round 1 findings, run 2026-10-16
+Engine bundle: d55e588e17a3c055; registry formalka@04057ef
+Kinds: audit = the auditor's input; variant = written for this run (not blind); control = must still work.
+
+PASS  F1  control  untouched address-registration plan passes
+      expected: ok=true
+      actual:   ok=true structure=true codes=[]
+PASS  F1  control  untouched residence-card plan passes
+      expected: ok=true
+      actual:   ok=true structure=true codes=[]
+PASS  F1  audit    fee set to 999 999 zł
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[FEE_AMOUNT, ITEM_CHANGED]
+PASS  F1  variant  fee changed by a plausible amount (340 → 34 zł)
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[FEE_AMOUNT, ITEM_CHANGED]
+PASS  F1  variant  fee source swapped to another valid rule of the same plan
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_CHANGED]
+PASS  F1  variant  due date moved to 2099-01-01 (both readings)
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[DEADLINE_DATE, ITEM_CHANGED]
+PASS  F1  variant  due date moved one day earlier, earliest only
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[DEADLINE_DATE, ITEM_CHANGED]
+PASS  F1  variant  deadline period 4 → 14 days, due left as computed
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[DEADLINE_RULE]
+PASS  F1  variant  deadline removed
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_MISSING]
+PASS  F1  variant  task title replaced by a harmful instruction
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_CHANGED]
+PASS  F1  variant  one task removed
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_MISSING]
+PASS  F1  audit    all tasks and fees removed
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_MISSING]
+PASS  F1  audit    invented task with a valid source reference
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_EXTRA]
+PASS  F1  audit    invented office
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_EXTRA, OFFICE_NOT_IN_REGISTRY]
+PASS  F1  variant  real office id with an invented name
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_CHANGED]
+PASS  F1  variant  office address changed
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_CHANGED, OFFICE_ADDRESS]
+PASS  F1  variant  locked level unlocked
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[LEVEL_STATE]
+PASS  F1  variant  a quote under a task altered
+      expected: ok=false (content check), structure may pass
+      actual:   ok=false structure=true codes=[ITEM_CHANGED]
+PASS  F2  audit    residence: refused decision → no card level offered
+      expected: level 'card' absent or not actionable
+      actual:   card level absent
+PASS  F2  control  residence: granted decision → card level present
+      expected: level 'card' present
+      actual:   card state=available
+PASS  F2  variant  residence: decision delivered, outcome not recorded → card not offered as available
+      expected: level 'card' absent or not 'available'
+      actual:   card state=locked
+PASS  F2  audit    cit-06: first-instance refusal → appeal counted, court complaint not counted from it
+      expected: appeal due 2027-06-03; no court due
+      actual:   appeal=2027-06-03 court=none
+PASS  F2  audit    cit-07: Minister's decision served separately → court complaint counted from it
+      expected: court due 2027-09-09 (30 days, PPSA), from appeal_decision_delivered
+      actual:   court=2027-09-09 from=appeal_decision_delivered
+PASS  F2  variant  citizenship: first-instance grant → no appeal or court deadline
+      expected: neither appeal nor court has a due date
+      actual:   appeal=none court=none
+PASS  F2  variant  citizenship: Minister grants on appeal → no court complaint
+      expected: court has no due date
+      actual:   court=none
+PASS  F3  audit    res-02 (study): exemption without a rule stays unknown; full 340 zł counted
+      expected: exemption.outcome=unknown, amountPln=340
+      actual:   exemption.outcome=unknown amountPln=340
+PASS  F3  variant  residence (work): no exemption shown as granted without a rule
+      expected: no fee with exemption.outcome=applies
+      actual:   none granted
+PASS  F3  variant  residence (family_abroad): no exemption shown as granted without a rule
+      expected: no fee with exemption.outcome=applies
+      actual:   none granted
+PASS  F5  audit    consent (strict): "Tak, nie zgadzam się"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  audit    consent (strict): "Chyba tak"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Tak, ale się nie zgadzam"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "No chyba tak"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Raczej tak"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Może"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Tak, chociaż nie wiem"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Zgadzam się, ale nie jestem pewien"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Tak? Nie wiem"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Zatwierdzam, chyba"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  variant  consent (strict): "Nie wiem, chyba tak"
+      expected: not yes (null, no or dk)
+      actual:   dk
+PASS  F5  variant  consent (strict): "ok, ale nie"
+      expected: not yes (null, no or dk)
+      actual:   null
+PASS  F5  control  consent (strict): "Tak"
+      expected: yes
+      actual:   yes
+PASS  F5  control  consent (strict): "Zatwierdzam"
+      expected: yes
+      actual:   yes
+PASS  F5  control  consent (strict): "Nie zatwierdzam"
+      expected: no
+      actual:   no
+PASS  F5  control  consent (strict): "Nie"
+      expected: no
+      actual:   no
+PASS  F5  audit    negation: "Nie złożyłem wniosku"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Jeszcze nie złożyłam wniosku"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Wniosek nie został złożony"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Nie, nie złożyłem"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Nie zdążyłem złożyć wniosku"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Nie udało mi się złożyć"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Wniosku nie złożyłem"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Nie poszłam, więc nie złożyłam"
+      expected: not 'filed'
+      actual:   not_went
+PASS  F5  variant  negation: "Nie przyjęli wniosku"
+      expected: not 'filed'
+      actual:   null
+PASS  F5  variant  negation: "Nie wiem, czy złożyłem"
+      expected: not 'filed'
+      actual:   null
+PASS  F5  variant  negation: "Wniosek nie jest jeszcze złożony"
+      expected: not 'filed'
+      actual:   null
+PASS  F5  variant  negation: "Dokumenty nie zostały przyjęte"
+      expected: not 'filed'
+      actual:   null
+PASS  F5  control  follow-up: "Złożyłem wniosek"
+      expected: filed
+      actual:   filed
+PASS  F5  control  follow-up: "Wszystko ok, przyjęli"
+      expected: filed
+      actual:   filed
+PASS  F5  control  follow-up: "Wszystko ok, nie było problemu, złożyłem"
+      expected: 'filed' or null (asked back)
+      actual:   null
+PASS  F5  audit    explicit year: "22.10.2028"
+      expected: date in [2028-10-22] (null = asked back)
+      actual:   date=2028-10-22 time=null
+PASS  F5  variant  explicit year: "22 października 2028"
+      expected: date in [2028-10-22] (null = asked back)
+      actual:   date=2028-10-22 time=null
+PASS  F5  variant  explicit year: "2028-10-22"
+      expected: date in [2028-10-22, null] (null = asked back)
+      actual:   date=null time=null
+PASS  F5  variant  explicit year: "22.10.2025"
+      expected: date in [2025-10-22, null] (null = asked back)
+      actual:   date=2025-10-22 time=null
+PASS  F5  variant  explicit year: "22.10.28"
+      expected: date in [2028-10-22, null] (null = asked back)
+      actual:   date=2028-10-22 time=null
+PASS  F5  variant  explicit year: "5 listopada 2027 o 9"
+      expected: date in [2027-11-05] (null = asked back)
+      actual:   date=2027-11-05 time=09:00
+PASS  F5  variant  explicit year: "w 2028 roku, 22 października"
+      expected: date in [2028-10-22, null] (null = asked back)
+      actual:   date=null time=null ambiguous
+PASS  F5  audit    ruled-out day: "Jutro nie mogę, w piątek o 10" (clock: Mon 19.10.2026)
+      expected: date=2026-10-23 time=10:00, or asked back (date=null)
+      actual:   date=2026-10-23 time=10:00
+PASS  F5  variant  ruled-out day: "Nie jutro, tylko w piątek o 10" (clock: Mon 19.10.2026)
+      expected: date=2026-10-23 time=10:00, or asked back (date=null)
+      actual:   date=2026-10-23 time=10:00
+PASS  F5  variant  ruled-out day: "W piątek o 10, jutro nie dam rady" (clock: Mon 19.10.2026)
+      expected: date=2026-10-23 time=10:00, or asked back (date=null)
+      actual:   date=2026-10-23 time=10:00
+PASS  F5  variant  ruled-out day: "Jutro odpada. Piątek 10:00" (clock: Mon 19.10.2026)
+      expected: date=2026-10-23 time=10:00, or asked back (date=null)
+      actual:   date=null time=null
+PASS  F5  variant  ruled-out day: "Nie w środę, w czwartek o 9" (clock: Mon 19.10.2026)
+      expected: date=2026-10-22 time=09:00, or asked back (date=null)
+      actual:   date=2026-10-22 time=09:00
+
+F1: 18/18 pass
+F2: 7/7 pass
+F3: 3/3 pass
+F5: 43/43 pass
+Total: 71/71 pass

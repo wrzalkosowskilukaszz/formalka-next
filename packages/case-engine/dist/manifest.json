@@ -3,7 +3,7 @@
   "locales": [
     "pl"
   ],
-  "engine": "967f46bc69fd9a34",
+  "engine": "d55e588e17a3c055",
   "sources": {
     "reference/address-registration/facts-pesel.yaml": "5fb7b4bd13d63381",
     "reference/address-registration/facts-zameldowanie.yaml": "e34e9eeb7baf6920",
@@ -28,6 +28,6 @@
   },
   "bundle": {
     "file": "case-engine.browser.js",
-    "sha256": "0dc4b061741be57bb38950b9c8d7fe645dcd28adf36b12a79f0f8191487c46e2"
+    "sha256": "774e3197123e22e45c6828b2ed527492d44620c619f1d5bda57209b59e0681b3"
   }
 }

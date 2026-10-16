@@ -215,3 +215,18 @@ test('round 2 reference D7: an open-reading deadline on a day off warns, and the
 test('study scope: the groups left out are named, not guessed', () => {
   for (const w of [/obywatela UE, EFTA lub Szwajcarii/, /z wizą krajową/, /członków rodziny/, /Wielkiej Brytanii/, /wjazdu bez wizy/, /pobytu stałego osób spoza UE/, /nie są jeszcze sprawdzone/]) assert.match(app.STUDY_SCOPE, w);
 });
+
+test('round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost', () => {
+  assert.equal(app.readFollowUp('Wniosek nie został złożony'), 'not_went');
+  assert.equal(app.readFollowUp('Wniosek nie jest jeszcze złożony'), null);
+  assert.equal(app.readFollowUp('Nie wiem, czy złożyłem'), null);
+  assert.equal(app.readFollowUp('Złożyłem wniosek'), 'filed');
+  const w = (t) => app.readWhen(t);
+  assert.deepEqual({ ...w('22.10.28') }, { date: '2028-10-22', time: null }, 'two-digit year, never 10:28');
+  assert.equal(w('22.10.2025').date, '2025-10-22');
+  assert.equal(w('w 2028 roku, 22 października').date, null, 'a year apart from its day is asked back');
+  assert.equal(w('w 2028 roku, 22 października').ambiguous, true);
+  assert.equal(w('14.45').time, '14:45');
+  assert.equal(w('o 10.28').time, '10:28');
+});
+

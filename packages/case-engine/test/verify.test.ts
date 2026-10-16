@@ -38,6 +38,9 @@ test("verify: content changed behind valid references is caught; the structural 
     }), ["EXEMPTION_WITHOUT_BASIS", "ITEM_CHANGED"], RES, resState],
     ["due date moved", tamper(ADDR, addrState, (p) => { const d = p.levels.flatMap((l) => l.deadlines).find((x) => x.due)!; d.due = { ...d.due!, latest: "2026-12-31" }; }), ["DEADLINE_DATE", "ITEM_CHANGED"]],
     ["level unlocked", tamper(ADDR, addrState, (p) => { p.levels.find((l) => l.state === "locked")!.state = "available"; }), ["LEVEL_STATE"]],
+    // Round 2 regressions: the source of an item is content too.
+    ["fee sources swapped between two valid rules", tamper(RES, resState, (p) => { const [a, b] = p.levels.flatMap((l) => l.fees); [a.ruleRef, b.ruleRef] = [b.ruleRef, a.ruleRef]; }), ["ITEM_CHANGED"], RES, resState],
+    ["quote under a task altered", tamper(ADDR, addrState, (p) => { const t = p.levels.flatMap((l) => l.tasks).find((x) => x.quotes.length)!; t.quotes[0] = { ...t.quotes[0], text: "Wymyślony cytat" }; }), ["ITEM_CHANGED"]],
   ];
   for (const [name, plan, want, b = ADDR, st = addrState] of cases) {
     assert.equal(validatePlan(plan, reg, st).ok, true, `${name}: references stay valid, so structure alone passes`);

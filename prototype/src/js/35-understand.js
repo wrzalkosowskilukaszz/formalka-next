@@ -69,7 +69,8 @@ function whenIn(raw) {
   let time = null, date = null;
   // An hour: "10:30", "o 10", "o 10.30", "godz. 9", or "10.30" (a date's month is never above 12).
   let tm = raw.match(/\b(\d{1,2}):(\d{2})\b/) || raw.match(/(?:^|\s)(?:o|godz\.?|godzina|godzinie)\s*(\d{1,2})(?:[.:](\d{2}))?\b/);
-  if (!tm) { const m = raw.match(/\b(\d{1,2})\.(\d{2})\b(?!\.\d)/); if (m && Number(m[2]) > 12) tm = m; }
+  // Never the end of a date: "22.10.28" is 22 October 2028, not 10:28 (round 2 regressions).
+  if (!tm) { const m = raw.match(/\b(?<!\d\.)(\d{1,2})\.(\d{2})\b(?!\.\d)/); if (m && Number(m[2]) > 12) tm = m; }
   if (tm && Number(tm[1]) < 24 && Number(tm[2] ?? 0) < 60) time = `${pad(Number(tm[1]))}:${tm[2] ?? '00'}`;
   else if (/\bpoludni/.test(n)) time = '12:00';
   // A day: "dziś", "jutro", "pojutrze", a weekday, "22.10", "22.10.2028", "22 października (2028)".
@@ -80,9 +81,9 @@ function whenIn(raw) {
     const k = WD_STEM.findIndex((w) => new RegExp(`\\b${w}`).test(n));
     if (k >= 0) { let d = isoAdd(S.clock.date, 1); while (wd(d) !== k) d = isoAdd(d, 1); date = d; }
     let day = 0, mon = 0, year = 0;
-    const dm = raw.match(/\b(\d{1,2})\.(\d{1,2})(?:\.(\d{4}))?\b/);
+    const dm = raw.match(/\b(\d{1,2})\.(\d{1,2})(?:\.(\d{4}|\d{2}))?\b/);
     const dn = n.match(/\b(\d{1,2}) ([a-z]{4,})(?: (\d{4}))?/);
-    if (dm && Number(dm[2]) >= 1 && Number(dm[2]) <= 12 && !(tm && tm[0].includes(dm[0]))) { day = Number(dm[1]); mon = Number(dm[2]); year = Number(dm[3] ?? 0); }
+    if (dm && Number(dm[2]) >= 1 && Number(dm[2]) <= 12 && !(tm && tm[0].includes(dm[0]))) { day = Number(dm[1]); mon = Number(dm[2]); year = dm[3] ? Number(dm[3].length === 2 ? `20${dm[3]}` : dm[3]) : 0; }
     else if (dn && MON_STEM.includes(dn[2].slice(0, 4))) { day = Number(dn[1]); mon = MON_STEM.indexOf(dn[2].slice(0, 4)) + 1; year = Number(dn[3] ?? 0); }
     if (day >= 1 && day <= 31 && mon) {
       let y = year || Number(S.clock.date.slice(0, 4));
@@ -90,6 +91,7 @@ function whenIn(raw) {
       const iso = isoOf(y, mon - 1, day);
       if (isoAdd(iso, 0) === iso) date = iso; // 31.11 rolls over to 1.12, so it is dropped
     }
+    if (date && year) return { date, time, year: true };
   }
   return { date, time };
 }
@@ -101,6 +103,8 @@ function readWhen(text) {
   const days = [...new Set(found.filter((f) => f.date && !f.neg).map((f) => f.date))];
   const times = [...new Set(found.filter((f) => f.time && !f.neg).map((f) => f.time))];
   if (days.length > 1 || times.length > 1) return { date: null, time: null, ambiguous: true };
+  // A year written apart from its day ("w 2028 roku, 22 października") is not joined by guess: asked back.
+  if (days.length && /\b(?:19|20)\d{2}\b/.test(String(text)) && !found.some((f) => f.year && f.date === days[0])) return { date: null, time: null, ambiguous: true };
   return { date: days[0] ?? null, time: times[0] ?? null };
 }
 
@@ -154,10 +158,13 @@ function readWhom(text) {
 // "Jak poszło?" in the person's words. Order matters: "nie udało się, brakowało..." is "missing".
 function readFollowUp(text) {
   // "nie złożyłem" is not "złożyłem": a negated verb is joined to its "nie" before anything is matched.
-  const n = norm(text).replace(/(?:^|(?<= ))nie (?=\S)/g, 'nie_');
+  // A passive is negated through its auxiliary: "nie został złożony" is "nie_złożony".
+  const n = norm(text).replace(/(?:^|(?<= ))nie (?=\S)/g, 'nie_').replace(/nie_(?:zostal\w*|jest|sa|byl\w*|bedzie|beda) /g, 'nie_');
   if (/brak|zabrakl|uzupel|donies|nie_mial\w* (?:wszystkich |jednego )?dokument/.test(n)) return 'missing';
   if (/nie_udalo|nie_poszl|nie_poszed|nie_bylo mnie|nie_dotarl|nie_zloz|nie_oddal|nie_zdazyl|odwolal|przeloz|spozni|zamkniet/.test(n)) return 'not_went';
   if (/nie_przyjel|nie_chcieli/.test(n)) return null; // refused at the desk: why is not said, so it is asked
+  // Any other "nie" leaves the answer unread ("nie wiem, czy złożyłem"): a filing is never taken from it.
+  if (/(?:^| )nie_/.test(n)) return null;
   if (/(?:^| )(?:zloz|oddal|przyjel|przyjeli|zalatwion)|(?:^| )udalo sie|poszlo dobrze|wszystko ok/.test(n)) return 'filed';
   return null;
 }

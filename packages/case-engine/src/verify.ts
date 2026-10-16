@@ -9,7 +9,7 @@
 import type { Blueprint } from "./blueprint.ts";
 import { dueDate } from "./dates.ts";
 import { type CasePlan, type CaseState, planCase, type PlanLevel } from "./planner.ts";
-import type { Registry } from "./registry.ts";
+import type { Quote, Registry } from "./registry.ts";
 import { evaluate } from "./rules.ts";
 import type { Violation } from "./validator.ts";
 
@@ -73,10 +73,13 @@ export function verifyContent(plan: CasePlan, bp: Blueprint, reg: Registry, stat
       }
       for (const y of a) if (!b.some((x) => x.id === y.id)) add("ITEM_EXTRA", `${kind}:${y.id}`);
     };
-    compare("task", got.tasks, want.tasks, (t) => `${t.title.pl}|${t.outcome}|${t.status}`);
-    compare("fee", got.fees, want.fees, (f) => `${f.amountPln}|${f.outcome}|${f.exemption?.outcome ?? ""}`);
-    compare("deadline", got.deadlines, want.deadlines, (d) => `${d.from}|${d.due?.earliest ?? ""}|${d.due?.latest ?? ""}`);
-    compare("note", got.notes, want.notes, (n) => `${n.important}`);
+    // The source and its quoted words are content too (round 2 regressions): a swapped ruleRef or an
+    // altered quote keeps every reference valid, so only this comparison can see it.
+    const src = (x: { ruleRef: string; quotes: Quote[] }) => `${x.ruleRef}|${JSON.stringify(x.quotes)}`;
+    compare("task", got.tasks, want.tasks, (t) => `${t.title.pl}|${t.description?.pl ?? ""}|${t.outcome}|${t.status}|${(t.alternatives ?? []).join()}|${t.onlyIf?.pl ?? ""}|${src(t)}`);
+    compare("fee", got.fees, want.fees, (f) => `${f.amountPln}|${f.optional}|${f.purpose.pl}|${f.outcome}|${src(f)}|${f.exemption ? `${f.exemption.outcome}|${f.exemption.ruleRef}|${JSON.stringify(f.exemption.statement)}` : ""}`);
+    compare("deadline", got.deadlines, want.deadlines, (d) => `${d.from}|${d.due?.earliest ?? ""}|${d.due?.latest ?? ""}|${d.role}|${d.outcome}|${d.description.pl}|${src(d)}`);
+    compare("note", got.notes, want.notes, (n) => `${n.important}|${n.outcome}|${n.ruleRef}|${JSON.stringify(n.statement)}`);
     compare("office", got.office?.offices ?? [], want.office?.offices ?? [], (o) => `${o.name.pl}|${o.address?.value ?? ""}`);
   }
   return { ok: v.length === 0, violations: v };
