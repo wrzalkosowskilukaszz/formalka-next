@@ -323,6 +323,9 @@ await scenario('B-registration-warsaw', { scheme: 'dark' }, async (t, page) => {
   await t.approvePlan(false);
   // Round 2 reference D3: another foreigner sees the no-PESEL in-person rule on the visit step itself.
   assert.match(await page.evaluate(() => placedNotes(S.cases[0], plan(S.cases[0]), plan(S.cases[0]).levels.find((l) => l.id === 'file'))), /Jeśli jednak nie masz numeru PESEL – przyjdź do urzędu osobiście/);
+  // Doc 18 L11: in a PESEL case, the legal-basis note stands on the application step itself.
+  assert.match(await page.evaluate(() => { const p = E.plan('pesel', { facts: { 'pesel.stay_over_30': 'no', 'pesel.citizen_group': 'other' }, tasks: {}, events: [], approved: true });
+    return placedNotes({ bpId: 'pesel' }, p, p.levels.find((l) => l.id === 'fill-in')); }), /wpisz faktyczną podstawę prawną/);
   const guide = await t.bot(/Na tym etapie/);
   assert.ok(await guide.locator('a.act[href*="gov.pl"][target="_blank"]').count() >= 1, 'download link to the official form');
   // Doc 18, R4: the official blank comes first; the in-app form is practice on a mock.

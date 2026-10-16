@@ -199,6 +199,9 @@ const NOTES_AT = {
     { level: 'file', note: 'no-owner-statement', lead: 'Jeśli właściciel nie potwierdzi Twojego pobytu na formularzu:', unless: 'owner-confirms' },
     { level: 'registered', note: 'no-owner-procedure', lead: 'Jeśli właściciel nie potwierdzi Twojego pobytu na formularzu, nie zakładaj, że urząd zamelduje Cię od razu:', unless: 'owner-confirms' },
   ],
+  // Doc 18 L11: the legal basis is the most common reason a PESEL application fails; it belongs where the
+  // application is filled in, not only on the route level.
+  pesel: [{ level: 'fill-in', note: 'legal-basis' }],
 };
 function placedNotes(c, p, l) {
   const all = p.levels.flatMap((x) => x.notes);
