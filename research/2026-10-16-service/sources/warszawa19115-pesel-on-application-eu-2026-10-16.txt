@@ -1,0 +1,48 @@
+# Warszawa 19115: Assigning a PESEL number at the request of an EU/EFTA/Swiss/UK citizen or family member (English card)
+# Source: https://warszawa19115.pl/-/assigning-a-pesel-number-at-the-request-of-a-foreigner-who-is-not-a-citizen-of-an-eu-efta-member-state-or-uk-country-or-a-member-of-their-family, retrieved 2026-10-16 (card: 'Zaktualizowano: 2026-03-04 07:37'), html sha256 6df981a754a38f12b4e4822ac1d8cbf360ea3c4190a64c6c93eadd3aabe9ab95
+# Note: despite its URL, the card's text addresses EU/EFTA/Swiss/UK citizens and family members (in person or by proxy).
+
+You can register if you are a foreigner and live in Poland. You will then automatically receive your PESEL number. If you cannot register and you need to have a PESEL number – you can apply for one. Check how to do it.
+[!] You can apply for a PESEL number in person or by proxy if you are:
+ - a citizen of an EU Member State or a member of his/her family,
+ - a national of a Member State of the European Free Trade Agreement (EFTA) – a party to the Agreement on the European Economic Area or a member of his/her family,
+ - a citizen of the Swiss Confederation or a member of his or her family,
+ -  a citizen of the United Kingdom of Great Britain and Northern Ireland, or a member of his or her family.
+ Step by step
+ - Download and complete the application form for a PESEL number. Sign it.
+ - Apply in person or by proxy at any delegation of the Office of Administration and Civil Affairs.
+[!] If the application does not meet the requirements set out in the regulations, we will call you to remedy the deficiencies. If you do not do so within 7 days, we will leave your application unprocessed.
+ - If we approve your application, we will issue you with a notification that your PESEL number has been assigned.
+[!] You can book a visit to the district office in the booking system.
+ Required documents
+ - Application for PESEL number (PDF, 149,2 kB).
+[!] In the application, please provide the actual legal basis for your obligation to have a PESEL number. If an office (e.g. the Social Insurance Institution or the tax office) requires you to provide your PESEL number, it should also provide you with the legal basis.
+ - A document confirming your identity, e.g. a passport, is available for inspection.
+ - For review, please provide documents confirming the data you enter in the application for a PESEL number in items 3–5.
+ - Power of attorney – if you are represented by a proxy in the case. If you wish to submit a copy of your power of attorney, it must be certified as a true copy by one of the following persons:
+ - a notary public,
+ - an advocate or legal adviser who is acting as an agent in the case,
+ - an authorised employee of the office handling the case - you must then also present the original document.
+If you would like to check what rights you have in relation to the processing of your personal data in this case, please read our Information Clause (PDF, 377,8 kB).
+ Fees
+ You do not have to pay to submit this application.
+Possible additional charges:
+PLN 17 – stamp duty for submitting a document confirming the granting of a power of attorney or proxy. The power of attorney you grant to a spouse, ascendant (parent, grandparent), descendant (child, grandchild) or sibling is free of charge.
+PLN 5 – stamp duty for certifying a document's copy as a true copy of the original by an office employee. We charge a fee for certifying each page started. We will not charge this fee if you are submitting original copies or documents that have already been certified as true copies of the originals.
+Instructions for paying stamp duties:
+ - at any Office cash desk,
+ - cashless on-site – if there is a terminal, payment machine, etc. available where you submit the application.,
+ - by wire transfer.
+Warsaw City Hall, Taxpayer Service Centre
+Account number: 21 1030 1508 0000 0005 5000 0070
+In the transfer title, please write what you are paying for, e.g. fee for a power of attorney for XXX XXXX in case XXXXX.
+ Place of submission and collection
+ You can submit your application in person or by proxy at any of the delegations of the Office for Administration and Civil Affairs in Warsaw.
+ Responsible unit
+ Office of Administration and Citizen Affairs of the Warsaw City Hall
+ Response deadline
+ We will process your request promptly.
+ Appeal procedure
+ In this case, you cannot appeal.
+ Notes
+ No additional comments.

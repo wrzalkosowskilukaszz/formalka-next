@@ -204,3 +204,4 @@ The hand-coding figures below are kept for comparison.
 | `test-scenarios/` | Draft scenarios |
 | `../../spikes/` | S1 case engine (`npm test`), S3 official form fill |
 | 17 | What is left to design before a beta: screens, content, system, privacy, operations, gates |
+| 18 | Formalka Next as a service: the newcomer's journey to registration and PESEL, the six functions' assumptions, testable design rules, pre-set thresholds, restrictions (branch `lab/service-plan`) |

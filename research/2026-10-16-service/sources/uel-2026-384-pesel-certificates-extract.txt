@@ -1,0 +1,109 @@
+# Ustawa o ewidencji ludności, Dz.U. 2026 poz. 384 (stan prawny 10.03.2026)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb
+# Extract: art. 7 ust. 1-3, art. 15-18 (PESEL), art. 21 (notification), art. 32 (certificates). pdftotext -layout.
+
+      Art. 7. 1. W rejestrze PESEL gromadzone są dane:
+1)    obywateli polskich zamieszkujących na terytorium Rzeczypospolitej Polskiej;
+2)    obywateli polskich zamieszkujących poza granicami Rzeczypospolitej Polskiej w związku z ubieganiem się o polski
+      dokument tożsamości;
+3)    cudzoziemców zamieszkujących na terytorium Rzeczypospolitej Polskiej.
+4)    (uchylony)
+     2. W rejestrze PESEL mogą być gromadzone dane osób obowiązanych na podstawie odrębnych przepisów do posia-
+dania numeru PESEL.
+    3. W rejestrze mieszkańców gromadzone są dane osób, o których mowa w ust. 1 i 2, które wykonały obowiązek
+meldunkowy na terenie danej gminy.
+
+                                                      Rozdział 3
+                                       Zasady i tryb nadawania numeru PESEL
+     Art. 15. 1. Osobie, której dane są gromadzone w rejestrze PESEL i rejestrze mieszkańców, nadaje się numer identyfi-
+kacyjny Powszechnego Elektronicznego Systemu Ewidencji Ludności, który stanowi numer PESEL.
+     2. Numer PESEL jest to jedenastocyfrowy symbol numeryczny, jednoznacznie identyfikujący osobę fizyczną, zawie-
+rający datę urodzenia, numer porządkowy, oznaczenie płci oraz liczbę kontrolną, przy czym:
+1)   data urodzenia zawarta jest w pierwszych sześciu cyfrach w następującej kolejności: dwie ostatnie cyfry roku urodzenia,
+     miesiąc urodzenia wraz z zakodowanym stuleciem urodzenia oraz dzień urodzenia;
+2)   stulecie urodzenia kodowane jest poprzez dodanie do liczby oznaczającej miesiąc urodzenia:
+     a)   liczby 80 – w przypadku osób urodzonych w latach 1800–1899,
+     b) liczby 0 – w przypadku osób urodzonych w latach 1900–1999,
+     c)   liczby 20 – w przypadku osób urodzonych w latach 2000–2099;
+3)   liczby oznaczające rok, miesiąc lub dzień, będące liczbami jednocyfrowymi, poprzedza się cyfrą „0”, z zastrzeżeniem
+     zasady określonej w pkt 2;
+4)   numer porządkowy osoby zawarty jest w cyfrach od siódmej do dziesiątej, przy czym ostatnia cyfra numeru porząd-
+     kowego zawiera oznaczenie płci: cyfrę parzystą (w tym „0”) dla kobiet, a cyfrę nieparzystą dla mężczyzn;
+5)   jedenasta cyfra numeru PESEL jest liczbą kontrolną umożliwiającą elektroniczną kontrolę poprawności nadanego
+     numeru identyfikacyjnego.
+     Art. 16. 1. Numer PESEL jest nadawany z urzędu.
+     2. Osobie, o której mowa w art. 7 ust. 2, numer PESEL nadaje się na jej wniosek.
+     3. Numer PESEL nadaje minister właściwy do spraw informatyzacji.
+     4. Nadanie numeru PESEL jest czynnością materialno-techniczną.
+     Art. 17. 1. O nadanie numeru PESEL z urzędu występują odpowiednio:
+1)   kierownik urzędu stanu cywilnego sporządzający akt urodzenia – w stosunku do dzieci osób, o których mowa w art. 7
+     ust. 1 pkt 1 i 3, urodzonych na terytorium Rzeczypospolitej Polskiej;
+2)   organ gminy właściwy do zameldowania na pobyt stały albo pobyt czasowy – w stosunku do osób, o których mowa
+     w art. 7 ust. 1 pkt 1 i 3, z wyjątkiem dzieci, o których mowa w pkt 1;
+2a) organ gminy właściwy do realizacji wniosku obywatela państwa członkowskiego Unii Europejskiej lub Zjednoczonego
+    Królestwa Wielkiej Brytanii i Irlandii Północnej o ujęcie w stałym obwodzie głosowania w Centralnym Rejestrze
+    Wyborców, po wydaniu pozytywnej decyzji w tej sprawie w trybie określonym w przepisach ustawy z dnia 5 stycznia
+    2011 r. – Kodeks wyborczy;
+3)   organ wydający polski dokument tożsamości – w stosunku do osób, o których mowa w art. 7 ust. 1 pkt 2;
+3a) organ wydający dowód osobisty – w stosunku do osób, o których mowa w art. 7 ust. 1 pkt 1;
+4)   organ gminy właściwy dla dzielnicy Śródmieście miasta stołecznego Warszawy – w stosunku do osób, dla których nie
+     można ustalić organu właściwego w sposób wskazany w pkt 1–3.
+     2. W celu nadania numeru PESEL organy wskazane w ust. 1 przekazują, za pośrednictwem systemu teleinformatycz-
+nego, dane, o których mowa w art. 8 pkt 1–9, 11–15 i 22–24a, ministrowi właściwemu do spraw informatyzacji, z uwzględnie-
+niem art. 9.
+     3. Organy właściwe do wydania paszportu mogą weryfikować dane, o których mowa w art. 8 pkt 1–9 oraz 12 i 13,
+w rejestrze stanu cywilnego, o którym mowa w art. 5 ustawy z dnia 28 listopada 2014 r. – Prawo o aktach stanu cywilnego
+(Dz. U. z 2025 r. poz. 594 i 1006).
+Dziennik Ustaw                                                 – 11 –                                                     Poz. 384
+
+    Art. 18. 1. Wniosek o nadanie numeru PESEL osoba, o której mowa w art. 7 ust. 2, składa na piśmie utrwalonym
+w postaci papierowej, opatrzonym własnoręcznym podpisem do dowolnego organu gminy.
+    1a.14) Jeżeli osoba, której dotyczy wniosek o nadanie numeru PESEL, określona w art. 7 ust. 2, jest cudzoziemcem nie-
+będącym:
+1)    obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Poro-
+      zumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, obywatelem Konfede-
+      racji Szwajcarskiej bądź członkiem jego rodziny,
+2)    obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+      lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej
+      i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm.15)), bądź członkiem
+      jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy
+– wymagane jest jej osobiste stawiennictwo, z wyjątkiem dzieci urodzonych na terytorium Rzeczypospolitej Polskiej.
+   2. Wniosek o nadanie numeru PESEL zawiera wskazanie podstawy prawnej oraz udokumentowane dane, o których
+mowa w art. 8 pkt 1–9, 11–13, 15 i 22–24a, z uwzględnieniem art. 9 i art. 12.
+     3. Jeżeli wniosek nie spełnia wymogów, o których mowa w ust. 2, należy wezwać wnioskodawcę do usunięcia braków
+w terminie 7 dni z pouczeniem, że ich nieusunięcie spowoduje pozostawienie wniosku bez rozpoznania.
+     4. W celu nadania numeru PESEL organ wskazany w ust. 1 przekazuje, za pośrednictwem systemu teleinformatycz-
+nego, dane, o których mowa w art. 8 pkt 1–9, 11–13, 15 i 22–24a, ministrowi właściwemu do spraw informatyzacji, z uwzględ-
+nieniem art. 9 i art. 12.
+     Art. 21. 1. Organ, który wystąpił o nadanie lub zmianę numeru PESEL, powiadamia osobę o nadaniu lub zmianie
+tego numeru.
+     2. Powiadomienie, o którym mowa w ust. 1, sporządzane na piśmie utrwalonym w postaci elektronicznej, na podstawie
+zgłoszenia, o którym mowa w art. 58a ust. 1 ustawy z dnia 28 listopada 2014 r. – Prawo o aktach stanu cywilnego, jest opatry-
+wane zaawansowaną pieczęcią elektroniczną ministra właściwego do spraw informatyzacji opartą na kwalifikowanym cer-
+tyfikacie pieczęci elektronicznej.
+     Art. 32. 1. Organ dokonujący zameldowania na pobyt stały wydaje z urzędu osobie zaświadczenie o zameldowaniu
+na pobyt stały.
+     2. Organ dokonujący zameldowania na pobyt czasowy wydaje osobie, na jej wniosek, zaświadczenie o zameldowaniu
+na pobyt czasowy.
+     3. W zaświadczeniach, o których mowa w ust. 1 i 2, zamieszcza się:
+1)   imię (imiona) i nazwisko;
+2)   datę i miejsce urodzenia osoby meldującej się;
+3)   oznaczenie organu wydającego zaświadczenie;
+4)   adres jej zameldowania na pobyt stały lub adres zameldowania na pobyt czasowy oraz datę upływu deklarowanego
+     terminu pobytu czasowego.
+Dziennik Ustaw                                            – 21 –                                                 Poz. 384
+
+     4. Zaświadczenia, o których mowa w ust. 1 i 2, są ważne do chwili zmiany miejsca zameldowania, przy czym zaświad-
+czenie o zameldowaniu na pobyt czasowy jest ważne niedłużej niż do upływu terminu zameldowania.
+    5. Zaświadczenia, o których mowa w ust. 1 i 2, wydaje się, w zależności od żądania wnioskodawcy, na piśmie utrwa-
+lonym w postaci papierowej, opatrzonym własnoręcznym podpisem lub w postaci elektronicznej, opatrzonym kwalifikowa-
+nym podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym.
+     6. Osobie dokonującej zameldowania przy użyciu usługi, o której mowa w art. 28 ust. 2e, umożliwia się jednocześnie
+pobranie zaświadczenia o zameldowaniu na pobyt stały lub zaświadczenia o zameldowaniu na pobyt czasowy.
+     7. Zaświadczenia pobrane przy użyciu usługi, o której mowa w art. 28 ust. 2e, są opatrywane zaawansowaną pieczęcią
+elektroniczną ministra właściwego do spraw informatyzacji opartą na kwalifikowanym certyfikacie pieczęci elektronicznej.
+     8. Zaświadczenia pobrane przy użyciu usługi, o której mowa w art. 28 ust. 2e, są nieodpłatne.
+     9. Zaświadczenia, o których mowa w ust. 1 i 2, sporządzane na piśmie utrwalonym w postaci elektronicznej, na pod-
+stawie zgłoszenia, o którym mowa w art. 58a ust. 1 ustawy z dnia 28 listopada 2014 r. – Prawo o aktach stanu cywilnego,
+są opatrywane zaawansowaną pieczęcią elektroniczną ministra właściwego do spraw informatyzacji opartą na kwalifikowa-
+nym certyfikacie pieczęci elektronicznej.

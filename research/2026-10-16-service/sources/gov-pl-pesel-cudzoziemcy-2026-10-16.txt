@@ -1,0 +1,38 @@
+# gov.pl: Uzyskaj numer PESEL - usługa dla cudzoziemców
+# Source: https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow, retrieved 2026-10-16 (page: 'Ostatnia aktualizacja: 26.03.2026 11:33'), html sha256 23b69ebfd5bdda2071890c0d6f3c88aad23800cb04ab4c4e6b550ba0dbb7308a
+# Text extracted from the page's main element; navigation removed.
+
+Uzyskaj numer PESEL - usługa dla cudzoziemców
+Jeśli jesteś cudzoziemcem, który mieszka w Polsce, możesz się zameldować – wtedy automatycznie dostaniesz numer PESEL. Jeśli nie możesz się zameldować, a jakiś urząd wymaga od ciebie numeru PESEL – złóż wniosek. Sprawdź, jak to zrobić.
+Informacje:
+Kto może uzyskać
+- Dostaniesz numer PESEL z urzędu – jeśli zameldujesz się w Polsce na pobyt powyżej 30 dni.
+- Złóż wniosek w dowolnym urzędzie gminy – jeśli nie możesz się zameldować, a potrzebujesz numeru PESEL.
+Co musisz przygotować
+Jeśli nie możesz się zameldować:
+- wniosek o nadanie numeru PESEL – otwórz plik w nowym oknie – pobierz i wypełnij w domu. Możesz też dostać go w urzędzie gminy,
+- dokument, który potwierdzi twoją tożsamość i inne dane, które wpiszesz we wniosku.
+Wniosek należy własnoręcznie podpisać.
+Jeśli nie jesteś:
+- obywatelem państwa członkowskiego Unii Europejskiej,
+- obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) - strony umowy o Europejskim Obszarze Gospodarczym,
+- obywatelem Konfederacji Szwajcarskiej bądź członkiem jego rodziny,
+- obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm. 12 ), bądź członkiem jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy
+wniosek o nadanie numeru PESEL musisz złożyć osobiście w dowolnym organie gminy. Nie dotyczy to dzieci urodzonych na terytorium Rzeczypospolitej Polskiej.
+Pamiętaj! We wniosku wpisz faktyczną podstawę prawną, z której wynika obowiązek posiadania numeru PESEL. Jeśli jakiś urząd (na przykład ZUS czy urząd skarbowy) wymaga podania numeru PESEL – powinien wskazać ci również podstawę prawną.
+Jeśli we wniosku będą jakieś braki – dostaniesz wiadomość, żeby je uzupełnić. Urząd może nie rozpatrzyć twojego wniosku – jeśli wniosek nie będzie spełniał wymogów urzędowych.
+Co musisz zrobić
+- Wypełnij wniosek i przygotuj dokument, który potwierdzi twoją tożsamość – więcej informacji znajdziesz w sekcji Co musisz przygotować.
+- Złóż wniosek w dowolnym urzędzie gminy – więcej informacji znajdziesz w sekcji Gdzie odbierasz.
+Ile zapłacisz
+Usługa jest bezpłatna.
+Ile będziesz czekać
+Urzędnik przyjmie twoje zgłoszenie od razu. Jeśli jest podstawa do nadania numeru PESEL – dostaniesz powiadomienie o nadaniu numeru PESEL.
+Gdzie odbierzesz
+W urzędzie gminy, w którym składasz wniosek.
+Podstawa prawna
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2021 r. poz. 510, z późn. zm.),
+- Rozporządzenie Ministra Spraw Wewnętrznych z 4 stycznia 2012 r. w sprawie nadania lub zmiany numeru PESEL (Dz.U. z 2015 r. poz. 1984).
+Ostatnia aktualizacja: 26.03.2026 11:33
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+{"register":{"columns":[]}}
