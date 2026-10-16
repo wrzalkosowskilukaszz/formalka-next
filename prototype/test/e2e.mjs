@@ -675,6 +675,11 @@ await scenario('I-correct-an-answer', {}, async (t, page) => {
   await t.chip(/^Stały/);
   await t.autoIntake([[/miejscowości/, /Warszawa/]]);
   await t.approvePlan(false);
+  // Every surface that lists a document shows its condition (docs/solutions/2026-10-16-condition-shown-on-one-surface-only.md):
+  // an EU citizen's Teczka marks the family member's card as conditional, with who it is for.
+  const card = await page.evaluate(() => [...teczkaScreen().querySelectorAll('.doc-row')].map((r) => r.textContent).find((x) => /kartę pobytu członka rodziny/i.test(x)) ?? '');
+  assert.match(card, /sprawdź, czy Cię dotyczy/);
+  assert.match(card, /Tylko dla członka rodziny obywatela UE/);
   // Teraz lists the answers, each with "Popraw".
   await t.nav('#chat-back', 'case');
   await page.locator('.answers-sec [data-fix="zameldowanie.stay"]').waitFor({ timeout: 8000 });

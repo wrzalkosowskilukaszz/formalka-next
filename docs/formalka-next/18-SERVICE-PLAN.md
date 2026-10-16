@@ -168,7 +168,7 @@ No new components. The work is to **name what exists, state its rules, and test 
 | D7 | Every fact shown has a source | Engine content check (exists); e2e: every fee, deadline and office card carries a source link | Engine met; the UI side is not asserted per card |
 | D8 | The assistant says it is an AI | e2e: intro and persona (exists, scenario B) | Met |
 | D9 | One primary action per screen on mobile | e2e: at most one control with the accent fill in view (selected states and covered screens excluded) | **Met and tested on `lab/quality-pass`** |
-| D10 | Plain Polish: short sentences, second person, no jargon without its everyday word | A copy lint (sentence length, a banned-jargon list), plus a plain-language reviewer | Not tested |
+| D10 | Plain Polish: short sentences, second person, no jargon without its everyday word | A plain-language reviewer. An automatic sentence-length check was tried on 16.10 and dropped: it cannot tell our copy from registry wording | Measured once (FACT, 16.10, all e2e steps): no sentence of our own over 25 words. The four longer ones are registry wording (production content) |
 | D11 | Reflow and text resize without loss (WCAG 1.4.10 at 320 CSS px; 1.4.4 text at 200%) | e2e scenarios Z1 and Z2: no sideways overflow and nothing cut off, on every step | **Met and tested on `lab/quality-pass`.** Overlap of elements is not measured; screenshots are checked by eye |
 | D12 | No government look-alike | A manual review against the owner's brand rules | Manual |
 
