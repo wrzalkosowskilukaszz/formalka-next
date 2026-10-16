@@ -12,6 +12,7 @@ import { applyReplan, diffPlans } from "./replan.ts";
 import { type FactDef, type Institution, type Office, type Procedure, registryFromData } from "./registry.ts";
 import { UNKNOWN } from "./rules.ts";
 import { validatePlan } from "./validator.ts";
+import { type Voice, voiced } from "./voice.ts";
 
 const reg = registryFromData(
   data.procedures as unknown as Procedure[][], data.facts as unknown as FactDef[][], data.version,
@@ -39,11 +40,16 @@ export const FormalkaEngine = {
   fact: (key: string) => reg.facts.get(key),
   plan: (blueprintId: string, state: CaseState): CasePlan => planCase(bp(blueprintId), reg, state),
   validate: (plan: CasePlan, state: CaseState) => validatePlan(plan, reg, state),
-  /** The next question with its official wording, or null when nothing left can change the plan. */
-  nextQuestion(blueprintId: string, state: CaseState, asked: number, cap = 12) {
+  /**
+   * The next question, or null when nothing left can change the plan. It speaks to the person
+   * ("you", the default) or, for a case handled for someone else ("other"), in the registry's wording.
+   */
+  nextQuestion(blueprintId: string, state: CaseState, asked: number, cap = 12, voice: Voice = "you") {
     const key = nextQuestion(bp(blueprintId), reg, state, asked, cap);
-    return key ? { key, ...reg.facts.get(key)! } : null;
+    return key ? { key, ...voiced(reg.facts.get(key)!, voice) } : null;
   },
+  /** A fact's question and option labels in the person's voice (see nextQuestion). */
+  voiced,
   /** Fact candidates from the person's own words (on the device); nothing changes until they confirm. */
   intake: (blueprintId: string, text: string, state?: CaseState) => intake(bp(blueprintId), reg, text, state),
   confirmCandidates, placeCandidate,

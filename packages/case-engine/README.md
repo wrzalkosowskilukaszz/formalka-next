@@ -30,6 +30,7 @@ The committed `dist/case-engine.browser.js` reproduces byte for byte only when b
 | `dates.ts` | Calendar days, months ending on the same day or the last day of the month, a weekend/holiday shift (KPA art. 57, quoted from the act on 2026-10-16), the two readings of "najpóźniej w N dniu", Polish days off (Easter-based; art. 1 of the act on days off work, quoted) |
 | `offices.ts` | Which office, from the registry's office layer and the user's city (TERYT, on the device): quoted addresses, hours, booking links; voivodeship offices by their registry TERYT code. Never a guessed address |
 | `intake.ts` | The person's own words → fact candidates they confirm one by one. Any extractor (the Polish baseline today, an LLM later) passes `checkCandidates`: only facts this case asks, only allowed values, evidence quoted verbatim from the text and on the fact's topic (so language or origin never becomes citizenship or protection). Compound facts (`citizenship.group`) are always asked |
+| `voice.ts` | Whose case it is (owner, 2026-10-16). Questions speak to the person by default ("Czy masz…"). For a case handled for someone else they keep the registry's wording ("Czy ta osoba ma…"). Only the grammatical person changes: same conditions, options and numbers, nothing gendered, quotes untouched. A test checks all of this for every fact a blueprint can ask. Owner review of the wording: pending |
 | `replan.ts` | After approval a change is a proposal (ADR-N003): `diffPlans` lists, by stable ids, what it adds, removes, makes certain, keeps as history (done work) and changes in fees, deadlines, offices and the route. `applyReplan` never resets `done` |
 | `browser.ts` | The browser entry with the data embedded |
 
@@ -62,7 +63,9 @@ const E = window.FormalkaEngine;
 E.registryVersion            // "formalka@04057ef"
 E.blueprintIds               // ["address-registration", "citizenship", "language-certificate", "pesel", "residence-card"]
 const state = { facts: {}, tasks: {}, events: [], approved: false, place: { teryt: "1465011", name: "Warszawa" } }; // routeChoice when the user picks a route
-const q = E.nextQuestion("citizenship", state, askedCount);       // { key, question, whyWeAsk, options, unknownHelp } | null
+const q = E.nextQuestion("citizenship", state, askedCount);       // { key, question, whyWeAsk, options, unknownHelp } | null, speaking to the person
+const q2 = E.nextQuestion("citizenship", state, askedCount, 12, "other"); // for someone else: the registry's "ta osoba" wording
+E.voiced(E.fact("pesel.stay_over_30"), "you");                    // any fact's texts in either voice
 state.facts[q.key] = "yes" /* or E.UNKNOWN for "Nie wiem" */;
 const plan = E.plan("citizenship", state);                          // { route, levels[], openFacts, unsure, assumptions, status }
 E.validate(plan, state);                                            // { ok, violations } — don't show a failing plan

@@ -1145,6 +1145,84 @@
     return plan.levels.some((l) => visit(l.id));
   }
 
+  // src/voice.ts
+  var YOU = {
+    "certyfikat.purpose": {
+      question: "Do czego potrzebujesz certyfikatu?"
+    },
+    "certyfikat.school_in_polish": {
+      question: "Czy masz \u015Bwiadectwo uko\u0144czenia szko\u0142y w Polsce albo szko\u0142y za granic\u0105 z polskim j\u0119zykiem wyk\u0142adowym (szko\u0142y, nie uczelni ani szko\u0142y policealnej)?"
+    },
+    "citizenship.ever_polish": {
+      question: "Czy kiedykolwiek przys\u0142ugiwa\u0142o Ci obywatelstwo polskie?",
+      whyWeAsk: "Prezydent nadaje obywatelstwo cudzoziemcom, czyli osobom bez obywatelstwa polskiego. Wniosek pyta te\u017C o obywatelstwo polskie w przesz\u0142o\u015Bci. Je\u015Bli masz ju\u017C obywatelstwo polskie, mo\u017Cesz zamiast tego poprosi\u0107 wojewod\u0119 o jego potwierdzenie.",
+      unknownHelp: "Poka\u017Cemy wszystko, co mo\u017Ce Ci\u0119 dotyczy\u0107, tak\u017Ce to, \u017Ce mo\u017Cna poprosi\u0107 wojewod\u0119 o potwierdzenie, czy masz obywatelstwo polskie.",
+      options: { lost: "Tak, ale ju\u017C go nie mam", yes: "Tak, mam je teraz" }
+    },
+    "citizenship.group": {
+      question: "Kt\xF3ra sytuacja najlepiej Ci\u0119 opisuje?",
+      options: {
+        three_years: "Mieszkasz w Polsce na tym tytule nieprzerwanie od co najmniej 3 lat i masz tu stabilne i regularne \u017Ar\xF3d\u0142o dochodu oraz tytu\u0142 prawny do mieszkania",
+        married_or_stateless: "Mieszkasz w Polsce na tym tytule nieprzerwanie od co najmniej 2 lat i od co najmniej 3 lat jeste\u015B w ma\u0142\u017Ce\u0144stwie z obywatelem polskim albo nie masz \u017Cadnego obywatelstwa",
+        refugee: "Mieszkasz w Polsce nieprzerwanie od co najmniej 2 lat na pobycie sta\u0142ym uzyskanym w zwi\u0105zku ze statusem uchod\u017Acy nadanym w Polsce",
+        polish_origin: "Mieszkasz w Polsce nieprzerwanie od co najmniej roku na pobycie sta\u0142ym uzyskanym w zwi\u0105zku z polskim pochodzeniem albo Kart\u0105 Polaka",
+        ten_years: "Mieszkasz w Polsce nieprzerwanie i legalnie od co najmniej 10 lat, masz jeden z tych tytu\u0142\xF3w, stabilne i regularne \u017Ar\xF3d\u0142o dochodu oraz tytu\u0142 prawny do mieszkania",
+        minor_child: "Jeste\u015B osob\u0105 ma\u0142oletni\u0105, kt\xF3rej jedno z rodzic\xF3w jest obywatelem polskim albo kt\xF3remu przywr\xF3cono obywatelstwo polskie, a drugie z rodzic\xF3w (bez obywatelstwa polskiego) zgadza si\u0119 na uznanie"
+      }
+    },
+    "citizenship.language": {
+      question: "Czy masz urz\u0119dowe po\u015Bwiadczenie znajomo\u015Bci polskiego co najmniej na poziomie B1 albo \u015Bwiadectwo szko\u0142y w Polsce lub szko\u0142y z polskim j\u0119zykiem wyk\u0142adowym (\u015Bwiadectwo szko\u0142y policealnej si\u0119 nie liczy)?"
+    },
+    "citizenship.permanent_title": {
+      question: "Czy masz zezwolenie na pobyt sta\u0142y, zezwolenie na pobyt rezydenta d\u0142ugoterminowego UE albo prawo sta\u0142ego pobytu?"
+    },
+    "citizenship.where_lives": {
+      question: "Gdzie mieszkasz i na jakiej podstawie jeste\u015B w Polsce?"
+    },
+    "pesel.citizen_group": {
+      question: "Czy masz obywatelstwo pa\u0144stwa UE, EFTA lub Szwajcarii, albo obywatelstwo Wielkiej Brytanii i obejmuje Ci\u0119 umowa o wyst\u0105pieniu z UE, albo jeste\u015B cz\u0142onkiem rodziny takiej osoby?"
+    },
+    "pesel.has_number": {
+      question: "Czy masz ju\u017C numer PESEL?",
+      whyWeAsk: "Numer PESEL bywa nadawany automatycznie, na przyk\u0142ad przy zameldowaniu, wi\u0119c mo\u017Cesz go ju\u017C mie\u0107. Wtedy warto najpierw sprawdzi\u0107 dane w rejestrze PESEL, zanim z\u0142o\u017Cysz wniosek.",
+      unknownHelp: "Poka\u017Cemy oficjalne sposoby sprawdzenia danych w rejestrze PESEL. S\u0105 opisane dla osoby, kt\xF3ra zna sw\xF3j numer. \u017Beby si\u0119 dowiedzie\u0107, czy masz numer, zapytaj w urz\u0119dzie gminy."
+    },
+    "pesel.stay_over_30": {
+      question: "Czy mieszkasz albo zamieszkasz w Polsce pod konkretnym adresem, a ca\u0142y Tw\xF3j pobyt w Polsce potrwa d\u0142u\u017Cej ni\u017C 30 dni?"
+    },
+    "pesel.temporary_protection": {
+      question: "Czy korzystasz albo chcesz korzysta\u0107 w Polsce z ochrony czasowej w zwi\u0105zku z przyjazdem z Ukrainy z powodu wojny albo dlatego, \u017Ce Twoim miejscem urodzenia jest Polska, a Tw\xF3j rodzic ma ochron\u0119 czasow\u0105?",
+      unknownHelp: "Poka\u017Cemy oficjalne zasady wniosku o PESEL ze statusem UKR, \u017Ceby mo\u017Cna by\u0142o sprawdzi\u0107, czy Ci\u0119 dotycz\u0105."
+    },
+    "pobyt_czasowy.purpose": {
+      question: "W jakim celu chcesz mieszka\u0107 w Polsce?",
+      options: {
+        family: "Rodzina (po\u0142\u0105czenie z rodzin\u0105), a Ty jeste\u015B ju\u017C w Polsce",
+        family_abroad: "Rodzina, a Ty jeste\u015B jeszcze za granic\u0105 (po\u0142\u0105czenie z cudzoziemcem mieszkaj\u0105cym w Polsce; te\u017C niekt\xF3rzy cz\u0142onkowie rodziny obywatela Polski, UE lub Wielkiej Brytanii)"
+      }
+    },
+    "zameldowanie.citizen_group": {
+      question: "Kt\xF3ra grupa Ci\u0119 dotyczy?",
+      whyWeAsk: "Od odpowiedzi zale\u017C\u0105 dokumenty, termin i mo\u017Cliwo\u015B\u0107 zameldowania przez internet. Je\u015Bli jeste\u015B cz\u0142onkiem rodziny obywatela polskiego i nie masz obywatelstwa innego pa\u0144stwa UE, wybierz \u201E\u017Badna z tych grup\u201D albo \u201ENie wiem\u201D i sprawd\u017A w sekcji \u201ETerminy\u201D, kt\xF3ry termin Ci\u0119 dotyczy."
+    },
+    "zameldowanie.stay": {
+      question: "Na jaki pobyt chcesz si\u0119 zameldowa\u0107?",
+      options: { permanent: "Sta\u0142y (pod tym adresem mieszkasz na sta\u0142e)", temporary: "Czasowy (mieszkasz pod tym adresem przez jaki\u015B czas)" }
+    }
+  };
+  function voiced(f, voice = "you") {
+    const y = voice === "you" ? YOU[f.key] : void 0;
+    if (!y) return f;
+    const pl = (l, text) => l && text ? { ...l, pl: text } : l;
+    return {
+      ...f,
+      question: pl(f.question, y.question),
+      whyWeAsk: pl(f.whyWeAsk, y.whyWeAsk),
+      unknownHelp: pl(f.unknownHelp, y.unknownHelp),
+      options: f.options?.map((o) => y.options?.[o.value] ? { ...o, label: { ...o.label, pl: y.options[o.value] } } : o)
+    };
+  }
+
   // src/browser.ts
   var reg = registryFromData(
     data_default.procedures,
@@ -1174,11 +1252,16 @@
     fact: (key) => reg.facts.get(key),
     plan: (blueprintId, state) => planCase(bp(blueprintId), reg, state),
     validate: (plan, state) => validatePlan(plan, reg, state),
-    /** The next question with its official wording, or null when nothing left can change the plan. */
-    nextQuestion(blueprintId, state, asked, cap = 12) {
+    /**
+     * The next question, or null when nothing left can change the plan. It speaks to the person
+     * ("you", the default) or, for a case handled for someone else ("other"), in the registry's wording.
+     */
+    nextQuestion(blueprintId, state, asked, cap = 12, voice = "you") {
       const key = nextQuestion(bp(blueprintId), reg, state, asked, cap);
-      return key ? { key, ...reg.facts.get(key) } : null;
+      return key ? { key, ...voiced(reg.facts.get(key), voice) } : null;
     },
+    /** A fact's question and option labels in the person's voice (see nextQuestion). */
+    voiced,
     /** Fact candidates from the person's own words (on the device); nothing changes until they confirm. */
     intake: (blueprintId, text, state) => intake(bp(blueprintId), reg, text, state),
     confirmCandidates,
