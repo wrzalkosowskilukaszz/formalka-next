@@ -356,6 +356,7 @@ await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await page.locator('.seg [data-v="map"]').click();
   await page.locator('.tl').waitFor({ timeout: 8000 });
   assert.ok(await page.locator('.tl-side').count() >= 1, 'parallel levels on the map');
+  assert.match(await page.locator('.tl-sum').innerText(), /Sprawa kogoś innego/, 'the map says whose case it is');
   await t.shot('map-parallel');
   await t.nav('#to-world', 'world');
   await t.nav('#w-new', 'home');

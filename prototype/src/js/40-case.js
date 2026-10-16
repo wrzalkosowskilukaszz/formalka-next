@@ -266,7 +266,7 @@ function timeline(c, sheetMode = false) {
   const facts = [total ? `${icon('coins')}${total} zł opłat` : '', office ? `${icon('buildings')}${esc(office.offices[0].name.pl)}` : '', p.route.procedureId ? `${icon('signpost')}${esc(routeTitle(p))}` : ''].filter(Boolean);
   return `<section class="tl-sum">
       <span class="ring lg" role="img" aria-label="Zrobione poziomy: ${doneN} z ${allN}"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="6"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="6" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset:${1 - doneN / allN}"/></svg><span>${doneN}/${allN}</span></span>
-      <span class="tx"><small>${c.state.approved ? 'Twoja sprawa' : 'Plan w budowie'}</small><b>${esc(c.title)}</b><span>${cur ? `Teraz: ${esc(p.levels.find((l) => l.id === cur).title.pl)}` : 'Poziomy z przerywaną linią zależą od odpowiedzi'}</span></span>
+      <span class="tx"><small>${c.state.approved ? (forOther(c) ? 'Sprawa kogoś innego' : 'Twoja sprawa') : 'Plan w budowie'}</small><b>${esc(c.title)}</b><span>${cur ? `Teraz: ${esc(p.levels.find((l) => l.id === cur).title.pl)}` : 'Poziomy z przerywaną linią zależą od odpowiedzi'}</span></span>
     </section>
     ${facts.length ? `<div class="facts">${facts.map((f) => `<span>${f}</span>`).join('')}</div>` : ''}
     <ol class="tl" style="--prog:${prog}%" aria-label="Poziomy sprawy po kolei">${groups.map((g, k) => `<li class="tl-item" style="animation-delay:${k * 70}ms">${node(g.main)}<div class="tl-body">${card(g.main, k + 1)}${g.side.map(side).join('')}</div></li>`).join('')}</ol>
