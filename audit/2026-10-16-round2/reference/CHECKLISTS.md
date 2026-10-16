@@ -25,8 +25,8 @@ The audit recommends comparing the app first with a plain checklist of the same 
    - **Obywatel UE, EFTA lub Szwajcarii:** ważny dokument podróży albo inny ważny dokument, który potwierdza tożsamość i obywatelstwo.
    - **Obywatel innego państwa, pobyt czasowy, z wizą:** ważny dokument podróży i wizę.
    - **Mieszkanie:**
-     - jeśli masz tytuł prawny (np. umowę najmu), jeden dokument, który to potwierdza;
-     - jeśli nie masz, właściciel potwierdza na formularzu, że tu mieszkasz, i pokazujesz dokument, który potwierdza jego tytuł prawny.
+     - właściciel (albo inna osoba, która ma tytuł prawny do mieszkania) potwierdza na formularzu, że tu mieszkasz, a Ty pokazujesz dokument, który potwierdza jej tytuł prawny;
+     - jeśli masz umowę najmu, zabierz ją. Czy sama umowa wystarczy bez potwierdzenia właściciela, nie wiemy: zapytaj w urzędzie. Najbezpieczniej poprosić właściciela o potwierdzenie.
 6. **Właściciel nie chce potwierdzić?** Złóż formularz mimo to, z oświadczeniem, dlaczego nie masz potwierdzenia. Urząd przeprowadzi postępowanie i wyda decyzję.
 7. **Ile to kosztuje?**
    - Zameldowanie jest bezpłatne.
@@ -50,7 +50,7 @@ One row per participant and condition (checklist, app, chatbot). Score against t
 | 5. Deadline: notices that a closed office day may cut the time | | | | |
 | 6. Channel: online allowed or not, for the group | | | | |
 | 7. Documents: the identity documents for the group | | | | |
-| 8. Documents: the flat (own title, or the owner's confirmation and title) | | | | |
+| 8. Documents: the flat. Correct: the owner's confirmation on the form, with the owner's title document or the lease. "The lease alone" is scored as "marked as uncertain" until OPEN-12 is settled, never as wrong | | | | |
 | 9. Without the owner: files anyway with a statement | | | | |
 | 10. Fees: registration free; certificate costs as above | | | | |
 | 11. Limits: knows the app (or checklist) is not legal advice, and in the prototype nothing was sent, booked or saved for tomorrow | | | | |

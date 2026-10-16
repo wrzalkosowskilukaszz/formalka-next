@@ -80,8 +80,11 @@ Paper channel, from UEL art. 43 and GOV "Co musisz przygotować". "Albo" marks a
 
 Every group also needs:
 - **The form:** "formularz zgłoszenia pobytu stałego" or "… czasowego" (GOV gives PDF links).
-- **The title to the flat, if the person holds it:** one of a civil contract (e.g. a lease), an extract from the land register, an administrative decision, or a court ruling (UEL art. 28 ust. 2b; GOV).
-- **If the person does not hold the title:** the owner confirms the stay on the form, and the owner's title document is shown (UEL art. 28 ust. 2; GOV).
+- **The flat, on the paper route.**
+  - The act: the owner, or another holder of a legal title to the flat, confirms the stay on the form, and that holder's title document is shown for inspection (UEL art. 28 ust. 2, FACT). A title document may be a civil contract (e.g. a lease), a land-register extract, an administrative decision or a court ruling (art. 28 ust. 2b, FACT).
+  - GOV, in-person route: an owner or other title holder brings one document confirming the title (e.g. a lease). A person without a title brings the document confirming the owner's title. GOV then says the owner or other title holder must confirm the stay on the form (FACT).
+  - **OPEN-12:** must a tenant with a written lease still get the owner's confirmation on the form, or may the tenant, as a title holder, confirm their own stay? The extract does not settle it. The safe course for a person: ask the owner to confirm on the form, and bring the lease.
+- **The flat, on the electronic route:** a title holder attaches their title document; a person without a title attaches the owner's statement and the owner's title document (art. 28 ust. 2a, FACT).
 - **If registering someone else:** a document showing the authority to act (GOV).
 
 **Not yet in force (FACT, footnotes 25 and 27 of UEL):**
@@ -96,7 +99,7 @@ Each case uses fictional facts. "Confirmed facts" are what the person has said a
 
 | Case | Confirmed facts | Documents (required, alternatives) | Channel | Office | Deadline and basis | Unresolved |
 |---|---|---|---|---|---|---|
-| **R1** EU citizen, permanent | German citizen; moved into a rented flat in Warsaw (Mokotów) on 15.10.2026 to live there permanently; the owner will confirm | Form (permanent). Passport **albo** another valid document confirming identity and citizenship. The owner confirms on the form and shows their title | In person at the office, **or** online (trusted profile or qualified signature; the owner's statement and title as electronic documents or scans) | Urząd gminy for the property (Warsaw: the district office handling registration; which one is OPEN-5) | 30th day: (A) 13.11.2026 / (B) 14.11.2026. UEL art. 41 ust. 1 | OPEN-1, OPEN-2 (14.11 is a Saturday) |
+| **R1** EU citizen, permanent | German citizen; moved into a rented flat in Warsaw (Mokotów) on 15.10.2026 to live there permanently; the owner will confirm | Form (permanent). Passport **albo** another valid document confirming identity and citizenship. The owner confirms on the form and shows their title; the lease is brought too (whether it alone is enough is OPEN-12) | In person at the office, **or** online (trusted profile or qualified signature; the owner's statement and title as electronic documents or scans) | Urząd gminy for the property (Warsaw: the district office handling registration; which one is OPEN-5) | 30th day: (A) 13.11.2026 / (B) 14.11.2026. UEL art. 41 ust. 1 | OPEN-1, OPEN-2 (14.11 is a Saturday), OPEN-12 |
 | **R2** EU citizen, temporary | Spanish citizen; 6-month contract; temporary stay in Kraków from 15.10.2026; the owner confirms | Form (temporary). The rest as R1 | As R1. The certificate costs 17 zł unless the system registers automatically | Urząd gminy for the property | 30th day, as R1. UEL art. 41 ust. 1 | OPEN-1, OPEN-2 |
 | **R3** Non-EU family member of an EU citizen | Ukrainian citizen, spouse of a French citizen living in Poland; temporary stay; holds a karta pobytu członka rodziny obywatela UE | Form (temporary). A valid travel document **and** the karta pobytowa (**albo** karta stałego pobytu, **albo**, if not possible, another document confirming the relationship) | In person **or** online. GOV: family members may register online; documents confirming the relationship are shown at the office | Urząd gminy | 30th day. UEL art. 41 ust. 2 | OPEN-1. Whether the online route needs the karta shown in person: GOV says "musisz pokazać w urzędzie dokument" (OPEN-6) |
 | **R4** Non-EU, visa, temporary, no PESEL | Indian citizen; national visa; arrived at a rented flat in Warsaw on 15.10.2026; no PESEL; owner confirms | Form (temporary). A valid travel document **and** the visa | **In person only** (no online route for this group; personal appearance without PESEL) | Urząd gminy | 4th day: (A) Sun 18.10.2026 / (B) Mon 19.10.2026. UEL art. 41 ust. 3 | OPEN-1, OPEN-2 (A falls on a Sunday) |
@@ -124,6 +127,7 @@ Each case uses fictional facts. "Confirmed facts" are what the person has said a
 | OPEN-9 | Documents and channel for family members of Polish citizens under art. 41 ust. 2a | An office, a law clinic |
 | OPEN-10 | A stay that grows past 30 days: when the deadline starts | A law clinic |
 | OPEN-11 | UEL art. 40 ust. 3: whether "lub" means either group or neither (who must appear in person without PESEL) | A law clinic, the ministry |
+| OPEN-12 | A tenant with a written lease, paper route: is the owner's confirmation on the form still needed? (art. 28 ust. 2 and 2b; GOV's in-person section) | An office, a law clinic |
 
 ## 6. Review sheet for the independent reviewer
 
