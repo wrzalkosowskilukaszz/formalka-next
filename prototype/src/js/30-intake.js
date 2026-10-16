@@ -47,7 +47,7 @@ async function intakeLoop(c) {
     const q = E.nextQuestion(c.bpId, c.state, c.asked, 12, c.voice);
     if (q) {
       const options = (q.options ?? []).map((o) => ({ label: o.label.pl, value: o.value }));
-      const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, options,
+      const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, help: q.unknownHelp?.pl, options,
         long: options.some((o) => o.label.length > 34), prog: progressOf(c, before), words: (t) => hasWords(c, t) });
       touch(c);
       if (a.value === '__text__') { await readWords(c, a.text); continue; }

@@ -149,3 +149,28 @@ test('case intents: a case that is part of another named case gives way to it', 
   assert.deepEqual([...app.intentsIn('Potrzebuję numeru PESEL')], ['pesel']);
   assert.deepEqual([...app.intentsIn('chcę zrobić pizzę')], []);
 });
+
+test('an answer that fits no option: the reply reasons over the words, never picks for the person', () => {
+  const opt = (key) => [...app.E.fact(key).options.map((o) => ({ label: app.E.voiced(app.E.fact(key)).options.find((v) => v.value === o.value).label.pl, value: o.value })), { label: 'Nie wiem', value: '__dk__', dk: true }];
+  const stay = opt('zameldowanie.stay');
+  const group = opt('zameldowanie.citizen_group');
+  // One-word keys only when the reader itself maps each to exactly one option.
+  assert.deepEqual([...app.keyWords(stay)], ['Stały', 'Czasowy']);
+  assert.equal(app.readAnswer('Czasowy', stay).o.value, 'temporary');
+  assert.deepEqual([...app.keyWords(group)], [], 'two options start with "Obywatel": no key words');
+  const c = { bpId: 'address-registration' };
+  const help = app.E.fact('zameldowanie.citizen_group').unknownHelp?.pl;
+  // Rule 4: where someone comes from never becomes a group.
+  assert.equal(app.readAnswer('Przyjechałem z Kolumbii', group).type, 'none');
+  const r = app.reflect({ c, why: 'Od odpowiedzi zależą dokumenty. Drugie zdanie.', options: group, help }, 'Przyjechałem z Kolumbii');
+  assert.match(r, /niczego nie wybieram za Ciebie/);
+  assert.match(r, /Dlaczego pytam: Od odpowiedzi zależą dokumenty\. Więcej pod „Dlaczego pytamy\?”/);
+  assert.ok(!r.includes('Drugie zdanie'), 'only the first sentence of why');
+  assert.match(r, /Jeśli nie wiesz, wybierz „Nie wiem”/);
+  assert.ok(!group.filter((o) => !o.dk).some((o) => r.includes(o.label)), 'no option is put in the person\'s mouth');
+  // What it notices: doubt, a question back, another case.
+  assert.match(app.reflect({ c, options: stay }, 'to zależy od pracy'), /Jeśli nie masz pewności, wybierz „Nie wiem”/);
+  assert.match(app.reflect({ c, options: stay }, 'a co jeśli zostanę tylko rok?'), /Jeśli to pytanie do mnie/);
+  assert.match(app.reflect({ c, options: stay }, 'potrzebuję też numeru PESEL'), /Wspominasz o innej sprawie: PESEL/);
+  assert.match(app.reflect({ c, options: stay }, 'wynajmuję od znajomego'), /Wystarczy jedno słowo, na przykład „Stały” albo „Czasowy”/);
+});

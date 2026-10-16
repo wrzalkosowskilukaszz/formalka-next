@@ -464,6 +464,19 @@ await scenario('F-study-mode', {}, async (t, page) => {
   await t.shot('study-home');
   await page.locator('[data-type="address-registration"]').click();
   await page.locator('.sys', { hasText: 'nie korzysta z modelu językowego' }).waitFor({ timeout: 8000 });
+  await t.q(/dla siebie czy dla kogoś/);
+  await t.say('dla siebie');
+  // An answer that fits no option (owner, 16.10): the reply reasons over the words instead of a dead end.
+  // Where someone comes from never becomes a group (rule 4), and nothing is picked for the person.
+  await t.q(/Która grupa Cię dotyczy/);
+  await t.say('Przyjechałem z Kolumbii, a co dalej?');
+  await t.bot(/niczego nie wybieram za Ciebie/);
+  const r = await page.locator('.msg.bot').last().innerText();
+  assert.match(r, /Dlaczego pytam/);
+  assert.match(r, /Jeśli to pytanie do mnie/);
+  assert.match(r, /Jeśli nie wiesz, wybierz „Nie wiem”/);
+  await t.q(/Która grupa Cię dotyczy/);
+  await t.shot('study-reflect');
   await t.autoIntake([[/miejscowości/, /Warszawa/]]);
   const card = await page.locator('.dock').innerText();
   assert.ok(!/Plan sprawdzony/.test(card) && /zgodny z przewodnikami/.test(card) && /nie jest weryfikacja prawna/.test(card), 'the plan card names what the check covers and does not overclaim');

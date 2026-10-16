@@ -1,7 +1,8 @@
 /* ── Reading the person's own words (on the device; the prototype has no language model) ──
    Every answer can also be typed. This baseline reads a typed answer the way the product's model must:
    it says what it understood, asks back when the words only suggest an answer, offers the options that
-   fit when several do, explains why it asks when the person asks, and admits when it doesn't follow.
+   fit when several do, explains why it asks when the person asks, and, when it doesn't follow, says what it
+   noticed and how to answer instead of a dead end (reflect).
    A guess never becomes a fact without the person's yes (rules 1 to 3). A model replaces the matcher
    later behind the same contract: proposals only, the person confirms. */
 
@@ -175,6 +176,42 @@ function heard(c, label) {
   lastSpeaker = 'note';
   scrollLog();
 }
+// When no option fits the words of an open question. Asking again is the right result (audit F8), but
+// not a dead end (owner, 16.10: "niech myśli"). The reply says:
+// - what it noticed in the words (another case, a question back, doubt);
+// - why the question matters (the registry's own "why we ask");
+// - how to answer in one word, only with words the reader itself maps to exactly one option;
+// - what "Nie wiem" does (the registry's own help).
+// It never picks an answer for the person, and never reads a group from where someone comes from (rule 4).
+const ASKS_BACK = /^(?:a )?(?:co|jak|jaki\w*|ktor\w*|gdzie|kiedy|ile|czy|skad|kto)\b/;
+const DOUBT = /(?:^| )(?:zalezy|nie do konca|trudno|zobacze|zobaczymy|jeszcze nie wiem|nie wiem czy|nie jestem pewn\w*|chyba|raczej|moze)(?= |$)/;
+function keyWords(options) {
+  const real = options.filter((x) => !x.dk && !x.tester);
+  if (real.length < 2 || real.length > 4) return [];
+  const keys = real.map((x) => {
+    const w = labelCore(x.label).trim().split(/[\s,(]+/)[0];
+    const r = readAnswer(w, options);
+    return r.type === 'option' && r.sure && r.o === x ? w : null;
+  });
+  return keys.every(Boolean) ? keys : [];
+}
+const orList = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} albo ${xs[xs.length - 1]}` : xs[0] ?? '');
+function reflect(o, text) {
+  const { c, why, options, help } = o;
+  const n = norm(text);
+  const out = ['<p>Nie umiem dopasować tych słów do żadnej odpowiedzi, więc niczego nie wybieram za Ciebie.</p>'];
+  const other = intentsIn(text).filter((id) => id !== c?.bpId).map((id) => CASE_TYPES.find((x) => x.id === id)?.short).filter(Boolean);
+  if (other.length) out.push(`<p>Wspominasz o innej sprawie: ${esc(other.join(', '))}. Dodasz ją osobno ze Startu, gdy skończymy ten plan.</p>`);
+  if (String(text).includes('?') || ASKS_BACK.test(n)) out.push('<p>Jeśli to pytanie do mnie: o kroki, dokumenty, opłaty, terminy i urzędy zapytasz, gdy plan będzie gotowy.</p>');
+  // The first sentence only: the rest is one tap away under "Dlaczego pytamy?".
+  const first = why ? why.split(/(?<=[.!?])\s+/)[0] : '';
+  out.push(`<p>${first ? `Dlaczego pytam: ${esc(first)}${first !== why ? ' Więcej pod „Dlaczego pytamy?”.' : ''}` : 'Od tej odpowiedzi zależy, co trafi do planu.'}</p>`);
+  const keys = keyWords(options);
+  if (keys.length) out.push(`<p>Wystarczy jedno słowo, na przykład ${orList(keys.map((k) => `„${esc(k)}”`))}.</p>`);
+  if (options.some((x) => x.dk)) out.push(`<p>${DOUBT.test(n) ? 'Jeśli nie masz pewności, wybierz „Nie wiem”.' : 'Jeśli nie wiesz, wybierz „Nie wiem”.'} ${esc(help || 'Niczego nie zgadnę: w planie zobaczysz, co od tego zależy.')}</p>`);
+  return out.join('');
+}
+
 async function notSure(c, hint) {
   await say(c, `<p>Nie jestem ${gendered(c, 'pewien', 'pewna')}, co masz na myśli.</p>${hint.startsWith('<') ? hint : `<p>${esc(hint)}</p>`}`);
 }
@@ -209,6 +246,7 @@ async function understand(o, text) {
     await say(c, o.anyWhen === 'day' ? 'Wybierz dzień w ciągu najbliższych dwóch miesięcy, od jutra.' : 'Tego terminu nie ma wśród możliwości. Wybierz jeden z podanych dni albo godzin.');
     return null;
   }
-  await notSure(c, o.hint || (options.length ? 'Wybierz odpowiedź poniżej albo napisz to inaczej, na przykład krócej.' : 'Napisz to inaczej, na przykład krócej.'));
+  if (o.hint || !options.length) await notSure(c, o.hint || 'Napisz to inaczej, na przykład krócej.');
+  else await say(c, reflect(o, text));
   return null;
 }
