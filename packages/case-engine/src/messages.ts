@@ -48,7 +48,7 @@ export const PHRASES_NEVER = [
 
 export const msg = {
   intro: (who: Persona | string, caseTitle: string) =>
-    `Dzień dobry, jestem ${asPersona(who).name}, ${rolePl(who)} Formalki. Pomogę Ci poprowadzić sprawę: ${caseTitle}. Korzystam tylko z oficjalnych źródeł i przy każdej informacji pokażę, skąd ją mam.`,
+    `Dzień dobry, jestem ${asPersona(who).name}, ${rolePl(who)} Formalki. Poprowadzę Cię przez sprawę: ${caseTitle}. Przy każdej informacji pokażę źródło.`,
   planReady: (unsureCount: number) =>
     unsureCount === 0
       ? "Mam wystarczająco dużo informacji, żeby przygotować pierwszy plan. Sprawdź założenia, zanim zaczniemy."
