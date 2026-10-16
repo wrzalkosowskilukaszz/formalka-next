@@ -205,11 +205,15 @@ await scenario('A-citizenship-words', {}, async (t, page) => {
     await page.waitForTimeout(150);
     await t.lastBotHasActs();
   }
+  // Audit F8: when the assistant does not follow, it asks to clarify instead of pushing an action.
   await t.say('qwerty asdf');
   await t.bot(/Nie jestem pewien/);
-  await t.lastBotHasActs();
+  assert.equal(await page.locator('.msg.bot').last().locator('.act').count(), 0, 'a not-sure reply offers no action');
+  // Audit F7: a personal number is masked before it is shown.
   await t.say('mój PESEL to 12345678901');
   await t.bot(/Nie zapisuję tego/);
+  assert.ok(!(await page.locator('.log').innerText()).includes('12345678901'), 'the PESEL is never shown');
+  assert.ok(await page.locator('.msg.me', { hasText: 'mój PESEL to •••' }).count() === 1, 'the bubble shows the masked text');
   await t.shot('free-answers');
   // The person now knows the language answer: a proposal, approved in words.
   await t.say('Mam certyfikat B1');
@@ -445,6 +449,32 @@ await scenario('E-lock-screen-and-desktop', {}, async (t, page) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator('.tester-panel [data-travel="7"]').waitFor({ timeout: 8000 });
   await t.shot('desktop');
+});
+
+/* ── F: study mode (audit): one path, address registration, fictional data, honest claims ── */
+await scenario('F-study-mode', {}, async (t, page) => {
+  await page.locator('.tester-strip [data-study]').click();
+  await page.locator('.study-note').waitFor({ timeout: 8000 });
+  await page.waitForFunction(() => document.querySelectorAll('.ex').length === 1, null, { timeout: 8000 });
+  await page.fill('#home-t', 'Ogarnij mi temat karty pobytu');
+  await page.press('#home-t', 'Enter');
+  await t.toast(/tylko zameldowanie/);
+  await t.shot('study-home');
+  await page.locator('[data-type="address-registration"]').click();
+  await page.locator('.sys', { hasText: 'nie korzysta z modelu językowego' }).waitFor({ timeout: 8000 });
+  await t.autoIntake([[/miejscowości/, /Warszawa/]]);
+  const card = await page.locator('.dock').innerText();
+  assert.ok(!/Plan sprawdzony/.test(card) && /nie weryfikacja prawna/.test(card), 'the plan card does not overclaim');
+  await t.approvePlan(false);
+  await page.locator('#chat-av').click();
+  await page.locator('.sheet-body', { hasText: 'pamięta w tej sesji' }).waitFor({ timeout: 8000 });
+  await t.closeSheet();
+  // Reset keeps the study mode; the tester turns it off with the same button.
+  await page.locator('.tester-strip [data-reset]').click();
+  await page.locator('.study-note').waitFor({ timeout: 8000 });
+  await page.locator('.tester-strip [data-study]').click();
+  await page.locator('.study-note').waitFor({ state: 'detached', timeout: 8000 });
+  await page.waitForFunction(() => document.querySelectorAll('.ex').length === 5, null, { timeout: 8000 });
 });
 
 await browser.close();

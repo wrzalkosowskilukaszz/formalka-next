@@ -193,6 +193,10 @@ ul, ol { padding: 0; list-style: none; }
 .home-foot .icon { width: 14px; height: 14px; margin-top: 1px; }
 .home .ask { background: var(--well); box-shadow: none; }
 /* Home (owner, 2026-10-16): the question, the pill right under it, then case types in a horizontal scroll. */
+.study-note { display: flex; gap: var(--s2); align-items: flex-start; padding: var(--s3) var(--s4); border-radius: var(--r-tile); background: var(--attention-soft); color: var(--ink); font-size: var(--t-xs); line-height: 1.4; }
+.study-note .icon { color: var(--attention); margin-top: 1px; }
+.study-note b { margin-right: 4px; }
+.tbtn[aria-pressed="true"] { border-style: solid; border-color: var(--attention); color: var(--ink); }
 .home-top { display: flex; flex-direction: column; gap: var(--s3); margin-top: var(--s5); }
 .home-top .ask { margin-top: var(--s3); }
 .home-cases { display: flex; flex-direction: column; gap: var(--s3); }

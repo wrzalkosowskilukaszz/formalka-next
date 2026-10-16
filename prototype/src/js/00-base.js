@@ -25,6 +25,16 @@ const plural = (n, one, few, many) => {
   const d = n % 10, t = n % 100;
   return d >= 2 && d <= 4 && (t < 12 || t > 14) ? few : many;
 };
+// Personal numbers are masked before anything the person typed is shown (audit F7): PESEL, ID card and
+// passport numbers, phone numbers, e-mail addresses and bank accounts. The case never needs them.
+const PERSONAL = [
+  /\bPL ?\d{2}(?: ?\d{4}){6}\b/gi, /\b\d{6}[ -]?\d{5}\b/g, /\b[A-Za-z]{3} ?\d{6}\b/g, /\b[A-Za-z]{2} ?\d{7}\b/g,
+  /(?:\+48[ -]?)?\b\d{3}[ -]?\d{3}[ -]?\d{3}\b/g, /[\w.+-]+@[\w-]+\.[\w.-]+/g,
+];
+const maskPersonal = (t) => PERSONAL.reduce((s, re) => s.replace(re, '•••'), String(t ?? ''));
+const looksPersonal = (t) => maskPersonal(t) !== String(t ?? '');
+// The person's words as the app shows them back: masked, then escaped.
+const echoed = (t) => esc(maskPersonal(t));
 // The part of the person's sentence around a phrase, so a short match reads in context.
 const clause = (text, ev) => {
   const i = text.indexOf(ev);
@@ -58,6 +68,8 @@ const wd = (iso) => isoDate(iso).getUTCDay();
 const dnum = (iso) => `${iso.slice(8, 10)}.${iso.slice(5, 7)}`;
 const dshort = (iso) => `${DS[wd(iso)]} ${dnum(iso)}`;
 const dday = (iso) => `${DAYS[wd(iso)]} ${dnum(iso)}`;
+// With the year, for every confirmation of a date the person gave (audit F5).
+const dayFull = (iso) => `${DAYS[wd(iso)]} ${dnum(iso)}.${iso.slice(0, 4)}`;
 const dlong = (iso) => `${DAYS[wd(iso)]}, ${Number(iso.slice(8, 10))} ${MON_G[Number(iso.slice(5, 7)) - 1]}`;
 const hm = (time) => time.replace(/^0(\d):/, '$1:');
 const stamp = (clock) => `${clock.date}T${clock.time}`;

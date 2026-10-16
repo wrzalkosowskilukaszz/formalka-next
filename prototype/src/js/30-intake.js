@@ -9,6 +9,10 @@ async function startCase(bpId, text) {
   if (S.cases.length > 1) addMsg('join', `${esc(c.who)} dołącza do rozmowy`, c);
   updateBuilder(c, true);
   mapNote(`Tworzymy Twoją sprawę: ${c.title}`);
+  if (!S.disclosed) {
+    S.disclosed = true;
+    sys('Prototyp: asystent nie korzysta z modelu językowego. Plan liczy silnik z przewodników Formalki, a odpowiedzi pisane własnymi słowami czyta prosty czytnik na telefonie.');
+  }
   await say(c, esc(E.msg.intro(personaOf(c), c.title)), 600);
   await askWhom(c, text);
   if (text) await readWords(c, text);
@@ -78,7 +82,7 @@ async function readWords(c, text) {
     const ok = await approve({ c, kicker: 'Z Twojego opisu', ic: 'chat-circle-dots',
       title: f ? (f.options?.find((o) => o.value === x.value)?.label.pl ?? String(x.value)) : x.place.name,
       sub: f ? f.question.pl : 'Miejscowość, tylko po to, by wskazać urząd',
-      note: `Twoje słowa: „${esc(clause(text, x.evidence))}”`, yes: 'Tak, zgadza się', no: 'Nie' });
+      note: `Twoje słowa: „${echoed(clause(text, x.evidence))}”`, yes: 'Tak, zgadza się', no: 'Nie' });
     if (ok) {
       if (x.fact === 'place') place = x.place; else yes.push(x.fact);
       remember(c, `Z Twoich słów: ${x.fact === 'place' ? x.place.name : f.options?.find((o) => o.value === x.value)?.label.pl ?? x.value}`);
@@ -130,7 +134,7 @@ async function proposeChange(c, next) {
     ${li('Inny urząd:', diff.offices, (o) => o.title.pl)}
     ${li('Poziomy:', diff.levels.state, (l) => `${l.title.pl}: ${STATE[l.from]} → ${STATE[l.to]}`)}
     <div class="ap-act"><button type="button" class="btn btn-quiet" data-pick="no">Zostaw jak było</button><button type="button" class="btn btn-accent" data-pick="yes">Zatwierdzam zmianę</button></div></section>`,
-  (t) => { const n = norm(t), pol = polarity(n, true); return pol === 'no' || pol === 'dk' || /zostaw|bez zmian/.test(n) ? 'no' : pol === 'yes' || /zatwierdz|zmien/.test(n) ? 'yes' : null; }, c);
+  (t) => { const n = norm(t), pol = polarity(n, true); return pol === 'no' || pol === 'dk' ? 'no' : pol === 'yes' || /^(?:zmien|zmien plan)$/.test(n) ? 'yes' : null; }, c);
   if (r.value === 'yes') {
     c.state = { ...next, tasks: E.applyReplan(c.state.tasks, diff) };
     logAct(c, 'Plan zmieniony po Twojej zmianie sytuacji. Zrobione rzeczy zostają w historii');
@@ -165,7 +169,7 @@ async function chooseRoute(c, p, intro = true) {
     const t = E.procedure(r.value).title.pl;
     if (r.typed) {
       await think(c);
-      if (!(await approve({ c, kicker: 'Dobrze rozumiem?', ic: 'signpost', title: t, sub: 'Droga, którą wybierasz', note: `Twoje słowa: „${esc(r.typed)}”`, yes: 'Tak, tę', no: 'Nie', echo: false }))) continue;
+      if (!(await approve({ c, kicker: 'Dobrze rozumiem?', ic: 'signpost', title: t, sub: 'Droga, którą wybierasz', note: `Twoje słowa: „${echoed(r.typed)}”`, yes: 'Tak, tę', no: 'Nie', echo: false }))) continue;
     } else me(`Wybieram: ${t}`);
     logAct(c, `Wybrana droga: ${t}`);
     return r.value;
@@ -244,7 +248,7 @@ async function planApproval(c) {
         ${p.unsure.length ? `<li class="row"><span class="sq">${icon('question')}</span><span class="tx"><b>Do potwierdzenia (${p.unsure.length})</b><span class="meta">${p.unsure.map((u) => esc(factOf(c, u.fact)?.question.pl ?? u.fact)).join('<br>')}</span></span></li>` : ''}
         ${staleOf(p) ? `<li class="row"><span class="sq">${icon('warning-circle')}</span><span class="tx"><b>Część dat może być nieaktualna</b><span class="meta">${esc(staleOf(p).text)}</span></span></li>` : ''}
         ${total ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłaty: ${total} zł</b><span class="meta">Przykład z przewodnika Formalki, stan na 15.10.2026</span></span></li>` : ''}
-        <li class="row"><span class="sq">${icon(v.ok ? 'seal-check' : 'warning-circle')}</span><span class="tx"><b>${v.ok ? 'Plan sprawdzony' : `Plan nie przeszedł kontroli (${v.violations.length})`}</b><span class="meta">${v.ok ? 'Każdy element ma źródło w sprawdzonych treściach Formalki' : 'Nie pokażę planu, który nie przeszedł kontroli'}</span></span></li>
+        <li class="row"><span class="sq">${icon(v.ok ? 'list-checks' : 'warning-circle')}</span><span class="tx"><b>${v.ok ? 'Każdy element wskazuje źródło' : `Kontrola źródeł nie przeszła (${v.violations.length})`}</b><span class="meta">${v.ok ? 'To techniczna kontrola odwołań, nie weryfikacja prawna. Kwoty i terminy to przykłady z przewodników Formalki.' : 'Nie pokażę planu, który nie przeszedł kontroli'}</span></span></li>
       </ul>
       ${rows ? `<details class="answers"><summary>Twoje odpowiedzi (${p.assumptions.length})</summary><ul>${rows}</ul></details>` : ''}
       <div class="switch-row"><button type="button" class="switch" role="switch" aria-checked="false" id="consent" aria-labelledby="consent-l"></button>
@@ -277,8 +281,9 @@ async function planApproval(c) {
       if (!t || busy || done) return;
       input.value = '';
       const n = norm(t);
-      if (/zatwierdz|akceptuj|w porzadku/.test(n) || polarity(n, true) === 'yes') { approveNow(t); return; }
-      if (/popraw|zmien|od nowa|jeszcze raz|cofnij/.test(n)) { me(t); finish('redo'); return; }
+      // Only a plain consent approves the plan (audit F5): "nie zatwierdzam" or "tak, ale…" never does.
+      if (polarity(n, true) === 'yes' || /^(?:akceptuje|akceptuje plan|w porzadku)$/.test(n)) { approveNow(t); return; }
+      if (!/^nie /.test(n) && /popraw|zmien|od nowa|jeszcze raz|cofnij/.test(n)) { me(t); finish('redo'); return; }
       busy = true;
       me(t);
       await think(c);
@@ -323,7 +328,7 @@ function suggestions() {
   const c = C();
   const s = [];
   if (c && c.state.approved) s.push('Co mam teraz zrobić?', 'Jakie dokumenty są potrzebne?', 'Ile to kosztuje?', 'Gdzie jest urząd?');
-  for (const t of CASE_TYPES) if (!S.cases.some((x) => x.bpId === t.id) && s.length < 4) s.push(t.example);
+  for (const t of caseTypes()) if (!S.cases.some((x) => x.bpId === t.id) && s.length < 4) s.push(t.example);
   return s;
 }
 function idleDock() {
@@ -345,11 +350,11 @@ function free(text) {
   const own = !!c && !personal && hasWords(c, text);
   if (!own && fresh.length === 1 && !(c && named.includes(c.bpId))) return runFlow('case', () => startCase(fresh[0], text));
   if (!own && fresh.length > 1) return runFlow('pick', () => pickCase(fresh, text));
-  if (!c) { sys(`Tej sprawy nie prowadzimy jeszcze krok po kroku. W prototypie są: ${CASE_TYPES.map((x) => x.short).join(', ')}.`); return null; }
+  if (!c) { sys(`Tej sprawy nie prowadzimy jeszcze krok po kroku. ${STUDY ? 'W tym badaniu prowadzimy tylko zameldowanie.' : `W prototypie są: ${CASE_TYPES.map((x) => x.short).join(', ')}.`}`); return null; }
   return runFlow('free', async () => {
     await think(c);
     if (personal) {
-      await say(c, `<p>Widzę coś, co wygląda na numer dokumentu albo PESEL. Nie zapisuję tego w sprawie i nie musisz mi tego podawać: plan nie potrzebuje danych osobowych.</p>${actsHTML(c, c.state.approved ? guidance(c).actions.slice(0, 2) : [])}`);
+      await say(c, `Widzę coś, co wygląda na numer dokumentu, PESEL albo dane kontaktowe, więc ${gendered(c, 'zakryłem', 'zakryłam')} to na ekranie. Nie zapisuję tego w sprawie i nie musisz mi tego podawać: plan nie potrzebuje danych osobowych.`);
       if (!c.state.approved) return resumeIntake(c, null);
       return;
     }
@@ -357,9 +362,14 @@ function free(text) {
     const said = fu && readFollowUp(text);
     if (said) {
       const label = E.msg.followUpAnswers.find((a) => a.id === said)?.label ?? said;
-      const yes = await approve({ c, kicker: 'Dobrze rozumiem?', ic: 'chat-circle-dots', title: label, sub: 'Twoja odpowiedź na pytanie, jak poszło w urzędzie', note: `Twoje słowa: „${esc(text)}”`, yes: 'Tak, zapisz', no: 'Nie', echo: false });
+      const yes = await approve({ c, kicker: 'Dobrze rozumiem?', ic: 'chat-circle-dots', title: label, sub: 'Twoja odpowiedź na pytanie, jak poszło w urzędzie', note: `Twoje słowa: „${echoed(text)}”`, yes: 'Tak, zapisz', no: 'Nie', echo: false });
       if (yes) return followUp(c, fu, said, true);
-      await say(c, `<p>Dobrze. Odpowiedz przyciskiem przy pytaniu albo napisz to inaczej.</p>${actsHTML(c, guidance(c).actions.slice(0, 2))}`);
+      await say(c, '<p>Dobrze. Odpowiedz przyciskiem przy pytaniu albo napisz to inaczej.</p>');
+      return;
+    }
+    // About the visit, but not clear how it went ("nie przyjęli wniosku"): ask, with the three answers.
+    if (fu && /urzad|wniosek|wniosk|wizyt|poszlo|przyjel|bylem|bylam|bylo/.test(norm(text))) {
+      await say(c, `<p>Nie jestem ${gendered(c, 'pewien', 'pewna')}, jak poszło. Wybierz jedną odpowiedź:</p><div class="opts fu">${E.msg.followUpAnswers.map((a) => `<button type="button" class="chip chip-sm" data-fu="${esc(fu)}" data-case="${c.id}" data-a="${esc(a.id)}">${esc(a.label)}</button>`).join('')}</div>`);
       return;
     }
     if (!c.state.approved) {
@@ -381,11 +391,10 @@ function free(text) {
     ].find(([re]) => re.test(n));
     if (route) return route[1](c);
     if (hasWords(c, text)) { await readWords(c, text); return; }
-    await notSure(c, `<p>Mogę pomóc z tym, co jest w planie: co teraz, dokumenty, opłaty, terminy, urzędy i przypomnienia. Każda informacja ma źródło.</p>${actsHTML(c, guidance(c).actions.slice(0, 3))}`);
+    await notSure(c, 'Mogę pomóc z tym, co jest w planie: co teraz, dokumenty, opłaty, terminy, urzędy i przypomnienia. Napisz to inaczej albo wybierz podpowiedź poniżej.');
   });
 }
 // A number that looks like a PESEL or a document number (rule 8: no personal data needed).
-const looksPersonal = (t) => /\b\d{11}\b|\b[A-Z]{2,3}\s?\d{6,7}\b/.test(String(t));
 
 async function pickCase(ids, text) {
   sys('Twój opis pasuje do kilku spraw. Którą zaczynamy?');

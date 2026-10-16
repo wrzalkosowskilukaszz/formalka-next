@@ -25,6 +25,17 @@ test('polarity: yes, no and "Nie wiem"; strict mode for approval cards', () => {
   assert.equal(app.polarity('mam pytanie', true), null);
   assert.equal(app.polarity('tak ale zmien godzine', true), null);
   assert.equal(app.polarity('dobrze dodaj', true), 'yes');
+  // Audit F5: consent with consequences only from a plain answer.
+  assert.equal(app.polarity(app.norm('Tak, nie zgadzam się'), true), null);
+  assert.equal(app.polarity(app.norm('Chyba tak'), true), null);
+  assert.equal(app.polarity(app.norm('nie zatwierdzam'), true), 'no');
+  assert.equal(app.polarity(app.norm('Tak, ale zmień godzinę'), true), null);
+  assert.equal(app.polarity(app.norm('Tak, zapisz'), true), 'yes');
+});
+
+test('audit F5: a hedged yes is asked back; a yes that also says "nie" is not read', () => {
+  assert.equal(read('chyba tak', 'citizenship.permanent_title').sure, false);
+  assert.equal(read('Tak, nie zgadzam się', 'citizenship.permanent_title').type, 'none');
 });
 
 test('yes or no questions: a bare word is taken, a sentence is asked back', () => {
@@ -97,6 +108,12 @@ test('days and hours in words (the clock starts on Monday 19.10.2026)', () => {
   assert.equal(w('o 25').time, null);
   assert.equal(w('w południe').time, '12:00');
   assert.deepEqual({ ...w('w środę o 11') }, { date: '2026-10-21', time: '11:00' });
+  // Audit F5: an explicit year is kept; a ruled-out day is skipped; two days are asked back.
+  assert.equal(w('22.10.2028').date, '2028-10-22');
+  assert.equal(w('5 listopada 2027').date, '2027-11-05');
+  assert.deepEqual({ ...w('Jutro nie mogę, w piątek o 10') }, { date: '2026-10-23', time: '10:00' });
+  assert.equal(w('w środę albo w czwartek').ambiguous, true);
+  assert.equal(w('o 10 a nie o 12').time, '10:00');
 });
 
 test('day and hour chips: a typed day or hour picks its chip; another one is reported', () => {
@@ -114,6 +131,17 @@ test('"Jak poszło?" in the person\'s words', () => {
   assert.equal(app.readFollowUp('nie udało się, brakowało dokumentu'), 'missing');
   assert.equal(app.readFollowUp('nie poszedłem'), 'not_went');
   assert.equal(app.readFollowUp('byłem w kinie'), null);
+  // Audit F5: a negated filing is not a filing.
+  assert.equal(app.readFollowUp('Nie złożyłem wniosku'), 'not_went');
+  assert.equal(app.readFollowUp('nie przyjęli wniosku'), null);
+});
+
+test('audit F7: personal numbers are masked before the person\'s words are shown', () => {
+  assert.equal(app.maskPersonal('mój PESEL to 90010112345'), 'mój PESEL to •••');
+  assert.equal(app.maskPersonal('dowód ABC123456, tel. +48 600 700 800'), 'dowód •••, tel. •••');
+  assert.equal(app.maskPersonal('pisz na jan.kowalski@example.com'), 'pisz na •••');
+  assert.equal(app.maskPersonal('jutro o 10:30, 22.10.2026'), 'jutro o 10:30, 22.10.2026');
+  assert.equal(app.looksPersonal('Muszę się zameldować'), false);
 });
 
 test('case intents: a case that is part of another named case gives way to it', () => {

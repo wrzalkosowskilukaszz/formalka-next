@@ -16,6 +16,11 @@ const CASE_TYPES = [
     words: ['certyfikat', 'egzamin z polskiego', 'znajomości polskiego'], example: 'Chcę zdać egzamin z polskiego na certyfikat' },
 ].filter((t) => E.blueprintIds.includes(t.id));
 const typeOf = (bpId) => CASE_TYPES.find((t) => t.id === bpId);
+// Study mode (audit, 16.10): moderated sessions test one path only, address registration, on fictional
+// data. The tester turns it on in the tester panel or with "#badanie" in the address; reset keeps it.
+let STUDY = false;
+const STUDY_TYPES = ['address-registration'];
+const caseTypes = () => (STUDY ? CASE_TYPES.filter((t) => STUDY_TYPES.includes(t.id)) : CASE_TYPES);
 
 // Cities for the office lookup. TERYT codes [ASSUMPTION: standard GUS codes]. The registry has
 // municipal offices for Warsaw and Kraków and the 16 voivodeship offices (name and website).
@@ -51,7 +56,7 @@ const START_CLOCK = { date: '2026-10-19', time: '18:40' }; // Monday; three days
 let S;
 function freshState() {
   return { screen: 'splash', clock: { ...START_CLOCK }, cases: [], active: null, building: null, flow: null,
-    view: 'focus', highlight: null, calSel: null, calMonth: null, custom: [], lockOpen: false, statusL: 1, seq: 0, learned: { hour: null } };
+    view: 'focus', highlight: null, calSel: null, calMonth: null, custom: [], lockOpen: false, statusL: 1, seq: 0, learned: { hour: null }, disclosed: false };
 }
 const C = () => S.cases.find((c) => c.id === S.active) || null;
 const caseById = (id) => S.cases.find((c) => c.id === id) || null;
@@ -83,7 +88,7 @@ function learnHour(c, time) {
   if (!/^\d\d:\d\d$/.test(time || '')) return;
   S.learned.hour = time;
   c.memory = c.memory.filter((m) => !m.startsWith('Ostatnio wybrana godzina'));
-  remember(c, `Ostatnio wybrana godzina: ${hm(time)}. Podpowiem ją następnym razem.`);
+  remember(c, `Ostatnio wybrana godzina: ${hm(time)}. Podpowiem ją przy następnym terminie.`);
 }
 // Hour chips with the person's last hour added when it is not among them.
 const hours = (list) => (S.learned.hour && !list.includes(S.learned.hour) ? [...list, S.learned.hour].sort() : list);
@@ -174,7 +179,7 @@ function progressOf(c, p = plan(c)) {
 const partsOf = (id) => Object.values(E.blueprint(id).fulfillable ?? {}).flatMap((f) => Object.values(f).map((x) => x.blueprint));
 function intentsIn(text) {
   const t = text.toLowerCase();
-  const ids = CASE_TYPES.filter((x) => x.words.some((w) => t.includes(w))).map((x) => x.id);
+  const ids = caseTypes().filter((x) => x.words.some((w) => t.includes(w))).map((x) => x.id);
   return ids.filter((id) => !ids.some((other) => other !== id && partsOf(other).includes(id)));
 }
 

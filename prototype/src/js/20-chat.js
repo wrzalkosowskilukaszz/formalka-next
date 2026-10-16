@@ -40,7 +40,7 @@ async function say(c, html, wait = 420) {
   t.remove();
   addMsg('bot', html, c);
 }
-const me = (text) => addMsg('me', esc(text));
+const me = (text) => addMsg('me', echoed(text));
 const sys = (text) => addMsg('sys', esc(text));
 const mapNote = (text) => {
   logEl.append(h(`<button type="button" class="mapnote enter" data-act="mapsheet">${icon('map-trifold')}<span><b>Mapa sprawy</b>${esc(text)}</span></button>`));

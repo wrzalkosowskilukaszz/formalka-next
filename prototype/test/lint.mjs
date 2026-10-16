@@ -17,7 +17,7 @@ let line = 1;
 for (const f of files) { starts.push([line, f]); line += readFileSync(join(dir, f), 'utf8').split('\n').length; }
 const where = (n) => { const [s, f] = starts.filter(([l]) => l <= n).pop(); return `src/js/${f}:${n - s + 1}`; };
 
-const browser = Object.fromEntries(['window', 'document', 'matchMedia', 'setTimeout', 'clearTimeout', 'requestAnimationFrame', 'console', 'URL', 'CSS'].map((g) => [g, 'readonly']));
+const browser = Object.fromEntries(['window', 'document', 'matchMedia', 'setTimeout', 'clearTimeout', 'requestAnimationFrame', 'console', 'URL', 'CSS', 'location'].map((g) => [g, 'readonly']));
 const eslint = new ESLint({
   overrideConfigFile: true,
   overrideConfig: {

@@ -8,6 +8,7 @@ const SCREENS = {
   home() {
     const el = h(`<section class="screen home pad">
       <div class="brandrow">${mark()}<span class="word">formalka</span><span class="tag">prototyp, dane przykładowe</span></div>
+      ${STUDY ? `<p class="study-note">${icon('info')}<span><b>Badanie</b> Wpisuj tylko dane wymyślone. Nic nie zostanie wysłane, zarezerwowane ani zapisane na stałe; przypomnienia i formularz są symulowane, a asystent nie korzysta z modelu językowego.</span></p>` : ''}
       <div class="home-top">
         <h1 class="home-q">Co dziś załatwiamy?</h1>
         <p class="home-lead">Opisz sprawę własnymi słowami. Asystent AI ułoży z Tobą plan i sam przypomni, co dalej.</p>
@@ -16,7 +17,7 @@ const SCREENS = {
           <button class="send" type="submit" aria-label="Wyślij">${icon('arrow-up')}</button></form>
         <p class="meta">Nie podawaj imienia, numerów dokumentów ani adresu.</p></div>
       <section class="home-cases" aria-labelledby="hc-h"><h2 class="sec-h" id="hc-h">Albo wybierz sprawę</h2>
-        <div class="ex-row" role="list">${CASE_TYPES.map((x, i) => `<button type="button" role="listitem" class="ex" style="animation-delay:${i * 60}ms" data-type="${x.id}">
+        <div class="ex-row" role="list">${caseTypes().map((x, i) => `<button type="button" role="listitem" class="ex" style="animation-delay:${i * 60}ms" data-type="${x.id}">
           <span class="tile-ic">${icon(x.ic)}</span><b>${esc(x.short)}</b><span class="ex-d">${esc(x.d)}</span>${S.cases.some((c) => c.bpId === x.id) ? '<span class="ex-on">Masz już tę sprawę</span>' : ''}</button>`).join('')}</div></section>
       ${S.cases.length ? `<button type="button" class="btn btn-quiet btn-block" id="to-cases">${icon('house')} Twoje sprawy (${S.cases.length})</button>` : `<section class="how" aria-labelledby="how-h"><h2 class="sec-h" id="how-h">Jak to działa</h2>
         <ol class="how-steps">
@@ -24,7 +25,7 @@ const SCREENS = {
           <li><span class="tile-ic sm">${icon('map-trifold')}</span><span><b>Zatwierdź plan</b><small>Kroki, dokumenty, opłaty i urzędy, każde ze źródłem</small></span></li>
           <li><span class="tile-ic sm">${icon('bell')}</span><span><b>Asystent pilnuje</b><small>Przypomina i proponuje, co dalej. Każdą sprawę prowadzi osobny asystent AI</small></span></li>
         </ol></section>`}
-      <footer class="home-foot">${icon('info')}<p>Formalka to niezależna usługa, nie urząd. Asystenci to AI. Plan powstaje ze sprawdzonych treści Formalki (${esc(E.registryVersion)}). W prototypie nic nie wychodzi z telefonu.</p></footer></section>`);
+      <footer class="home-foot">${icon('info')}<p>Formalka to niezależna usługa, nie urząd. Plan powstaje z przewodników Formalki (${esc(E.registryVersion)}); kwoty, terminy i urzędy to przykłady, nie porada prawna. W prototypie asystent nie korzysta z modelu językowego, a dane sprawy nie są nigdzie wysyłane. Linki do urzędów i map otwierają strony poza aplikacją.</p></footer></section>`);
     const input = $('#home-t', el);
     $$('[data-type]', el).forEach((b) => { b.onclick = () => {
       const ex = S.cases.find((c) => c.bpId === b.dataset.type);
@@ -37,7 +38,7 @@ const SCREENS = {
       const v = input.value.trim();
       if (!v) { input.focus(); return; }
       const ids = intentsIn(v).filter((id) => !S.cases.some((c) => c.bpId === id));
-      if (!ids.length) { toast(intentsIn(v).length ? 'Tę sprawę już masz. Otwórz ją z listy spraw.' : `Tej sprawy nie prowadzimy jeszcze krok po kroku. W prototypie: ${CASE_TYPES.map((x) => x.short).join(', ')}.`, 'info'); return; }
+      if (!ids.length) { toast(intentsIn(v).length ? 'Tę sprawę już masz. Otwórz ją z listy spraw.' : STUDY ? 'W tym badaniu prowadzimy tylko zameldowanie.' : `Tej sprawy nie prowadzimy jeszcze krok po kroku. W prototypie: ${CASE_TYPES.map((x) => x.short).join(', ')}.`, 'info'); return; }
       me(v);
       if (ids.length === 1) runFlow('case', () => startCase(ids[0], v));
       else { go('chat', 'fwd'); runFlow('pick', () => pickCase(ids, v)); }
