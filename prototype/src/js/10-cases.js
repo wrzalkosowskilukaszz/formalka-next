@@ -209,11 +209,6 @@ function intentsIn(text) {
 const srcLink = (quotes) => (quotes?.length ? `<a href="${esc(quotes[0].page)}" target="_blank" rel="noopener noreferrer">${esc(host(quotes[0].page))}</a>` : '');
 const cite = (quotes, prefix = 'Przykład z przewodnika Formalki, stan na 15.10.2026.') => (quotes?.length
   ? `<p class="cite">${icon('info')}<span>${prefix} Źródło: ${srcLink(quotes)}</span></p>` : '');
-// A registry note in its own words. A Polish statement that is only a fragment of a provision (it stops
-// at a colon, starts mid-sentence, or points to another paragraph) is never shown alone: when it is one
-// of the note's quotes, all the quotes are shown in the registry's order; when it is not, a statement
-// ending in a colon gets the quotes after it (audit F8; residence COMPARISON D5: art. 108 without its
-// conditions, art. 237 without whom the relief is for).
 // The fees a plan asks for, summed only when the sum is one amount the person pays. Two stamp duties for one
 // permit are the registry's alternatives for different reasons (residence "short": 85 or 340 zł), so they are
 // listed, never added up (residence COMPARISON D21).
@@ -229,6 +224,19 @@ function feeLine(fees) {
   const other = fees.filter((f) => !isDuty(f));
   return `Opłata skarbowa: ${amounts(fees.filter(isDuty)).join(' albo ')}, zależnie od powodu pobytu; która Cię dotyczy, jest w opisie kroku${other.length ? `. Do tego: ${amounts(other).join(' + ')}` : ''}`;
 }
+// The registry's "Nie wiem" help says what the plan will show ("Pokażemy obie drogi …"). When "Nie wiem" to this
+// question ends the intake with no route, there is no plan to show it in, so the help is not given: the person
+// hears what happens instead (correctness audit K2).
+function stopsOnUnknown(c, key) {
+  const next = { ...c.state, facts: { ...c.state.facts, [key]: E.UNKNOWN } };
+  return !E.nextQuestion(c.bpId, next, c.asked + 1, 12, c.voice) && ['unsure', 'none'].includes(E.plan(c.bpId, next).route.status);
+}
+const STOP_HELP = 'Bez tej odpowiedzi nie ustalę drogi z naszych źródeł; powiem wtedy, kto może pomóc.';
+// A registry note in its own words. A Polish statement that is only a fragment of a provision (it stops
+// at a colon, starts mid-sentence, or points to another paragraph) is never shown alone: when it is one
+// of the note's quotes, all the quotes are shown in the registry's order; when it is not, a statement
+// ending in a colon gets the quotes after it (audit F8; residence COMPARISON D5: art. 108 without its
+// conditions, art. 237 without whom the relief is for).
 const FRAGMENT_RE = /:\s*$|^[a-ząćęłńóśźż0-9]|o (?:której|którym|których) mowa w ust\./;
 function noteText(n) {
   const s = n.statement.value.pl.trim();

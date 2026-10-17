@@ -418,6 +418,8 @@ await scenario('C-personas-and-handoff', {}, async (t, page) => {
   await t.q(/Czy mieszkasz albo zamieszkasz/);
   await t.chip(/^Nie wiem$/);
   await t.bot(/Bez tych odpowiedzi nie ustalę drogi/);
+  // K2: the registry's "Pokażemy obie drogi" is not said when the case then stops without showing them.
+  assert.equal(await page.locator('.msg.bot', { hasText: 'Pokażemy' }).count(), 0, 'a promise the stop then breaks');
   await t.shot('stuck');
   await t.chip(/Zamelduj się/);
   await page.locator('.sys', { hasText: 'dołącza do rozmowy' }).waitFor({ timeout: 8000 });

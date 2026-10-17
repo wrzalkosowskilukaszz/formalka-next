@@ -55,14 +55,15 @@ async function intakeLoop(c) {
     const q = E.nextQuestion(c.bpId, c.state, c.asked, 12, c.voice);
     if (q) {
       const options = (q.options ?? []).map((o) => ({ label: o.label.pl, value: o.value }));
-      const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, help: q.unknownHelp?.pl, options,
+      const stops = stopsOnUnknown(c, q.key);
+      const a = await ask({ c, q: q.question.pl, why: q.whyWeAsk?.pl, help: stops ? STOP_HELP : q.unknownHelp?.pl, options,
         long: options.some((o) => o.label.length > 34), words: (t) => hasWords(c, t) });
       touch(c);
       if (a.value === '__text__') { await readWords(c, a.text); continue; }
       const unknown = a.value === UNKNOWN_CHOICE;
       c.state.facts[q.key] = unknown ? E.UNKNOWN : a.value;
       c.asked++;
-      if (unknown && q.unknownHelp?.pl) await say(c, esc(q.unknownHelp.pl), 300);
+      if (unknown && !stops && q.unknownHelp?.pl) { await say(c, esc(q.unknownHelp.pl), 300); c.promised = true; }
       noteChange(c, before);
       continue;
     }
@@ -212,7 +213,10 @@ async function stuck(c, p) {
     ? 'Bez tych odpowiedzi nie ustalę drogi z naszych źródeł, więc nie zgaduję.'
     : 'Żadna droga z naszych źródeł nie pasuje do Twoich odpowiedzi. Tego nie poprowadzę krok po kroku.';
   const when = proc?.handoff?.when?.pl;
-  await say(c, `<p>${esc(text)}</p>${when ? `<p class="meta">Kiedy warto zapytać kogoś o pomoc, według przewodnika: ${esc(when)}</p>` : ''}
+  // An earlier "Nie wiem" may have said what the plan would show; with no plan, say that it will not (K2).
+  const unsaid = c.promised ? `<p>Bez planu nie pokażę też tego, co ${gendered(c, 'zapowiadałem', 'zapowiadałam')} przy odpowiedziach „Nie wiem”.</p>` : '';
+  c.promised = false;
+  await say(c, `<p>${esc(text)}</p>${unsaid}${when ? `<p class="meta">Kiedy warto zapytać kogoś o pomoc, według przewodnika: ${esc(when)}</p>` : ''}
     ${aid ? actsHTML(c, [{ kind: 'link', url: aid.link.url, label: `Bezpłatna pomoc: ${aid.name?.pl ?? 'Nieodpłatna pomoc prawna'}` }]) : ''}<p>Co robimy dalej?</p>`);
   const related = E.blueprint(c.bpId).related ?? [];
   const a = await ask({ c, dk: false, options: [
@@ -232,7 +236,7 @@ async function resumeIntake(c, note = 'Wracamy do planu sprawy. Pytam tylko o to
 }
 function restartIntake(c) {
   c.state = { facts: {}, tasks: {}, events: [], approved: false };
-  c.asked = 0; c.placeAsked = false; c.stuck = false;
+  c.asked = 0; c.placeAsked = false; c.stuck = false; c.promised = false;
   S.building = c.id;
   BN.clear();
   if (builderEl) $('.b-nodes', builderEl).innerHTML = '';

@@ -56,6 +56,14 @@ test('two stamp duties for one permit are listed, never added up (residence COMP
   assert.equal(app.feeLine(fees('work')), 'Opłata: 440 zł + 100 zł');
 });
 
+test('the "Nie wiem" help that promises the plan is not given when "Nie wiem" ends the case (correctness audit K2)', () => {
+  const c = (bpId) => ({ bpId, state: { facts: {}, tasks: {}, events: [] }, asked: 0, voice: 'you' });
+  assert.match(app.E.fact('pesel.stay_over_30').unknownHelp.pl, /Pokażemy obie drogi/, 'the registry promises both routes');
+  assert.equal(app.stopsOnUnknown(c('pesel'), 'pesel.stay_over_30'), true, '"Nie wiem" here leaves no route and no question');
+  assert.equal(app.stopsOnUnknown(c('address-registration'), 'zameldowanie.citizen_group'), false, 'here the plan shows every version');
+  assert.doesNotMatch(app.STOP_HELP, /Pokażemy|w planie/);
+});
+
 test('fee amounts are added up or joined with "+" only in feeSum and feeLine (correctness audit K5)', () => {
   // The first fix of D21 changed three places and missed two (the plan card, the guide's payment step).
   const dir = new URL('../src/js/', import.meta.url);
