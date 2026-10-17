@@ -83,3 +83,10 @@ test('a code whose articles hold paragraphs (§) is read by its articles', () =>
   assert.equal(r.unit, 'Art.');
   assert.deepEqual(r.partial[0].missing.map((m) => m.n), ['§ 2', '§ 3']);
 });
+
+test('lists an article a quoted paragraph names but the extract leaves out, marking one it applies', () => {
+  const uoc = '     Art. 49. 1. Zapraszającym może być cudzoziemiec przebywający legalnie i nieprzerwanie co najmniej przez okres 5 lat.\n     2. Do ustalenia, że pobyt cudzoziemca, o którym mowa w ust. 1, jest nieprzerwany, stosuje się przepis art. 195 ust. 4.\n     Art. 56. Zapraszający zwraca koszty, o których mowa w art. 49 ust. 1, z wyjątkiem kosztów decyzji, o której mowa w art. 302.\n     Art. 195. 1. Zezwolenia udziela się.\n     4. Pobyt uznaje się za nieprzerwany, jeżeli żadna z przerw nie była dłuższa niż 6 miesięcy.\n     Art. 302. 1. Decyzję wydaje się.\n';
+  const r = omitted(uoc, uoc.split('\n').slice(0, 3).join('\n'));
+  assert.deepEqual(r.quoted, ['49', '56']);
+  assert.deepEqual(r.named.map((x) => [x.id, x.n, x.names, x.applies]), [['49', '2', ['195'], 'stosuje się'], ['56', '', ['302'], null]]);
+});

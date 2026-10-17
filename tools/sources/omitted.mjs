@@ -1,5 +1,7 @@
 // Lists what an extract leaves out of the act where exceptions often sit: the paragraphs of each quoted article that the
-// extract does not quote, and the other articles that name a quoted article. The unemployment map quoted art. 65,
+// extract does not quote, the other articles that name a quoted article, and the articles a quoted paragraph names that
+// the extract does not quote. The invitation map quoted art. 49 ust. 3, "stosuje się przepis art. 195 ust. 4", without
+// art. 195 ust. 4 (its check, 17.10.2026). The unemployment map quoted art. 65,
 // 219 ust. 1 and 225 ust. 1 and missed art. 66, 219 ust. 2 and 225 ust. 3 (its check, 17.10.2026); quoting a whole
 // article was not enough either (docs/solutions/2026-10-16-read-the-whole-article.md). It prints what to read by hand.
 // Usage: node tools/sources/omitted.mjs DU/2025/620 research/2026-10-17-unemployment/sources/rynek-pracy-2025-620-extract.txt [more extracts] [--all]
@@ -17,6 +19,8 @@ import { fileURLToPath } from 'node:url';
 export const norm = (text) => text.replace(/\n[^\S\n]*Dziennik Ustaw[^\n]*/g, '\n').replace(/-\n\s*/g, '').replace(/\s+/g, ' ').trim();
 
 // Words that open an exception or a special rule. A paragraph or a referring article with one is marked.
+// A quoted paragraph that applies another article ("stosuje się przepis art. 195 ust. 4") is marked.
+export const APPLIES = /stosuje się|stosują się|zgodnie z/i;
 export const EXCEPTION = /nie stosuje się|z wyjątkiem|chyba że|nie może|nie mogą|nie przysługuje|nie dotyczy|ulega (?:skróceniu|przedłużeniu)|liczy się od|w brzmieniu dotychczasowym|przepisy dotychczasowe|nie wlicza się|z wyłączeniem/i;
 
 // The act's articles (or a regulation's paragraphs), each with its numbered paragraphs, from pdftotext -layout output.
@@ -75,18 +79,21 @@ export function ownRefs(text, unit) {
   return [...new Set(refs)];
 }
 
-// For an act's text and an extract: the quoted units with the paragraphs they leave out, and the units the extract does
-// not quote that name a quoted one. Both say whether the paragraph carries an exception word.
+// For an act's text and an extract: the quoted units with the paragraphs they leave out, the units the extract does
+// not quote that name a quoted one, and the units a quoted paragraph names that the extract does not quote. Each says
+// whether the paragraph carries an exception word; the last also whether it applies the unit it names.
 export function omitted(actText, extractText) {
   const { unit, units: all } = units(actText);
   const ext = norm(extractText);
   const quoted = new Set();
   const partial = [];
+  const quotedParas = [];
   for (const u of all) {
     // A repealed or very short paragraph ("(uchylony)") is found anywhere, so it does not make its article quoted.
     const inExtract = u.paras.map((p) => p.text.length >= 30 && !isRepealed(p.text) && ext.includes(keyOf(p.text)));
     if (!inExtract.some(Boolean)) continue;
     quoted.add(u.id);
+    u.paras.forEach((p, i) => { if (inExtract[i]) quotedParas.push({ id: u.id, p }); });
     const missing = u.paras.filter((p, i) => !inExtract[i] && p.text && !isRepealed(p.text))
       .map((p) => ({ n: p.n, exception: EXCEPTION.exec(p.text)?.[0] ?? null, head: headOf(p.text) }));
     if (missing.length) partial.push({ id: u.id, missing });
@@ -101,7 +108,12 @@ export function omitted(actText, extractText) {
       if (names.length) referring.push({ id: u.id, n: p.n, names, exception: EXCEPTION.exec(p.text)?.[0] ?? null, head: headOf(p.text) });
     }
   }
-  return { unit, quoted: [...quoted], partial, referring };
+  const named = [];
+  for (const { id, p } of quotedParas) {
+    const names = ownRefs(p.text, unit).filter((r) => !quoted.has(r) && r !== id);
+    if (names.length) named.push({ id, n: p.n, names, applies: APPLIES.exec(p.text)?.[0] ?? null, exception: EXCEPTION.exec(p.text)?.[0] ?? null, head: headOf(p.text) });
+  }
+  return { unit, quoted: [...quoted], partial, referring, named };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -131,6 +143,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   console.log('\nNot quoted, but naming a quoted one:');
   for (const x of r.referring.filter((y) => args.includes('--all') || y.exception)) {
     console.log(`- ${u} ${x.id}${x.n ? ` ${label(x.n)}` : ''} names ${u} ${x.names.join(', ')}${x.exception ? ` ! "${x.exception}"` : ''}: ${x.head}…`);
+  }
+  console.log('\nQuoted, naming one not quoted:');
+  for (const x of r.named.filter((y) => args.includes('--all') || y.applies)) {
+    console.log(`- ${u} ${x.id}${x.n ? ` ${label(x.n)}` : ''} names ${u} ${x.names.join(', ')}${x.applies ? ` ! "${x.applies}"` : ''}: ${x.head}…`);
   }
   if (!args.includes('--all')) console.log('\nOnly the marked ones are shown; --all lists every paragraph left out and every reference.');
   console.log('Read each one in the act before stating the rule, and quote it or say why it does not apply.');

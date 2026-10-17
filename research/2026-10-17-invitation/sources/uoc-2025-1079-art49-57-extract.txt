@@ -1,6 +1,6 @@
-# Inviting a foreigner: the act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (obwieszczenie of 25.07.2025), art. 49-57; the KPA, consolidated Dz.U. 2025 poz. 1691 (obwieszczenie of 7.11.2025), art. 163b-163g (the simplified procedure, which UoC art. 55b applies); the MSWiA regulation of 16.03.2023 (Dz.U. 2023 poz. 637) § 1-6 (the forms and the inviter's funds); the stamp duty act (Dz.U. 2025 poz. 1154), annex part I item 28
-# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1691 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; DU/2023/637 dab84048eecf4f177f4cdb626fb28e71a54003c37bd451fa7db7fe768e6c796a; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac.
-# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): UoC art. 49-57 after 1.07.2025, none; KPA art. 35 and 163b-163g after 3.11.2025, none (Dz.U. 2025 poz. 769 art. 1 changes other articles from 1.01.2026); the regulation, none; the stamp duty annex part I: Dz.U. 2025 poz. 921 (items 26-27b) and 1847 (items 9ba, 9ca), not item 28.
+# Inviting a foreigner: the act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (obwieszczenie of 25.07.2025), art. 49-57, art. 195 ust. 4 (an unbroken stay, which art. 49 ust. 3 applies) and art. 336-337 (the costs of a return decision); the KPA, consolidated Dz.U. 2025 poz. 1691 (obwieszczenie of 7.11.2025), art. 35 § 3a-5 (the time limit in the simplified procedure), art. 65 § 1-2 (filing at the wrong office) and art. 163b-163g (the simplified procedure, which UoC art. 55b applies); the MSWiA regulation of 16.03.2023 (Dz.U. 2023 poz. 637) § 1-6 (the forms and the inviter's funds); the stamp duty act (Dz.U. 2025 poz. 1154), art. 9 (refunds), annex part I item 28 and part IV (a power of attorney); the stamp duty change Dz.U. 2026 poz. 846 art. 14 (pkt 1), 31 and 35 (refunds from 1.10.2026); the special act on Ukrainian citizens, consolidated Dz.U. 2026 poz. 1293 (obwieszczenie of 17.09.2026), art. 100d ust. 1 (the suspension of time limits names no invitation)
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1691 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; DU/2023/637 dab84048eecf4f177f4cdb626fb28e71a54003c37bd451fa7db7fe768e6c796a; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2026/846 7bfabbeca53808bca583e8027b8b1e9c3c7e28c24f83fec18977ff51417b24e2; DU/2026/1293 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177. Read for the dates, not quoted: DU/2025/769 7a03b7c2f2be5eeb0994ec5e49a75723dd2fe6b72220e35e2de8f4449dff8900; DU/2023/547 aa0c2147ea57acf708d3f9ca0a67209202f5a52ec8ffc654a2815e5436c72bef; DU/2022/2185 e481942cbc11939034f2fc6dc600dc6dd1bc48cd732faf89b91f88cc3bfc1d81; DU/2025/921 f257a9ef3ce2aa20ddc4016938bee4f1dc5acdd54fd96056b1569b4a51ca05a6; DU/2025/1847 76951576e9ecd4798a5c06655f342c304ffead1cfbe4433c053987b20c977e2a; DU/2025/1795 fd0bf249ab8309e7574dcb659e89e8f130263b49af43edb192b2062a8ed23e55; DU/2026/1206 9b1cefbd26b7fdf95542dd9287e2bbb51c08df9c432450ed58e2853b2937c655; DU/2023/1688 82a3c033a7dbd7af72a026bf8ccda7321242e73986c6a42e652ca1591825f974; DU/2024/854 e53034c8c6a7a9d0ae8c45b440a1eb75e8cb164f57759555437fb6486fa6511e; DU/2025/1301 8e5bc3966f0c2c82fbac93ed4b5f075e44326fbceb899922826ecc086df14cfb; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026). UoC art. 49-57, 195 and 336-337 after 1.07.2025: none (the consolidated text covers the acts published before 23.07.2025). Of the earlier acts: Dz.U. 2023 poz. 547 art. 1 (its pkt 48 added art. 336 ust. 1a, in force 7.04.2023 and in the consolidated text) and its transitional art. 10-13, 15, 23, 24 and 26-31 (proceedings begun before 7.04.2023, humanitarian stay cards and other articles; none concerns invitations or return costs). Art. 337 ust. 3-4 read as changed by Dz.U. 2025 poz. 621 art. 96 pkt 2 (footnote 14), in the consolidated text. KPA art. 35, 65 and 163b-163g after 3.11.2025: none; Dz.U. 2025 poz. 769 art. 1 (its KPA changes) is not among the exceptions of its art. 48, so it took effect on 13.07.2025 and is in the consolidated text. The regulation: none. The stamp duty act after 1.07.2025: Dz.U. 2025 poz. 921 art. 2 (art. 2; annex part I items 26-27b); Dz.U. 2025 poz. 1847 art. 3 (annex part I items 9ba, 9ca) and its art. 10 (building notifications); Dz.U. 2025 poz. 1795 art. 116 (annex part III item 44); Dz.U. 2026 poz. 1206 art. 14 (annex part III item 17); Dz.U. 2023 poz. 1688 art. 26 (annex part I item 51) and its art. 64 (local plans); Dz.U. 2026 poz. 912 art. 76 (art. 7); Dz.U. 2026 poz. 875 art. 9 (art. 1): none touches art. 9, item 28 or part IV. Dz.U. 2026 poz. 846 art. 14 rewrote art. 9 ust. 2 and added ust. 2a-2c from 1.10.2026 (quoted below); its art. 31 keeps the old rules for refund requests filed before then, and its art. 32 ends the regulation issued under art. 10. The special act after 17.09.2026: none. Earlier, Dz.U. 2024 poz. 854 art. 1, Dz.U. 2025 poz. 1301 art. 10 and Dz.U. 2026 poz. 203 art. 17 (pkt 50) each moved the end date in the opening of art. 100d ust. 1 (to 30.09.2025, 4.03.2026 and 4.03.2027); the consolidated text holds the last. Their transitional rules (Dz.U. 2024 poz. 854 art. 12-27, 30 and 32-34; Dz.U. 2025 poz. 1301 art. 16-27; Dz.U. 2026 poz. 203 art. 22-26, 32-36, 38-40, 42-44 and 47-51) were not read one by one: none of the four texts holds the word "zaprosz" (an invitation).
 
 [UoC art. 49-57 (who may invite; refusal; validity up to 1 year; the voivode of the inviter's residence; the documents; the simplified procedure; the inviter's liability)]
     Art. 49. 1. Cudzoziemiec może przedstawić zaproszenie jako dokument potwierdzający posiadanie środków finanso-
@@ -126,6 +126,83 @@ z wyjątkiem kosztów wydania i wykonania decyzji o zobowiązaniu cudzoziemca do
      wania tej wysokości w zależności od miejsca zakwaterowania cudzoziemca, długości okresu jego pobytu na terytorium
      Rzeczypospolitej Polskiej oraz więzi rodzinnych łączących zapraszającego z zapraszanym.
 
+[UoC art. 195 ust. 4 (when a stay counts as unbroken; art. 49 ust. 3 applies it to the inviter's 5 years)]
+     4. Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej stanowiący podstawę do udzielenia mu zezwolenia na
+pobyt stały uznaje się za nieprzerwany, jeżeli żadna z przerw w nim nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie
+przekroczyły łącznie 10 miesięcy w okresach stanowiących podstawę do udzielenia mu zezwolenia na pobyt stały, chyba że
+przerwa była spowodowana:
+1)   wykonywaniem przez cudzoziemca obowiązków zawodowych lub świadczeniem przez niego pracy poza terytorium
+     Rzeczypospolitej Polskiej na podstawie umowy zawartej z pracodawcą, którego siedziba znajduje się na terytorium
+     Rzeczypospolitej Polskiej, lub
+2)   towarzyszeniem cudzoziemcowi, o którym mowa w pkt 1, przez jego małżonka lub małoletnie dziecko, lub
+3)   szczególną sytuacją osobistą wymagającą obecności cudzoziemca poza terytorium Rzeczypospolitej Polskiej i trwała
+     nie dłużej niż 6 miesięcy, lub
+4)   wyjazdem poza terytorium Rzeczypospolitej Polskiej w celu odbycia praktyk lub uczestnictwa w zajęciach, przewi-
+     dzianych w toku studiów w polskiej uczelni.
+
+[UoC art. 336-337 (the costs of a return decision: set by a Border Guard decision when it is enforced; when the inviter bears them; the employer for illegal work). The "14)" marks the text's footnote 14: changed by art. 96 pkt 2 of the act of 20.03.2025 (Dz.U. 2025 poz. 621), in the consolidated text]
+     Art. 336. 1. Koszty związane z wydaniem i wykonaniem decyzji o zobowiązaniu cudzoziemca do powrotu ustala się
+w przypadku, gdy decyzja ta podlega przymusowemu wykonaniu.
+     1a. Kosztów, o których mowa w ust. 1, nie ustala się w przypadku udzielenia cudzoziemcowi, o którym mowa
+w art. 334 ust. 2 pkt 2, pomocy w dobrowolnym powrocie.
+     2. Komendant oddziału Straży Granicznej lub komendant placówki Straży Granicznej właściwy w sprawie przymuso-
+wego wykonania decyzji o zobowiązaniu cudzoziemca do powrotu, a w przypadku gdy cudzoziemiec przebywa w strze-
+żonym ośrodku lub areszcie dla cudzoziemców – organ Straży Granicznej, któremu podlega ten ośrodek lub areszt, ustala,
+w drodze decyzji, wysokość kosztów, o których mowa w ust. 1, oraz podmioty obowiązane do pokrycia tych kosztów. Decyzja
+podlega natychmiastowemu wykonaniu.
+     2a. Koszty, o których mowa w ust. 1, ustala się, gdy decyzja o zobowiązaniu cudzoziemca do powrotu stała się osta-
+teczna, a w przypadku wydania takiej decyzji przez organ wyższego stopnia – gdy decyzja ostateczna została doręczona,
+chyba że podlega ona natychmiastowemu wykonaniu.
+     3. Należności z tytułu kosztów, o których mowa w ust. 1, przedawniają się z upływem 5 lat, licząc od końca roku
+kalendarzowego, w którym decyzja o ustaleniu wysokości kosztów stała się ostateczna.
+     Art. 337. 1. Koszty, o których mowa w art. 336 ust. 1, ponosi cudzoziemiec.
+    2. Zapraszający ponosi koszty, o których mowa w art. 336 ust. 1, w przypadku gdy cudzoziemiec, którego zaprosił,
+wjechał na terytorium Rzeczypospolitej Polskiej w okresie, na który został zaproszony, i okoliczności uzasadniające zobo-
+wiązanie go do powrotu wystąpiły:
+1)   podczas pobytu cudzoziemca na tym terytorium w okresie objętym zaproszeniem albo
+2)   po upływie okresu objętego zaproszeniem, gdy cudzoziemcowi nie przedłużono wizy, nie uzyskał on zezwolenia na
+     pobyt czasowy, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego UE lub nie korzysta
+     z ochrony na terytorium Rzeczypospolitej Polskiej, o której mowa w art. 3 ustawy z dnia 13 czerwca 2003 r. o udzie-
+     laniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, i pozostał na tym terytorium.
+      3.14) Podmiot powierzający pracę cudzoziemcowi lub pełnienie określonej funkcji ponosi koszty, o których mowa
+w art. 336 ust. 1, w przypadku gdy cudzoziemcowi została wydana decyzja o zobowiązaniu cudzoziemca do powrotu
+w związku z okolicznością, o której mowa w art. 302 ust. 1 pkt 4.
+    3a. W przypadku, o którym mowa w ust. 3, jeżeli wykonywanie pracy lub pełnienie funkcji zostało cudzoziemcowi
+powierzone przez kilka podmiotów, ponoszą one solidarnie koszty, o których mowa w art. 336 ust. 1.
+    4.14) Jeżeli cudzoziemcowi, który został zaproszony, została wydana decyzja o zobowiązaniu cudzoziemca do powrotu
+w związku z okolicznością, o której mowa w art. 302 ust. 1 pkt 4, koszty, o których mowa w art. 336 ust. 1, ponosi podmiot
+powierzający pracę cudzoziemcowi lub pełnienie określonej funkcji.
+     5. Jednostka naukowa, która przyjęła cudzoziemca w celu prowadzenia badań naukowych lub prac rozwojowych,
+ponosi koszty, o których mowa w art. 336 ust. 1, jeżeli decyzja o zobowiązaniu cudzoziemca do powrotu została wydana
+i wykonana przed upływem 6 miesięcy od dnia wygaśnięcia umowy o przyjęciu go w celu prowadzenia badań naukowych
+lub prac rozwojowych, a podstawą wydania tej decyzji był pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej bez
+ważnej wizy, jeżeli była wymagana, lub innego ważnego dokumentu uprawniającego go do wjazdu na to terytorium i pobytu
+na nim.
+     6. Organizator stażu ponosi koszty, o których mowa w art. 336 ust. 1, jeżeli decyzja o zobowiązaniu cudzoziemca do
+powrotu została wydana i wykonana przed upływem 6 miesięcy od dnia wygaśnięcia umowy dotyczącej odbywania stażu,
+a podstawą wydania tej decyzji był pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej bez ważnej wizy, jeżeli była
+wymagana, lub innego ważnego dokumentu uprawniającego go do wjazdu na to terytorium i pobytu na nim.
+
+[KPA art. 35 § 3a-5 (one month in the simplified procedure; what is not counted)]
+     § 3a. Załatwienie sprawy w postępowaniu uproszczonym powinno nastąpić niezwłocznie, nie później niż w terminie
+miesiąca od dnia wszczęcia postępowania.
+     § 4. Przepisy szczególne mogą określać inne terminy niż określone w § 3 i 3a.
+     § 5. Do terminów określonych w przepisach poprzedzających nie wlicza się terminów przewidzianych w przepisach
+prawa dla dokonania określonych czynności, okresów doręczania z wykorzystaniem publicznej usługi hybrydowej, o której
+mowa w art. 2 pkt 7 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych (Dz. U. z 2024 r. poz. 1045 i 1841),
+okresów zawieszenia postępowania, okresu trwania mediacji oraz okresów opóźnień spowodowanych z winy strony albo
+przyczyn niezależnych od organu.
+
+[KPA art. 65 § 1-2 (an application filed at the wrong office is forwarded)]
+     Art. 65. § 1. Jeżeli organ administracji publicznej, do którego podanie wniesiono, jest niewłaściwy w sprawie, nie-
+zwłocznie przekazuje je do organu właściwego, zawiadamiając jednocześnie o tym wnoszącego podanie. Zawiadomienie
+o przekazaniu powinno zawierać uzasadnienie.
+      § 1a. Zawiadomienie o przekazaniu sprawy zawiera również informacje, o których mowa w art. 13 ust. 1 i 2 rozporządzenia
+2016/679, w zakresie danych przetwarzanych przez organ przekazujący, chyba że wnoszący podanie posiada te informacje,
+a ich zakres lub treść nie uległy zmianie.
+    § 2. Podanie wniesione do organu niewłaściwego przed upływem przepisanego terminu uważa się za wniesione z zacho-
+waniem terminu.
+
 [KPA art. 163b-163g (the simplified procedure)]
      Art. 163b. § 1. Organ administracji publicznej załatwia sprawę w postępowaniu uproszczonym, jeżeli przepis szcze-
 gólny tak stanowi.
@@ -194,3 +271,111 @@ nia na wjazd, w wysokości stanowiącej równowartość biletu do tego państwa,
                      cudzoziemca na pobyt
                      w Rzeczypospolitej Polskiej
                      do ewidencji zaproszeń
+
+[The stamp duty act art. 9 (refunds), before the change below]
+      Art. 9. 1. Opłata skarbowa podlega zwrotowi:
+1)    od dokonania czynności urzędowej – jeżeli mimo zapłacenia opłaty nie dokonano czynności urzędowej;
+2)    od wydania zaświadczenia lub zezwolenia (pozwolenia, koncesji) – jeżeli mimo zapłacenia opłaty nie wydano zaświad-
+      czenia lub zezwolenia (pozwolenia, koncesji).
+      2. Zwrot opłaty skarbowej następuje na wniosek.
+      3. Opłata skarbowa nie podlega zwrotowi po upływie pięciu lat licząc od końca roku, w którym dokonano zapłaty opłaty.
+
+[The stamp duty act, annex part IV (17 zł for a power of attorney; column 4 lists the exemptions)]
+  IV.        Złożenie dokumentu
+             Dokument stwierdzający udzielenie                       17 zł       dokument stwierdzający
+             pełnomocnictwa lub prokury oraz jego odpis,                         udzielenie pełnomocnictwa
+             wypis lub kopia – od każdego stosunku                               oraz jego odpis, wypis lub kopia:
+             pełnomocnictwa (prokury)                                            1) poświadczony notarialnie
+                                                                                      lub przez uprawniony organ,
+                                                                                      upoważniające do odbioru
+                                                                                      dokumentów
+                                                                                 2) w sprawach:
+                                                                                      a) karnych, karnych
+                                                                                            skarbowych
+                                                                                            i dyscyplinarnych
+                                                                                            oraz w sprawach
+                                                                                            o wykroczenia
+                                                                                      b) cywilnych, w których
+                                                                                            mocodawcy
+                                                                                            przysługuje zwolnienie
+                                                                                            od kosztów sądowych
+                                                                                 3)   jeżeli pełnomocnictwo
+                                                                                      udzielane jest małżonkowi,
+                                                                                      wstępnemu, zstępnemu
+                                                                                      lub rodzeństwu
+                                                                                 4)   jeżeli mocodawcą jest
+                                                                                      podmiot określony w art. 7
+                                                                                      pkt 1–5 ustawy
+                                                                                 5)   jeżeli dotyczy podpisywania
+                                                                                      deklaracji podatkowych
+                                                                                      składanych za pomocą
+                                                                                      środków komunikacji
+                                                                                      elektronicznej
+                                                                                 6)   jeżeli dotyczy
+                                                                                      pełnomocnictwa ogólnego
+                                                                                      w rozumieniu ustawy z dnia
+                                                                                      29 sierpnia 1997 r. –
+                                                                                      Ordynacja podatkowa
+                                                                                      (Dz. U. z 2025 r. poz. 111,
+                                                                                      497, 621, 622, 769 i 820)
+      1          2            3                   4
+                                  7)   jeżeli pełnomocnictwo
+                                       udzielane jest do złożenia
+                                       lub zmiany zgłoszenia
+                                       rejestracyjnego
+                                       uproszczonego lub
+                                       zgłoszenia o zaprzestaniu
+                                       wykonywania czynności
+                                       jako pośredniczący podmiot
+                                       olejowy lub zużywający
+                                       podmiot olejowy
+                                       w rozumieniu ustawy z dnia
+                                       6 grudnia 2008 r. o podatku
+                                       akcyzowym
+                                  8)   jeżeli dotyczy pełnomocnictwa
+                                       szczególnego w rozumieniu
+                                       ustawy z dnia 6 sierpnia
+                                       2010 r. o dowodach
+                                       osobistych (Dz. U. z 2022 r.
+                                       poz. 671, z 2023 r. poz. 1234
+                                       i 1941 oraz z 2025 r.
+                                       poz. 1006 i 1077).
+
+[Dz.U. 2026 poz. 846 art. 14 pkt 1 (art. 9 ust. 2-2c of the stamp duty act: a refund on the payer's request, within 2 months, without a decision)]
+     Art. 14. W ustawie z dnia 16 listopada 2006 r. o opłacie skarbowej (Dz. U. z 2025 r. poz. 1154, 1795 i 1847) wprowa-
+dza się następujące zmiany:
+1)    w art. 9:
+      a)    ust. 2 otrzymuje brzmienie:
+                 „2. Zwrot opłaty skarbowej następuje na wniosek osoby lub jednostki, która dokonała zapłaty opłaty
+            skarbowej.”,
+      b) po ust. 2 dodaje się ust. 2a–2c w brzmieniu:
+                „2a. Jeżeli wniosek o zwrot opłaty skarbowej jest zasadny, organ podatkowy zwraca opłatę skarbową bez
+            wydawania decyzji, w terminie 2 miesięcy od dnia złożenia wniosku.
+                  2b. Organ podatkowy zwraca opłatę skarbową osobie lub jednostce, która złożyła wniosek o jej zwrot.
+                  2c. Jeżeli opłata skarbowa nie została zwrócona w terminie 2 miesięcy od dnia złożenia wniosku o jej zwrot,
+            oprocentowanie zwrotu opłaty skarbowej przysługuje od dnia złożenia wniosku, w wysokości równej wysokości
+            odsetek za zwłokę od zaległości podatkowych.”;
+
+[Dz.U. 2026 poz. 846 art. 31 (requests filed before it took effect keep the old rules)]
+   Art. 31. Jeżeli przed dniem wejścia w życie niniejszej ustawy złożono wniosek o zwrot opłaty skarbowej, o którym
+mowa w art. 9 ust. 2 ustawy zmienianej w art. 14, do zwrotu opłaty skarbowej stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2026 poz. 846 art. 35 (in force 1.10.2026; art. 14 is not an exception)]
+     Art. 35. Ustawa wchodzi w życie z dniem 1 października 2026 r., z wyjątkiem:
+1)   art. 1 pkt 9, art. 10, art. 18 pkt 1–3 i art. 34, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 8 pkt 4, 5 i pkt 6 lit. a, które wchodzą w życie po upływie 6 miesięcy od dnia ogłoszenia.
+
+[The special act on Ukrainian citizens, consolidated Dz.U. 2026 poz. 1293, art. 100d ust. 1 (the time limits it suspends: residence permits at the voivode; no invitation). The "124)" marks the text's footnote on later changes to the opening, in the consolidated text]
+      Art. 100d. 1. W okresie do dnia 4 marca 2027 r. bieg terminów na załatwienie spraw dotyczących:124)
+1)    udzielenia cudzoziemcowi:
+      a)   zezwolenia na pobyt czasowy,
+      b) zezwolenia na pobyt stały,
+      c)   zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej,
+2)    zmiany:
+      a)   zezwolenia na pobyt czasowy i pracę,
+      b) zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji,
+3)    cofnięcia cudzoziemcowi:
+      a)   zezwolenia na pobyt czasowy,
+      b) zezwolenia na pobyt stały,
+      c)   zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej
+– w postępowaniach prowadzonych przez wojewodę nie rozpoczyna się, a rozpoczęty ulega zawieszeniu na ten okres.
