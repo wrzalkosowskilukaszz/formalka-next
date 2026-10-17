@@ -21,6 +21,7 @@
 | [`maps/unemployment.md`](maps/unemployment.md): registering as unemployed, for a foreigner | Wave 5, matter 17 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-unemployment/sources/CHECK.md`) | 17 (US1–US17) | 17.10.2026; the benefit's amounts change each 1 June |
 | [`maps/karta-polaka.md`](maps/karta-polaka.md): the Karta Polaka | Wave 5, matter 18 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-karta-polaka/sources/CHECK.md`) | 14 (KS1–KS14) | 17.10.2026; the settlement benefit on hold since 15.01.2026 (the minister's notice) |
 | [`maps/moving.md`](maps/moving.md): moving, deregistering and leaving Poland, for a foreigner | Wave 6, matter 19 | Sources (R1) and this map; **not yet checked by the separate agent** | 12 (MS1–MS12) | 17.10.2026 |
+| [`maps/business.md`](maps/business.md): registering a business (CEIDG) as a foreigner | Wave 6, matter 20 | Sources (R1) and this map; **not yet checked by the separate agent** | 13 (BS1–BS13) | 17.10.2026; from 1.11.2026 a PESEL and online only for a new business |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 

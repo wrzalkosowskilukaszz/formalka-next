@@ -1,0 +1,360 @@
+# biznes.gov.pl: "Jaką działalność gospodarczą może w Polsce prowadzić cudzoziemiec"
+# Source: https://www.biznes.gov.pl/pl/portal/00806, retrieved 2026-10-17, html sha256 4fc9b051b59bcfd382c71e2ddf77685b3255df828b5d5dbcb738331da7677bc6
+# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 22.09.2021" and no update date. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# sha256 of the text below this header (from line 5): f300c4c36fc73d638871f2a65f3705f6d0a741ee08f58f4effbe147e7ac750da.
+Jaką działalność gospodarczą może w Polsce prowadzić cudzoziemiec
+Opublikowano:
+22.09.2021
+Możesz prowadzić w Polsce biznes, nawet jeżeli nie masz polskiego obywatelstwa. Przeczytaj, w jakiej formie to zrobić i czego będziesz potrzebować do rejestracji firmy.
+Kto może prowadzić działalność gospodarczą w Polsce
+Obywatele państw członkowskich Unii Europejskiej oraz Europejskiego Obszaru Gospodarczego, którzy chcą wykonywać w Polsce działalność gospodarczą, mogą:
+- założyć własną firmę jednoosobową lub dowolną spółkę handlową
+- świadczyć transgranicznie usługi – bez rejestrowania działalności w Polsce
+- założyć w Polsce oddział lub przedstawicielstwo.
+Państwami członkowskimi Unii Europejskiej są: Austria, Belgia, Bułgaria, Chorwacja, Cypr, Czechy, Dania, Estonia, Finlandia, Francja, Grecja, Hiszpania, Holandia, Irlandia, Litwa, Luksemburg, Łotwa, Malta, Niemcy, Polska, Portugalia, Rumunia, Słowenia, Słowacja, Szwecja, Węgry, Włochy.
+Państwami członkowskimi Europejskiego Obszaru Gospodarczego – poza państwami członkowskimi Unii Europejskiej – są: Norwegia, Islandia, Liechtenstein.
+Własną firmę, dowolną spółkę handlową, oddział lub przedstawicielstwo mogą założyć w Polsce, także obywatele USA i Konfederacji Szwajcarskiej.
+Umowy międzynarodowe:
+- Traktat o stosunkach handlowych i gospodarczych między Rzecząpospolitą Polską a Stanami Zjednoczonymi Ameryki, sporządzony w Waszyngtonie dnia 21 marca 1990 r. oraz
+- Umowa między Wspólnotą Europejską i jej państwami członkowskimi, z jednej strony, a Konfederacją Szwajcarską, z drugiej strony, w sprawie swobodnego przepływu osób
+umożliwiają zakładanie działalności gospodarczej przez obywateli Stanów Zjednoczonych Ameryki i Konfederacji Szwajcarskiej na takich samych zasadach jak przez obywateli polskich.
+Obywatele państw, które nie należą do Unii Europejskiej, mogą:
+- założyć w Polsce firmę jednoosobową lub dowolną spółkę handlową, jeżeli mają tytuł pobytowy, który do tego uprawnia
+- założyć w Polsce spółkę komandytową, komandytowo-akcyjną, z ograniczoną odpowiedzialnością, prostą spółkę akcyjną i spółkę akcyjną
+- przystępować do spółki komandytowej, komandytowo-akcyjnej, z ograniczoną odpowiedzialnością, prostej spółki akcyjnej i spółki akcyjnej oraz nabywać i obejmować udziały lub akcje w tych spółkach
+- założyć w Polsce oddział przedsiębiorcy zagranicznego, jeżeli ratyfikowane umowy międzynarodowe podpisane z Polską nie wykluczają takiej możliwości.
+Wykaz ratyfikowanych umów międzynarodowych znajdziesz w Internetowej Bazie Traktatów, prowadzonej przez Ministerstwo Spraw Zagranicznych.
+W jakiej formie można prowadzić firmę w Polsce
+W Polsce można prowadzić działalność gospodarczą w różnych formach:
+- jednoosobowej działalności gospodarczej
+- spółki cywilnej
+- spółek osobowych
+- spółek kapitałowych.
+Działalność jednoosobowa to najprostsza forma prowadzenia działalności:
+- można ją zarejestrować online, a rejestracja jest bezpłatna
+- nie wymaga kapitału na start
+- przedsiębiorca jest podatnikiem podatku od osób fizycznych (PIT) i ma możliwość wyboru formy opodatkowania
+- nie musi być podatnikiem VAT, jeśli ma przychody poniżej określonego progu
+- w większości wypadków – dla przychodów, które nie przekraczają 2 mln euro – wystarczy uproszczona księgowość lub ewidencja
+- przedsiębiorca odpowiada całym swoim majątkiem za zobowiązania firmy
+- przedsiębiorca ma wyłączne prawo do reprezentowania swojej działalności.
+Spółki są bardziej złożonymi formami działalności. Proces zakładania spółki jest dużo bardziej sformalizowany. Wspólnicy muszą podpisać umowę w określonej formie. Za rejestrację spółki trzeba zapłacić, a reprezentacja spraw spółki i odpowiedzialność majątkowa zależy od typu spółki. Najczęściej trzeba wnieść kapitał zakładowy.
+Przeczytaj:
+- co musisz wiedzieć zanim zarejestrujesz firmę
+- jak zarejestrować firmę jednoosobową
+- jak wybrać optymalną formę opodatkowania
+- kto musi płacić VAT
+- jakie są różnice pomiędzy różnymi formami prowadzenia działalności gospodarczej w Polsce.
+Jakie są ograniczenia w wyborze formy prawnej
+Niektóre rodzaje działalności wymagają rejestracji w określonej formie prawnej albo zastrzegają daną formę dla osób o określonych kompetencjach.
+Dla części rodzajów działalności prawo nie przewiduje rejestracji w CEIDG – przedsiębiorca musi zarejestrować spółkę w KRS. Tak jest w przypadku uprawy niektórych roślin i hodowli niektórych zwierząt, działalności ubezpieczeniowej i reasekuracyjnej, działalności w zakresie: ochrony przeciwpożarowej, związków zawodowych, klubów sportowych.
+Partnerami w spółce partnerskiej mogą być tylko przedstawiciele wolnych zawodów: adwokata, aptekarza, architekta, inżyniera budownictwa, biegłego rewidenta, brokera ubezpieczeniowego, doradcy podatkowego, maklera papierów wartościowych, doradcy inwestycyjnego, księgowego, lekarza, lekarza dentysty, lekarza weterynarii, notariusza, pielęgniarki, położnej, radcy prawnego, rzecznika patentowego, rzeczoznawcy majątkowego i tłumacza przysięgłego.
+W sytuacjach wyjątkowych ustawa określa rodzaj spółki, jaką należy zarejestrować, aby wykonywać daną działalność – w sektorze finansowym, na przykład działalność banków czy towarzystw ubezpieczeniowych.
+Kiedy cudzoziemiec może prowadzić działalność w dowolnej formie
+Możesz wybrać dowolną formę prowadzenia działalności gospodarczej w Polsce (czyli możesz założyć działalność jednoosobową lub zostać wspólnikiem dowolnej spółki osobowej lub spółki kapitałowej), jeśli spełniasz któryś z warunków:
+- jesteś obywatelem państwa członkowskiego Unii Europejskiej albo Europejskiego Obszaru Gospodarczego
+- jesteś obywatelem Stanów Zjednoczonych Ameryki lub Konfederacji Szwajcarskiej
+- jesteś obywatelem Ukrainy, który przebywa w Polsce legalnie i posiada numer PESEL ze statusem UKR .
+Pamiętaj! Małżonek obywatela Ukrainy, o ile przybył do Polski z Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, może założyć w Polsce firmę na takich samych zasadach jak obywatel Ukrainy.
+jesteś obywatelem innego państwa oraz posiadasz:
+- zezwolenie na pobyt stały
+- zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej
+- zezwolenie na pobyt w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji - Niebieska Karta UE
+- zezwolenie na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE
+- zezwolenie na pobyt czasowy, udzielone w związku z połączeniem z rodziną legalnie przebywającą w Polsce, kształceniem się na studiach, w celu prowadzenia badań naukowych
+zezwolenie na pobyt czasowy udzielone ze względu na inne okoliczności:
+- w związku z tym, że zamierzasz pracować, studiować lub prowadzić działalność gospodarczą w Polsce, a wcześniej posiadałeś zezwolenie na pobyt rezydenta długoterminowego UE udzielone przez inne państwo członkowskie UE lub jesteś członkiem rodziny takiego cudzoziemca
+- przebywasz w Polsce na podstawie zezwolenia na pobyt w celu prowadzenia badań naukowych, zakończyłeś te badania i zamierzasz w Polsce zostać, poszukujesz pracy lub zamierzasz prowadzić działalność gospodarczą
+- status uchodźcy
+- ochronę uzupełniającą
+- zgodę na pobyt ze względów humanitarnych lub zgodę na pobyt tolerowany
+- zezwolenie na pobyt czasowy i pozostajesz w związku małżeńskim z obywatelem polskim mieszkającym na terytorium Polski
+- zezwolenie na pobyt czasowy w celu wykonywania działalności gospodarczej, udzielone ze względu na kontynuowanie prowadzonej już działalności gospodarczej na podstawie wpisu do CEIDG
+- ochronę czasową w Polsce
+- ważną Kartę Polaka
+najpóźniej w ostatnim dniu legalnego pobytu w Polsce złożyłeś wniosek o udzielenie zezwolenia na pobyt czasowy, pobyt stały lub pobyt rezydenta długoterminowego Unii Europejskiej nie zawierający braków formalnych, pod warunkiem, że przed złożeniem wniosku byłeś uprawniony do prowadzenia działalności gospodarczej na podstawie:
+- Niebieskiej Karty
+- zezwolenia na pobyt czasowy w związku z korzystaniem z mobilności długoterminowej posiadacza Niebieskiej Karty UE
+- zezwolenia na pobyt czasowy w związku z kształceniem się na studiach
+- zezwolenia na pobyt czasowy w celu prowadzenia badań naukowych
+- zezwolenia na pobyt czasowy udzielonego w związku z połączeniem z rodziną legalnie przebywającą w Polsce
+- zezwolenia po pobyt czasowy i pozostawania w związku małżeńskim z obywatelem polskim mieszkającym na terytorium Polski
+zezwolenie na pobyt czasowy udzielonego ze względu na inne okoliczności:
+- w związku z tym, że cudzoziemiec zamierza pracować, studiować lub prowadzić działalność gospodarczą w Polsce, a wcześniej posiadał zezwolenie na pobyt rezydenta długoterminowego UE udzielone przez inne państwo członkowskie UE lub jest członkiem rodziny takiego cudzoziemca
+- cudzoziemiec przebywał w Polsce na podstawie zezwolenia na pobyt w celu prowadzenia badań naukowych, zakończył te badania i zamierza w Polsce zostać, poszukuje pracy lub zamierza prowadzić działalność gospodarczą
+jesteś członkiem rodziny państwa UE (państwa członkowskiego UE, państwa członkowskiego EFTA, Konfederacji Szwajcarskiej) dołączającym się do niego lub przebywającym nim, co oznacza:
+- małżonka obywatela UE
+- bezpośredniego zstępnego (dziecko) obywatela UE lub jego małżonka w wieku do 21 lat lub pozostającego na utrzymaniu obywatela UE lub jego małżonka
+- bezpośredniego wstępnego (rodzic) obywatela UE lub jego małżonka pozostającego na utrzymaniu obywatela UE lub jego małżonka
+- bezpośredniego wstępnego (rodzica) małoletniego obywatela UE, który pozostaje na jego utrzymaniu, sprawującego nad nim faktyczną opiekę
+- jesteś uczestnikiem programu wsparcia dla cudzoziemców w zakresie podejmowania i wykonywania działalności gospodarczej na terytorium Polski (na przykład Poland Business Harbour).
+Uczestnikiem programu Poland. Business Harbour jest cudzoziemiec posiadający wizę z adnotacją „Poland. Business Harbour” w okresie jej ważności, a także cudzoziemiec, który w okresie ważności wizy z adnotacją „Poland. Business Harbour” złożył wniosek o udzielenie zezwolenia na pobyt, uprawniającego do podejmowania i wykonywania działalności gospodarczej.
+Program „Poland. Business Harbour” został zawieszony - nie są wydawane nowe wizy czy rekomendacje, ale wizy już wydane pozostają w mocy.
+Sprawdź wykaz programów wsparcia dla cudzoziemców w zakresie podejmowania i wykonywania działalności gospodarczej na terytorium Polski
+Przeczytaj, jak zarejestrować:
+- jednoosobową działalność gospodarczą
+- spółkę jawną
+- spółkę partnerską
+- spółkę komandytowo-akcyjną
+- spółkę komandytową
+- spółkę z ograniczoną odpowiedzialnością
+- prostą spółkę akcyjną
+- spółkę akcyjną.
+Kiedy cudzoziemiec nie może prowadzić działalności jednoosobowej
+Jednoosobowej działalności gospodarczej, spółki partnerskiej ani spółki jawnej nie mogą założyć osoby, które:
+- nie są obywatelami państw członkowskich Unii Europejskiej
+- nie są obywatelami państw Europejskiego Obszaru Gospodarczego
+- nie są obywatelami USA lub Szwajcarii
+- nie mają tytułu pobytowego umożliwiającego założenie działalności na takich samych zasadach jak obywatele Polski.
+Tacy cudzoziemcy mogą:
+prowadzić działalność w formie spółki:
+- komandytowej
+- komandytowo-akcyjnej
+- z ograniczoną odpowiedzialnością
+- prostej spółki akcyjnej lub akcyjnej
+- przystępować do takich spółek, nabywać i obejmować w nich udziały lub akcje
+- założyć w Polsce oddział przedsiębiorcy zagranicznego, jeżeli ratyfikowane umowy międzynarodowe podpisane z Polską nie wykluczają takiej możliwości.
+Wykaz ratyfikowanych umów międzynarodowych można znaleźć w Internetowej Bazie Traktatów, prowadzonej przez Ministerstwo Spraw Zagranicznych.
+Ważne! Prawo do podejmowania i wykonywania działalności gospodarczej w formie spółki z ograniczoną odpowiedzialnością, prostej spółki akcyjnej i spółki akcyjnej nie obejmuje prawa do spełniania powtarzających się świadczeń niepieniężnych lub świadczenia pracy lub usług w zamian za akcje prostej spółki akcyjnej.
+Ważne! Jeśli chcesz nabyć albo objąć udziały lub akcje w spółce, która jest właścicielem nieruchomości, musisz posiadać specjalne zezwolenie.
+We wniosku o wpis do KRS lub zmianę wpisu obejmującą nabycie lub objęcie udziałów, akcji lub ogółu praw i obowiązków czy zmianę wspólników spółki, musisz zamieścić oświadczenie:
+- czy jesteś cudzoziemcem w rozumieniu ustawy o nabywaniu nieruchomości przez cudzoziemców
+- czy jest właścicielem lub wieczystym użytkownikiem nieruchomości położonych w Polsce.
+Przeczytaj, jak uzyskać zezwolenie na nabycie lub objęcie przez cudzoziemca udziałów lub akcji w spółce będącej właścicielem lub wieczystym użytkownikiem nieruchomości .
+Co jest potrzebne do rejestracji firmy jednoosobowej w CEIDG
+Firmę jednoosobową możesz zarejestrować online lub tradycyjnie – w dowolnym urzędzie gminy.
+Rejestracja firmy cudzoziemca w CEIDG może trwać do 30 dni. Jednak zwykle cały proces zajmuje około 7 dni.
+Pamiętaj! Jeśli chcesz zarejestrować firmę jednoosobową online, musisz mieć numer PESEL.
+PESEL to numer, który identyfikuje osobę. Wniosek o nadanie numeru PESEL możesz złożyć w dowolnym urzędzie gminy.
+Składając wniosek o nadanie numeru PESEL, musisz wskazać podstawę prawną, z której wynika obowiązek posiadania numeru PESEL.
+Przeczytaj, jak cudzoziemiec może uzyskać PESEL.
+Po uzyskaniu numeru PESEL załóż profil zaufany.
+Będziesz go potrzebować do założenia Konta Przedsiębiorcy na Biznes.gov.pl. Musisz mieć takie konto, żeby móc wypełnić wniosek online.
+Przeczytaj, jak założyć konto na Biznes.gov.pl.
+Profil zaufany to bezpłatne narzędzie, dzięki któremu możesz:
+- potwierdzić swoją tożsamość w systemach elektronicznej administracji
+- podpisać dokument podpisem zaufanym.
+Profil służy tylko do kontaktów z administracją publiczną, czyli urzędami lub ministerstwami.
+Przeczytaj więcej o profilu zaufanym i podpisie zaufanym.
+Wniosek o rejestrację składany online możesz podpisać profilem zaufanym lub podpisem kwalifikowanym.
+Sprawdź listę podpisów kwalifikowanych, których można używać na Biznes.gov.pl.
+Jeśli nie masz numeru PESEL możesz zarejestrować firmę jednoosobową tradycyjnie – w urzędzie gminy.
+W takim przypadku musisz pokazać pracownikowi urzędu gminy paszport albo inny dokument potwierdzający twoją tożsamość i obywatelstwo.
+Pamiętaj! Jeśli po rejestracji firmy w urzędzie gminy wyrobisz sobie numer PESEL i kolejne wnioski do CEIDG będziesz chciał już składać online, musisz dodać PESEL do swojego wpisu w CEIDG osobiście w urzędzie gminy. Dopiero wtedy będziesz mógł założyć konto na Biznes.gov.pl.
+Dodatkowo – niezależnie od tego, czy rejestrujesz firmę online, czy tradycyjnie – jeśli nie jesteś obywatelem państwa należącego do Unii Europejskiej, Europejskiego Obszaru Gospodarczego albo obywatelem USA lub Szwajcarii, musisz przedstawić dokument potwierdzający, że twój tytuł pobytowy umożliwia założenie jednoosobowej działalności gospodarczej.
+Tytuły pobytowe umożliwiające założenie działalności w CEIDG
+Sprawdź, jaki dokument musisz dołączyć w czasie rejestracji firmy w CEIDG, jeśli nie jesteś obywatelem państwa należącego do Unii Europejskiej, Europejskiego Obszaru Gospodarczego albo obywatelem USA lub Szwajcarii.
+Podstawa prawna umożliwiająca założenie jednoosobowej działalności gospodarczej
+Co wpisać we wniosku o wpis do CEIDG w pytaniu o status cudzoziemca
+Jaki dokument trzeba zeskanować i dołączyć
+zezwolenie na pobyt z adnotacją „Poprzednio posiadacz ochrony czasowej” - karta pobytu CUKR
+numer karty pobytu CUKR
+karta pobytu CUKR
+zezwolenie na pobyt stały
+numer karty pobytu
+karta pobytu
+zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej (zezwolenie udzielone w Polsce)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt rezydenta długoterminowego UE
+zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji - Niebieska Karta UE (art. 127 ustawy o cudzoziemcach)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji - Niebieska Karta UE
+zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE (art. 137a ustawy o cudzoziemcach)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE
+zezwolenie na pobyt czasowy i pozostawanie w związku małżeńskim zawartym z obywatelem polskim zamieszkałym na terytorium Polski
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy (z podstawą dotyczącą zawarcia związku małżeńskiego)
+albo
+(1) decyzja o zezwoleniu na pobyt czasowy (dowolna – nie musi być związana z małżeństwem) oraz (2) dowód osobisty małżonka i (3) akt małżeństwa
+albo
+(1) karta pobytu (dowolna – nie musi być związana z małżeństwem) oraz (2) dowód osobisty małżonka i (3) akt małżeństwa
+status uchodźcy
+numer karty pobytu lub Genewskiego Dokumentu Podróży
+decyzja o nadaniu statusu uchodźcy
+ochrona uzupełniająca
+numer karty pobytu lub Genewskiego Dokumentu Podróży
+decyzja o przyznaniu ochrony uzupełniającej
+zgoda na pobyt tolerowany
+numer dokumentu zgoda na pobyt tolerowany
+decyzja o zgodzie na pobyt tolerowany
+zgoda na pobyt ze względów humanitarnych
+numer karty pobytu
+decyzja o zgodzie na pobyt ze względów humanitarnych
+zezwolenie na pobyt czasowy w celu wykonywania działalności gospodarczej, udzielone ze względu na kontynuowanie prowadzonej już działalności gospodarczej
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy
+ważna Karta Polaka
+numer Karty Polaka
+ważna Karta Polaka
+ochrona czasowa
+numer zaświadczenia
+zaświadczenie o korzystaniu z ochrony czasowej
+(1) pobyt na terytorium Polski po złożeniu wniosku o udzielenie zezwolenia na pobyt stały lub czasowy (na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 1 pkt 2 ustawy o cudzoziemcach) lub (2) na podstawie umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, pod warunkiem, że bezpośrednio przed złożeniem któregoś z tych wniosków byłeś uprawniony do prowadzenia działalności gospodarczej na podstawie art. 4 ust. 2 pkt 1 lit. c i g ustawy o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób zagranicznych w obrocie gospodarczym na terytorium Rzeczypospolitej Polskiej
+numer paszportu
+paszport wraz ze stroną, na której widnieje stempel
+zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 144 ustawy o cudzoziemcach (w celu kształcenia na studiach)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy (z podstawą dotyczącą kształcenia na studiach)
+zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 ustawy o cudzoziemcach (w celu połączenia się z rodziną)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy
+zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 186 ust. 1 pkt 3, 4, 7 ustawy o cudzoziemcach (dotyczy zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej udzielonego przez inne państwo Unii Europejskiej)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy
+zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 151 ust. 1 ustawy o cudzoziemcach (w celu prowadzenia badań naukowych)
+numer karty pobytu
+decyzja o zezwoleniu na pobyt czasowy
+członkowie rodzin obywateli UE
+numer karty pobytowej lub karty stałego pobytu
+kartę pobytową zawierającą adnotację „Członek rodziny obywatela UE, art. 10 dyrektywy 2004/38/WE”
+albo
+kartę stałego pobytu zawierającą adnotację „Członek rodziny obywatela UE, art. 20 dyrektywy 2004/38/WE”
+Ważne! W przypadku członków rodzin obywateli UE, do 1 sierpnia 2021 roku wydawane były karty pobytu członka rodziny obywatela UE oraz karty stałego pobytu członka rodziny obywatela UE. Te karty zachowują swoją ważność przez okres, na który zostały wydane, nie dłużej jednak niż do dnia 3 sierpnia 2026 roku. Jeżeli masz taką kartę, dołącz jej skan podczas rejestracji w CEIDG.
+Przeczytaj, jak zarejestrować jednoosobową działalność gospodarczą.
+Zarejestruj firmę online na Biznes.gov.pl.
+Co jest potrzebne do rejestracji spółki w KRS
+W Krajowym Rejestrze Sądowym zarejestrujesz spółkę jawną, partnerską, komandytową, komandytowo-akcyjną, z ograniczoną odpowiedzialnością, prostą spółkę akcyjną i spółkę akcyjną. Rejestracja odbywa się online:
+- w systemie S24 lub
+- za pośrednictwem portalu PRS.
+Rejestracja spółki wymaga założenia konta w wybranym systemie oraz jego potwierdzenia za pomocą profilu zaufanego lub podpisu kwalifikowanego.
+Profil zaufany to bezpłatne narzędzie, dzięki któremu możesz:
+- potwierdzić swoją tożsamość w systemach elektronicznej administracji
+- podpisać dokument podpisem zaufanym.
+Profil służy tylko do kontaktów z administracją publiczną, czyli urzędami lub ministerstwami.
+Przeczytaj więcej o profilu zaufanym i podpisie zaufanym.
+Na Portalu Rejestrów Sądowych możesz również podpisać się podpisem osobistym (w e‑dowodzie).
+Do założenia profilu zaufanego będziesz potrzebować numeru PESEL.
+Nawet jeśli zarejestrujesz spółkę bez numeru PESEL, to warto złożyć wniosek o jego nadanie. W twojej działalności wystąpią sytuacje, które będą wymagały posłużenia się profilem zaufanym, na przykład:
+- żeby złożyć sprawozdanie finansowe spółki w Repozytorium Dokumentów Finansowych w spółce kapitałowej, w której występuje zarząd jednoosobowy (sprawozdania finansowe może złożyć tylko osoba uprawniona do reprezentacji spółki, posiadająca numer PESEL wpisany w KRS)
+- żeby zgłosić beneficjenta rzeczywistego do rejestru CRBR – takie zgłoszenie dokonuje się w ciągu 7 dni od dnia rejestracji spółki w KRS.
+PESEL to numer, który identyfikuje osobę. Wniosek o nadanie numeru PESEL możesz złożyć w dowolnym urzędzie gminy.
+Składając wniosek o nadanie numeru PESEL, musisz wskazać podstawę prawną, z której wynika obowiązek posiadania numeru PESEL. W przypadku rejestracji spółki będzie to art. 19e ust 2. Ustawy z dnia 20 sierpnia 1997 r. o Krajowym Rejestrze Sądowym.
+Przeczytaj, jak cudzoziemiec może uzyskać PESEL.
+Pamiętaj! Spółkę może w twoim imieniu zarejestrować również pełnomocnik.
+Jeśli chcesz zarejestrować spółkę jawną lub partnerską oraz nie jesteś obywatelem Unii Europejskiej, Europejskiego Obszaru Gospodarczego, USA lub Szwajcarii, to w trakcie rejestracji musisz przedstawić dokument potwierdzający, że twój tytuł pobytowy uprawnia do założenia takiej spółki. Na przykład w przypadku zezwolenia na pobyt stały będzie to karta stałego pobytu.
+Transgraniczna działalność usługowa
+Kiedy usługi mogą być świadczone transgranicznie
+Masz obywatelstwo jednego z państw członkowskich Unii Europejskiej lub Europejskiego Obszaru Gospodarczego i chcesz świadczyć usługi w Polsce?
+Jeśli będziesz to robić przez określony czas i okazjonalnie, nie musisz rejestrować działalności w Polsce.
+Zgodnie z przepisami unijnymi usługi to świadczenia wykonywane zwykle za wynagrodzeniem, w takim zakresie, w jakim nie są objęte postanowieniami o swobodnym przepływie towarów, kapitału i osób. Może to być w szczególności:
+- działalność o charakterze przemysłowym
+- działalność o charakterze handlowym
+- działalność rzemieślnicza
+- wykonywanie wolnych zawodów.
+Transgraniczne świadczenie usług może odbywać się na zasadzie:
+- samozatrudnienia – usługodawca ma zarejestrowaną działalność gospodarczą w jednym z państw członkowskich i odpłatnie świadczy usługi w innym państwie unijnym
+- delegowania pracowników – przedsiębiorca może delegować pracowników do wykonania określonej usługi w innym państwie członkowskim na podstawie umowy.
+Na terenie Polski usługi transgranicznie możesz świadczyć pod warunkiem, że jest to działalność tymczasowa.
+Przepisy unijne nie definiują, czym jest tymczasowe wykonywanie usługi. Według Trybunału Sprawiedliwości Unii Europejskiej łącznie trzeba zbadać:
+- czas trwania
+- częstotliwość
+- regularność
+- ciągłość
+- zamiar przedsiębiorcy co do rodzaju planowanej działalności na terenie innego państwa członkowskiego.
+W praktyce ocena, czy usługi świadczone są tymczasowo, wymaga indywidualnego podejścia i dokładnej analizy konkretnego przypadku.
+Nie każdy rodzaj usług można świadczyć w ramach transgranicznego świadczenia usług. Wyłączenia dotyczą przede wszystkim usług, których wykonywanie wymaga posiadania specjalistycznych uprawnień lub wykształcenia.
+Listę wyłączeń z transgranicznego świadczenia usług znajdziesz w ustawie o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób zagranicznych w obrocie gospodarczym na terytorium Polski.
+Do usług, których nie można świadczyć transgranicznie, należą: usługi przewozowe, notarialne, farmaceutyczne, medyczne, hazardowe.
+Ważne! Jeżeli polskie przepisy dotyczące jakiegoś rodzaju działalności wymagają uzyskania zezwolenia, koncesji czy wpisu do określonego rejestru, takie wymogi też trzeba spełnić.
+Przeczytaj, kiedy przedsiębiorca potrzebuje koncesji, zezwolenia lub wpisu do rejestru działalności regulowanej.
+Prawa usługodawcy
+Prawo Unii Europejskiej gwarantuje usługodawcy prawa, które nie mogą być ograniczane przez państwa członkowskie.
+Zgodnie z linią orzecznictwa Trybunału Sprawiedliwości Unii Europejskiej:
+- nie można żądać od usługodawcy założenia siedziby na terenie państwa, gdzie ma być świadczona usługa
+- zabroniony jest wymóg, aby personel kluczowy posiadał stałe miejsce zamieszkania na terenie państwa, gdzie jest świadczona usługa
+- niedozwolone jest żądanie uzyskania zezwolenia na świadczenie niektórych usług bez wzięcia pod uwagę rękojmi należytego wykonania usługi już zagwarantowanej w kraju macierzystym, gdzie usługodawca ma siedzibę
+- nie można zmusić polskiego usługodawcy, żeby płacił składki ubezpieczeniowe za swoich pracowników w kraju świadczenia usług, jeśli ma już opłacone składki w Polsce
+- zabroniony jest wymóg posiadania przez usługodawcę odpowiedniej formy prawnej.
+Możliwe jest jednak stosowanie dodatkowych ograniczeń świadczenia usług o szczególnym charakterze, jak na przykład usługi medyczne.
+Obowiązki usługodawcy
+Na wniosek usługobiorcy usługodawca z państwa członkowskiego musi udostępnić informacje:
+- o prowadzonej działalności związanej bezpośrednio z oferowaną usługą
+- o spółkach, w których uczestniczy, a które są bezpośrednio powiązane ze świadczoną usługą
+- o środkach podjętych w celu uniknięcia konfliktu interesów.
+Takie same informacje usługodawca z państwa członkowskiego powinien podać w dokumentach zawierających opis oferowanych przez niego usług.
+Przed zawarciem umowy w formie pisemnej (a w przypadku braku pisemnej umowy – przed rozpoczęciem świadczenia usługi) usługodawca z państwa członkowskiego musi podać usługobiorcy – w sposób jednoznaczny – następujące informacje:
+- firmę, adres siedziby albo adres miejsca zamieszkania i głównego miejsca wykonywania działalności
+- organ rejestrowy i numer w rejestrze, w którym usługodawca z państwa członkowskiego jest zarejestrowany jako przedsiębiorca, albo informację o wpisie do Centralnej Ewidencji i Informacji o Działalności Gospodarczej
+- adres poczty elektronicznej lub inne dane umożliwiające bezpośredni kontakt z usługodawcą z państwa członkowskiego
+- nazwę organu lub podmiotu, który wydał koncesję, zezwolenie lub certyfikat, lub dokonał wpisu do rejestru albo wydał inny dokument uprawniający usługodawcę z państwa członkowskiego do świadczenia usługi, lub
+- adres pojedynczego punktu kontaktowego w rozumieniu art. 6 dyrektywy Parlamentu Europejskiego i Rady 2006/123/WE z dnia 12 grudnia 2006 r. dotyczącej usług na rynku wewnętrznym właściwego dla usługodawcy
+- adres samorządu zawodowego, do którego należy usługodawca z państwa członkowskiego, tytuł zawodowy oraz państwo, w którym przyznano ten tytuł
+- główne cechy usługi
+- cenę usługi, jeżeli została ustalona
+- stosowane przez usługodawcę z państwa członkowskiego wzorce umów oraz postanowienia umowne określające prawo właściwe dla danej umowy lub sąd albo inny organ właściwy do rozstrzygania sporów
+- numer identyfikacji podatkowej (NIP) lub inny numer identyfikacyjny, którym usługodawca z państwa członkowskiego jest obowiązany posługiwać się na potrzeby podatku od towarów i usług;
+- o posiadaniu obowiązkowego ubezpieczenia lub gwarancji finansowej wraz z danymi ubezpieczyciela lub gwaranta oraz o zasięgu terytorialnym ubezpieczenia
+- o gwarancjach jakości wykonanej usługi, które nie są wymagane przepisami prawa.
+Oddział przedsiębiorcy zagranicznego w Polsce
+Prowadzisz firmę w państwie członkowskim Unii Europejskiej lub Europejskiego Obszaru Gospodarczego? Jeśli tak, to możesz otworzyć oddział w Polsce.
+Oddział mogą otworzyć również obywatele innych państw, jeżeli te państwa mają podpisane umowy wzajemne z Polską.
+Wykaz ratyfikowanych umów międzynarodowych można znaleźć w Internetowej Bazie Traktatów, prowadzonej przez Ministerstwo Spraw Zagranicznych.
+Utworzenie oddziału wiąże się z niższymi kosztami niż założenie nowej spółki. Nie dotyczą go również obowiązki wynikające z działalności spółki, na przykład posiadanie własnego kapitału, zwoływania zgromadzeń wspólników i powoływania zarządu.
+Możesz rozpocząć działalności w ramach oddziału po uzyskaniu wpisu oddziału do rejestru przedsiębiorców KRS. W oddziale trzeba ustanowić osobę upoważnioną do reprezentowania przedsiębiorcy zagranicznego.
+Oddział jest samodzielną jednostką organizacyjną przedsiębiorcy zagranicznego, jednak nie posiada osobowości prawnej.
+To oznacza, że wszelkie prawa i obowiązki powstałe w wyniku działalności oddziału przysługują przedsiębiorcy zagranicznemu.
+Pamiętaj! W ramach oddziału przedsiębiorca zagraniczny może wykonywać działalność wyłącznie w takim samym zakresie, w jakim działalność prowadzi przedsiębiorstwo za granicą.
+Przedsiębiorca zagraniczny powinien:
+- używać do oznaczenia oddziału oryginalnej nazwy przedsiębiorcy zagranicznego wraz z nazwą formy prawnej przedsiębiorcy przetłumaczoną na język polski oraz dodaniem wyrazów „oddział w Polsce”
+- prowadzić dla oddziału oddzielną rachunkowość w języku polskim, zgodnie z przepisami o rachunkowości
+- zgłaszać ministrowi właściwemu do spraw gospodarki wszelkie zmiany stanu faktycznego i prawnego (na przykład gdy nastąpiło otwarcie likwidacji przedsiębiorcy zagranicznego lub przedsiębiorca utracił prawo wykonywania działalności gospodarczej).
+Uwaga! Minister może wydać zakaz prowadzenia działalności, gdy oddział nie będzie przestrzegał polskiego prawa.
+Przeczytaj, jak zarejestrować oddział zagranicznej firmy w Krajowym Rejestrze Sądowym.
+Przedstawicielstwo przedsiębiorcy zagranicznego w Polsce
+Przedstawicielstwa tworzone są wyłącznie w celu promocji i reklamy przedsiębiorcy zagranicznego. Przedstawicielstwo nie może prowadzić innej działalności.
+Zgodnie z orzecznictwem Naczelnego Sądu Administracyjnego reklama może polegać na zamieszczaniu ogłoszeń prasowych, emitowaniu spotów reklamowych w radiu lub telewizji, a także publikowaniu plakatów, rozsyłaniu folderów i innych informacji handlowych nabywcom.
+Przedstawicielstwo można założyć tylko na 2 lata z możliwością przedłużenia na kolejne 2 lata. Utworzenie przedstawicielstwa wymaga wpisu do rejestru przedstawicielstw przedsiębiorców zagranicznych.
+Do wniosku trzeba dołączyć:
+- odpis z rejestru zagranicznego wraz z tłumaczeniem na język polski oraz ewentualnie inny dokument określający siedzibę i zasady reprezentacji
+- upoważnienie osoby do reprezentowania przedstawicielstwa wraz z oświadczeniem o jego przyjęciu.
+Ważne! Przedsiębiorca zagraniczny musi mieć tytuł prawny do nieruchomości, która jest wskazana w rejestrze przedstawicielstw przedsiębiorców zagranicznych jako siedziba przedstawicielstwa. Nie musi jednak załączać tego dokumentu do wniosku o rejestrację.
+Minister może odmówić wpisania przedstawicielstwa do rejestru, jeśli przedsiębiorca zagraniczny nie spełni wszystkich wymogów. Może również wykreślić przedstawicielstwo z rejestru, jeśli nie są w nim przestrzegane polskie przepisy.
+Decyzja o wykreśleniu z rejestru przedstawicielstw (wydana przez ministra) zastępuje decyzję o zakazie prowadzenia działalności w ramach przedstawicielstwa.
+Przeczytaj, jak uzyskać:
+- wpis przedstawicielstwa do rejestru przedstawicielstw przedsiębiorców zagranicznych
+- zmianę wpisu w rejestrze przedstawicielstw przedsiębiorców zagranicznych.
+Gdzie cudzoziemiec zapłaci podatki
+Osoby mające miejsce zamieszkania dla celów podatkowych w Polsce – czyli rezydenci – mają nieograniczony obowiązek podatkowy. Oznacza to, że opodatkowują w Polsce wszystkie dochody, osiągnięte zarówno w Polsce, jak i za granicą.
+Za osobę mającą miejsce zamieszkania w Polsce, uważa się osobę fizyczną, która:
+- posiada na terytorium Polski centrum interesów osobistych lub gospodarczych (ośrodek interesów życiowych) lub
+- przebywa na terytorium Polski dłużej niż 183 dni w roku podatkowym.
+Oznacza to, że jeśli masz siedzibę lub zarząd na terytorium Polski albo przebywasz w Polsce dłużej niż 183 dni w roku, to podlegasz w Polsce obowiązkowi podatkowemu od całości swoich dochodów – bez względu na miejsce ich osiągania.
+W przypadku:
+- obywateli Ukrainy, którzy przybyli na terytorium Polski z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa
+- obywateli Ukrainy posiadający Kartę Polaka, którzy wraz z najbliższą rodziną z powodu tych działań wojennych przybyli na terytorium Polski
+- małżonkowie obywateli Ukrainy nieposiadający obywatelstwa ukraińskiego, o ile przybyli na terytorium Polski z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa,
+warunek dotyczący posiadania centrum interesów osobistych lub gospodarczych (ośrodka interesów życiowych) na terytorium Polski zostanie uznany za spełniony na podstawie pisemnego oświadczenia tej osoby.
+Z kolei osoby, które nie mają miejsca zamieszkania dla celów podatkowych w Polsce – tak zwani nierezydenci – mają ograniczony obowiązek podatkowy.
+Jeśli wykonujesz działalność w Polsce i w innym kraju, obowiązek podatkowy regulują umowy o unikaniu podwójnego opodatkowania. Określono w nich, w jakich przypadkach i gdzie należy płacić podatki:
+- gdy dochody podlegają opodatkowaniu w obydwu państwach, zastosowanie ma określona w umowie metoda unikania podwójnego opodatkowania
+- jeżeli umowa z danym państwem nie została zawarta, sposób unikania podwójnego opodatkowania reguluje ustawa o podatku dochodowym od osób fizycznych
+- umowy o unikaniu podwójnego opodatkowania mają pierwszeństwo przed prawem krajowym.
+Umowy o unikaniu podwójnego opodatkowania mogą ustalać różne metody w zależności od krajów, które zawarły umowę. Zanim rozliczysz podatki, koniecznie zapoznaj się czy Twój kraj ma podpisaną umowę z Polską.
+Ważne! Zgodnie z ogólną zasadą dotyczącą unikania podwójnego opodatkowania: zyski przedsiębiorstwa umawiającego się państwa podlegają opodatkowaniu tylko w tym państwie, chyba że przedsiębiorstwo prowadzi w drugim umawiającym się państwie działalność gospodarczą poprzez położony tam zakład (na przykład biuro handlowe). Jeśli więc nie posiadasz zakładu w innym kraju, podatki od dochodów zagranicznych płacisz w Polsce.
+Sprawdź listę umów o unikaniu podwójnego opodatkowania.
+Przeczytaj:
+- gdzie płacić podatki od dochodów zagranicznych
+- biała lista podatników VAT – nowe narzędzie do sprawdzania kontrahentów
+- jak składać deklaracje podatkowe i płacić podatki.
+Gdzie cudzoziemiec opłaca składki na ubezpieczenie społeczne
+W kwestii ubezpieczenia społecznego obowiązuje podstawowa zasada, że można podlegać ubezpieczeniu społecznemu tylko w jednym państwie i tylko w jednym państwie trzeba opłacać składki na ubezpieczenie społeczne.
+Jest to państwo, w którym:
+- znajduje się twoje miejsce zamieszkania – jeżeli tam wykonujesz znaczną część pracy
+- znajduje się centrum zainteresowania (centrum interesów) dla twojej działalności – jeżeli nie mieszkasz w państwie, w którym wykonujesz znaczną część pracy.
+Żeby określić, czy w danym państwie jest wykonywana znaczna część działalności, oblicz uzyskiwany obrót, czas pracy, liczbę świadczonych usług lub dochód.
+Przeczytaj:
+- jakie składki na ubezpieczenia społeczne płaci cudzoziemiec, który ma firmę w Polsce
+- Informacje dla cudzoziemców na stronie ZUS.
+Gdzie szukać odpowiedzi
+Jeśli masz pytania dotyczące rejestracji firmy jednoosobowej w CEIDG, skorzystaj z telefonicznej pomocy pod numerem 801 055 088 lub 22 765 67 32
+Jeśli chcesz uzyskać więcej informacji o internetowej rejestracji spółek z ograniczoną odpowiedzialnością i spółek osobowych, zgłoszenia kieruj na adres s24@gdansk.sa.gov.pl lub pod numer telefonu: (71) 748 96 00. Po wybraniu numeru telefonu należy wybrać 4 (Elektroniczny dostęp do sądów rejestrowych).
+Jeśli masz pytania dotyczące ubezpieczeń, skontaktuj się przez telefon z Centrum Obsługi Telefonicznej ZUS pod numerem 22 560 16 00 (koszt połączenia według umowy klienta z operatorem telekomunikacyjnym) oraz
+- za pośrednictwem formularza
+- e-mail: cot@zus.pl
+- przez Skype zus_centrum_obslugi_tel
+Jeśli masz wątpliwości dotyczące płacenia podatków w Polsce, skontaktuj się z Krajową Informacją Skarbową pod numerami telefonów:
+- 22 330 03 30 (z telefonów komórkowych)
+- 801 055 055 (z telefonów stacjonarnych)
+- +48 22 330 03 30 (z zagranicy)
+Do twojej dyspozycji jest również Centrum Pomocy Biznes.gov.pl.

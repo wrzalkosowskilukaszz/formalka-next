@@ -1,0 +1,283 @@
+# biznes.gov.pl: "Jak obywatel Ukrainy może założyć w Polsce firmę"
+# Source: https://www.biznes.gov.pl/pl/portal/001466, retrieved 2026-10-17, html sha256 02d8640c65851d4afbbed5f4c3f6a52bcac1efce8712919d453f050bc1f01cec
+# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 07.03.2022" and no update date. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# sha256 of the text below this header (from line 5): 69715960ac3c1bb54de3c98a23529b99dd98249eaa8cd7c3a7e5792556f886cb.
+Jak obywatel Ukrainy może założyć w Polsce firmę
+Opublikowano:
+07.03.2022
+Nawet jeżeli nie masz polskiego obywatelstwa, możesz prowadzić w Polsce firmę. Przeczytaj, w jakiej formie to zrobić i czego będziesz potrzebować do rejestracji działalności gospodarczej.
+Kto może założyć w Polsce firmę
+Od 5 marca 2026
+Obywatel Ukrainy, który korzysta w Polsce z ochrony czasowej (co potwierdza PESEL ze statusem UKR) albo ma inny tytuł pobytowy umożliwiający prowadzenie działalności na takich samych zasadach jak obywatele Polski, na przykład zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE, Kartę Polaka, może założyć:
+- firmę jednoosobową – czyli działalność gospodarczą osoby fizycznej i zarejestrować ją w CEIDG
+- spółkę osobową lub kapitałową – w tym spółkę jawną i partnerską i zarejestrować ją w KRS.
+Ważne! Małżonek lub członek rodziny (w rozumieniu zasad ochrony czasowej) nieposiadający obywatelstwa ukraińskiego może prowadzić działalność jak obywatel polski, jeżeli korzysta z ochrony czasowej w Polsce. PESEL UKR jest w tym wypadku standardowym potwierdzeniem tego tytułu pobytowego.
+Od 5 marca 2026 roku, jeżeli nie masz numeru PESEL UKR:
+- żeby założyć działalność gospodarczą, musisz mieć tytuł pobytowy, który do tego uprawnia
+- jeżeli twój tytuł pobytowy zachowuje ważność (m.in. został przedłużony do 4 marca 2027 roku), ale nie uprawnia do prowadzenia jednoosobowej działalności gospodarczej (na przykład masz zezwolenie na pobyt czasowy i pracę), to nie możesz tej działalności podjąć (i nie uzyskasz wpisu w CEIDG)
+- jeżeli zarejestrowałeś firmę w CEIDG przed 5 marca 2026 roku i przebywasz w Polsce legalnie, możesz kontynuować działalność gospodarczą w okresie legalnego pobytu (bez względu na tytuł pobytowy).
+CEIDG, czyli Centralna Ewidencja Działalności Gospodarczej
+CEIDG jest teleinformatycznym rejestrem przedsiębiorców prowadzących działalność jednoosobową, którzy działają w Polsce. Na Biznes.gov.pl możesz założyć firmę, zmieniać dane we wpisie, a także zawiesić, wznowić lub zamknąć działalność gospodarczą.
+KRS, czyli Krajowy Rejestr Sądowy
+KRS jest bazą danych i rejestrem przedsiębiorców. W KRS rejestrują się m.in.: spółki jawne, spółki partnerskie, spółki komandytowe, spółki komandytowo‑akcyjne, spółki z ograniczoną odpowiedzialnością, proste spółki akcyjne, spółki akcyjne, spółki europejskie, spółdzielnie, spółdzielnie europejskie, oddziały przedsiębiorców zagranicznych działających w Polsce.
+PESEL
+to 11-cyfrowy numer, który pozwala na łatwą identyfikację osoby, która go posiada. Numer PESEL zawiera datę urodzenia, numer porządkowy, oznaczenie płci i liczbę kontrolną.
+Do 4 marca 2026 roku
+Do 4 marca 2026 roku obowiązywały uproszczone zasady zakładania działalności gospodarczej: każdy obywatel Ukrainy, którego pobyt uznawano za legalny mógł zarejestrować działalność w CEIDG na takich samych zasadach jak obywatele Polski.
+Od 5 marca 2026 roku to prawo przysługuje obywatelom Ukrainy posiadającym PESEL UKR albo inny tytuł pobytowy umożliwiający prowadzenie działalności na takich samych zasadach jak obywatele Polski, m.in. zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta długoterminowego UE, Kartę Polaka.
+Jeśli jesteś obywatelem Ukrainy i założyłeś działalność gospodarczą przed 5 marca 2026 roku, na podstawie wcześniejszych uproszczonych zasad, to możesz ją kontynuować bez względu na tytuł pobytowy, o ile twój pobyt w Polsce jest legalny.
+Gdy twój pobyt przestanie być legalny, twój wpis w CEIDG zostanie wykreślony w drodze decyzji administracyjnej ministra właściwego do spraw gospodarki ze względu na utratę uprawnień do podejmowania i wykonywania działalności gospodarczej w Polsce.
+Scenariusze zakładania działalności w CEIDG i kontynuacji
+Scenariusze
+Warunki wejściowe (status/daty)
+Założyć JDG po 5.03.2026?
+Kontynuować JDG po 5.03.2026?
+Moment krytyczny (utrata prawa / ryzyko)
+Podstawy prawne (akty i artykuły)
+Kontynuacja JDG sprzed 5.03.2026
+Obywatel UA; JDG podjęta przed 5.03.2026 na podstawie art. 23 ust. 1 specustawy (legalny pobyt PESEL); status w dniu 5.03.2026 dowolny, pobyt legalny
+Nie dotyczy
+Tak, w całym okresie legalnego pobytu
+Utrata legalności pobytu (np. koniec „przedłużenia z mocy prawa do 4.03.2027”, decyzja odmowna ostateczna, itp.) → ryzyko wykreślenia
+art. 42 ustawy z 23.01.2026 (przepis przejściowy); art. 23 specustawy (stan „sprzed uchylenia”)
+Kontynuacja JDG sprzed 5.03.2026, ale pobyt staje się nielegalny
+Obywatel UA; JDG podjęta przed 5.03.2026 na podstawie art. 23 ust. 1 specustawy (legalny pobyt PESEL); po 5.03.2026 pobyt przestaje być legalny
+Nie dotyczy
+Nie (powinno skutkować wykreśleniem)
+Dzień, w którym pobyt przestaje być legalny
+art. 42 ustawy z 23.01.2026 (wykreślenie i odesłanie do CEIDG); art. 23 ust. 3 specustawy (stare brzmienie przepisu)
+Nowa JDG po 5.03.2026 – beneficjent ochrony czasowej (PESEL UKR)
+Obywatel UA; w dniu rejestracji korzysta z ochrony czasowej w Polsce; rejestracja po 5.03.2026 (w tym 5.03.2026)
+Tak
+Tak, dopóki spełnia warunki (m.in. ochrona czasowa trwa)
+Utrata podstawy do legalnego pobytu (np. koniec ochrony czasowej 4.03.2027 i brak innej podstawy do pobytu) → możliwość wykreślenia
+Art. 116 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej; art. 42 ustawy o wygaszeniu ochrony czasowej.
+Nowa JDG po 5.03.2026 – tytuł pobytowy „z art. 4”
+Obywatel UA; nie musi mieć ochrony czasowej, ale ma tytuł z art. 4 ust. 2 pkt 1 ustawy o przedsiębiorcach zagranicznych (np. pobyt stały/rezydent UE/uchodźca/ochrona uzupełniająca/zgoda humanitarna/tolerowana/pobyt czasowy w wskazanych przypadkach itd.)
+Tak
+Tak, dopóki tytuł/warunki trwają
+Koniec/utrata tytułu uprawniającego → ryzyko wykreślenia z CEIDG
+art. 4 ust. 2 pkt 1 ustawy o przedsiębiorcach zagranicznych ; art. 29 ust. 1 pkt 2 ustawy o CEIDG ;
+Nowa JDG po 5.03.2026 – tylko „legalny pobyt” z art. 42 specustawy (przedłużony dokument), ale brak tytułu z art. 4
+Obywatel UA; karta pobytu/zezwolenie/inna podstawa pobytu przedłużona „z mocy prawa” na podstawie art. 42 specustawy (po 5.03.2026 – zwykle do 4.03.2027), ale bez spełnienia art. 4 ust. 2
+Nie
+Tak tylko, jeśli JDG była podjęta przed 5.03.2026 na podstawie art. 23 ust. 1 (wtedy działa przepis przejściowy)
+Przy próbie rejestracji: odmowa/wniosek „niepoprawny”; przy kontynuacji: krytyczny jest koniec legalnego pobytu
+art. 42 specustawy (przedłużenia dokumentów; po zmianie do 4.03.2027) ; art. 4 ustawy o przedsiębiorcach zagranicznych (katalog) ; art. 10 ustawy o CEIDG (wniosek „niepoprawny”/osoba nieuprawniona)
+Pobyt „w toku” (art. 108) – wcześniej była podstawa z art. 4 ust. 2 pkt 1 lit. c i g
+Obywatel UA; złożył wniosek o pobyt i ma legalność z art. 108; bezpośrednio przed złożeniem wniosku był uprawniony do JDG na podstawie odpowiednich przesłanek z art. 4 ust. 2 pkt 1 lit. c i g ustawy o przedsiębiorcach zagranicznych
+Zwykle tak, o ile spełnia art. 4 ust. 2 pkt 5 (uwaga na warunek „wcześniejszego uprawnienia”)
+Tak (w praktyce najczęściej to scenariusz „utrzymania” uprawnienia w toku postępowania)
+Ostateczność decyzji odmownej → koniec legalności z art. 108; albo utrata warunku „wcześniejszego uprawnienia”
+art. 108 ust. 1 ustawy o cudzoziemcach (legalność pobytu do decyzji ostatecznej) ; art. 4 ust. 2 pkt 5 ustawy o przedsiębiorcach zagranicznych (odesłanie do art. 108 i warunek wcześniejszego prawa)
+Zmiana tytułu po 5.03.2026 na taki, który nie daje JDG
+Dwie sytuacje:
+(A) JDG sprzed 5.03.2026 na art. 23
+(B) JDG po 5.03.2026 na art. 4 (np. z ochrony czasowej)
+(A) nie dotyczy;
+(B) zależy od art. 4
+(A) tak, dopóki pobyt legalny;
+(B) ryzyko utraty, jeśli nowy tytuł nie spełnia przesłanki z art. 4 (i brak innej podstawy)
+(A) koniec legalnego pobytu
+(B) moment utraty przesłanki z art. 4 ust. 2 (np. koniec ochrony czasowej), potem możliwe postępowanie CEIDG
+(A) art. 42 ustawy z 23.01.2026
+(B) art. 4 ustawy o przedsiębiorcach zagranicznych + art. 29 ust. 1 pkt 2 ustawy o CEIDG
+Rejestracja „na starych zasadach” w dniu 5.03.2026 lub później
+Obywatel UA składa wniosek o wpis do CEIDG 5.03.2026 lub po tej dacie, ale nie spełnia art. 4 ust. 2 (licząc, że „wystarczy PESEL”)
+Nie
+Nie dotyczy
+Etap rejestracji: wniosek może być uznany za niepoprawny; dodatkowo ryzyko wpisu „z naruszeniem prawa”
+uchylenie art. 23 specustawy od 5.03.2026 ; art. 10 ust. 2 pkt 8 ustawy o CEIDG (osoba nieuprawniona)
+Warunki legalnego pobytu w Polsce
+Obywatel Ukrainy może legalnie przebywać w Polsce, jeśli spełnia jeden z warunków:
+- ma ważny tytuł pobytowy
+- ma tytuł pobytowy, którego ostatni dzień ważności przypada w okresie od dnia 24 lutego 2022 roku
+- przybył legalnie na terytorium Polski w okresie od 24 lutego 2022 roku z terenu Ukrainy i uzyskał ochronę czasową w Polsce (PESEL UKR).
+Tytuł pobytowy to dokument, która uprawnia do pobytu na terytorium Polski lub innego kraju Unii Europejskiej.
+Może to być na przykład zezwolenie na pobyt stały, wiza, zezwolenie na pobyt czasowy, paszport w przypadku wjazdu i pobytu na terytorium Polski w ruchu bezwizowym, zaświadczenie o korzystaniu z ochrony czasowej wydane przez Urząd do Spraw Cudzoziemców.
+Ochrona czasowa
+Obywatele Ukrainy, ich małżonkowie oraz członkowie rodziny nieposiadający obywatelstwa ukraińskiego, którzy przybyli do Polski w okresie od 24 lutego 2022 roku w związku z działaniami wojennymi w Ukrainie, korzystają z ochrony czasowej.
+Ochronę czasową w związku z konfliktem zbrojnym na terytorium Ukrainy może otrzymać:
+- obywatel Ukrainy, który mieszkał w Ukrainie przed 24 lutego 2022 roku
+- bezpaństwowiec lub obywatel innego państwa niż Ukraina, którzy przed 24 lutego 2022 roku korzystał z ochrony międzynarodowej w Ukrainie
+- członkowie ich rodzin.
+Członkiem rodziny jest:
+- małżonek
+- małoletnie i niepozostające w związku małżeńskim dziecko lub dziecko małżonka, niezależnie od tego, czy urodziło się w związku małżeńskim, poza związkiem, czy jest przysposobione
+- inny bliski krewny, który pozostawał we wspólnym gospodarstwie domowym 24 lutego 2022 roku i był całkowicie lub częściowo na utrzymaniu.
+Pobyt tych osób w Polsce jest legalny, bez dodatkowych zaświadczeń (wystarczy PESEL UKR), do 4 marca 2027 roku. Jeśli obywatel Ukrainy lub członek jego rodziny wjechał do Polski po 4 marca 2026 roku w związku z konfliktem zbrojnym, aby otrzymać ochronę czasową i PESEL UKR, musi zgłosić się do urzędu gminy w ciągu 30 dni po przyjeździe.
+Cudzoziemcy, któremu nadano PESEL UKR na podstawie oświadczenia, ponieważ nie mieli ważnego dokumentu podróży, powinni potwierdzić tożsamość na podstawie ważnego paszportu do 31 sierpnia 2026 roku.
+Jeśli tego nie zrobią, stracą ochronę czasową.
+Ochrona czasowa obowiązuje pod warunkiem, że obywatel Ukrainy:
+- złożył wniosek o nadanie numeru PESEL ze statusem UKR w urzędzie gminy w ciągu 30 dni po przyjeździe
+- nie uzyskał kiedykolwiek takiej ochrony na terenie innego państwa członkowskiego Unii Europejskiej przyznanej z powodu działań wojennych prowadzonych na terytorium Ukrainy
+- nie posiada innego tytułu pobytowego (między innymi statusu uchodźcy, czy zezwolenia na pobyt)
+- nie złożył wniosku o ochronę międzynarodową
+- nie posiada obywatelstwa państwa członkowskiego Unii Europejskiej
+- nie przekroczył granicy na podstawie zezwolenia na przekraczanie granicy w ramach małego ruchu granicznego.
+Ważne! Obywatel Ukrainy, który przybył na terytorium Polski z terytorium Ukrainy w okresie od 24 lutego 2022 roku, utraci prawo legalnego pobytu, jeżeli wyjedzie z Polski na dłużej niż 30 dni.
+Przedłużenie ważności tytułów pobytowych
+Obywatele Ukrainy, których ostatni dzień legalnego pobytu na terytorium Polski przypada w okresie od 24 lutego 2022 roku, korzystają z przedłużenia ważności dokumentu pobytowego – do 4 marca 2027 roku.
+Dokumenty pobytowe, których dotyczy takie przedłużenie legalności to:
+- wiza krajowa
+- zezwolenie na pobyt czasowy
+- wiza Schengen wydana przez organ polski
+- wiza wydana przez inne państwo obszaru Schengen
+- dokument pobytowy, o którym mowa w artykule 1 ust. 2 lit. a Rozporządzenia Rady (WE) nr 1030/2002 wydany przez inne państwo obszaru Schengen, albo inny dokument pobytowy wydany przez organ tego państwa, uprawniający do podróży po terytorium innych państw obszaru Schengen
+- polski dokument tożsamości obywatela Ukrainy
+- dokument „zgoda na pobyt tolerowany”.
+Przedłużenie legalnego pobytu do 4 marca 2027 roku ma zastosowanie także do pobytu w ramach ruchu bezwizowego, kończącego się w okresie od dnia 24 lutego 2022 roku.
+Dokument pobytowy, o którym mowa w artykule 1 ust. 2 lit. a Rozporządzenia Rady (WE) nr 1030/2002, oznacza upoważnienie wydane przez władze danego państwa członkowskiego Unii Europejskiej, zezwalające obywatelowi państwa trzeciego na legalny pobyt na danym terytorium.
+Nie dotyczy to:
+- wiz
+- zezwoleń wydanych do czasu rozpatrzenia wniosku o dokument pobytowy lub wniosku o azyl
+- zezwoleń wydawanych w wyjątkowych przypadkach w celu przedłużenia dozwolonego pobytu o okres nieprzekraczający jednego miesiąca
+- upoważnień na okres pobytu nieprzekraczający 6 miesięcy, wydanych przez państwa członkowskie niestosujące przepisów art. 21 Konwencji wykonawczej do Układu z Schengen z dnia 14 czerwca 1985 r. między Rządami Państw Unii Gospodarczej Beneluksu, Republiką Federalną Niemiec i Republiką Francuską o stopniowym znoszeniu kontroli na wspólnych granicach.
+Pobyt na podstawie stempla
+Nowe zasady zakładania działalności gospodarczej przez obywateli Ukrainy dotyczą również osób, które jeszcze nie mają tytułu pobytowego, ale przed 24 lutego 2022 roku rozpoczęły procedurę uzyskania takiego tytułu.
+Ich pobyt na terytorium Polski jest legalny od dnia złożenia wniosku o:
+- udzielenie zezwolenia na pobyt czasowy
+- przedłużenie wizy Schengen lub wizy krajowej
+- udzielenie zezwolenia na pobyt stały i na pobyt rezydenta długoterminowego Unii Europejskiej.
+Pobyt pozostaje legalny do dnia, w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna. W takim wypadku wojewoda umieszcza w dokumencie podróży obywatela Ukrainy odcisk stempla potwierdzającego złożenie wniosku o udzielenie zezwolenia na pobyt czasowy, wniosku o przedłużenie wizy Schengen lub wizy krajowej albo wniosku o udzielenie zezwolenia na pobyt stały lub pobyt rezydenta długoterminowego Unii Europejskiej.
+Taki odcisk uprawnia do legalnego pobytu w Polsce.
+Jak uzyskać PESEL
+PESEL UKR
+Obywatel Ukrainy, który legalnie przybył do Polski od 24 lutego 2022 roku z terytorium Ukrainy w związku z wojną, otrzyma PESEL ze statusem UKR po złożeniu wniosku w dowolnym urzędzie gminy na terytorium Polski.
+Na podobnych zasad numer PESEL ze statusem UKR jest nadawany:
+- członkom najbliższej rodziny obywatela Ukrainy
+- małżonkowi obywatela Ukrainy, nieposiadającemu obywatelstwa ukraińskiego, który przybył do Polski z Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa.
+Wniosek o nadanie numeru PESEL może wypełnić wnioskodawca albo pracownik urzędu na podstawie danych podanych przez wnioskodawcę.
+Wniosek trzeba własnoręcznie podpisać i złożyć osobiście w urzędzie gminy.
+Wniosek o nadanie numeru PESEL zawiera między innymi:
+- zdjęcie
+- imię (imiona) i nazwisko oraz nazwisko rodowe
+- obywatelstwo
+- unikalny numer ewidencyjny nadany w państwie pochodzenia, jeżeli jest
+- numery PESEL rodziców, o ile zostały nadane i są znane
+- datę, miejsce i kraj urodzenia
+- płeć
+- datę wjazdu na terytorium Rzeczypospolitej Polskiej
+- datę złożenia wniosku
+- datę i miejsce przekroczenia granicy, niebędącej granicą Rzeczypospolitej Polskiej, (jeżeli wjazd na terytorium Rzeczypospolitej Polskiej nie nastąpił bezpośrednio z terytorium Ukrainy)
+- adnotację o tym, czy odciski palców zostały pobrane.
+Ważne! Jeżeli chcesz, żeby został dla ciebie założony profil zaufany, podaj we wniosku o nadanie numeru PESEL:
+- adres poczty elektronicznej
+- numer telefonu komórkowego
+- zgodę na wprowadzenie danych do rejestru danych kontaktowych osób fizycznych
+- zgodę na potwierdzenie profilu zaufanego.
+Zrób to koniecznie, jeśli myślisz o założeniu w Polsce firmy.
+Mając profil zaufany, będziesz mógł zarejestrować działalność online, na Biznes.gov.pl.
+Profil zaufany to bezpłatne narzędzie, dzięki któremu możesz:
+- potwierdzić swoją tożsamość w systemach elektronicznej administracji
+- podpisać dokument podpisem zaufanym.
+Profil służy tylko do kontaktów z administracją publiczną, czyli urzędami lub ministerstwami.
+Przeczytaj więcej o profilu zaufanym i podpisie zaufanym.
+Pamiętaj! Złóż wniosek o nadanie numeru PESEL niezwłocznie po przybyciu do Polski, jeżeli twój wjazd nie został zarejestrowany przez komendanta placówki Straży Granicznej podczas kontroli granicznej.
+Ten obowiązek dotyczy:
+- obywateli Ukrainy, którzy przybyli do Polski z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa
+- małżonków obywateli Ukrainy, którzy nie maja obywatelstwa ukraińskiego oraz przybyli na terytorium Polski z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa
+- członków najbliższej rodziny obywateli Ukrainy.
+Na podstawie wniosku o PESEL twój pobyt w Polsce zostanie zarejestrowany i będzie legalny.
+PESEL dla osób nieobjętych ochroną czasową
+Jeśli jesteś obywatelem Ukrainy i mieszkasz w Polsce, zamelduj się – wtedy automatycznie dostaniesz numer PESEL.
+Jeśli nie możesz się zameldować, a potrzebujesz numeru PESEL – złóż wniosek w dowolnym urzędzie gminy.
+Składając wniosek o nadanie numeru PESEL, musisz wskazać podstawę prawną, z której wynika obowiązek posiadania numeru PESEL.
+Przeczytaj, jak cudzoziemiec może uzyskać PESEL.
+W jakiej formie prowadzić działalność gospodarczą
+W Polsce można prowadzić działalność gospodarczą w różnych formach:
+- jednoosobowa działalność gospodarcza (JDG) lub działalność gospodarcza osoby fizycznej
+- spółka osobowa
+- spółka kapitałowa.
+Jednoosobowa działalność gospodarcza (JDG) to najprostsza forma prowadzenia działalności:
+- można ją zarejestrować online, a rejestracja jest bezpłatna
+- nie wymaga kapitału na start
+- przedsiębiorca jest podatnikiem podatku od osób fizycznych PIT i może wybrać najlepszą dla siebie formę opodatkowania
+- przedsiębiorca nie musi być podatnikiem VAT, jeśli ma przychody poniżej określonego progu i sprzedaje wyłącznie towary i usługi zwolnione z VAT
+- w większości wypadków – dla przychodów, które nie przekraczają 2 mln euro – wystarczy uproszczona księgowość lub ewidencja
+- przedsiębiorca odpowiada całym swoim majątkiem za zobowiązania firmy
+- przedsiębiorca ma wyłączne prawo do reprezentowania swojej działalności.
+Spółki są bardziej złożonymi formami działalności. Proces zakładania spółki jest dużo bardziej sformalizowany. Wspólnicy muszą podpisać umowę w określonej formie.
+Za rejestrację spółki trzeba zapłacić, a reprezentacja spraw spółki i odpowiedzialność majątkowa zależy od typu spółki. Najczęściej trzeba wnieść kapitał zakładowy.
+Sprawdź, jakie są różnice pomiędzy różnymi formami prowadzenia działalności gospodarczej w Polsce.
+Jakie są ograniczenia wyboru formy działalności gospodarczej
+Niektóre rodzaje działalności wymagają rejestracji w określonej formie prawnej albo zastrzegają daną formę dla osób o określonych kompetencjach.
+Dla części rodzajów działalności prawo nie przewiduje rejestracji w CEIDG – przedsiębiorca musi zarejestrować spółkę w KRS. Tak jest w przypadku uprawy niektórych roślin, działalności ubezpieczeniowej i reasekuracyjnej, działalności w zakresie: ochrony przeciwpożarowej, związków zawodowych, klubów sportowych.
+Z kolei partnerami w spółce partnerskiej mogą być tylko przedstawiciele wolnych zawodów: adwokaci, aptekarze, architekci, inżynierowie budownictwa, biegli rewidenci, brokerzy ubezpieczeniowi, doradcy podatkowi, maklerzy papierów wartościowych, doradcy inwestycyjni, księgowi, lekarze, lekarze dentyści, lekarze weterynarii, notariusze, pielęgniarki, położne, radcowie prawni, rzecznicy patentowi, rzeczoznawcy majątkowi i tłumacze przysięgli.
+W wyjątkowych sytuacjach rodzaj spółki, jaką należy zarejestrować, aby wykonywać daną działalność, określają przepisy. Dotyczy to w szczególności sektora finansowego.
+Jeśli nie wiesz, czy wybrany przez ciebie rodzaj działalności podlega dodatkowym wymogom, sprawdź to w wyszukiwarce kodów PKD.
+Co jest potrzebne, żeby zarejestrować działalność w CEIDG
+Gdzie zarejestrować firmę
+Firmę jednoosobową zarejestrujesz w CEIDG:
+- online, na portalu Biznes.gov.pl, jeżeli masz profil zaufany, lub
+- tradycyjnie – w dowolnym urzędzie gminy.
+Rejestracja firmy może trwać do 30 dni. Jednak zwykle cały proces zajmuje około 7 dni.
+Jeżeli chcesz zarejestrować firmę online, to najpierw załóż Konto Przedsiębiorcy na portalu Biznes.gov.pl, które da ci łatwy dostęp do danych twojej firmy.
+Sprawdź, jak założyć Konto Przedsiębiorcy na Biznes.gov.pl.
+Jak podpisać wniosek online
+Wniosek złożony online możesz podpisać profilem zaufanym albo podpisem kwalifikowanym.
+Profil zaufany będzie ci też potrzebny, żeby obsługiwać online twój wpis w rejestrze CEIDG (na przykład, żeby wprowadzić do niego jakiekolwiek zmiany).
+Rejestracja firmy w CEIDG jest bezpłatna. Rejestr nie pobiera żadnych opłat. Nie płacisz ani za złożenie wniosku o rejestrację firmy, ani za uzyskanie wpisu w CEIDG, ani później, za wprowadzenie zmian w tym wpisie.
+Jakie dokumenty załączyć
+Tytuł pobytowy z ustawy o przedsiębiorcach zagranicznych
+Jeśli masz tytuł pobytowy, który upoważnia cię do założenia w Polsce firmy (ogólne zasady z ustawy o przedsiębiorcach zagranicznych), w trakcie rejestracji w CEIDG przedstaw dokument potwierdzający ten tytuł.
+Jeśli rejestrujesz firmę online, dołącz skan właściwego dokumentu.
+Sprawdź, jakie tytuły pobytowe uprawniają do założenia jednoosobowej działalności gospodarczej i jakie dokumenty potwierdzają dysponowanie takim tytułem.
+Ochrona czasowa – PESEL UKR
+Jeżeli masz PESEL UKR i chcesz zarejestrować firmę w CEIDG, w trakcie rejestracji online nie musisz załączać dokumentów potwierdzających, że twój pobyt jest legalny.
+Jeżeli rejestrujesz firmę online, dołącz do wniosku:
+- skan strony paszportu ze zdjęciem
+- skan strony paszportu ze stemplem.
+Jeżeli jesteś małżonkiem obywatela Ukrainy, nie masz ukraińskiego obywatelstwa, przybyłeś do Polski od 24 lutego 2022 roku i chcesz zarejestrować firmę w CEIDG, w trakcie rejestracji przedstaw dokument, który potwierdzi datę wjazdu do Polski (takim dokumentem może być paszport - strona ze stemplem) oraz przedłóż aktu ślubu wraz z tłumaczeniem.
+Musisz dołączyć do wniosku:
+- skan strony paszportu ze zdjęciem
+- skan strony paszportu ze stemplem
+- skan aktu ślubu wraz z tłumaczeniem.
+Karta pobytu CUKR
+Od 4 maja 2026 roku do 4 marca 2027 roku obywatele Ukrainy, którzy mają status PESEL UKR, mogą składać wnioski o wydanie karty pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej”, czyli karty pobytu CUKR.
+Karta CUKR będzie wydawana szybciej niż standardowe zezwolenie na pobyt czasowy.
+Wnioski można składać wyłącznie elektronicznie za pośrednictwem systemu MOS.
+Karta pobytu CUKR zapewnia pełny dostęp do rynku pracy (bez konieczności uzyskiwania zezwolenia na pracę ani wysłani powiadomienia o powierzeniu pracy), a także możliwość prowadzenia działalności gospodarczej na takich samych zasadach jak obywatele Polski.
+Dostaniesz kartę pobytu CUKR jeśli łącznie spełnisz następujące wymogi:
+- w dniu złożenia wniosku posiadasz aktualny status PESEL UKR
+- posiadałeś aktualny status PESEL UKR w dniu 4 czerwca 2025 roku
+- w dniu wydania decyzji posiadasz aktualny status PESEL UKR
+- posiadałeś status UKR nieprzerwanie przez co najmniej 365 dni.
+Jeśli masz kartę pobytu CUKR i chcesz zarejestrować firmę w CEIDG, w trakcie rejestracji online dołącz skan karty pobytu CUKR.
+Przeczytaj:
+- jak zarejestrować jednoosobową działalność gospodarczą
+- jak się przygotować do rejestracji firmy obywatela Ukrainy w CEIDG.
+Zarejestruj firmę online na Biznes.gov.pl.
+Kiedy działalność zostanie wykreślona z CEIDG
+Twoja firma zostanie wykreślona z CEIDG, kiedy twój pobyt w Polsce przestanie być legalny.
+Taka sytuacja może mieć miejsce między innymi:
+- po 4 marca 2027 roku (koniec ochrony czasowej lub upływ ważności przedłużonych tytułów pobytowych
+- jeżeli opuścisz terytorium Polski na dłużej niż 30 dni.
+Co jest potrzebne do rejestracji spółki w KRS
+W Krajowym Rejestrze Sądowym zarejestrujesz spółkę jawną, partnerską, komandytową, komandytowo-akcyjną, z ograniczoną odpowiedzialnością, prostą spółkę akcyjną i spółkę akcyjną.
+Rejestracja odbywa się online:
+- w systemie S24 lub
+- za pośrednictwem Portalu Rejestrów Sądowych – PRS.
+Rejestracja spółki wymaga założenia konta w wybranym systemie i jego potwierdzenia za pomocą profilu zaufanego lub podpisu kwalifikowanego.
+Pamiętaj! Spółkę może w twoim imieniu zarejestrować również pełnomocnik.
+Jeśli chcesz zarejestrować spółkę jawną lub partnerską oraz jeśli masz tytuł pobytowy, który upoważnia cię do legalnego pobytu w Polsce, to w trakcie rejestracji musisz przedstawić dokument potwierdzający, że twój tytuł pobytowy uprawnia do założenia takiej spółki. Na przykład w przypadku zezwolenia na pobyt stały będzie to karta stałego pobytu.
+Przeczytaj, jak zarejestrować:
+- spółkę jawną
+- spółkę partnerską
+- spółkę komandytowo-akcyjną
+- spółkę komandytową
+- spółkę z ograniczoną odpowiedzialnością
+- prostą spółkę akcyjną
+- spółkę akcyjną.
+Gdzie szukać odpowiedzi
+Jeśli masz pytania dotyczące rejestracji firmy jednoosobowej w CEIDG, skorzystaj z telefonicznej pomocy pod numerem 801 055 088 lub 22 765 67 32
+Jeśli chcesz uzyskać więcej informacji o internetowej rejestracji spółek z ograniczoną odpowiedzialnością i spółek osobowych, zgłoszenia kieruj na adres s24@gdansk.sa.gov.pl lub pod numer telefonu: (71) 748 96 00. Po wybraniu numeru telefonu należy wybrać 4 (Elektroniczny dostęp do sądów rejestrowych).
+Jeśli masz pytania dotyczące ubezpieczeń, skontaktuj się przez telefon z Centrum Obsługi Telefonicznej ZUS pod numerem 22 560 16 00 (koszt połączenia według umowy klienta z operatorem telekomunikacyjnym) oraz przez:
+- formularz
+- e-mail: cot@zus.pl
+- Skype: zus_centrum_obslugi_tel
+Jeśli masz wątpliwości dotyczące płacenia podatków w Polsce, skontaktuj się z Krajową Informacją Skarbową pod numerami telefonów:
+- 22 330 03 30 (z telefonów komórkowych)
+- 801 055 055 (z telefonów stacjonarnych)
+- +48 22 330 03 30 (z zagranicy)
+Do twojej dyspozycji jest również Centrum Pomocy Biznes.gov.pl.
