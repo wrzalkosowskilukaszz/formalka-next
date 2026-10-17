@@ -1,4 +1,4 @@
-# Ustawa z 23.01.2026 o wygaszeniu rozwiązań wynikających z ustawy o pomocy obywatelom Ukrainy, Dz.U. 2026 poz. 203 (in force 5.03.2026, with exceptions in its art. 54): transitional art. 20-26 and 45, entry into force art. 54
+# Ustawa z 23.01.2026 o wygaszeniu rozwiązań wynikających z ustawy o pomocy obywatelom Ukrainy, Dz.U. 2026 poz. 203 (in force 5.03.2026, with exceptions in its art. 54): art. 19 pkt 1 (the employer's notice, new art. 5a of the act on employing foreigners), transitional art. 20-26 and 45, entry into force art. 54
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf, retrieved 2026-10-17, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275. pdftotext -layout.
 # Its changes to other acts are read in their consolidated texts, which already include it: the protection act (Dz.U. 2026 poz. 862), the special act (Dz.U. 2026 poz. 1293), the act on population records (Dz.U. 2026 poz. 384, legal state 10.03.2026; chapter 5a extracted here) and the act on foreigners (not consolidated since; Dz.U. 2025 poz. 1079 with this act and 1794).
 
@@ -164,4 +164,76 @@ ust. 1 ustawy zmienianej w art. 12 po udzieleniu temu cudzoziemcowi zezwolenia n
 
 
                                                                            Prezydent Rzeczypospolitej Polskiej: K. Nawrocki
-
+[...]
+[Art. 19 pkt 1: the act on employing foreigners gets art. 5a, the employer's notice for a temporary protection beneficiary]
+     Art. 19. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na tery-
+torium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794) wprowadza się następujące zmiany:
+1)   po art. 5 dodaje się art. 5a w brzmieniu:
+           „Art. 5a. 1. Polski podmiot powierzający pracę cudzoziemcowi powiadamia powiatowy urząd pracy o powierze-
+     niu pracy cudzoziemcowi korzystającemu z ochrony czasowej w Rzeczypospolitej Polskiej w ciągu 7 dni od dnia roz-
+     poczęcia pracy przez cudzoziemca.
+           2. Powiadomienia o powierzeniu pracy cudzoziemcowi dokonuje się za pomocą systemu teleinformatycznego,
+     o którym mowa w art. 26 ust. 1 pkt 7 lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia.
+             3. W przypadku nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 26 ust. 1 pkt 7
+     lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, które powoduje brak możliwości termino-
+     wego powiadomienia o powierzeniu pracy cudzoziemcowi w sposób określony w ust. 2, powiadomienia dokonuje się
+     najpóźniej pierwszego dnia roboczego następującego po dniu usunięcia nieprawidłowości.
+           4. W powiadomieniu o powierzeniu pracy cudzoziemcowi określa się:
+     1)    informacje dotyczące podmiotu powierzającego pracę cudzoziemcowi:
+           a)   nazwę albo imię (imiona) i nazwisko,
+           b) adres siedziby albo miejsca zamieszkania,
+           c)   numer telefonu lub adres poczty elektronicznej o charakterze służbowym,
+           d) numer identyfikacji podatkowej (NIP) i numer identyfikacyjny REGON – w przypadku podmiotu prowa-
+              dzącego działalność gospodarczą albo numer PESEL – w przypadku osoby fizycznej,
+           e)   numer wpisu do rejestru podmiotów prowadzących agencje zatrudnienia – w przypadku podmiotu powie-
+                rzającego pracę cudzoziemcowi prowadzącemu agencję zatrudnienia świadczącą usługi pracy tymczasowej,
+           f)   symbol PKD oraz opis wykonywanej działalności związanej z pracą cudzoziemca;
+     2)    dane osobowe cudzoziemca:
+           a)   imię (imiona) i nazwisko,
+           b) obywatelstwo,
+           c)   rodzaj, numer i serię dokumentu podróży lub innego dokumentu stwierdzającego lub pozwalającego ustalić
+                tożsamość oraz państwo, w którym wydano ten dokument,
+           d) numer PESEL albo w przypadku osób nieposiadających tego numeru – datę urodzenia i płeć,
+           e)   tytuł pobytu, o którym mowa w art. 3 ust. 1 pkt 12;
+     3)    rodzaj umowy między podmiotem powierzającym pracę cudzoziemcowi a cudzoziemcem;
+     4)    stanowisko lub rodzaj wykonywanej pracy;
+     5)    miejsce wykonywanej pracy;
+     6)    miesięczną lub godzinową stawkę wynagrodzenia;
+     7)    wymiar czasu pracy lub liczbę godzin pracy w tygodniu lub w miesiącu;
+     8)    liczbę wszystkich osób wykonujących pracę na podstawie umowy o pracę i na podstawie umów cywilnopraw-
+           nych na dzień złożenia powiadomienia.
+
+           5. Polski podmiot powierzający pracę cudzoziemcowi powiadamia ponownie powiatowy urząd pracy o powierze-
+     niu pracy cudzoziemcowi w terminie 7 dni od wystąpienia następujących okoliczności:
+     1)    zmienił się rodzaj umowy pomiędzy podmiotem powierzającym pracę cudzoziemcowi a obywatelem Ukrainy
+           lub
+     2)    zmieniło się stanowisko lub rodzaj wykonywanej pracy, lub
+     3)    zmniejszono wymiar czasu pracy lub liczbę godzin pracy w tygodniu lub miesiącu określoną w powiadomieniu,
+           lub
+     4)    obniżono miesięczną lub godzinową stawkę wynagrodzenia określoną w powiadomieniu.
+          6. Właściwość powiatowego urzędu pracy oznacza się według siedziby lub miejsca stałego pobytu podmiotu
+     powierzającego pracę cudzoziemcowi.
+           7. Minister właściwy do spraw pracy oraz właściwy powiatowy urząd pracy przetwarzają dane, o których mowa
+     w ust. 4, w celu realizacji zadań ustawowych.
+           8. Minister właściwy do spraw pracy zapewnia udostępnienie danych, o których mowa w ust. 4, w drodze tele-
+     transmisji danych:
+     1)    Kasie Rolniczego Ubezpieczenia Społecznego,
+     2)    Państwowej Inspekcji Pracy,
+     3)    Szefowi Krajowej Administracji Skarbowej,
+     4)    Straży Granicznej,
+     5)    Zakładowi Ubezpieczeń Społecznych,
+     6)    Głównemu Urzędowi Statystycznemu
+     – w zakresie niezbędnym do realizacji ich zadań ustawowych.
+            9. Zakład Ubezpieczeń Społecznych udostępnia dane o objęciu ubezpieczeniami społecznymi cudzoziemca, którego
+     dotyczy powiadomienie o powierzeniu pracy cudzoziemcowi, lub o zgłoszeniu umowy o dzieło, o której mowa w art. 36
+     ust. 17 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2026 r. poz. 199), zawartej
+     z tym cudzoziemcem, w drodze teletransmisji danych:
+     1)    ministrowi właściwemu do spraw pracy,
+     2)    Państwowej Inspekcji Pracy,
+     3)    Szefowi Krajowej Administracji Skarbowej,
+     4)    Straży Granicznej,
+     5)    Głównemu Urzędowi Statystycznemu
+     – w celu realizacji ich zadań ustawowych.
+         10. W zakresie udostępnienia danych, o którym mowa w ust. 9, Zakład Ubezpieczeń Społecznych i podmioty
+     wymienione w ust. 9 zawierają dwustronne porozumienie, określając sposób wymiany danych i termin jego wdrożenia.
+           11. Przepisy ust. 9 i 10 stosuje się odpowiednio do Kasy Rolniczego Ubezpieczenia Społecznego.”;
