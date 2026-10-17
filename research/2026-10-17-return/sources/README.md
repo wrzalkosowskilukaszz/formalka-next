@@ -119,5 +119,6 @@ The Border Guard's site (strazgraniczna.pl) refused automated downloads on 17.10
 
 ## The tools
 
+- **"Bieg terminów":** the special act on Ukrainian citizens (consolidated Dz.U. 2026 poz. 1293) art. 100d suspends, until 4.03.2027, only the voivode's time limits for granting, changing or withdrawing residence permits; it names no return case and no party's appeal limit, and the act has no rule on returns (read here on 17.10.2026; not quoted).
 - `tools/sources/touched.mjs --header` passes for the UoC (with the 3-year lookback, which reaches Dz.U. 2023 poz. 547) and for the NPP act.
 - `tools/sources/omitted.mjs` marks art. 299 ust. 4 (visa-free agreements), art. 302 ust. 1, 4a and 6, art. 303 ust. 1 (the grounds and their exceptions), art. 318 ust. 1c (waiving the ban), and art. 300 ust. 1 (the voivode's extension of a visa-free stay). Read; the grounds and the ban's waiver are left to a lawyer (not covered above), and art. 299 ust. 4 and 300 do not concern a return decision.
