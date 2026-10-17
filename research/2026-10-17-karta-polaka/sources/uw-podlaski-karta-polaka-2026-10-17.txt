@@ -1,0 +1,38 @@
+# The Podlasie voivode's office, "Karta Polaka" (the current page)
+# Source: https://www.gov.pl/web/uw-podlaski/karta-polaka, retrieved 2026-10-17, html sha256 e854811c6c6cd9edd9bf430020b2f5431153816d2f12d8d9b65962c35a2216c3. The page shows no date; it names the registration of 12-14.01.2026.
+# Text of the main element; links to other pages and the GDPR file dropped; the office's phone numbers replaced by "[phone numbers removed]". Not binding.
+# sha256 of the text below this header (from line 5): f5b1e47d0391fe95107a53d837057bca83ef66e31f2ae9152969f0692a7b4c7c.
+Informacja dot. Karty Polaka oraz wzór wniosku
+Świadczenia pieniężne dot. Karty Polaka
+Szanowni Państwo,
+Informujemy, iż Podlaski Urząd Wojewódzki nie prowadzi obecnie rejestracji zgłoszeń w celu złożenia wniosku o przyznanie Karty Polaka.
+Aktualnie, wyznaczane są terminy wizyt osobom, które przesłały swoje zgłoszenie w rejestracji przeprowadzonej w dniach 12 – 14 stycznia 2026 roku. Informacja o terminie wizyty zostanie przesłana na adres e-mail nie później niż na 30 dni przed wyznaczoną datą wizyty. Czas oczekiwania na odpowiedź zwrotną uzależniony jest od liczby nadesłanych zgłoszeń.
+Nie ma możliwości zmiany danych zawartych w zgłoszeniu oraz ustalonego terminu wizyty!
+W przypadku pytań prosimy o kontakt pod nr telefonu [phone numbers removed] .
+WYMAGANE DOKUMENTY:
+- wniosek o przyznanie Karty Polaka wypełniony w języku polskim – wniosek powinien być wypełniony starannie, bez skreśleń i poprawek,
+- aktualna fotografia, wyraźna o wymiarach 35 x 45 mm wykonana w ciągu ostatnich 6 miesięcy na jednolitym jasnym tle z zachowaniem równomiernego oświetlenia twarzy, bez nakrycia głowy i okularów z ciemnymi szkłami,
+- oryginał ważnego dokumentu potwierdzającego tożsamość wraz z kserokopią strony z danymi osobowymi,
+- oryginały i kserokopie dokumentów potwierdzających, że co najmniej jedno z rodziców lub dziadków albo dwoje pradziadków cudzoziemca było narodowości polskiej wraz z kserokopiami,
+- w przypadku działalności w organizacjach polskich i polonijnych - zaświadczenie organizacji polskiej lub polonijnej potwierdzające aktywne zaangażowanie w działalność na rzecz języka i kultury polskiej lub polskiej mniejszości narodowej w okresie ostatnich 3 lat.
+Wszystkie dokumenty, niebędące aktami stanu cywilnego, zawierające wpisy o narodowości przodków (np. zaświadczenia, księgi gospodarcze) powinny zostać opatrzone klauzulą apostille.
+Do duplikatów aktów stanu cywilnego należy dołączyć zaświadczenie zawierające informację o naniesionych zmianach lub ich braku. W przypadku wskazania zmian danych, bądź narodowości wymagane jest przedłożenie dokumentów na podstawie których ich dokonano (np. decyzje, akty stanu cywilnego, dokumenty archiwalne).
+W przypadku posiadania dokumentów potwierdzających znajomość języka polskiego można do wniosku dołączyć:
+- certyfikat znajomości języka polskiego wydany przez Państwową Komisję do spraw Poświadczania Znajomości Języka Polskiego jako Obcego,
+- świadectwa ukończenia szkoły lub studiów w Rzeczypospolitej Polskiej lub świadectwo ukończenia szkoły za granicą z wykładowym językiem polskim.
+W przypadku MAŁOLETNICH do wniosku należy dołączyć:
+- oryginał i kserokopię aktu urodzenia małoletniego,
+- dokumenty tożsamości obojga rodziców lub opiekunów prawnych wraz z kserokopią strony z danymi osobowymi,
+- oryginał Karty Polaka jednego lub obojga rodziców wraz z kserokopią,
+- w przypadku, gdy jednemu z rodziców nie przysługuje władza rodzicielska, konieczne jest przedłożenie dokumentu potwierdzającego taki stan prawny.
+Przypominamy, iż wymagana jest obecność obojga rodziców!
+W przypadku obecności tylko jednego rodzica podczas składania wniosku o przyznanie Karty Polaka małoletniemu dziecku wymagane jest przedłożenie:
+- OŚWIADCZENIA o wyrażeniu zgody na przyznanie Karty Polaka małoletniemu dziecku, złożonego przed właściwym Konsulem RP, notariuszem lub właściwym wojewodą przez rodzica, który nie może przyjechać na wizytę,
+- ORYGINAŁU LUB UWIERZYTELNIONEJ KOPII PASZPORTU (strona z danymi osobowymi) rodzica, który nie może przyjechać na wizytę,
+W przypadku uwierzytelnienia kopii paszportu nieobecnego rodzica i złożenia przez niego oświadczenia o wyrażeniu zgody na przyznanie Karty Polaka małoletniemu dziecku przed notariuszem w innym kraju niż Polska – dokumenty muszą być opatrzone klauzulą apostille.
+UWAGA!!!
+Wszystkie dokumenty sporządzone w języku obcym, służące za dowód w postępowaniu prowadzonym na podstawie ustawy, składa się wraz z ich tłumaczeniami na język polski, dokonanymi przez tłumacza przysięgłego.
+Jednocześnie informujemy, iż na podstawie art. 40 § 4 i 5 ustawy z dnia 14 czerwca 1960 roku Kodeks postępowania administracyjnego strona, która nie ma miejsca zamieszkania lub zwykłego pobytu albo siedziby w Rzeczypospolitej Polskiej, innym państwie członkowskim Unii Europejskiej, Konfederacji Szwajcarskiej albo państwie członkowskim Europejskiego Porozumienia o Wolnym Handlu (EFTA) - stronie umowy o Europejskim Obszarze Gospodarczym, jeżeli nie ustanowiła pełnomocnika do prowadzenia sprawy zamieszkałego w Rzeczypospolitej Polskiej i nie działa za pośrednictwem konsula Rzeczypospolitej Polskiej, jest obowiązana wskazać w Rzeczypospolitej Polskiej pełnomocnika do doręczeń, chyba że doręczenie następuje usługą rejestrowanego doręczenia elektronicznego. W razie niewskazania pełnomocnika do doręczeń przeznaczone dla tej strony pisma pozostawia się w aktach sprawy ze skutkiem doręczenia.
+Odbiór decyzji przyznającej Kartę Polaka oraz blankietu Karty Polaka odbywa się w PUNKCIE OBSŁUGI CUDZOZIEMCÓW (stanowisko nr 1) tylko i wyłącznie po wcześniejszym telefonicznym umówieniu się pod numerem telefonu [phone numbers removed] .
+INFORMACJE W ZAKRESIE KART POLAKA UDZIELANE SĄ POD NUMEREM TELEFONU [phone numbers removed] .
+Podstawowe informacje dotyczące Karty Polaka, świadczeń pieniężnych dla posiadaczy Karty Polaka oraz wzory formularzy znajdują się pod adresem https://www.gov.pl/web/uw-podlaski/informacja-dot-karty-polaka-oraz-wzor-wniosku

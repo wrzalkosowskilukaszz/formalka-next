@@ -1,7 +1,8 @@
-# Ustawa z 7.09.2007 o Karcie Polaka (the Karta Polaka act), consolidated text Dz.U. 2026 poz. 76 (obwieszczenie of 21.01.2026, including Dz.U. 2025 poz. 621 and the changes published before 13.01.2026): art. 1-8e, 9 ust. 2-3, 12-21; with the regulation designating the voivodes, the list of organisations' announcement, and the Polish language act art. 11a ust. 1-2
-# Sources: https://api.sejm.gov.pl/eli/acts/DU/2026/76/text.pdf, sha256 03f577d46e79075e23b02c96696e5504dc57d57031f93f97ddb304f72a3146d3; https://api.sejm.gov.pl/eli/acts/DU/2022/2522/text.pdf, sha256 d32267fc879654660487eca375a3f5bda11d9513d717d219c5d6bed1211760f2; https://api.sejm.gov.pl/eli/acts/MP/2025/264/text.pdf, sha256 942e9aa2b8f88cd76abc7914a08882dccc708071e51323874f0e173e322df5a9; https://api.sejm.gov.pl/eli/acts/DU/2026/81/text.pdf, sha256 ea95ffb30d963be3bacac9a24fa547ba365ef5f3814ba1606f74bf8293c8874d; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
-# Later amendments: none to the Karta Polaka act (node tools/sources/amendments.mjs DU/2026/76 2026-01-01, 17.10.2026) and none to the regulation since its consolidated text (amendments.mjs DU/2022/2522: only its own 2021 and 2022 amendments, which the text includes). The Polish language act: Dz.U. 2026 poz. 676 changes art. 11a ust. 3-7, not ust. 1-2 (research/2026-10-17-permanent/sources/other-acts-permanent-extract.txt header).
-# Elsewhere in the lab: UoC art. 195 ust. 1 pkt 9 (permanent residence for a Karta Polaka holder) in research/2026-10-17-permanent/sources/; UoC art. 60 ust. 1 pkt 20 (a visa to use the card's rights) and the work act art. 3 ust. 5 pkt 1 (work without a permit) in research/2026-10-17-work/sources/; the health care act's list including art. 6 ust. 1 pkt 5 in research/2026-10-17-health/sources/.
+# Ustawa z 7.09.2007 o Karcie Polaka (the Karta Polaka act), consolidated text Dz.U. 2026 poz. 76 (obwieszczenie of 21.01.2026, including Dz.U. 2025 poz. 621 and the changes published before 13.01.2026): art. 1-8e, 9 ust. 2-3, 12-24d; with the regulation designating the voivodes, the list of organisations' announcement, the Polish language act art. 11a ust. 1-2, and the provisions of other acts that bear on the card (at the end)
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2026/76/text.pdf, sha256 03f577d46e79075e23b02c96696e5504dc57d57031f93f97ddb304f72a3146d3; https://api.sejm.gov.pl/eli/acts/DU/2022/2522/text.pdf, sha256 d32267fc879654660487eca375a3f5bda11d9513d717d219c5d6bed1211760f2; https://api.sejm.gov.pl/eli/acts/MP/2025/264/text.pdf, sha256 942e9aa2b8f88cd76abc7914a08882dccc708071e51323874f0e173e322df5a9; https://api.sejm.gov.pl/eli/acts/DU/2026/81/text.pdf, sha256 ea95ffb30d963be3bacac9a24fa547ba365ef5f3814ba1606f74bf8293c8874d; https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf (KPA), sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; https://api.sejm.gov.pl/eli/acts/DU/2026/1065/text.pdf, sha256 efe0ee9a58ce0669d4e8c1ca3679c9da1caa02449b2995e9cd82e5045cc7adf4; https://api.sejm.gov.pl/eli/acts/DU/2016/1382/text.pdf, sha256 9684c384d96de29ac712b588998abe00527ba52ecb0fd9a3e5cd5cdb04b6d111; https://api.sejm.gov.pl/eli/acts/DU/2016/2274/text.pdf, sha256 a3c3f9b8c0fc22928a0c901d6b8bf747aaaa2a72236e932c0e491238d5853553; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall; "[...]" marks an omission inside a block.
+# Later amendments (17.10.2026): none to the Karta Polaka act (node tools/sources/touched.mjs DU/2026/76 2026-01-13 --cite 1-24d) and none to the regulation since its consolidated text (amendments.mjs DU/2022/2522: only its own 2021 and 2022 amendments, which the text includes; the 2022 one, Dz.U. 2022 poz. 1498, in force 30.07.2022). None to Dz.U. 2016 poz. 1382 (in force 2.09.2016) or 2274 (in force 1.01.2017) (amendments.mjs). The act on the entry of EU citizens: none after its legal state of 23.07.2026 (touched.mjs DU/2026/1065 2026-07-23 --cite 48). The KPA: none after 3.11.2025 (research/2026-10-17-unemployment/sources/ extract header).
+# The Polish language act: Dz.U. 2026 poz. 676 (https://api.sejm.gov.pl/eli/acts/DU/2026/676/text.pdf, sha256 3cb7dbaa6c2768aac29eb1cf5ffd07811be1057979835a9b7d6d1535dcf1e78e) changes art. 11a ust. 3 and adds ust. 4a-4e from 1.01.2027, and adds ust. 4 pkt 2 lit. da and rewrites ust. 7 from 9.06.2026 (its art. 13: art. 1 pkt 2 lit. b and d 14 days after publication on 25.05.2026). Ust. 1-2, quoted here, are unchanged.
+# Elsewhere in the lab: UoC art. 195 ust. 1 pkt 9 (permanent residence for a Karta Polaka holder) in research/2026-10-17-permanent/sources/; UoC art. 60 ust. 1 pkt 20 (a visa to use the card's rights) and the work act art. 3 ust. 5 (work without a permit, for a holder staying on a basis of ust. 3 or visa-free) in research/2026-10-17-work/sources/; the work act art. 3 ust. 3 with its change by Dz.U. 2025 poz. 1794 art. 11 (from 27.04.2026) in research/2026-10-16-residence/sources/praca-cudzoziemcow-2025-621-art3-extract.txt; the special act's art. 100d in research/2026-10-16-residence/sources/; the health care act's list including art. 6 ust. 1 pkt 5 in research/2026-10-17-health/sources/.
 
 [Art. 1-8e (who may get it; what it proves; the rights; the settlement benefit)]
      Art. 1. Ustawa określa uprawnienia osoby, której przyznano Kartę Polaka, zwanej dalej „posiadaczem Karty Polaka”,
@@ -283,6 +284,102 @@ względu na miejsce pobytu, nie później niż w terminie 14 dni od dnia, w któ
      2. Odwołanie wnosi się za pośrednictwem konsula, a w przypadku, o którym mowa w art. 12 ust. 4 – wojewody,
 w terminie 30 dni od dnia doręczenia decyzji.
 
+[Art. 22-24d (the form; the register; the settlement benefit within the year's budget; the 75 % stop)]
+     Art. 22. Minister właściwy do spraw zagranicznych określi, w drodze rozporządzenia:
+1)   wzór wniosku o przyznanie Karty Polaka lub przedłużenie jej ważności,
+2)   wzór Karty Polaka
+– uwzględniając dane, które muszą być zawarte we wniosku oraz dane i informacje, jakie powinny być zawarte w Karcie
+Polaka, a także biorąc pod uwagę, że zapisu imienia i nazwiska w Karcie Polaka dokonuje się zgodnie z dokumentem
+tożsamości wnioskodawcy, chyba że we wniosku wnioskodawca oświadczy, że chce aby te dane były zapisane również
+w języku polskim.
+                                                       Rozdział 5
+                                                  Rejestry i ewidencje
+     Art. 23. 1. Konsul i wojewoda prowadzą, każdy w zakresie swojej właściwości, rejestr złożonych wniosków o przy-
+znanie Karty Polaka lub przedłużenie jej ważności, decyzji wydanych w tych sprawach, przyznanych i unieważnionych Kart
+Polaka oraz Kart Polaka, które utraciły ważność z mocy prawa.
+     2. Rejestr, o którym mowa w ust. 1, zawiera informację o wydanych decyzjach oraz następujące dane osób, którym
+przyznano albo odmówiono przyznania Karty Polaka, których Kartę Polaka unieważniono albo w przypadku których Karta
+Polaka utraciła ważność z mocy prawa:
+1)   imię i nazwisko;
+2)   datę i miejsce urodzenia;
+3)   płeć;
+4)   adres zamieszkania za granicą;
+5)   obywatelstwo albo status bezpaństwowca;
+6)   narodowość;
+7)   obywatelstwo i narodowość rodziców, dziadków lub pradziadków, jeżeli ich dane zostały wskazane przez osobę ubiega-
+     jącą się o przyznanie Karty Polaka.
+     2a. Wojewoda oraz minister właściwy do spraw wewnętrznych prowadzą w systemie teleinformatycznym, każdy w za-
+kresie swojej właściwości, rejestr złożonych wniosków o przyznanie świadczenia pieniężnego oraz decyzji i postanowień
+wydanych w tych sprawach.
+     2b. Rejestr, o którym mowa w ust. 2a, zawiera informację o wydanych decyzjach, postanowieniach, okresach, na jaki
+przyznano świadczenie, miesięcznej wysokości świadczenia pieniężnego oraz następujące dane osób, które złożyły wniosek
+o przyznanie świadczenia pieniężnego, i członków ich rodzin objętych wnioskiem:
+1)   imię (imiona) i nazwisko;
+2)   nazwisko rodowe;
+3)   nazwisko poprzednie;
+4)   płeć;
+5)   data urodzenia;
+6)   miejsce i kraj urodzenia;
+7)   obywatelstwo;
+8)   miejsce zamieszkania za granicą;
+9)   miejsce zamierzonego osiedlenia na terytorium Rzeczypospolitej Polskiej.
+     2c. Dane przechowywane w rejestrze, o którym mowa w ust. 2a, udostępnia się organom administracji publicznej,
+sądom, prokuraturom, Policji, Straży Granicznej, Służbie Kontrwywiadu Wojskowego, Agencji Bezpieczeństwa Wewnętrz-
+nego, Agencji Wywiadu oraz organom Krajowej Administracji Skarbowej, w zakresie niezbędnym do realizacji ich ustawo-
+wych zadań.
+       2d. Do sposobu i trybu udostępniania danych zawartych w rejestrze, o którym mowa w ust. 2a, stosuje się odpowiednio
+przepisy art. 452–456 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach oraz przepisy wydane na podstawie art. 457
+i art. 458 tej ustawy.
+     3. Minister właściwy do spraw zagranicznych prowadzi centralny rejestr przyznanych oraz unieważnionych Kart
+Polaka oraz Kart Polaka, które utraciły ważność z mocy prawa. Centralny rejestr zawiera dane, o których mowa w ust. 2.
+     4. Konsul i wojewoda, o którym mowa w art. 12 ust. 4, przekazują ministrowi właściwemu do spraw zagranicznych
+dane, o których mowa w ust. 2.
+     Art. 24. 1. Dane z rejestru, o którym mowa w art. 23 ust. 1, są udostępniane za pośrednictwem urządzeń teleinforma-
+tycznych, bez konieczności składania pisemnych wniosków, ministrowi właściwemu do spraw wewnętrznych, Szefowi
+Agencji Bezpieczeństwa Wewnętrznego, Szefowi Agencji Wywiadu, konsulom oraz organom Policji i Straży Granicznej,
+w zakresie niezbędnym do wykonywania zadań ustawowych tych organów.
+     1a. Dane z rejestru, o którym mowa w art. 23 ust. 1, są udostępniane za pośrednictwem urządzeń teleinformatycznych,
+bez konieczności składania pisemnych wniosków, także ministrowi właściwemu do spraw gospodarki w zakresie niezbęd-
+nym do prowadzenia Centralnej Ewidencji i Informacji o Działalności Gospodarczej.
+      2. Minister właściwy do spraw zagranicznych, w porozumieniu z ministrem właściwym do spraw administracji pub-
+licznej, określi, w drodze rozporządzenia, sposób prowadzenia rejestrów, o których mowa w art. 23 ust. 1, i centralnego
+rejestru, o którym mowa w art. 23 ust. 3, sposób przetwarzania danych w nich zawartych, a także sposób przekazywania
+przez konsula i wojewodę, o którym mowa w art. 12 ust. 4, danych do centralnego rejestru, biorąc pod uwagę konieczność
+zapewnienia bezpieczeństwa przekazywania danych.
+     3. Ustala się dziesięcioletni okres przechowywania danych w rejestrach.
+                                                      Rozdział 5a
+                          Finansowanie wypłaty świadczeń pieniężnych z budżetu państwa
+     Art. 24a. 1. Wypłata świadczeń pieniężnych finansowana jest z rezerwy celowej budżetu państwa.
+     2. Dysponentem rezerwy celowej, o której mowa w ust. 1, jest minister właściwy do spraw wewnętrznych.
+     Art. 24b. 1. Świadczenia pieniężne są wypłacane w danym roku budżetowym do wysokości kwoty rezerwy celowej,
+o której mowa w art. 24a ust. 1.
+     2. Starosta składa do wojewody wniosek o udzielenie dotacji na wypłatę świadczeń pieniężnych.
+     Art. 24c. 1. Minister właściwy do spraw wewnętrznych monitoruje wykorzystanie limitu środków zaplanowanych
+w ustawie budżetowej na wypłatę świadczeń pieniężnych.
+     2. W przypadku gdy łączna kwota wynikająca z wniosków o przyznanie świadczenia pieniężnego z terminem wypłaty
+w danym roku osiągnie równowartość 75 % kwoty zaplanowanej w ustawie budżetowej na wypłatę świadczeń pieniężnych,
+minister właściwy do spraw wewnętrznych ogłasza w Biuletynie Informacji Publicznej informację o wstrzymaniu rozpatrywania
+wniosków o przyznanie świadczenia pieniężnego z terminem wypłaty przypadającym na dany rok, do czasu zabezpieczenia
+w ustawie budżetowej środków na ich wypłatę, a wojewodowie wstrzymują rozpatrywanie takich wniosków, począwszy od
+dnia następującego po dniu ogłoszenia informacji przez ministra właściwego do spraw wewnętrznych.
+     3. Starostowie są obowiązani do przekazywania wojewodom informacji o poziomie wykorzystania dotacji na wypłatę
+świadczeń pieniężnych, w terminie określonym w przepisach wydanych na podstawie art. 24d.
+      4. Wojewodowie są obowiązani do przekazywania ministrowi właściwemu do spraw wewnętrznych informacji o koniecz-
+nej do zabezpieczenia wypłaty świadczeń pieniężnych kwocie wynikającej z wniosków o przyznanie świadczenia pienięż-
+nego oraz o poziomie wykorzystania dotacji przez starostów, w terminie określonym w przepisach wydanych na podstawie
+art. 24d.
+     5. Minister właściwy do spraw wewnętrznych ogłasza w Biuletynie Informacji Publicznej informację o poziomie
+wykorzystania kwoty zaplanowanej w ustawie budżetowej na wypłatę świadczeń pieniężnych według stanu na koniec każ-
+dego miesiąca.
+     Art. 24d. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+1)   szczegółowy tryb podziału rezerwy celowej na wypłatę świadczeń pieniężnych oraz przekazywania środków na pokrycie
+     wydatków związanych z udzielaniem tych świadczeń,
+2)   termin składania wniosków o dotacje, o których mowa w art. 24b ust. 2,
+3)   wzór wniosku o udzielenie dotacji, o którym mowa w art. 24b ust. 2,
+4)   termin przekazywania informacji, o których mowa w art. 24c ust. 3 i 4
+– uwzględniając konieczność efektywnego wykorzystania środków rezerwy celowej oraz rozliczania przez jednostki samo-
+rządu terytorialnego otrzymanych w formie dotacji środków budżetowych.
+
 [The Council of Ministers regulation of 5.10.2017 designating the voivodes, consolidated Dz.U. 2022 poz. 2522, § 1-2]
      § 1. Wyznacza się wojewodów dolnośląskiego, kujawsko-pomorskiego, lubelskiego, lubuskiego, łódzkiego, małopol-
 skiego, mazowieckiego, opolskiego, podkarpackiego, podlaskiego, pomorskiego, śląskiego, świętokrzyskiego, warmińsko-
@@ -304,3 +401,67 @@ znajomości języka polskiego jako obcego po zdaniu egzaminu z języka polskiego
      2. Urzędowym poświadczeniem znajomości języka polskiego jako obcego jest certyfikat znajomości języka polskiego,
 zwany dalej „certyfikatem”, wydawany przez Państwową Komisję do spraw Poświadczania Znajomości Języka Polskiego
 jako Obcego, zwaną dalej „Komisją”.
+
+[The act on foreigners, consolidated Dz.U. 2025 poz. 1079: art. 229 ust. 7 (the residence card after the Karta Polaka is returned)]
+     7. Wydanie karty pobytu cudzoziemcowi, o którym mowa w art. 195 ust. 1 pkt 9, następuje po zwróceniu przez niego
+Karty Polaka, zgodnie z art. 20 ust. 3 pkt 2 ustawy z dnia 7 września 2007 r. o Karcie Polaka (Dz. U. z 2023 r. poz. 192 oraz
+z 2025 r. poz. 621).
+
+[The same: art. 196 ust. 1, the opening and pkt 6 (no permanent residence case for a person abroad)]
+    Art. 196. 1. Cudzoziemcowi odmawia się wszczęcia postępowania w sprawie udzielenia zezwolenia na pobyt stały,
+gdy w dniu złożenia wniosku o udzielenie tego zezwolenia:
+[...]
+6)   przebywa poza granicami Rzeczypospolitej Polskiej.
+
+[KPA, consolidated Dz.U. 2025 poz. 1691: art. 19 (competence observed ex officio)]
+     Art. 19. Organy administracji publicznej przestrzegają z urzędu swojej właściwości rzeczowej i miejscowej.
+
+[KPA art. 21 § 1 (territorial competence)]
+     Art. 21. § 1. Właściwość miejscową organu administracji publicznej ustala się:
+1)   w sprawach dotyczących nieruchomości – według miejsca jej położenia; jeżeli nieruchomość położona jest na obszarze
+     właściwości dwóch lub więcej organów, orzekanie należy do organu, na którego obszarze znajduje się większa część
+     nieruchomości;
+2)   w sprawach dotyczących prowadzenia zakładu pracy – według miejsca, w którym zakład pracy jest, był lub ma być
+     prowadzony;
+3)   w innych sprawach – według miejsca zamieszkania (siedziby) w kraju, a w braku zamieszkania w kraju – według miejsca
+     pobytu strony lub jednej ze stron; jeżeli żadna ze stron nie ma w kraju zamieszkania (siedziby) lub pobytu – według
+     miejsca ostatniego ich zamieszkania (siedziby) lub pobytu w kraju.
+
+[KPA art. 37 § 1-3 (the ponaglenie, to the higher authority)]
+     Art. 37. § 1. Stronie służy prawo do wniesienia ponaglenia, jeżeli:
+1)   nie załatwiono sprawy w terminie określonym w art. 35 lub przepisach szczególnych ani w terminie wskazanym zgodnie
+     z art. 36 § 1 (bezczynność);
+2)   postępowanie jest prowadzone dłużej niż jest to niezbędne do załatwienia sprawy (przewlekłość).
+     § 2. Ponaglenie zawiera uzasadnienie.
+     § 3. Ponaglenie wnosi się:
+1)   do organu wyższego stopnia za pośrednictwem organu prowadzącego postępowanie;
+2)   do organu prowadzącego postępowanie – jeżeli nie ma organu wyższego stopnia.
+
+[KPA art. 65 § 1 (a wrong office forwards the application)]
+     Art. 65. § 1. Jeżeli organ administracji publicznej, do którego podanie wniesiono, jest niewłaściwy w sprawie, nie-
+zwłocznie przekazuje je do organu właściwego, zawiadamiając jednocześnie o tym wnoszącego podanie. Zawiadomienie
+o przekazaniu powinno zawierać uzasadnienie.
+
+[The act on the entry of EU citizens and their families, consolidated Dz.U. 2026 poz. 1065: art. 48 ust. 1-2 ("karta stałego pobytu" is an EU citizen's family member's card)]
+     Art. 48. 1. Obywatelowi UE, który nabył prawo stałego pobytu zgodnie z warunkami określonymi w niniejszym roz-
+dziale, wydaje się dokument potwierdzający prawo stałego pobytu.
+     2. Członek rodziny niebędący obywatelem UE, który nabył prawo stałego pobytu zgodnie z warunkami określonymi
+w niniejszym rozdziale, jest obowiązany uzyskać kartę stałego pobytu.
+
+[The MFA regulation of 26.08.2016 on the application form, Dz.U. 2016 poz. 1382: § 1-2; from its annex 1 (the form), the note on filling it in and the photo (single lines; the PDF carries a watermark)]
+     § 1. Określa się wzór:
+      wniosku o przyznanie lub przedłużenie ważności Karty Polaka, stanowiący załącznik nr 1 do rozporządzenia;
+      Karty Polaka, stanowiący załącznik nr 2 do rozporządzenia.
+     § 2. Rozporządzenie wchodzi w życie z dniem 2 września 2016 r.2)
+    UWAGA: Pola w rubrykach należy wypełniać czytelnie pismem drukowanym, w języku polskim.
+         * Wyraźna fotografia o wymiarach 35 x 45 mm wykonana w ciągu ostatnich 6 miesięcy
+         na jednolitym jasnym tle z zachowaniem równomiernego oświetlenia twarzy, bez nakrycia
+         głowy i okularów z ciemnymi szkłami.
+
+[The regulation on the settlement benefit's application and payment, Dz.U. 2016 poz. 2274: § 3 (cash at the starosta's office, or by transfer)]
+     § 3. 1. Świadczenie pieniężne jest wypłacane w formie gotówkowej lub bezgotówkowej.
+   2. Wypłata świadczenia w formie gotówkowej następuje w kasie urzędu obsługującego starostę właściwego do wypłaty
+świadczenia.
+    3. Świadczenie pieniężne jest wypłacane w formie bezgotówkowej w drodze przelewu na rachunek bankowy wskazany
+przez osobę, której przyznano świadczenie, jeżeli złoży ona do właściwego starosty oświadczenie o wyborze takiej formy
+wypłaty świadczenia pieniężnego.

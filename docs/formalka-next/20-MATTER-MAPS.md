@@ -19,7 +19,7 @@
 | [`maps/child-benefit-800.md`](maps/child-benefit-800.md): the child benefit 800+ for foreigners | Wave 5, matter 13 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-benefits/sources/CHECK.md`) | 17 (BS1–BS17) | 17.10.2026; the dates differ for PESEL UKR holders (5.03.2026) |
 | [`maps/school.md`](maps/school.md): school and preschool for a child from abroad | Wave 5, matter 16 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-school/sources/CHECK.md`) | 16 (SS1–SS16) | 17.10.2026; most special school rules for Ukrainian pupils ended on 31.08.2026 |
 | [`maps/unemployment.md`](maps/unemployment.md): registering as unemployed, for a foreigner | Wave 5, matter 17 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-unemployment/sources/CHECK.md`) | 17 (US1–US17) | 17.10.2026; the benefit's amounts change each 1 June |
-| [`maps/karta-polaka.md`](maps/karta-polaka.md): the Karta Polaka | Wave 5, matter 18 | Sources (R1) and this map; **not yet checked by the separate agent** | 14 (KS1–KS14) | 17.10.2026 |
+| [`maps/karta-polaka.md`](maps/karta-polaka.md): the Karta Polaka | Wave 5, matter 18 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-karta-polaka/sources/CHECK.md`) | 14 (KS1–KS14) | 17.10.2026; the settlement benefit on hold since 15.01.2026 (the minister's notice) |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 
