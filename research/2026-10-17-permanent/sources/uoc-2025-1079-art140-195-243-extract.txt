@@ -1,0 +1,561 @@
+# Ustawa z 12.12.2013 o cudzoziemcach, consolidated text Dz.U. 2025 poz. 1079 (obwieszczenie of 25.07.2025; changes published before 23.07.2025): art. 140, 195-218, 221, 223, 230, 240-243 (permanent residence, the EU long-term resident, the card)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-17, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0. pdftotext -layout; page headers dropped. It is the newest consolidated text (tools/sources/amendments.mjs, 17.10.2026).
+# Later amendments (node tools/sources/touched.mjs DU/2013/1650 2025-07-23 --cite 195-225,225a-225i, on 17.10.2026): Dz.U. 2025 poz. 1794 art. 1 pkt 28-40 changes art. 196, 202-204, 206, 210, 213, 218a-223 from 27.04.2026 (amendment-2025-1794-art196-223-extract.txt); Dz.U. 2026 poz. 203 art. 12 pkt 7-8 adds art. 207b and 223a from 5.03.2026 (other-acts-permanent-extract.txt). 1794 also changes the card articles 226-229, 231, 235, 237, 244-248 (research/2026-10-16-residence/sources/amendment-2025-1794-card-art226-248-extract.txt); art. 140, 230 and 240-243 are not changed after this text. Transitional articles read by hand: 1794 art. 12 and 14, 2025 poz. 622 art. 30 (in this folder).
+
+[Art. 140 (ust. 2: the income threshold, applied by art. 195 ust. 2a and 211 ust. 2)]
+    Art. 140. 1. Zezwolenia na pobyt czasowy w celu wykonywania pracy przez cudzoziemca delegowanego przez praco-
+dawcę zagranicznego na terytorium Rzeczypospolitej Polskiej udziela się cudzoziemcowi, jeżeli:
+1)108) posiada zezwolenie na pracę w rozumieniu ustawy z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania
+      pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej albo pisemne oświadczenie pracodawcy o zamiarze
+      zatrudnienia go, jeżeli zezwolenie na pracę nie jest wymagane;
+107) W brzmieniu ustalonym przez art. 96 pkt 24 ustawy, o której mowa w odnośniku 12.
+108) W brzmieniu ustalonym przez art. 96 pkt 25 ustawy, o której mowa w odnośniku 12.
+2)   posiada ubezpieczenie zdrowotne w rozumieniu ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej
+     finansowanych ze środków publicznych lub potwierdzenie pokrycia przez ubezpieczyciela kosztów leczenia cudzo-
+     ziemca na terytorium Rzeczypospolitej Polskiej;
+3)   posiada źródło stabilnego i regularnego dochodu wystarczającego na pokrycie kosztów utrzymania siebie i członków
+     rodziny pozostających na jego utrzymaniu;
+4)   ma zapewnione na terytorium Rzeczypospolitej Polskiej miejsce zamieszkania.
+     2. Wysokość miesięcznego dochodu, o którym mowa w ust. 1 pkt 3, powinna być wyższa niż wysokość dochodu
+uprawniającego do świadczeń pieniężnych z pomocy społecznej określonych w ustawie z dnia 12 marca 2004 r. o pomocy
+społecznej, w odniesieniu do cudzoziemca oraz każdego członka rodziny pozostającego na jego utrzymaniu.
+
+[Art. 195-201 (permanent residence: grounds, refusal to start, refusal, withdrawal, expiry, the authority)]
+     Art. 195. 1. Zezwolenia na pobyt stały udziela się cudzoziemcowi na czas nieoznaczony, na jego wniosek, jeżeli:
+1)   jest dzieckiem cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długo-
+     terminowego UE pozostającym pod jego władzą rodzicielską:
+     a)   urodzonym po udzieleniu temu cudzoziemcowi zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długo-
+          terminowego UE lub
+     b) urodzonym w okresie ważności zezwolenia na pobyt czasowy udzielonego temu cudzoziemcowi lub w okresie
+        pobytu tego cudzoziemca na terytorium Rzeczypospolitej Polskiej na podstawie zgody na pobyt ze względów
+        humanitarnych lub zgody na pobyt tolerowany albo w związku z nadaniem mu statusu uchodźcy lub udzieleniem
+        ochrony uzupełniającej, lub
+2)   jest dzieckiem obywatela polskiego pozostającym pod jego władzą rodzicielską, lub
+3)   jest osobą o polskim pochodzeniu i zamierza osiedlić się na terytorium Rzeczypospolitej Polskiej na stałe, lub
+4)   pozostaje w uznawanym przez prawo Rzeczypospolitej Polskiej związku małżeńskim z obywatelem polskim i pozo-
+     stawał w tym związku małżeńskim przez co najmniej 3 lata przed dniem, w którym złożył wniosek o udzielenie mu
+     zezwolenia na pobyt stały, i bezpośrednio przed złożeniem tego wniosku przebywał nieprzerwanie na terytorium
+     Rzeczypospolitej Polskiej przez okres nie krótszy niż 2 lata na podstawie zezwolenia na pobyt czasowy udzielonego
+     w związku z pozostawaniem w związku małżeńskim z tym obywatelem polskim lub w związku z uzyskaniem statusu
+     uchodźcy, ochrony uzupełniającej lub zgody na pobyt ze względów humanitarnych, lub
+5)   jest ofiarą handlu ludźmi w rozumieniu art. 115 § 22 Kodeksu karnego i:
+     a)   przebywał na terytorium Rzeczypospolitej Polskiej bezpośrednio przed złożeniem wniosku o udzielenie mu ze-
+          zwolenia na pobyt stały przez okres nie krótszy niż 1 rok na podstawie zezwolenia na pobyt czasowy dla ofiar
+          handlu ludźmi,
+     b) współpracował z organami ścigania w postępowaniu karnym w sprawie o przestępstwo, o którym mowa w art. 189a
+        § 1 Kodeksu karnego,
+     c)   ma uzasadnione obawy przed powrotem do państwa pochodzenia, lub
+6)   bezpośrednio przed złożeniem wniosku o udzielenie mu zezwolenia na pobyt stały przebywał nieprzerwanie na teryto-
+     rium Rzeczypospolitej Polskiej przez okres nie krótszy niż:
+     a)   5 lat w związku z nadaniem mu statusu uchodźcy, udzieleniem ochrony uzupełniającej lub na podstawie zgody
+          na pobyt ze względów humanitarnych lub
+     b) 10 lat na podstawie zgody na pobyt tolerowany udzielonej na podstawie art. 351 pkt 1 lub 3, lub
+     c)   4 lata na podstawie zezwolenia na pobyt czasowy i pracę udzielonego ze względu na cel, o którym mowa w art. 114
+          ust. 1a, i posiada źródło stabilnego i regularnego dochodu wystarczającego na pokrycie kosztów utrzymania siebie
+          i członków rodziny pozostających na jego utrzymaniu, lub
+7)   (uchylony)
+8)   udzielono mu na terytorium Rzeczypospolitej Polskiej azylu, lub
+9)   posiada ważną Kartę Polaka i zamierza osiedlić się na terytorium Rzeczypospolitej Polskiej na stałe, lub
+10) jest obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d
+    Umowy Wystąpienia, który do dnia 31 grudnia 2020 r. wykonywał na terytorium Rzeczypospolitej Polskiej pracę jako
+    pracownik delegowany przez pracodawcę zagranicznego na terytorium Rzeczypospolitej Polskiej i spełnia łącznie
+    następujące warunki:
+     a)   przebywa na terytorium Rzeczypospolitej Polskiej legalnie i nieprzerwanie co najmniej przez 5 lat bezpośrednio
+          przed złożeniem wniosku, w tym na podstawie zezwolenia na pobyt czasowy, o którym mowa w art. 186 ust. 1 pkt 8,
+     b) posiada źródło stabilnego i regularnego dochodu wystarczającego na pokrycie kosztów utrzymania siebie i członków
+        rodziny pozostających na jego utrzymaniu,
+     c)   posiada ubezpieczenie zdrowotne w rozumieniu ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdro-
+          wotnej finansowanych ze środków publicznych lub potwierdzenie pokrycia przez ubezpieczyciela kosztów lecze-
+          nia na terytorium Rzeczypospolitej Polskiej.
+     2. Do ustalenia polskiego pochodzenia osoby, o której mowa w ust. 1 pkt 3, stosuje się przepisy art. 5 ust. 1 oraz od-
+powiednio przepisy art. 6 ust. 1 i 2 ustawy z dnia 9 listopada 2000 r. o repatriacji (Dz. U. z 2022 r. poz. 1105 oraz z 2025 r.
+poz. 620 i 921).
+     2a. Do ustalenia, czy cudzoziemiec ubiegający się o udzielenie zezwolenia, o którym mowa w ust. 1, posiada dochód,
+o którym mowa w ust. 1 pkt 6 lit. c lub pkt 10, stosuje się przepis art. 140 ust. 2.
+      2b. Wymóg posiadania źródła stabilnego i regularnego dochodu w przypadku, o którym mowa w ust. 1 pkt 10, uważa
+się za spełniony również wówczas, gdy koszty utrzymania cudzoziemca będzie pokrywał członek rodziny obowiązany do
+jego utrzymania, który zamieszkuje na terytorium Rzeczypospolitej Polskiej.
+     2c. Do ustalenia, czy cudzoziemiec, o którym mowa w ust. 1 pkt 10, przebywa nieprzerwanie na terytorium Rzeczy-
+pospolitej Polskiej, stosuje się przepis art. 47 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej
+Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich
+rodzin.
+    3. Do okresów, o których mowa w ust. 1 pkt 6 lit. a lub b, cudzoziemcowi przebywającemu na terytorium Rzeczy-
+pospolitej Polskiej na podstawie nadanego statusu uchodźcy lub udzielonej ochrony uzupełniającej wlicza się okres jego
+pobytu na tym terytorium w toku postępowania w sprawie udzielenia ochrony międzynarodowej, nawet jeżeli przebywał
+w tym okresie w strzeżonym ośrodku lub w areszcie dla cudzoziemców.
+     4. Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej stanowiący podstawę do udzielenia mu zezwolenia na
+pobyt stały uznaje się za nieprzerwany, jeżeli żadna z przerw w nim nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie
+przekroczyły łącznie 10 miesięcy w okresach stanowiących podstawę do udzielenia mu zezwolenia na pobyt stały, chyba że
+przerwa była spowodowana:
+1)   wykonywaniem przez cudzoziemca obowiązków zawodowych lub świadczeniem przez niego pracy poza terytorium
+     Rzeczypospolitej Polskiej na podstawie umowy zawartej z pracodawcą, którego siedziba znajduje się na terytorium
+     Rzeczypospolitej Polskiej, lub
+2)   towarzyszeniem cudzoziemcowi, o którym mowa w pkt 1, przez jego małżonka lub małoletnie dziecko, lub
+3)   szczególną sytuacją osobistą wymagającą obecności cudzoziemca poza terytorium Rzeczypospolitej Polskiej i trwała
+     nie dłużej niż 6 miesięcy, lub
+4)   wyjazdem poza terytorium Rzeczypospolitej Polskiej w celu odbycia praktyk lub uczestnictwa w zajęciach, przewi-
+     dzianych w toku studiów w polskiej uczelni.
+    Art. 196. 1. Cudzoziemcowi odmawia się wszczęcia postępowania w sprawie udzielenia zezwolenia na pobyt stały,
+gdy w dniu złożenia wniosku o udzielenie tego zezwolenia:
+1)   przebywa na terytorium Rzeczypospolitej Polskiej:
+     a)   nielegalnie lub
+     b) na podstawie wizy Schengen upoważniającej tylko do wjazdu na terytorium Rzeczypospolitej Polskiej i pobytu
+        na tym terytorium wydanej w celu, o którym mowa w art. 60 ust. 1 pkt 23, lub
+     c)   na podstawie zezwolenia, o którym mowa w art. 181 ust. 1, lub
+     d) na podstawie zezwolenia na pobyt rezydenta długoterminowego UE, lub
+2)   jest zatrzymany, umieszczony w strzeżonym ośrodku lub w areszcie dla cudzoziemców lub stosuje się wobec niego
+     środek zapobiegawczy w postaci zakazu opuszczania kraju, lub
+3)   odbywa karę pozbawienia wolności lub jest tymczasowo aresztowany, lub
+4)   przebywa na terytorium Rzeczypospolitej Polskiej po tym, jak został zobowiązany do powrotu i nie upłynął jeszcze
+     termin dobrowolnego wyjazdu określony w decyzji w tej sprawie, także w przypadku przedłużenia tego terminu, lub
+5)   jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej w przypadkach, o których mowa w art. 299 ust. 6, lub
+6)   przebywa poza granicami Rzeczypospolitej Polskiej.
+7)   (uchylony)
+     2. Przepisów ust. 1 pkt 1–5 nie stosuje się do cudzoziemca, któremu udzielono azylu w Rzeczypospolitej Polskiej.
+     3. Przepisu ust. 1 pkt 1 lit. a nie stosuje się do urodzonego na terytorium Rzeczypospolitej Polskiej małoletniego
+dziecka cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego
+UE, oraz do dziecka obywatela polskiego, które pozostaje pod władzą rodzicielską tego obywatela.
+     4. Przepisu ust. 1 pkt 1 lit. c nie stosuje się do cudzoziemców, o których mowa w art. 195 ust. 1 pkt 3.
+     5. Poza przypadkami, o których mowa w ust. 1, cudzoziemcowi odmawia się wszczęcia postępowania w sprawie
+udzielenia zezwolenia na pobyt stały, gdy przy składaniu wniosku o udzielenie mu tego zezwolenia albo w terminie, o którym
+mowa w art. 203 ust. 5, nie złożył odcisków linii papilarnych w celu wydania karty pobytu.
+     Art. 197. 1. Udzielenia zezwolenia na pobyt stały odmawia się cudzoziemcowi, jeżeli:
+1)   nie spełnia on wymogów, o których mowa w art. 195 ust. 1, lub
+2)   obowiązuje wpis jego danych do wykazu cudzoziemców, których pobyt na terytorium Rzeczypospolitej Polskiej jest
+     niepożądany, lub
+3)   jego dane znajdują się w Systemie Informacyjnym Schengen do celów odmowy wjazdu i pobytu, lub
+4)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego,
+     lub
+5)   wymaga tego interes Rzeczypospolitej Polskiej, lub
+6)   podstawą ubiegania się o zezwolenie jest zawarcie przez niego związku małżeńskiego z obywatelem polskim, a związek
+     małżeński został zawarty lub istnieje w celu obejścia przepisów określających zasady i warunki wjazdu cudzoziemców
+     na terytorium Rzeczypospolitej Polskiej, ich przejazdu przez to terytorium, pobytu na nim i wyjazdu z niego, lub
+7)   w postępowaniu w sprawie udzielenia mu tego zezwolenia:
+     a)   złożył on wniosek o udzielenie zezwolenia zawierający nieprawdziwe dane osobowe lub fałszywe informacje lub
+          dołączył do niego dokumenty zawierające takie dane lub informacje, lub
+     b) zeznał on nieprawdę lub zataił prawdę albo podrobił lub przerobił dokument w celu użycia go jako autentycznego
+        lub takiego dokumentu używał jako autentycznego, lub
+8)   zalega z uiszczeniem podatków, z wyjątkiem przypadków gdy uzyskał on przewidziane prawem zwolnienie, odrocze-
+     nie, rozłożenie na raty zaległych płatności lub wstrzymanie w całości wykonania decyzji właściwego organu, lub
+9)   nie zwrócił kosztów związanych z wydaniem i wykonaniem decyzji o zobowiązaniu cudzoziemca do powrotu, które
+     zostały pokryte z budżetu państwa.
+     2. Udzielenia zezwolenia na pobyt stały cudzoziemcowi, o którym mowa w art. 195 ust. 1 pkt 3, odmawia się w przypad-
+kach, o których mowa w ust. 1 pkt 1, 4 lub 7.
+     3. Udzielenia zezwolenia na pobyt stały cudzoziemcowi, o którym mowa w art. 195 ust. 1 pkt 8, odmawia się, jeżeli
+nie spełnia on wymogów, o których mowa w art. 195 ust. 1.
+    3a. Udzielenia zezwolenia na pobyt stały cudzoziemcowi, o którym mowa w art. 195 ust. 1 pkt 10, odmawia się w przy-
+padkach, o których mowa w ust. 1 pkt 1–4 lub 7.
+    4. Do ustalenia okoliczności, o których mowa w ust. 1 pkt 7, nie stosuje się przepisu art. 79 Kodeksu postępowania
+administracyjnego.
+      Art. 198. 1. W przypadku, o którym mowa w art. 197 ust. 1 pkt 3, cudzoziemcowi można udzielić zezwolenia na pobyt
+stały, biorąc pod uwagę powody leżące u podstaw decyzji państwa obszaru Schengen, które dokonało wpisu do Systemu
+Informacyjnego Schengen, oraz uwzględniając zagrożenia, o których mowa w art. 27 lit. d rozporządzenia nr 2018/1861,
+jakie może powodować obecność danego cudzoziemca na terytorium państw obszaru Schengen.
+     2. W przypadku, o którym mowa w ust. 1, wojewoda lub Szef Urzędu w drugiej instancji, za pośrednictwem Komen-
+danta Głównego Policji:
+1)   przeprowadza z właściwym organem państwa, które dokonało wpisu do Systemu Informacyjnego Schengen, konsul-
+     tacje, o których mowa w art. 27 rozporządzenia nr 2018/1861;
+2)   informuje właściwy organ tego państwa obszaru Schengen o decyzji wydanej w sprawie udzielenia cudzoziemcowi
+     zezwolenia na pobyt stały lub o zamiarze udzielenia cudzoziemcowi zezwolenia na pobyt stały.
+     Art. 199. 1. Zezwolenie na pobyt stały cofa się cudzoziemcowi, jeżeli:
+1)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego
+     lub
+2)   wymaga tego interes Rzeczypospolitej Polskiej, lub
+3)   w postępowaniu w sprawie udzielenia mu tego zezwolenia:
+     a)   złożył on wniosek o udzielenie zezwolenia zawierający nieprawdziwe dane osobowe lub fałszywe informacje lub
+          dołączył do niego dokumenty zawierające takie dane lub informacje, lub
+     b) zeznał on nieprawdę lub zataił prawdę albo podrobił lub przerobił dokument w celu użycia go jako autentycznego
+        lub takiego dokumentu używał jako autentycznego, lub
+4)   został skazany prawomocnym wyrokiem w Rzeczypospolitej Polskiej za przestępstwo umyślne na karę co najmniej
+     3 lat pozbawienia wolności, lub
+5)   opuścił terytorium Rzeczypospolitej Polskiej na okres przekraczający 6 lat.
+     2. Cudzoziemcowi, o którym mowa w:
+1)   art. 195 ust. 1 pkt 3, cofa się zezwolenie na pobyt stały w przypadkach, o których mowa w ust. 1 pkt 1, 3 lub 5;
+2)   art. 195 ust. 1 pkt 8, cofa się zezwolenie na pobyt stały w przypadku pozbawienia go azylu w Rzeczypospolitej Polskiej;
+3)   art. 195 ust. 1 pkt 10, cofa się zezwolenie na pobyt stały w przypadkach, o których mowa w ust. 1 pkt 1, 3, 4 lub 5.
+     3. Jeżeli podstawą udzielenia cudzoziemcowi zezwolenia na pobyt stały był fakt pozostawania w związku małżeńskim
+z obywatelem polskim, zezwolenie można cofnąć, jeżeli cudzoziemiec rozwiódł się w ciągu 2 lat od dnia, w którym udzie-
+lono mu zezwolenia na pobyt stały.
+    4. Do ustalenia okoliczności, o których mowa w ust. 1 pkt 3, nie stosuje się przepisu art. 79 Kodeksu postępowania
+administracyjnego.
+     Art. 200. Zezwolenie na pobyt stały wygasa z mocy prawa z dniem:
+1)   udzielenia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE albo
+2)   nabycia przez cudzoziemca obywatelstwa polskiego.
+    Art. 201. 1. Zezwolenia na pobyt stały udziela cudzoziemcowi lub odmawia jego udzielenia wojewoda właściwy ze
+względu na miejsce pobytu cudzoziemca, w drodze decyzji.
+     2. Zezwolenie na pobyt stały cofa się cudzoziemcowi, w drodze decyzji.
+     3. Decyzję w sprawie cofnięcia cudzoziemcowi zezwolenia na pobyt stały wydaje wojewoda, który udzielił tego ze-
+zwolenia, a w przypadku gdy zezwolenia udzielił Szef Urzędu w drugiej instancji – wojewoda, który orzekał w tej sprawie
+w pierwszej instancji:
+1)   z urzędu albo
+2)   na wniosek Ministra Obrony Narodowej, Szefa Agencji Bezpieczeństwa Wewnętrznego, Komendanta Głównego
+     Straży Granicznej, Komendanta Głównego Policji, komendanta oddziału Straży Granicznej, komendanta placówki
+     Straży Granicznej lub komendanta wojewódzkiego Policji.
+
+[Art. 202-204 as in force until 26.04.2026 (replaced from 27.04.2026: see the 1794 extract)]
+     Art. 202. 1. Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt stały osobiście, nie później niż w ostat-
+nim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej.
+     2. Jeżeli wniosek o udzielenie zezwolenia na pobyt stały nie został złożony przez cudzoziemca osobiście, wojewoda
+wzywa go do osobistego stawiennictwa w terminie nie krótszym niż 7 dni pod rygorem pozostawienia wniosku bez rozpo-
+znania.
+     3. W przypadku cudzoziemca będącego:
+1)   osobą małoletnią – wniosek o udzielenie mu zezwolenia na pobyt stały składają rodzice lub ustanowieni przez sąd
+     opiekunowie albo jedno z rodziców lub jeden z ustanowionych przez sąd opiekunów;
+2)   osobą ubezwłasnowolnioną całkowicie – wniosek o udzielenie mu zezwolenia na pobyt stały składa opiekun ustano-
+     wiony przez sąd;
+3)   osobą małoletnią bez opieki – wniosek o udzielenie mu zezwolenia na pobyt stały składa kurator.
+     4. Przy składaniu wniosku o udzielenie zezwolenia na pobyt stały cudzoziemcowi będącemu osobą małoletnią, która
+do dnia złożenia wniosku ukończyła 6. rok życia, jest wymagana jego obecność. Przepis ust. 2 stosuje się odpowiednio.
+     5. Wymogu dotyczącego terminu złożenia wniosku, o którym mowa w ust. 1, nie stosuje się do urodzonego na tery-
+torium Rzeczypospolitej Polskiej małoletniego dziecka cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub
+zezwolenia na pobyt rezydenta długoterminowego UE, oraz do dziecka obywatela polskiego, które pozostaje pod władzą
+rodzicielską tego obywatela.
+     Art. 203. 1. Cudzoziemiec składa wniosek o udzielenie zezwolenia na pobyt stały na formularzu zawierającym:
+1)   dane cudzoziemca lub informacje, o których mowa w art. 13;
+2)   dane lub informacje dotyczące małżonka cudzoziemca, o których mowa w art. 13;
+3)   następujące dane dotyczące dokumentu podróży cudzoziemca:
+     a)   serię i numer,
+     b) datę wydania i datę upływu ważności,
+     c)   nazwę organu wydającego,
+     d) liczbę osób wpisanych do dokumentu podróży;
+4)   informacje o:
+     a)   podróżach i pobytach zagranicznych cudzoziemca w okresie 5 lat przed dniem złożenia wniosku,
+     b) poprzednich pobytach oraz aktualnym pobycie cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+5)   informację o zatrzymaniu cudzoziemca, umieszczeniu go w strzeżonym ośrodku lub w areszcie dla cudzoziemców,
+     o zakazie opuszczania przez niego kraju, odbywaniu kary pozbawienia wolności lub o jego tymczasowym aresztowaniu;
+6)   informację o zobowiązaniach podatkowych cudzoziemca wobec Skarbu Państwa;
+7)   wzór podpisu cudzoziemca.
+     2. Składając wniosek, o którym mowa w ust. 1, cudzoziemiec uzasadnia go, składa pod rygorem odpowiedzialności
+karnej za składanie fałszywych oświadczeń pisemne oświadczenie, że dane zawarte we wniosku są prawdziwe, oraz przed-
+stawia ważny dokument podróży i dołącza do niego:
+1)   aktualną fotografię;
+2)   dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się
+     o udzielenie zezwolenia na pobyt stały.
+     2a. Jeżeli do wniosku o udzielenie zezwolenia na pobyt stały nie zostały dołączone dokumenty, o których mowa w ust. 2,
+wojewoda wzywa cudzoziemca do ich przedłożenia w terminie nie krótszym niż 14 dni. Określając termin, wojewoda ocenia
+czas niezbędny do uzyskania przez cudzoziemca określonego dokumentu.
+     2b. Wezwanie, o którym mowa w ust. 2a, może nastąpić jednocześnie z wezwaniem do osobistego stawiennictwa na
+podstawie art. 202 ust. 2, wezwaniem do złożenia odcisków linii papilarnych lub wezwaniem do uzupełnienia braków for-
+malnych wniosku o udzielenie zezwolenia na pobyt stały na podstawie art. 64 § 2 Kodeksu postępowania administracyjnego.
+W tym przypadku termin wyznaczony przez wojewodę na podstawie ust. 2a nie może być krótszy od najdłuższego z termi-
+nów określonych w tych wezwaniach.
+     3. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży i nie ma moż-
+liwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość.
+     4. Od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt stały pobiera się odciski linii papilarnych.
+     5. W przypadku gdy z przyczyn zależnych od wojewody nie jest możliwe pobranie odcisków linii papilarnych
+od cudzoziemca w dniu, w którym nastąpiło jego osobiste stawiennictwo, wojewoda wyznacza termin na ich złożenie, nie
+krótszy niż 7 dni.
+     Art. 204. 1. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+1)   wzór formularza wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały;
+2)   liczbę fotografii dołączanych do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały i szczegółowe wy-
+     mogi techniczne dotyczące tych fotografii;
+3)   wzór stempla potwierdzającego złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały;
+4)   sposób pobierania odcisków linii papilarnych w celu wydania karty pobytu;
+5)   sposób utrwalania danych umieszczanych w karcie pobytu i przekazywania ich do spersonalizowania karty pobytu.
+     2. W rozporządzeniu, o którym mowa w ust. 1, minister właściwy do spraw wewnętrznych uwzględni potrzebę zapew-
+nienia sprawności postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt stały i możliwości skutecznej
+weryfikacji przesłanek udzielenia tego zezwolenia.
+
+[Art. 205-207a (art. 206 ust. 1 pkt 1 changed and ust. 3-9 added from 27.04.2026)]
+     Art. 205. 1. W postępowaniu w sprawie udzielenia zezwolenia na pobyt stały cudzoziemcowi będącemu małżonkiem
+obywatela polskiego organ, który prowadzi to postępowanie, ustala, czy związek małżeński został zawarty lub istnieje w celu
+obejścia przepisów określających zasady i warunki wjazdu cudzoziemców na terytorium Rzeczypospolitej Polskiej, ich
+przejazdu przez to terytorium, pobytu na nim i wyjazdu z niego.
+     2. Do ustalenia, czy związek małżeński został zawarty lub istnieje w celu obejścia przepisów określających zasady
+i warunki wjazdu cudzoziemców na terytorium Rzeczypospolitej Polskiej, ich przejazdu przez to terytorium, pobytu na nim
+i wyjazdu z niego, stosuje się przepisy art. 169 ust. 2, 4 i 5.
+     Art. 206. 1. Jeżeli wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt stały został złożony w czasie jego legal-
+nego pobytu na terytorium Rzeczypospolitej Polskiej i nie zawiera braków formalnych lub braki formalne zostały uzupeł-
+nione w terminie:
+1)   wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla, który potwierdza złożenie wniosku o udzie-
+     lenie mu zezwolenia na pobyt stały;
+2)   pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia,
+     w którym decyzja w sprawie udzielenia mu zezwolenia na pobyt stały stanie się ostateczna.
+      2. Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi zezwo-
+lenia na pobyt stały na wniosek strony.
+     Art. 207. 1. Przed wydaniem decyzji o udzieleniu cudzoziemcowi zezwolenia na pobyt stały wojewoda zasięga
+informacji, czy wjazd na terytorium Rzeczypospolitej Polskiej i pobyt na tym terytorium stanowią zagrożenie dla obronności
+lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego.
+     2. Informacji, o której mowa w ust. 1, zasięga się na wniosek, który składa się do:
+1)   komendanta oddziału Straży Granicznej;
+2)   komendanta wojewódzkiego Policji;
+3)   Szefa Agencji Bezpieczeństwa Wewnętrznego.
+     3. Wniosek, o którym mowa w ust. 2, w szczególnie uzasadnionych przypadkach można złożyć również do innych
+organów niż te, o których mowa w ust. 2.
+     4. Komendanci, o których mowa w ust. 2, Szef Agencji Bezpieczeństwa Wewnętrznego lub organy, o których mowa
+w ust. 3, przekazują informację, o której mowa w ust. 1, w terminie 30 dni od dnia otrzymania wniosku.
+     5. W szczególnie uzasadnionych przypadkach termin 30-dniowy może być przedłużony do 60 dni.
+     6. Organ obowiązany do przekazania informacji zawiadamia wojewodę o przedłużeniu terminu, o którym mowa w ust. 5.
+    6a. Wymiana informacji między wojewodą a organami, o których mowa w ust. 2, może odbywać się za pomocą środ-
+ków komunikacji elektronicznej.
+     7. Jeżeli organy, o których mowa w ust. 2 i 3, nie przekażą informacji w terminach, o których mowa w ust. 4 lub 5,
+uznaje się, że wymóg uzyskania informacji został spełniony.
+     7a. Jeżeli Szef Urzędu w drugiej instancji zamierza udzielić cudzoziemcowi zezwolenia na pobyt stały, a wojewoda
+nie zwrócił się z wnioskiem, o którym mowa w ust. 2, Szef Urzędu występuje z tym wnioskiem do organów wskazanych
+w ust. 2 lub 3. Przepisy ust. 4–7 stosuje się odpowiednio.
+      8. Przepisu ust. 1 nie stosuje się do cudzoziemca, który do dnia złożenia wniosku o udzielenie zezwolenia na pobyt
+stały nie ukończył 13. roku życia.
+    Art. 207a. W postępowaniu w sprawie udzielenia albo cofnięcia zezwolenia na pobyt stały stroną postępowania jest
+wyłącznie cudzoziemiec, o którym mowa odpowiednio w art. 195 albo art. 199.
+
+[Art. 210 (ust. 2 pkt 1 repealed and pkt 3 changed from 27.04.2026)]
+     Art. 210. 1. Decyzję w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt stały wydaje się w terminie 6 miesięcy.
+     2. Termin, o którym mowa w ust. 1, biegnie od dnia, w którym nastąpiło ostatnie z następujących zdarzeń:
+1)   cudzoziemiec złożył wniosek o udzielenie zezwolenia na pobyt stały osobiście lub nastąpiło jego osobiste stawiennic-
+     two w urzędzie wojewódzkim po złożeniu tego wniosku, chyba że wobec cudzoziemca nie stosuje się wymogu osobi-
+     stego stawiennictwa, lub
+2)   cudzoziemiec złożył wniosek o udzielenie zezwolenia na pobyt stały, który nie zawiera braków formalnych lub zostały
+     one uzupełnione, lub
+3)   cudzoziemiec przedłożył dokumenty, o których mowa w art. 203 ust. 2 pkt 2, lub upłynął bezskutecznie wyznaczony
+     przez wojewodę termin, o którym mowa w art. 203 ust. 2a.
+     3. Postępowanie odwoławcze w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt stały kończy się w terminie
+90 dni.
+     4. Jeżeli odwołanie nie spełnia wymogów przewidzianych przepisami prawa, termin, o którym mowa w ust. 3, biegnie
+od dnia uzupełnienia braków.
+                                                             Rozdział 2
+
+[Art. 211-218 (the EU long-term resident; art. 213 ust. 2 repealed from 27.04.2026)]
+     Art. 211. 1. Zezwolenia na pobyt rezydenta długoterminowego UE udziela się cudzoziemcowi na czas nieoznaczony,
+na jego wniosek, jeżeli przebywa na terytorium Rzeczypospolitej Polskiej legalnie i nieprzerwanie co najmniej przez 5 lat
+bezpośrednio przed złożeniem wniosku i spełnia łącznie następujące warunki:
+1)    posiada źródło stabilnego i regularnego dochodu wystarczającego na pokrycie kosztów utrzymania siebie i członków
+      rodziny pozostających na jego utrzymaniu;
+2)    posiada ubezpieczenie zdrowotne w rozumieniu ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej
+      finansowanych ze środków publicznych lub potwierdzenie pokrycia przez ubezpieczyciela kosztów leczenia na teryto-
+      rium Rzeczypospolitej Polskiej;
+3)    posiada potwierdzoną znajomość języka polskiego.
+    2. Cudzoziemiec ubiegający się o udzielenie mu zezwolenia na pobyt rezydenta długoterminowego UE posiada
+dochód, o którym mowa w ust. 1 pkt 1, jeżeli spełnia wymogi, o których mowa w art. 140 ust. 2, i spełniał je:
+1)    w ciągu 2 lat pobytu na terytorium Rzeczypospolitej Polskiej bezpośrednio przed złożeniem wniosku – w przypadku,
+      o którym mowa w art. 212 ust. 1 pkt 1;
+2)    w ciągu 3 lat pobytu na terytorium Rzeczypospolitej Polskiej bezpośrednio przed złożeniem wniosku – w pozostałych
+      przypadkach.
+      3. Znajomość języka polskiego, o której mowa w ust. 1 pkt 3, potwierdza się jednym z następujących dokumentów:
+1)    poświadczeniem znajomości języka polskiego na poziomie biegłości językowej co najmniej B1, określonym w przepi-
+      sach wydanych na podstawie ust. 5;
+2)149) świadectwem ukończenia w Rzeczypospolitej Polskiej szkoły w rozumieniu art. 2 pkt 2 ustawy z dnia 14 grudnia
+      2016 r. – Prawo oświatowe (Dz. U. z 2024 r. poz. 737, z późn. zm.150)) z wykładowym językiem polskim, z wyłącze-
+      niem świadectwa ukończenia szkoły policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f tej ustawy, lub dyplomem
+      ukończenia studiów w Rzeczypospolitej Polskiej z wykładowym językiem polskim;
+3)149) świadectwem ukończenia szkoły z wykładowym językiem polskim za granicą, odpowiadającej szkole w rozumieniu
+      art. 2 pkt 2 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, z wyłączeniem szkoły policealnej, o której mowa
+      w art. 18 ust. 1 pkt 2 lit. f tej ustawy, lub dyplomem ukończenia studiów z wykładowym językiem polskim w uczelni
+      za granicą, odpowiadającej uczelni w rozumieniu ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce.
+    4. Przepisu ust. 1 pkt 3 nie stosuje się do małoletniego cudzoziemca, który do dnia złożenia wniosku o udzielenie
+zezwolenia na pobyt rezydenta długoterminowego UE nie ukończył 16. roku życia.
+     5. Minister właściwy do spraw wewnętrznych w porozumieniu z ministrem właściwym do spraw szkolnictwa wyż-
+szego i nauki określi, w drodze rozporządzenia, wykaz poświadczeń znajomości języka polskiego, o których mowa w ust. 3
+pkt 1, uwzględniając ich wiarygodność i dostępność egzaminu w celu uzyskania poświadczenia.
+     Art. 212. 1. Do 5-letniego okresu pobytu na terytorium Rzeczypospolitej Polskiej, o którym mowa w art. 211 ust. 1,
+zalicza się:
+1)151) łączny okres legalnego pobytu na terytorium Unii Europejskiej, jeżeli cudzoziemiec przebywał legalnie i nieprzer-
+      wanie na tym terytorium co najmniej przez 5 lat na podstawie wydanego przez państwo członkowskie Unii Europejskiej
+      dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a rozporządzenia nr 1030/2002, z adnotacją „Niebieska
+      Karta UE”, w tym na terytorium Rzeczypospolitej Polskiej – co najmniej przez 2 lata bezpośrednio przed złożeniem
+      wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE na podstawie zezwolenia na pobyt
+      czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji lub zezwolenia na pobyt
+      czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE;
+149) W brzmieniu ustalonym przez art. 6 pkt 16 ustawy, o której mowa w odnośniku 17; wszedł w życie z dniem 1 lipca 2025 r.
+150) Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 854, 1562, 1635 i 1933 oraz z 2025 r.
+     poz. 619, 620, 622 i 769.
+151) Ze zmianą wprowadzoną przez art. 1 pkt 26 lit. a tiret pierwsze ustawy, o której mowa w odnośniku 2.
+1a)152) łączny okres legalnego pobytu na terytorium Unii Europejskiej, jeżeli cudzoziemiec przebywał legalnie i nieprzer-
+      wanie na tym terytorium co najmniej przez 5 lat na podstawie wizy długoterminowej, z adnotacją „naukowiec”, lub
+      dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a rozporządzenia nr 1030/2002, z adnotacją „naukowiec”,
+      wydanych przez państwo członkowskie Unii Europejskiej, w tym na terytorium Rzeczypospolitej Polskiej – co naj-
+      mniej przez 2 lata bezpośrednio przed złożeniem wniosku o udzielenie zezwolenia na pobyt rezydenta długotermino-
+      wego UE na podstawie zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich
+      kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE;
+1b)152) łączny okres legalnego pobytu na terytorium Unii Europejskiej, jeżeli cudzoziemiec przebywał legalnie i nieprzerwa-
+     nie na tym terytorium co najmniej przez 5 lat na podstawie ochrony międzynarodowej udzielonej przez państwo człon-
+     kowskie Unii Europejskiej, w tym na terytorium Rzeczypospolitej Polskiej – co najmniej przez 2 lata bezpośrednio
+     przed złożeniem wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE na podstawie zezwolenia
+     na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji lub zezwolenia na
+     pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE;
+1c)152) łączny okres legalnego pobytu na terytorium Unii Europejskiej na podstawie dokumentu pobytowego wydanego
+      przez inne państwo członkowskie Unii Europejskiej na podstawie obowiązujących w tym państwie przepisów o przyj-
+      mowaniu pracowników o wysokich kwalifikacjach, które nie mają na celu wdrożenia dyrektywy Parlamentu Euro-
+      pejskiego i Rady (UE) 2021/1883 z dnia 20 października 2021 r. w sprawie warunków wjazdu i pobytu obywateli państw
+      trzecich w celu zatrudnienia w zawodzie wymagającym wysokich kwalifikacji oraz uchylenia dyrektywy Rady
+      2009/50/WE – co najmniej przez 2 lata bezpośrednio przed złożeniem wniosku o udzielenie zezwolenia na pobyt
+      rezydenta długoterminowego UE na podstawie zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie
+      wymagającym wysokich kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności długoterminowej posia-
+      dacza Niebieskiej Karty UE;
+2)       cały okres pobytu na terytorium Rzeczypospolitej Polskiej w toku postępowania w sprawie udzielenia ochrony między-
+         narodowej, jeżeli przekroczył on 18 miesięcy;
+3)       połowę okresu pobytu na terytorium Rzeczypospolitej Polskiej – w przypadku cudzoziemca przebywającego na tery-
+         torium Rzeczypospolitej Polskiej:
+         a)   na podstawie wizy wydanej w celu, o którym mowa w art. 60 ust. 1 pkt 9 lub 10, lub
+         b) na podstawie zezwolenia, o którym mowa w art. 144 lub art. 187 pkt 1 lit. b, lub
+         c)   w toku postępowania w sprawie udzielenia ochrony międzynarodowej;
+4)153)
+          połowę okresu pobytu na terytorium państw członkowskich Unii Europejskiej na podstawie wizy długoterminowej,
+         z adnotacją „student”, lub dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a rozporządzenia nr 1030/2002,
+         z adnotacją „student”, wydanych przez inne państwo członkowskie Unii Europejskiej, jeżeli bezpośrednio przed zło-
+         żeniem wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE cudzoziemiec przebywał na tery-
+         torium Rzeczypospolitej Polskiej co najmniej przez 2 lata na podstawie zezwolenia na pobyt czasowy w celu wykony-
+         wania pracy w zawodzie wymagającym wysokich kwalifikacji lub zezwolenia na pobyt czasowy w celu mobilności
+         długoterminowej posiadacza Niebieskiej Karty UE.
+    2. Do 5-letniego okresu pobytu na terytorium Rzeczypospolitej Polskiej, o którym mowa w art. 211 ust. 1, nie zalicza się
+pobytu cudzoziemca:
+1)       będącego pracownikiem delegowanym przez usługodawcę w celu transgranicznego świadczenia usług lub będącego
+         usługodawcą świadczącym usługi transgraniczne;
+2)       przebywającego na terytorium Rzeczypospolitej Polskiej na podstawie wizy Schengen upoważniającej tylko do wjazdu
+         na terytorium Rzeczypospolitej Polskiej i pobytu na tym terytorium wydanej w celu, o którym mowa w art. 60 ust. 1
+         pkt 23;
+3)       w okresie jego nauki na terytorium Rzeczypospolitej Polskiej;
+4)       który został zobowiązany do powrotu i nie upłynął jeszcze termin dobrowolnego wyjazdu określony w decyzji w tej
+         sprawie, także w przypadku przedłużenia tego terminu;
+5)       który jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej w przypadkach, o których mowa w art. 299 ust. 6;
+6)       będącego członkiem misji dyplomatycznej lub urzędu konsularnego państwa obcego lub inną osobą zrównaną z nimi
+         na podstawie ustaw, umów międzynarodowych lub powszechnie ustalonych zwyczajów międzynarodowych;
+152) Dodany przez art. 1 pkt 26 lit. a tiret drugie ustawy, o której mowa w odnośniku 2.
+153) Dodany przez art. 1 pkt 26 lit. a tiret trzecie ustawy, o której mowa w odnośniku 2.
+7)   o którym mowa w art. 139a ust. 1, art. 139o ust. 1 lub art. 181 ust. 1;
+8)   w toku postępowania w sprawie udzielenia mu ochrony międzynarodowej, w przypadku gdy postępowanie to zakoń-
+     czyło się odmową nadania statusu uchodźcy lub udzielenia ochrony uzupełniającej;
+9)   na podstawie zezwolenia na przekraczanie granicy w ramach małego ruchu granicznego.
+     3. Pobyt cudzoziemca stanowiący podstawę do udzielenia mu zezwolenia na pobyt rezydenta długoterminowego UE
+uznaje się za nieprzerwany, jeżeli żadna z przerw w nim:
+1)   nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie przekroczyły łącznie 10 miesięcy w 5-letnim okresie, o którym
+     mowa w art. 211 ust. 1 – w przypadku pobytu cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+2)154) nie była dłuższa niż 12 miesięcy i wszystkie przerwy nie przekroczyły łącznie 18 miesięcy w okresie, o którym mowa
+      w ust. 1 pkt 1 – w przypadku pobytu na terytorium innego państwa członkowskiego Unii Europejskiej cudzoziemca
+      posiadającego zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwali-
+      fikacji lub zezwolenie na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE.
+      4. Przepisu ust. 3, w zakresie, w jakim przewiduje maksymalne dopuszczalne okresy przerw w pobycie cudzoziemca
+na terytorium Rzeczypospolitej Polskiej, nie stosuje się, jeżeli przerwa była spowodowana:
+1)   wykonywaniem przez cudzoziemca obowiązków zawodowych lub świadczeniem przez niego pracy poza terytorium
+     Rzeczypospolitej Polskiej na podstawie umowy zawartej z pracodawcą, którego siedziba znajduje się na terytorium
+     Rzeczypospolitej Polskiej, lub
+2)   towarzyszeniem cudzoziemcowi, o którym mowa w pkt 1, przez jego małżonka lub małoletnie dziecko, lub
+3)   szczególną sytuacją osobistą wymagającą obecności cudzoziemca poza terytorium Rzeczypospolitej Polskiej i trwała
+     nie dłużej niż 6 miesięcy, lub
+4)   wyjazdem poza terytorium Rzeczypospolitej Polskiej w celu odbycia praktyk lub uczestnictwa w zajęciach, przewi-
+     dzianych w toku studiów w polskiej uczelni.
+     Art. 213. 1. Cudzoziemcowi odmawia się wszczęcia postępowania w sprawie udzielenia zezwolenia na pobyt rezy-
+denta długoterminowego UE, gdy w dniu złożenia wniosku o udzielenie tego zezwolenia:
+1)   przebywa na terytorium Rzeczypospolitej Polskiej:
+     a)   nielegalnie lub
+     b) na podstawie wizy Schengen upoważniającej tylko do wjazdu na terytorium Rzeczypospolitej Polskiej i pobytu na
+        tym terytorium wydanej w celu, o którym mowa w art. 60 ust. 1 pkt 23, lub
+     c)   w celu odbycia studiów lub szkolenia zawodowego, lub
+     d) w związku z zamiarem podjęcia lub kontynuowania nauki na terytorium Rzeczypospolitej Polskiej, lub
+     e)   w związku z uzyskaniem zgody na pobyt ze względów humanitarnych, zgody na pobyt tolerowany, azylu lub
+          ochrony czasowej, lub
+     f)   w związku z ubieganiem się o udzielenie ochrony międzynarodowej lub udzielenie azylu, lub
+     g) na podstawie zezwolenia, o którym mowa w art. 139a ust. 1, art. 139o ust. 1 lub art. 181 ust. 1, lub
+     h) na podstawie zezwolenia na przekraczanie granicy w ramach małego ruchu granicznego, lub
+2)   jest pracownikiem delegowanym przez usługodawcę w celu transgranicznego świadczenia usług lub usługodawcą
+     świadczącym usługi transgraniczne, lub
+3)   jest zatrzymany, umieszczony w strzeżonym ośrodku lub w areszcie dla cudzoziemców lub jest wobec niego stosowany
+     środek zapobiegawczy w postaci zakazu opuszczania kraju, lub
+4)   odbywa karę pozbawienia wolności lub jest tymczasowo aresztowany, lub
+5)   przebywa na terytorium Rzeczypospolitej Polskiej po tym, jak został zobowiązany do powrotu i nie upłynął jeszcze
+     termin dobrowolnego wyjazdu określony w decyzji w tej sprawie, także w przypadku przedłużenia tego terminu, lub
+6)   jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej w przypadkach, o których mowa w art. 299 ust. 6, lub
+7)   przebywa poza granicami Rzeczypospolitej Polskiej.
+8)   (uchylony)
+154) Ze zmianą wprowadzoną przez art. 1 pkt 26 lit. b ustawy, o której mowa w odnośniku 2.
+      2. Poza przypadkami, o których mowa w ust. 1, cudzoziemcowi odmawia się wszczęcia postępowania w sprawie
+udzielenia zezwolenia na pobyt rezydenta długoterminowego UE, gdy przy składaniu wniosku o udzielenie mu tego zezwo-
+lenia albo w terminie, o którym mowa w art. 219 ust. 6, nie złożył odcisków linii papilarnych w celu wydania karty pobytu.
+     Art. 214. 1. Cudzoziemcowi odmawia się udzielenia zezwolenia na pobyt rezydenta długoterminowego UE, jeżeli:
+1)   nie spełnia wymogów, o których mowa w art. 211 ust. 1, lub
+2)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego.
+     2. Na okoliczności, o których mowa w ust. 1 pkt 2, nie można się powoływać w celach gospodarczych.
+     Art. 214a. 1. Jeżeli dane cudzoziemca znajdują się w Systemie Informacyjnym Schengen do celów odmowy wjazdu
+i pobytu, przy ocenie okoliczności, o których mowa w art. 214 ust. 1 pkt 2, należy wziąć pod uwagę powody leżące u pod-
+staw decyzji państwa obszaru Schengen, które dokonało wpisu do Systemu Informacyjnego Schengen, oraz uwzględnić
+zagrożenia, o których mowa w art. 27 lit. d rozporządzenia nr 2018/1861, jakie może powodować obecność danego cudzo-
+ziemca na terytorium państw obszaru Schengen.
+     2. W przypadku, o którym mowa w ust. 1, wojewoda lub Szef Urzędu w drugiej instancji, za pośrednictwem Komen-
+danta Głównego Policji:
+1)   przeprowadza z właściwym organem państwa, które dokonało wpisu do Systemu Informacyjnego Schengen, konsul-
+     tacje, o których mowa w art. 27 rozporządzenia nr 2018/1861;
+2)   informuje właściwy organ tego państwa obszaru Schengen o decyzji wydanej w sprawie udzielenia cudzoziemcowi
+     zezwolenia na pobyt rezydenta długoterminowego UE lub o zamiarze udzielenia cudzoziemcowi zezwolenia na pobyt
+     rezydenta długoterminowego UE.
+     Art. 215. 1. Cudzoziemcowi cofa się zezwolenie na pobyt rezydenta długoterminowego UE, jeżeli:
+1)   nabycie zezwolenia na pobyt rezydenta długoterminowego UE nastąpiło w sposób niezgodny z prawem lub
+2)   stanowi on rzeczywiste i poważne zagrożenie dla obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa
+     i porządku publicznego, lub
+3)   opuścił on terytorium Rzeczypospolitej Polskiej na okres przekraczający 6 lat, lub
+4)   opuścił on terytorium Unii Europejskiej na okres następujących kolejno po sobie:
+     a)   12 miesięcy lub
+     b) 24 miesięcy, jeżeli posiadał zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym
+        wysokich kwalifikacji lub jest członkiem rodziny cudzoziemca, który takie zezwolenie posiadał, lub
+5)   uzyskał on na terytorium innego państwa członkowskiego Unii Europejskiej zezwolenie na pobyt rezydenta długo-
+     terminowego UE, lub
+6)   został on pozbawiony statusu uchodźcy lub ochrony uzupełniającej na podstawie przepisów ustawy z dnia 13 czerwca
+     2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, jeżeli zezwolenie na pobyt rezy-
+     denta długoterminowego UE zostało udzielone w związku z pobytem na tym terytorium na podstawie statusu uchodźcy
+     lub ochrony uzupełniającej.
+     2. Na zagrożenia, o których mowa w ust. 1 pkt 2, nie można się powoływać w celach gospodarczych.
+    3. W postępowaniu w sprawie cofnięcia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE ze
+względu na okoliczności, o których mowa w ust. 1 pkt 2, uwzględnia się:
+1)   okres pobytu cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+2)   wiek cudzoziemca;
+3)   związki cudzoziemca z Rzecząpospolitą Polską lub brak związków z państwem pochodzenia;
+4)   skutki cofnięcia zezwolenia dla cudzoziemca i członków jego rodziny.
+     Art. 216. Do udzielenia kolejnego zezwolenia na pobyt rezydenta długoterminowego UE cudzoziemcowi, któremu
+cofnięto takie zezwolenie ze względu na przesłanki, o których mowa w art. 215 ust. 1 pkt 3–5, nie stosuje się art. 219 ust. 1
+pkt 4 i 9.
+     Art. 217. Zezwolenie na pobyt rezydenta długoterminowego UE wygasa z mocy prawa z dniem nabycia obywatelstwa
+polskiego.
+     Art. 218. 1. Zezwolenia na pobyt rezydenta długoterminowego UE udziela cudzoziemcowi lub odmawia mu jego
+udzielenia, w drodze decyzji, wojewoda właściwy ze względu na miejsce pobytu cudzoziemca.
+     2. Zezwolenie na pobyt rezydenta długoterminowego UE cofa, w drodze decyzji, z urzędu lub na wniosek Ministra
+Obrony Narodowej, Szefa Agencji Bezpieczeństwa Wewnętrznego, Komendanta Głównego Straży Granicznej, Komendanta
+Głównego Policji, komendanta oddziału Straży Granicznej, komendanta placówki Straży Granicznej lub komendanta woje-
+wódzkiego Policji, wojewoda, który udzielił tego zezwolenia, a w przypadku gdy zezwolenia udzielił Szef Urzędu w drugiej
+instancji – wojewoda, który orzekał w tej sprawie w pierwszej instancji.
+
+[Art. 221]
+     Art. 221. W przypadku gdy cudzoziemiec posiada zezwolenie na pobyt rezydenta długoterminowego UE udzielone
+przez inne państwo członkowskie Unii Europejskiej, wojewoda przekazuje Szefowi Urzędu kopię decyzji o udzieleniu
+cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE na terytorium Rzeczypospolitej Polskiej.
+
+[Art. 223 as in force until 26.04.2026 (repealed from 27.04.2026 by 1794 art. 1 pkt 40)]
+     Art. 223. Do udzielenia lub cofnięcia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE stosuje się
+przepisy art. 202, art. 203 ust. 2a i 2b oraz art. 206–210.
+
+[Art. 230 (ust. 2: the next card, at least 30 days before the old one expires)]
+    Art. 230. 1. Wniosek o wymianę dokumentów, o których mowa w art. 226 pkt 1–3 i 5, należy złożyć w terminie 14 dni
+po wystąpieniu przesłanek do ich wymiany, o których mowa w przepisach niniejszego działu.
+    2. Wniosek o wydanie kolejnej karty pobytu należy złożyć co najmniej na 30 dni przed upływem okresu ważności karty
+pobytu.
+
+[Art. 240-243 (the card; its validity)]
+     Art. 240. Kartę pobytu wydaje się cudzoziemcowi, któremu udzielono:
+1)   zezwolenia na pobyt czasowy;
+2)   zezwolenia na pobyt stały;
+3)   zezwolenia na pobyt rezydenta długoterminowego UE;
+4)   zgody na pobyt ze względów humanitarnych.
+     Art. 241. Kartę pobytu wymienia się w przypadku:
+1)   zmiany danych umieszczonych w dotychczasowej karcie pobytu;
+2)   zmiany wizerunku twarzy posiadacza karty pobytu w stosunku do wizerunku twarzy umieszczonego w tej karcie
+     w stopniu utrudniającym lub uniemożliwiającym identyfikację posiadacza karty;
+3)   jej utraty;
+4)   jej uszkodzenia;
+5)   przejęcia przez Rzeczpospolitą Polską odpowiedzialności za ochronę międzynarodową posiadacza karty pobytu wyda-
+     nej w związku z udzieleniem zezwolenia na pobyt rezydenta długoterminowego UE z adnotacją, o której mowa
+     w art. 244 ust. 1 pkt 18;
+6)   przejęcia przez inne państwo członkowskie Unii Europejskiej odpowiedzialności za ochronę międzynarodową posia-
+     dacza karty pobytu wydanej w związku z udzieleniem zezwolenia na pobyt rezydenta długoterminowego UE;
+7)157) przejęcia przez Rzeczpospolitą Polską odpowiedzialności za ochronę międzynarodową posiadacza karty pobytu wy-
+      danej w związku z udzieleniem zezwolenia, o którym mowa w art. 127 lub art. 137a, z adnotacją, o której mowa
+      w art. 244 ust. 1 pkt 10 lit. a.
+     Art. 242. Karta pobytu w okresie swojej ważności potwierdza tożsamość cudzoziemca podczas jego pobytu na teryto-
+rium Rzeczypospolitej Polskiej oraz uprawnia go, wraz z dokumentem podróży, do wielokrotnego przekraczania granicy
+bez konieczności uzyskania wizy.
+     Art. 243. 1. Karta pobytu wydana cudzoziemcowi w przypadku udzielenia mu:
+1)   zezwolenia na pobyt czasowy – jest ważna przez okres, na który udzielono mu tego zezwolenia;
+2)   zezwolenia na pobyt stały – jest ważna przez okres 10 lat od dnia jej wydania;
+3)   zezwolenia na pobyt rezydenta długoterminowego UE – jest ważna przez okres 5 lat od dnia jej wydania;
+4)   zgody na pobyt ze względów humanitarnych – jest ważna przez okres 2 lat od dnia jej wydania.
+     2. Kolejna karta pobytu wydana cudzoziemcowi po upływie terminu ważności karty pobytu wydanej w związku
+z udzieleniem mu:
+1)   zezwolenia na pobyt stały – jest ważna przez okres 10 lat od dnia jej wydania;
+2)   zezwolenia na pobyt rezydenta długoterminowego UE – jest ważna przez okres 5 lat od dnia jej wydania;
+3)   zgody na pobyt ze względów humanitarnych – jest ważna przez okres 2 lat od dnia jej wydania.

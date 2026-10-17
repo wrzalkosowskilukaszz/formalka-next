@@ -1,0 +1,65 @@
+# Mazowiecki UW: System MOS. Elektroniczne składanie wniosków o pobyt w Polsce
+# Source: https://www.gov.pl/web/uw-mazowiecki/system-mos-elektroniczne-skladanie-wnioskow-o-pobyt-w-polsce, retrieved 2026-10-17, html sha256 6b653b1df957ea737f1ca982afff4793458dadfbc1c5d7ce04f3d8fb231a195b
+# Text of the page's main element; navigation removed. Dated 15.04.2026 on the page, before MOS opened on 27.04.2026, partly in the future tense. It names "podpis kwalifikowany lub osobisty" for signing; the act gives the applicant a qualified signature or a trusted profile, and a personal signature only to a parent, guardian or curator who files for the person (art. 203d ust. 3, 219d ust. 3).
+
+Powrót
+
+System MOS. Elektroniczne składanie wniosków o pobyt w Polsce
+
+15.04.2026
+
+Od 27 kwietnia wnioski o udzielenie zezwolenia na pobyt w Polsce będzie można składać wyłącznie elektronicznie poprzez Moduł Obsługi Spraw, czyli system MOS. Zmiana ma na celu uproszczenie procedury, eliminację kolejek oraz umożliwienie składania dokumentów online w dogodnym czasie i miejscu.
+
+Zgodnie z komunikatem Ministra Spraw Wewnętrznych i Administracji, od 27 kwietnia system MOS umożliwi składanie wniosków o:
+
+- pobyt czasowy,
+
+- pobyt stały,
+
+- pobyt rezydenta długoterminowego UE.
+
+Od tego dnia jedyną dopuszczalną formą będzie wniosek elektroniczny.
+
+Najważniejsze terminy
+
+17 kwietnia 2026 r. – wyłączenie obecnej wersji systemu,
+
+26 kwietnia 2026 r. – ostatni dzień na złożenie wniosku papierowego (liczy się wpływ do urzędu),
+
+27 kwietnia 2026 r. – uruchomienie nowego systemu MOS.
+
+Wnioski złożone po 26 kwietnia 2026 r. w formie papierowej nie będą rozpatrywane.
+
+Jak działa system MOS?
+
+Nowy portal umożliwi:
+
+- składanie wniosków online bez konieczności wizyty w urzędzie,
+
+- zapisywanie i edytowanie formularzy,
+
+- dołączanie dokumentów w formie elektronicznej,
+
+- podpisanie wniosku online (profil zaufany, podpis kwalifikowany lub osobisty).
+
+Korzystanie z systemu będzie bezpłatne.
+
+Wymagania
+
+Aby złożyć wniosek konieczne będzie:
+
+- utworzenie nowego konta w systemie MOS,
+
+- logowanie przez login.gov.pl,
+
+- przygotowanie dokumentów elektronicznych (zdjęcie, skany, potwierdzenia opłat),
+
+- posiadanie podpisu elektronicznego.
+
+Ważne informacje
+
+Po złożeniu wniosku system wygeneruje potwierdzenie jego przyjęcia (UPO), a następnie zaświadczenie zastępujące stempel w paszporcie. Urząd może wezwać wnioskodawcę do osobistego stawiennictwa w celu złożenia odcisków palców i uzupełnienia danych.
+
+Nie warto zostawiać złożenia wniosku na ostatnią chwilę. Szczególnie, jeśli wymagane są dodatkowe podpisy np. od pracodawcy, uczelni czy organizatora stażu, które mogą wymagać dodatkowego czasu.
+
+Więcej informacji: https://www.gov.pl/web/udsc/informacja-o-dacie-uruchomienia-systemu-mos

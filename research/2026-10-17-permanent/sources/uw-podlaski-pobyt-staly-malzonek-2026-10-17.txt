@@ -1,0 +1,85 @@
+# Podlaski UW: Małżonek obywatela polskiego (zezwolenie na pobyt stały)
+# Source: https://www.gov.pl/web/uw-podlaski/malzonek-obywatela-polskiego2, retrieved 2026-10-17, html sha256 85c168e412890edca27588bd5328d20db55405701071dafac2dbe66594bdde24
+# Text of the page's main element; navigation removed. No date on the page. One voivode's page. "Trzy aktualne fotografie": see the note in the long-term resident page file. Its last note speaks of "pobyt czasowy", although the page is on the permanent residence permit (art. 205 is the rule for the permanent permit).
+
+Powrót
+
+Małżonek obywatela polskiego
+
+MAŁŻONEK OBYWATELA POLSKIEGO
+
+KOMU I NA JAKI OKRES MOŻNA UDZIELIĆ ZEZWOLENIA
+
+Cudzoziemcowi, który:
+
+- pozostaje w uznawanym przez prawo Rzeczypospolitej Polskiej związku małżeńskim z obywatelem polskim przez co najmniej 3 lata przed dniem, w którym złożył wniosek o udzielenie mu zezwolenia na pobyt stały,
+
+oraz
+
+- bezpośrednio przed złożeniem tego wniosku przebywał nieprzerwanie na terytorium Rzeczypospolitej Polskiej przez okres nie krótszy niż 2 lata na podstawie zezwolenia na pobyt czasowy udzielonego w związku z pozostawaniem w związku małżeńskim z obywatelem polskim lub w związku z uzyskaniem statusu uchodźcy, ochrony uzupełniającej lub zgody na pobyt ze względów humanitarnych.
+
+Zezwolenie to udzielane jest na czas nieoznaczony.
+
+Wymóg nieprzerwanego pobytu – usprawiedliwione przerwy
+
+Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej stanowiący podstawę do udzielenia mu zezwolenia na pobyt stały uznaje się za nieprzerwany, jeżeli żadna z przerw w nim nie była dłuższa niż 6 miesięcy i wszystkie przerwy nie przekroczyły łącznie 10 miesięcy w okresach stanowiących podstawę do udzielenia mu zezwolenia na pobyt stały, chyba że przerwa była spowodowana:
+
+- wykonywaniem przez cudzoziemca obowiązków zawodowych lub świadczeniem przez niego pracy poza terytorium Rzeczypospolitej Polskiej na podstawie umowy zawartej z pracodawcą, którego siedziba znajduje się na terytorium Rzeczypospolitej Polskiej, lub
+
+- towarzyszeniem cudzoziemcowi, o którym mowa w pkt 1, przez jego małżonka lub małoletnie dziecko, lub
+
+- szczególną sytuacją osobistą wymagającą obecności cudzoziemca poza terytorium Rzeczypospolitej Polskiej i trwała nie dłużej niż 6 miesięcy, lub
+
+- wyjazdem poza terytorium Rzeczypospolitej Polskiej w celu odbycia praktyk lub uczestnictwa w zajęciach, przewidzianych w toku studiów w polskiej uczelni.
+
+TERMIN DO ZŁOŻENIA WNIOSKU
+
+Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt stały i pobyt rezydenta długoterminowego Unii Europejskiej elektronicznie przez portal MOS 2,
+
+nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej.
+
+Wnioski złożone w inny sposób niż za pośrednictwem portalu MOS 2 (np. papierowe) pozostawia się bez rozpoznania.
+
+NIEZBĘDNE DOKUMENTY
+
+- Wypełniony zgodnie z pouczeniem formularz wniosku o udzielenie zezwolenia na pobyt stały (link);
+
+- Trzy aktualne fotografie;
+
+- Kopia ważnego dokumentu podróży, w szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży i nie ma możliwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość.
+
+Uwaga: Brak, któregokolwiek z ww. dokumentów jest brakiem formalnym skutkującym wezwaniem cudzoziemca do jego uzupełnienia w terminie wskazanym w wezwaniu pod rygorem pozostawienia wniosku bez rozpoznania.
+
+Do rozpoczęcia postępowania potrzebne będzie również potwierdzenie, że zapłaciłeś opłatę skarbową. Jej wysokość i dane do przelewu są dostępne w tabeli opłat na naszej stronie internetowej (link).
+
+TYPOWE DOKUMENTY POTRZEBNE DO ROZPATRZENIA WNIOSKU
+
+Uwaga: Dołączenie wymienionych niżej dokumentów do wniosku przy jego składaniu może ograniczyć ilość korespondencji urzędowej i skrócić czas załatwienia sprawy.
+
+- aktualny odpis aktu małżeństwa (wydany nie wcześniej niż 3 miesiące przed złożeniem wniosku);
+
+- kopia dowodu osobistego małżonka (oryginał do wglądu);
+
+- dokumenty potwierdzające, że pobyt na terytorium Polski był nieprzerwany lub dokumenty stwierdzające przyczyny wystąpienia przerw w pobycie;
+
+- Dokumenty potwierdzające wywiązywanie się z zobowiązań podatkowych wobec Skarbu Państwa – zaświadczenie o niezaleganiu w podatkach wydane przez Urząd Skarbowy (ZAS-W) wraz z certyfikatem rezydencji podatkowej (CFR) lub ostatnią deklaracją podatkową (PIT) wraz z potwierdzeniem jej złożenia w Urzędzie Skarbowym (UPO).
+
+Uwaga:
+
+- Dołączenie wymienionych dokumentów do wniosku przy jego składaniu może ograniczyć ilość korespondencji urzędowej i skrócić czas załatwienia sprawy.
+
+- Dokumenty należy składać w oryginałach lub w kopii potwierdzonej za zgodność z oryginałem przez notariusza lub Twojego pełnomocnika będącego adwokatem, radcą prawnym, rzecznikiem patentowym lub doradcą podatkowym.
+
+- Potwierdzenia kopii z oryginałem może dokonać także uprawniony pracownik urzędu wojewódzkiego – w tym celu dołącz do kopii dokumentu jego oryginał.
+
+- Dokumenty sporządzone w języku obcym (w tym akt urodzenia czy małżeństwa) należy składać wraz z ich tłumaczeniem na język polski, dokonanym przez tłumacza przysięgłego wpisanego na listę tłumaczy prowadzoną przez Ministerstwo Sprawiedliwości.
+
+- Dokumenty pozostające ze sobą w ścisłym związku powinny być przedstawiane łącznie oraz pozostawać ważne w dacie wydawania decyzji w sprawie udzielenia zezwolenia.
+
+- Jeżeli jest to uzasadnione okolicznościami sprawy, organ administracji publicznej może zażądać oryginał dokumentu mimo, że jego potwierdzona kopia znajduje się w aktach sprawy.
+
+- W postępowaniu w sprawie udzielenia zezwolenia na pobyt czasowy organ, który prowadzi to postępowanie jest obowiązany ustalić, czy związek małżeński został zawarty w celu obejścia przepisów określających zasady i warunki wjazdu cudzoziemców na terytorium Rzeczypospolitej Polskiej, ich przejazdu przez to terytorium, pobytu na nim i wyjazdu z niego. W przypadku potrzeby wyjaśnienia lub doprecyzowania posiadanych przez organ dowodów w sprawie w trakcie postępowania cudzoziemiec może być wzywany do dostarczenia innych dokumentów lub do składania zeznań potwierdzających okoliczności, o których mowa we wniosku oraz okoliczności dotyczących celu zawarcia małżeństwa.
+
+Podstawa prawna
+
+Art. 195 ust. 1 pkt 4 ustawy o cudzoziemcach wraz z aktami wykonawczymi Dz.U. 2013 poz. 1650

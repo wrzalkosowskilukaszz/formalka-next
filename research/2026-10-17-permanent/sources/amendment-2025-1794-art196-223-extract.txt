@@ -1,0 +1,559 @@
+# Dz.U. 2025 poz. 1794 (act of 21.11.2025 amending the act on foreigners), art. 1 pkt 28-40 (permanent residence and the EU long-term resident: the MOS procedure), art. 12, 14 and 19
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, retrieved 2026-10-17, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11. pdftotext -layout; page headers dropped.
+# In force: art. 1 pkt 28-40 from the date in the communiqué under its art. 17, which M.P. 2026 poz. 370 (sha256 f4b7223353479968b7083516cf62ad9414e4c032803b6cb56d9400193448b85e) sets at 27.04.2026 (art. 19 pkt 2; node tools/sources/entry-dates.mjs DU/2025/1794). Cases started before that day keep the old rules (art. 12).
+
+[Art. 1 pkt 28-40 (art. 196, 202-203i, 204, 206, 210, 213, 218a-219i, 222-222g, 223)]
+28) w art. 196 uchyla się ust. 5;
+29) art. 202 i art. 203 otrzymują brzmienie:
+           „Art. 202. 1. Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt stały nie później niż w ostatnim
+     dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej.
+           2. W przypadku cudzoziemca będącego:
+     1)    osobą małoletnią – wniosek o udzielenie mu zezwolenia na pobyt stały składają rodzice lub opiekunowie albo
+           jedno z rodziców lub jeden z opiekunów;
+     2)    osobą ubezwłasnowolnioną całkowicie – wniosek o udzielenie mu zezwolenia na pobyt stały składa opiekun;
+     3)    osobą małoletnią bez opieki – wniosek o udzielenie mu zezwolenia na pobyt stały składa kurator.
+           3. Wymogu dotyczącego terminu złożenia wniosku, o którym mowa w ust. 1, nie stosuje się do urodzonego na
+     terytorium Rzeczypospolitej Polskiej małoletniego dziecka cudzoziemca, któremu udzielono zezwolenia na pobyt stały
+     lub zezwolenia na pobyt rezydenta długoterminowego UE, ani do dziecka obywatela polskiego, które pozostaje pod
+     władzą rodzicielską tego obywatela.
+           Art. 203. 1. Cudzoziemiec składa wniosek o udzielenie zezwolenia na pobyt stały na formularzu zawierającym:
+     1)    dane cudzoziemca lub informacje, o których mowa w art. 13 pkt 1–9, 11–15, 17, 17a, 19, 20–23, 27 i 28;
+     2)    dane oraz informacje dotyczące małżonka cudzoziemca, o których mowa w art. 13 pkt 1–4, 7, 11 i 19;
+     3)    informacje o:
+           a)   podróżach i pobytach zagranicznych cudzoziemca w okresie 5 lat przed dniem złożenia wniosku,
+           b) poprzednich pobytach oraz aktualnym pobycie cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+     4)    informację o zatrzymaniu cudzoziemca, umieszczeniu go w strzeżonym ośrodku lub w areszcie dla cudzoziem-
+           ców, o zakazie opuszczania przez niego kraju, odbywaniu kary pozbawienia wolności lub o jego tymczasowym
+           aresztowaniu;
+     5)    informację o zobowiązaniach podatkowych cudzoziemca wobec Skarbu Państwa;
+     6)    uzasadnienie;
+     7)    oświadczenie o prawdziwości danych zawartych we wniosku.
+           2. Oświadczenie, o którym mowa w ust. 1 pkt 7, składa się pod rygorem odpowiedzialności karnej za złożenie
+     fałszywego oświadczenia. Składający oświadczenie zawiera w nim klauzulę następującej treści: „Jestem świadomy
+     odpowiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowie-
+     dzialności karnej za złożenie fałszywego oświadczenia.”;
+30) po art. 203 dodaje się art. 203a–203i w brzmieniu:
+          „Art. 203a. 1. Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt stały przedstawia ważny dokument
+     podróży.
+         2. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży i nie
+     ma możliwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość.
+           Art. 203b. 1. Od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt stały pobiera się odciski linii
+     papilarnych i wzór podpisu.
+              2. Nie pobiera się odcisków linii papilarnych od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt
+     stały:
+     1)       który do dnia złożenia wniosku o udzielenie zezwolenia na pobyt stały nie ukończył 6. roku życia;
+     2)       od którego pobranie odcisków linii papilarnych jest fizycznie niemożliwe;
+     3)       który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie
+              wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wy-
+              konywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty,
+              nie może stawić się osobiście na wezwanie wojewody.
+              3. Nie pobiera się wzoru podpisu od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt stały, który:
+     1)       do dnia złożenia wniosku o udzielenie zezwolenia na pobyt stały nie ukończył 13. roku życia;
+     2)       z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej
+              niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania
+              zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty, nie może
+              złożyć podpisu samodzielnie.
+           4. Cudzoziemiec składa wzór podpisu na formularzu według wzoru określonego w przepisach wydanych na pod-
+     stawie art. 204 ust. 1 lub za pomocą udostępnionego przez wojewodę urządzenia umożliwiającego złożenie i odwzo-
+     rowanie podpisu.
+           Art. 203c. 1. Wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt stały składa się w postaci elektronicznej,
+     za pośrednictwem MOS, przy użyciu formularza, o którym mowa w art. 203 ust. 1, udostępnionego w MOS.
+           2. Do składania wniosku o udzielenie zezwolenia na pobyt stały nie stosuje się przepisów art. 63 § 1 zdanie pierwsze
+     i drugie Kodeksu postępowania administracyjnego.
+          3. Wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt stały złożony w sposób inny niż określony w ust. 1
+     pozostawia się bez rozpoznania.
+              Art. 203d. 1. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt stały, dołącza do niego:
+     1)       aktualną fotografię;
+     2)       odwzorowanie cyfrowe wszystkich stron ważnego dokumentu podróży lub innego dokumentu potwierdzającego
+              tożsamość w przypadku, o którym mowa w art. 203a ust. 2.
+           2. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt stały, może dołączyć do niego dokumenty
+     niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających ubieganie się o udzielenie
+     zezwolenia na pobyt stały w postaci dokumentów elektronicznych lub odwzorowań cyfrowych dokumentów w postaci
+     papierowej.
+           3. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt stały, opatruje go kwalifikowanym pod-
+     pisem elektronicznym lub podpisem zaufanym. W przypadku, o którym mowa w art. 202 ust. 2, wniosek o udzielenie
+     zezwolenia na pobyt stały kwalifikowanym podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym
+     opatruje:
+     1)       jedno z rodziców lub jeden z opiekunów – w przypadku cudzoziemca będącego osobą małoletnią;
+     2)       opiekun – w przypadku cudzoziemca będącego osobą ubezwłasnowolnioną całkowicie;
+     3)       kurator – w przypadku cudzoziemca będącego osobą małoletnią bez opieki.
+          4. System teleinformatyczny, w którym Szef Urzędu prowadzi MOS, generuje automatycznie urzędowe po-
+     świadczenie odbioru, o którym mowa w art. 3 pkt 20 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności pod-
+     miotów realizujących zadania publiczne, wniosku o udzielenie zezwolenia na pobyt stały odpowiednio dla cudzo-
+     ziemca lub osoby, która w imieniu cudzoziemca złożyła wniosek w przypadku, o którym mowa w art. 202 ust. 2.
+          5. Wniosek o udzielenie zezwolenia na pobyt stały uznaje się za złożony, w przypadku gdy zostaną spełnione
+    łącznie następujące warunki:
+    1)   wniosek o udzielenie zezwolenia na pobyt stały został opatrzony kwalifikowanym podpisem elektronicznym,
+         podpisem osobistym lub podpisem zaufanym zgodnie z ust. 3;
+    2)   cudzoziemiec albo osoba, która w imieniu cudzoziemca złożyła wniosek w przypadku, o którym mowa w art. 202
+         ust. 2, otrzyma urzędowe poświadczenie odbioru wniosku o udzielenie zezwolenia na pobyt stały.
+         6. Wojewoda zapewnia cudzoziemcowi pomoc przy składaniu wniosku o udzielenie zezwolenia na pobyt stały.
+         Art. 203e. 1. W toku postępowania w sprawie udzielenia zezwolenia na pobyt stały wojewoda wzywa cudzo-
+    ziemca do osobistego stawiennictwa w terminie nie krótszym niż 7 dni od dnia doręczenia wezwania w celu:
+    1)   przedstawienia ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku,
+         o którym mowa w art. 203a ust. 2;
+    2)   złożenia odcisków linii papilarnych;
+    3)   złożenia wzoru podpisu.
+         2. Wezwanie, o którym mowa w ust. 1, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków for-
+    malnych wniosku o udzielenie zezwolenia na pobyt stały na podstawie art. 64 § 2 Kodeksu postępowania administra-
+    cyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt stały lub wezwaniem, o którym
+    mowa w art. 203f.
+           Art. 203f. Wojewoda wzywa cudzoziemca do przedłożenia dokumentów niezbędnych do potwierdzenia danych
+    zawartych we wniosku o udzielenie zezwolenia na pobyt stały i okoliczności uzasadniających ubieganie się o udziele-
+    nie tego zezwolenia w terminie nie krótszym niż 14 dni od dnia doręczenia wezwania. Określając termin, wojewoda
+    ocenia czas niezbędny do uzyskania przez cudzoziemca określonego dokumentu. W przypadku, o którym mowa w art. 203d
+    ust. 2, wojewoda wzywa cudzoziemca do przedłożenia oryginałów tych dokumentów.
+          Art. 203g. W przypadku gdy z przyczyn zależnych od wojewody nie jest możliwe pobranie odcisków linii papilar-
+    nych od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt stały w dniu, w którym nastąpiło jego osobiste
+    stawiennictwo, wojewoda wyznacza termin na ich złożenie nie krótszy niż 7 dni od dnia doręczenia wezwania.
+         Art. 203h. 1. Odstępuje się od wezwania do osobistego stawiennictwa cudzoziemca ubiegającego się o udzielenie
+    zezwolenia na pobyt stały:
+    1)   będącego osobą małoletnią, która do dnia złożenia wniosku o udzielenie zezwolenia na pobyt stały nie ukończyła
+         6. roku życia;
+    2)   który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie
+         wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wy-
+         konywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty,
+         nie może stawić się osobiście w urzędzie wojewódzkim.
+          2. W przypadku, o którym mowa w ust. 1 pkt 1, wojewoda wzywa osobę, która złożyła w imieniu cudzoziemca
+    będącego osobą małoletnią wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt stały zgodnie z art. 202 ust. 2
+    pkt 1 lub 3, w terminie nie krótszym niż 7 dni od dnia doręczenia wezwania do przedstawienia ważnego dokumentu
+    podróży cudzoziemca będącego osobą małoletnią lub innego dokumentu potwierdzającego tożsamość tego cudzo-
+    ziemca w przypadku, o którym mowa w art. 203a ust. 2. Wezwanie to może nastąpić jednocześnie z wezwaniem do
+    uzupełnienia braków formalnych wniosku o udzielenie zezwolenia na pobyt stały na podstawie art. 64 § 2 Kodeksu
+    postępowania administracyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt stały
+    lub wezwaniem, o którym mowa w art. 203f.
+          3. W przypadku, o którym mowa w ust. 1 pkt 2, wojewoda wzywa cudzoziemca w terminie nie krótszym niż
+    7 dni od dnia doręczenia wezwania do przedstawienia:
+    1)   odpisu ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku, o którym
+         mowa w art. 203a ust. 2, poświadczonego za zgodność z oryginałem zgodnie z art. 76a § 2 Kodeksu postępowania
+         administracyjnego, chyba że taki odpis został dołączony do wniosku cudzoziemca o udzielenie mu zezwolenia
+         na pobyt stały;
+    2)   wzoru podpisu.
+         4. Wezwanie, o którym mowa w ust. 3, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków for-
+    malnych wniosku o udzielenie zezwolenia na pobyt stały na podstawie art. 64 § 2 Kodeksu postępowania administra-
+    cyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt stały lub wezwaniem, o którym
+    mowa w art. 203f.
+          Art. 203i. 1. O ile nie zachodzą podstawy do pozostawienia bez rozpoznania wniosku cudzoziemca o udzielenie
+     mu zezwolenia na pobyt stały, do jego zwrotu lub odmowy wszczęcia postępowania w sprawie udzielenia cudzoziem-
+     cowi zezwolenia na pobyt stały, wojewoda umarza postępowanie w sprawie udzielenia cudzoziemcowi zezwolenia na
+     pobyt stały, w przypadku gdy cudzoziemiec:
+     1)    nie stawił się mimo prawidłowego wezwania, o którym mowa w art. 203e ust. 1 lub art. 203g;
+     2)    nie złożył odcisków linii papilarnych pomimo osobistego stawiennictwa, chyba że zachodzi przypadek, o którym
+           mowa w art. 203g;
+     3)    nie złożył wzoru podpisu pomimo osobistego stawiennictwa;
+     4)    nie przedstawił ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku,
+           o którym mowa w art. 203a ust. 2, pomimo osobistego stawiennictwa lub odpisu jednego z takich dokumentów
+           w przypadku, o którym mowa w art. 203h ust. 3 pkt 1.
+           2. Przepisu ust. 1:
+     1)    pkt 1 nie stosuje się w przypadku, o którym mowa w art. 203h ust. 1;
+     2)    pkt 2 nie stosuje się w przypadku, o którym mowa w art. 203b ust. 2;
+     3)    pkt 3 nie stosuje się w przypadku, o którym mowa w art. 203b ust. 3.”;
+31) w art. 204 ust. 1 otrzymuje brzmienie:
+           „1. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+     1)    wzór formularza wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały;
+     2)    szczegółowe wymogi techniczne dotyczące fotografii dołączanej do wniosku o udzielenie cudzoziemcowi ze-
+           zwolenia na pobyt stały;
+     3)    szczegółowe wymogi dotyczące dołączania fotografii do wniosku o udzielenie cudzoziemcowi zezwolenia na
+           pobyt stały składanego w sposób, o którym mowa w art. 203c ust. 1;
+     4)    wymogi dotyczące dołączania dokumentów w postaci dokumentów elektronicznych lub odwzorowań cyfrowych
+           dokumentów w postaci papierowej, w tym dokumentów niezbędnych do potwierdzenia danych zawartych we
+           wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały i okoliczności uzasadniających ubieganie się
+           o udzielenie tego zezwolenia, dołączanych do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały
+           składanego w sposób, o którym mowa w art. 203c ust. 1;
+     5)    sposób pobierania odcisków linii papilarnych w celu wydania karty pobytu;
+     6)    sposób utrwalania danych umieszczanych w karcie pobytu i przekazywania ich do spersonalizowania karty pobytu;
+     7)    wzór informacji o pobranych odciskach linii papilarnych cudzoziemca lub ich braku;
+     8)    wzór formularza, na którym cudzoziemiec składa wzór podpisu.”;
+32) w art. 206:
+     a)   w ust. 1 pkt 1 otrzymuje brzmienie:
+          „1)   wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie zezwolenia
+                na pobyt stały;”,
+     b) dodaje się ust. 3–9 w brzmieniu:
+                „3. Zaświadczenie, o którym mowa w ust. 1 pkt 1, zawiera:
+          1)    imię (imiona), nazwisko, datę urodzenia oraz informację o płci i obywatelstwie cudzoziemca;
+          2)    serię i numer dokumentu podróży cudzoziemca lub innego dokumentu potwierdzającego tożsamość w przy-
+                padku, o którym mowa w art. 203a ust. 2;
+          3)    informację, że wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt stały został złożony, oraz datę
+                złożenia wniosku;
+          4)    treść ust. 1 pkt 2 i ust. 2;
+          5)    nazwę organu wydającego zaświadczenie;
+          6)    miejsce i datę wydania zaświadczenia;
+          7)    numer zaświadczenia;
+          8)    podpis pracownika działającego w imieniu wojewody z podaniem imienia i nazwiska;
+          9)    kod QR.
+                4. Zaświadczenie, o którym mowa w ust. 1 pkt 1, jest opatrywane kwalifikowaną pieczęcią elektroniczną
+          Szefa Urzędu.
+                5. Za wydanie zaświadczenia, o którym mowa w ust. 1 pkt 1, nie pobiera się opłaty skarbowej.
+                6. Zaświadczenie, o którym mowa w ust. 1 pkt 1, doręcza się za pośrednictwem MOS.
+                7. Zaświadczenie, o którym mowa w ust. 1 pkt 1, może zostać również przekazane cudzoziemcowi podczas
+          osobistego stawiennictwa, o którym mowa w art. 203e ust. 1.
+               8. Do zaświadczenia, o którym mowa w ust. 1 pkt 1, nie stosuje się przepisów działu VII Kodeksu postępo-
+          wania administracyjnego.
+                9. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia, wzór zaświadczenia, o którym
+          mowa w ust. 1 pkt 1, uwzględniając dane i informacje, o których mowa w ust. 3, oraz konieczność zapewnienia
+          czytelności zaświadczenia.”;
+33) w art. 210 w ust. 2:
+     a)   uchyla się pkt 1,
+     b) pkt 3 otrzymuje brzmienie:
+          „3)   cudzoziemiec przedłożył dokumenty, o których mowa w art. 203f, lub upłynął bezskutecznie wyznaczony
+                przez wojewodę termin, o którym mowa w art. 203f.”;
+34) w art. 213 uchyla się ust. 2;
+35) po art. 218 dodaje się art. 218a w brzmieniu:
+          „Art. 218a. 1. Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt rezydenta długoterminowego
+     UE nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej.
+           2. W przypadku cudzoziemca będącego:
+     1)    osobą małoletnią – wniosek o udzielenie mu zezwolenia na pobyt rezydenta długoterminowego UE składają rodzice
+           lub opiekunowie albo jedno z rodziców lub jeden z opiekunów;
+     2)    osobą ubezwłasnowolnioną całkowicie – wniosek o udzielenie mu zezwolenia na pobyt rezydenta długotermino-
+           wego UE składa opiekun;
+     3)    osobą małoletnią bez opieki – wniosek o udzielenie mu zezwolenia na pobyt rezydenta długoterminowego UE
+           składa kurator.”;
+36) art. 219 otrzymuje brzmienie:
+           „Art. 219. 1. Cudzoziemiec składa wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE
+     na formularzu zawierającym:
+     1)    dane cudzoziemca lub informacje, o których mowa w art. 13 pkt 1–9, 11–15, 17, 17a, 19, 20–23, 27 i 28;
+     2)    informacje, o których mowa w art. 13 pkt 30, dotyczące członków rodziny cudzoziemca zamieszkałych na tery-
+           torium Rzeczypospolitej Polskiej;
+     3)    informacje o:
+           a)   podróżach i pobytach zagranicznych cudzoziemca w okresie 5 lat przed dniem złożenia wniosku,
+           b) poprzednich pobytach oraz aktualnym pobycie cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+     4)    informacje o:
+           a)   źródle dochodu wystarczającego na pokrycie kosztów utrzymania cudzoziemca i członków rodziny pozo-
+                stających na jego utrzymaniu,
+           b) liczbie osób pozostających na utrzymaniu cudzoziemca,
+           c)   wysokości dochodu cudzoziemca w okresie ostatnich 3 lat, a w przypadku, o którym mowa w art. 212 ust. 1
+                pkt 1 – w okresie ostatnich 2 lat;
+     5)    informację o posiadanym przez cudzoziemca ubezpieczeniu zdrowotnym;
+     6)    informację o udzielonym cudzoziemcowi w innym państwie członkowskim Unii Europejskiej zezwoleniu na pobyt
+           rezydenta długoterminowego UE;
+     7)    informację o pobycie na terytorium innych państw członkowskich Unii Europejskiej na podstawie:
+           a)   dokumentu pobytowego, o którym mowa w art. 1 ust. 2 lit. a rozporządzenia nr 1030/2002, z adnotacją „Nie-
+                bieska Karta UE” wydanego przez inne niż Rzeczpospolita Polska państwo członkowskie Unii Europejskiej,
+           b) wizy długoterminowej z adnotacją „naukowiec” lub dokumentu pobytowego, o którym mowa w art. 1 ust. 2
+              lit. a rozporządzenia nr 1030/2002, z adnotacją „naukowiec” wydanych przez inne niż Rzeczpospolita Polska
+              państwo członkowskie Unii Europejskiej,
+           c)   ochrony międzynarodowej udzielonej przez inne niż Rzeczpospolita Polska państwo członkowskie Unii Euro-
+                pejskiej,
+           d) dokumentu pobytowego wydanego przez inne niż Rzeczpospolita Polska państwo członkowskie Unii Euro-
+              pejskiej na podstawie obowiązujących w tym państwie przepisów o przyjmowaniu pracowników o wyso-
+              kich kwalifikacjach,
+           e)   wizy długoterminowej z adnotacją „student” lub dokumentu pobytowego, o którym mowa w art. 1 ust. 2
+                lit. a rozporządzenia nr 1030/2002, z adnotacją „student” wydanych przez inne niż Rzeczpospolita Polska
+                państwo członkowskie Unii Europejskiej
+           – oraz przerwach w tym pobycie;
+     8)    informację o zatrzymaniu cudzoziemca, umieszczeniu go w strzeżonym ośrodku lub w areszcie dla cudzoziem-
+           ców, o zakazie opuszczania przez niego kraju, odbywaniu kary pozbawienia wolności lub o jego tymczasowym
+           aresztowaniu;
+     9)    uzasadnienie;
+     10)   oświadczenie o prawdziwości danych zawartych we wniosku.
+           2. Oświadczenie, o którym mowa w ust. 1 pkt 10, składa się pod rygorem odpowiedzialności karnej za złożenie
+     fałszywego oświadczenia. Składający oświadczenie zawiera w nim klauzulę następującej treści: „Jestem świadomy
+     odpowiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowie-
+     dzialności karnej za złożenie fałszywego oświadczenia.”;
+37) po art. 219 dodaje się art. 219a–219i w brzmieniu:
+          „Art. 219a. 1. Cudzoziemiec ubiegający się o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE
+     przedstawia ważny dokument podróży i aktualny tytuł prawny do zajmowania lokalu mieszkalnego, w którym będzie
+     przebywał.
+           2. Za tytuł prawny, o którym mowa w ust. 1, nie uznaje się umowy użyczenia lokalu, chyba że użyczającym jest
+     zstępny, wstępny, małżonek, rodzice małżonka lub rodzeństwo cudzoziemca.
+         3. W szczególnie uzasadnionym przypadku, gdy cudzoziemiec nie posiada ważnego dokumentu podróży i nie
+     ma możliwości jego uzyskania, może przedstawić inny dokument potwierdzający tożsamość.
+          Art. 219b. 1. Od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt rezydenta długoterminowego
+     UE pobiera się odciski linii papilarnych i wzór podpisu.
+          2. Nie pobiera się odcisków linii papilarnych od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt
+     rezydenta długoterminowego UE:
+     1)    który do dnia złożenia wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE nie ukończył
+           6. roku życia;
+     2)    od którego pobranie odcisków linii papilarnych jest fizycznie niemożliwe;
+     3)    który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie
+           wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wy-
+           konywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty,
+           nie może stawić się osobiście na wezwanie wojewody.
+          3. Nie pobiera się wzoru podpisu od cudzoziemca ubiegającego się o udzielenie zezwolenia na pobyt rezydenta
+     długoterminowego UE, który:
+     1)    do dnia złożenia wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE nie ukończył 13. roku
+           życia;
+     2)    z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie wcześniej
+           niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wykonywania
+           zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty, nie może
+           złożyć podpisu samodzielnie.
+          4. Cudzoziemiec składa wzór podpisu na formularzu według wzoru określonego w przepisach wydanych na pod-
+    stawie art. 222 ust. 1 lub za pomocą udostępnionego przez wojewodę urządzenia umożliwiającego złożenie i odwzo-
+    rowanie podpisu.
+         Art. 219c. 1. Wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE składa się
+    w postaci elektronicznej, za pośrednictwem MOS, przy użyciu formularza, o którym mowa w art. 219 ust. 1, udostęp-
+    nionego w MOS.
+         2. Do składania wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE nie stosuje się prze-
+    pisów art. 63 § 1 zdanie pierwsze i drugie Kodeksu postępowania administracyjnego.
+          3. Wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE złożony w sposób
+    inny niż określony w ust. 1 pozostawia się bez rozpoznania.
+         Art. 219d. 1. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego
+    UE, dołącza do niego:
+    1)   aktualną fotografię;
+    2)   odwzorowanie cyfrowe wszystkich stron ważnego dokumentu podróży lub innego dokumentu potwierdzającego
+         tożsamość w przypadku, o którym mowa w art. 219a ust. 3;
+    3)   odwzorowanie cyfrowe dokumentu potwierdzającego aktualny tytuł prawny do zajmowania lokalu mieszkal-
+         nego, w którym cudzoziemiec będzie przebywał.
+          2. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, może
+    dołączyć do niego dokumenty niezbędne do potwierdzenia danych zawartych we wniosku i okoliczności uzasadniających
+    ubieganie się o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE w postaci dokumentów elektronicz-
+    nych lub odwzorowań cyfrowych dokumentów w postaci papierowej.
+           3. Cudzoziemiec, składając wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, opatruje
+    go kwalifikowanym podpisem elektronicznym lub podpisem zaufanym. W przypadku, o którym mowa w art. 218a
+    ust. 2, wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE kwalifikowanym podpisem elek-
+    tronicznym, podpisem osobistym lub podpisem zaufanym opatruje:
+    1)   jedno z rodziców lub jeden z opiekunów – w przypadku cudzoziemca będącego osobą małoletnią;
+    2)   opiekun – w przypadku cudzoziemca będącego osobą ubezwłasnowolnioną całkowicie;
+    3)   kurator – w przypadku cudzoziemca będącego osobą małoletnią bez opieki.
+          4. System teleinformatyczny, w którym Szef Urzędu prowadzi MOS, generuje automatycznie urzędowe po-
+    świadczenie odbioru, o którym mowa w art. 3 pkt 20 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności pod-
+    miotów realizujących zadania publiczne, wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE
+    odpowiednio dla cudzoziemca lub osoby, która w imieniu cudzoziemca złożyła wniosek w przypadku, o którym mowa
+    w art. 218a ust. 2.
+         5. Wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE uznaje się za złożony, w przy-
+    padku gdy zostaną spełnione łącznie następujące warunki:
+    1)   wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE został opatrzony kwalifikowanym
+         podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym zgodnie z ust. 3;
+    2)   cudzoziemiec albo osoba, która w imieniu cudzoziemca złożyła wniosek w przypadku, o którym mowa w art. 218a
+         ust. 2, otrzyma urzędowe poświadczenie odbioru wniosku o udzielenie zezwolenia na pobyt rezydenta długoter-
+         minowego UE.
+          6. Wojewoda zapewnia cudzoziemcowi pomoc przy składaniu wniosku o udzielenie zezwolenia na pobyt rezy-
+    denta długoterminowego UE.
+         Art. 219e. 1. W toku postępowania w sprawie udzielenia zezwolenia na pobyt rezydenta długoterminowego UE
+    wojewoda wzywa cudzoziemca do osobistego stawiennictwa w terminie nie krótszym niż 7 dni od dnia doręczenia
+    wezwania w celu:
+    1)   przedstawienia ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku,
+         o którym mowa w art. 219a ust. 3;
+    2)   przedstawienia aktualnego tytułu prawnego do zajmowania lokalu mieszkalnego, w którym cudzoziemiec będzie
+         przebywał;
+    3)   złożenia odcisków linii papilarnych;
+    4)   złożenia wzoru podpisu.
+          2. Wezwanie, o którym mowa w ust. 1, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków for-
+    malnych wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE na podstawie art. 64 § 2 Kodeksu
+    postępowania administracyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt rezy-
+    denta długoterminowego UE lub wezwaniem, o którym mowa w art. 219f.
+           Art. 219f. Wojewoda wzywa cudzoziemca do przedłożenia dokumentów niezbędnych do potwierdzenia danych
+    zawartych we wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE i okoliczności uzasadniających
+    ubieganie się o udzielenie tego zezwolenia w terminie nie krótszym niż 14 dni od dnia doręczenia wezwania. Określa-
+    jąc termin, wojewoda ocenia czas niezbędny do uzyskania przez cudzoziemca określonego dokumentu. W przypadku,
+    o którym mowa w art. 219d ust. 2, wojewoda wzywa cudzoziemca do przedłożenia oryginałów tych dokumentów.
+          Art. 219g. W przypadku gdy z przyczyn zależnych od wojewody nie jest możliwe pobranie odcisków linii papilar-
+    nych od cudzoziemca w dniu, w którym nastąpiło jego osobiste stawiennictwo, wojewoda wyznacza termin na ich
+    złożenie nie krótszy niż 7 dni od dnia doręczenia wezwania.
+         Art. 219h. 1. Odstępuje się od wezwania do osobistego stawiennictwa cudzoziemca ubiegającego się o udzielenie
+    zezwolenia na pobyt rezydenta długoterminowego UE:
+    1)   będącego osobą małoletnią, która do dnia złożenia wniosku o udzielenie zezwolenia na pobyt rezydenta długo-
+         terminowego UE nie ukończyła 6. roku życia;
+    2)   który z powodu choroby lub niepełnosprawności, potwierdzonych zaświadczeniem lekarskim wystawionym nie
+         wcześniej niż na 3 miesiące przed złożeniem wniosku przez właściwego lekarza specjalistę mającego prawo wy-
+         konywania zawodu lekarza w rozumieniu ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty,
+         nie może stawić się osobiście w urzędzie wojewódzkim.
+         2. W przypadku, o którym mowa w ust. 1 pkt 1, wojewoda wzywa osobę, która złożyła w imieniu cudzoziemca
+    będącego osobą małoletnią wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego
+    UE zgodnie z art. 218a ust. 2 pkt 1 lub 3, w terminie nie krótszym niż 7 dni od dnia doręczenia wezwania do przedsta-
+    wienia:
+    1)   ważnego dokumentu podróży cudzoziemca będącego osobą małoletnią lub innego dokumentu potwierdzającego
+         tożsamość tego cudzoziemca w przypadku, o którym mowa w art. 219a ust. 3;
+    2)   aktualnego tytułu prawnego do zajmowania lokalu mieszkalnego, w którym cudzoziemiec będący osobą mało-
+         letnią będzie przebywał.
+          3. Wezwanie, o którym mowa w ust. 2, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków for-
+    malnych wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE na podstawie art. 64 § 2 Kodeksu
+    postępowania administracyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt rezy-
+    denta długoterminowego UE lub wezwaniem, o którym mowa w art. 219f.
+          4. W przypadku, o którym mowa w ust. 1 pkt 2, wojewoda wzywa cudzoziemca w terminie nie krótszym niż
+    7 dni od dnia doręczenia wezwania do przedstawienia odpisu:
+    1)   ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku, o którym mowa
+         w art. 219a ust. 3,
+    2)   aktualnego tytułu prawnego do zajmowania lokalu mieszkalnego, w którym cudzoziemiec będzie przebywał
+    – poświadczonego za zgodność z oryginałem zgodnie z art. 76a § 2 Kodeksu postępowania administracyjnego, chyba
+    że taki odpis został dołączony do wniosku cudzoziemca o udzielenie mu zezwolenia na pobyt rezydenta długotermi-
+    nowego UE;
+    3)   wzoru podpisu.
+          5. Wezwanie, o którym mowa w ust. 4, może nastąpić jednocześnie z wezwaniem do uzupełnienia braków for-
+    malnych wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE na podstawie art. 64 § 2 Kodeksu
+    postępowania administracyjnego, wezwaniem do uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt rezy-
+    denta długoterminowego UE lub wezwaniem, o którym mowa w art. 219f.
+          Art. 219i. 1. O ile nie zachodzą podstawy do pozostawienia bez rozpoznania wniosku cudzoziemca o udzielenie
+    mu zezwolenia na pobyt rezydenta długoterminowego UE, do zwrotu tego wniosku lub do odmowy wszczęcia postę-
+    powania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE, wojewoda umarza
+    postępowanie w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE, w przy-
+    padku gdy cudzoziemiec:
+    1)   nie stawił się mimo prawidłowego wezwania, o którym mowa w art. 219e ust. 1 lub art. 219g;
+    2)   nie złożył odcisków linii papilarnych pomimo osobistego stawiennictwa, chyba że zachodzi przypadek, o którym
+         mowa w art. 219g;
+    3)   nie złożył wzoru podpisu pomimo osobistego stawiennictwa;
+     4)   nie przedstawił ważnego dokumentu podróży lub innego dokumentu potwierdzającego tożsamość w przypadku,
+          o którym mowa w art. 219a ust. 3, pomimo osobistego stawiennictwa, lub odpisu jednego z takich dokumentów
+          w przypadku, o którym mowa w art. 219h ust. 4 pkt 1;
+     5)   nie przedstawił aktualnego tytułu prawnego do zajmowania lokalu mieszkalnego, w którym będzie przebywał,
+          pomimo osobistego stawiennictwa, lub odpisu takiego tytułu w przypadku, o którym mowa w art. 219h ust. 4 pkt 2.
+          2. Przepisu ust. 1:
+     1)   pkt 1 nie stosuje się w przypadku, o którym mowa w art. 219h ust. 1;
+     2)   pkt 2 nie stosuje się w przypadku, o którym mowa w art. 219b ust. 2;
+     3)   pkt 3 nie stosuje się w przypadku, o którym mowa w art. 219b ust. 3.”;
+38) w art. 222 ust. 1 otrzymuje brzmienie:
+          „1. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+     1)   wzór formularza wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE;
+     2)   szczegółowe wymogi techniczne dotyczące fotografii dołączanej do wniosku o udzielenie cudzoziemcowi ze-
+          zwolenia na pobyt rezydenta długoterminowego UE;
+     3)   szczegółowe wymogi dotyczące dołączania fotografii do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt
+          rezydenta długoterminowego UE składanego w sposób, o którym mowa w art. 219c ust. 1;
+     4)   wymogi dotyczące dołączania dokumentów w postaci dokumentów elektronicznych lub odwzorowań cyfrowych
+          dokumentów w postaci papierowej, w tym dokumentów niezbędnych do potwierdzenia danych zawartych we
+          wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE i okoliczności uzasadniających ubie-
+          ganie się o udzielenie tego zezwolenia, dołączanych do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt
+          rezydenta długoterminowego UE składanego w sposób, o którym mowa w art. 219c ust. 1;
+     5)   sposób pobierania odcisków linii papilarnych w celu wydania karty pobytu;
+     6)   sposób utrwalania danych umieszczanych w karcie pobytu i przekazywania ich do spersonalizowania karty pobytu;
+     7)   wzór informacji o pobranych odciskach linii papilarnych cudzoziemca lub ich braku;
+     8)   wzór formularza, na którym cudzoziemiec składa wzór podpisu.”;
+39) po art. 222 dodaje się art. 222a–222g w brzmieniu:
+           „Art. 222a. 1. Jeżeli wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE
+     został złożony w czasie jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej i nie zawiera braków formal-
+     nych lub braki formalne zostały uzupełnione w terminie:
+     1)   wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie mu zezwolenia
+          na pobyt rezydenta długoterminowego UE;
+     2)   pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia,
+          w którym decyzja w sprawie udzielenia mu zezwolenia na pobyt rezydenta długoterminowego UE stanie się
+          ostateczna.
+          2. Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi
+     zezwolenia na pobyt rezydenta długoterminowego UE na wniosek strony.
+          3. Zaświadczenie, o którym mowa w ust. 1 pkt 1, zawiera:
+     1)   imię (imiona), nazwisko, datę urodzenia oraz informację o płci i obywatelstwie cudzoziemca;
+     2)   serię i numer dokumentu podróży cudzoziemca lub innego dokumentu potwierdzającego tożsamość w przy-
+          padku, o którym mowa w art. 219a ust. 3;
+     3)   informację, że wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE został
+          złożony, oraz datę złożenia wniosku;
+     4)   treść ust. 1 pkt 2 i ust. 2;
+     5)   nazwę organu wydającego zaświadczenie;
+     6)   miejsce i datę wydania zaświadczenia;
+     7)   numer zaświadczenia;
+     8)   podpis pracownika działającego w imieniu wojewody z podaniem imienia i nazwiska;
+     9)   kod QR.
+         4. Zaświadczenie, o którym mowa w ust. 1 pkt 1, jest opatrywane kwalifikowaną pieczęcią elektroniczną Szefa
+    Urzędu.
+          5. Za wydanie zaświadczenia, o którym mowa w ust. 1 pkt 1, nie pobiera się opłaty skarbowej.
+          6. Zaświadczenie, o którym mowa w ust. 1 pkt 1, doręcza się za pośrednictwem MOS.
+          7. Zaświadczenie, o którym mowa w ust. 1 pkt 1, może zostać również przekazane cudzoziemcowi podczas jego
+    osobistego stawiennictwa, o którym mowa w art. 219e ust. 1.
+         8. Do zaświadczenia, o którym mowa w ust. 1 pkt 1, nie stosuje się przepisów działu VII Kodeksu postępowania
+    administracyjnego.
+          9. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia, wzór zaświadczenia, o którym
+    mowa w ust. 1 pkt 1, uwzględniając dane i informacje, o których mowa w ust. 3, oraz konieczność zapewnienia czytel-
+    ności zaświadczenia.
+         Art. 222b. 1. Przed wydaniem decyzji o udzieleniu cudzoziemcowi zezwolenia na pobyt rezydenta długotermi-
+    nowego UE wojewoda zasięga informacji, czy wjazd na terytorium Rzeczypospolitej Polskiej i pobyt na tym terytorium
+    stanowią zagrożenie dla obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego.
+          2. Informacji, o której mowa w ust. 1, zasięga się na wniosek, który składa się do:
+    1)    komendanta oddziału Straży Granicznej;
+    2)    komendanta wojewódzkiego Policji;
+    3)    Szefa Agencji Bezpieczeństwa Wewnętrznego.
+         3. Wniosek, o którym mowa w ust. 2, w szczególnie uzasadnionych przypadkach można złożyć również do innych
+    organów niż te, o których mowa w ust. 2.
+          4. Komendanci, o których mowa w ust. 2 pkt 1 i 2, Szef Agencji Bezpieczeństwa Wewnętrznego lub organy,
+    o których mowa w ust. 3, przekazują informację, o której mowa w ust. 1, w terminie 30 dni od dnia otrzymania wniosku.
+          5. W szczególnie uzasadnionych przypadkach termin 30-dniowy może być przedłużony do 60 dni.
+          6. Organ obowiązany do przekazania informacji zawiadamia wojewodę o przedłużeniu terminu, o którym mowa
+    w ust. 5.
+         7. Wymiana informacji między wojewodą a organami, o których mowa w ust. 2, może odbywać się za pomocą
+    środków komunikacji elektronicznej.
+          8. Jeżeli organy, o których mowa w ust. 2 i 3, nie przekażą informacji w terminach, o których mowa w ust. 4 lub 5,
+    uznaje się, że wymóg uzyskania informacji został spełniony.
+          9. Jeżeli Szef Urzędu w drugiej instancji zamierza udzielić cudzoziemcowi zezwolenia na pobyt rezydenta długo-
+    terminowego UE, a wojewoda nie zwrócił się z wnioskiem, o którym mowa w ust. 2, Szef Urzędu występuje z tym
+    wnioskiem do organów, o których mowa w ust. 2 lub 3. Przepisy ust. 4–8 stosuje się odpowiednio.
+         10. Przepisu ust. 1 nie stosuje się do cudzoziemca, który do dnia złożenia wniosku o udzielenie zezwolenia na pobyt
+    rezydenta długoterminowego UE nie ukończył 13. roku życia.
+         Art. 222c. W postępowaniu w sprawie udzielenia albo cofnięcia zezwolenia na pobyt rezydenta długotermino-
+    wego UE stroną postępowania jest wyłącznie cudzoziemiec, o którym mowa odpowiednio w art. 211 albo art. 215.
+        Art. 222d. 1. Decyzję w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego
+    UE wydaje się w terminie 6 miesięcy.
+          2. Termin, o którym mowa w ust. 1, biegnie od dnia, w którym nastąpiło ostatnie z następujących zdarzeń:
+    1)    cudzoziemiec złożył wniosek o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, który nie zawiera
+          braków formalnych lub zostały one uzupełnione, lub
+    2)    cudzoziemiec przedłożył dokumenty, o których mowa w art. 219f, lub upłynął bezskutecznie wyznaczony przez
+          wojewodę termin, o którym mowa w art. 219f.
+        3. Postępowanie odwoławcze w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt rezydenta długotermi-
+    nowego UE kończy się w terminie 90 dni.
+          4. Jeżeli odwołanie nie spełnia wymogów przewidzianych przepisami prawa, termin, o którym mowa w ust. 3,
+    biegnie od dnia uzupełnienia braków.
+           Art. 222e. 1. Jeżeli właściwy organ innego państwa obszaru Schengen występuje o przeprowadzenie konsultacji,
+     o których mowa w art. 28 lub art. 29 rozporządzenia nr 2018/1861, wojewoda, który udzielił cudzoziemcowi zezwolenia
+     na pobyt rezydenta długoterminowego UE, a w przypadku gdy zezwolenia udzielił Szef Urzędu w drugiej instancji –
+     wojewoda, który orzekał w sprawie w pierwszej instancji, ustala, czy zachodzą przesłanki cofnięcia cudzoziemcowi
+     tego zezwolenia, biorąc pod uwagę powody leżące u podstaw decyzji państwa obszaru Schengen zamierzającego dokonać
+     wpisu lub które dokonało wpisu do Systemu Informacyjnego Schengen, oraz uwzględniając zagrożenia, o których mowa
+     w art. 28 lit. d lub art. 29 lit. d rozporządzenia nr 2018/1861, jakie może powodować obecność danego cudzoziemca
+     na terytorium państw obszaru Schengen.
+          2. W przypadku, o którym mowa w ust. 1, wojewoda przekazuje Komendantowi Głównemu Policji informację
+     o wydaniu cudzoziemcowi decyzji o cofnięciu zezwolenia na pobyt rezydenta długoterminowego UE lub o braku pod-
+     staw do jego cofnięcia w terminie 10 dni od dnia otrzymania wystąpienia o przeprowadzenie konsultacji, o których
+     mowa w art. 28 lub art. 29 rozporządzenia nr 2018/1861.
+           3. Jeżeli nie jest możliwe zachowanie terminu, o którym mowa w ust. 2, wojewoda występuje przed jego upły-
+     wem, za pośrednictwem Komendanta Głównego Policji, do właściwego organu innego państwa obszaru Schengen
+     z wnioskiem o przedłużenie terminu, nie więcej jednak niż o 12 dni. Wniosek zawiera uzasadnienie. W takim przy-
+     padku wojewoda przekazuje Komendantowi Głównemu Policji informację, o której mowa w ust. 2, w terminie 2 dni
+     przed upływem terminu określonego we wniosku.
+           4. Komendant Główny Policji przekazuje właściwemu organowi innego państwa obszaru Schengen otrzymaną
+     od wojewody informację, o której mowa w ust. 2, w terminie 14 dni od dnia wystąpienia o przeprowadzenie konsultacji,
+     o których mowa w art. 28 lub art. 29 rozporządzenia nr 2018/1861, a w przypadku przedłużenia tego terminu – w ter-
+     minie przedłużonym.
+         Art. 222f. Jeżeli dane cudzoziemca zostały umieszczone w Systemie Informacyjnym Schengen do celów, o których
+     mowa w art. 3 ust. 1 rozporządzenia nr 2018/1860, wojewoda lub Szef Urzędu w drugiej instancji, za pośrednictwem
+     Komendanta Głównego Policji:
+     1)    zwraca się do właściwego organu państwa obszaru Schengen, które umieściło dane, o przeprowadzenie konsul-
+           tacji, o których mowa w art. 9 ust. 1 rozporządzenia nr 2018/1860, w przypadku gdy dane zostały umieszczone
+           w związku z decyzją właściwego organu tego państwa obszaru Schengen, której towarzyszy zakaz ponownego
+           wjazdu;
+     2)    informuje właściwy organ państwa obszaru Schengen, które umieściło dane, o decyzji wydanej w sprawie udzie-
+           lenia cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE, w przypadku gdy dane zostały
+           umieszczone w związku z decyzją właściwego organu tego państwa obszaru Schengen, której towarzyszy zakaz
+           ponownego wjazdu;
+     3)    informuje właściwy organ państwa obszaru Schengen, które umieściło dane, o zamiarze udzielenia zezwolenia
+           na pobyt rezydenta długoterminowego UE lub o jego udzieleniu, w przypadku gdy dane zostały umieszczone
+           w związku z decyzją właściwego organu tego państwa obszaru Schengen, której nie towarzyszy zakaz ponow-
+           nego wjazdu.
+           Art. 222g. 1. Jeżeli właściwy organ innego państwa obszaru Schengen występuje o przeprowadzenie konsultacji,
+     o których mowa w art. 10 lub art. 11 rozporządzenia nr 2018/1860, a cudzoziemiec posiada zezwolenie na pobyt rezy-
+     denta długoterminowego UE, wojewoda, który udzielił tego zezwolenia, a w przypadku gdy zezwolenia udzielił Szef
+     Urzędu w drugiej instancji – wojewoda, który orzekał w sprawie w pierwszej instancji, ustala, czy zachodzą przesłanki
+     cofnięcia tego zezwolenia.
+          2. W przypadku, o którym mowa w ust. 1, wojewoda przekazuje Komendantowi Głównemu Policji informację
+     o wydaniu cudzoziemcowi decyzji o cofnięciu zezwolenia na pobyt rezydenta długoterminowego UE lub o braku pod-
+     staw do jego cofnięcia w terminie 10 dni od dnia otrzymania wystąpienia o przeprowadzenie konsultacji, o których
+     mowa w art. 10 lub art. 11 rozporządzenia nr 2018/1860.
+           3. Jeżeli nie jest możliwe zachowanie terminu, o którym mowa w ust. 2, wojewoda występuje przed jego upły-
+     wem, za pośrednictwem Komendanta Głównego Policji, do właściwego organu innego państwa obszaru Schengen
+     z wnioskiem o przedłużenie terminu, nie więcej jednak niż o 12 dni. Wniosek zawiera uzasadnienie. W takim przy-
+     padku wojewoda przekazuje Komendantowi Głównemu Policji informację, o której mowa w ust. 2, w terminie 2 dni
+     przed upływem terminu określonego we wniosku.
+            4. Komendant Główny Policji przekazuje właściwemu organowi innego państwa obszaru Schengen otrzymaną
+     od wojewody informację, o której mowa w ust. 2, w terminie 14 dni od dnia wystąpienia o przeprowadzenie konsulta-
+     cji, o których mowa w art. 10 lub art. 11 rozporządzenia nr 2018/1860, a w przypadku przedłużenia tego terminu –
+     w terminie przedłużonym.”;
+40) uchyla się art. 223;
+
+[Art. 12 (cases started before keep the old rules)]
+      Art. 12. Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i niezakoń-
+czonych przed dniem wejścia w życie art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–49, 50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c,
+art. 10, art. 11, art. 13, art. 14 oraz art. 18 ust. 1 i 2 stosuje się przepisy dotychczasowe.
+
+[Art. 14]
+      Art. 14. W przypadku gdy postępowanie w sprawie udzielenia zezwolenia na pobyt rezydenta długoterminowego Unii
+Europejskiej zostało wszczęte przed dniem wejścia w życie art. 1 pkt 39 i cudzoziemiec, który ubiega się o udzielenie tego
+zezwolenia, posiada w swoim dokumencie podróży odcisk stempla, który potwierdza złożenie wniosku o udzielenie zezwo-
+lenia na pobyt rezydenta długoterminowego Unii Europejskiej, przepisy art. 43 ust. 3 ustawy zmienianej w art. 5 w zakresie
+dotyczącym odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na pobyt rezydenta długotermi-
+nowego Unii Europejskiej, art. 4 ust. 2 pkt 5 ustawy zmienianej w art. 6, art. 1 ust. 3 pkt 5 ustawy zmienianej w art. 10 oraz
+art. 3 ust. 1 pkt 18 i ust. 3 pkt 2 ustawy zmienianej w art. 11 stosuje się w brzmieniu dotychczasowym.
+
+[Art. 19 (entry into force; pkt 3-5 and 8-41 of art. 1 on the date of the communiqué, M.P. 2026 poz. 370: 27.04.2026)]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+3)   art. 1 pkt 42, 43, 44 lit. a, pkt 45, 46, 51, 59 lit. a tiret pierwsze, pkt 60 lit. a, pkt 61 lit. a i pkt 63, które wchodzą w życie
+     z dniem 1 kwietnia 2026 r.;
+4)   art. 8 pkt 2 i 3, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).

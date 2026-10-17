@@ -1,0 +1,111 @@
+# Other provisions for the permanent residence and EU long-term resident map. Each block is verbatim pdftotext -layout output; page headers dropped. Retrieved 2026-10-17 from api.sejm.gov.pl.
+#   Dz.U. 2026 poz. 203, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275: art. 12 pkt 7-8, in force 5.03.2026 (its art. 54).
+#   Dz.U. 2025 poz. 622, sha256 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a: art. 30 (its art. 6 pkt 16 gave art. 211 ust. 3 pkt 2-3 their wording from 1.07.2025, included in Dz.U. 2025 poz. 1079).
+#   Regulation of the Council of Ministers Dz.U. 2024 poz. 1044, sha256 97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c: in force 1.01.2025; no amendments (amendments.mjs, 17.10.2026).
+#   Regulation of the interior minister Dz.U. 2023 poz. 1076, sha256 dc1b647ae2cfda1d57fede746a4e383be058c8bdd2ea01b253ff9870c0eb80d4: in force 24.06.2023; no amendments (amendments.mjs, 17.10.2026).
+#   Regulations of the interior minister Dz.U. 2026 poz. 488 (permanent residence application, sha256 f37bd8842edb907375220da483949e3efd06bb2ba4e6461111cd401871dd5b4a) and 2026 poz. 487 (EU long-term resident application, sha256 396f945c67a4d8d6ae3535f00b19ae1542c029e4e9dcf88cdc9f403a94da09d1), both in force 27.04.2026; no amendments (amendments.mjs, 17.10.2026). The templates of the filing certificate are Dz.U. 2026 poz. 389 and 387 (not quoted).
+
+[Dz.U. 2026 poz. 203 art. 12 pkt 7-8 (art. 207b and 223a: no refund of the stamp duty; in force 5.03.2026, its art. 54)]
+7)   po art. 207a dodaje się art. 207b w brzmieniu:
+           „Art. 207b. W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt stały lub
+     decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt stały, uiszczona należna opłata skarbowa
+     za udzielenie zezwolenia na pobyt stały nie podlega zwrotowi.”;
+8)   po art. 223 dodaje się art. 223a w brzmieniu:
+           „Art. 223a. W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt rezydenta
+     długoterminowego UE lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt rezydenta
+     długoterminowego UE, uiszczona należna opłata skarbowa za udzielenie zezwolenia na pobyt rezydenta długotermino-
+     wego UE nie podlega zwrotowi.”;
+
+[Dz.U. 2025 poz. 622 art. 30 (the language documents: transitional rules)]
+      Art. 30. 1. Do postępowania w sprawie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, wszczętego
+i niezakończonego decyzją ostateczną do dnia 30 czerwca 2025 r., stosuje się przepisy art. 211 ust. 3 pkt 2 i 3 ustawy zmienia-
+nej w art. 6, w brzmieniu dotychczasowym.
+     2. Świadectwo ukończenia do dnia 30 czerwca 2025 r. szkoły policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f
+ustawy zmienianej w art. 7, stanowi dokument potwierdzający znajomość języka polskiego na potrzeby postępowania
+w sprawie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, wszczętego w okresie od dnia 1 lipca 2025 r.
+do dnia 30 czerwca 2026 r.
+     3. Świadectwo ukończenia do dnia 30 czerwca 2025 r. szkoły z wykładowym językiem polskim za granicą odpowia-
+dającej szkole policealnej, o której mowa w art. 18 ust. 1 pkt 2 lit. f ustawy zmienianej w art. 7, stanowi dokument potwier-
+dzający znajomość języka polskiego na potrzeby postępowania w sprawie zezwolenia na pobyt rezydenta długoterminowego
+Unii Europejskiej, wszczętego w okresie od dnia 1 lipca 2025 r. do dnia 30 czerwca 2026 r.
+
+[Regulation Dz.U. 2024 poz. 1044 § 1 pkt 1 (the income criteria of the social assistance act, from 1.01.2025)]
+     § 1. Ustala się następujące zweryfikowane kryteria dochodowe, kwoty świadczeń pieniężnych z pomocy społecznej
+oraz kwotę dochodu z 1 ha przeliczeniowego:
+1)    kryteria dochodowe:
+      a)   dla osoby samotnie gospodarującej – w wysokości 1010 zł,
+      b) dla osoby w rodzinie – w wysokości 823 zł;
+
+[Regulation Dz.U. 2023 poz. 1076 § 1-2 (the list of B1 documents)]
+     § 1. 1. Rozporządzenie określa wykaz poświadczeń znajomości języka polskiego na poziomie biegłości językowej
+co najmniej B1 potwierdzających znajomość języka polskiego wymaganą do udzielenia zezwolenia na pobyt rezydenta długo-
+terminowego Unii Europejskiej.
+      2. Wykaz, o którym mowa w ust. 1, jest określony w załączniku do rozporządzenia.
+      § 2. Rozporządzenie wchodzi w życie z dniem 24 czerwca 2023 r.
+
+[Its annex (the list)]
+   WYKAZ POŚWIADCZEŃ ZNAJOMOŚCI JĘZYKA POLSKIEGO NA POZIOMIE BIEGŁOŚCI JĘZYKOWEJ
+CO NAJMNIEJ B1 POTWIERDZAJĄCYCH ZNAJOMOŚĆ JĘZYKA POLSKIEGO WYMAGANĄ DO UDZIELENIA
+        ZEZWOLENIA NA POBYT REZYDENTA DŁUGOTERMINOWEGO UNII EUROPEJSKIEJ
+1)   certyfikat znajomości języka polskiego, o którym mowa w art. 11a ust. 2 ustawy z dnia 7 października 1999 r. o języku
+     polskim (Dz. U. z 2021 r. poz. 672);
+2)   certyfikaty następujących instytucji:
+     a)   European Consortium for the Certificate of Attainment in Modern Languages (ECL),
+     b) telc GmbH, WBT Weiterbildungs-Testsysteme GmbH (TELC);
+3)   zaświadczenie potwierdzające znajomość języka polskiego zgodnie z Europejskim Systemem Opisu Kształcenia Języ-
+     kowego Rady Europy wydane przez uczelnię:
+     a)   zatwierdzoną przez ministra właściwego do spraw wewnętrznych na potrzeby przyjmowania cudzoziemców
+          w celu podjęcia lub kontynuacji studiów zgodnie z art. 144 ust. 4 ustawy z dnia 12 grudnia 2013 r. o cudzoziem-
+          cach (Dz. U. z 2023 r. poz. 519, 185 i 547), zwanej dalej „ustawą”, albo
+     b) niepodlegającą obowiązkowi zatwierdzenia zgodnie z art. 144 ust. 5 ustawy i w stosunku do której nie została wy-
+        dana decyzja o zakazie przyjmowania cudzoziemców, o której mowa w art. 144a ust. 1 ustawy
+     – po zaliczeniu zajęć z języka polskiego jako obcego albo ukończeniu innej formy kształcenia w zakresie języka pol-
+     skiego jako obcego;
+4)   świadectwo nabycia uprawnień do wykonywania zawodu tłumacza przysięgłego wydane przez Ministra Sprawiedli-
+     wości według wzoru określonego w przepisach wydanych na podstawie art. 6 ust. 3 ustawy z dnia 25 listopada 2004 r.
+     o zawodzie tłumacza przysięgłego (Dz. U. z 2019 r. poz. 1326) albo zaświadczenie potwierdzające wpis na listę tłu-
+     maczy przysięgłych.
+
+[Regulation Dz.U. 2026 poz. 488 § 3-5 (the photo and files for a permanent residence application in MOS; in force 27.04.2026)]
+     § 3. Fotografia dołączana do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały spełnia następujące wymogi:
+1)    jest nieuszkodzona, kolorowa, o dobrej ostrości;
+2)    ma wymiary 35 × 45 mm;
+1)
+     Minister Spraw Wewnętrznych i Administracji kieruje działem administracji rządowej – sprawy wewnętrzne, na podstawie § 1 ust. 2
+     pkt 2 rozporządzenia Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra Spraw
+     Wewnętrznych i Administracji (Dz. U. poz. 999).
+﻿
+3)    została wykonana niewcześniej niż w ciągu 6 miesięcy przed dniem złożenia wniosku;
+4)    przedstawia wizerunek twarzy cudzoziemca od wierzchołka głowy do górnej części barków, tak aby twarz zajmowała
+      70–80 % fotografii, na jednolitym jasnym tle, w pozycji frontalnej, patrzącego na wprost z otwartymi oczami nieprze-
+      słoniętymi włosami, z naturalnym wyrazem twarzy i zamkniętymi ustami, a także odwzorowuje naturalny kolor jego
+      skóry;
+5)    przedstawia wyraźnie oczy cudzoziemca, zwłaszcza źrenice, a linia oczu cudzoziemca jest równoległa do górnej kra-
+      wędzi fotografii.
+    § 4. Do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały składanego w sposób, o którym mowa
+w art. 203c ust. 1 ustawy, dołącza się plik zawierający fotografię w formacie JPG, spełniającą wymogi, o których mowa
+w § 3, o rozdzielczości co najmniej 684 × 883 piksele (szerokość × wysokość) i wielkości nieprzekraczającej 2,5 MB, tak
+aby fotografia zachowywała proporcje odpowiadające fotografii o wymiarach 35 × 45 mm (szerokość × wysokość).
+    § 5. Dokumenty dołączane do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt stały składanego w sposób,
+o którym mowa w art. 203c ust. 1 ustawy, w postaci dokumentów elektronicznych lub odwzorowań cyfrowych dokumentów
+w postaci papierowej, w tym dokumenty niezbędne do potwierdzenia danych zawartych we wniosku o udzielenie cudzo-
+ziemcowi zezwolenia na pobyt stały i okoliczności uzasadniających ubieganie się o udzielenie tego zezwolenia, dołącza się
+w postaci pliku o wielkości nieprzekraczającej 10 MB w przypadku pojedynczego pliku, a suma wielkości wszystkich plików
+nie może przekroczyć 50 MB, przy czym odwzorowania cyfrowe dokumentów w postaci papierowej, sporządzone z należytą
+starannością i jakością techniczną umożliwiającą zapoznanie się bez wątpliwości z treścią dokumentu, dołącza się w postaci
+pliku w formacie PDF.
+
+[Regulation Dz.U. 2026 poz. 487 § 4-5 (the same for the EU long-term resident)]
+    § 4. Do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej skła-
+danego w sposób, o którym mowa w art. 219c ust. 1 ustawy, dołącza się plik zawierający fotografię w formacie JPG, speł-
+niającą wymogi, o których mowa w § 3, o rozdzielczości co najmniej 684 × 883 piksele (szerokość × wysokość) i wielkości
+nieprzekraczającej 2,5 MB, tak aby fotografia zachowywała proporcje odpowiadające fotografii o wymiarach 35 × 45 mm
+(szerokość × wysokość).
+    § 5. Dokumenty dołączane do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego
+Unii Europejskiej składanego w sposób, o którym mowa w art. 219c ust. 1 ustawy, w postaci dokumentów elektronicznych
+lub odwzorowań cyfrowych dokumentów w postaci papierowej, w tym dokumenty niezbędne do potwierdzenia danych za-
+wartych we wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej
+i okoliczności uzasadniających ubieganie się o udzielenie tego zezwolenia, dołącza się w postaci pliku o wielkości nieprze-
+kraczającej 10 MB w przypadku pojedynczego pliku, a suma wielkości wszystkich plików nie może przekroczyć 50 MB,
+przy czym odwzorowania cyfrowe dokumentów w postaci papierowej, sporządzone z należytą starannością i jakością tech-
+niczną umożliwiającą zapoznanie się bez wątpliwości z treścią dokumentu, dołącza się w postaci pliku w formacie PDF.
