@@ -1,6 +1,6 @@
 # MSWiA: "Uzyskaj zezwolenie na nabycie nieruchomości, akcji, udziałów przez cudzoziemców"
 # Source: https://www.gov.pl/web/mswia/uzyskaj-zezwolenie-na-nabycie-nieruchomosci-akcji-udzialow-przez-cudzoziemcow, retrieved 2026-10-17, html sha256 80e3f94aeed882cc2b0e9c0b0d21a9b55204d2efc1701a3806d798935a38016a
-# Text of the page's main element; navigation, blank lines and empty list markers removed; the editors' names removed from its publication record. Ostatnia modyfikacja: 01.10.2026 08:14. Not binding.
+# Text of the page's main element (its first lines are the section's menu); blank lines and empty list markers removed; the editors' names removed from its publication record. Ostatnia modyfikacja: 01.10.2026 08:14. Not binding.
 # sha256 of the text below this header (from line 5): 4151d8b7a5ee78a202caa974cf4a36791046d07e567afefa7d1e693c61d759f5.
 Złóż wniosek o zatwierdzenie jednostki na potrzeby przyjmowania cudzoziemców
 Pobyt w innym państwie członkowskim

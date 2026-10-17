@@ -1,7 +1,7 @@
-# The act of 24.03.1920 on the acquisition of real estate by foreigners (REA), consolidated Dz.U. 2017 poz. 2278 (obwieszczenie of 22.11.2017): art. 1-8a, the whole act but art. 9-10; with Dz.U. 2026 poz. 1099 art. 1, 3 and 5 (from 19.11.2026); the act on the protection of the state border, consolidated Dz.U. 2026 poz. 919, art. 12 ust. 1-2 and 4 (the border zone); the stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part I item 20 and part III item 8; the MSWiA regulation of 20.06.2012 (Dz.U. 2012 poz. 729) § 1-4; the act on foreigners (UoC), Dz.U. 2025 poz. 1079, art. 176 and 181 ust. 1 (the two permits REA art. 1a ust. 2 pkt 3 lit. a excludes)
-# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers and the PDFs' electronic signature blocks dropped; footnotes kept where they fall. sha256: DU/2017/2278 11d390ba9c496e7e003fd6ca6a1aa2aeb35e11014b73bda7790cef0b8ed9a93f; DU/2026/1099 71d61f48d6b17567359c3a27a1a1385dd01dcf438e3b7297da6a428c662239b4; DU/2026/919 0eb5abfb76119ea1cee0de331b0408d3625f8bbbf18d6ce19af2ce1b58756a14; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2012/729 4dcb3caad7f6920cf812b8999bfd493a7c9b14c669f4580b9c30cee83d3fe19a; DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0.
-# Later amendments (node tools/sources/amendments.mjs and touched.mjs, with the 3-year lookback, 17.10.2026): REA after 22.11.2017, only Dz.U. 2026 poz. 1099 (in force 19.11.2026, 3 months after its publication on 18.08.2026; its art. 5): the minister's name in art. 2 and 5, and art. 8a ust. 1a-1d (the notary's copies through the notaries' central repository, for a fee); its art. 3 keeps the old rules for documents drawn up before then. The 2012 regulation: none. The stamp duty act after 1.08.2025: Dz.U. 2025 poz. 921 (part I items 26-27b), 1847 (part I items 9ba, 9ca), 1795 (part III item 44), 2026 poz. 1206 (part III item 17, from 11.01.2027) and 2023 poz. 1688 (part I item 51); none changes part I item 20 or part III item 8. The border act: not run (art. 12 only defines the zone).
-# Not quoted: the list of the border zone's municipalities (MSWiA regulation of 29.08.2005, Dz.U. 2005 poz. 1580, sha256 e63525b78ee05fb09f40fa6a1b6e8eb8b4ca1d0a4a3863a5511317506775f71d; no amendment found), because pdftotext garbles its 2005 fonts; the act on shaping the agricultural system (REA art. 1a ust. 6); the KPA art. 35 and 127 (research/2026-10-16-residence/sources/kpa-2025-1691-art35-37-57-58-64-127-130-261-extract.txt). The 2012 regulation's PDF carries a watermark whose fragments ("l", "v.p", ".go", "rcl", "w.", "ww") pdftotext prints as lines of their own; they are dropped.
+# The act of 24.03.1920 on the acquisition of real estate by foreigners (REA), consolidated Dz.U. 2017 poz. 2278 (obwieszczenie of 22.11.2017): art. 1-8a, the whole act but art. 9-10; and the obwieszczenie's Dz.U. 2016 poz. 2175 art. 5, 6 and 8; with Dz.U. 2026 poz. 1099 art. 1-5 (from 19.11.2026; art. 2 and 4 on Prawo o notariacie art. 92a); the act on the protection of the state border, consolidated Dz.U. 2026 poz. 919, art. 12 ust. 1-2 and 4 (the border zone); the stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part I item 20 and part III item 8, art. 9 and 12 ust. 1-2 pkt 1, with Dz.U. 2026 poz. 846 art. 14 pkt 1, 31 and 35; the regulation of the Minister of Internal Affairs (MSW) of 20.06.2012 (Dz.U. 2012 poz. 729) § 1-5, 8 ust. 1, 9; the KPA (Dz.U. 2025 poz. 1691) art. 63 § 1; the act on foreigners (UoC), Dz.U. 2025 poz. 1079, art. 176 and 181 ust. 1 (the two permits REA art. 1a ust. 2 pkt 3 lit. a excludes)
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers and the PDFs' electronic signature blocks dropped; footnotes kept where they fall. sha256: DU/2017/2278 11d390ba9c496e7e003fd6ca6a1aa2aeb35e11014b73bda7790cef0b8ed9a93f; DU/2026/1099 71d61f48d6b17567359c3a27a1a1385dd01dcf438e3b7297da6a428c662239b4; DU/2026/919 0eb5abfb76119ea1cee0de331b0408d3625f8bbbf18d6ce19af2ce1b58756a14; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2012/729 4dcb3caad7f6920cf812b8999bfd493a7c9b14c669f4580b9c30cee83d3fe19a; DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2026/846 7bfabbeca53808bca583e8027b8b1e9c3c7e28c24f83fec18977ff51417b24e2; DU/2025/1691 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b.
+# Later amendments (node tools/sources/amendments.mjs and touched.mjs, with the 3-year lookback, 17.10.2026): REA after 22.11.2017, only Dz.U. 2026 poz. 1099 (in force 19.11.2026, 3 months after its publication on 18.08.2026; its art. 5): the minister's name in art. 2 and 5, and art. 8a ust. 1a-1d (the notary's copies through the notaries' central repository, for a fee); its art. 3 keeps the old rules for documents drawn up before then. The 2012 regulation: none. The stamp duty act after 1.08.2025 (its consolidated text's legal state is 8.08.2025), none changing part I item 20 or part III item 8: Dz.U. 2025 poz. 921 art. 2 (art. 2, 30, part I items 26-27b); Dz.U. 2025 poz. 1847 art. 3 (art. 29, part I items 9ba, 9ca) and its transitional art. 10; Dz.U. 2025 poz. 1795 art. 116 (part III item 44); Dz.U. 2026 poz. 1206 art. 14 (part III item 17, from 11.01.2027); Dz.U. 2023 poz. 1688 art. 26 (part I item 51) and its transitional art. 64 (stamp duty: the old rules until a gmina's general plan); Dz.U. 2026 poz. 846 art. 14 (art. 9, refunds, and 10, from 1.10.2026; quoted) and its transitional art. 31 (quoted) and 32 (the old regulations under art. 10 lose force); Dz.U. 2026 poz. 875 art. 9 (art. 1 ust. 3, from 1.01.2027: not these fees); Dz.U. 2026 poz. 912 art. 76 (art. 7, from 31.07.2026: an exemption for metropolitan unions). These three last were first left out of this header; the independent check of 17.10.2026 found them. The border act after 22.06.2026: none (touched.mjs, 17.10.2026); art. 12 is unchanged since 2005, Dz.U. 2021 poz. 2191 having added art. 12a-12d (temporary stay bans in the zone). REA's 2016 amendment, Dz.U. 2016 poz. 2175: its transitional art. 5 and 6, printed in the obwieszczenie, quoted. The KPA after its consolidated text: Dz.U. 2025 poz. 769 art. 1 changes other articles (45 to 189l), not art. 63.
+# Not quoted: Poland's accession date, 1.05.2004, from the government statement in Dz.U. 2004 nr 90 poz. 864 ("wejdzie on w życie dnia 1 maja 2004 r."; a two-column page in the old font, read here but not cut out); the list of the border zone's municipalities (MSWiA regulation of 29.08.2005, Dz.U. 2005 poz. 1580, sha256 e63525b78ee05fb09f40fa6a1b6e8eb8b4ca1d0a4a3863a5511317506775f71d; no amendment found), because pdftotext garbles its 2005 fonts; the act on shaping the agricultural system (REA art. 1a ust. 6); the KPA art. 35 and 127 (research/2026-10-16-residence/sources/kpa-2025-1691-art35-37-57-58-64-127-130-261-extract.txt). The 2012 regulation's PDF carries a watermark whose fragments ("l", "v.p", ".go", "rcl", "w.", "ww") pdftotext prints as lines of their own; they are dropped.
 
 [REA art. 1-8a (the permit; who is a foreigner; the conditions and ties with Poland; 0.5 ha; validity; the promesa; shares; void without a permit; inheritance; the exemptions; the border zone; the notary's duty), with its footnotes]
     Art. 1. 1. Nabycie nieruchomości przez cudzoziemca wymaga zezwolenia. Zezwolenie jest wydawane, w drodze decyzji
@@ -255,6 +255,17 @@ o których mowa w ust. 4.
      3. Przepis ust. 1 stosuje się odpowiednio do organów administracji publicznej, jeżeli nabycie nieruchomości położo-
 nej na terytorium Rzeczypospolitej Polskiej nastąpiło na podstawie ostatecznej decyzji administracyjnej.
 
+[The REA obwieszczenie, pkt 2: Dz.U. 2016 poz. 2175 art. 5 (art. 7 ust. 2's current wording applies to successions opened from 17.08.2015), art. 6 (the duties it added: events after 1.01.2017) and art. 8]
+     2. Podany w załączniku do niniejszego obwieszczenia jednolity tekst ustawy nie obejmuje art. 5, art. 6 i art. 8 ustawy
+z dnia 2 grudnia 2016 r. o zmianie ustawy o nabywaniu nieruchomości przez cudzoziemców oraz niektórych innych ustaw
+(Dz. U. poz. 2175), które stanowią:
+         „Art. 5. Przepis art. 7 ust. 2 ustawy zmienianej w art. 1, w brzmieniu nadanym niniejszą ustawą, stosuje się
+    do spadków otwartych nie wcześniej niż w dniu 17 sierpnia 2015 r.
+         Art. 6. Obowiązki przewidziane w przepisach wprowadzonych niniejszą ustawą dotyczą zdarzeń powstałych
+    po dniu wejścia w życie niniejszej ustawy.”
+         „Art. 8. Ustawa wchodzi w życie z dniem 1 stycznia 2017 r., z wyjątkiem art. 4, który wchodzi w życie z dniem
+    1 czerwca 2017 r.”.
+
 [Dz.U. 2026 poz. 1099 art. 1 (REA art. 2, 5, 8a ust. 1a-1d), from 19.11.2026]
     Art. 1. W ustawie z dnia 24 marca 1920 r. o nabywaniu nieruchomości przez cudzoziemców (Dz. U. z 2017 r. poz. 2278)
 wprowadza się następujące zmiany:
@@ -284,6 +295,25 @@ wprowadza się następujące zmiany:
 
 [Dz.U. 2026 poz. 1099 art. 3 (documents drawn up before 19.11.2026)]
      Art. 3. Do dokumentów sporządzonych przed dniem wejścia w życie niniejszej ustawy stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2026 poz. 1099 art. 2 pkt 3 (Prawo o notariacie art. 92a § 6-7: the repository notice; the format regulation), from 19.11.2026]
+3)   § 6 i 7 otrzymują brzmienie:
+           „§ 6. Z chwilą umieszczenia elektronicznego wypisu lub wyciągu z aktu notarialnego lub innego elektronicznego
+     dokumentu w Repozytorium notariusz otrzymuje za pośrednictwem systemu teleinformatycznego zawiadomienie,
+     które zawiera numer dokumentu w Repozytorium, a także dzień, miesiąc i rok oraz godzinę i minutę jego umieszczenia
+     w Repozytorium. Notariusz dołącza zawiadomienie do oryginału aktu notarialnego lub innego dokumentu oraz wydaje
+     stronie aktu, o której mowa w § 2, drugi egzemplarz zawiadomienia.
+           § 7. Minister Sprawiedliwości, w porozumieniu z ministrem właściwym do spraw informatyzacji, po zasięgnięciu
+     opinii Krajowej Rady Notarialnej, określi, w drodze rozporządzenia:
+     1)   sposób sporządzenia elektronicznego wypisu i wyciągu z aktu notarialnego oraz innego elektronicznego dokumentu,
+     2)   warunki organizacyjno-techniczne ich umieszczania przez notariuszy w Repozytorium oraz przechowywania,
+     3)   tryb informowania Ministra Sprawiedliwości i podmiotów wymienionych w § 1 o ewentualnych przerwach w do-
+          stępie do Repozytorium
+     – uwzględniając minimalne wymagania dotyczące rejestrów publicznych i wymiany informacji w postaci elektronicznej
+     oraz bezpieczeństwo danych, w tym ochronę przed nieuprawnionym ujawnieniem i dostępem.”.
+
+[Dz.U. 2026 poz. 1099 art. 4 (the old regulations under Prawo o notariacie art. 92a § 7 lose force on 19.11.2026)]
+     Art. 4. Dotychczasowe przepisy wykonawcze wydane na podstawie art. 92a § 7 ustawy zmienianej w art. 2 tracą moc.
 
 [Dz.U. 2026 poz. 1099 art. 5 (in force 3 months after publication; published 18.08.2026)]
      Art. 5. Ustawa wchodzi w życie po upływie 3 miesięcy od dnia ogłoszenia.
@@ -333,7 +363,46 @@ należytego oznaczenia strefy nadgranicznej.
                   cudzoziemiec niebędący udziałowcem
                   lub akcjonariuszem spółki
 
-[The MSWiA regulation of 20.06.2012 § 1-4 (what the application states; the documents), its footnotes included; watermark fragments dropped]
+[The stamp duty act art. 9 (a refund when no permit is issued; on application; not after 5 years from the end of the payment year), as printed]
+      Art. 9. 1. Opłata skarbowa podlega zwrotowi:
+1)    od dokonania czynności urzędowej – jeżeli mimo zapłacenia opłaty nie dokonano czynności urzędowej;
+2)    od wydania zaświadczenia lub zezwolenia (pozwolenia, koncesji) – jeżeli mimo zapłacenia opłaty nie wydano zaświad-
+      czenia lub zezwolenia (pozwolenia, koncesji).
+      2. Zwrot opłaty skarbowej następuje na wniosek.
+      3. Opłata skarbowa nie podlega zwrotowi po upływie pięciu lat licząc od końca roku, w którym dokonano zapłaty opłaty.
+
+[The stamp duty act art. 12 ust. 1-2 pkt 1 (the tax authority of the seat of the body that issues the permit)]
+      Art. 12. 1. Organem podatkowym właściwym w sprawach opłaty skarbowej jest wójt (burmistrz, prezydent miasta).
+      2. Organem podatkowym właściwym miejscowo w sprawach opłaty skarbowej jest:
+1)    od dokonania czynności urzędowej, wydania zaświadczenia oraz zezwolenia (pozwolenia, koncesji) – organ podatkowy
+      właściwy ze względu na siedzibę organu lub podmiotu, który dokonał czynności urzędowej albo wydał zaświadczenie
+      lub zezwolenie (pozwolenie, koncesję);
+
+[Dz.U. 2026 poz. 846 art. 14 pkt 1 (stamp duty art. 9 ust. 2-2c: refunded without a decision within 2 months, with interest after that), from 1.10.2026]
+     Art. 14. W ustawie z dnia 16 listopada 2006 r. o opłacie skarbowej (Dz. U. z 2025 r. poz. 1154, 1795 i 1847) wprowa-
+dza się następujące zmiany:
+1)    w art. 9:
+      a)    ust. 2 otrzymuje brzmienie:
+                 „2. Zwrot opłaty skarbowej następuje na wniosek osoby lub jednostki, która dokonała zapłaty opłaty
+            skarbowej.”,
+      b) po ust. 2 dodaje się ust. 2a–2c w brzmieniu:
+                „2a. Jeżeli wniosek o zwrot opłaty skarbowej jest zasadny, organ podatkowy zwraca opłatę skarbową bez
+            wydawania decyzji, w terminie 2 miesięcy od dnia złożenia wniosku.
+                  2b. Organ podatkowy zwraca opłatę skarbową osobie lub jednostce, która złożyła wniosek o jej zwrot.
+                  2c. Jeżeli opłata skarbowa nie została zwrócona w terminie 2 miesięcy od dnia złożenia wniosku o jej zwrot,
+            oprocentowanie zwrotu opłaty skarbowej przysługuje od dnia złożenia wniosku, w wysokości równej wysokości
+            odsetek za zwłokę od zaległości podatkowych.”;
+
+[Dz.U. 2026 poz. 846 art. 31 (refund applications filed before 1.10.2026: the old rules)]
+   Art. 31. Jeżeli przed dniem wejścia w życie niniejszej ustawy złożono wniosek o zwrot opłaty skarbowej, o którym
+mowa w art. 9 ust. 2 ustawy zmienianej w art. 14, do zwrotu opłaty skarbowej stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2026 poz. 846 art. 35 (in force 1.10.2026; art. 14 is not among the exceptions)]
+     Art. 35. Ustawa wchodzi w życie z dniem 1 października 2026 r., z wyjątkiem:
+1)   art. 1 pkt 9, art. 10, art. 18 pkt 1–3 i art. 34, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 8 pkt 4, 5 i pkt 6 lit. a, które wchodzą w życie po upływie 6 miesięcy od dnia ogłoszenia.
+
+[The regulation of the Minister of Internal Affairs (MSW) of 20.06.2012 § 1-4 (what the application states; the documents; § 3 ust. 2, a flat; § 3 ust. 1 pkt 1 lit. b and § 4, documents at most 3 months old), its footnotes included; watermark fragments dropped]
        § 1. Rozporządzenie określa:
      1) szczegółowe informacje dotyczące okoliczności wskazanych we wniosku o wydanie zezwolenia, o którym mowa
          w art. 1a ust. 3 oraz w art. 3e ust. 5 ustawy z dnia 24 marca 1920 r. o nabywaniu nieruchomości przez cudzoziemców,
@@ -419,6 +488,31 @@ niż 3 miesiące przed dniem złożenia wniosku:
     2. Jeżeli we wniosku o wydanie zezwolenia na nabycie nieruchomości cudzoziemiec wskazał okoliczności określone
 w art. 1a ust. 2 pkt 5 ustawy, jest on obowiązany dołączyć dokumenty potwierdzające wykonywanie działalności gospodar-
 czej lub rolniczej, w szczególności odpisy uzyskanych koncesji i zezwoleń na terytorium Rzeczypospolitej Polskiej.
+
+[The same, § 5, its opening and pkt 1 (money documents, only for the legal persons and companies of REA art. 1 ust. 2 pkt 2-4; at most 3 months old). Its pkt 2-3 (tax office and ZUS certificates) follow; pdftotext interleaves them with § 6, so they are not quoted]
+    § 5. Cudzoziemiec, o którym mowa w art. 1 ust. 2 pkt 2–4 ustawy, ubiegający się o wydanie zezwolenia na nabycie
+nieruchomości obowiązany jest także do przedstawienia dokumentów wskazujących na posiadanie środków finansowych na
+zakup nieruchomości oraz możliwości finansowania działalności w zakresie, o którym mowa w § 2 pkt 5, wystawionych nie
+wcześniej niż 3 miesiące przed dniem złożenia wniosku:
+    1) zaświadczenia banku, w którym prowadzony jest podstawowy rachunek bieżący nabywcy bądź jego udziałowców lub
+        akcjonariuszy, określającego wielkość posiadanych środków finansowych oraz jego zdolność kredytową i płatniczą;
+
+[The same, § 8 ust. 1 (more than 15 plots: a statement with a list)]
+    § 8. 1. Cudzoziemiec ubiegający się o wydanie zezwolenia na nabycie nieruchomości obejmującej lub obejmujących
+łącznie więcej niż piętnaście działek gruntu składa oświadczenie wraz ze stanowiącym integralną część wniosku wykazem
+nabywanych nieruchomości, według wzoru oświadczenia określonego w załączniku nr 1 do rozporządzenia.
+
+[The same, § 9 (copies certified as true; a sworn translation of foreign documents)]
+    § 9. 1. Kopie dokumentów, o których mowa w niniejszym rozporządzeniu, dołącza się do wniosku o wydanie zezwole-
+nia na nabycie nieruchomości poświadczone za zgodność z oryginałem.
+   2. Dokumenty w języku obcym powinny być złożone wraz z tłumaczeniem na język polski poświadczonym przez tłu-
+macza przysięgłego.
+
+[The KPA, consolidated Dz.U. 2025 poz. 1691, art. 63 § 1 (electronic filings to the e-delivery address or the office's system account; e-mail filings left unexamined)]
+     Art. 63. § 1. Podania (żądania, wyjaśnienia, odwołania, zażalenia) wnosi się na piśmie, za pomocą telefaksu lub ustnie
+do protokołu. Podania utrwalone w postaci elektronicznej wnosi się na adres do doręczeń elektronicznych lub za pośrednic-
+twem konta w systemie teleinformatycznym organu administracji publicznej. Jeżeli przepisy odrębne nie stanowią inaczej,
+podania wniesione na adres poczty elektronicznej organu administracji publicznej pozostawia się bez rozpoznania.
 
 [UoC art. 176, its opening (the temporary permit for victims of trafficking)]
      Art. 176. Zezwolenia na pobyt czasowy dla ofiar handlu ludźmi udziela się cudzoziemcowi, jeżeli łącznie spełnia
