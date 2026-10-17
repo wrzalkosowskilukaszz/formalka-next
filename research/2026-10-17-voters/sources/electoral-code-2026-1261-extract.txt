@@ -1,8 +1,28 @@
-# EU citizens in the register of voters: the Electoral Code, consolidated Dz.U. 2026 poz. 1261 (obwieszczenie of 1.09.2026, legal state 25.08.2026), art. 10, 11 § 1-3, 18 § 1-2, 18a § 3-4, 18b § 1, 18d, 19 § 1-2, 19a, 20, 22, 23, 26 § 1-9, 28 § 1-6, 32b, 36, 52 § 1-2; Dz.U. 2023 poz. 497 art. 11 and 14; the Prime Minister's notices Dz.U. 2023 poz. 1513 and 1514; the act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 17 ust. 1 pkt 2a
-# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2026/1261 6d38ef42e121d1e0209b068828c1545e6363a4515861c4476a2fb29dbebd48b6; DU/2023/497 fdd07eecb152d3f2c652444ca2322a74ef12dbc13a6f157066e40efcb99b468e; DU/2023/1514 e6cc34ac6a6cfaa8bcb969d783ab62ce9295f741054229d6bb1fdbefdbd370c0; DU/2023/1513 6a0644bc503e3009e9ed636a891e63f48c1a461a6e7d548ea1683aaee748f1de; DU/2026/384 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb.
-# Later amendments (node tools/sources/touched.mjs, 17.10.2026, with a 4-year lookback to reach Dz.U. 2023 poz. 497): the Code after 25.08.2026: Dz.U. 2026 poz. 178 art. 1 (art. 209-217, 265, 296, 303-304, 343, by the API from 18.02.2027; none quoted) and its transitional art. 2-3 (art. 103d; not quoted); Dz.U. 2024 poz. 1907 art. 193 (art. 30, 108, 494, 497, some points from 1.01.2027; none quoted). Dz.U. 2023 poz. 497 art. 1 gave the quoted articles their wording (in the consolidated text); its transitional rules: art. 10 (until the register started, UK citizens' passport number for the PESEL; part B of the old register), art. 11 and 14 (quoted), art. 12 (repeated, early and by-elections during the local term in which it came into force, the one that ended in 2024 (INFERENCE): the old rules, with exceptions), art. 13 (the old regulations under art. 25 and 33 kept until the art. 32a and 32b ones), art. 15 (the Prime Minister's notices; those of pkt 7 and 9 are quoted) and art. 17 (the electoral commissioners' lustration). The Code's consolidated text prints no point as not yet in force for the quoted articles.
-# Dates: the Central Register of Voters runs from 4.08.2023 (Dz.U. 2023 poz. 1513), and the online application of art. 19a § 5 from 1.09.2023 (Dz.U. 2023 poz. 1514). No time limit before an election is set for an art. 19a application; the wójt decides in 5 days (art. 20 § 1), and the list of voters is drawn up from the register as it stands on the third day before the election (art. 26 § 9).
-# Not quoted: the regulation with the application forms (art. 32b), whose model the gov.pl page links; Directive 93/109/EC and 94/80/EC (the EU rules behind art. 10); the international agreement with the United Kingdom behind UK citizens' local voting rights (not read); the election calendar (each election's order sets its dates).
+# EU citizens in the register of voters: the Electoral Code, consolidated Dz.U. 2026 poz. 1261 (obwieszczenie of 1.09.2026, legal state 25.08.2026), art. 5 pkt 6 and 9, 6, 7, 9, 10, 11 § 1-3, 18 § 1-2, 18a § 3-4, 18b § 1, 18d, 19 § 1-2, 19a, 20, 22, 23, 26 § 1-9, 28 § 1-6, 32 § 6, 32b, 36, 37, 51, 52 § 1-2; Dz.U. 2023 poz. 497 art. 11 and 14; the Prime Minister's notices Dz.U. 2023 poz. 1513 and 1514; the act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 8 pkt 24a lit. a-b and art. 17 ust. 1 pkt 2a; the government statement on the Poland-UK agreement (Dz.U. 2023 poz. 238); the forms regulation (Dz.U. 2023 poz. 1495), annex 2 and § 8; the orders of the elections from 27.09 to 6.12.2026 (Dz.U. 2026 poz. 1024, 1147, 1190, 1215, 1255, 1337, 1338), § 1-2; the act on days off work (Dz.U. 2025 poz. 296) art. 1; Directive 94/80/EC art. 8
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2026/1261 6d38ef42e121d1e0209b068828c1545e6363a4515861c4476a2fb29dbebd48b6; DU/2023/497 fdd07eecb152d3f2c652444ca2322a74ef12dbc13a6f157066e40efcb99b468e; DU/2023/1514 e6cc34ac6a6cfaa8bcb969d783ab62ce9295f741054229d6bb1fdbefdbd370c0; DU/2023/1513 6a0644bc503e3009e9ed636a891e63f48c1a461a6e7d548ea1683aaee748f1de; DU/2026/384 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb; DU/2023/238 8a769011091321bb47365e18534e65e79e366067d9f3559c71b4c68aa1537797; DU/2023/1495 ad1d1ae0440b1729846cf7d5d88cd7a613b424c98ec915810c0226d270d9541a; DU/2026/1024 923d38b710d9e0765d4b2c33cfd482b670730cd32465dc24b1cd618dacd8b08e; DU/2026/1147 4c7aeedf46cf2d34ec2a42ba07f0fd645a7c601bed9eaeb93cf98fde16cb8309; DU/2026/1190 16615db7673633e050b8327708f116e749492b56530e4b06003d0d1054c56533; DU/2026/1215 792f6b792e6db85c3cc612ced21c97debd5b5151daae1dc59644dd1e5036a568; DU/2026/1255 35101af8ecd11e0f94629010efef29e4b0ea0fc1219c5860197431ce4ffdc583; DU/2026/1337 e9a2408e18395b8ffba2f702245daeafc06163d2c4a5c096c6f026efdd868c62; DU/2026/1338 58841be5638de93a8099330cb1f7ea58a9847973ade798287c5f8ede72302bf6; DU/2025/296 50ce5df0f79a4d0f2e3a045b03acaac6ede826ab3b667f421d06854795c2deff. Directive 94/80/EC from https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:01994L0080-20130701, html sha256 82529531b9ae3fc2350e97dbf634c58f97310539f7851eaf65ff5e20a24b9381 (the same in two requests here; the separate checking agent's fetch gave another hash), cut into lines at its paragraphs. Read, not quoted: DU/2023/237 (the Poland-UK agreement, printed as page images with no text layer; art. 2 ust. 1 and art. 8 ust. 1 read on the images) 264401a982d3587760de1fabfdca23c2456d1f820f25c7fb54ba2e7f81256d92; DU/2024/1907 b67d8428272d5a429895a4c16dde7f64eb3229d0e126961c55a0ee11250c6295; DU/2026/178 f91c0ed1a77440c04c2439c3020d68cc038aaf9202a18140231d3016b7ec4715; DU/2025/1792 a27bc7bcab0b1aecc52ffe4958bb7ed2d1d4a52ac0fa77bda8f90b4c33f366a3.
+# Later amendments (node tools/sources/touched.mjs, 17.10.2026, with a 4-year lookback to reach Dz.U. 2023 poz. 497): the Code after 25.08.2026: Dz.U. 2026 poz. 178 art. 1 (pkt 1: chapter 11b, art. 103d-103p, the support portal; also art. 209-217, 265, 296, 303-304, 343), in force 18.02.2027 (its art. 4: 12 months after publication on 17.02.2026), and its transitional art. 2-3 (art. 103d); the consolidated text already folds them in; none quoted. Dz.U. 2024 poz. 1907 art. 193 (art. 30, 108, 494, 497) took effect on 1.01.2025 under its art. 212 (only its art. 187, on another act, waits for 1.01.2027) and is in the consolidated text; none quoted. Dz.U. 2025 poz. 1792 art. 7 (art. 37f § 1, in force 31.12.2025) is in the consolidated text; not quoted. No statute published in Dz.U. 2026 up to 15.10.2026 changes the Code after the consolidated text (the separate checking agent read them; the API lists none). Dz.U. 2023 poz. 497 art. 1 gave the quoted articles their wording (in the consolidated text); its transitional rules: art. 10 (until the register started, UK citizens' passport number for the PESEL; part B of the old register), art. 11 and 14 (quoted), art. 12 (repeated, early and by-elections during the local term in which it came into force, the one that ended in 2024 (INFERENCE): the old rules, with exceptions), art. 13 (the old regulations under art. 25 and 33 kept until the art. 32a and 32b ones), art. 15 (the Prime Minister's notices; those of pkt 7 and 9 are quoted), art. 16 (the commissioners' review of the districts within 2 months), art. 17 (the electoral commissioners' lustration) and art. 18 (a spending limit for the register in 2023-2032; it does not stop the service). UEL art. 8 and 17 after 10.03.2026 (the consolidated text's legal state): Dz.U. 2023 poz. 497 art. 9 (art. 10, 12 and 17: it added art. 17 ust. 1 pkt 2a, quoted, in the consolidated text); Dz.U. 2024 poz. 854 art. 7 (art. 8 pkt 24a lit. c-e and pkt 24b, art. 9, 10) and its transitional art. 33-34; Dz.U. 2025 poz. 1794 art. 5 (art. 8 pkt 24, 10, 23i, 23j, 43) and its transitional art. 12, 14 and 17; Dz.U. 2026 poz. 203 art. 9 (art. 1 and art. 8 pkt 24a lit. d) and its transitional art. 20, 24-26 and 45. None changes art. 8 pkt 24a lit. a-b or art. 17 ust. 1 pkt 2a; the transitional rules were not read one by one, and none of the three later texts holds the word "wyborc". The Code's consolidated text prints no point as not yet in force for the quoted articles.
+# Dates: the Central Register of Voters runs from 4.08.2023 (Dz.U. 2023 poz. 1513), and the online application of art. 19a § 5 from 1.09.2023 (Dz.U. 2023 poz. 1514). No time limit before an election is set for an art. 19a application; the wójt decides in 5 days (art. 20 § 1), and the list of voters is drawn up from the register as it stands on the third day before the election (art. 26 § 9). A limit that ends on a Saturday or a statutory day off ends on the next working day (art. 9 § 2); the margins before an election are computed in the README.
+# Not quoted: Directive 93/109/EC (the European Parliament elections); the informatisation act art. 20a ust. 1 (the online authentication art. 19a § 5 names); the e-delivery act art. 147 (in the certificates folder's extract it is not quoted either; see the README on OPEN-V2); the PKW page "Wyjaśnienia dotyczące rejestru wyborców", which the separate checking agent found describing the register before 4.08.2023 (not read here); council by-elections ordered by voivodes (voivodeship journals, not searched).
+
+[Electoral Code art. 5 pkt 6 and 9 ("wójt" includes a burmistrz and a city president; permanent residence)]
+6)    wójcie – należy przez to rozumieć także burmistrza i prezydenta miasta;
+9)    stałym zamieszkaniu – należy przez to rozumieć zamieszkanie w określonej miejscowości pod oznaczonym adresem
+      z zamiarem stałego pobytu;
+
+[Electoral Code art. 6-7 (no fees or court costs; documents not in Polish with a sworn translation)]
+      Art. 6. Wszelkie pisma oraz postępowanie sądowe i administracyjne w sprawach wyborczych są wolne od opłat admini-
+stracyjnych i kosztów sądowych.
+     Art. 7. Dokumenty wymagane na podstawie przepisów kodeksu niesporządzone w języku polskim są składane wraz
+z tłumaczeniem przysięgłym na język polski.
+
+[Electoral Code art. 9 (a document counts on the day it is lodged; a limit ending on a Saturday or a day off ends on the next working day; office hours)]
+     Art. 9. § 1. Ilekroć w kodeksie jest mowa o upływie terminu do wniesienia skargi, odwołania lub innego dokumentu
+do sądu, organu wyborczego, urzędu gminy, konsula albo kapitana statku, należy przez to rozumieć dzień złożenia skargi,
+odwołania lub innego dokumentu w sądzie, organowi wyborczemu, w urzędzie gminy, w konsulacie lub kapitanowi statku.
+    § 2. Jeżeli koniec terminu wykonania czynności określonej w kodeksie przypada na sobotę albo na dzień ustawowo
+wolny od pracy, termin upływa pierwszego roboczego dnia po tym dniu.
+   § 3. Jeżeli kodeks nie stanowi inaczej, czynności wyborcze określone kalendarzem wyborczym oraz czynności, o których
+mowa w § 1, są dokonywane w godzinach urzędowania sądów, organów wyborczych, urzędów gmin oraz konsulatów.
 
 [Electoral Code art. 10 (who may vote: an EU citizen in the European Parliament elections and, with a UK citizen, in the gmina council and wójt elections, living permanently in Poland or the gmina; who may not)]
      Art. 10. § 1. Prawo wybierania (czynne prawo wyborcze) ma:
@@ -254,6 +274,10 @@ w drodze rozporządzenia:
 – uwzględniając zakres danych wymaganych we wnioskach i w zaświadczeniu oraz konieczność zabezpieczenia zaświad-
 czenia przed sfałszowaniem.
 
+[Electoral Code art. 32 § 6 (no certificate of the right to vote in council and wójt elections)]
+    § 6. Przepisu § 1 nie stosuje się w wyborach do organów stanowiących jednostek samorządu terytorialnego oraz
+w wyborach wójtów.
+
 [Electoral Code art. 36 (seeing one's own data: online, or on request from the wójt, at the latest on the 5th day before an election; whether one is on the list)]
      Art. 36. § 1. Osobie, której dane są przetwarzane w Centralnym Rejestrze Wyborców, umożliwia się wgląd do rejestru
 w zakresie danych, o których mowa w art. 18a § 1 i 3, dotyczących tej osoby, przy użyciu usługi elektronicznej udostępnionej
@@ -289,6 +313,27 @@ został sporządzony, o udzielenie informacji, czy został w spisie ujęty.
 we wniosku jest ujęta w spisie wyborców lub nie figuruje w spisie. Na żądanie wnioskodawcy udzielona informacja jest
 potwierdzana przez wójta na piśmie utrwalonym w postaci papierowej, opatrzonym własnoręcznym podpisem.
      § 11. Przepisy § 9 i 10 stosuje się odpowiednio do innych organów, które sporządziły spis wyborców.
+
+[Electoral Code art. 37 (a complaint about the list of voters: art. 22 applies, with 2 days to decide and to complain to the court)]
+     Art. 37. § 1. Każdy może wnieść odpowiednio do wójta albo do organu, który sporządził spis wyborców, reklamację
+w sprawie nieprawidłowości sporządzenia spisu.
+     § 2. W sprawach, o których mowa w § 1, stosuje się odpowiednio przepisy art. 22, z tym że terminy rozpatrzenia
+reklamacji i wniesienia skargi do sądu rejonowego wynoszą 2 dni, z zastrzeżeniem § 3.
+     § 3. Reklamacje w sprawach spisu wyborców dotyczącego osób, o których mowa w art. 34 § 1 i art. 35 § 1, rozpatrują
+niezwłocznie odpowiednio kapitan statku albo konsul. Od decyzji podjętych w tych sprawach nie przysługuje środek prawny.
+
+[Electoral Code art. 51 (only a voter on the list votes; the commission adds a person left out only if the wójt confirms it was a mistake)]
+     Art. 51. § 1. Głosować może tylko wyborca wpisany do spisu wyborców, jego pełnomocnik, a także wyborca dopisany
+do spisu zgodnie z przepisami § 2–4.
+     § 2. Obwodowa komisja wyborcza dopisuje w dniu głosowania do spisu wyborców:
+1)   osobę przedkładającą zaświadczenie o prawie do głosowania, załączając zaświadczenie do spisu, jeżeli przepisy doty-
+     czące danych wyborów przewidują możliwość uzyskania takiego zaświadczenia;
+2)   osobę pominiętą w spisie, jeżeli wójt potwierdzi, że pominięcie w spisie jest wynikiem omyłki;
+3)   osobę skreśloną ze spisu dla danego obwodu głosowania w związku z wpisaniem tej osoby do spisu wyborców w jed-
+     nostce, o której mowa w art. 12 § 4, jeżeli udokumentuje, iż opuściła tę jednostkę przed dniem wyborów.
+     § 3. (uchylony)
+     § 4. Przepis § 2 stosuje się odpowiednio w przypadku przyjęcia wyborcy do jednostki, o której mowa w art. 12 § 4,
+przed dniem wyborów.
 
 [Electoral Code art. 52 § 1-2 (an identity document at the polling station)]
      Art. 52. § 1. Przed przystąpieniem do głosowania wyborca okazuje obwodowej komisji wyborczej dokument umożli-
@@ -342,3 +387,99 @@ innych ustaw (Dz. U. poz. 497) ogłasza się, co następuje:
     Królestwa Wielkiej Brytanii i Irlandii Północnej o ujęcie w stałym obwodzie głosowania w Centralnym Rejestrze
     Wyborców, po wydaniu pozytywnej decyzji w tej sprawie w trybie określonym w przepisach ustawy z dnia 5 stycznia
     2011 r. – Kodeks wyborczy;
+
+[The same act, art. 8 pkt 24a lit. a-b (the PESEL status: UE for EU, EFTA-EEA and Swiss citizens; CUE for their family members)]
+24a) status cudzoziemca oznaczony jako:
+     a)   UE – w przypadku cudzoziemca będącego obywatelem państwa członkowskiego Unii Europejskiej, obywatelem
+          państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim
+          Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej,
+     b) CUE – w przypadku cudzoziemca będącego członkiem rodziny cudzoziemca, o którym mowa w lit. a, niebędą-
+        cego obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europej-
+        skiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub
+        obywatelem Konfederacji Szwajcarskiej,
+
+[The government statement of 30.12.2022 (Dz.U. 2023 poz. 238): the Poland-UK agreement on certain elections (Dz.U. 2023 poz. 237) in force from 10.12.2022. The agreement itself is printed as page images with no text layer, so it is not quoted here; its art. 2 ust. 1 and art. 8 ust. 1 were read on the images]
+    Podaje się do wiadomości, że na podstawie ustawy z dnia 27 października 2020 r. o ratyfikacji Umowy między Rzeczą-
+pospolitą Polską a Zjednoczonym Królestwem Wielkiej Brytanii i Irlandii Północnej w sprawie udziału w niektórych wybo-
+rach przez obywateli jednego Państwa zamieszkujących na terytorium drugiego Państwa, podpisanej w Warszawie dnia
+29 maja 2020 r. (Dz. U. poz. 2264) Prezydent Rzeczypospolitej Polskiej dnia 12 lutego 2021 r. ratyfikował wyżej wymie-
+nioną umowę.
+   Zgodnie z art. 7 ust. 2 umowy weszła ona w życie dnia 10 grudnia 2022 r.
+
+[The MSWiA regulation of 28.07.2023 on the application forms (Dz.U. 2023 poz. 1495), annex 2 (the EU and UK citizen's application): the data for a PESEL (sex; status UE or NUE only), the optional data, and § 8 (in force on the day of the Prime Minister's notice, 4.08.2023)]
+     2. Dane wymagane do nadania numeru PESEL
+              Płeć:
+                   kobieta         mężczyzna
+              Status cudzoziemca
+              (zaznacz właściwe pole):
+                   UE – obywatel Unii Europejskiej oraz obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii
+              Północnej, o którym mowa w art. 10 ust. 1 lit. b i d umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej
+              Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE
+              C 384 z 12.11.2019, str. 7).
+                  NUE – obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej inny niż określony
+              w art. 10 ust. 1 lit. b i d umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+              z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej.
+       Wypełnij poniższe dane, jeśli są dostępne
+    § 8. Rozporządzenie wchodzi w życie z dniem określonym w komunikacie wydanym na podstawie art. 15 ust. 1 pkt 7
+ustawy z dnia 26 stycznia 2023 r. o zmianie ustawy – Kodeks wyborczy oraz niektórych innych ustaw (Dz. U. poz. 497).2)
+
+[The order Dz.U. 2026 poz. 1147: the early election of the wójt of Górowo Iławeckie, § 1-2 (what and when)]
+   § 1. Zarządza się przeprowadzenie przedterminowych wyborów wójta gminy Górowo Iławeckie w województwie war-
+mińsko‑mazurskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 25 października 2026 r.
+
+[The order Dz.U. 2026 poz. 1215: the early election of the wójt of Niedźwiada, § 1-2 (what and when)]
+   § 1. Zarządza się przeprowadzenie przedterminowych wyborów wójta gminy Niedźwiada w województwie lubelskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 8 listopada 2026 r.
+
+[The order Dz.U. 2026 poz. 1190: the early election of the Mszana Dolna gmina council, § 1-2 (what and when)]
+    § 1. Zarządza się przeprowadzenie przedterminowych wyborów do rady gminy Mszana Dolna w województwie mało-
+polskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 15 listopada 2026 r.
+
+[The order Dz.U. 2026 poz. 1337: the early election of the wójt of Michów, § 1-2 (what and when)]
+   § 1. Zarządza się przeprowadzenie przedterminowych wyborów wójta gminy Michów w województwie lubelskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 6 grudnia 2026 r.
+
+[The order Dz.U. 2026 poz. 1338: the early election of the wójt of Sadlinki, § 1-2 (what and when)]
+   § 1. Zarządza się przeprowadzenie przedterminowych wyborów wójta gminy Sadlinki w województwie pomorskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 6 grudnia 2026 r.
+
+[The order Dz.U. 2026 poz. 1024: the early election of the president of Kraków (held), § 1-2 (what and when)]
+   § 1. Zarządza się przeprowadzenie przedterminowych wyborów prezydenta miasta Krakowa w województwie małopolskim.
+   § 2. Datę przedterminowych wyborów wyznacza się na niedzielę 27 września 2026 r.
+
+[The order Dz.U. 2026 poz. 1255: a Senate by-election (Polish citizens only), § 1-2 (what and when)]
+    § 1. Zarządzam wybory uzupełniające do Senatu Rzeczypospolitej Polskiej w województwie lubuskim, w okręgu
+wyborczym nr 20 obejmującym obszar powiatów krośnieńskiego, świebodzińskiego i zielonogórskiego oraz miasta na pra-
+wach powiatu Zielonej Góry, z siedzibą Okręgowej Komisji Wyborczej w Zielonej Górze – do mandatu, którego wygaśnię-
+cie stwierdził Marszałek Senatu Rzeczypospolitej Polskiej.
+   § 2. Datę wyborów wyznaczam na niedzielę dnia 22 listopada 2026 r.
+
+[The act on days off work, consolidated Dz.U. 2025 poz. 296, art. 1 (the statutory days off: for Code art. 9 § 2)]
+      Art. 1. Dniami wolnymi od pracy są:
+1)    dni niżej wymienione:
+      a)   1 stycznia – Nowy Rok,
+      b) 6 stycznia – Święto Trzech Króli,
+      c)   pierwszy dzień Wielkiej Nocy,
+      d) drugi dzień Wielkiej Nocy,
+      e)   1 maja – Święto Państwowe,
+      f)   3 maja – Święto Narodowe Trzeciego Maja,
+      g) pierwszy dzień Zielonych Świątek,
+      h) dzień Bożego Ciała,
+      i)   15 sierpnia – Wniebowzięcie Najświętszej Maryi Panny,
+      j)   1 listopada – Wszystkich Świętych,
+      k) 11 listopada – Narodowe Święto Niepodległości,
+      ka)1) 24 grudnia – Wigilia Bożego Narodzenia,
+      l)   25 grudnia – pierwszy dzień Bożego Narodzenia,
+      m) 26 grudnia – drugi dzień Bożego Narodzenia;
+2)    niedziele.
+
+[Directive 94/80/EC, consolidated 01.07.2013 (EUR-Lex, Polish), art. 8 (ust. 3: a voter who moves within the state is entered on the same terms as nationals)]
+Artykuł 8
+1. Państwa Członkowskie podejmą wszelkie niezbędne działania w celu wpisania wyborcy uprawnionego do głosowania w rozumieniu art. 3 na listę wyborców w odpowiednim terminie przed dniem wyborów.
+2. W celu wpisania na listę wyborców wyborca uprawniony do głosowania w rozumieniu art. 3 przedstawia takie same dokumenty co wyborca mający obywatelstwo danego Państwa.
+Państwo Członkowskie miejsca zamieszkania może również zażądać, aby wyborca uprawniony do głosowania w rozumieniu art. 3 przedstawił ważny dokument tożsamości oraz formalne oświadczenie, określające jego obywatelstwo i adres w Państwie Członkowskim miejsca zamieszkania.
+3. Wyborcy uprawnieni do głosowania w rozumieniu art. 3, wpisani na listę wyborców pozostają na niej na tych samych warunkach tak długo, jak uprawnieni do głosowania wyborcy mający obywatelstwo danego państwa, aż do czasu skreślenia ich z urzędu, ze względu na niespełnianie przez nich warunków wykonywania prawa głosowania.
+Wyborcy uprawnieni do głosowania, którzy na własny wniosek zostali wpisani na listę wyborców, mogą być również na własny wniosek z listy tej skreśleni.
+Wyborcy uprawnieni do głosowania, którzy przeniosą swe miejsce zamieszkania do innej wspólnoty lokalnej stopnia podstawowego w tym samym Państwie Członkowskim, wpisywani są na listę wyborców w tej jednostce na takich samych warunkach jak wyborcy będący obywatelami tego Państwa.

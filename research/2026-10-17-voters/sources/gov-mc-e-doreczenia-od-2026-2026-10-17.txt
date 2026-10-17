@@ -1,0 +1,20 @@
+# Ministerstwo Cyfryzacji (gov.pl): Od nowego roku e-Doręczenia podstawowym kanałem komunikacji z urzędami. Co to oznacza dla Obywateli?
+# Source: https://www.gov.pl/web/cyfryzacja/od-nowego-roku-e-doreczenia-podstawowym-kanalem-komunikacji-z-urzedami-co-to-oznacza-dla-obywateli, retrieved 2026-10-17, html sha256 8cf4cd3889b144600ea87e75000575d312d05bfe50992dba082cacef3792cb37 (the same in two requests)
+# Text of the page's main element; blank lines removed. A news item dated 10.12.2025; no person's name on it. Not binding.
+# sha256 of the text below this header (from line 5): 56e7d9b9dd35ac7baeb7805ea70179c71214ffdf635c72e78e852cf3b1b066f8.
+Ministerstwo Cyfryzacji
+Aktualności
+Wiadomości
+Od nowego roku e-Doręczenia podstawowym kanałem komunikacji z urzędami. Co to oznacza dla Obywateli?
+Powrót
+Od nowego roku e-Doręczenia podstawowym kanałem komunikacji z urzędami. Co to oznacza dla Obywateli?
+10.12.2025
+Od 1 stycznia 2026 roku podstawowym kanałem komunikacji dla podmiotów publicznych stają się e-Doręczenia. Oznacza to, że obywatel, który chce złożyć do urzędu elektroniczny wniosek lub pismo, powinien posiadać aktywny adres do e-Doręczeń. Warto założyć go już dziś.
+31 grudnia 2025 roku kończy się okres przejściowy e-Doręczeń. Był to czas, w którym urzędy i instytucje publiczne miały przystosować się do nowej formy wymiany korespondencji z obywatelami, firmami czy innymi podmiotami publicznymi. Od 1 stycznia 2026 roku podstawowym kanałem komunikacji stają się dla nich e-Doręczenia.
+Jak zacząć korzystać z doręczeń elektronicznych?
+Adresy do e-Doręczeń obywatele mogą zakładać i aktywować już teraz. Można to zrobić online w kilku prostych krokach. Szczegółowe informacje o usłudze i jej aktywacji dostępne są na stronie: https://www.gov.pl/web/e-doreczenia
+Ważna zmiana również dla obywatela
+Obywatel, który chce prowadzić z urzędem elektroniczną korespondencję, również składając wnioski za pomocą formularzy dostępnych na stronach rządowych czy samorządowych (np. zgłoszenie urodzenia dziecka), powinien mieć aktywny adres do e-Doręczeń. Jeśli nie ma takiego adresu, w trakcie realizacji e-usługi może zostać poproszony o jego założenie. Na ten adres urząd będzie wysyłał korespondencję np. decyzje o wymiarze podatku od nieruchomości.
+Od 1 stycznia 2026 roku to właśnie e-Doręczenia zastąpią korespondencję realizowaną do tej pory za pomocą skrzynek ePUAP. Korespondencja elektroniczna przez ePUAP od 1 stycznia 2026 roku będzie skuteczna jedynie w przypadkach, gdy wskazują na to przepisy szczególne. W innych sytuacjach korespondencja do urzędu tym kanałem może zostać uznana za nieskuteczną.
+Dlaczego e-Doręczenia?
+Usługa e-Doręczeń została przygotowana po to, aby spełniać wymagania unijnego rozporządzenia eIDAS, dzięki temu wiele krajów UE, w tym Polska, działa według wysokich standardów bezpieczeństwa. Oznacza to, że zarówno publiczne, jak i komercyjne usługi e-Doręczeń muszą być bezpieczne, wiarygodne i zgodne z unijnymi przepisami. W Polsce nadzór nad tym systemem sprawuje Minister Cyfryzacji, który dba o to, by wszystko działało zgodnie z prawem i chroniło dane użytkowników.
