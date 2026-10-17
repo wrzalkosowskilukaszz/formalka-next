@@ -1,0 +1,196 @@
+# Inviting a foreigner: the act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (obwieszczenie of 25.07.2025), art. 49-57; the KPA, consolidated Dz.U. 2025 poz. 1691 (obwieszczenie of 7.11.2025), art. 163b-163g (the simplified procedure, which UoC art. 55b applies); the MSWiA regulation of 16.03.2023 (Dz.U. 2023 poz. 637) § 1-6 (the forms and the inviter's funds); the stamp duty act (Dz.U. 2025 poz. 1154), annex part I item 28
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1691 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; DU/2023/637 dab84048eecf4f177f4cdb626fb28e71a54003c37bd451fa7db7fe768e6c796a; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): UoC art. 49-57 after 1.07.2025, none; KPA art. 35 and 163b-163g after 3.11.2025, none (Dz.U. 2025 poz. 769 art. 1 changes other articles from 1.01.2026); the regulation, none; the stamp duty annex part I: Dz.U. 2025 poz. 921 (items 26-27b) and 1847 (items 9ba, 9ca), not item 28.
+
+[UoC art. 49-57 (who may invite; refusal; validity up to 1 year; the voivode of the inviter's residence; the documents; the simplified procedure; the inviter's liability)]
+    Art. 49. 1. Cudzoziemiec może przedstawić zaproszenie jako dokument potwierdzający posiadanie środków finanso-
+wych wystarczających na pokrycie kosztów związanych z planowanym pobytem na terytorium Rzeczypospolitej Polskiej,
+w tym kosztów zakwaterowania i wyżywienia, oraz na pokrycie kosztów podróży powrotnej do państwa pochodzenia lub
+zamieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd.
+     2. Zapraszającym może być:
+1)   obywatel polski zamieszkujący na terytorium Rzeczypospolitej Polskiej, obywatel innego państwa członkowskiego
+     Unii Europejskiej, państwa członkowskiego Europejskiego Stowarzyszenia Wolnego Handlu (EFTA) – strony umowy
+     o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej, obywatel Zjednoczonego Królestwa Wielkiej
+     Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia, lub członek jego rodziny,
+     zamieszkujący na terytorium Rzeczypospolitej Polskiej i posiadający prawo pobytu lub prawo stałego pobytu na tym
+     terytorium, lub
+2)   cudzoziemiec przebywający bezpośrednio przed wystawieniem zaproszenia legalnie i nieprzerwanie co najmniej przez
+     okres 5 lat na terytorium Rzeczypospolitej Polskiej lub posiadający zezwolenie na pobyt stały lub zezwolenie na pobyt
+     rezydenta długoterminowego UE, lub
+3)   osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej mające siedzibę na terytorium Rzeczy-
+     pospolitej Polskiej.
+     3. Do ustalenia, że pobyt cudzoziemca, o którym mowa w ust. 2 pkt 2, na terytorium Rzeczypospolitej Polskiej jest
+nieprzerwany, stosuje się przepis art. 195 ust. 4.
+     Art. 50. 1. Wpisania zaproszenia do ewidencji zaproszeń odmawia się albo unieważnia się ten wpis, jeżeli:
+1)   zapraszający nie spełnia wymogów, o których mowa w art. 49 ust. 2, lub
+2)   obowiązuje wpis danych zapraszanego cudzoziemca do wykazu cudzoziemców, których pobyt na terytorium Rzeczy-
+     pospolitej Polskiej jest niepożądany, lub
+3)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego
+     lub interes Rzeczypospolitej Polskiej, lub
+4)   zapraszający nie wykazał, że może pokryć koszty, o których mowa w art. 53 ust. 1 pkt 2, lub
+5)   warunki mieszkaniowe zapraszającego wskazują, że nie będzie on w stanie wykonać zobowiązań przyjętych na siebie
+     w zaproszeniu, jeżeli jako miejsce zakwaterowania zapraszanego cudzoziemca został wskazany lokal mieszkalny
+     zapraszającego, a zapraszający nie wykazał, że może zapewnić cudzoziemcowi zakwaterowanie w innym miejscu, lub
+6)   zapraszający nie wykonał zobowiązań wynikających z uprzednio wystawionego zaproszenia, lub
+7)   w postępowaniu w sprawie wpisania zaproszenia do ewidencji zaproszeń zapraszający:
+     a)   złożył wniosek zawierający nieprawdziwe dane osobowe lub fałszywe informacje lub dołączył do niego doku-
+          menty zawierające takie dane lub informacje, lub
+     b) zeznał nieprawdę lub zataił prawdę albo podrobił lub przerobił dokument w celu użycia go jako autentycznego lub
+        takiego dokumentu używał jako autentycznego, lub
+8)   okoliczności sprawy wskazują, że cel wjazdu zapraszanego cudzoziemca na terytorium Rzeczypospolitej Polskiej
+     i jego pobytu na tym terytorium będzie inny niż deklarowany przez zapraszającego.
+     2. Przepis ust. 1 pkt 6 stosuje się, jeżeli zapraszający wystąpił z wnioskiem o wpisanie zaproszenia do ewidencji za-
+proszeń przed upływem 3 lat po zakończeniu okresu ważności zaproszenia zawierającego zobowiązania, których zaprasza-
+jący nie wykonał.
+     Art. 51. 1. Wpisane do ewidencji zaproszeń zaproszenie jest ważne we wskazanym w nim okresie, na jaki zapraszający
+zaprosił cudzoziemca, nie dłuższym niż 1 rok.
+     2. Zaproszenie wpisuje się do ewidencji zaproszeń na wniosek zapraszającego, złożony na formularzu zawierającym:
+1)   dane i informacje, o których mowa w art. 54 pkt 1, 2 i 4–8;
+2)   informację o:
+     a)   liczbie cudzoziemców zaproszonych w ciągu roku poprzedzającego złożenie wniosku o wpisanie zaproszenia do
+          ewidencji zaproszeń,
+     b) możliwościach majątkowych i zarobkowych zapraszającego,
+     c)   warunkach zakwaterowania zapraszanego cudzoziemca;
+3)   zobowiązanie zapraszającego do pokrycia kosztów związanych z pobytem cudzoziemca, w tym kosztów zakwatero-
+     wania, wyżywienia i ewentualnego leczenia, pokrycia kosztów podróży powrotnej do państwa pochodzenia lub za-
+     mieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd, oraz kosztów wydania
+     i wykonania decyzji o zobowiązaniu cudzoziemca do powrotu;
+4)   poprzednie nazwiska zapraszanego cudzoziemca;
+5)   imię ojca zapraszanego cudzoziemca;
+6)   informacje wymagane na podstawie art. 37 ust. 1 rozporządzenia nr 767/2008;
+7)   pouczenie o tym, że zaproszenie nie jest dokumentem uprawniającym do podjęcia pracy na terytorium Rzeczypospolitej
+     Polskiej;
+8)   pisemne oświadczenie zapraszającego, pod rygorem odpowiedzialności karnej za składanie fałszywych oświadczeń,
+     że dane zawarte we wniosku są prawdziwe.
+      3. Wpisania zaproszenia do ewidencji zaproszeń dokonuje wojewoda właściwy ze względu na miejsce zamieszkania
+lub siedzibę zapraszającego.
+     Art. 52. 1. Wpisania zaproszenia do ewidencji zaproszeń odmawia wojewoda właściwy ze względu na miejsce zamiesz-
+kania lub siedzibę zapraszającego, w drodze decyzji.
+     1a. Wpis zaproszenia do ewidencji zaproszeń unieważnia wojewoda, który dokonał tego wpisu, w drodze decyzji.
+     2. Wojewoda wydaje decyzję o unieważnieniu wpisu zaproszenia do ewidencji zaproszeń z urzędu albo na wniosek
+zapraszającego, złożony co najmniej 7 dni przed rozpoczęciem okresu ważności zaproszenia.
+     3. Zaproszenie traci ważność w dniu, w którym decyzja, o której mowa w ust. 2, stała się ostateczna.
+     Art. 53. 1. Zapraszający ubiegający się o wpisanie zaproszenia do ewidencji zaproszeń składa:
+1)   wypełniony formularz wniosku o wpisanie zaproszenia do ewidencji zaproszeń;
+2)   dokumenty potwierdzające możliwość pokrycia kosztów związanych z pobytem cudzoziemca, w tym kosztów zakwate-
+     rowania i wyżywienia, pokrycia kosztów podróży powrotnej do państwa pochodzenia lub zamieszkania albo kosztów
+     tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd;
+3)   dokument potwierdzający tytuł prawny do lokalu mieszkalnego, jeżeli jako miejsce zakwaterowania zapraszanego
+     cudzoziemca został wskazany lokal mieszkalny zapraszającego, albo dokument potwierdzający możliwość zapewnie-
+     nia cudzoziemcowi zakwaterowania w innym miejscu.
+    2. Obowiązek potwierdzenia możliwości pokrycia kosztów podróży powrotnej zapraszanego cudzoziemca do państwa
+pochodzenia lub zamieszkania, o którym mowa w ust. 1 pkt 2, uważa się za spełniony, także gdy zapraszający wykaże, że
+cudzoziemiec ma bilet powrotny do państwa pochodzenia lub zamieszkania.
+     Art. 54. W zaproszeniu umieszcza się:
+1)   imię (imiona), nazwisko, datę i miejsce urodzenia, obywatelstwo, adres zamieszkania, numer telefonu, rodzaj, serię
+     i numer dokumentu tożsamości zapraszającego, a w przypadku gdy zapraszającym jest osoba prawna lub jednostka
+     organizacyjna nieposiadająca osobowości prawnej – firmę albo nazwę, numer REGON, adres siedziby i numer telefonu
+     kontaktowego;
+2)   imię (imiona), nazwisko, datę i miejsce urodzenia, płeć, obywatelstwo, adres zamieszkania, serię i numer dokumentu
+     podróży zapraszanego cudzoziemca oraz stopień pokrewieństwa z zapraszającym;
+3)   informację o zobowiązaniu się zapraszającego do pokrycia kosztów, o których mowa w art. 51 ust. 2 pkt 3;
+4)   adres miejsca zakwaterowania zapraszanego cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+5)   określenie okresu, na który zapraszający zaprasza cudzoziemca, wyrażone datami;
+6)   określenie celu pobytu zapraszanego cudzoziemca na terytorium Rzeczypospolitej Polskiej;
+7)   nazwę organu, który wpisał zaproszenie do ewidencji zaproszeń;
+8)   datę i numer wpisu zaproszenia do ewidencji zaproszeń;
+9)   okres ważności zaproszenia;
+10) informację, czy zapraszający zapewnia cudzoziemcowi zakwaterowanie w swoim lokalu mieszkalnym;
+11) informacje o zasadach przetwarzania danych zapraszającego w Wizowym Systemie Informacyjnym, o których mowa
+    w art. 37 ust. 1 rozporządzenia nr 767/2008.
+     Art. 55. Odbioru zaproszenia może dokonać pełnomocnik legitymujący się pełnomocnictwem szczególnym do doko-
+nania jego odbioru.
+     Art. 55a. W postępowaniu w sprawie wpisania zaproszenia do ewidencji zaproszeń albo unieważnienia wpisu zapro-
+szenia do ewidencji zaproszeń stroną postępowania jest wyłącznie zapraszający.
+     Art. 55b. 1. Do postępowania w sprawie wpisania zaproszenia do ewidencji zaproszeń stosuje się przepisy działu II
+rozdziału 14 Kodeksu postępowania administracyjnego.
+     2. Do postępowania w sprawie wpisania zaproszenia do ewidencji zaproszeń nie stosuje się przepisów działu II roz-
+działu 8a Kodeksu postępowania administracyjnego.
+     Art. 56. W przypadku gdy zapraszający nie wykonał zobowiązań wynikających z wystawionego zaproszenia, Skarb
+Państwa lub inne podmioty mogą dochodzić od zapraszającego, w postępowaniu przed sądem, zwrotu poniesionych kosz-
+tów, o których mowa w art. 51 ust. 2 pkt 3, wynikających z wykonywania przez te podmioty ich ustawowych obowiązków,
+z wyjątkiem kosztów wydania i wykonania decyzji o zobowiązaniu cudzoziemca do powrotu.
+     Art. 57. 1. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:
+1)   wzory:
+     a)   zaproszenia,
+     b) formularza wniosku o wpisanie zaproszenia do ewidencji zaproszeń;
+2)   wysokość środków, które powinien posiadać zapraszający na pokrycie kosztów, o których mowa w art. 53 ust. 1 pkt 2.
+     2. W rozporządzeniu, o którym mowa w ust. 1, minister właściwy do spraw wewnętrznych uwzględni konieczność:
+1)   zapewnienia czytelności i kompletności wzoru zaproszenia;
+2)   wskazania we wzorze formularza wniosku o wpisanie zaproszenia do ewidencji zaproszeń danych w zakresie niezbęd-
+     nym do wpisania zaproszenia do ewidencji zaproszeń;
+3)   określenia środków finansowych, które powinien posiadać zapraszający, w takiej wysokości aby zapewnić pokrycie
+     niezbędnych kosztów związanych z pobytem cudzoziemca na terytorium Rzeczypospolitej Polskiej, w tym kosztów
+     zakwaterowania i wyżywienia, pokrycie kosztów podróży powrotnej do państwa pochodzenia lub zamieszkania albo
+     kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd, i weźmie pod uwagę możliwość zróżnico-
+     wania tej wysokości w zależności od miejsca zakwaterowania cudzoziemca, długości okresu jego pobytu na terytorium
+     Rzeczypospolitej Polskiej oraz więzi rodzinnych łączących zapraszającego z zapraszanym.
+
+[KPA art. 163b-163g (the simplified procedure)]
+     Art. 163b. § 1. Organ administracji publicznej załatwia sprawę w postępowaniu uproszczonym, jeżeli przepis szcze-
+gólny tak stanowi.
+     § 2. Postępowanie uproszczone może dotyczyć interesu prawnego lub obowiązku tylko jednej strony, jeżeli przepis
+szczególny nie stanowi inaczej. Przepisu art. 62 nie stosuje się.
+    § 3. W sprawie rozpoznawanej w postępowaniu uproszczonym stosuje się przepisy o milczącym załatwieniu sprawy,
+chyba że przepis szczególny stanowi inaczej.
+     Art. 163c. § 1. W postępowaniu uproszczonym strona może wnieść podanie z wykorzystaniem urzędowego formula-
+rza, w którym wskazuje okoliczności mające znaczenie dla sprawy oraz przedstawia dowody wraz z żądaniem wszczęcia
+postępowania.
+     § 2. Urzędowy formularz zawiera pouczenie o treści § 4.
+     § 3. (uchylony)
+     § 4. W sprawie wszczętej na skutek podania złożonego z wykorzystaniem urzędowego formularza nie jest dopusz-
+czalne późniejsze zgłaszanie przez stronę nowych żądań.
+     Art. 163d. Jeżeli uwzględnienie nowych okoliczności powołanych przez stronę w toku postępowania jest istotne dla
+wyniku tego postępowania, a ich uwzględnienie doprowadzi do jego przedłużenia, organ administracji publicznej w dalszym
+ciągu prowadzi postępowanie z pominięciem przepisów niniejszego rozdziału, o czym niezwłocznie informuje stronę.
+     Art. 163e. § 1. Postępowanie dowodowe jest ograniczone do dowodów zgłoszonych przez stronę, łącznie z żądaniem
+wszczęcia postępowania, oraz dowodów możliwych do ustalenia na podstawie danych, którymi dysponuje organ prowa-
+dzący postępowanie.
+     § 2. W sprawach rozpoznawanych w postępowaniu uproszczonym nie stosuje się przepisu art. 81.
+     Art. 163f. Uzasadnienie decyzji wydanej w postępowaniu uproszczonym może ograniczać się do wskazania faktów,
+które organ administracji publicznej uznał za udowodnione, oraz przytoczenia przepisów prawa stanowiących podstawę
+prawną decyzji.
+     Art. 163g. Postanowienia wydane w postępowaniu uproszczonym można zaskarżyć tylko w odwołaniu od decyzji,
+z wyjątkiem postanowień wydanych po wydaniu decyzji, postanowień o zawieszeniu lub odmowie podjęcia zawieszonego
+postępowania oraz postanowień, w odniesieniu do których możliwość ich zaskarżenia przewidują przepisy szczególne.
+
+[The MSWiA regulation of 16.03.2023 § 1-6 (515 zł a month per person; 200 zł for close family; the return ticket: 200, 500 or 2500 zł), with its footnote]
+     § 1. Rozporządzenie określa:
+1)    wzór zaproszenia;
+2)    wzór formularza wniosku o wpisanie zaproszenia do ewidencji zaproszeń;
+3)    wysokość środków, które powinien posiadać zapraszający na pokrycie kosztów związanych z pobytem cudzoziemca,
+      w tym kosztów zakwaterowania i wyżywienia, na pokrycie kosztów podróży powrotnej do państwa pochodzenia lub
+      zamieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd.
+     § 2. 1. Wzór zaproszenia, o którym mowa w § 1 pkt 1, jest określony w załączniku nr 1 do rozporządzenia.
+   2. Wzór formularza wniosku o wpisanie zaproszenia do ewidencji zaproszeń, o którym mowa w § 1 pkt 2, jest określony
+w załączniku nr 2 do rozporządzenia.
+    § 3. 1. Zapraszający powinien posiadać środki finansowe na pokrycie kosztów związanych z pobytem cudzoziemca na
+terytorium Rzeczypospolitej Polskiej, w tym kosztów zakwaterowania i wyżywienia, przeznaczone dla niego samego, każdego
+członka rodziny pozostającego na jego utrzymaniu oraz każdego zaproszonego cudzoziemca, co najmniej w wysokości 515 zł
+na każdy miesiąc planowanego pobytu cudzoziemca dla każdej z tych osób.
+    2. W przypadku gdy okres, na który zaprasza się cudzoziemca, jest krótszy niż miesiąc, zapraszający powinien posiadać
+środki finansowe na pokrycie kosztów związanych z planowanym pobytem cudzoziemca na terytorium Rzeczypospolitej
+Polskiej w wysokości, o której mowa w ust. 1, pomniejszonej proporcjonalnie w stosunku do liczby dni pobytu cudzoziemca.
+    § 4. W przypadku gdy zapraszanym cudzoziemcem jest zstępny, wstępny lub małżonek zapraszającego, rodzic małżonka
+zapraszającego, rodzeństwo zapraszającego lub dziecko małżonka zapraszającego, zapraszający powinien posiadać środki
+finansowe na pokrycie kosztów związanych z pobytem zapraszanego cudzoziemca na terytorium Rzeczypospolitej Polskiej
+w wysokości co najmniej 200 zł na każdy miesiąc planowanego pobytu cudzoziemca.
+    § 5. Zapraszający powinien posiadać również środki finansowe na pokrycie kosztów podróży powrotnej zapraszanego
+cudzoziemca do państwa pochodzenia lub zamieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwole-
+nia na wjazd, w wysokości stanowiącej równowartość biletu do tego państwa, nie mniejsze jednak niż:
+1)    200 złotych – w przypadku podróży powrotnej albo tranzytu do państwa sąsiadującego z Rzecząpospolitą Polską;
+1)
+     Minister Spraw Wewnętrznych i Administracji kieruje działem administracji rządowej – sprawy wewnętrzne, na podstawie § 1 ust. 2
+     pkt 2 rozporządzenia Prezesa Rady Ministrów z dnia 18 listopada 2019 r. w sprawie szczegółowego zakresu działania Ministra
+     Spraw Wewnętrznych i Administracji (Dz. U. poz. 2264).
+2)    500 złotych – w przypadku podróży powrotnej albo tranzytu do państwa członkowskiego Unii Europejskiej niesąsia-
+      dującego z Rzecząpospolitą Polską lub do państwa członkowskiego Europejskiego Porozumienia Wolnego Handlu
+      (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub do Konfederacji Szwajcarskiej;
+3)    2500 złotych – w przypadku podróży powrotnej albo tranzytu do innego państwa niż określone w pkt 1 i 2.
+     § 6. Rozporządzenie wchodzi w życie po upływie 30 dni od dnia ogłoszenia.2)
+
+[The stamp duty act, annex part I item 28 (27 zł)]
+                 28. Dokonanie wpisu zaproszenia                              27 zł
+                     cudzoziemca na pobyt
+                     w Rzeczypospolitej Polskiej
+                     do ewidencji zaproszeń

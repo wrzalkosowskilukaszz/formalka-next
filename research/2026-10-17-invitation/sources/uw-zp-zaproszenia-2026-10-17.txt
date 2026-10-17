@@ -1,0 +1,87 @@
+# Zachodniopomorski UW: Zaproszenia
+# Source: https://www.gov.pl/web/uw-zachodniopomorski/zaproszenia, retrieved 2026-10-17, html sha256 c7f76c44a39277859e504bb870b691ba72f41c7ab96f044b452328c3037abee7
+# Text of the page's main element; navigation, blank lines and empty list markers removed; the editors' names removed from its publication record and change history. Latest change shown: none shown. Not binding.
+# sha256 of the text below this header (from line 5): 26ffa0bfbd79bcf942ed2268fe9cf7d0bb14a1684dff4a5397067e678ae42dcd.
+Powrót
+Zaproszenia
+Wniosek o wpisanie zaproszenia do ewidencji zaproszeń
+Zaproszenie jest dokumentem wydawanym cudzoziemcom ubiegającym się o wizę na przyjazd do Polski w celu turystycznym, odwiedzin lub połączenia się rodzin. Na jego podstawie konsul wydaje wizę krajową lub wizę Schengen.
+Może być także dokumentem potwierdzającym posiadanie przez zapraszanego cudzoziemca środków finansowych wystarczających na pokrycie kosztów związanych z planowanym pobytem na terytorium Polski w tym kosztów zakwaterowania i wyżywienia, oraz na pokrycie kosztów podróży powrotnej do państwa pochodzenia lub zamieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd.
+Zaproszenie nie jest natomiast dokumentem uprawniającym do podjęcia pracy na terytorium Polski. Procedura wpisu zaproszenia do ewidencji zaproszeń nie jest właściwa w przypadku, gdy celem pobytu na terenie Rzeczypospolitej Polskiej ma być wykonywanie pracy.
+Kto może być Zapraszającym?
+- obywatel polski zamieszkujący na terytorium Rzeczypospolitej Polskiej, obywatel innego państwa członkowskiego Unii Europejskiej, państwa członkowskiego Europejskiego Stowarzyszenia Wolnego Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej, obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mówi art. 10 ust. 1 lit. b i d Umowy Wystąpienia, lub członek jego rodziny, zamieszkujący na terytorium Rzeczypospolitej Polskiej i posiadający prawo pobytu lub prawo stałego pobytu na tym terytorium,
+- cudzoziemiec przebywający bezpośrednio przed wystawieniem zaproszenia legalnie i nieprzerwanie co najmniej przez okres 5 lat na terytorium Rzeczypospolitej Polskiej lub posiadający zezwolenie na pobyt stały lub zezwolenie na pobyt rezydenta długoterminowego UE,
+- osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej mająca siedzibę na terytorium Rzeczypospolitej Polskiej.
+Jakie dokumenty należy przygotować?
+Do wypełnionego czytelnie drukowanymi literami i podpisanego wniosku o wpisanie zaproszenia do ewidencji zaproszeń należy dołączyć:
+- dokumenty potwierdzające możliwość pokrycia kosztów związanych z pobytem cudzoziemca, w tym kosztów zakwaterowania i wyżywienia, pokrycia kosztów podróży powrotnej do państwa pochodzenia lub zamieszkania albo kosztów tranzytu do państwa trzeciego, które udzieli pozwolenia na wjazd,
+- dokument potwierdzający tytuł prawny do lokalu mieszkalnego, jeżeli jako miejsce zakwaterowania zapraszanego cudzoziemca został wskazany lokal zapraszającego, albo dokument potwierdzający możliwość zakwaterowania w innym miejscu,
+- dowód wniesienia opłaty skarbowej w kwocie 27 zł.
+W przypadku osoby fizycznej potwierdzeniem posiadania źródła dochodu lub środków materialnych mogą być do wyboru:
+- aktualny wyciąg z rachunku bankowego z informacją o saldzie końcowym na tym rachunku wygenerowany nie wcześniej niż 30 dni przed dniem złożenia wniosku (w przypadku załączenia wyciągu z konta, saldo rachunku powinno pokrywać cały okres zaproszenia - należy posiadać 515 zł na każdy miesiąc planowanego okresu pobytu cudzoziemca w odniesieniu do siebie i każdego członka rodziny pozostającego na utrzymaniu zapraszającego oraz na każdego zapraszanego cudzoziemca w tym okresie),
+- zaświadczenie potwierdzające zatrudnienie wraz z informacją o miesięcznym wynagrodzeniu i rodzaju zawartej umowy (należy przedstawić środki finansowe w wysokości 515 zł w odniesieniu do siebie i każdego członka rodziny pozostającego na utrzymaniu zapraszającego oraz na każdego zapraszanego cudzoziemca w tym okresie),
+- decyzję w sprawie waloryzacji emerytury lub renty (należy przedstawić środki finansowe w wysokości 515 zł w stosunku do siebie, każdego członka rodziny pozostającego na utrzymaniu zapraszającego oraz na każdego zapraszanego cudzoziemca w tym okresie).
+W razie pokrywania powyższych kosztów wspólnie ze współmałżonkiem należy przedstawić pisemną zgodę współmałżonka na pokrywanie kosztów wraz z dokumentami potwierdzającymi środki finansowe współmałżonka. (np. wspólne konto bankowe, lub decyzja o waloryzacji emerytury).
+W przypadku osoby fizycznej prowadzącej działalność gospodarczą potwierdzeniem posiadania źródła dochodu lub środków materialnych mogą być do wyboru:
+- aktualny wyciąg z rachunku bankowego z informacją o saldzie końcowym na tym rachunku wygenerowany nie wcześniej niż 30 dni przed dniem złożenia wniosku (w przypadku załączenia wyciągu z konta, saldo rachunku powinno pokrywać cały okres zaproszenia - 515 zł na każdy miesiąc planowanego okresu pobytu cudzoziemca w odniesieniu do siebie i każdego członka rodziny pozostającego na utrzymaniu zapraszającego oraz na każdego zapraszanego cudzoziemca w tym okresie),
+- ostatnie rozliczenie z Urzędem Skarbowym dotyczące osiągniętych dochodów (kopia rocznego PIT-u wraz z załącznikami oraz dowodem nadania do Urzędu Skarbowego - oryginał do wglądu).
+W przypadku osoby prawnej:
+- aktualny wyciąg z rachunku bankowego osoby prawnej z informacją o saldzie końcowym na tym rachunku (wymagana miesięczna kwota 515 zł na każdy miesiąc planowanego pobytu oraz środki finansowe umożliwiające podróż powrotną zapraszanego cudzoziemca do kraju pochodzenia ),
+- CIT – 8 za poprzedni rok wraz z potwierdzeniem nadania do Urzędu Skarbowego.
+Wyciąg z rachunku bankowego powinien być opatrzony klauzulą bankową – dokument wygenerowany elektronicznie nie wymaga stempla ani podpisu lub opatrzony pieczątka i podpisem pracownika banku.
+Koszty podróży powrotnej zapraszanego cudzoziemca do kraju pochodzenia lub zamieszkania wynoszą:
+- 200 zł w przypadku podróży powrotnej albo tranzytu do państwa sąsiadującego z Rzecząpospolitą Polską;
+- 500 zł w przypadku podróży powrotnej albo tranzytu do państwa członkowskiego Unii Europejskiej niesąsiadującego z Rzecząpospolitą Polską lub do państwa członkowskiego Europejskiego Porozumienia Wolnego Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub do Konfederacji Szwajcarskiej;
+- 2500 zł w przypadku podróży powrotnej albo tranzytu do innego państwa niż określonego powyżej.
+Dokumentem potwierdzającym tytuł prawny do lokalu mieszkalnego, w którym ma mieszkać zapraszany Cudzoziemiec może być np.:
+- akt własności lokalu lub aktualny wypis z rejestru ksiąg wieczystych (w przypadku dołączenia do akt sprawy jedynie aktu własności działki, należy dodatkowo dołączyć potwierdzenie oddania budynku do użytkowania lub decyzję w sprawie wymiaru podatku od nieruchomości),
+- przydział lokalu spółdzielczego,
+- umowa najmu lokalu komunalnego,
+- w razie dostarczenia umowy najmu innego lokalu niż komunalny należy załączyć tytuł prawny wynajmującego do tego lokalu oraz jego zgodę na zamieszkanie Cudzoziemca w powyższym lokalu,
+- możliwość zapewnienia cudzoziemcowi zamieszkania w innym miejscu (np. rezerwacja pokoju w hotelu, hostelu, motelu lub w innych miejscach świadczących usługi hotelarskie. Rezerwacja hotelowa powinna zawierać informację, kto rezerwuje hotel, dla kogo i na jaki okres).
+Należy także pamiętać iż:
+Jeżeli akt własności lokalu nie posiada założonej księgi wieczystej należy dodatkowo dołączyć inny dokument potwierdzający prawo do władania tym lokalem np. bieżący wymiar czynszu lub decyzję w sprawie wymiaru podatku od nieruchomości.
+W przypadku dostarczenia rezerwacji hotelowej należy spełnić określone wymogi:
+- musi być ona dokonana przez zapraszającego,
+- musi być w pełni opłacona przez zapraszającego,
+- musi pokrywać się z okresem zaproszenia,
+- na dokumencie powinna pojawić się informacja o opłaceniu rezerwacji (w przypadku realizacji opłaty w terminie późniejszym należy dołączyć dokument potwierdzający dokonanie opłaty).
+Dokumenty sporządzone w języku obcym, służące za dowód w prowadzonym postępowaniu powinny być złożone wraz z ich tłumaczeniem na język polski, dokonanym przez polskiego tłumacza przysięgłego.
+Kserokopie lub wizerunki dokumentów nie potwierdzone za zgodność z oryginałem nie są dowodem w postępowaniu administracyjnym. W związku z tym uzupełnienie braku formalnego wniosku, może nastąpić poprzez dołączenie kserokopii dokumentu i okazanie jego oryginału (w przypadku osobistego stawiennictwa Urzędzie) a w przypadku przesyłania ich za pośrednictwem poczty –urzędowo potwierdzone za zgodność z oryginałem kopie (np. poświadczone notarialnie lub przez uprawnionego urzędnika państwowego).
+Miejsce złożenia dokumentów – jednostka odpowiedzialna
+Wydział Spraw Cudzoziemców
+Zachodniopomorski Urzędu Wojewódzkiego w Szczecinie
+ul. Wały Chrobrego 4,
+70-502 Szczecin
+Biuro Obsługi Interesantów jest czynne w:
+- poniedziałek: od 10:00 do 18:00
+- wtorek - piątek: od 8:00 do 15:00
+Obecnie osobista obsługa osób w Zachodniopomorskim Urzędzie Wojewódzkim odbywa się po uprzednim umówieniu terminu wizyty drogą elektroniczną na podanej stronie internetowej: https://rezerwacja.zuw.szczecin.pl (wybieramy sprawy obywateli UE i wpis zaproszenia do ewidencji zaproszeń).
+lub złożyć w jednym z niżej podanych miejsc:
+- Delegatura Zachodniopomorskiego Urzędu Wojewódzkiego w Szczecinie ul. Władysława Andersa 34, 75-626 Koszalin;
+- w jednym z terenowych punktów paszportowych w Wałczu, Szczecinku, Myśliborzu, Łobzie, Gryficach, Świnoujściu.
+Dodatkowe informacje w sprawie można uzyskać pod numerem telefonu 91 43 03 237 codziennie od poniedziałku do piątku w godzinach od 8:00 do 14:30.
+Ile kosztuje wpis zaproszenia do ewidencji?
+Opłata skarbowa wynosi 27zł.
+W jaki sposób wnosi się opłatę?
+Opłaty wnosi się w kasie organu podatkowego – Urzędu Miasta Szczecin lub na rachunek:
+Urząd Miasta Szczecin
+Wydział Podatków i Opłat Lokalnych
+pl. Armii Krajowej 1
+70 – 456 Szczecin
+20 1020 4795 0000 9302 0277 9429
+Wpisując tytuł wpłaty ”za wpisanie zaproszenia do ewidencji zaproszeń”
+Materiały
+Wniosek o wpisanie zaproszenia do ewidencji zaproszeń (obowiązujący od 5 maja 2023)
+wniosek​_o​_wpisanie​_zaproszenia do​_ewidencji​_zaproszen​_(od​_5-05-2023).PDF
+0.59MB
+Oświadczenie właściciela mieszkania
+Oświadczenie​_właściciela​_mieszkania.docx
+0.01MB
+Oświadczenie właściciela mieszkania (z numerem księgi wieczystej)
+Oświadczenie​_właściciela​_mieszkania​_(z​_numerem​_księgi​_wieczstej).docx
+0.01MB
+Podstawa prawna
+Rozdział 3 ustawy z dnia 12 grudnia 2013r. o cudzoziemcach (Dz. U. z 2023r. poz. 519, 185, 547)
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 16.03.2023r. w sprawie wzoru zaproszenia, wzoru formularza wniosku o wpisanie zaproszenia do ewidencji zaproszeń oraz wysokości środków, które powinien posiadać zapraszający (Dz. U. z 2023r. poz. 637)
+Ustawa z dnia 16 listopada 2006r. o opłacie skarbowej (Dz. U. z 2022r. poz. 2142,2236, z 2023r. poz. 412)
