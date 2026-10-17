@@ -2,9 +2,11 @@
 # Lessons from mistakes (docs/solutions/README.md):
 # - fail when the lessons index is stale or too big, a lesson's check file is missing, or a doc table shows
 #   a bare status word ("Fixed") for our own change;
+# - fail when a staged file looks like interview material (audio, raw notes, consents): the repository is public;
 # - print the rules that concern the staged files, as a last reminder.
 root="$(git rev-parse --show-toplevel)"
 node "$root/tools/lessons/index.mjs" --check >/dev/null || { node "$root/tools/lessons/index.mjs" --check; exit 1; }
 node "$root/tools/lint-docs.mjs" >/dev/null || { node "$root/tools/lint-docs.mjs"; exit 1; }
+node "$root/tools/privacy/interview-data.mjs" --staged >/dev/null || { node "$root/tools/privacy/interview-data.mjs" --staged; exit 1; }
 node "$root/tools/lessons/slice.mjs" --staged
 exit 0
