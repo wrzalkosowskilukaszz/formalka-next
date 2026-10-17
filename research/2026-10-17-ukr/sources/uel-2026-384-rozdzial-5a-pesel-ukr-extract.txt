@@ -1,0 +1,258 @@
+# Ustawa z 24.09.2010 o ewidencji ludności, consolidated text Dz.U. 2026 poz. 384 (obwieszczenie of 12.03.2026, legal state 10.03.2026; it includes Dz.U. 2026 poz. 203): Rozdział 5a, PESEL for temporary protection beneficiaries and the UKR status
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb. pdftotext -layout.
+# Later amendments (tools/sources/amendments.mjs DU/2010/1427 2026-03-05): Dz.U. 2025 poz. 1794, whose changes to this act (its art. 5: art. 8 pkt 24, 10 ust. 8, 23i, 23j, 43) are outside chapter 5a; Dz.U. 2026 poz. 1206, from 11.01.2027, not checked.
+
+                                                            Rozdział 5a28)
+            Zasady i tryb nadawania numeru PESEL beneficjentom ochrony czasowej, zarządzania statusem
+      tych cudzoziemców, zasady i sposób prowadzenia rejestru beneficjentów ochrony czasowej oraz zasady i tryb
+                                        udostępniania danych z tego rejestru
+
+     Art. 44a. 1. Beneficjentowi ochrony czasowej w rozumieniu art. 2 pkt 1a ustawy z dnia 13 czerwca 2003 r. o udziela-
+niu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej nadaje się numer PESEL na wniosek, o którym mowa
+w art. 110a ust. 1 tej ustawy.
+      2. Beneficjentowi ochrony czasowej w rozumieniu art. 2 pkt 1a ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzo-
+ziemcom ochrony na terytorium Rzeczypospolitej Polskiej, któremu numer PESEL nadano przed dniem wejścia w życie
+decyzji Rady Unii Europejskiej stwierdzającej istnienie masowego napływu wysiedleńców, nadaje się w rejestrze PESEL
+status, o którym mowa w art. 8 pkt 24a lit. d, i wprowadza się jego dane do rejestru, o którym mowa w art. 44c ust. 1.
+     3. Wniosek, o którym mowa w ust. 1, beneficjent ochrony czasowej składa osobiście w siedzibie organu gminy na piś-
+mie utrwalonym w postaci papierowej, opatrzonym własnoręcznym czytelnym podpisem wnioskodawcy, wypełnionym
+przez wnioskodawcę albo przez pracownika organu gminy na podstawie danych podanych przez wnioskodawcę.
+     4. W imieniu osoby nieposiadającej zdolności do czynności prawnych lub posiadającej ograniczoną zdolność do czyn-
+ności prawnych ubiegającej się o nadanie numeru PESEL albo osoby, która ze względu na stan zdrowia lub niepełnospraw-
+ność nie jest w stanie samodzielnie złożyć wniosku, wniosek, o którym mowa w ust. 1, składa jedno z rodziców, opiekun,
+kurator, opiekun tymczasowy, o którym mowa w art. 113 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziem-
+com ochrony na terytorium Rzeczypospolitej Polskiej, lub osoba sprawująca faktyczną pieczę nad dzieckiem, a w przypadku
+braku takich osób numer PESEL może zostać nadany z urzędu.
+     5. Złożenie w siedzibie organu gminy wniosku, o którym mowa w ust. 1, w imieniu osoby nieposiadającej zdolności
+do czynności prawnych lub posiadającej ograniczoną zdolność do czynności prawnych wymaga jej obecności przy składaniu
+wniosku.
+       6. Wniosek, o którym mowa w ust. 1, zawiera:
+1)     imię (imiona);
+2)     nazwisko;
+3)     unikalny numer ewidencyjny nadany przez organ państwa pochodzenia, jeżeli występuje;
+4)     obywatelstwo;
+5)     imię matki osoby małoletniej, o ile zostało udokumentowane;
+6)     nazwisko matki osoby małoletniej, o ile zostało udokumentowane;
+7)     imię ojca osoby małoletniej, o ile zostało udokumentowane;
+8)     nazwisko ojca osoby małoletniej, o ile zostało udokumentowane;
+9)     numery PESEL rodziców, o ile zostały nadane i są znane;
+10) datę urodzenia;
+11) kraj urodzenia;
+12) płeć;
+13) datę wjazdu na terytorium Rzeczypospolitej Polskiej;
+14) datę i miejsce przekroczenia granicy zewnętrznej w rozumieniu art. 2 pkt 2 rozporządzenia Parlamentu Europejskiego
+    i Rady (UE) 2016/399 z dnia 9 marca 2016 r. w sprawie unijnego kodeksu zasad regulujących przepływ osób przez
+    granice (kodeks graniczny Schengen), niebędącej granicą Rzeczypospolitej Polskiej, jeżeli wjazd na terytorium
+    Rzeczypospolitej Polskiej nie nastąpił bezpośrednio z terytorium objętego decyzją Rady Unii Europejskiej stwierdza-
+    jącą istnienie masowego napływu wysiedleńców;
+15) datę złożenia wniosku;
+16) adnotację o tym, czy odciski palców zostały pobrane;
+17) adnotację o wyniku lub przyczynach braku weryfikacji, o której mowa w ust. 20;
+
+
+28)   Rozdział dodany przez art. 9 pkt 3 ustawy, o której mowa w odnośniku 1.
+
+18) informacje o osobie sprawującej faktyczną opiekę nad dzieckiem obejmujące numer PESEL oraz dane, o których mowa
+    w pkt 1, 2, 4, 10 i 13 oraz art. 8 pkt 24, oraz wskazanie stosunku pokrewieństwa z dzieckiem – jeżeli taki istnieje,
+    a w przypadku jego braku – innej relacji łączącej tę osobę z dzieckiem;
+19) oświadczenie o przybyciu na terytorium Rzeczypospolitej Polskiej z terytorium objętego decyzją Rady Unii Europej-
+    skiej stwierdzającą istnienie masowego napływu wysiedleńców;
+20) oświadczenie o byciu:
+     a)   małżonkiem obywatela kraju objętego decyzją Rady Unii Europejskiej stwierdzającą istnienie masowego napływu
+          wysiedleńców,
+     b) członkiem najbliższej rodziny obywatela kraju objętego decyzją Rady Unii Europejskiej stwierdzającą istnienie
+        masowego napływu wysiedleńców,
+     c)   dzieckiem urodzonym na terytorium Rzeczypospolitej Polskiej przez matkę, będącą beneficjentem ochrony czasowej
+          w rozumieniu ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospo-
+          litej Polskiej,
+     d) małoletnim dzieckiem beneficjenta ochrony czasowej lub małżonka beneficjenta ochrony czasowej w rozumieniu
+        ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej;
+21) oświadczenie o braku posiadania tytułów pobytowych, o których mowa w art. 109a pkt 1 ustawy z dnia 13 czerwca
+    2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej;
+22) oświadczenie o prawdziwości danych zawartych we wniosku oraz klauzulę o treści: „Jestem świadomy odpowiedzial-
+    ności karnej za złożenie fałszywego oświadczenia”;
+23) własnoręczny czytelny podpis wnioskodawcy albo adnotację pracownika organu gminy o przyczynie braku podpisu;
+24) własnoręczny podpis osoby ubiegającej się o nadanie numeru PESEL, która ukończyła 12. rok życia, albo adnotację
+    pracownika organu gminy o przyczynie braku podpisu.
+     7. Wniosek, o którym mowa w ust. 1, może zawierać:
+1)   adres poczty elektronicznej;
+2)   numer telefonu komórkowego;
+3)   zgodę na:
+     a)   wprowadzenie danych, o których mowa w pkt 1 lub 2, do rejestru danych kontaktowych osób fizycznych, o którym
+          mowa w art. 20h ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania
+          publiczne,
+     b) potwierdzenie profilu zaufanego, o którym mowa w art. 5 pkt 14 ustawy z dnia 17 lutego 2005 r. o informatyzacji
+        działalności podmiotów realizujących zadania publiczne.
+      8. Do danych, o których mowa w ust. 6, stosuje się sposób transliteracji określony w art. 14 ust. 2 ustawy z dnia
+25 listopada 2004 r. o zawodzie tłumacza przysięgłego (Dz. U. z 2019 r. poz. 1326).
+     9. Do wniosku, o którym mowa w ust. 1, załącza się fotografię spełniającą wymagania określone w art. 29 ustawy
+z dnia 6 sierpnia 2010 r. o dowodach osobistych.
+     10. Podczas składania wniosku, o którym mowa w ust. 1, pobiera się od osoby, której dotyczy wniosek, odciski palców.
+     11. Odcisków palców nie pobiera się od osoby:
+1)   która nie ukończyła 6. roku życia;
+2)   od której chwilowo fizycznie nie jest możliwe pobranie odcisków któregokolwiek z palców;
+3)   od której pobranie odcisków palców jest fizycznie niemożliwe.
+     12. Odciski palców pobiera się w sposób określony w przepisach wydanych na podstawie art. 54 ustawy z dnia 6 sierp-
+nia 2010 r. o dowodach osobistych.
+    13. Organ gminy potwierdza tożsamość na podstawie ważnego dokumentu podróży i wprowadza dane do rejestru
+PESEL.
+
+     14. Organ gminy potwierdza istnienie więzów rodzinnych, o których mowa w ust. 6 pkt 20, stosownymi dokumentami
+stanu cywilnego bądź innymi dokumentami wydanymi przez właściwe władze, chyba że istnienie tych więzi będzie możliwe
+do potwierdzenia na podstawie danych znajdujących się w rejestrze PESEL.
+     15. Oświadczenia, o których mowa w ust. 6, składa się pod rygorem odpowiedzialności karnej za złożenie fałszywego
+oświadczenia. Klauzula, o której mowa w ust. 6 pkt 22, zastępuje pouczenie organu uprawnionego do odebrania oświadcze-
+nia o odpowiedzialności karnej za złożenie fałszywego oświadczenia.
+     16. Komendant Główny Straży Granicznej zapewnia możliwość weryfikacji danych osoby, której ma zostać nadany
+numer PESEL, z danymi przetwarzanymi w rejestrze, o którym mowa w art. 110b ust. 1 ustawy z dnia 13 czerwca 2003 r.
+o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.
+     17. Minister właściwy do spraw informatyzacji, jeżeli warunki techniczne i organizacyjne to umożliwiają, udostępnia
+Komendantowi Głównemu Straży Granicznej w drodze teletransmisji danych fotografię, o której mowa w ust. 9, osoby,
+której ma zostać nadany numer PESEL, w celu potwierdzenia tożsamości i autentyczności danych tej osoby podczas wery-
+fikacji, o której mowa w ust. 16. Komendant Główny Straży Granicznej udostępnia ministrowi właściwemu do spraw infor-
+matyzacji z rejestru prowadzonego przez Komendanta Głównego Straży Granicznej, o którym mowa w art. 110b ust. 1
+ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej wynik we-
+ryfikacji wraz z imieniem, nazwiskiem, datą urodzenia, numerem PESEL – jeżeli widnieje w rejestrze, obywatelstwem,
+krajem wydania dokumentu podróży i numerem tego dokumentu, w celu zapewnienia poprawności danych wprowadzanych
+do rejestru PESEL i rejestru beneficjentów ochrony czasowej.
+     18. Kopię dokumentu, na podstawie którego dokonano ustalenia tożsamości, wraz z wnioskiem, o którym mowa
+w ust. 1, przechowuje organ gminy.
+     19. Organ gminy odmawia w drodze decyzji administracyjnej nadania numeru PESEL, w przypadku gdy:
+1)   fotografia załączona do wniosku nie spełnia wymagań określonych w art. 29 ustawy z dnia 6 sierpnia 2010 r. o dowo-
+     dach osobistych;
+2)   nie zostały pobrane odciski palców, z wyjątkiem przypadków, o których mowa w ust. 11.
+     20. Od decyzji administracyjnej, o której mowa w ust. 19, nie służy odwołanie.
+    21. Minister właściwy do spraw informatyzacji udostępni w Biuletynie Informacji Publicznej na swojej stronie
+podmiotowej:
+1)   wzór wniosku, o którym mowa w ust. 1;
+2)   wzory oświadczeń, o których mowa w ust. 6 pkt 19–21;
+3)   wzór wniosku, o którym mowa w art. 44c ust. 6.
+    22. Wzory, o których mowa w ust. 21, są sporządzane w języku polskim i języku urzędowym kraju, którego dotyczy
+decyzja Rady Unii Europejskiej stwierdzająca istnienie masowego napływu wysiedleńców.
+     23. W przypadku wyjazdu cudzoziemca z terytorium Rzeczypospolitej Polskiej w ramach granic wewnętrznych
+Rzeczypospolitej Polskiej z państwami strefy Schengen, status UKR może zostać zmieniony na podstawie oświadczenia
+o takim wyjeździe złożonego w dowolnym organie gminy przez cudzoziemca, któremu nadano ten status, lub osobę go
+reprezentującą.
+      24. Oświadczenie, o którym mowa w ust. 23, zawiera imię, nazwisko, numer PESEL cudzoziemca, któremu nadano
+status UKR, wskazanie kraju wyjazdu, deklarowaną datę tego wyjazdu oraz oświadczenie, o którym mowa w ust. 6 pkt 22.
+Kraj wyjazdu i data wyjazdu są rejestrowane w rejestrze PESEL jako wyjazd na pobyt stały lub czasowy na okres powyżej
+6 miesięcy.
+      25. Informacja o oświadczeniu, o którym mowa w ust. 23, w zakresie utraty statusu UKR w związku z wyjazdem,
+dacie utraty statusu UKR oraz powodzie utraty statusu UKR jest przekazywana do rejestru, o którym mowa w art. 110b
+ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.
+      Art. 44b. 1. Status UKR może zostać ponownie nadany na skutek ponownego złożenia wniosku, o którym mowa
+w art. 44a ust. 1. Danych beneficjenta ochrony czasowej nie wprowadza się ponownie do rejestru, o którym mowa w art. 44c
+ust. 1, z wyjątkiem odcisków palców, jeżeli nie pobrano ich przy nadaniu numeru PESEL, oraz fotografii, jeżeli wizerunek
+osoby uległ zmianie w sposób utrudniający ustalenie jej tożsamości. Datą ponownego nadania statusu UKR jest data po-
+nownego wjazdu na terytorium Rzeczypospolitej Polskiej.
+     2. Informacja, o której mowa w ust. 1, przekazywana jest do rejestru, o którym mowa w art. 110b ust. 1 ustawy z dnia
+13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.
+
+      3. W przypadku ujawnienia, że obywatelowi państwa członkowskiego Unii Europejskiej został nadany numer PESEL
+na podstawie art. 44a ust. 1 lub że takiemu obywatelowi został nadany status UKR na podstawie art. 44a ust. 2, status UKR
+jest zmieniany na status, o którym mowa w art. 8 pkt 24a lit. a. Zmiany statusu dokonuje dowolny organ gminy. Datą zmiany
+statusu jest data nadania statusu UKR.
+     4. W przypadku ujawnienia, że osobie, która posiadała jeden z dokumentów potwierdzających uprawnienie, o którym
+mowa w art. 109b ust. 1 pkt 4 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczy-
+pospolitej Polskiej, został nadany numer PESEL na podstawie art. 44a ust. 1 lub że takiej osobie został nadany status UKR
+na podstawie art. 44a ust. 2, status UKR zmienia się na status, o którym mowa w art. 8 pkt 24a lit. c. Zmiany statusu doko-
+nuje dowolny organ gminy. Datą zmiany statusu jest data nadania statusu UKR.
+     5. Dane, o których mowa w art. 8 pkt 1, 2, 3a–6, 9–11, 24, pkt 24a lit. d, pkt 24b i 26, minister właściwy do spraw
+informatyzacji przekazuje z rejestru PESEL do rejestru, o którym mowa w art. 110b ust. 1 ustawy z dnia 13 czerwca 2003 r.
+o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.
+       6. Minister właściwy do spraw informatyzacji przekazuje z rejestru PESEL do rejestru, o którym mowa w art. 110b
+ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej,
+informację o zmianie danych lub usunięciu niezgodności w danych, o których mowa w art. 8 pkt 1, 4–6, 9–11, 24, pkt 24a
+lit. d i pkt 24b.
+
+    Art. 44c. 1. Minister właściwy do spraw informatyzacji prowadzi rejestr beneficjentów ochrony czasowej, którym
+nadano numer PESEL, w sposób określony w art. 44a.
+     2. Rejestr, o którym mowa w ust. 1, jest rejestrem centralnym prowadzonym w systemie teleinformatycznym.
+     3. Prowadząc rejestr, o którym mowa w ust. 1, minister właściwy do sprawy informatyzacji:
+1)   zapewnia ochronę przed nieuprawnionym dostępem do rejestru;
+2)   zapewnia integralność danych w rejestrze;
+3)   zapewnia dostępność systemu teleinformatycznego, w którym rejestr jest prowadzony, dla podmiotów przetwarzają-
+     cych dane w rejestrze;
+4)   przeciwdziała uszkodzeniom systemu teleinformatycznego, w którym rejestr jest prowadzony;
+5)   określa zasady bezpieczeństwa przetwarzanych danych, w tym danych osobowych;
+6)   zapewnia rozliczalność działań dokonywanych na danych rejestru.
+   4. Minister właściwy do spraw informatyzacji jest administratorem danych przetwarzanych w rejestrze, o którym
+mowa w ust. 1.
+     5. W rejestrze, o którym mowa w ust. 1, gromadzi się:
+1)   dane, o których mowa w art. 44a ust. 6 pkt 1–4, 10–16 i 18;
+2)   numer PESEL;
+3)   fotografię, o której mowa w art. 44a ust. 9;
+4)   odciski palców;
+5)   odwzorowanie własnoręcznego podpisu osoby, która ukończyła 12. rok życia, z wyjątkiem osoby, która nie może zło-
+     żyć podpisu.
+     6. W przypadku braku w rejestrze, o którym mowa w ust. 1, danych, o których mowa w ust. 5 pkt 4 lub 5, beneficjent
+ochrony czasowej, któremu nadano numer PESEL, w sposób określony w art. 44a, składa w dowolnym organie gminy wnio-
+sek o uzupełnienie danych w rejestrze. Organ gminy, w którym złożono wniosek, wprowadza te dane do rejestru.
+      7. W imieniu osoby nieposiadającej zdolności do czynności prawnych lub posiadającej ograniczoną zdolność do czyn-
+ności prawnych wniosek, o którym mowa w ust. 6, składa jedno z rodziców, opiekun, opiekun tymczasowy, o którym mowa
+w art. 113 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Pol-
+skiej, lub kurator.
+     8. Wniosek, o którym mowa w ust. 6, zawiera:
+1)   imię (imiona);
+2)   nazwisko;
+3)   obywatelstwo;
+
+4)   numer PESEL;
+5)   serię, numer i datę ważności ważnego dokumentu podróży;
+6)   imię matki osoby małoletniej, o ile zostało udokumentowane;
+7)   nazwisko matki osoby małoletniej, o ile zostało udokumentowane;
+8)   imię ojca osoby małoletniej, o ile zostało udokumentowane;
+9)   nazwisko ojca osoby małoletniej, o ile zostało udokumentowane;
+10) numery PESEL rodziców, o ile zostały nadane i są znane;
+11) datę urodzenia;
+12) adnotację o tym, czy odciski palców zostały pobrane;
+13) oświadczenie o prawdziwości danych zawartych we wniosku oraz klauzulę o treści: „Jestem świadomy odpowiedzial-
+    ności karnej za złożenie fałszywego oświadczenia”;
+14) własnoręczny czytelny podpis wnioskodawcy albo adnotację pracownika organu gminy o przyczynie braku podpisu;
+15) własnoręczny podpis osoby, której dane mają zostać uzupełnione w rejestrze, która ukończyła 12. rok życia, albo
+    adnotację pracownika organu gminy o przyczynie braku podpisu;
+16) nazwisko i imię (imiona), rodzaj, serię i numer dokumentu tożsamości wnioskodawcy.
+     9. Do wniosku, o którym mowa w ust. 6, stosuje się odpowiednio przepisy art. 44a ust. 8, ust. 11 pkt 1 i 3 oraz ust. 12.
+     10. Danych zgromadzonych w rejestrze, o którym mowa w ust. 1, nie usuwa się.
+     11. Po zarejestrowaniu w rejestrze PESEL zmiany danych osoby, której dane są przetwarzane w rejestrze, o którym
+mowa w ust. 1, w tym danych osoby sprawującej faktyczną opiekę nad dzieckiem, jeżeli został jej nadany numer PESEL,
+zmienione dane, o których mowa w art. 8 pkt 1, 4–6 i 9–11, z rejestru PESEL są przekazywane do rejestru, o którym mowa
+w ust. 1.
+     12. Minister właściwy do spraw informatyzacji udostępnia zgromadzone w rejestrze, o którym mowa w ust. 1, dane,
+o których mowa w:
+1)   ust. 5:
+     a)   Policji,
+     b) Straży Granicznej,
+     c)   Agencji Bezpieczeństwa Wewnętrznego,
+     d) Agencji Wywiadu,
+     e)   Służbie Kontrwywiadu Wojskowego,
+     f)   Służbie Wywiadu Wojskowego,
+     g) Centralnemu Biuru Antykorupcyjnemu,
+     h) Służbie Ochrony Państwa,
+     i)   Urzędowi do Spraw Cudzoziemców,
+     j)   gminom;
+2)   ust. 5 pkt 1–3:
+     a)   ministrowi właściwemu do spraw pracy,
+     b) ministrowi właściwemu do spraw zdrowia,
+     c)   ministrowi właściwemu do spraw rodziny,
+     d) ministrowi właściwemu do spraw zabezpieczenia społecznego,
+     e)   organom Krajowej Administracji Skarbowej,
+     f)   Zakładowi Ubezpieczeń Społecznych,
+
+     g) organowi właściwemu w rozumieniu ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U.
+        z 2025 r. poz. 1208 oraz z 2026 r. poz. 203), za pośrednictwem ministra właściwego do spraw rodziny,
+     h) Narodowemu Funduszowi Zdrowia,
+     i)   jednostce podległej ministrowi właściwemu do spraw zdrowia właściwej w zakresie systemów informacyjnych
+          ochrony zdrowia,
+     j)   ministrowi właściwemu do spraw gospodarki,
+     k) powiatom i województwom,
+     l)   wojewodom,
+     m) ministrowi właściwemu do spraw rozwoju regionalnego – w zakresie niezbędnym do realizacji jego ustawowych
+        zadań, po oświadczeniu spełnienia wymagań, o których mowa w art. 66 ust. 2 ustawy z dnia 6 sierpnia 2010 r.
+        o dowodach osobistych,
+     n) Państwowej Inspekcji Pracy,
+     o) Kasie Rolniczego Ubezpieczenia Społecznego;
+3)   ust. 5 pkt 2 oraz art. 44a ust. 6 pkt 1–4, 9–15 i 18 – Głównemu Urzędowi Statystycznemu w zakresie niezbędnym do
+     realizacji jego ustawowych zadań, po oświadczeniu spełnienia wymagań, o których mowa w art. 66 ust. 2 ustawy
+     z dnia 6 sierpnia 2010 r. o dowodach osobistych.
+

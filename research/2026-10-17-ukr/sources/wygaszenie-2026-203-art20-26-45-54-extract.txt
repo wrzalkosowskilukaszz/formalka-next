@@ -1,0 +1,167 @@
+# Ustawa z 23.01.2026 o wygaszeniu rozwiązań wynikających z ustawy o pomocy obywatelom Ukrainy, Dz.U. 2026 poz. 203 (in force 5.03.2026, with exceptions in its art. 54): transitional art. 20-26 and 45, entry into force art. 54
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf, retrieved 2026-10-17, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275. pdftotext -layout.
+# Its changes to other acts are read in their consolidated texts, which already include it: the protection act (Dz.U. 2026 poz. 862), the special act (Dz.U. 2026 poz. 1293), the act on population records (Dz.U. 2026 poz. 384, legal state 10.03.2026; chapter 5a extracted here) and the act on foreigners (not consolidated since; Dz.U. 2025 poz. 1079 with this act and 1794).
+
+    Art. 20. 1. Zaświadczenie, o którym mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, wydane przed dniem wejścia
+w życie niniejszej ustawy zachowuje ważność do dnia 4 marca 2027 r., chyba że:
+1)   cudzoziemcowi, któremu zostało wydane to zaświadczenie, zostanie nadany numer PESEL ze statusem UKR, o którym
+     mowa w art. 8 pkt 24a lit. d ustawy zmienianej w art. 9 w brzmieniu nadanym niniejszą ustawą, zwany dalej „statusem
+     UKR”, lub
+2)   zachodzą podstawy do unieważnienia tego zaświadczenia, o których mowa w art. 110 ust. 10 ustawy zmienianej w art. 4.
+   2. W przypadkach, o których mowa w ust. 1, Szef Urzędu do Spraw Cudzoziemców unieważnia zaświadczenie, o którym
+mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, w sposób określony w art. 110 ust. 10a ustawy zmienianej w art. 4.
+     3. W przypadku zachowania ważności zaświadczenia, o którym mowa w art. 110 ust. 5 ustawy zmienianej w art. 4,
+w okresie jego ważności zapewnia się opiekę medyczną oraz przyznaje pomoc przez zakwaterowanie i wyżywienie w postaci
+świadczenia pieniężnego na podstawie art. 112 ustawy zmienianej w art. 4 w brzmieniu dotychczasowym.
+
+     4. Jeżeli cudzoziemiec, któremu przed dniem wejścia w życie niniejszej ustawy wydano zaświadczenie, o którym
+mowa w art. 110 ust. 5 ustawy zmienianej w art. 4, które do dnia wejścia w życie niniejszej ustawy nie zostało unieważ-
+nione, w okresie od dnia 24 lutego 2022 r. i przed wejściem w życie niniejszej ustawy przybył legalnie na terytorium Rzeczy-
+pospolitej Polskiej z terytorium Ukrainy w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa,
+może być mu nadany na jego wniosek numer PESEL ze statusem UKR bez konieczności ponownego przybycia na teryto-
+rium Rzeczypospolitej Polskiej.
+
+      Art. 21. 1. W okresie od dnia wejścia w życie niniejszej ustawy do końca okresu obowiązywania ochrony czasowej,
+wprowadzonej decyzją wykonawczą Rady (UE) 2022/382 z dnia 4 marca 2022 r. stwierdzającą istnienie masowego napływu
+wysiedleńców z Ukrainy w rozumieniu art. 5 dyrektywy 2001/55/WE i skutkującą wprowadzeniem tymczasowej ochrony
+(Dz. Urz. UE L 71 z 04.03.2022, str. 1), określonego w decyzjach Rady Unii Europejskiej wydawanych na podstawie
+art. 4 ust. 2 dyrektywy Rady 2001/55/WE z dnia 20 lipca 2001 r. w sprawie minimalnych standardów przyznawania tym-
+czasowej ochrony na wypadek masowego napływu wysiedleńców oraz środków wspierających równowagę wysiłków między
+Państwami Członkowskimi związanych z przyjęciem takich osób wraz z jego następstwami (Dz. Urz. UE L 212 z 07.08.2001,
+str. 12 – Dz. Urz. UE Polskie wydanie specjalne, rozdz. 19, t. 4, str. 162), funkcję krajowego punktu kontaktowego, o którym
+mowa w art. 27 tej dyrektywy, ustanowionego do celów wymiany z właściwymi organami innych niż Rzeczpospolita Polska
+państw członkowskich Unii Europejskiej informacji dotyczących osób korzystających z ochrony czasowej, pełni Komendant
+Główny Straży Granicznej.
+     2. W okresie, o którym mowa w ust. 1, Komendant Główny Straży Granicznej zapewnia udostępnienie w drodze tele-
+transmisji danych, o których mowa w art. 110b ust. 2 ustawy zmienianej w art. 4:
+1)   następującym podmiotom, w zakresie niezbędnym do realizacji ich zadań ustawowych:
+     a)   Agencji Bezpieczeństwa Wewnętrznego,
+     b) Agencji Wywiadu,
+     c)   Centralnemu Biuru Antykorupcyjnemu,
+     d) Szefowi Służby Kontrwywiadu Wojskowego,
+     e)   Szefowi Służby Wywiadu Wojskowego,
+     f)   ministrowi właściwemu do spraw zdrowia,
+     g) ministrowi właściwemu do spraw pracy,
+     h) ministrowi właściwemu do spraw rodziny,
+     i)   ministrowi właściwemu do spraw zabezpieczenia społecznego,
+     j)   ministrowi właściwemu do spraw informatyzacji,
+     k) ministrowi właściwemu do spraw gospodarki,
+     l)   Szefowi Urzędu do Spraw Cudzoziemców,
+     m) organom Policji,
+     n) Komendantowi Służby Ochrony Państwa,
+     o) organom Krajowej Administracji Skarbowej,
+     p) Narodowemu Funduszowi Zdrowia,
+     q) Państwowej Inspekcji Pracy,
+     r)   Kasie Rolniczego Ubezpieczenia Społecznego,
+     s)   Głównemu Urzędowi Statystycznemu,
+     t)   jednostce podległej ministrowi właściwemu do spraw zdrowia, właściwej w zakresie systemów informacyjnych
+          ochrony zdrowia,
+     u) wojewodom,
+     v) ministrowi właściwemu do spraw rozwoju regionalnego;
+
+2)   organowi właściwemu w rozumieniu ustawy zmienianej w art. 5 w celu realizacji zadania, o którym mowa w art. 22c
+     ustawy zmienianej w art. 5, za pośrednictwem ministra właściwego do spraw rodziny, oraz Zakładowi Ubezpieczeń
+     Społecznych w zakresie niezbędnym do realizacji zadań ustawowych;
+3)   ośrodkowi pomocy społecznej, centrum usług społecznych – w przypadku przekształcenia ośrodka pomocy społecznej
+     w centrum usług społecznych na podstawie przepisów ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych
+     przez centrum usług społecznych (Dz. U. z 2026 r. poz. 165) oraz powiatowemu centrum pomocy rodzinie, za pośred-
+     nictwem ministra właściwego do spraw zabezpieczenia społecznego, w zakresie niezbędnym do realizacji zadań okre-
+     ślonych w ustawie zmienianej w art. 6 w brzmieniu nadanym niniejszą ustawą.
+     Art. 22. 1. Obywatel Ukrainy, który przed dniem wejścia w życie niniejszej ustawy znajdował się w trakcie leczenia
+szpitalnego udzielanego na podstawie art. 37 ustawy zmienianej w art. 17, jest uprawniony do kontynuacji tego leczenia, aż
+do zakończenia hospitalizacji, jednak niedłużej niż do dnia 4 marca 2027 r.
+     2. Do finansowania kosztów świadczeń, o których mowa w ust. 1, stosuje się art. 112c ust. 6 ustawy zmienianej w art. 4.
+     Art. 23. Posiadanie w dniu 4 marca 2026 r. profilu zaufanego potwierdzonego na podstawie art. 9 ustawy zmienianej
+w art. 17 jest równoznaczne z posiadaniem profilu zaufanego, o którym mowa w art. 110c ustawy zmienianej w art. 4.
+     Art. 24. 1. Z dniem wejścia w życie niniejszej ustawy:
+1)   rejestr, o którym mowa w art. 3 ust. 3 ustawy zmienianej w art. 17, staje się rejestrem, o którym mowa w art. 110b
+     ust. 1 ustawy zmienianej w art. 4;
+2)   pobyt osoby posiadającej numer PESEL ze statusem UKR nadany na podstawie art. 4 ust. 1 lub 1a ustawy zmienianej
+     w art. 17, na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na podstawie art. 106 ustawy zmienianej
+     w art. 4;
+3)   rejestr, o którym mowa w art. 6 ust. 1 ustawy zmienianej w art. 17, staje się rejestrem, o którym mowa w art. 44c ust. 1
+     ustawy zmienianej w art. 9;
+4)   dokument elektroniczny, o którym mowa w art. 10 ustawy zmienianej w art. 17, staje się dokumentem elektronicznym,
+     o którym mowa w art. 110d ustawy zmienianej w art. 4;
+5)   opiekun tymczasowy, o którym mowa w art. 25 ust. 1 ustawy zmienianej w art. 17, staje się opiekunem tymczasowym,
+     o którym mowa w art. 113 ustawy zmienianej w art. 4;
+6)   ewidencja małoletnich, o której mowa w art. 25a ustawy zmienianej w art. 17, staje się ewidencją małoletnich, o której
+     mowa w art. 113c ustawy zmienianej w art. 4;
+7)   opiekun wskazany przez władze ukraińskie, o którym mowa w art. 251 ustawy zmienianej w art. 17, staje się opiekunem
+     wskazanym przez władze kraju pochodzenia, o którym mowa w art. 113a ustawy zmienianej w art. 4.
+     2. Obywatel Ukrainy, który w dniu wejścia w życie niniejszej ustawy przebywa w pieczy zastępczej, o której mowa
+w art. 27a ustawy zmienianej w art. 17, może pozostać w tej pieczy do ukończenia 25. roku życia na dotychczasowych
+zasadach, ale niedłużej niż do zakończenia okresu pobytu, uznawanego za legalny na terytorium Rzeczypospolitej Polskiej.
+    Art. 25. 1. Jeżeli numer PESEL, o którym mowa w art. 4 ust. 1 ustawy zmienianej w art. 17, został nadany na podstawie
+oświadczenia, cudzoziemiec jest obowiązany do potwierdzenia swojej tożsamości w dowolnym organie gminy na podstawie
+ważnego dokumentu podróży, do dnia 31 sierpnia 2026 r.
+      2. Z dniem 1 września 2026 r. status UKR zostaje zmieniony przez ministra właściwego do spraw informatyzacji na
+status NUE, o którym mowa w art. 8 pkt 24a lit. c ustawy zmienianej w art. 9, osobom, które miały nadany numer PESEL
+ze statusem UKR na podstawie oświadczenia i do tego dnia nie potwierdziły swojej tożsamości w sposób wskazany w ust. 1.
+    3. W przypadku, o którym mowa w ust. 2, cudzoziemiec traci uprawnienie, o którym mowa w art. 106 ust. 1 ustawy
+zmienianej w art. 4 w brzmieniu nadanym niniejszą ustawą.
+     Art. 26. 1. Jeżeli numer PESEL, o którym mowa w art. 4 ust. 1 lub 1a ustawy zmienianej w art. 17, został nadany
+na podstawie Karty Polaka, innego dokumentu ze zdjęciem umożliwiającego ustalenie tożsamości lub dokumentu potwier-
+dzającego urodzenie, cudzoziemiec jest obowiązany do potwierdzenia swojej tożsamości w dowolnym organie gminy na
+podstawie ważnego dokumentu podróży w terminie 60 dni od daty wydania dokumentu podróży. Organ gminy dokonuje
+w rejestrze PESEL rejestracji zmiany danych cudzoziemca oraz danych dokumentu podróży, o których mowa w art. 8 pkt 24
+ustawy zmienianej w art. 9.
+    2. Obowiązek, o którym mowa w ust. 1, dotyczy także cudzoziemca, któremu numer PESEL został nadany na podstawie
+nieważnego dokumentu podróży lub którego dokument podróży utracił ważność.
+    3. Obowiązek, o którym mowa w ust. 1, nie dotyczy cudzoziemców, którzy po nadaniu numeru PESEL potwierdzili
+swoją tożsamość w organie gminy na podstawie ważnego dokumentu podróży.
+
+[...]
+      Art. 45. 1. Do cudzoziemca, którego pobyt na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na podstawie
+art. 106 ust. 1 ustawy zmienianej w art. 4 w brzmieniu nadanym niniejszą ustawą, i który posiada status UKR, nie stosuje się
+art. 99 ust. 1 pkt 4 i art. 131 pkt 8 ustawy zmienianej w art. 12 w zakresie, w jakim przepis ten odwołuje się do udzielenia
+ochrony czasowej, jeżeli ubiega się on o udzielenie:
+1)   zezwolenia na pobyt czasowy i pracę, o którym mowa w art. 114 ust. 1 ustawy zmienianej w art. 12, lub
+2)   zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji, o którym
+     mowa w art. 127 ustawy zmienianej w art. 12, lub
+3)   zezwolenia na pobyt czasowy w celu prowadzenia działalności gospodarczej, o którym mowa w art. 142 ust. 1 lub 3
+     ustawy zmienianej w art. 12, lub
+4)   zezwolenia na pobyt czasowy dla członka rodziny obywatela Rzeczypospolitej Polskiej, o którym mowa w art. 158
+     ust. 1 ustawy zmienianej w art. 12, lub
+5)   zezwolenia na pobyt czasowy w celu połączenia się z rodziną, o którym mowa w art. 159 ust. 1 ustawy zmienianej
+     w art. 12.
+      2. Jeżeli cudzoziemiec, o którym mowa w ust. 1, ubiega się o udzielenie zezwolenia na pobyt czasowy w celu połącze-
+nia się z rodziną w przypadku, o którym mowa w ust. 1 pkt 5, i jest członkiem rodziny cudzoziemca przebywającego na
+terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt czasowy, nie stosuje się przepisu art. 159 ust. 1
+pkt 1 lit. e ustawy zmienianej w art. 12 w zakresie, w jakim przepis ten przewiduje minimalny okres pobytu tego cudzo-
+ziemca na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt czasowy, minimalną liczbę udzielonych
+mu zezwoleń na pobyt czasowy oraz minimalny okres, na jaki zostało udzielone zezwolenie na pobyt czasowy, na podstawie
+którego ten cudzoziemiec zamieszkuje na terytorium Rzeczypospolitej Polskiej bezpośrednio przed złożeniem wniosku
+o udzielenie zezwolenia na pobyt czasowy w celu połączenia się z rodziną.
+      3. W przypadku, o którym mowa w ust. 1, minister właściwy do spraw informatyzacji zapewnia wojewodzie, za po-
+średnictwem systemu teleinformatycznego, dostęp do odcisków palców zgromadzonych w rejestrze, o którym mowa w art. 44c
+ust. 1 ustawy zmienianej w art. 9, i możliwość ich umieszczenia w rejestrze, o którym mowa w art. 428 ust. 1 pkt 2 lit. d
+ustawy zmienianej w art. 12, w celu wydania cudzoziemcowi, o którym mowa w ust. 1, karty pobytu.
+     4. Odciski palców pobrane w przypadku, o którym mowa w art. 44a ust. 10 ustawy zmienianej w art. 9, umieszcza się
+w karcie pobytu wydanej cudzoziemcowi, o którym mowa w ust. 1, w związku z wydaniem mu jednego z zezwoleń na pobyt
+czasowy, o którym mowa w ust. 1.
+     5. W przypadku, o którym mowa w ust. 1, nie stosuje się przepisów art. 106a ust. 1, art. 106b ust. 1 w zakresie, w jakim
+przepis ten odwołuje się do pobierania odcisków linii papilarnych, i art. 106e ust. 1 ustawy zmienianej w art. 12. W uzasad-
+nionych przypadkach wojewoda może w toku postępowania wezwać cudzoziemca do przedłożenia ważnego dokumentu
+podróży lub jego kopii lub do przedłożenia innego dokumentu stwierdzającego tożsamość, jeżeli zachodzi przypadek, o którym
+mowa w art. 106a ust. 2 ustawy zmienianej w art. 12. Cudzoziemiec, o którym mowa w ust. 1, składa wzór podpisu w celu
+umieszczenia go w karcie pobytu na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1 ustawy
+zmienianej w art. 12 lub za pomocą udostępnionego przez wojewodę urządzenia umożliwiającego złożenie i odwzoro-
+wanie podpisu.
+      6. Jeżeli w przypadku, o którym mowa w ust. 1, odciski palców cudzoziemca, o którym mowa w ust. 1, nie znajdują się
+w rejestrze, o którym mowa w art. 44c ust. 1 ustawy zmienianej w art. 9, lub nie jest możliwe ich umieszczenie, za pośred-
+nictwem systemu teleinformatycznego, w rejestrze, o którym mowa w art. 428 ust. 1 pkt 2 lit. d ustawy zmienianej w art. 12,
+wojewoda pobiera od tego cudzoziemca odciski palców w sposób określony w przepisach wydanych na podstawie art. 107
+ust. 1 ustawy zmienianej w art. 12 po udzieleniu temu cudzoziemcowi zezwolenia na pobyt czasowy.
+[...]
+     Art. 54. Ustawa wchodzi w życie z dniem 5 marca 2026 r., z wyjątkiem:
+1)   art. 17 pkt 3 lit. d tiret drugie i pkt 51 w zakresie uchylenia art. 110, które wchodzą w życie z dniem 1 stycznia 2027 r.;
+2)   art. 17 pkt 46 i 51 w zakresie uchylenia art. 113, które wchodzą w życie z dniem 5 marca 2027 r.;
+3)   art. 14, który wchodzi w życie z dniem 1 września 2027 r.;
+4)   art. 17 pkt 22–31, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+
+                                                                           Prezydent Rzeczypospolitej Polskiej: K. Nawrocki
+

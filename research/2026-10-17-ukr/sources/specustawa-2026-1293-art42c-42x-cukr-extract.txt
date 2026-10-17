@@ -1,0 +1,349 @@
+# Ustawa z 12.03.2022 o pomocy obywatelom Ukrainy (the special act), consolidated text Dz.U. 2026 poz. 1293 (legal state 8.09.2026): art. 42c-42x, the CUKR residence card for holders of the UKR status
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf, retrieved 2026-10-16, sha256 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177. pdftotext -layout.
+# Art. 42c-42w apply from 4.05.2026 (footnote 68: Komunikat MSWiA of 10.04.2026, M.P. 2026 poz. 371). No amendments after 8.09.2026 (tools/sources/amendments.mjs DU/2022/583 2026-09-08, on 2026-10-16). Art. 100d is extracted in research/2026-10-16-residence/sources/.
+
+     Art. 42c. Obywatelowi Ukrainy, którego pobyt na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na pod-
+stawie art. 106 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej,
+wydaje się, na jego wniosek, kartę pobytu, o której mowa w art. 226 pkt 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziem-
+cach, jeżeli są spełnione łącznie następujące warunki:68)
+1)69) w dniu 4 czerwca 2025 r. posiadał status UKR;
+2)    w dniu złożenia wniosku o wydanie karty pobytu posiada status UKR;
+3)    posiadał nieprzerwany status UKR przynajmniej przez 365 dni.
+
+
+64) Zmiany wymienionego rozporządzenia zostały ogłoszone w Dz. Urz. UE L 115 z 29.04.2008, str. 1 oraz Dz. Urz. UE L 286 z 01.11.2017,
+    str. 9.
+65) Przez art. 17 pkt 20 lit. e ustawy, o której mowa w odnośniku 1.
+66) Przez art. 17 pkt 20 lit. f ustawy, o której mowa w odnośniku 1.
+67) Przez art. 17 pkt 21 ustawy, o której mowa w odnośniku 1.
+68) Wprowadzenie do wyliczenia ze zmianą wprowadzoną przez art. 17 pkt 22 ustawy, o której mowa w odnośniku 1; wszedł w życie
+
+    z dniem 4 maja 2026 r. na podstawie komunikatu Ministra Spraw Wewnętrznych i Administracji z dnia 10 kwietnia 2026 r. w sprawie
+    określenia dnia wdrożenia rozwiązań technicznych umożliwiających stosowanie przepisów art. 4 ust. 13d i art. 42c–42w ustawy z dnia
+    12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa oraz art. 8 pkt 24a
+    lit. c i e ustawy z dnia 24 września 2010 r. o ewidencji ludności (M.P. poz. 371), ogłoszonego na podstawie art. 33 ust. 1 ustawy z dnia
+    15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa oraz
+    niektórych innych ustaw (Dz. U. poz. 854).
+69) Ze zmianą wprowadzoną przez art. 10 pkt 18 ustawy, o której mowa w odnośniku 6; wszedł w życie z dniem 4 maja 2026 r. na pod-
+
+    stawie komunikatu, o którym mowa w odnośniku 68.
+
+      Art. 42d. Kartę pobytu, o której mowa w art. 226 pkt 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, wydaje się
+również dziecku urodzonemu na terytorium Rzeczypospolitej Polskiej przez matkę, która jest osobą, o której mowa w art. 106
+ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, jeżeli
+są spełnione łącznie następujące warunki:70)
+1)71) pobyt tego dziecka na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na podstawie art. 106 ust. 2 ustawy
+      z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej;
+2)    w dniu złożenia wniosku o wydanie karty pobytu dziecko to posiada status UKR;
+3)    matce tego dziecka wydano kartę pobytu w przypadku, o którym mowa w art. 42c.
+
+      Art. 42e. 1. Wydania karty pobytu w przypadku, o którym mowa w art. 42c, odmawia się, gdy:
+1)    obywatel Ukrainy nie spełnia warunków, o których mowa w art. 42c, lub
+2)    obowiązuje wpis danych obywatela Ukrainy do wykazu cudzoziemców, których pobyt na terytorium Rzeczypospolitej
+      Polskiej jest niepożądany, lub
+3)    dane obywatela Ukrainy znajdują się w Systemie Informacyjnym Schengen do celów odmowy wjazdu i pobytu, lub
+4)    wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego,
+      lub
+5)    obywatel Ukrainy nie uiścił opłaty za wydanie karty pobytu, lub
+6)    obywatel Ukrainy nie uiścił opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy w sposób, o którym mowa
+      w art. 42r ust. 1.
+      2. Wydania karty pobytu w przypadku, o którym mowa w art. 42d, odmawia się, jeżeli obywatel Ukrainy:
+1)    nie spełnia warunków, o których mowa w art. 42d, lub
+2)    nie uiścił opłaty za wydanie karty pobytu, lub
+3)    nie uiścił opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy w sposób, o którym mowa w art. 42r ust. 1.
+     3. W przypadkach, o których mowa w ust. 1 pkt 5 i 6 oraz ust. 2 pkt 2 i 3, nie stosuje się przepisów art. 261 ustawy
+z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego.
+
+     Art. 42f. 1. W przypadkach, o których mowa w art. 42c i art. 42d, obywatel Ukrainy składa wniosek o wydanie karty
+pobytu wyłącznie w postaci elektronicznej z wykorzystaniem usługi online w systemie teleinformatycznym prowadzonym
+przez Szefa Urzędu do Spraw Cudzoziemców na formularzu zawierającym następujące dane i informacje dotyczące tego
+obywatela Ukrainy:
+1)    imię (imiona);
+2)    imię (imiona) poprzednie;
+3)    nazwisko;
+4)    nazwiska poprzednie;
+5)    nazwisko rodowe;
+6)    imiona rodziców;
+7)    datę urodzenia;
+8)    miejsce urodzenia;
+9)    kraj urodzenia;
+10) narodowość;
+11) obywatelstwo (obywatelstwa);
+
+70) Wprowadzenie do wyliczenia ze zmianą wprowadzoną przez art. 17 pkt 23 lit. a ustawy, o której mowa w odnośniku 1; weszła w życie
+    z dniem 4 maja 2026 r. na podstawie komunikatu, o którym mowa w odnośniku 68.
+71) Ze zmianą wprowadzoną przez art. 17 pkt 23 lit. b ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+
+12) płeć;
+13) rysopis:
+      a)   wzrost w centymetrach,
+      b) kolor oczu,
+      c)   znaki szczególne;
+14) stan cywilny;
+15) numer PESEL;
+16) następujące dane dotyczące dokumentu podróży obywatela Ukrainy:
+      a)   serię i numer,
+      b) datę wydania i datę upływu ważności,
+      c)   nazwę organu wydającego,
+      d) liczbę osób wpisanych do dokumentu podróży;
+17) miejsce pobytu na terytorium Rzeczypospolitej Polskiej;
+18) informacje o karalności, o prowadzonych przeciwko obywatelowi Ukrainy postępowaniach karnych i postępowaniach
+    w sprawach o wykroczenia oraz o wydanych w stosunku do niego orzeczeniach w postępowaniu sądowym lub admini-
+    stracyjnym;
+19) oświadczenie o prawdziwości danych zawartych we wniosku oraz klauzulę o treści: „Jestem świadomy odpowiedzial-
+    ności karnej za złożenie fałszywego oświadczenia.”;
+20) datę złożenia wniosku;
+21) pouczenia.
+    2. Wniosek o wydanie karty pobytu, o którym mowa w ust. 1, może zawierać następujące dane dotyczące obywatela
+Ukrainy:
+1)    numer telefonu do kontaktu;
+2)    adres poczty elektronicznej.
+    3. Obywatel Ukrainy, składając wniosek o wydanie karty pobytu, w sposób, o którym mowa w ust. 1, dołącza do niego
+z wykorzystaniem usługi online w systemie teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw Cudzoziemców:
+1)72) fotografię spełniającą wymagania określone w art. 15 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach oraz w prze-
+      pisach wydanych na podstawie art. 285 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach – zgodnie ze szcze-
+      gółowymi wymogami dotyczącymi dołączania fotografii do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt
+      czasowy określonymi w przepisach wydanych na podstawie art. 107 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+      ziemcach;
+2)    odwzorowanie cyfrowe potwierdzenia uiszczenia opłaty za wydanie karty pobytu;
+3)    odwzorowanie cyfrowe potwierdzenia uiszczenia opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy w sposób,
+      o którym mowa w art. 42r ust. 1.
+     4.73) W imieniu osoby nieposiadającej zdolności do czynności prawnych lub posiadającej ograniczoną zdolność do
+czynności prawnych wniosek o wydanie karty pobytu, o którym mowa w ust. 1, składa jedno z rodziców, opiekun, kurator
+lub opiekun tymczasowy, o którym mowa w art. 113 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom
+ochrony na terytorium Rzeczypospolitej Polskiej – których dane są gromadzone w rejestrze, o którym mowa w art. 44c ust. 1
+ustawy z dnia 24 września 2010 r. o ewidencji ludności.
+
+
+
+72) W brzmieniu ustalonym przez art. 8 pkt 2 ustawy z dnia 21 listopada 2025 r. o zmianie ustawy o cudzoziemcach oraz niektórych
+    innych ustaw (Dz. U. poz. 1794), która weszła w życie z dniem 1 stycznia 2026 r.; wszedł w życie z dniem 4 maja 2026 r. na podstawie
+    komunikatu, o którym mowa w odnośniku 68.
+73) W brzmieniu ustalonym przez art. 17 pkt 24 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na podstawie
+
+    komunikatu, o którym mowa w odnośniku 68.
+
+     5. Obywatel Ukrainy, składając wniosek o wydanie karty pobytu, o którym mowa w ust. 1, opatruje go kwalifikowa-
+nym podpisem elektronicznym lub podpisem zaufanym. W przypadku, o którym mowa w ust. 4, wniosek o wydanie karty
+pobytu, o którym mowa w ust. 1, kwalifikowanym podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym
+opatruje osoba składająca wniosek w imieniu osoby nieposiadającej zdolności do czynności prawnych lub posiadającej ogra-
+niczoną zdolność do czynności prawnych.
+    6. Oświadczenie, o którym mowa w ust. 1 pkt 19, składa się pod rygorem odpowiedzialności karnej za złożenie fałszy-
+wego oświadczenia. Klauzula, o której mowa w ust. 1 pkt 19, zastępuje pouczenie organu uprawnionego do odebrania
+oświadczenia o odpowiedzialności karnej za złożenie fałszywego oświadczenia.
+     7. Wojewoda pozostawia bez rozpoznania wniosek o wydanie karty pobytu, o którym mowa w ust. 1, złożony w inny
+sposób niż z wykorzystaniem usługi online w systemie teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw
+Cudzoziemców.
+     8. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia, wzór formularza wniosku o wydanie
+karty pobytu, o którym mowa w ust. 1, uwzględniając:
+1)          dane i informacje, o których mowa w ust. 1;
+2)          konieczność zapewnienia czytelności i kompletności wzoru formularza wniosku o wydanie karty pobytu, o którym
+            mowa w ust. 1.
+
+     Art. 42g. 1. Wniosek o wydanie karty pobytu, o którym mowa w art. 42f ust. 1, uznaje się za złożony w przypadku,
+gdy zostaną spełnione łącznie następujące wymogi:
+1)74) dane obywatela Ukrainy, który złożył wniosek o wydanie karty pobytu lub w imieniu którego został złożony wniosek
+      o wydanie karty pobytu w przypadku, o którym mowa w art. 42f ust. 4, zawarte w rejestrze, o którym mowa w art. 44c
+      ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, oraz rejestrze PESEL są kompletne;
+2)          wniosek o wydanie karty pobytu został opatrzony kwalifikowanym podpisem elektronicznym lub podpisem zaufanym
+            przez obywatela Ukrainy, a w przypadku, o którym mowa w art. 42f ust. 4, kwalifikowanym podpisem elektronicz-
+            nym, podpisem osobistym lub podpisem zaufanym przez osobę składającą wniosek w imieniu osoby nieposiadającej
+            zdolności do czynności prawnych lub posiadającej ograniczoną zdolność do czynności prawnych.
+            2. Dane obywatela Ukrainy uważa się za kompletne, jeżeli w dniu składania wniosku, o którym mowa w art. 42f ust. 1:
+1)75) w rejestrze PESEL znajdują się następujące dane i informacje:
+            a)   imię (imiona),
+            b) nazwisko,
+            c)   data urodzenia,
+            d) płeć,
+            e)   obywatelstwo,
+            f)   seria, numer i data ważności ważnego dokumentu podróży obywatela Ukrainy;
+      76)
+2)          w rejestrze, o którym mowa w art. 44c ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, znajdują się na-
+            stępujące dane i informacje:
+            a)   odciski palców lub informacja o fizycznej niemożności pobrania odcisków palców, o której mowa w art. 44a
+                 ust. 11 pkt 3 ustawy z dnia 24 września 2010 r. o ewidencji ludności, albo informacja o chwilowej niemożności
+                 pobrania odcisków palców, o której mowa w art. 44a ust. 11 pkt 2 ustawy z dnia 24 września 2010 r. o ewidencji
+                 ludności, o ile podjęto co najmniej dwukrotnie próbę pobrania odcisków palców,
+            b) odwzorowanie własnoręcznego podpisu osoby, która ukończyła 12. rok życia, z wyjątkiem osoby, która nie może
+               złożyć podpisu;
+
+74) Ze zmianą wprowadzoną przez art. 17 pkt 25 lit. a ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+75) W brzmieniu ustalonym przez art. 8 pkt 3 lit. a ustawy, o której mowa w odnośniku 72; weszła w życie z dniem 4 maja 2026 r.
+
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+76) W brzmieniu ustalonym przez art. 17 pkt 25 lit. b ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+
+      3.77) Minister właściwy do spraw informatyzacji, w celu umożliwienia złożenia przez obywatela Ukrainy wniosku
+o wydanie karty pobytu, o którym mowa w art. 42f ust. 1, w postaci elektronicznej z wykorzystaniem usługi online w systemie
+teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem usług teletransmisji
+danych zapewnia wojewodzie oraz Szefowi Urzędu do Spraw Cudzoziemców możliwość weryfikacji, czy w rejestrze, o którym
+mowa w art. 44c ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, znajdują się dane, o których mowa w art. 44c
+ust. 5 pkt 4 i 5 ustawy z dnia 24 września 2010 r. o ewidencji ludności, oraz udostępnia te dane lub informacje o niemożności
+pobrania odcisków palców, o których mowa w art. 44a ust. 11 pkt 2 i 3 ustawy z dnia 24 września 2010 r. o ewidencji
+ludności. W przypadku, o którym mowa w art. 44a ust. 11 pkt 2 ustawy z dnia 24 września 2010 r. o ewidencji ludności,
+udostępnia się także informację o ostatniej próbie pobrania odcisków palców.
+      4.78) Minister właściwy do spraw informatyzacji, w celu umożliwienia złożenia przez obywatela Ukrainy wniosku o wy-
+danie karty pobytu, o którym mowa w art. 42f ust. 1, w postaci elektronicznej z wykorzystaniem usługi online w systemie
+teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw Cudzoziemców, udostępnia wojewodzie oraz Szefowi
+Urzędu do Spraw Cudzoziemców z rejestru PESEL dane i informacje:
+1)    imię (imiona);
+2)    nazwisko;
+3)    datę urodzenia;
+4)    informację, czy dziecko urodziło się na terytorium Rzeczypospolitej Polskiej;
+5)    płeć;
+6)    numer PESEL;
+7)    obywatelstwo;
+8)    serię, numer i datę ważności ostatniego zarejestrowanego dokumentu podróży obywatela Ukrainy lub informację o braku
+      takiego dokumentu;
+9)    informację o posiadaniu statusu UKR w dniu 4 czerwca 2025 r.;
+10) informację o posiadaniu statusu UKR w dniu składania wniosku;
+11) informację o posiadaniu statusu UKR przez nieprzerwany okres 365 dni;
+12) numery PESEL rodziców małoletniego, jeżeli znajdują się w rejestrze PESEL;
+13)79) informacje o osobie faktycznie sprawującej opiekę nad małoletnim, o których mowa w art. 44a ust. 6 pkt 18 ustawy
+      z dnia 24 września 2010 r. o ewidencji ludności.
+     5.80) Jeżeli wniosek o wydanie karty pobytu jest uznawany za złożony zgodnie z ust. 1, nie jest dopuszczalne ponowne
+złożenie wniosku o jej wydanie do czasu zakończenia postępowania w sposób inny niż przez wydanie karty pobytu.
+
+      Art. 42h.81) W przypadku złożenia wniosku o wydanie karty pobytu w trybie, o którym mowa w art. 42c, minister właściwy
+do spraw informatyzacji przekazuje za pośrednictwem systemu teleinformatycznego odciski palców oraz odwzorowanie
+własnoręcznego podpisu obywatela Ukrainy, który złożył wniosek o wydanie karty pobytu, o którym mowa w art. 42f ust. 1,
+zgromadzone w rejestrze, o którym mowa w art. 44c ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, do reje-
+stru, o którym mowa w art. 428 ust. 1 pkt 2 lit. d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, w celu wydania karty
+pobytu, chyba że te odciski lub podpis nie mogły zostać pobrane zgodnie z art. 44a ust. 6 pkt 24 lub ust. 11 ustawy z dnia
+24 września 2010 r. o ewidencji ludności.
+      Art. 42i.81) Jeżeli obywatel Ukrainy złożył wniosek o wydanie karty pobytu w przypadku, o którym mowa w art. 42c,
+postępowanie w sprawie udzielenia mu zezwolenia na pobyt czasowy, wszczęte na podstawie wniosku tego obywatela Ukrainy
+i niezakończone przed dniem złożenia przez niego wniosku o wydanie karty pobytu, umarza się z mocy prawa.
+
+
+77) W brzmieniu ustalonym przez art. 17 pkt 25 lit. c ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+78) W brzmieniu ustalonym przez art. 8 pkt 3 lit. b ustawy, o której mowa w odnośniku 72; weszła w życie z dniem 4 maja 2026 r.
+
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+79) W brzmieniu ustalonym przez art. 17 pkt 25 lit. d ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+80) Dodany przez art. 17 pkt 25 lit. e ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r. na podstawie
+
+    komunikatu, o którym mowa w odnośniku 68.
+81) W brzmieniu ustalonym przez art. 17 pkt 26 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na pod-
+
+    stawie komunikatu, o którym mowa w odnośniku 68.
+
+     Art. 42j. 1. Przed wydaniem karty pobytu w przypadku, o którym mowa w art. 42c, wojewoda zwraca się do komen-
+danta oddziału Straży Granicznej, komendanta wojewódzkiego Policji oraz Szefa Agencji Bezpieczeństwa Wewnętrznego
+za pośrednictwem systemu teleinformatycznego, o którym mowa w art. 449 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+ziemcach, przy wykorzystaniu funkcjonalności umożliwiającej komunikowanie się z systemami teleinformatycznymi tych
+organów, z wnioskiem o przekazanie informacji, czy pobyt obywatela Ukrainy na terytorium Rzeczypospolitej Polskiej
+może stanowić zagrożenie dla obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego.
+     2. Komendanci, o których mowa w ust. 1, oraz Szef Agencji Bezpieczeństwa Wewnętrznego przekazują informację,
+o której mowa w ust. 1, w terminie 30 dni od dnia otrzymania wniosku.
+     3. W szczególnie uzasadnionych przypadkach termin, o którym mowa w ust. 2, może być przedłużony do 60 dni,
+o czym organ obowiązany do przekazania informacji zawiadamia wojewodę.
+     4. Jeżeli organ obowiązany do przekazania informacji, o której mowa w ust. 1, nie przekaże informacji w terminach,
+o których mowa w ust. 2 lub 3, uznaje się, że wymóg uzyskania informacji został spełniony.
+    5. Przepisu ust. 1 nie stosuje się do obywatela Ukrainy, który w dniu złożenia wniosku o wydanie karty pobytu nie
+ukończył 13. roku życia.
+      Art. 42k. Do wydania lub wymiany karty pobytu w przypadku, o którym mowa w art. 42c lub art. 42d, stosuje się
+przepisy ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, z wyjątkiem art. 229 ust. 2, 4, 6 i 7, art. 230 ust. 2, art. 231,
+art. 237, art. 243 oraz art. 245–247 tej ustawy.
+     Art. 42l.82) Kartę pobytu w przypadku, o którym mowa w art. 42c lub art. 42d, wydaje się lub odmawia się jej wydania
+w terminie 180 dni od dnia złożenia wniosku o wydanie tej karty spełniającego wymogi określone w art. 42g ust. 1 i 2.
+      Art. 42m. W karcie pobytu wydanej w przypadku, o którym mowa w art. 42c lub art. 42d:
+1)    umieszcza się adnotację „Poprzednio posiadacz ochrony czasowej”;
+2)    umieszcza się informację o udzieleniu jej posiadaczowi zezwolenia na pobyt czasowy;
+3)    nie umieszcza się adresu zameldowania na pobyt stały lub czasowy.
+     Art. 42n. Za wydanie karty pobytu w przypadku, o którym mowa w art. 42c lub art. 42d, pobiera się opłatę, o której
+mowa w art. 235 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, w wysokości określonej w przepisach wydanych
+na podstawie art. 239 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach dla wydania karty pobytu.
+    Art. 42o. 1. Kartę pobytu w przypadku, o którym mowa w art. 42c lub art. 42d, wydaje lub odmawia jej wydania woje-
+woda właściwy ze względu na miejsce pobytu obywatela Ukrainy w chwili złożenia wniosku o wydanie karty pobytu.
+     2. Właściwość miejscowa wojewody nie ulega zmianie w przypadku zmiany miejsca pobytu obywatela Ukrainy po
+złożeniu przez niego wniosku o wydanie karty pobytu.
+      3. Odmowa wydania karty pobytu następuje w formie decyzji.
+     4. Szef Urzędu do Spraw Cudzoziemców jest organem wyższego stopnia w rozumieniu przepisów ustawy z dnia 14 czerwca
+1960 r. – Kodeks postępowania administracyjnego w stosunku do wojewody w sprawach, o których mowa w art. 42c i art. 42d.
+      Art. 42p. 1. Karta pobytu wydana w przypadku, o którym mowa w art. 42c, jest ważna przez okres 3 lat od dnia wydania.
+     2. W przypadku, o którym mowa w art. 42d, okres ważności karty pobytu wydanej dziecku odpowiada okresowi waż-
+ności karty pobytu wydanej matce dziecka.
+   Art. 42q. 1. Kartę pobytu wydaną w przypadku, o którym mowa w art. 42c lub art. 42d, wymienia lub odmawia jej
+wymiany wojewoda właściwy ze względu na miejsce pobytu obywatela Ukrainy.
+    2. Odmowa wymiany karty pobytu wydanej w przypadku, o którym mowa w art. 42c lub art. 42d, następuje w drodze
+decyzji.
+     3. Szef Urzędu do Spraw Cudzoziemców jest organem wyższego stopnia w rozumieniu przepisów ustawy z dnia
+14 czerwca 1960 r. – Kodeks postępowania administracyjnego w stosunku do wojewody w sprawie wymiany karty pobytu
+wydanej w przypadku, o którym mowa w art. 42c lub art. 42d.
+     Art. 42r. 1.83) Z dniem odbioru przez obywatela Ukrainy karty pobytu wydanej w przypadku, o którym mowa w art. 42c
+lub art. 42d, jego uprawnienie, o którym mowa w art. 106 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziem-
+com ochrony na terytorium Rzeczypospolitej Polskiej, staje się z mocy prawa zezwoleniem na pobyt czasowy udzielonym
+na okres do końca okresu ważności tej karty.
+
+82) W brzmieniu ustalonym przez art. 17 pkt 27 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na pod-
+    stawie komunikatu, o którym mowa w odnośniku 68.
+83) Ze zmianą wprowadzoną przez art. 17 pkt 28 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na pod-
+
+    stawie komunikatu, o którym mowa w odnośniku 68.
+
+      2. W przypadku nieodebrania karty pobytu w terminie 60 dni od dnia udostępnienia przez urząd wojewódzki informacji
+o możliwości jej odbioru, kartę pobytu unieważnia się w sposób określony w przepisach wydanych na podstawie art. 285
+ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach. W takim przypadku opłata za wydanie karty pobytu oraz opłata
+skarbowa za udzielenie zezwolenia na pobyt czasowy nie podlegają zwrotowi.
+
+     Art. 42s. 1. Za udzielenie zezwolenia na pobyt czasowy w sposób, o którym mowa w art. 42r ust. 1, pobiera się opłatę
+skarbową, o której mowa w art. 1 ust. 1 pkt 1 lit. c ustawy z dnia 16 listopada 2006 r. o opłacie skarbowej (Dz. U. z 2025 r.
+poz. 1154, 1795 i 1847 oraz z 2026 r. poz. 846, 875 i 912), w wysokości określonej w załączniku do tej ustawy w części III
+w ust. 2.
+      2. Obowiązek zapłaty opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy, w sposób, o którym mowa w art. 42r
+ust. 1, powstaje z chwilą złożenia wniosku o wydanie karty pobytu w przypadku, o którym mowa w art. 42c lub art. 42d.
+    3.84) W przypadku pozostawienia wniosku bez rozpoznania, odmowy wszczęcia postępowania lub zakończenia postępo-
+wania w sposób inny niż poprzez wydanie karty pobytu, uiszczona opłata skarbowa nie podlega zwrotowi.
+
+      Art. 42t. 1. Zezwolenie na pobyt czasowy, o którym mowa w art. 42r ust. 1, cofa się obywatelowi Ukrainy, jeżeli:
+1)    wymagają tego względy obronności lub bezpieczeństwa państwa, lub ochrony bezpieczeństwa i porządku publicznego,
+      lub
+2)    obowiązuje wpis jego danych do wykazu cudzoziemców, których pobyt na terytorium Rzeczypospolitej Polskiej jest
+      niepożądany, lub
+3)    opuścił on terytorium Rzeczypospolitej Polskiej na okres co najmniej 6 miesięcy.
+     2. Zezwolenie na pobyt czasowy, o którym mowa w art. 42r ust. 1, cofa wojewoda, który wydał obywatelowi Ukrainy
+kartę pobytu, w drodze decyzji.
+     3. Szef Urzędu do Spraw Cudzoziemców jest organem wyższego stopnia w rozumieniu przepisów ustawy z dnia
+14 czerwca 1960 r. – Kodeks postępowania administracyjnego w stosunku do wojewody w sprawie cofnięcia zezwolenia
+na pobyt czasowy, o którym mowa w art. 42r ust. 1.
+
+    Art. 42u. 1. Obywatel Ukrainy, któremu wydano kartę pobytu w przypadku, o którym mowa w art. 42c lub art. 42d,
+w okresie ważności tej karty, zawiadamia o każdej zmianie miejsca pobytu, w terminie 15 dni roboczych, wojewodę, który
+wydał temu obywatelowi Ukrainy kartę pobytu.
+     2. W przypadku niedopełnienia przez obywatela Ukrainy obowiązku, o którym mowa w ust. 1, pisma wojewody w po-
+stępowaniu wszczętym wobec tego obywatela Ukrainy po wydaniu karty pobytu uważa się za doręczone pod dotychczaso-
+wym adresem.
+
+      Art. 42v.85) Obywatel Ukrainy, któremu udzielono zezwolenia na pobyt czasowy w sposób, o którym mowa w art. 42r
+ust. 1, jest zwolniony z obowiązku posiadania zezwolenia na pracę.
+
+      Art. 42w. Obywatel Ukrainy, któremu udzielono zezwolenia na pobyt czasowy w sposób, o którym mowa w art. 42r
+ust. 1, może podejmować i wykonywać działalność gospodarczą na terytorium Rzeczypospolitej Polskiej na takich samych
+zasadach jak obywatele polscy.
+
+      Art. 42x.86) Jeżeli do dnia 4 marca 2027 r. uprawniony obywatel Ukrainy złoży wniosek, o którym mowa w art. 42c
+lub art. 42d, w trybie przewidzianym w art. 42f ust. 1, pobyt obywatela Ukrainy, dla którego został złożony wniosek, uważa się
+za legalny na terytorium Rzeczypospolitej Polskiej do dnia:
+1)    odbioru karty pobytu lub jej unieważnienia w trybie art. 42r ust. 2,
+2)    w którym decyzja o odmowie wydania karty pobytu lub umorzeniu postępowania w sprawie wydania karty pobytu
+      stanie się ostateczna.
+
+84) Dodany przez art. 17 pkt 29 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na podstawie komunikatu,
+    o którym mowa w odnośniku 68.
+85) Zdanie drugie uchylone przez art. 17 pkt 30 ustawy, o której mowa w odnośniku 1; wszedł w życie z dniem 4 maja 2026 r. na podstawie
+
+    komunikatu, o którym mowa w odnośniku 68.
+86) Dodany przez art. 10 pkt 19 ustawy, o której mowa w odnośniku 6; wszedł w życie z dniem 4 maja 2026 r. na podstawie komunikatu,
+
+    o którym mowa w odnośniku 68; ze zmianą wprowadzoną przez art. 17 pkt 31 ustawy, o której mowa w odnośniku 1; wszedł w życie
+    z dniem 4 maja 2026 r. na podstawie komunikatu, o którym mowa w odnośniku 68.
+
