@@ -16,7 +16,8 @@
 | Engine comparison | `audit/2026-10-16-residence/COMPARISON.md`: twenty rows. Agreement on fees, offices, channel, the outage rule, the card, the time limits. Gaps on reminders, the MOS account, the refusal, the end of the purpose. One wording problem: the Polish legal-stay note drops its conditions | f1a64d1 |
 | Restrictions in the prototype | Four, each with a test that fails without it. See §2 | f1a64d1 |
 | Evidence | All suites, on the commit (§4) | cc82317 |
-| Wave 3 sources | `research/2026-10-17-ukr/sources/`: temporary protection (where it moved in 2026), PESEL UKR, the CUKR card, the winding-down act's dates. No reference, as doc 19 plans | 43ebc87 |
+| Wave 3 sources | `research/2026-10-17-ukr/sources/`: temporary protection (where it moved in 2026), PESEL UKR, the CUKR card and UdSC's questions and answers on it, the winding-down act's dates. No reference, as doc 19 plans | 43ebc87, 744cee3 |
+| Open questions narrowed | Work while waiting (the act on employing foreigners, art. 3; finding P9); how calls and the card pickup date arrive at the Mazowiecki office (its e-Doręczenia page, which also starts with "Uzyskaj numer PESEL") | c387219 |
 | Tools | `tools/sources/entry-dates.mjs` prints an act's entry-into-force article, flagging points with their own dates. It has a test, and the evidence script runs it with the residence engine output | 6bf5b74 |
 | Lessons | Three new ones in `docs/solutions/`, each from a mistake below (§3) | 6bf5b74, f1a64d1 |
 
