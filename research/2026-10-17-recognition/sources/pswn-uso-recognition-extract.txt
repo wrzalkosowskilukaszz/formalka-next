@@ -1,0 +1,522 @@
+# Recognition of foreign education: Prawo o szkolnictwie wyższym i nauce (PSWN), consolidated Dz.U. 2024 poz. 1571, art. 326-328; art. 326a added by Dz.U. 2025 poz. 622 art. 10 pkt 8 (from 1.07.2025); art. 327 ust. 3 as replaced by Dz.U. 2026 poz. 203 art. 15 (from 5.03.2026); the act on the education system (USO), consolidated Dz.U. 2025 poz. 881, art. 93-93h, with Dz.U. 2025 poz. 622 art. 39 (its art. 1 from 1.07.2025); the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848) § 1-11; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2-7
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2024/1571 9b462ec30da489729ec6e012427f09d1467f4ebe27914cae6841f520def27b7d; DU/2025/622 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/881 3e587f0432d6950f7d8f4924787b09ecba5f9e41b575d2403b8b4ccf4b51d7e6; DU/2025/1848 d3f33ca1bca323d195b00ddd37100f4dac5fc8cd87ef3fa9eeea73817874b99d; DU/2018/1881 8477fdf2a4d9aae07aa2e95da2895edcac9904442d48a4eab25179bd6b3401a3.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): PSWN after 11.09.2024, only Dz.U. 2025 poz. 622 art. 10 (adds art. 326a; its art. 39 pkt 2: from 1.07.2025) and Dz.U. 2026 poz. 203 art. 15 (art. 327 ust. 3; 5.03.2026, its general date under art. 54) touch art. 326-328. USO after 11.06.2025: none touches art. 93-93h; the consolidated text already prints Dz.U. 2025 poz. 622 art. 1's new wordings beside the old ones, with footnotes 63-83 (the new ones from 1.07.2025), and Dz.U. 2024 poz. 854 art. 3 (art. 93a pkt 1a, from 1.07.2024). The two regulations: none.
+# Not quoted: the act on recognising professional qualifications acquired in EU states (Dz.U. 2026 poz. 166) and the acts on each regulated profession; the NAWA act (Dz.U. 2025 poz. 1643); international agreements on recognition.
+
+[PSWN art. 326-328 (a diploma from the EU, OECD or EEA; nostrification; degrees), with the footnote that falls inside]
+     Art. 326. 1. Dyplom wydany przez uprawnioną uczelnię działającą w systemie szkolnictwa wyższego państwa członkow-
+skiego Unii Europejskiej, Organizacji Współpracy Gospodarczej i Rozwoju (OECD) lub Europejskiego Porozumienia o Wol-
+nym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, potwierdzający ukończenie:
+1)   trzyletnich studiów lub studiów pierwszego stopnia trwających co najmniej 3 lata – potwierdza w Rzeczypospolitej
+     Polskiej posiadanie wykształcenia na poziomie studiów pierwszego stopnia;
+2)   studiów drugiego stopnia – potwierdza w Rzeczypospolitej Polskiej posiadanie wykształcenia na poziomie studiów
+     drugiego stopnia;
+3)   co najmniej czteroletnich studiów jednolitych – potwierdza w Rzeczypospolitej Polskiej posiadanie wykształcenia na
+     poziomie studiów drugiego stopnia, jeżeli jest uważany za równorzędny dyplomowi ukończenia studiów drugiego
+     stopnia w państwie wydania.
+     2. Jeżeli dyplom potwierdzający ukończenie studiów za granicą daje prawo do kontynuacji kształcenia na studiach
+drugiego stopnia lub ubiegania się o nadanie stopnia doktora w państwie, w którego systemie szkolnictwa wyższego działa
+uczelnia, która go wydała, uprawnia on w Rzeczypospolitej Polskiej odpowiednio do:
+1)   kontynuacji kształcenia na studiach drugiego stopnia lub na studiach podyplomowych, lub
+2)   ubiegania się o przyjęcie do szkoły doktorskiej lub o nadanie stopnia doktora.
+     3. Dyplom potwierdzający ukończenie studiów wydany przez zagraniczną uczelnię nie potwierdza posiadania w Rzeczypospolitej
+Polskiej wykształcenia na określonym poziomie studiów ani nie daje uprawnień, o których mowa w ust. 2, jeżeli:
+1)   instytucja, która go wydała, lub instytucja, w której było prowadzone kształcenie:
+     a)   nie działa w systemie szkolnictwa wyższego żadnego państwa lub
+     b) w rozumieniu prawa wewnętrznego państwa, w którego systemie szkolnictwa wyższego działa ta instytucja,
+        w dniu wydania dyplomu nie była akredytowaną uczelnią lub realizowała program studiów nieposiadający akredy-
+        tacji;
+2)   program studiów albo jego część realizowano niezgodnie z przepisami państwa, w którym było prowadzone kształcenie.
+     4. Dyrektor NAWA udziela, na wniosek zainteresowanego podmiotu, pisemnej informacji o dyplomie wydanym przez
+zagraniczną uczelnię, o poziomie studiów i statusie uczelni.
+     Art. 327. 1. Dyplom ukończenia studiów za granicą może być uznany za równoważny odpowiedniemu polskiemu
+dyplomowi i tytułowi zawodowemu na podstawie umowy międzynarodowej określającej równoważność, a w przypadku jej
+braku – w drodze postępowania nostryfikacyjnego.
+    2. Osoba, której dyplom został uznany za równoważny polskiemu dyplomowi i tytułowi, może posługiwać się odpo-
+wiednim polskim tytułem.
+     3. Ukończenie studiów na określonym poziomie przez cudzoziemca, który uzyskał status uchodźcy lub ochronę uzu-
+pełniającą, lub cudzoziemca posiadającego zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której
+mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, lub obywatela polskiego, który
+przybył na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy w okresie od dnia 24 lutego 2022 r. do dnia określo-
+nego w przepisach wydanych na podstawie art. 2 ust. 4 ustawy z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy
+w związku z konfliktem zbrojnym na terytorium tego państwa (Dz. U. z 2024 r. poz. 167, z późn. zm.41)), lub obywatela
+Ukrainy przebywającego na terytorium Rzeczypospolitej Polskiej, którego pobyt na terytorium Rzeczypospolitej Polskiej
+jest uznawany za legalny na podstawie art. 2 ust. 1 ustawy z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy
+w związku z konfliktem zbrojnym na terytorium tego państwa, którzy nie dysponują dyplomem ukończenia studiów, może
+być potwierdzone w drodze postępowania w sprawie potwierdzenia ukończenia studiów na określonym poziomie.
+    4. Postępowanie nostryfikacyjne albo postępowanie, o którym mowa w ust. 3, wszczyna się na wniosek. Postępowanie
+prowadzi uczelnia posiadająca kategorię naukową A+, A albo B+ w dyscyplinie, której dotyczy wniosek.
+    5. Po przeprowadzeniu postępowania nostryfikacyjnego albo postępowania, o którym mowa w ust. 3, wydaje się
+zaświadczenie.
+     6. Za postępowanie pobierana jest opłata. Maksymalna wysokość opłaty wynosi 50 % wynagrodzenia profesora. Uczelnia
+ustala warunki i tryb zwalniania z opłaty.
+    7. W przypadku stwierdzenia braku właściwości do przeprowadzenia postępowania, uczelnia wydaje postanowienie
+o odmowie jego przeprowadzenia, na które służy zażalenie. Opłaty, o której mowa w ust. 6, nie pobiera się.
+       8. Minister właściwy do spraw szkolnictwa wyższego i nauki określi, w drodze rozporządzenia:
+1)     dokumenty dołączane do wniosku,
+2)     szczegółowy tryb postępowania nostryfikacyjnego i postępowania, o którym mowa w ust. 3,
+3)     terminy załatwiania spraw w postępowaniu nostryfikacyjnym i postępowaniu, o którym mowa w ust. 3,
+4)     sposób wnoszenia opłaty,
+5)     wzór zaświadczenia wydawanego po przeprowadzeniu postępowania nostryfikacyjnego i postępowania, o którym mowa
+       w ust. 3
+– mając na uwadze konieczność zapewnienia sprawnego prowadzenia postępowań oraz różnorodność dokumentów potwier-
+dzających ukończenie studiów występujących w obrocie międzynarodowym.
+     Art. 328. 1. Stopień naukowy i stopień w zakresie sztuki nadany przez uprawnioną instytucję działającą w państwie
+członkowskim Unii Europejskiej, Organizacji Współpracy Gospodarczej i Rozwoju (OECD) lub Europejskiego Porozumie-
+nia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym jest równoważny z odpowiednim
+stopniem naukowym lub stopniem w zakresie sztuki, o których mowa w ustawie.
+     2. Stopień doktora nadany przez Europejski Instytut Uniwersytecki, zgodnie z Konwencją powołującą Europejski
+Instytut Uniwersytecki, sporządzoną we Florencji dnia 19 kwietnia 1972 r., jest równoważny ze stopniem doktora.
+     3. Stopień naukowy i stopień w zakresie sztuki nadany przez instytucję inną niż ta, o której mowa w ust. 1 i 2, może
+być uznany za równoważny z odpowiednim polskim stopniem na podstawie umowy międzynarodowej, a w przypadku jej
+braku – w drodze postępowania nostryfikacyjnego.
+    3a. Stopień naukowy i stopień w zakresie sztuki nie może zostać uznany za równoważny z odpowiednim polskim stop-
+niem, jeżeli:
+1)     instytucja, która go nadała:
+       a)   nie działa w systemie szkolnictwa wyższego i nauki żadnego państwa lub
+41)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 232, 834, 854, 858, 1089 i 1222.
+     b) w rozumieniu prawa wewnętrznego państwa, w którego systemie szkolnictwa wyższego i nauki działa ta instytu-
+        cja, w dniu nadania tego stopnia nie posiadała uprawnień do nadawania stopni naukowych lub stopni w zakresie
+        sztuki;
+2)   kształcenie prowadzące do uzyskania tego stopnia albo część tego kształcenia realizowano niezgodnie z przepisami
+     państwa, w którym kształcenie to było prowadzone.
+    4. Postępowanie nostryfikacyjne wszczyna się na wniosek. Postępowanie prowadzi podmiot posiadający kategorię
+naukową A+ albo A w dyscyplinie, której dotyczy wniosek, a jeżeli wniosek dotyczy dyscypliny nauk teologicznych – także
+Uniwersytet Papieski Jana Pawła II w Krakowie.
+     5. Po przeprowadzeniu postępowania nostryfikacyjnego wydaje się zaświadczenie.
+      6. Za postępowanie pobierana jest opłata. Maksymalna wysokość opłaty wynosi 50 % wynagrodzenia profesora. W uza-
+sadnionych przypadkach wnioskodawca może być zwolniony z opłaty. Podmiot, o którym mowa w ust. 4, ustala tryb zwalnia-
+nia z opłaty.
+     7. W przypadku stwierdzenia braku właściwości do przeprowadzenia postępowania, podmiot, o którym mowa w ust. 4,
+wydaje postanowienie o odmowie jego przeprowadzenia, na które służy zażalenie. Opłaty, o której mowa w ust. 6, nie
+pobiera się.
+     8. Minister właściwy do spraw szkolnictwa wyższego i nauki określi, w drodze rozporządzenia:
+1)   dokumenty dołączane do wniosku,
+2)   szczegółowy tryb postępowania nostryfikacyjnego,
+3)   terminy załatwiania spraw,
+4)   sposób wnoszenia opłaty,
+5)   wzór zaświadczenia wydawanego po przeprowadzeniu postępowania nostryfikacyjnego
+– mając na uwadze konieczność zapewnienia sprawnego przeprowadzania postępowań oraz różnorodność dokumentów
+potwierdzających nadanie stopnia występujących w obrocie międzynarodowym.
+
+[Dz.U. 2025 poz. 622 art. 10 pkt 8 (PSWN art. 326a: school certificates for university admission; NAWA's written information), from 1.07.2025]
+8)   po art. 326 dodaje się art. 326a w brzmieniu:
+           „Art. 326a. 1. Uprawnienie do ubiegania się o przyjęcie na studia pierwszego stopnia lub jednolite studia magi-
+     sterskie potwierdzają w Rzeczypospolitej Polskiej:
+     1)    świadectwa i inne dokumenty wydane przez szkołę lub instytucję edukacyjną działającą w systemie edukacji
+           państwa członkowskiego Unii Europejskiej, państwa członkowskiego Organizacji Współpracy Gospodarczej
+           i Rozwoju (OECD) lub państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony
+           umowy o Europejskim Obszarze Gospodarczym, uprawniające do ubiegania się o przyjęcie na studia pierwszego
+           stopnia i jednolite studia magisterskie w tych państwach;
+     2)    dyplomy IB (International Baccalaureate) wydane przez organizację International Baccalaureate Organization
+           w Genewie;
+     3)    dyplomy EB (European Baccalaureate) wydane przez Szkoły Europejskie zgodnie z Konwencją o Statucie Szkół
+           Europejskich, sporządzoną w Luksemburgu dnia 21 czerwca 1994 r. (Dz. U. z 2005 r. poz. 10);
+     4)    świadectwa i inne dokumenty wydane za granicą przez szkoły lub instytucje edukacyjne uznawane przez państwo,
+           na którego terytorium lub w którego systemie edukacji działają, objęte postanowieniami umów międzynarodo-
+           wych.
+           2. Jeżeli dane świadectwo lub inny dokument, o którym mowa w ust. 1 pkt 1 albo 4, uprawnia do ubiegania się
+     o przyjęcie na studia pierwszego stopnia i jednolite studia magisterskie na określonym kierunku w państwie jego wy-
+     dania, świadectwo to lub dokument potwierdza w Rzeczypospolitej Polskiej uprawnienie do ubiegania się o przyjęcie
+     na studia takie same lub podobne ze względu na program studiów albo może być uznane za dokument potwierdzający
+     w Rzeczypospolitej Polskiej uprawnienie do ubiegania się o przyjęcie na studia takie same lub podobne ze względu na
+     program studiów.
+           3. Świadectwo lub inny dokument niebędący dokumentem, o którym mowa w ust. 1, uprawnia do ubiegania się
+     o przyjęcie na studia pierwszego stopnia lub jednolite studia magisterskie w Rzeczypospolitej Polskiej, jeżeli uprawnia
+     do ubiegania się o przyjęcie na studia w państwie, w którego systemie edukacji działa instytucja, która je wydała.
+           4. Dyrektor NAWA wydaje na wniosek zainteresowanego, po przedłożeniu przez niego dokumentu potwierdza-
+     jącego tożsamość oraz świadectwa lub innego dokumentu, niebędących dokumentami, o których mowa w ust. 1, pisemną
+     informację o tym świadectwie lub innym dokumencie potwierdzającą uprawnienie do ubiegania się o przyjęcie na studia
+     pierwszego stopnia lub jednolite studia magisterskie w Rzeczypospolitej Polskiej. Informacja zawiera numer albo inne
+     oznaczenie świadectwa lub innego dokumentu, jeżeli zostały nadane, a także imię i nazwisko osoby w nim wymienio-
+     nej oraz numer dokumentu potwierdzającego jej tożsamość.
+           5. Dyrektor NAWA, na wniosek konsula rozpatrującego wniosek o wydanie wizy krajowej w celu, o którym
+     mowa w art. 60 ust. 1 pkt 9 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, z adnotacją „student”, potwierdza wy-
+     danie pisemnej informacji, o której mowa w ust. 4.
+           6. W przypadku, o którym mowa w art. 93a pkt 1a ustawy z dnia 7 września 1991 r. o systemie oświaty, dyrektor
+      NAWA wydaje, na wniosek zainteresowanego, pisemną informację, o której mowa w ust. 4, o świadectwie lub innym
+      dokumencie, niebędącymi dokumentami, o których mowa w ust. 1, uzyskanymi w państwie, które wypowiedziało Rzeczy-
+      pospolitej Polskiej umowę międzynarodową dotyczącą wzajemnego uznawania takich świadectw lub innych dokumen-
+      tów wydanych za granicą, uwzględniając treść tej umowy, w brzmieniu obowiązującym przed jej wypowiedzeniem.”;
+
+[Dz.U. 2025 poz. 622 art. 39 (its dates: art. 1 and 10 from 1.07.2025)]
+      Art. 39. Ustawa wchodzi w życie pierwszego dnia miesiąca następującego po upływie 14 dni od dnia ogłoszenia, z wy-
+jątkiem:
+1)   art. 33 oraz art. 35–38, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1, art. 4, art. 5, art. 6 pkt 2, 3, pkt 4 lit. b, pkt 6 i 8–16, art. 8, art. 10–19, art. 21, art. 23–30 oraz art. 34, które wchodzą
+     w życie z dniem 1 lipca 2025 r.;
+3)   art. 7 oraz art. 31, które wchodzą w życie z dniem 1 września 2025 r.
+
+[Dz.U. 2026 poz. 203 art. 15 (PSWN art. 327 ust. 3: confirmation without a diploma), from 5.03.2026]
+     Art. 15. W ustawie z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce (Dz. U. z 2024 r. poz. 1571,
+z późn. zm.10)) w art. 327 ust. 3 otrzymuje brzmienie:
+             „3. Ukończenie studiów na określonym poziomie przez cudzoziemca, który korzysta z ochrony czasowej lub
+       uzyskał status uchodźcy lub ochronę uzupełniającą, lub cudzoziemca posiadającego zezwolenie na pobyt czasowy
+       udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r.
+       o cudzoziemcach, lub obywatela polskiego, który został poszkodowany w wyniku konfliktów zbrojnych, klęsk żywio-
+       łowych lub innych kryzysów humanitarnych, spowodowanych przez naturę lub człowieka, którzy nie dysponują dy-
+       plomem ukończenia studiów, może być potwierdzone w drodze postępowania w sprawie potwierdzenia ukończenia
+       studiów na określonym poziomie.”.
+
+[USO art. 93-93h (school certificates: by law, by international agreements, or by the school superintendent's decision; the check interview and its fee), old and new wordings with their footnotes; the new ones from 1.07.2025]
+     Art. 93. 1. Wykształcenie średnie oraz uprawnienie do ubiegania się o przyjęcie na studia wyższe potwierdzają w Rzeczy-
+pospolitej Polskiej:63)
+      Wykształcenie średnie potwierdzają w Rzeczypospolitej Polskiej:64)
+1)65) świadectwa i inne dokumenty wydane przez szkołę lub instytucję edukacyjną działającą w systemie edukacji państwa
+      członkowskiego Unii Europejskiej, państwa członkowskiego Organizacji Współpracy Gospodarczej i Rozwoju
+      (OECD), państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europej-
+      skim Obszarze Gospodarczym, uprawniające do ubiegania się o przyjęcie na studia wyższe w tych państwach;
+63) Wprowadzenie do wyliczenia w tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 64.
+64) Wprowadzenie do wyliczenia w brzmieniu ustalonym przez art. 1 pkt 1 lit. a tiret pierwsze ustawy z dnia 4 kwietnia 2025 r. o zmianie
+    niektórych ustaw w celu wyeliminowania nieprawidłowości w systemie wizowym Rzeczypospolitej Polskiej (Dz. U. poz. 622), która
+    wejdzie w życie z dniem 1 lipca 2025 r.
+65) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 66.
+1)66) świadectwa i inne dokumenty wydane przez szkołę lub instytucję edukacyjną działającą w systemie edukacji
+      państwa członkowskiego Unii Europejskiej, państwa członkowskiego Organizacji Współpracy Gospodarczej
+      i Rozwoju (OECD) lub państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+      strony umowy o Europejskim Obszarze Gospodarczym;
+2)    dyplomy IB (International Baccalaureate) wydane przez organizację International Baccalaureate Organization w Genewie;
+3)    dyplomy EB (European Baccalaureate) wydane przez Szkoły Europejskie zgodnie z Konwencją o Statucie Szkół Euro-
+      pejskich, sporządzoną w Luksemburgu dnia 21 czerwca 1994 r. (Dz. U. z 2005 r. poz. 10 i 11).
+     2. Świadectwa i inne dokumenty wydane za granicą przez szkoły lub instytucje edukacyjne uznawane przez państwo,
+na którego terytorium lub w którego systemie edukacji działają, uznaje się na zasadach przewidzianych w umowach między-
+narodowych.
+      3.67) Jeżeli umowy międzynarodowe nie stanowią inaczej, świadectwa i inne dokumenty wydane za granicą przez szkoły
+lub instytucje edukacyjne uznawane przez państwo, na którego terytorium lub w którego systemie edukacji działają, mogą
+być uznane w drodze decyzji administracyjnej za dokument potwierdzający w Rzeczypospolitej Polskiej wykształcenie pod-
+stawowe, gimnazjalne, zasadnicze zawodowe, zasadnicze branżowe, średnie branżowe lub średnie, lub uprawnienie do kon-
+tynuacji nauki, w tym uprawnienie do ubiegania się o przyjęcie na studia wyższe, z uwzględnieniem zakresu uprawnień
+w państwie wydania świadectwa lub innego dokumentu.
+     3.68) Jeżeli umowy międzynarodowe nie stanowią inaczej, świadectwa i inne dokumenty wydane za granicą przez
+szkoły lub instytucje edukacyjne uznawane przez państwo, na którego terytorium lub w którego systemie edukacji
+działają, mogą być uznane w drodze decyzji administracyjnej za dokument potwierdzający w Rzeczypospolitej Pol-
+skiej wykształcenie podstawowe, gimnazjalne, zasadnicze zawodowe, zasadnicze branżowe, średnie branżowe lub
+średnie, lub uprawnienie do kontynuacji nauki, z wyłączeniem uprawnienia do ubiegania się o przyjęcie na studia
+pierwszego stopnia lub jednolite studia magisterskie, z uwzględnieniem zakresu uprawnień w państwie wydania
+świadectwa lub innego dokumentu.
+     4.69) Jeżeli dane świadectwo lub inny dokument, o którym mowa w ust. 1 pkt 1 albo w ust. 3, uprawnia do ubiegania
+się o przyjęcie na studia na określonym kierunku w państwie jego wydania, świadectwo to lub dokument potwierdza
+w Rzeczypospolitej Polskiej uprawnienie do ubiegania się o przyjęcie na studia takie same lub podobne ze względu na program
+studiów albo może być uznane za dokument potwierdzający w Rzeczypospolitej Polskiej uprawnienie do ubiegania się
+o przyjęcie na studia takie same lub podobne ze względu na program studiów.
+      4. (uchylony)70)
+      Art. 93a. Jeżeli przedłożenie oryginału albo duplikatu świadectwa lub innego dokumentu, o którym mowa w art. 93
+ust. 3, albo uwierzytelnienie tego świadectwa lub innego dokumentu napotyka trudne do usunięcia przeszkody dla osoby,
+która:
+1)    uzyskała status uchodźcy lub ochronę uzupełniającą lub która posiada zezwolenie na pobyt czasowy udzielone
+      w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzo-
+      ziemcach (Dz. U. z 2024 r. poz. 769, 1222 i 1688 oraz z 2025 r. poz. 619, 621 i 622), lub
+1a)71) uzyskała to świadectwo lub inny dokument w państwie, które wypowiedziało Rzeczypospolitej Polskiej umowę mię-
+      dzynarodową dotyczącą wzajemnego uznawania takich świadectw lub innych dokumentów wydanych za granicą, lub
+2)    została poszkodowana w wyniku konfliktów zbrojnych, klęsk żywiołowych lub innych kryzysów humanitarnych, spo-
+      wodowanych przez naturę lub człowieka
+– wykształcenie uzyskane przez tę osobę za granicą lub posiadane przez tę osobę uprawnienia do kontynuacji nauki uzyskane
+za granicą, w tym uprawnienia do ubiegania się o przyjęcie na studia wyższe, może być potwierdzone w Rzeczypospolitej
+Polskiej w drodze decyzji administracyjnej jako wykształcenie podstawowe, gimnazjalne, zasadnicze zawodowe, zasadnicze
+branżowe, średnie branżowe oraz średnie lub uprawnienia do kontynuacji nauki w Rzeczypospolitej Polskiej.72)
+66) W brzmieniu ustalonym przez art. 1 pkt 1 lit. a tiret drugie ustawy, o której mowa odnośniku 64.
+67) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 68.
+68) W brzmieniu ustalonym przez art. 1 pkt 1 lit. b ustawy, o której mowa odnośniku 64.
+69) Obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 70.
+70) Przez art. 1 pkt 1 lit. c ustawy, o której mowa odnośniku 64.
+71) Dodany przez art. 3 ustawy z dnia 15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbroj-
+    nym na terytorium tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854), która weszła w życie z dniem 1 lipca 2024 r.
+72) Część wspólna w tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 73.
+– wykształcenie uzyskane przez tę osobę za granicą lub posiadane przez tę osobę uprawnienia do kontynuacji nauki
+uzyskane za granicą, z wyłączeniem uprawnienia do ubiegania się o przyjęcie na studia pierwszego stopnia lub jed-
+nolite studia magisterskie, może być potwierdzone w Rzeczypospolitej Polskiej w drodze decyzji administracyjnej
+jako wykształcenie podstawowe, gimnazjalne, zasadnicze zawodowe, zasadnicze branżowe, średnie branżowe oraz
+średnie lub uprawnienia do kontynuacji nauki w Rzeczypospolitej Polskiej.73)
+     Art. 93b. 1. W sprawach o uznanie świadectwa lub innego dokumentu, o których mowa w art. 93 ust. 3, albo o po-
+twierdzenie wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a, właściwy jest kurator oświaty
+ze względu na miejsce zamieszkania osoby ubiegającej się, zwanej dalej „wnioskodawcą”, a w przypadku braku miejsca
+zamieszkania na terytorium Rzeczypospolitej Polskiej – kurator oświaty właściwy ze względu na siedzibę instytucji, w której
+wnioskodawca zamierza złożyć świadectwo lub inny dokument wydany za granicą.
+     2.74) Jeżeli stroną postępowania jest wnioskodawca, o którym mowa w art. 93a pkt 1, decyzję administracyjną wydaje
+kurator oświaty właściwy dla województwa mazowieckiego.
+      2. (uchylony)75)
+      Art. 93c. 1.76) W postępowaniu w sprawie uznania świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3,
+oraz w postępowaniu w sprawie potwierdzenia wykształcenia lub uprawnień do kontynuacji nauki, o którym mowa w art. 93a,
+kurator oświaty dokonuje porównania przebiegu kształcenia za granicą z kształceniem w Rzeczypospolitej Polskiej prowa-
+dzonym w szkołach publicznych, uwzględniając treści kształcenia, standardy wymagań i oceniania, zakładane efekty ucze-
+nia się lub planowy czas nauki oraz uprawnienie do kontynuacji nauki na określonym poziomie odpowiednio w państwie
+wydania świadectwa lub innego dokumentu albo w państwie uzyskania wykształcenia lub uprawnień do kontynuacji nauki.
+Przepis art. 93 ust. 4 stosuje się odpowiednio.
+     1.77) W postępowaniu w sprawie uznania świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3,
+oraz w postępowaniu w sprawie potwierdzenia wykształcenia lub uprawnień do kontynuacji nauki, o którym mowa
+w art. 93a, kurator oświaty dokonuje porównania przebiegu kształcenia za granicą z kształceniem w Rzeczypospoli-
+tej Polskiej prowadzonym w szkołach publicznych, uwzględniając treści kształcenia, standardy wymagań i oceniania,
+zakładane efekty uczenia się lub planowy czas nauki oraz uprawnienie do kontynuacji nauki na określonym poziomie
+odpowiednio w państwie wydania świadectwa lub innego dokumentu albo w państwie uzyskania wykształcenia lub
+uprawnień do kontynuacji nauki.
+      2. W przypadku wątpliwości dotyczących:
+1)    przebiegu kształcenia w systemie edukacji państwa wydania świadectwa lub innego dokumentu, o którym mowa
+      w art. 93 ust. 3, albo uzyskania wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a,
+2)    statusu szkoły lub instytucji edukacyjnej działającej w państwie wydania świadectwa lub innego dokumentu, o którym
+      mowa w art. 93 ust. 3, albo uzyskania wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a
+– kurator oświaty może zwrócić się o informację w szczególności do jednostki organizacyjnej pełniącej w Rzeczypospolitej
+Polskiej funkcję Krajowego Ośrodka Informacji Sieci ENIC, o której mowa w Konwencji o uznaniu kwalifikacji związa-
+nych z uzyskaniem wyższego wykształcenia w Regionie Europejskim, sporządzonej w Lizbonie dnia 11 kwietnia 1997 r.
+(Dz. U. z 2004 r. poz. 2339 i 2340), placówki konsularnej w Rzeczypospolitej Polskiej odpowiednio państwa wydania świa-
+dectwa lub innego dokumentu albo państwa uzyskania wykształcenia lub uprawnień do kontynuacji nauki, lub placówki
+konsularnej Rzeczypospolitej Polskiej, której kompetencje terytorialne dotyczą odpowiednio państwa wydania świadectwa
+lub innego dokumentu albo państwa uzyskania wykształcenia lub uprawnień do kontynuacji nauki. 78)
+– kurator oświaty może zwrócić się o informację do innego podmiotu, w szczególności do placówki konsularnej
+w Rzeczypospolitej Polskiej odpowiednio państwa wydania świadectwa lub innego dokumentu albo państwa uzyska-
+nia wykształcenia lub uprawnień do kontynuacji nauki, lub placówki konsularnej Rzeczypospolitej Polskiej, której
+kompetencje terytorialne dotyczą odpowiednio państwa wydania świadectwa lub innego dokumentu albo państwa
+uzyskania wykształcenia lub uprawnień do kontynuacji nauki. 79)
+73) Część wspólna w brzmieniu ustalonym przez art. 1 pkt 2 ustawy, o której mowa odnośniku 64.
+74) Obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 75.
+75) Przez art. 1 pkt 3 ustawy, o której mowa odnośniku 64.
+76) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 77.
+77) Zdanie drugie uchylone przez art. 1 pkt 4 lit. a ustawy, o której mowa odnośniku 64.
+78) Część wspólna w tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa odnośniku 79.
+79) Część wspólna w brzmieniu ustalonym przez art. 1 pkt 4 lit. b ustawy, o której mowa odnośniku 64.
+      Art. 93d. 1. W postępowaniu w sprawie uznania świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3,
+jeżeli świadectwo lub inny dokument nie daje podstaw do uznania, kurator oświaty może przeprowadzić z wnioskodawcą
+rozmowę sprawdzającą poziom jego wykształcenia, zwaną dalej „rozmową sprawdzającą”.
+     2. W postępowaniu w sprawie potwierdzenia wykształcenia lub uprawnień do kontynuacji nauki, o którym mowa
+w art. 93a, kurator oświaty przeprowadza z wnioskodawcą rozmowę sprawdzającą, chyba że na podstawie przedłożonych
+przez wnioskodawcę dokumentów w sposób bezpośredni lub pośredni jest możliwe ustalenie faktu uzyskania za granicą
+poziomu wykształcenia lub uprawnień do kontynuacji nauki.
+      Art. 93e. Kurator oświaty określa zakres rozmowy sprawdzającej, uwzględniając zakres wymagań dotyczących wiedzy
+i umiejętności, które powinien posiadać uczeń po zakończeniu określonego etapu edukacyjnego zgodnie z podstawą progra-
+mową kształcenia ogólnego, oraz uwzględniając specyfikę kształcenia w systemie edukacji państwa wydania świadectwa
+lub innego dokumentu, o którym mowa w art. 93 ust. 3, albo uzyskania wykształcenia lub uprawnień do kontynuacji nauki,
+o których mowa w art. 93a.
+      Art. 93f. 1. Rozmowę sprawdzającą przeprowadza komisja powołana przez kuratora oświaty.
+     2.80) Jeżeli przemawia za tym ważny interes wnioskodawcy, o którym mowa w art. 93a pkt 1, kurator oświaty właściwy
+dla województwa mazowieckiego może powołać komisję przy kuratorze oświaty właściwym ze względu na miejsce
+zamieszkania wnioskodawcy.
+      2. (uchylony)81)
+      3. W skład komisji wchodzą:
+1)    kurator oświaty lub wskazany przez niego pracownik kuratorium oświaty – jako przewodniczący;
+2)    nauczyciele uczący przedmiotów objętych rozmową sprawdzającą na poziomie kształcenia prowadzącym do uzyskania
+      wykształcenia lub uprawnień do kontynuacji nauki, o którego odpowiednio uznanie albo potwierdzenie ubiega się
+      wnioskodawca – jako członkowie komisji.
+     4.82) W przypadku, o którym mowa w ust. 2, kurator oświaty może powołać członków komisji spośród kandydatów
+przedstawionych przez kuratora oświaty właściwego ze względu na miejsce zamieszkania wnioskodawcy, o którym mowa
+w art. 93a pkt 1.
+      4. (uchylony)83)
+      5. Członkowie komisji otrzymują wynagrodzenie za pracę w komisji.
+      Art. 93g. 1. Przeprowadzenie rozmowy sprawdzającej podlega opłacie. Opłata stanowi dochód budżetu państwa.
+      2. Wysokość opłaty stanowi sumę kosztów wynagrodzenia członków komisji i tłumacza.
+      3. Kurator oświaty zwalnia z opłaty:
+1)    wnioskodawcę, o którym mowa w art. 93a;
+2)    wnioskodawcę, który pobiera zasiłek, o którym mowa w art. 37 lub art. 38 ustawy z dnia 12 marca 2004 r. o pomocy
+      społecznej, lub pobierał taki zasiłek w okresie ostatnich 2 lat poprzedzających złożenie wniosku odpowiednio o uzna-
+      nie świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3, albo potwierdzenie wykształcenia lub upraw-
+      nień do kontynuacji nauki, o którym mowa w art. 93a.
+    4. Kurator oświaty może rozłożyć obowiązek uiszczenia opłaty na raty, jeżeli przemawia za tym ważny interes wniosko-
+dawcy.
+    5. Jeżeli rozmowa sprawdzająca nie odbyła się z przyczyn losowych lub zdrowotnych dotyczących wnioskodawcy,
+wniesiona opłata lub jej część może podlegać zwrotowi.
+      Art. 93h. Minister właściwy do spraw oświaty i wychowania określi, w drodze rozporządzenia:
+1)    rodzaje dokumentów, które przedkłada się wraz z wnioskiem o uznanie świadectwa lub innego dokumentu, o którym
+      mowa w art. 93 ust. 3, oraz wymagania dotyczące formy przedkładanych dokumentów,
+80) Obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 81.
+81) Przez art. 1 pkt 5 lit. a ustawy, o której mowa odnośniku 64.
+82) Obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 83.
+83) Przez art. 1 pkt 5 lit. b ustawy, o której mowa odnośniku 64.
+2)    rodzaje dokumentów, które przedkłada się wraz z wnioskiem o potwierdzenie wykształcenia lub uprawnień do konty-
+      nuacji nauki, o którym mowa w art. 93a, z których bezpośrednio lub pośrednio wynika posiadanie przez wnioskodawcę
+      wykształcenia uzyskanego za granicą lub nabycie uprawnień do kontynuacji nauki za granicą,
+3)    sposób uwierzytelnienia świadectw lub innych dokumentów, o których mowa w art. 93 ust. 3,
+4)    warunki, jakie muszą spełniać tłumaczenia świadectw lub innych dokumentów, o których mowa w art. 93 ust. 3, oraz
+      dokumentów, o których mowa w pkt 2,
+5)    warunki i tryb przeprowadzania rozmowy sprawdzającej, w tym skład komisji, o której mowa w art. 93f ust. 1, oraz
+      warunki ustalania wyniku rozmowy sprawdzającej, a także zakres przedmiotów, które mogą być objęte rozmową
+      sprawdzającą,
+6)    wysokość wynagrodzenia członków komisji, o którym mowa w art. 93f ust. 5, nie wyższą niż 10 % minimalnej stawki
+      wynagrodzenia zasadniczego nauczyciela dyplomowanego, posiadającego tytuł zawodowy magistra z przygotowaniem
+      pedagogicznym, określonego na podstawie art. 30 ust. 5 pkt 1 ustawy z dnia 26 stycznia 1982 r. – Karta Nauczyciela,
+7)    tryb wnoszenia opłaty, o której mowa w art. 93g ust. 1,
+8)    wysokość opłaty, która może podlegać zwrotowi w przypadkach, o których mowa w art. 93g ust. 5, oraz tryb zwrotu
+      opłaty,
+9)    przypadki, w których opłata, o której mowa w art. 93g ust. 1, nie podlega zwrotowi
+– biorąc pod uwagę zasady przejrzystości i spójności procedur oraz stosowania obiektywnych kryteriów podczas rozpatry-
+wania wniosków o uznanie świadectw lub innych dokumentów, wynikające z Konwencji o uznaniu kwalifikacji związanych
+z uzyskaniem wyższego wykształcenia w Regionie Europejskim, sporządzonej w Lizbonie dnia 11 kwietnia 1997 r.84)
+– biorąc pod uwagę potrzebę zapewnienia przejrzystości i spójności prowadzonego postępowania w sprawie uznania
+świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3, oraz postępowania w sprawie potwierdzenia
+wykształcenia lub uprawnień do kontynuacji nauki, o którym mowa w art. 93a, a także stosowania obiektywnych
+kryteriów podczas rozpatrywania wniosków o uznanie świadectw lub innych dokumentów.85)
+
+[The MEN regulation of 22.12.2025 § 1-11, the whole (the documents, legalisation or apostille, translations, the check interview, the commission, 200 zł per member, the fee's payment and refund; in force 1.01.2026), with its footnotes]
+      § 1. Rozporządzenie określa:
+1)    rodzaje dokumentów, które przedkłada się wraz z wnioskiem o uznanie świadectwa lub innego dokumentu, o którym
+      mowa w art. 93 ust. 3 ustawy z dnia 7 września 1991 r. o systemie oświaty, zwanej dalej „ustawą”, oraz wymagania
+      dotyczące formy przedkładanych dokumentów;
+2)    rodzaje dokumentów, które przedkłada się wraz z wnioskiem o potwierdzenie wykształcenia lub uprawnień do konty-
+      nuacji nauki, o którym mowa w art. 93a ustawy, z których bezpośrednio lub pośrednio wynika posiadanie przez wnios-
+      kodawcę wykształcenia uzyskanego za granicą lub nabycie uprawnień do kontynuacji nauki za granicą;
+3)    sposób uwierzytelnienia świadectw lub innych dokumentów, o których mowa w art. 93 ust. 3 ustawy;
+4)    warunki, jakie muszą spełniać tłumaczenia świadectw lub innych dokumentów, o których mowa w art. 93 ust. 3 ustawy,
+      oraz dokumentów, o których mowa w pkt 2;
+5)    warunki i tryb przeprowadzania rozmowy sprawdzającej, w tym skład komisji, o której mowa w art. 93f ust. 1 ustawy,
+      oraz warunki ustalania wyniku rozmowy sprawdzającej, a także zakres przedmiotów, które mogą być objęte rozmową
+      sprawdzającą;
+6)    wysokość wynagrodzenia członków komisji, o którym mowa w art. 93f ust. 5 ustawy;
+7)    tryb wnoszenia opłaty, o której mowa w art. 93g ust. 1 ustawy;
+8)    wysokość opłaty, która może podlegać zwrotowi w przypadkach, o których mowa w art. 93g ust. 5 ustawy, oraz tryb
+      zwrotu opłaty;
+9)    przypadki, w których opłata, o której mowa w art. 93g ust. 1 ustawy, nie podlega zwrotowi.
+    § 2. 1. W przypadkach, o których mowa w art. 93 ust. 3 ustawy, do wniosku o uznanie świadectwa lub innego doku-
+mentu, zwanych dalej „świadectwem”, dołącza się do wglądu oryginał albo duplikat świadectwa zalegalizowany przez:
+1)    konsula Rzeczypospolitej Polskiej, właściwego dla państwa, na którego terytorium lub w którego systemie edukacji
+      wydano świadectwo, lub
+2)    władze oświatowe państwa, na którego terytorium lub w którego systemie edukacji wydano świadectwo, lub
+3)    akredytowane w Rzeczypospolitej Polskiej lub innym państwie członkowskim Unii Europejskiej, państwie członkowskim
+      Europejskiego Porozumienia o Wolnym Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym lub
+      państwie członkowskim Organizacji Współpracy Gospodarczej i Rozwoju (OECD) przedstawicielstwo dyplomatyczne
+      lub urząd konsularny państwa, na którego terytorium lub w którego systemie edukacji wydano świadectwo.
+1)   Minister Edukacji kieruje działem administracji rządowej – oświata i wychowanie, na podstawie § 1 ust. 2 rozporządzenia Prezesa
+     Rady Ministrów z dnia 18 grudnia 2023 r. w sprawie szczegółowego zakresu działania Ministra Edukacji (Dz. U. poz. 2717).
+     2. Jeżeli świadectwo zostało wydane przez szkołę lub instytucję edukacyjną działającą w systemie edukacji państwa
+będącego stroną Konwencji znoszącej wymóg legalizacji zagranicznych dokumentów urzędowych, sporządzonej w Hadze
+dnia 5 października 1961 r. (Dz. U. z 2005 r. poz. 938 i 939), do wniosku, o którym mowa w ust. 1, dołącza się oryginał
+świadectwa albo jego duplikat – do wglądu, albo kopię świadectwa potwierdzoną notarialnie za zgodność z oryginałem,
+wraz z umieszczoną na dokumencie albo dołączoną do dokumentu apostille.
+     3. Jeżeli świadectwo nie zawiera informacji o przebiegu kształcenia, do wniosku, o którym mowa w ust. 1, dołącza się:
+1)   wykaz ocen uzyskanych podczas egzaminu warunkującego ukończenie szkoły lub instytucji edukacyjnej lub zaliczenie
+     danego etapu kształcenia;
+2)   wykaz przedmiotów i innych zajęć zrealizowanych w ramach danego etapu kształcenia wraz z uzyskanymi ocenami;
+3)   informację o zrealizowanym programie nauczania dotyczącą treści kształcenia, planowanego czasu nauki i skali ocen;
+4)   informację o uzyskanych uprawnieniach do kontynuacji nauki na odpowiednim poziomie w państwie, w którego sys-
+     temie edukacji wydano świadectwo, oraz o zakresie tych uprawnień.
+      4. Dokumenty, o których mowa w ust. 3, powinny być wydane lub potwierdzone przez szkołę lub instytucję eduka-
+cyjną, która wydała świadectwo, albo przez władze oświatowe państwa, na którego terytorium lub w którego systemie edu-
+kacji wydano świadectwo.
+     5. Dokumenty, o których mowa w ust. 1–3, dołączone do wniosku składa się wraz z ich tłumaczeniem na język polski.
+     § 3. 1. W przypadkach, o których mowa w art. 93a ustawy, do wniosku o potwierdzenie wykształcenia lub uprawnień
+do kontynuacji nauki dołącza się:
+1)   oryginał albo duplikat świadectwa – do wglądu, lub dokumenty, o których mowa w § 2 ust. 3, lub dokumenty pozwa-
+     lające w sposób pośredni na określenie poziomu wykształcenia lub uprawnień do kontynuacji nauki, w szczególności
+     dokumenty poświadczające uzyskane kwalifikacje zawodowe lub zatrudnienie, odbyte praktyki lub staże, lub
+2)   oświadczenie wnioskodawcy o uzyskanym wykształceniu, ukończonych szkołach, instytucjach edukacyjnych lub eta-
+     pach kształcenia za granicą lub uprawnieniach do kontynuacji nauki lub oświadczenie wnioskodawcy dotyczące infor-
+     macji, o których mowa w § 2 ust. 3.
+     2. Osoby niebędące obywatelami polskimi do wniosku, o którym mowa w ust. 1, dołączają dodatkowo dokument po-
+twierdzający prawo pobytu na terytorium Rzeczypospolitej Polskiej.
+     3. Dokumenty, o których mowa w ust. 1, dołączone do wniosku składa się wraz z ich tłumaczeniem na język polski.
+    § 4. 1. Tłumaczenia na język polski dokumentów, o których mowa w § 2 ust. 1–3 i w § 3 ust. 1, powinny być sporzą-
+dzone lub poświadczone przez:
+1)   osobę wpisaną przez Ministra Sprawiedliwości na listę tłumaczy przysięgłych lub
+2)   osobę zarejestrowaną jako tłumacz przysięgły w państwie członkowskim Unii Europejskiej, państwie członkowskim
+     Europejskiego Porozumienia o Wolnym Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym lub
+     państwie członkowskim Organizacji Współpracy Gospodarczej i Rozwoju (OECD), lub
+3)   konsula Rzeczypospolitej Polskiej, właściwego dla państwa, na którego terytorium lub w którego systemie edukacji
+     wydano świadectwo, lub
+4)   akredytowane w Rzeczypospolitej Polskiej przedstawicielstwo dyplomatyczne lub urząd konsularny państwa, na któ-
+     rego terytorium lub w którego systemie edukacji wydano świadectwo.
+     2. Jeżeli tłumaczenie dokumentów na język polski zgodnie z ust. 1 napotyka trudne do usunięcia przeszkody, kurator
+oświaty może wyrazić zgodę na przedłożenie przez wnioskodawcę tłumaczenia dokonanego przez inny podmiot, którego
+wiarygodność nie budzi zastrzeżeń.
+    § 5. 1. Kurator oświaty informuje wnioskodawcę o zakresie rozmowy sprawdzającej i uzgadnia z nim termin jej prze-
+prowadzenia.
+     2. Rozmowa sprawdzająca może obejmować:
+1)   literaturę obcą, historię powszechną, matematykę, biologię, geografię powszechną, fizykę oraz język obcy nowożytny –
+     jeżeli wnioskodawca ubiega się o uznanie świadectwa za dokument potwierdzający wykształcenie gimnazjalne, zasad-
+     nicze zawodowe, zasadnicze branżowe, średnie lub średnie branżowe lub uprawnienie do kontynuacji nauki albo o po-
+     twierdzenie wykształcenia gimnazjalnego, zasadniczego zawodowego, zasadniczego branżowego, średniego lub śred-
+     niego branżowego lub uprawnienia do kontynuacji nauki;
+2)   literaturę obcą, matematykę oraz język obcy nowożytny – jeżeli wnioskodawca ubiega się o uznanie świadectwa za
+     dokument potwierdzający wykształcenie podstawowe lub uprawnienie do kontynuacji nauki albo o potwierdzenie wy-
+     kształcenia podstawowego lub uprawnienia do kontynuacji nauki.
+     3. Jeżeli rozmowa sprawdzająca obejmuje język obcy nowożytny, wyboru języka dokonuje wnioskodawca spośród
+następujących języków: angielskiego, francuskiego, hiszpańskiego, niemieckiego, rosyjskiego lub włoskiego, a w przy-
+padku ubiegania się o uznanie świadectwa za dokument potwierdzający wykształcenie gimnazjalne lub uprawnienie do kon-
+tynuacji nauki albo o potwierdzenie wykształcenia gimnazjalnego lub uprawnienia do kontynuacji nauki – angielskiego,
+francuskiego, hiszpańskiego, niemieckiego, rosyjskiego, ukraińskiego lub włoskiego.
+     4. W przypadkach losowych lub zdrowotnych, uniemożliwiających przystąpienie do rozmowy sprawdzającej w uzgod-
+nionym terminie, kurator oświaty uzgadnia z wnioskodawcą nowy termin rozmowy sprawdzającej.
+     5. Jeżeli wnioskodawcą jest osoba niepełnosprawna, rozmowę sprawdzającą przeprowadza się w warunkach i w spo-
+sób dostosowany do rodzaju jego niepełnosprawności.
+     § 6. 1. Komisja przeprowadzająca rozmowę sprawdzającą, zwana dalej „komisją”, składa się od 3 do 5 osób, w tym
+przewodniczącego.
+     2. W ramach określonego przez kuratora oświaty zakresu rozmowy sprawdzającej komisja przygotowuje propozycje
+pytań na podstawie wymagań określonych w podstawie programowej kształcenia ogólnego dla danego etapu edukacyjnego.
+Propozycje pytań akceptuje kurator oświaty.
+     § 7. 1. Rozmowa sprawdzająca rozpoczyna się od sprawdzenia tożsamości wnioskodawcy na podstawie dowodu oso-
+bistego lub innego dokumentu stwierdzającego jego tożsamość.
+    2. Komisja przedstawia wnioskodawcy pytania oraz wyznacza czas na przygotowanie się wnioskodawcy do udzielenia
+odpowiedzi.
+     3. Podczas rozmowy sprawdzającej wnioskodawca ma swobodę wypowiedzi.
+     4. W przypadku wnioskodawcy, który nie zna języka polskiego, rozmowę sprawdzającą przeprowadza się w języku,
+którym posługuje się wnioskodawca. Jeżeli żadna z osób wchodzących w skład komisji nie zna języka, którym posługuje
+się wnioskodawca, podczas rozmowy sprawdzającej jest obecna w charakterze tłumacza osoba znająca ten język.
+     § 8. 1. Po przeprowadzeniu rozmowy sprawdzającej komisja wydaje opinię dotyczącą poziomu wykształcenia lub
+uprawnień do kontynuacji nauki, których dotyczy postępowanie w sprawie uznania świadectwa za dokument potwierdzający
+określony poziom wykształcenia lub uprawnienie do kontynuacji nauki albo postępowanie w sprawie potwierdzenia wy-
+kształcenia lub uprawnienia do kontynuacji nauki. Opinia może być pozytywna albo negatywna.
+     2. Komisja wydaje opinię w drodze głosowania, zwykłą większością głosów. W przypadku równej liczby głosów roz-
+strzyga głos przewodniczącego komisji.
+     3. Opinię sporządza się na piśmie. Opinia zawiera:
+1)   dane wnioskodawcy: imię (imiona) i nazwisko, datę urodzenia, numer dowodu osobistego lub innego dokumentu
+     stwierdzającego tożsamość oraz adres do korespondencji;
+2)   szczegółowe uzasadnienie;
+3)   zdania odrębne osób wchodzących w skład komisji, które nie zgadzają się z wydaną opinią, i ich szczegółowe uzasad-
+     nienie.
+     4. Opinię podpisują osoby wchodzące w skład komisji.
+     5. Komisja sporządza protokół zawierający:
+1)   dane wnioskodawcy: imię (imiona) i nazwisko, datę urodzenia, numer dowodu osobistego lub innego dokumentu stwier-
+     dzającego tożsamość oraz adres do korespondencji;
+2)   szczegółowy opis przebiegu rozmowy sprawdzającej, w tym czas jej trwania.
+     6. Do protokołu dołącza się opinię, o której mowa w ust. 1.
+     7. Protokół podpisują osoby wchodzące w skład komisji.
+     8. Komisja przekazuje kuratorowi oświaty protokół wraz z dołączoną opinią.
+     § 9. Wynagrodzenie członka komisji, o którym mowa w art. 93f ust. 5 ustawy, wynosi 200 zł.
+     § 10. 1. Opłatę, o której mowa w art. 93g ust. 1 ustawy, wnioskodawca wnosi na rachunek bankowy wskazany przez
+kuratora oświaty.
+     2. W przypadkach, o których mowa w art. 93g ust. 5 ustawy, wniesiona opłata może podlegać zwrotowi, po potrąceniu
+kosztów manipulacyjnych w wysokości nieprzekraczającej 10 % opłaty.
+     3. Opłatę podlegającą zwrotowi przekazuje się na rachunek płatniczy wskazany przez wnioskodawcę lub przekazem
+pocztowym na adres wskazany przez wnioskodawcę.
+     4. Jeżeli wnioskodawca nie stawi się na rozmowę sprawdzającą w wyznaczonym terminie i nie zawiadomi o tym ku-
+ratora oświaty z co najmniej trzydniowym wyprzedzeniem, wniesiona opłata nie podlega zwrotowi.
+      § 11. Rozporządzenie wchodzi w życie z dniem 1 stycznia 2026 r.2)
+
+[The MNiSW regulation of 28.09.2018 § 2-7 (nostrification: the application, the documents, translations, exams, 90 days, the fee), with its footnote]
+    § 2. 1. Osoba ubiegająca się o uznanie dyplomu ukończenia studiów za granicą za równoważny odpowiedniemu pol-
+skiemu dyplomowi i tytułowi zawodowemu składa wniosek do wybranej uczelni, o której mowa w art. 327 ust. 4 zdanie
+drugie ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce, zwanej dalej „uczelnią nostryfikującą”.
+     2. Do wniosku, o którym mowa w ust. 1, dołącza się:
+1)    dyplom ukończenia studiów;
+1)
+     Minister Nauki i Szkolnictwa Wyższego kieruje działem administracji rządowej – szkolnictwo wyższe, na podstawie § 1 ust. 2 pkt 2
+     rozporządzenia Prezesa Rady Ministrów z dnia 13 grudnia 2017 r. w sprawie szczegółowego zakresu działania Ministra Nauki
+     i Szkolnictwa Wyższego (Dz. U. poz. 2317).
+2)    dokumenty umożliwiające ocenę przebiegu studiów, uzyskiwanych efektów uczenia się i czasu trwania studiów;
+3)    świadectwo, dyplom lub inny dokument, na podstawie którego osoba, o której mowa w ust. 1, została przyjęta na studia;
+4)    oświadczenie osoby, o której mowa w ust. 1, o miejscu i dacie urodzenia.
+    3. Dokumenty, o których mowa w ust. 2 pkt 1–3, mogą być złożone w postaci kopii poświadczonych za zgodność z ory-
+ginałem przez uczelnię nostryfikującą.
+     § 3. 1. Datą wszczęcia postępowania nostryfikacyjnego jest dzień doręczenia wniosku uczelni nostryfikującej.
+   2. Uczelnia nostryfikująca dokonuje oceny formalnej wniosku. W przypadku stwierdzenia braków formalnych wniosku
+uczelnia nostryfikująca wyznacza osobie, o której mowa w § 2 ust. 1, termin, nie krótszy niż 14 dni, do jego uzupełnienia,
+pod rygorem pozostawienia wniosku bez rozpoznania.
+    § 4. 1. Uczelnia nostryfikująca może, po przeprowadzeniu oceny formalnej wniosku, zażądać od wnioskodawcy przed-
+łożenia tłumaczenia zwykłego na język polski dokumentów, o których mowa w § 2 ust. 2 pkt 1–3.
+    2. W szczególnie uzasadnionych przypadkach uczelnia nostryfikująca może zażądać od wnioskodawcy przedłożenia
+tłumaczenia na język polski dokumentów, o których mowa w § 2 ust. 2 pkt 2, sporządzonego i poświadczonego przez
+tłumacza przysięgłego albo sporządzonego przez zagranicznego tłumacza i poświadczonego przez właściwego konsula
+Rzeczypospolitej Polskiej.
+    § 5. 1. Uczelnia nostryfikująca porównuje program studiów, uzyskiwane efekty uczenia się i uprawnienia zawodowe,
+realizowane praktyki zawodowe oraz czas trwania studiów z programem studiów, uzyskiwanymi efektami uczenia się
+i uprawnieniami zawodowymi, realizowanymi praktykami zawodowymi oraz czasem trwania podobnych studiów prowa-
+dzonych w tej uczelni.
+    2. W przypadku stwierdzenia różnic w programie studiów, efektach uczenia się lub czasie trwania studiów uczelnia
+nostryfikująca może zobowiązać osobę, o której mowa w § 2 ust. 1, do złożenia określonych egzaminów lub odbycia prak-
+tyk zawodowych.
+    3. Uczelnia nostryfikująca określa warunki i terminy przeprowadzenia egzaminów lub odbycia praktyk zawodowych,
+o których mowa w ust. 2.
+   § 6. 1. Uczelnia nostryfikująca uznaje albo odmawia uznania dyplomu ukończenia studiów za granicą za równoważny
+odpowiedniemu polskiemu dyplomowi i tytułowi zawodowemu w terminie 90 dni od dnia złożenia wniosku spełniającego
+wymagania formalne.
+     2. Do terminu, o którym mowa w ust. 1, nie wlicza się okresów wyznaczonych na:
+1)    przedłożenie tłumaczenia dokumentów – w przypadkach, o których mowa w § 4;
+2)    złożenie egzaminów lub odbycie praktyk zawodowych – w przypadku, o którym mowa w § 5 ust. 2.
+    § 7. 1. Opłatę za przeprowadzenie postępowania nostryfikacyjnego wnosi się na rachunek bankowy albo w kasie uczel-
+ni nostryfikującej, w terminie określonym przez tę uczelnię.
+     2. Termin, o którym mowa w ust. 1, nie może być krótszy niż 14 dni.

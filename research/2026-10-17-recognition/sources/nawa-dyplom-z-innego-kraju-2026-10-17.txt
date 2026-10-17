@@ -1,0 +1,17 @@
+# NAWA (the Polish National Agency for Academic Exchange): "Dyplom z innego kraju"
+# Source: https://nawa.gov.pl/uznawalnosc/podjecie-pracy-w-polsce/dyplom-z-innego-kraju, retrieved 2026-10-17, html sha256 a512844c0f5979e94d53f5e68f7d9f12b1029ac178b15e836ee90862e7e6396d
+# Text of the page's main element; navigation, blank lines, empty list markers and the print link removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): 629ff3f7043f68899b4aab8ff9f8923ed25125ff8cc391a9e628a2ba044dcc32.
+Dyplom z innego kraju
+Dyplom ukończenia studiów wyższych lub tytuł zawodowy uzyskany za granicą może być uznany za równoważny z polskim odpowiednikiem na podstawie umowy międzynarodowej, a w przypadku jej braku – w drodze nostryfikacji.
+WAŻNE!
+Uzyskane za granicą dyplomy nie mogą zostać w Polsce uznane, jeśli:
+- instytucje, które je wydały lub instytucje, w których prowadzone było kształcenie:
+- nie były akredytowanymi uczelniami w dniu wydania dyplomu lub realizowały program studiów nieposiadający akredytacji w dniu wydania dyplomu;
+- nie działają w systemie szkolnictwa wyższego żadnego państwa;
+- program studiów wyższych albo jego część była realizowana niezgodnie z przepisami państwa, na którego terenie było prowadzone kształcenie.
+Podstawa prawna:
+- art. 327 ust. 1 ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce (Dz.U. 2024 poz. 1571),
+- rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia 28 września 2018 r. w sprawie nostryfikacji dyplomów ukończenia studiów za granicą oraz potwierdzenia ukończenia studiów na określonym poziomie (Dz. U. poz. 1881).
+Jeśli potrzebujesz pisemnej informacji na temat możliwości uznania zagranicznego dyplomu w Polsce na przykład w celu podjęcia pracy lub kontynuacji studiów, możesz skorzystać z systemu KWALIFIKATOR lub złożyć wniosek o jej wydanie.
+Informacji na temat zasad uznawania w Polsce zagranicznych świadectw szkolnych udziela Departament Współpracy Międzynarodowej w Ministerstwie Edukacji Narodowej (Al. J.Ch. Szucha 25, 00-918 Warszawa, tel.: 22 34 74 312, e-mail: Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.).

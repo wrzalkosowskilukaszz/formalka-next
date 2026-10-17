@@ -1,0 +1,38 @@
+# NAWA (the Polish National Agency for Academic Exchange): "Dyplom ukończenia studiów"
+# Source: https://nawa.gov.pl/uznawalnosc/wydawanie-informacji-o-zagranicznych-dyplomach/dyplom-ukonczenia-studiow, retrieved 2026-10-17, html sha256 0134f4b7d2a24998f51cdde5790721223cf8b5c9734b170a301514a4d8100b3d
+# Text of the page's main element; navigation, blank lines, empty list markers and the print link removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): f2328379381c17359f0ee599fa33bf21b08e6e448c1b3f85a09d6a4a36829cfb.
+Dyplom ukończenia studiów
+Jeśli potrzebujesz pisemnej informacji na temat możliwości uznania zagranicznego dyplomu w Polsce na przykład w celu podjęcia pracy lub kontynuacji studiów, możesz skorzystać z systemu KWALIFIKATOR lub złożyć w NAWA wniosek o jej wydanie zgodnie z poniższą instrukcją.
+Informujemy, że od 3 października 2023 r. wnioski o wydanie informacji o zagranicznych dyplomach należy składać wyłącznie przez Internet przy użyciu Systemu SYRENA.
+Indywidualne informacje Dyrektora NAWA o zagranicznych dyplomach, potwierdzających
+- ukończenie studiów wyższych
+- nadanie stopni lub tytułów naukowych
+są wydawane
+- po przesłaniu kompletu dokumentów przez System SYRENA,
+- wyłącznie elektronicznie w formie dokumentu PDF podpisanego kwalifikowanym podpisem cyfrowym
+- w języku polskim
+- bezpłatnie.
+W celu uzyskania informacji o zagranicznym dyplomie:
+- przed złożeniem wniosku zapoznaj się z instrukcją użytkownika Systemu SYRENA:
+SYRENA - Instrukcja Użytkownika - Dyplom
+SYRENA - User Manual - Diploma
+- przygotuj wymagane dokumenty - w formacie PDF lub JPG, maksymalny rozmiar każdego pliku to 3 MB. Zwróć uwagę na krok 2 i krok 3 opisane w instrukcji, żeby prawidłowo wpisać dane dotyczące dokumentów i odpowiednio załączyć:
+- dyplom, o którym chcesz uzyskać informację
+- transkrypt / suplement / dodatek do ww. dyplomu
+- dokument poprzedni - dokument, który był podstawą przyjęcia na studia
+- transkrypt / suplement / dodatek do dokumentu poprzedniego (jeżeli dotyczy)
+- tłumaczenia przysięgłe wszystkich ww. dokumentów (nie dotyczy dokumentów wydanych w językach: angielski, rosyjski, ukraiński, białoruski)
+- dowód tożsamości
+- dokument potwierdzający zmianę nazwiska
+- w przypadku uchodźców – dokument potwierdzający status uchodźcy
+- w Systemie SYRENA wypełnij formularz wniosku i dołącz skany wymaganych dokumentów,
+- aby prawidłowo złożyć wniosek aktywuj indywidualny link generowany dla danej sprawy, przesłany przez System SYRENA na wskazany w formularzu adres e-mail,
+- samodzielnie sprawdź status wniosku w Systemie SYRENA,
+- pobierz informację o zagranicznym dyplomie - wiadomość o wydaniu informacji i możliwości jej pobrania jest przesyłana przez System SYRENA.
+W przypadku problemów technicznych zapraszamy do kontaktu przez e-mail: Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.
+Przejdź do systemu SYRENA
+UWAGA!
+- dokumenty przesłane do NAWA w wersji papierowej nie podlegają zwrotowi, niezależnie od daty przesłania wniosku.
+- w przypadku wniosków złożonych przez System SYRENA – status sprawy można sprawdzić samodzielnie w systemie.
+- informacje Dyrektora NAWA o zagranicznych dyplomach wydawane są najszybciej jak to możliwe, biorąc pod uwagę ogromną liczbę wpływających wniosków. System SYRENA wysyła do wnioskodawcy automatyczną wiadomość o tym, że informacja jest gotowa i dostępna do pobrania.

@@ -1,0 +1,32 @@
+# NAWA (the Polish National Agency for Academic Exchange): "Zawody regulowane"
+# Source: https://nawa.gov.pl/uznawalnosc/podjecie-pracy-w-polsce/zawody-regulowane, retrieved 2026-10-17, html sha256 554a88eeef531a1cbea59e8d3179bb017a5f79165a381518e6e0035ea1c725b5
+# Text of the page's main element; navigation, blank lines, empty list markers and the print link removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): 66446d8158a867e316c04f285c0244eeb802f8cd3a2b7859301fc4edd634ae4d.
+Zawody regulowane
+Zawód regulowany to zespół czynności zawodowych, których wykonywanie jest uzależnione od spełnienia wymogów określonych w przepisach danego państwa członkowskiego UE. Każde państwo członkowskie UE samodzielnie decyduje o uregulowaniu dostępu do zawodów. Ten sam zawód może być więc zawodem regulowanym w jednym państwie członkowskim UE, podczas gdy w innych państwach członkowskich nie będzie on regulowany. Aby poznać pełną listę zawodów regulowanych w Polsce, odwiedź wskazaną stronę Komisji Europejskiej.
+Jeżeli oprócz dyplomu uzyskałeś w państwie członkowskim UE, Norwegii, Lichtensteinie lub Konfederacji Szwajcarskiej kwalifikacje do wykonywania zawodu, który jest w Polsce zawodem regulowanym, to możesz się starać o ich uznanie w Polsce. Więcej informacji na ten temat znajdziesz na stronie: www.gov.pl/web/nauka/uznawanie-kwalifikacji-zawodowych-1. Szczegółowych informacji udziela Wydział Koordynacji Systemu Uznawania Kwalifikacji w Departamencie Współpracy Międzynarodowej Ministerstwa Nauki i Szkolnictwa Wyższego (tel. 22 52 92 266, Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.).
+W przypadku kwalifikacji uzyskanych poza Unią Europejską, Norwegią, Islandią, Liechtensteinem i Konfederacją Szwajcarską, zatrudnienie na terytorium Polski następuje zgodnie z przepisami krajowymi. Oznacza to, że chcąc podjąć pracę w zawodzie regulowanym, powinieneś najpierw uznać zagraniczny dyplom, aby następnie móc się ubiegać o uzyskanie uprawnień zawodowych zgodnie z przepisami określającymi zasady wykonywania danego zawodu w Polsce.
+W przypadku, gdy dany zawód nie jest w Polsce zawodem regulowanym, decyzję o zatrudnieniu podejmuje pracodawca. Ma on prawo wymagać potwierdzenia równoważności zagranicznego dokumentu z jego polskim odpowiednikiem lub przedłożenia informacji o poziomie wykształcenia uzyskanego za granicą.
+Najczęściej wykonywane zawody regulowane oraz instytucje nadzorujące:
+- Nauczyciel – Departament Kształcenia Ogólnego w Ministerstwie Edukacji Narodowej
+- Psycholog – Departament Dialogu i Partnerstwa Społecznego w Ministerstwie Rodziny, Pracy i Polityki Społecznej
+- Pracownik socjalny – Departament Pomocy Społecznej w Ministerstwie Rodziny, Pracy i Polityki Społecznej
+- Logopeda – Departament Rozwoju Kadr Medycznych w Ministerstwie Zdrowia
+- Lekarz / lekarz dentysta – Naczelna Izba Lekarska
+- Farmaceuta – Naczelna Izba Aptekarska
+- Pielęgniarka / położna – Naczelna Izba Pielęgniarek i Położnych
+- Lekarz weterynarii – Krajowa Izba Lekarsko-Weterynaryjna
+- Fizjoterapeuta – Krajowa Izba Fizjoterapeutów
+- Diagnosta laboratoryjny – Krajowa Izba Diagnostów Laboratoryjnych
+- Ratownik medyczny – Departament Rozwoju Kadr Medycznych w Ministerstwie Zdrowia
+- Inne zawody medyczne
+- Zawody górnicze – Wyższy Urząd Górniczy
+- Strażak – Komenda Główna Państwowej Straży Pożarnej
+- Inżynier budownictwa – Polska Izba Inżynierów Budownictwa
+- Elektryk – Urząd Regulacji Energetyki
+- Geodeta – Główny Urząd Geodezji i Kartografii
+- Geolog – Ministerstwo Klimatu i Środowiska
+- Architekt – Izba Architektów RP
+- Tłumacz przysięgły – Departament Zawodów Prawniczych w Ministerstwie Sprawiedliwości
+- Adwokat, radca prawny, notariusz – Departament Zawodów Prawniczych w Ministerstwie Sprawiedliwości
+- Konserwator zabytków – Departament Ochrony Zabytków w Ministerstwie Kultury i Dziedzictwa Narodowego

@@ -1,0 +1,20 @@
+# NAWA (the Polish National Agency for Academic Exchange): "Dyplom z państwa UE, OECD lub EFTA"
+# Source: https://nawa.gov.pl/uznawalnosc/podjecie-pracy-w-polsce/dyplom-z-panstwa-ue-oecd-lub-efta, retrieved 2026-10-17, html sha256 97c7fc4a555b655b7a3bf981b2a3431aa4ff602406dd1a353e1c3aea09e063e7
+# Text of the page's main element; navigation, blank lines, empty list markers and the print link removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): 9bacd36126123269c73910c97d2ee8fb304feaa4a396f245233dfb7f18e74c66.
+Dyplom z państwa UE, OECD lub EFTA
+Dyplom ukończenia studiów wyższych wydany przez uczelnię działającą w systemie szkolnictwa wyższego państwa członkowskiego UE, OECD lub EFTA potwierdzający ukończenie:
+- 3-letnich studiów lub studiów pierwszego stopnia trwających co najmniej 3 lata – potwierdza w Polsce posiadanie wyższego wykształcenia na poziomie studiów pierwszego stopnia;
+- studiów drugiego stopnia – potwierdza w Polsce posiadanie wyższego wykształcenia na poziomie studiów drugiego stopnia;
+- co najmniej 4-letnich studiów jednolitych – potwierdza w Polsce posiadanie wyższego wykształcenia na poziomie studiów drugiego stopnia.
+Powyższą zasadę stosuje się również do dyplomów wydanych wspólnie przez uczelnie funkcjonujące w tych państwach.
+WAŻNE!
+Uzyskane za granicą dyplomy nie potwierdzają w Polsce posiadania wykształcenia wyższego na określonym poziomie studiów, jeśli:
+- instytucje, które je wydały lub instytucje, w których prowadzone było kształcenie:
+- nie były akredytowanymi uczelniami w dniu wydania dyplomu lub realizowały program studiów nieposiadający akredytacji w dniu wydania dyplomu;
+- nie działają w systemie szkolnictwa wyższego żadnego państwa;
+- program studiów wyższych albo jego część była realizowana niezgodnie z przepisami państwa, na którego terenie było prowadzone kształcenie.
+Jeśli potrzebujesz pisemnej informacji na temat możliwości uznania zagranicznego dyplomu w Polsce na przykład w celu podjęcia pracy lub kontynuacji studiów, możesz skorzystać z systemu KWALIFIKATOR lub złożyć w NAWA wniosek o jej wydanie.
+WAŻNE
+Potwierdzenie posiadania wykształcenia wyższego na określonym poziomie studiów nie jest jednoznaczne z posiadaniem polskiego tytułu zawodowego (magister, inżynier, licencjat, itd.). Dyplom ukończenia studiów wyższych lub tytuł zawodowy uzyskany za granicą mogą być uznane za równoważne z polskim odpowiednikiem na podstawie umowy międzynarodowej, a w przypadku jej braku – w drodze nostryfikacji.
+Informacji na temat zasad uznawania w Polsce zagranicznych świadectw szkolnych udziela Departament Współpracy Międzynarodowej w Ministerstwie Edukacji Narodowej (Al. J.Ch. Szucha 25, 00-918 Warszawa, tel.: 22 34 74 312, e-mail: Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.).
