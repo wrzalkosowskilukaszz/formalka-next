@@ -217,9 +217,17 @@ const cite = (quotes, prefix = 'Przykład z przewodnika Formalki, stan na 15.10.
 // The fees a plan asks for, summed only when the sum is one amount the person pays. Two stamp duties for one
 // permit are the registry's alternatives for different reasons (residence "short": 85 or 340 zł), so they are
 // listed, never added up (residence COMPARISON D21).
+const isDuty = (f) => /^Opłata skarbowa/.test(f.purpose.pl);
 function feeSum(fees) {
-  const duties = fees.filter((f) => /^Opłata skarbowa/.test(f.purpose.pl));
-  return duties.length > 1 ? null : fees.reduce((s, f) => s + f.amountPln, 0);
+  return fees.filter(isDuty).length > 1 ? null : fees.reduce((s, f) => s + f.amountPln, 0);
+}
+// A step's fees in one line: amounts the person pays together are joined with "+", alternative duties with
+// "albo" (the guide's payment step said "340 zł + 85 zł + 100 zł" for a short stay; correctness audit K5).
+function feeLine(fees) {
+  const amounts = (list) => list.map((f) => `${f.amountPln} zł`);
+  if (feeSum(fees) !== null) return `Opłata: ${amounts(fees).join(' + ')}`;
+  const other = fees.filter((f) => !isDuty(f));
+  return `Opłata skarbowa: ${amounts(fees.filter(isDuty)).join(' albo ')}, zależnie od powodu pobytu; która Cię dotyczy, jest w opisie kroku${other.length ? `. Do tego: ${amounts(other).join(' + ')}` : ''}`;
 }
 const FRAGMENT_RE = /:\s*$|^[a-ząćęłńóśźż0-9]|o (?:której|którym|których) mowa w ust\./;
 function noteText(n) {

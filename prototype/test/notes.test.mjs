@@ -3,6 +3,7 @@
 // Run: node --test prototype/test/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readdirSync, readFileSync } from 'node:fs';
 import { loadApp } from './load.mjs';
 
 const app = loadApp();
@@ -50,4 +51,17 @@ test('two stamp duties for one permit are listed, never added up (residence COMP
   assert.equal(app.feeSum(fees('study')), 440);
   assert.equal(fees('short').length, 3, 'the registry gives a short stay 85 zł and 340 zł, for different reasons, and the card');
   assert.equal(app.feeSum(fees('short')), null);
+  // The guide's line for the payment step: the duties are alternatives, the card fee is paid with either.
+  assert.match(app.feeLine(fees('short')), /^Opłata skarbowa: 340 zł albo 85 zł, zależnie od powodu pobytu; .*Do tego: 100 zł$/);
+  assert.equal(app.feeLine(fees('work')), 'Opłata: 440 zł + 100 zł');
+});
+
+test('fee amounts are added up or joined with "+" only in feeSum and feeLine (correctness audit K5)', () => {
+  // The first fix of D21 changed three places and missed two (the plan card, the guide's payment step).
+  const dir = new URL('../src/js/', import.meta.url);
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.js') && x !== '10-cases.js')) {
+    const src = readFileSync(new URL(f, dir), 'utf8');
+    assert.doesNotMatch(src, /reduce\([^;]*amountPln/, `${f} adds up fee amounts; use feeSum`);
+    assert.doesNotMatch(src, /amountPln[^;]*join\(' \+ '\)/, `${f} joins fee amounts with "+"; use feeLine`);
+  }
 });

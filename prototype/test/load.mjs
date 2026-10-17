@@ -15,6 +15,6 @@ export function loadApp(modules = ['00-base.js', '10-cases.js', '32-correct.js',
   vm.runInContext(readFileSync(join(root, '../packages/case-engine/dist/case-engine.browser.js'), 'utf8'), ctx);
   const have = readdirSync(join(root, 'src/js'));
   const code = modules.map((m) => { if (!have.includes(m)) throw new Error(`missing module ${m}`); return readFileSync(join(root, 'src/js', m), 'utf8'); }).join('\n');
-  vm.runInContext(`${code}\nS = freshState();\nglobalThis.app = { E, S, norm, polarity, readAnswer, readWhen, readFollowUp, readWhom, wordsOf, intentsIn, plural, isoAdd, maskPersonal, looksPersonal, reflect, keyWords, readWaiting, affectedBy, correctionIn, ASKS_FIX, dueRange, STUDY_SCOPE, RESIDENCE_SCOPE, noteText, feeSum };`, ctx);
+  vm.runInContext(`${code}\nS = freshState();\nglobalThis.app = { E, S, norm, polarity, readAnswer, readWhen, readFollowUp, readWhom, wordsOf, intentsIn, plural, isoAdd, maskPersonal, looksPersonal, reflect, keyWords, readWaiting, affectedBy, correctionIn, ASKS_FIX, dueRange, STUDY_SCOPE, RESIDENCE_SCOPE, noteText, feeSum, feeLine };`, ctx);
   return ctx.app;
 }

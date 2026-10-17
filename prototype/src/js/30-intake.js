@@ -265,7 +265,7 @@ async function planApproval(c) {
     return `<li><span class="meta">${esc(f?.question.pl ?? a.fact)}</span><b>${esc(f?.options?.find((o) => o.value === a.value)?.label.pl ?? String(a.value))}</b></li>`;
   }).join('');
   const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
-  const total = fees.reduce((n, f) => n + f.amountPln, 0);
+  const total = feeSum(fees);
   const verdict = await new Promise((res) => {
     showDock(`<section aria-labelledby="plan-h" class="plan-card">
       <h2 id="plan-h" class="dock-q" tabindex="-1" data-focus>Twój pierwszy plan</h2>
@@ -274,7 +274,7 @@ async function planApproval(c) {
         <li class="row"><span class="sq">${icon('signpost')}</span><span class="tx"><b>${esc(routeTitle(p) || c.title)}</b><span class="meta">${p.levels.length - 1} ${plural(p.levels.length - 1, 'poziom', 'poziomy', 'poziomów')} na mapie${c.state.place ? `. Miejscowość: ${esc(c.state.place.name)}` : ''}</span></span></li>
         ${p.unsure.length ? `<li class="row"><span class="sq">${icon('question')}</span><span class="tx"><b>Do potwierdzenia (${p.unsure.length})</b><span class="meta">${p.unsure.map((u) => esc(factOf(c, u.fact)?.question.pl ?? u.fact)).join('<br>')}</span></span></li>` : ''}
         ${staleOf(p) ? `<li class="row"><span class="sq">${icon('warning-circle')}</span><span class="tx"><b>Część dat może być nieaktualna</b><span class="meta">${esc(staleOf(p).text)}</span></span></li>` : ''}
-        ${total ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłaty: ${total} zł</b><span class="meta">Przykład z przewodnika Formalki, stan na 15.10.2026</span></span></li>` : ''}
+        ${total ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłaty: ${total} zł</b><span class="meta">Przykład z przewodnika Formalki, stan na 15.10.2026</span></span></li>` : total === null ? `<li class="row"><span class="sq">${icon('coins')}</span><span class="tx"><b>Opłata skarbowa zależy od powodu pobytu</b><span class="meta">W kroku „Opłaty” są dwie, każda dla innego powodu</span></span></li>` : ''}
         <li class="row"><span class="sq">${icon(v.ok ? 'list-checks' : 'warning-circle')}</span><span class="tx"><b>${v.ok ? 'Plan zgodny z przewodnikami Formalki' : `Plan niezgodny z przewodnikami (${v.violations.length})`}</b><span class="meta">${v.ok ? 'Silnik sprawdza źródło każdego elementu oraz kwoty, terminy i urzędy względem przewodników. To nie jest weryfikacja prawna: przewodniki mogą być niepełne. Kwoty i terminy to przykłady.' : 'Nie pokażę planu, który nie przeszedł kontroli'}</span></span></li>
       </ul>
       ${rows ? `<details class="answers"><summary>Twoje odpowiedzi (${p.assumptions.length})</summary><ul>${rows}</ul></details>` : ''}

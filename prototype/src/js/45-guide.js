@@ -98,7 +98,7 @@ function guidance(c) {
       if (steps.length === 1) A.push({ kind: 'task', taskId: steps[0].id, label: 'Oznacz jako zrobione', ic: 'check', primary: !form && !docs.length });
     }
     const fees = l.fees.filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
-    if (fees.length) lines.push(`Opłata: ${fees.map((f) => `${f.amountPln} zł`).join(' + ')} (przykład z przewodnika; sposób zapłaty jest w źródle).`);
+    if (fees.length) lines.push(`${feeLine(fees)} (przykład z przewodnika; sposób zapłaty jest w źródle).`);
     if (l.office) {
       const o = l.office;
       if (o.needsPlace) { lines.push('Podaj miejscowość, a pokażę urzędy z naszych źródeł.'); A.push({ kind: 'place', label: 'Podaj miejscowość', ic: 'map-pin' }); }
