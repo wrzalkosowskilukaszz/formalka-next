@@ -67,7 +67,7 @@
 | # | Decision | Why it matters |
 |---|---|---|
 | D1 | Keep the new order of the waiting answer (art. 100d first, legal aid as the main button)? | Until 4.03.2027 a ponaglenie meets a special act that disarms the inactivity rules. The old order made the template the obvious next step |
-| D2 | The eleven findings for the production residence guide (COMPARISON §3, P1–P11) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
+| D2 | The twelve findings for the production residence guide (COMPARISON §3, P1–P12; P12 came from the scenarios on 17.10) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
 | D3 | A weekly scheduled check of the four Ukrainian-status acts (`research/2026-10-17-ukr/sources/README.md`, Upkeep) | This is doc 19's gate for wave 3. It runs the two source tools and reports any change. I did not set it up, since it would run outside this session |
 | D4 | Whether the service plan (doc 18) adds "PESEL before the MOS account" to the journey | It is a cross-matter dependency that interviews should probe |
 
