@@ -1,0 +1,24 @@
+# ZUS: Świadczenie wychowawcze 800+ – warunki dla cudzoziemców i możliwe przyczyny wstrzymania wypłat
+# Source: https://www.zus.pl/-/%C5%9Awiadczenie-wychowawcze-800-warunki-dla-cudzoziemc%C3%B3w-i-mo%C5%BCliwe-przyczyny-wstrzymania-wyp%C5%82at, retrieved 2026-10-17, html sha256 7e432236b3a13bc39750b56ba4af6b0b2ba7a726617e94e17ed15781a0526429
+# Text of the article element; navigation removed. Dated 22.09.2026 on the page. Its "3 dni od otrzymania wezwania" matches the act only for temporary protection holders, and there as 3 working days (art. 23 ust. 3b).
+
+22
+września
+2026
+Cudzoziemcy, czyli osoby, które nie są obywatelami Polski, muszą spełniać dodatkowe warunki, aby zachować lub uzyskać prawo do świadczenia wychowawczego 800+. ​​​​​​​
+W sytuacji gdy nie możemy potwierdzić w odpowiednich rejestrach, że dany warunek jest spełniony, mamy obowiązek wstrzymać wypłatę świadczenia. Aby ją wznowić, musimy uzyskać od osoby składającej wniosek wyjaśnienia i dowody. Informacje o statusie świadczenia 800+ oraz o ewentualnych wezwaniach do osobistego złożenia wyjaśnień i przedstawienia dowodów zamieszczamy na koncie eZUS osoby składającej wniosek.
+Jakie dodatkowe warunki muszą spełniać cudzoziemcy, aby uzyskać lub zachować prawo do świadczenia 800+
+Prawo do świadczenia 800+ przysługuje osobie, która nie jest obywatelem Polski, jeśli:
+- przez cały okres pobierania świadczenia mieszka na terytorium Polski wraz z dzieckiem, na które zostało przyznane świadczenie 800+,
+- jest aktywna zawodowo, czyli podlega ubezpieczeniom emerytalno-rentowym,
+- dziecko realizuje obowiązek rocznego przygotowania przedszkolnego, obowiązek szkolny lub obowiązek nauki.
+Jakie mogą być przyczyny wstrzymania wypłaty świadczenia 800+
+Zgodnie z ustawą o pomocy państwa w wychowywaniu dzieci wstrzymamy wypłatę świadczenia 800+, jeśli pojawią się wątpliwości, czy cudzoziemiec składający wniosek lub dziecko, którego on dotyczy, spełniają wszystkie warunki.
+Warunek zamieszkania w Polsce weryfikujemy między innymi w rejestrze beneficjentów ochrony czasowej, który prowadzi Straż Graniczna. Odnotowywane są tam na przykład dane dotyczące przekraczania granicy Polski.
+Najczęstsze przyczyny wstrzymania wypłaty świadczenia 800+:
+- w rejestrze Straży Granicznej jest odnotowany wyjazd z Polski osoby składającej wniosek lub dziecka, a nie ma danych o ponownym wjeździe,
+- w rejestrach Zakładu Ubezpieczeń Społecznych i Kasy Rolniczego Ubezpieczenia Społecznego nie ma informacji, że osoba składająca wniosek jest zgłoszona do ubezpieczeń emerytalno-rentowych,
+- w systemie informacji oświatowej nie ma informacji, że dziecko realizuje obowiązek rocznego przygotowania przedszkolnego, obowiązek szkolny lub obowiązek nauki,
+- w rejestrach występują niezgodności dotyczące danych identyfikacyjnych osoby składającej wniosek lub dziecka (imię, nazwisko, data urodzenia, numer PESEL).
+Co trzeba zrobić, aby ZUS wznowił wypłatę świadczenia 800+
+Jeśli wstrzymamy wypłatę świadczenia 800+, wezwiemy osobę składającą wniosek do złożenia wyjaśnień i przedstawienia dowodów, że wraz z dzieckiem spełnia warunki, aby otrzymywać to świadczenie. Po uzyskaniu dowodów w wyznaczonym terminie (3 dni od otrzymania wezwania) wypłatę wznowimy od miesiąca, w którym ją wstrzymaliśmy.

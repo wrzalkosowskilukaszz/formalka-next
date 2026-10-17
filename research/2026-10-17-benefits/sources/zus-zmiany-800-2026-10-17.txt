@@ -1,0 +1,121 @@
+# ZUS: Zmiany w świadczeniu wychowawczym (program Rodzina 800+)
+# Source: https://www.zus.pl/swiadczenia/swiadczenia-dla-rodzin/swiadczenie-wychowawcze-800-plus/zmiany-w-swiadczeniu-wychowawczym-program-rodzina-800-, retrieved 2026-10-17, html sha256 69cfda0cd6f1fe688dfa7ec6e462a632dd09fc309f6c742c193fc6ceca816d7f
+# Text of the article element (Liferay journal content); navigation removed. Dated 27.01.2026 on the page, before the changes applied.
+
+27
+stycznia
+2026
+Kogo dotyczą zmiany
+Zmiany dotyczą:
+- obywateli tzw. państw trzecich (spoza UE/EFTA oraz Wielkiej Brytanii [osób objętych umową wystąpienia]), którzy przebywają legalnie na terytorium Rzeczpospolitej Polskiej i mają dostęp do rynku pracy,
+- obywateli Ukrainy ze statusem UKR, którzy przybyli do Polski w związku z działaniami wojennymi.
+Dla pozostałych osób (obywatele Polski, państw UE/EFTA oraz Wielkiej Brytanii [osoby objęte umową wystąpienia]) zasady przyznawania świadczenia wychowawczego 800+ pozostają bez zmian.
+W przypadku wniosków składanych po 31 stycznia 2026 r. obowiązkowe będzie posługiwanie się numerem PESEL.
+Od kiedy zmiany dla obywateli Ukrainy ze statusem UKR
+Z 31 stycznia 2026 r. zostanie wstrzymane świadczenie wychowawcze 800+ dla obywateli Ukrainy ze statusem UKR. Aby ZUS mógł ponownie wypłacać świadczenie, muszą być spełnione wszystkie poniższe warunki:
+- Rodzic lub opiekun musi złożyć nowy wniosek
+- Wnioskodawca (rodzic lub opiekun) musi być aktywny zawodowo w Polsce
+- Dziecko musi realizować obowiązek szkolny w polskiej placówce edukacyjnej
+- Wnioskodawca (rodzic lub opiekun) i dziecko muszą mieszkać na terenie Rzeczypospolitej Polskiej.
+-
+Rodzic lub opiekun musi złożyć nowy wniosek
+Od 1 lutego 2026 r. obywatele Ukrainy ze statusem UKR będą musieli złożyć ponownie wniosek o świadczenie wychowawcze 800+, ponieważ zmienił się zakres danych, które należy obowiązkowo podać:
+- numery PESEL wnioskodawcy i dziecka,
+- dane dotyczące przekroczenia granicy,
+- dane dokumentu, który potwierdza legalność pobytu w Polsce,
+- oświadczenie, że wnioskodawca spełniał warunek aktywności zawodowej w miesiącu poprzedzającym miesiąc złożenia wniosku,
+- oświadczenie, że w roku szkolnym, w którym składany jest wniosek, dziecko uczęszcza w Polsce do szkoły lub przedszkola,
+- odpowiedzi na nowe pytania:
+- Czy dziecko, na które ubiegasz się o świadczenie, ma orzeczenie o niepełnosprawności i nie ma 16 lat?
+- Czy dziecko, na które ubiegasz się o świadczenie, na ustalony stopień niepełnosprawności (umiarkowany lub znaczny) i ma powyżej 16 lat?
+-
+Wnioskodawca (rodzic lub opiekun) musi być aktywny zawodowo w Polsce
+Warunek aktywności zawodowej nie dotyczy cudzoziemców, którzy:
+- wnioskują o świadczenie na dziecko, które jest obywatelem Polski,
+- wychowują dziecko do 16 roku życia z orzeczeniem o niepełnosprawności,
+- wychowują dziecko powyżej 16 roku życia z orzeczonym umiarkowanym bądź znacznym stopniem niepełnosprawności.
+Aktywność zawodowa, której podstawa wymiaru składek na ubezpieczenia społeczne musi wynosić minimum 50 proc. minimalnego wynagrodzenia za pracę.
+Za taką aktywność zawodową uznaje się podleganie obowiązkowym ubezpieczeniom emerytalnemu i rentowym jako:
+- pracownicy (uprawnione kody: 01 10, 01 11, 01 20, 01 25, 01 26),
+- osoby wykonujące pracę nakładczą (02 00),
+- członkowie rolniczych spółdzielni produkcyjnych i spółdzielni kółek rolniczych (03 10, 03 20),
+- osoby wykonujące prace na podstawie umowy agencyjnej lub umowy zlecenia albo innej umowy o świadczenie usług, do której zgodnie z Kodeksem cywilnym stosuje się przepisy dotyczące zlecenie oraz osoby z nimi współpracujące (04 11, 04 17, 04 21, 04 24, 04 26, 04 28),
+- osoby prowadzące pozarolniczą działalność oraz osoby z nimi współpracujące (05 10, 05 11, 05 12, 05 14, 05 20, 05 30, 05 43, 05 44, 05 45),
+- osoby współpracujące z osobami fizycznymi, o których mowa w art.18 ust. 1 ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców (05 11),
+- osoby pobierające stypendium sportowe (07 10, 07 20),
+- osoby otrzymujące stypendium doktoranckie, doktoranci (18 11, 18 12,18 13),
+- osoby wykonujące umowę uaktywniającą z tytułu sprawowania opieki nad dzieckiem w wieku do 3 lat, czyli nianie (04 30, 04 31),
+- marynarze (24 00).
+Warunek aktywności zawodowej uznaje się w tych przypadkach za spełniony, jeżeli podstawa wymiaru składek na te ubezpieczenia stanowi nie mniej niż 50 proc. minimalnego wynagrodzenia za pracę.
+Wymóg minimalnej podstawy wymiaru składek musi być spełniony także gdy podstawa wymiaru składek na ubezpieczenia emerytalne i rentowe ostatnio przyjęta do obliczenia składek albo kwota zasiłku, świadczenia albo wynagrodzenia stanowi co najmniej 50 proc. minimalnego wynagrodzenia za pracę w przypadku osób zgłoszonych z wymieniony tytułów, które korzystają z niżej wymienionych świadczeń:
+- z ubezpieczenia chorobowego (na podstawie ustawy z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa), czyli:
+- zasiłku macierzyńskiego,
+- zasiłku w wysokości zasiłku macierzyńskiego,
+- zasiłku chorobowego,
+- zasiłku opiekuńczego,
+- zasiłku wyrównawczego,
+- świadczenia rehabilitacyjnego,
+- z ubezpieczenia wypadkowego (na podstawie ustawy z dnia 30 października 2002 r. o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych), czyli:
+- zasiłku chorobowego,
+- zasiłku wyrównawczego
+- świadczenia rehabilitacyjnego.
+Aktywność zawodowa, przy której nie wymaga się minimalnej podstawy składek, ale wymaga się podlegania obowiązkowi ubezpieczeń emerytalnego i rentowych.
+W przypadku poniższych sytuacji wystarczy sam fakt podlegania obowiązkowi ubezpieczeń emerytalnego i rentowych jako:
+- osoby pobierające zasiłek dla bezrobotnych (09 10),
+- osoby pobierające stypendium w okresie odbywania szkolenia, stażu lub przygotowania zawodowego dorosłych, na które zostały skierowane przez inne niż powiatowy urząd pracy (PUP) podmioty kierujące na szkolenie, staż lub przygotowanie zawodowe dorosłych (09 20),
+- osoby niepełnosprawne zarejestrowane w PUP jako poszukujące pracy niepozostające w zatrudnieniu, pobierające stypendium w okresie odbywania szkolenia lub stażu, na które zostały skierowane przez PUP (09 21),
+- osoby pobierające świadczenia socjalne wypłacane w okresie urlopu oraz osoby pobierające zasiłek socjalny wypłacany na czas przekwalifikowania zawodowego i poszukiwania nowego zatrudnienia, a także osoby pobierające wynagrodzenia przysługujące w okresie korzystania ze świadczenia górniczego albo w okresie korzystania ze stypendium na przekwalifikowanie (13 10, 13 20, 13 21, 13 22),
+- osoby pobierające świadczenie szkoleniowe wypłacane po ustaniu zatrudnienia (01 12),
+- osoby przebywające na urlopach wychowawczych (12 11).
+Nie wymaga się minimalnej podstawy składek od osób, które prowadzą pozarolniczą działalność gospodarczą, o której mowa w art. 18 ust. 1 ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców, czyli korzystają z tzw. ulgi na start, oraz w art. 18a i art. 18c ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, czyli korzystają z pomniejszonych składek albo ulgi mały ZUS plus (05 40, 05 70, 05 72, 05 74, 05 80, 05 81, 05 90, 05 92, 05 94).
+Wyjątek stanowi sytuacja, gdy podstawa wymiaru składek na ubezpieczenia emerytalne i rentowe ostatnio przyjęta do obliczenia składek albo kwota zasiłku, świadczenia albo wynagrodzenia stanowi co najmniej 30 proc. minimalnego wynagrodzenia i osoby te korzystają z niżej wymienionych świadczeń:
+- z ubezpieczenia chorobowego (na podstawie ustawy z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa), czyli:
+- zasiłku macierzyńskiego,
+- zasiłku w wysokości zasiłku macierzyńskiego,
+- zasiłku chorobowego,
+- zasiłku opiekuńczego,
+- zasiłku wyrównawczego,
+- świadczenia rehabilitacyjnego,
+- z ubezpieczenia wypadkowego (na podstawie ustawy z dnia 30 października 2002 r. o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych), czyli:
+- zasiłku chorobowego,
+- zasiłku wyrównawczego
+- świadczenia rehabilitacyjnego.
+Aktywność zawodowa, przy której nie wymaga się minimalnej podstawy składek, ale wymaga się podlegania obowiązkowi ubezpieczenia zdrowotnego.
+W przypadku poniższych sytuacji wystarczy sam fakt podlegania obowiązkowi ubezpieczenia zdrowotnego jako:
+- osoby, które pobierają emeryturę lub rentę, osoby w stanie spoczynku, pobierają uposażenie lub uposażenie rodzinne, oraz osoby, które pobierają uposażenie po zwolnieniu ze służby lub świadczenie pieniężne o takim samym charakterze (25 00, 25 01, 25 10, 25 11, 11 50, 11 51, 11 52),
+- osoby, które pobierają rodzicielskie świadczenie uzupełniające (25 00),
+- osoby, które pobierają stypendium w okresie odbywania szkolenia, stażu lub przygotowania zawodowego dorosłych, na które zostały skierowane przez podmiot inny niż PUP, niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu (09 20),
+- osoby, które pobierają zasiłek przedemerytalny lub świadczenie przedemerytalne oraz osoby niepobierające zasiłku przedemerytalnego lub świadczenia przedemerytalnego z przyczyn określonych w art. 27 ust. 1 pkt 3-6 i ust.2 ustawy z dnia 14 grudnia 1994r. o zatrudnieniu i przeciwdziałaniu bezrobociu (Dz. U. z 2003r. poz. 514, z późn. zm.) niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu (09 40, 09 41),
+- osoby, które pobierają świadczenie wspierające, o którym mowa w ustawie z dnia 7 lipca 2023r. o świadczeniu wspierającym (Dz. U. poz. 1429 i 2760) (14 30),
+- osoby, które pobierają nauczycielskie świadczenia kompensacyjne (26 00, 26 01).
+Nie wymaga się minimalnej podstawy wymiaru składek również w przypadku osób, które podlegają:
+- ubezpieczeniom społecznym rolników (emerytalno-rentowemu) z mocy ustawy albo przez nieprzerwany okres co najmniej 12 miesięcy – na wniosek,
+- dobrowolnie ubezpieczeniom emerytalnemu i rentowym na podstawie art. 7 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (19 00, 19 10).
+Cudzoziemcy, którzy w miesiącu poprzedzającym miesiąc składania wniosku nie byli aktywni zawodowo na terytorium Rzeczypospolitej Polskiej, ale w miesiącu, w którym składają wniosek, podlegali ubezpieczeniu zdrowotnemu na podstawie art. 66 ust. 1 pkt 24 ustawy o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych (bezrobotni, którzy nie podlegają ubezpieczeniu zdrowotnemu z innego tytułu), nabywają prawo do świadczenia wychowawczego 800+ na:
+- okres 3 miesięcy – jeżeli spełniają warunki do świadczenia na jedno lub dwoje dzieci,
+- okres 6 miesięcy – jeżeli spełniają warunki do świadczenia na co najmniej troje dzieci.
+Prawo do świadczenia wychowawczego dla bezrobotnych cudzoziemców przysługuje nie dłużej niż do końca okresu świadczeniowego oraz nie więcej niż jeden raz w danym okresie świadczeniowym.
+-
+Dziecko realizuje obowiązek szkolny w polskiej placówce edukacyjnej
+Prawo do świadczenia wychowawczego 800+ przysługuje, jeżeli dziecko realizuje w polskiej placówce edukacyjnej odpowiednio:
+- obowiązek rocznego przygotowania przedszkolnego,
+- obowiązek szkolny,
+- obowiązek nauki.
+Warunek uczęszczania przez dziecko do szkoły nie dotyczy:
+- dziecka poniżej 6 roku życia (brak obowiązku szkolnego),
+- dziecka, któremu obowiązek szkolny został odroczony,
+- dziecka, które realizuje naukę w inny sposób, np. na uczelni należącej do polskiego systemu szkolnictwa wyższego, w ramach kwalifikacyjnego kursu zawodowego albo praktyk absolwenckich.
+Odroczenie lub realizowanie nauki w inny sposób musi być potwierdzone odpowiednim zaświadczeniem.
+-
+Wnioskodawca (rodzic lub opiekun) i dziecko muszą mieszkać na terenie Rzeczypospolitej Polskiej
+Od kiedy zmiany dla cudzoziemców z państw trzecich
+W przypadku cudzoziemców z tzw. państw trzecich (spoza UE/EFTA i Wielkiej Brytanii [osób objętych umową wystąpienia]), którzy przebywają na terenie Polski legalnie i mają dostęp do rynku pracy, ZUS będzie weryfikować, czy spełniają warunek aktywności zawodowej, od nowego okresu świadczeniowego, czyli od 1 czerwca 2026 r.
+Jakie są warunki wstrzymania wypłaty świadczenia
+ZUS może wstrzymać wypłatę świadczenia wychowawczego 800+, jeżeli pojawią się wątpliwości, czy wnioskodawca i dziecko spełniają warunki do jego otrzymywania, w szczególności:
+- czy mieszkają na terytorium Polski,
+- czy wnioskodawca jest aktywny zawodowo,
+- czy dziecko realizuje obowiązek rocznego przygotowania przedszkolnego, szkolnego lub nauki.
+ZUS będzie cyklicznie, co miesiąc badać, czy wnioskodawca i dziecko spełniają wszystkie konieczne warunki.
+Podstawa prawna
+- Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowaniu dzieci (Dz.U. z 2024 r. poz. 1576, z późn. zm.)
+- Ustawa z dnia 12 marca 2022r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa (Dz.U. z 2022 r. poz. 583, z późn. zm.).

@@ -1,0 +1,75 @@
+# MRPiPS: Co się zmienia w pomocy dla obywateli Ukrainy w 2026 r.?
+# Source: https://www.gov.pl/web/rodzina/co-sie-zmienia-w-pomocy-dla-obywateli-ukrainy-w-2026-r, retrieved 2026-10-17, html sha256 82a5437e22da8505961de1efa82d9e36e3947d4a5cb902b84011e7b769523bca
+# Text of the page's main element; navigation removed. Dated 26.03.2026. Its "do 4 marca 2027 r." for the legal stay is outdated: temporary protection now runs to 4.03.2028 (research/2026-10-17-ukr/sources/udsc-przedluzenie-ochrony-czasowej-2028-2026-10-17.txt).
+
+Powrót
+Co się zmienia w pomocy dla obywateli Ukrainy w 2026 r.?
+26.03.2026
+5 marca 2026 r. weszła w życie ustawa o wygaszeniu rozwiązań wynikających z ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa. Ustawa zmienia zasady wsparcia dla obywateli Ukrainy w Polsce. Część dotychczasowych rozwiązań zostaje utrzymana, część - zmieniona. Wyjaśniamy, co to oznacza w praktyce.
+Legalny pobyt w Polsce
+Obywatele Ukrainy posiadający numer PESEL ze statusem UKR mogą legalnie przebywać w Polsce do 4 marca 2027 r. Pobyt przedłuża się automatycznie — nie trzeba składać żadnych wniosków.
+Automatycznie przedłużona zostaje też ważność innych dokumentów, takich jak wizy, karty pobytu czy zezwolenia na pobyt czasowy.
+Ważne: obywatel Ukrainy, który dostał PESEL UKR bez okazania dokumentu ze zdjęciem, musi zaktualizować swoje dane do 31 sierpnia 2026 r. Brak aktualizacji może skutkować utratą ochrony czasowej od 1 września 2026 r., a wraz z nią — prawa do pobytu w Polsce.
+Nowa karta pobytu CUKR
+W 2026 r. obywatele Ukrainy będą mogli złożyć wniosek o 3-letnią kartę pobytu CUKR. Wnioski składa się wyłącznie przez internet, na portalu „Moduł Obsługi Spraw” (MOS). O kartę może ubiegać się osoba, która miała status UKR w dniu 4 czerwca 2025 r. i ma go nadal, albo która nieprzerwanie posiada status UKR od co najmniej 365 dni.
+Karta CUKR daje m.in.:
+- legalny pobyt przez 3 lata,
+- pełne prawo do pracy i prowadzenia własnej firmy,
+- możliwość podróżowania po krajach Schengen do 90 dni w ciągu każdych 180,
+- czas spędzony w Polsce na karcie CUKR liczy się do wniosku o stały pobyt w UE.
+Gdzie można uzyskać pomoc?
+Niezależnie od podstawy pobytu, każdy obywatel Ukrainy może skorzystać z bezpłatnego wsparcia w Krajowych Biurach Integracji (KBI). Działają one jak punkt kompleksowej obsługi — w jednym miejscu można uzyskać pomoc w sprawach urzędowych, prawnych i zawodowych, zapisać się na kurs języka polskiego, porozmawiać z doradcą lub psychologiem. KBI nie zapewniają jednak zakwaterowania ani nie wypłacają pieniędzy.
+Praca w Polsce
+Obywatel Ukrainy posiadający ochronę czasową może podjąć pracę w Polsce — pracodawca musi tylko zgłosić to przez portal praca.gov.pl w ciągu 7 dni od dnia rozpoczęcia pracy. Przez najbliższe 3 lata z tej samej możliwości korzystać będą wszyscy legalnie przebywający w Polsce obywatele Ukrainy. Pracodawcy, którzy już wcześniej zatrudniali Ukraińców na podstawie takiego zgłoszenia, nie muszą nic zmieniać.
+Rejestracja jako osoba bezrobotna
+W urzędzie pracy jako bezrobotny może zarejestrować się obywatel Ukrainy posiadający legalny pobyt w Polsce — np. ochronę czasową. Uwaga: osoby powyżej 60. roku życia (kobiety) i 65. roku życia (mężczyźni) nie mogą się już rejestrować jako bezrobotne. Obywatele Ukrainy zarejestrowani przed 5 marca 2026 r. zachowują swój status.
+Każda zarejestrowana osoba bezrobotna ma ubezpieczenie zdrowotne — niezależnie od tego, czy pobiera zasiłek.
+Zasiłek dla bezrobotnych przysługuje obywatelowi Ukrainy, który przez co najmniej 365 dni z ostatnich 18 miesięcy był zatrudniony i zarabiał co najmniej minimalne wynagrodzenie, od którego pracodawca odprowadzał składki.
+Centra Integracji Społecznej
+Od 5 marca 2026 r. obywatele Ukrainy mogą ubiegać się o miejsce w Centrum Integracji Społecznej (CIS) na takich samych zasadach jak inni mieszkańcy Polski. CIS to miejsce, które pomaga osobom w trudnej sytuacji życiowej wrócić na rynek pracy i do aktywnego życia społecznego. Żeby dostać się do CIS, trzeba przejść rozmowę z pracownikiem socjalnym. Osoby, które uczestniczą w programie CIS i zaczęły go przed 5 marca 2026 r., mogą go kontynuować bez zmian.
+Świadczenie wychowawcze 800+
+Obywatel Ukrainy nadal może otrzymywać 800+ na dziecko, jeśli mieszka z nim w Polsce. Jeśli dziecko jest w wieku szkolnym, musi chodzić do szkoły w polskim systemie oświaty.
+Od 1 lutego 2026 r. obowiązuje dodatkowy warunek: rodzic musi pracować lub prowadzić firmę. ZUS sprawdza to automatycznie. Za aktywność zawodową uznaje się m.in.:
+- umowę o pracę lub umowę zlecenia,
+- prowadzenie własnej firmy,
+- pobieranie zasiłku dla bezrobotnych,
+- udział w szkoleniu ze stypendium,
+- stypendium sportowe lub doktoranckie.
+Z tego warunku zwolnieni są rodzice dzieci z niepełnosprawnościami oraz osoby pobierające świadczenie na dziecko będące obywatelem Polski.
+Obywatel Ukrainy zarejestrowany jako bezrobotny, który aktualnie nie pracuje, ale ma z tego tytułu ubezpieczenie zdrowotne, może dostać 800+ na 3 miesiące (albo 6 miesięcy, jeśli wychowuje troje lub więcej dzieci).
+Dobry Start (300 zł)
+To jednorazowe świadczenie na wyprawkę szkolną, wypłacane przez ZUS. Przysługuje, jeśli rodzic-uchodźca mieszka z dzieckiem w Polsce i dziecko chodzi do szkoły w polskim systemie oświaty. Wnioski na rok szkolny 2026/2027 będzie można składać od 1 lipca 2026 r. Od tej daty obowiązywać będzie też wymóg aktywności zawodowej.
+Aktywnie w żłobku
+Obywatel Ukrainy, którego dziecko chodzi do żłobka, klubu dziecięcego lub jest pod opieką dziennego opiekuna, może dostać dofinansowanie do kosztów tej opieki — do 1500 zł miesięcznie (lub do 1900 zł, jeśli dziecko ma niepełnosprawność).
+Inne świadczenia rodzinne
+Na takich samych zasadach, jak obywatele polscy, obywatele Ukrainy mogą ubiegać się o:
+- zasiłek rodzinny na dziecko — 95–135 zł miesięcznie, zależnie od wieku dziecka — tylko dla rodzin o niskich dochodach,
+- becikowe — 1000 zł jednorazowo przy narodzinach dziecka, zależy od dochodu,
+- świadczenie rodzicielskie — 1000 zł miesięcznie przez rok po urodzeniu dziecka, dla osób bez prawa do zasiłku macierzyńskiego,
+- zasiłek pielęgnacyjny — 215,84 zł miesięcznie dla osób z niepełnosprawnościami,
+- świadczenie pielęgnacyjne — 3386 zł miesięcznie dla opiekunów dzieci z niepełnosprawnościami do 18. roku życia.
+Od 5 marca 2026 r. obywatel Ukrainy ubiegający się o świadczenia zależne od dochodu (zasiłek rodzinny lub becikowe) musi podać dochody całej rodziny — tak samo jak obywatele polscy.
+Czy trzeba składać nowe wnioski?
+Nie — obywatel Ukrainy, który w dniu 4 marca 2026 r. pobierał już któreś z tych świadczeń, nie musi nic robić. ZUS lub gmina przedłużą je automatycznie. Świadczenia będą wypłacane do końca bieżącego okresu zasiłkowego lub maksymalnie do 4 marca 2027 r.
+Dzieci w pieczy zastępczej
+Dzieci z Ukrainy przebywające w Polsce w ramach pieczy zastępczej pozostają pod opieką — sprawują ją opiekunowie wskazani przez władze ukraińskie. Jeśli nie ma takiego opiekuna, sąd wyznacza opiekuna tymczasowego.
+Ministerstwo Rodziny, Pracy i Polityki Społecznej prowadzi rejestr tych dzieci i dba o zapewnienie im zakwaterowania, wyżywienia i innych podstawowych potrzeb — we współpracy z wojewodami i organizacjami pozarządowymi.
+Dzieci, które osiągną pełnoletniość, mogą otrzymać wsparcie finansowe na kontynuowanie nauki.
+Wsparcie dla osób z niepełnosprawnościami
+Od 5 marca 2026 r. obywatele Ukrainy z niepełnosprawnościami mają dostęp do wsparcia na takich samych zasadach jak inni cudzoziemcy mieszkający legalnie w Polsce.
+Ważne: ukraińskie orzeczenia o niepełnosprawności nie są uznawane w Polsce. Żeby skorzystać ze wsparcia, potrzebne jest polskie orzeczenie o niepełnosprawności. Obywatel Ukrainy może się o nie ubiegać w powiatowym lub miejskim zespole do spraw orzekania o niepełnosprawności — procedura jest taka sama jak dla obywateli polskich.
+Posiadając polskie orzeczenie, obywatel Ukrainy może m.in.:
+- dostać dofinansowanie do turnusu rehabilitacyjnego,
+- otrzymać dofinansowanie na sprzęt rehabilitacyjny,
+- skorzystać z pomocy przy likwidacji barier architektonicznych w domu,
+- skorzystać z usług tłumacza języka migowego,
+- jednorazowo otrzymać środki na założenie własnej firmy.
+Pracodawca zatrudniający obywatela Ukrainy z niepełnosprawnością może dostać od PFRON comiesięczne dofinansowanie do jego wynagrodzenia — od 575 zł do 2760 zł, w zależności od stopnia niepełnosprawności.
+Bezpłatne doradztwo i informacje o wszystkich dostępnych formach wsparcia można uzyskać w Centrach Informacyjno-Doradczych dla Osób z Niepełnosprawnością (CIDON).
+Dodatkowe programy wsparcia finansowane z Funduszu Solidarnościowego to:
+- Opieka wytchnieniowa — pomoc dla rodzin i opiekunów osób z niepełnosprawnościami,
+- Asystent osobisty — wsparcie w codziennym życiu i funkcjonowaniu społecznym,
+- Centra opiekuńczo-mieszkalne — miejsca dziennego lub całodobowego pobytu dla dorosłych osób ze znaczną lub umiarkowaną niepełnosprawnością.
+Pomoc społeczna i żywnościowa
+Obywatel Ukrainy w trudnej sytuacji materialnej, posiadający PESEL UKR, może zwrócić się do swojej gminy o pomoc społeczną. Gmina może zapewnić schronienie, posiłek, podstawowe ubranie lub zasiłek celowy. Właściwa jest gmina miejsca faktycznego pobytu osoby ubiegającej się o pomoc.
+Obywatel Ukrainy o niskich dochodach może też skorzystać z bezpłatnej pomocy żywnościowej w ramach unijnego programu Fundusze Europejskie na Pomoc Żywnościową. Mogą z niej skorzystać osoby, których miesięczny dochód netto nie przekracza 2676,50 zł (osoba samotna) lub 2180,95 zł na osobę w rodzinie
