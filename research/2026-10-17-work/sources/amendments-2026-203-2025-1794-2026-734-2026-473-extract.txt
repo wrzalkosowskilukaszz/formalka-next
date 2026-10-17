@@ -1,0 +1,161 @@
+# The four acts that amend the work act (Dz.U. 2025 poz. 621) after its publication: their amending articles and their entry-into-force articles.
+# Sources (api.sejm.gov.pl/eli/acts/DU/<year>/<pos>/text.pdf, retrieved 2026-10-17; pdftotext -layout; page headers dropped):
+#   2026/203 sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275
+#   2025/1794 sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11
+#   2026/734 sha256 fb085ff61d80db0a8961f8ae0a1dc8f9c12e3438a8a9ced40941b71df0fb67d5
+#   2026/473 sha256 e9b8bcde3d55b2fec0271ee82e3727c7fbe7f80a4c672c027007538f2b917cab
+# Dates (tools/sources/entry-dates.mjs on each, 17.10.2026):
+#   2026/203 art. 19 is not among the exceptions of its art. 54: the general date, 5.03.2026.
+#   2025/1794 art. 11 is in its art. 19 pkt 2: the date set by the announcement of its art. 17, M.P. 2026 poz. 370: 27.04.2026 (as in research/2026-10-16-residence/sources/README.md).
+#   2026/734 art. 5 is not the exception of its art. 8 (art. 2 pkt 1): 14 days after publication on 5.06.2026, so 20.06.2026.
+#   2026/473 art. 8 is not among the exceptions of its art. 20: 3 months after publication on 7.04.2026, so 8.07.2026.
+
+
+[Dz.U. 2026 poz. 203 (published 24.02.2026), art. 19]
+     Art. 19. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na tery-
+torium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794) wprowadza się następujące zmiany:
+1)   po art. 5 dodaje się art. 5a w brzmieniu:
+           „Art. 5a. 1. Polski podmiot powierzający pracę cudzoziemcowi powiadamia powiatowy urząd pracy o powierze-
+     niu pracy cudzoziemcowi korzystającemu z ochrony czasowej w Rzeczypospolitej Polskiej w ciągu 7 dni od dnia roz-
+     poczęcia pracy przez cudzoziemca.
+           2. Powiadomienia o powierzeniu pracy cudzoziemcowi dokonuje się za pomocą systemu teleinformatycznego,
+     o którym mowa w art. 26 ust. 1 pkt 7 lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia.
+             3. W przypadku nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 26 ust. 1 pkt 7
+     lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, które powoduje brak możliwości termino-
+     wego powiadomienia o powierzeniu pracy cudzoziemcowi w sposób określony w ust. 2, powiadomienia dokonuje się
+     najpóźniej pierwszego dnia roboczego następującego po dniu usunięcia nieprawidłowości.
+           4. W powiadomieniu o powierzeniu pracy cudzoziemcowi określa się:
+     1)    informacje dotyczące podmiotu powierzającego pracę cudzoziemcowi:
+           a)   nazwę albo imię (imiona) i nazwisko,
+           b) adres siedziby albo miejsca zamieszkania,
+           c)   numer telefonu lub adres poczty elektronicznej o charakterze służbowym,
+           d) numer identyfikacji podatkowej (NIP) i numer identyfikacyjny REGON – w przypadku podmiotu prowa-
+              dzącego działalność gospodarczą albo numer PESEL – w przypadku osoby fizycznej,
+           e)   numer wpisu do rejestru podmiotów prowadzących agencje zatrudnienia – w przypadku podmiotu powie-
+                rzającego pracę cudzoziemcowi prowadzącemu agencję zatrudnienia świadczącą usługi pracy tymczasowej,
+           f)   symbol PKD oraz opis wykonywanej działalności związanej z pracą cudzoziemca;
+     2)    dane osobowe cudzoziemca:
+           a)   imię (imiona) i nazwisko,
+           b) obywatelstwo,
+           c)   rodzaj, numer i serię dokumentu podróży lub innego dokumentu stwierdzającego lub pozwalającego ustalić
+                tożsamość oraz państwo, w którym wydano ten dokument,
+           d) numer PESEL albo w przypadku osób nieposiadających tego numeru – datę urodzenia i płeć,
+           e)   tytuł pobytu, o którym mowa w art. 3 ust. 1 pkt 12;
+     3)    rodzaj umowy między podmiotem powierzającym pracę cudzoziemcowi a cudzoziemcem;
+     4)    stanowisko lub rodzaj wykonywanej pracy;
+     5)    miejsce wykonywanej pracy;
+     6)    miesięczną lub godzinową stawkę wynagrodzenia;
+     7)    wymiar czasu pracy lub liczbę godzin pracy w tygodniu lub w miesiącu;
+     8)    liczbę wszystkich osób wykonujących pracę na podstawie umowy o pracę i na podstawie umów cywilnopraw-
+           nych na dzień złożenia powiadomienia.
+           5. Polski podmiot powierzający pracę cudzoziemcowi powiadamia ponownie powiatowy urząd pracy o powierze-
+     niu pracy cudzoziemcowi w terminie 7 dni od wystąpienia następujących okoliczności:
+     1)    zmienił się rodzaj umowy pomiędzy podmiotem powierzającym pracę cudzoziemcowi a obywatelem Ukrainy
+           lub
+     2)    zmieniło się stanowisko lub rodzaj wykonywanej pracy, lub
+     3)    zmniejszono wymiar czasu pracy lub liczbę godzin pracy w tygodniu lub miesiącu określoną w powiadomieniu,
+           lub
+     4)    obniżono miesięczną lub godzinową stawkę wynagrodzenia określoną w powiadomieniu.
+          6. Właściwość powiatowego urzędu pracy oznacza się według siedziby lub miejsca stałego pobytu podmiotu
+     powierzającego pracę cudzoziemcowi.
+           7. Minister właściwy do spraw pracy oraz właściwy powiatowy urząd pracy przetwarzają dane, o których mowa
+     w ust. 4, w celu realizacji zadań ustawowych.
+           8. Minister właściwy do spraw pracy zapewnia udostępnienie danych, o których mowa w ust. 4, w drodze tele-
+     transmisji danych:
+     1)    Kasie Rolniczego Ubezpieczenia Społecznego,
+     2)    Państwowej Inspekcji Pracy,
+     3)    Szefowi Krajowej Administracji Skarbowej,
+     4)    Straży Granicznej,
+     5)    Zakładowi Ubezpieczeń Społecznych,
+     6)    Głównemu Urzędowi Statystycznemu
+     – w zakresie niezbędnym do realizacji ich zadań ustawowych.
+            9. Zakład Ubezpieczeń Społecznych udostępnia dane o objęciu ubezpieczeniami społecznymi cudzoziemca, którego
+     dotyczy powiadomienie o powierzeniu pracy cudzoziemcowi, lub o zgłoszeniu umowy o dzieło, o której mowa w art. 36
+     ust. 17 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2026 r. poz. 199), zawartej
+     z tym cudzoziemcem, w drodze teletransmisji danych:
+     1)    ministrowi właściwemu do spraw pracy,
+     2)    Państwowej Inspekcji Pracy,
+     3)    Szefowi Krajowej Administracji Skarbowej,
+     4)    Straży Granicznej,
+     5)    Głównemu Urzędowi Statystycznemu
+     – w celu realizacji ich zadań ustawowych.
+         10. W zakresie udostępnienia danych, o którym mowa w ust. 9, Zakład Ubezpieczeń Społecznych i podmioty
+     wymienione w ust. 9 zawierają dwustronne porozumienie, określając sposób wymiany danych i termin jego wdrożenia.
+           11. Przepisy ust. 9 i 10 stosuje się odpowiednio do Kasy Rolniczego Ubezpieczenia Społecznego.”;
+2)   w art. 84 ust. 6 otrzymuje brzmienie:
+            „6. Kto nie dopełnia obowiązku, o którym mowa w art. 5 ust. 2, art. 5a ust. 1 lub 5, art. 17 ust. 1 pkt 2 lub art. 68
+     ust. 1 pkt 2,
+           podlega karze grzywny od 1000 zł do 3000 zł.”.
+
+[Dz.U. 2026 poz. 203, art. 54]
+     Art. 54. Ustawa wchodzi w życie z dniem 5 marca 2026 r., z wyjątkiem:
+1)   art. 17 pkt 3 lit. d tiret drugie i pkt 51 w zakresie uchylenia art. 110, które wchodzą w życie z dniem 1 stycznia 2027 r.;
+2)   art. 17 pkt 46 i 51 w zakresie uchylenia art. 113, które wchodzą w życie z dniem 5 marca 2027 r.;
+3)   art. 14, który wchodzi w życie z dniem 1 września 2027 r.;
+4)   art. 17 pkt 22–31, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+
+[Dz.U. 2025 poz. 1794 (published 17.12.2025), art. 11]
+     Art. 11. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na tery-
+torium Rzeczypospolitej Polskiej (Dz. U. poz. 621) w art. 3:
+1)   w ust. 1 pkt 18 otrzymuje brzmienie:
+     „18) przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a
+           ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, jeżeli bezpośrednio przed złożeniem wniosku
+           spełniał warunki, o których mowa w pkt 14–17.”;
+2)   w ust. 3 pkt 2 otrzymuje brzmienie:
+     „2) na podstawie art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r.
+           o cudzoziemcach, jeżeli bezpośrednio przed złożeniem wniosku był uprawniony do wykonywania pracy na tery-
+           torium Rzeczypospolitej Polskiej, lub”.
+
+[Dz.U. 2025 poz. 1794, art. 19]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+3)   art. 1 pkt 42, 43, 44 lit. a, pkt 45, 46, 51, 59 lit. a tiret pierwsze, pkt 60 lit. a, pkt 61 lit. a i pkt 63, które wchodzą w życie
+     z dniem 1 kwietnia 2026 r.;
+4)   art. 8 pkt 2 i 3, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+
+[Dz.U. 2026 poz. 734 (published 5.06.2026), art. 5]
+     Art. 5. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na teryto-
+rium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794 oraz z 2026 r. poz. 203 i 473) wprowadza się następujące zmiany:
+1)   w art. 17 w ust. 1 pkt 2 otrzymuje brzmienie:
+     „2)   przekazuje organowi, który wydał zezwolenie na pracę, umowę z cudzoziemcem w języku polskim za pomocą
+           systemu teleinformatycznego, o którym mowa w art. 26 ust. 1 pkt 7 lit. a ustawy z dnia 20 marca 2025 r. o rynku
+           pracy i służbach zatrudnienia, lub kopię umowy z cudzoziemcem w języku polskim za pomocą systemu tele-
+           informatycznego, o którym mowa w art. 26 ust. 1 pkt 7 lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy
+           i służbach zatrudnienia, przed powierzeniem pracy cudzoziemcowi, a w przypadku gdy cudzoziemcowi powie-
+           rzono pracę na podstawie umowy o pomocy przy zbiorach – w terminie 7 dni od dnia powierzenia pracy;”;
+2)   w art. 68 w ust. 1 pkt 2 otrzymuje brzmienie:
+     „2)   przekazuje organowi, który wpisał oświadczenie o powierzeniu pracy cudzoziemcowi do ewidencji oświadczeń,
+           umowę z cudzoziemcem w języku polskim za pomocą systemu teleinformatycznego, o którym mowa w art. 26
+           ust. 1 pkt 7 lit. a ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, lub kopię umowy
+           z cudzoziemcem w języku polskim za pomocą systemu teleinformatycznego, o którym mowa w art. 26 ust. 1
+           pkt 7 lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, przed powierzeniem pracy
+           cudzoziemcowi;”.
+
+[Dz.U. 2026 poz. 734, art. 8]
+     Art. 8. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem art. 2 pkt 1, który wchodzi w życie
+po upływie 6 miesięcy od dnia ogłoszenia.
+
+
+[Dz.U. 2026 poz. 473 (published 7.04.2026), art. 8]
+     Art. 8. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na teryto-
+rium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794 oraz z 2026 r. poz. 203) wprowadza się następujące zmiany:
+1)    w art. 33 w ust. 2 w pkt 2 kropkę zastępuje się średnikiem i dodaje się pkt 3 w brzmieniu:
+      „3)    polski podmiot powierzający pracę cudzoziemcowi i cudzoziemiec zawarli umowę o pracę zamiast umowy cywilno-
+             prawnej albo w decyzji, o której mowa w art. 11 ust. 1 pkt 7a ustawy z dnia 13 kwietnia 2007 r. o Państwowej
+             Inspekcji Pracy (Dz. U. z 2024 r. poz. 1712, z późn. zm.8)), stwierdzono istnienie stosunku pracy.”;
+2)    w art. 69 w pkt 4 kropkę zastępuje się średnikiem i dodaje się pkt 5 w brzmieniu:
+      „5)    polski podmiot powierzający pracę cudzoziemcowi i cudzoziemiec zawarli umowę o pracę zamiast umowy cywilno-
+             prawnej albo w decyzji, o której mowa w art. 11 ust. 1 pkt 7a ustawy z dnia 13 kwietnia 2007 r. o Państwowej
+             Inspekcji Pracy, stwierdzono istnienie stosunku pracy.”.
+
+[Dz.U. 2026 poz. 473, art. 20]
+      Art. 20. Ustawa wchodzi w życie po upływie 3 miesięcy od dnia ogłoszenia, z wyjątkiem art. 1 pkt 6 lit. b i pkt 17,
+art. 9–12 oraz art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia.

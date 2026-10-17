@@ -1,0 +1,253 @@
+# biznes.gov.pl: Od 1 czerwca 2025 zmieniają się zasady legalizacji pracy i pobytu cudzoziemców
+# Source: https://www.biznes.gov.pl/pl/portal/005940, retrieved 2026-10-17, html sha256 3d3bf1d606fa27f9249d78f2cae61e218b52211d12103e2d1f2667a071c3735a
+# Text of the page's main content; navigation removed. The page says it was published 04.06.2025; its HTML metadata gives a modification time of 20.08.2025.
+
+Od 1 czerwca 2025 zmiana zasad legalizacji pracy i pobytu cudzoziemców
+
+Opublikowano:
+
+04.06.2025
+
+1 czerwca 2025 roku weszły w życie nowe przepisy regulujące zatrudnianie i pobyt cudzoziemców w Polsce. Reforma objęła między innymi pełną elektronizację procesów i nowe przesłanki odmowy legalizacji pracy i pobytu w Polsce. Sprawdź, co się zmieniło.
+
+Legalizacja pracy przez internet
+
+Od 1 czerwca 2025 roku wszystkie sprawy dotyczące zatrudniania cudzoziemców załatwisz online, przez portal Praca.gov.pl.
+
+Dotyczy to między innymi:
+
+- składania wniosków o zezwolenie na pracę
+
+- zgłaszania oświadczeń o powierzeniu pracy
+
+- przesyłania wymaganych dokumentów i załączników do wniosków.
+
+Cudzoziemcem jest każda osoba nieposiadająca obywatelstwa polskiego. Jednak przepisy dotyczące legalizacji pracy z Ustawy z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej nie dotyczą powierzenia pracy obywatelom państw Unii Europejskiej lub Europejskiego Obszaru Gospodarczego, obywatelom Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, których dotyczy umowa o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej.
+
+Likwidacja testu rynku pracy
+
+Nie musisz już uzyskiwać informacji starosty - tak zwanego testu rynku pracy - aby dostać:
+
+- zezwolenie na pracę
+
+- zezwolenie na pobyt czasowy i pracę
+
+- zezwolenie na pobyt i pracę w zawodzie wymagającym wysokich kwalifikacji.
+
+Pamiętaj! W razie pogorszenia się sytuacji na rynku możliwe będzie wprowadzenie lokalnych ograniczeń – na przykład list zawodów niedostępnych dla cudzoziemców lub limitów zatrudnienia.
+
+Listę zawodów niedostępnych dla cudzoziemców na terenie powiatu może wprowadzić starosta, na uzasadniony wniosek dyrektora powiatowego urzędu pracy, po uzyskaniu pozytywnej opinii powiatowej rady rynku pracy.
+
+Listę zawodów niedostępnych ustala Rada Ministrów.
+
+Fast track - szybka ścieżka dla zezwoleń na pracę
+
+Niektóre firmy i stanowiska pracy zostały objęte przyspieszoną procedurą rozpatrywania wniosków o wydanie zezwolenia na pracę: procedurą fast track.
+
+Wnioski, których dotyczy procedura fast track, będą rozpatrywane w pierwszej kolejności.
+
+Fast track wprowadzono dla:
+
+- firm o znaczeniu strategicznym
+
+- kontynuacji zatrudnienia u tego samego pracodawcy
+
+- zawodów deficytowych, o ile takie zawody zostaną wskazane w rozporządzeni (odrębnym).
+
+Przyspieszone procedury będą dotyczyć również wiz i zezwoleń na pobyt czasowy i pracę.
+
+Nowe powody odmowy wydania zezwolenia na pracę lub wpisu oświadczenia
+
+Wojewoda lub starosta odmówi legalizacji pracy cudzoziemca między innymi, gdy:
+
+- cudzoziemiec wcześniej nie podjął pracy mimo przyjazdu do Polski
+
+- pracodawca utrudniał kontrole legalności zatrudnienia
+
+- firma nie odprowadzała składek lub podatków
+
+- cudzoziemiec będzie pracował na rzecz osoby trzeciej nie będąc pracownikiem tymczasowym
+
+- planowany wymiar czasu pracy to mniej niż 1/4 etatu (dotyczy zezwoleń)
+
+- zatrudnienie ma się rozpocząć później niż 12 miesięcy od daty wydania zezwolenia (lub 6 miesięcy w przypadku oświadczenia).
+
+Przeczytaj, jak uzyskać zezwolenie na pracę lub uzyskać wpis oświadczenia o powierzeniu pracy do ewidencji.
+
+Delegowanie cudzoziemców do Polski
+
+Zgodnie z nowymi zasadami dotyczącymi delegowania cudzoziemców do pracy w Polsce przez podmioty zagraniczne :
+
+- cudzoziemiec musi być zatrudniony przed rozpoczęciem delegowania
+
+- cudzoziemiec musi mieć status pracownika
+
+- pomiędzy podmiotem zagranicznym a podmiotem przyjmującym w Polsce muszą występować pionowe powiązania kapitałowe (brak możliwości delegowania między spółkami „siostrami”) – w przypadku delegowań wewnątrz grupy kapitałowej
+
+- podmiot powierzający pracę cudzoziemcowi musi świadczyć usługę eksportową – w przypadku delegowania w celu świadczenia usług w Polsce.
+
+Ograniczenia związane z wizami
+
+Osoby przebywające w Polsce na podstawie wiz wydanych:
+
+- przez inne państwa strefy Schengen
+
+- w celach turystycznych, zdrowotnych, edukacyjnych (poza studiami), odwiedzin, udziału w wydarzeniach kulturalnych/sportowych, tranzytu, działalności humanitarnej lub religijnej
+
+nie mogą podejmować pracy.
+
+Nowe obowiązki informacyjne pracodawców
+
+Kopia umowy przed zatrudnieniem
+
+Przed rozpoczęciem pracy musisz przesłać kopię umowy z cudzoziemcem do urzędu, który wydał zezwolenie lub przyjął oświadczenie. Zrobisz to za pośrednictwem portalu Praca.gov.pl.
+
+System teleinformatyczny zostanie dostosowany do nowego obowiązku od:
+
+- 1 lipca 2025 roku - w przypadku oświadczenia o powierzeniu pracy cudzoziemcowi i zezwoleniu na pracę sezonową
+
+- 1 sierpnia 2025 roku - w przypadku zezwolenia na pracę.
+
+W okresie odpowiednio do 1 lipca oraz do 1 sierpnia pracodawcy nie muszą przekazywać kopii umowy zawartej z cudzoziemcem do organu, który wydał zezwolenie lub dokonał wpisu oświadczenia do ewidencji.
+
+Oświadczenia o powierzeniu pracy
+
+Musisz poinformować starostę za pośrednictwem portalu Praca.gov.pl o:
+
+- podjęciu pracy przez cudzoziemca – w terminie 7 dni
+
+- niepodjęciu pracy – w terminie 14 dni od planowanej daty rozpoczęcia
+
+- zakończeniu pracy przed czasem.
+
+Przekazanie informacji o zakończeniu pracy skutkuje unieważnieniem oświadczenia.
+
+Przeczytaj więcej o wpisaniu oświadczenia o powierzeniu pracy cudzoziemcowi do ewidencji.
+
+Zezwolenia na pracę
+
+Zgodnie z nowymi przepisami pracodawca, w ciągu 7 dni, powinien poinformować wojewodę za pośrednictwem portalu Praca.gov.pl, jeżeli:
+
+- cudzoziemiec nie podjął pracy przez 2 miesiące od rozpoczęcia ważności zezwolenia
+
+- przerwał pracę na ponad 2 miesiące
+
+- zakończył pracę wcześniej niż 2 miesiące przed końcem ważności zezwolenia.
+
+Za niewywiązanie się z obowiązków informacyjnych pracodawcy grozi grzywna do 5 000 zł.
+
+Dodatkowo, w terminie 7 dni należy zgłaszać zmiany dotyczące między innymi:
+
+- siedziby, nazwy lub formy prawnej pracodawcy
+
+- przejścia zakładu pracy
+
+- zmiany nazwy stanowiska (bez zmiany zakresu obowiązków).
+
+Przeczytaj więcej o procedurze uzyskania zezwolenia na pracę.
+
+Zezwolenia na pobyt czasowy i pracę
+
+Pracodawca wymieniony w jednolitym zezwoleniu na pobyt czasowy i pracę, w terminie 15 dni musi poinformować wojewodę o utracie pracy przez cudzoziemca.
+
+Dotychczas obowiązek ten dotyczył wyłącznie pracownika.
+
+W tym samym terminie, czyli 15 dni, pracodawca musi zgłaszać:
+
+- zmiany dotyczące pracodawcy lub pracodawcy użytkownika
+
+- przejście zakładu pracy na inny podmiot
+
+- zwiększenie wymiaru czasu pracy (z proporcjonalnym zwiększeniem wynagrodzenia)
+
+- zmianę formy zatrudnienia z umowy cywilnoprawnej na umowę o pracę
+
+- zmianę nazwy stanowiska, o ile nie wiąże się ze zmianą zakresu obowiązków.
+
+Przeczytaj:
+
+- jak uzyskać zezwolenie na pobyt i pracę
+
+- jakie obowiązki ma pracodawca, który zatrudnia cudzoziemca.
+
+Odmowa zezwolenia na pobyt czasowy i pracę
+
+Od 1 czerwca 2025 obowiązuje szerszy katalog powodów odmowy wszczęcia postępowania w sprawie udzielenia zezwolenia na pobyt czasowy i pracę.
+
+Cudzoziemcy, którzy przebywają w Polsce na podstawie wiz wydanych w następujących celach:
+
+- turystycznym
+
+- odwiedzin u rodziny lub przyjaciół
+
+- udziału w imprezach sportowych
+
+- prowadzenia działalności kulturalnej lub udziału w konferencjach
+
+- odbycia studiów pierwszego i drugiego stopnia, jednolitych studiów magisterskich lub kształcenia w szkole doktorskiej
+
+- szkolenia zawodowego
+
+- nauki w innych formach niż studia lub szkolenie zawodowe
+
+- tranzytu, w tym tranzytu lotniczego
+
+- leczenia
+
+- udziału w programach wymiany kulturalnej, edukacyjnej, pomocy humanitarnej lub pracy wakacyjnej.
+
+nie mogą składać wniosków o zezwolenie na pobyt czasowy i pracę.
+
+Wcześniej to ograniczenie dotyczyło wiz wydanych w celach turystycznych i odwiedzin u rodziny lub przyjaciół.
+
+Wnioski nie będą też przyjmowane, jeśli cudzoziemiec przebywa w Polsce na podstawie:
+
+- wizy długoterminowej wydanej przez inne państwo strefy Schengen, chyba że korzysta z prawa do mobilności na terytorium Polski
+
+- dokumentu pobytowego wydanego przez inne państwo strefy Schengen, chyba że korzysta z prawa do mobilności w Polsce
+
+- zezwolenia na wjazd wydanego przez Straż Graniczną.
+
+Przeczytaj, jak uzyskać zezwolenie na pobyt i pracę.
+
+Zmiany dla agencji zatrudnienia
+
+Agencje pracy tymczasowej i pośrednictwa pracy, które chcą kierować cudzoziemców do pracy, muszą spełnić dodatkowe warunki:
+
+- prowadzić działalność co najmniej 2 lata
+
+- złożyć wniosek o zmianę wpisu do rejestru agencji zatrudnienia
+
+- wnieść opłatę w wysokości 1000 zł.
+
+Jeśli przed 1 czerwca 2025 roku prowadzisz agencje pracy tymczasowej i pośrednictwa pracy na rzecz cudzoziemców, których praca wymaga uzyskania zezwolenia na pracę lub oświadczenia o powierzeniu pracy i jesteś wpisany do rejestru, możesz kontynuować ją bez spełniania wymogu 2-letniego doświadczenia.
+
+Musisz jednak złożyć wniosek o zmianę wpisu do 31 sierpnia 2025 roku.
+
+Niebieska Karta UE
+
+Niebieska Karta UE to zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji.
+
+Nowe przepisy przewidują, że zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji będzie miało charakter ogólny – nie będzie powiązane z konkretnym stanowiskiem pracy lub pracodawcą.
+
+Minimalna długość umowy zawieranej z pracodawcą, którą należy dołączyć do wniosku, została skrócona z jednego roku do sześciu miesięcy.
+
+Ważne! Pojęcie wyższych kwalifikacji zawodowych, niezbędnych do uzyskania Niebieskiej karty UE, obejmuje zarówno kwalifikacje uzyskane w wyniku ukończenia studiów wyższych, jak i kwalifikacje zdobyte poprzez doświadczenie zawodowe.
+
+Niebieska karta UE może zostać cofnięta, jeśli ustał cel pobytu, który był powodem jej udzielenia lub cudzoziemiec przestał spełniać wymogi jej udzielenia.
+
+Cudzoziemiec, wobec którego zostanie wszczęte postępowanie o cofnięcie Niebieskiej karty UE, ma prawo do poszukiwania nowego zatrudnienia:
+
+- jeżeli przepracował w Polsce co najmniej 2 lata, będzie miał na to 3 miesiące
+
+- jeżeli przebywa w Polsce powyżej 2 lat, będzie miał na to 6 miesięcy.
+
+W tym czasie nie będzie możliwe wydanie decyzji o cofnięciu zezwolenia. Po przekroczeniu tych okresów zezwolenie zostanie cofnięte.
+
+Posiadacz Niebieskiej Karty UE:
+
+- może skorzystać z mobilności krótkoterminowej oraz długoterminowej (co ułatwi przenoszenie się cudzoziemców pomiędzy państwami członkowskimi UE)
+
+- musi informować wojewodę, który udzielił tego zezwolenia, o utracie pracy, zmianie pracodawcy, zaprzestaniu spełniania wymogów związanych z Kartą oraz o rozpoczęciu korzystania z mobilności długoterminowej posiadacza Niebieskiej Karty UE, wskazując państwo członkowskie Unii Europejskiej, w którym z tej mobilności korzysta.
+
+Ważne! Posiadacze Niebieskiej Karty UE oraz posiadacze zezwolenia na pobyt czasowy w celu mobilności długoterminowej posiadacza Niebieskiej Karty UE mają prawo do prowadzenia w Polsce działalności gospodarczej na takich samych zasadach jak obywatele Polski.

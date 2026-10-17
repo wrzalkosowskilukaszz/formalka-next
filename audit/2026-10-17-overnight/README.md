@@ -80,7 +80,7 @@
 
 ## 7. After the owner's second message: the next matters mapped (17.10)
 
-The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Six maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
+The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Seven maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
 
 | Map | What it holds | Commit |
 |---|---|---|
@@ -90,6 +90,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 | `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates | 7ce207e |
 | `maps/civil-status.md` and its sources (`research/2026-10-17-civil/sources/`), after the owner's "Działaj dalej, stan cywilny" | Birth B0–B5, marriage M0–M5, death D0–D2, foreign records F0–F1; 24 loss points, 25 scenarios; a birth case, a marriage case, a calm death page; no chosen names or laws, no computed dates | 48cf1d4 |
 | `maps/vehicles-licence.md` and its sources (`research/2026-10-17-vehicles/sources/`), after the owner's "Działaj, pojazdy i prawo jazdy" | Vehicle V0–V5, licence L0–L4; 15 loss points, 21 scenarios; fees listed and never summed; every FACT checked once by a separate agent (`.claude/agents/official-fact-checker.md`) and corrected (`CHECK.md` in the sources) | d41b626; corrections d74759a |
+| `maps/work.md` and its sources (`research/2026-10-17-work/sources/`), after the owner's "Później kontynuuj z pracą" | Journey W0–W6, 11 loss points, 22 scenarios; the two conditions of legal work, never one alone; citizenship asked only where the law turns on it; the independent check of its facts to be run | this commit |
 
 **Found on the way:**
 - **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
@@ -109,6 +110,10 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
   - the registration penalties cannot be waived with a warning (road traffic act art. 140n ust. 6; KPA art. 189f);
   - a category B licence from an exchange may start a probation period (act on drivers art. 91 ust. 3 pkt 3, from 3.03.2026).
   The lab re-read each text before changing anything; the changes are not independently verified (`research/2026-10-17-vehicles/sources/CHECK.md`).
+- **Work has a new act since 1.06.2025 and changed four times since** (Dz.U. 2025 poz. 621, no consolidated text). Two things are easy to miss:
+  - a tourist or visiting visa does not allow work even with a permit (art. 3 ust. 3 pkt 1 with the foreigners act art. 60), and since 22.08.2026 citizens of Georgia, Colombia and Venezuela may not work on a permit during a visa-free stay (Dz.U. 2026 poz. 1072);
+  - the regulation on work without a permit (Dz.U. 2025 poz. 1620) is missing from the API's list of the act's implementing acts; a title search found it.
+  A biznes.gov.pl page says visas for cultural, sport or humanitarian purposes do not allow work; the act lets a permit holder work on them.
 - **Registering a birth online needs e-Doręczenia** since 1.01.2026, per gov.pl, and so a PESEL and a trusted profile. Parents without them report in person.
 - **The office registers a newborn's address only for children of Polish citizens** (act on population records art. 29); gov.pl's opening sentence says it does for everyone. Foreign parents register the child themselves, which brings wave 1 back. The child's own residence title (foreigners act art. 160 pkt 2, 195) is not in the residence map yet.
 - **The source tool had two gaps,** found while using it: short act titles and titles with a dash did not match, and annex changes showed as "(none named)". Both are changed in the lab, with tests. A third gap, found by the vehicle check: it did not read regulations, and a hand reading missed that an amendment changed a quoted paragraph. It now lists the paragraphs (§) a regulation's amendment changes, with tests (lesson `docs/solutions/2026-10-17-amendments-checked-only-for-expected-articles.md`).

@@ -1,0 +1,119 @@
+# gov.pl, Dolnośląski Urząd Wojewódzki: Zezwolenie na pracę cudzoziemca na rzecz polskiego podmiotu powierzającego pracę cudzoziemcowi
+# Source: https://www.gov.pl/web/dolnoslaski-uw/zezwolenie-na-prace-cudzoziemca-na-rzecz-polskiego-podmiotu-powierzajacego-prace-cudzoziemcowi, retrieved 2026-10-17, html sha256 01fd231df54b80c667d252ce3dac6c2556f6bdbf49849b7ea3581d8415cca818
+# Text of the page's main content; navigation removed. The page shows no date of its own. One voivode's page, used as an example of the procedure; other voivodes may differ.
+
+Powrót
+
+Zezwolenie na pracę cudzoziemca na rzecz polskiego podmiotu powierzającego pracę cudzoziemcowi
+
+Zezwolenie na pracę na rzecz polskiego podmiotu powierzającego pracę cudzoziemcowi
+
+Kto składa wniosek
+
+W postępowaniu o wydanie /uchylenie zezwolenia na pracę stroną postępowania jest wyłącznie podmiot powierzający pracę cudzoziemcowi.
+
+Kogo dotyczy wniosek
+
+Zezwolenie na pracę wdaje się w przypadku, gdy cudzoziemiec będzie wykonywał pracę na terytorium Rzeczypospolitej Polskiej na podstawie umowy z polskim podmiotem powierzającym pracę cudzoziemcowi
+
+UWAGA!!!
+
+Polski podmiot powierzający pracę cudzoziemcowi to podmiot mający siedzibę albo miejsce pobytu stałego na terytorium Rzeczypospolitej Polskiej, w tym oddział lub przedstawicielstwo podmiotu zagranicznego, albo w przypadku obywatela państwa – strony umowy o Europejskim Obszarze Gospodarczym, stałe miejsce wykonywania działalności gospodarczej na terytorium RP
+
+Jak mogę złożyć wniosek?
+
+Wniosek o wydanie zezwolenia na pracę oraz wszystkie załączniki składa się wyłącznie za pomocą indywidualnego konta w systemie teleinformatycznym praca.gov.pl.
+
+UWAGA!!!
+
+Wnioski złożone osobiście lub za pośrednictwem e-doręczeń albo operatora pocztowego będą pozostawiane bez rozpoznania.
+
+- Wejdź na stronę praca.gov.pl;
+
+- W zakładce Usługi elektroniczne wybierz Zatrudnianie Cudzoziemców, a następnie Zezwolenia na pracę cudzoziemca;
+
+- Wybierz zakładkę Wniosek o wydanie zezwolenia na pracę cudzoziemca na terytorium Rzeczypospolitej Polskiej ZC-WWZ;
+
+- Wypełnij wniosek elektroniczny;
+
+- Załącz wymagane oryginały dokumentów opatrzone kwalifikowanym podpisem elektronicznym oraz skany innych niezbędnych dokumentów
+
+- Podpisz wniosek kwalifikowanym podpisem elektronicznym albo Profilem Zaufanym.
+
+WAŻNE!!!
+
+Całość korespondencji oraz wszystkie rozstrzygnięcia będą doręczane na indywidualne konto w systemie teleinformatycznym praca.gov.pl, co oznacza, iż nie będą doręczane w postaci papierowej.
+
+Jakie dokumenty muszę złożyć?
+
+- Wypełniony wniosek.
+
+WAŻNE!!!
+
+Przed wypełnieniem wniosku zapoznaj się z pouczeniem, znajdującym się we wniosku.
+
+- Oświadczenie podmiotu powierzającego pracę dotyczące karalności (w przypadku, gdy wniosek został wypełniony przez pełnomocnika)
+
+WAŻNE!!!
+
+Oświadczenie dot. karalności musi być zgodne ze stanem faktycznym w dniu złożenia wniosku i podpisane przez pracodawcę nie wcześniej niż 30 dni przed tym dniem. W przypadku złożenia wniosku przez pełnomocnika dokument taki powinien zostać dołączony do wniosku jako załącznik. Niedopuszczalne jest podpisanie go przez pełnomocnika.
+
+- Kopia stron ważnego dokumentu podróży z danymi osobowymi cudzoziemca, którego dotyczy wniosek (cyfrowe odwzorowanie);
+
+- Potwierdzenie dokonania opłaty za każdy złożony wniosek wraz
+
+z wyszczególnionymi danymi osobowymi cudzoziemca, którego wniosek dotyczy;
+
+- Oświadczenie o miejscu pobytu stałego podmiotu powierzającego wykonywanie pracy – w przypadku przedsiębiorców działających na podstawie wpisu do CEIDG
+
+- Dokumenty potwierdzające spełnienie wymagań kwalifikacyjnych i innych warunków w przypadku zamiaru powierzenia cudzoziemcowi wykonywania pracy w zawodzie regulowanym.
+
+WAŻNE!!!
+
+Dokumenty sporządzone w języku obcym, z wyjątkiem dokumentów podróży, służące za dowód w postępowaniu, składa się wraz z ich tłumaczeniem na język polski, dokonanym przez tłumacza przysięgłego, wpisanego na listę tłumaczy przysięgłych prowadzoną przez Ministra Sprawiedliwości.
+
+W wypadku, gdy podmiotem zatrudniającym jest agencja pracy tymczasowej należy dołączyć:
+
+- dokument sporządzony przez pracodawcę użytkownika, potwierdzający uzgodnienie w zakresie warunków skierowania cudzoziemca (np. umowa zawarta pomiędzy pracodawcą użytkownikiem a agencją pracy tymczasowej),
+
+- aktualne zapotrzebowanie na określonych pracowników, podpisane przez pracodawcę użytkownika,
+
+UWAGA!!!
+
+Złożenie powyższych dokumentów jest niezbędne do wszczęcia postępowania. W wypadku złożenia wniosku bez któregoś z powyższych dokumentów, Pracodawca wzywany jest do uzupełnienia braków formalnych we wniosku. Postępowanie może być wszczęte dopiero po uzupełnieniu brakujących dokumentów we wskazanym terminie i ich pozytywnej weryfikacji przez Urząd.
+
+Jakie są opłaty?
+
+- 200 zł w przypadku zatrudnienia cudzoziemca na okres krótszy niż 3 miesięcy;
+
+- 400 zł – w przypadku zatrudnienia cudzoziemca na okres dłuższy niż 3 miesiące;
+
+Wpłaty należy dokonać na konto:
+
+Dolnośląski Urząd Wojewódzki we Wrocławiu,
+
+Wydział Finansów i Budżetu,
+
+NBP O/O Wrocław
+
+41 1010 1674 0005 9222 3100 0000
+
+W tytule wpłaty należy podać: opłata za wydanie zezwolenia na pracę oraz imię i nazwisko cudzoziemca
+
+WAŻNE!!!
+
+Opłata za wniosek o wydanie zezwolenia na pracę nie podlega zwrotowi, co jest jednoznaczne z tym, że w przypadku:
+
+- wydania decyzji odmownej,
+
+- wydania decyzji umarzającej z urzędu,
+
+- wydania decyzji umarzającej na wniosek strony,
+
+- pozostawienia wniosku bez rozpoznania.
+
+zwrot opłaty nie przysługuje.
+
+Jedynym wyjątkiem jest odmowa wydania zezwolenia na pracę na podstawie art. 13 ust.1 pkt 4 lub 5 ustawy z dnia 12 maja 2025 r. o warunkach dopuszczalności powierzenia pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej.
+
+{"register":{"columns":[]}}

@@ -14,6 +14,7 @@
 | [`maps/health-insurance.md`](maps/health-insurance.md): NFZ, ZUS, the voluntary NFZ agreement | Wave 4, matter 11 | Sources (R1) and this map | 27 (HS1–HS27) | 17.10.2026; the PESEL UKR rules changed on 5.03.2026 |
 | [`maps/civil-status.md`](maps/civil-status.md): a birth, a marriage, a death, a foreign record | Wave 4, matter 14 | Sources (R1) and this map | 25 (CS1–CS25) | 17.10.2026 |
 | [`maps/vehicles-licence.md`](maps/vehicles-licence.md): registering a vehicle, plates, a sale, a foreign licence | Wave 4, matter 15 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-vehicles/sources/CHECK.md`) | 21 (VS1–VS21) | 17.10.2026; the road traffic act changes again on 18.01.2027 |
+| [`maps/work.md`](maps/work.md): may I work here, on what basis, and what the employer must do | Wave 5, matter 9 | Sources (R1) and this map; the independent check of its facts is to be run | 22 (WS1–WS22) | 17.10.2026; the visa-free rule changed on 22.08.2026 |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 
@@ -55,6 +56,10 @@ flowchart LR
   PZ -.->|zgłoszenie online; gov.pl: e-Doręczenia| URO
   ZAM -.->|starosta miejsca zamieszkania; gov.pl: adres zameldowania| POJ[Rejestracja auta, 30 dni<br/>wymiana prawa jazdy]
   PZ -.->|zgłoszenie zbycia online| POJ
+  KP -->|art. 3 ust. 2: praca w ramach zezwolenia| PRA[Praca: dwa warunki<br/>podstawa pobytu i zezwolenie, oświadczenie albo zwolnienie]
+  UKR -->|art. 3 ust. 1 pkt 12; powiadomienie 7 dni| PRA
+  PZ -.->|konto na praca.gov.pl, art. 72| PRA
+  PRA -->|zgłoszenie do ubezpieczeń| UBZ
 ```
 
 **Consequences for the product (PROPOSED, the owner decides):**
@@ -64,11 +69,11 @@ flowchart LR
 - The residence case's insurance condition should link to the health insurance case. The CUKR compare card should name the change in health care (PROT art. 112c; UdSC: the same access as any permit holder).
 - The vehicle and licence cases should check residence first and link to the address-registration case: both offices are those of the place of residence, and gov.pl's licence page asks for the registered address.
 - The birth case should end with "co dalej z dzieckiem": the child's address registration (the office does it only for children of Polish citizens), its insurance, and its own residence title. The residence map has no route for a child born in Poland yet (FA art. 160 pkt 2, 195).
+- The work case should ask for the stay basis first and never answer "możesz pracować" from it alone: legal work needs the stay basis and a permit, a declaration or an exemption. It links to the residence case (a residence and work permit), the e-government case (the trusted profile for the praca.gov.pl account) and the health case (insurance through work).
 
 ## 4. What would come next, in order
 
-The owner chooses the next one. Vehicles and the driving licence (matter 15), which the owner raised on 17.10, are now mapped (§1). Candidates:
-1. **Work** (matter 9): what the person must check about the employer's permit or notification. The health map's first critical moment (was the employee reported?) and the residence map's work-while-waiting note connect here.
+The owner chooses the next one. Vehicles and the driving licence (matter 15), which the owner raised on 17.10, and work (matter 9), after the owner's "Później kontynuuj z pracą", are now mapped (§1). Candidates: doc 19's new matters 20–26.
 
 Taxes (matter 12) are set aside by the owner (17.10.2026). Health insurance (matter 11) and civil status (matter 14) are now mapped (§1). Doc 19 lists seven new candidate matters (20–26).
 

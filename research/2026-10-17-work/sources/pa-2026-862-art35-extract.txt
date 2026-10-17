@@ -1,0 +1,18 @@
+# Ustawa z 13.06.2003 o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej (the protection act, PA), consolidated text Dz.U. 2026 poz. 862 (legal state 18.05.2026): art. 35, the certificate that lets an applicant for international protection work. The work act's art. 3 ust. 1 pkt 13 gives free access to the labour market to a holder of a valid certificate under art. 35 ust. 1.
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf, sha256 e9f82bc0e10ff1555b941f741667ee5a97fc0b5a7fe2320f4bf785e475c70701 (the copy used for research/2026-10-17-ukr/sources/). pdftotext -layout.
+# Later amendments: none since 18.05.2026 (tools/sources/amendments.mjs DU/2003/1176 2026-05-18, as recorded in research/2026-10-17-ukr/sources/README.md; re-run on 17.10.2026 below). Art. 34 ust. 1 (the term the certificate refers to) is not quoted.
+
+[PA art. 35]
+      Art. 35. 1.19) Jeżeli sprawa dotycząca udzielenia ochrony międzynarodowej nie została załatwiona w terminie, o któ-
+rym mowa w art. 34 ust. 1, i opóźnienie nie nastąpiło z winy wnioskodawcy, Szef Urzędu, na wniosek osoby, której dotyczy
+wniosek o udzielenie ochrony międzynarodowej, wydaje zaświadczenie, które wraz z tymczasowym zaświadczeniem toż-
+samości cudzoziemca uprawnia tę osobę do wykonywania pracy na terytorium Rzeczypospolitej Polskiej na zasadach
+i w trybie określonych w ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom
+na terytorium Rzeczypospolitej Polskiej (Dz. U. poz. 621 i 1794 oraz z 2026 r. poz. 203 i 473).
+     2.19) W zaświadczeniu, o którym mowa w ust. 1, potwierdza się, że sprawa dotycząca udzielenia ochrony międzynaro-
+dowej nie została zakończona w terminie 6 miesięcy i opóźnienie nie nastąpiło z winy wnioskodawcy, oraz wskazuje się
+imię (imiona) i nazwisko cudzoziemca uprawnionego do wykonywania pracy na terytorium Rzeczypospolitej Polskiej na
+zasadach i w trybie określonych w ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzo-
+ziemcom na terytorium Rzeczypospolitej Polskiej.
+     3. Zaświadczenie, o którym mowa w ust. 1, jest ważne do dnia, w którym decyzja w sprawie udzielenia ochrony między-
+narodowej stanie się ostateczna.
