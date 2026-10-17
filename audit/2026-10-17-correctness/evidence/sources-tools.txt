@@ -1,0 +1,33 @@
+# node --test tools/sources/*.test.mjs
+# 2026-10-17T10:00Z commit 18565c6 node v22.22.0
+
+# Subtest: returns the last entry-into-force article with its exceptions, across page breaks
+ok 1 - returns the last entry-into-force article with its exceptions, across page breaks
+# Subtest: an act with one date has no exceptions; text without the article returns null
+ok 2 - an act with one date has no exceptions; text without the article returns null
+# Subtest: lists the articles an amending article changes, skipping quoted wording and stopping at the next article
+ok 3 - lists the articles an amending article changes, skipping quoted wording and stopping at the next article
+# Subtest: a change to the annex is listed apart, with its part and paragraph
+ok 4 - a change to the annex is listed apart, with its part and paragraph
+# Subtest: short titles and titles with a dash match the amending wording
+ok 5 - short titles and titles with a dash match the amending wording
+# Subtest: an act that does not amend this one gives an empty list; a bad title throws
+ok 6 - an act that does not amend this one gives an empty list; a bad title throws
+# Subtest: a regulation: the paragraphs its amending paragraph changes, skipping quoted wording
+ok 7 - a regulation: the paragraphs its amending paragraph changes, skipping quoted wording
+# Subtest: a regulation of another subject or date is not matched
+ok 8 - a regulation of another subject or date is not matched
+# Subtest: citedBy matches ranges, lettered articles and either end of a range
+ok 9 - citedBy matches ranges, lettered articles and either end of a range
+# Subtest: a consolidated text is resolved to its base act, whose amendments are listed; a bare obwieszczenie throws
+ok 10 - a consolidated text is resolved to its base act, whose amendments are listed; a bare obwieszczenie throws
+# Subtest: transitional articles that apply the amended act are found, with the articles they name
+ok 11 - transitional articles that apply the amended act are found, with the articles they name
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 104.694693

@@ -1,0 +1,4 @@
+# node tools/lint-docs.mjs
+# 2026-10-17T10:00Z commit 18565c6 node v22.22.0
+
+docs lint: 83 files, 0 bare status cell(s)

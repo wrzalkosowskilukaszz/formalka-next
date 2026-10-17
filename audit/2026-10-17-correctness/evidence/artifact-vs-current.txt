@@ -1,0 +1,22 @@
+# node audit/2026-10-17-correctness/compare-builds.mjs <saved copy of the published Artifact> prototype/dist/index.html
+# 2026-10-17T10:00Z commit 18565c6 node v22.22.0
+# The first file is the page the Artifact tool returned on 17.10.2026 for https://claude.ai/artifact/9u42vfmSwhRXcH1dqgHKxG (last published 16.10.2026). It is not committed: the Artifact is private.
+
+== <saved copy of the published Artifact>
+sha256 52d57c79741c65cd9ef0e93a199d80adc741eaf7aa65dcd76fe8ec154193049b
+engine a0988a9702344e56
+short stay, Mapa, amounts shown: ["525 zł opłat"]
+short stay, Teczka, amounts shown: ["Opłaty w tej sprawie: 525 zł (przykład z przewodnika)."]
+residence scope note on Teraz: (none)
+res-08 after a granted decision: route:done, documents:done, payment:available, who-files:done, filing:done, summons:available, card:locked (Najpierw: Wezwanie z urzędu.)
+network requests: 0
+
+== prototype/dist/index.html
+sha256 726f8c7662f6e6ea4fe58389f18dd2073178227f618c1ced0a27e69fe6e8c2a5
+engine eaede791ccda3d0e
+short stay, Mapa, amounts shown: []
+short stay, Teczka, amounts shown: []
+residence scope note on Teraz: Karta pobytu w makiecie Ta część makiety nie jest jeszcze niezależnie sprawdzona: szkic wz
+res-08 after a granted decision: route:done, documents:done, payment:available, who-files:done, filing:done, summons:done, card:available
+network requests: 0
+

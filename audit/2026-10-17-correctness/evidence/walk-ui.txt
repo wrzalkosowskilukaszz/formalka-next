@@ -1,0 +1,18 @@
+# node audit/2026-10-17-correctness/walk-ui.mjs --paths 6
+# run on the build of f77a5ed (the app is unchanged since); header added 2026-10-17T10:00Z node v22.22.0
+
+30 runs played to the end
+  pesel/first: no plan; the case says why and hands off
+  pesel/last: no plan; the case says why and hands off
+  pesel/random0: no plan; the case says why and hands off
+  pesel/random2: no plan; the case says why and hands off
+  pesel/random3: no plan; the case says why and hands off
+  pesel/random5: no plan; the case says why and hands off
+  citizenship/last: no plan; the case says why and hands off
+  citizenship/random0: no plan; the case says why and hands off
+  citizenship/random1: no plan; the case says why and hands off
+  citizenship/random3: no plan; the case says why and hands off
+  citizenship/random4: no plan; the case says why and hands off
+
+0 distinct faults
+exit 0

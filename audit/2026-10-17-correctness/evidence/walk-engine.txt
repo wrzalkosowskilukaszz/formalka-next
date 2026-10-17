@@ -1,0 +1,13 @@
+# node audit/2026-10-17-correctness/walk-engine.mjs --selftest; then without it
+# run on the build of f77a5ed (the app is unchanged since); header added 2026-10-17T10:00Z node v22.22.0
+
+selftest ok: 5 planted faults caught
+address-registration: 17 states, 60 finished plans, 48 played to the end; routes decided:zameldowanie-foreigner
+citizenship: 447 states, 490 finished plans, 1288 played to the end; routes decided:citizenship-recognition decided:citizenship-grant unsure:- none:-
+language-certificate: 1 states, 1 finished plans, 1 played to the end; routes decided:polish-language-certificate
+pesel: 43 states, 137 finished plans, 108 played to the end; routes none:- decided:pesel-application unsure:-
+residence-card: 11 states, 50 finished plans, 76 played to the end; routes decided:temporary-residence
+ends at a last level with nothing to record: citizenship: after-appeal
+
+0 distinct faults
+exit 0

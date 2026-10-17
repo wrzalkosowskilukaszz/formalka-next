@@ -1,0 +1,10 @@
+# node audit/2026-10-17-correctness/peek.mjs pesel '^Dla siebie$' '^Nie wiem$'
+# 2026-10-17T10:00Z commit 18565c6 node v22.22.0
+
+> Dla siebie
+> Nie wiem
+[msg bot] Czy mieszkasz albo zamieszkasz w Polsce pod konkretnym adresem, a cały Twój pobyt w Polsce potrwa dłużej niż 30 dni?
+[msg me] Nie wiem
+[msg bot] Pokażemy obie drogi do numeru PESEL, przez zameldowanie i przez wniosek, w oficjalnym brzmieniu, żeby łatwo było je porównać.
+[msg bot] Bez tych odpowiedzi nie ustalę drogi z naszych źródeł, więc nie zgaduję. Kiedy warto zapytać kogoś o pomoc, według przewodnika: Jeśli nie wiesz, jaką podstawę prawną wpisać, albo urząd nie przyjmuje wniosku. Także gdy dziecko urodziło się w Polsce, a jego rodzic ma ochronę czasową, albo minął termin na wniosek o PESEL ze statusem UKR. Oficjalne teksty, które mamy, nie mówią, od kiedy liczy się termin dla takiego dziecka. Bezpłatna pomoc: Nieodpłatna pomoc prawna Co robimy dalej?
+[dock] Zamieszkasz pod adresem na dłużej niż 30 dni? Zamelduj się: PESEL dostaniesz wtedy z urzędu. Popraw odpowiedzi Wróć do Startu Albo napisz własnymi słowami

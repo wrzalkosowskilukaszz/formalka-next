@@ -1,0 +1,4 @@
+# node prototype/test/lint.mjs
+# 2026-10-17T09:52Z commit f77a5ed node v22.22.0
+
+lint clean: 13 modules

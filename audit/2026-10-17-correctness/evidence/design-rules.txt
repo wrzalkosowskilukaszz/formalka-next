@@ -1,0 +1,4 @@
+# node prototype/test/design-rules.mjs
+# 2026-10-17T09:57Z commit f77a5ed node v22.22.0
+
+0 violation(s)

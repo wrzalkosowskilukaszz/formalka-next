@@ -1,0 +1,65 @@
+# node --test prototype/test/*.test.mjs
+# 2026-10-17T09:52Z commit f77a5ed node v22.22.0
+
+# Subtest: D1: app.css uses tokens only (colour, type, radius, motion, layers)
+ok 1 - D1: app.css uses tokens only (colour, type, radius, motion, layers)
+# Subtest: no text size token below 12 px
+ok 2 - no text size token below 12 px
+# Subtest: legal stay while waiting is shown with its conditions and its exception (art. 108 ust. 1-2)
+ok 3 - legal stay while waiting is shown with its conditions and its exception (art. 108 ust. 1-2)
+# Subtest: the card fee relief says whom it is for (art. 237 ust. 1)
+ok 4 - the card fee relief says whom it is for (art. 237 ust. 1)
+# Subtest: a statement ending in a colon gets its quotes; a whole sentence and a paraphrase stay as they are
+ok 5 - a statement ending in a colon gets its quotes; a whole sentence and a paraphrase stay as they are
+# Subtest: the residence scope names what the case does not cover, and states no rule of its own
+ok 6 - the residence scope names what the case does not cover, and states no rule of its own
+# Subtest: two stamp duties for one permit are listed, never added up (residence COMPARISON D21)
+ok 7 - two stamp duties for one permit are listed, never added up (residence COMPARISON D21)
+# Subtest: fee amounts are added up or joined with "+" only in feeSum and feeLine (correctness audit K5)
+ok 8 - fee amounts are added up or joined with "+" only in feeSum and feeLine (correctness audit K5)
+# Subtest: norm folds Polish letters and punctuation
+ok 9 - norm folds Polish letters and punctuation
+# Subtest: polarity: yes, no and "Nie wiem"; strict mode for approval cards
+ok 10 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
+# Subtest: audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+ok 11 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+# Subtest: yes or no questions: a bare word is taken, a sentence is asked back
+ok 12 - yes or no questions: a bare word is taken, a sentence is asked back
+# Subtest: options with words: the matching one, or the tied ones to choose from
+ok 13 - options with words: the matching one, or the tied ones to choose from
+# Subtest: the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+ok 14 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+# Subtest: whose case: someone else is named first; otherwise the person speaks of themselves
+ok 15 - whose case: someone else is named first; otherwise the person speaks of themselves
+# Subtest: what it does not follow stays unknown; questions about the question are recognised
+ok 16 - what it does not follow stays unknown; questions about the question are recognised
+# Subtest: days and hours in words (the clock starts on Monday 19.10.2026)
+ok 17 - days and hours in words (the clock starts on Monday 19.10.2026)
+# Subtest: day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 18 - day and hour chips: a typed day or hour picks its chip; another one is reported
+# Subtest: "Jak poszło?" in the person's words
+ok 19 - "Jak poszło?" in the person's words
+# Subtest: audit F7: personal numbers are masked before the person's words are shown
+ok 20 - audit F7: personal numbers are masked before the person's words are shown
+# Subtest: case intents: a case that is part of another named case gives way to it
+ok 21 - case intents: a case that is part of another named case gives way to it
+# Subtest: an answer that fits no option: the reply reasons over the words, never picks for the person
+ok 22 - an answer that fits no option: the reply reasons over the words, never picks for the person
+# Subtest: waiting for the office: the need is read from the words, not as a new application
+ok 23 - waiting for the office: the need is read from the words, not as a new application
+# Subtest: correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+ok 24 - correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+# Subtest: round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+ok 25 - round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+# Subtest: study scope: the groups left out are named, not guessed
+ok 26 - study scope: the groups left out are named, not guessed
+# Subtest: round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+ok 27 - round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 199.551739
