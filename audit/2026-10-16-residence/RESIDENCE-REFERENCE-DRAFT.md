@@ -258,6 +258,17 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
   - a new job may need a change of the permit (art. 120, OPEN-R10).
 - **Never:** a computed date (OPEN-R5); "Twoje zezwolenie wygaśnie".
 
+### RC12–RC15. The other purposes (added on 17.10)
+
+| Case | Channel and attachments | Stamp duty | Never |
+|---|---|---|---|
+| RC12. Traineeship or volunteering | MOS; the organiser's attachment, through the MOS link (art. 106 ust. 5, 106c ust. 3) | 340 zł (OS item 2; not among item 2b's purposes) | — |
+| RC13. Business | MOS. An employer's attachment **only** when the purpose is work on the board of a limited or joint-stock company the person set up or holds shares in, as a general partner, or as a commercial proxy (art. 106 ust. 2); otherwise none | 340 zł (OS item 2) | An employer's attachment for every business |
+| RC14. Seasonal work (art. 185a) | MOS (not among the paper exceptions) | 170 zł (OS item 2c) | — |
+| RC15. A short stay (art. 181 ust. 1) | MOS | **One of** 85 zł (art. 181 ust. 1 pkt 1 and 3) or 340 zł (pkt 2) (OS item 2a) | Both amounts added up |
+
+The card fee is 100 zł in each case (FEES). Art. 181 and 185a themselves were not extracted: OPEN-R15.
+
 ## 7. Open questions, their harm, and the restriction until they are settled
 
 | Id | Question | Harm if guessed wrong | Restriction in the app until a source settles it |
@@ -276,6 +287,7 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 | OPEN-R12 | The card fee on the paper route (106l) | Low | Show the fee with "sprawdź u wojewody" |
 | OPEN-R13 | How the 106l paper application is delivered, and the person's later entry and card pickup | Medium | Name the filer and the office; say the delivery route is to be checked with the voivode |
 | OPEN-R14 | How the person who was abroad applies for the first card (art. 229 ust. 4) | Medium | Say that the card is on application, and to ask the voivode who granted the permit |
+| OPEN-R15 | The conditions of art. 181 (short stay) and 185a (seasonal work), not extracted | Medium | Fees only, from the stamp duty act; no conditions |
 
 ## 8. Reviewer sheet
 

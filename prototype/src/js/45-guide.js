@@ -217,8 +217,8 @@ async function answerFees(c) {
     await say(c, `<p>${exempt.length ? 'Z Twoich odpowiedzi wynika zwolnienie z opłaty.' : 'W tym planie nie ma opłat urzędowych.'} Opłaty za usługi, na przykład tłumacza, nie są w naszych źródłach.</p>${actsHTML(c, guidance(c).actions.slice(0, 2))}`);
     return;
   }
-  const total = fees.reduce((s, x) => s + x.f.amountPln, 0);
-  await say(c, `<p>Opłaty urzędowe w tym planie: <b>${total} zł</b>. To przykład z przewodnika Formalki, stan na 15.10.2026.</p>
+  const total = feeSum(fees.map((x) => x.f));
+  await say(c, `<p>${total === null ? 'W tym planie są dwie opłaty skarbowe, każda dla innego powodu pobytu, więc ich nie sumuję. Sprawdź w opisie, która Cię dotyczy.' : `Opłaty urzędowe w tym planie: <b>${total} zł</b>.`} To przykład z przewodnika Formalki, stan na 15.10.2026.</p>
     <ul>${fees.map(({ f, l }) => `<li>${f.amountPln} zł: ${esc(f.purpose.pl)} (${esc(l.title.pl)})</li>`).join('')}</ul>
     ${fees.filter(({ f }) => f.exemption?.outcome === 'unknown').map(({ f }) => `<p class="meta">${esc(maybeExempt(f))}</p>`).join('')}
     ${cite(fees[0].f.quotes, 'Jak i gdzie zapłacić, jest w źródle.')}

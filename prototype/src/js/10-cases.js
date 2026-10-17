@@ -214,6 +214,13 @@ const cite = (quotes, prefix = 'Przykład z przewodnika Formalki, stan na 15.10.
 // of the note's quotes, all the quotes are shown in the registry's order; when it is not, a statement
 // ending in a colon gets the quotes after it (audit F8; residence COMPARISON D5: art. 108 without its
 // conditions, art. 237 without whom the relief is for).
+// The fees a plan asks for, summed only when the sum is one amount the person pays. Two stamp duties for one
+// permit are the registry's alternatives for different reasons (residence "short": 85 or 340 zł), so they are
+// listed, never added up (residence COMPARISON D21).
+function feeSum(fees) {
+  const duties = fees.filter((f) => /^Opłata skarbowa/.test(f.purpose.pl));
+  return duties.length > 1 ? null : fees.reduce((s, f) => s + f.amountPln, 0);
+}
 const FRAGMENT_RE = /:\s*$|^[a-ząćęłńóśźż0-9]|o (?:której|którym|których) mowa w ust\./;
 function noteText(n) {
   const s = n.statement.value.pl.trim();

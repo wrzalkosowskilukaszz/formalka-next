@@ -305,7 +305,7 @@ function timeline(c, sheetMode = false) {
       <b>${esc(l.title.pl)}</b>${stateChip(l)}${needsRecheck(c, l) ? recheckChip() : ''}<span class="tl-text">${l.state === 'locked' ? icon('lock-simple') : ''}${esc(levelLine(l))}</span></button>`;
   };
   const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
-  const total = fees.reduce((s, f) => s + f.amountPln, 0);
+  const total = feeSum(fees);
   const office = p.levels.map((l) => l.office).find((o) => o?.offices?.length);
   const facts = [total ? `${icon('coins')}${total} zł opłat` : '', office ? `${icon('buildings')}${esc(office.offices[0].name.pl)}` : '', p.route.procedureId ? `${icon('signpost')}${esc(routeTitle(p))}` : ''].filter(Boolean);
   return `<section class="tl-sum">
@@ -454,13 +454,13 @@ function teczkaScreen() {
     }
     const ready = groups.filter((g) => g.some((d) => isDone(d.t))).length;
     const fees = p.levels.flatMap((l) => l.fees).filter((f) => !f.optional && f.outcome === 'applies' && f.exemption?.outcome !== 'applies');
-    const total = fees.reduce((s, f) => s + f.amountPln, 0);
+    const total = feeSum(fees);
     const rows = groups.map((g) => `<li class="doc-row${g.some((d) => isDone(d.t)) ? ' ok' : ''}">${g.map(({ t, l }, k) => `${k ? '<span class="albo">albo</span>' : ''}<span class="dr"><span class="tx"><b>${esc(cap(t.title.pl))}${t.outcome === 'unknown' ? ' <em class="maybe">sprawdź, czy Cię dotyczy</em>' : ''}</b>${t.onlyIf ? `<span class="meta">${esc(t.onlyIf.pl)}</span>` : ''}${t.status === 'not_needed' ? '<span class="meta">Nie dotyczy albo masz dokument zamienny</span>' : ''}<span class="meta">${esc(l.title.pl)}${t.quotes?.length ? ` · ${srcLink(t.quotes)}` : ''}</span></span>
         ${l.state === 'unconfirmed' ? '' : `<button type="button" class="chip chip-sm${isDone(t) ? ' picked' : ''}" data-task="${esc(t.id)}" data-case="${c.id}" data-st="${isDone(t) ? 'todo' : 'done'}" aria-pressed="${isDone(t)}">${isDone(t) ? 'Mam' : 'Mam?'}</button>`}</span>`).join('')}</li>`).join('');
     return `<section class="sec teczka-case"><div class="sec-head"><h2 class="sec-h">${esc(c.title)}</h2><span class="meta">${groups.length ? `gotowe ${ready} z ${groups.length}` : ''}</span></div>
       ${c.files.length ? `<div class="docs">${c.files.map((f, i) => `<button type="button" class="doc press" data-file="${c.id}|${i}"><span class="tile-ic">${icon(f.icon)}</span><b>${esc(f.name)}</b><span>${esc(f.kind)}<br>${dshort(f.at.slice(0, 10))}</span></button>`).join('')}</div>` : ''}
       ${rows ? `<ul class="doc-list">${rows}</ul>` : '<p class="meta">Ta sprawa nie wymaga dokumentów albo zależą one od odpowiedzi.</p>'}
-      ${total ? `<p class="meta">Opłaty w tej sprawie: <b>${total} zł</b> (przykład z przewodnika).</p>` : ''}</section>`;
+      ${total ? `<p class="meta">Opłaty w tej sprawie: <b>${total} zł</b> (przykład z przewodnika).</p>` : total === null ? '<p class="meta">Opłata skarbowa w tej sprawie zależy od powodu pobytu: w kroku „Opłaty” są dwie, każda dla innego powodu.</p>' : ''}</section>`;
   }).join('');
   const el = h(`<section class="screen teczka"><div class="scroll pad"><div class="stack">
     <div class="greet"><span class="tx"><small>Tylko na tym telefonie</small><b class="page-title">Teczka</b></span></div>

@@ -33,6 +33,10 @@ Reading the engine's notes found four provisions the draft had missed: art. 225c
 | D18 | Changes after filing; letters outside MOS | QA 42, 49–52 | `wait-mos-not-channel`, `wait-electronic-address`, the Mazowiecki notes | Agreement | — | — |
 | D19 | Purpose unknown | Every fee and attachment, marked as possibly not applying | The same, with "sprawdź" | Agreement | — | — |
 | D20 | The employer's link (30 days) and unsigned drafts (45 days) | QA 30; art. 225h | Not mentioned | Gap | Low–medium | Finding P8 |
+| D21 | Short stay fees (RC15, added 17.10) | One of 85 zł or 340 zł, by reason (OS item 2a) | Both stamp duties apply at once, each with its own description; **the prototype added them up**: "525 zł opłat" with the card | **Disagreement (prototype)** | Medium: a wrong total, an overpayment | Restricted: two stamp duties for one permit are listed, never summed (`feeSum`). Finding P11 |
+| D22 | Business (RC13) | An employer's attachment only for board, partner or proxy work (art. 106 ust. 2) | The employer's attachment for every business purpose, without a condition | Over-requirement | Low–medium: a sole trader looks for an employer | Finding P10 |
+| D23 | Traineeship or volunteering (RC12) | The organiser's attachment; 340 zł | The same | Agreement | — | — |
+| D24 | Seasonal work (RC14) | 170 zł | 170 zł | Agreement on the fee; nothing else compared (OPEN-R15) | — | — |
 
 ## 2. Restrictions in the prototype, and the test that fails without each
 
@@ -42,8 +46,9 @@ Reading the engine's notes found four provisions the draft had missed: art. 225c
 | A registry note whose Polish text is a fragment of a provision is shown with all its quotes | D5, D3 | `noteText` (`10-cases.js`), used for level notes, placed notes and the waiting answer | `notes.test.mjs` (three tests; with `noteText` returning the bare statement, three fail); e2e J (the route notes) |
 | While the special act's suspension is in the plan, the waiting answer leads with it and free legal aid is primary | D8 | `suspensionNote`, `waitStageHTML`, `waitActions` (`46-waiting.js`) | e2e G: the order, the open list, which link is primary |
 | After a refusal, the decision step says the case stops here and links the registry's handoff | D9 | `refusalHTML` (`40-case.js`) | e2e J |
+| Two stamp duties for one permit are listed, never summed (the map, the Teczka, the fees answer) | D21 | `feeSum` (`10-cases.js`), used in `40-case.js` and `45-guide.js` | `notes.test.mjs` (with the sum always taken, it fails) |
 
-The rest of the suite ran after these changes: unit tests 25/25; e2e 12/12 in both modes; regressions 71/71; lint, design rules and docs lint clean (`audit/2026-10-16-quality-pass/evidence/`).
+The rest of the suite ran after these changes: unit tests 26/26; e2e 12/12 in both modes; regressions 71/71; lint, design rules and docs lint clean (`audit/2026-10-16-quality-pass/evidence/`).
 
 ## 3. Findings for production's guide (the owner decides; the lab changes nothing there)
 
@@ -58,9 +63,11 @@ The rest of the suite ran after these changes: unit tests 25/25; e2e 12/12 in bo
 | P7 | Nothing after the card: the duty to notify the end of the purpose within 15 working days | UOC art. 113 |
 | P8 | The employer's link lasts 30 days; an unsigned application is deleted after 45 days | QA 30; UOC art. 225h |
 | P9 | Nothing on work while the case is pending, although the act on employing foreigners sets when it is allowed (added 17.10) | Act of 20.03.2025 art. 3 ust. 1 pkt 18, ust. 3 pkt 2, as amended by Dz.U. 2025 poz. 1794 art. 11 |
+| P10 | The employer's attachment is required for every business purpose; the act requires it only for board, partner or proxy work (added 17.10) | UOC art. 106 ust. 2 as amended |
+| P11 | A short stay gets both stamp duties (85 zł and 340 zł) at once; they are alternatives by reason and need a condition (added 17.10) | Stamp duty act, part III item 2a |
 
 ## 4. What this does not settle
 
 - The reference is still a draft. A migration lawyer must review it, together with these rows (R5).
 - Thirteen OPEN questions remain in the reference (§7), one of them narrowed (work while waiting), among them travel while waiting and how calls arrive.
-- The comparison covers fictional cases RC1–RC11 and the purposes work, study and family. Business, seasonal work, traineeships, short stays and "other" were not compared.
+- The comparison covers fictional cases RC1–RC15. For business, seasonal work, traineeships and short stays it compares the channel, the attachments and the fees only; "other" was not compared.

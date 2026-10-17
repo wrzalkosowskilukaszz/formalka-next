@@ -14,7 +14,7 @@
 | Wave 2 sources | The act on foreigners and its 2026 amendment, by point and date; the MOS account and outage rules; KPA; fees; the UdSC and voivode pages | d323266, 97a78b7, 2c301c3, 6bf5b74, f1a64d1 |
 | Draft reference | `audit/2026-10-16-residence/RESIDENCE-REFERENCE-DRAFT.md`: rules, fees, deadlines with their basis, eleven fictional cases with what a plan must never say, thirteen open questions with a restriction each, a reviewer sheet | 6bf5b74, f1a64d1 |
 | Engine comparison | `audit/2026-10-16-residence/COMPARISON.md`: twenty rows. Agreement on fees, offices, channel, the outage rule, the card, the time limits. Gaps on reminders, the MOS account, the refusal, the end of the purpose. One wording problem: the Polish legal-stay note drops its conditions | f1a64d1 |
-| Restrictions in the prototype | Four, each with a test that fails without it. See §2 | f1a64d1 |
+| Restrictions in the prototype | Five, each with a test that fails without it. See §2 | f1a64d1, and the fifth in the last commit |
 | Evidence | All suites, on the commit (§4) | cc82317 |
 | Wave 3 sources | `research/2026-10-17-ukr/sources/`: temporary protection (where it moved in 2026), PESEL UKR, the CUKR card and UdSC's questions and answers on it, the winding-down act's dates. No reference, as doc 19 plans | 43ebc87, 744cee3 |
 | Open questions narrowed | Work while waiting (the act on employing foreigners, art. 3; finding P9); how calls and the card pickup date arrive at the Mazowiecki office (its e-Doręczenia page, which also starts with "Uzyskaj numer PESEL") | c387219 |
@@ -33,6 +33,7 @@
 2. **A registry note whose Polish text is a cut fragment of a provision is shown with all its quotes.** The legal stay while waiting now shows its conditions: filed on time, no formal defects, not suspended at one's own request. Before, a person read only "pobyt … uważa się za legalny".
 3. **The "czekam na urząd" answer now leads with the special act's art. 100d.** It is shown in full, not folded. Free legal aid is the main button and the ponaglenie template a secondary one. This changes the order of the answer you asked for on 16.10, not its content. When the registry drops the note, the old order returns. **Your call (D1 below).**
 4. **After a refusal,** the decision step says the case goes no further and links the registry's free legal aid.
+5. **Fees for a short stay are no longer added up.** The registry gives that purpose two alternative stamp duties, 85 zł or 340 zł by reason. The map, the Teczka and the fees answer showed "525 zł" with the card. They now list the fees and say they depend on the reason (COMPARISON D21, added later in the night).
 
 ## 3. Mistakes found and corrected overnight
 
@@ -53,7 +54,7 @@
 | Engine tests | 39/39 |
 | Evaluation | 18/18 |
 | Mutations | 39/39 caught |
-| Prototype unit | 25/25 (4 new) |
+| Prototype unit | 25/25 (4 new); 26/26 after the fee fix (see the last evidence run) |
 | e2e, reduced motion and full motion | 12/12 and 12/12 (scenario J new, G extended) |
 | Regressions (round 2) | 71/71 |
 | Lint, design rules, docs lint, lessons index | Clean |
@@ -66,7 +67,7 @@
 | # | Decision | Why it matters |
 |---|---|---|
 | D1 | Keep the new order of the waiting answer (art. 100d first, legal aid as the main button)? | Until 4.03.2027 a ponaglenie meets a special act that disarms the inactivity rules. The old order made the template the obvious next step |
-| D2 | The nine findings for the production residence guide (COMPARISON §3, P1–P9) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
+| D2 | The eleven findings for the production residence guide (COMPARISON §3, P1–P11) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
 | D3 | A weekly scheduled check of the four Ukrainian-status acts (`research/2026-10-17-ukr/sources/README.md`, Upkeep) | This is doc 19's gate for wave 3. It runs the two source tools and reports any change. I did not set it up, since it would run outside this session |
 | D4 | Whether the service plan (doc 18) adds "PESEL before the MOS account" to the journey | It is a cross-matter dependency that interviews should probe |
 

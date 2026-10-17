@@ -6,7 +6,7 @@ Doc 19 §5's pipeline, run in the lab on fictional cases. Written by Claude; not
 |---|---|
 | `RESIDENCE-REFERENCE-DRAFT.md` | The draft reference from primary sources: rules, fees, deadlines, eleven reference cases, thirteen open questions, the reviewer sheet. §9 lists the four corrections the comparison forced |
 | `engine-output.mjs`, `engine-output.txt` | What the engine plans for those cases, with every note and its text |
-| `COMPARISON.md` | Twenty rows, four prototype restrictions with their tests, nine findings for production's guide (P9 added on 17.10) |
+| `COMPARISON.md` | Twenty-four rows, five prototype restrictions with their tests, eleven findings for production's guide (P9–P11 added on 17.10) |
 
 The sources are in `research/2026-10-16-residence/sources/` (README there). The lessons from this round are in `docs/solutions/` (2026-10-16: amendment points with their own dates; time limits suspended by another act; read the whole article).
 

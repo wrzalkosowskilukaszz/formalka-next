@@ -1,5 +1,6 @@
-// Registry notes are never shown as a cut fragment of a provision, and the residence case says what it does
-// not cover (audit/2026-10-16-residence/COMPARISON.md D1, D2, D5, D9). Run: node --test prototype/test/*.test.mjs
+// Registry content is never shown in a misleading way: a note cut from its provision, a sum of alternative fees;
+// and the residence case says what it does not cover (audit/2026-10-16-residence/COMPARISON.md D1, D2, D5, D9, D21).
+// Run: node --test prototype/test/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { loadApp } from './load.mjs';
@@ -40,4 +41,13 @@ test('the residence scope names what the case does not cover, and states no rule
   assert.match(s, /konto w MOS/);
   assert.match(s, /decyzji odmownej/);
   assert.doesNotMatch(s, /\d+ dni|art\.|zł/, 'no deadline, provision or amount from outside the registry');
+});
+
+test('two stamp duties for one permit are listed, never added up (residence COMPARISON D21)', () => {
+  const fees = (purpose) => [...app.E.plan('residence-card', { facts: { 'pobyt_czasowy.purpose': purpose }, events: [], tasks: {}, approved: true })
+    .levels.flatMap((l) => l.fees)].filter((f) => f.outcome === 'applies');
+  assert.equal(app.feeSum(fees('work')), 540);
+  assert.equal(app.feeSum(fees('study')), 440);
+  assert.equal(fees('short').length, 3, 'the registry gives a short stay 85 zł and 340 zł, for different reasons, and the card');
+  assert.equal(app.feeSum(fees('short')), null);
 });
