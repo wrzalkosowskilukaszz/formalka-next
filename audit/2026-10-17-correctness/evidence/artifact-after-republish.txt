@@ -1,0 +1,13 @@
+# node audit/2026-10-17-correctness/compare-builds.mjs <published Artifact, read back after the republish>
+# 2026-10-17T11:27Z commit b3ae464 node v22.22.0
+# Republished on 17.10.2026 at the owner's "Tak": https://claude.ai/artifact/9u42vfmSwhRXcH1dqgHKxG, version 1792236405-483e, from prototype/dist/artifact.html of b3ae464 (build 7aa86041c21e). The page was then read back with the Artifact tool; the copy is not committed.
+
+== <published Artifact, version 1792236405-483e>
+sha256 9054ad3a8e3a7617e94427efb239b0feaf9cef553f0182412772145174787ce5
+engine eaede791ccda3d0e
+short stay, Mapa, amounts shown: []
+short stay, Teczka, amounts shown: []
+residence scope note on Teraz: Karta pobytu w makiecie Ta część makiety nie jest jeszcze niezależnie sprawdzona: szkic wz
+res-08 after a granted decision: route:done, documents:done, payment:available, who-files:done, filing:done, summons:done, card:available
+network requests: 0
+

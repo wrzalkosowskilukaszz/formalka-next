@@ -120,7 +120,8 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
   - cases opened before 27.04.2026 keep the old wording (Dz.U. 2025 poz. 1794 art. 12, 14).
   It also found one wrong scenario: the cases of the regulation on work without a permit need only a legal stay. The lab re-read each text before changing anything (`research/2026-10-17-work/sources/CHECK.md`).
 - **The correctness audit** (the owner's request, 17.10) is in `audit/2026-10-17-correctness/README.md`:
-  - The shared Artifact is an older build that adds up alternative stamp duties ("525 zł") and locks the card after a granted decision. Republishing is the owner's decision.
+  - The shared Artifact was an older build that added up alternative stamp duties ("525 zł") and locked the card after a granted decision. At the owner's "Tak" it was republished with the current build and checked again.
+  - After "Nie wiem" the app no longer promises what a stopped case will not show (K2, the owner's "Tak").
   - Two places in the current app still added the duties up; they are changed in the lab.
   - The source tools gave a silent zero for consolidated texts and missed transitional rules; they are changed in the lab.
 - **The checks of the health and civil status maps** (the owner's "Tak", 17.10) found no outdated rule but many missing exceptions in later paragraphs, and one wrong scenario:
