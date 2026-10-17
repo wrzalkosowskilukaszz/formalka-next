@@ -76,3 +76,10 @@ test('a repealed paragraph does not make its article quoted', () => {
   const t = '     Art. 3. 1. (uchylony)\n     2. Świadczeniodawca prowadzi wykaz oczekujących na udzielenie świadczenia.\n     Art. 4. 1. (uchylony)\n';
   assert.deepEqual(omitted(t, 'Art. 9. 1. (uchylony)').quoted, []);
 });
+
+test('a code whose articles hold paragraphs (§) is read by its articles', () => {
+  const kpa = '     Art. 129. § 1. Odwołanie wnosi się do właściwego organu odwoławczego za pośrednictwem organu.\n     § 2. Odwołanie wnosi się w terminie czternastu dni od dnia doręczenia decyzji stronie.\n     § 3. Przepisy szczególne mogą przewidywać inne terminy do wniesienia odwołania.\n     Art. 130. § 1. Przed upływem terminu do wniesienia odwołania decyzja nie ulega wykonaniu.\n     Art. 131. § 1. Inny przepis.\n     § 2. Inny.\n     Art. 132. § 1. Inny.\n     § 2. Inny.\n';
+  const r = omitted(kpa, 'Art. 129. § 1. Odwołanie wnosi się do właściwego organu odwoławczego za pośrednictwem organu.');
+  assert.equal(r.unit, 'Art.');
+  assert.deepEqual(r.partial[0].missing.map((m) => m.n), ['§ 2', '§ 3']);
+});

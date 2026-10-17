@@ -2,8 +2,9 @@
 // extract does not quote, and the other articles that name a quoted article. The unemployment map quoted art. 65,
 // 219 ust. 1 and 225 ust. 1 and missed art. 66, 219 ust. 2 and 225 ust. 3 (its check, 17.10.2026); quoting a whole
 // article was not enough either (docs/solutions/2026-10-16-read-the-whole-article.md). It prints what to read by hand.
-// Usage: node tools/sources/omitted.mjs DU/2025/620 research/2026-10-17-unemployment/sources/rynek-pracy-2025-620-extract.txt [--all]
-//        (needs network and pdftotext; a local pdftotext -layout output may be given instead of the ELI)
+// Usage: node tools/sources/omitted.mjs DU/2025/620 research/2026-10-17-unemployment/sources/rynek-pracy-2025-620-extract.txt [more extracts] [--all]
+//        (needs network and pdftotext; a local pdftotext -layout output may be given instead of the ELI). Give every
+//        extract of the folder that quotes the act: an article quoted in another one is otherwise listed as left out.
 // A regulation's units are paragraphs (§) and their ust.; it is read the same way.
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
@@ -26,9 +27,10 @@ export function units(text) {
   const lines = text.split('\n');
   const heads = { art: 0, par: 0 };
   for (const l of lines) { if (/^\s*Art\. \d+[a-z]*\.\s/.test(l)) heads.art++; else if (/^\s*§ \d+[a-z]*\.\s/.test(l)) heads.par++; }
-  const unit = heads.par > heads.art ? '§' : 'Art.';
+  // A code's articles hold paragraphs "§ 1." (the KPA), so § is the unit only when there are hardly any articles.
+  const unit = heads.art < 3 && heads.par > heads.art ? '§' : 'Art.';
   const head = unit === '§' ? /^\s*§ (\d+[a-z]*)\.\s+(.*)$/ : /^\s*Art\. (\d+[a-z]*)\.\s+(.*)$/;
-  const para = unit === '§' ? /^\s*(\d+[a-z]*)\.\s+(?=\S)/ : /^\s*(?:§ )?(\d+[a-z]*)\.\s+(?=\S)/;
+  const para = unit === '§' ? /^\s*(\d+[a-z]*)\.\s+(?=\S)/ : /^\s*((?:§ )?\d+[a-z]*)\.\s+(?=\S)/;
   const out = [];
   let cur = null;
   const start = (id, rest) => {
@@ -37,7 +39,7 @@ export function units(text) {
     const first = para.exec(rest);
     cur.paras.push({ n: first ? first[1] : '', raw: first ? rest.slice(first[0].length) : rest });
   };
-  const num = (n) => parseInt(n, 10);
+  const num = (n) => parseInt(n.replace(/^§ /, ''), 10);
   for (const l of lines) {
     const h = head.exec(l);
     if (h) { start(h[1], h[2]); continue; }
@@ -104,8 +106,8 @@ export function omitted(actText, extractText) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
-  const [src, extract] = args.filter((a) => !a.startsWith('--'));
-  if (!src || !extract) { console.error('usage: node tools/sources/omitted.mjs <ELI | act.txt> <extract.txt> [--all]'); process.exit(2); }
+  const [src, ...extracts] = args.filter((a) => !a.startsWith('--'));
+  if (!src || !extracts.length) { console.error('usage: node tools/sources/omitted.mjs <ELI | act.txt> <extract.txt> [more extracts] [--all]'); process.exit(2); }
   let actText;
   if (existsSync(src)) actText = readFileSync(src, 'utf8');
   else {
@@ -115,19 +117,20 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     execFileSync('pdftotext', ['-layout', join(dir, 'act.pdf'), join(dir, 'act.txt')]);
     actText = readFileSync(join(dir, 'act.txt'), 'utf8');
   }
-  const r = omitted(actText, readFileSync(extract, 'utf8'));
+  const r = omitted(actText, extracts.map((f) => readFileSync(f, 'utf8')).join('\n'));
   const u = r.unit === '§' ? '§' : 'art.';
-  const p = 'ust.';
+  // A code's paragraph keeps its "§"; an act's is a "ust.".
+  const label = (n) => (n.startsWith('§') ? n : `ust. ${n}`);
   console.log(`${src}: the extract quotes ${r.quoted.length} ${u === '§' ? 'paragraph(s)' : 'article(s)'}: ${r.quoted.join(', ')}`);
   console.log('\nQuoted in part (the paragraphs left out; "!" marks an exception word):');
   for (const x of r.partial) {
     const shown = args.includes('--all') ? x.missing : x.missing.filter((m) => m.exception);
     if (!shown.length) continue;
-    console.log(`- ${u} ${x.id}: ${shown.map((m) => `${p} ${m.n}${m.exception ? ` ! "${m.exception}"` : ''}`).join('; ')}`);
+    console.log(`- ${u} ${x.id}: ${shown.map((m) => `${label(m.n)}${m.exception ? ` ! "${m.exception}"` : ''}`).join('; ')}`);
   }
   console.log('\nNot quoted, but naming a quoted one:');
   for (const x of r.referring.filter((y) => args.includes('--all') || y.exception)) {
-    console.log(`- ${u} ${x.id}${x.n ? ` ${p} ${x.n}` : ''} names ${u} ${x.names.join(', ')}${x.exception ? ` ! "${x.exception}"` : ''}: ${x.head}…`);
+    console.log(`- ${u} ${x.id}${x.n ? ` ${label(x.n)}` : ''} names ${u} ${x.names.join(', ')}${x.exception ? ` ! "${x.exception}"` : ''}: ${x.head}…`);
   }
   if (!args.includes('--all')) console.log('\nOnly the marked ones are shown; --all lists every paragraph left out and every reference.');
   console.log('Read each one in the act before stating the rule, and quote it or say why it does not apply.');
