@@ -1,6 +1,6 @@
 # Ustawa z 13.06.2003 o udzielaniu cudzoziemcom ochrony na terytorium RP, consolidated text Dz.U. 2026 poz. 862 (obwieszczenie of 27.05.2026, legal state 18.05.2026; it includes Dz.U. 2026 poz. 203): Dział III rozdział 3, temporary protection, art. 106-111 and 116
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf, retrieved 2026-10-17, sha256 e9f82bc0e10ff1555b941f741667ee5a97fc0b5a7fe2320f4bf785e475c70701. pdftotext -layout.
-# Amendments after the consolidated text: node tools/sources/amendments.mjs DU/2003/1176 2026-05-18 on 2026-10-17 (see README). Art. 112-113g (aid, housing, minors) are omitted here; their headings are in the README.
+# Amendments after the consolidated text: node tools/sources/amendments.mjs DU/2003/1176 2026-05-18 on 2026-10-17 (see README). Art. 112-113g (aid, housing, minors, and art. 112c on health care, which the map cites) are omitted here and are not in the README either (corrected after the check of 17.10.2026); art. 112c is in research/2026-10-17-health/sources/ochrona-2026-862-art112c-extract.txt. The EU decision 2026/1912 extended temporary protection to 4.03.2028 from 5.08.2026 without any Polish amendment, so art. 106 ust. 1 (legal stay while the decision is in force) now runs to that date (udsc-przedluzenie-ochrony-czasowej-2028-2026-10-17.txt).
 
       Art. 106.44) 1. Pobyt beneficjenta ochrony czasowej, który przybył legalnie na terytorium Rzeczypospolitej Polskiej
 w okresie wskazanym w decyzji Rady Unii Europejskiej stwierdzającej istnienie masowego napływu wysiedleńców,

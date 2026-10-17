@@ -9,7 +9,7 @@
 | Map | Doc 19 | Content level | Scenarios | Valid as of |
 |---|---|---|---|---|
 | [`maps/residence-temporary.md`](maps/residence-temporary.md): temporary residence permit and card | Wave 2, matter 3 | Draft reference, engine comparison (26 rows), five prototype restrictions, one engine change (R4 in progress); checked by the separate agent on 17.10 (`research/2026-10-16-residence/sources/CHECK.md`) | 24 flow scenarios (FS1–FS24), on top of the reference's 15 cases; 9 evaluation scenarios (res-01 to res-09) | 17.10.2026 |
-| [`maps/cukr-ukr.md`](maps/cukr-ukr.md): the UKR status, PESEL UKR, the CUKR card | Wave 3, matter 7 | Sources (R1) and this map | 20 (CU1–CU20) | **17.10.2026, to be re-checked before use**; the CUKR window closes on 4.03.2027 |
+| [`maps/cukr-ukr.md`](maps/cukr-ukr.md): the UKR status, PESEL UKR, the CUKR card | Wave 3, matter 7 | Sources (R1) and this map | 20 (CU1–CU20) | **17.10.2026, to be re-checked before use.** Checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-ukr/sources/CHECK.md`). Protection runs to 4.03.2028 (EU decision 2026/1912); 4.03.2027 is UdSC's date to file CUKR by |
 | [`maps/e-government-access.md`](maps/e-government-access.md): PESEL, the trusted profile, e-Doręczenia | Wave 4, matter 10 | Sources (R1) and this map | 12 (EG1–EG12) | 17.10.2026 |
 | [`maps/health-insurance.md`](maps/health-insurance.md): NFZ, ZUS, the voluntary NFZ agreement | Wave 4, matter 11 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-health/sources/CHECK.md`) | 27 (HS1–HS27) | 17.10.2026; the PESEL UKR rules changed on 5.03.2026 |
 | [`maps/civil-status.md`](maps/civil-status.md): a birth, a marriage, a death, a foreign record | Wave 4, matter 14 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-civil/sources/CHECK.md`) | 25 (CS1–CS25) | 17.10.2026 |
@@ -43,7 +43,7 @@ flowchart LR
   MOS --> KP[Karta pobytu]
   ED -.->|Mazowiecki: wezwania, odbiór karty| KP
   UKR[PESEL UKR<br/>30 dni od granicy] --> PZU[Profil zaufany<br/>art. 110c: automatycznie]
-  PZU --> CUKR[Karta CUKR<br/>do 4.03.2027]
+  PZU --> CUKR[Karta CUKR<br/>wniosek do 4.03.2027, data UdSC]
   UKR --> CUKR
   PESEL --> EWUS[eWUŚ w przychodni<br/>art. 50 ust. 3: po numerze PESEL]
   PZ --> IKP[IKP: sprawdzenie ubezpieczenia]

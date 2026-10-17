@@ -1,0 +1,159 @@
+# Other provisions for the UKR and CUKR map, added after the independent check of 17.10.2026 (research/2026-10-17-ukr/sources/CHECK.md). Each block is verbatim pdftotext -layout output; page headers dropped. Retrieved 2026-10-17 from api.sejm.gov.pl; each hash below matches the checking agent's own download.
+#   The special act, consolidated Dz.U. 2025 poz. 337, sha256 dd1ec03d2ba1110e0bf4217d9081594c72d11f8e67216a0882e788586124b1c0: only for the history of art. 1 ust. 2, which extended "obywatel Ukrainy" to some non-Ukrainian family members. Dz.U. 2026 poz. 203 art. 17 pkt 1 repealed art. 1-4a from 5.03.2026; no transitional rule keeps the definition for art. 42c was found.
+#   Dz.U. 2026 poz. 203, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275: art. 17 pkt 1 from 5.03.2026; art. 17 pkt 27, 30 and 31 (art. 42l: 180 days; art. 42v sentence 2 deleted; art. 42x: 4.03.2027) from 4.05.2026 (art. 54 pkt 4, the announcement M.P. 2026 poz. 371); art. 23, 32 and 41 from 5.03.2026.
+#   M.P. 2026 poz. 371, sha256 a206c8c402fdf801be70b513d959aa67a6f285db24070f12d4cd87f913d9dccc: sets 4.05.2026 for the special act art. 4 ust. 13d and art. 42c-42w, and the population register act art. 8 pkt 24a lit. c and e.
+#   The special act, consolidated Dz.U. 2026 poz. 1293 (base DU/2022/583), sha256 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177: no amendments after its legal state of 8.09.2026.
+#   The population register act, consolidated Dz.U. 2026 poz. 384 (base DU/2010/1427), sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb; art. 8 pkt 24a is not changed after 10.03.2026 (Dz.U. 2026 poz. 1206 changes art. 23m and 49a, from 11.01.2027).
+#   The card fee regulation, Dz.U. 2022 poz. 1583, sha256 88361bac0734a1f40fd28ab40cd97955b156aa8463d12fbc70d9cc443b300641; no amendments.
+# Footnote markers printed in the text are the consolidated texts' own notes on earlier amendments.
+
+[Special act, consolidated Dz.U. 2025 poz. 337, art. 1 ust. 2 (repealed from 5.03.2026)]
+     2.1) Ilekroć w ustawie jest mowa o obywatelu Ukrainy, rozumie się przez to także nieposiadających obywatelstwa ukraiń-
+skiego:
+1)    małżonka obywatela Ukrainy,
+2)    małoletnie dziecko obywatela Ukrainy,
+3)    małoletnie dziecko małżonka obywatela Ukrainy
+– o ile przybyli oni na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy w związku z działaniami wojennymi prowa-
+dzonymi na terytorium tego państwa i nie są obywatelami polskimi ani obywatelami innych niż Rzeczpospolita Polska państw
+członkowskich Unii Europejskiej.
+
+[Dz.U. 2026 poz. 203 art. 17 pkt 1]
+     Art. 17. W ustawie z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na teryto-
+rium tego państwa (Dz. U. z 2025 r. poz. 337, 620, 621, 1301 i 1794) wprowadza się następujące zmiany:
+1)     uchyla się art. 1–4a;
+
+[Dz.U. 2026 poz. 203 art. 17 pkt 27]
+27) art. 42l otrzymuje brzmienie:
+            „Art. 42l. Kartę pobytu w przypadku, o którym mowa w art. 42c lub art. 42d, wydaje się lub odmawia się jej
+     wydania w terminie 180 dni od dnia złożenia wniosku o wydanie tej karty spełniającego wymogi określone w art. 42g
+     ust. 1 i 2.”;
+
+[Dz.U. 2026 poz. 203 art. 17 pkt 30-31]
+30) w art. 42v skreśla się zdanie drugie;
+31) w art. 42x wyrazy „4 marca 2026 r.” zastępuje się wyrazami „4 marca 2027 r.”;
+
+[Dz.U. 2026 poz. 203 art. 23]
+     Art. 23. Posiadanie w dniu 4 marca 2026 r. profilu zaufanego potwierdzonego na podstawie art. 9 ustawy zmienianej
+w art. 17 jest równoznaczne z posiadaniem profilu zaufanego, o którym mowa w art. 110c ustawy zmienianej w art. 4.
+
+[Dz.U. 2026 poz. 203 art. 32]
+     Art. 32. 1. Do dnia 30 czerwca 2026 r. wojewoda może kontynuować udzielanie pomocy, o której mowa w art. 12
+ustawy zmienianej w art. 17, obywatelom Ukrainy, którzy w dniu 4 marca 2026 r. przebywają w obiektach zbiorowego za-
+kwaterowania, działających na podstawie art. 12 ustawy zmienianej w art. 17, o ile nadal są oni beneficjentami ochrony
+czasowej w rozumieniu ustawy zmienianej w art. 4.
+      2. Do obiektów zbiorowego zakwaterowania, w których przebywają obywatele Ukrainy, o których mowa w ust. 1, sto-
+suje się przepisy art. 12 ustawy zmienianej w art. 17.
+     3. Zadania, o których mowa w ust. 1, w okresie od dnia 5 marca 2026 r. do dnia 30 czerwca 2026 r. finansowane są
+z rezerwy celowej, przez właściwego wojewodę.
+
+[Dz.U. 2026 poz. 203 art. 41]
+      Art. 41. W okresie 3 lat od dnia wejścia w życie niniejszej ustawy do obywateli Ukrainy przebywających legalnie na
+terytorium Rzeczypospolitej Polskiej, którzy nie korzystają z ochrony czasowej w Rzeczypospolitej Polskiej, stosuje się
+odpowiednio przepisy art. 3 ust. 1 pkt 12 i art. 5a ustawy zmienianej w art. 19.
+
+[M.P. 2026 poz. 371 (the announcement of 10.04.2026)]
+     Na podstawie art. 33 ust. 1 ustawy z dnia 15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku
+z konfliktem zbrojnym na terytorium tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854) ogłasza się, co następuje:
+     Dzień wdrożenia rozwiązań technicznych umożliwiających stosowanie przepisów art. 4 ust. 13d i art. 42c–42w ustawy
+z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa
+(Dz. U. z 2025 r. poz. 337, 620, 621, 1301 i 1794 oraz z 2026 r. poz. 203) oraz art. 8 pkt 24a lit. c i e ustawy z dnia
+24 września 2010 r. o ewidencji ludności (Dz. U. z 2026 r. poz. 384) określa się na 4 maja 2026 r.
+
+[Special act art. 42g (ust. 5: no second application while one is pending)]
+     Art. 42g. 1. Wniosek o wydanie karty pobytu, o którym mowa w art. 42f ust. 1, uznaje się za złożony w przypadku,
+gdy zostaną spełnione łącznie następujące wymogi:
+1)74) dane obywatela Ukrainy, który złożył wniosek o wydanie karty pobytu lub w imieniu którego został złożony wniosek
+      o wydanie karty pobytu w przypadku, o którym mowa w art. 42f ust. 4, zawarte w rejestrze, o którym mowa w art. 44c
+      ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, oraz rejestrze PESEL są kompletne;
+2)          wniosek o wydanie karty pobytu został opatrzony kwalifikowanym podpisem elektronicznym lub podpisem zaufanym
+            przez obywatela Ukrainy, a w przypadku, o którym mowa w art. 42f ust. 4, kwalifikowanym podpisem elektronicz-
+            nym, podpisem osobistym lub podpisem zaufanym przez osobę składającą wniosek w imieniu osoby nieposiadającej
+            zdolności do czynności prawnych lub posiadającej ograniczoną zdolność do czynności prawnych.
+            2. Dane obywatela Ukrainy uważa się za kompletne, jeżeli w dniu składania wniosku, o którym mowa w art. 42f ust. 1:
+1)75) w rejestrze PESEL znajdują się następujące dane i informacje:
+            a)   imię (imiona),
+            b) nazwisko,
+            c)   data urodzenia,
+            d) płeć,
+            e)   obywatelstwo,
+            f)   seria, numer i data ważności ważnego dokumentu podróży obywatela Ukrainy;
+      76)
+2)          w rejestrze, o którym mowa w art. 44c ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, znajdują się na-
+            stępujące dane i informacje:
+            a)   odciski palców lub informacja o fizycznej niemożności pobrania odcisków palców, o której mowa w art. 44a
+                 ust. 11 pkt 3 ustawy z dnia 24 września 2010 r. o ewidencji ludności, albo informacja o chwilowej niemożności
+                 pobrania odcisków palców, o której mowa w art. 44a ust. 11 pkt 2 ustawy z dnia 24 września 2010 r. o ewidencji
+                 ludności, o ile podjęto co najmniej dwukrotnie próbę pobrania odcisków palców,
+            b) odwzorowanie własnoręcznego podpisu osoby, która ukończyła 12. rok życia, z wyjątkiem osoby, która nie może
+               złożyć podpisu;
+74) Ze zmianą wprowadzoną przez art. 17 pkt 25 lit. a ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+75) W brzmieniu ustalonym przez art. 8 pkt 3 lit. a ustawy, o której mowa w odnośniku 72; weszła w życie z dniem 4 maja 2026 r.
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+76) W brzmieniu ustalonym przez art. 17 pkt 25 lit. b ustawy, o której mowa w odnośniku 1; weszła w życie z dniem 4 maja 2026 r.
+    na podstawie komunikatu, o którym mowa w odnośniku 68.
+      3.77) Minister właściwy do spraw informatyzacji, w celu umożliwienia złożenia przez obywatela Ukrainy wniosku
+o wydanie karty pobytu, o którym mowa w art. 42f ust. 1, w postaci elektronicznej z wykorzystaniem usługi online w systemie
+teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem usług teletransmisji
+danych zapewnia wojewodzie oraz Szefowi Urzędu do Spraw Cudzoziemców możliwość weryfikacji, czy w rejestrze, o którym
+mowa w art. 44c ust. 1 ustawy z dnia 24 września 2010 r. o ewidencji ludności, znajdują się dane, o których mowa w art. 44c
+ust. 5 pkt 4 i 5 ustawy z dnia 24 września 2010 r. o ewidencji ludności, oraz udostępnia te dane lub informacje o niemożności
+pobrania odcisków palców, o których mowa w art. 44a ust. 11 pkt 2 i 3 ustawy z dnia 24 września 2010 r. o ewidencji
+ludności. W przypadku, o którym mowa w art. 44a ust. 11 pkt 2 ustawy z dnia 24 września 2010 r. o ewidencji ludności,
+udostępnia się także informację o ostatniej próbie pobrania odcisków palców.
+      4.78) Minister właściwy do spraw informatyzacji, w celu umożliwienia złożenia przez obywatela Ukrainy wniosku o wy-
+danie karty pobytu, o którym mowa w art. 42f ust. 1, w postaci elektronicznej z wykorzystaniem usługi online w systemie
+teleinformatycznym prowadzonym przez Szefa Urzędu do Spraw Cudzoziemców, udostępnia wojewodzie oraz Szefowi
+Urzędu do Spraw Cudzoziemców z rejestru PESEL dane i informacje:
+1)    imię (imiona);
+2)    nazwisko;
+3)    datę urodzenia;
+4)    informację, czy dziecko urodziło się na terytorium Rzeczypospolitej Polskiej;
+5)    płeć;
+6)    numer PESEL;
+7)    obywatelstwo;
+8)    serię, numer i datę ważności ostatniego zarejestrowanego dokumentu podróży obywatela Ukrainy lub informację o braku
+      takiego dokumentu;
+9)    informację o posiadaniu statusu UKR w dniu 4 czerwca 2025 r.;
+10) informację o posiadaniu statusu UKR w dniu składania wniosku;
+11) informację o posiadaniu statusu UKR przez nieprzerwany okres 365 dni;
+12) numery PESEL rodziców małoletniego, jeżeli znajdują się w rejestrze PESEL;
+13)79) informacje o osobie faktycznie sprawującej opiekę nad małoletnim, o których mowa w art. 44a ust. 6 pkt 18 ustawy
+      z dnia 24 września 2010 r. o ewidencji ludności.
+     5.80) Jeżeli wniosek o wydanie karty pobytu jest uznawany za złożony zgodnie z ust. 1, nie jest dopuszczalne ponowne
+złożenie wniosku o jej wydanie do czasu zakończenia postępowania w sposób inny niż przez wydanie karty pobytu.
+
+[Population register act art. 8 pkt 24a (lit. c and e from 4.05.2026)]
+24a) status cudzoziemca oznaczony jako:
+     a)   UE – w przypadku cudzoziemca będącego obywatelem państwa członkowskiego Unii Europejskiej, obywatelem
+          państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim
+          Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej,
+     b) CUE – w przypadku cudzoziemca będącego członkiem rodziny cudzoziemca, o którym mowa w lit. a, niebędą-
+        cego obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europej-
+        skiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub
+        obywatelem Konfederacji Szwajcarskiej,
+     c)5) NUE – w przypadku cudzoziemca niewymienionego w lit. a i b,
+     c)6) NUE – w przypadku cudzoziemca niewymienionego w lit. a, b, d oraz e,
+     d)7) UKR – w przypadku beneficjenta ochrony czasowej, któremu nadano numer PESEL na podstawie art. 110a ust. 1
+          ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej
+          (Dz. U. z 2025 r. poz. 223, 389, 619, 621 i 1794 oraz z 2026 r. poz. 203);
+     e)8) CUKR – w przypadku osoby, która zmieniła status UKR w trybie określonym w art. 42 ust. 13, art. 42c lub
+          art. 42d ustawy z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym
+          na terytorium tego państwa;
+24b)9) przyczyna nadania lub utraty statusu, o którym mowa w pkt 24a lit. d;
+
+[Card fee regulation § 5 (replacement after a culpable loss or damage)]
+    § 5. 1. Za wymianę karty pobytu, polskiego dokumentu podróży dla cudzoziemca, polskiego dokumentu tożsamości
+cudzoziemca lub dokumentu „zgoda na pobyt tolerowany” w przypadku zawinionej przez cudzoziemca ich utraty lub
+zawinionego ich zniszczenia pobiera się opłatę w wysokości:
+1)    200 zł – za wymianę karty pobytu;
+2)    700 zł – za wymianę polskiego dokumentu podróży dla cudzoziemca;
+3)    200 zł – za wymianę polskiego dokumentu tożsamości cudzoziemca;
+4)    200 zł – za wymianę dokumentu „zgoda na pobyt tolerowany”.
+     2. W przypadku kolejnej zawinionej przez cudzoziemca utraty lub kolejnego zawinionego zniszczenia karty pobytu,
+polskiego dokumentu podróży dla cudzoziemca, polskiego dokumentu tożsamości cudzoziemca lub dokumentu „zgoda na
+pobyt tolerowany” za wymianę dokumentu pobiera się opłatę w wysokości:
+1)    300 zł – za wymianę karty pobytu;
+2)    1050 zł – za wymianę polskiego dokumentu podróży dla cudzoziemca;
+3)    300 zł – za wymianę polskiego dokumentu tożsamości cudzoziemca;
+4)    300 zł – za wymianę dokumentu „zgoda na pobyt tolerowany”.

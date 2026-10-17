@@ -1,6 +1,6 @@
 # Ustawa z 24.09.2010 o ewidencji ludności, consolidated text Dz.U. 2026 poz. 384 (obwieszczenie of 12.03.2026, legal state 10.03.2026; it includes Dz.U. 2026 poz. 203): Rozdział 5a, PESEL for temporary protection beneficiaries and the UKR status
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb. pdftotext -layout.
-# Later amendments (tools/sources/amendments.mjs DU/2010/1427 2026-03-05): Dz.U. 2025 poz. 1794, whose changes to this act (its art. 5: art. 8 pkt 24, 10 ust. 8, 23i, 23j, 43) are outside chapter 5a; Dz.U. 2026 poz. 1206, from 11.01.2027, not checked.
+# Later amendments (tools/sources/amendments.mjs DU/2010/1427 2026-03-05): Dz.U. 2025 poz. 1794, whose changes to this act (its art. 5: art. 8 pkt 24, 10 ust. 8, 23i, 23j, 43) are outside chapter 5a (they apply from 27.04.2026, M.P. 2026 poz. 370); Dz.U. 2026 poz. 1206, from 11.01.2027, whose art. 20 changes only art. 23m and 49a (checked after the independent check of 17.10.2026). Art. 8 pkt 24a lit. c and e, printed below as "wejdzie w życie", have applied since 4.05.2026 (M.P. 2026 poz. 371).
 
                                                             Rozdział 5a28)
             Zasady i tryb nadawania numeru PESEL beneficjentom ochrony czasowej, zarządzania statusem

@@ -1,0 +1,10 @@
+# UdSC (gov.pl/web/udsc): Przedłużenie ochrony czasowej do 4 marca 2028 r. (dated 06.08.2026 on the page)
+# Source: https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-marca-2028-r, retrieved 2026-10-17, html sha256 24fae94d0dd0e4e2215377adb10e8b7190a0cbcea1ccad5f7cf3d61282192f46 (the checking agent's fetch had the same hash)
+# Text of the page's main content; navigation removed. The EU decision it names (Council Implementing Decision (EU) 2026/1912) could not be read: EUR-Lex answered HTTP 202 with an empty body on 17.10.2026, here and for the checking agent.
+
+Przedłużenie ochrony czasowej do 4 marca 2028 r.
+06.08.2026
+5 sierpnia 2026 r. weszła w życie decyzja wykonawcza Rady (UE) 2026/1912 z dnia 30 lipca 2026 r. w sprawie przedłużenia tymczasowej ochrony wprowadzonej decyzją wykonawczą (UE) 2022/382.
+Na mocy tej decyzji okres trwania ochrony czasowej (tymczasowej ochrony) dla wysiedleńców z terytorium Ukrainy został przedłużony na okres 1 roku, tj. do 4 marca 2028 r.
+Jednocześnie, tymczasową ochronę, która trwa obecnie, przyznaje się jedynie tym osobom, które wypełniły swoje obowiązki wojskowe w Ukrainie, po przedstawieniu w stosownych przypadkach, odpowiedniego dowodu. Przepis ten ma zastosowanie już od 5 sierpnia 2026 r.
+Ograniczenia dotyczącego wypełnienia obowiązków wojskowych nie stosuje się do osób korzystających z tymczasowej ochrony w danym państwie członkowskim przed 4 sierpnia 2026 r. oraz w tym dniu, i nieprzerwanie zachowujących status ochronny w tym państwie członkowskim.

@@ -1,6 +1,7 @@
 # UdSC: Pytania i odpowiedzi - karta pobytu CUKR
 # Source: https://www.gov.pl/web/udsc/cukr-QA, retrieved 2026-10-17, html sha256 8346ad37634a6ff8f91c99091d605e9e75dc72cb3f48be7699cc5a36f97c8b6b
 # Text of the page's main element; navigation removed. The page's own heading list is kept as it appears.
+# The page has no date of its own; its parent page is titled "04.05.2026 r. - Karta pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej”" (seen in the HTML on 17.10.2026, after the independent check). Its end of the UKR status, 04.03.2027, is outdated: UdSC's own page of 06.08.2026 gives 4.03.2028 (udsc-przedluzenie-ochrony-czasowej-2028-2026-10-17.txt). Where it differs from the acts (the personal signature, 200 zł for theft, family members), the map follows the acts: CHECK.md.
 
 - dla karty pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej” – „karta pobytu CUKR”
 - dla numeru PESEL ze statusem UKR – PESEL UKR, status UKR

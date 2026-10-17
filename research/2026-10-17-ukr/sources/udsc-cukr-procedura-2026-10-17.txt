@@ -1,6 +1,7 @@
 # UdSC: Informacja dotycząca procedury wydania karty pobytu CUKR
 # Source: https://www.gov.pl/web/udsc/CUKR-procedura, retrieved 2026-10-17, html sha256 ed871dcb128c17fe6450083b97ef91fa518f09bbaa51beb28b3b2825930e02f2
 # Text of the page's main element; navigation removed.
+# The page has no date of its own; its parent page is titled "04.05.2026 r. - Karta pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej”" (seen in the HTML on 17.10.2026, after the independent check). Where it differs from the special act (the personal signature for everyone, family members), the map follows the act: CHECK.md.
 
 Powrót
 Informacja dotycząca procedury wydania karty pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej” (tzw. karty pobytu CUKR)
