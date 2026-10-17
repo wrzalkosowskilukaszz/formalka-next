@@ -1,0 +1,9 @@
+# The Mazovian voivode's office (gov.pl/web/uw-mazowiecki): "Komunikat w sprawie składania wniosków o przyznanie Karty Polaka w MUW"
+# Source: https://www.gov.pl/web/uw-mazowiecki/komunikat-w-sprawie-skladania-wnioskow-o-przyznanie-karty-polaka-w-muw, retrieved 2026-10-17, html sha256 7ab118074b3dcc74d759502e39f32aafefde7a13de1c14b1508afaf2255cf593
+# Text of the main element; navigation removed. No date on the page; it refers to 1.08.2022. Not binding.
+
+Komunikat w sprawie składania wniosków o przyznanie Karty Polaka w MUW
+Od 01 sierpnia 2022 r. obywatele Ukrainy, Białorusi i Federacji Rosyjskiej, podlegający przepisom ustawy z dnia 7 września 2007 r. o Karcie Polaka mogą składać wnioski o przyznanie Karty Polaka w każdym urzędzie wojewódzkim w Polsce, zgodnie z miejscem ich pobytu w Polsce.
+Osoby chcące wystąpić do Wojewody Mazowieckiego z wnioskiem o przyznanie Karty Polaka powinny wysłać zgłoszenie na formularz kontaktowy https://karta-polaka.mazowieckie.pl w celu ustalenia daty wizyty w Wydziale Spraw Cudzoziemców Mazowieckiego Urzędu Wojewódzkiego w Warszawie i złożenia wniosku o przyznanie Karty Polaka.
+Szczegółowe informacje na temat zasad składania wniosków: https://www.gov.pl/web/uw-mazowiecki/karta-polaka
+Karta Polaka nie jest dokumentem legalizującym pobyt na terytorium Rzeczypospolitej Polskiej ani nie uprawnia do przekraczania granicy.

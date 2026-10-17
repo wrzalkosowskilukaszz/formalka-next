@@ -1,0 +1,65 @@
+# The Podlasie voivode's office (gov.pl/web/uw-podlaski): "Rejestracja zgłoszeń dotyczących uzyskania Karty Polaka"
+# Source: https://www.gov.pl/web/uw-podlaski/rejestracja-zgloszen-dotyczacych-uzyskania-karty-polaka2, retrieved 2026-10-17, html sha256 2158b9d15029a94161d4f915d5f0ba43dddd7b57a461cfb0f850289f8f27e4d2
+# Text of the main element; navigation removed. Dated 16.05.2024: a registration window of 3-5.06.2024; kept as an example of how offices ration visits. The sample names on the page are the office's placeholders. Not binding.
+
+Rejestracja zgłoszeń dotyczących uzyskania Karty Polaka
+16.05.2024
+W dniach 3-5 czerwca 2024 roku Podlaski Urząd Wojewódzki uruchamia rejestrację zgłoszeń dotyczących uzyskania Kart Polaka. Wojewoda podlaski jest organem właściwym do prowadzenia postępowań w zakresie Karty Polaka na wniosek obywateli Republiki Białorusi, Ukrainy i Federacji Rosyjskiej albo osób posiadających w tych państwach status bezpaństwowca.
+- Uruchomienie rejestracji – 03.06.2024 r. o godz. 8:00.
+- Zakończenie rejestracji – 05.06.2024 r. o godz. 22:00.
+Zgłoszenia przyjmowane będą wyłącznie na adres e-mail: kp@uslugi.e-podlaskie.eu
+W zgłoszeniu należy podać wyłącznie i pod rygorem nieważności zgłoszenia następujące informacje:
+- Temat wiadomości e-mail: Zapisy KP (imię i nazwisko, 4 ostatnie cyfry numeru paszportu).
+UWAGA: zgłoszenia bez właściwego tematu e-mail są ODRZUCANE AUTOMATYCZNIE!
+- Treść e-mail:
+W wiadomości należy podać wyłącznie:
+- Imię i nazwisko (pisownia zgodna z paszportem),
+- Datę urodzenia,
+- 4 ostatnie cyfry numeru paszportu,
+- Numer telefonu.
+W pojedynczej wiadomości email można zgłosić kilka osób (członków najbliższej rodziny – mąż, żona, dzieci). W treści takiego zgłoszenia należy podać dane wszystkich zgłoszonych osób (imiona i nazwiska – pisownia zgodnie z paszportem, data urodzenia, 4 ostatnie cyfry numeru paszportu, numer telefonu).
+Przykładowa treść wiadomości – 1 osoba:
+Jan Nowak
+01.01.2000
+0000
++48 000 000 000
+Przykładowa treść wiadomości – rodzina:
+Jan Nowak
+01.01.2000
+0000
++48 000 000 000
+Anna Nowak
+02.02.2000
+0001
++48 000 000 000
+UWAGA: Zgłoszenia zawierające niekompletne dane lub dane inne niż wskazane powyżej bądź zawierające załączniki NIE BĘDĄ ROZPATRYWANE!
+W przypadku przesłania zgłoszenia lub złożenia wniosku o przyznanie Karty Polaka do innego organu, tj. konsula RP lub wojewody uprzejmie prosimy o NIEWYSYŁANIE zgłoszenia.
+TERMINY WIZYT BĘDĄ WYZNACZANE OD SIERPNIA 2024 ROKU.
+Informacja o terminie wizyty zostanie przesłana na adres e-mail nie później niż na 30 dni przed wyznaczoną datą wizyty. Czas oczekiwania na odpowiedź zwrotną uzależniony jest od liczby nadesłanych zgłoszeń.
+Nie ma możliwości zmiany danych zawartych w zgłoszeniu oraz ustalonego terminu wizyty!
+W przypadku pytań prosimy o kontakt pod nr telefonu: + 48857439407; +48857439312; +48857439273.
+WYMAGANE DOKUMENTY:
+- wniosek o przyznanie Karty Polaka wypełniony w języku polskim – wniosek powinien być wypełniony starannie, bez skreśleń i poprawek,
+- aktualna fotografia, wyraźna o wymiarach 35 x 45 mm wykonana w ciągu ostatnich 6 miesięcy na jednolitym jasnym tle z zachowaniem równomiernego oświetlenia twarzy, bez nakrycia głowy i okularów z ciemnymi szkłami,
+- oryginał ważnego dokumentu potwierdzającego tożsamość wraz z kserokopią strony z danymi osobowymi,
+- oryginały i kserokopie dokumentów potwierdzających, że co najmniej jedno z rodziców lub dziadków albo dwoje pradziadków cudzoziemca było narodowości polskiej wraz z kserokopiami,
+- w przypadku działalności w organizacjach polskich i polonijnych - zaświadczenie organizacji polskiej lub polonijnej potwierdzające aktywne zaangażowanie w działalność na rzecz języka i kultury polskiej lub polskiej mniejszości narodowej w okresie ostatnich 3 lat.
+Wszystkie dokumenty, niebędące aktami stanu cywilnego, zawierające wpisy o narodowości przodków (np. zaświadczenia, księgi gospodarcze) powinny zostać opatrzone klauzulą apostille.
+W przypadku posiadania dokumentów potwierdzających znajomość języka polskiego można do wniosku dołączyć:
+- certyfikat znajomości języka polskiego wydany przez Państwową Komisję do spraw Poświadczania Znajomości Języka Polskiego jako Obcego,
+- świadectwa ukończenia szkoły lub studiów w Rzeczypospolitej Polskiej lub świadectwo ukończenia szkoły za granicą z wykładowym językiem polskim.
+W przypadku MAŁOLETNICH do wniosku należy dołączyć:
+- oryginał i kserokopię aktu urodzenia małoletniego,
+- dokumenty tożsamości obojga rodziców lub opiekunów prawnych wraz z kserokopią stron z danymi osobowymi, miejscem urodzenia i miejscem zamieszkania,
+- oryginał Karty Polaka jednego lub obojga rodziców wraz z kserokopią,
+- w przypadku, gdy jednemu z rodziców nie przysługuje władza rodzicielska, konieczne jest przedłożenie dokumentu potwierdzającego taki stan prawny.
+Przypominamy, iż wymagana jest obecność obojga rodziców!
+W przypadku obecności tylko jednego rodzica podczas składania wniosku o przyznanie Karty Polaka małoletniemu dziecku wymagane jest przedłożenie:
+- OŚWIADCZENIA o wyrażeniu zgody na przyznanie Karty Polaka małoletniemu dziecku, złożonego przed właściwym Konsulem RP, notariuszem lub właściwym wojewodą przez rodzica, który nie może przyjechać na wizytę,
+- ORYGINAŁU LUB UWIERZYTELNIONEJ KOPII PASZPORTU (3 stron - z danymi osobowymi, miejscem urodzenia oraz miejscem zamieszkania) rodzica, który nie może przyjechać na wizytę,
+W przypadku uwierzytelnienia kopii paszportu nieobecnego rodzica i złożenia przez niego oświadczenia o wyrażeniu zgody na przyznanie Karty Polaka małoletniemu dziecku przed notariuszem w innym kraju niż Polska – dokumenty muszą być opatrzone klauzulą apostille.
+UWAGA!!!
+Wszystkie dokumenty sporządzone w języku obcym, służące za dowód w postępowaniu prowadzonym na podstawie ustawy, składa się wraz z ich tłumaczeniami na język polski, dokonanymi przez tłumacza przysięgłego.
+Odbiór decyzji przyznającej Kartę Polaka oraz blankietu Karty Polaka tylko i wyłącznie po wcześniejszym telefonicznym umówieniu się pod numerem telefonu + 48857439407; +48857439312; +48857439273.
+INFORMACJE W ZAKRESIE KART POLAKA UDZIELANE SĄ POD NUMEREM TELEFONU: + 48857439407; +48857439312; +48857439273.
+Podstawowe informacje dotyczące Karty Polaka, świadczeń pieniężnych dla posiadaczy Karty Polaka oraz wzory formularzy znajdują się pod adresem https://www.gov.pl/web/uw-podlaski/informacja-dot-karty-polaka-oraz-wzor-wniosku.
