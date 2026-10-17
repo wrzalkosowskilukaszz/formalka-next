@@ -1,6 +1,7 @@
 # Ustawa z 14.07.2006 o wjeździe… obywateli państw członkowskich UE i członków ich rodzin, tekst jednolity: Dz.U. 2025 poz. 1164
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1164/text.pdf, retrieved 2026-10-16, sha256 91ead21207f82aa7ad08da9633f33d3c71c97a1e0ccb50221ebc1e563fa09dec
 # Extract: art. 2 pkt 3–4 (definitions of obywatel UE and członek rodziny)
+# Superseded by the consolidated text Dz.U. 2026 poz. 1065 (obwieszczenie of 31.07.2026, legal state 23.07.2026, sha256 efe0ee9a58ce0669d4e8c1ca3679c9da1caa02449b2995e9cd82e5045cc7adf4), in which art. 2 pkt 3–4 read the same; it adds pkt 2a (found with tools/sources/amendments.mjs on 17.10.2026, after the e-government check).
 
         Art. 2. Użyte w ustawie określenia oznaczają:
 1)      granica – granicę państwową Rzeczypospolitej Polskiej w rozumieniu przepisów ustawy z dnia 12 października 1990 r.

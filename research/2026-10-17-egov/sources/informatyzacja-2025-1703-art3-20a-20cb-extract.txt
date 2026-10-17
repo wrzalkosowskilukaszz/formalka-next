@@ -1,6 +1,7 @@
 # Ustawa z 17.02.2005 o informatyzacji działalności podmiotów realizujących zadania publiczne, consolidated text Dz.U. 2025 poz. 1703 (obwieszczenie of 7.11.2025): art. 3 pkt 14 (profil zaufany), art. 20a (authentication), art. 20ad-20cb (the trusted profile's data, the trusted signature, how a profile is confirmed)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1703/text.pdf, retrieved 2026-10-17, sha256 f4bf652d1f7481c3f95652bad75f63874a4c64a55969175d6f7a054b84d423a9. pdftotext -layout.
-# Later amendments (tools/sources/amendments.mjs DU/2005/565 2025-11-07, 17.10.2026): Dz.U. 2025 poz. 1301 (repeals art. 13aa only), 2026 poz. 160 (adds art. 4aa, changes art. 19ac), 2020 poz. 2320 (from 1.10.2029). None changes the articles below (their texts read on 17.10.2026).
+# Later amendments (tools/sources/amendments.mjs DU/2005/565 2025-11-07, 17.10.2026): Dz.U. 2025 poz. 1301 (repeals art. 13aa only), 2026 poz. 160 (adds art. 4aa and 19ad; corrected after the check of 17.10.2026: it does not change art. 19ac), 2020 poz. 2320 (from 1.10.2029; its art. 105 repeals art. 3 pkt 17 and 20, parts of art. 16 and art. 19a ust. 1a). None changes the articles below (their texts read on 17.10.2026).
+# Superseded (found by the check of 17.10.2026): the current consolidated text is Dz.U. 2026 poz. 1241 (obwieszczenie of 1.09.2026, legal state 6.08.2026, sha256 d57ff9c488b88b26a9b2841bf6f71ca684848a845c7c82bb1ae4512ea232f54d); the API marks 1703 "wygaśnięcie aktu". The articles below read the same in 1241, apart from the Dz.U. references inside them. Cite 1241.
 
 [art. 3 pkt 14]
 14) profil zaufany – środek identyfikacji elektronicznej zawierający zestaw danych identyfikujących i opisujących osobę

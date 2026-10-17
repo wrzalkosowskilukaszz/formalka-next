@@ -95,9 +95,26 @@ export function amendingAfter(meta, since) {
 export async function actWithAmendments(eli, get) {
   const meta = await get(eli);
   const base = meta.references?.['Tekst jednolity dla aktu']?.[0]?.id;
-  if (base) return { eli: base, act: await get(base), note: `${eli} is a consolidated text of ${base}; listing the amendments of ${base}.` };
+  if (base) {
+    const act = await get(base);
+    const latest = latestConsolidated(act);
+    const newer = latest && latest !== eli
+      ? ` WARNING: ${eli} is not the newest consolidated text (its status: ${meta.status ?? 'unknown'}); ${latest} is. Quote ${latest} and list the amendments from its own legal-state date.`
+      : '';
+    return { eli: base, act, note: `${eli} is a consolidated text of ${base}; listing the amendments of ${base}.${newer}` };
+  }
   if (meta.type === 'Obwieszczenie') throw new Error(`${eli} is an obwieszczenie that names no base act; give the base act's ELI`);
-  return { eli, act: meta, note: null };
+  const latest = latestConsolidated(meta);
+  return { eli, act: meta, note: latest ? `${eli}: its newest consolidated text is ${latest}.` : null };
+}
+
+// The newest consolidated text of an act, from its "Inf. o tekście jednolitym" list, by year and then position.
+// The e-government map quoted two consolidated texts that newer ones had replaced (DU/2025/1703 by DU/2026/1241,
+// DU/2024/1045 by DU/2026/3), and the tools did not say so (its check, 17.10.2026).
+export function latestConsolidated(meta) {
+  const key = (id) => id.split('/').slice(1).map(Number);
+  const ids = (meta.references?.['Inf. o tekście jednolitym'] ?? []).map((x) => x.id);
+  return ids.sort((a, b) => key(b)[0] - key(a)[0] || key(b)[1] - key(a)[1])[0] ?? null;
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

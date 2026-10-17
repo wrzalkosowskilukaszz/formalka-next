@@ -1,7 +1,7 @@
 // The amended-articles reader, on a fixture shaped like pdftotext output. Run: node --test tools/sources/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy } from './touched.mjs';
+import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy, latestConsolidated } from './touched.mjs';
 
 const title = 'Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych';
 const fixture = `     Art. 6. W ustawie z dnia 24 września 2010 r. o ewidencji ludności w art. 8 dodaje się pkt 24b.
@@ -103,6 +103,23 @@ test('a consolidated text is resolved to its base act, whose amendments are list
   assert.deepEqual(amendingAfter(r.act, '2025-06-02').map((x) => x.id), ['DU/2025/1814', 'DU/2025/1872']);
   assert.equal((await actWithAmendments('DU/1971/114', get)).note, null);
   await assert.rejects(actWithAmendments('DU/2000/1', get), /names no base act/);
+});
+
+test('a consolidated text that a newer one replaced is flagged, and the newest is named', async () => {
+  // Shaped like the informatization act: DU/2025/1703 was replaced by DU/2026/1241; the list is not in date order.
+  const meta = {
+    'DU/2025/1703': { type: 'Obwieszczenie', status: 'wygaśnięcie aktu', references: { 'Tekst jednolity dla aktu': [{ id: 'DU/2005/565' }] } },
+    'DU/2026/1241': { type: 'Obwieszczenie', status: 'obowiązujący', references: { 'Tekst jednolity dla aktu': [{ id: 'DU/2005/565' }] } },
+    'DU/2005/565': { type: 'Ustawa', title: 'Ustawa o informatyzacji', references: { 'Inf. o tekście jednolitym': [
+      { id: 'DU/2025/1703' }, { id: 'DU/2024/307' }, { id: 'DU/2024/1557' }, { id: 'DU/2026/1241' }] } },
+  };
+  const get = async (id) => meta[id];
+  assert.equal(latestConsolidated(meta['DU/2005/565']), 'DU/2026/1241');
+  assert.equal(latestConsolidated({ references: { 'Inf. o tekście jednolitym': [{ id: 'DU/2024/307' }, { id: 'DU/2024/1557' }] } }), 'DU/2024/1557');
+  assert.equal(latestConsolidated({}), null);
+  assert.match((await actWithAmendments('DU/2025/1703', get)).note, /WARNING: DU\/2025\/1703 is not the newest consolidated text \(its status: wygaśnięcie aktu\); DU\/2026\/1241 is/);
+  assert.doesNotMatch((await actWithAmendments('DU/2026/1241', get)).note, /WARNING/);
+  assert.equal((await actWithAmendments('DU/2005/565', get)).note, 'DU/2005/565: its newest consolidated text is DU/2026/1241.');
 });
 
 test('transitional articles that apply the amended act are found, with the articles they name', () => {
