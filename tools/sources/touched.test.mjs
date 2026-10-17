@@ -142,7 +142,7 @@ przed dniem wejścia w życie art. 19 stosuje się przepisy dotychczasowe.
 
 test('an amending act whose points have their own dates is labelled with its general date only', () => {
   const own = entryArticle('Art. 48. Ustawa wchodzi w życie z dniem 1 stycznia 2028 r., z wyjątkiem: 1) art. 19 pkt 2 w zakresie art. 31 ust. 3a, które wchodzą w życie z dniem 1 września 2028 r. Prezydent Rzeczypospolitej Polskiej');
-  assert.match(dateLabel('2028-01-01', own), /its general date; some points have their own dates/);
+  assert.match(dateLabel('2028-01-01', own), /by the API; the act's points have different dates/);
   const one = entryArticle('Art. 3. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia. Prezydent Rzeczypospolitej Polskiej');
   assert.equal(dateLabel('2026-09-12', one), 'in force 2026-09-12');
   assert.equal(dateLabel('2026-09-12', null), 'in force 2026-09-12');

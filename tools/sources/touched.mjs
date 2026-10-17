@@ -89,9 +89,11 @@ export function citedBy(list) {
 // The date to print for an amending act: the API's date is only its general date. Dz.U. 2026 poz. 1123 is "in force
 // 2028-01-01", yet the point that adds Prawo oświatowe art. 31 ust. 3b takes effect on 1.01.2027 and ust. 3a on
 // 1.09.2028; an extract header quoted the general date (research/2026-10-17-school/sources/README.md).
+// The API's date may be the act's general date or the date of the changing point (Dz.U. 2026 poz. 982: its art. 6 from
+// 6.08.2026, the act from 21.09.2026; the school map's check, 17.10.2026), so the label does not say which.
 export function dateLabel(date, entry) {
   if (!entry?.exceptions && !entry?.announcement) return `in force ${date}`;
-  return `in force ${date}, its general date; some points have their own dates${entry.announcement ? ' or an announced one' : ''}`;
+  return `in force ${date} by the API; the act's points have different dates${entry.announcement ? ', some set by an announcement' : ''}`;
 }
 
 // The acts that amended an act after a date, from its api.sejm.gov.pl metadata, oldest first.

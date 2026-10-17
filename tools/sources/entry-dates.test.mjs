@@ -30,3 +30,10 @@ test('an act with one date has no exceptions; text without the article returns n
   assert.equal(r.announcement, false);
   assert.equal(entryArticle('Art. 1. Coś innego.'), null);
 });
+
+test('a regulation\'s entry-into-force paragraph is found', () => {
+  const r = entryArticle('§ 1. W rozporządzeniu wprowadza się zmiany.\n     § 2. Rozporządzenie wchodzi w życie po upływie 14 dni od dnia ogłoszenia.\n                    Minister Edukacji: wz. K. Lubnauer');
+  assert.ok(r.article.startsWith('§ 2. Rozporządzenie wchodzi w życie po upływie 14 dni'));
+  assert.doesNotMatch(r.article, /Minister Edukacji/);
+  assert.equal(r.exceptions, false);
+});

@@ -12,7 +12,9 @@ import { fileURLToPath } from 'node:url';
 // with the exceptions it lists; null when there is none.
 export function entryArticle(text) {
   const flat = text.replace(/-\n\s*/g, '').replace(/\n\s*Dziennik Ustaw[^\n]*/g, ' ').replace(/\s+/g, ' ');
-  const re = /Art\. \d+[a-z]*\. (?:\d+\. )?(?:Ustawa|Rozporządzenie|Obwieszczenie) wchodzi w życie/g;
+  // A regulation's entry into force is a paragraph ("§ 2. Rozporządzenie wchodzi w życie po upływie 14 dni"), which
+  // the reader missed (Dz.U. 2026 poz. 1139; the school map's check, 17.10.2026).
+  const re = /(?:Art\.|§) \d+[a-z]*\. (?:\d+\. )?(?:Ustawa|Rozporządzenie|Obwieszczenie) wchodzi w życie/g;
   let last = null;
   for (let m; (m = re.exec(flat)); ) last = m.index;
   if (last === null) return null;
