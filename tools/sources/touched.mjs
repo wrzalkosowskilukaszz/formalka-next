@@ -15,12 +15,14 @@ const flatten = (text) => text.replace(/-\n\s*/g, '').replace(/\n\s*Dziennik Ust
 // ("Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach ..."), each with the article numbers its instructions name.
 // Quoted new wording („…”) is skipped, so an article quoted inside it is neither a change nor the next article.
 // Some Dziennik Ustaw PDFs close a quote with U+02EE (ˮ) or U+201C (“) instead of ”.
+// Changes to an annex ("w załączniku … w części III w ust. 44") are listed apart: they name no article.
 export function touchedArticles(text, actTitle) {
   const flat = flatten(text);
-  const m = /^Ustawa z dnia (.+? r\.) (\S+ \S+ \S+)/.exec(actTitle);
+  // The API writes "r. Prawo o …" or "r. - Kodeks …"; amending acts write "r. – Prawo o …". Match up to three subject words.
+  const m = /^Ustawa z dnia (.+? r\.) (?:[–-] )?(\S+(?: \S+){0,2})/.exec(actTitle);
   if (!m) throw new Error(`not an act title: ${actTitle}`);
   const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const open = new RegExp(`Art\\. (\\d+[a-z]*)\\. (?:\\d+\\. )?W ustawie z dnia ${esc(m[1])} ${esc(m[2])}`, 'g');
+  const open = new RegExp(`Art\\. (\\d+[a-z]*)\\. (?:\\d+\\. )?W ustawie z dnia ${esc(m[1])} (?:[–-] )?${esc(m[2].replace(/\.$/, ''))}`, 'g');
   const found = [];
   for (let hit; (hit = open.exec(flat)); ) {
     let depth = 0, plain = '', i = hit.index + hit[0].length;
@@ -32,7 +34,9 @@ export function touchedArticles(text, actTitle) {
       else if (depth === 0) plain += ch;
     }
     const ids = [...plain.matchAll(/\bart\. (\d+[a-z]*(?:[–-]\d+[a-z]*)?)/g)].map((x) => x[1]);
-    found.push({ article: `Art. ${hit[1]}`, changes: [...new Set(ids)] });
+    const annex = [...plain.matchAll(/w załączniku(?: nr (\d+))?(?: do ustawy)?(?: w części ([IVX]+))?(?: w (?:kolumnie \S+ w )?(ust\.|pkt) (\d+[a-z]*))?/g)]
+      .map((x) => ['załącznik', x[1], x[2] && `część ${x[2]}`, x[3] && `${x[3]} ${x[4]}`].filter(Boolean).join(' '));
+    found.push({ article: `Art. ${hit[1]}`, changes: [...new Set(ids)], annex: [...new Set(annex)] });
   }
   return found;
 }
@@ -68,8 +72,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" article found; read it by hand`); flagged++; continue; }
     for (const h of hits) {
       const mark = cite ? h.changes.filter(cite) : [];
-      flagged += mark.length;
-      console.log(`- ${c.id} (in force ${c.date}) ${h.article}: art. ${h.changes.join(', ') || '(none named)'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}`);
+      flagged += mark.length + (cite ? h.annex.length : 0);
+      const annex = h.annex.length ? `; ${h.annex.join(', ')}${cite ? '  <- annex: compare with the cited parts by hand' : ''}` : '';
+      console.log(`- ${c.id} (in force ${c.date}) ${h.article}: art. ${h.changes.join(', ') || '(none named)'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}${annex}`);
     }
   }
   if (cite) console.log(flagged ? '\nSome changes touch cited articles: read them and list them in the extract header.' : '\nNo change touches the cited articles.');

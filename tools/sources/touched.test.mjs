@@ -26,6 +26,23 @@ test('lists the articles an amending article changes, skipping quoted wording an
   assert.deepEqual(r[0].changes, ['12', '50', '23b', '23c–23i']);
 });
 
+test('a change to the annex is listed apart, with its part and paragraph', () => {
+  const t = 'Art. 3. W ustawie z dnia 27 sierpnia 2004 r. o świadczeniach opieki (Dz. U. poz. 1) w załączniku do ustawy w części III w ust. 44 w kolumnie czwartej wyrazy „x” zastępuje się wyrazami „y”. Art. 4. Inna ustawa.';
+  const r = touchedArticles(t, title);
+  assert.deepEqual(r[0].changes, []);
+  assert.deepEqual(r[0].annex, ['załącznik część III ust. 44']);
+  assert.deepEqual(touchedArticles(fixture, title)[0].annex, []);
+});
+
+test('short titles and titles with a dash match the amending wording', () => {
+  const t1 = 'Art. 5. W ustawie z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. poz. 1) w art. 160 uchyla się pkt 2. Art. 6. Inna.';
+  assert.deepEqual(touchedArticles(t1, 'Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach')[0].changes, ['160']);
+  const t2 = 'Art. 9. W ustawie z dnia 28 listopada 2014 r. – Prawo o aktach stanu cywilnego (Dz. U. poz. 1) w art. 55 ust. 1 otrzymuje brzmienie: „1. X.”. Art. 10. Inna.';
+  assert.deepEqual(touchedArticles(t2, 'Ustawa z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego')[0].changes, ['55']);
+  const t3 = 'Art. 2. W ustawie z dnia 25 lutego 1964 r. – Kodeks rodzinny i opiekuńczy (Dz. U. poz. 1) w art. 4 dodaje się § 2. Art. 3. Inna.';
+  assert.deepEqual(touchedArticles(t3, 'Ustawa z dnia 25 lutego 1964 r. - Kodeks rodzinny i opiekuńczy.')[0].changes, ['4']);
+});
+
 test('an act that does not amend this one gives an empty list; a bad title throws', () => {
   assert.deepEqual(touchedArticles('Art. 1. W ustawie z dnia 1 lipca 2000 r. o czymś innym w art. 5 uchyla się ust. 2.', title), []);
   assert.throws(() => touchedArticles(fixture, 'Rozporządzenie Ministra'));

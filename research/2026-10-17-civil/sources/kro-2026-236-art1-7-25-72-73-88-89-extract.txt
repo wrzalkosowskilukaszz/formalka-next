@@ -1,0 +1,117 @@
+# Ustawa z 25.02.1964 – Kodeks rodzinny i opiekuńczy, consolidated text Dz.U. 2026 poz. 236 (obwieszczenie of 20.02.2026; changes published before 19.02.2026): art. 1-7 (concluding a marriage, the one-month wait, two witnesses), 25 (surnames), 72-73 (recognition of paternity), 88-89^1 (the child's surname)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/236/text.pdf, retrieved 2026-10-17, sha256 d3e352a605afa1e54861b5eb5d30c157ec60b79ee4b806aa5f2b58e75e54ca7e. pdftotext -layout ("Art. 41" and "Art. 891" are art. 4^1 and 89^1).
+# Later amendments: none (tools/sources/touched.mjs DU/1964/59 2026-02-19 --cite 1-7,25,72-73,88-89, run on 17.10.2026).
+
+[art. 1-7]
+     Art. 1. § 1. Małżeństwo zostaje zawarte, gdy mężczyzna i kobieta jednocześnie obecni złożą przed kierownikiem urzędu
+stanu cywilnego oświadczenia, że wstępują ze sobą w związek małżeński.
+     § 2. Małżeństwo zostaje również zawarte, gdy mężczyzna i kobieta zawierający związek małżeński podlegający prawu
+wewnętrznemu kościoła albo innego związku wyznaniowego w obecności duchownego oświadczą wolę jednoczesnego zawarcia
+małżeństwa podlegającego prawu polskiemu i kierownik urzędu stanu cywilnego następnie sporządzi akt małżeństwa. Gdy
+zostaną spełnione powyższe przesłanki, małżeństwo uważa się za zawarte w chwili złożenia oświadczenia woli w obecności
+duchownego.
+      § 3. Przepis paragrafu poprzedzającego stosuje się, jeżeli ratyfikowana umowa międzynarodowa lub ustawa regulująca
+stosunki między państwem a kościołem albo innym związkiem wyznaniowym przewiduje możliwość wywołania przez
+związek małżeński podlegający prawu wewnętrznemu tego kościoła albo innego związku wyznaniowego takich skutków,
+jakie pociąga za sobą zawarcie małżeństwa przed kierownikiem urzędu stanu cywilnego.
+     § 4. Mężczyzna i kobieta, będący obywatelami polskimi przebywającymi za granicą, mogą zawrzeć małżeństwo również
+przed polskim konsulem lub przed osobą wyznaczoną do wykonywania funkcji konsula.
+     Art. 2. Jeżeli mimo niezachowania przepisów artykułu poprzedzającego został sporządzony akt małżeństwa, każdy,
+kto ma w tym interes prawny, może wystąpić z powództwem o ustalenie nieistnienia małżeństwa.
+
+     Art. 3. § 1. Osoby zamierzające zawrzeć małżeństwo powinny złożyć lub przedstawić kierownikowi urzędu stanu cywil-
+nego dokumenty niezbędne do zawarcia małżeństwa, określone w odrębnych przepisach.
+     § 2. Jeżeli otrzymanie dokumentu, który osoba zamierzająca zawrzeć małżeństwo jest obowiązana złożyć lub przed-
+stawić kierownikowi urzędu stanu cywilnego, napotyka trudne do przezwyciężenia przeszkody, sąd może zwolnić tę osobę
+od obowiązku złożenia lub przedstawienia tego dokumentu.
+    § 3. Kierownik urzędu stanu cywilnego wyjaśnia osobom zamierzającym zawrzeć małżeństwo doniosłość związku
+małżeńskiego, przepisy regulujące prawa i obowiązki małżonków oraz przepisy o nazwisku małżonków i o nazwisku ich dzieci.
+
+      Art. 4. Małżeństwo przed kierownikiem urzędu stanu cywilnego nie może być zawarte przed upływem miesiąca od
+dnia, kiedy osoby, które zamierzają je zawrzeć, złożyły kierownikowi urzędu stanu cywilnego pisemne zapewnienie, że nie
+wiedzą o istnieniu okoliczności wyłączających zawarcie tego małżeństwa. Jednakże kierownik urzędu stanu cywilnego
+może zezwolić na zawarcie małżeństwa przed upływem tego terminu, jeżeli przemawiają za tym ważne względy.
+     Art. 41. § 1. Osobom zamierzającym zawrzeć małżeństwo w sposób określony w art. 1 § 2 i 3 kierownik urzędu stanu
+cywilnego wydaje zaświadczenie stwierdzające brak okoliczności wyłączających zawarcie małżeństwa oraz treść i datę zło-
+żonych przed nim oświadczeń w sprawie nazwisk przyszłych małżonków i ich dzieci.
+     § 2. Zaświadczenie traci moc po upływie sześciu miesięcy od dnia jego wydania.
+     § 3. Wydając zaświadczenie kierownik urzędu stanu cywilnego informuje strony o dalszych czynnościach koniecznych
+do zawarcia małżeństwa.
+
+     Art. 5. Kierownik urzędu stanu cywilnego, który dowiedział się o istnieniu okoliczności wyłączającej zawarcie zamie-
+rzonego małżeństwa, odmówi przyjęcia oświadczeń o wstąpieniu w związek małżeński lub wydania zaświadczenia, o którym
+mowa w art. 41, a w razie wątpliwości zwróci się do sądu o rozstrzygnięcie, czy małżeństwo może być zawarte.
+Dziennik Ustaw                                             –3–                                                    Poz. 236
+
+     Art. 6. § 1. Z ważnych powodów sąd może zezwolić, żeby oświadczenie o wstąpieniu w związek małżeński lub oświad-
+czenie przewidziane w art. 1 § 2 zostało złożone przez pełnomocnika.
+     § 2. Pełnomocnictwo powinno być udzielone na piśmie z podpisem urzędowo poświadczonym i wymieniać osobę,
+z którą małżeństwo ma być zawarte.
+    Art. 7. § 1. Jeżeli małżeństwo jest zawierane przed kierownikiem urzędu stanu cywilnego, oświadczenia o wstąpieniu
+w związek małżeński powinny być złożone publicznie w obecności dwóch pełnoletnich świadków.
+     § 2. Kierownik urzędu stanu cywilnego zapytuje mężczyznę i kobietę, czy zamierzają zawrzeć ze sobą małżeństwo,
+a gdy oboje odpowiedzą na to pytanie twierdząco, wzywa ich do złożenia oświadczeń o wstąpieniu w związek małżeński
+oraz oświadczeń w sprawie nazwisk małżonków i ich dzieci.
+     § 3. Każda z osób zawierających małżeństwo składa oświadczenie o wstąpieniu w związek małżeński, powtarzając za
+kierownikiem urzędu stanu cywilnego treść oświadczenia lub odczytując je na głos:
+     „Świadomy/Świadoma praw i obowiązków wynikających z zawarcia małżeństwa uroczyście oświadczam, że
+     wstępuję w związek małżeński z (imię i nazwisko drugiej z osób wstępujących w związek małżeński) i przyrze-
+     kam, że uczynię wszystko, aby nasze małżeństwo było zgodne, szczęśliwe i trwałe.”.
+Osoba niemogąca mówić składa oświadczenie o wstąpieniu w związek małżeński, podpisując protokół przyjęcia oświadczeń
+o wstąpieniu w związek małżeński.
+     § 4. Po złożeniu oświadczeń o wstąpieniu w związek małżeński przez obie strony kierownik urzędu stanu cywilnego
+ogłasza, że wskutek zgodnych oświadczeń obu stron małżeństwo zostało zawarte.
+
+[art. 25]
+     Art. 25. § 1. O nazwisku, które każdy z małżonków będzie nosił po zawarciu małżeństwa, decyduje jego oświadczenie
+złożone przed kierownikiem urzędu stanu cywilnego. Oświadczenie może być złożone bezpośrednio po zawarciu małżeń-
+stwa albo przed sporządzeniem przez kierownika urzędu stanu cywilnego zaświadczenia stwierdzającego brak okoliczności
+wyłączających zawarcie małżeństwa.
+    § 2. Małżonkowie mogą nosić wspólne nazwisko będące dotychczasowym nazwiskiem jednego z nich. Każdy z mał-
+żonków może również zachować swoje dotychczasowe nazwisko albo połączyć z nim dotychczasowe nazwisko drugiego
+małżonka. Nazwisko utworzone w wyniku połączenia nie może składać się z więcej niż dwóch członów.
+    § 3. W razie niezłożenia oświadczenia w sprawie nazwiska, każdy z małżonków zachowuje swoje dotychczasowe
+nazwisko.
+
+[art. 72-73]
+     Art. 72. § 1. Jeżeli nie zachodzi domniemanie, że ojcem dziecka jest mąż jego matki, albo gdy domniemanie takie
+zostało obalone, ustalenie ojcostwa może nastąpić albo przez uznanie ojcostwa albo na mocy orzeczenia sądu.
+     § 2. Uznanie ojcostwa nie może nastąpić, jeżeli toczy się sprawa o ustalenie ojcostwa.
+     Art. 73. § 1. Uznanie ojcostwa następuje, gdy mężczyzna, od którego dziecko pochodzi, oświadczy przed kierowni-
+kiem urzędu stanu cywilnego, że jest ojcem dziecka, a matka dziecka potwierdzi jednocześnie albo w ciągu trzech miesięcy
+od dnia oświadczenia mężczyzny, że ojcem dziecka jest ten mężczyzna.
+     § 2. Kierownik urzędu stanu cywilnego wyjaśnia osobom zamierzającym złożyć oświadczenia konieczne do uznania
+ojcostwa przepisy regulujące obowiązki i prawa wynikające z uznania, przepisy o nazwisku dziecka oraz różnicę pomiędzy
+uznaniem ojcostwa a przysposobieniem dziecka.
+      § 3. Kierownik urzędu stanu cywilnego odmawia przyjęcia oświadczeń koniecznych do uznania ojcostwa, jeżeli uznanie
+jest niedopuszczalne albo gdy powziął wątpliwość co do pochodzenia dziecka.
+     § 4. Uznanie ojcostwa może nastąpić także przed sądem opiekuńczym, a za granicą również przed polskim konsulem
+lub osobą wyznaczoną do wykonywania funkcji konsula, jeżeli uznanie dotyczy dziecka, którego oboje rodzice albo jedno
+z nich są obywatelami polskimi. Przepisy § 1–3 stosuje się odpowiednio.
+
+[art. 88-89^1]
+     Art. 88. § 1. Dziecko, co do którego istnieje domniemanie, że pochodzi od męża matki, nosi nazwisko będące nazwiskiem
+obojga małżonków. Jeżeli małżonkowie mają różne nazwiska, dziecko nosi nazwisko wskazane w ich zgodnych oświadcze-
+niach. Małżonkowie mogą wskazać nazwisko jednego z nich albo nazwisko utworzone przez połączenie nazwiska matki z na-
+zwiskiem ojca dziecka.
+     § 2. Oświadczenia w sprawie nazwiska dziecka są składane jednocześnie z oświadczeniami o nazwiskach, które będą
+nosić małżonkowie. Jeżeli małżonkowie nie złożyli zgodnych oświadczeń w sprawie nazwiska dziecka, nosi ono nazwisko
+składające się z nazwiska matki i dołączonego do niego nazwiska ojca.
+     § 3. Przy sporządzeniu aktu urodzenia pierwszego wspólnego dziecka małżonkowie mogą złożyć przed kierownikiem
+urzędu stanu cywilnego zgodne oświadczenia o zmianie wskazanego przez nich nazwiska dziecka albo oświadczenia, o których
+mowa w § 1, jeżeli nazwisko dziecka nie zostało przez nich wskazane.
+     § 4. Przepisy § 1–3 stosuje się odpowiednio do nazwiska dziecka, którego rodzice zawarli małżeństwo po urodzeniu się
+dziecka. Do zmiany nazwiska dziecka, którego rodzice zawarli małżeństwo po ukończeniu przez dziecko trzynastu lat, jest
+potrzebna jego zgoda.
+     Art. 89. § 1. Jeżeli ojcostwo zostało ustalone przez uznanie, dziecko nosi nazwisko wskazane w zgodnych oświadczeniach
+rodziców, składanych jednocześnie z oświadczeniami koniecznymi do uznania ojcostwa. Rodzice mogą wskazać nazwisko
+jednego z nich albo nazwisko utworzone przez połączenie nazwiska matki z nazwiskiem ojca dziecka. Jeżeli rodzice nie
+złożyli zgodnych oświadczeń w sprawie nazwiska dziecka, nosi ono nazwisko składające się z nazwiska matki i dołączonego
+do niego nazwiska ojca. Do zmiany nazwiska dziecka, które w chwili uznania już ukończyło trzynaście lat, jest potrzebna
+jego zgoda.
+    § 2. W razie sądowego ustalenia ojcostwa sąd nadaje dziecku nazwisko w wyroku ustalającym ojcostwo, stosując
+odpowiednio przepisy § 1. Jeżeli dziecko ukończyło trzynaście lat, do zmiany nazwiska jest potrzebna jego zgoda.
+     § 3. Jeżeli ojcostwa nie ustalono, dziecko nosi nazwisko matki.
+     § 4. Dziecku nieznanych rodziców nazwisko nadaje sąd opiekuńczy.
+     Art. 891. Dzieci pochodzące od tych samych rodziców noszą takie samo nazwisko, z zastrzeżeniem przepisów, które
+do zmiany nazwiska dziecka wymagają jego zgody.

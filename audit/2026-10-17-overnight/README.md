@@ -80,7 +80,7 @@
 
 ## 7. After the owner's second message: the next matters mapped (17.10)
 
-The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Four maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
+The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Five maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
 
 | Map | What it holds | Commit |
 |---|---|---|
@@ -88,6 +88,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 | `maps/cukr-ukr.md` | Journey U0–U9, 12 loss points, 20 scenarios, a compare card that never recommends, the 4.03.2027 window. Valid as of 17.10.2026; this goes beyond doc 19's sources-only plan for wave 3, at the owner's request | 72a1d57 |
 | `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
 | `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates | 7ce207e |
+| `maps/civil-status.md` and its sources (`research/2026-10-17-civil/sources/`), after the owner's "Działaj dalej, stan cywilny" | Birth B0–B5, marriage M0–M5, death D0–D2, foreign records F0–F1; 24 loss points, 25 scenarios; a birth case, a marriage case, a calm death page; no chosen names or laws, no computed dates | this commit |
 
 **Found on the way:**
 - **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
@@ -99,6 +100,9 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 - **Health care for PESEL UKR holders changed on 5.03.2026.** Without insurance, it now covers four groups (victims of torture or rape, children, residents of collective accommodation, pregnancy) and emergencies (protection act art. 112c, added by Dz.U. 2026 poz. 203). The CUKR card gives the same access as any permit holder (UdSC). The CUKR compare card now names this.
 - **The clinic confirms the right by PESEL** (act on health care benefits art. 50 ust. 3; the insurance card was repealed from 1.07.2026 by Dz.U. 2026 poz. 791). Without a PESEL, a person needs a document or the written statement, and a false statement may be billed.
 - **The NFZ page and the act differ** on the foreign students' contribution base: the page names the care benefit (świadczenie pielęgnacyjne), the act the special care allowance (specjalny zasiłek opiekuńczy, art. 68 ust. 4 pkt 3). The map states neither amount (OPEN-H1).
+- **Registering a birth online needs e-Doręczenia** since 1.01.2026, per gov.pl, and so a PESEL and a trusted profile. Parents without them report in person.
+- **The office registers a newborn's address only for children of Polish citizens** (act on population records art. 29); gov.pl's opening sentence says it does for everyone. Foreign parents register the child themselves, which brings wave 1 back. The child's own residence title (foreigners act art. 160 pkt 2, 195) is not in the residence map yet.
+- **The source tool had two gaps,** found while using it: short act titles and titles with a dash did not match, and annex changes showed as "(none named)". Both are changed in the lab, with tests.
 - **A near-miss in my own check.** I first checked the nine later amendments of the health act only for the articles I expected to cite, and missed that Dz.U. 2026 poz. 203 changes art. 12 and art. 50. Widening the check found it before anything was written. `tools/sources/touched.mjs` now lists every article each amendment changes and flags the cited ones, with a test; lesson `docs/solutions/2026-10-17-amendments-checked-only-for-expected-articles.md`.
 - **The matters form a chain:** zameldowanie or the PESEL application, then PESEL, the trusted profile, MOS and the residence card; and PESEL UKR, the trusted profile, then the CUKR card. Doc 20 §3 draws it.
 

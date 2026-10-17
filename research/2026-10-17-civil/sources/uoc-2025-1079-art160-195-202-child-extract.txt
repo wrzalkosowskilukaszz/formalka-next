@@ -1,0 +1,24 @@
+# Ustawa z 12.12.2013 o cudzoziemcach, consolidated text Dz.U. 2025 poz. 1079 (25.07.2025): art. 160 pkt 2 (a temporary permit for a child born in Poland), art. 195 ust. 1 pkt 1-2 (a permanent permit for a child), art. 202 (its filing deadline) as rewritten by Dz.U. 2025 poz. 1794
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-16, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0. pdftotext -layout.
+# Later amendments (tools/sources/touched.mjs DU/2013/1650 2025-07-25 --cite 159-160,195,202, run on 17.10.2026): Dz.U. 2025 poz. 1794 art. 1 rewrites art. 202 (pkt 29); 2026 poz. 203 art. 12 touches none of these. 1794 art. 1 pkt 29 is among the points of its art. 19 pkt 2 (pkt 8-41), in force on the date of the announcement: 27.04.2026 (M.P. 2026 poz. 370; research/2026-10-16-residence/sources/README.md). The new art. 202 ust. 3 keeps the exemption of the old ust. 5.
+# Amendment text: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf (sha256 in research/2026-10-16-residence/sources/README.md).
+
+[art. 160 opening and pkt 2]
+      Art. 160. Zezwolenia na pobyt czasowy można udzielić:
+2)    małoletniemu dziecku cudzoziemca, który przebywa na terytorium Rzeczypospolitej Polskiej na podstawie wizy
+      krajowej lub zezwolenia na pobyt czasowy, jeżeli dziecko to urodziło się w okresie ważności tej wizy krajowej lub
+      zezwolenia na pobyt czasowy, a cudzoziemiec spełnia wymogi, o których mowa w art. 159 ust. 1 pkt 2 i 3;
+
+[art. 195 ust. 1 pkt 1-2]
+     Art. 195. 1. Zezwolenia na pobyt stały udziela się cudzoziemcowi na czas nieoznaczony, na jego wniosek, jeżeli:
+1)   jest dzieckiem cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długo-
+     terminowego UE pozostającym pod jego władzą rodzicielską:
+     a)   urodzonym po udzieleniu temu cudzoziemcowi zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długo-
+          terminowego UE lub
+     b) urodzonym w okresie ważności zezwolenia na pobyt czasowy udzielonego temu cudzoziemcowi lub w okresie
+        pobytu tego cudzoziemca na terytorium Rzeczypospolitej Polskiej na podstawie zgody na pobyt ze względów
+        humanitarnych lub zgody na pobyt tolerowany albo w związku z nadaniem mu statusu uchodźcy lub udzieleniem
+        ochrony uzupełniającej, lub
+
+[art. 202 as rewritten by Dz.U. 2025 poz. 1794 art. 1 pkt 29 (from 27.04.2026); the text of the amending act, joined from its PDF lines]
+Art. 202. 1. Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt stały nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej. 2. W przypadku cudzoziemca będącego: 1) osobą małoletnią – wniosek o udzielenie mu zezwolenia na pobyt stały składają rodzice lub opiekunowie albo jedno z rodziców lub jeden z opiekunów; 2) osobą ubezwłasnowolnioną całkowicie – wniosek o udzielenie mu zezwolenia na pobyt stały składa opiekun; 3) osobą małoletnią bez opieki – wniosek o udzielenie mu zezwolenia na pobyt stały składa kurator. 3. Wymogu dotyczącego terminu złożenia wniosku, o którym mowa w ust. 1, nie stosuje się do urodzonego na terytorium Rzeczypospolitej Polskiej małoletniego dziecka cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE, ani do dziecka obywatela polskiego, które pozostaje pod władzą rodzicielską tego obywatela.

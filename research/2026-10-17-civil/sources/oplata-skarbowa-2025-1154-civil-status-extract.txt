@@ -1,0 +1,109 @@
+# Ustawa z 16.11.2006 o opłacie skarbowej, consolidated text Dz.U. 2025 poz. 1154 (obwieszczenie of 11.08.2025): the annex, part I items 1-2, part II item 1 and part III item 1 (civil status)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf, retrieved 2026-10-16, sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac. pdftotext -layout (a four-column table: item, subject, rate, exemptions).
+# Later amendments (tools/sources/touched.mjs DU/2006/1635 2025-08-11 --cite 1-4,6,7, run on 17.10.2026): six acts. Their annex changes were read: 2025 poz. 1847 art. 3 adds part I items 9ba and 9ca (building); 2025 poz. 1795 art. 116 changes part III item 44; 2026 poz. 1206 art. 14 changes part III item 17. 2026 poz. 875 art. 9 adds art. 1 ust. 3 (tacit settlement, from 1.01.2027); 2026 poz. 912 adds art. 7 pkt 3a; 2026 poz. 846 changes art. 9-10 (refunds). None changes the items below.
+# Scope (art. 1 ust. 1 pkt 1): the duty falls on an official act done "na podstawie zgłoszenia lub na wniosek" and on a certificate issued "na wniosek"; the first short copy of a birth, marriage or death record is issued ex officio (civil status act art. 47).
+
+[art. 1 ust. 1]
+1)    w sprawach indywidualnych z zakresu administracji publicznej:
+      a)   dokonanie czynności urzędowej na podstawie zgłoszenia lub na wniosek,
+      b) wydanie zaświadczenia na wniosek,
+      c)   wydanie zezwolenia (pozwolenia, koncesji);
+2)    złożenie dokumentu stwierdzającego udzielenie pełnomocnictwa lub prokury albo jego odpisu, wypisu lub kopii –
+      w sprawie z zakresu administracji publicznej lub w postępowaniu sądowym.
+     2. Opłacie skarbowej podlega również dokonanie czynności urzędowej, wydanie zaświadczenia oraz zezwolenia
+(pozwolenia) przez podmiot inny niż organ administracji rządowej i samorządowej, w związku z wykonywaniem zadań
+z zakresu administracji publicznej, a także złożenie w takim podmiocie dokumentu stwierdzającego udzielenie pełnomoc-
+nictwa lub prokury albo jego odpisu, wypisu lub kopii.
+
+[annex part I items 1-2]
+
+            WYKAZ PRZEDMIOTÓW OPŁATY SKARBOWEJ, STAWKI TEJ OPŁATY ORAZ ZWOLNIENIA
+
+       Część          Przedmiot opłaty skarbowej                      Stawka                         Zwolnienia
+
+        1                          2                                     3                                  4
+  I.           Dokonanie czynności urzędowej
+
+               1.   Sporządzenie aktu małżeństwa                       84 zł
+
+               2.   Inne czynności kierownika urzędu stanu             11 zł            1)    sporządzenie aktu urodzenia
+                    cywilnego                                                                 lub zgonu
+                                                                                        2)    przyjęcie oświadczenia
+                                                                                              o uznaniu ojcostwa
+                                                                                              lub oświadczeń małżonków,
+                                                                                              że dziecko będzie nosiło
+                                                                                              takie samo nazwisko,
+                                                                                              jakie nosi albo nosiłoby
+                                                                                              ich wspólne dziecko
+               3.   (uchylony)
+
+               4.   (uchylony)
+
+[annex part II item 1]
+      II.         Wydanie zaświadczenia
+                  1.    Zaświadczenia, w tym również odpisy                                   1)   odpis wydawany z akt stanu
+                        dokumentów, wydawane przez                                                 cywilnego, dotyczący
+                        kierowników urzędów stanu cywilnego                                        obywateli polskich
+                        oraz archiwa państwowe:                                                    przebywających poza
+                                                                                                   granicami Rzeczypospolitej
+                        1)   zaświadczenie stwierdzające, że                  38 zł                Polskiej, przeznaczony
+                             zgodnie z prawem polskim można                                        wyłącznie na potrzeby
+                             zawrzeć małżeństwo                                                    polskich przedstawicielstw
+                        2)   zaświadczenie o stanie cywilnym                  38 zł                dyplomatycznych lub
+                                                                                                   urzędów konsularnych
+
+
+
+
+13)   Ze zmianą wprowadzoną przez art. 35 pkt 1 lit. b ustawy, o której mowa w odnośniku 8.
+Dziennik Ustaw                                          – 21 –                                     Poz. 1154
+
+      1                            2                              3                      4
+                  3)   zaświadczenie o zamieszczonych            24 zł   2)   odpisy skrócone wydawane
+                       lub niezamieszczonych w rejestrze                      w sprawach dokumentów
+                       stanu cywilnego danych                                 stwierdzających tożsamość
+                       dotyczących wskazanej osoby                            oraz wydawane w sprawach
+                                                                              Karty Dużej Rodziny;
+                  4)   zaświadczenie o nieposiadaniu             24 zł
+                                                                              zwolnienie to przysługuje
+                       księgi stanu cywilnego                                 również cudzoziemcom,
+                  5)   odpis zupełny aktu stanu cywilnego        33 zł        którym udzielono
+                                                                              zezwolenia na osiedlenie się
+                  6)   odpis zupełny aktu stanu cywilnego        50 zł        lub nadano status uchodźcy
+                       wydany po dokonaniu transkrypcji                       w Rzeczypospolitej Polskiej
+                  7)   odpis zupełny aktu stanu cywilnego        39 zł        oraz obywatelom tych
+                       wydany po dokonaniu rejestracji                        państw obcych, z którymi
+                       urodzenia albo zgonu, które                            Rzeczpospolita Polska
+                       nastąpiły poza granicami                               zawarła odpowiednie
+                                                                              porozumienia
+                       Rzeczypospolitej Polskiej
+                       i nie zostały tam zarejestrowane                  3)   odpisy zupełne wydawane
+                       albo rejestracji urodzenia, zawarcia                   w sprawach dokumentów
+                       małżeństwa albo zgonu, które                           paszportowych
+                       nastąpiły poza granicami                          4)   odpisy zupełne wydawane
+                       Rzeczypospolitej Polskiej, jeżeli                      osobie, której akt dotyczy,
+                       w państwie urodzenia, zawarcia                         po unieważnieniu wzmianki
+                       małżeństwa albo zgonu nie jest                         dodatkowej dołączonej
+                                                                              do niewłaściwego aktu stanu
+                       prowadzona rejestracja stanu
+                                                                              cywilnego
+                       cywilnego
+                                                                         5)   zaświadczenie o przyjętych
+                  8)   odpis zupełny aktu stanu cywilnego        39 zł        sakramentach
+                       wydany po dokonaniu odtworzenia                   6)   zaświadczenie potwierdzające
+                       treści zagranicznego dokumentu                         uznanie ojcostwa
+                  9)   odpis zupełny aktu stanu                  39 zł   7)   zaświadczenie stwierdzające
+                       cywilnego wydany po dokonaniu                          brak okoliczności
+                       odtworzenia treści aktu stanu                          wyłączających zawarcie
+                       cywilnego w przypadku zaginięcia                       małżeństwa
+                       lub zniszczenia księgi stanu
+                       cywilnego
+                  10) odpis zupełny aktu stanu cywilnego         39 zł
+                      wydany w wyniku sprostowania lub
+
+[annex part III item 1]
+             1                            2                                   3                              4
+      III.        Wydanie zezwolenia (pozwolenia, koncesji)
+                  1.   Zezwolenie na zawarcie małżeństwa,                   39 zł
+                       o którym mowa w art. 4 Kodeksu
+                       rodzinnego i opiekuńczego

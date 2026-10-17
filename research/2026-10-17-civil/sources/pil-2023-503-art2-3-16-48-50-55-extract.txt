@@ -1,0 +1,40 @@
+# Ustawa z 4.02.2011 – Prawo prywatne międzynarodowe, consolidated text Dz.U. 2023 poz. 503: art. 2-3 (national law; dual and no nationality), 16 ust. 1 (personal rights), 48-50 (capacity and form of marriage), 55 (parentage and recognition)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2023/503/text.pdf, retrieved 2026-10-17, sha256 ad04a1f2308714530add21325fd157761f616076c106f11920f99195871acfbf. pdftotext -layout.
+# Later amendments: none (tools/sources/amendments.mjs and touched.mjs DU/2011/432 2023-03-01, run on 17.10.2026).
+
+[art. 2-3]
+    Art. 2. 1. Jeżeli ustawa przewiduje właściwość prawa ojczystego, obywatel polski podlega prawu polskiemu, chociażby
+prawo innego państwa uznawało go za obywatela tego państwa.
+     2. Cudzoziemiec mający obywatelstwo dwóch lub więcej państw podlega, jako prawu ojczystemu, prawu tego z nich,
+z którym jest najściślej związany.
+     3. Jeżeli ustawa uzależnia właściwość prawa od tego, czy określone osoby są obywatelami tego samego państwa,
+do przyjęcia, iż wymaganie to jest spełnione, wystarczy, że prawo tego państwa osoby te uznaje za swoich obywateli.
+
+     Art. 3. 1. Jeżeli ustawa przewiduje właściwość prawa ojczystego, a obywatelstwa danej osoby ustalić nie można, osoba ta
+nie ma obywatelstwa żadnego państwa albo nie można ustalić treści prawa ojczystego, stosuje się prawo państwa, w którym
+znajduje się jej miejsce zamieszkania; w razie braku miejsca zamieszkania stosuje się prawo państwa, w którym znajduje się
+miejsce jej zwykłego pobytu.
+     2. Przepis ust. 1 stosuje się odpowiednio do osoby, która uzyskała ochronę w innym państwie niż państwo ojczyste
+w związku z faktem, że jej więzy z państwem ojczystym uległy trwałemu zerwaniu z powodu naruszania w tym państwie
+podstawowych praw człowieka.
+
+[art. 16 ust. 1]
+     Art. 16. 1. Dobra osobiste osoby fizycznej podlegają jej prawu ojczystemu.
+
+[art. 48-50]
+     Art. 48. O możności zawarcia małżeństwa rozstrzyga w stosunku do każdej ze stron jej prawo ojczyste z chwili zawar-
+cia małżeństwa.
+     Art. 49. 1. Forma zawarcia małżeństwa podlega prawu państwa, w którym jest ono zawierane.
+     2. Jeżeli małżeństwo zawierane jest poza granicami Rzeczypospolitej Polskiej, wystarczy zachowanie formy wymaganej
+przez prawo ojczyste obojga małżonków albo przez wspólne prawo miejsca zamieszkania lub zwykłego pobytu małżonków
+z chwili zawarcia małżeństwa.
+     Art. 50. O skutkach braku możności oraz niezachowania formy zawarcia małżeństwa rozstrzyga odpowiednio prawo,
+o którym mowa w przepisach art. 48 i art. 49.
+
+[art. 55]
+     Art. 55. 1. Ustalenie i zaprzeczenie pochodzenia dziecka podlegają prawu ojczystemu dziecka z chwili jego urodzenia.
+     2. Jeżeli prawo ojczyste dziecka z chwili jego urodzenia nie przewiduje sądowego ustalenia ojcostwa, do sądowego
+ustalenia ojcostwa stosuje się prawo ojczyste dziecka z chwili ustalenia pochodzenia dziecka.
+    3. Uznanie dziecka podlega prawu ojczystemu dziecka z chwili jego uznania. W razie gdy prawo to nie przewiduje
+uznania dziecka, stosuje się prawo ojczyste dziecka z chwili jego urodzenia, jeżeli to prawo uznanie przewiduje.
+     4. Uznanie dziecka poczętego lecz nienarodzonego podlega prawu ojczystemu matki z chwili uznania.

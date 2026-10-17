@@ -75,7 +75,7 @@ Anyone living in Poland who needs public health care or must prove insurance for
 1. **The first job:** was the person reported? Without IKP access, they cannot see it themselves (HL1, HL2).
 2. **The end of a job or of studies:** 30 days, or 4 months after a degree. Then a gap begins (HL14).
 3. **A student's first weeks:** the voluntary agreement before any need, and before the permit application (HL15).
-4. **Pregnancy and a newborn:** who reports the child, and the first 3 months on a parent's PESEL (HA art. 50 ust. 14). This links to the civil status matter (doc 20 §4).
+4. **Pregnancy and a newborn:** who reports the child, and the first 3 months on a parent's PESEL (HA art. 50 ust. 14). This links to the civil status map (`maps/civil-status.md`, CS12 and CS13).
 5. **PESEL UKR since 5.03.2026,** and the choice of the CUKR card (UHL1, UHL2).
 6. **"eWUŚ na czerwono" at the clinic:** the statement, and its risk (HL11).
 

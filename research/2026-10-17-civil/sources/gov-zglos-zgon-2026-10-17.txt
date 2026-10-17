@@ -1,0 +1,26 @@
+# gov.pl: Zgłoś zgon
+# Source: https://www.gov.pl/web/gov/zglos-zgon, retrieved 2026-10-17, html sha256 61bf76dc1bcc3b8d18e554654ee43b2493735d4fe05978edf536442ec6a8265d
+# Text of the page's main content; navigation removed. The page says it was last updated 27.01.2020.
+
+Powrót
+Zgłoś zgon
+Zanim pochowasz osobę, która zmarła, musisz zgłosić jej zgon w urzędzie stanu cywilnego (USC). Masz na to 3 dni od dnia wystawienia karty zgonu. Jeśli osoba ta zmarła na skutek choroby zakaźnej – tylko 24 godziny od momentu zgonu. Sprawdź, jak możesz to zrobić.
+Informacje:
+- współmałżonek osoby, która zmarła,
+- pozostała rodzina zmarłej osoby, na przykład dzieci, wnuki, prawnuki, rodzice, dziadkowie, brat, siostra, siostrzenica, bratanek, teściowie,
+- pełnomocnik jednej z powyższych osób. Dowiedz się w urzędzie, jak załatwić sprawę przez pełnomocnika.
+- kartę zgonu – dostaniesz ją od lekarza, który stwierdził zgon,
+- dowód osobisty zmarłej osoby,
+- swój dokument tożsamości do okazania (np. dowód osobisty lub paszport).
+- do 3 dni od wystawienia karty zgonu przez lekarza,
+- do 24 godzin od chwili zgonu – jeśli osoba zmarła na skutek choroby zakaźnej.
+W USC właściwym dla miejsca zgonu. Przykład: jeśli osoba zmarła w Sopocie – zgłoś zgon w urzędzie stanu cywilnego w Sopocie.
+Usługa jest bezpłatna.
+Kierownik USC zarejestruje zgon (czyli sporządzi akt zgonu) w dniu jego zgłoszenia.
+Po zarejestrowaniu zgonu kierownik USC wyda ci jeden bezpłatny odpis skrócony aktu zgonu.
+Jeśli z przyczyn technicznych rejestracja zgonu nie będzie możliwa w dniu zgłoszenia, kierownik USC zamieści w karcie zgonu adnotację o zgłoszeniu zgonu. Z tym dokumentem możesz pójść do administracji cmentarza, żeby pochować osobę zmarłą. Kierownik USC zarejestruje zgon w najbliższym możliwym terminie. Następnie dostaniesz dwa odpisy aktu zgonu. Ustal z urzędnikiem sposób ich odbioru. Możesz je dostać podczas kolejnej wizyty w urzędzie albo listownie. Jeden odpis jest dla ciebie, drugi przekaż administracji cmentarza.
+Gdy zgłosisz zgon, osoba zmarła zostanie automatycznie wymeldowana z miejsca pobytu stałego lub czasowego, a jej dowód osobisty zostanie unieważniony.
+- Ustawa z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego (Dz. U. z 2014 r. poz. 1741 z późn. zm.)
+- Ustawa z dnia 31 stycznia 1959 r. o cmentarzach i chowaniu zmarłych (Dz. U. z 2011 r. Nr 118 poz. 687 z późn. zm.)
+Ostatnia aktualizacja: 27.01.2020 09:00
+Instytucja odpowiedzialna za usługę: Ministerstwo Spraw Wewnętrznych i Administracji

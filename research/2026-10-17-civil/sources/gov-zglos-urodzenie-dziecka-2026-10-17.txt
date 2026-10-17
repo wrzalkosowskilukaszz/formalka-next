@@ -1,0 +1,101 @@
+# gov.pl: Zgłoś urodzenie dziecka
+# Source: https://www.gov.pl/web/gov/zglos-urodzenie-dziecka, retrieved 2026-10-17, html sha256 58497033879a6acaa996ddab2bad34800f4b274ade716b7c576e1efd58a35ebc
+# Text of the page's main content; navigation removed. The page says it was last updated 31.12.2025. It has two parts (online, in person); some text repeats.
+
+Zgłoś urodzenie dziecka
+Jeśli urodzi ci się dziecko, trzeba je zgłosić do odpowiedniego urzędu stanu cywilnego (USC). Kierownik urzędu zarejestruje urodzenie dziecka, przekaże ci jego numer PESEL i zamelduje je. Sprawdź, jak zgłosić urodzenie dziecka –przez internet lub w urzędzie.
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet
+Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+ZGŁOŚ URODZENIE DZIECKA
+Informacje:
+Jeśli chcesz zgłosić urodzenie dziecka przez internet – potrzebujesz profilu zaufanego lub e-dowodu. Pozwalają one potwierdzić twoją tożsamość.
+Sprawdź, jak założyć profil zaufany lub jak skorzystać z e-dowodu.
+Aby przyjąć twoje zgłoszenie, urząd musi otrzymać kartę urodzenia dziecka. Do urzędu przekazuje ją upoważniona do tego osoba, która odebrała poród – na przykład lekarz, położna.
+Matka lub ojciec dziecka, którzy mają pełną zdolność do czynności prawnych.
+Można zgłosić wyłącznie dziecko urodzone w Polsce.
+Ojciec dziecka powinien wcześniej złożyć oświadczenie o uznaniu ojcostwa, jeśli nie jest mężem matki dziecka. Tylko wtedy kierownik USC może przyjąć zgłoszenie urodzenia od ojca dziecka i wpisać jego dane do aktu urodzenia dziecka.
+Takie oświadczenie ojciec dziecka może złożyć przed:
+- kierownikiem dowolnego urzędu stanu cywilnego,
+- konsulem Rzeczypospolitej Polskiej,
+- sądem.
+Aby oświadczenie było ważne, matka dziecka powinna je potwierdzić w ciągu 3 miesięcy, licząc od daty złożenia przez ojca oświadczenia.
+Jedną z poniższych rzeczy:
+- login z hasłem do profilu zaufanego i telefon komórkowy,
+- podpis kwalifikowany,
+- e-dowód.
+- Kliknij przycisk Zgłoś urodzenie dziecka, który znajduje się u góry strony.
+- System przekieruje cię na stronę login.gov.pl. Wybierz sposób logowania.
+- Wypełnij zgłoszenie. W kroku 3. wpisz imię lub imiona dziecka – przeczytaj wskazówki w sekcji Imię dla dziecka.
+- Po wypełnieniu zgłoszenia system przekieruje cię do usługi e-podpis na stronie pz.gov.pl, gdzie sprawdzisz i podpiszesz zgłoszenie elektronicznie.
+- Możesz podpisać zgłoszenie za pomocą:
+- profilu zaufanego,
+- dowodu z warstwą elektroniczną (e-dowodu),
+- kwalifikowanego podpisu elektronicznego.
+- Potwierdzenie wysłania zgłoszenia otrzymasz na swoją skrzynkę do e-Doręczeń i e-mail podany we wniosku.
+- Czekaj na odpowiedź urzędu. Szczegóły znajdziesz w sekcjach Proces rejestracji urodzenia dziecka oraz Ile będziesz czekać.
+Jeśli w twoim zgłoszeniu urzędnik stwierdzi braki lub błędy, dostaniesz wiadomość na skrzynkę do e-Doręczeń. Sprawdzaj swoją skrzynkę – jeśli odpowiesz na wiadomość urzędnika, przyspieszysz załatwienie sprawy.
+W ciągu 21 dni od wystawienia karty urodzenia.
+Kartę urodzenia wystawi upoważniona do tego osoba, która odebrała poród – na przykład lekarz lub położna. Przekaże ją do USC najpóźniej 3 dni od jej wystawienia.
+Jeśli nie zgłosisz urodzenia dziecka do urzędu w ciągu 21 dni – kierownik USC sam wybierze imię dla twojego dziecka i zarejestruje jego urodzenie. Zrobi to na podstawie karty urodzenia.
+Usługa jest bezpłatna.
+Kierownik USC sporządza akt urodzenia w następnym dniu roboczym po dniu zgłoszenia urodzenia – pod warunkiem, że otrzymał kartę urodzenia dziecka.
+Pamiętaj, że:
+- wybrany przez ciebie sposób odebrania dokumentów z urzędu wpłynie na czas oczekiwania,
+- kierownik USC może potrzebować od ciebie wyjaśnień. Podaj w zgłoszeniu swój adres e-mail i numer telefonu – może to przyspieszyć załatwienie sprawy.
+Sposób odebrania dokumentów wybierasz w zgłoszeniu. Masz 3 możliwości odbioru:
+- na skrzynkę do e-Doręczeń,
+- pocztą tradycyjną,
+- osobiście w urzędzie.
+Kierownik USC:
+- na podstawie twojego zgłoszenia oraz karty urodzenia sporządzi akt urodzenia;
+- przekaże ci dokumenty:
+- jeden bezpłatny odpis skrócony aktu urodzenia,
+- powiadomienie o nadaniu numeru PESEL (jeśli dziecko otrzymało numer PESEL),
+- zaświadczenie o zameldowaniu dziecka (jeśli dziecko zostało zameldowane).
+Nie ma sformalizowanej listy imion, które możesz nadać dziecku, ale weź pod uwagę ograniczenia:
+- nie możesz nadać dziecku więcej niż 2 imion,
+- imię nie może być ośmieszające ani nieprzyzwoite,
+- imię nie może być zgłoszone w formie zdrobniałej.
+Możesz wybrać imię lub imiona obce – na przykład Mercedes, Andrea – niezależnie od obywatelstwa i narodowości rodziców dziecka. Może to być imię, które nie wskazuje jednoznacznie na płeć, ale powszechnie przypisuje się je do danej płci.
+Kierownik USC może odmówić przyjęcia wybranych przez ciebie imion dla dziecka. Może tak się stać, gdy uzna, że imiona nie spełniają wymagań, które są wymienione wyżej. W takiej sytuacji kierownik USC z urzędu wybierze imię dziecka. Dzięki temu zarejestruje urodzenie od razu.
+Dostaniesz wtedy decyzję administracyjną. Jeśli kierownik USC wyda ci taką decyzję – masz 14 dni, żeby się od niej odwołać do wojewody. Odwołanie zanieś do kierownika USC, który wydał decyzję.
+Jeśli dziecko urodziło się martwe – zgłoś jego urodzenie w ciągu 3 dni od wystawienia karty martwego urodzenia.
+Kartę martwego urodzenia wystawi upoważniona do tego osoba, która odebrała poród – na przykład lekarz lub położna – i przekaże ją do USC w ciągu 1 dnia od jej wystawienia.
+Karta martwego urodzenia dziecka zostanie przekazana do USC, jeśli lekarz ustali płeć dziecka. Tylko wtedy można zarejestrować urodzenie w USC. W takiej sytuacji kierownik USC sporządzi akt urodzenia dziecka z adnotacją, że urodziło się martwe. Nie jest wtedy sporządzany akt zgonu.
+Jeśli płeć dziecka nie została ustalona – karta martwego urodzenia nie jest przekazywana do USC. Jeśli jesteś osobą uprawnioną do pochówku (na przykład rodzicem dziecka) – lekarz może wystawić na twój wniosek kartę zgonu. Taka karta umożliwi ci pochowanie dziecka bez rejestracji zgonu w USC.
+- Ustawa z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego (Dz.U. z 2014 r. poz. 1741 z późn. zm.),
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2010 r. Nr 217 poz. 1427 z późn. zm.).
+- matka lub ojciec dziecka, którzy mają ukończone 16 lat i nie zostali pozbawieni zdolności do czynności prawnych,
+- w pozostałych sytuacjach, na przykład jeśli matka dziecka ma mniej niż 16 lat lub została pozbawiona zdolności do czynności prawnych – dla przedstawiciela ustawowego (na przykład rodzica) lub opiekuna matki dziecka.
+Możesz zgłosić wyłącznie dziecko urodzone w Polsce.
+Urodzenie dziecka możesz zgłosić samodzielnie lub może zrobić to za ciebie pełnomocnik. Dowiedz się w urzędzie, jak załatwić sprawę przez pełnomocnika.
+- dokument tożsamości (dowód osobisty lub paszport),
+- jeśli załatwiasz sprawę przez pełnomocnika – przygotuj pełnomocnictwo.
+W ciągu 21 dni od wystawienia karty urodzenia.
+Kartę urodzenia wystawi upoważniona do tego osoba, która odebrała poród – na przykład lekarz lub położna. Przekaże ją do USC najpóźniej 3 dni od jej wystawienia. Przed wizytą w USC dowiedz się, czy dokument został już tam przekazany.
+Jeśli nie zgłosisz się do urzędu w ciągu 21 dni – kierownik USC sam wybierze imię dla twojego dziecka i zarejestruje jego urodzenie. Zrobi to na podstawie karty urodzenia.
+W urzędzie stanu cywilnego właściwym dla miejsca urodzenia dziecka.
+Usługa jest bezpłatna.
+Dokumenty otrzymasz od razu, w dniu zgłoszenia urodzenia.
+- Kierownik USC przygotuje protokół, który będzie zawierać dane dziecka i jego rodziców. Podpiszesz go ty i kierownik USC.
+- Kierownik USC zarejestruje urodzenie dziecka, zamelduje je i przekaże ci jego numer PESEL.
+- Otrzymasz:
+- jeden bezpłatny odpis skrócony aktu urodzenia,
+- powiadomienie o nadaniu numeru PESEL (jeśli dziecko otrzymało numer PESEL),
+- potwierdzenie zameldowania dziecka (jeśli dziecko zostało zameldowane).
+Nie ma sformalizowanej listy imion, które możesz nadać dziecku, ale weź pod uwagę ograniczenia:
+- nie możesz nadać dziecku więcej niż 2 imion,
+- imię nie może być ośmieszające ani nieprzyzwoite,
+- imię nie może być zgłoszone w formie zdrobniałej.
+Możesz wybrać imię lub imiona obce – na przykład Mercedes, Andrea – niezależnie od obywatelstwa i narodowości rodziców dziecka. Może to być imię, które nie wskazuje jednoznacznie na płeć, ale powszechnie przypisuje się je do danej płci.
+Kierownik USC może odmówić przyjęcia wybranych przez ciebie imion dla dziecka. Może tak się stać, gdy uzna, że imiona nie spełniają wymagań, które są wymienione wyżej. W takiej sytuacji kierownik USC z urzędu wybierze imię dziecka. Dzięki temu zarejestruje urodzenie od razu.
+Dostaniesz wtedy decyzję administracyjną. Jeśli kierownik USC wyda ci taką decyzję – masz 14 dni, żeby się od niej odwołać do wojewody. Odwołanie zanieś do kierownika USC, który wydał decyzję.
+Jeśli dziecko urodziło się martwe – zgłoś jego urodzenie w ciągu 3 dni od wystawienia karty martwego urodzenia.
+Kartę martwego urodzenia wystawi upoważniona do tego osoba, która odebrała poród – na przykład lekarz lub położna – i przekaże ją do USC w ciągu 1 dnia od jej wystawienia.
+Karta martwego urodzenia dziecka zostanie przekazana do USC, jeśli lekarz ustali płeć dziecka. Tylko wtedy można zarejestrować urodzenie w USC. W takiej sytuacji kierownik USC sporządzi akt urodzenia dziecka z adnotacją, że urodziło się martwe. Nie jest wtedy sporządzany akt zgonu.
+Jeśli płeć dziecka nie została ustalona – karta martwego urodzenia nie jest przekazywana do USC. Jeśli jesteś osobą uprawnioną do pochówku (na przykład rodzicem dziecka) – lekarz może wystawić na twój wniosek kartę zgonu. Taka karta umożliwi ci pochowanie dziecka bez rejestracji zgonu w USC.
+- Ustawa z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego (Dz.U. z 2014 r. poz. 1741 z późn. zm.),
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2010 r. Nr 217 poz. 1427 z późn. zm.).
+Ostatnia aktualizacja: 31.12.2025 09:45
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji

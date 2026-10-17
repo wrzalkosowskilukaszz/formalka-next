@@ -1,0 +1,34 @@
+# gov.pl, Ministry of Digital Affairs news: Zgłoś urodzenie dziecka w mObywatelu (6.03.2026)
+# Source: https://www.gov.pl/web/cyfryzacja/zglos-urodzenie-dziecka-w-mobywatelu-bez-umawiania-wizyty-w-urzedzie-bez-kolejek, retrieved 2026-10-17, html sha256 43cc9f2279605ca90953ad1692b22a9d90823974c58936ae1d86af67fb1ad704
+# Text of the page's main content; navigation removed. A news item, not a service page.
+
+Powrót
+Zgłoś urodzenie dziecka w mObywatelu. Bez umawiania wizyty w urzędzie, bez kolejek
+06.03.2026
+Od 5 marca 2026 roku, rodzice mogą zgłosić urodzenie dziecka za pomocą mObywatela. Wniosek o zarejestrowanie nowego członka rodziny w urzędzie stanu cywilnego jest już dostępny w aplikacji. Wystarczy wypełnić formularz i wybrać sposób doręczenia aktu urodzenia - wygodnie i o wybranej przez siebie porze.
+– Narodziny dziecka to moment, w którym rodzice powinni skupić się na rodzinie, a nie na formalnościach. Dlatego upraszczamy procedury i przenosimy usługi publiczne tak, aby były pod ręką. mObywatel staje się realnym wsparciem w najważniejszych chwilach życia, łącząc wygodę, bezpieczeństwo i dostępność. Nowoczesne państwo to państwo, które oszczędza obywatelom czasu i jest blisko nich wtedy, gdy najbardziej tego potrzebują - przekazał wiceminister cyfryzacji Dariusz Standerski.
+Nowa usługa w mObywatelu – ułatwienie dla rodziców
+Zgłoszenie urodzenia dziecka w aplikacji polega na wypełnieniu formularza online, który następnie trafia do właściwego urzędu stanu cywilnego. Podobnie jak w przypadku wizyty stacjonarnej, wystarczy, że zgłoszenia dokona jeden z rodziców.
+Co będzie potrzebne?
+- Aplikacja mObywatel oraz dostęp do internetu
+- Skrzynka do e-Doręczeń, którą można za darmo założyć tutaj https://www.gov.pl/web/gov/uzyskaj-adres-do-e-doreczen-u-publicznego-dostawcy-uslugi-e-doreczen
+- Dane osobowe drugiego rodzica, wybrane imię i nazwisko dla dziecka oraz adres zameldowania, jak również informacje o placówce medycznej, w której miały miejsce narodziny
+Przewagą formularza w aplikacji jest to, że informacje o wypełniającym go rodzicu uzupełniane są automatycznie. Dodatkowo w ramach jednego zgłoszenia można zarejestrować do pięciu urodzeń. To duża oszczędność czasu dla rodziców wieloraczków. Dla każdego dziecka utworzony zostanie odrębny wniosek o nadanie numeru PESEL i wydanie aktu urodzenia. Rodzic może również zdecydować, w jaki sposób chce otrzymać akt. Do wyboru ma odbiór osobisty w urzędzie, wysyłkę dokumentu pocztą lub otrzymanie go w formie cyfrowej na skrzynkę do e-Doręczeń.
+Zgłoszenie urodzenia w aplikacji
+Aby zgłosić pojawienie się na świecie nowego członka rodziny, należy:
+- zalogować się do mObywatela, wejść w Usługi, wybrać Załatw sprawę, następnie Rodzina i Zgłoś urodzenie dziecka,
+- sprawdzić swoje dane, które zostaną pobrane automatycznie,
+- uzupełnić dane drugiego rodzica, dziecka oraz placówki medycznej lub zaznaczyć, że dziecko nie przyszło na świat w szpitalu,
+- zdecydować, pod jakim adresem dziecko ma zostać zameldowane,
+- wybrać sposób doręczenia aktu urodzenia i wypełnić dane do ewentualnej wysyłki.
+Status swojego wniosku użytkownik sprawdzi w usłudze Twoje sprawy. Z kolei wszelkie szczegóły komunikacji między rodzicem a urzędem będą trafiać na skrzynkę e-Doręczeń. To za jej pośrednictwem przesłana zostanie na przykład decyzja administracyjna o niezaakceptowaniu wybranego dla dziecka imienia, jeśli urzędnik uzna je za niespełniające wymagań. Od takiej decyzji przysługuje odwołanie w terminie 14 dni od jej otrzymania.
+Instrukcja wypełniania wniosku krok po kroku została przedstawiona w filmie instruktażowym:
+Wideo
+Rejestracja narodzin – cała procedura
+W Polsce na zgłoszenie narodzin rodzice mają 21 dni od wystawienia karty urodzenia. Taki dokument sporządza osoba, która przyjęła poród. Przekazanie karty urodzenia do urzędu stanu cywilnego następuje w ciągu 3 dni od narodzin. Zajmuje się tym personel medyczny.
+Po przesłaniu karty urodzenia jeden z rodziców powinien skontaktować się z urzędem, aby przekazać informację o wybranym imieniu i odebrać akt urodzenia wraz z numerem PESEL. Dotąd można było to zrobić podczas wizyty stacjonarnej lub za pośrednictwem strony internetowej. Teraz do e-rozwiązań dołącza możliwość wypełniania wniosku w mObywatelu.
+Co się stanie, jeśli rodzic w żaden sposób nie przekaże danych dziecka? Urzędnik sporządzi akt urodzenia na podstawie karty i nada noworodkowi wybrane przez siebie imię.
+mObywatel – niezbędnik rodzica
+Zgłoszenie urodzenia w aplikacji to szybki i wygodny sposób na dopełnienie formalności związanych z narodzinami dziecka. Możliwość uzupełnienia wniosku w telefonie o dowolnej porze i bez wychodzenia z domu daje rodzicom przestrzeń, by w tym wyjątkowym czasie skupić się na tym, co naprawdę ważne.
+Więcej informacji o usłudze Zgłoś urodzenie dziecka znajduje się pod linkiem: Zgłoś urodzenie dziecka w mObywatelu! - mObywatel
+#FunduszeUE

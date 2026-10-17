@@ -15,4 +15,6 @@ commits: []
 - Its test (`tools/sources/touched.test.mjs`) covers quoted articles, page breaks, the other closing quote marks some PDFs use, and ranges.
 - On the health act it flags 2025 poz. 1083 (art. 66, 68, 69, 81), 2026 poz. 203 (art. 12, 50) and 2026 poz. 791 (art. 49, 50, 51, 240). The extract header lists all three.
 
-**Limits.** It reads only amending articles that open with "W ustawie z dnia …". Other wordings are reported as "read it by hand". It may over-list (an article named in an instruction's own text), which is the safe side.
+**Limits.** It reads only amending articles that open with "W ustawie z dnia …". Other wordings are reported as "read it by hand". Changes to an annex name no article, so they are listed apart and flagged for reading by hand. It may over-list (an article named in an instruction's own text), which is the safe side.
+
+**Found in use (17.10, civil status sources).** The first version failed on short titles ("o cudzoziemcach") and on titles that amending acts write with a dash ("– Prawo o aktach…", "– Kodeks…"). Both are changed in the lab, with tests; not independently verified.

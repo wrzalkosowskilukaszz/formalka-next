@@ -1,0 +1,24 @@
+# Ustawa z 24.09.2010 o ewidencji ludności, consolidated text Dz.U. 2026 poz. 384 (legal state 10.03.2026): art. 7 ust. 1 (whose data the PESEL register holds), art. 17 ust. 1 pkt 1-2 (who asks for a PESEL ex officio), art. 29 (registering a newborn's residence)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb. pdftotext -layout.
+# Later amendments: Dz.U. 2025 poz. 1794 art. 5 (from 27.04.2026: art. 8, 10, 23i, 23j, 43) and 2026 poz. 1206 art. 20 (from 11.01.2027: art. 23m, 49a). Neither touches the articles below (tools/sources/touched.mjs DU/2010/1427 2026-03-10 --cite 7,15-17,29, run on 17.10.2026).
+
+[art. 7 ust. 1]
+      Art. 7. 1. W rejestrze PESEL gromadzone są dane:
+1)    obywateli polskich zamieszkujących na terytorium Rzeczypospolitej Polskiej;
+2)    obywateli polskich zamieszkujących poza granicami Rzeczypospolitej Polskiej w związku z ubieganiem się o polski
+      dokument tożsamości;
+3)    cudzoziemców zamieszkujących na terytorium Rzeczypospolitej Polskiej.
+4)    (uchylony)
+
+[art. 17 ust. 1 pkt 1-2]
+     Art. 17. 1. O nadanie numeru PESEL z urzędu występują odpowiednio:
+1)   kierownik urzędu stanu cywilnego sporządzający akt urodzenia – w stosunku do dzieci osób, o których mowa w art. 7
+     ust. 1 pkt 1 i 3, urodzonych na terytorium Rzeczypospolitej Polskiej;
+2)   organ gminy właściwy do zameldowania na pobyt stały albo pobyt czasowy – w stosunku do osób, o których mowa
+     w art. 7 ust. 1 pkt 1 i 3, z wyjątkiem dzieci, o których mowa w pkt 1;
+
+[art. 29]
+     Art. 29. Zameldowania w stosunku do dzieci osób, o których mowa w art. 7 ust. 1 pkt 1, urodzonych na terytorium
+Rzeczypospolitej Polskiej, dokonuje z urzędu kierownik urzędu stanu cywilnego sporządzający akt urodzenia. Zameldowanie
+na pobyt stały lub czasowy następuje z dniem sporządzenia aktu urodzenia, w miejscu stałego albo czasowego pobytu rodzi-
+ców albo tego z rodziców, u którego dziecko faktycznie przebywa.
