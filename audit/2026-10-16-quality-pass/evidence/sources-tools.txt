@@ -1,0 +1,15 @@
+# node --test tools/sources/*.test.mjs
+# 2026-10-17T00:14Z commit f1a64d1 node v22.22.0
+
+# Subtest: returns the last entry-into-force article with its exceptions, across page breaks
+ok 1 - returns the last entry-into-force article with its exceptions, across page breaks
+# Subtest: an act with one date has no exceptions; text without the article returns null
+ok 2 - an act with one date has no exceptions; text without the article returns null
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 96.746581
