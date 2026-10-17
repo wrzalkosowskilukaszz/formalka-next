@@ -1,0 +1,85 @@
+# Ustawa z 20.06.1997 – Prawo o ruchu drogowym, consolidated text Dz.U. 2024 poz. 1251 (obwieszczenie of 21.06.2024): art. 73 ust. 1-1a (who registers; keeping the plates), art. 73aa (the 30 days), art. 78 ust. 1-2b (a sale and changed data), art. 140mb (penalties)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2024/1251/text.pdf, retrieved 2026-10-17, sha256 de6c1f33e4c8cc9079f6307ea5c559d07013539a9985e6f8d63a792d2371fccb. pdftotext -layout.
+# Later amendments (tools/sources/touched.mjs DU/1997/602 2024-06-21 --cite 71-73,73aa,78,140mb,140n, run on 17.10.2026): ten acts. Two touch these articles:
+#  - Dz.U. 2025 poz. 1734 (published 9.12.2025; https://api.sejm.gov.pl/eli/acts/DU/2025/1734/text.pdf, sha256 5bbb4ab4f33fed20668c6a2a67b20fefc6b7b2b50967dfeb7001ecc17a27d9c9). Its art. 5: art. 1 pkt 5 (art. 73aa) and pkt 17 (art. 140mb) in force 14 days after publication, so 24.12.2025: an inheritance gets 60 days (new ust. 2), a temporarily withdrawn vehicle counts from the end of the withdrawal (ust. 2a), more exemptions (ust. 5a, 6); art. 140mb refers to the new ust. 2 and 2a. Art. 1 pkt 4 (art. 73) is split: lit. b (online registration, ust. 1ab-1al) and lit. c from 18.01.2027, the rest from 10.06.2026 (the general date, 6 months). Art. 73aa ust. 1 (30 days) and art. 78 ust. 2 are not changed.
+#  - Dz.U. 2025 poz. 1843 adds art. 140mc (automated vehicles) after art. 140mb; it does not change art. 140mb.
+# So the text below is NOT the law in force on its own for art. 73, 73aa ust. 2-6 and 140mb.
+
+[art. 73 ust. 1-1a]
+     Art. 73. 1. Rejestracji pojazdu dokonuje, na wniosek właściciela pojazdu, starosta właściwy ze względu na miejsce
+jego stałego zamieszkania (siedzibę) lub czasowego zamieszkania, wydając decyzję o rejestracji pojazdu, dowód rejestra-
+cyjny i zalegalizowane tablice (tablicę) rejestracyjne.
+      1a. Składający wniosek o rejestrację pojazdu może wnioskować o zachowanie dotychczasowego numeru rejestracyj-
+nego, w tym tablic (tablicy) rejestracyjnych, jeżeli pojazd był już zarejestrowany na terytorium Rzeczypospolitej Polskiej
+i posiada tablice (tablicę) rejestracyjne zgodne z przepisami wydanymi na podstawie art. 76 ust. 1 pkt 1 lit. a oraz utrzymane
+w należytym stanie i czytelne. W takim przypadku starosta, dokonując rejestracji pojazdu, wydaje decyzję o rejestracji
+pojazdu i dowód rejestracyjny oraz dokonuje legalizacji dotychczasowych tablic (tablicy) rejestracyjnych. Jeżeli tablice
+(tablica) rejestracyjne nie są zgodne z przepisami wydanymi na podstawie art. 76 ust. 1 pkt 1 lit. a albo nie są utrzymane
+w należytym stanie, albo nie są czytelne, stosuje się przepis ust. 1.
+
+[art. 73aa]
+       Art. 73aa.35) 1. Właściciel pojazdu jest obowiązany złożyć wniosek o jego rejestrację w terminie 30 dni od dnia:
+1)     nabycia pojazdu na terytorium Rzeczypospolitej Polskiej;
+2)     dopuszczenia do obrotu przez organ Krajowej Administracji Skarbowej pojazdu sprowadzonego z terytorium państwa
+       niebędącego państwem członkowskim Unii Europejskiej;
+3)     sprowadzenia pojazdu na terytorium Rzeczypospolitej Polskiej z terytorium państwa członkowskiego Unii Europej-
+       skiej.
+     2. W przypadku nabycia pojazdu, o którym mowa w ust. 1 pkt 1, w drodze spadku termin, o którym mowa w ust. 1,
+biegnie od dnia prawomocnego orzeczenia sądu o stwierdzeniu nabycia spadku albo sporządzenia aktu poświadczenia
+dziedziczenia.
+      3. W przypadku gdy właścicielem pojazdu, o którym mowa w ust. 1, jest przedsiębiorca prowadzący na terytorium
+Rzeczypospolitej Polskiej działalność gospodarczą w zakresie obrotu pojazdami, obowiązany jest do złożenia wniosku o reje-
+strację pojazdu, o którym mowa w ust. 1, w terminie 90 dni.
+    4. Przepisu ust. 1 nie stosuje się do podmiotu uprawnionego, o którym mowa w art. 80s ust. 2, w odniesieniu do pojaz-
+dów, dla których ten podmiot uprawniony posiada ważną decyzję o profesjonalnej rejestracji pojazdów.
+      5. Przepisów ust. 1 i 3 nie stosuje się w przypadku, gdy właścicielem nowego pojazdu jest przedsiębiorca prowadzący
+na terytorium Rzeczypospolitej Polskiej działalność gospodarczą w zakresie obrotu pojazdami lub produkcji pojazdów.
+     6. Przepisu ust. 1 pkt 1 nie stosuje się w przypadku, gdy przed upływem terminów, o których mowa w ust. 1 albo 3,
+właścicielowi pojazdu nabytego i zarejestrowanego na terytorium Rzeczypospolitej Polskiej zostały wydane:
+1)     zaświadczenie o demontażu pojazdu, o którym mowa w:
+       a)   art. 79 ust. 2,
+       b) art. 24 ust. 1 pkt 2 albo art. 33 ust. 3 ustawy z dnia 20 stycznia 2005 r. o recyklingu pojazdów wycofanych z eks-
+          ploatacji (Dz. U. z 2020 r. poz. 2056);
+2)     zaświadczenie o przyjęciu niekompletnego pojazdu, o którym mowa w art. 25 ust. 1 albo art. 33 ust. 3 ustawy z dnia
+       20 stycznia 2005 r. o recyklingu pojazdów wycofanych z eksploatacji.
+     7. Przepisu ust. 1 pkt 1 nie stosuje się w przypadku, gdy właściciel pojazdu nabytego na terytorium Rzeczypospolitej
+Polskiej dokona zbycia tego pojazdu przed upływem terminów, o których mowa w ust. 1 albo 3.
+
+[art. 78 ust. 1-2b]
+      Art. 78. 1. W razie przeniesienia na inną osobę własności pojazdu zarejestrowanego, dotychczasowy właściciel prze-
+kazuje nowemu właścicielowi dowód rejestracyjny oraz zaświadczenie o przeprowadzonym badaniu technicznym pojazdu,
+jeżeli w dowodzie rejestracyjnym nie jest określony aktualny termin ważności badania technicznego.
+Dziennik Ustaw                                                    – 77 –                                                     Poz. 1251
+
+     1a. W razie przeniesienia na inną osobę własności pojazdu czasowo wycofanego z ruchu dotychczasowy właściciel
+przekazuje nowemu właścicielowi decyzję o czasowym wycofaniu pojazdu.
+     2.49) Właściciel pojazdu zarejestrowanego na terytorium Rzeczypospolitej Polskiej jest obowiązany zawiadomić w ter-
+minie nieprzekraczającym 30 dni starostę o:
+1)     zbyciu pojazdu;
+2)     zmianie stanu faktycznego wymagającej zmiany danych zamieszczonych w dowodzie rejestracyjnym.
+    2a.50) Zawiadomienia, o którym mowa w ust. 2 pkt 1, właściciel pojazdu dokonuje u starosty właściwego ze względu
+na miejsce zamieszkania (siedzibę) lub czasowego zamieszkania, a jeżeli właścicielem jest przedsiębiorstwo wielozakła-
+dowe lub inny podmiot, w skład którego wchodzą wydzielone jednostki organizacyjne – u starosty właściwego ze względu
+na miejsce rejestracji pojazdu.
+    2b.50) W przypadku współwłasności pojazdu dla skuteczności zawiadomienia o zbyciu pojazdu wystarczającym jest
+zawiadomienie przez jednego ze współwłaścicieli pojazdu.
+       3. (uchylony)
+     4. Właściciel lub posiadacz pojazdu jest obowiązany wskazać na żądanie uprawnionego organu, komu powierzył pojazd
+
+[art. 140mb]
+      Art. 140mb.173) 1. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu w termi-
+nie, o którym mowa w art. 73aa ust. 1, nie złoży tego wniosku w terminie, podlega karze pieniężnej w wysokości 500 zł.
+   2. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu w terminie, o którym
+mowa w art. 73aa ust. 3, nie złoży tego wniosku w terminie, podlega karze pieniężnej w wysokości 1000 zł.
+     3. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu pomimo wezwania nie
+uzupełnia braków złożonego wniosku w wyznaczonym terminie, podlega karze pieniężnej, o której mowa odpowiednio
+w ust. 1 albo 2.
+      4. Kary pieniężnej, o której mowa w ust. 3, nie nakłada się, jeżeli termin na uzupełnienie braków złożonego wniosku
+o rejestrację pojazdu upływa odpowiednio przed upływem terminu, o którym mowa w art. 73aa ust. 1 albo 3.
+     5. W przypadku niezłożenia wniosku o rejestrację pojazdu w terminie 180 dni od dnia, o którym mowa odpowiednio
+w art. 73aa ust. 1 albo 2, karę pieniężną, o której mowa:
+1)   w ust. 1, nakłada się w wysokości 1000 zł;
+2)   w ust. 2, nakłada się w wysokości 2000 zł.
+      6. Kto będąc właścicielem pojazdu zarejestrowanego na terytorium Rzeczypospolitej Polskiej wbrew przepisowi
+art. 78 ust. 2 pkt 1 nie zawiadamia starosty o zbyciu pojazdu w terminie, podlega karze pieniężnej w wysokości 250 zł.
+     7. Kary pieniężne współwłaściciele pojazdu ponoszą solidarnie.

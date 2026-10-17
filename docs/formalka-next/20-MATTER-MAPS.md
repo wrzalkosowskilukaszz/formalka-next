@@ -63,9 +63,10 @@ flowchart LR
 
 ## 4. What would come next, in order
 
-1. **Work** (matter 9): what the person must check about the employer's permit or notification. The health map's first critical moment (was the employee reported?) and the residence map's work-while-waiting note connect here.
-2. **Taxes** (matter 12). This needs a tax adviser as confirmer (doc 19 wave 5).
+The owner chooses the next one. Candidates:
+1. **Vehicles and the driving licence** (matter 15), which the owner raised on 17.10: two act extracts are in `research/2026-10-17-vehicles/sources/`.
+2. **Work** (matter 9): what the person must check about the employer's permit or notification. The health map's first critical moment (was the employee reported?) and the residence map's work-while-waiting note connect here.
 
-Health insurance (matter 11) and civil status (matter 14), first in this list on 17.10, are now mapped (§1).
+Taxes (matter 12) are set aside by the owner (17.10.2026). Health insurance (matter 11) and civil status (matter 14) are now mapped (§1). Doc 19 lists seven new candidate matters (20–26).
 
 Each starts with sources (R1), as these did.
