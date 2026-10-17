@@ -1,4 +1,4 @@
-# Ustawa z 24.09.2010 o ewidencji ludności, consolidated text Dz.U. 2026 poz. 384 (legal state 10.03.2026): art. 7 ust. 1 (whose data the PESEL register holds), art. 17 ust. 1 pkt 1-2 (who asks for a PESEL ex officio), art. 29 (registering a newborn's residence)
+# Ustawa z 24.09.2010 o ewidencji ludności, consolidated text Dz.U. 2026 poz. 384 (legal state 10.03.2026): art. 7 ust. 1 (whose data the PESEL register holds), art. 17 ust. 1 pkt 1-2 (who asks for a PESEL ex officio), art. 29 (registering a newborn's residence); art. 18 ust. 1-1a and 38 added after the check
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, retrieved 2026-10-16, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb. pdftotext -layout.
 # Later amendments: Dz.U. 2025 poz. 1794 art. 5 (from 27.04.2026: art. 8, 10, 23i, 23j, 43) and 2026 poz. 1206 art. 20 (from 11.01.2027: art. 23m, 49a). Neither touches the articles below (tools/sources/touched.mjs DU/2010/1427 2026-03-10 --cite 7,15-17,29, run on 17.10.2026).
 
@@ -22,3 +22,21 @@
 Rzeczypospolitej Polskiej, dokonuje z urzędu kierownik urzędu stanu cywilnego sporządzający akt urodzenia. Zameldowanie
 na pobyt stały lub czasowy następuje z dniem sporządzenia aktu urodzenia, w miejscu stałego albo czasowego pobytu rodzi-
 ców albo tego z rodziców, u którego dziecko faktycznie przebywa.
+
+[art. 18 ust. 1-1a (added on 17.10.2026 after the check)]
+    Art. 18. 1. Wniosek o nadanie numeru PESEL osoba, o której mowa w art. 7 ust. 2, składa na piśmie utrwalonym
+w postaci papierowej, opatrzonym własnoręcznym podpisem do dowolnego organu gminy.
+    1a.14) Jeżeli osoba, której dotyczy wniosek o nadanie numeru PESEL, określona w art. 7 ust. 2, jest cudzoziemcem nie-
+będącym:
+1)    obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Poro-
+      zumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, obywatelem Konfede-
+      racji Szwajcarskiej bądź członkiem jego rodziny,
+2)    obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+      lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej
+      i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm.15)), bądź członkiem
+      jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy
+– wymagane jest jej osobiste stawiennictwo, z wyjątkiem dzieci urodzonych na terytorium Rzeczypospolitej Polskiej.
+
+[art. 38 (added on 17.10.2026 after the check)]
+     Art. 38. Zgłoszenie zgonu dokonane w urzędzie stanu cywilnego, zgodnie z przepisami prawa o aktach stanu cywil-
+nego, zastępuje wymeldowanie osoby zmarłej z miejsca pobytu stałego i czasowego.

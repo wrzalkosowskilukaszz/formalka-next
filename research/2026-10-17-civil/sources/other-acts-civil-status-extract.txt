@@ -1,0 +1,83 @@
+# Provisions of other acts that the civil status sources rely on, collected after the independent check of 17.10.2026 (CHECK.md). Each was first quoted by the checking agent; the lab re-read each one in the agent's downloads (api.sejm.gov.pl/eli/acts/<ELI>/text.pdf, retrieved 2026-10-17; pdftotext -layout; page headers dropped).
+# Sources and later amendments (tools/sources/touched.mjs from each consolidated text's legal state date, run by the lab on 17.10.2026 unless noted):
+#   KPA, Dz.U. 2025 poz. 1691 (sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b): art. 129 § 1-2; no amendments after the text.
+#   KPC, Dz.U. 2026 poz. 468 (sha256 97db38e9635dc6db23e46aa618a52fc7089790b6592858ddc5f5e521d6692003): art. 508 § 1, 562; later acts change other articles only (DU/1964/296 from 2026-03-25 --cite 508,562).
+#   The cemeteries act, Dz.U. 2025 poz. 1590 (sha256 b92aa0944ec89c25f6da15ee473833148c218dcdede2936b6f7450d0caeec2ed): art. 10 ust. 1, 3; art. 11 ust. 1-2; no amendments (DU/1959/62 from 2025-11-06).
+#   The e-delivery act, Dz.U. 2026 poz. 3 (sha256 47f3509d15ca7b371f2a84824922bbd573803b769b3093992250f5efcff458c1): art. 147 ust. 2; 2026 poz. 507 changes art. 152 only (DU/2020/2320 from 2025-12-19).
+#   The citizenship act, Dz.U. 2025 poz. 1611 (sha256 3bbfd467879b5628e0a3301c76c1f0e09c19a757d207ce4c151cd24c060a3d61): art. 14; no amendments (DU/2012/161 from 2025-10-21).
+#   The identity cards act, Dz.U. 2025 poz. 1753 (sha256 b53fa36033ad18ef7363eb178f34d78a1e929c67a0bf826b149ccd19980972fa): art. 50 ust. 1; 2026 poz. 1206 changes art. 68a only, from 11.01.2027 (DU/2010/1131 from 2025-11-24).
+#   The regulation on the fee for a ceremony outside the office, Dz.U. 2015 poz. 180 (sha256 738d071f31ef2e532ae2efb6b08d13ad3fe16f4fa1a0e329da70d307f94366df): § 1-2; no amendments (amendments.mjs DU/2015/180).
+
+
+[KPA (Dz.U. 2025 poz. 1691) art. 129 § 1-2]
+    Art. 129. § 1. Odwołanie wnosi się do właściwego organu odwoławczego za pośrednictwem organu, który wydał
+decyzję.
+     § 2. Odwołanie wnosi się w terminie czternastu dni od dnia doręczenia decyzji stronie, a gdy decyzja została ogłoszona
+ustnie – od dnia jej ogłoszenia stronie.
+
+
+[KPC (Dz.U. 2026 poz. 468) art. 508 § 1]
+     Art. 508. § 1. Jeżeli właściwość miejscowa nie jest oznaczona w przepisie szczególnym, wyłącznie właściwy jest sąd
+miejsca zamieszkania wnioskodawcy, a w braku miejsca zamieszkania – sąd miejsca jego pobytu. Do postępowania z urzędu
+właściwy jest sąd miejsca, w którego okręgu nastąpiło zdarzenie będące podstawą wszczęcia postępowania. W braku wska-
+zanych wyżej podstaw właściwy będzie sąd dla m.st. Warszawy.
+
+[KPC art. 562]
+     Art. 562. Zwolnienia od obowiązku złożenia urzędowi stanu cywilnego dokumentu potrzebnego do zawarcia małżeń-
+stwa udziela sąd na wniosek osoby obowiązanej do złożenia dokumentu.
+
+
+[Cemeteries act (Dz.U. 2025 poz. 1590) art. 10 ust. 1]
+     Art. 10. 1. Prawo pochowania zwłok ludzkich ma najbliższa pozostała rodzina osoby zmarłej, a mianowicie:
+1)   pozostały małżonek(ka);
+2)   krewni zstępni;
+3)   krewni wstępni;
+4)   krewni boczni do 4 stopnia pokrewieństwa;
+5)   powinowaci w linii prostej do 1 stopnia.
+Prawo pochowania zwłok osób wojskowych zmarłych w czynnej służbie wojskowej przysługuje właściwym organom wojsko-
+wym w myśl przepisów wojskowych. Prawo pochowania zwłok osób zasłużonych wobec Państwa i społeczeństwa przysługuje
+organom państwowym, instytucjom i organizacjom społecznym. Prawo pochowania zwłok przysługuje również osobom,
+które do tego dobrowolnie się zobowiążą.
+
+[art. 10 ust. 3]
+     3. Zwłoki niepochowane przez podmioty, o których mowa w ust. 1, albo nieprzekazane uczelni lub federacji podmio-
+tów systemu szkolnictwa wyższego i nauki są chowane przez gminę właściwą ze względu na miejsce zgonu, a w przypadku
+osób pozbawionych wolności zmarłych w zakładach karnych lub aresztach śledczych – przez dany zakład karny lub areszt
+śledczy, z wyjątkiem zwłok osób, które uwolniły się z zakładu karnego lub aresztu śledczego, oraz osób, które przebywały
+poza terenem zakładu karnego lub aresztu śledczego, w szczególności w trakcie korzystania z zezwolenia na czasowe opusz-
+czenie tego zakładu lub aresztu bez dozoru lub asysty funkcjonariusza Służby Więziennej.
+
+[art. 11 ust. 1-2]
+      Art. 11. 1. Zgon i jego przyczyna są ustalane przez:
+1)    lekarza leczącego chorego w ostatniej chorobie albo
+2)4) kierownika zespołu ratownictwa medycznego, jeżeli zgon nastąpił w trakcie akcji medycznej, o której mowa w art. 40
+     ust. 1 ustawy z dnia 8 września 2006 r. o Państwowym Ratownictwie Medycznym (Dz. U. z 2025 r. poz. 91 i 637).
+     2. W razie niemożności dopełnienia przepisu ust. 1, stwierdzenie zgonu i jego przyczyny powinno nastąpić w drodze
+oględzin, dokonywanych przez lekarza lub w razie jego braku przez inną osobę, powołaną do tej czynności przez właściwego
+starostę, przy czym koszty tych oględzin i wystawionego świadectwa nie mogą obciążać rodziny zmarłego.
+
+
+[E-delivery act (Dz.U. 2026 poz. 3) art. 147 ust. 2]
+     2.23) Doręczenie korespondencji nadanej przez osobę fizyczną lub podmiot niebędący podmiotem publicznym, będące
+użytkownikami konta w ePUAP, do podmiotu publicznego posiadającego elektroniczną skrzynkę podawczą w ePUAP,
+w ramach usługi udostępnianej w ePUAP, jest równoważne w skutkach prawnych z doręczeniem przy wykorzystaniu pu-
+blicznej usługi rejestrowanego doręczenia elektronicznego do dnia 31 grudnia 2025 r.
+
+
+[Citizenship act (Dz.U. 2025 poz. 1611) art. 14]
+      Art. 14. Małoletni nabywa obywatelstwo polskie przez urodzenie, w przypadku gdy:
+1)    co najmniej jedno z rodziców jest obywatelem polskim;
+2)    urodził się na terytorium Rzeczypospolitej Polskiej, a jego rodzice są nieznani, nie posiadają żadnego obywatelstwa
+      lub ich obywatelstwo jest nieokreślone.
+
+
+[Identity cards act (Dz.U. 2025 poz. 1753) art. 50 ust. 1]
+     Art. 50. 1. W okresie ważności dowód osobisty unieważnia się w przypadkach, o których mowa w art. 46 ust. 1 pkt 2–5b,
+w przypadku utraty obywatelstwa polskiego, zgonu posiadacza dowodu osobistego oraz wydania decyzji o odmowie wydania
+dowodu osobistego, o której mowa w art. 32, jeżeli dowód został uprzednio wystawiony.
+
+
+[Regulation Dz.U. 2015 poz. 180 § 1-2]
+   § 1. Rozporządzenie określa wysokość opłaty dodatkowej za przyjęcie oświadczeń o wstąpieniu w związek małżeński
+poza urzędem stanu cywilnego, w którym jest właściwy kierownik tego urzędu.
+     § 2. Wysokość opłaty dodatkowej, o której mowa w § 1, ustala się na kwotę 1000 złotych.

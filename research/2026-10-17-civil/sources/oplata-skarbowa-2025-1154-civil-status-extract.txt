@@ -1,4 +1,4 @@
-# Ustawa z 16.11.2006 o opłacie skarbowej, consolidated text Dz.U. 2025 poz. 1154 (obwieszczenie of 11.08.2025): the annex, part I items 1-2, part II item 1 and part III item 1 (civil status)
+# Ustawa z 16.11.2006 o opłacie skarbowej, consolidated text Dz.U. 2025 poz. 1154 (obwieszczenie of 11.08.2025): the annex, part I items 1-2, part II item 1 and part III item 1 (civil status); art. 6 ust. 1-2 added after the check
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf, retrieved 2026-10-16, sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac. pdftotext -layout (a four-column table: item, subject, rate, exemptions).
 # Later amendments (tools/sources/touched.mjs DU/2006/1635 2025-08-11 --cite 1-4,6,7, run on 17.10.2026): six acts. Their annex changes were read: 2025 poz. 1847 art. 3 adds part I items 9ba and 9ca (building); 2025 poz. 1795 art. 116 changes part III item 44; 2026 poz. 1206 art. 14 changes part III item 17. 2026 poz. 875 art. 9 adds art. 1 ust. 3 (tacit settlement, from 1.01.2027); 2026 poz. 912 adds art. 7 pkt 3a; 2026 poz. 846 changes art. 9-10 (refunds). None changes the items below.
 # Scope (art. 1 ust. 1 pkt 1): the duty falls on an official act done "na podstawie zgłoszenia lub na wniosek" and on a certificate issued "na wniosek"; the first short copy of a birth, marriage or death record is issued ex officio (civil status act art. 47).
@@ -107,3 +107,15 @@ nictwa lub prokury albo jego odpisu, wypisu lub kopii.
                   1.   Zezwolenie na zawarcie małżeństwa,                   39 zł
                        o którym mowa w art. 4 Kodeksu
                        rodzinnego i opiekuńczego
+
+
+[art. 6 ust. 1-2 (added on 17.10.2026 after the check; the touched.mjs run above covered art. 6)]
+     Art. 6. 1. Obowiązek zapłaty opłaty skarbowej powstaje:
+1)   od dokonania czynności urzędowej – z chwilą dokonania zgłoszenia lub złożenia wniosku o dokonanie czynności urzędowej;
+2)   od wydania zaświadczenia – z chwilą złożenia wniosku o wydanie zaświadczenia;
+3)   od wydania zezwolenia (pozwolenia, koncesji) – z chwilą złożenia wniosku o wydanie zezwolenia (pozwolenia, koncesji);
+4)   od złożenia dokumentu stwierdzającego udzielenie pełnomocnictwa lub prokury oraz od jego odpisu, wypisu lub kopii –
+     z chwilą złożenia dokumentu w organie administracji publicznej, sądzie lub podmiocie, o którym mowa w art. 1 ust. 2;
+5)   od przedmiotu opłaty określonego w art. 2 ust. 2 – z chwilą użycia zaświadczenia w sprawie innej niż wymieniona
+     w art. 2 ust. 1.
+     2. Opłatę skarbową wpłaca się z chwilą powstania obowiązku jej zapłaty.

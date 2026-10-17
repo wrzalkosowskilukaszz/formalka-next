@@ -1,4 +1,4 @@
-# Ustawa z 25.02.1964 – Kodeks rodzinny i opiekuńczy, consolidated text Dz.U. 2026 poz. 236 (obwieszczenie of 20.02.2026; changes published before 19.02.2026): art. 1-7 (concluding a marriage, the one-month wait, two witnesses), 25 (surnames), 72-73 (recognition of paternity), 88-89^1 (the child's surname)
+# Ustawa z 25.02.1964 – Kodeks rodzinny i opiekuńczy, consolidated text Dz.U. 2026 poz. 236 (obwieszczenie of 20.02.2026; changes published before 19.02.2026): art. 1-7 (concluding a marriage, the one-month wait, two witnesses), 25 (surnames), 72-73 (recognition of paternity), 88-89^1 (the child's surname); art. 75 § 1 added after the check
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2026/236/text.pdf, retrieved 2026-10-17, sha256 d3e352a605afa1e54861b5eb5d30c157ec60b79ee4b806aa5f2b58e75e54ca7e. pdftotext -layout ("Art. 41" and "Art. 891" are art. 4^1 and 89^1).
 # Later amendments: none (tools/sources/touched.mjs DU/1964/59 2026-02-19 --cite 1-7,25,72-73,88-89, run on 17.10.2026).
 
@@ -115,3 +115,6 @@ odpowiednio przepisy § 1. Jeżeli dziecko ukończyło trzynaście lat, do zmian
      § 4. Dziecku nieznanych rodziców nazwisko nadaje sąd opiekuńczy.
      Art. 891. Dzieci pochodzące od tych samych rodziców noszą takie samo nazwisko, z zastrzeżeniem przepisów, które
 do zmiany nazwiska dziecka wymagają jego zgody.
+
+[art. 75 § 1 (added on 17.10.2026 after the check)]
+     Art. 75. § 1. Można uznać ojcostwo przed urodzeniem się dziecka już poczętego.
