@@ -65,13 +65,13 @@
 | # | Decision | Why it matters |
 |---|---|---|
 | D1 | Keep the new order of the waiting answer (art. 100d first, legal aid as the main button)? | Until 4.03.2027 a ponaglenie meets a special act that disarms the inactivity rules. The old order made the template the obvious next step |
-| D2 | The eight findings for the production residence guide (COMPARISON §3, P1–P8) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
+| D2 | The nine findings for the production residence guide (COMPARISON §3, P1–P9) | The two most serious are P2 and P3. **P2:** the guide never says that the MOS account asks for a PESEL and needs a trusted profile, so PESEL (wave 1) is a precondition of the residence permit (wave 2). **P3:** the Polish legal-stay note drops its conditions |
 | D3 | A weekly scheduled check of the four Ukrainian-status acts (`research/2026-10-17-ukr/sources/README.md`, Upkeep) | This is doc 19's gate for wave 3. It runs the two source tools and reports any change. I did not set it up, since it would run outside this session |
 | D4 | Whether the service plan (doc 18) adds "PESEL before the MOS account" to the journey | It is a cross-matter dependency that interviews should probe |
 
 ## 6. Not done, and why
 
 - **The migration lawyer's review (R5)** is what the draft reference needs next. A person must do it.
-- **Thirteen residence questions and five wave 3 questions stay open,** among them work and travel while waiting, and how calls arrive. The prototype says "Nie wiem" or restricts.
+- **Thirteen residence questions and five wave 3 questions stay open,** among them travel while waiting and how calls arrive. Work while waiting was narrowed after the report's first version: the act on employing foreigners sets the rules (finding P9). The prototype says "Nie wiem" or restricts.
 - **No reference for wave 3.** This is by plan: doc 19 keeps it at R1 until monitoring exists.
 - **The reader's answers to "czy mogę wyjechać…" and "czy mój pobyt jest legalny…"** are safe but unhelpful (COMPARISON D17). Improving them would be new behaviour, which waits for Phase 1.

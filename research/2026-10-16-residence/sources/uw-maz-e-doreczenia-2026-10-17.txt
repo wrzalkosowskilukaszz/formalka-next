@@ -1,0 +1,50 @@
+# Mazowiecki UW: Załóż konto do e-Doręczeń - to niezbędne do doręczania pism i komunikacji z nami (dated 20.04.2026 on the page)
+# Source: https://www.gov.pl/web/uw-mazowiecki/zaloz-konto-do-e-doreczen--to-niezbedne-do-doreczania-pism-i-komunikacji-z-nami, retrieved 2026-10-17, html sha256 3f9ce039be6700b6fef3599b5eee0aafb2cd8e8336cf654c465fa732b5a54e45
+# Text of the page's main element; navigation and the photo gallery removed. One voivode's practice, not a national rule.
+
+Powrót
+Załóż konto do e-Doręczeń - to niezbędne do doręczania pism i komunikacji z nami!
+20.04.2026
+Załóż adres i skrzynkę do doręczeń elektronicznych e-Doręczeń. Już niedługo, po uruchomieniu nowego systemu MOS postępowania złożone tą ścieżką dla wniosków na pobyt czasowy, stały oraz rezydenta długoterminowego UE będziemy prowadzić wyłącznie w formie elektronicznej. Skrzynka będzie Ci potrzebna między innymi do otrzymywania wezwań, informacji o terminach osobistego stawiennictwa w celu pobrania odcisków palców czy informacji o terminie odbioru karty pobytu kierowanych do Ciebie przez urząd. Ponadto, za pośrednictwem skrzynki - w odpowiedzi na wezwanie uzupełnisz (prześlesz) brakujące w sprawie dokumenty.
+Jak to zrobić?
+- Uzyskaj numer PESEL https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow(link is external).
+- Załóż profil zaufany https://pz.gov.pl/pz/registerMainPage(link is external).
+- Złóż wniosek elektronicznie i uzyskaj adres do e-Doręczeń:
+- wejdź na stronę https://gov.pl/e-doreczenia(link is external);
+- wypełnij wniosek o utworzenie adresu i skrzynki;
+- sprawdź wniosek i podpisz go elektronicznie;
+- na adres e-mail dostaniesz potwierdzenie złożenia wniosku;
+- zaloguj się na https://edoreczenia.gov.pl(link is external);
+- otwórz zakładkę Twoje skrzynki;
+- kliknij Aktywuj skrzynkę;
+- podaj adres e-mail i zapoznaj się z regulaminem.
+e-Doręczenia to elektroniczny odpowiednik listu poleconego za potwierdzeniem odbioru.
+Dzięki e-Doręczeniom:
+- wyślesz dokumenty do sprawy i odbierzesz korespondencję z urzędu z dowolnego miejsca,
+- nie musisz iść na pocztę czy czekać na listonosza - wystarczy Internet,
+- będziesz miał pewność, że wysłana z urzędu korespondencja zostanie do Ciebie doręczona nawet, gdy zmienisz adres zamieszkania lub wyjedziesz,
+- oszczędzisz koszty wysyłki, bo urzędowe e-Doręczenia są bezpłatne,
+- Twoja korespondencja z urzędem będzie szybsza i bardziej komfortowa,
+- Twoja przesyłka jest bezpieczna, dokument podpiszesz podpisem zaufanym.
+Chcesz wiedzieć więcej o e-Doręczeniach?
+Wejdź na https://gov.pl/e-doreczenia(link is external) i dowiedz się więcej
+Pamiętaj, że wysyłając przez e-Doręczenia pisma i dokumenty do spraw zawsze wpisuj w tytuł przesyłki:
+- numer sprawy,
+- imię i nazwisko cudzoziemca.
+W treści załączonego do przesyłki pisma, oprócz powyższych danych, dopisz datę urodzenia, obywatelstwo i aktualny adres zamieszkania cudzoziemca.
+Dodatkowo, w celu usprawnienia obsługi wprowadziliśmy nową zasadę:
+1 pismo elektroniczne = 1 sprawa. To przyśpieszy obieg dokumentów elektronicznych w twojej sprawie. W jednym piśmie (jednej przesyłce elektronicznej przez e-Doręczenia) przesyłaj dokumenty tylko do jednej sprawy. Nie wysyłaj zbiorczo w jednej przesyłce dokumentów do różnych spraw.
+Pamiętaj przesłane dokumenty, będące dowodami w sprawie, muszą być opatrzone podpisem kwalifikowanym, profilem zaufanym lub osobistym przez właściwe osoby lub podmioty, czyli muszą to być oryginały elektronicznych dokumentów. Dokumenty wymagające Twojego podpisu, musisz podpisać własnym profilem zaufanym lub osobistym podpisem certyfikowanym (kwalifikowanym).
+Papierowe oryginały dokumentów muszą być wcześniej potwierdzone elektronicznie za zgodność z oryginałem przez notariusza, radcę pranego, czy adwokata.
+Po uruchomieniu nowego systemu MOS, do wniosków złożonych elektronicznie za pośrednictwem tego systemu, dokumenty wysyłaj wyłącznie elektronicznie. Nie przesyłaj dokumentów papierowych pocztą tradycyjną.
+Na stanowiskach obsługi klienta w urzędzie będziemy wyłącznie pobierać odciski linii papilarnych i weryfikować paszport. Brakujące dokumenty do sprawy w formie papierowej nie będą przyjmowane.
+W tytule wiadomości obowiązkowo podaj sygnaturę sprawy oraz imię i nazwisko cudzoziemca. Dokumenty elektroniczne dotyczące jednej sprawy wysyłaj oddzielnym pismem dla danej sprawy. To usprawnia szybkie dołączanie tych dokumentów do spraw, ich przetwarzanie i zapewnia lepszą organizację i przejrzystość spraw.
+Wszelkie przesyłane pisma dotyczące spraw w toku, muszą być zatytułowane w następujący sposób:
+- numer sprawy,
+- imię i nazwisko cudzoziemca.
+Pamiętaj! Dokumenty do złożonych wniosków dosyłaj dopiero po nadaniu przez urząd numeru sprawy, który otrzymasz smsem lub e-mailem.
+Korzystaj z wzorów pism zamieszczonych na naszej stronie internetowej w zakładce https://migrant.wsc.mazowieckie.pl/pl/pliki-do-pobrania/327
+Jest to ważne , ponieważ ułatwi i przyśpieszy to identyfikowanie dokumentów do sprawy i dystrybucję dokumentów w Wydziale Spraw Cudzoziemców.
+Przebywaj w Polsce legalnie. Działaj mądrze – nie daj się oszukać!
+Celem kampanii jest dotarcie do szerokiego grona cudzoziemców zainteresowanych legalizacją pobytu w Polsce z informacjami, które pozwolą zwiększyć ich świadomość i wiedzę z zakresu zasad wjazdu i pobytu w Polsce, w tym uzyskania karty pobytu
+Wyłączna odpowiedzialność za wyrażone opinie spoczywa na autorze i Komisja Europejska oraz Ministerstwo Spraw Wewnętrznych i Administracji nie ponoszą odpowiedzialności za sposób wykorzystania udostępnionych informacji.

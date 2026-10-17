@@ -14,12 +14,13 @@ Collected on 16.10.2026 by Claude, from api.sejm.gov.pl:
   - purposes and the card: art. 114–120, 144, 158–160, 226–229, 244–248;
   - art. 22 ust. 2 (the appellate authority), art. 113 (notifying the end of the purpose), art. 230 and 235–243 (card deadlines, the card fee, its exemptions and the 50% relief, validity);
   - Dz.U. 2025 poz. 1794: the new art. 104–120a, art. 225a–225c and 225h (the MOS account, which asks for PESEL; an outage on the last day), and art. 226–248;
+- the act on employing foreigners, Dz.U. 2025 poz. 621: art. 3 (who may work, including while a residence case is pending), with its change by 1794 art. 11;
 - the special act on aid to Ukrainian citizens, consolidated Dz.U. 2026 poz. 1293: art. 100d (the voivode's time limits in residence cases do not run until 4.03.2027; it applies to every foreigner);
 - KPA art. 35–37, 57–58, 64, 127–130 and 261: time limits, ponaglenie, formal defects, appeal, fees paid in advance. No amendments after 7.11.2025, per api.sejm.gov.pl;
 - the stamp duty act: residence permit fees, with its later amendments checked;
 - UdSC pages: MOS, MOS Q&A, fees (including the 100 zł card fee), helplines;
 - the Warmińsko-Mazurski voivode's page on temporary permits;
-- the Mazowiecki voivode's page on case status.
+- the Mazowiecki voivode's pages on case status and on e-Doręczenia (cases filed through MOS are conducted electronically; its steps start with getting a PESEL).
 
 **Next steps (the doc 19 §5 pipeline):**
 1. gov.pl and UdSC pages for each purpose (work, study, family); the forms and card-fee regulations; the trusted-profile rules (OPEN in the draft reference).

@@ -22,6 +22,7 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 |---|---|---|
 | UOC | Ustawa z 12.12.2013 o cudzoziemcach, consolidated text Dz.U. 2025 poz. 1079 | Legal state of 25.07.2025. `uoc-2025-1079-art98-112a-extract.txt`, `uoc-2025-1079-purposes-and-card-extract.txt`, `uoc-2025-1079-art22-113-card-fees-extract.txt` |
 | AM | Ustawa z 21.11.2025 o zmianie ustawy o cudzoziemcach, Dz.U. 2025 poz. 1794 | `amendment-2025-1794-art104-120a-extract.txt`, `amendment-2025-1794-mos-art225a-225h-extract.txt`, `amendment-2025-1794-card-art226-248-extract.txt`. Entry into force by point (its art. 19): the MOS rules (art. 104–106l, 108 ust. 1 pkt 1 and 3–10, 112a ust. 2 pkt 3, 120a, 225a–225i, 248) from **27.04.2026**; the changes to art. 226–229 from **1.04.2026** |
+| PRACA | Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom, Dz.U. 2025 poz. 621 | Art. 3, with its change by AM art. 11 (from 27.04.2026); later amendments checked, none touches art. 3. `praca-cudzoziemcow-2025-621-art3-extract.txt`. Added on 17.10 (§9) |
 | SA | Ustawa z 12.03.2022 o pomocy obywatelom Ukrainy, consolidated text Dz.U. 2026 poz. 1293 | Legal state of 8.09.2026; no later amendments (16.10.2026). Art. 100d only: `specustawa-ua-2026-1293-art100d-extract.txt`. Added after the comparison (§9) |
 | MP | Komunikat MSWiA, M.P. 2026 poz. 370 | Sets 27.04.2026 for the points listed in AM art. 17. `audit/2026-10-16-round2/reference/sources/uel-amendment-2025-1794-art5-and-mp-2026-370.txt` |
 | KPA | Kodeks postępowania administracyjnego, Dz.U. 2025 poz. 1691 | Art. 35–37, 57–58, 64, 127–130, 261. No later amendments listed by api.sejm.gov.pl on 16.10.2026. `kpa-2025-1691-art35-37-57-58-64-127-130-261-extract.txt` |
@@ -30,7 +31,7 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | QA | UdSC, "MOS – pytania i odpowiedzi" (65 questions) | `udsc-mos-qa-2026-10-16.txt`, cited by question number |
 | FEES | UdSC, "Informacje o opłatach" | `udsc-oplaty-2026-10-16.txt` |
 | UWWM | Warmińsko-Mazurski UW, "Zezwolenia na pobyt czasowy", version 46.0 of 27.04.2026 | `uw-wm-pobyt-2026-10-16.txt` (one voivode's page, used only for what it adds) |
-| UWMAZ | Mazowiecki UW, "Jak sprawdzić status sprawy" | `uw-maz-status-2026-10-16.txt` |
+| UWMAZ | Mazowiecki UW, "Jak sprawdzić status sprawy"; "Załóż konto do e-Doręczeń" (20.04.2026) | `uw-maz-status-2026-10-16.txt`, `uw-maz-e-doreczenia-2026-10-17.txt` (the second added on 17.10) |
 
 **Not consulted (OPEN: a reviewer should add them):**
 - the regulation on the application forms and attachments (UOC art. 107 ust. 1);
@@ -62,6 +63,7 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Fingerprint and appearance exceptions | No fingerprints under 6; no signature specimen under 13; no call to appear under 6 or with a specialist's certificate (at most 3 months old) | UOC art. 106b ust. 2–3, art. 106h ust. 1 (FACT) |
 | Talking to the office | MOS is not a channel to the voivode, and it does not report calls or case status. Changes after filing (employer, work terms, address, purpose) go by a letter, on paper or to the voivode's e-Doręczenia address | QA 42, 43, 49, 50 (FACT) |
 | Case status | By phone: Mazowiecki runs a Migrant Contact Center at (22) 695 67 73, which reads out a case's status from its number | UWMAZ (FACT, one voivode) |
+| One voivode's practice after MOS (Mazowiecki) | Cases filed through MOS are conducted only electronically. An e-Doręczenia box is needed for calls, appointment information and the card pickup date, and for sending missing documents. The page's steps: get a PESEL, set up a trusted profile, then an e-Doręczenia address. Paper originals must first be certified electronically by a notary, legal adviser or advocate; the desk takes only fingerprints and checks the passport | UWMAZ e-Doręczenia page (FACT, one voivode, 20.04.2026) |
 
 **INFERENCE (wave 1 meets wave 2):** the MOS account form asks for a PESEL number (art. 225b ust. 3 pkt 6, FACT), and QA 2 requires a trusted profile. The PESEL guide's public questions record that PESEL "unlocks" the trusted profile (`research/2026-10-16-service/PUBLIC-QUESTIONS.md` Q8). A newcomer without PESEL is therefore, very likely, unable to open a MOS account and so to file. **OPEN-R1** (high harm: they find out on the last day of legal stay): whether PESEL is strictly required, and what a person without one does.
 
@@ -114,7 +116,12 @@ Example, fictional: a call for documents delivered on Tuesday 27.10.2026, with 1
 | The certificate that the application was filed | After an official checks the application, the person downloads it from MOS. It replaces the passport stamp. It carries a QR code; it is free; it can also be handed over at the in-person visit | UOC art. 108 ust. 1 pkt 1, ust. 3–7 as amended (FACT); QA 35, 48 (FACT) |
 | Legal stay while waiting | "pobyt cudzoziemca … uważa się za legalny od dnia złożenia wniosku do dnia, w którym decyzja … stanie się ostateczna", if the filing deadline was kept and the application has no formal defects (or they were remedied in time). Not if the case is suspended at the party's own request | UOC art. 108 ust. 1 pkt 2, ust. 2 (FACT; not changed by AM) |
 | During an appeal | INFERENCE: a first-instance decision under appeal is not final, so the legal stay continues until the appeal is decided | UOC art. 108 ust. 1 pkt 2 with KPA art. 127, 130 (INFERENCE). Lawyer to confirm |
-| Work while waiting | **OPEN-R6.** Not in our sources | — |
+| Work while waiting | It depends on the basis before filing:
+- free access to the labour market while staying under art. 108 ust. 1 pkt 2, if immediately before filing the person met the conditions of art. 3 ust. 1 pkt 14–17 (among them a permit for study, for family reunification, or as the spouse of a Polish citizen);
+- with a work permit or a registered declaration, work may go on while staying under art. 108 ust. 1 pkt 2 if, immediately before filing, the person was entitled to work in Poland;
+- some highly qualified, intra-company and research cases are listed separately.
+
+Applying this to one person's history is for a lawyer or the voivode (OPEN-R6, narrowed) | PRACA art. 3 ust. 1 pkt 18, ust. 2 pkt 6, ust. 3 pkt 2 as amended by AM art. 11 (FACT) |
 | Travel abroad while waiting | **OPEN-R7.** Not in our sources | — |
 | Not appearing | The case is discontinued (umorzenie) if the person does not appear on a proper call, or appears but gives no fingerprints, signature or passport. Exceptions for the under-6 and medical cases | UOC art. 106i (FACT) |
 | How calls arrive | MOS does not tell the person; "poinformuje Cię pracownik urzędu wojewódzkiego". The decision goes to the address for service the person gave | QA 43, 51 (FACT). **OPEN-R8:** the channel for calls (post, e-Doręczenia, e-mail) |
@@ -212,7 +219,8 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 - **Plan:**
   - the certificate in MOS;
   - legal stay under art. 108 ust. 1 pkt 2, with its conditions;
-  - for travel and work while waiting: "Nie wiem. Nasze źródła tego nie rozstrzygają" (OPEN-R6, R7), and where to ask: the voivode's information line (UWWM, UWMAZ) or a lawyer.
+  - for travel while waiting: "Nie wiem. Nasze źródła tego nie rozstrzygają" (OPEN-R7), and where to ask: the voivode's information line (UWWM, UWMAZ) or a lawyer;
+  - for work while waiting: that it depends on the basis on which the person was staying or working just before filing (PRACA art. 3), and that their own case is for the voivode or a lawyer.
 - **Never:** "możesz spokojnie wyjechać", or "nie możesz wyjechać".
 
 ### RC8. No decision after a long time
@@ -259,10 +267,10 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 | OPEN-R3 | Resolved after the comparison: UOC art. 225c (§9) | — | — |
 | OPEN-R4 | Does the last day of legal stay move off a weekend or holiday? | **High:** illegal stay | Never move it; reminders before it |
 | OPEN-R5 | When the 15 working days of art. 113 start, and which days count | Medium | No computed date: "zawiadom od razu" |
-| OPEN-R6 | Work while the case is pending | **High:** illegal work | "Nie wiem", plus where to ask |
+| OPEN-R6 | Narrowed (17.10): the rules are in PRACA art. 3; what remains open is how they apply to one person's history | **High:** illegal work, or work stopped for nothing | The rule that it depends on the basis before filing, plus where to ask; never "możesz pracować" or "nie możesz" |
 | OPEN-R7 | Travel abroad while the case is pending | **High** | "Nie wiem", plus where to ask |
-| OPEN-R8 | How calls arrive (post, e-Doręczenia, e-mail) | **High:** a missed call discontinues the case | Say that MOS does not report calls (QA 43) and that the address for service matters (QA 51) |
-| OPEN-R9 | When the card is ready and how the person learns | Low | No date |
+| OPEN-R8 | How calls arrive (post, e-Doręczenia, e-mail). Narrowed for Mazowiecki (17.10): to the e-Doręczenia box. Other voivodes not checked | **High:** a missed call discontinues the case | Say that MOS does not report calls (QA 43) and that the address for service matters (QA 51) |
+| OPEN-R9 | When the card is ready and how the person learns. Mazowiecki: the pickup date comes to the e-Doręczenia box (17.10) | Low | No date |
 | OPEN-R10 | Which changes of job need a change of the single permit (art. 119–120) | **High** | A lawyer; no rule from the app |
 | OPEN-R11 | Supporting documents per purpose | Medium: delay, a call for documents | No document list beyond what the act and MOS name; the voivode's page as a link |
 | OPEN-R12 | The card fee on the paper route (106l) | Low | Show the fee with "sprawdź u wojewody" |
@@ -296,3 +304,7 @@ The comparison (`COMPARISON.md`) read the registry's notes, which cite provision
 | K4 | The first card is always ex officio; RC4 said nothing on the card | Art. 229 ust. 4: on application for family reunification from abroad and others | Already in `uoc-2025-1079-purposes-and-card-extract.txt`; the draft had read only the amended ust. 2 |
 
 Lessons: `docs/solutions/2026-10-16-time-limits-suspended-by-another-act.md` and `docs/solutions/2026-10-16-read-the-whole-article.md`.
+
+**Added on 17.10, from further sources:**
+- the act on employing foreigners, art. 3 as amended by AM art. 11, narrows OPEN-R6 (work while waiting). The engine has no note on it: COMPARISON D17 and finding P9;
+- the Mazowiecki voivode's e-Doręczenia page narrows OPEN-R8 and R9 for that office, and adds a second source for the PESEL condition of OPEN-R1 (its steps start with "Uzyskaj numer PESEL").

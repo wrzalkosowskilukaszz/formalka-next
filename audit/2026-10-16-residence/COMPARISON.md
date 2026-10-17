@@ -29,7 +29,7 @@ Reading the engine's notes found four provisions the draft had missed: art. 225c
 | D14 | A Polish citizen's spouse (RC3) | Art. 158, MOS, 340 zł | No own option; "family" is labelled "połączenie z rodziną", which is art. 159. Fee and channel right | Label mismatch | Low | Finding P5 |
 | D15 | The attachment level for purposes with no third-party attachment (family) | No such step | Shown as available: "Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik" | Noise | Low | Finding P6 |
 | D16 | The end of the purpose (art. 113: notify within 15 working days) | In the plan after the permit | Nothing after the card | **Gap** | Medium–high | No restriction: the case ends at the card, and the lab adds no rule of its own. Finding P7 |
-| D17 | Work and travel while waiting | "Nie wiem", and where to ask | No notes. The prototype's reader: "czy mogę wyjechać…" and "czy mogę pracować…" get "Nie jestem pewna, co masz na myśli" and the list of what it can help with; "czy mój pobyt jest legalny po złożeniu wniosku?" is routed to the form answer (the word "wniosku") | Safe (no rule claimed), but unhelpful | — | Noted for the reader's next pass; no feature before Phase 1 |
+| D17 | Work and travel while waiting | Travel: "Nie wiem", and where to ask. Work (added 17.10): it depends on the basis before filing (act on employing foreigners art. 3 ust. 1 pkt 18, ust. 3 pkt 2), the person's own case for the voivode or a lawyer | No notes. The prototype's reader: "czy mogę wyjechać…" and "czy mogę pracować…" get "Nie jestem pewna, co masz na myśli" and the list of what it can help with; "czy mój pobyt jest legalny po złożeniu wniosku?" is routed to the form answer (the word "wniosku") | Safe (no rule claimed), but unhelpful | — | Noted for the reader's next pass; no feature before Phase 1 |
 | D18 | Changes after filing; letters outside MOS | QA 42, 49–52 | `wait-mos-not-channel`, `wait-electronic-address`, the Mazowiecki notes | Agreement | — | — |
 | D19 | Purpose unknown | Every fee and attachment, marked as possibly not applying | The same, with "sprawdź" | Agreement | — | — |
 | D20 | The employer's link (30 days) and unsigned drafts (45 days) | QA 30; art. 225h | Not mentioned | Gap | Low–medium | Finding P8 |
@@ -57,9 +57,10 @@ The rest of the suite ran after these changes: unit tests 25/25; e2e 12/12 in bo
 | P6 | The attachment level shows for purposes that have no third-party attachment | UOC art. 106 ust. 2, 5, 7 |
 | P7 | Nothing after the card: the duty to notify the end of the purpose within 15 working days | UOC art. 113 |
 | P8 | The employer's link lasts 30 days; an unsigned application is deleted after 45 days | QA 30; UOC art. 225h |
+| P9 | Nothing on work while the case is pending, although the act on employing foreigners sets when it is allowed (added 17.10) | Act of 20.03.2025 art. 3 ust. 1 pkt 18, ust. 3 pkt 2, as amended by Dz.U. 2025 poz. 1794 art. 11 |
 
 ## 4. What this does not settle
 
 - The reference is still a draft. A migration lawyer must review it, together with these rows (R5).
-- Thirteen OPEN questions remain in the reference (§7), among them work and travel while waiting, and how calls arrive.
+- Thirteen OPEN questions remain in the reference (§7), one of them narrowed (work while waiting), among them travel while waiting and how calls arrive.
 - The comparison covers fictional cases RC1–RC11 and the purposes work, study and family. Business, seasonal work, traineeships, short stays and "other" were not compared.
