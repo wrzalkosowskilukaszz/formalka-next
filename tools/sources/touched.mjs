@@ -77,15 +77,19 @@ export function appliedBy(text, amending) {
   return [...out].map(([article, names]) => ({ article, names }));
 }
 
-// "2-4,12,50a" -> a predicate on an article id such as "3", "50a" or a range "23c–23i" (either end counts).
+// "2-4,12,50a,93-93h" -> a predicate on an article id such as "3", "50a" or a range "23c–23i" (either end counts).
+// A lettered range ("93-93h") once matched nothing, silently, so a change to art. 93 went unflagged
+// (the recognition map, 17.10.2026); it now covers 93, 93a … 93h, and an unreadable part throws.
+const key = (id) => { const m = /^(\d+)([a-z]*)$/.exec(id); return m && [+m[1], m[2]]; };
+const before = (a, b) => a[0] < b[0] || (a[0] === b[0] && (a[1].length < b[1].length || (a[1].length === b[1].length && a[1] <= b[1])));
 export function citedBy(list) {
-  const set = new Set();
+  const ranges = [];
   for (const part of list.split(',').map((s) => s.trim()).filter(Boolean)) {
-    const r = /^(\d+)-(\d+)$/.exec(part);
-    if (r) for (let n = +r[1]; n <= +r[2]; n++) set.add(String(n));
-    else set.add(part);
+    const [lo, hi = lo] = part.split('-').map(key);
+    if (!lo || !hi || part.split('-').length > 2) throw new Error(`--cite: cannot read "${part}" (use 3, 3a, 2-4 or 93-93h)`);
+    ranges.push([lo, hi]);
   }
-  return (id) => id.split(/[–-]/).some((end) => set.has(end));
+  return (id) => id.split(/[–-]/).map(key).filter(Boolean).some((k) => ranges.some(([lo, hi]) => before(lo, k) && before(k, hi)));
 }
 
 // The date to print for an amending act: the API's date is only its general date. Dz.U. 2026 poz. 1123 is "in force

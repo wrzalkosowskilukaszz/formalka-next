@@ -88,6 +88,16 @@ test('citedBy matches ranges, lettered articles and either end of a range', () =
   assert.equal(cited('50a'), true);
   assert.equal(cited('1–3'), true);
   assert.equal(cited('23c–23i'), false);
+  // A lettered range covers the letters up to its end; it once matched nothing, silently.
+  const uso = citedBy('93-93h');
+  assert.equal(uso('93'), true);
+  assert.equal(uso('93a'), true);
+  assert.equal(uso('93h'), true);
+  assert.equal(uso('93i'), false);
+  assert.equal(uso('94'), false);
+  assert.equal(citedBy('326-328')('326a'), true);
+  assert.throws(() => citedBy('93-93h-94'), /cannot read/);
+  assert.throws(() => citedBy('art. 5'), /cannot read/);
 });
 
 test('a consolidated text is resolved to its base act, whose amendments are listed; a bare obwieszczenie throws', async () => {
