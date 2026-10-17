@@ -65,3 +65,9 @@ test('a regulation is read by its paragraphs (§)', () => {
   assert.deepEqual(r.partial[0], { id: '5', missing: [{ n: '2', exception: 'Nie stosuje się', head: 'Nie stosuje się § 6.' }] });
   assert.deepEqual(r.referring.map((x) => [x.id, x.names, x.exception]), [['6', ['5'], 'z wyjątkiem']]);
 });
+
+test('a shared opening does not make another article quoted', () => {
+  const t = '     Art. 8e. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) wzór wniosku o świadczenie.\n     Art. 24d. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) sposób przekazywania informacji.\n';
+  const r = omitted(t, 'Art. 8e. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) wzór wniosku o świadczenie.');
+  assert.deepEqual(r.quoted, ['8e']);
+});

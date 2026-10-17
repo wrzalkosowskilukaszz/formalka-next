@@ -52,7 +52,10 @@ export function units(text) {
   return { unit, units: out };
 }
 
-// The first 60 characters of a paragraph's text, enough to tell whether an extract quotes it.
+// A paragraph counts as quoted when the extract holds its first 200 characters (all of it, if shorter): a shorter
+// opening ("Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia:") recurs in other articles and
+// marked an unquoted article as quoted (the Karta Polaka act's art. 24d, 17.10.2026). The first 60 are shown.
+const keyOf = (t) => t.slice(0, 200);
 const headOf = (t) => t.slice(0, 60);
 const isRepealed = (t) => /^\((?:uchylony|uchylona|pominięty|pominięta)\)/.test(t);
 
@@ -78,7 +81,7 @@ export function omitted(actText, extractText) {
   const quoted = new Set();
   const partial = [];
   for (const u of all) {
-    const inExtract = u.paras.map((p) => p.text.length > 0 && ext.includes(headOf(p.text)));
+    const inExtract = u.paras.map((p) => p.text.length > 0 && ext.includes(keyOf(p.text)));
     if (!inExtract.some(Boolean)) continue;
     quoted.add(u.id);
     const missing = u.paras.filter((p, i) => !inExtract[i] && p.text && !isRepealed(p.text))
