@@ -8,6 +8,7 @@ import { mkdtempSync, writeFileSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { entryArticle } from './entry-dates.mjs';
 
 const CLOSE = '”ˮ“';
 const flatten = (text) => text.replace(/-\n\s*/g, '').replace(/\n\s*Dziennik Ustaw[^\n]*/g, ' ').replace(/\s+/g, ' ');
@@ -85,6 +86,14 @@ export function citedBy(list) {
   return (id) => id.split(/[–-]/).some((end) => set.has(end));
 }
 
+// The date to print for an amending act: the API's date is only its general date. Dz.U. 2026 poz. 1123 is "in force
+// 2028-01-01", yet the point that adds Prawo oświatowe art. 31 ust. 3b takes effect on 1.01.2027 and ust. 3a on
+// 1.09.2028; an extract header quoted the general date (research/2026-10-17-school/sources/README.md).
+export function dateLabel(date, entry) {
+  if (!entry?.exceptions && !entry?.announcement) return `in force ${date}`;
+  return `in force ${date}, its general date; some points have their own dates${entry.announcement ? ' or an announced one' : ''}`;
+}
+
 // The acts that amended an act after a date, from its api.sejm.gov.pl metadata, oldest first.
 export function amendingAfter(meta, since) {
   return (meta.references?.['Akty zmieniające'] ?? []).filter((x) => (x.date ?? '') >= since).sort((a, b) => a.date.localeCompare(b.date));
@@ -136,6 +145,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     execFileSync('pdftotext', ['-layout', join(dir, 'act.pdf'), join(dir, 'act.txt')]);
     const text = readFileSync(join(dir, 'act.txt'), 'utf8');
     const hits = touchedArticles(text, act.title);
+    const entry = entryArticle(text);
     if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" or "W rozporządzeniu …" opening found; read it by hand`); flagged++; continue; }
     for (const t of appliedBy(text, hits.map((h) => h.article))) {
       const mark = cite ? t.names.filter(cite) : [];
@@ -146,7 +156,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       const mark = cite ? h.changes.filter(cite) : [];
       flagged += mark.length + (cite ? h.annex.length : 0);
       const annex = h.annex.length ? `; ${h.annex.join(', ')}${cite ? '  <- annex: compare with the cited parts by hand' : ''}` : '';
-      console.log(`- ${c.id} (in force ${c.date}) ${h.article}: ${h.unit} ${h.changes.join(', ') || '(none named)'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}${annex}`);
+      const own = mark.length && (entry?.exceptions || entry?.announcement) ? `  <- quote the cited point's own date: node tools/sources/entry-dates.mjs ${c.id}` : '';
+      console.log(`- ${c.id} (${dateLabel(c.date, entry)}) ${h.article}: ${h.unit} ${h.changes.join(', ') || '(none named)'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}${annex}${own}`);
     }
   }
   if (cite) console.log(flagged ? '\nSome changes touch cited articles: read them and list them in the extract header.' : '\nNo change touches the cited articles.');

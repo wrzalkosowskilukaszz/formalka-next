@@ -2,7 +2,7 @@
 rule: Before giving an amendment's date for a provision, read the amendment's own entry-into-force article (node tools/sources/entry-dates.mjs <ELI>) and quote the date of that point, not the act's general date.
 kind: legal-source
 files: [audit/**/reference/**, audit/*-residence/**, research/**, docs/formalka-next/19-DOMAIN-ROADMAP.md]
-check: tools/sources/entry-dates.mjs::prints the entry-into-force article and flags points with their own dates
+check: tools/sources/entry-dates.mjs::prints the entry-into-force article and flags points with their own dates; tools/sources/touched.mjs flags them for cited articles (tools/sources/touched.test.mjs)
 date: 2026-10-16
 commits: []
 ---
@@ -14,3 +14,5 @@ commits: []
 - The headers and the sources README now give the date per point.
 - The residence reference gives each point's own date (art. 248 from 27.04.2026).
 - `tools/sources/entry-dates.mjs` prints the act's entry-into-force article from its text and says when points have their own dates or an announcement sets them. Its parser has a test.
+
+**Found again (17.10.2026).** The 800+ extract header, and the separate checking agent, said that Dz.U. 2026 poz. 1123 art. 19 changes Prawo oświatowe art. 31 "from 1.01.2028", the act's general date. By its art. 48, the point adding art. 31 ust. 3b takes effect on 1.01.2027 and the one adding ust. 3a on 1.09.2028. `touched.mjs` printed only the API's date. It now runs the entry-into-force reader on each amending act. Where a change touches a cited article and the act has points with their own dates, it says so and names `entry-dates.mjs`.

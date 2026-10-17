@@ -128,4 +128,6 @@ Named by the agent but not used here:
 - the ratified social security agreements with Albania (Dz.U. 2026 poz. 1100) and Japan (Dz.U. 2026 poz. 1326), for OPEN-B3;
 - the UdSC page on the military-service rule, whose dates differ from the Polish text of the EU decision 2026/1912 (it bears on the UKR map, OPEN-C12, not on this one).
 
+Corrected later on 17.10.2026, while mapping matter 16: the extract header gave Dz.U. 2026 poz. 1123's general date (1.01.2028) for its change to Prawo oświatowe art. 31, as the agent did. Its points take effect on 1.01.2027 (ust. 3b) and 1.09.2028 (ust. 3a); neither touches the paragraphs quoted.
+
 Not confirmed here: the agent wrote that Dz.U. 2026 poz. 187 gives Prawo oświatowe art. 36 a new wording from 19.05.2028. In Dz.U. 2026 poz. 820, art. 36 carries no footnote. `touched.mjs` lists 187 art. 144 only for art. 13, 14, 15 and 32.

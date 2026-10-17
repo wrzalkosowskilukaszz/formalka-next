@@ -1,7 +1,8 @@
 // The amended-articles reader, on a fixture shaped like pdftotext output. Run: node --test tools/sources/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy, latestConsolidated } from './touched.mjs';
+import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy, latestConsolidated, dateLabel } from './touched.mjs';
+import { entryArticle } from './entry-dates.mjs';
 
 const title = 'Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych';
 const fixture = `     Art. 6. W ustawie z dnia 24 września 2010 r. o ewidencji ludności w art. 8 dodaje się pkt 24b.
@@ -137,4 +138,12 @@ przed dniem wejścia w życie art. 19 stosuje się przepisy dotychczasowe.
   // It may over-list: art. 19 here is the amending act's own article. The output says to read each hit by hand.
   assert.deepEqual(appliedBy(text, ['Art. 17']), [{ article: 'Art. 40', names: ['22'] }, { article: 'Art. 42', names: ['19'] }]);
   assert.deepEqual(appliedBy(text, ['Art. 54']).map((x) => x.article), ['Art. 42']);
+});
+
+test('an amending act whose points have their own dates is labelled with its general date only', () => {
+  const own = entryArticle('Art. 48. Ustawa wchodzi w życie z dniem 1 stycznia 2028 r., z wyjątkiem: 1) art. 19 pkt 2 w zakresie art. 31 ust. 3a, które wchodzą w życie z dniem 1 września 2028 r. Prezydent Rzeczypospolitej Polskiej');
+  assert.match(dateLabel('2028-01-01', own), /its general date; some points have their own dates/);
+  const one = entryArticle('Art. 3. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia. Prezydent Rzeczypospolitej Polskiej');
+  assert.equal(dateLabel('2026-09-12', one), 'in force 2026-09-12');
+  assert.equal(dateLabel('2026-09-12', null), 'in force 2026-09-12');
 });
