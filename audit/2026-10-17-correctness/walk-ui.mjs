@@ -85,6 +85,8 @@ async function intake(page, pick) {
     if (await dock.locator('[data-a="yes"]').count()) { await dock.locator('[data-a="yes"]').first().click(); continue; }
     const chips = dock.locator('.opts .chip');
     const n = await chips.count();
+    // The stop's chips can appear between the check above and this one: never pick "Wróć do Startu" by chance.
+    if (n && (await chips.allInnerTexts()).some((x) => x.trim() === 'Wróć do Startu')) continue;
     if (n) { await chips.nth(pick(n)).click(); continue; }
     const input = dock.locator('form input[name="t"]');
     if (await input.count() && i > 30) return 'stuck-on-input';
