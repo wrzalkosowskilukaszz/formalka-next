@@ -1,0 +1,49 @@
+# MSWiA: "Najczęściej zadawane pytania" (property permits)
+# Source: https://www.gov.pl/web/mswia/najczesciej-zadawane-pytania, retrieved 2026-10-17, html sha256 e1e5d8cce872070d6ae50de3aa8e735f3d89ae4eb8ba2cf3515fdaf1e6ec40c4
+# Text of the page's main element; navigation, blank lines and empty list markers removed; the editors' names removed from its publication record. Ostatnia modyfikacja: 27.06.2022 11:15. Not binding.
+# sha256 of the text below this header (from line 5): 90a2dcc441913571896291b34c4873fee61f279f9d1e4d7770ec86595ad83394.
+Powrót
+Najczęściej zadawane pytania
+Czy mogę ubiegać się o zwrot opłaty skarbowej 1570,00 zł, gdy otrzymałem decyzję o odmowie udzielenia zezwolenia?
+Tak. W każdym przypadku, w którym postępowanie administracyjne nie jest zakończone udzieleniem zezwolenia, tj. gdy w sprawie została wydana decyzja o odmowie udzielenia zezwolenia, o umorzeniu postępowania czy wniosek został pozostawiony bez rozpoznania – można ubiegać się o zwrot wniesionej opłaty skarbowej.
+Wniosek o zwrot opłaty skarbowej należy złożyć do Centrum Obsługi Podatnika Urzędu m. st. Warszawy (01-161 Warszawa, ul. Obozowa 57). Wniosek powinien zawierać podpis i dane kontaktowe oraz powinna być do niego załączona kserokopia pisma MSWiA kończącego postępowanie i kserokopia potwierdzenia wniesienia opłaty skarbowej.
+Powyższe dotyczy również wniesionej opłaty skarbowej w kwocie 98 zł, gdy promesa zezwolenia nie została wydana.
+Co zrobić, gdy już nie chcę kupić nieruchomości wskazanej we wniosku?/ Co zrobić gdy właściciel nieruchomości sprzedał ją komuś innemu?
+Jeżeli po złożeniu wniosku (a przed wydaniem decyzji) zrezygnował Pan z chęci zakupu nieruchomości wskazanej we wniosku albo też zbywca nieruchomości sprzedał/ zamierza sprzedać ją komuś innemu, proszę jak najszybciej poinformować MSWiA o tej okoliczności, składając wniosek o umorzenie postępowania. W tej sytuacji Organ zakończy postępowanie wydając decyzję o umorzeniu postępowania, a Pan będzie mógł wystąpić do Centrum Obsługi Podatnika Urzędu m. st. Warszawy z wnioskiem o zwrot wniesionej opłaty skarbowej. Decyzja o umorzeniu postępowania nie zamyka Panu drogi do ubiegania się ponownie w przyszłości o uzyskanie zezwolenia na nabycie nieruchomości położonej w Polsce.
+Czy istnieje gotowy formularz wniosku, jaki obowiązany jest przedłożyć cudzoziemiec ubiegający się o wydanie zezwolenia na nabycie nieruchomości, akcji, udziałów
+w Polsce?
+Nie ma gotowego formularza wniosku. Cudzoziemiec ubiegający się o zezwolenie Ministra winien przygotować wniosek oraz wymagane dokumenty zgodnie z ustawą z dnia
+24 marca 1920 r. o nabywaniu nieruchomości przez cudzoziemców oraz z Rozporządzeniem Ministra Spraw Wewnętrznych z dnia 20 czerwca 2012 r. w sprawie szczegółowych informacji oraz rodzajów dokumentów, jakie jest obowiązany przedstawić cudzoziemiec ubiegający się o wydanie zezwolenia na nabycie nieruchomości (Dz. U. z 2012r., poz. 729);
+Czy cudzoziemiec pochodzący z Unii Europejskiej musi uzyskać zezwolenie na nabycie lokalu mieszkalnego położonego w strefie nadgranicznej?
+Podmioty z Europejskiego Obszaru Gospodarczego nie mają obowiązku ubiegania się o wydanie zezwolenia Ministra na nabycie lokalu mieszkalnego, w tym także lokalu mieszkalnego położonego w strefie nadgranicznej.
+Czy nabycie udziału w gruncie, który jest nabywany wraz z lokalem mieszkalnym wymaga zezwolenia?
+Nabycie udziału w gruncie związanego z prawem własności lokalu mieszkalnego nie wymaga uzyskania zezwolenia Ministra, gdyż jest to prawo przynależne do lokalu i jest z nim ściśle związane (nieruchomość wspólna). Zezwolenia wymaga natomiast nabycie udziałów w odrębnych nieruchomościach tj. np. drogach dojazdowych, częściach osiedli, które nabywane są wraz z lokalem, ale stanowią odrębne nieruchomości, nie wchodzą w skład nieruchomości wspólnej.
+Czy spółka z siedzibą w Polsce, w której większość udziałów mają podmioty cudzoziemskie będzie uważana za przedsiębiorcę unijnego?
+Polska od 1 maja 2004 r. jest członkiem Unii Europejskiej, a zatem każda spółka mająca siedzibę na terytorium RP jest przedsiębiorcą unijnym.
+Jak ustalić czy nieruchomość ma charakter gruntu rolnego?
+O tym, czy dana nieruchomość ma charakter gruntu rolnego organ może rozstrzygnąć tylko w drodze postępowania administracyjnego wszczętego z wniosku o wydanie zezwolenia na nabycie nieruchomości i w oparciu o zgromadzony materiał dowodowy.
+W postępowaniu administracyjnym o wydanie cudzoziemcowi zezwolenia na nabycie nieruchomości minister właściwy do spraw wewnętrznych ustala charakter rolny nieruchomości na podstawie dokumentów przedkładanych wraz z wnioskiem o wydanie zezwolenia, tj.: zaświadczenia z właściwego urzędu gminy o przeznaczeniu nieruchomości w planie zagospodarowania przestrzennego, wypisu z ewidencji gruntów i budynków, decyzji o warunkach zabudowy, decyzji o lokalizacji inwestycji celu publicznego wydanych stosownie do zapisów ustawy z dnia 27 marca 2003r. o planowaniu i zagospodarowaniu przestrzennym, decyzji o wyłączeniu gruntów z produkcji rolniczej wydanej stosownie do zapisów ustawy z dnia 3 lutego 1995 r. o ochronie gruntów rolnych i leśnych oraz klasyfikacji ujawnionej w ewidencji gruntów i budynków stosownie do ustawy z dnia 17 maja 1989 r. Prawo geodezyjne i kartograficzne.
+Ile trwa postępowanie w sprawie o wydanie zezwolenia na nabycie nieruchomości w Polsce?
+Postępowanie w sprawie o wydanie zezwolenia na nabycie nieruchomości w Polsce zgodnie z art. 35 § 3 ustawy z dnia 14 czerwca 1960 r. Kodeks postępowania administracyjnego (Dz. U. z 2018 r., poz. 2096 z późn. zm.), jako postępowanie szczególnie skomplikowane trwa nie dłużej niż dwa miesiące od dnia wszczęcia postępowania, o ile wraz z wnioskiem zostaną złożone wszystkie dokumenty wymagane przepisami prawa zgodnie z ustawą z dnia 24 marca 1920r. o nabywaniu nieruchomości przez cudzoziemców (Dz.U. z 2017 r., poz. 2278) oraz zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych z dnia 20 czerwca 2012 r. w sprawie szczegółowych informacji oraz dokumentów, jakie jest obowiązany przedstawić cudzoziemiec ubiegający się o wydanie zezwolenia na nabycie nieruchomości (Dz. U. z 2012, poz. 729) oraz organy opiniujące konkretną sprawę (obligatoryjnie Minister Obrony Narodowej, Agencja Bezpieczeństwa Wewnętrznego, a w przypadku gruntów rolnych Minister Rolnictwa i Rozwoju Wsi) zajmą stanowisko w terminie do tego przewidzianym. Termin do zajęcia stanowiska przez MON i MRiRW wynosi 14 dni, przez ABW - 30 dni, ale na wniosek organu opiniującego może zostać przedłużony do dwóch miesięcy. Do dwumiesięcznego terminu określonego powyżej nie wlicza się terminów przewidzianych w przepisach prawa dla dokonania określonych czynności, okresów zawieszenia postępowania oraz opóźnień spowodowanych z winy strony (np. konieczność wyjaśnienia rozbieżności pomiędzy treścią wniosku a załączonymi dokumentami, dostarczenia dodatkowych dokumentów itp.) albo z przyczyn niezależnych od organu (art. 35 § 5 kpa). Z uwagi na powyższe w praktyce postępowanie administracyjne prowadzone w ww. zakresie, z uwagi na obszerną korespondencję, konieczność uzyskania opinii innych organów i instytucji może trwać do 2, 3, 4 miesięcy, a w niektórych przypadkach nawet dłużej.
+Należy podkreślić, że sprawy dotyczące zezwoleń na nabywanie nieruchomości przez cudzoziemców należą do kategorii spraw skomplikowanych, co wiąże się z możliwością stosowania wydłużonych terminów ich rozpatrywania w stosunku do ogółu spraw objętych przepisami Kodeksu postępowania administracyjnego.
+Z uwagi na bardzo dużą liczbę wniosków wpływających do Ministerstwa Spraw Wewnętrznych i Administracji o wydanie zezwolenia na nabycie przez cudzoziemców nieruchomości, a także dużą złożoność merytoryczną każdego z tych wniosków oraz związaną z tym konieczność ich wnikliwej i wielopłaszczyznowej analizy, przyjęto zasadę, że nowe wnioski o wydanie zezwolenia na nabycie przez cudzoziemców nieruchomości rozpatrywane są możliwie niezwłocznie, w kolejności według daty ich wpływu do Ministerstwa Spraw Wewnętrznych i Administracji.
+Czy decyzje wydawane przez Ministra Spraw Wewnętrznych i Administracji opatrzone są klauzulą o ostateczności i prawomocności?
+Minister Spraw Wewnętrznych i Administracji stwierdza, iż decyzja jest ostateczna i prawomocna na wniosek strony w drodze wydania stosownego zaświadczenia administracyjnego. Strona może więc wystąpić do MSWiA z wnioskiem o wydanie zaświadczenia administracyjnego.
+Minister Spraw Wewnętrznych i Administracji nie wydaje odpisu decyzji opatrzonego klauzulą, iż jest ona ostateczna i prawomocna.
+W przypadku jeżeli strona wystąpi do MSWiA z wnioskiem o wydanie zaświadczenia administracyjnego, winna uiścić opłatę skarbową w wysokości 17 zł, którą należy wnieść na rzecz Urzędu Miasta Stołecznego Warszawy:
+przelewem na nr konta: 21 1030 1508 0000 0005 5000 0070
+Centrum Obsługi Podatnika
+ul. Obozowa 57
+01-161 Warszawa
+albo gotówką:
+w kasie Centrum Obsługi Podatnika
+ul. Obozowa 57
+01-161 Warszawa.
+lub w kasie Urzędów Dzielnic m.st. Warszawy.
+Wniosek wraz z oryginałem opłaty skarbowej z tytułu zaświadczenia administracyjnego należy złożyć do Ministra Spraw Wewnętrznych i Administracji.
+Informacje o publikacji dokumentu
+Ostatnia modyfikacja:
+27.06.2022 11:15 [editor's name removed]
+Pierwsza publikacja:
+08.11.2018 17:13 [editor's name removed]
+{"register":{"columns":[]}}

@@ -22,6 +22,7 @@
 | [`maps/karta-polaka.md`](maps/karta-polaka.md): the Karta Polaka | Wave 5, matter 18 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-karta-polaka/sources/CHECK.md`) | 14 (KS1–KS14) | 17.10.2026; the settlement benefit on hold since 15.01.2026 (the minister's notice) |
 | [`maps/moving.md`](maps/moving.md): moving, deregistering and leaving Poland, for a foreigner | Wave 6, matter 19 | Sources (R1) and this map; checked by the separate agent on 17.10.2026 and corrected (`research/2026-10-17-moving/sources/CHECK.md`) | 13 (MS1–MS12, MS9a) | 17.10.2026; a CUKR card shows no address (SA art. 42m) |
 | [`maps/business.md`](maps/business.md): registering a business (CEIDG) as a foreigner | Wave 6, matter 20 | Sources (R1) and this map; **not yet checked by the separate agent** | 13 (BS1–BS13) | 17.10.2026; from 1.11.2026 a PESEL and online only for a new business |
+| [`maps/real-estate.md`](maps/real-estate.md): buying real estate in Poland as a foreigner | Wave 6, matter 21 | Sources (R1) and this map; **not yet checked by the separate agent** | 12 (RS1–RS12) | 17.10.2026; a flat in the border zone (Gdańsk, Szczecin…) needs a permit |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 
