@@ -1,7 +1,7 @@
 # Ustawa o cudzoziemcach, Dz.U. 2025 poz. 1079 (consolidated, 25.07.2025): art. 22 ust. 2 (appellate authority), art. 113 (notifying the end of the purpose), art. 230 (card replacement deadlines), art. 235-243 (card fee, exemptions, the 50% relief, validity)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-16, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0. pdftotext -layout.
-# Amendments: Dz.U. 2025 poz. 1794 art. 1 pkt 46 changes only the cross-reference in art. 235 ust. 1-2 and art. 237 ust. 1 ("art. 226" -> "art. 226 pkt 1-5"); it does not touch art. 22, 113, 230, 236, 239-243 (text search of the amendment, 16.10.2026). Dz.U. 2026 poz. 203 adds art. 113c (wave 3, not extracted here).
-# The card fee amount (100 zl) is set by a regulation under art. 239 ust. 1, which is NOT in this folder; the amount here comes from the UdSC fees page (udsc-oplaty-2026-10-16.txt).
+# Amendments: Dz.U. 2025 poz. 1794 art. 1 pkt 46 changes only cross-references, "art. 226" -> "art. 226 pkt 1-5", in art. 231 ust. 1, art. 235 ust. 1-2 and art. 237 ust. 1, from 1.04.2026 (its art. 19 pkt 3); it does not touch art. 22, 113, 230, 236, 239-243 (text search of the amendment, 16.10.2026). Dz.U. 2026 poz. 203 art. 12 pkt 5 adds art. 113c (the stamp duty is not refunded after a refusal or a discontinuance), from 5.03.2026, for every temporary permit, not only wave 3 (corrected after the check of 17.10.2026; text in other-acts-residence-extract.txt).
+# The card fee amount (100 zl) is set by the regulation Dz.U. 2022 poz. 1583 under art. 239 ust. 1, § 2 pkt 1 lit. a; added after the check in other-acts-residence-extract.txt. The UdSC fees page (udsc-oplaty-2026-10-16.txt) gives the same amount.
 
 [art. 22 ust. 2]
      2. Szef Urzędu jest organem wyższego stopnia w rozumieniu przepisów Kodeksu postępowania administracyjnego

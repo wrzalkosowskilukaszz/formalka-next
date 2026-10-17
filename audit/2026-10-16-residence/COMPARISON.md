@@ -28,7 +28,7 @@ Reading the engine's notes found four provisions the draft had missed: art. 225c
 | D13 | Channel | MOS; paper for the art. 106l cases | MOS; paper for `family_abroad`; `paper-scope` separates art. 158 | Agreement | — | — |
 | D14 | A Polish citizen's spouse (RC3) | Art. 158, MOS, 340 zł | No own option; "family" is labelled "połączenie z rodziną", which is art. 159. Fee and channel right | Label mismatch | Low | Finding P5 |
 | D15 | The attachment level for purposes with no third-party attachment (family) | No such step | Shown as available: "Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik" | Noise | Low | Finding P6 |
-| D16 | The end of the purpose (art. 113: notify within 15 working days) | In the plan after the permit | Nothing after the card | **Gap** | Medium–high | No restriction: the case ends at the card, and the lab adds no rule of its own. Finding P7 |
+| D16 | The end of the purpose (art. 113: notify within 15 working days); a lost job on a single permit: in writing, art. 121, with the 30-day protection of art. 123 (added after the check of 17.10.2026) | In the plan after the permit | Nothing after the card | **Gap** | Medium–high | No restriction: the case ends at the card, and the lab adds no rule of its own. Finding P7 |
 | D17 | Work and travel while waiting | Travel: "Nie wiem", and where to ask. Work (added 17.10): it depends on the basis before filing (act on employing foreigners art. 3 ust. 1 pkt 18, ust. 3 pkt 2), the person's own case for the voivode or a lawyer | No notes. The prototype's reader: "czy mogę wyjechać…" and "czy mogę pracować…" get "Nie jestem pewna, co masz na myśli" and the list of what it can help with; "czy mój pobyt jest legalny po złożeniu wniosku?" is routed to the form answer (the word "wniosku") | Safe (no rule claimed), but unhelpful | — | Noted for the reader's next pass; no feature before Phase 1 |
 | D18 | Changes after filing; letters outside MOS | QA 42, 49–52 | `wait-mos-not-channel`, `wait-electronic-address`, the Mazowiecki notes | Agreement | — | — |
 | D19 | Purpose unknown | Every fee and attachment, marked as possibly not applying | The same, with "sprawdź" | Agreement | — | — |
@@ -57,12 +57,12 @@ The rest of the suite ran after these changes: unit tests 26/26; e2e 12/12 in bo
 | # | Finding | Source |
 |---|---|---|
 | P1 | No fact for the end of legal stay, so the filing deadline has no date and no reminder | UOC art. 105 ust. 1 |
-| P2 | The guide never says the MOS account asks for a PESEL and needs a trusted profile. Wave 1 (PESEL) is then a condition of wave 2 | UOC art. 225b ust. 2–3; UdSC QA 2 |
+| P2 | The guide never says the MOS account asks for a PESEL, or how to log in. Wave 1 (PESEL) is then a condition of wave 2. QA 2 says a trusted profile; the act accepts the methods of the informatization act art. 20a ust. 1 (corrected after the check of 17.10.2026: the act does not require a trusted profile as such) | UOC art. 225b ust. 2–3; UdSC QA 2 |
 | P3 | The Polish text of `legal-stay-while-pending` drops the conditions and the exception that its English text and quotes carry; `card-fee-relief` points to "ust. 1" without saying who it covers | UOC art. 108 ust. 1–2, art. 237 |
 | P4 | No step after a refusal: the appeal, its 14 days, where it goes, and that it does not go through MOS | KPA art. 127–129; UOC art. 22 ust. 2; QA 52 |
 | P5 | The "family" option is labelled as reunification (art. 159), which does not describe a Polish citizen's spouse (art. 158) | UOC art. 158–159 |
 | P6 | The attachment level shows for purposes that have no third-party attachment | UOC art. 106 ust. 2, 5, 7 |
-| P7 | Nothing after the card: the duty to notify the end of the purpose within 15 working days | UOC art. 113 |
+| P7 | Nothing after the card: the duty to notify the end of the purpose within 15 working days; for a lost job on a single permit, the written notice and the 30-day protection | UOC art. 113, 121, 123 (art. 121 and 123 added after the check of 17.10.2026) |
 | P8 | The employer's link lasts 30 days; an unsigned application is deleted after 45 days | QA 30; UOC art. 225h |
 | P9 | Nothing on work while the case is pending, although the act on employing foreigners sets when it is allowed (added 17.10) | Act of 20.03.2025 art. 3 ust. 1 pkt 18, ust. 3 pkt 2, as amended by Dz.U. 2025 poz. 1794 art. 11 |
 | P10 | The employer's attachment is required for every business purpose; the act requires it only for board, partner or proxy work (added 17.10) | UOC art. 106 ust. 2 as amended |

@@ -1,7 +1,7 @@
 # Ustawa o cudzoziemcach, tekst jednolity Dz.U. 2025 poz. 1079 (obwieszczenie z 25.07.2025)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, retrieved 2026-10-16, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0
 # Extract: Dział V start, art. 98-112a (temporary residence permit, general rules). pdftotext -layout.
-# NOT the law in force on its own: Dz.U. 2025 poz. 1794 (in force 1.01.2026) rewrites art. 105-106a, adds 106b-106l and changes 104, 107, 108, 112a (see the amendment extract).
+# NOT the law in force on its own: Dz.U. 2025 poz. 1794 art. 1 pkt 9-15 repeals art. 99 ust. 1a, rewrites art. 105-106a, adds 106b-106l and changes 104, 107, 108, 112a, from 27.04.2026 (its art. 19 pkt 2, M.P. 2026 poz. 370; corrected after the check of 17.10.2026, which found "in force 1.01.2026" here) (see the amendment extract). Dz.U. 2026 poz. 203 art. 45 lets a UKR status holder apply under art. 114, 127, 142, 158 ust. 1 and 159 ust. 1 without art. 99 ust. 1 pkt 4 and with special rules (other-acts-residence-extract.txt).
 
                                                         DZIAŁ V
 

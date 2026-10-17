@@ -1,6 +1,6 @@
 # Ustawa o opłacie skarbowej, Dz.U. 2025 poz. 1154 (consolidated, 11.08.2025): Part III items 2-4 (residence permits)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1154/text.pdf, retrieved 2026-10-16, sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac.
-# Amendments after 11.08.2025 (api.sejm.gov.pl, 2026-10-16): 2025/1847, 2025/1795, 2026/912, 2026/846, 2026/875 (from 2027-01-01), 2026/1206 (from 2027-01-11). A text search of 2026/846 and 2026/875 for 'zezwolenie na pobyt' and 'cudzoziem' found nothing; the others' titles concern building, animal health, a metropolitan union and banking (not checked in full).
+# Amendments after 11.08.2025 (api.sejm.gov.pl, 2026-10-16): 2025/1847, 2025/1795, 2026/912, 2026/846, 2026/875 (from 2027-01-01), 2026/1206 (from 2027-01-11). A text search of 2026/846 and 2026/875 for 'zezwolenie na pobyt' and 'cudzoziem' found nothing; the others' titles concern building, animal health, a metropolitan union and banking (not checked in full). The check of 17.10.2026 read all six in full: none touches Part III items 2-2d; Dz.U. 2026 poz. 846 art. 14 makes a refund of stamp duty follow only a request (art. 9 ust. 2-2c), from 1.10.2026. The duty is paid to the municipality, not the voivode (art. 8 ust. 1, 12; other-acts-residence-extract.txt).
 
       III.        Wydanie zezwolenia (pozwolenia, koncesji)
                   1.   Zezwolenie na zawarcie małżeństwa,                   39 zł

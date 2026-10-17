@@ -1,4 +1,4 @@
-# Ustawa z 21.11.2025 o zmianie ustawy o cudzoziemcach oraz niektórych innych ustaw, Dz.U. 2025 poz. 1794 (in force 2026-01-01 per api.sejm.gov.pl)
+# Ustawa z 21.11.2025 o zmianie ustawy o cudzoziemcach oraz niektórych innych ustaw, Dz.U. 2025 poz. 1794 (general date 1.01.2026; the points quoted here, art. 1 pkt 10-17, apply from 27.04.2026 under its art. 19 pkt 2 and M.P. 2026 poz. 370; corrected after the check of 17.10.2026, CHECK.md)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, retrieved 2026-10-16, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11
 # Extract: art. 1 pkt 10-17 (changes to art. 104-120a: the application via MOS, personal appearance, documents, the certificate replacing the stamp, the decision deadline). pdftotext -layout.
 # Check each provision's own entry-into-force date in the amendment's final provisions before relying on it.

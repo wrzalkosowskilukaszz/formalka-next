@@ -1,6 +1,6 @@
 # Mazowiecki UW: Załóż konto do e-Doręczeń - to niezbędne do doręczania pism i komunikacji z nami (dated 20.04.2026 on the page)
 # Source: https://www.gov.pl/web/uw-mazowiecki/zaloz-konto-do-e-doreczen--to-niezbedne-do-doreczania-pism-i-komunikacji-z-nami, retrieved 2026-10-17, html sha256 3f9ce039be6700b6fef3599b5eee0aafb2cd8e8336cf654c465fa732b5a54e45
-# Text of the page's main element; navigation and the photo gallery removed. One voivode's practice, not a national rule.
+# Text of the page's main element; navigation and the photo gallery removed. One voivode's practice, not a national rule. Written before MOS opened (20.04.2026) and in the future tense. A public body delivers to an e-Doręczenia address in the database, otherwise by the hybrid (paper) service (e-delivery act art. 4-5, other-acts-residence-extract.txt), so the box is the office's request, not the only channel.
 
 Powrót
 Załóż konto do e-Doręczeń - to niezbędne do doręczania pism i komunikacji z nami!

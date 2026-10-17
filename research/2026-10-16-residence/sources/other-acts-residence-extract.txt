@@ -1,0 +1,275 @@
+# Other provisions for the residence map and draft reference, added after the independent check of 17.10.2026 (research/2026-10-16-residence/sources/CHECK.md). Each block is verbatim pdftotext -layout output; page headers dropped. Retrieved 2026-10-17 from api.sejm.gov.pl (https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf); each hash below matches the checking agent's own download.
+#   UOC, consolidated Dz.U. 2025 poz. 1079 (base DU/2013/1650), sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0. Later changes to the quoted articles (touched.mjs DU/2013/1650 2025-07-25 --cite 2,113,120,121,122,123,246,247): Dz.U. 2025 poz. 1794 art. 1 pkt 2 adds "art. 58a" to art. 2 pkt 1 only; pkt 23 repeals art. 144 ust. 1 pkt 1 lit. a and pkt 48 adds art. 246 ust. 3, both from 27.04.2026 (1794 art. 19 pkt 2, M.P. 2026 poz. 370). Art. 2 pkt 2-4, 120 ust. 4, 121, 123, 246 ust. 1-2 and 247 are in force as quoted. Dz.U. 2026 poz. 203 art. 12 pkt 5 adds art. 113c from 5.03.2026.
+#   Dz.U. 2025 poz. 1794, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11: art. 19 gives the dates (pkt 2: the day of the announcement, 27.04.2026 under M.P. 2026 poz. 370; pkt 3: 1.04.2026).
+#   Dz.U. 2026 poz. 203, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275: in force 5.03.2026 (art. 54); art. 12, 29 and 45 are not among its exceptions.
+#   The stamp duty act, consolidated Dz.U. 2025 poz. 1154 (base DU/2006/1635), sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac. Art. 8 ust. 1 and 12 ust. 1-2 are not changed by the six later acts listed in oplata-skarbowa-2025-1154-residence-fees-extract.txt; one of them, Dz.U. 2026 poz. 846 (sha256 7bfabbeca53808bca583e8027b8b1e9c3c7e28c24f83fec18977ff51417b24e2), rewrites art. 9 ust. 2 (a refund only on request) from 1.10.2026 (its art. 35).
+#   The card fee regulation, Dz.U. 2022 poz. 1583, sha256 88361bac0734a1f40fd28ab40cd97955b156aa8463d12fbc70d9cc443b300641; in force 29.07.2022 (§ 7); no amendments (amendments.mjs).
+#   The application regulation, Dz.U. 2026 poz. 553, sha256 56ad73becd064acea037fdd001767e688f991a6c088578b2da29a65c52ddc57e; in force on the day set by the 1794 art. 17 announcement, 27.04.2026 (§ 9); no amendments.
+#   The act of 14.07.2006 on EU citizens, consolidated Dz.U. 2025 poz. 1164 (base DU/2006/1043), sha256 91ead21207f82aa7ad08da9633f33d3c71c97a1e0ccb50221ebc1e563fa09dec. Dz.U. 2025 poz. 1794 art. 4 adds art. 2 pkt 2a and changes art. 8; art. 2 pkt 4 lit. b is in force as quoted.
+#   The population register act, consolidated Dz.U. 2026 poz. 384 (base DU/2010/1427), sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb. No later amendment changes art. 18 (touched.mjs DU/2010/1427 2026-03-10 --cite 18).
+#   The e-delivery act, consolidated Dz.U. 2024 poz. 1045 (base DU/2020/2320), sha256 5efb3b1381a7f02be4e7103c05e6d7796ffa40f5e5c053859661311604506b3d. Dz.U. 2024 poz. 1841 and 2026 poz. 507 do not change art. 4 or 5 (touched.mjs DU/2020/2320 2024-07-01 --cite 4,5).
+# Footnote markers printed in the text (such as "14)" or "112)") are the consolidated texts' own notes on earlier amendments.
+
+[UOC art. 2]
+     Art. 2. Ustawy nie stosuje się do:
+1)   członków misji dyplomatycznych i urzędów konsularnych państw obcych oraz innych osób zrównanych z nimi na pod-
+     stawie ustaw, umów lub powszechnie ustalonych zwyczajów międzynarodowych pod warunkiem wzajemności i po-
+     siadania przez te osoby dokumentów potwierdzających pełnienie przez nie funkcji uprawniających do wjazdu na terytorium
+     Rzeczypospolitej Polskiej i pobytu na tym terytorium, z wyjątkiem art. 23, art. 32, art. 58, art. 60–63, art. 66 ust. 4 i 5,
+     art. 67–74, art. 78 ust. 1, art. 79 ust. 1 i 2, art. 80, art. 90–92 oraz art. 96 i art. 97;
+2)   obywateli państw członkowskich Unii Europejskiej, państw członkowskich Europejskiego Stowarzyszenia Wolnego
+     Handlu (EFTA) – stron umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej oraz członków
+     ich rodzin, którzy do nich dołączają lub z nimi przebywają;
+3)   członków rodzin obywateli Rzeczypospolitej Polskiej w rozumieniu art. 2 pkt 4 lit. b ustawy z dnia 14 lipca 2006 r.
+     o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw człon-
+     kowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2024 r. poz. 633 i 1688 oraz z 2025 r. poz. 619), którzy do
+     nich dołączają lub z nimi przebywają;
+4)   obywateli Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o których mowa w art. 10 ust. 1 lit. b i d
+     Umowy o Wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europej-
+     skiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7), zwanej dalej „Umową Wystąpienia”, oraz
+     członków ich rodzin, o których mowa w art. 10 ust. 1 lit. e i f Umowy Wystąpienia, chyba że ustawa stanowi inaczej.
+
+[UOC art. 120 ust. 4]
+      4. Wojewoda odmawia zmiany zezwolenia na pobyt czasowy i pracę w przypadkach, o których mowa w ust. 1 pkt 1,
+jeżeli:
+1)    cudzoziemiec nie spełnia warunków, o których mowa w art. 114 ust. 1 pkt 1, lub
+2)75) podmiot powierzający pracę cudzoziemcowi nie spełnia warunków, o których mowa w art. 114 ust. 1 pkt 3 lub 4, lub
+3)    zachodzą okoliczności, o których mowa w art. 117 pkt 1 lub 2, lub
+4)    wysokość miesięcznego wynagrodzenia nie spełnia warunków określonych w art. 114 ust. 1 pkt 5, lub
+5)    cudzoziemiec zamierza wykonywać pracę w okresie krótszym niż okres ważności zmienianego zezwolenia na pobyt
+      czasowy i pracę, lub
+6)    cudzoziemiec nie powiadomił wojewody o utracie pracy w terminie wskazanym w art. 121 ust. 1.
+
+[UOC art. 121]
+     Art. 121. 1.14) Cudzoziemiec przebywający na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt
+czasowy i pracę zawiadamia pisemnie wojewodę, który udzielił tego zezwolenia, w terminie 15 dni roboczych, o utracie
+pracy u któregokolwiek z podmiotów powierzających pracę cudzoziemcowi, wymienionych w zezwoleniu.
+     2. Jeżeli zezwolenia na pobyt czasowy i pracę udzielił Szef Urzędu w drugiej instancji, zawiadomienie, o którym mowa
+w ust. 1, kieruje się do wojewody, który orzekał w sprawie udzielenia zezwolenia na pobyt czasowy i pracę w pierwszej
+instancji.
+     3. Obowiązek zawiadomienia, o którym mowa w ust. 1, uważa się za spełniony, jeżeli cudzoziemiec w terminie 15 dni
+roboczych złożył wniosek o zmianę zezwolenia na pobyt czasowy i pracę, o którym mowa w art. 120 ust. 1 pkt 1.
+      4.79) Podmiot powierzający pracę cudzoziemcowi wymieniony w zezwoleniu na pobyt czasowy i pracę zawiadamia
+pisemnie wojewodę, który udzielił tego zezwolenia, a w przypadku gdy zezwolenia na pobyt czasowy i pracę udzielił Szef
+Urzędu w drugiej instancji – wojewodę, który orzekał w sprawie udzielenia zezwolenia na pobyt czasowy i pracę w pierw-
+szej instancji, o utracie pracy u niego przez cudzoziemca, któremu udzielono tego zezwolenia, w terminie 15 dni od tego
+zdarzenia.
+
+[UOC art. 123]
+     Art. 123. 1. Przepisów art. 101 pkt 1 i 2 nie stosuje się w okresie 30 dni liczonych od dnia utraty pracy na rzecz pod-
+miotu powierzającego pracę cudzoziemcowi, wymienionego w zezwoleniu:61)
+1)    jeżeli cudzoziemiec wykaże, że dopełnił obowiązku powiadomienia, o którym mowa w art. 121 ust. 1, lub
+2)    jeżeli powiadomienie, o którym mowa w art. 121 ust. 1, nie zostało doręczone wojewodzie z powodów niezależnych
+      od cudzoziemca.
+     2.14) Do utraty pracy u wszystkich podmiotów powierzających pracę cudzoziemcowi, wymienionych w zezwoleniu,
+przepis ust. 1 ma zastosowanie nie więcej niż raz w trakcie ważności zezwolenia.
+     3. Przepisów art. 101 pkt 1 i 2 nie stosuje się do zezwolenia na pobyt czasowy i pracę udzielonego ze względu na cel,
+o którym mowa w art. 114 ust. 1a, jeżeli są spełnione łącznie następujące warunki:
+1)    okres pozostawania cudzoziemca bez pracy nie przekroczył 3 miesięcy w okresie ważności zezwolenia;
+2)    okres pozostawania cudzoziemca bez pracy wystąpił nie więcej niż 2 razy w okresie ważności zezwolenia;
+3)    cudzoziemiec wykaże, że dopełnił obowiązku zawiadomienia, o którym mowa w art. 121 ust. 1, lub że zawiadomienie
+      nie zostało doręczone wojewodzie z powodów niezależnych od cudzoziemca.
+
+[UOC art. 144 ust. 1 (opening and pkt 1 lit. a-b; lit. a repealed from 27.04.2026)]
+     Art. 144. 1. Zezwolenia na pobyt czasowy w celu kształcenia się na studiach udziela się cudzoziemcowi, gdy celem
+jego pobytu na terytorium Rzeczypospolitej Polskiej jest podjęcie lub kontynuacja studiów w jednostce prowadzącej studia
+zatwierdzonej przez ministra właściwego do spraw wewnętrznych, chyba że ta jednostka nie podlega obowiązkowi zatwier-
+dzenia albo w jednostce prowadzącej studia, która nie podlega obowiązkowi zatwierdzenia, w stosunku do której nie została
+wydana decyzja o zakazie przyjmowania cudzoziemców, o której mowa w art. 144a ust. 1, oraz gdy są spełnione łącznie
+następujące warunki:
+1)   cudzoziemiec przedłoży:
+     a)   zaświadczenie jednostki prowadzącej studia o przyjęciu na studia lub o kontynuacji studiów,
+     b)112) dowód uiszczenia opłaty za semestr lub rok studiów, jeżeli podejmuje lub kontynuuje studia odpłatne;
+
+[UOC art. 246 ust. 1-2 and art. 247]
+     Art. 246. 1. Organ właściwy do wydania lub wymiany karty pobytu pobiera odciski linii papilarnych od cudzoziemca,
+który składa wniosek o:
+1)   wydanie pierwszej karty pobytu w przypadku, o którym mowa w art. 229 ust. 4;
+2)   wydanie kolejnej karty pobytu;
+3)   wymianę karty pobytu.
+     2. W przypadku gdy z przyczyn zależnych od organu nie jest możliwe pobranie odcisków linii papilarnych od cudzo-
+ziemca w dniu, w którym nastąpiło jego osobiste stawiennictwo, organ ten wyznacza termin na ich złożenie, nie krótszy niż
+7 dni.
+     Art. 247. Cudzoziemcowi odmawia się wszczęcia postępowania w sprawie wydania karty pobytu lub jej wymiany,
+gdy przy składaniu wniosku o jej wydanie lub wymianę albo w terminie, o którym mowa w art. 246 ust. 2, nie złożył
+odcisków linii papilarnych w celu wydania lub wymiany karty pobytu.
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 23]
+23) w art. 144 w ust. 1 w pkt 1 uchyla się lit. a;
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 48]
+48) w art. 246 dodaje się ust. 3 w brzmieniu:
+           „3. W przypadku gdy pobranie od cudzoziemca odcisków linii papilarnych jest fizycznie niemożliwe, odcisków
+     tych nie pobiera się.”;
+
+[Dz.U. 2025 poz. 1794 art. 19]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+3)   art. 1 pkt 42, 43, 44 lit. a, pkt 45, 46, 51, 59 lit. a tiret pierwsze, pkt 60 lit. a, pkt 61 lit. a i pkt 63, które wchodzą w życie
+     z dniem 1 kwietnia 2026 r.;
+4)   art. 8 pkt 2 i 3, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+[Dz.U. 2026 poz. 203 art. 12 pkt 5 (UOC art. 113c)]
+5)   po art. 113b dodaje się art. 113c w brzmieniu:
+           „Art. 113c. W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt czasowy
+     lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt czasowy, uiszczona należna opłata
+     skarbowa za udzielenie zezwolenia na pobyt czasowy nie podlega zwrotowi.”;
+
+[Dz.U. 2026 poz. 203 art. 29]
+     Art. 29. Przepisy art. 77c, art. 87a, art. 113c, art. 120c, art. 207b, art. 223a ustawy zmienianej w art. 12 stosuje się
+do należnej opłaty skarbowej uiszczonej w związku ze złożeniem wniosku w okresie od dnia wejścia w życie art. 12.
+
+[Dz.U. 2026 poz. 203 art. 45 ust. 1]
+      Art. 45. 1. Do cudzoziemca, którego pobyt na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na podstawie
+art. 106 ust. 1 ustawy zmienianej w art. 4 w brzmieniu nadanym niniejszą ustawą, i który posiada status UKR, nie stosuje się
+art. 99 ust. 1 pkt 4 i art. 131 pkt 8 ustawy zmienianej w art. 12 w zakresie, w jakim przepis ten odwołuje się do udzielenia
+ochrony czasowej, jeżeli ubiega się on o udzielenie:
+1)   zezwolenia na pobyt czasowy i pracę, o którym mowa w art. 114 ust. 1 ustawy zmienianej w art. 12, lub
+2)   zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji, o którym
+     mowa w art. 127 ustawy zmienianej w art. 12, lub
+3)   zezwolenia na pobyt czasowy w celu prowadzenia działalności gospodarczej, o którym mowa w art. 142 ust. 1 lub 3
+     ustawy zmienianej w art. 12, lub
+4)   zezwolenia na pobyt czasowy dla członka rodziny obywatela Rzeczypospolitej Polskiej, o którym mowa w art. 158
+     ust. 1 ustawy zmienianej w art. 12, lub
+5)   zezwolenia na pobyt czasowy w celu połączenia się z rodziną, o którym mowa w art. 159 ust. 1 ustawy zmienianej
+     w art. 12.
+
+[Dz.U. 2026 poz. 203 art. 45 ust. 5]
+     5. W przypadku, o którym mowa w ust. 1, nie stosuje się przepisów art. 106a ust. 1, art. 106b ust. 1 w zakresie, w jakim
+przepis ten odwołuje się do pobierania odcisków linii papilarnych, i art. 106e ust. 1 ustawy zmienianej w art. 12. W uzasad-
+nionych przypadkach wojewoda może w toku postępowania wezwać cudzoziemca do przedłożenia ważnego dokumentu
+podróży lub jego kopii lub do przedłożenia innego dokumentu stwierdzającego tożsamość, jeżeli zachodzi przypadek, o którym
+mowa w art. 106a ust. 2 ustawy zmienianej w art. 12. Cudzoziemiec, o którym mowa w ust. 1, składa wzór podpisu w celu
+umieszczenia go w karcie pobytu na formularzu określonym w przepisach wydanych na podstawie art. 107 ust. 1 ustawy
+zmienianej w art. 12 lub za pomocą udostępnionego przez wojewodę urządzenia umożliwiającego złożenie i odwzoro-
+wanie podpisu.
+      6. Jeżeli w przypadku, o którym mowa w ust. 1, odciski palców cudzoziemca, o którym mowa w ust. 1, nie znajdują się
+w rejestrze, o którym mowa w art. 44c ust. 1 ustawy zmienianej w art. 9, lub nie jest możliwe ich umieszczenie, za pośred-
+nictwem systemu teleinformatycznego, w rejestrze, o którym mowa w art. 428 ust. 1 pkt 2 lit. d ustawy zmienianej w art. 12,
+wojewoda pobiera od tego cudzoziemca odciski palców w sposób określony w przepisach wydanych na podstawie art. 107
+ust. 1 ustawy zmienianej w art. 12 po udzieleniu temu cudzoziemcowi zezwolenia na pobyt czasowy.
+
+[Stamp duty act art. 8 ust. 1]
+      Art. 8. 1. Zapłaty opłaty skarbowej dokonuje się w kasie właściwego organu podatkowego lub na jego rachunek.
+
+[Stamp duty act art. 12 ust. 1, ust. 2 pkt 1]
+      Art. 12. 1. Organem podatkowym właściwym w sprawach opłaty skarbowej jest wójt (burmistrz, prezydent miasta).
+      2. Organem podatkowym właściwym miejscowo w sprawach opłaty skarbowej jest:
+1)    od dokonania czynności urzędowej, wydania zaświadczenia oraz zezwolenia (pozwolenia, koncesji) – organ podatkowy
+      właściwy ze względu na siedzibę organu lub podmiotu, który dokonał czynności urzędowej albo wydał zaświadczenie
+      lub zezwolenie (pozwolenie, koncesję);
+
+[Dz.U. 2026 poz. 846 art. 14 pkt 1 (from 1.10.2026)]
+     Art. 14. W ustawie z dnia 16 listopada 2006 r. o opłacie skarbowej (Dz. U. z 2025 r. poz. 1154, 1795 i 1847) wprowa-
+dza się następujące zmiany:
+1)    w art. 9:
+      a)    ust. 2 otrzymuje brzmienie:
+                 „2. Zwrot opłaty skarbowej następuje na wniosek osoby lub jednostki, która dokonała zapłaty opłaty
+            skarbowej.”,
+      b) po ust. 2 dodaje się ust. 2a–2c w brzmieniu:
+                „2a. Jeżeli wniosek o zwrot opłaty skarbowej jest zasadny, organ podatkowy zwraca opłatę skarbową bez
+            wydawania decyzji, w terminie 2 miesięcy od dnia złożenia wniosku.
+                  2b. Organ podatkowy zwraca opłatę skarbową osobie lub jednostce, która złożyła wniosek o jej zwrot.
+                  2c. Jeżeli opłata skarbowa nie została zwrócona w terminie 2 miesięcy od dnia złożenia wniosku o jej zwrot,
+            oprocentowanie zwrotu opłaty skarbowej przysługuje od dnia złożenia wniosku, w wysokości równej wysokości
+            odsetek za zwłokę od zaległości podatkowych.”;
+
+[Dz.U. 2026 poz. 846 art. 35]
+     Art. 35. Ustawa wchodzi w życie z dniem 1 października 2026 r., z wyjątkiem:
+1)   art. 1 pkt 9, art. 10, art. 18 pkt 1–3 i art. 34, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 8 pkt 4, 5 i pkt 6 lit. a, które wchodzą w życie po upływie 6 miesięcy od dnia ogłoszenia.
+
+[Card fee regulation § 2 pkt 1]
+       § 2. Wysokość opłat wynosi za:
+1)     wydanie lub wymianę:
+       a)   karty pobytu – 100 zł,
+       b) polskiego dokumentu podróży dla cudzoziemca – 350 zł,
+       c)   polskiego dokumentu tożsamości cudzoziemca – 100 zł,
+       d) dokumentu „zgoda na pobyt tolerowany” – 100 zł;
+
+[Card fee regulation § 3, § 4 pkt 1-2]
+    § 3. Przy złożeniu wniosku o wydanie lub wymianę dokumentów, o których mowa w § 1, uiszcza się opłaty za ich
+wydanie lub wymianę w kasie właściwego organu wydającego dokument albo na rachunek bankowy tego organu.
+     § 4. Dokumentami wymaganymi do uzyskania ulgi w opłacie za wydanie lub wymianę karty pobytu, polskiego do-
+kumentu podróży dla cudzoziemca, polskiego dokumentu tożsamości cudzoziemca, tymczasowego polskiego dokumentu
+podróży dla cudzoziemca i dokumentu „zgoda na pobyt tolerowany” są:
+1)    zaświadczenie właściwego organu do spraw pomocy społecznej o korzystaniu w danym czasie ze świadczeń pienięż-
+      nych z pomocy społecznej;
+2)    zaświadczenie potwierdzające pobieranie w danym czasie nauki w szkole ponadpodstawowej lub szkole wyższej;
+
+[Card fee regulation § 6 ust. 2, § 7]
+     2. Jeżeli wniosek o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt
+rezydenta długoterminowego Unii Europejskiej został złożony przed dniem wejścia w życie niniejszego rozporządzenia,
+za wydanie z urzędu pierwszej karty pobytu pobiera się opłatę w wysokości określonej w przepisach dotychczasowych.
+      § 7. Rozporządzenie wchodzi w życie z dniem 29 lipca 2022 r.3)
+
+[Application regulation § 4-6]
+    § 4. Do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy składanego w sposób, o którym mowa
+w art. 106c ust. 1 ustawy, dołącza się plik zawierający fotografię w formacie JPG spełniającą wymogi, o których mowa
+w § 3, o rozdzielczości co najmniej 684 × 883 piksele (szerokość × wysokość) i wielkości nieprzekraczającej 2,5 MB, tak
+aby fotografia zachowywała proporcje odpowiadające fotografii o wymiarach 35 × 45 mm (szerokość × wysokość).
+     § 5. Do wniosków o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy, o których mowa w art. 139a ust. 1
+i art. 139o ust. 1 oraz zezwoleń, o których mowa w art. 159 ust. 1 i art. 160 pkt 1, 3, 4 lub 6 ustawy, udzielanych cudzoziem-
+cowi przebywającemu poza granicami Rzeczypospolitej Polskiej, dołącza się cztery fotografie cudzoziemca.
+    § 6. Dokumenty dołączane do wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy składanego w spo-
+sób, o którym mowa w art. 106c ust. 1 ustawy, w postaci dokumentów elektronicznych lub odwzorowań cyfrowych doku-
+mentów w postaci papierowej, w tym dokumenty niezbędne do potwierdzenia danych zawartych we wniosku o udzielenie
+zezwolenia na pobyt czasowy i okoliczności uzasadniających ubieganie się o udzielenie tego zezwolenia, dołącza się w po-
+staci pliku o wielkości nieprzekraczającej 10 MB w przypadku pojedynczego pliku a suma wielkości wszystkich plików nie
+może przekroczyć 50 MB, przy czym odwzorowania cyfrowe dokumentów w postaci papierowej sporządzone z należytą
+starannością i jakością techniczną umożliwiającą zapoznanie się bez wątpliwości z treścią dokumentu, dołącza się w postaci
+pliku w formacie PDF.
+﻿
+
+[Application regulation § 9]
+    § 9. Rozporządzenie wchodzi w życie z dniem określonym w komunikacie wydanym na podstawie art. 17 ustawy z dnia
+21 listopada 2025 r. o zmianie ustawy o cudzoziemcach oraz niektórych innych ustaw (Dz. U. poz. 1794).2)
+
+[Application regulation, annex 1, item 18]
+    18. Numer PESEL (jeżeli został nadany) /
+         PESEL number (if applicable) / Numéro
+         PESEL (si attribué) / Номер PESEL (если
+         таковой имеется):
+
+[Act of 14.07.2006 art. 2 pkt 4 lit. b (first indent)]
+     b) w przypadku członka rodziny obywatela Rzeczypospolitej Polskiej – cudzoziemca niebędącego obywatelem UE:
+          – małżonka obywatela Rzeczypospolitej Polskiej w przypadku spełnienia łącznie następujących warunków:
+             – – obywatel Rzeczypospolitej Polskiej bezpośrednio przed przyjazdem na terytorium Rzeczypospolitej Pol-
+                 skiej posiadał prawo pobytu powyżej 3 miesięcy lub prawo stałego pobytu w innym państwie członkow-
+                 skim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+                 stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub Zjednoczonym
+                 Królestwie Wielkiej Brytanii i Irlandii Północnej,
+             – – związek małżeński z obywatelem Rzeczypospolitej Polskiej został zawarty przed pobytem w innym pań-
+                 stwie członkowskim Unii Europejskiej, państwie członkowskim Europejskiego Porozumienia o Wolnym
+                 Handlu (EFTA) – stronie umowy o Europejskim Obszarze Gospodarczym, Konfederacji Szwajcarskiej lub
+                 Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej lub w trakcie pobytu w tym państwie,
+             – – obywatel Rzeczypospolitej Polskiej zamierza ponownie zamieszkać na terytorium Rzeczypospolitej Pol-
+                 skiej na stałe,
+
+[Population register act art. 18 ust. 1a]
+    1a.14) Jeżeli osoba, której dotyczy wniosek o nadanie numeru PESEL, określona w art. 7 ust. 2, jest cudzoziemcem nie-
+będącym:
+1)    obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Poro-
+      zumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, obywatelem Konfede-
+      racji Szwajcarskiej bądź członkiem jego rodziny,
+2)    obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+      lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej
+      i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm.15)), bądź członkiem
+      jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy
+– wymagane jest jej osobiste stawiennictwo, z wyjątkiem dzieci urodzonych na terytorium Rzeczypospolitej Polskiej.
+
+[E-delivery act art. 4-5]
+     Art. 4. 1. Podmiot publiczny doręcza korespondencję wymagającą uzyskania potwierdzenia jej nadania lub odbioru
+z wykorzystaniem publicznej usługi rejestrowanego doręczenia elektronicznego na adres do doręczeń elektronicznych wpi-
+sany do bazy adresów elektronicznych.
+     2. W przypadku gdy adres do doręczeń elektronicznych podmiotu niepublicznego nie został wpisany do bazy adresów
+elektronicznych, doręczenie korespondencji następuje na adres do doręczeń elektronicznych, z którego podmiot niepub-
+liczny nadał korespondencję.
+    Art. 5. Podmiot publiczny doręcza korespondencję wymagającą uzyskania potwierdzenia jej nadania lub odbioru
+z wykorzystaniem publicznej usługi hybrydowej w przypadku:
+1)   braku możliwości doręczenia korespondencji na adres do doręczeń elektronicznych zgodnie z art. 4 albo
+2)   gdy posiada on wiedzę, że osoba fizyczna posiadająca adres do doręczeń elektronicznych została pozbawiona wolności.

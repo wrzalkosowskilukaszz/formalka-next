@@ -84,7 +84,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 
 | Map | What it holds | Commit |
 |---|---|---|
-| `maps/residence-temporary.md` | Journey R0–R11, 14 loss points, 24 flow scenarios, the user flow (intake, levels, screens per stage, handoffs, a diagram), the blueprint changes it would need | 0514f2c |
+| `maps/residence-temporary.md` | Journey R0–R11, 14 loss points, 24 flow scenarios, the user flow (intake, levels, screens per stage, handoffs, a diagram), the blueprint changes it would need; checked by the separate agent with the draft reference (`research/2026-10-16-residence/sources/CHECK.md`) | 0514f2c; corrections in the commit after the audit's |
 | `maps/cukr-ukr.md` | Journey U0–U9, 12 loss points, 20 scenarios, a compare card that never recommends, the 4.03.2027 window. Valid as of 17.10.2026; this goes beyond doc 19's sources-only plan for wave 3, at the owner's request | 72a1d57 |
 | `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
 | `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates; every FACT checked once by a separate agent and corrected (`CHECK.md` in the sources) | 7ce207e; corrections b15c72b |

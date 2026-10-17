@@ -1,6 +1,7 @@
 # Temporary residence permit and first residence card: draft reference (NOT independent)
 
 **Status: DRAFT. It needs a migration lawyer's review before any use as a benchmark (doc 19, level R5).**
+- **Checked on 17.10.2026** by the separate agent `.claude/agents/official-fact-checker.md`, at the owner's request (`research/2026-10-16-residence/sources/CHECK.md`). It found a missing rule (losing a job on a single permit, art. 121 and 123), one contradicted inference (the appeal stage is not suspended by art. 100d ust. 1), a wrong payee (the stamp duty goes to the municipality), a missing exclusion (some spouses of Polish citizens, art. 2 pkt 3) and a missing rule on fees (art. 113c). Each was re-read here and corrected; changed in the lab, not independently verified. A second reading by the same kind of tool is not the lawyer's review.
 - **Who wrote it:** Claude, on 16.10.2026, for wave 2 of doc 19. Claude built the case engine and the prototype that this draft will be compared with. In an earlier session it read the engine's residence blueprint and evaluation scenarios, so the draft is **not independent and not blind**.
 - **How it was written:**
   - only from the primary sources in `research/2026-10-16-residence/sources/` (retrieved 16.10.2026, each with its URL and checksum);
@@ -21,7 +22,7 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Id | Source | Version and file (`research/2026-10-16-residence/sources/`) |
 |---|---|---|
 | UOC | Ustawa z 12.12.2013 o cudzoziemcach, consolidated text Dz.U. 2025 poz. 1079 | Legal state of 25.07.2025. `uoc-2025-1079-art98-112a-extract.txt`, `uoc-2025-1079-purposes-and-card-extract.txt`, `uoc-2025-1079-art22-113-card-fees-extract.txt` |
-| AM | Ustawa z 21.11.2025 o zmianie ustawy o cudzoziemcach, Dz.U. 2025 poz. 1794 | `amendment-2025-1794-art104-120a-extract.txt`, `amendment-2025-1794-mos-art225a-225h-extract.txt`, `amendment-2025-1794-card-art226-248-extract.txt`. Entry into force by point (its art. 19): the MOS rules (art. 104–106l, 108 ust. 1 pkt 1 and 3–10, 112a ust. 2 pkt 3, 120a, 225a–225i, 248) from **27.04.2026**; the changes to art. 226–229 from **1.04.2026** |
+| AM | Ustawa z 21.11.2025 o zmianie ustawy o cudzoziemcach, Dz.U. 2025 poz. 1794 | `amendment-2025-1794-art104-120a-extract.txt`, `amendment-2025-1794-mos-art225a-225h-extract.txt`, `amendment-2025-1794-card-art226-248-extract.txt`. Entry into force by point (its art. 19): the MOS rules (art. 104–106l, 108 ust. 1 pkt 1 and 3–10, 112a ust. 2 pkt 3, 120a, 225a–225i, 248) and art. 228 pkt 2 from **27.04.2026**; the other changes to art. 226–229 from **1.04.2026** (corrected after the check of 17.10.2026) |
 | PRACA | Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom, Dz.U. 2025 poz. 621 | Art. 3, with its change by AM art. 11 (from 27.04.2026); later amendments checked, none touches art. 3. `praca-cudzoziemcow-2025-621-art3-extract.txt`. Added on 17.10 (§9) |
 | SA | Ustawa z 12.03.2022 o pomocy obywatelom Ukrainy, consolidated text Dz.U. 2026 poz. 1293 | Legal state of 8.09.2026; no later amendments (16.10.2026). Art. 100d only: `specustawa-ua-2026-1293-art100d-extract.txt`. Added after the comparison (§9) |
 | MP | Komunikat MSWiA, M.P. 2026 poz. 370 | Sets 27.04.2026 for the points listed in AM art. 17. `audit/2026-10-16-round2/reference/sources/uel-amendment-2025-1794-art5-and-mp-2026-370.txt` |
@@ -47,14 +48,14 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Who decides | The voivode competent for the foreigner's place of stay, by decision | UOC art. 104 ust. 1 as amended by AM (FACT) |
 | When to file | "nie później niż w ostatnim dniu jego legalnego pobytu" | UOC art. 105 ust. 1 as amended (FACT). Not for family reunification abroad (art. 106j, FACT) |
 | How to file | Only electronically, through MOS, on the MOS form. Filed any other way, the application is left unexamined, except intra-company transfers (106k) and family members abroad (106l) | UOC art. 106c ust. 1 and 5 (FACT). Since 27.04.2026 (MP, MOS, QA 9). "Nawet jeśli wydrukujesz i wyślesz do wojewody papierowy wniosek, zostanie on pozostawiony bez rozpoznania" (QA 9, FACT). E-mail or e-Doręczenia do not count either (QA 28, FACT) |
-| Cases started before 27.04.2026 | Continue under the old rules; no new MOS application is needed | AM art. 12 (FACT); QA 53 (FACT) |
-| The account | The person opens their own MOS account through login.gov.pl. "Osoby te muszą posiadać profil zaufany." A proxy may not use the person's account or open one for them; a proxy may sit with the person while they fill it in. The account form asks for, among other data, the "numer ewidencyjny … (PESEL)". The voivode helps to set up the account | QA 2, 3, 5 (FACT); UOC art. 225b ust. 2–4 as added by AM, from 27.04.2026 (FACT) |
+| Cases started before 27.04.2026 | Continue under the old rules; no new MOS application is needed. Started means the application reached the office before that day; the posting date does not count | AM art. 12 (FACT); KPA art. 61 § 3 (FACT); QA 53 ("wpłynął", FACT) |
+| The account | The person opens their own MOS account through login.gov.pl. QA 2 says "Osoby te muszą posiadać profil zaufany."; the act asks only for authentication by the methods of the informatization act art. 20a ust. 1 (art. 225b ust. 2), and QA 3 speaks of "wybranej przez Ciebie metody uwierzytelnienia". A proxy may not use the person's account or open one for them; a proxy may sit with the person while they fill it in. The account form asks for, among other data, the "numer ewidencyjny … (PESEL)". The voivode helps to set up the account | QA 2, 3, 5 (FACT); UOC art. 225b ust. 2–4 as added by AM, from 27.04.2026 (FACT) |
 | Unsigned drafts | An application not signed is deleted 45 days after the last change | UOC art. 225h (FACT); QA 20 (FACT) |
 | Signature | A qualified electronic signature or a trusted signature (podpis zaufany); for a minor, a parent signs, and a personal signature is also allowed | UOC art. 106d ust. 3 (FACT). MOS: "konieczne jest posiadanie profilu zaufanego, kwalifikowanego podpisu elektronicznego lub podpisu osobistego" (FACT) |
 | Attachments the person adds | The purpose's attachments; a current photo; a digital copy of **all** pages of a valid travel document | UOC art. 106d ust. 1 (FACT); QA 25, 26 (photo: JPG, at least 684 × 883 px, up to 2.5 MB; other files up to 10 MB, 50 MB in total, QA 23) |
 | Attachments a third party fills in | Work: the employer. Study: the university. Traineeship or volunteering: the organiser. MOS e-mails them a link, valid 30 days; they sign it electronically; MOS blocks filing without it | UOC art. 106 ust. 2, 5, 7, art. 106c ust. 3, art. 106d ust. 4 (FACT); QA 30, 32 (FACT) |
-| Supporting documents | The person **may** attach documents confirming the data and the purpose, as electronic documents or scans. The voivode may later ask for originals | UOC art. 106d ust. 2, art. 106f (FACT) |
-| Fees | Paid before filing, outside MOS, to separate accounts; proof attached. See §2 | FEES (FACT); "pod rygorem zwrotu wniosku" (UWWM, FACT); KPA art. 261 (FACT) |
+| Supporting documents | The person **may** attach documents confirming the data and the purpose, as electronic documents or scans. For documents attached as scans, the voivode calls for the originals ("wzywa") | UOC art. 106d ust. 2, art. 106f (FACT) |
+| Fees | Paid before filing, outside MOS, to separate accounts; proof attached. The stamp duty goes to the municipality where the voivode's office sits; the card fee to the voivode. See §2 | FEES (FACT); "pod rygorem zwrotu wniosku" (UWWM, FACT); KPA art. 261 (FACT); OS art. 6, 8 ust. 1, 12 (FACT); card fee regulation Dz.U. 2022 poz. 1583 § 3 (FACT) |
 | When it counts as filed | When the application and attachments are signed and the person receives the UPO (urzędowe poświadczenie odbioru) | UOC art. 106d ust. 6 (FACT). QA 41: "uznany za złożony w momencie wysłania go do urzędu wojewódzkiego" (FACT) |
 | No undo | A sent application cannot be withdrawn or edited in MOS | QA 40 (FACT) |
 | Help | "Wojewoda zapewnia cudzoziemcowi pomoc przy składaniu wniosku". Without a computer: "możesz uzyskać pomoc w urzędzie wojewódzkim, do którego zamierzasz złożyć wniosek" | UOC art. 106d ust. 7 (FACT); QA 14 (FACT) |
@@ -63,7 +64,7 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Fingerprint and appearance exceptions | No fingerprints under 6; no signature specimen under 13; no call to appear under 6 or with a specialist's certificate (at most 3 months old) | UOC art. 106b ust. 2–3, art. 106h ust. 1 (FACT) |
 | Talking to the office | MOS is not a channel to the voivode, and it does not report calls or case status. Changes after filing (employer, work terms, address, purpose) go by a letter, on paper or to the voivode's e-Doręczenia address | QA 42, 43, 49, 50 (FACT) |
 | Case status | By phone: Mazowiecki runs a Migrant Contact Center at (22) 695 67 73, which reads out a case's status from its number | UWMAZ (FACT, one voivode) |
-| One voivode's practice after MOS (Mazowiecki) | Cases filed through MOS are conducted only electronically. An e-Doręczenia box is needed for calls, appointment information and the card pickup date, and for sending missing documents. The page's steps: get a PESEL, set up a trusted profile, then an e-Doręczenia address. Paper originals must first be certified electronically by a notary, legal adviser or advocate; the desk takes only fingerprints and checks the passport | UWMAZ e-Doręczenia page (FACT, one voivode, 20.04.2026) |
+| One voivode's practice after MOS (Mazowiecki) | Cases filed through MOS are conducted only electronically. An e-Doręczenia box is needed for calls, appointment information and the card pickup date, and for sending missing documents. The page's steps: get a PESEL, set up a trusted profile, then an e-Doręczenia address. Paper originals must first be certified electronically by a notary, legal adviser or advocate; the desk takes only fingerprints and checks the passport | UWMAZ e-Doręczenia page (FACT as the page's words, one voivode, 20.04.2026: written before MOS opened, in the future tense). Without an e-Doręczenia address an office delivers by the hybrid (paper) service (e-delivery act art. 4–5, FACT), so the box is the office's request, not the only channel |
 
 **INFERENCE (wave 1 meets wave 2):** the MOS account form asks for a PESEL number (art. 225b ust. 3 pkt 6, FACT), and QA 2 requires a trusted profile. The PESEL guide's public questions record that PESEL "unlocks" the trusted profile (`research/2026-10-16-service/PUBLIC-QUESTIONS.md` Q8). A newcomer without PESEL is therefore, very likely, unable to open a MOS account and so to file. **OPEN-R1** (high harm: they find out on the last day of legal stay): whether PESEL is strictly required, and what a person without one does.
 
@@ -77,11 +78,12 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Seasonal work (art. 185a) | 170 zł | OS item 2c (FACT). Out of scope |
 | Art. 181 ust. 1 pkt 1 and 3 | 85 zł | OS item 2a (FACT). Out of scope |
 | Changing a single permit (art. 120 ust. 1) | 220 zł | OS item 2d (FACT) |
-| Issuing the residence card | 100 zł | FEES, MOS (FACT). Set by the regulation under UOC art. 239 ust. 1, not consulted |
+| Issuing the residence card | 100 zł, paid when applying, at the issuing office's cash desk or to its account | Card fee regulation Dz.U. 2022 poz. 1583 § 2 pkt 1 lit. a, § 3 (FACT, in force 29.07.2022, no amendments); FEES, MOS (FACT) |
 | Card fee relief | 50%: for a person in a difficult financial situation; for a person whose purpose is study at a secondary school or university; for a minor under 16 on the day of the permit application (for the first card) | UOC art. 237 ust. 1–2 (FACT). **INFERENCE:** 50 zł for a student. **OPEN-R2:** whether the relief applies by itself or needs a request, and what proof MOS expects |
 | Card fee exemptions | First card for a refugee, subsidiary protection, humanitarian stay; permits under art. 186 ust. 1 pkt 8 or 9; others | UOC art. 236 ust. 1 (FACT) |
 | Account numbers | Each voivode's own, on its website | FEES (FACT). The app must link to the voivode's page and never show an account number |
-| If the stamp duty is not paid in advance | A call to pay within 7–14 days; unpaid, the application is returned by an order (postanowienie), which can be challenged (zażalenie) | KPA art. 261 § 1–3 (FACT); UWWM (FACT) |
+| If the stamp duty is not paid in advance | A call to pay within 7–14 days; unpaid, the application is returned by an order (postanowienie), which can be challenged (zażalenie). The office must still deal with it when social reasons or the party's important interest require, when filing meets a final deadline (termin zawity), or when the filer lives abroad | KPA art. 261 § 1–4 (FACT); UWWM (FACT) |
+| After a refusal or a discontinuance | The stamp duty paid is not refunded (for applications filed from 5.03.2026) | UOC art. 113c, added by Dz.U. 2026 poz. 203 art. 12 pkt 5; its art. 29 (FACT; added after the check of 17.10.2026). From 1.10.2026 any refund of stamp duty follows only a request (OS art. 9 ust. 2 as given by Dz.U. 2026 poz. 846 art. 14, FACT) |
 
 ## 3. Deadlines and their legal basis
 
@@ -95,11 +97,12 @@ Labels: FACT (quoted or read from a source below), INFERENCE, OPEN (the sources 
 | Call to remedy formal defects | At least 7 days, or the application is left unexamined | KPA art. 64 § 2 (FACT), named in UOC art. 106e ust. 2 | As above |
 | Call to pay the fee | 7 to 14 days | KPA art. 261 § 1 (FACT) | As above |
 | Decision | 60 days, from the last of: an application without formal defects (or remedied); the documents under 106f filed, or that deadline lapsed. **Until 4.03.2027 the voivode's time limits in these cases do not run** (they do not start, and a running one is suspended) | UOC art. 112a ust. 1–2 as amended (FACT). Ust. 2 pkt 1 (personal appearance) repealed by AM from 27.04.2026 (FACT). KPA art. 35 § 5 (FACT). SA art. 100d ust. 1 (FACT), added after the comparison (§9) | **No date.** Until 4.03.2027 there is no running time limit at all; after it, the start depends on events only the office knows (INFERENCE) |
-| Appeal stage | 90 days; suspended in the same way until 4.03.2027 (INFERENCE: SA art. 100d ust. 1 covers "bieg terminów na załatwienie spraw", which includes the appeal stage's time limit; a lawyer to confirm) | UOC art. 112a ust. 4 (FACT); SA art. 100d (FACT) | No date, as above |
+| Appeal stage | 90 days for the Szef UdSC. Art. 100d ust. 1 does not suspend it: it applies "w postępowaniach prowadzonych przez wojewodę", and the appeal is decided by the Szef UdSC (corrected after the check of 17.10.2026; the earlier INFERENCE was contradicted by the text). Whether ust. 3–4 (no inactivity remedies) reach the appeal stage: OPEN, a lawyer | UOC art. 112a ust. 4, art. 22 ust. 1 pkt 1, ust. 2 (FACT); SA art. 100d ust. 1, 3, 4 (FACT) | No date, as above |
 | Appeal | 14 days from delivery of the decision | KPA art. 129 § 2 (FACT). INFERENCE: UOC sets no other term for a voivode's residence decision. Searched the whole UOC text and AM (lines joined) for an appeal term "w terminie … dni": the 7-day terms are all Border Guard matters (art. 245 ust. 7a, 277 ust. 3a, 321 ust. 2, 341 ust. 2, 355 ust. 3, 357 ust. 4), and the 14-day terms are requests for re-examination of visa decisions (art. 42, 76, 93); none concerns a voivode's permit decision | The date, if the person gives the delivery date; the KPA rules for counting |
 | Restoring a missed deadline | Request within 7 days of the cause ending, doing the act at the same time; only if not at fault | KPA art. 58 (FACT) | The rule; a lawyer for the person's own case |
 | Ponaglenie | Only after the deadline (art. 35 or a special one) has passed; filed earlier, it is left unexamined. **Until 4.03.2027** the provisions on inactivity do not apply to these cases, and delays in that period cannot ground remedies for inactivity or excessive length | KPA art. 37 § 1, 3a (FACT); SA art. 100d ust. 3–4 (FACT) | Not as an available step until 4.03.2027; the special act's rule, and free legal aid or a lawyer for the person's own case |
 | End of the purpose | Notify the voivode who granted the permit within 15 working days of the reason ceasing | UOC art. 113 ust. 1 (FACT). **OPEN-R5:** when counting starts, and what counts as a working day | "Zawiadom od razu", without a computed date |
+| Losing a job on a single permit (residence and work) | Notify the voivode who granted the permit **in writing**, within 15 working days, of losing the job with any employer named in the permit; filing a change application within that time also meets the duty. The employer notifies too, within 15 days. If the person shows they notified, the permit is not revoked for the purpose ceasing for 30 days from losing the job (once per permit). Not notifying in time is a ground to refuse a change of the permit | UOC art. 121 ust. 1, 3, 4; art. 123 ust. 1–2; art. 120 ust. 4 pkt 6 (FACT; added after the check of 17.10.2026) | "Zawiadom na piśmie od razu", without a computed date |
 | Card replacement | Within 14 days of the reason (for example, a change of data) | UOC art. 230 ust. 1 (FACT). Filed on paper (QA 54, FACT). Out of scope | Mention only |
 
 KPA counting, for an office's deadline (FACT, KPA art. 57):
@@ -139,7 +142,7 @@ Applying this to one person's history is for a lawyer or the voivode (OPEN-R6, n
 | Collecting the card | In person, showing a valid travel document (or, exceptionally, another identity document). Not in person when the call to appear was waived under art. 106h. For a child under 13, a parent collects it; a child aged 6 or more must be present | UOC art. 248 ust. 1, 2, 2a, 4, 5 as amended, from 27.04.2026 (FACT) |
 | When the card is ready, and how the person learns | **OPEN-R9.** Not in our sources | — |
 | Card validity | The permit's period | UOC art. 243 ust. 1 pkt 1 (FACT) |
-| End of the purpose | Notify the voivode within 15 working days (art. 113). The permit is revoked when its purpose has ceased (art. 101 pkt 1) | UOC art. 113, art. 101 (FACT). The app says to notify and to get advice; it never predicts revocation |
+| End of the purpose | Notify the voivode within 15 working days (art. 113); for a lost job on a single permit, in writing under art. 121, with the 30-day protection of art. 123. The permit is revoked when its purpose has ceased (art. 101 pkt 1) | UOC art. 113, 121, 123, 101 (FACT). The app says to notify and to get advice; it never predicts revocation |
 | Changing a single permit | The person may apply to change it, on paper, for 220 zł; some changes need no new permit (art. 119) | UOC art. 120, 120a ust. 1 as amended (FACT); OS 2d (FACT). **OPEN-R10:** which changes of job need a change; art. 119 not extracted in full |
 
 ## 6. Reference cases (fictional)
@@ -156,7 +159,7 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
   2. A MOS account (QA 2).
   3. The employer's attachment through the link: give the employer's e-mail; the link lasts 30 days (QA 30).
   4. A photo and a scan of all passport pages.
-  5. Pay 440 zł stamp duty and 100 zł for the card, to the voivode's two accounts, and attach both proofs.
+  5. Pay 440 zł stamp duty (to the municipality where the voivode's office sits, OS art. 8 ust. 1, 12) and 100 zł for the card (to the voivode, card fee regulation § 3), and attach both proofs. (Corrected after the check: it said "the voivode's two accounts".)
 - **Filing:** by 30.11.2026 at the latest; the plan says to start early because of the employer's attachment (MOS). The UPO is the proof of filing.
 - **After:** the certificate from MOS; a call to appear (≥7 days); maybe a call for documents (≥14 days); a decision within 60 days of the later event (no date); the card collected in person.
 - **Never:**
@@ -170,13 +173,14 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 - **Facts:** the legal stay ends on a date the person gives; admitted to a university.
 - **Office:** the Małopolski voivode.
 - **Channel:** MOS; the university's attachment (art. 106 ust. 7).
-- **Fees:** 340 zł stamp duty. The card is 100 zł, or 50 zł with the art. 237 relief (INFERENCE; OPEN-R2).
-- **Conditions the person must meet (art. 144 ust. 1):** health insurance or proof of cover, and sufficient means. The plan names them; it does not judge them.
+- **Fees:** 340 zł stamp duty. The card is 100 zł, or 50 zł with the art. 237 relief (INFERENCE; OPEN-R2); the proof for the relief is a certificate of study (card fee regulation § 4 pkt 2, FACT).
+- **Conditions the person must meet (art. 144 ust. 1):** a university approved by the minister (unless it need not be, and is not barred); for paid studies, proof that the fee for the semester or year is paid (pkt 1 lit. b); health insurance or proof of cover; sufficient means. The university certificate of pkt 1 lit. a was repealed from 27.04.2026 (AM art. 1 pkt 23). The plan names them; it does not judge them.
 - **Never:** a fixed 100 zł with no mention of the relief; a statement that the means are enough.
 
 ### RC3. Spouse of a Polish citizen, in Poland
 
 - **Facts:** married to a Polish citizen; in Poland on a visa.
+- **First check (added after the check of 17.10.2026):** the act on foreigners does not apply to the spouse when the Polish citizen lived for more than 3 months in another EU, EEA, Swiss or UK state just before coming back, married before or during that stay, and returns to live in Poland for good, or was before a citizen of such a state (UOC art. 2 pkt 3 with the act on EU citizens art. 2 pkt 4 lit. b, FACT). Then the EU citizens' rules apply instead. The plan asks.
 - **Office:** the voivode of the place of stay.
 - **Channel:** MOS. Art. 158 is not among the paper exceptions (art. 106c ust. 5 with 106k–106l; QA 9). No third-party attachment.
 - **Fees:** 340 zł plus 100 zł.
@@ -187,14 +191,14 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 
 - **Facts:** a foreigner living in Poland on a permit that qualifies under art. 159 ust. 1 pkt 1 applies for a spouse who lives abroad.
 - **Who files, and how:** the family member in Poland, **on paper**, on the art. 106l form.
-  - Attachments: a copy of the spouse's travel document, the spouse's photo, and the spouse's consent on the official form (unless the filer is the spouse's legal representative), plus the documents confirming the data and the circumstances.
+  - Attachments: a copy of the spouse's travel document, four photos of the spouse (application regulation Dz.U. 2026 poz. 553 § 5, FACT), and the spouse's consent on the official form (unless the filer is the spouse's legal representative), plus the documents confirming the data and the circumstances.
   - If the first three are missing, the voivode calls for them with at least 14 days.
   - Art. 106l ust. 1–5 (FACT).
 - **Office:** the voivode of the place of stay of the family member in Poland (art. 104 ust. 1b, FACT).
 - **No filing deadline under art. 105** (art. 106j, FACT); no fingerprints from the person abroad (106l ust. 7, FACT).
 - **The 60 days** run from the later of a complete application and the documents (art. 112a ust. 3a, FACT), but not until 4.03.2027 (SA art. 100d).
-- **The first card is issued on the person's application**, not ex officio (art. 229 ust. 4 pkt 1, FACT). **OPEN-R14:** how and where that application is made.
-- **Fees:** 340 zł; the card 100 zł (FEES lists it for MOS applications; **OPEN-R12:** when and how the card fee is paid on the paper route).
+- **The first card is issued on the person's application**, not ex officio (art. 229 ust. 4 pkt 1, FACT). The office takes the person's fingerprints at that application, and refuses to start the card case without them (art. 246 ust. 1 pkt 1, art. 247, FACT). **OPEN-R14:** where that application is made.
+- **Fees:** 340 zł; the card 100 zł, paid when applying for the card, to the issuing office (card fee regulation § 3, FACT). **OPEN-R12:** narrowed to the practice on the paper route.
 - **OPEN-R13:** how the paper application is delivered ("na dotychczasowych zasadach": in person, by post, or both), and how the spouse later enters Poland and collects the card.
 - **Never:** a MOS step, or "you file it yourself".
 
@@ -253,7 +257,7 @@ Each case gives what a correct plan must contain. "Never" lists what a plan must
 ### RC11. The job ends after the permit was granted
 
 - **Plan:**
-  - notify the voivode who granted the permit within 15 working days (art. 113), right away;
+  - on a single permit, notify the voivode who granted the permit in writing within 15 working days of losing the job (art. 121 ust. 1), right away; the employer notifies too (ust. 4); a timely notice protects the permit for 30 days (art. 123);
   - a lawyer for what follows (art. 101);
   - a new job may need a change of the permit (art. 120, OPEN-R10).
 - **Never:** a computed date (OPEN-R5); "Twoje zezwolenie wygaśnie".
@@ -273,14 +277,14 @@ The card fee is 100 zł in each case (FEES). Art. 181 and 185a themselves were n
 
 | Id | Question | Harm if guessed wrong | Restriction in the app until a source settles it |
 |---|---|---|---|
-| OPEN-R1 | Can a newcomer without PESEL open a MOS account (QA 2 requires a trusted profile)? | **High:** the person learns on the last day that they cannot file | The plan names the trusted profile as the first step and says "sprawdź to wcześniej"; it never says the account takes minutes |
-| OPEN-R2 | Is the 50% card relief automatic or on request; what proof does MOS expect? | Low–medium: a wrong amount, a call to pay more | Show 100 zł and the relief as a possibility with art. 237, not a fixed 50 zł |
+| OPEN-R1 | Can a newcomer without PESEL open a MOS account? QA 2 says a trusted profile is needed; the act asks for authentication under the informatization act art. 20a ust. 1 (art. 225b ust. 2). The account form lists PESEL (225b ust. 3 pkt 6), while the application form asks for it "(jeżeli został nadany)" (application regulation Dz.U. 2026 poz. 553, annex 1, item 18). A non-EU foreigner applies for a PESEL in person (population register act art. 18 ust. 1a) | **High:** the person learns on the last day that they cannot file | The plan names the trusted profile as the first step and says "sprawdź to wcześniej"; it never says the account takes minutes |
+| OPEN-R2 | Is the 50% card relief automatic or on request? Narrowed after the check: the card fee regulation § 4 names the proofs (for a student, a certificate of study) | Low–medium: a wrong amount, a call to pay more | Show 100 zł and the relief as a possibility with art. 237, not a fixed 50 zł |
 | OPEN-R3 | Resolved after the comparison: UOC art. 225c (§9) | — | — |
 | OPEN-R4 | Does the last day of legal stay move off a weekend or holiday? | **High:** illegal stay | Never move it; reminders before it |
 | OPEN-R5 | When the 15 working days of art. 113 start, and which days count | Medium | No computed date: "zawiadom od razu" |
 | OPEN-R6 | Narrowed (17.10): the rules are in PRACA art. 3; what remains open is how they apply to one person's history | **High:** illegal work, or work stopped for nothing | The rule that it depends on the basis before filing, plus where to ask; never "możesz pracować" or "nie możesz" |
 | OPEN-R7 | Travel abroad while the case is pending | **High** | "Nie wiem", plus where to ask |
-| OPEN-R8 | How calls arrive (post, e-Doręczenia, e-mail). Narrowed for Mazowiecki (17.10): to the e-Doręczenia box. Other voivodes not checked | **High:** a missed call discontinues the case | Say that MOS does not report calls (QA 43) and that the address for service matters (QA 51) |
+| OPEN-R8 | How calls arrive (post, e-Doręczenia, e-mail). Mazowiecki asks for an e-Doręczenia box (its page of 20.04.2026); by the e-delivery act art. 4–5 an office without such an address delivers by the hybrid (paper) service. Other voivodes not checked | **High:** a missed call discontinues the case | Say that MOS does not report calls (QA 43) and that the address for service matters (QA 51) |
 | OPEN-R9 | When the card is ready and how the person learns. Mazowiecki: the pickup date comes to the e-Doręczenia box (17.10) | Low | No date |
 | OPEN-R10 | Which changes of job need a change of the single permit (art. 119–120) | **High** | A lawyer; no rule from the app |
 | OPEN-R11 | Supporting documents per purpose | Medium: delay, a call for documents | No document list beyond what the act and MOS name; the voivode's page as a link |
