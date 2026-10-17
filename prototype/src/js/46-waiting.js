@@ -20,14 +20,16 @@ const WAIT_NOTES = {
   more: ['wait-mos-no-status', 'wait-udsc-line', 'wait-file-inspection'],
 };
 const waitNotes = (c) => plan(c).levels.flatMap((l) => l.notes).filter((n) => n.id.startsWith('wait-'));
+// Residence COMPARISON D8: while the registry carries the special act's suspension (art. 100d), it leads
+// the decision-stage answer, and free legal aid, not the ponaglenie template, is the primary action. When
+// the registry drops the note, the answer goes back to leading with the ponaglenie.
+const suspensionNote = (c) => plan(c).levels.flatMap((l) => l.notes).find((n) => n.id === 'decision-time-suspended');
 const hasWaiting = (c) => !!E.fact(WAIT_FACT) && waitNotes(c).some((n) => n.id.startsWith('wait-ponaglenie'));
 
 // A note in the registry's words. A statement that stops at a colon ("Ponaglenie wnosi się:") is never
 // shown cut: its own quotes complete it (audit F8: a quote cut mid-condition is not an instruction).
 function waitNoteHTML(n) {
-  const s = n.statement.value.pl.trim();
-  const rest = s.endsWith(':') ? n.statement.quotes.map((q) => q.text.trim()).filter((t) => t !== s) : [];
-  return `<li><span>${esc([s, ...rest].join(' '))}${n.outcome === 'unknown' ? ' <em class="maybe">sprawdź, czy Cię dotyczy</em>' : ''}</span>
+  return `<li><span>${esc(noteText(n))}${n.outcome === 'unknown' ? ' <em class="maybe">sprawdź, czy Cię dotyczy</em>' : ''}</span>
     ${n.statement.quotes?.length ? `<span class="src">${icon('info')} ${srcLink(n.statement.quotes)}</span>` : ''}</li>`;
 }
 const waitList = (c, ids) => {
@@ -38,9 +40,10 @@ const waitList = (c, ids) => {
 function waitActions(c, stage) {
   const A = [];
   const tpl = waitNotes(c).find((n) => n.id === 'wait-ponaglenie-template');
-  if (stage !== 'card' && tpl?.statement.quotes?.[0]) A.push({ kind: 'link', url: tpl.statement.quotes[0].page, label: 'Oficjalny wzór ponaglenia', ic: 'file-text', primary: true });
+  const suspended = !!suspensionNote(c);
+  if (stage !== 'card' && tpl?.statement.quotes?.[0]) A.push({ kind: 'link', url: tpl.statement.quotes[0].page, label: 'Oficjalny wzór ponaglenia', ic: 'file-text', primary: !suspended });
   const aid = E.procedure(plan(c).route.candidates[0]?.procedureId || 'temporary-residence')?.handoff?.options?.find((o) => o.link?.url);
-  if (aid) A.push({ kind: 'link', url: aid.link.url, label: aid.name?.pl ?? 'Nieodpłatna pomoc prawna' });
+  if (aid) A[suspended ? 'unshift' : 'push']({ kind: 'link', url: aid.link.url, label: aid.name?.pl ?? 'Nieodpłatna pomoc prawna', primary: suspended });
   return A;
 }
 function waitStageHTML(c, stage) {
@@ -49,9 +52,12 @@ function waitStageHTML(c, stage) {
     return `<p>W naszych przewodnikach ponaglenie jest opisane dla etapu decyzji, nie dla odbioru karty. O karcie mówią:</p>${waitList(c, notes.main)}`;
   }
   const tpl = waitNotes(c).find((n) => n.id === 'wait-ponaglenie-template');
-  return `<p>Na zwłokę urzędu przepisy przewidują ponaglenie. Oto, co mówią przepisy, w ich brzmieniu:</p>${waitList(c, notes.main)}
+  const sus = suspensionNote(c);
+  const lead = sus ? `<p>Najpierw przepis szczególny o terminach wojewody, w jego brzmieniu:</p><ul class="wait-notes suspension">${waitNoteHTML(sus)}</ul>
+    <p>Na zwłokę urzędu przepisy przewidują też ponaglenie. Oto, co o nim mówią, w ich brzmieniu:</p>` : '<p>Na zwłokę urzędu przepisy przewidują ponaglenie. Oto, co mówią przepisy, w ich brzmieniu:</p>';
+  return `${lead}${waitList(c, notes.main)}
     ${tpl ? `<p class="meta">Wzór ponaglenia jest na ${srcLink(tpl.statement.quotes)}; strona podaje: „${esc(tpl.statement.quotes.find((q) => /bezpłatna/.test(q.text))?.text ?? '')}”</p>` : ''}
-    <details class="wait-caveat"><summary>${icon('warning-circle')} Ważne: przepis szczególny (art. 100d) i jak czytają go urzędy i RPO</summary>${waitList(c, notes.caveat)}</details>
+    <details class="wait-caveat"><summary>${icon('warning-circle')} ${sus ? 'Jak ten przepis szczególny (art. 100d) czytają urzędy, RPO i sądy' : 'Ważne: przepis szczególny (art. 100d) i jak czytają go urzędy i RPO'}</summary>${waitList(c, notes.caveat)}</details>
     <p class="meta">Nie oceniam, czy ponaglenie ma sens w Twojej sprawie. Pomoże w tym bezpłatna pomoc prawna.</p>`;
 }
 

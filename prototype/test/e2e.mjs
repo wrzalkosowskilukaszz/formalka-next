@@ -76,7 +76,9 @@ async function checkScreen(page) {
       .filter((el) => !el.closest('.msg.me') && el.offsetParent !== null)
       .map((el) => el.textContent).join('\n').toLowerCase();
     return {
-      overflow: [document.documentElement.scrollWidth > innerWidth ? `page ${document.documentElement.scrollWidth} > ${innerWidth}: ${[...document.querySelectorAll('body *')].filter((el) => el.getBoundingClientRect().right > innerWidth + 1).slice(0, 3).map((el) => `${el.tagName}.${el.className}`).join(', ')}` : '', ...[...document.querySelectorAll('.screen, .sheet, .dock, .lock')]
+      // The page gets the same 1 px tolerance as the elements: a sub-pixel width rounds up while the window
+      // resizes (E, 1281 > 1280 with no element past 1281); a real overflow lists the element that causes it.
+      overflow: [document.documentElement.scrollWidth > innerWidth + 1 ? `page ${document.documentElement.scrollWidth} > ${innerWidth}: ${[...document.querySelectorAll('body *')].filter((el) => el.getBoundingClientRect().right > innerWidth + 1).slice(0, 3).map((el) => `${el.tagName}.${el.className}`).join(', ')}` : '', ...[...document.querySelectorAll('.screen, .sheet, .dock, .lock')]
         .filter((el) => el.scrollWidth > el.clientWidth + 1).map((el) => `${el.className}: ${el.scrollWidth} > ${el.clientWidth}`)].filter(Boolean).join('; '),
       emptyIcons: [...document.querySelectorAll('.icon')].filter((i) => !i.innerHTML.trim()).length,
       never: never.filter((p) => shown.includes(p.toLowerCase())),
@@ -95,6 +97,7 @@ async function checkScreen(page) {
           if (!document.querySelector('#case-body .hero')) miss.push('Teraz: the current step');
           if (c.pendingFix && !document.querySelector('#case-body .mock-note.recheck')) miss.push('Teraz: the pending correction');
           if (STUDY && !/Zakres badania/.test(txt('#case-body'))) miss.push('Teraz: the study scope');
+          if (c.bpId === 'residence-card' && !/Karta pobytu w makiecie/.test(txt('#case-body .scope-note'))) miss.push('Teraz: the residence scope');
         }
         if (S.screen === 'case' && c?.state.approved && S.view === 'map') {
           const cards = [...document.querySelectorAll('#case-body .tl-card')];
@@ -634,6 +637,13 @@ await scenario('G-waiting-for-office', {}, async (t, page) => {
   assert.equal(await answer.locator('a.act[href="https://www.biznes.gov.pl/pl/portal/ou590"]').count(), 1, 'the official template, linked');
   assert.match(await answer.innerText(), /art\. 100d/, 'the special provision is flagged');
   assert.match(await answer.innerText(), /Nie oceniam, czy ponaglenie ma sens/);
+  // Residence COMPARISON D8: while the registry carries art. 100d, it leads, in full and not folded away,
+  // and free legal aid is the primary action, not the ponaglenie template.
+  const said = await answer.innerText();
+  assert.ok(said.indexOf('W okresie do dnia 4 marca 2027 r.') >= 0 && said.indexOf('W okresie do dnia 4 marca 2027 r.') < said.indexOf('Ponaglenie wnosi się'), 'the suspension comes before the ponaglenie');
+  assert.ok(await answer.locator('.wait-notes.suspension').isVisible(), 'the suspension is not folded away');
+  assert.equal(await answer.locator('a.act.act-primary', { hasText: 'Nieodpłatna pomoc prawna' }).count(), 1, 'free legal aid is primary');
+  assert.equal(await answer.locator('a.act.act-primary', { hasText: 'Oficjalny wzór ponaglenia' }).count(), 0, 'the template is not primary');
   await t.shot('waiting-answer');
   // The plan waits until the person wants it; typing later resumes the questions.
   await t.q(/Ułożyć plan całej sprawy/);
@@ -650,6 +660,39 @@ await scenario('G-waiting-for-office', {}, async (t, page) => {
   await page.press('#home-t', 'Enter');
   await t.q(/Na co teraz czekasz/);
   assert.equal(await page.locator('.toast').count(), 0, 'no toast instead of an answer');
+});
+
+/* ── J: the residence card says what it does not cover (audit/2026-10-16-residence/COMPARISON.md) ── */
+await scenario('J-residence-scope', {}, async (t, page) => {
+  await page.locator('[data-type="residence-card"]').click();
+  await t.autoIntake([[/W jakim celu/, /^Praca/], [/miejscowości/, /Warszawa/]]);
+  await t.approvePlan(false);
+  await t.nav('#chat-back', 'case');
+  // D1, D2, D9: no reminder for dates the case does not know, the MOS account, and the refusal.
+  const scope = await page.locator('.scope-note').innerText();
+  assert.match(scope, /Karta pobytu w makiecie[\s\S]*nie jest jeszcze niezależnie sprawdzona/);
+  assert.match(scope, /nie przypomni/);
+  assert.match(scope, /konto w MOS/);
+  assert.match(scope, /decyzji odmownej/);
+  await t.shot('residence-scope');
+  // D5: the legal-stay note carries its conditions and its exception, in the registry's words.
+  await page.evaluate(() => openLevel(S.cases[0], 'route'));
+  await t.sheet(/Cel pobytu/);
+  const notes = await page.locator('.sheet-body details.notes').evaluate((d) => { d.open = true; return d.innerText; });
+  assert.match(notes, /Jeżeli termin na złożenie wniosku[\s\S]*nie zawiera braków formalnych[\s\S]*uważa się za legalny od dnia złożenia wniosku[\s\S]*na wniosek strony/);
+  await t.closeSheet();
+  // D9: after a refusal the decision step says the case goes no further and links free legal aid.
+  await page.evaluate(() => {
+    const c = S.cases[0];
+    c.state.events.push({ id: 'e-filing', type: 'filing', date: '2026-09-01', by: 'user' }, { id: 'e-dec', type: 'decision_delivered', date: '2026-10-14', outcome: 'refused', by: 'user' });
+    c.focus = 'decision';
+    render();
+  });
+  const refusal = page.locator('.refusal-note');
+  await refusal.waitFor({ timeout: 8000 });
+  assert.match(await refusal.innerText(), /Decyzja odmowna\.[\s\S]*nie prowadzi[\s\S]*pomocy prawnej/);
+  assert.equal(await refusal.locator('a[href="https://www.gov.pl/web/nieodplatna-pomoc/nieodplatna-pomoc-prawna"]').count(), 1, 'the registry handoff, linked');
+  await t.shot('residence-refusal');
 });
 
 /* ── H: the home input with words that name no case: the chat offers the cases, and back goes home ── */

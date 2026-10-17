@@ -32,9 +32,9 @@ The home footer shows the build id and the engine hash, so screenshots from a se
 
 | Command | What it checks |
 |---|---|
-| `node --test prototype/test/*.test.mjs` | **Design rules** (`design.test.mjs`): every visual value in `app.css` comes from a token, and no text is below 12 px (`node prototype/test/design-rules.mjs` lists any violation with its line).<br>**The on-device reader** of typed answers:<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application |
+| `node --test prototype/test/*.test.mjs` | **Design rules** (`design.test.mjs`): every visual value in `app.css` comes from a token, and no text is below 12 px (`node prototype/test/design-rules.mjs` lists any violation with its line).<br>**The on-device reader** of typed answers:<br>• yes, no and "Nie wiem"; option words and ties; days and hours; "Jak poszło?"; case intents; whose case; options in the second person;<br>• the audit's cases: hedged or contradictory consent, negated actions, an explicit year, a refused day, masked numbers;<br>• an answer that fits no option: what the reply notices, and that it never picks for the person;<br>• waiting for the office ("przyspieszyć wydanie karty") read apart from a new application<br>**Registry notes** (`notes.test.mjs`): a note whose Polish text is a fragment of a provision is shown with all its quotes (legal stay with its conditions, the card fee relief with whom it covers); the residence scope names what the case does not cover and states no rule of its own |
 | `node prototype/test/lint.mjs` | ESLint over the modules joined as the browser runs them: unused or undefined names, shadowing, `prefer-const` |
-| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Eleven scenarios in Chromium (below), at 390×844 unless stated. Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <letter>` for one scenario. `REPORT_TARGETS=1` lists the screen-check findings instead of failing |
+| `node prototype/build.mjs && node prototype/test/e2e.mjs` | Twelve scenarios in Chromium (below), at 390×844 unless stated. Add `--motion` for full animations, `--shots <dir>` for screenshots, `--only <letter>` for one scenario. `REPORT_TARGETS=1` lists the screen-check findings instead of failing |
 
 The end-to-end scenarios:
 - **A:** citizenship in the person's own words, consent on, a change after approval that opens a second route; a typed PESEL is masked and a not-understood question gets no action.
@@ -51,10 +51,11 @@ The end-to-end scenarios:
   - the plan card names its check without overclaiming;
   - memory is named as session memory.
 - **G:** waiting for the office. "Potrzebuję przyspieszyć wydanie karty pobytu" gets:
-  - an answer about delay first: a ponaglenie, the official template, the art. 100d caveat;
+  - an answer about delay first: while the registry carries the special act's art. 100d, it leads, in full, then the ponaglenie; free legal aid is the primary action, the official template a secondary one (residence COMPARISON D8);
   - no new-application question before that;
   - the plan only on request ("Nie teraz", then "Ułóż jednak plan");
   - from home, words that name the case already open go to it.
+- **J:** the residence card (wave 2, not verified): Teraz names what the case does not cover; the legal-stay note carries its conditions; after a refusal the decision step stops and links free legal aid (`audit/2026-10-16-residence/COMPARISON.md`).
 - **H:** the home input with words that name no case leads into the chat, which offers the five cases; back returns home.
 - **I:** correcting a confirmed answer after approval: the proposed diff, the recheck marks, approval and refusal, history.
 - **Z1, Z2:** reflow at 320 CSS px (WCAG 1.4.10) and text at 200% on the phone (WCAG 1.4.4): the plan, Teraz, Mapa, Teczka and Kalendarz.

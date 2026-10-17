@@ -1,0 +1,314 @@
+
+## RC1 work, nothing done yet
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od pracodawcy (wypełnia go w MOS)
+- payment [available] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [locked] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [locked] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [locked] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: nothing
+
+## RC1 work, filed 2.11.2026
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [done] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od pracodawcy (wypełnia go w MOS)
+- payment [done] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [done] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [available] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [available] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: nothing
+
+## RC2 study, Kraków
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od uczelni (wypełnia go w MOS)
+- payment [available] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 340 zł Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [locked] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [locked] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [locked] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Małopolski Urząd Wojewódzki w Krakowie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: nothing
+
+## RC3 spouse of a Polish citizen in Poland (the engine has no such option; "family" is the nearest)
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat
+- payment [available] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 340 zł Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [locked] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [locked] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [locked] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: nothing
+
+## RC4 family reunification, the person abroad
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Kopia paszportu osoby za granicą; Zdjęcie osoby za granicą; Zgoda osoby za granicą (formularz urzędowy); Dokumenty potwierdzające dane z wniosku
+- payment [available] Opłaty
+    tasks: Gdy wniosek dotyczy osoby za granicą: zapłać opłatę skarbową, zanim członek rodziny w Polsce złoży wniosek
+    fees: 340 zł Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski); 100 zł Wydanie karty pobytu
+- who-files [available] Kto składa wniosek
+    tasks: Gdy wniosek dotyczy osoby za granicą: składa go na papierze członek rodziny w Polsce
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- filing [locked] Złożenie wniosku
+    tasks: Gdy wniosek dotyczy osoby za granicą: dołącz kopię jej paszportu, jej zdjęcie i zgodę
+- summons [locked] Wezwanie z urzędu
+    tasks: Gdy wniosek dotyczy osoby za granicą: wojewoda wezwie do dosłania brakującej kopii paszportu, zdjęcia albo zgody
+- card [locked] Karta pobytu
+    tasks: Gdy wniosek dotyczył osoby za granicą: o pierwszą kartę pobytu ta osoba składa osobny wniosek
+agenda on 16.10.2026: nothing
+
+## RC5 MOS down on the last day, fixed Monday 30.11.2026
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od pracodawcy (wypełnia go w MOS)
+- payment [available] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [locked] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored -> 2026-12-03 (plain); text: "do czwartku, 3 grudnia"
+- confirmation [locked] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [locked] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: deadline_warning 2026-12-01T09:00; deadline_today 2026-12-03T09:00
+
+## RC9 refusal delivered 27.10.2026
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [done] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od pracodawcy (wypełnia go w MOS)
+- payment [done] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [done] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [available] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [done] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [done] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+agenda on 16.10.2026: nothing
+
+## RC10 permit granted, delivered 27.10.2026
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!, file-in-legal-stay!, legal-stay-while-pending!, no-show-ends-case!, dont-wait!, fee-in-advance!, paper-exceptions!, paper-scope!, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [done] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB); Skan wszystkich stron paszportu; Potwierdzenia obu opłat; Załącznik od pracodawcy (wypełnia go w MOS)
+- payment [done] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+    fees: 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE); 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- filing [done] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS
+    deadlines: outage 3 working_day from system_restored (no date yet)
+- confirmation [available] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku
+- summons [done] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport)
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [done] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody
+- card [available] Karta pobytu
+    tasks: Odbierz kartę pobytu
+agenda on 16.10.2026: nothing
+
+## Purpose unknown
+route: decided temporary-residence
+- route [done] Cel pobytu
+    notes: decision-time-suspended!, online-only!?, file-in-legal-stay!?, legal-stay-while-pending!?, no-show-ends-case!?, dont-wait!?, fee-in-advance!, paper-exceptions!?, paper-scope!?, wait-no-email!, wait-mos-not-channel!, no-refund, card-fee-relief, wait-cukr-ends-case, wait-paper-kinds, wait-stage-decision-delivered?, wait-which-office?, wait-mazowiecki-case-number?, wait-filed-when?, wait-upo-technical?, wait-certificate?, wait-paper-stamp?, wait-paper-before-mos?, wait-remedies-statute?, wait-remedies-mswia-udsc?, wait-remedies-mswia-courts?, wait-remedies-rpo-nsa?, wait-remedies-cjeu?, wait-ponaglenie-authority?, wait-ponaglenie-where?, wait-ponaglenie-too-early?, wait-ponaglenie-no-notice?, wait-ponaglenie-template?, wait-card-ex-officio?, wait-card-in-person?, wait-card-pickup-mazowiecki?, wait-mos-no-status?, wait-udsc-line, wait-udsc-helplines?, wait-mazowiecki-status-line?, wait-mazowiecki-helpline-no-status?, wait-file-inspection, wait-duty-to-inform, wait-podanie-forms, wait-podanie-minimum, wait-paper-signed, wait-electronic-address, wait-epuap-ended, wait-edoreczenia-free, wait-edoreczenia-own-address, wait-confirmation, wait-edoreczenia-proof, wait-mazowiecki-post-address?, wait-mazowiecki-ede-address?, wait-mazowiecki-edoreczenia-setup?, wait-mazowiecki-templates?, wait-mazowiecki-title?, wait-mazowiecki-signature?, wait-mazowiecki-mos-electronic?
+- documents [available] Dokumenty
+    tasks: Zdjęcie (plik do 2,5 MB) [sprawdź]; Skan wszystkich stron paszportu [sprawdź]; Potwierdzenia obu opłat [sprawdź]; Załącznik od pracodawcy (wypełnia go w MOS) [sprawdź]; Załącznik od uczelni (wypełnia go w MOS) [sprawdź]; Załącznik od organizatora stażu lub wolontariatu [sprawdź]; Kopia paszportu osoby za granicą [sprawdź]; Zdjęcie osoby za granicą [sprawdź]; Zgoda osoby za granicą (formularz urzędowy) [sprawdź]; Dokumenty potwierdzające dane z wniosku [sprawdź]
+- payment [available] Opłaty
+    tasks: Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek [sprawdź]
+    fees: 340 zł Opłata skarbowa za zezwolenie na pobyt czasowy (stawka podstawowa, np. studia, rodzina, firma; także krótki pobyt z innych powodów niż wezwanie przez organ lub interes Polski) [może nie dotyczyć]; 440 zł Opłata skarbowa za zezwolenie na pobyt czasowy i pracę albo na pracę w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE) [może nie dotyczyć]; 170 zł Opłata skarbowa za zezwolenie na pobyt czasowy ze względu na pracę sezonową [może nie dotyczyć]; 85 zł Opłata skarbowa za krótki pobyt, gdy musisz osobiście stawić się przed polskim organem albo Twojej obecności wymaga interes Polski [może nie dotyczyć]; 100 zł Wydanie karty pobytu
+- attachment [available] Załącznik od pracodawcy, uczelni lub organizatora
+    tasks: Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik [sprawdź]
+- who-files [available] Kto składa wniosek
+    tasks: Gdy wniosek dotyczy osoby za granicą: składa go na papierze członek rodziny w Polsce [sprawdź]
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- filing [locked] Złożenie wniosku
+    tasks: Złóż wniosek w systemie MOS [sprawdź]
+    deadlines: outage 3 working_day from system_restored (no date yet) [może nie dotyczyć]
+- confirmation [locked] Zaświadczenie o złożeniu
+    tasks: Pobierz zaświadczenie o złożeniu wniosku [sprawdź]
+- summons [locked] Wezwanie z urzędu
+    tasks: Staw się na wezwanie wojewody (odciski palców, paszport) [sprawdź]
+    office: 1 offices: Mazowiecki Urząd Wojewódzki w Warszawie
+- decision [locked] Czekasz na decyzję
+    tasks: Odbierz decyzję wojewody [sprawdź]
+- card [locked] Karta pobytu
+    tasks: Odbierz kartę pobytu [sprawdź]
+agenda on 16.10.2026: nothing
+
+## Notes in the procedure (id: Polish text)
+- decision-time-suspended: W okresie do dnia 4 marca 2027 r. bieg terminów na załatwienie spraw dotyczących:
+- online-only: Od 27 kwietnia 2026 r. wniosek o udzielenie zezwolenia na pobyt w Polsce (pobyt czasowy, stały i rezydenta długoterminowego UE) możesz złożyć wyłącznie w formie elektronicznej, za pomocą dedykowanego portalu MOS, dostępnego poprzez przeglądarkę internetową.
+- file-in-legal-stay: Cudzoziemiec składa wniosek o udzielenie mu zezwolenia na pobyt czasowy nie później niż w ostatnim dniu jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej.
+- legal-stay-while-pending: pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia, w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna.
+- no-show-ends-case: O ile nie zachodzą podstawy do pozostawienia bez rozpoznania wniosku cudzoziemca o udzielenie mu zezwolenia na pobyt czasowy, do jego zwrotu lub odmowy wszczęcia postępowania w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, wojewoda umarza postępowanie w sprawie udzielenia cudzoziemcowi zezwolenia na pobyt czasowy, w przypadku gdy cudzoziemiec:
+1) nie stawił się mimo prawidłowego wezwania, o którym mowa w art. 106e ust. 1 lub art. 106g;
+- no-refund: W przypadku wydania przez wojewodę decyzji o odmowie udzielenia zezwolenia na pobyt czasowy lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt czasowy, uiszczona należna opłata skarbowa za udzielenie zezwolenia na pobyt czasowy nie podlega zwrotowi.
+- card-fee-relief: Ulga w opłacie, o której mowa w ust. 1, wynosi 50 % kwoty określonej w przepisach wydanych na podstawie art. 239 ust. 1.
+- dont-wait: Zwracamy uwagę, aby nie czekać ze złożeniem wniosku do ostatniego dnia legalnego pobytu. Może się okazać, że w jeden dzień nie będziesz w stanie dołączyć do wniosku wszystkich niezbędnych dokumentów.
+- fee-in-advance: Oznacza to, że jeśli nie opłacisz opłaty skarbowej przed złożeniem wniosku, zostaniesz wezwany przez wojewodę do jej uiszczenia w terminie mogącym wynosić od 7 do 14 dni, co znacznie wydłuży proces postępowania. Jeśli zaś nie zastosujesz się do wezwania, musisz się liczyć z tym, że wojewoda zwróci Twój wniosek w drodze postanowienia. Na postanowienie to przysługuje zażalenie.
+- paper-exceptions: Wnioski o udzielenie zezwolenia na pobyt czasowy:
+- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,
+nadal należy składać w wersji papierowej, na dotychczasowych zasadach.
+- paper-scope: Przepisów art. 105 ust. 1 i art. 106–106i nie stosuje się do wniosku o udzielenie zezwolenia, o którym mowa w art. 139a ust. 1 i art. 139o ust. 1, oraz zezwolenia, o którym mowa w art. 159 ust. 1 lub art. 160 pkt 1, 3, 4 lub 6, cudzoziemcowi przebywającemu poza granicami Rzeczypospolitej Polskiej.
+- wait-cukr-ends-case: Jeżeli obywatel Ukrainy złożył wniosek o wydanie karty pobytu w przypadku, o którym mowa w art. 42c, postępowanie w sprawie udzielenia mu zezwolenia na pobyt czasowy, wszczęte na podstawie wniosku tego obywatela Ukrainy i niezakończone przed dniem złożenia przez niego wniosku o wydanie karty pobytu, umarza się z mocy prawa.
+- wait-paper-kinds: Wnioski o udzielenie zezwolenia na pobyt czasowy:
+- w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu mobilności długoterminowej pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa;
+- w celu połączenia się z rodziną – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- dla członka rodziny obywatela RP, obywatela państwa członkowskiego UE lub obywatela Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec, którego wniosek dotyczy, przebywa poza granicami Polski;
+- cudzoziemcowi prowadzącemu życie rodzinne w rozumieniu Konwencji o ochronie praw człowieka i podstawowych wolności z obywatelem RP, obywatelem państwa członkowskiego UE lub obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia – w sytuacji, gdy cudzoziemiec którego wniosek dotyczy przebywa poza terytorium RP,
+nadal należy składać w wersji papierowej, na dotychczasowych zasadach.
+- wait-stage-decision-delivered: Wojewoda prowadzący sprawę wyśle decyzję na wskazany przez Ciebie adres do doręczeń (Twój lub pełnomocnika, jeśli go posiadasz).
+- wait-which-office: Zezwolenia na pobyt czasowy udziela lub odmawia jego udzielenia wojewoda właściwy ze względu na miejsce pobytu cudzoziemca, w drodze decyzji.
+- wait-mazowiecki-case-number: Pamiętaj! Dokumenty do złożonych wniosków dosyłaj dopiero po nadaniu przez urząd numeru sprawy, który otrzymasz smsem lub e-mailem.
+- wait-filed-when: Wniosek o udzielenie zezwolenia na pobyt czasowy uznaje się za złożony w przypadku, gdy zostaną spełnione łącznie następujące warunki:
+- wait-upo-technical: Otrzymane UPO jest dowodem na poprawność techniczną złożonego wniosku i odebraniu go przez system.
+- wait-certificate: Jeśli dane i załączniki będą poprawne, będziesz mógł pobrać zaświadczenie o złożeniu wniosku pobytowego, które zastępuje wcześniejszy stempel w paszporcie.
+- wait-paper-stamp: 1) wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla potwierdzającego złożenie wniosku o udzielenie zezwolenia na pobyt czasowy;
+- wait-paper-before-mos: Jeśli Twój wniosek wpłynął do urzędu wojewódzkiego przed 27 kwietnia 2026 r., czyli przed dniem uruchomienia nowego portalu MOS, Twoja sprawa będzie rozpatrywana - nie będziesz musiał umarzać postępowania i składać nowego wniosku o udzielenie zezwolenia na pobyt w Polsce poprzez portal MOS.
+- wait-remedies-statute: Zaprzestanie czynności przez organ prowadzący postępowanie w sprawach, o których mowa w ust. 1, lub ich dokonywanie z opóźnieniem, w okresie, o którym mowa w ust. 1, nie może być podstawą wywodzenia środków prawnych dotyczących bezczynności, przewlekłości lub naruszenia prawa strony do rozpoznania sprawy bez zbędnej zwłoki.
+- wait-remedies-mswia-udsc: Natomiast Szef Urzędu do Spraw Cudzoziemców, który jako organ administracji publicznej wyższego stopnia w stosunku do wojewodów w sprawach objętych zakresem przedmiotowym art. 100d ustawy specjalnej, nie posiadając kompetencji do dokonywania kontroli konstytucyjności przepisów ustawowych w taki sposób jak sądy administracyjne w związku z byciem organem właściwym w sprawach rozpatrywania ponagleń na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodów (art. 37 § 1 K.p.a.), jest w dalszym ciągu obowiązany do stosowania przepisu art. 100d ustawy specjalnej.
+- wait-remedies-mswia-courts: Tym samym pomimo formalnego obowiązywania przepisu art. 100d ustawy specjalnej oraz faktu, że aktualnie wciąż trwa okres, jaki objęty jest tym terminem (do dnia 4 marca 2027 r.), istnieje wysokie prawdopodobieństwo, że wojewódzki sąd administracyjny, który będzie rozpatrywał skargę na bezczynność lub przewlekłe prowadzenie postępowania przez wojewodę w sprawie objętej zakresem przedmiotowym tego przepisu, w odniesieniu do okresu bezczynności lub przewlekłości występujących po dniu 30 czerwca 2024 r., odmówi zastosowania tego przepisu i rozpozna skargę z jego pominięciem.
+- wait-remedies-rpo-nsa: Ponadto, jak wskazał NSA, wspomniany przepis ustawy o pomocy obywatelom Ukrainy nie stanowi podstawy do wyłączenia kontroli przez sądy administracyjne skarg na bezczynności organu lub przewlekłe prowadzenie postępowania.
+- wait-remedies-cjeu: Jednocześnie pragnę poinformować, że resort spraw wewnętrznych i administracji obecnie oczekuje na rozstrzygnięcie w sprawie C-254/25 prowadzonej przed Europejskim Trybunałem Sprawiedliwości Unii Europejskiej (TSUE) – przywołanej w wystąpieniu Pana Rzecznika – dotyczącej odpowiedzi na pytania prejudycjalne skierowane do TSUE przez Wojewódzki Sąd Administracyjny w Gliwicach, odnośnie do art. 100c i 100d ustawy pomocowej.
+- wait-ponaglenie-authority: Szef Urzędu jest organem wyższego stopnia w rozumieniu przepisów Kodeksu postępowania administracyjnego w stosunku do wojewody w sprawach uregulowanych w ustawach, o których mowa w ust. 1 pkt 1.
+- wait-ponaglenie-where: Ponaglenie wnosi się:
+- wait-ponaglenie-too-early: Jeżeli ponaglenie zostało wniesione przed upływem terminu określonego w art. 35 albo przepisach szczególnych, organ prowadzący postępowanie pozostawia ponaglenie bez rozpoznania.
+- wait-ponaglenie-no-notice: W okresie, o którym mowa w ust. 1:
+- wait-ponaglenie-template: Wzór ponaglenia
+- wait-card-ex-officio: Pierwszą kartę pobytu i europejski dokument podróży do celów powrotu wydaje się z urzędu.
+- wait-card-in-person: Cudzoziemiec odbiera kartę pobytu osobiście, chyba że w stosunku do tego cudzoziemca odstąpiono od wezwania do osobistego stawiennictwa na podstawie art. 106h ust. 1, art. 203h ust. 1 lub art. 219h ust. 1.
+- wait-card-pickup-mazowiecki: Skrzynka będzie Ci potrzebna między innymi do otrzymywania wezwań, informacji o terminach osobistego stawiennictwa w celu pobrania odcisków palców czy informacji o terminie odbioru karty pobytu kierowanych do Ciebie przez urząd.
+- wait-mos-no-status: Czy portal MOS poinformuje mnie o konieczności uzupełnienia dokumentów lub o aktualnym statusie sprawy?
+Nie. O konieczności osobistego stawiennictwa i uzupełnienia dokumentów poinformuje Cię pracownik urzędu wojewódzkiego.
+- wait-udsc-line: Sprawy związane z wydawaniem zezwoleń na pobyt, pracę oraz rejestracją zaproszeń dla cudzoziemców są realizowane przez wydziały spraw cudzoziemców oraz wydziały spraw obywatelskich i cudzoziemców w urzędach wojewódzkich. W przypadku pytań związanych z tego typu postępowaniami należy kontaktować się z właściwym urzędem wojewódzkim.
+- wait-udsc-helplines: Infolinie dla cudzoziemców
+- wait-mazowiecki-status-line: Dzwoniąc pod numer (22) 695 67 73 sprawdzisz nie tylko status swojej sprawy ale także uzyskasz odpowiedzi na najczęściej zadawane pytania.
+- wait-mazowiecki-helpline-no-status: Infolinia dla Obywatela nie udziela informacji dotyczących procedur wewnętrznych poszczególnych wydziałów oraz statusów spraw prowadzonych przez urząd.
+- wait-file-inspection: Strona ma prawo wglądu w akta sprawy, sporządzania z nich notatek, kopii lub odpisów.
+- wait-duty-to-inform: Organy administracji publicznej są obowiązane do należytego i wyczerpującego informowania stron o okolicznościach faktycznych i prawnych, które mogą mieć wpływ na ustalenie ich praw i obowiązków będących przedmiotem postępowania administracyjnego.
+- wait-podanie-forms: Podania (żądania, wyjaśnienia, odwołania, zażalenia) wnosi się na piśmie, za pomocą telefaksu lub ustnie do protokołu.
+- wait-podanie-minimum: Podanie powinno zawierać co najmniej wskazanie osoby, od której pochodzi, jej adres, również w przypadku złożenia podania w postaci elektronicznej, i żądanie oraz czynić zadość innym wymaganiom ustalonym w przepisach szczególnych.
+- wait-paper-signed: Podanie wniesione na piśmie albo ustnie do protokołu powinno być podpisane przez wnoszącego, a protokół ponadto przez pracownika, który go sporządził.
+- wait-electronic-address: Podania utrwalone w postaci elektronicznej wnosi się na adres do doręczeń elektronicznych lub za pośrednictwem konta w systemie teleinformatycznym organu administracji publicznej.
+- wait-no-email: Jeżeli przepisy odrębne nie stanowią inaczej, podania wniesione na adres poczty elektronicznej organu administracji publicznej pozostawia się bez rozpoznania.
+- wait-mos-not-channel: Czy poprzez portal MOS mogę komunikować się z urzędem wojewódzkim?
+Nie.
+- wait-epuap-ended: Doręczenie korespondencji nadanej przez osobę fizyczną lub podmiot niebędący podmiotem publicznym, będące użytkownikami konta w ePUAP, do podmiotu publicznego posiadającego elektroniczną skrzynkę podawczą w ePUAP, w ramach usługi udostępnianej w ePUAP, jest równoważne w skutkach prawnych z doręczeniem przy wykorzystaniu publicznej usługi rejestrowanego doręczenia elektronicznego do dnia 31 grudnia 2025 r.
+- wait-edoreczenia-free: Korespondencja wysyłana do podmiotu publicznego za pomocą publicznej usługi rejestrowanego doręczenia elektronicznego (PURDE) jest darmowa dla wszystkich.
+- wait-edoreczenia-own-address: Możesz złożyć wniosek o adres do e-Doręczeń u operatora wyznaczonego lub kwalifikowanych dostawców usług.
+- wait-confirmation: Organ administracji publicznej jest obowiązany potwierdzić wniesienie podania, jeżeli wnoszący tego zażąda.
+- wait-edoreczenia-proof: Dowód otrzymania jest wystawiany po:
+- wait-mazowiecki-post-address: Adres korespondencyjny urzędu
+Mazowiecki Urząd Wojewódzki w Warszawie
+Pl. Bankowy 3/5
+00-950 Warszawa
+- wait-mazowiecki-ede-address: Adres do e-doręczeń: AE:PL-96129-72086-CJUVW-29
+- wait-mazowiecki-edoreczenia-setup: Załóż adres i skrzynkę do doręczeń elektronicznych e-Doręczeń.
+- wait-mazowiecki-templates: Korzystaj z wzorów pism zamieszczonych na naszej stronie internetowej w zakładce https://migrant.wsc.mazowieckie.pl/pl/pliki-do-pobrania/327
+- wait-mazowiecki-title: Wszelkie przesyłane pisma dotyczące spraw w toku, muszą być zatytułowane w następujący sposób:
+- wait-mazowiecki-signature: Dokumenty wymagające Twojego podpisu, musisz podpisać własnym profilem zaufanym lub osobistym podpisem certyfikowanym (kwalifikowanym).
+- wait-mazowiecki-mos-electronic: Po uruchomieniu nowego systemu MOS, do wniosków złożonych elektronicznie za pośrednictwem tego systemu, dokumenty wysyłaj wyłącznie elektronicznie. Nie przesyłaj dokumentów papierowych pocztą tradycyjną.
+
+## Steps (id: channels; title)
+- pay-fees: online; Zapłać opłatę skarbową i opłatę za kartę, zanim złożysz wniosek
+- ask-for-attachment: online; Jeśli trzeba, poproś pracodawcę, uczelnię albo organizatora stażu o załącznik
+- file-in-mos: online; Złóż wniosek w systemie MOS
+- print-certificate: online; Pobierz zaświadczenie o złożeniu wniosku
+- fingerprints: in_person; Staw się na wezwanie wojewody (odciski palców, paszport)
+- decision: ; Odbierz decyzję wojewody
+- card: in_person; Odbierz kartę pobytu
+- paper-pay: ; Gdy wniosek dotyczy osoby za granicą: zapłać opłatę skarbową, zanim członek rodziny w Polsce złoży wniosek
+- paper-who-files: ; Gdy wniosek dotyczy osoby za granicą: składa go na papierze członek rodziny w Polsce
+- paper-attachments: ; Gdy wniosek dotyczy osoby za granicą: dołącz kopię jej paszportu, jej zdjęcie i zgodę
+- paper-missing: ; Gdy wniosek dotyczy osoby za granicą: wojewoda wezwie do dosłania brakującej kopii paszportu, zdjęcia albo zgody
+- paper-card: ; Gdy wniosek dotyczył osoby za granicą: o pierwszą kartę pobytu ta osoba składa osobny wniosek

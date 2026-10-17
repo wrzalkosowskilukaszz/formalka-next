@@ -23,6 +23,15 @@ const STUDY_TYPES = ['address-registration'];
 const caseTypes = () => (STUDY ? CASE_TYPES.filter((t) => STUDY_TYPES.includes(t.id)) : CASE_TYPES);
 // The groups the study covers (round 2 reference, COMPARISON.md D1-D6): where the engine and the draft
 // reference disagree, the situation is left out of the study instead of guessed.
+// Wave 2 (doc 19): the residence card is not verified yet (audit/2026-10-16-residence/COMPARISON.md).
+// Where the engine is silent and a person could be harmed, the case says what it does not cover; it states
+// no rule of its own.
+const RESIDENCE_SCOPE = [
+  'Ta część makiety nie jest jeszcze niezależnie sprawdzona: szkic wzorca czeka na prawnika od spraw cudzoziemców. Nie opieraj się na niej w prawdziwej sprawie.',
+  'Makieta nie zna ostatniego dnia Twojego legalnego pobytu ani terminów z pism urzędu, więc o nich nie przypomni. Zapisz je w swoim kalendarzu.',
+  'Jak założyć konto w MOS i czego do niego potrzeba, makieta jeszcze nie opisuje. Sprawdź to wcześnie, a nie w ostatnim dniu legalnego pobytu.',
+  'Po decyzji odmownej makieta nie prowadzi dalej: odwołania jeszcze nie opisuje. Nie zwlekaj, skorzystaj z pomocy prawnej.',
+];
 const STUDY_SCOPE = 'Badanie obejmuje tylko obywatela UE, EFTA lub Szwajcarii oraz obywatela innego państwa z wizą krajową, na pobyt czasowy. Dla członków rodziny, obywateli Wielkiej Brytanii, wjazdu bez wizy i pobytu stałego osób spoza UE informacje w aplikacji nie są jeszcze sprawdzone: nie opieraj się na nich.';
 
 // Cities for the office lookup. TERYT codes [ASSUMPTION: standard GUS codes]. The registry has
@@ -200,3 +209,16 @@ function intentsIn(text) {
 const srcLink = (quotes) => (quotes?.length ? `<a href="${esc(quotes[0].page)}" target="_blank" rel="noopener noreferrer">${esc(host(quotes[0].page))}</a>` : '');
 const cite = (quotes, prefix = 'Przykład z przewodnika Formalki, stan na 15.10.2026.') => (quotes?.length
   ? `<p class="cite">${icon('info')}<span>${prefix} Źródło: ${srcLink(quotes)}</span></p>` : '');
+// A registry note in its own words. A Polish statement that is only a fragment of a provision (it stops
+// at a colon, starts mid-sentence, or points to another paragraph) is never shown alone: when it is one
+// of the note's quotes, all the quotes are shown in the registry's order; when it is not, a statement
+// ending in a colon gets the quotes after it (audit F8; residence COMPARISON D5: art. 108 without its
+// conditions, art. 237 without whom the relief is for).
+const FRAGMENT_RE = /:\s*$|^[a-ząćęłńóśźż0-9]|o (?:której|którym|których) mowa w ust\./;
+function noteText(n) {
+  const s = n.statement.value.pl.trim();
+  const qs = (n.statement.quotes ?? []).map((q) => q.text.trim().replace(/\s*\n\s*/g, ' '));
+  if (!FRAGMENT_RE.test(s) || !qs.length) return s;
+  if (qs.includes(s)) return qs.join(' ');
+  return s.endsWith(':') ? [s, ...qs].join(' ') : s;
+}

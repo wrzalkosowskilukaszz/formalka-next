@@ -1,0 +1,30 @@
+# Ustawa z 12.03.2022 o pomocy obywatelom Ukrainy (the special act), consolidated text Dz.U. 2026 poz. 1293 (obwieszczenie of 17.09.2026, legal state 8.09.2026): art. 100d (the voivode's time limits in residence cases do not run until 4.03.2027)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf, retrieved 2026-10-16, sha256 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177. pdftotext -layout.
+# Its wording: art. 100d ust. 1 intro as changed by Dz.U. 2026 poz. 203 art. 17 pkt 50 (in force 5.03.2026), per footnote 124. Amendments after 8.09.2026: none (node tools/sources/amendments.mjs DU/2022/583 2026-09-08, on 2026-10-16).
+# It applies to every foreigner's case before a voivode, not only to citizens of Ukraine (INFERENCE from its wording: "udzielenia cudzoziemcowi").
+# Found during the engine comparison (16.10.2026): the registry note decision-time-suspended quotes it; the first residence draft had missed it.
+
+      Art. 100d. 1. W okresie do dnia 4 marca 2027 r. bieg terminów na załatwienie spraw dotyczących:
+1)    udzielenia cudzoziemcowi:
+      a)   zezwolenia na pobyt czasowy,
+      b) zezwolenia na pobyt stały,
+      c)   zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej,
+2)    zmiany:
+      a)   zezwolenia na pobyt czasowy i pracę,
+      b) zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji,
+3)    cofnięcia cudzoziemcowi:
+      a)   zezwolenia na pobyt czasowy,
+      b) zezwolenia na pobyt stały,
+      c)   zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej
+– w postępowaniach prowadzonych przez wojewodę nie rozpoczyna się, a rozpoczęty ulega zawieszeniu na ten okres.
+     2. Czynności dokonane w okresie, o którym mowa w ust. 1, w postępowaniach w sprawach, o których mowa w ust. 1,
+są skuteczne.
+      3. W okresie, o którym mowa w ust. 1:
+1)    przepisów o bezczynności organu oraz o obowiązku organu prowadzącego postępowanie w sprawach, o których mowa
+      w ust. 1, do powiadamiania strony lub uczestnika postępowania o niezałatwieniu sprawy w terminie nie stosuje się;
+2)    organowi prowadzącemu postępowanie w sprawach, o których mowa w ust. 1, nie wymierza się grzywny ani nie
+      zasądza się od niego sum pieniężnych na rzecz skarżących za niewydanie rozstrzygnięć w terminach określonych prze-
+      pisami prawa.
+     4. Zaprzestanie czynności przez organ prowadzący postępowanie w sprawach, o których mowa w ust. 1, lub ich doko-
+nywanie z opóźnieniem, w okresie, o którym mowa w ust. 1, nie może być podstawą wywodzenia środków prawnych doty-
+czących bezczynności, przewlekłości lub naruszenia prawa strony do rozpoznania sprawy bez zbędnej zwłoki.

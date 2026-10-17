@@ -1,0 +1,55 @@
+# Dz.U. 2025 poz. 1794, art. 1 pkt 41 (adds Dział VIA "Moduł Obsługi Spraw" to the act on foreigners): art. 225a-225c (MOS, the individual account and the data it asks for, an outage on the last day) and art. 225h (an unsigned application is deleted after 45 days). Art. 225d-225g and 225i (data processing) omitted.
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, retrieved 2026-10-16, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11. pdftotext -layout.
+# In force from 27.04.2026: art. 225a-225i are listed in its art. 17 ust. 1 pkt 1 and in M.P. 2026 poz. 370 (node tools/sources/entry-dates.mjs DU/2025/1794: art. 1 pkt 41 is in art. 19 pkt 2).
+# Found during the engine comparison (16.10.2026): the registry quotes art. 225c, which the first extracts had left out.
+
+            Art. 225a. 1. Szef Urzędu prowadzi w systemie teleinformatycznym MOS, który umożliwia w szczególności zło-
+      żenie wniosku o udzielenie zezwolenia na pobyt czasowy oraz załączników do tego wniosku, wniosku o udzielenie
+      zezwolenia na pobyt stały lub wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE w postaci
+      elektronicznej z wykorzystaniem usługi online.
+             2. Szef Urzędu jest administratorem danych w MOS, w tym administratorem danych osobowych w rozumieniu
+      art. 4 pkt 7 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony
+      osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych
+      oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (Dz. Urz. UE L 119 z 04.05.2016, str. 1,
+      z późn. zm.4)), zwanego dalej „rozporządzeniem nr 2016/679”.
+             3. Szef Urzędu jako administrator danych w MOS w szczególności:
+      1)     odpowiada za funkcjonowanie, utrzymanie i rozwój MOS;
+      2)     zapewnia ochronę przed nieuprawnionym dostępem do MOS;
+      3)     zapewnia integralność danych zgromadzonych w MOS;
+      4)     przeciwdziała uszkodzeniom systemu teleinformatycznego, w którym jest prowadzony MOS;
+      5)     określa zasady bezpieczeństwa przetwarzania danych, w tym danych osobowych;
+      6)     zapewnia rozliczalność działań dokonywanych w MOS.
+           4. Szef Urzędu wydaje upoważnienia do przetwarzania danych osobowych w MOS dla osób realizujących w jego
+      imieniu zadania w zakresie, o którym mowa w ust. 3, określając zakres przetwarzania danych dla każdej z tych osób.
+             Art. 225b. 1. Indywidualne konto w MOS może założyć:
+      1)     cudzoziemiec;
+      2)     rodzic małoletniego cudzoziemca – dla tego małoletniego cudzoziemca;
+      3)     opiekun cudzoziemca – dla tego cudzoziemca;
+      4)     kurator małoletniego cudzoziemca bez opieki – dla tego małoletniego cudzoziemca bez opieki.
+             2. Założenie indywidualnego konta w MOS i dostęp do konta wymaga uwierzytelnienia w sposób określony w art. 20a
+      ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne.
+             3. Zakładając indywidualne konto w MOS, osoby, o których mowa w ust. 1, podają swoje następujące dane:
+      1)     identyfikator;
+      2)     imię (imiona) i nazwisko;
+      3)     datę urodzenia;
+      4)     płeć;
+      5)     obywatelstwo (obywatelstwa);
+      6)     numer ewidencyjny Powszechnego Elektronicznego Systemu Ewidencji Ludności (PESEL);
+      7)     adres poczty elektronicznej.
+             4. Wojewoda zapewnia cudzoziemcowi pomoc przy zakładaniu konta.
+             Art. 225c. 1. W przypadku nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 225a
+      ust. 1, powodującego brak możliwości złożenia wniosków, o których mowa w art. 225a ust. 1, w terminie określonym
+      odpowiednio w art. 105 ust. 1, art. 202 ust. 1 lub art. 218a ust. 1 wniosek składa się najpóźniej w 3. dniu roboczym
+      następującym po dniu, w którym usunięto nieprawidłowości. W takim przypadku wniosek uznaje się za złożony w pierw-
+      szym dniu nieprawidłowego działania systemu teleinformatycznego, o którym mowa w art. 225a ust. 1.
+           2. Szef Urzędu niezwłocznie informuje o usunięciu nieprawidłowości, o których mowa w ust. 1, na stronie inter-
+      netowej urzędu obsługującego Szefa Urzędu.
+
+
+
+[...]
+          Art. 225h. W przypadku nieopatrzenia wniosku o udzielenie zezwolenia na pobyt czasowy, wniosku o udzielenie
+     zezwolenia na pobyt stały lub wniosku o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE kwalifiko-
+     wanym podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym przez cudzoziemca albo osobę, która
+     w imieniu cudzoziemca składa wniosek, dane i informacje, o których mowa w art. 225d pkt 2–4, usuwa się z MOS po
+     upływie 45 dni od dnia przeprowadzenia ostatniej operacji teleinformatycznej na wniosku w MOS.

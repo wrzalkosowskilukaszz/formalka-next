@@ -209,12 +209,23 @@ function placedNotes(c, p, l) {
     const n = all.find((y) => y.id === x.note);
     if (!n) return '';
     const lead = [n.outcome === 'unknown' ? 'Może Cię dotyczyć.' : '', x.lead ?? ''].filter(Boolean).join(' ');
-    return `<p class="mock-note placed-note">${icon('warning-circle')}<span>${lead ? `<b>${esc(lead)}</b> ` : ''}${esc(n.statement.value.pl.replace(/,\s*$/, '.'))} ${srcLink(n.statement.quotes)}</span></p>`;
+    return `<p class="mock-note placed-note">${icon('warning-circle')}<span>${lead ? `<b>${esc(lead)}</b> ` : ''}${esc(noteText(n).replace(/,\s*$/, '.'))} ${srcLink(n.statement.quotes)}</span></p>`;
   }).join('');
 }
 function notesHtml(notes, max = 3) {
   if (!notes?.length) return '';
-  return `<details class="card notes"><summary>${icon('warning-circle')} Warto wiedzieć (${notes.length})</summary><ul class="bul">${notes.slice(0, max).map((n) => `<li>${esc(n.statement.value.pl)} ${n.statement.quotes?.length ? `<span class="src">${srcLink(n.statement.quotes)}</span>` : ''}</li>`).join('')}</ul>${notes.length > max ? `<p class="meta">Pozostałe w przewodniku Formalki.</p>` : ''}</details>`;
+  return `<details class="card notes"><summary>${icon('warning-circle')} Warto wiedzieć (${notes.length})</summary><ul class="bul">${notes.slice(0, max).map((n) => `<li>${esc(noteText(n))} ${n.statement.quotes?.length ? `<span class="src">${srcLink(n.statement.quotes)}</span>` : ''}</li>`).join('')}</ul>${notes.length > max ? `<p class="meta">Pozostałe w przewodniku Formalki.</p>` : ''}</details>`;
+}
+
+// Residence COMPARISON D9: after a refusal the plan has no appeal step and goes quiet. The case says so on
+// the decision level and points to the registry's own handoff (free legal aid); it gives no deadline or
+// rule of its own.
+function refusalHTML(c, l) {
+  if (!l.completesWith) return '';
+  const ev = c.state.events.find((e) => e.type === l.completesWith && e.outcome === 'refused');
+  if (!ev) return '';
+  const aid = E.procedure(plan(c).route.procedureId ?? '')?.handoff?.options?.find((o) => o.link?.url);
+  return `<p class="mock-note stale refusal-note">${icon('warning-circle')}<span><b>Decyzja odmowna.</b> Dalej makieta nie prowadzi: odwołania jeszcze nie opisuje. Nie zwlekaj, skorzystaj z pomocy prawnej.${aid ? ` <a href="${esc(aid.link.url)}" target="_blank" rel="noopener noreferrer">${esc(aid.name?.pl ?? 'Nieodpłatna pomoc prawna')}</a>` : ''}</span></p>`;
 }
 
 function focusView(c) {
@@ -229,6 +240,9 @@ function focusView(c) {
   if (l.id !== cur.id) inHero.push(`<button type="button" class="btn btn-ghost-w btn-sm" data-focuslv="">Wróć do „${esc(cur.title.pl)}”</button>`);
   const sections = [];
   if (STUDY) sections.push(`<p class="study-note">${icon('info')}<span><b>Zakres badania</b> ${esc(STUDY_SCOPE)}</span></p>`);
+  const refusal = refusalHTML(c, l);
+  if (refusal) sections.push(refusal);
+  if (c.bpId === 'residence-card') sections.push(`<div class="study-note scope-note">${icon('info')}<div><b>Karta pobytu w makiecie</b><ul class="bul">${RESIDENCE_SCOPE.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div></div>`);
   if (c.pendingFix) sections.push(pendingBanner(c));
   const stale = staleOf(p);
   if (stale) sections.push(`<p class="mock-note stale">${icon('warning-circle')}<span>${esc(stale.text)} <a href="${esc(stale.url)}" target="_blank" rel="noopener noreferrer">${esc(stale.label)}</a></span></p>`);
