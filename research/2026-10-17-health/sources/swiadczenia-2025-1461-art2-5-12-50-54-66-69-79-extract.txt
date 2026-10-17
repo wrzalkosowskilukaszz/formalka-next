@@ -1,11 +1,12 @@
-# Ustawa z 27.08.2004 o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych, consolidated text Dz.U. 2025 poz. 1461 (obwieszczenie of 26.09.2025): art. 2-4, 5 pkt 3 and 31, 12 (opening), 50-54, 66-69, 76, 79 ust. 1-2
+# Ustawa z 27.08.2004 o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych, consolidated text Dz.U. 2025 poz. 1461 (obwieszczenie of 26.09.2025, legal state 25.09.2025): art. 2-4, 5 pkt 3 and 31, 12 (opening), 50-54, 66-69, 73-75, 76, 79 ust. 1-2, 188 ust. 4 pkt 9
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf, retrieved 2026-10-17, sha256 6b1219883e69636dd4c7c7d1a864297af574db11c9a1ea1adc58f6b330b652d3. pdftotext -layout. Whole articles, footnotes kept.
-# Later amendments (tools/sources/amendments.mjs DU/2004/2135 2025-09-26, 17.10.2026): nine acts. tools/sources/touched.mjs DU/2004/2135 2025-09-26 --cite 2-5,12,49-54,66-69,76,79,81,240 lists every article each one changes; those that touch the articles below:
+# Later amendments (tools/sources/amendments.mjs DU/2004/2135 2025-09-26, 17.10.2026; re-run after the check from 2025-09-25, the legal state date, with the same nine acts): tools/sources/touched.mjs DU/2004/2135 2025-09-25 --cite 2-5,12,15,49-54,66-69,73-76,79,81,188,240 lists every article each one changes; those that touch the articles below:
 #  - Dz.U. 2025 poz. 1083 art. 4 (in force 1.01.2026, its art. 8): art. 66 ust. 1 pkt 1 lit. j (seafarers), art. 68 ust. 8a repealed, new art. 69 ust. 1 and art. 81 ust. 1. The consolidated text already prints both versions with footnotes 37, 43-46; from 1.01.2026 the later version applies.
 #  - Dz.U. 2026 poz. 203 art. 7 (in force 5.03.2026, its art. 54 general date): art. 12 pkt 13 repealed (care under art. 37 of the special act for Ukrainians) and pkt 14 added (art. 112c of the protection act); art. 50 ust. 2 pkt 1a repealed.
 #  - Dz.U. 2026 poz. 791 art. 3 (in force 1.07.2026: 14 days after publication on 16.06.2026, its art. 16; art. 3 is not among the exceptions): art. 49 (the health insurance card) repealed; art. 50 ust. 1 pkt 1 repealed; art. 50 ust. 2 opening reads "Świadczeniobiorca uzyskuje dostęp do świadczeń opieki zdrowotnej po spełnieniu łącznie następujących warunków:"; art. 50 ust. 16 pkt 1 reads "posługiwania się dokumentem potwierdzającym prawo do świadczeń opieki zdrowotnej przez osobę, która utraciła to prawo w okresie ważności tego dokumentu, albo"; art. 51 ust. 3 repealed; art. 240 repealed.
-#  - The others (2025 poz. 1537, 1739; 2026 poz. 26, 972, 986, 1007) change other articles only (art. 19a-23i, 42b, 42f, 47c, 59b, 87, 87a, 97, 102, 106, 116, 132d, 154a, 159a, 188, 188e, 189b, 31lc-31o).
-# So the text below is NOT the law in force on its own: apply the three changes above. Art. 49 is omitted (repealed).
+#  - Dz.U. 2025 poz. 1537 art. 1 pkt 11 (in force 1.01.2026, its art. 8): art. 188 ust. 1 pkt 12-14 and ust. 4 pkt 36-37; not ust. 4 pkt 9, quoted below.
+#  Not quoted, also changed: 1083 art. 4 pkt 5 (art. 87 ust. 4 pkt 1, 1.01.2026); 203 art. 7 pkt 3 (art. 87 ust. 10a pkt 3a, 5.03.2026); 791 art. 3 pkt 4 (art. 188e ust. 8, 1.07.2026). The other acts (1739, 972, 986, 1007, 2026/26) change only articles not quoted; 2026/26 art. 21 (art. 87a) applies from 1.01.2027 (its art. 43 pkt 3). The first header said 1083 was a later act; it is printed in the consolidated text (obwieszczenie pt 1 pkt 10) with its 1.01.2026 date (found by the check of 17.10.2026, CHECK.md).
+# So the text below is NOT the law in force on its own: apply the changes above by their dates. Art. 49 is omitted (repealed).
 
 [art. 2]
      Art. 2. 1. Do korzystania ze świadczeń opieki zdrowotnej finansowanych ze środków publicznych na zasadach określo-
@@ -679,6 +680,221 @@ w art. 68.
 45) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 46.
 46) W brzmieniu ustalonym przez art. 4 pkt 3 ustawy, o której mowa w odnośniku 37.
 Dziennik Ustaw                                             – 103 –                                                  Poz. 1461
+
+[art. 73-75 (added on 17.10.2026 after the check)]
+     Art. 73. Obowiązek ubezpieczenia zdrowotnego:
+1)   uczniów, o których mowa w art. 66 ust. 1 pkt 17, powstaje z dniem przyjęcia do szkoły, a wygasa z dniem ukończenia
+     szkoły albo skreślenia z listy uczniów;
+2)   dzieci, o których mowa w art. 66 ust. 1 pkt 18, przebywających w placówkach pełniących funkcje resocjalizacyjne,
+     wychowawcze lub opiekuńcze lub w domach pomocy społecznej, powstaje z dniem przyjęcia do placówki albo domu,
+     a wygasa z końcem pobytu w placówce bądź domu;
+3)   dzieci, o których mowa w art. 66 ust. 1 pkt 19, powstaje z dniem uznania przez ośrodek pomocy społecznej, a w przy-
+     padku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów ustawy z dnia
+     19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych – przez centrum usług społecz-
+     nych, zasadności objęcia ubezpieczeniem zdrowotnym, a wygasa z dniem uznania, że ustała zasadność objęcia ubez-
+     pieczeniem zdrowotnym, nie później niż z dniem, w którym dziecko rozpoczyna realizację obowiązku szkolnego; ośrodek
+     pomocy społecznej albo centrum usług społecznych mogą odmówić uznania zasadności objęcia ubezpieczeniem zdro-
+     wotnym lub uznać, że ustała konieczność i zasadność objęcia ubezpieczeniem zdrowotnym dziecka spełniającego prze-
+     słanki określone w art. 66 ust. 1 pkt 19, jeżeli na podstawie wywiadu rodzinnego (środowiskowego) stwierdzą, iż warunki
+     materialne opiekunów prawnych lub faktycznych dziecka umożliwiają jego ubezpieczenie zdrowotne na zasadach
+     określonych w art. 68;
+4)   osób, o których mowa w art. 66 ust. 1 pkt 20, 20a i 22, powstaje z dniem złożenia oświadczenia o niepodleganiu obo-
+     wiązkowi ubezpieczenia zdrowotnego z innego tytułu, nie wcześniej jednak niż z dniem rozpoczęcia odpowiednio
+     pierwszego semestru kształcenia, obowiązkowego stażu lub kursu, a wygasa z dniem ukończenia odpowiednio studiów
+     lub kształcenia w szkole doktorskiej lub stażu lub kursu albo skreślenia z listy studentów lub listy doktorantów lub listy
+     uczestników stażu lub listy kursu;
+5)   osób, o których mowa w art. 66 ust. 1 pkt 21, powstaje z dniem przyjęcia do wyższego seminarium duchownego albo
+     teologicznego lub do zakonu albo jego odpowiedników, a wygasa z dniem ukończenia 25. roku życia albo wystąpienia
+     z wyższego seminarium duchownego albo teologicznego lub zakonu albo jego odpowiedników;
+6)   osób, o których mowa w art. 66 ust. 1 pkt 23, powstaje z dniem przyznania stypendium, a wygasa z dniem utraty prawa
+     do jego pobierania;
+7)   osób, o których mowa w art. 66 ust. 1 pkt 24, powstaje z dniem uzyskania statusu bezrobotnego, a wygasa z dniem
+     utraty tego statusu;
+7a) osób, o których mowa w art. 66 ust. 1 pkt 24a, powstaje z dniem nabycia prawa do stypendium, a wygasa z dniem
+    utraty prawa do niego;
+7b)47) osób, o których mowa w art. 66 ust. 1 pkt 24b, powstaje z dniem nabycia prawa do stypendium, a wygasa z dniem
+      utraty prawa do niego;
+8)     osób pobierających świadczenie przedemerytalne lub zasiłek przedemerytalny obejmuje okres od dnia przyznania prawa
+       do świadczenia przedemerytalnego do dnia utraty prawa do jego pobierania, a w przypadku zasiłku przedemerytal-
+       nego – do jego wygaśnięcia, a w odniesieniu do osób niepobierających zasiłku przedemerytalnego lub świadczenia
+       przedemerytalnego z przyczyn, o których mowa w art. 66 ust. 1 pkt 25 – obejmuje okres od dnia zarejestrowania się
+       w urzędzie pracy do dnia przyznania prawa do zasiłku przedemerytalnego lub świadczenia przedemerytalnego;
+9)     osób, o których mowa w art. 66 ust. 1 pkt 26, obejmuje okres od dnia przyznania zasiłku do dnia utraty prawa do zasiłku;
+10) osób, o których mowa w art. 66 ust. 1 pkt 28 i 28a, obejmuje okres od dnia przyznania świadczenia pielęgnacyjnego,
+    specjalnego zasiłku opiekuńczego lub dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka
+    i utraty prawa do zasiłku dla bezrobotnych na skutek upływu ustawowego okresu jego pobierania do dnia utraty prawa
+    do ich pobierania;
+10a) osób, o których mowa w art. 66 ust. 1 pkt 28b, obejmuje okres od dnia nabycia prawa do zasiłku dla opiekuna, nie
+     wcześniej jednak niż od dnia wejścia w życie ustawy z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla
+     opiekunów (Dz. U. z 2024 r. poz. 246) do dnia utraty prawa do jego pobierania;
+10b) osób, o których mowa w art. 66 ust. 1 pkt 28c, obejmuje okres od dnia przyznania świadczenia wspierającego do dnia
+     utraty prawa do jego pobierania;
+10c) osób, o których mowa w art. 66 ust. 1 pkt 28d, powstaje od dnia określonego we wniosku, o którym mowa w art. 36c
+     ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, jako dzień rozpoczęcia sprawowania
+     osobistej opieki nad osobą pobierającą świadczenie wspierające przyznane na podstawie ustawy z dnia 7 lipca 2023 r.
+     o świadczeniu wspierającym, nie wcześniej jednak niż od dnia, w którym wniosek, o którym mowa w art. 36c, został
+     złożony, a wygasa od dnia wskazanego w tym wniosku jako dzień zakończenia sprawowania opieki nad tą osobą;
+11) osób, o których mowa w art. 66 ust. 1 pkt 29, powstaje od dnia rozpoczęcia realizacji indywidualnego programu
+    wychodzenia z bezdomności, a wygasa z dniem zakończenia realizacji tego programu lub zaprzestania realizacji tego
+    programu w rozumieniu przepisów o pomocy społecznej;
+12) osób, o których mowa w art. 66 ust. 1 pkt 27, powstaje od dnia rozpoczęcia realizacji indywidualnego programu inte-
+    gracji, a wygasa z dniem zakończenia lub wstrzymania realizacji tego programu;
+13) osób, o których mowa w art. 66 ust. 1 pkt 30:
+       a)   powstaje po upływie 30 dni od dnia rozpoczęcia realizacji indywidualnego programu zatrudnienia socjalnego,
+            a wygasa z dniem zakończenia realizacji programu lub zaprzestania realizacji programu w rozumieniu przepisów
+            o zatrudnieniu socjalnym,
+       b) powstaje po upływie 30 dni od dnia podpisania kontraktu socjalnego, a wygasa z dniem zakończenia realizacji
+          kontraktu socjalnego lub zaprzestania realizacji kontraktu socjalnego, o którym mowa w przepisach o pomocy
+          społecznej;
+14) osób, o których mowa w art. 66 ust. 1 pkt 31 i 31b, powstaje z dniem złożenia Szefowi Urzędu do Spraw Kombatantów
+    i Osób Represjonowanych oświadczenia o niepodleganiu przepisom o systemie ubezpieczeń społecznych i braku innego
+    tytułu do objęcia ubezpieczeniem zdrowotnym, a wygasa z dniem ustania tych warunków;
+14a) osób, o których mowa w art. 66 ust. 1 pkt 31a, powstaje z dniem złożenia w organie rentowym, w rozumieniu przepi-
+     sów o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, oświadczenia o braku innego tytułu do objęcia
+     ubezpieczeniem zdrowotnym, a wygasa z dniem ustania tego warunku;
+15) osób, o których mowa w art. 66 ust. 1 pkt 32, powstaje z dniem rozpoczęcia urlopu, a wygasa z dniem zakończenia urlopu;
+15a) osób, o których mowa w art. 66 ust. 1 pkt 32a, powstaje z dniem objęcia ubezpieczeniami emerytalnym i rentowymi
+     w związku ze sprawowaniem osobistej opieki nad dzieckiem, a wygasa z dniem zakończenia sprawowania tej opieki;
+16) osób, o których mowa w art. 66 ust. 1 pkt 33, powstaje z dniem, w którym świadczenie alimentacyjne staje się wyma-
+    galne, a wygasa w dniu, w którym świadczenie to przestaje być wymagalne;
+17) osób, o których mowa w art. 66 ust. 1 pkt 35, powstaje z dniem powołania na członka rady nadzorczej, a wygasa w dniu
+    zaprzestania pełnienia tej funkcji;
+17a) ławników sądowych, o których mowa w art. 66 ust. 1 pkt 15a, powstaje z dniem wyboru na stanowisko ławnika sądo-
+     wego, a wygasa z dniem upływu kadencji lub wcześniejszego wygaśnięcia mandatu;
+47)   Dodany przez art. 394 pkt 2 ustawy, o której mowa w odnośniku 38.
+17b) osób, o których mowa w art. 66 ust. 1 pkt 35a, powstaje z dniem powołania lub ustanowienia prokury, a wygasa
+     z dniem odwołania, z wyłączeniem osób uzyskujących przychody, o których mowa w art. 13 pkt 5 lub 6 ustawy z dnia
+     26 lipca 1991 r. o podatku dochodowym od osób fizycznych, których obowiązek ubezpieczenia zdrowotnego powstaje
+     z dniem, w którym wynagrodzenie pobrane z tytułu powołania do pełnienia funkcji przekroczy w roku kalendarzowym
+     kwotę 6000 zł;
+18) osób, o których mowa w art. 66 ust. 1 pkt 36, powstaje z dniem przyznania stypendium, a wygasa z dniem utraty prawa
+    do jego pobierania;
+19) osób, o których mowa w art. 66 ust. 1 pkt 37, obejmuje okres od dnia przyznania prawa do nauczycielskiego świad-
+    czenia kompensacyjnego do dnia utraty prawa do jego pobierania.
+     Art. 73a. Obowiązek ubezpieczenia zdrowotnego małżonka Prezydenta Rzeczypospolitej Polskiej, o którym mowa
+w art. 4 pkt 19 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, powstaje i wygasa w terminach
+określonych w art. 13 pkt 18 tej ustawy.
+     Art. 74. 1. Do ubezpieczenia zdrowotnego osób objętych ubezpieczeniami społecznymi lub ubezpieczeniem społecz-
+nym rolników, osób, o których mowa w art. 66 ust. 1 pkt 1a, osób wymienionych w art. 75 i art. 76 oraz członków ich rodzin
+stosuje się odpowiednio przepisy dotyczące zasad, trybu i terminu zgłaszania do ubezpieczeń społecznych lub do ubezpieczenia
+społecznego rolników oraz wyrejestrowywania z tych ubezpieczeń, z zastrzeżeniem art. 75 ust. 1–2a, art. 77 i art. 86 ust. 6.
+     2. Do ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 2–8 i 8b–15 oraz członków ich rodzin,
+stosuje się odpowiednio przepisy dotyczące zasad, trybu i terminu zgłaszania do ubezpieczeń społecznych oraz wyrejestro-
+wywania z tych ubezpieczeń, z zastrzeżeniem art. 77.
+     3. Osoby, o których mowa w art. 66 ust. 1 pkt 1 lit. c, będące przedsiębiorcami w rozumieniu przepisów ustawy z dnia
+6 marca 2018 r. – Prawo przedsiębiorców, a także osoby, o których mowa w art. 18 ust. 1 ustawy z dnia 6 marca 2018 r. –
+Prawo przedsiębiorców, mogą dokonywać zgłoszenia do ubezpieczenia zdrowotnego, zgłoszenia do ubezpieczenia zdrowot-
+nego członków rodziny, zgłoszenia wyrejestrowania z ubezpieczenia zdrowotnego lub zmiany danych wykazanych w tych
+zgłoszeniach, na podstawie przepisów ustawy z dnia 6 marca 2018 r. o Centralnej Ewidencji i Informacji o Działalności Gospo-
+darczej i Punkcie Informacji dla Przedsiębiorcy (Dz. U. z 2022 r. poz. 541, z 2024 r. poz. 1841 oraz z 2025 r. poz. 769).
+     Art. 75. 1. Osoby pobierające emeryturę lub rentę lub rodzicielskie świadczenie uzupełniające zgłasza do ubezpiecze-
+nia zdrowotnego jednostka organizacyjna Zakładu Ubezpieczeń Społecznych określona w przepisach o systemie ubezpie-
+czeń społecznych, właściwa do wydania decyzji w sprawach świadczeń, Kasa Rolniczego Ubezpieczenia Społecznego, właś-
+ciwy organ emerytalny lub instytucja wypłacająca emeryturę lub rentę albo bank dokonujący wypłaty emerytury lub renty
+z zagranicy do 15. dnia miesiąca następującego po miesiącu, w którym powstał obowiązek ubezpieczenia lub zaistniały
+zmiany dotyczące tego obowiązku.
+     1a. W przypadku dokonywania wypłaty emerytury lub renty pochodzącej z innego niż Rzeczpospolita Polska państwa
+członkowskiego UE lub EFTA, lub ze Zjednoczonego Królestwa bank kieruje do Funduszu zapytanie dotyczące podlegania
+przez tę osobę ubezpieczeniu zdrowotnemu w Rzeczypospolitej Polskiej z tytułu pobierania polskiej emerytury lub renty.
+     1b. W przypadku, o którym mowa w ust. 1a, zgłoszenie do ubezpieczenia zdrowotnego następuje do 15. dnia miesiąca
+następującego po miesiącu, w którym bank otrzymał od Funduszu informację potwierdzającą podleganie danej osoby ubez-
+pieczeniu zdrowotnemu w Rzeczypospolitej Polskiej z tytułu pobierania polskiej emerytury lub renty.
+     2. Osoby pobierające zasiłek przedemerytalny lub świadczenie przedemerytalne zgłasza do ubezpieczenia zdrowot-
+nego jednostka organizacyjna Zakładu Ubezpieczeń Społecznych określona w przepisach o systemie ubezpieczeń społecz-
+nych do 15. dnia miesiąca następującego po miesiącu, w którym powstał obowiązek ubezpieczenia lub zaistniały zmiany
+dotyczące tego obowiązku.
+     2a. Osoby pobierające nauczycielskie świadczenia kompensacyjne zgłasza do ubezpieczenia zdrowotnego jednostka
+organizacyjna Zakładu Ubezpieczeń Społecznych określona w przepisach o systemie ubezpieczeń społecznych do 15 dnia
+miesiąca następującego po miesiącu, w którym powstał obowiązek ubezpieczenia lub zaistniały zmiany dotyczące tego obo-
+wiązku.
+     3. Osoby pobierające uposażenie w stanie spoczynku lub uposażenie rodzinne, a także osoby pobierające uposażenie
+po zwolnieniu ze służby lub świadczenie pieniężne o takim samym charakterze zgłasza do ubezpieczenia zdrowotnego pod-
+miot wypłacający to uposażenie lub świadczenie.
+    3a. Osoby, o których mowa w art. 66 ust. 1 pkt 15a, zgłasza do ubezpieczenia zdrowotnego sąd, w którym ławnik pełni
+swoją funkcję.
+     4. Osoby, o których mowa w art. 66 ust. 1 pkt 17, 18, 20 i 20a, zgłaszają do ubezpieczenia zdrowotnego odpowiednio
+szkoły, uczelnie, podmioty prowadzące szkoły doktorskie, placówki pełniące funkcje resocjalizacyjne, wychowawcze lub
+opiekuńcze i domy pomocy społecznej.
+     5. Dzieci, o których mowa w art. 66 ust. 1 pkt 19, zgłasza do ubezpieczenia zdrowotnego ośrodek pomocy społecznej,
+a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów ustawy
+z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych – centrum usług społecznych,
+na wniosek opiekuna prawnego lub faktycznego dziecka albo z własnej inicjatywy.
+     6. Osoby, o których mowa w art. 66 ust. 1 pkt 21, zgłasza do ubezpieczenia zdrowotnego odpowiednio wyższe semi-
+narium duchowne albo teologiczne lub zakon albo jego odpowiednik.
+      7. Osoby, o których mowa w art. 66 ust. 1 pkt 22, zgłasza do ubezpieczenia zdrowotnego Krajowa Szkoła Admini-
+stracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego.
+       8. Osoby, o których mowa w art. 66 ust. 1 pkt 23, zgłasza do ubezpieczenia zdrowotnego podmiot wypłacający stypendium.
+       9. Osoby, o których mowa w art. 66 ust. 1 pkt 24, zgłasza do ubezpieczenia zdrowotnego właściwy powiatowy urząd pracy.
+      9a. Osoby, o których mowa w art. 66 ust. 1 pkt 24a, zgłasza do ubezpieczenia zdrowotnego podmiot kierujący (bene-
+ficjent) na szkolenie, staż lub przygotowanie zawodowe dorosłych, którym jest:
+1)     jednostka samorządu terytorialnego i jej jednostka organizacyjna, z wyjątkiem wojewódzkiego i powiatowego urzędu
+       pracy,
+2)     Ochotniczy Hufiec Pracy,
+3)     agencja zatrudnienia,
+4)     instytucja szkoleniowa,
+5)     instytucja dialogu społecznego,
+6)     instytucja partnerstwa lokalnego,
+7)     organizacja pozarządowa działająca na rzecz rozwoju zasobów ludzkich i przeciwdziałania bezrobociu,
+8)     podmiot, o którym mowa w art. 7 ust. 1 pkt 1, 2 i 4–8 ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym
+       i nauce,
+9)     organizacja pracodawców,
+10) związek zawodowy,
+11) wojewódzki ośrodek doradztwa rolniczego,
+12) ośrodek poradnictwa zawodowego i psychologicznego
+– korzystający z publicznych środków wspólnotowych i publicznych środków krajowych na podstawie umowy o dofinan-
+sowanie projektu albo decyzji, o których mowa w ustawie z dnia 20 kwietnia 2004 r. o Narodowym Planie Rozwoju (Dz. U.
+z 2022 r. poz. 260), ustawie z dnia 6 grudnia 2006 r. o zasadach prowadzenia polityki rozwoju (Dz. U. z 2025 r. poz. 198),
+w ustawie z dnia 11 lipca 2014 r. o zasadach realizacji programów w zakresie polityki spójności finansowanych w perspek-
+tywie finansowej 2014–2020 (Dz. U. z 2020 r. poz. 818) albo w ustawie z dnia 28 kwietnia 2022 r. o zasadach realizacji zadań
+finansowanych ze środków europejskich w perspektywie finansowej 2021–2027 (Dz. U. poz. 1079 oraz z 2024 r. poz. 1717).
+     9b.48) Osoby, o których mowa w art. 66 ust. 1 pkt 24b, zgłasza do ubezpieczenia zdrowotnego właściwy powiatowy
+urząd pracy.
+     10. Osoby, o których mowa w art. 66 ust. 1 pkt 26, zgłasza do ubezpieczenia zdrowotnego ośrodek pomocy społecznej,
+a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów ustawy
+z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych – centrum usług społecznych.
+     11. Osoby, o których mowa w art. 66 ust. 1 pkt 28–28b, zgłasza do ubezpieczenia zdrowotnego wójt, burmistrz lub
+prezydent miasta.
+     11a. Osoby, o których mowa w art. 66 ust. 1 pkt 28c i 28d, zgłasza do ubezpieczenia zdrowotnego Zakład Ubezpieczeń
+Społecznych.
+48)   Dodany przez art. 394 pkt 3 lit. a ustawy, o której mowa w odnośniku 38.
+     12.49) Osoby, o których mowa w art. 66 ust. 1 pkt 29 i 30, zgłasza do ubezpieczenia zdrowotnego ośrodek pomocy spo-
+łecznej, a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów
+ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych – centrum usług społecz-
+nych, realizujące indywidualny program zatrudnienia socjalnego lub indywidualny program wychodzenia z bezdomności
+lub ośrodek pomocy społecznej, a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych
+na podstawie przepisów ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych –
+centrum usług społecznych, realizujące kontrakt socjalny, o którym mowa w art. 108 ust. 2 ustawy z dnia 12 marca 2004 r.
+o pomocy społecznej.
+     13. Osoby, o których mowa w art. 66 ust. 1 pkt 27, zgłasza do ubezpieczenia zdrowotnego powiatowe centrum pomocy
+rodzinie realizujące indywidualny program integracji.
+   14. Osoby, o których mowa w art. 66 ust. 1 pkt 31 i 31b, zgłasza do ubezpieczenia zdrowotnego Szef Urzędu do Spraw
+Kombatantów i Osób Represjonowanych.
+     14a. Osoby, o których mowa w art. 66 ust. 1 pkt 31a, zgłasza do ubezpieczenia zdrowotnego jednostka organizacyjna
+Zakładu Ubezpieczeń Społecznych, określona w przepisach o systemie ubezpieczeń społecznych, w której zostało złożone
+oświadczenie, o którym mowa w art. 73 pkt 14a.
+    15. Osoby, o których mowa w art. 66 ust. 1 pkt 32, zgłasza do ubezpieczenia zdrowotnego w imiennym raporcie miesięcz-
+nym kierowanym do Zakładu Ubezpieczeń Społecznych pracodawca albo rolnicza spółdzielnia produkcyjna.
+     15a. Osoby, o których mowa w art. 66 ust. 1 pkt 32a, zgłasza do ubezpieczenia zdrowotnego jednostka organizacyjna
+Zakładu Ubezpieczeń Społecznych, określona w przepisach o systemie ubezpieczeń społecznych.
+    16. Osoby, o których mowa w art. 66 ust. 1 pkt 34, do ubezpieczenia zdrowotnego zgłaszają się same za pośrednic-
+twem Kasy Rolniczego Ubezpieczenia Społecznego. Osoby te są obowiązane niezwłocznie złożyć w Kasie Rolniczego
+Ubezpieczenia Społecznego zgłoszenie do ubezpieczenia zdrowotnego.
+     17. Osoby, o których mowa w art. 66 ust. 1 pkt 35, zgłasza do ubezpieczenia zdrowotnego podmiot, w którym działa
+rada nadzorcza.
+     17a. Osoby, o których mowa w art. 66 ust. 1 pkt 35a, zgłasza do ubezpieczenia zdrowotnego podmiot wypłacający wy-
+nagrodzenie.
+     18. Osoby, o których mowa w art. 66 ust. 1 pkt 36, zgłasza do ubezpieczenia zdrowotnego Krajowa Szkoła Sądownictwa
+i Prokuratury.
+     19. Osobę, o której mowa w art. 66 ust. 1 pkt 38, zgłasza do ubezpieczenia zdrowotnego Kancelaria Prezydenta Rzeczy-
+pospolitej Polskiej.
+
+[art. 188 ust. 4 opening and pkt 9 (added on 17.10.2026 after the check)]
+     4. W celu realizacji zadań, o których mowa w ust. 1–3, minister właściwy do spraw zdrowia i Fundusz przetwarzają
+następujące dane:
+1)   nazwisko i imię (imiona);
+[...]
+9)   seria i numer dowodu osobistego, paszportu lub innego dokumentu stwierdzającego tożsamość – w przypadku osób,
+     które nie mają nadanego numeru PESEL;
 
 [art. 76]
        Art. 76. Osoby niewymienione w art. 74 i 75 do ubezpieczenia zdrowotnego zgłaszają się same.

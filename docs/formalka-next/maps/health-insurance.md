@@ -1,22 +1,22 @@
 # Map: health insurance: NFZ, ZUS and the voluntary NFZ agreement
 
-**Status:** a lab map by Claude, 17.10.2026. It is not independent, and nothing in it is built or shown to people. Doc 19 matter 11 (wave 4). Production's registry has no guide for it, only the NFZ as an institution. So the app could link to it from other cases, and nothing more, until production adds a guide.
+**Status:** a lab map by Claude, 17.10.2026. It is not independent, and nothing in it is built or shown to people. Doc 19 matter 11 (wave 4). Production's registry has no guide for it, only the NFZ as an institution. So the app could link to it from other cases, and nothing more, until production adds a guide. At the owner's request every FACT was checked on 17.10.2026 against the official texts by a separate checking agent; its verdicts and the corrections made here are in `research/2026-10-17-health/sources/CHECK.md` (summary in §7). The corrections were changed in the lab; not independently verified. No expert has reviewed this map.
 
 **Why now:** the residence work found that insurance is a condition of the permits people apply for. The CUKR work found that the rules for UKR status holders changed on 5.03.2026.
 - **Work:** insurance under the act, or an insurer's cover. Insurance that the person will have through that work also counts.
 - **Study and family reunification:** insurance under the act, or an insurer's cover.
-- **UKR status holders:** since 5.03.2026, care without insurance is limited to four groups and emergencies (PROT art. 112c). The earlier rule (special act art. 37) was removed from the health act (W203 art. 7); what it gave is not collected here.
+- **UKR status holders:** since 5.03.2026, care without insurance is limited to four groups and emergencies (PROT art. 112c), besides the care art. 12 keeps free for anyone (OPEN-H9). The earlier rule (special act art. 37) was removed from the health act (W203 art. 7); what it gave is not collected here.
 
 **Sources:** `research/2026-10-17-health/sources/` (README there), cited as:
-- HA: the act on health care benefits, Dz.U. 2025 poz. 1461, with the changes of 2025 poz. 1083, 2026 poz. 203 and 791;
+- HA: the act on health care benefits, Dz.U. 2025 poz. 1461 (legal state 25.09.2025; it prints 2025 poz. 1083, from 1.01.2026), with the changes of 2026 poz. 203 and 791;
 - PROT: the protection act, art. 112c (Dz.U. 2026 poz. 862);
 - W203: the act winding down the special act for Ukrainians, Dz.U. 2026 poz. 203;
-- FA: the foreigners act (art. 114, 144, 159);
+- FA: the foreigners act, Dz.U. 2025 poz. 1079 (art. 114, 144, 159), with 2025 poz. 1794 and 2026 poz. 203, neither of which changes the points cited;
 - NFZ: the NFZ page "Ubezpieczenie w NFZ" (17.10.2026);
 - PAC: the archival pacjent.gov.pl article (a lead only);
-- QA: UdSC's CUKR questions and answers.
+- QA: UdSC's CUKR questions and answers; SA: the special act, art. 42r ust. 1.
 
-Labels: FACT, INFERENCE, HYPOTHESIS, OPEN (OPEN-H1 to H11 in the sources README), PROPOSED.
+Labels: FACT, INFERENCE, HYPOTHESIS, OPEN (OPEN-H1 to H12 in the sources README), PROPOSED.
 
 **Content rules for this matter (PROPOSED, from the product rules):**
 - **No amounts.** The voluntary contribution depends on the average wage of the quarter, and the students' base differs between the NFZ page and the act (OPEN-H1). The app names the basis and sends the person to the NFZ branch. It never computes a contribution or an entry fee.
@@ -29,32 +29,32 @@ Anyone living in Poland who needs public health care or must prove insurance for
 
 | The person says | Route | Basis |
 |---|---|---|
-| "Pracuję na umowę o pracę" | Insured through work; the employer reports them to ZUS. Check that the report happened | HA art. 3 ust. 1a, 66 ust. 1 pkt 1 lit. a, 74 (FACT); NFZ: a missing report is the most common problem |
+| "Pracuję na umowę o pracę" | Insured through work; the employer reports them to ZUS (NFZ: "dla pracowników - pracodawca"). Check that the report happened | HA art. 3 ust. 1 pkt 2 (permit holders) or ust. 1a, 66 ust. 1 pkt 1 lit. a, 74 (FACT); NFZ: a missing report is the most common problem |
 | "Pracuję na zlecenie" (or another civil contract) | Insured through it when social insurance applies to that contract. When it does is not collected (OPEN-H3); a student under 26 is the case to check | HA art. 66 ust. 1 pkt 1 lit. e (FACT); PAC (lead) |
-| "Mam własną firmę" | Reports themselves to ZUS (or through CEIDG) | HA art. 66 ust. 1 pkt 1 lit. c, 74 ust. 1 and 3 (FACT); NFZ |
-| "Studiuję" (no Karta Polaka, not an EU citizen) | A voluntary NFZ agreement, with the lower base and no entry fee, unless an employment contract or a family member covers them | HA art. 3 ust. 2 pkt 1, 66 ust. 1 pkt 20, 68 ust. 4 pkt 3, ust. 9 (FACT) |
-| "Studiuję i mam Kartę Polaka" | The university reports them, on request (PAC: "tylko na Twój wniosek") | HA art. 3 ust. 1 pkt 3a, 66 ust. 1 pkt 20 (FACT) |
-| "Mój mąż / moja żona / rodzic pracuje" | A family member, reported by that person within 7 days. A partner who is not a spouse is not a family member | HA art. 5 pkt 3, 3 ust. 2 pkt 6, 67 ust. 3 (FACT); NFZ: "ale nie konkubenci" |
-| "Nie pracuję, mam zezwolenie na pobyt" | Not insured by the permit. A voluntary NFZ agreement if they live in Poland; an entry fee after a gap of 3 months or more | HA art. 3 ust. 1 pkt 2 (closing words), 68 ust. 1, 7–8 (FACT); INFERENCE in the README |
-| "Mam status uchodźcy albo ochronę uzupełniającą" (or a family permit under FA art. 159 ust. 1 pkt 1 lit. c or d), not insured, low income | The municipality's decision confirming the right, after a family interview and the income test (the income threshold, social assistance act art. 8, not collected) | HA art. 2 ust. 1 pkt 2, art. 54 (FACT) |
-| "Skończyła mi się praca" / "Skończyłem studia" | The right ends 30 days after the insurance ends; 4 months after a degree. Then a new title or a voluntary agreement | HA art. 67 ust. 4–5, 69 ust. 4 (FACT) |
-| "Mam PESEL UKR" | Care without insurance only in four groups, and in a sudden threat to health. Otherwise through work, family or a voluntary agreement | PROT art. 112c (FACT, from 5.03.2026) |
-| "Mam kartę CUKR" | Like any temporary permit holder | QA (FACT); INFERENCE in the README |
-| "Jestem ubezpieczony w innym kraju UE" | The EHIC for a stay; for living here, the NFZ's poświadczenie (OPEN-H8) | HA art. 52–53 (FACT) |
-| "Mam zezwolenie na krótki pobyt (art. 181)" | Insured only through work | HA art. 3 ust. 1 pkt 2, ust. 1a (FACT) |
-| An asylum applicant | Insured if working or voluntary (HA art. 3 ust. 1 pkt 2b). Their care under the protection act is not collected | Not covered here: says so and points to UdSC |
+| "Mam własną firmę" | Reports themselves to ZUS (or through CEIDG); while the business is suspended, art. 68 applies instead | HA art. 66 ust. 1 pkt 1 lit. c, 69 ust. 1a, 74 ust. 1 and 3 (FACT); NFZ |
+| "Studiuję" (no Karta Polaka, not from the EU, EFTA or the UK) | A voluntary NFZ agreement, with the lower base and no entry fee, if they live in Poland; unless any work title (art. 66) or a family member covers them | HA art. 3 ust. 2 pkt 1, 66 ust. 1 pkt 20, 68 ust. 1, 4 pkt 3, ust. 9 (FACT) |
+| "Studiuję i mam Kartę Polaka" | The university reports them once they state they have no other title (PAC: "tylko na Twój wniosek"); a family member's cover comes first | HA art. 3 ust. 1 pkt 3a, 66 ust. 1 pkt 20, ust. 2, 73 pkt 4, 75 ust. 4 (FACT) |
+| "Mój mąż / moja żona / rodzic pracuje" | A family member: that person tells the payer within 7 days and the payer reports them (or reports them directly, if self-reporting); grandparents may report a grandchild. A partner who is not a spouse is not a family member | HA art. 5 pkt 3, 3 ust. 2 pkt 6, 67 ust. 3, 3a (FACT); NFZ: "ale nie konkubenci" |
+| "Nie pracuję, mam zezwolenie na pobyt" | Not insured by the permit, unless as an insured person's family member. A voluntary NFZ agreement if they live in Poland; an entry fee after a gap of 3 months or more (none for the art. 3 ust. 2 groups, ust. 9) | HA art. 3 ust. 1 pkt 2 (closing words), 68 ust. 1, 7–8 (FACT); INFERENCE in the README |
+| "Mam status uchodźcy albo ochronę uzupełniającą" (or a family permit under FA art. 159 ust. 1 pkt 1 lit. c or d), not insured, low income | The municipality's decision confirming the right, after the residence documents, a family interview, the income test (the threshold, social assistance act art. 8, not collected) and the art. 12 check; **the right lasts 90 days** from the day in the decision unless they become insured. Children and pregnancy in these groups: no income test | HA art. 2 ust. 1 pkt 2–4, art. 54 ust. 3, 7 (FACT) |
+| "Skończyła mi się praca" / "Skończyłem studia" | The right ends 30 days after the duty to be insured ends; 4 months after a degree or being struck off. It continues while a sickness benefit is paid or a pension case is pending. Then a new title or a voluntary agreement. Whether the 4 months apply to a student on a voluntary agreement is OPEN-H12 | HA art. 67 ust. 4–7, 68 ust. 12, 69 ust. 4 (FACT) |
+| "Mam PESEL UKR" | Care without insurance in four groups, and in a sudden threat to health, besides the care art. 12 keeps free for anyone (OPEN-H9). Otherwise through work, family or a voluntary agreement | PROT art. 112c (FACT, from 5.03.2026) |
+| "Mam kartę CUKR" | Like any temporary permit holder | QA; SA art. 42r ust. 1 (FACT); INFERENCE in the README |
+| "Jestem ubezpieczony w innym kraju UE, EFTA lub w Wielkiej Brytanii" | The foreign institution's document or the NFZ's poświadczenie; the NFZ page names the EHIC for a stay and the poświadczenie for living here (OPEN-H8) | HA art. 52–53 (FACT); NFZ |
+| "Mam zezwolenie na krótki pobyt (art. 181)" | Insured through work; perhaps as an insured person's family member living in Poland (OPEN-H2) | HA art. 3 ust. 1 pkt 2 (the exclusion, FACT), ust. 1a, ust. 2 pkt 6 (INFERENCE in the README) |
+| An asylum applicant | Insured if they hold the PA art. 35 certificate and are subject to art. 66 or insure voluntarily (HA art. 3 ust. 1 pkt 2b). Their care under the protection act is not collected | Not covered here: says so and points to UdSC |
 | A visitor on a tourist visa or visa-free, not working | Not insured (HA art. 4). Private travel insurance is the person's matter | Says so; no product advice |
 
 ## 2. The journey (stages H0–H6), with steps off the phone
 
 | Stage | Goal | Steps (phone / **off the phone**) | Basis | Where people get lost (HYPOTHESIS until interviews, unless marked) |
 |---|---|---|---|---|
-| **H0** Am I covered? | Know one's own route | Phone: the intake (§5.1). **Off: check in IKP (needs a trusted profile, so a PESEL) or ask at the clinic** | HA art. 3, 50 ust. 3; NFZ (IKP) | **HL1:** believes a permit or a job means cover. The NFZ page names a missing report as the most common cause (FACT, NFZ). **HL2:** cannot check without a PESEL and a profile (INFERENCE: e-government map) |
+| **H0** Am I covered? | Know one's own route | Phone: the intake (§5.1). **Off: check in IKP or ask at the clinic.** IKP needs an account created by confirming identity in person or by an e-identification route (HA art. 50 ust. 2b); in practice a trusted profile, so a PESEL (INFERENCE: the e-government map) | HA art. 3, 50 ust. 3; NFZ (IKP) | **HL1:** believes a permit or a job means cover. The NFZ page names a missing report as the most common cause (FACT, NFZ). **HL2:** cannot check without a PESEL and a profile (INFERENCE: e-government map) |
 | **H1** Through work | The employer has reported them | Phone: what to ask the employer. **Off: the employer files ZUS ZUA or ZZA; the person may ask for a confirmation** | HA art. 66 ust. 1 pkt 1, 67 ust. 1–2, 74; NFZ (the documents) | **HL3:** the contract type is not what they think (a civil contract, a student under 26; OPEN-H3). **HL4:** a new job, and the family is not reported again (FACT, NFZ) |
-| **H2** The family | Each family member reported | Phone: who counts as family. **Off: tell the payer within 7 days; ZUS ZCNA** | HA art. 5 pkt 3, 67 ust. 3, 3a | **HL5:** a partner who is not a spouse (FACT: not family). **HL6:** a child over 18 who left school (FACT: to 26 only while in education) |
+| **H2** The family | Each family member reported | Phone: who counts as family. **Off: tell the payer within 7 days; ZUS ZCNA** | HA art. 5 pkt 3, 67 ust. 3, 3a | **HL5:** a partner who is not a spouse (FACT: not family). **HL6:** a child over 18 who left school (FACT: to 26 only while in education; no age limit with a severe-disability certificate) |
 | **H3** Voluntary agreement | Cover from a chosen date | **Off: the NFZ branch: application, two copies of the agreement, identity document, proof of the last insurance. Then ZUS: ZZA, and ZCNA for family.** Phone: the order of steps, the entry fee bands, the monthly payment as the person's own task | HA art. 68 ust. 1, 3–9, 11; NFZ | **HL7:** stops after the NFZ step, before ZUS (INFERENCE from the page's order). **HL8:** one month of unbroken arrears ends the cover (FACT, art. 68 ust. 5). **HL9:** an entry fee they did not expect; a waiver or up to 12 instalments exists (FACT, ust. 11) |
-| **H4** At the clinic | Care without a bill | **Off: show identity; the clinic checks eWUŚ by PESEL. If it fails: another document or the written statement.** Phone: what to bring, what the statement says | HA art. 50 ust. 2–3, 6–8 | **HL10:** no PESEL, so no eWUŚ check (INFERENCE). **HL11:** signs the statement without the right and is billed (FACT, art. 50 ust. 16). **HL12:** the residence card is not on the act's identity list (INFERENCE; OPEN-H6) |
-| **H4e** An emergency | Care first; the paperwork after | **Off: care is given; then a document or the statement within 14 days, or 7 days after a hospital stay** | HA art. 50 ust. 11 | **HL13:** misses the period and is billed (FACT, the rule; how often is HYPOTHESIS) |
+| **H4** At the clinic | Care without a bill | **Off: show identity; the clinic checks eWUŚ by PESEL. If it fails: another document, and only without one the written statement.** Phone: what to bring, what the statement says | HA art. 50 ust. 2–3, 6–8, 16, 23 | **HL10:** no PESEL, so no eWUŚ check (INFERENCE). **HL11:** signs the statement without the right and is billed (FACT, art. 50 ust. 16), except for primary care; the NFZ opens no case for 500 zł or less (ust. 23). **HL12:** the residence card is not on the act's identity list (INFERENCE; OPEN-H6) |
+| **H4e** An emergency | Care first; the paperwork after | **Off: care is given; then a document or the statement within 14 days of the start of care, or 7 days after a hospital stay ends** | HA art. 50 ust. 11–12 | **HL13:** misses the period and is billed (FACT, the rule; how often is HYPOTHESIS); a document or statement up to 1 year later still counts (ust. 12) |
 | **H5** Changes and endings | No gap | Phone: the rule for each ending. **Off: a new title (a job, family) or a voluntary agreement** | HA art. 67 ust. 4–5, 69 ust. 3–4, 68 ust. 12 | **HL14:** a gap of 3 months or more makes a later agreement cost an entry fee (FACT); bills in the gap (INFERENCE) |
 | **H6** For a residence permit | The insurance condition met | Phone: which condition the purpose has. **Off: the NFZ agreement or the employer's report, or a private insurer's cover** | FA art. 114 ust. 1 pkt 1 and 4a, 144 ust. 1 pkt 2 lit. a, 159 ust. 1 pkt 2 lit. a | **HL15:** a student applies with neither the agreement nor private cover. **HL16:** a private policy the voivode does not accept (OPEN-H7) |
 
@@ -64,7 +64,7 @@ Anyone living in Poland who needs public health care or must prove insurance for
   - children under 18;
   - residents of collective accommodation, with a certificate;
   - people in pregnancy, birth or the postnatal period, with a document.
-- **What they show:** an identity document and the PESEL UKR (ust. 4). Some treatments are excluded (ust. 1).
+- **What they show:** an identity document and the PESEL UKR (ust. 4); the PESEL UKR document is not needed when the right is confirmed by PESEL (ust. 5). Some treatments are excluded (ust. 1).
 - **Everyone else with PESEL UKR:** emergency care only (ust. 3), unless insured.
 - **Hospital treatment begun before 5.03.2026** under the old rule may continue until discharge, and not past 4.03.2027 (W203 art. 22).
 - **UHL1:** an adult who is not working expects care without insurance (HYPOTHESIS, high harm).
@@ -73,9 +73,9 @@ Anyone living in Poland who needs public health care or must prove insurance for
 ## 3. The critical moments
 
 1. **The first job:** was the person reported? Without IKP access, they cannot see it themselves (HL1, HL2).
-2. **The end of a job or of studies:** 30 days, or 4 months after a degree. Then a gap begins (HL14).
+2. **The end of a job or of studies:** 30 days, or 4 months after a degree, unless a benefit or a pension case continues the right. Then a gap begins (HL14).
 3. **A student's first weeks:** the voluntary agreement before any need, and before the permit application (HL15).
-4. **Pregnancy and a newborn:** who reports the child, and the first 3 months on a parent's PESEL (HA art. 50 ust. 14). This links to the civil status map (`maps/civil-status.md`, CS12 and CS13).
+4. **Pregnancy and a newborn:** who reports the child, and the first 3 months on the PESEL of the person who must report the child (HA art. 50 ust. 14). This links to the civil status map (`maps/civil-status.md`, CS12 and CS13).
 5. **PESEL UKR since 5.03.2026,** and the choice of the CUKR card (UHL1, UHL2).
 6. **"eWUŚ na czerwono" at the clinic:** the statement, and its risk (HL11).
 
@@ -84,27 +84,27 @@ Anyone living in Poland who needs public health care or must prove insurance for
 | # | Situation | Stage | The app should | Never |
 |---|---|---|---|---|
 | HS1 | Works on an employment contract for 2 months; the clinic's system does not confirm | H1, H4 | Explain the most common cause (no report, NFZ); ask the employer for the report (ZUS ZUA or ZZA); at the clinic, a document or the statement | "Na pewno jesteś ubezpieczony" |
-| HS2 | Student, not from the EU, no Karta Polaka, not working | H3, H6 | The voluntary NFZ agreement; no entry fee for students (art. 68 ust. 9); the base is set by the act (the amount from the NFZ branch, OPEN-H1); the study permit's insurance condition | "Uczelnia Cię zgłosi"; an amount |
+| HS2 | Student, not from the EU, no Karta Polaka, not working | H3, H6 | The voluntary NFZ agreement, if they live in Poland (art. 68 ust. 1); no entry fee for students (art. 68 ust. 9); the base is set by the act (the amount from the NFZ branch, OPEN-H1); the study permit's insurance condition | "Uczelnia Cię zgłosi"; an amount |
 | HS3 | Student with the Karta Polaka | H1 | The university reports them on request; ask at the dean's office (PAC, a lead; the act: art. 66 ust. 1 pkt 20) | "Musisz ubezpieczyć się sam" |
 | HS4 | Student, 22, on a civil contract, asks "czy zleceniodawca mnie ubezpiecza?" | H1 | It depends on social insurance for that contract, which the app has not collected (OPEN-H3); the voluntary agreement otherwise; ask ZUS or the NFZ helpline | A yes or a no |
-| HS5 | Student who worked on an employment contract over the summer | H5 | After the job, they must be reported again (NFZ) or keep their voluntary agreement | — |
+| HS5 | Student who worked on an employment contract over the summer | H5 | After the job, they must be reported again (NFZ); for a foreign student without the Karta Polaka that means a voluntary agreement again (INFERENCE: art. 68 ust. 1 opens it to persons not in art. 66 ust. 1) | — |
 | HS6 | Just graduated | H5 | The right ends 4 months after the degree (art. 67 ust. 5); then a job, family or a voluntary agreement | A computed end date |
-| HS7 | Lost a job last week | H5 | The right ends 30 days after the insurance ends (art. 67 ust. 4); register a new title or a voluntary agreement in time; registration as unemployed is another title (art. 66 ust. 1 pkt 24), not mapped | "Masz jeszcze miesiąc" as a computed date |
+| HS7 | Lost a job last week | H5 | The right ends 30 days after the insurance ends (art. 67 ust. 4), and continues while a sickness benefit is paid (ust. 6); register a new title or a voluntary agreement in time; registration as unemployed is another title (art. 66 ust. 1 pkt 24), not mapped | "Masz jeszcze miesiąc" as a computed date |
 | HS8 | On unpaid leave | H5 | The right ends 30 days after the leave begins (art. 69 ust. 3); voluntary insurance is open to an employee on unpaid leave (art. 68 ust. 1) | — |
 | HS9 | Partner works; "czy może mnie zgłosić?"; not married | H2 | No: only a spouse counts (art. 5 pkt 3; NFZ). Their own title or a voluntary agreement | "Partner może Cię zgłosić" |
 | HS10 | Married; the spouse works; a child of 4 | H2 | The spouse tells the employer within 7 days; the employer reports both (art. 67 ust. 3) | — |
-| HS11 | A 20-year-old child who has left school | H2 | A child counts to 26 only while in education (art. 5 pkt 3 lit. a); otherwise their own title | — |
+| HS11 | A 20-year-old child who has left school | H2 | A child counts to 26 only while in education, or with no age limit with a severe-disability certificate (art. 5 pkt 3 lit. a); otherwise their own title | — |
 | HS12 | Newborn, no PESEL yet | H2, H4 | Up to 3 months, the clinic uses the PESEL of the person who must report the child (art. 50 ust. 14); report the child as family; the civil status matter for the birth certificate and the PESEL | — |
 | HS13 | Not working, has a temporary permit, wants cover | H3 | The voluntary agreement if they live in Poland (art. 68 ust. 1; what NFZ requires: OPEN-H2); the order NFZ then ZUS; the entry fee bands, never the amount | "Masz ubezpieczenie dzięki karcie pobytu" |
 | HS14 | Had no insurance for 3 years; wants a voluntary agreement | H3 | The entry fee band for that gap (100% of the base, art. 68 ust. 8 pkt 3) as the rule; the waiver or up to 12 instalments on request (ust. 11) | An amount |
 | HS15 | Pays the voluntary contribution, missed a payment | H3 | The cover ends after one month of unbroken arrears (art. 68 ust. 5); pay now; ask the NFZ branch (the payment date: OPEN-H11) | "Nic się nie stanie" |
-| HS16 | At the clinic, no PESEL | H4 | eWUŚ needs a PESEL (INFERENCE); show the NFZ agreement and payment proof or the employer's document; the statement as the last resort, with its risk | "Bez PESEL nie dostaniesz leczenia" |
+| HS16 | At the clinic, no PESEL | H4 | eWUŚ needs a PESEL (INFERENCE); show the NFZ agreement with the payment proof and the ZUS ZZA confirmation (NFZ), or the employer's document; the statement only without a document, with its risk | "Bez PESEL nie dostaniesz leczenia" |
 | HS17 | "Czy mogę podpisać oświadczenie?" while unsure of the right | H4 | Explain the clause and the risk (art. 50 ust. 7, 16): they may be billed unless they were justifiably mistaken; first check (IKP, the helpline) | Advising to sign |
-| HS18 | After an emergency hospital stay, uninsured status unclear | H4e | Show a document or make the statement within 7 days after discharge (art. 50 ust. 11); if the cause was a missing report, reporting within 30 days removes the charge (ust. 18a) | A computed date |
+| HS18 | After an emergency hospital stay, uninsured status unclear | H4e | Show a document or make the statement within 7 days after discharge (art. 50 ust. 11); a later one, within a year, still counts (ust. 12). Separately: if a statement was made without the right because of a missing report, reporting within 30 days of the care or of the NFZ's notice removes the charge (ust. 18a) | A computed date |
 | HS19 | PESEL UKR, an adult, not working, not in collective accommodation | H-U | Since 5.03.2026, care without insurance only in a sudden threat to health (PROT art. 112c ust. 3); work or a voluntary agreement insures (HA art. 3 ust. 1 pkt 2a) | "Jako osoba z Ukrainy masz bezpłatne leczenie" |
 | HS20 | PESEL UKR, pregnant | H-U | One of the four groups (art. 112c ust. 1 pkt 4): bring a document confirming the pregnancy (ust. 4) | — |
 | HS21 | PESEL UKR, choosing the CUKR card | H-U, CUKR U3 | On the compare card: with CUKR, health care as for any permit holder (QA); the four groups no longer apply (INFERENCE) | A recommendation |
-| HS22 | Applying for a work permit; the job will insure them | H6 | Insurance through that work counts (FA art. 114 ust. 4a) | "Najpierw kup prywatne ubezpieczenie" |
+| HS22 | Applying for a temporary residence and work permit; the job will insure them | H6 | Insurance through that work counts (FA art. 114 ust. 4a) | "Najpierw kup prywatne ubezpieczenie" |
 | HS23 | A voivode's letter asks for proof of insurance (study) | H6 | The NFZ agreement with ZUS ZZA, or an insurer's cover (FA art. 144 ust. 1 pkt 2 lit. a); what voivodes accept as private cover: OPEN-H7 | Naming an insurer |
 | HS24 | EU citizen, working in Poland | H1 | Insured through work, like anyone working here (HA art. 3 ust. 1 pkt 1 with art. 66); the coordination questions are OPEN-H8 | — |
 | HS25 | "Nie wiem, czy jestem ubezpieczony" and has no PESEL | H0 | The intake; the clinic or the NFZ helpline 800 190 590 (NFZ); the PESEL case for IKP later | A guess |
@@ -129,8 +129,8 @@ Anyone living in Poland who needs public health care or must prove insurance for
 | 2 | Czy pracujesz w Polsce? Na jakiej podstawie? | Umowa o pracę; Zlecenie lub inna umowa cywilna; Własna firma; Nie pracuję; Nie wiem | Mandatory insurance (art. 66 ust. 1 pkt 1) |
 | 3 | Czy studiujesz w Polsce? | Tak; Nie | The student route (art. 3 ust. 2 pkt 1, ust. 1 pkt 3a) |
 | 3a | (if studying) Czy masz Kartę Polaka lub potwierdzenie polskiego pochodzenia? | Tak; Nie | Who reports them |
-| 4 | Czy Twój małżonek lub rodzic jest ubezpieczony w Polsce? | Małżonek; Rodzic; Nie; Nie wiem | The family route (art. 5 pkt 3) |
-| 5 | Na jakiej podstawie przebywasz w Polsce? | Wiza w celu pracy; Zezwolenie na pobyt czasowy; Pobyt stały lub rezydent UE; PESEL UKR; Karta CUKR; Ochrona międzynarodowa; Obywatel UE, EOG lub Szwajcarii; Inna wiza lub ruch bezwizowy; Nie wiem | Art. 3 ust. 1 and PROT art. 112c; never inferred from language |
+| 4 | Czy Twój małżonek, rodzic lub dziadek jest ubezpieczony w Polsce? | Małżonek; Rodzic; Dziadek lub babcia; Nie; Nie wiem | The family route (art. 5 pkt 3, 67 ust. 3a) |
+| 5 | Na jakiej podstawie przebywasz w Polsce? | Wiza w celu pracy; Zezwolenie na pobyt czasowy; Pobyt stały lub rezydent UE; PESEL UKR; Karta CUKR; Ochrona międzynarodowa; Obywatel UE, EOG, Szwajcarii lub Wielkiej Brytanii; Inna wiza lub ruch bezwizowy; Nie wiem | Art. 3 ust. 1 and PROT art. 112c; never inferred from language |
 | 6 | Czy masz numer PESEL? | Tak; Nie; Nie wiem (reused from the PESEL case if open) | eWUŚ and IKP |
 | 7 | (voluntary route only) Jak długo nie było Cię w ubezpieczeniu? | Mniej niż 3 miesiące; 3–12 miesięcy; 1–2 lata; 2–5 lat; 5–10 lat; Ponad 10 lat; Nigdy nie byłem(-am); Nie wiem | The entry fee band (art. 68 ust. 8); a student skips it (ust. 9) |
 
@@ -158,7 +158,7 @@ Anyone living in Poland who needs public health care or must prove insurance for
 |---|---|
 | **Teraz** | The current level's one next step. Primary action: "Zapytaj pracodawcę o zgłoszenie" (2a), "Oddział NFZ: co zabrać" (2b), "Infolinia NFZ 800 190 590" when unsure. Never "Ubezpiecz mnie" or "Sprawdzę za Ciebie" |
 | **Mapa** | The levels in words; off-phone steps marked as the person's |
-| **Teczka** | What the person keeps: the agreement (two copies, one theirs), ZUS ZZA confirmation, payment proofs, the employer's confirmation. The app stores only that they have them (rule 5) |
+| **Teczka** | What the person keeps: the agreement (the NFZ page: two copies are signed), ZUS ZZA confirmation, payment proofs, the employer's confirmation. The app stores only that they have them (rule 5) |
 | **Kalendarz** | The person's own dates: the contribution payment day they choose (a monthly reminder); the end date of a job or studies they enter, with the rule beside it. No date the app computes (OPEN-H10, OPEN-H11) |
 | **Czat** | Answers from the placed notes; "Nie wiem" as an answer; the helpline for one's own data, which the app cannot see |
 
@@ -170,7 +170,7 @@ Anyone living in Poland who needs public health care or must prove insurance for
 | The voluntary agreement | The NFZ voivodeship branch | HA art. 68 ust. 1; NFZ |
 | Reports, ZZA, ZCNA | ZUS, or the employer | NFZ |
 | The municipality's decision (art. 54) | The municipality where the person lives (its social assistance) | HA (FACT) |
-| A bill for care, or the NFZ's decision on costs | Legal aid. The decision can be challenged in the administrative court (art. 50 ust. 18) | HA (FACT) |
+| A bill for care, or the NFZ's decision on costs | Legal aid. The decision can be challenged in the administrative court (art. 50 ust. 18); the NFZ's President may waive, defer or split the debt (ust. 22) and opens no case for 500 zł or less (ust. 23) | HA (FACT) |
 | PESEL UKR certificates (art. 112c ust. 4) | The Szef UdSC for the torture or rape certificate (FACT); who issues the accommodation certificate is OPEN-H5 | PROT |
 
 ### 5.5 The flow, drawn
@@ -182,7 +182,7 @@ flowchart TD
   B -- zlecenie --> Z{Student do 26 lat?}
   Z -- tak / nie wiem --> Q[Zależy od ubezpieczeń społecznych: OPEN-H3; ZUS lub infolinia NFZ]
   Z -- nie --> W
-  B -- nie --> C{Ubezpieczony małżonek, albo rodzic: dziecko do 18 lat, do 26 w nauce?}
+  B -- nie --> C{Ubezpieczony małżonek, rodzic lub dziadek: dziecko do 18 lat, do 26 w nauce, bez limitu przy znacznej niepełnosprawności?}
   C -- tak --> F[Przez rodzinę: zgłoszenie w 7 dni]
   C -- nie --> U{PESEL UKR?}
   U -- tak --> G{Jedna z czterech grup?}
@@ -191,8 +191,8 @@ flowchart TD
   U -- nie --> S{Studiujesz?}
   S -- tak, bez Karty Polaka --> VS[Umowa z NFZ dla studenta: bez opłaty dodatkowej]
   S -- tak, z Kartą Polaka --> UK[Uczelnia zgłasza, na wniosek studenta]
-  S -- nie --> R{Status uchodźcy lub ochrona uzupełniająca i niski dochód?}
-  R -- tak --> D[Decyzja gminy: wywiad i kryterium dochodowe; art. 54]
+  S -- nie --> R{Status uchodźcy, ochrona uzupełniająca lub zezwolenie z art. 159 i niski dochód?}
+  R -- tak --> D[Decyzja gminy: wywiad i kryterium dochodowe; prawo na 90 dni; art. 54]
   R -- nie / nie wiem --> V[Dobrowolnie: oddział NFZ, potem ZUS ZZA; opłata dodatkowa po przerwie]
   W --> P[W przychodni: dokument tożsamości + PESEL / oświadczenie]
   F --> P
@@ -214,6 +214,7 @@ flowchart TD
 
 ## 7. Validation
 
+- **The independent check (the owner's request, 17.10.2026): done once; corrections applied.** A separate agent (`.claude/agents/official-fact-checker.md`) re-read the sources README, the extract headers and this map against the official texts it downloaded itself, and scanned all 290 statutes published from 1.08.2025 to 15.10.2026 for unlisted amendments (none). It gave no verdict of WRONG, OUTDATED or CANNOT CHECK. It found missing exceptions in later paragraphs (the municipality's decision lasts 90 days; primary care is not billed after a statement; nothing is pursued for 500 zł or less; a document within a year after an emergency still counts; the right continues during a sickness benefit; no age limit for a child with a severe disability), one label mismatch (the short-stay permit) and one unsourced statement (IKP). The lab re-read the texts behind each correction before making it; details in `research/2026-10-17-health/sources/CHECK.md`. It is a second reading by the same kind of tool, not an expert's review.
 - **Moderated tasks** (fictional cases, after doc 19's wave 4 gate):
   1. HS2: can a student say where to go, in which order (NFZ, then ZUS), and that no entry fee applies?
   2. HS7: after a job ends, do they know there is a limit and what to do before it?
