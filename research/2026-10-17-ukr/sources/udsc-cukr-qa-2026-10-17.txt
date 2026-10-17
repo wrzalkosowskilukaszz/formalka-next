@@ -1,0 +1,259 @@
+# UdSC: Pytania i odpowiedzi - karta pobytu CUKR
+# Source: https://www.gov.pl/web/udsc/cukr-QA, retrieved 2026-10-17, html sha256 8346ad37634a6ff8f91c99091d605e9e75dc72cb3f48be7699cc5a36f97c8b6b
+# Text of the page's main element; navigation removed. The page's own heading list is kept as it appears.
+
+- dla karty pobytu z adnotacją „Poprzednio posiadacz ochrony czasowej” – „karta pobytu CUKR”
+- dla numeru PESEL ze statusem UKR – PESEL UKR, status UKR
+- w okresie od dnia 24 lutego 2022 r. – po 23 lutego 2022 r.
+- Czym jest karta pobytu CUKR?
+Karta pobytu CUKR to dokument potwierdzający udzielenie zezwolenia na pobyt czasowy, na specjalnych warunkach, wydawany na 3 lata. Wydawana jest osobom ze statusem UKR, które zdecydują się przejść z ochrony czasowej na zezwolenie na pobyt czasowy.
+- Dlaczego warto uzyskać kartę pobytu CUKR?
+Karta pobytu CUKR da Ci stabilizację Twojej sytuacji pobytowej – z chwilą odbioru karty pobytu CUKR uzyskasz zezwolenie na pobyt czasowy. Karta pobytu zostanie wydana na 3 lata. Natomiast z obecnie dostępnych informacji wynika, że status UKR będzie ważny tylko do 04.03.2027 r.
+Będziesz miał pełny dostęp do rynku pracy (nie będziesz potrzebował dodatkowego zezwolenia na pracę) i będziesz mógł prowadzić w Polsce działalność gospodarczą na takich samych zasadach, jak obywatele Polski.
+Posiadając kartę pobytu CUKR, będziesz mógł korzystać ze wszystkich uprawnień przewidzianych dla cudzoziemców posiadających zezwolenie na pobyt czasowy w Polsce.
+Karta pobytu CUKR wraz z ważnym dokumentem podróży uprawniać Cię będzie do podróżowania po strefie Schengen przez okres do 90 dni w każdym okresie 180 dniowym.
+Jeśli będziesz chciał w przyszłości ubiegać się o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, okres pobytu w Polsce na podstawie karty pobytu CUKR będzie wliczał się do okresu wymaganego do uzyskania tego zezwolenia.
+- Jak zmieni moją sytuację uzyskanie karty pobytu CUKR?
+Z chwilą odbioru karty pobytu CUKR przestajesz być osobą korzystającą z ochrony czasowej (status UKR), a stajesz się posiadaczem zezwolenia na pobyt czasowy w Polsce. Co to oznacza?
+- okres ważności Twojego zezwolenia na pobyt czasowy będzie pokrywał się z okresem ważności karty pobytu CUKR;
+- posiadając ważną kartę pobytu i ważny paszport będziesz mógł wielokrotnie przekraczać granicę Polski. Będziesz mógł podróżować po innych krajach strefy Schengen przez okres do 90 dni w każdym 180-dniowym przedziale czasowym – pamiętaj jednak, że gdy opuścisz Polskę na 6 miesięcy, Twoje zezwolenie na pobyt czasowy zostanie cofnięte;
+- w rejestrze PESEL Twój status UKR zmieni się na CUKR.
+Jeśli jednak nie odbierzesz karty pobytu CUKR w ciągu 60 dni, karta zostanie unieważniona, Twój status nie zmieni się z UKR na CUKR i nie uzyskasz uprawnień wynikających z zezwolenia na pobyt czasowy.
+- Jaka jest podstawowa różnica między statusem UKR a kartą pobytu CUKR?
+Status UKR jest nadawany obywatelom Ukrainy i niektórym członkom ich rodzin, którzy przybyli do Polski po 23 lutego 2022 r. w związku z wybuchem wojny i są objęci ochroną czasową, a od 5 marca 2026 r. także pozostałym cudzoziemcom korzystającym z ochrony czasowej. Status ten umożliwia legalny pobyt w Polsce do 4 marca 2027 r. Daje uprawnienia do pracy bez dodatkowych zezwoleń, jednak pracodawca musi zgłosić zatrudnienie cudzoziemca do powiatowego urzędu pracy. Status UKR jest anulowany w przypadku wyjazdu z Polski na okres powyżej 30 dni.
+Karta pobytu CUKR to dokument potwierdzający udzielenie zezwolenia na pobyt czasowy, na specjalnych warunkach, wydawany na 3 lata. Wydawana jest osobom ze statusem UKR, które zdecydują się przejść z ochrony czasowej na zezwolenie na pobyt czasowy. Daje ona uprawnienia do pracy bez dodatkowych zezwoleń i bez konieczności zgłaszania zatrudnienia przez pracodawcę. Karta pobytu CUKR wraz z ważnym dokumentem podróży uprawnia do podróżowania po strefie Schengen przez okres do 90 dni w każdym okresie 180 dniowym, jednak jest ona anulowana w przypadku wyjazdu z Polski na co najmniej 6 miesięcy. Czas pobytu w Polsce na podstawie karty pobytu CUKR będzie wliczał się do okresu wymaganego do uzyskania zezwolenia na pobyt rezydenta długoterminowego UE. Wraz z otrzymaniem karty pobytu CUKR zostanie utracony status UKR oraz prawo do niektórych świadczeń, w tym możliwość bezpłatnego zamieszkania i wyżywienia w ośrodkach zbiorowego zakwaterowania.
+- Jaka jest podstawowa różnica między kartą pobytu CUKR a zwykłą kartą czasowego pobytu?
+Karta pobytu CUKR to dokument potwierdzający udzielenie zezwolenia na pobyt czasowy, na specjalnych warunkach, wydawany na 3 lata, tylko dla obywateli Ukrainy i członków ich rodzin posiadających PESEL UKR. Aby ją otrzymać, musisz spełnić tylko następujące warunki:
+- w dniu złożenia wniosku o wydanie karty pobytu CUKR musisz mieć aktualny PESEL UKR;
+- 4 czerwca 2025 r. miałeś aktualny PESEL UKR;
+- w dniu wydania przez wojewodę kartę pobytu CUKR będziesz miał aktualny numer PESEL UKR;
+- posiadałeś status UKR nieprzerwanie przez co najmniej 365 dni.
+Dziecko urodzone w Polsce po 23 lutego 2022 r. może otrzymać kartę pobytu CUKR, jeśli spełnione zostaną następujące warunki:
+- w dniu złożenia wniosku o wydanie karty pobytu CUKR dziecko musi mieć aktualny PESEL UKR;
+- w dniu wydania przez wojewodę kartę pobytu CUKR dziecko będzie musiało mieć aktualny numer PESEL UKR;
+- matka dziecka przybyła do Polski po 23 lutego 2022 r. i posiada kartę pobytu CUKR.
+Pamiętaj, że wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r.
+Procedura otrzymania karty pobytu CUKR jest uproszczona – wniosek składasz wyłącznie drogą elektroniczną (przez dedykowany portal MOS) i do urzędu wojewódzkiego idziesz dopiero po odbiór spersonalizowanej karty pobytu CUKR. Karta pobytu CUKR daje pełny i swobodny dostęp do rynku pracy w Polsce, bez dodatkowych zezwoleń ani zgłoszeń przez pracodawcę. Wydawana jest jednorazowo na 3 lata.
+UWAGA! Od dnia wydania karty pobytu do dnia jej odbioru może upłynąć trochę czasu. Okres ważności karty liczy się od dnia jej wydania (wydrukowania) i data odbioru karty nie wpływa na jej termin ważności.
+Kolejne zezwolenie na udzielenie zezwolenia na pobyt w Polsce wydawane będzie na zasadach ogólnych.
+Zwykłe zezwolenie na pobyt czasowy wymaga udokumentowania konkretnego celu pobytu (np. praca, prowadzenie firmy, studia). Musisz wykazać, że masz m. in. środki na utrzymanie oraz ubezpieczenie zdrowotne. Procedura uzyskania zezwolenia na pobyt czasowy jest dłuższa, wymaga osobistej wizyty w urzędzie wojewódzkim, złożenia odcisków palców, wzoru podpisu i dostarczenia wielu załączników. Zwykłe zezwolenie na pobyt czasowy może być udzielone na okres od 3 miesięcy do 3 lat, w zależności od tego okresu, jakiego wymaga Twój cel pobytu – jeśli cel pobytu ustanie, zezwolenie na pobyt czasowy może zostać cofnięte.
+- Kto może otrzymać kartę pobytu CUKR?
+O kartę pobytu CUKR mogą ubiegać się dwie grupy osób, które korzystają z ochrony czasowej w Polsce i ich pobyt jest uznawany za legalny, co potwierdza posiadany PESEL UKR:
+- obywatele Ukrainy i niektórzy członkowie ich rodzin (małżonkowie, małoletnie dzieci, małoletnie dzieci ich małżonków, członkowie najbliższej rodziny, którzy mają Kartę Polaka), którzy przyjechali do Polski po 23 lutego 2022 r. z powodu działań wojennych i chcą zostać w Polsce;
+- dzieci urodzone już w Polsce po 23 lutego 2022 r., których matki przyjechały do Polski po 23 lutego 2022 r. i mają kartę pobytu CUKR.
+- Jakie warunki muszę spełnić, aby dostać kartę pobytu CUKR?
+Aby otrzymać kartę pobytu CUKR, musisz spełnić jednocześnie wszystke cztery poniższe warunki:
+- w dniu złożenia wniosku o wydanie karty pobytu CUKR musisz mieć aktualny PESEL UKR;
+- 4 czerwca 2025 r. miałeś aktualny PESEL UKR;
+- w dniu wydania przez wojewodę karty pobytu CUKR będziesz miał aktualny numer PESEL UKR;
+- posiadałeś status UKR nieprzerwanie przez co najmniej 365 dni.
+Jeśli choć jeden z tych punktów nie zostanie spełniony, nie otrzymasz karty pobytu CUKR.
+Dziecko urodzone w Polsce po 23 lutego 2022 r. może otrzymać kartę pobytu CUKR, jeśli spełnione zostały następujące warunki:
+- w dniu złożenia wniosku o wydanie karty pobytu CUKR dziecko musi mieć aktualny PESEL UKR;
+- w dniu wydania przez wojewodę kartę pobytu CUKR dziecko będzie musiało mieć aktualny numer PESEL UKR;
+- matka dziecka przyjechała do Polski po 23 lutego 2022 r. i posiada kartę pobytu CUKR.
+Pamiętaj, że wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r.
+- Jakie warunki muszę spełnić, abym mógł złożyć wniosek o wydanie karty pobytu CUKR?
+Aby skutecznie złożyć wniosek, będziesz musiał (Ty albo jeden z rodziców, opiekun, kurator lub opiekun tymczasowy) podpisać wniosek na jeden z następujących sposobów:
+- kwalifikowanym podpisem elektronicznym,
+- Profilem Zaufanym (czym jest profil zaufany i jak go uzyskać),
+- podpisem osobistym wnioskodawcy lub jednego z rodziców, opiekuna, kuratora lub opiekuna tymczasowego.
+System MOS automatycznie połączy się z właściwymi rejestrami, aby sprawdzić, czy Twoje dane są kompletne. Twoje dane zostały dodane do rejestrów, gdy wyrabiałeś PESEL UKR lub aktualizowałeś dane.
+W rejestrach tych muszą znajdować się:
+- imię i nazwisko, data urodzenia, płeć i obywatelstwo;
+- seria, numer i data ważności Twojego ważnego paszportu zagranicznego (dokumentu podróży);
+- odciski palców (nie dotyczy dzieci, które nie ukończyły 6. roku życia) albo informacja o braku fizycznej możliwości pobrania odcisków palców, albo informacja o chwilowej niemożności pobrania odcisków palców – w takiej sytuacji powinny zostać podjęte co najmniej dwie próby pobrania odcisków palców w urzędzie gminy, przy czym przynajmniej jedna powinna była być podjęta w okresie od 1 lipca 2024 r.;
+- wzór podpisu (nie dotyczy dzieci, które nie ukończyły 12. roku życia i osób, które nie mogą złożyć podpisu).
+Jeśli w rejestrach brakuje jakichś danych, system MOS zablokuje możliwość złożenia wniosku.
+- O czym muszę pamiętać?
+Jeśli otrzymasz kartę pobytu CUKR, Twój status UKR automatycznie zmieni się na status CUKR i utracisz prawa do świadczeń wynikających ze statusu UKR, w tym możliwość bezpłatnego zamieszkania i wyżywienia w ośrodkach zbiorowego zakwaterowania. Będziesz natomiast uprawniony do świadczeń wynikających z innych przepisów, np. 800+, jeśli spełnisz wymagania określone w tych przepisach.
+Po uzyskaniu karty pobytu CUKR będziesz zobowiązany do informowania wojewody, który wydał tę kartę, o każdorazowej zmianie miejsca pobytu, w terminie 15 dni roboczych.
+Jeśli opuścisz Polskę na okres powyżej 6 miesięcy, utracisz zezwolenie na pobyt czasowy.
+Jeśli nie odbierzesz karty pobytu w terminie 60 dni od dnia poinformowania przez urząd wojewódzki o możliwości jej odbioru, nie uzyskasz zezwolenia na pobyt czasowy, a karta pobytu zostanie unieważniona.
+Wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r.
+Kolejne zezwolenie na pobyt czasowy będziesz mógł otrzymać na zasadach ogólnych.
+- Czy na dzień składania wniosku o wydanie karty pobytu CUKR trzeba posiadać zatrudnienie?
+Nie.
+- Jestem obywatelem Ukrainy, przebywam w Polsce, mam numer PESEL UKR – kiedy będę mógł złożyć wniosek o wydanie karty pobytu CUKR?
+Wniosek o wydanie karty pobytu CUKR możesz złożyć od 4 maja 2026 r.
+- Miałem PESEL UKR przez pół roku, wyjechałem na Ukrainę, a po powrocie do Polski ponownie uzyskałem status UKR. Czy mogę zsumować te okresy, aby uzbierać wymagany rok i otrzymać kartę pobytu CUKR?
+Nie. Okresy posiadania statusu UKR nie sumują się. Aby otrzymać kartę pobytu CUKR, musisz posiadać status UKR nieprzerwanie przez co najmniej 365 dni.
+- Jestem obywatelem Ukrainy, posiadam PESEL UKR. Czekam na decyzję w sprawie o udzielenie zezwolenia na pobyt czasowy i pracę. Czy mogę złożyć wniosek o wydanie karty pobytu CUKR? Co się wtedy stanie z moją poprzednią sprawą?
+Tak, możesz złożyć wniosek o wydanie karty pobytu CUKR, nawet jeśli Twoja sprawa o pobyt czasowy i pracę jest wciąż w toku u wojewody. Twoje postępowanie o udzielenie zezwolenia na pobyt czasowy i pracę zostanie umorzone z mocy prawa (czyli automatycznie) w chwili wysłania wniosku o wydanie karty pobytu CUKR. Nie dostaniesz decyzji o umorzeniu postępowania.
+Ważne: Zanim złożysz wniosek o wydanie karty pobytu CUKR, upewnij się, że spełniasz wszystkie warunki, aby ją otrzymać. Jeśli Twoja sprawa o udzielenie zezwolenia na pobyt i pracę zostanie umorzona, a Ty otrzymasz odmowę wydania karty pobytu CUKR, zostaniesz bez żadnego toczącego się postępowania.
+- Przyjechałem do Polski po 23 lutego 2022 r., miałem PESEL UKR, ale w 2025 r. otrzymałem zezwolenie na pobyt czasowy i pracę. Czy mogę uzyskać kartę pobytu CUKR?
+Nie.
+Dlaczego tak jest?
+Kiedy otrzymałeś zezwolenie na pobyt czasowy i pracę, utraciłeś PESEL UKR. Oznacza to, że przestałeś być beneficjentem ochrony czasowej, a stałeś się posiadaczem standardowego zezwolenia na pobyt w Polsce. Kartę pobytu CUKR mogą otrzymać wyłącznie osoby, które w momencie składania wniosku nadal posiadają aktywny PESEL UKR.
+- Przyjechałem do Polski po 23 lutego 2022 r., ale w 2024 r. wróciłem na Ukrainę na dłużej i przyjechałem ponownie do Polski dopiero pod koniec 2025 r. Czy mogę starać się o kartę pobytu CUKR?
+Nie. Aby móc ubiegać się o kartę pobytu CUKR, Twój status UKR musiał być aktywny w konkretnym dniu – 4 czerwca 2025 r.
+Twój powrót na Ukrainę w 2024 r. na okres dłuższy niż 6 miesięcy spowodował, że automatycznie straciłeś status UKR. Skoro wróciłeś do Polski dopiero w drugiej połowie 2025 r., to w wymaganym dniu (4 czerwca) nie figurowałeś w rejestrze jako osoba objęta ochroną czasową.
+- Moje dziecko urodziło się w Polsce po 23 lutego 2022 r. Czy może ono otrzymać kartę pobytu CUKR?
+Tak, dziecko urodzone w Polsce po 23 lutego 2022 r. może otrzymać kartę pobytu CUKR, ale tylko jeśli spełni łącznie oba poniższe warunki:
+- dziecko musi mieć aktualny PESEL UKR zarówno w dniu składania wniosku, jak i w dniu, w wydania przez wojewodę karty pobytu CUKR;
+- matka dziecka musi już posiadać kartę pobytu CUKR.
+- Jeśli dziecko ma PESEL UKR, a żaden z rodziców go nie ma, czy dziecko może otrzymać kartę pobytu CUKR?
+Jeżeli dziecko przybyło z terytorium Ukrainy i spełnia wymogi uzyskania karty pobytu CUKR, rodzic może złożyć wniosek o wydanie dziecku karty pobytu CUKR nawet, jeśli on sam nie posiada takiej karty pobytu.
+Jeśli dziecko urodziło się w Polsce po 23.02.2022 r., może otrzymać kartę pobytu CUKR tylko jeśli jego matka posiada taką kartę.
+- Czy rodzic może złożyć wniosek o wydanie karty pobytu CUKR dla dziecka dopiero gdy sam otrzyma kartę pobytu CUKR? Czy może złożyć wniosek jednocześnie dla siebie i dla dziecka?
+Jeżeli dziecko przybyło do Polski z Ukrainy po 23.02.2022 r. i spełnia wymogi uzyskania karty pobytu CUKR, rodzic może złożyć wniosek o wydanie dziecku karty pobytu CUKR niezależnie od uzyskania własnej karty pobytu CUKR.
+Jeśli dziecko urodziło się w Polsce po 23.02.2022 r., wniosek o wydanie mu karty pobytu CUKR będzie można złożyć w jego imieniu dopiero po tym, gdy matka dziecka otrzyma kartę pobytu CUKR.
+- Czy rodzic posiadający kartę pobytu inną niż CUKR może złożyć wniosek o wydanie karty pobytu CUKR w imieniu swojego małoletniego dziecka posiadającego PESEL UKR?
+Tak, jeśli dziecko przybyło do Polski z Ukrainy po 23.02.2022 r. i spełnia wymogi uzyskania karty pobytu CUKR.
+Jeśli dziecko urodziło się w Polsce po 23.02.2022 r., wniosek o wydanie mu karty pobytu CUKR będzie można złożyć w jego imieniu tylko, jeśli matka dziecka otrzyma kartę pobytu CUKR.
+- Jeśli rodzic otrzyma kartę pobytu CUKR, a dziecko, jako obywatel innego kraju ma zaświadczenie Szefa UdSC o objęciu ochroną czasową, co należy zrobić, aby mogło ono zostać w rodzicem przez okres ważności karty pobytu CUKR?
+Jeśli rodzic otrzyma kartę pobytu CUKR, a dziecko, jako obywatel innego kraju, ma zaświadczenie Szefa UdSC o objęciu ochroną czasową, będzie mógł ubiegać się o udzielenie dla dziecka zezwolenia na pobyt czasowy w celu połączenia się z rodziną (art. 159 ust. 1 ustawy o cudzoziemcach) - pod warunkiem uzyskania przez to dziecko numeru PESEL UKR. Jeżeli spełnione będą wymogi udzielenia takiego zezwolenia, dziecko otrzyma zezwolenie na pobyt czasowy na okres pokrywający się z okresem ważności wydanej rodzicowi karty pobytu CUKR.
+- Jak uzyskać kartę pobytu CUKR?
+Wniosek o wydanie karty pobytu CUKR możesz złożyć jedynie w formie elektronicznej, za pomocą dedykowanego portalu (Moduł Obsługi Spraw – MOS), dostępnego poprzez przeglądarkę internetową. Nie musisz rezerwować terminu na złożenie wniosku ani stać w kolejkach - zrobisz to w dogodnych dla siebie miejscu i czasie. Możesz także przerwać wypełnianie wniosku, zapisać wprowadzone dane i edytować je ponownie.
+Pamiętaj, że wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r.
+Jeśli prawidłowo wypełnisz wniosek i dodasz niezbędne załączniki, do urzędu wojewódzkiego zostaniesz wezwany dopiero po odbiór gotowej karty pobytu.
+Dostęp do systemu MOS jest bezpłatny. Wniosek możesz złożyć samodzielnie, bez konieczności korzystania z odpłatnych usług pośredników. Jedyne koszty jakie poniesiesz to opłata skarbowa za udzielenie zezwolenia na pobyt czasowy (340 zł) oraz opłata za wydanie karty pobytu (100 zł).
+- Jak złożyć wniosek o wydanie karty pobytu CUKR?
+Aby złożyć wniosek o wydanie karty pobytu CUKR musisz:
+- założyć konto użytkownika w nowym systemie MOS (Moduł Obsługi Spraw); jeśli miałeś już konto w poprzednim systemie MOS, musisz utworzyć nowe konto;
+- osobiście zalogować się do systemu MOS za pośrednictwem login.gov.pl (po kliknięciu „zaloguj” na stronie MOS nastąpi przekierowanie) i wypełnić formularz wniosku o wydanie karty pobytu dla obywateli Ukrainy korzystających z ochrony czasowej. Nigdy nie podawaj nikomu informacji służących do logowania na login.gov.pl. Może to wpłynąć na bezpieczeństwo Twoich danych!
+- dodać wymagane załączniki:
+- aktualną fotografię w formacie cyfrowym;
+- potwierdzenie dokonania płatności (skan dokumentu lub elektroniczne potwierdzenie przelewu): opłaty w wysokości 100 zł za wydanie karty pobytu oraz opłaty skarbowej w wysokości 340 zł za udzielenie zezwolenia na pobyt czasowy;
+- podpisać elektroniczne wniosek – musisz posiadać profil zaufany, kwalifikowany podpis elektroniczny lub podpis osobisty.
+Po poprawnym podpisaniu i wysłaniu wniosku będziesz mógł zapisać go w formatach PDF i XML oraz otrzymać Urzędowe Poświadczenie Odbioru (UPO).
+Jeśli zostanie Ci wydana karta pobytu, wojewoda poinformuje Cię o możliwości jej odbioru.
+- Czym jest MOS?
+MOS – Moduł Obsługi Spraw – to portal teleinformatyczny służący do elektronicznego składania wniosków o udzielenie zezwolenia na pobyt czasowy, pobyt stały i pobyt rezydenta długoterminowego w Polsce. Portal dostępny jest pod adresem: https://www.mos.cudzoziemcy.gov.pl/.
+- Czy za wydanie karty pobytu CUKR trzeba zapłacić?
+Tak. Uzyskanie karty pobytu CUKR wiąże się z koniecznością wniesienia dwóch opłat. Łącznie jest to koszt 440 zł:
+- 340 zł – opłata skarbowa za udzielenie zezwolenia na pobyt czasowy. Organem właściwym do pobrania tej opłaty jest prezydent miasta właściwy miejscowo dla siedziby wojewody właściwego do wydania karty pobytu. Opłaty możesz dokonać w kasie właściwego organu podatkowego lub na jego rachunek bankowy.
+- 100 zł – opłata za samo wydanie plastikowej karty pobytu. Organem właściwym do pobrania opłaty jest wojewoda, który wydaje kartę pobytu. Opłaty możesz dokonać w kasie urzędu wojewódzkiego lub na jego rachunek bankowy.
+Obie opłaty musisz wnieść zanim złożysz wniosek o wydanie karty pobytu CUKR. Podczas składania wniosku będziesz musiał załączyć potwierdzenie dokonania opłaty (skan lub dokument elektroniczny).
+Pamiętaj, że każdy urząd ma swój własny numer konta. Zanim zrobisz przelew, sprawdź na oficjalnej stronie internetowej urzędu aktualne dane do wpłaty, aby pieniądze trafiły do właściwego organu.
+- Co się stanie, jeśli nie dokonam opłaty skarbowej lub opłaty za kartę?
+Jeśli nie wniesiesz wymaganych opłat, nie uzyskasz karty pobytu CUKR. Wojewoda wyda decyzję o odmowie wydania karty pobytu.
+- Czy mogę wnioskować do wojewody o zwolnienie mnie z opłaty skarbowej lub opłaty za wydanie karty pobytu?
+Nie. Zapłacenie obu opłat (340 zł oraz 100 zł) w pełnej wysokości jest obowiązkowe dla każdego.
+- Jakie dokumenty muszę dołączyć do wniosku o wydanie karty pobytu CUKR?
+Do wniosku musisz dołączyć:
+- fotografię Twoją lub dziecka, w imieniu którego składasz wniosek;
+- potwierdzenie dokonania opłaty za wydanie karty pobytu (100 zł);
+- potwierdzenie opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy (340 zł).
+Wszystkie dokumenty papierowe muszą zostać zamienione na formę cyfrową (skan lub wyraźne zdjęcie w dobrej jakości), aby można było wgrać je do systemu MOS.
+- Do którego urzędu mam wysłać wniosek o wydanie karty pobytu CUKR?
+Wniosek rozpatruje wojewoda właściwy dla miejsca, w którym mieszkasz w dniu składania wniosku.
+Jeśli na przykład mieszkasz na terenie województwa mazowieckiego, właściwym organem jest Wojewoda Mazowiecki, jeśli mieszkasz w województwie dolnośląskim – Wojewoda Dolnośląski.
+- Kiedy najpóźniej mogę złożyć wniosek o wydanie karty pobytu CUKR?
+Wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r.
+- Czy muszę mieć pełnomocnika, aby złożyć wniosek o kartę CUKR?
+Nie. Możesz złożyć wniosek całkowicie samodzielnie. Formularz w systemie MOS został przygotowany tak, aby każdy mógł go wypełnić bez fachowej pomocy. Znajdziesz tam proste instrukcje, które poprowadzą Cię krok po kroku.
+Oczywiście, jeśli czujesz się niepewnie, inna osoba może pomóc Ci w wypełnianiu elektronicznego wniosku. Najważniejsze jest to, abyś zalogował się na swoje konto i na końcu podpisał wniosek swoim podpisem elektronicznym.
+Nigdy nie podawaj nikomu informacji służących do logowania na login.gov.pl. Może to wpłynąć na bezpieczeństwo Twoich danych!
+- Jak mogę sprawdzić czy w rejestrach są wszystkie wymagane dane?
+Jeśli nie jesteś pewny, czy w rejestrach są wszystkie wymagane dane, możesz spróbować złożyć wniosek. Jeśli po kliknięciu „Sprawdź możliwość złożenia wniosku” otrzymasz informację, że nie możesz złożyć wniosku i powinieneś zgłosić się do urzędu gminy, będzie to oznaczało, że w rejestrach Twoje dane są niekompletne.
+Możesz także udać się do urzędu gminy i poprosić pracownika o sprawdzenie, czy Twoje dane w rejestrach są kompletne.
+- Co powinienem zrobić, jeśli okaże się, że w rejestrach brakuje moich danych?
+Jeśli w rejestrach Twoje dane są niekompletne:
+- pójdź do dowolnego urzędu gminy,
+- okaż ważny dokument podróży (paszport),
+- poproś o uzupełnienie danych w rejestrach oraz o pobranie odcisków palców lub wzoru podpisu, jeśli ich brakuje.
+Dopiero gdy Twoje dane zostaną zaktualizowane w rejestrach, będziesz mógł złożyć wniosek o wydanie karty pobytu CUKR.
+- Jeśli w rejestrach brakuje moich danych, czy system MOS poinformuje mnie jakich konkretnie danych brakuje?
+Nie. Po kliknięciu „Sprawdź możliwość złożenia wniosku” otrzymasz informacje, że nie możesz złożyć wniosku, bo nie spełniasz wymagań i powinieneś zgłosić się do urzędu gminy, aby uzupełnić dane.
+- Co mam zrobić, jeśli we właściwym rejestrze nie ma moich odcisków palców?
+Jeśli w rejestrze nie ma Twoich odcisków palców, system MOS uniemożliwi Ci złożenie wniosku o wydanie karty pobytu CUKR.
+W takiej sytuacji:
+- pójdź do dowolnego urzędu gminy,
+- okaż ważny dokument podróży (paszport),
+- poproś o pobranie odcisków palców.
+Dopiero gdy Twoje odciski palców znajdą się w rejestrze, będziesz mógł wysłać wniosek o kartę pobytu CUKR.
+Jeśli nie masz fizycznej możliwości złożenia odcisków palców, informacja o tym musi znajdować się we właściwym rejestrze.
+- Co mam zrobić, jeśli w rejestrze nie ma mojego wzoru podpisu?
+Jeśli w rejestrze nie ma Twojego wzoru podpisu, system MOS uniemożliwi Ci złożenie wniosku o wydanie karty pobytu CUKR.
+W takiej sytuacji:
+- pójdź do dowolnego urzędu gminy,
+- okaż ważny dokument podróży (paszport),
+- poproś o uzupełnienie podpisu w rejestrze.
+Dopiero gdy wzór Twoje podpisu znajdzie się w rejestrze , będziesz mógł wysłać wniosek o kartę pobytu CUKR.
+Jeśli nie masz możliwości złożenia wzoru podpisu, informacja o tym musi znajdować się w rejestrze.
+- Jakie wymogi musi spełniać fotografia, którą załączę do wniosku?
+Fotografia powinna:
+- być wykonana w ciągu ostatnich 6 miesięcy;
+- być nieuszkodzona, kolorowa, mieć dobrą ostrość oraz wymiary 35 mm x 45 mm;
+- przedstawiać wizerunek twarzy wnioskodawcy od wierzchołka głowy do górnej części barków, tak aby twarz zajmowała 70-80% fotografii, na jednolitym jasnym tle, w pozycji frontalnej, patrzącego na wprost z otwartymi oczami, nieprzesłoniętymi włosami, z naturalnym wyrazem twarzy i zamkniętymi ustami, a także odwzorowuje naturalny kolor jego skóry;
+- przedstawiać wyraźnie oczy wnioskodawcy, a zwłaszcza źrenice, linia oczu wnioskodawcy jest równoległa do górnej krawędzi fotografii;
+- odzwierciedlać w sposób niebudzący uzasadnionych wątpliwości wizerunek twarzy wnioskodawcy, przedstawiający ją bez nakrycia głowy i okularów z ciemnymi szkłami.
+Okulary z ciemnymi szkłami na fotografii mogą mieć jedynie osoby posiadające wadę wzroku – w takiej sytuacji do wniosku musisz załączyć skan orzeczenia o niepełnosprawności, a jeśli go nie masz – swoje oświadczenie o niepełnosprawności.
+Nakrycie głowy możliwe jest tylko ze względów religijnych, jednak twarz musi być w pełni widoczna. Do wniosku musisz dołączyć oświadczenie o przynależności do wspólnoty wyznaniowej.
+Plik zawierający fotografię musi mieć wymiary co najmniej 684 x 883 piksele (szerokość x wysokość, przy zachowaniu proporcji 35x45 mm) i jego wielkość nie może przekraczać 2,5 MB. Wszystkie dokumenty papierowe muszą zostać zamienione na formę cyfrową (skan lub wyraźne zdjęcie w dobrej jakości), aby można było je wgrać do systemu MOS.
+- Czy mogę wydrukować wniosek o kartę pobytu CUKR, podpisać go odręcznie i wysłać pocztą do urzędu, albo elektroniczny wniosek wysłać e-mailem lub e-doręczeniem?
+W takim przypadku wniosek nie zostanie w ogóle uznany za złożony, a wojewoda pozostawi go bez rozpoznania. Jedyną skuteczną drogą jest wypełnienie wniosku w systemie MOS, podpisanie go kwalifikowanym podpisem elektronicznym, Profilem Zaufanym lub podpisem osobistym i wysłanie za pośrednictwem systemu MOS.
+38. Czy mogę wydrukować wniosek o kartę pobytu CUKR, podpisać go odręcznie i wysłać pocztą do urzędu, albo elektroniczny wniosek wysłać e-mailem lub e-doręczeniem?
+W takim przypadku wniosek nie zostanie w ogóle uznany za złożony, a wojewoda pozostawi go bez rozpoznania. Jedyną skuteczną drogą jest wypełnienie wniosku w systemie MOS, podpisanie go kwalifikowanym podpisem elektronicznym, Profilem Zaufanym lub podpisem osobistym i wysłanie za pośrednictwem systemu MOS.
+- Kto powinien podpisać wniosek w imieniu dziecka, które ukończyło 12 lat i złożyło swój wzór podpisu?
+Wniosek w imieniu małoletniego dziecka podpisuje rodzic lub opiekun prawny.
+- Czy muszę iść do urzędu wojewódzkiego, aby złożyć odciski palców do karty pobytu CUKR?
+W przypadku karty pobytu CUKR procedura jest uproszczona – nie musisz przychodzić do urzędu wojewódzkiego aby złożyć odciski palców.
+Twoje odciski palców zostaną pobrane bezpośrednio z właściwych rejestrów. Aby to było możliwe, Twoje odciski palców muszą już znajdować się w odpowiednim rejestrze (powinny zostać pobrane, gdy wyrabiałeś numer PESEL UKR lub aktualizowałeś dane).
+Jeśli nie masz fizycznej możliwości złożenia odcisków palców, w rejestrze musi znajdować się o tym informacja.
+- Co się stanie, jeśli w trakcie postępowania przeprowadzę się?
+Jeśli po złożeniu wniosku przeprowadzisz się do innego województwa, Twoją sprawę nadal będzie rozpatrywał ten sam wojewoda, do którego złożyłeś wniosek.
+Pamiętaj, aby w przypadku przeprowadzki poinformować urząd wojewódzki o swoim nowym adresie do korespondencji – informację wyślij pocztą lub e-doręczeniem. Nawet jeśli sprawę prowadzi ten sam wojewoda, musi on znać Twój aktualny adres do korespondencji, aby właściwie kierować do Ciebie korespondencję.
+- Czy muszę iść do urzędu wojewódzkiego, aby złożyć wzór podpisu do karty pobytu CUKR?
+W przypadku karty pobytu CUKR procedura jest uproszczona – nie musisz przychodzić do urzędu wojewódzkiego aby złożyć wzór podpisu.
+Twój wzór podpisu zostanie pobrany bezpośrednio z właściwego rejestru. Aby to było możliwe, Twój wzór podpisu musi już znajdować się w rejestrze (powinien zostać złożony, gdy wyrabiałeś numer PESEL UKR lub aktualizowałeś dane).
+Jeśli nie masz możliwości złożenia wzoru podpisu, informacja o tym musi znajdować się we właściwym rejestrze.
+- Czy po złożeniu wniosku o wydanie karty pobytu CUKR będę mógł wyjechać z Polski?
+Tak. Samo złożenie wniosku o wydanie karty pobytu CUKR nie pozbawia Cię statusu UKR, zatem możesz wyjechać z Polski, jednak nie dłużej niż na 30 dni. Status UKR tracisz w chwili odbioru karty pobytu CUKR.
+- W jakich sytuacjach mogę otrzymać odmowę wydania karty pobytu CUKR?
+Otrzymasz decyzję o odmowie wydania karty pobytu CUKR jeśli:
+- nie spełniasz wymogów wydania karty pobytu CUKR;
+- Twoje dane znajdują się w wykazie cudzoziemców, których pobyt w Polsce jest niepożądany;
+- Twoje dane znajdują w Systemie Informacyjnym Schengen (SIS) do celów odmowy wjazdu;
+- Twój pobyt w Polsce zagraża obronności lub bezpieczeństwu państwa albo bezpieczeństwu i porządkowi publicznemu;
+- nie dokonałeś wymaganych opłat (opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy lub opłaty za wydanie karty pobytu).
+Twoje dziecko urodzone w Polsce w terminie po 23 lutego 2022 r. otrzyma odmowę wydania karty pobytu CUKR jeśli:
+- nie spełnia wymogów wydania karty pobytu CUKR;
+- nie dokonałeś wymaganych opłat (opłaty skarbowej za udzielenie zezwolenia na pobyt czasowy lub opłaty za wydanie karty pobytu).
+- Czy jeśli otrzymam odmowę wydania karty pobytu CUKR w związku z brakiem wymaganej opłaty, będę mógł ponownie złożyć wniosek o wydanie karty pobytu CUKR?
+Tak.
+- Czy jeśli dostanę decyzję odmowną w sprawie karty pobytu CUKR, będę mógł się od niej odwołać?
+Tak. Jeśli wojewoda odmówi Ci wydania karty pobytu CUKR, masz prawo do złożenia w terminie 14 dni od dnia doręczenia decyzji odwołania do Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem wojewody, który wydał tę decyzję.
+- Czy jeśli otrzymam decyzję o odmowie wydania mi karty pobytu CUKR, będę mógł uzyskać zwrot dokonanej opłaty skarbowej?
+Nie. Zwrotu opłaty nie otrzymasz również, gdy postępowanie zostanie umorzone, gdy wojewoda odmówi wszczęcia postępowania lub pozostawi wniosek bez rozpoznania.
+- Jak długo będę czekał na wydanie karty pobytu CUKR?
+Wydanie karty pobytu powinno nastąpić w terminie do 180 dni od dnia złożenia wniosku, jednak ze względu na spodziewane duże obciążenie urzędów wojewódzkich dokładny czas oczekiwania na kartę pobytu w tym momencie nie jest możliwy do oszacowania i może się różnić w zależności od województwa.
+- Co się stanie, jeśli nie odbiorę karty pobytu w terminie 60 dni?
+Twoja karta zostanie unieważniona i nie będziesz mógł jej odebrać. Nie będziesz mógł się ubiegać o zwrot dokonanych opłat.
+- Jak długo będzie ważna moja karta pobytu CUKR?
+Otrzymasz kartę pobytu CUKR ważną przez 3 lata od dnia jej wydania (wydrukowania).
+Dziecko urodzone w Polsce po 23 lutego 2022 r. otrzyma kartę pobytu CUKR na okres, na jaki kartę pobytu CUKR otrzymała jego matka.
+- Czy po odebraniu karty pobytu CUKR będę do czegoś zobowiązany?
+Tak. Twoim obowiązkiem będzie informowanie wojewody, który wydał Ci kartę pobytu CUKR, o każdej zmianie adresu zamieszkania – powinieneś to zrobić w ciągu 15 dni roboczych od dnia zmiany adresu.
+Co się stanie, jeśli nie poinformujesz wojewody o nowym adresie?
+Jeśli tego nie zrobisz, a w Twojej sprawie zostanie wszczęte przez wojewodę jakiekolwiek postępowanie (np. w sprawie cofnięcia zezwolenia na pobyt czasowy), pisma wojewody będą wysyłane na Twój poprzedni adres, jednak zostaną one uznane za skutecznie doręczone. Może to doprowadzić do utraty karty pobytu CUKR bez Twojej wiedzy, ponieważ nie będziesz miał szansy na wyjaśnienie sprawy lub odwołanie się w terminie.
+- Czy będę musiał informować w ciągu 15 dni wojewodę o nowym adresie, jeśli wyjadę z Polski?
+Tak
+- Czy mając kartę pobytu CUKR nie mogę wyjechać z Polski na 6 miesięcy jednorazowo, czy łącznie w ciągu 3 lat?
+Aby nie utracić karty pobytu CUKR nie możesz wyjechać z Polski jednorazowo na okres 6 miesięcy.
+- Czy mogę utracić zezwolenie na pobyt czasowy uzyskane wraz z kartą pobytu CUKR?
+Tak. Mimo że karta pobytu wydawana jest na 3 lata, wojewoda może cofnąć zezwolenie na pobyt czasowy przed terminem, jeśli:
+- opuścisz Polskę na okres co najmniej 6 miesięcy,
+- Twoja obecność w Polsce zostanie uznana za zagrożenie dla obronności lub bezpieczeństwa państwa albo ochrony bezpieczeństwa i porządku publicznego,
+- Twoje dane trafią do wykazu cudzoziemców, których pobyt na terytorium Polski jest niepożądany.
+- Czy mając kartę pobytu CUKR mogę legalnie pracować w Polsce bez konieczności posiadania dodatkowych dokumentów?
+Tak, z kartą pobytu CUKR masz pełny dostęp do polskiego rynku pracy.
+Co to oznacza w praktyce?
+- Możesz pracować u dowolnego pracodawcy bez konieczności uzyskania zezwolenia na pracę.
+- Twój pracodawca nie musi już wysyłać powiadomienia o podjęciu przez Ciebie pracy do Powiatowego Urzędu Pracy (co było obowiązkowe przy statusie UKR).
+- Czy mając kartę CUKR, mogę otworzyć firmę (działalność gospodarczą) w Polsce?
+Tak. Posiadanie karty pobytu CUKR daje Ci prawo do prowadzenia działalności gospodarczej na takich samych zasadach, jakie obowiązują obywateli polskich.
+- Czy okres pobytu w Polsce na podstawie karty pobytu CUKR będzie się wliczał okresu pobytu w Polsce wymaganego do uzyskania zezwolenia na pobyt rezydenta długoterminowego UE?
+Tak. Okres ten zacznie biec w dniu odbioru przez Ciebie karty pobytu CUKR. Do tego okresu nie będzie się natomiast wliczał okres pobytu w Polsce na podstawie statusu UKR.
+- Czy otrzymam decyzję o udzieleniu zezwolenia na pobyt czasowy, aby mieć potwierdzenie, że przez 3 lata miałem kartę pobytu CUKR?
+Nie. Taka informacja będzie znajdować się w systemie, więc jeśli w przyszłości będziesz ubiegać się o udzielenie zezwolenia na pobyt rezydenta długoterminowego UE, pracownik urzędu wojewódzkiego, rozpatrujący Twoją sprawę, będzie miał taką informację.
+- Jak będzie wyglądała opieka medyczna dla osób z kartą pobytu CUKR?
+Cudzoziemcy, którzy odbiorą karty pobytu CUKR, uzyskają zezwolenia na pobyt czasowy i będą mieli taki sam dostęp do świadczeń opieki zdrowotnej, jak wszyscy cudzoziemcy, którzy przebywają w Polsce na podstawie zezwolenia na pobyt czasowy.
+- Co muszę zrobić, jeśli zgubię moją kartę pobytu CUKR?
+Jeśli zgubisz lub zniszczysz kartę pobytu albo zostanie Ci ona skradziona, musisz jak najszybciej złożyć papierowy wniosek o jej wymianę. Wniosek składasz do wojewody, który jest właściwy dla Twojego aktualnego miejsca zamieszkania. Będziesz musiał dokonać opłaty 200 zł, a jeśli kolejny raz utracisz kartę pobytu z własnej winy (np. kolejny raz ją zgubisz), opłata wyniesie 300 zł.
+Nowa karta pobytu zostanie wydana z tymi samymi danymi i na ten sam okres ważności, co poprzednia (nadal będzie to zezwolenie na pobyt czasowy ze statusem CUKR).
+61. Jaki typ dokumentu potwierdzającego tożsamość muszę wybrać: posiadam ukraiński biometryczny paszport dla wyjazdu za granicę - zgodnie z przedstawionymi do wyboru opcjami to jest paszport zwykły czy paszport cudzoziemca?
+Pomoc kontekstowa, w przypadku wniosków CUKR, została zaktualizowana o wskazówki w powyższym zakresie.
+62. Spełniam wszystkie warunki niezbędne do złożenia wniosku o kartę pobytu CUKR, ale nie mogę złożyć wniosku – pojawia się komunikat o niezgodności danych podanych w systemie MOS z danymi w rejestrach. Co robić?
+W celu weryfikacji danych powinieneś udać się do urzędu gminy i poprosić o weryfikację danych.

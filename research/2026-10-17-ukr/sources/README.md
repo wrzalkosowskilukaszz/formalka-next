@@ -17,6 +17,7 @@ The act of 23.01.2026 (Dz.U. 2026 poz. 203, in force 5.03.2026 with exceptions) 
 | `specustawa-2026-1293-art42c-42x-cukr-extract.txt` | The special act, consolidated Dz.U. 2026 poz. 1293, art. 42c–42x | Legal state 8.09.2026; no amendments since (16.10.2026). Art. 42c–42w from 4.05.2026 (M.P. 2026 poz. 371, per its footnote 68) |
 | `wygaszenie-2026-203-art20-26-45-54-extract.txt` | The winding-down act, Dz.U. 2026 poz. 203: transitional art. 20–26 and 45; entry into force art. 54 | As published. Its art. 54 (`tools/sources/entry-dates.mjs DU/2026/203`): 5.03.2026, except points from 1.01.2027, 5.03.2027, 1.09.2027 and a date set by an announcement |
 | `udsc-cukr-procedura-2026-10-17.txt` | UdSC, "Informacja dotycząca procedury wydania karty pobytu CUKR" | Retrieved 17.10.2026 |
+| `udsc-cukr-qa-2026-10-17.txt` | UdSC, "Pytania i odpowiedzi - karta pobytu CUKR" (over 60 questions) | Retrieved 17.10.2026 |
 
 Each file names its URL and SHA-256. The PDFs are not committed.
 
@@ -34,6 +35,7 @@ Each file names its URL and SHA-256. The PDFs are not committed.
 | CUKR card: deadline | If filed by 4.03.2027, the stay is legal until the card is collected or cancelled, or a refusal becomes final. UdSC: "wniosek o wydanie karty pobytu CUKR będziesz mógł złożyć do 04.03.2027 r." | Special act art. 42x; UdSC |
 | CUKR card: effect | On collection, the protection becomes a temporary residence permit for the card's 3 years. A pending ordinary residence application ends by law when a CUKR application is filed | Special act art. 42p, 42r ust. 1, 42i |
 | CUKR card: duties | Collect it within 60 days of the office's notice, or the card is cancelled and the fees are not refunded. Notify the voivode of every change of the place of stay within 15 working days. The permit is withdrawn after leaving Poland for at least 6 months | Special act art. 42r ust. 2, 42u, 42t ust. 1 pkt 3 |
+| Travel while a CUKR application is pending | UdSC: filing does not end the UKR status, so the person may leave Poland, "jednak nie dłużej niż na 30 dni"; the status ends on collecting the card | UdSC CUKR Q&A; consistent with protection act art. 109b ust. 1 pkt 2 (INFERENCE) |
 | The status's end | UdSC: "z obecnie dostępnych informacji wynika, że status UKR będzie ważny tylko do 04.03.2027 r." | UdSC (its own wording, hedged). The EU Council decision itself is not in our sources: OPEN-U1 |
 
 ## How this meets what the lab already holds
@@ -54,7 +56,7 @@ Each file names its URL and SHA-256. The PDFs are not committed.
 | OPEN-U1 | The EU Council decision on temporary protection, and its current end date. Not collected |
 | OPEN-U2 | The definitions of the UKR and CUKR statuses (act on population records art. 8 pkt 24a; lit. c and e changed from 4.05.2026 per M.P. 2026 poz. 371). Not extracted |
 | OPEN-U3 | Whether Dz.U. 2026 poz. 1206 (from 11.01.2027) changes chapter 5a |
-| OPEN-U4 | UdSC's CUKR questions and answers (also in Ukrainian), and gov.pl's PESEL UKR page. Not collected |
+| OPEN-U4 | The Ukrainian version of UdSC's CUKR pages (gov.pl/web/udsc-ua/cukr), and gov.pl's PESEL UKR page. Not collected. The Polish Q&A is in this folder |
 | OPEN-U5 | How the prototype tells a UKR beneficiary that the general PESEL route is not theirs, without choosing by nationality (product rule 4: by status, which the person states) |
 
 ## Upkeep (doc 19's gate for wave 3)
