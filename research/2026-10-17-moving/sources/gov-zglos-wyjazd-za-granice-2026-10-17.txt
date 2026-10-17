@@ -1,0 +1,69 @@
+# gov.pl: "Zgłoś wyjazd za granicę"
+# Source: https://www.gov.pl/web/gov/zglos-wyjazd-za-granice, retrieved 2026-10-17, html sha256 f8de89318074c99650fa1b36d1080164406a86ae04dd4d429392275a7b6ea0f5
+# Text of the page's main element (its online and in-person tabs, one after the other); navigation removed. Ostatnia aktualizacja: 31.12.2025 09:42. Not binding.
+# sha256 of the text below this header (from line 5): 80b69d20d7ceefcac0a0ca023924b5a2538450ed5e9cc55c4cc1d8a32dfb6d55.
+Zgłoś wyjazd za granicę
+Wyjeżdżasz za granicę na dłużej niż 6 miesięcy? Planujesz na stałe wyjechać z Polski? Zgłoś swój wyjazd najpóźniej w dniu, w którym opuszczasz kraj. Możesz to zrobić przez internet albo w urzędzie gminy. Sprawdź, jak to zrobić.
+Zobacz, jak przetwarzamy twoje dane osobowe.
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet
+Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+ZGŁOŚ WYJAZD
+Informacje:
+Uwaga! Teraz możesz zgłosić swój wyjazd za granicę bez udziału urzędnika. Informacje na temat wyjazdu, który zgłosisz, znajdziesz w usłudze Sprawdź swoje dane w rejestrze PESEL.
+Bez udziału urzędnika możesz zgłosić również wyjazd własnego niepełnoletniego dziecka, jeśli w rejestrze PESEL przy jego danych wpisano twój numer PESEL. System sam sprawdzi dane i pokieruje cię do właściwej usługi.
+Jeśli chcesz złożyć formularz przez internet – potrzebujesz:
+- profilu zaufanego,
+- skrzynki do e-Doręczeń,
+- kwalifikowanego certyfikatu podpisu elektronicznego albo certyfikatu podpisu osobistego (ma go w e-dowodzie osoba, która we wniosku o e-dowód, zaznaczyła, że chce mieć certyfikat podpisu osobistego).
+Sprawdź, jak założyć profil zaufany albo jak uzyskać e-dowód.
+Każda osoba, która:
+- chce wyjechać za granicę na dłużej niż 6 miesięcy, ale planuje wrócić do kraju – zostanie wtedy automatycznie wymeldowana z miejsca pobytu czasowego, jeżeli je posiada. Jej adres zameldowania stałego pozostanie bez zmian,
+- planuje na stałe wyjechać z Polski – zostanie wtedy automatycznie wymeldowana z miejsca pobytu stałego i czasowego.
+Możesz zgłosić swój wyjazd również przez pełnomocnika.
+Jeśli chcesz, by pełnomocnik zgłosił przez internet twój wyjazd, udziel mu pełnomocnictwa elektronicznego i podpisz je elektronicznie.
+Pełnomocnictwo możesz też przesłać do urzędu w inny sposób – skorzystaj z pisma ogólnego.
+Rodzic, opiekun prawny lub opiekun faktyczny zgłaszają wyjazd za granicę osób, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+- dane logowania do profilu zaufanego. Jeśli jesteś obywatelem polskim – możesz też użyć e-dowodu, jeśli masz w nim certyfikat podpisu osobistego;
+- jeśli zgłaszasz wyjazd za granicę w imieniu innej osoby – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym). Jeśli w rejestrze PESEL przy danych twojego niepełnoletniego dziecka jest wpisany twój numer PESEL, system sam sprawdzi dane i pokieruje cię do właściwej usługi.
+Pamiętaj, że wniosek online możesz złożyć tylko przez e-Doręczenia. Dowiedź się, jak uzyskać adres do e-Doręczeń.
+- Przygotuj potrzebne dane. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Kliknij przycisk Zgłoś wyjazd.
+- Zaloguj się profilem zaufanym i wybierz skrzynkę do e-Doręczeń.
+- Wypełnij formularz.
+- Zaadresuj formularz – wybierz urząd gminy, na terenie której mieszkasz.
+- Kliknij Dalej, a potem Podpisz i wyślij.
+- Jeśli zgłaszasz wyjazd swój lub własnego niepełnoletniego dziecka, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, wyświetli się komunikat o zarejestrowaniu zgłoszenia. Informacje na temat swojego wyjazdu sprawdzisz od razu dzięki usłudze Sprawdź swoje dane w rejestrze PESEL.
+Jeśli zgłaszasz wyjazd własnego dziecka, przy którego danych w rejestrze PESEL nie wpisano twojego numeru PESEL lub działałasz jako pełnomocnik, opiekun prawny lub faktyczny osoby, która wyjeżdża z kraju, wyświetli się komunikat, że wniosek został wysłany do urzędu. Dostaniesz urzędowe poświadczenie przedłożenia (UPP). Urzędnik zarejestruje wyjazd tej osoby od razu gdy otrzyma twoje zgłoszenie.
+Jeśli potrzebujesz dokumentu, który potwierdza twoje dane meldunkowe – skorzystaj z usługi Pobierz dokument o zameldowaniu.
+Jeśli potrzebujesz dokumentu, który potwierdza dane meldunkowe osoby, w imieniu której zgłaszasz wyjazd, wystąp do urzędu o wydanie zaświadczenia.
+Najpóźniej w dniu, w którym wyjeżdżasz.
+Jeśli zgłaszasz wyjazd swój lub własnego niepełnoletniego dziecka, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, od razu otrzymasz informację o zgłoszeniu wyjazdu (czynność jest realizowana bez udziału urzędnika).
+Jeśli reprezentujesz inną osobę, urzędnik wymelduje ją od razu, gdy otrzyma twoje zgłoszenie.
+Jeśli zgłaszasz wyjazd, który będzie trwał ponad 6 miesięcy, i zamierzasz wrócić do kraju – po powrocie do Polski zgłoś swój powrót. Sprawdź, jak zgłosić powrót z zagranicy.
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2022 r. poz. 1191)
+Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego (Dz.U. poz. 2411 z późn. zm.)
+Każda osoba, która:
+- chce wyjechać za granicę na dłużej niż 6 miesięcy, ale planuje wrócić do kraju – zostanie wtedy automatycznie wymeldowana z miejsca pobytu czasowego, jeżeli je posiada. Jej adres zameldowania stałego pozostanie bez zmian,
+- planuje na stałe wyjechać z Polski – zostanie wtedy automatycznie wymeldowana z miejsca pobytu stałego i czasowego.
+Możesz zgłosić swój wyjazd przez pełnomocnika. Pełnomocnictwa możesz udzielić wyłącznie na piśmie. Nie musisz iść po nie do notariusza.
+Rodzic, opiekun prawny lub opiekun faktyczny zgłaszają wyjazd za granicę osób, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+- formularz zgłoszenia wyjazdu poza granice Rzeczypospolitej Polskiej, plik PDF 1,74 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Pamiętaj, możesz też poprosić urzędnika, żeby wypełnił i wydrukował formularz z systemu,
+- dokument tożsamości: dowód osobisty albo paszport,
+- jeśli zgłaszasz wyjazd za granicę w imieniu innej osoby – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym).
+Pamiętaj, że twój pełnomocnik musi mieć przy sobie swój dokument tożsamości.
+- Przygotuj wszystkie potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Zgłoś swój wyjazd. Szczegóły znajdziesz w sekcji Gdzie zgłaszasz.
+Najpóźniej w dniu, w którym wyjeżdżasz.
+- w urzędzie gminy, na terenie której mieszkasz – jeśli dokonujesz zgłoszenia w swoim imieniu,
+- w urzędzie gminy, na terenie której mieszka osoba, w imieniu której dokonujesz zgłoszenia.
+Urzędnik przyjmie twoje zgłoszenie od razu.
+Jeśli zgłaszasz wyjazd, który będzie trwał ponad 6 miesięcy, i zamierzasz wrócić do kraju – po powrocie do Polski zgłoś swój powrót. Sprawdź, jak zgłosić powrót z zagranicy.
+Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2022 r. poz. 1191)
+- Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego (Dz.U. poz. 2411 z późn. zm.)
+Ostatnia aktualizacja: 31.12.2025 09:42
+Instytucja odpowiedzialna za usługę: Kancelaria Prezesa Rady Ministrów
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji

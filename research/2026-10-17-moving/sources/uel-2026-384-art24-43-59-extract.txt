@@ -1,0 +1,226 @@
+# Ustawa z 24.09.2010 o ewidencji ludności (UEL), consolidated text Dz.U. 2026 poz. 384 (obwieszczenie of 12.03.2026, legal state 10.03.2026): the registration duty, deregistering, a departure abroad, foreigners and the fine
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2026/384/text.pdf, sha256 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb; https://api.sejm.gov.pl/eli/acts/MP/2026/370/text.pdf, sha256 f4b7223353479968b7083516cf62ad9414e4c032803b6cb56d9400193448b85e; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
+# Later amendments (node tools/sources/touched.mjs DU/2026/384 2026-03-10 --cite 24-44,59,60, 17.10.2026): Dz.U. 2025 poz. 1794 art. 5 changes art. 8, 10, 23i, 23j and 43; the consolidated text already prints its new art. 43 ust. 3 and 5 with the note that they take effect on the date of the art. 17 announcement, which M.P. 2026 poz. 370 (pkt 3) sets at 27.04.2026 (quoted at the end). Its art. 14 keeps the old wording of art. 43 ust. 3 (the passport stamp) for a long-term resident case begun earlier with that stamp (research/2026-10-17-unemployment/sources/rynek-pracy-2025-620-extract.txt quotes art. 14); its art. 12 keeps the old rules for pending cases. Dz.U. 2026 poz. 1206 art. 20 changes art. 23m and 49a from 2027, not quoted here.
+# Quoted: art. 24, 25, 27, 28 ust. 3-4, 31, 32 ust. 1-4, 33, 35, 36, 38, 40-42, 43 ust. 3 (in force) and 5, 59-60; the footnotes on art. 43. Registering itself (art. 28 ust. 1-2k, 43 ust. 1-4) is in production's registry (reference/address-registration/) and in research/2026-10-16-service/sources/.
+
+[Art. 24 (the registration duty: registering, deregistering, reporting a departure and a return; a proxy)]
+    Art. 24. 1. Obywatel polski przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany wykonywać obo-
+wiązek meldunkowy określony w ustawie.
+      2. Obowiązek meldunkowy polega na:
+1)    zameldowaniu się w miejscu pobytu stałego lub czasowego;
+20) Dodany przez art. 2 ustawy z dnia 5 sierpnia 2025 r. o zmianie ustawy o ubezpieczeniach obowiązkowych, Ubezpieczeniowym Fun-
+    duszu Gwarancyjnym i Polskim Biurze Ubezpieczycieli Komunikacyjnych oraz ustawy o ewidencji ludności (Dz. U. poz. 1176), która
+    weszła w życie z dniem 27 listopada 2025 r.
+21) W brzmieniu ustalonym przez art. 4 pkt 1 ustawy z dnia 25 czerwca 2025 r. o zmianie ustawy o informatyzacji działalności podmiotów
+    realizujących zadania publiczne oraz niektórych innych ustaw (Dz. U. poz. 1006), która weszła w życie z dniem 9 sierpnia 2025 r.
+2)   wymeldowaniu się z miejsca pobytu stałego lub czasowego;
+3)   zgłoszeniu wyjazdu poza granice Rzeczypospolitej Polskiej oraz powrotu z wyjazdu poza granice Rzeczypospolitej
+     Polskiej, z uwzględnieniem art. 36.
+     3. Za osobę nieposiadającą zdolności do czynności prawnych lub posiadającą ograniczoną zdolność do czynności praw-
+nych obowiązek meldunkowy wykonuje jej przedstawiciel ustawowy, opiekun prawny lub inna osoba sprawująca nad nią
+faktyczną opiekę w miejscu ich wspólnego pobytu.
+     4. Obowiązku meldunkowego można dopełnić przez pełnomocnika legitymującego się pełnomocnictwem udzielonym
+w formie, o której mowa w art. 33 § 2 ustawy z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego (Dz. U.
+z 2025 r. poz. 1691), po potwierdzeniu przez pełnomocnika jego tożsamości za pomocą dokumentu tożsamości albo po
+uwierzytelnieniu pełnomocnika na zasadach określonych w ustawie z dnia 17 lutego 2005 r. o informatyzacji działalności
+podmiotów realizujących zadania publiczne.
+     5. (uchylony)
+     6. W przypadku żołnierzy w czynnej służbie wojskowej, z wyłączeniem żołnierzy terytorialnej służby wojskowej, obo-
+wiązek meldunkowy:
+1)   polegający na zameldowaniu się w miejscu pobytu czasowego lub wymeldowaniu się z takiego miejsca jest wykony-
+     wany w miejscu pełnienia tej służby u dowódcy jednostki wojskowej, a w miejscu pobytu czasowego w obiekcie woj-
+     skowym u komendanta (kierownika, szefa, dowódcy) obiektu;
+2)   polegający na zgłoszeniu wyjazdu poza granice Rzeczypospolitej Polskiej oraz powrotu z tego wyjazdu jest wykony-
+     wany w miejscu pełnienia tej służby u dowódcy jednostki wojskowej.
+     7. Wykonanie obowiązku meldunkowego w przypadkach, o których mowa w ust. 6, następuje poprzez stwierdzenie
+tego faktu w rozkazie dowódcy jednostki wojskowej lub w książce zameldowań komendanta obiektu wojskowego i nie
+wymaga zgłoszenia w organie gminy oraz ujęcia w rejestrze PESEL i rejestrach mieszkańców.
+
+[Art. 25 (permanent and temporary stay; ust. 4, the 3 months, is for Polish citizens and, by art. 40 ust. 2, for EU citizens)]
+     Art. 25. 1. Pobytem stałym jest zamieszkanie w określonej miejscowości pod oznaczonym adresem z zamiarem sta-
+łego przebywania.
+    2. Pobytem czasowym jest przebywanie bez zamiaru zmiany miejsca pobytu stałego w innej miejscowości pod ozna-
+czonym adresem lub w tej samej miejscowości, lecz pod innym adresem.
+     3. Miejscem pobytu stałego lub czasowego osoby zatrudnionej na statku żeglugi śródlądowej lub morskiej albo
+zamieszkującej w związku z wykonywaniem pracy w ruchomym urządzeniu mieszkalnym, jest siedziba pracodawcy zatrud-
+niającego tę osobę.
+     4. Ilekroć w ustawie jest mowa o pobycie czasowym obywatela polskiego należy przez to rozumieć przebywanie poza
+miejscem pobytu stałego przez okres ponad 3 miesięcy.
+
+[Art. 27 (ust. 2: one permanent and one temporary place at a time)]
+    Art. 27. 1. Obywatel polski przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany zameldować się
+w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+     2. Równocześnie można mieć jedno miejsce pobytu stałego i jedno miejsce pobytu czasowego.
+
+[Art. 28 ust. 3-4 (the declared period; registration is for records only)]
+     3. Przy zameldowaniu na pobyt czasowy należy wskazać deklarowany okres pobytu w tym miejscu.
+    4. Zameldowanie na pobyt stały lub czasowy służy wyłącznie celom ewidencyjnym i ma na celu potwierdzenie faktu
+pobytu osoby w miejscu, w którym się zameldowała.
+
+[Art. 31 (doubts decided by the municipality)]
+    Art. 31. 1. Jeżeli dane zgłoszone do zameldowania lub wymeldowania budzą wątpliwości o zameldowaniu lub wymel-
+dowaniu rozstrzyga organ gminy w drodze decyzji administracyjnej.
+    2. Wątpliwości co do stałego lub czasowego charakteru pobytu osoby pod deklarowanym adresem rozstrzyga organ
+gminy w drodze decyzji administracyjnej.
+
+[Art. 32 ust. 1-4 (the registration certificates; a temporary one valid until the declared end)]
+     Art. 32. 1. Organ dokonujący zameldowania na pobyt stały wydaje z urzędu osobie zaświadczenie o zameldowaniu
+na pobyt stały.
+     2. Organ dokonujący zameldowania na pobyt czasowy wydaje osobie, na jej wniosek, zaświadczenie o zameldowaniu
+na pobyt czasowy.
+     3. W zaświadczeniach, o których mowa w ust. 1 i 2, zamieszcza się:
+1)   imię (imiona) i nazwisko;
+2)   datę i miejsce urodzenia osoby meldującej się;
+3)   oznaczenie organu wydającego zaświadczenie;
+4)   adres jej zameldowania na pobyt stały lub adres zameldowania na pobyt czasowy oraz datę upływu deklarowanego
+     terminu pobytu czasowego.
+     4. Zaświadczenia, o których mowa w ust. 1 i 2, są ważne do chwili zmiany miejsca zameldowania, przy czym zaświad-
+czenie o zameldowaniu na pobyt czasowy jest ważne niedłużej niż do upływu terminu zameldowania.
+
+[Art. 33 (deregistering: when, where, how; by registering elsewhere; online)]
+    Art. 33. 1. Obywatel polski, który opuszcza miejsce pobytu stałego albo opuszcza miejsce pobytu czasowego przed
+upływem deklarowanego okresu pobytu obowiązany jest wymeldować się.
+     2. Obywatel polski dokonuje wymeldowania z miejsca pobytu stałego albo z miejsca pobytu czasowego na piśmie
+utrwalonym w postaci:
+1)   papierowej – na formularzu opatrzonym własnoręcznym podpisem, w organie gminy właściwym dla dotychczasowego
+     miejsca pobytu, przedstawiając do wglądu dowód osobisty lub paszport, albo
+2)   elektronicznej – na formularzu opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo pod-
+     pisem osobistym, umożliwiającym wprowadzenie danych do rejestru PESEL przez organ, o którym mowa w art. 28
+     ust. 1, pod warunkiem otrzymania dowodu, o którym mowa w art. 41 ustawy z dnia 18 listopada 2020 r. o doręczeniach
+     elektronicznych.
+     3. Obywatel polski może wymeldować się z miejsca pobytu stałego lub czasowego dokonując zameldowania w nowym
+miejscu pobytu.
+     4. Obywatel polski może dokonać wymeldowania z miejsca pobytu stałego albo z miejsca pobytu czasowego przy
+użyciu usługi elektronicznej udostępnionej przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu w sposób
+określony w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania
+publiczne. Organem rejestrującym dane jest w tym przypadku minister właściwy do spraw informatyzacji.
+     5. Jedno z rodziców może dokonać wymeldowania dziecka pozostającego pod jego władzą rodzicielską przy użyciu
+usługi, o której mowa w ust. 4, jeżeli w rejestrze PESEL przy danych dziecka zamieszczono numer PESEL tego z rodziców,
+które dokonuje wymeldowania.
+   6. Wymeldowanie w przypadku, o którym mowa w ust. 5, wymaga złożenia przez tego z rodziców, które dokonuje
+wymeldowania, oświadczenia o pozostawaniu dziecka pod jego władzą rodzicielską.
+     7. Oświadczenie, o którym mowa w ust. 6, składa się pod rygorem odpowiedzialności karnej za złożenie fałszywego
+oświadczenia. Składający oświadczenie zamieszcza w nim klauzulę następującej treści: „Jestem świadomy odpowiedzial-
+ności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej
+za złożenie fałszywego oświadczenia.
+
+[Art. 35 (deregistration by decision)]
+      Art. 35. Organ gminy, o którym mowa w art. 28 ust. 1, wydaje z urzędu lub na wniosek właściciela lub pod-
+miotu wskazanych w art. 28 ust. 2, decyzję w sprawie wymeldowania obywatela polskiego, który opuścił miejsce pobytu
+stałego albo opuścił miejsce pobytu czasowego przed upływem deklarowanego okresu pobytu i nie dopełnił obowiązku
+wymeldowania się.
+
+[Art. 36 (a departure abroad: for good, or for more than 6 months; the return)]
+      Art. 36. 1. Obywatel polski, który wyjeżdża z kraju z zamiarem stałego pobytu poza granicami Rzeczypospolitej Pol-
+skiej, jest obowiązany zgłosić swój wyjazd. Zgłoszenie wyjazdu poza granice Rzeczypospolitej Polskiej skutkuje wymeldo-
+waniem z miejsca pobytu stałego i czasowego.
+     2. Obywatel polski, który wyjeżdża poza granice Rzeczypospolitej Polskiej, bez zamiaru stałego pobytu, na okres dłuższy
+niż 6 miesięcy, jest obowiązany zgłosić swój wyjazd oraz powrót.
+     3. Zgłoszeń, o których mowa w ust. 1 i 2, dokonuje się najpóźniej w dniu opuszczenia miejsca pobytu stałego albo
+czasowego na piśmie utrwalonym w postaci:
+1)   papierowej, w organie gminy, o którym mowa w art. 28 ust. 1, opatrzonym własnoręcznym podpisem, przedstawiając
+     do wglądu dowód osobisty lub paszport, albo
+2)   elektronicznej – na formularzu opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo pod-
+     pisem osobistym, umożliwiającym wprowadzenie danych do rejestru PESEL przez organ, o którym mowa w art. 28
+     ust. 1, pod warunkiem otrzymania dowodu, o którym mowa w art. 41 ustawy z dnia 18 listopada 2020 r. o doręczeniach
+     elektronicznych.
+     4. Obywatel polski w terminie, o którym mowa w ust. 3, może dokonać zgłoszeń, o których mowa w ust. 1 i 2, przy
+użyciu usługi elektronicznej udostępnionej przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu w spo-
+sób określony w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących
+zadania publiczne.
+     5. Jedno z rodziców może dokonać zgłoszeń, o których mowa w ust. 1 i 2, dziecka pozostającego pod jego władzą
+rodzicielską przy użyciu usługi, o której mowa w ust. 4, jeżeli w rejestrze PESEL przy danych dziecka zamieszczono numer
+PESEL tego z rodziców, które dokonuje zgłoszenia wyjazdu lub powrotu.
+     6. Zgłoszenie wyjazdu lub powrotu w przypadku, o którym mowa w ust. 5, wymaga złożenia przez tego z rodziców,
+które dokonuje zgłoszenia wyjazdu lub powrotu, oświadczenia o pozostawaniu dziecka pod jego władzą rodzicielską.
+     7. Oświadczenie, o którym mowa w ust. 6, składa się pod rygorem odpowiedzialności karnej za złożenie fałszywego
+oświadczenia. Składający oświadczenie zamieszcza w nim klauzulę następującej treści: „Jestem świadomy odpowiedzialności
+karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej za zło-
+żenie fałszywego oświadczenia.
+
+[Art. 38 (a death replaces deregistration)]
+     Art. 38. Zgłoszenie zgonu dokonane w urzędzie stanu cywilnego, zgodnie z przepisami prawa o aktach stanu cywil-
+nego, zastępuje wymeldowanie osoby zmarłej z miejsca pobytu stałego i czasowego.
+
+[Art. 40 (foreigners: which articles apply; in person without a PESEL)]
+     Art. 40. 1. Cudzoziemiec przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany wykonywać obowią-
+zek meldunkowy na zasadach określonych w art. 24, art. 25 ust. 1–3, art. 26, art. 27 ust. 2, art. 28 oraz w art. 30–39, jeżeli
+przepisy niniejszego rozdziału nie stanowią inaczej.
+     2. Cudzoziemiec, o którym mowa w art. 41 ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej jest obowią-
+zany wykonywać obowiązek meldunkowy na zasadach określonych w art. 24–26, art. 27 ust. 2, art. 28 oraz w art. 30–39, jeżeli
+przepisy niniejszego rozdziału nie stanowią inaczej.
+       3.22) Jeżeli zameldowania w miejscu pobytu stałego lub czasowego dokonuje cudzoziemiec:
+1)     niewymieniony w art. 41 ust. 1–2a lub
+2)     niebędący obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10
+       ust. 1 lit. b lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Euro-
+       pejskiej i Europejskiej Wspólnoty Energii Atomowej, bądź członkiem jego rodziny, o którym mowa w art. 10 ust. 1
+       lit. e lub f tej umowy
+– nieposiadający numeru PESEL, wymagane jest jego osobiste stawiennictwo.
+
+[Art. 41 (foreigners: 30 days for EU citizens and family, the fourth day for others; the declared period within the legal stay)]
+    Art. 41. 1. Cudzoziemiec będący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa człon-
+kowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodar-
+czym lub obywatelem Konfederacji Szwajcarskiej, przebywający na terytorium Rzeczypospolitej Polskiej jest obowiązany
+zameldować się w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+     2. Członek rodziny cudzoziemca, o którym mowa w ust. 1, niebędący obywatelem państwa członkowskiego Unii
+Europejskiej, obywatelem państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy
+o Europejskim Obszarze Gospodarczym lub obywatelem Konfederacji Szwajcarskiej, jest obowiązany zameldować się
+w miejscu pobytu stałego lub czasowego najpóźniej w 30 dniu, licząc od dnia przybycia do tego miejsca.
+       2a. Przepis ust. 2 stosuje się także do członka rodziny obywatela Rzeczypospolitej Polskiej, o którym mowa w art. 2 pkt 4
+lit. b ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego
+terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2025 r. poz. 1164 i 1794).
+    3. Cudzoziemiec niewymieniony w ust. 1–2a, przebywający na terytorium Rzeczypospolitej Polskiej, ma obowiązek
+zameldować się w miejscu pobytu stałego lub czasowego najpóźniej czwartego dnia, licząc od dnia przybycia do tego miejsca.
+      4. Deklarowany przez cudzoziemca niewymienionego w ust. 1–2a okres pobytu czasowego pod określonym adresem
+nie może przekroczyć okresu, w którym cudzoziemiec ten może legalnie przebywać na terytorium Rzeczypospolitej Pol-
+skiej, zgodnie z dokumentem potwierdzającym jego prawo pobytu.
+
+[Art. 42 (exemptions: diplomats; a stay of 30 days or less)]
+     Art. 42. 1. Od wykonywania obowiązku meldunkowego zwolnieni są, pod warunkiem wzajemności, szefowie i człon-
+kowie personelu przedstawicielstw dyplomatycznych oraz urzędów konsularnych państw obcych, łącznie z członkami ich
+rodzin pozostającymi z nimi we wspólnocie domowej, a także inne osoby na podstawie ustaw, umów lub powszechnie
+ustalonych zwyczajów międzynarodowych.
+     2. Cudzoziemcy są zwolnieni z obowiązku meldunkowego, jeżeli okres ich pobytu na terytorium Rzeczypospolitej
+Polskiej nie przekracza 30 dni.
+22)   Dodany przez art. 6 pkt 2 ustawy, o której mowa w odnośniku 14; wszedł w życie z dniem 1 stycznia 2026 r.
+
+[Art. 43 ust. 3 (the documents for a temporary registration), in the wording of Dz.U. 2025 poz. 1794 art. 5 pkt 5 lit. a, in force from 27.04.2026 (see the end); the consolidated text also prints the earlier wording]
+      3.25) Cudzoziemiec dokonujący zameldowania się na pobyt czasowy przedstawia wizę, a w przypadku gdy wjazd
+cudzoziemca nastąpił na podstawie umowy przewidującej zniesienie lub ograniczenie obowiązku posiadania wizy
+albo cudzoziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2, art. 206
+ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079
+i 1794 oraz z 2026 r. poz. 203) – dokument podróży, tymczasowe zaświadczenie tożsamości cudzoziemca, kartę
+pobytu, dokument „zgoda na pobyt tolerowany” albo zezwolenie na pobyt czasowy, zezwolenie na pobyt stały ,
+zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej lub decyzję o nadaniu statusu uchodźcy w Rzeczy-
+pospolitej Polskiej, udzieleniu w Rzeczypospolitej Polskiej ochrony uzupełniającej, zgody na pobyt ze względów
+humanitarnych albo zgody na pobyt tolerowany.
+
+[Art. 43 ust. 5 (another identity document), added by the same point, from 27.04.2026]
+    5.27) W szczególnie uzasadnionym przypadku, gdy cudzoziemiec dokonujący zameldowania się na pobyt cza-
+sowy nie posiada ważnego dokumentu podróży ani nie ma możliwości jego uzyskania, może przedstawić inny doku-
+ment potwierdzający tożsamość.
+
+[The consolidated text's footnotes 24-27 (footnote 4 is Dz.U. 2025 poz. 1794, footnote 14 Dz.U. 2025 poz. 1301)]
+24) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 25.
+25) W brzmieniu ustalonym przez art. 5 pkt 5 lit. a ustawy, o której mowa w odnośniku 4; wejdzie w życie z dniem określonym w komu-
+    nikacie, o którym mowa w art. 17 tej ustawy.
+26) Ze zmianą wprowadzoną przez art. 6 pkt 3 lit. b ustawy, o której mowa w odnośniku 14; weszła w życie z dniem 1 stycznia 2026 r.
+27) Dodany przez art. 5 pkt 5 lit. b ustawy, o której mowa w odnośniku 4; wejdzie w życie z dniem określonym w komunikacie, o którym
+    mowa w art. 17 tej ustawy.
+
+[Art. 59-60 (a fine for a non-EU foreigner who does not register)]
+     Art. 59. 1. Cudzoziemiec niebędący obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa
+członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospo-
+darczym lub obywatelem Konfederacji Szwajcarskiej, który nie dopełnia ciążącego na nim obowiązku meldunkowego, pod-
+lega karze grzywny.
+     2. Przepisu ust. 1 nie stosuje się do cudzoziemca będącego członkiem rodziny obywatela państwa członkowskiego Unii
+Europejskiej, obywatela państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA) – strony umowy
+o Europejskim Obszarze Gospodarczym lub obywatela Konfederacji Szwajcarskiej.
+      Art. 60. Postępowania w sprawach, o których mowa w art. 59, prowadzi się na podstawie przepisów ustawy z dnia
+24 sierpnia 2001 r. – Kodeks postępowania w sprawach o wykroczenia (Dz. U. z 2025 r. poz. 860, 1178, 1661, 1814, 1818
+i 1872).
+
+[M.P. 2026 poz. 370 (the announcement under Dz.U. 2025 poz. 1794 art. 17): its pkt 3, and the date]
+3)    art. 8 pkt 24, art. 10 ust. 8, art. 23i ust. 1a, art. 23j ust. 2 pkt 2 lit. b oraz art. 43 ust. 3 i 5 ustawy z dnia 24 września
+      2010 r. o ewidencji ludności (Dz. U. z 2026 r. poz. 384),
+– określa się na 27 kwietnia 2026 r.

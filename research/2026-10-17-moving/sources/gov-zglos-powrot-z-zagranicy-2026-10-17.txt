@@ -1,0 +1,60 @@
+# gov.pl: "Zgłoś powrót z zagranicy"
+# Source: https://www.gov.pl/web/gov/zglos-powrot-z-zagranicy, retrieved 2026-10-17, html sha256 3c99677c4f8cd8c31fe4a29b3e6067a483da5f6f712d349e77511958c38a98b0
+# Text of the page's main element (its online and in-person tabs, one after the other); navigation removed. Ostatnia aktualizacja: 19.07.2024 12:46. Not binding.
+# sha256 of the text below this header (from line 5): 0be0104d9dc2222e44b8bf0e234ece356b60dea5bfaab5365748d027f373ca23.
+Zgłoś powrót z zagranicy
+Wracasz z zagranicy z wyjazdu, który trwał dłużej niż 6 miesięcy? Zgłoś swój powrót. Możesz to zrobić przez internet albo w urzędzie gminy. Masz na to 30 dni od powrotu. Sprawdź, jak to zrobić.
+Zobacz, jak przetwarzamy twoje dane osobowe.
+ZGŁOŚ POWRÓT
+Informacje:
+Uwaga! Teraz możesz zgłosić swój powrót z wyjazdu za granicę bez udziału urzędnika. Informacje na temat powrotu, który zgłosisz, znajdziesz w usłudze Sprawdź swoje dane w rejestrze PESEL.
+Bez udziału urzędnika możesz zgłosić również powrót z wyjazdu własnego niepełnoletniego dziecka, jeśli w rejestrze PESEL przy jego danych jest wpisany twój numer PESEL. System sam sprawdzi dane i pokieruje cię do właściwej usługi.
+Jeśli chcesz złożyć formularz przez internet – potrzebujesz profilu zaufanego, kwalifikowanego certyfikatu podpisu elektronicznego albo certyfikatu podpisu osobistego (ma go w e-dowodzie osoba, która we wniosku o e-dowód, zaznaczyła, że chce mieć certyfikat podpisu osobistego).
+Sprawdź, jak założyć profil zaufany albo jak uzyskać e-dowód.
+Każdy, kto był za granicą dłużej niż 6 miesięcy i zgłosił ten wyjazd w urzędzie gminy.
+Nie zgłaszaj powrotu z wcześniej zgłoszonego wyjazdu na stałe poza granice kraju. Po prostu zamelduj się na pobyt stały lub czasowy.
+Możesz zgłosić swój powrót również przez pełnomocnika. Jeśli chcesz, by pełnomocnik zgłosił twój powrót przez internet, udziel mu pełnomocnictwa elektronicznego i podpisz je elektronicznie. Pełnomocnictwo możesz też przesłać do urzędu w inny sposób – skorzystaj z pisma ogólnego.
+Rodzic, opiekun prawny lub opiekun faktyczny zgłaszają powrót z zagranicy osób, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+- login z hasłem do profilu zaufanego i telefon komórkowy (lub dane i narzędzia do innego sposobu logowania na profil zaufany). Jeśli jesteś obywatelem polskim – możesz też użyć e-dowodu, jeśli masz w nim certyfikat podpisu osobistego;
+- jeśli zgłaszasz powrót z wyjazdu za granicę w imieniu innej osoby – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym). Jeśli w rejestrze PESEL przy danych twojego niepełnoletniego dziecka jest wpisany twój numer PESEL, system sam sprawdzi dane i pokieruje cię do właściwej usługi.
+- Przygotuj potrzebne dane. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Kliknij przycisk Zgłoś powrót.
+- Przeniesiesz się na stronę login.gov.pl.
+- Wybierz sposób logowania.
+- Wypełnij formularz.
+- Zaadresuj formularz – wybierz urząd gminy, na terenie której mieszkasz po powrocie z zagranicy.
+- Kliknij Dalej, a potem Podpisz i wyślij.
+- Jeśli zgłaszasz powrót swój lub własnego niepełnoletniego dziecka, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, wyświetli się komunikat o zarejestrowaniu zgłoszenia. Informacje na temat swojego powrotu sprawdzisz od razu dzięki usłudze Sprawdź swoje dane w rejestrze PESEL.
+Jeśli zgłaszasz powrót własnego dziecka, przy którego danych w rejestrze PESEL nie wpisano twojego numeru PESEL lub działałasz jako pełnomocnik, opiekun prawny lub faktyczny osoby, która powraca do kraju, wyświetli się komunikat, że wniosek został wysłany do urzędu. Dostaniesz urzędowe poświadczenie przedłożenia (UPP). Urzędnik zarejestruje powrót tej osoby od razu gdy otrzyma twoje zgłoszenie.
+Jeśli potrzebujesz dokumentu, który potwierdza twoje dane meldunkowe – skorzystaj z usługi Pobierz dokument o zameldowaniu.
+Jeśli potrzebujesz dokumentu, który potwierdza dane meldunkowe osoby, w imieniu której zgłaszasz powrót, wystąp do urzędu o wydanie zaświadczenia.
+- do urzędu gminy, na terenie której mieszkasz po powrocie z zagranicy - jeśli dokonujesz zgłoszenia w swoim imieniu,
+- w urzędzie gminy, na terenie której mieszka po powrocie z zagranicy osoba, w imieniu której zgłaszasz jej powrót.
+Usługa jest bezpłatna.
+Jeśli zgłaszasz powrót z wyjazdu za granicę swój lub własnego niepełnoletniego dziecka, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, od razu otrzymasz informację o zarejestrowaniu zgłoszenia (czynność jest realizowana bez udziału urzędnika).
+W przypadku, gdy reprezentujesz inną osobę urzędnik wymelduje ją od razu gdy otrzyma twoje zgłoszenie.
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2022 r. poz. 1191)
+- Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego (Dz.U. poz. 2411 z późn. zm.)
+Każdy, kto był za granicą dłużej niż 6 miesięcy i zgłosił ten wyjazd w urzędzie gminy.
+Nie zgłaszaj powrotu z wcześniej zgłoszonego wyjazdu na stałe poza granice kraju. Po prostu zamelduj się na pobyt stały lub czasowy.
+Możesz zgłosić swój powrót również przez pełnomocnika. Pełnomocnictwa możesz udzielić wyłącznie na piśmie. Nie musisz iść po nie do notariusza.
+Rodzic, opiekun prawny lub opiekun faktyczny zgłaszają powrót z zagranicy osób, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+- formularz zgłoszenia powrotu z wyjazdu poza granice Rzeczypospolitej Polskiej, plik PDF 1,72 MB – pobierz i wypełnij w domu albo zrób to w swoim urzędzie gminy. Pamiętaj, możesz też poprosić urzędnika, żeby wypełnił i wydrukował formularz z systemu,
+- dokument tożsamości: dowód osobisty albo paszport,
+- jeśli zgłaszasz powrót z wyjazdu za granicę w imieniu innej osoby – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym).
+Pamiętaj, że twój pełnomocnik musi mieć przy sobie swój dokument tożsamości.
+- Przygotuj wszystkie potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować
+- Zgłoś powrót. Szczegóły znajdziesz w sekcji Gdzie zgłaszasz.
+- w urzędzie gminy, na terenie której mieszkasz po powrocie z zagranicy – jeśli dokonujesz zgłoszenia w swoim imieniu,
+- w urzędzie gminy, na terenie której mieszka po powrocie z zagranicy osoba, w imieniu której dokonujesz zgłoszenia.
+Usługa jest bezpłatna.
+Urzędnik przyjmie twoje zgłoszenie od razu.
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności (Dz.U. z 2022 r. poz. 1191)
+- Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego (Dz.U. poz. 2411 z późn. zm.)
+Ostatnia aktualizacja: 19.07.2024 12:46
+Instytucja odpowiedzialna za usługę: Kancelaria Prezesa Rady Ministrów
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji

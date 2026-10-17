@@ -1,0 +1,86 @@
+# gov.pl: "Wymelduj się z pobytu stałego"
+# Source: https://www.gov.pl/web/gov/wymelduj-sie-z-pobytu-stalego, retrieved 2026-10-17, html sha256 0ab3000e06fe4dc4827b4b3c49395688b0fed5f0338cdec2fb429a88890ac0f5
+# Text of the page's main element (its online and in-person tabs, one after the other); navigation removed. Ostatnia aktualizacja: 08.04.2026 10:10. Not binding.
+# sha256 of the text below this header (from line 5): 8b00f83d237e058e3343dd4692204cf7e7d0b84c37c1c49acf5bd063d806cd3e.
+Wymelduj się z pobytu stałego
+Zmieniasz miejsce stałego zamieszkania? Wymelduj się. Sprawdź, jak to zrobić.
+Zobacz, jak przetwarzamy twoje dane osobowe
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet
+Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+WYMELDUJ SIĘ
+Informacje:
+Uwaga! Teraz możesz wymeldować się bez udziału urzędnika. Informację o wymeldowaniu otrzymasz od razu.
+Bez udziału urzędnika możesz wymeldować również własne niepełnoletnie dziecko, jeśli w rejestrze PESEL przy jego danych wpisano twój numer PESEL. System sam sprawdzi dane i pokieruje cię do właściwej usługi.
+Jeśli chcesz wymeldować się przez internet – potrzebujesz:
+- profilu zaufanego,
+- skrzynki do e-Doręczeń,
+- kwalifikowanego certyfikatu podpisu elektronicznego albo certyfikatu podpisu osobistego (ma go w e-dowodzie osoba, która we wniosku o e-dowód, zaznaczyła, że chce mieć certyfikat podpisu osobistego).
+Sprawdź, jak założyć profil zaufany albo jak uzyskać e-dowód.
+Uwaga! Jeśli chcesz od razu zameldować się w nowym miejscu, nie korzystaj z tej usługi. Obie sprawy – wymeldowanie i zameldowanie – załatwisz jednym zgłoszeniem Zamelduj się na pobyt stały lub czasowy dłuższy niż 3 miesiące.
+Każdy, kto jest zameldowany na pobyt stały i wyprowadza się z tego miejsca.
+Jeśli wyjeżdżasz z miejsca stałego zameldowania tylko czasowo, bo na przykład uczysz się lub leczysz, nie musisz się z niego wymeldować.
+Możesz wymeldować się również przez pełnomocnika. Jeśli chcesz, by pełnomocnik wymeldował cię przez internet, udziel mu pełnomocnictwa elektronicznego i podpisz je elektronicznie. Pełnomocnictwo możesz też przesłać do urzędu w inny sposób – skorzystaj z pisma ogólnego.
+Rodzic, opiekun prawny lub opiekun faktyczny wymeldowują z pobytu stałego osoby, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Jeśli opuścisz miejsce pobytu stałego i się nie wymeldujesz, możesz zostać wymeldowany w drodze decyzji administracyjnej. Więcej informacji na ten temat przeczytasz dalej w sekcji Problem z wymeldowaniem - co robić.
+Jeśli zgłosisz zgon w urzędzie stanu cywilnego – osoba zmarła zostanie automatycznie wymeldowana. Nie musisz oddzielnie zgłaszać wymeldowania tej osoby.
+- dane logowania do profilu zaufanego. Jeśli jesteś obywatelem polskim – możesz też użyć e-dowodu, jeśli masz w nim certyfikat podpisu osobistego;
+- jeśli zgłaszasz wymeldowanie w imieniu innej osoby – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym). Jeśli w rejestrze PESEL przy danych twojego niepełnoletniego dziecka jest wpisany twój numer PESEL, system sam sprawdzi dane i pokieruje cię do właściwej usługi.
+- Przygotuj potrzebne dane. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Kliknij w niebieski przycisk Wymelduj się na górze strony.
+- Zaloguj się i wybierz skrzynkę do e-Doręczeń.
+- Wypełnij potrzebne dane.
+- Kliknij Dalej, a potem Podpisz i wyślij.
+- Jeśli wymeldowujesz siebie lub własne niepełnoletnie dziecko, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, wyświetli się komunikat o wymeldowaniu. Informację o wymeldowaniu otrzymasz na swoją skrzynkę do e-Doręczeń.
+Jeśli wymeldowujesz własne dziecko, przy którego danych w rejestrze PESEL nie wpisano twojego numeru PESEL lub działasz jako pełnomocnik, opiekun prawny lub faktyczny innej osoby wymeldowanej, wyświetli się komunikat, że wniosek został wysłany do urzędu. Dostaniesz urzędowe poświadczenie przedłożenia (UPP). Urzędnik wymelduje tę osobę gdy tylko otrzyma twoje zgłoszenie.
+Nie otrzymasz z urzędu zaświadczenia o wymeldowaniu. Jeśli potrzebujesz dokumentu, który potwierdza twoje dane meldunkowe – skorzystaj z usługi Sprawdź dane swoje lub swojego dziecka w rejestrze PESEL i pobierz zaświadczenie.
+Jeśli potrzebujesz dokumentu, który potwierdza dane meldunkowe osoby, w imieniu której zgłaszasz wymeldowanie, wystąp do urzędu o wydanie zaświadczenia.
+Najpóźniej w dniu, w którym wyprowadzasz się z miejsca zameldowania na pobyt stały.
+Możesz zrobić to podczas meldowania się w nowym miejscu pobytu stałego albo czasowego. Skrzystaj z usługi Zamelduj się na pobyt stały lub czasowy dłuższy niż 3 miesiące. Urzędnik zamelduje cię w nowym miejscu i automatycznie wymelduje z poprzedniego.
+Masz 2 możliwości. Możesz wymeldować się w urzędzie gminy, na terenie której:
+- masz meldunek na pobyt stały lub
+- będziesz meldować się na pobyt stały lub czasowy – jeśli chcesz wymeldować się z dotychczasowego miejsca pobytu jednocześnie z zameldowaniem w nowym miejscu pobytu.
+Usługa jest bezpłatna.
+Jeżeli wymeldowujesz siebie lub własne niepełnoletnie dziecko, przy którego danych w rejestrze PESEL wpisano twój numer PESEL, od razu otrzymasz informację o wymeldowaniu (czynność jest realizowana bez udziału urzędnika).
+Jeśli reprezentujesz inną osobę, urzędnik wymelduje ją od razu, gdy otrzyma twoje zgłoszenie.
+Może zdarzyć się, że osoba zameldowana w nieruchomości, której jesteś właścicielem lub posiadasz do niej inny tytuł prawny do lokalu, opuściła miejsce pobytu, jednak się nie wymeldowała. Co możesz zrobić?
+- Poinformuj o tym na piśmie urząd gminy, na terenie którego położona jest nieruchomość.
+- Pokaż w urzędzie dokument potwierdzający twój tytuł prawny do lokalu, np. wypis z księgi wieczystej, umowę cywilno-prawną, decyzję administracyjną lub orzecznie sądu.
+Urząd przeprowadzi postępowanie administracyjne i ustali, czy osoba opuściła nieruchomość, w której jest zameldowana. Jeżeli tak – wyda decyzję o jej wymeldowaniu.
+Jeśli:
+- potrzebujesz dokumentu, aby potwierdzić twoje dane meldunkowe (aktualne i historyczne) – skorzystaj z usługi Sprawdź dane swoje lub swojego dziecka w rejestrze PESEL i pobierz zaświadczenie,
+- potrzebujesz dokumentu, aby potwierdzić dane meldunkowe osoby, w imieniu której zgłaszasz wymeldowanie – wystąp do urzędu o wydanie zaświadczenia,
+- masz interes prawny lub faktyczny w uzyskaniu danych innej osoby skorzystaj z usługi Uzyskaj dane innej osoby z rejestru PESEL.
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+- Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Uwaga! Z dotychczasowego miejsca pobytu możesz wymeldować się podczas meldowania w nowym miejscu zamieszkania. Urzędnik zamelduje cię w nowym miejscu i automatycznie wymelduje z poprzedniego. Informacje, jak się zameldować w nowym miejscu pobytu znajdziesz w Zamelduj się na pobyt stały lub czasowy dłuższy niż 3 miesiące.
+Każdy, kto jest zameldowany na pobyt stały i wyprowadza się z tego miejsca.
+Możesz wymeldować się również przez pełnomocnika. Pełnomocnictwa możesz udzielić wyłącznie na piśmie. Nie musisz iść po nie do notariusza.
+Rodzic, opiekun prawny lub opiekun faktyczny wymeldowują z pobytu stałego osoby, które:
+- nie mają zdolności do czynności prawnych (osoby całkowicie ubezwłasnowolnione, dzieci do 13 lat),
+- mają ograniczoną zdolność do czynności prawnych (osoby częściowo ubezwłasnowolnione, dzieci w wieku od 13 do 18 lat).
+Jeśli opuścisz miejsce pobytu stałego i się nie wymeldujesz, możesz zostać wymeldowany w drodze decyzji administracyjnej. Więcej informacji na ten temat przeczytasz dalej w sekcji Problem z wymeldowaniem - co robić?
+Jeśli zgłosisz zgon w urzędzie stanu cywilnego – osoba zmarła zostanie automatycznie wymeldowana. Nie musisz oddzielnie zgłaszać wymeldowania tej osoby.
+- formularz zgłoszenia wymeldowania z miejsca pobytu stałego, plik PDF 1,76 MB – pobierz i wypełnij w domu albo zrób to w urzędzie gminy. Pamiętaj, możesz też poprosić urzędnika, żeby wypełnił i wydrukował formularz z systemu,
+- dokument tożsamości: dowód osobisty albo paszport,
+- jeśli zgłaszasz wymeldowanie w imieniu osoby trzeciej – dokument, który potwierdza uprawnienie do działania w jej imieniu (np. pełnomocnictwo lub dokument, który potwierdza, że jesteś opiekunem prawnym lub faktycznym).
+Pamiętaj, że twój pełnomocnik musi mieć przy sobie swój dokument tożsamości.
+- Przygotuj potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Zgłoś wymeldowanie. Szczegóły znajdziesz w sekcji Gdzie składasz dokumenty.
+- Pamiętaj. Nie otrzymasz z urzędu zaświadczenia o wymeldowaniu. Jeśli jest ci potrzebne wystąp o nie do urzędu.
+Najpóźniej w dniu, w którym wyprowadzasz się z miejsca zameldowania na pobyt stały. Możesz zrobić to podczas meldowania się w nowym miejscu pobytu stałego albo czasowego. Urzędnik zamelduje cię w nowym miejscu i automatycznie wymelduje z poprzedniego.
+Masz 2 możliwości. Możesz się wymeldować w urzędzie gminy, na terenie której:
+- masz meldunek na pobyt stały lub
+- będziesz meldować się na pobyt stały lub czasowy – jeśli chcesz wymeldować się z dotychczasowego miejsca pobytu jednocześnie z zameldowaniem w nowym miejscu pobytu.
+Usługa jest bezpłatna.
+Urzędnik wymelduje cię od razu po otrzymaniu twojego zgłoszenia.
+Może zdarzyć się, że osoba zameldowana w nieruchomości, której jesteś właścicielem lub posiadasz do niej inny tytuł prawny do lokalu, opuściła miejsce pobytu, jednak się nie wymeldowała. Co możesz zrobić?
+- Poinformuj o tym na piśmie urząd gminy, na terenie którego położona jest nieruchomość.
+- Pokaż w urzędzie dokument, który potwierdza twój tytuł prawny do lokalu, np. wypis z księgi wieczystej, umowę cywilno-prawną, decyzję administracyjną lub orzeczenie sądu.
+Urząd przeprowadzi postępowanie administracyjne i ustali, czy osoba opuściła nieruchomość, w której jest zameldowana. Jeżeli tak – wyda decyzję o jej wymeldowaniu.
+- Ustawa z dnia 24 września 2010 r. o ewidencji ludności
+- Rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 13 grudnia 2017 r. w sprawie określenia wzorów i sposobu wypełniania formularzy stosowanych przy wykonywaniu obowiązku meldunkowego
+Ostatnia aktualizacja: 08.04.2026 10:10
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Spraw Wewnętrznych i Administracji
