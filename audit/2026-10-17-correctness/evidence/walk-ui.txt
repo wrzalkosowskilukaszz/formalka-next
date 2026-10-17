@@ -1,5 +1,5 @@
 # node audit/2026-10-17-correctness/walk-ui.mjs --paths 6
-# run on the build of f77a5ed (the app is unchanged since); header added 2026-10-17T10:00Z node v22.22.0
+# run on 28f611f (the app as in b3ae464, build 7aa86041c21e), started 2026-10-17T11:37Z node v22.22.0. The run before this one counted 3 paths as faults: the walk itself clicked "Wróć do Startu" when the stop's chips appeared between two of its checks; the walk now never picks that chip.
 
 30 runs played to the end
   pesel/first: no plan; the case says why and hands off
