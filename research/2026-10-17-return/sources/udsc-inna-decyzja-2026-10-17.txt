@@ -1,0 +1,37 @@
+# gov.pl (Office for Foreigners, UdSC): Inna decyzja
+# Source: https://www.gov.pl/web/udsc/inna-decyzja, retrieved 2026-10-17, html sha256 51b40fccd325805684bb00c4609ac417376f526f93de948f416d8be2f071c3fa
+# Text of the page's main element (its first lines are the section's menu); blank lines removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): ec5bc7a4b6435d001df3c6f900e7773408b411340b522944f35fbfad72df000b.
+Urząd do Spraw Cudzoziemców
+Załatw sprawę
+Ochrona międzynarodowa
+Procedura udzielania ochrony międzynarodowej
+Wynik postępowania
+Inna decyzja
+Powrót
+Inna decyzja
+Jeśli otrzymałeś decyzję o odmowie nadania statusu uchodźcy i odmowie udzielenia ochrony uzupełniającej, decyzję o umorzeniu postępowania lub decyzję o stwierdzeniu niedopuszczalności wniosku, oznacza to, że otrzymałeś decyzję odmowną. Jeśli nie jesteś zadowolony z decyzji, możesz złożyć odwołanie do Rady do Spraw Uchodźców. Informacje jak to zrobić, znajdziesz w pouczeniu decyzji. Na tym etapie postępowania możesz uzyskać nieodpłatną pomoc prawną. Pomoc ta polega na napisaniu odwołania od decyzji, z której nie jesteś zadowolony i reprezentowaniu Cię w postępowaniu odwoławczym. Nieodpłatną pomoc prawną możesz otrzymać, jeśli nie masz adwokata lub radcy prawnego.
+Jeśli nie złożyłeś odwołania od decyzji w terminie lub złożyłeś oświadczenie o rezygnacji z prawa do złożenia odwołania, to decyzja odmowna stała się ostateczna. Musisz wyjechać z Polski w terminie 30 dni od dnia, w którym decyzja stała się ostateczna. Jeśli chcesz dobrowolnie wrócić do kraju swojego pochodzenia albo innego kraju, do którego masz prawo wjazdu, możesz w tym celu skorzystać z pomocy polskich władz. Możesz złożyć wniosek o pomoc w dobrowolnym powrocie, jeśli otrzymałeś:
+decyzję o umorzeniu postępowania lub
+decyzję odmowną lub
+zawiadomienie o pozostawieniu Twojego wniosku o udzielenie ochrony międzynarodowej bez rozpoznania ze względów formalnych.
+Z pomocy w dobrowolnym powrocie nie mogą skorzystać osoby przebywające w strzeżonym ośrodku dla cudzoziemców. Jeśli przebywasz w strzeżonym ośrodku, możesz skorzystać z programów reintegracyjnych. O szczegóły zapytaj pracownika ośrodka.
+Pomoc w dobrowolnym powrocie obejmuje pokrycie:
+kosztów podróży;
+opłat administracyjnych związanych z uzyskaniem dokumentu podróży oraz niezbędnych wiz i zezwoleń;
+kosztów wyżywienia przed podróżą i podczas podróży (chyba, że pokrywa je Szef Urzędu w ramach pomocy socjalnej);
+kosztów zakwaterowania przed podróżą (chyba, że pokrywa je Szef Urzędu w ramach pomocy socjalnej);
+kosztów opieki medycznej (chyba, że pokrywa je Szef Urzędu w ramach pomocy socjalnej);
+kosztów organizacji dobrowolnego powrotu przez podmiot, do którego statutowych obowiązków należy organizacja dobrowolnych powrotów;
+innych kosztów związanych z zapewnieniem bezpiecznego i humanitarnego powrotu.
+Z tak finansowanej pomocy w dobrowolnym powrocie możesz skorzystać raz na 2 lata. Ofiary handlu ludźmi i małoletni bez opieki mogą korzystać z tej pomocy częściej.
+Organizacją dobrowolnych powrotów zajmuje się Komendant Główny Straży Granicznej. Jeżeli otrzymałeś:
+decyzję o umorzeniu postępowania lub
+decyzję odmowną
+oraz korzystasz z pomocy socjalnej i opieki medycznej, udzielanej przez Szefa Urzędu, wniosek o przyznanie pomocy w dobrowolnym powrocie złóż za pośrednictwem Szefa Urzędu do Spraw Cudzoziemców. Podpisany wniosek prześlij na adres Departamentu Pomocy Socjalnej Urzędu do Spraw Cudzoziemców (pocztą lub przez urzędową skrzynkę e-PUAP) albo złóż osobiście w ośrodku dla cudzoziemców lub w Biurze Podawczym Urzędu.
+W pozostałych przypadkach wniosek o przyznanie pomocy w dobrowolnym powrocie należy złożyć do komendanta oddziału Straży Granicznej lub komendanta placówki Straży Granicznej, właściwego według miejsca Twojego zamieszkania.
+Wniosek należy złożyć w ciągu:
+5 dni od dnia, w którym decyzja o umorzeniu postępowania stała się ostateczna;
+5 dni od dnia doręczenia zawiadomienia o pozostawieniu wniosku o udzielenie ochrony międzynarodowej bez rozpoznania;
+7 dni przed upływem 30-dniowego terminu na dobrowolny powrót, jeśli otrzymałeś decyzję odmowną.
+Pamiętaj! Jeżeli nie złożysz wniosku w terminie, Komendant Główny Straży Granicznej pozostawi go bez rozpoznania.

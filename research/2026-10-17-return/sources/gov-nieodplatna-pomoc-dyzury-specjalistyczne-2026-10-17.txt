@@ -1,0 +1,37 @@
+# gov.pl (Ministry of Justice): Nieodpłatna pomoc, Dyżury specjalistyczne
+# Source: https://www.gov.pl/web/nieodplatna-pomoc/dyzury-specjalistyczne, retrieved 2026-10-17, html sha256 da889e48b83cb306f566abbc12ca384fb88693d993f2338f512adb91ce86d2d6
+# Text of the page's main element (its first lines are the section's menu); blank lines removed. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): b236c266939d447ba15c82caebec3827ad70ee762529f198e6da33432924efb2.
+Nieodpłatna pomoc
+O usługach
+Dyżury specjalistyczne
+System nieodpłatnej pomocy
+Nieodpłatne poradnictwo obywatelskie
+Nieodpłatna pomoc prawna
+Nieodpłatna mediacja
+Osoby z niepełnosprawnościami
+Dyżury specjalistyczne
+Pomoc dla cudzoziemców
+Nieodpłatna pomoc prawna nie tylko w systemie publicznym
+Historie prawdziwe
+Rada Nieodpłatnej Pomocy Prawnej, Nieodpłatnego Poradnictwa Obywatelskiego oraz Edukacji Prawnej
+Członkowie Rady Nieodpłatnej Pomocy Prawnej, Nieodpłatnego Poradnictwa Obywatelskiego oraz Edukacji Prawnej
+Materiały promocyjne Systemu Nieodpłatnej Pomocy
+Program edukacji prawnej dla seniorów
+Wyszukiwarka Global Legal Information
+Dyżury specjalistyczne
+Czym są dyżury specjalistyczne?
+Z początkiem 2022 roku w wybranych punktach nieodpłatnej pomocy prawnej i nieodpłatnego poradnictwa obywatelskiego zostały uruchomione dyżury o określonej specjalizacji. Specjalizacją jest wskazanie dziedziny prawa lub innej problematyki, której dotyczy porada albo grupy osób uprawnionych do pomocy.
+Dyżury specjalistyczne to wyodrębnione dyżury w istniejących punktach z dodatkowo określoną specjalizacją. Wprowadzenie punktów specjalistycznych umożliwia zaoferowanie i wykorzystanie wiedzy i doświadczenia prawników nieodpłatnej pomocy oraz doradców obywatelskich ze wskazaniem ich specjalizacji. Beneficjent pomocy może odnaleźć specjalistę w interesującej go dziedzinie.
+Analiza tematyki porad przeprowadzonych w poprzednich latach pozwoliła na zidentyfikowanie najistotniejszych dla beneficjentów nieodpłatnej pomocy dziedzin prawa. Należą do nich m.in. pomoc rodzinom wychowującym dzieci z niepełnosprawnością oraz pomoc ofiarom przemocy wobec kobiet i dzieci. Punkty o takich właśnie specjalizacjach zostały utworzone obok punktów specjalizujących się w prawie spadkowym, kredytach frankowych, ubezpieczeniach, podatkach czy upadłości konsumenckiej.
+W 2024 roku Ministerstwo Sprawiedliwości wprowadziło nową funkcjonalność w systemie teleinformatycznym, która umożliwia wyszukiwanie dyżurów i wykonawców na podstawie zadeklarowanych przez nich specjalizacji.
+Jak skorzystać z dyżurów specjalistycznych?
+Aby umówić się na dyżur specjalistyczny – należy skorzystać z nowej funkcjonalności dostępnej na stronie do zapisów.
+Zaznacz opcję „Wiem na czym polega mój problem
+Chcę wybrać dyżur specjalistyczny”.
+Możesz również wybrać miejsce porady (Województwo i Powiat).
+Skorzystaj z pola „Wpisz rodzaj sprawy”, aby znaleźć dyżur ze specjalistą w interesującej Cię dziedzinie.
+Możesz dodatkowo wyznaczyć zakres dat dyżurów (od-do), w którym mają się znajdować.
+Pojawi się lista dostępnych punktów w wybranej przez Ciebie lokalizacji (Województwo/Powiat) lub w całej Polsce (jeżeli nie wybrano lokalizacji).
+Wybierz z listy dostępny punkt, który Cię interesuję i kliknij „Dalej”, aby się zapisać.
+Postępuj zgodnie z informacjami wyświetlanymi na ekranie.

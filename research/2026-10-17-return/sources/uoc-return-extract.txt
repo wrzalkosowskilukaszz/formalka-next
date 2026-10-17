@@ -1,0 +1,334 @@
+# Return decisions and voluntary return: the act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (obwieszczenie of 25.07.2025): art. 299 ust. 6-11, 302 ust. 2-3, 304-305, 307 ust. 1, 308-308b, 310 ust. 1, 315 ust. 1-6, 316, 318 ust. 1, 319 ust. 1, 321-322, 327-328, 334, 334a, 335; with Dz.U. 2025 poz. 1794 art. 1 pkt 57 (UoC art. 334a ust. 2, from 1.01.2026) and art. 19, and Dz.U. 2026 poz. 203 art. 12 pkt 9-10 (UoC art. 299 ust. 6a-8 and 334 ust. 2 pkt 7, from 5.03.2026) and art. 54; the act on free legal aid (NPP), consolidated Dz.U. 2026 poz. 44, art. 3 ust. 1, 4 ust. 1-2, 8 ust. 3a-5
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1794 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2026/44 17eb95b1b31d1ff3f22846c6d9b5626d4fe06c873e700251de00917fa8c08feb.
+# Later amendments (node tools/sources/amendments.mjs and touched.mjs, with the 3-year lookback, 17.10.2026): UoC after its consolidated text: Dz.U. 2025 poz. 622 art. 6 (other articles); Dz.U. 2025 poz. 1794 art. 1 pkt 53 (art. 299 ust. 2, the visa regulation's name), pkt 54 (art. 302 ust. 1 pkt 8, a ground not quoted here) and pkt 57 (art. 334a ust. 2, quoted), all from 1.01.2026 (14 days after its publication on 17.12.2025; its art. 19 lists no exception for them), and its art. 1 pkt 55-56 (art. 303 ust. 1 pkt 5a and 314a, another state's return decision: not quoted); its transitional art. 12, 13, 16, 17 and 18 name no article quoted here; Dz.U. 2026 poz. 203 art. 12 pkt 9 and 10 (art. 299 ust. 6a-8 and 334 ust. 2 pkt 7, quoted, from 5.03.2026; its art. 54 lists no exception for art. 12), its transitional art. 27, 29 and 45 name no article quoted here; Dz.U. 2023 poz. 547 art. 1 (art. 302, 315, 316, 318, 319, 321, 334, 334a, 335, in force before the consolidated text); its transitional art. 10, 11, 23, 24 and 25 concern cases, decisions, bans and departure periods from before its entry into force in 2023 (art. 11: the new higher body also for them), and its art. 12, 13, 15 and 26-31 name other articles or none. NPP after 9.01.2026: none; its obwieszczenie's Dz.U. 2025 poz. 1166 art. 2 keeps the old rules for statements made before 1.01.2026.
+# Not quoted: the KPA (Dz.U. 2025 poz. 1691) art. 57, 58, 127a, 128, 129 and 130, which are in research/2026-10-16-residence/sources/kpa-2025-1691-art35-37-57-58-64-127-130-261-extract.txt; the grounds for a return decision and the cases where none is issued or it is not executed (UoC art. 302 ust. 1 and 4-6, 303, 330), detention (art. 394-427) and costs (art. 336-347), which this handoff does not map. The EU Pact on Migration and Asylum and the Return Directive 2008/115/EC were not read.
+
+[UoC art. 299 ust. 6-11 (the duty to leave within 30 days after a final refusal or withdrawal; where it does not apply; the Border Guard informed; footnote 164, of ust. 1a, falls in it); ust. 6a-8 changed from 5.03.2026, below]
+     6. Cudzoziemiec jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej w terminie:
+1)   30 dni od dnia, w którym decyzja:
+     a)   o odmowie przedłużenia mu wizy Schengen lub wizy krajowej, udzielenia mu zezwolenia na pobyt czasowy,
+          zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE, decyzja o umorzeniu postę-
+          powania w tych sprawach lub decyzja o cofnięciu mu zezwolenia na pobyt czasowy, zezwolenia na pobyt stały
+          lub zezwolenia na pobyt rezydenta długoterminowego UE lub
+     b) o odmowie nadania mu statusu uchodźcy lub udzielenia ochrony uzupełniającej, o uznaniu wniosku o udzielenie
+        ochrony międzynarodowej za niedopuszczalny, o umorzeniu postępowania w sprawie udzielenia mu ochrony
+        międzynarodowej lub decyzja o pozbawieniu go statusu uchodźcy lub ochrony uzupełniającej, lub
+     c)   o cofnięciu zgody na pobyt ze względów humanitarnych
+     – stała się ostateczna, a w przypadku wydania decyzji przez organ wyższego stopnia – od dnia, w którym decyzja
+     została cudzoziemcowi doręczona;
+2)   7 dni od dnia, w którym ustały przyczyny nieprzekazania go do państwa trzeciego, o których mowa w art. 31 ust. 1.
+     7. Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej w okresie, o którym mowa w ust. 6, uważa się za
+legalny, chyba że wniosek o przedłużenie mu wizy Schengen lub wizy krajowej lub o udzielenie mu zezwolenia na pobyt
+czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE został złożony po upływie
+okresu jego legalnego pobytu na tym terytorium.
+      8. Przepisów ust. 1, 2, 5 i 6 nie stosuje się, jeżeli cudzoziemiec posiada ważny dokument uprawniający go do pobytu
+na terytorium Rzeczypospolitej Polskiej lub z niniejszej ustawy lub z innych ustaw wynika, że jego pobyt na tym terytorium
+uważa się za legalny.
+164) Zmiany wymienionej dyrektywy zostały ogłoszone w Dz. Urz. UE L 180 z 29.06.2013, str. 31.
+      8a. Przepisów ust. 6 pkt 1 lit. a i ust. 7 nie stosuje się w przypadku, gdy przed wydaniem decyzji o odmowie przedłu-
+żenia cudzoziemcowi wizy Schengen lub wizy krajowej, udzielenia mu zezwolenia na pobyt czasowy, zezwolenia na pobyt
+stały lub zezwolenia na pobyt rezydenta długoterminowego UE lub decyzji o umorzeniu postępowania w tych sprawach
+zostało wszczęte wobec cudzoziemca postępowanie w sprawie zobowiązania go do powrotu lub została mu wydana decyzja
+o zobowiązaniu cudzoziemca do powrotu.
+     9. Przepisów ust. 6 pkt 1 lit. b i ust. 7 nie stosuje się, w przypadku gdy:
+1)   w dniu wydania decyzji o odmowie nadania statusu uchodźcy lub udzielenia ochrony uzupełniającej lub decyzji o umo-
+     rzeniu postępowania w sprawie udzielenia ochrony międzynarodowej cudzoziemiec przebywa w strzeżonym ośrodku
+     lub w areszcie dla cudzoziemców, lub
+2)   decyzja o odmowie nadania statusu uchodźcy lub udzielenia ochrony uzupełniającej lub decyzja o umorzeniu postępo-
+     wania w sprawie udzielenia ochrony międzynarodowej została wydana w związku ze złożeniem kolejnego wniosku
+     o udzielenie ochrony międzynarodowej, lub
+3)   przed wydaniem decyzji o odmowie nadania cudzoziemcowi statusu uchodźcy lub udzielenia mu ochrony uzupełnia-
+     jącej lub decyzji o umorzeniu postępowania w sprawie udzielenia ochrony międzynarodowej zostało wszczęte wobec
+     cudzoziemca postępowanie w sprawie zobowiązania go do powrotu lub została mu wydana decyzja o zobowiązaniu
+     cudzoziemca do powrotu.
+     10. Wojewoda, Szef Urzędu lub Rada do Spraw Uchodźców informuje organ Straży Granicznej właściwy ze względu
+na miejsce pobytu cudzoziemca o decyzji, o której mowa w ust. 6 pkt 1, gdy decyzja ta stanie się ostateczna, lub o innych roz-
+strzygnięciach, które skutkują tym, że pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej przestaje być legalny.
+    11. W przypadku, o którym mowa w ust. 10, organ Straży Granicznej ustala, czy zachodzą przesłanki do wydania
+decyzji o zobowiązaniu cudzoziemca do powrotu.
+
+[UoC art. 302 ust. 2-3 (no return decision on the grounds of ust. 1 pkt 1-3 during the art. 299 ust. 6 period, nor on pkt 2-3 while the stay counts as legal)]
+     2. Przepisów ust. 1 pkt 1–3 nie stosuje się w przypadkach, o których mowa w art. 299 ust. 6.
+      3. Przepisów ust. 1 pkt 2 i 3 nie stosuje się, jeżeli cudzoziemiec posiada ważny dokument uprawniający go do pobytu
+na terytorium Rzeczypospolitej Polskiej lub z niniejszej ustawy lub z innych ustaw wynika, że jego pobyt na tym terytorium
+uważa się za legalny.
+
+[UoC art. 304-305 (told of the right to apply for international protection; the case suspended)]
+    Art. 304. Organ prowadzący postępowanie w sprawie zobowiązania cudzoziemca do powrotu poucza cudzoziemca
+o możliwości złożenia wniosku o udzielenie ochrony międzynarodowej.
+     Art. 305. 1. Postępowanie w sprawie zobowiązania cudzoziemca do powrotu zawiesza się w przypadku wszczęcia
+postępowania w sprawie udzielenia cudzoziemcowi ochrony międzynarodowej lub udzielenia mu zezwolenia, o którym
+mowa w art. 176.
+     2. Postępowania w sprawie zobowiązania cudzoziemca do powrotu nie zawiesza się w przypadku, gdy cudzoziemiec
+złożył kolejny wniosek o udzielenie ochrony międzynarodowej.
+
+[UoC art. 307 ust. 1 (when the decision becomes final: a national visa annulled, a temporary permit and a work permit expire, a work declaration's entry is annulled)]
+     Art. 307. 1.172) W dniu, w którym decyzja o zobowiązaniu cudzoziemca do powrotu stanie się ostateczna, z mocy
+prawa następuje unieważnienie wizy krajowej, wygaśnięcie zezwolenia na pobyt czasowy, wygaśnięcie zezwolenia na pracę
+lub unieważnienie wpisu oświadczenia o powierzeniu pracy cudzoziemcowi do ewidencji oświadczeń o powierzeniu pracy
+cudzoziemcowi, o której mowa w art. 73 ust. 2 ustawy z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania
+pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej.
+
+[UoC art. 308-308b (Turkish workers under decision 1/80, and family members of EU, EEA, Swiss, Polish and UK citizens: the EU citizens act's chapter 5 applies, not these rules)]
+     Art. 308. Do cudzoziemców oraz członków ich rodzin uprawnionych do wykonywania pracy na terytorium Rzeczy-
+pospolitej Polskiej na zasadach określonych w decyzji nr 1/80 Rady Stowarzyszenia Republiki Tureckiej i EWG z dnia
+19 września 1980 r. w sprawie rozwoju Stowarzyszenia, która to Rada została powołana na podstawie Układu ustanawiają-
+cego stowarzyszenie między Europejską Wspólnotą Gospodarczą a Turcją, podpisanego w Ankarze dnia 12 września 1963 r.:
+1)   nie stosuje się przepisów art. 299–307, art. 310–321, art. 329 ani art. 334–335;
+2)   stosuje się przepisy rozdziału 5 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej,
+     pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin.
+      Art. 308a. Do członków rodzin obywateli państw członkowskich Unii Europejskiej, państw członkowskich Europej-
+skiego Stowarzyszenia Wolnego Handlu (EFTA) – stron umowy o Europejskim Obszarze Gospodarczym, Konfederacji
+Szwajcarskiej, obywateli Rzeczypospolitej Polskiej lub obywateli Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii
+Północnej, o których mowa w art. 1 pkt 4–6 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Pol-
+skiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin,
+którzy przestali przebywać na tym terytorium z tymi obywatelami, stosuje się przepisy rozdziału 5 tej ustawy.
+       Art. 308b. Do cudzoziemców posiadających zezwolenie na pobyt czasowy, o którym mowa w art. 160 pkt 4–6, którzy
+przestali przebywać na terytorium Rzeczypospolitej Polskiej z obywatelem Zjednoczonego Królestwa Wielkiej Brytanii
+i Irlandii Północnej, stosuje się przepisy rozdziału 5 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej
+Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin.
+
+[UoC art. 310 ust. 1 (the Border Guard issues it)]
+     Art. 310. 1. Decyzję o zobowiązaniu cudzoziemca do powrotu wydaje:
+1)   z urzędu – komendant oddziału Straży Granicznej lub komendant placówki Straży Granicznej, który stwierdził istnienie
+     przesłanki uzasadniającej wydanie decyzji o zobowiązaniu cudzoziemca do powrotu;
+2)   na wniosek wojewody, Ministra Obrony Narodowej, Szefa Agencji Bezpieczeństwa Wewnętrznego, Szefa Agencji
+     Wywiadu, organu Krajowej Administracji Skarbowej, komendanta wojewódzkiego lub komendanta powiatowego
+     (miejskiego) Policji – komendant oddziału Straży Granicznej lub komendant placówki Straży Granicznej, właściwy ze
+     względu na siedzibę organu występującego z wnioskiem albo miejsce pobytu cudzoziemca.
+
+[UoC art. 315 ust. 1-6 (the period for voluntary departure: 8 to 30 days from delivery, or none; a decision without one on security grounds is enforced at once)]
+     Art. 315. 1. W decyzji o zobowiązaniu cudzoziemca do powrotu określa się termin dobrowolnego wyjazdu, który wy-
+nosi od 8 do 30 dni, liczony od dnia doręczenia decyzji.
+     2. W decyzji, o której mowa w ust. 1, nie określa się terminu dobrowolnego wyjazdu cudzoziemca, gdy:
+1)   istnieje prawdopodobieństwo ucieczki cudzoziemca lub
+2)   wymagają tego względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego.
+     3. Oceniając prawdopodobieństwo ucieczki, bierze się pod uwagę, w szczególności, czy cudzoziemiec:
+1)   zadeklarował niepodporządkowanie się obowiązkom wynikającym z otrzymania decyzji o zobowiązaniu cudzoziemca
+     do powrotu lub
+2)   nie dysponuje dokumentami poświadczającymi jego tożsamość, lub
+3)   przekroczył lub usiłował przekroczyć granicę wbrew przepisom prawa, lub
+4)   wjechał na terytorium Rzeczypospolitej Polskiej w okresie obowiązywania wpisu do wykazu cudzoziemców, których
+     pobyt na terytorium Rzeczypospolitej Polskiej jest niepożądany, lub do Systemu Informacyjnego Schengen do celu
+     odmowy wjazdu i pobytu.
+     4. W decyzji o zobowiązaniu cudzoziemca do powrotu, wydanej bez określenia terminu dobrowolnego wyjazdu, wska-
+zuje się państwo, do którego cudzoziemiec powraca.
+     4a. (uchylony)
+     4b. Postępowanie w sprawie zobowiązania cudzoziemca do powrotu może być umorzone w części dotyczącej określenia
+terminu dobrowolnego wyjazdu, w przypadku gdy decyzja o zobowiązaniu cudzoziemca do powrotu jest wydawana cudzo-
+ziemcowi, który dobrowolnie przekracza granicę, opuszczając terytorium państw obszaru Schengen.
+   5. Decyzja o zobowiązaniu cudzoziemca do powrotu wydana bez określenia terminu dobrowolnego wyjazdu, o której
+mowa w ust. 2 pkt 2, podlega natychmiastowemu wykonaniu.
+     6. W przypadku gdy cudzoziemiec przekroczył lub usiłował przekroczyć granicę wbrew przepisom prawa w okresie
+po wydaniu decyzji o zobowiązaniu cudzoziemca do powrotu, a przed upływem terminu dobrowolnego wyjazdu, termin,
+o którym mowa w ust. 1, wygasa z mocy prawa.
+
+[UoC art. 316 (extending the period, also later, once, on request; at most 1 year)]
+      Art. 316. 1. Organ, wydając decyzję o zobowiązaniu cudzoziemca do powrotu, może przedłużyć termin dobrowolnego
+wyjazdu, jeżeli cudzoziemiec jest obowiązany do osobistego stawiennictwa przed polskim organem władzy publicznej lub
+jego obecności na terytorium Rzeczypospolitej Polskiej wymaga interes Rzeczypospolitej Polskiej lub wyjątkowa sytuacja
+osobista cudzoziemca, wynikająca w szczególności z długości pobytu cudzoziemca na terytorium Rzeczypospolitej Polskiej,
+z łączących cudzoziemca więzi o charakterze rodzinnym i społecznym lub z potrzeby kontynuowania nauki przez małolet-
+nie dziecko cudzoziemca.
+     2. Organ, który wydał decyzję o zobowiązaniu cudzoziemca do powrotu, może przedłużyć termin dobrowolnego wy-
+jazdu w niej określony z powodu okoliczności, o których mowa w ust. 1, także po jej wydaniu, jednorazowo, na wniosek
+cudzoziemca.
+     3. Termin dobrowolnego wyjazdu, o którym mowa w ust. 1 i 2, nie może być dłuższy niż 1 rok.
+
+[UoC art. 318 ust. 1 (the entry ban for Poland and the Schengen area)]
+     Art. 318. 1. W decyzji o zobowiązaniu cudzoziemca do powrotu orzeka się o zakazie ponownego wjazdu na teryto-
+rium Rzeczypospolitej Polskiej i innych państw obszaru Schengen oraz określa się okres tego zakazu.
+
+[UoC art. 319 ust. 1 (the ban's periods)]
+     Art. 319. 1. Zakazy, o których mowa w art. 318, określa się na następujące okresy:
+1)   od 6 miesięcy do 3 lat – w przypadkach, o których mowa w art. 302 ust. 1 pkt 1–3, 6–8, 10, 12, 13, 15 lub 16;
+2)   od 1 roku do 3 lat – w przypadkach, o których mowa w art. 302 ust. 1 pkt 4 lub 5;
+3)   od 3 do 5 lat – w przypadkach, o których mowa w art. 302 ust. 1 pkt 11 lub 14;
+4)   od 5 do 10 lat – w przypadkach, o których mowa w art. 302 ust. 1 pkt 9 lub art. 329a ust. 1.
+
+[UoC art. 321-322 (the appeal: to the Border Guard Commander-in-Chief, within 7 days of delivery; electronic or fax delivery)]
+    Art. 321. 1. Organem wyższego stopnia, w rozumieniu Kodeksu postępowania administracyjnego, w stosunku do
+komendanta oddziału Straży Granicznej lub komendanta placówki Straży Granicznej w sprawach o zobowiązanie cudzo-
+ziemca do powrotu, przedłużenie terminu dobrowolnego wyjazdu oraz cofnięcie zakazu ponownego wjazdu jest Komendant
+Główny Straży Granicznej.
+     2. Odwołanie od decyzji w sprawach, o których mowa w ust. 1, wnosi się w terminie 7 dni od dnia doręczenia decyzji.
+     Art. 322. Pisma w sprawach o zobowiązanie cudzoziemca do powrotu mogą być przekazywane z wykorzystaniem
+środków komunikacji elektronicznej w rozumieniu art. 2 pkt 5 ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą
+elektroniczną (Dz. U. z 2024 r. poz. 1513) lub faksu i doręczane cudzoziemcowi w formie uzyskanej w wyniku takiego
+przekazu.
+
+[UoC art. 327-328 (an interpreter; the decision's basis, outcome and appeal instruction translated; information on NGOs that help foreigners, legal help included)]
+     Art. 327. 1. Organ prowadzący postępowanie w sprawie wydania decyzji o zobowiązaniu cudzoziemca do powrotu
+zapewnia cudzoziemcowi, który nie włada w wystarczającym stopniu językiem polskim, możliwość korzystania z pomocy
+tłumacza.
+     2. Organ, który wydał decyzję o zobowiązaniu cudzoziemca do powrotu, dokonuje w języku zrozumiałym dla cudzo-
+ziemca ustnego lub pisemnego tłumaczenia podstawy prawnej decyzji, rozstrzygnięcia oraz pouczenia, czy i w jakim trybie
+służy odwołanie od decyzji.
+    Art. 328. Organ prowadzący postępowanie w sprawie wydania decyzji o zobowiązaniu cudzoziemca do powrotu infor-
+muje cudzoziemca o organizacjach pozarządowych zajmujących się udzielaniem cudzoziemcom pomocy, w tym pomocy
+prawnej.
+
+[UoC art. 334 (help with voluntary return: who, on request, through whom, by when; once in 2 years); ust. 2 pkt 7 added from 5.03.2026, below]
+     Art. 334. 1. Komendant Główny Straży Granicznej organizuje cudzoziemcowi pomoc w dobrowolnym powrocie.
+     2. Pomoc w dobrowolnym powrocie może być udzielona cudzoziemcowi:
+1)   któremu wydano decyzję o zobowiązaniu cudzoziemca do powrotu z określeniem terminu dobrowolnego wyjazdu lub
+2)   któremu wydano decyzję o zobowiązaniu cudzoziemca do powrotu podlegającą przymusowemu wykonaniu i który:
+     a)   z powodu okoliczności, o których mowa w art. 400, nie został umieszczony w strzeżonym ośrodku lub wobec
+          którego nie zastosowano aresztu dla cudzoziemców,
+     b) w przypadku stwierdzenia, że zachodzą okoliczności, o których mowa w art. 400, i w przypadku, o którym mowa
+        w art. 406 ust. 1 pkt 3, został zwolniony ze strzeżonego ośrodka lub aresztu dla cudzoziemców, lub
+3)   któremu wydano decyzję o odmowie nadania statusu uchodźcy lub udzielenia ochrony uzupełniającej lub decyzję
+     o uznaniu wniosku o udzielenie ochrony międzynarodowej za niedopuszczalny, lub
+4)   któremu wydano decyzję o umorzeniu postępowania w sprawie udzielenia ochrony międzynarodowej, lub
+5)   którego wniosek o udzielenie ochrony międzynarodowej ze względów formalnych został pozostawiony bez rozpozna-
+     nia, lub
+6)   przebywającemu na terytorium Rzeczypospolitej Polskiej na podstawie zaświadczenia, o którym mowa w art. 170, lub
+     na podstawie zezwolenia na pobyt czasowy, o którym mowa w art. 176.
+     3. Pomocy w dobrowolnym powrocie udziela się na wniosek cudzoziemca.
+    4. Cudzoziemiec składa wniosek o udzielenie pomocy w dobrowolnym powrocie do Komendanta Głównego Straży
+Granicznej za pośrednictwem:
+1)   komendanta oddziału Straży Granicznej lub komendanta placówki Straży Granicznej;
+2)   Szefa Urzędu – w przypadku, o którym mowa w ust. 2 pkt 3 i 4, jeżeli cudzoziemiec korzysta z pomocy socjalnej
+     i opieki medycznej, o których mowa w art. 70 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom
+     ochrony na terytorium Rzeczypospolitej Polskiej;
+3)   podmiotu, o którym mowa w ust. 8.
+     5. Wniosek o udzielenie pomocy w dobrowolnym powrocie składa się nie później niż:
+1)   przed upływem terminu dobrowolnego wyjazdu określonego w decyzji o zobowiązaniu cudzoziemca do powrotu;
+2)   w terminie 7 dni przed upływem terminu, o którym mowa w art. 299 ust. 6 pkt 1 lit. b;
+3)   w terminie 5 dni od dnia:
+     a)   w którym decyzja o umorzeniu postępowania w sprawie udzielenia ochrony międzynarodowej stała się ostateczna,
+     b) doręczenia zawiadomienia o pozostawieniu wniosku o udzielenie ochrony międzynarodowej bez rozpoznania.
+     6. W przypadku niezachowania przez cudzoziemca terminu, o którym mowa w ust. 5, Komendant Główny Straży Gra-
+nicznej pozostawia wniosek o udzielenie pomocy w dobrowolnym powrocie bez rozpoznania.
+   7. Szef Urzędu, komendant oddziału Straży Granicznej, komendant placówki Straży Granicznej lub podmiot, o którym
+mowa w ust. 8, nie później niż w terminie 24 godzin przekazuje wniosek o udzielenie pomocy w dobrowolnym powrocie
+Komendantowi Głównemu Straży Granicznej.
+      8. Komendant Główny Straży Granicznej może zlecić organizację dobrowolnych powrotów podmiotowi, do którego
+statutowych obowiązków należy organizacja dobrowolnych powrotów.
+    9. Podmiot, o którym mowa w ust. 8, współdziała z Komendantem Głównym Straży Granicznej w zakresie organizacji
+pomocy w dobrowolnym powrocie.
+     10. Pomocy w dobrowolnym powrocie można cudzoziemcowi udzielić kolejny raz nie wcześniej niż po upływie 2 lat
+od dnia, w którym opuścił terytorium Rzeczypospolitej Polskiej z wykorzystaniem tej pomocy.
+       11. Przepisu ust. 10 nie stosuje się do pomocy w dobrowolnym powrocie udzielanej cudzoziemcowi przebywającemu
+na terytorium Rzeczypospolitej Polskiej, o którym mowa w ust. 2 pkt 2, oraz przebywającemu na terytorium Rzeczypospo-
+litej Polskiej na podstawie zaświadczenia, o którym mowa w art. 170, lub na podstawie zezwolenia na pobyt czasowy, o któ-
+rym mowa w art. 176.
+
+[UoC art. 334a (a decision within 5 days; no appeal); ust. 2 as replaced from 1.01.2026, below]
+     Art. 334a. 1. Komendant Główny Straży Granicznej niezwłocznie, nie później niż w terminie 5 dni od dnia złożenia
+wniosku, o którym mowa w art. 334 ust. 3, wydaje postanowienie o udzieleniu pomocy w dobrowolnym powrocie. Na po-
+stanowienie nie przysługuje zażalenie.
+     2. Do doręczania pism w sprawach udzielenia pomocy w dobrowolnym powrocie stosuje się art. 322.
+    3. Komendant Główny Straży Granicznej niezwłocznie, nie później niż w terminie 48 godzin, informuje Szefa Urzędu
+o wydaniu postanowienia w sprawie udzielenia pomocy w dobrowolnym powrocie lub pozostawieniu wniosku, o którym
+mowa w art. 334 ust. 3, bez rozpoznania.
+
+[UoC art. 335 (what the help covers; the issuing body tells the person of it)]
+     Art. 335. 1. Pomoc w dobrowolnym powrocie obejmuje pokrycie:
+1)   kosztów podróży cudzoziemca;
+2)   opłat administracyjnych związanych z uzyskaniem dokumentu podróży oraz niezbędnych wiz i zezwoleń;
+3)   kosztów wyżywienia cudzoziemca przed podróżą i podczas podróży;
+4)   kosztów zakwaterowania cudzoziemca przed podróżą;
+5)   kosztów opieki medycznej nad cudzoziemcem;
+6)   kosztów organizacji dobrowolnego powrotu przez podmiot, o którym mowa w art. 334 ust. 8;
+7)   innych kosztów związanych z zapewnieniem cudzoziemcowi bezpiecznego i humanitarnego powrotu.
+      1a. Pomoc w dobrowolnym powrocie nie obejmuje pokrycia kosztów, które są pokrywane w ramach pomocy socjalnej
+i opieki medycznej, o których mowa w art. 70 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony
+na terytorium Rzeczypospolitej Polskiej.
+     2. Koszty związane z finansowaniem pomocy w dobrowolnym powrocie są pokrywane z budżetu państwa z części,
+której dysponentem jest minister właściwy do spraw wewnętrznych, ze środków będących w dyspozycji Komendanta Głów-
+nego Straży Granicznej.
+     3. Organ właściwy do wydania decyzji o:
+1)   zobowiązaniu cudzoziemca do powrotu,
+2)   odmowie nadania statusu uchodźcy lub udzielenia ochrony uzupełniającej,
+3)   umorzeniu postępowania w sprawie udzielenia ochrony międzynarodowej, w przypadku, o którym mowa w art. 334
+     ust. 2 pkt 4
+– informuje cudzoziemca o możliwości skorzystania z pomocy w dobrowolnym powrocie.
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 57 (UoC art. 334a ust. 2: delivery also by e-mail), from 1.01.2026]
+57) w art. 334a ust. 2 otrzymuje brzmienie:
+          „2. Do doręczania pism w sprawach udzielenia pomocy w dobrowolnym powrocie stosuje się art. 322. Doręcze-
+     nie może nastąpić również na wskazany przez wnioskodawcę adres poczty elektronicznej. W takim przypadku za datę
+     doręczenia pisma przyjmuje się dzień, w którym organ wysłał pismo za pośrednictwem poczty elektronicznej na wska-
+     zany we wniosku adres poczty elektronicznej.”;
+
+[Dz.U. 2025 poz. 1794 art. 19 (in force 14 days after publication on 17.12.2025, with exceptions that do not include art. 1 pkt 53-57)]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+3)   art. 1 pkt 42, 43, 44 lit. a, pkt 45, 46, 51, 59 lit. a tiret pierwsze, pkt 60 lit. a, pkt 61 lit. a i pkt 63, które wchodzą w życie
+     z dniem 1 kwietnia 2026 r.;
+4)   art. 8 pkt 2 i 3, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+[Dz.U. 2026 poz. 203 art. 12 pkt 9-10 (UoC art. 299 ust. 6a-8: 30 days after temporary protection ends; art. 334 ust. 2 pkt 7), from 5.03.2026]
+9)   w art. 299:
+     a)   po ust. 6 dodaje się ust. 6a w brzmieniu:
+                „6a. Cudzoziemiec jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej przed upływem 30 dni,
+          począwszy od dnia, w którym upłynął maksymalny termin korzystania z ochrony czasowej na podstawie decyzji
+          Rady Unii Europejskiej stwierdzającej masowy napływ wysiedleńców lub upłynął termin określony w przepisach
+          wydanych na podstawie art. 107 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na
+          terytorium Rzeczypospolitej Polskiej.”,
+      b) ust. 7 otrzymuje brzmienie:
+                 „7. Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej w okresie, o którym mowa w ust. 6 i 6a,
+            uważa się za legalny, chyba że wniosek o przedłużenie mu wizy Schengen lub wizy krajowej lub o udzielenie mu
+            zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego
+            UE został złożony po upływie okresu pobytu uznawanego za legalny na tym terytorium.”,
+      c)    w ust. 8 wyrazy „Przepisów ust. 1, 2, 5 i 6” zastępuje się wyrazami „Przepisów ust. 1, 2 i 5–6a”;
+10) w art. 334 w ust. 2 w pkt 6 kropkę zastępuje się przecinkiem i dodaje się wyraz „lub” oraz pkt 7 w brzmieniu:
+      „7)    przebywającemu na terytorium Rzeczypospolitej Polskiej po zakończeniu korzystania z ochrony czasowej.”;
+
+[Dz.U. 2026 poz. 203 art. 54 (in force 5.03.2026, with exceptions that do not include art. 12)]
+     Art. 54. Ustawa wchodzi w życie z dniem 5 marca 2026 r., z wyjątkiem:
+1)   art. 17 pkt 3 lit. d tiret drugie i pkt 51 w zakresie uchylenia art. 110, które wchodzą w życie z dniem 1 stycznia 2027 r.;
+2)   art. 17 pkt 46 i 51 w zakresie uchylenia art. 113, które wchodzą w życie z dniem 5 marca 2027 r.;
+3)   art. 14, który wchodzi w życie z dniem 1 września 2027 r.;
+4)   art. 17 pkt 22–31, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+[NPP art. 3 (what free legal aid covers)]
+     Art. 3. 1. Nieodpłatna pomoc prawna obejmuje:
+1)   poinformowanie osoby fizycznej, zwanej dalej „osobą uprawnioną”, o obowiązującym stanie prawnym oraz przysłu-
+     gujących jej uprawnieniach lub spoczywających na niej obowiązkach, w tym w związku z toczącym się postępowaniem
+     przygotowawczym, administracyjnym, sądowym lub sądowoadministracyjnym lub
+2)   wskazanie osobie uprawnionej sposobu rozwiązania jej problemu prawnego, lub
+3)   sporządzenie projektu pisma w sprawach, o których mowa w pkt 1 i 2, z wyłączeniem pism procesowych w toczącym
+     się postępowaniu przygotowawczym lub sądowym i pism w toczącym się postępowaniu sądowoadministracyjnym, lub
+3a) nieodpłatną mediację, lub
+4)   sporządzenie projektu pisma o zwolnienie od kosztów sądowych lub ustanowienie pełnomocnika z urzędu w postępo-
+     waniu sądowym lub ustanowienie adwokata, radcy prawnego, doradcy podatkowego lub rzecznika patentowego w po-
+     stępowaniu sądowoadministracyjnym oraz poinformowanie o kosztach postępowania i ryzyku finansowym związanym
+     ze skierowaniem sprawy na drogę sądową.
+     2. (uchylony)
+
+[NPP art. 4 ust. 1-2 (for a person who cannot pay for legal help, on a statement)]
+      Art. 4. 1. Nieodpłatna pomoc prawna i nieodpłatne poradnictwo obywatelskie przysługują osobie uprawnionej, która nie
+jest w stanie ponieść kosztów odpłatnej pomocy prawnej, w tym osobie fizycznej prowadzącej jednoosobową działalność
+gospodarczą niezatrudniającą innych osób w ciągu ostatniego roku.
+     2.1) Osoba uprawniona, przed uzyskaniem nieodpłatnej pomocy prawnej lub nieodpłatnego poradnictwa obywatel-
+skiego, składa oświadczenie, że nie jest w stanie ponieść kosztów odpłatnej pomocy prawnej. Osoba korzystająca z nieod-
+płatnej pomocy prawnej lub nieodpłatnego poradnictwa obywatelskiego w zakresie prowadzonej działalności gospodarczej
+dodatkowo składa oświadczenie o niezatrudnianiu innych osób w ciągu ostatniego roku. Oświadczenie składa się osobie
+udzielającej nieodpłatnej pomocy prawnej lub świadczącej nieodpłatne poradnictwo obywatelskie w formie:
+1)    pisemnej – w przypadku korzystania z pomocy w punkcie albo
+2)    ustnej – w przypadku korzystania z pomocy za pośrednictwem środków porozumiewania się na odległość.
+
+[NPP art. 8 ust. 3a-5 (in a point or remotely; by appointment in order of booking, another order for important reasons; booking by the starosta's phone line, or electronically)]
+     3a.9) Osoba uprawniona może skorzystać z nieodpłatnej pomocy prawnej lub nieodpłatnego poradnictwa obywatel-
+skiego w punkcie lub za pośrednictwem środków porozumiewania się na odległość.
+     3b.9) W przypadku obowiązywania stanu zagrożenia epidemicznego, stanu epidemii albo wprowadzenia stanu nadzwy-
+czajnego starosta może ustalić, że udzielanie nieodpłatnej pomocy prawnej lub świadczenie nieodpłatnego poradnictwa oby-
+watelskiego następuje wyłącznie za pośrednictwem środków porozumiewania się na odległość.
+     4. Udzielanie nieodpłatnej pomocy prawnej lub świadczenie nieodpłatnego poradnictwa obywatelskiego odbywa się
+według kolejności zgłoszeń po umówieniu terminu wizyty. Z ważnych powodów dopuszcza się ustalenie innej kolejności
+udzielania nieodpłatnej pomocy prawnej lub świadczenia nieodpłatnego poradnictwa obywatelskiego. Kobiecie, która jest
+w ciąży, udzielanie nieodpłatnej pomocy prawnej lub świadczenie nieodpłatnego poradnictwa obywatelskiego odbywa się
+poza kolejnością. Prowadząc rejestrację zgłoszeń, dąży się do równomiernej rejestracji zgłoszeń osób uprawnionych odpo-
+wiednio do dyżurów w punktach nieodpłatnej pomocy prawnej lub w punktach nieodpłatnego poradnictwa obywatelskiego
+w danym powiecie.
+     5. Zgłoszeń dokonuje się telefonicznie pod numerem telefonu wskazanym przez starostę. Starosta oprócz dokonywania
+zgłoszeń telefonicznych może również umożliwić dokonywanie zgłoszeń za pośrednictwem środków komunikacji elektro-
+nicznej.

@@ -1,0 +1,64 @@
+# gov.pl: Skorzystaj z nieodpłatnych porad prawnych, obywatelskich i mediacji
+# Source: https://www.gov.pl/web/gov/skorzystaj-z-darmowej-pomocy-prawnej, retrieved 2026-10-17, html sha256 04f63e40f2ce3da7e9206fbe49710171c20f0afc68c1d22fa9f718d7c94fafe0
+# Text of the page's main element (its first lines are the section's menu); blank lines removed. It shows "Ostatnia aktualizacja" 11.09.2023 09:02. Not binding.
+# sha256 of the text below this header (from line 5): 086fde6c8bf3ddfcd8d746d7f6866dcb9e1c4268e61e11b0f306011b8366718b.
+Gov.pl
+Skorzystaj z nieodpłatnych porad prawnych, obywatelskich i mediacji
+Powrót
+Skorzystaj z nieodpłatnych porad prawnych, obywatelskich i mediacji
+Potrzebujesz pomocy prawnika, doradcy obywatelskiego, mediatora?
+Jesteś w trudnej życiowej sytuacji, na przykład potrzebujesz pomocy w rozłożeniu długu na raty, w spłacie pożyczek „chwilówek”, masz kłopoty mieszkaniowe, napotkałeś trudności ze znalezieniem pracy, nie wiesz do jakiego urzędu pójść po pomoc, masz inne problemy związane ze sprawami życia codziennego? Udaj się po poradę obywatelską.
+Borykasz się z problemem typowo prawnym? Grozi ci eksmisja, masz wątpliwości związane z umową o pracę, egzekucja alimentów okazała się nieskuteczna, odziedziczyłeś długi lub padłeś ofiarą przestępstwa? Skorzystaj z nieodpłatnej pomocy prawnej.
+Może nie wiesz jak rozwiązać konflikt z drugą osobą? Mediator pomoże Wam dojść do porozumienia.
+Darmową pomoc uzyskasz w blisko 1500 punktach nieodpłatnej pomocy prawnej w całym kraju. Sprawdź, jak to zrobić.
+Informacje:
+Na czym polega usługa
+Doradca obywatelski służy nieodpłatną poradą obywatelską. Zaproponuje ci działania dostosowane do twojej sytuacji. Będzie cię wspierał w rozwiązaniu problemu. Wskaże, jakie masz prawa i obowiązki, a w razie potrzeby pomoże ci sporządzić plan działania i zrealizować go.
+Prawnik udzieli ci nieodpłatnej pomocy prawnej, na przykład w sytuacjach sporu z pracodawcą, spółdzielnią lub sąsiadem, a nawet gdy musisz złożyć reklamację w sklepie. Udzieli ci informacji i przygotuje projekt pisma, potrzebny w tych sprawach, które nie toczą się przed sądem.
+Jeżeli sprawa jest już w sądzie, to napisze dla ciebie projekt pisma o zwolnienie z kosztów sądowych lub ustanowienie pełnomocnika z urzędu.
+Jeżeli znajdujesz się w sytuacji konfliktowej, którą chcesz rozwiązać bez angażowania sądu, możesz skorzystać z nieodpłatnej mediacji. Bezstronny mediator przeprowadzi mediację pomiędzy tobą a drugą stroną sporu i pomoże wam dojść do porozumienia.
+Uwaga! Jeśli mediacja jest prowadzona ze skierowania sądu lub jest uzasadnione podejrzenie, że w relacji stron występuje przemoc, nie możesz skorzystać z nieodpłatnej mediacji.
+Pomoc uzyskasz w każdym z blisko 1500 punktów. Są one w każdym powiecie w całym kraju. Możesz korzystać z porady również poza swoim miejscem zamieszkania. Wystarczy zapisać się na dyżur, każdy powiat prowadzi telefon do zapisów i informacji. Możesz też zapisać się przez stronę https://zapisy-np.ms.gov.pl/. Na początku wizyty w punkcie złożysz oświadczenie, że nie możesz ponieść kosztów odpłatnej pomocy prawnej.
+Jeśli masz trudności w poruszaniu się lub komunikowaniu, możesz skorzystać z pomocy w dogodnym dla siebie miejscu, również w domu lub w miejscu wyposażonym w odpowiedni sprzęt wspomagający komunikację lub z dostępnym wsparciem tłumacza języka migowego. Możesz też uzyskać poradę w szczególnych formach, na przykład przez telefon lub komunikator internetowy.
+W czasie obowiązywania stanu epidemii lub zagrożenia epidemicznego z porady w trybie zdalnym (przez telefon lub komunikator internetowy) mogą skorzystać wszystkie osoby zainteresowane. Zapytaj w wybranym starostwie powiatowym, czy umożliwia zdalne korzystanie z porad nieodpłatnej pomocy. Jeśli korzystasz z porady zdalnej, nie składasz oświadczenia o tym, że nie możesz ponieść kosztów odpłatnej pomocy prawnej.
+Więcej informacji o nieodpłatnej pomocy prawnej oraz nieodpłatnym poradnictwie obywatelskim.
+Kto może skorzystać
+Każda osoba, której nie stać na skorzystanie z odpłatnej pomocy prawnej.
+Z porady w ramach systemu nieodpłatnej pomocy mogą skorzystać także samozatrudnieni przedsiębiorcy, czyli tacy, którzy prowadzą jednoosobową działalność gospodarczą. Nieodpłatna pomoc prawna dla samozatrudnionych przedsiębiorców ma charakter pomocy de minimis.
+Co musisz przygotować
+dowód osobisty (paszport lub inny dokument stwierdzający tożsamość),
+dokumenty, które dotyczą twojego problemu, jeśli takie masz; możesz też po prostu opowiedzieć prawnikowi, doradcy lub mediatorowi o swoim problemie,
+jeżeli jesteś osobą samozatrudnioną, zabierz:
+wszystkie zaświadczenia o pomocy de minimis i pomocy de minimis w rolnictwie lub rybołówstwie, otrzymanej w roku, w którym ubiegasz się o nieodpłatną pomoc prawną i w ciągu 2 poprzedzających ją lat podatkowych albo
+oświadczenia o wielkości tej pomocy otrzymanej w tym okresie, albo
+oświadczenia o nieotrzymaniu takiej pomocy w tym okresie.
+Co musisz zrobić
+Zapisz się na poradę:
+telefonicznie – przez specjalny powiatowy numer do zapisów;
+elektronicznie – na podany przez powiat adres e-mail lub za pomocą formularza na stronie https://zapisy-np.ms.gov.pl;
+osobiście – w starostwie powiatowym.
+Uwaga! Obecnie, w czasie obowiązywania stanu zagrożenia epidemicznego, powiaty udzielają porad w trybie stacjonarnym lub zdalnym. Jak działają punkty na terenie powiatu, możesz sprawdzić telefonicznie w powiecie, na stronach internetowych powiatów, a także na stronie do zapisów.
+Gdzie skorzystasz z usługi
+Poradę w ramach systemu nieodpłatnej pomocy uzyskasz w punktach nieodpłatnej pomocy prawnej lub nieodpłatnego poradnictwa obywatelskiego. Nieodpłatna mediacja udzielana jest w ramach obu usług. W każdym powiecie w Polsce znajdują się co najmniej dwa punkty nieodpłatnej pomocy.
+Informacje o punktach nieodpłatnej pomocy znajdziesz:
+w starostwie powiatowym,
+w urzędzie gminy,
+w urzędzie miasta,
+na stronach internetowych urzędu starostwa powiatowego i urzędów gmin na obszarze danego powiatu,
+na stronie internetowej systemu nieodpłatnej pomocy.
+Co to znaczy, że pomoc jest nieodpłatna?
+Usługi nieodpłatnej pomocy prawnej, nieodpłatnego poradnictwa obywatelskiego i nieodpłatnej mediacji są całkowicie darmowe. Oznacza to, że za poradę nie musisz płacić.
+System nieodpłatnej pomocy jest finansowany przez państwo.
+Ile będziesz czekać
+Możesz uzyskać nieodpłatną pomoc w tym samym dniu, w którym zapiszesz się na poradę lub w ciągu najbliższych kilku dni. Termin zależy od liczby osób, które zgłoszą się do danego punktu. Jeżeli w wybranym przez ciebie punkcie brakuje terminów w najbliższym czasie, spróbuj się umówić w innym.
+Nieodpłatna pomoc dla kobiet w ciąży udzielana jest poza kolejnością.
+Edukacja prawna
+W ramach systemu nieodpłatnej pomocy prowadzone są także działania z zakresu edukacji prawnej. Wydarzenia edukacyjne są organizowane w większości powiatów. Ich tematyka uwzględnia problemy lokalnych społeczności, poruszane podczas porad w danym powiecie. Zajmują się tym organizacje pozarządowe, które prowadzą punkty nieodpłatnej pomocy na terenie powiatu.
+Podczas wydarzeń edukacyjnych organizowane są np. otwarte wykłady, warsztaty, kampanie społeczne, publikowane są informatory i poradniki. Materiały edukacyjne pojawiają się także w lokalnych mediach.
+Wydarzenia edukacyjne najczęściej realizowane są w miejscach publicznych, bliskich mieszkańcom powiatu, takich jak biblioteki, szkoły, miejsca aktywności lokalnej, kluby pracy.
+Spotkania edukacyjne z mieszkańcami często są kierowane do konkretnych grup, takich jak podopieczni domów pomocy społecznej, studenci uniwersytetu trzeciego wieku lub młodzież.
+Informacje o nadchodzących wydarzeniach edukacyjnych organizowanych w okolicy oraz bezpłatnych materiałach są dostępne w starostwie powiatowym.
+Podstawa prawna
+Ustawa z dnia 5 sierpnia 2015 r. o nieodpłatnej pomocy prawnej, nieodpłatnym poradnictwie obywatelskim oraz edukacji prawnej (t.j. Dz. U. z 2021 r. poz. 945)
+Ostatnia aktualizacja: 11.09.2023 09:02
+Instytucja odpowiedzialna za usługę: Ministerstwo Sprawiedliwości

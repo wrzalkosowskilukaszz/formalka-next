@@ -1,0 +1,28 @@
+# gov.pl (Ministry of Justice): Nieodpłatna pomoc, Pomoc dla cudzoziemców
+# Source: https://www.gov.pl/web/nieodplatna-pomoc/pomoc-dla-cudzoziemcow, retrieved 2026-10-17, html sha256 532a3de26e88049c82754b4c16353ffdd231a52e7026540064241ae2b8292c68
+# Text of the page's main element (its first lines are the section's menu); blank lines removed. The page's list of duty hours in foreign languages that follows ("Dyżury w językach obcych", 2959 rows of points, days, hours and languages) is not kept. The page shows no update date. Not binding.
+# sha256 of the text below this header (from line 5): f543676595a212e3123f3a9890f926a08dba5ef6f922ec8d8decee0b883a6fc0.
+Nieodpłatna pomoc
+O usługach
+Pomoc dla cudzoziemców
+System nieodpłatnej pomocy
+Nieodpłatne poradnictwo obywatelskie
+Nieodpłatna pomoc prawna
+Nieodpłatna mediacja
+Osoby z niepełnosprawnościami
+Dyżury specjalistyczne
+Pomoc dla cudzoziemców
+Nieodpłatna pomoc prawna nie tylko w systemie publicznym
+Historie prawdziwe
+Rada Nieodpłatnej Pomocy Prawnej, Nieodpłatnego Poradnictwa Obywatelskiego oraz Edukacji Prawnej
+Członkowie Rady Nieodpłatnej Pomocy Prawnej, Nieodpłatnego Poradnictwa Obywatelskiego oraz Edukacji Prawnej
+Materiały promocyjne Systemu Nieodpłatnej Pomocy
+Program edukacji prawnej dla seniorów
+Wyszukiwarka Global Legal Information
+Pomoc dla cudzoziemców
+System nieodpłatnej pomocy pozostaje do dyspozycji wszystkich osób przebywających w Polsce, w tym również obcokrajowców. Nie jest konieczne uprzednie złożenie wniosku o udzielenie ochrony czasowej lub międzynarodowej.
+Cudzoziemcy znajdujący się na terytorium Polski mogą skorzystać z nieodpłatnej pomocy prawnej lub z nieodpłatnego poradnictwa obywatelskiego w najbliższym im punkcie stacjonarnym lub w formie zdalnej, tj. za pośrednictwem środków porozumiewania się na odległość (np. telefonicznie, przez Internet).
+Aby skorzystać z nieodpłatnej pomocy prawnej i nieodpłatnego poradnictwa obywatelskiego cudzoziemcy nie muszą uprzednio złożyć wniosku o ochronę czasową lub międzynarodową.
+W ramach systemu nieodpłatnej pomocy Ministerstwo Sprawiedliwości zainicjowało zbudowanie sieci punktów specjalistycznych, ukierunkowanych na zaoferowanie profesjonalnej pomocy w konkretnych dziadzinach prawa. Jedną ze specjalizacji jest pomoc dla cudzoziemców. Zapoznaj się z zakładką Dyżury specjalistyczne, aby dowiedzieć się więcej na ten temat.
+W punktach specjalizujących się w dziedzinie pomocy cudzoziemcom przyjmują specjaliści, którzy posiadają wiedzę na temat prawa migracyjnego, w tym uchodźczego. Dodatkowo przygotowana została lista wykonawców z systemu nieodpłatnej pomocy posługujących się językami obcymi, tj. angielski, ukraiński lub rosyjski. Lista ta znajduje się poniżej.
+W systemie nieodpłatnej pomocy pracują również wykonawcy, którzy odbyli podstawowe szkolenia w dziedzinie pomocy cudzoziemcom. Ministerstwo zaleca, żeby obcokrajowcy, w tym uchodźcy wojenni z Ukrainy zapisywali się na nieodpłatne porady w pierwszej kolejności do punktów i wykonawców znajdujących się na poniższej liście.
