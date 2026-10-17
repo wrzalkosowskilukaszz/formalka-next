@@ -1,0 +1,99 @@
+# Krajowy Rejestr Karny: Uzyskiwanie informacji z KRK drogą elektroniczną
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/uzyskiwanie-informacji-z-krajowego-rejestru-karnego-droga-elektroniczna3, retrieved 2026-10-17, html sha256 9ad6739834644ccf9c1487a92b0625e281d060bb15c21643b1b690fd33749c52
+# Text of the page's main element; blank lines removed; the editors' names removed from its publication record and change history. First published 07.06.2022 (its publication record); latest change in its history 01.04.2025. Not binding.
+# sha256 of the text below this header (from line 5): 4d0d2935df57cb4095b13f4b1c2fd486cfbcef787e0a8350aea23caaf5294934.
+Krajowy Rejestr Karny
+Załatw sprawę
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą tradycyjną
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+Pełnomocnictwo
+Jak poprawnie wypełnić wniosek/zapytanie
+Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego
+Opłaty
+Materiały do pobrania
+Akty Prawne
+Pytania i odpowiedzi
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Złóż wniosek przez e-KRK
+Obecnie Biuro Informacyjne KRK realizuje wnioski na bieżąco. Mogą zdarzyć się jednak sytuacje, powodowane przyczynami technicznymi dedykowanego systemu teleinformatycznego, że wydłużonego czasu obsługi wymagają te z wniosków i zapytań, które dotyczą:
+wielojęzycznych formularzy stanowiących załączniki do informacji z KRK,
+komunikacji między systemami ECRIS i eKRK.
+Dzięki zastosowanym usprawnieniom Biuro dostosowuje się do nowych wymagań, zapewniając terminową realizację zwiększonej liczby spraw.
+Osoba, która chce skorzystać ze zwolnienia z konieczności wniesienia opłaty za uzyskanie zaświadczenia powinna do wysyłanego przez system e-KRK wniosku o uzyskanie danych załączyć pismo, sporządzone przez organizatora wypoczynku potwierdzające, że jest ona kandydatem na kierownika lub wychowawcę wypoczynku pełniącego funkcję wolontariusza (nie będzie pobierać z tego tyt. wynagrodzenia).
+W celu elektronicznego uzyskania zaświadczenia dla osób fizycznych należy posiadać: kwalifikowany podpis elektroniczny lub podpis potwierdzony profilem zaufanym e-PUAP.
+Krok 1. Należy zarejestrować się na stronie https://ekrk.ms.gov.pl/ep-web klikając zakładkę REJESTRACJA gdzie znajdują się dwie aplikacje:
+pierwsza dla osób fizycznych;
+druga dla firm, instytucji (np. sądów).
+Krok 2. Wybrać Formularz rejestracyjny, który nas dotyczy: Formularz dla osób fizycznych.
+Krok 3. Utworzyć konto dla osoby fizycznej na e-Platformie Ministerstwa Sprawiedliwości poprzez wypełnienie formularza na stronie e-KRK, następnie po wypełnieniu potwierdzić zapoznanie się z Zakresem i Warunkami korzystania z systemu e-KRK, a także wyrazić zgodę na przetwarzanie danych osobowych.
+Krok 4. Kliknąć w link aktywujący konto, który został wysłany na adres mailowy podany podczas procesu rejestracji, link jest ważny przez 5 dni.
+Za udzielenie informacji z Krajowego Rejestru Karnego przez system e-KRK pobiera się opłatę w wysokości:
+20 zł - za informację o osobie;
+20 zł - za informacje o podmiocie zbiorowym.
+Opłaty za uzyskanie zaświadczeń drogą elektroniczną dokonuje się wyłącznie za pomocą elektronicznego systemu płatności udostępnionego na e-KRK.
+Pamiętaj!
+Wydany dokument jest podpisany podpisem certyfikowanym pracownika B-KRK, nie wymaga pieczęci urzędowych.
+Wnioski/zapytania są realizowane w terminie 7 dni (liczonych od dnia następującego po dniu, w którym zostały złożone).
+Wydany dokument ma postać pliku XML, który można zapisać na elektronicznym nośniku danych (płyta CD/DVD, pamięć USB).
+Wydruk nie jest dokumentem.
+Wszelkie informacje dotyczące uzyskiwania zaświadczenia z Krajowego Rejestru Karnego drogą elektroniczną znajdują się w zamieszczonych podręcznikach:
+Materiały
+Podręcznik e-KRK dla osoby fizycznej
+podrecznik​_dla​_osoby​_fizycznej.pdf
+2.43MB
+Podręcznik e-KRK dla podmiotów instytucjonalnych
+podrecznik​_dla​_podmiotów​_instytucjonalnych.pdf
+3.13MB
+Instrukcja zakładania konta dla podmiotu instytucjonalnego
+Instrukcja​_zakładania​_konta​_dla​_podmiotu​_instytucjonalnego.pdf
+0.63MB
+Raport z samooceny dostępności cyfrowej e-KRK
+Raport​_z​_samooceny​_dostępności​_cyfrowej​_e-KRK.pdf
+0.20MB
+Informacje o publikacji dokumentu
+Pierwsza publikacja: 07.06.2022 10:53 [editor's name removed]
+Wytwarzający/ Odpowiadający: [name removed]
+Pokaż historię zmian
+Tytuł
+Wersja
+Dane zmiany / publikacji
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+12.0
+01.04.2025 14:39 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+11.0
+03.12.2024 09:56 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+10.0
+11.10.2024 09:45 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+9.0
+26.09.2024 14:56 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+8.0
+22.05.2024 10:26 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+7.0
+21.09.2023 14:08 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+6.0
+27.07.2023 12:42 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+5.0
+19.06.2023 14:54 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+4.0
+15.07.2022 13:50 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+3.0
+08.07.2022 09:12 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+2.0
+20.06.2022 15:11 [editor's name removed]
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+1.0
+07.06.2022 10:53 [editor's name removed]
+Aby uzyskać archiwalną wersję należy skontaktować się z Redakcją BIP

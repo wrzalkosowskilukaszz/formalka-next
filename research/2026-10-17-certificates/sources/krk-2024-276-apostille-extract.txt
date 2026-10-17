@@ -1,7 +1,7 @@
-# Certificates for other procedures: the act on the National Criminal Register (KRK), consolidated Dz.U. 2024 poz. 276 (obwieszczenie of 20.02.2024), art. 4 ust. 1 pkt 5-5a, 7 ust. 1-1a, 19 ust. 1-4, 19a, 20 ust. 1-1d, 23-24; its amendment Dz.U. 2026 poz. 421 (art. 1 pkt 4, 6, 8, 17-19; art. 7, 9, 10); the Commission's ECRIS report as registered by the Council (ST 11076/26); the MS regulations on KRK fees (consolidated Dz.U. 2024 poz. 1339) § 3-9, on giving KRK information (consolidated Dz.U. 2024 poz. 1817) § 2, 3, 5, 8, 12, and on KRK information online (Dz.U. 2021 poz. 728) § 4, 9, 13, 20, with the 2023 regulation (Dz.U. 2023 poz. 2469) § 24-25 and the four acts that moved its start (Dz.U. 2024 poz. 279 and 1396, 2025 poz. 721, 2026 poz. 716); the act on counteracting sexual offences and protecting minors, consolidated Dz.U. 2026 poz. 110, art. 21; the stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part II items 5-6 and part IV; the Hague Convention of 5.10.1961 (Dz.U. 2005 nr 112 poz. 938) art. 1-6 and the government statement of 27.04.2005 (poz. 939); Regulation (EU) 2016/1191 art. 1, 2, 4, 27
-# Sources, retrieved 2026-10-17: the acts from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; ST 11076/26 from https://data.consilium.europa.eu/doc/document/ST-11076-2026-INIT/en/pdf; Regulation 2016/1191 (Polish, OJ L 200 of 26.7.2016) as XHTML from http://publications.europa.eu/resource/celex/32016R1191 (EUR-Lex itself answered 202 with no content). pdftotext -layout; page headers dropped; footnotes kept where they fall. The 2005 Dz.U. texts are set in three (poz. 938) and two (poz. 939) columns in an old font that pdftotext garbles; the Polish column was cut with pdftotext -x 0 -W 215 (poz. 939: -W 290, page 1) and decoded with the table ∏ł ´ę àą Êś ˝ż ƒń ¸Ł ÂŚ ˚Ż êź ÑĄ ¢Ę çć ¡Ń; the quoted lines are those of the decoded column. sha256: DU/2024/276 e2c08b0fe87c640ef8d650cb483d216188760a1562d115eba98fb46fa5234e73; DU/2026/421 131a2d442f9f70634576122bb49662dcef6f84c11b3a43860be5917fc70128b3; ST 11076/26 INIT dfd7cd62c2b8f72ddf5ecbdf8a0e0c3db92ccfdbc42575d46ce1f9eed655c9d0; DU/2024/1339 c30150cbccc5e9e56f669ba9f0e6aab5c5beb6929c075a18f1fbdcc15ba38b70; DU/2024/1817 92a506ea5fc592e7a353692bbd60ebaaf6a1846c056d612717e11b85f0b7319c; DU/2021/728 6e54163086265ea3078d658e20600a44b271cbe3b9bb7b98f117d019d2fce3d7; DU/2023/2469 c5040ee5bffbc108a41a5fc568b9def275dedd33a6a60cd807af2fee426c37fc; DU/2024/279 0e8083e8b2e3f1901cc871c36c2ef414f9a124f8ebf4da18b966a9ebefa4d826; DU/2024/1396 b6b6721eb5c91b94efe55ba387257672faa507319512f39c8c1dcb04567da0fe; DU/2025/721 ebf5b69663e795b78c9103f2c8285026956e894c57798ca5b56c5c04c1ba0596; DU/2026/716 4d0c9fa31918dd1d39ba4a811327d7416b11536285b1e970358ef5bb01bff3d7; DU/2026/110 e5df724167e178f354fafb95b96741095e684df1c2cd3844d34c369551c7f942; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2005/938 292d96c4d76d0db5379b4bd5c01273c1ef0f35b7a8ffbf43306becb9bdb2d748; DU/2005/939 1b69167f483b4a6b61383517af4859f49d264fc5ee52bbb2411a64dffec9e882; Regulation 2016/1191 XHTML 4e2d3232119952f2bbdc21d92c5a7ea35c30a3882c7bdafb9163ea81c106edb7.
-# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): the KRK act after 19.02.2024: Dz.U. 2026 poz. 421 art. 1 (its points touch art. 1a, 2, 4, 4a, 4b, 6, 6a, 7, 11, 12-14, 19, 20, 23, 24; the ones on the quoted articles are quoted, with their dates) and its transitional art. 7 and 9 (quoted); Dz.U. 2025 poz. 1235 art. 37 (art. 4 ust. 1 pkt 5, 6, 6a and 19 ust. 1a, from 12.07.2026: entities, the public procurement certification body; its art. 37 pkt 1, on art. 4 ust. 1 pkt 5, was itself given new words by Dz.U. 2026 poz. 421 art. 6 from 12.07.2026, so from that day pkt 5 reads "na wniosek podmiotów, o których mowa w art. 6 ust. 1 pkt 1–10b, oraz osoby, o której mowa w art. 7 ust. 1a"; not quoted); Dz.U. 2026 poz. 252 art. 10 (art. 6 ust. 1 pkt 10c, from 3.04.2026: cybersecurity entities; not quoted); Dz.U. 2026 poz. 760 art. 37 (art. 12, 12c: Eurodac; not quoted); Dz.U. 2023 poz. 497 art. 4 (art. 6, from 31.03.2023, in the consolidated text). The act of 2016 after 12.01.2026: Dz.U. 2026 poz. 421 art. 5 (art. 7 and 12) and poz. 187 art. 143 (art. 22j, by the API from 19.05.2028): neither touches art. 21. The fee regulation after 29.08.2024 and the information regulation after 20.11.2024: none. The 2021 regulation: none. The 2023 regulation after 31.07.2025: Dz.U. 2026 poz. 716 § 1 (§ 25), quoted. The stamp duty act after 1.08.2025, none changing part II items 5-6 or part IV: Dz.U. 2023 poz. 1688 art. 26 (part I item 51) and its transitional art. 64; Dz.U. 2025 poz. 921 art. 2 (art. 2, 30, part I); Dz.U. 2025 poz. 1847 art. 3 (art. 29, part I) and its transitional art. 10; Dz.U. 2025 poz. 1795 art. 116 (part III item 44); Dz.U. 2026 poz. 1206 art. 14 (part III item 17, from 11.01.2027); Dz.U. 2026 poz. 846 art. 14 (art. 9-10, from 1.10.2026) and its transitional art. 31-32; Dz.U. 2026 poz. 875 art. 9 (art. 1, from 1.01.2027). The convention: its executive acts are the government statements of 2005 (poz. 939 and 2122).
-# Dates: Dz.U. 2026 poz. 421 was published on 30.03.2026 and is in force from 14.04.2026 (14 days, its art. 10), except art. 1 pkt 4 lit. a tiret 2, lit. c and d, pkt 16 lit. b and pkt 17 lit. c (among them KRK art. 20 ust. 1da-1db for third-country nationals), from the day ECRIS-TCN starts as the Commission decides under Regulation (EU) 2019/816 art. 35 ust. 4, and art. 6, from 12.07.2026. No such Commission decision was found; the Commission's report of 19.06.2026 (COM(2026) 284, quoted) expects ECRIS-TCN to start in 2027. The information regulation of 2015 rests on KRK art. 21, so Dz.U. 2026 poz. 421 art. 9 ust. 1 keeps it until a new one, at most until 14.04.2027 (12 months, a computation). The 2023 online regulation was to apply from 1.03.2024; four amendments moved its start, now to 30.06.2027 (quoted), so its § 24, which repeals the 2021 regulation, has not yet taken effect (INFERENCE). The Sejm API lists the 2021 regulation as repealed on 1.03.2024 and the 2023 one as in force from that day; the texts quoted here do not support that. The convention is in force for Poland from 14.08.2005 (the statement of 27.04.2005). Regulation 2016/1191 applies from 16.02.2019 (its art. 27); whether it was amended since was not checked: EUR-Lex did not answer.
+# Certificates for other procedures: the act on the National Criminal Register (KRK), consolidated Dz.U. 2024 poz. 276 (obwieszczenie of 20.02.2024), art. 4 ust. 1 pkt 5-5a, 7 ust. 1-1a, 9, 19 ust. 1-4, 19a, 20 ust. 1-1d, 23-24; its amendment Dz.U. 2026 poz. 421 (art. 1 pkt 4, 6, 8, 16-19; art. 7, 9, 10); the KPA, consolidated Dz.U. 2025 poz. 1691, art. 217-218 (which KRK art. 9 and 23 apply); the Commission's ECRIS report as registered by the Council (ST 11076/26); the MS regulations on KRK fees (consolidated Dz.U. 2024 poz. 1339) § 3-9, on giving KRK information (consolidated Dz.U. 2024 poz. 1817) § 2, 3, 5, 8, 12, and on KRK information online (Dz.U. 2021 poz. 728) § 4, 9, 13, 20, with the 2023 regulation (Dz.U. 2023 poz. 2469) § 24-25 and the four acts that moved its start (Dz.U. 2024 poz. 279 and 1396, 2025 poz. 721, 2026 poz. 716); the act on counteracting sexual offences and protecting minors, consolidated Dz.U. 2026 poz. 110, art. 21 and 23; the stamp duty act, consolidated Dz.U. 2025 poz. 1154, art. 8 ust. 1, 12 ust. 1-2, annex part II items 5-6 and part IV; the Hague Convention of 5.10.1961 (Dz.U. 2005 nr 112 poz. 938) art. 1-6 and the government statement of 27.04.2005 (poz. 939); Regulation (EU) 2016/1191 art. 1-4, 7-8, 27; the e-delivery act, consolidated Dz.U. 2026 poz. 3, art. 6
+# Sources, retrieved 2026-10-17: the acts from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; ST 11076/26 from https://data.consilium.europa.eu/doc/document/ST-11076-2026-INIT/en/pdf; Regulation 2016/1191 (Polish, OJ L 200 of 26.7.2016) as XHTML from http://publications.europa.eu/resource/celex/32016R1191 (EUR-Lex itself answered 202 with no content). pdftotext -layout; page headers dropped; footnotes kept where they fall. The 2005 Dz.U. texts are set in three (poz. 938) and two (poz. 939) columns in an old font that pdftotext garbles; the Polish column was cut with pdftotext -x 0 -W 215 (poz. 939: -W 290, page 1) and decoded with the table ∏ł ´ę àą Êś ˝ż ƒń ¸Ł ÂŚ ˚Ż êź ÑĄ ¢Ę çć ¡Ń; the quoted lines are those of the decoded column. sha256: DU/2024/276 e2c08b0fe87c640ef8d650cb483d216188760a1562d115eba98fb46fa5234e73; DU/2026/421 131a2d442f9f70634576122bb49662dcef6f84c11b3a43860be5917fc70128b3; ST 11076/26 INIT dfd7cd62c2b8f72ddf5ecbdf8a0e0c3db92ccfdbc42575d46ce1f9eed655c9d0; DU/2024/1339 c30150cbccc5e9e56f669ba9f0e6aab5c5beb6929c075a18f1fbdcc15ba38b70; DU/2024/1817 92a506ea5fc592e7a353692bbd60ebaaf6a1846c056d612717e11b85f0b7319c; DU/2021/728 6e54163086265ea3078d658e20600a44b271cbe3b9bb7b98f117d019d2fce3d7; DU/2023/2469 c5040ee5bffbc108a41a5fc568b9def275dedd33a6a60cd807af2fee426c37fc; DU/2024/279 0e8083e8b2e3f1901cc871c36c2ef414f9a124f8ebf4da18b966a9ebefa4d826; DU/2024/1396 b6b6721eb5c91b94efe55ba387257672faa507319512f39c8c1dcb04567da0fe; DU/2025/721 ebf5b69663e795b78c9103f2c8285026956e894c57798ca5b56c5c04c1ba0596; DU/2026/716 4d0c9fa31918dd1d39ba4a811327d7416b11536285b1e970358ef5bb01bff3d7; DU/2026/110 e5df724167e178f354fafb95b96741095e684df1c2cd3844d34c369551c7f942; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2005/938 292d96c4d76d0db5379b4bd5c01273c1ef0f35b7a8ffbf43306becb9bdb2d748; DU/2005/939 1b69167f483b4a6b61383517af4859f49d264fc5ee52bbb2411a64dffec9e882; Regulation 2016/1191 XHTML 4e2d3232119952f2bbdc21d92c5a7ea35c30a3882c7bdafb9163ea81c106edb7; DU/2025/1691 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; DU/2026/3 47f3509d15ca7b371f2a84824922bbd573803b769b3093992250f5efcff458c1; read for its date, not quoted: DU/2026/912 0f00278fd6cedc198fdf46304c9b823ae8db28be34bbc087d40a5cbbdf4f3353.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): the KRK act after 19.02.2024: Dz.U. 2026 poz. 421 art. 1 (its points touch art. 1a, 2, 4, 4a, 4b, 6, 6a, 7, 11, 12-14, 19, 20, 23, 24; the ones on the quoted articles are quoted, with their dates) and its transitional art. 7 and 9 (quoted); Dz.U. 2025 poz. 1235 art. 37 (art. 4 ust. 1 pkt 5, 6, 6a and 19 ust. 1a, from 12.07.2026: entities, the public procurement certification body; its art. 37 pkt 1, on art. 4 ust. 1 pkt 5, was itself given new words by Dz.U. 2026 poz. 421 art. 6 from 12.07.2026, so from that day pkt 5 reads "na wniosek podmiotów, o których mowa w art. 6 ust. 1 pkt 1–10b, oraz osoby, o której mowa w art. 7 ust. 1a"; not quoted); Dz.U. 2026 poz. 252 art. 10 (art. 6 ust. 1 pkt 10c, from 3.04.2026: cybersecurity entities; not quoted); Dz.U. 2026 poz. 760 art. 37 (art. 12, 12c: Eurodac; not quoted); Dz.U. 2023 poz. 497 art. 4 (art. 6, from 31.03.2023, in the consolidated text). The act of 2016 after 12.01.2026: Dz.U. 2026 poz. 421 art. 5 (art. 7 and 12) and poz. 187 art. 143 (art. 22j, by the API from 19.05.2028): neither touches art. 21 or 23. The KPA after 3.11.2025: none. The e-delivery act after 29.12.2025: Dz.U. 2023 poz. 1860 art. 29 (other articles) and Dz.U. 2026 poz. 507 art. 10 (art. 152): neither touches art. 6. The fee regulation after 29.08.2024 and the information regulation after 20.11.2024: none. The 2021 regulation: none. The 2023 regulation after 31.07.2025: Dz.U. 2026 poz. 716 § 1 (§ 25), quoted. The stamp duty act after 1.08.2025, none changing part II items 5-6 or part IV: Dz.U. 2023 poz. 1688 art. 26 (part I item 51) and its transitional art. 64; Dz.U. 2025 poz. 921 art. 2 (art. 2, 30, part I); Dz.U. 2025 poz. 1847 art. 3 (art. 29, part I) and its transitional art. 10; Dz.U. 2025 poz. 1795 art. 116 (part III item 44); Dz.U. 2026 poz. 1206 art. 14 (part III item 17, from 11.01.2027); Dz.U. 2026 poz. 846 art. 14 (art. 9-10, from 1.10.2026) and its transitional art. 31-32; Dz.U. 2026 poz. 875 art. 9 (art. 1, from 1.01.2027); Dz.U. 2026 poz. 912 art. 76 (art. 7 pkt 3a, metropolitan unions, from 31.07.2026 under its art. 98; part IV's column 4 names art. 7 pkt 1-5; not quoted). The convention: its executive acts are the government statements of 2005 (poz. 939 and 2122).
+# Dates: Dz.U. 2026 poz. 421 was published on 30.03.2026 and is in force from 14.04.2026 (14 days, its art. 10), except art. 1 pkt 4 lit. a tiret 2, lit. c and d, pkt 16 lit. b and pkt 17 lit. c (among them KRK art. 20 ust. 1da-1db for third-country nationals), from the day ECRIS-TCN starts as the Commission decides under Regulation (EU) 2019/816 art. 35 ust. 4, and art. 6, from 12.07.2026. No such Commission decision was found; the Commission's report of 19.06.2026 (COM(2026) 284, quoted) expects ECRIS-TCN to start in 2027. The information regulation of 2015 rests on KRK art. 21, so Dz.U. 2026 poz. 421 art. 9 ust. 1 keeps it until a new one, at most until 14.04.2027 (12 months, a computation). The 2023 online regulation was to apply from 1.03.2024; four amendments moved its start, now to 30.06.2027 (quoted), so its § 24, which repeals the 2021 regulation, has not yet taken effect (INFERENCE). The Sejm API lists the 2021 regulation as repealed on 1.03.2024 and the 2023 one as in force from that day; the texts quoted here do not support that. The convention is in force for Poland from 14.08.2005 (the statement of 27.04.2005). Regulation 2016/1191 applies from 16.02.2019 (its art. 27); whether it was amended since was not checked here: EUR-Lex did not answer; the separate checking agent found no amending act in the Publications Office's records, only two corrigenda in other languages (not re-read here).
 # Not quoted: KRK art. 6 (the bodies that may ask; Dz.U. 2026 poz. 421 art. 1 pkt 6 lit. a and c, poz. 252 and 2025 poz. 1235 change it); the act of 2019 on presenting certain public documents in EU states (Dz.U. 2019 poz. 860; the MS page names it); the acts behind the other apostille authorities (NAWA, the education ministry and superintendents, the culture ministry), which the MSZ page names; the list of the convention's parties today (the 2005 statements list them as they stood then; the depositary's list was not read).
 
 [KRK art. 4 ust. 1, its opening and pkt 5-5a (the bureau asks EU registers on a person's request), as printed; Dz.U. 2026 poz. 421 art. 1 pkt 4 lit. a replaces them from 14.04.2026 (quoted below)]
@@ -23,6 +23,12 @@ osobie, która mieszka lub mieszkała w jednym z tych państw, przysługuje praw
 z zapytaniem o informację dotyczącą jego osoby zawartą w rejestrze karnym innego państwa członkowskiego Unii Euro-
 pejskiej, jeżeli jest lub była obywatelem państwa, do którego kierowane jest zapytanie, lub mieszka albo mieszkała na jego
 terytorium.
+
+[KRK art. 9 (the KPA applies unless the act says otherwise)]
+    Art. 9. Do postępowania prowadzonego na podstawie niniejszej ustawy stosuje się przepisy Kodeksu postępowania
+administracyjnego, chyba że ustawa stanowi inaczej.
+                                                     Rozdział 2
+                                  Zasady i sposób przetwarzania danych osobowych
 
 [KRK art. 19 ust. 1-4 (who asks; on paper or online; the request's data, a passport number without a PESEL; the signature online; 14 days to fill gaps), as printed]
     Art. 19. 1. Informacji o osobie na podstawie zgromadzonych w Rejestrze danych osobowych udziela się na zapytanie
@@ -180,6 +186,34 @@ oraz z 2026 r. poz. 252) wprowadza się następujące zmiany:
      centralnego innego państwa członkowskiego o udzielenie informacji zawartej w rejestrze karnym tego państwa na jej
      temat, pod warunkiem że osoba ta mieszka albo mieszkała w państwie członkowskim, do którego zapytanie ma być
      skierowane, lub jest albo była jego obywatelem.”;
+
+[Dz.U. 2026 poz. 421 art. 1 pkt 16 (KRK art. 19 ust. 1a, 1aa, 2 pkt 1, 2b, 3: among others citizenship, or that the person is stateless or of unknown citizenship) and pkt 17 lit. a-b (KRK art. 20 ust. 1 pkt 1, ust. 1ba-1bb): from 14.04.2026, except pkt 16 lit. b, from the day ECRIS-TCN starts (art. 10 pkt 1)]
+16) w art. 19:
+     a)   w ust. 1a wyrazy „art. 6 ust. 1 pkt 1, 4–9 i 11” zastępuje się wyrazami „art. 6 ust. 1 pkt 1, 4–9, 11 i 13”,
+     b) ust. 1aa otrzymuje brzmienie:
+                 „1aa. Jeżeli przepisy szczególne nie ograniczają zakresu udzielonej informacji, podmioty wymienione
+          w art. 6 ust. 1 pkt 4–7 i 8 mogą uzyskiwać informacje o osobie lub informacje o podmiocie zbiorowym na podsta-
+          wie danych zgromadzonych w Rejestrze także na żądanie, z wyjątkiem przypadku gdy występują o informację
+          o osobie będącej obywatelem państwa trzeciego lub obywatelem państwa członkowskiego Unii Europejskiej, która
+          posiada co najmniej jedno obywatelstwo państwa trzeciego, w celach, o których mowa w art. 7 ust. 1 rozporzą-
+          dzenia 2019/816, chyba że wystąpienie o informację następuje po uzyskaniu trafienia, o którym mowa w art. 7
+          ust. 7 i art. 14 ust. 4 tego rozporządzenia.”,
+     c)   w ust. 2 w pkt 1 po wyrazie „obywatelstwo” dodaje się wyrazy „lub obywatelstwa albo informację o tym, że osoba
+          jest bezpaństwowcem albo jej obywatelstwo jest nieznane”,
+     d) w ust. 2b zdanie pierwsze otrzymuje brzmienie:
+          „Przepisu ust. 2 nie stosuje się do zapytań przekazywanych przez organy, o których mowa w art. 6 ust. 1 pkt 11–13.”,
+     e)   w ust. 3 w zdaniu pierwszym po wyrazie „obywatelstwo” dodaje się wyrazy „lub obywatelstwa albo informację
+          o tym, że osoba jest bezpaństwowcem albo jej obywatelstwo jest nieznane”;
+17) w art. 20:
+     a)   w ust. 1 w pkt 1 po wyrazie „obywatelstwo” dodaje się wyrazy „lub obywatelstwa albo informację o tym, że osoba
+          jest bezpaństwowcem albo jej obywatelstwo jest nieznane”,
+     b) po ust. 1b dodaje się ust. 1ba i 1bb w brzmieniu:
+                 „1ba. W przypadku wystąpienia z zapytaniem przez organ centralny państwa członkowskiego Unii Europej-
+          skiej dla celów postępowania karnego w informacji o osobie udzielanej temu organowi przekazuje się informacje
+          o wszystkich wyrokach skazujących zgromadzonych w Rejestrze.
+                1bb. W przypadku wystąpienia z zapytaniem przez właściwy organ państwa obcego dla celów postępowania
+          innego niż postępowanie karne uprawnienie do uzyskania informacji o osobie oraz zakres tej informacji wynikają
+          z przepisów szczególnych, określających wymóg niekaralności.”,
 
 [Dz.U. 2026 poz. 421 art. 1 pkt 17 lit. c-d, 18 and 19 (KRK art. 20 ust. 1da-1db, for third-country nationals, from the day ECRIS-TCN starts; art. 20 ust. 1f, art. 23 and art. 24, from 14.04.2026)]
      c)   po ust. 1d dodaje się ust. 1da i 1db w brzmieniu:
@@ -409,6 +443,41 @@ cymi do działalności.
      11. Przez członka rodziny, o którym mowa w ust. 10, należy rozumieć osobę spokrewnioną albo osobę niespokrew-
 nioną, pozostającą w faktycznym związku oraz wspólnie zamieszkującą i gospodarującą.
 
+[The same act, art. 23 (penalties; ust. 3: not presenting the information or statements of art. 21 ust. 3-7 before employment or admission)]
+     Art. 23. 1. Kto, będąc obowiązanym w związku z umieszczeniem danych w Rejestrze do zgłoszenia faktycznego
+adresu pobytu lub jego każdorazowej zmiany we właściwej jednostce organizacyjnej Policji lub właściwej osobie kierującej
+aresztem śledczym, zakładem karnym, zakładem psychiatrycznym, młodzieżowym ośrodkiem wychowawczym, okręgo-
+wym ośrodkiem wychowawczym, zakładem leczniczym, o którym mowa w art. 8 ustawy z dnia 9 czerwca 2022 r. o wspie-
+raniu i resocjalizacji nieletnich, lub zakładem poprawczym, nie wykonuje tego obowiązku,
+     podlega karze aresztu, ograniczenia wolności albo grzywny nie niższej niż 1000 zł.
+     2. Kto dopuszcza do pracy lub do innej działalności związanej z wychowaniem, edukacją, wypoczynkiem, leczeniem,
+świadczeniem porad psychologicznych, rozwojem duchowym, uprawianiem sportu lub realizacją innych zainteresowań
+przez małoletnich, lub z opieką nad nimi, osobę bez uzyskania informacji, o których mowa w art. 21 ust. 2,
+     podlega karze aresztu, ograniczenia wolności albo grzywny nie niższej niż 1000 zł.
+      3. Kto przed nawiązaniem stosunku pracy lub dopuszczeniem do działalności związanej z wychowaniem, edukacją,
+wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem duchowym, uprawianiem sportu lub realiza-
+cją innych zainteresowań przez małoletnich, lub z opieką nad nimi, nie wypełnia obowiązku przedłożenia informacji lub
+oświadczenia, o których mowa w art. 21 ust. 3–7,
+     podlega karze aresztu, ograniczenia wolności albo grzywny nie niższej niż 1000 zł.
+
+[The KPA, consolidated Dz.U. 2025 poz. 1691, art. 217-218 (a certificate: without undue delay, at the latest within seven days; an explanatory procedure if needed), with the footnote that falls inside]
+       Art. 217. § 1. Organ administracji publicznej wydaje zaświadczenie na żądanie osoby ubiegającej się o zaświadczenie.
+       § 2. Zaświadczenie wydaje się, jeżeli:
+1)     urzędowego potwierdzenia określonych faktów lub stanu prawnego wymaga przepis prawa;
+2)     osoba ubiega się o zaświadczenie ze względu na swój interes prawny w urzędowym potwierdzeniu określonych faktów
+       lub stanu prawnego.
+       § 3. Zaświadczenie powinno być wydane bez zbędnej zwłoki, nie później jednak niż w terminie siedmiu dni.
+       § 4. (uchylony)
+     Art. 217a. Organ administracji publicznej przekazuje informacje, o których mowa w art. 13 ust. 1 i 2 rozporządzenia
+2016/679, przy pierwszej czynności skierowanej do strony, chyba że strona posiada te informacje, a ich zakres lub treść nie
+uległy zmianie.
+20)   Dodany przez art. 1 pkt 13 ustawy, o której mowa w odnośniku 3.
+    Art. 218. § 1. W przypadkach, o których mowa w art. 217 § 2 pkt 2, organ administracji publicznej obowiązany jest
+wydać zaświadczenie, gdy chodzi o potwierdzenie faktów albo stanu prawnego, wynikających z prowadzonej przez ten organ
+ewidencji, rejestrów bądź z innych danych znajdujących się w jego posiadaniu.
+     § 2. Organ administracji publicznej, przed wydaniem zaświadczenia, może przeprowadzić w koniecznym zakresie
+postępowanie wyjaśniające.
+
 [The stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part II (the heading) and items 5-6 (legalisation 26 zł; an apostille 60 zł)]
       II.         Wydanie zaświadczenia
                  5.    Legalizacja dokumentu                               26 zł
@@ -419,7 +488,7 @@ nioną, pozostającą w faktycznym związku oraz wspólnie zamieszkującą i gos
                        5 października 1961 r. (Dz. U. z 2005 r.
                        poz. 938)
 
-[The same, annex part IV (a power of attorney: 17 zł; its first exemptions, among them one given to a spouse, ascendant, descendant or sibling)]
+[The same, annex part IV (a power of attorney: 17 zł; column 4 lists all its exemptions, among them one certified by a notary or an authorised body that authorises collecting documents, and one given to a spouse, ascendant, descendant or sibling)]
   IV.        Złożenie dokumentu
              Dokument stwierdzający udzielenie                       17 zł       dokument stwierdzający
              pełnomocnictwa lub prokury oraz jego odpis,                         udzielenie pełnomocnictwa
@@ -442,6 +511,58 @@ nioną, pozostającą w faktycznym związku oraz wspólnie zamieszkującą i gos
                                                                                       udzielane jest małżonkowi,
                                                                                       wstępnemu, zstępnemu
                                                                                       lub rodzeństwu
+                                                                                 4)   jeżeli mocodawcą jest
+                                                                                      podmiot określony w art. 7
+                                                                                      pkt 1–5 ustawy
+                                                                                 5)   jeżeli dotyczy podpisywania
+                                                                                      deklaracji podatkowych
+                                                                                      składanych za pomocą
+                                                                                      środków komunikacji
+                                                                                      elektronicznej
+                                                                                 6)   jeżeli dotyczy
+                                                                                      pełnomocnictwa ogólnego
+                                                                                      w rozumieniu ustawy z dnia
+                                                                                      29 sierpnia 1997 r. –
+                                                                                      Ordynacja podatkowa
+                                                                                      (Dz. U. z 2025 r. poz. 111,
+                                                                                      497, 621, 622, 769 i 820)
+      1          2            3                   4
+                                  7)   jeżeli pełnomocnictwo
+                                       udzielane jest do złożenia
+                                       lub zmiany zgłoszenia
+                                       rejestracyjnego
+                                       uproszczonego lub
+                                       zgłoszenia o zaprzestaniu
+                                       wykonywania czynności
+                                       jako pośredniczący podmiot
+                                       olejowy lub zużywający
+                                       podmiot olejowy
+                                       w rozumieniu ustawy z dnia
+                                       6 grudnia 2008 r. o podatku
+                                       akcyzowym
+                                  8)   jeżeli dotyczy pełnomocnictwa
+                                       szczególnego w rozumieniu
+                                       ustawy z dnia 6 sierpnia
+                                       2010 r. o dowodach
+                                       osobistych (Dz. U. z 2022 r.
+                                       poz. 671, z 2023 r. poz. 1234
+                                       i 1941 oraz z 2025 r.
+                                       poz. 1006 i 1077).
+
+[The same, art. 8 ust. 1 (paid at the cash desk of the competent tax body or to its account)]
+      Art. 8. 1. Zapłaty opłaty skarbowej dokonuje się w kasie właściwego organu podatkowego lub na jego rachunek.
+
+[The same, art. 12 ust. 1-2 pkt 2 (the mayor; for a power of attorney, the tax body of the place where it is filed)]
+      Art. 12. 1. Organem podatkowym właściwym w sprawach opłaty skarbowej jest wójt (burmistrz, prezydent miasta).
+      2. Organem podatkowym właściwym miejscowo w sprawach opłaty skarbowej jest:
+1)    od dokonania czynności urzędowej, wydania zaświadczenia oraz zezwolenia (pozwolenia, koncesji) – organ podatkowy
+      właściwy ze względu na siedzibę organu lub podmiotu, który dokonał czynności urzędowej albo wydał zaświadczenie
+      lub zezwolenie (pozwolenie, koncesję);
+1a) od wydania odpisu zupełnego i odpisu skróconego aktu stanu cywilnego w sposób, o którym mowa w art. 45 ust. 2
+    ustawy z dnia 28 listopada 2014 r. – Prawo o aktach stanu cywilnego (Dz. U. z 2025 r. poz. 594 i 1006) – organ podat-
+    kowy właściwy ze względu na miejsce sporządzenia aktu stanu cywilnego;
+2)    od złożenia dokumentu stwierdzającego udzielenie pełnomocnictwa lub prokury oraz jego odpisu, wypisu lub kopii –
+      organ podatkowy właściwy ze względu na miejsce złożenia dokumentu;
 
 [The Hague Convention of 5.10.1961 abolishing legalisation (Dz.U. 2005 nr 112 poz. 938), art. 1-6, the Polish column of the three-column page, decoded]
              Artykuł 1
@@ -645,10 +766,64 @@ b)
 poświadczonych kopii dokumentów, o których mowa w lit. a), sporządzonych przez organy państwa członkowskiego.
 4. Niniejsze rozporządzenie nie ma zastosowania do uznawania w państwie członkowskim skutków prawnych związanych z treścią dokumentów urzędowych wydawanych przez organy innego państwa członkowskiego.
 
+[The same, art. 3 (definitions: pkt 4, "podobna czynność" is the apostille)]
+Artykuł 3
+Definicje
+Do celów niniejszego rozporządzenia:
+1)
+„dokumenty urzędowe” oznaczają:
+a)
+dokumenty pochodzące od organu sądowego lub urzędnika sądowego państwa członkowskiego, w tym dokumenty pochodzące od prokuratora, sekretarza sądowego lub urzędnika sądowego (
+huissier de justice
+);
+b)
+dokumenty administracyjne;
+c)
+akty notarialne;
+d)
+urzędowe zaświadczenia umieszczane na dokumentach podpisanych przez osoby działające w charakterze prywatnym, takie jak urzędowe zaświadczenia stwierdzające zarejestrowanie dokumentu lub fakt jego istnienia w określonej dacie, oraz urzędowe i notarialne poświadczenia podpisów;
+e)
+dokumenty sporządzone przez przedstawicieli dyplomatycznych lub urzędników konsularnych państwa członkowskiego, wykonujących czynności na terytorium dowolnego państwa i działających w charakterze urzędowym, w przypadku gdy dokumenty takie muszą zostać przedłożone na terytorium innego państwa członkowskiego lub przedłożone przedstawicielom dyplomatycznym lub urzędnikom konsularnym innego państwa członkowskiego wykonującym czynności na terytorium państwa trzeciego;
+2)
+„organ” oznacza organ publiczny państwa członkowskiego lub podmiot działający w charakterze urzędowym i upoważniony na mocy prawa krajowego do wydawania lub przyjmowania dokumentu urzędowego lub jego kopii poświadczonej za zgodność z oryginałem, objętych niniejszym rozporządzeniem;
+3)
+„legalizacja” oznacza czynność poświadczania autentyczności podpisu osoby zajmującej urząd publiczny, charakteru, w jakim działała osoba podpisująca dokument, oraz, w stosownych przypadkach, tożsamości pieczęci lub stempla, którymi opatrzony jest dany dokument;
+4)
+„podobna czynność” oznacza dołączenie apostille przewidzianej w konwencji o apostille;
+5)
+„inne formalności” oznaczają wymóg przedstawienia kopii poświadczonych za zgodność z oryginałem i uwierzytelnionych tłumaczeń dokumentów urzędowych;
+6)
+„organ centralny” oznacza organ lub organy wyznaczone przez państwa członkowskie zgodnie z art. 15 do pełnienia funkcji związanych ze stosowaniem niniejszego rozporządzenia;
+7)
+„kopia poświadczona za zgodność z oryginałem” oznacza kopię oryginalnego dokumentu urzędowego, podpisaną i poświadczoną jako wierna i pełna reprodukcja takiego oryginalnego dokumentu urzędowego przez organ państwa członkowskiego upoważniony do tego na mocy prawa krajowego tego samego państwa członkowskiego, które wydało ten dokument urzędowy.
+ROZDZIAŁ II
+ZWOLNIENIE Z LEGALIZACJI I PODOBNEJ CZYNNOŚCI ORAZ UPROSZCZENIE INNYCH FORMALNOŚCI W ODNIESIENIU DO KOPII POŚWIADCZONYCH ZA ZGODNOŚĆ Z ORYGINAŁEM
+
 [The same, art. 4 (exempt from legalisation and the apostille)]
 Artykuł 4
 Zwolnienie z legalizacji i podobnej czynności
 Dokumenty urzędowe objęte niniejszym rozporządzeniem oraz ich kopie poświadczone za zgodność z oryginałem zwalnia się z wszelkich form legalizacji i podobnej czynności.
+
+[The same, art. 7-8 (the multilingual standard form: on request; a translation aid only, art. 8 ust. 1)]
+Artykuł 7
+Wielojęzyczne standardowe formularze
+1. Do dokumentów urzędowych dotyczących urodzenia, pozostawania osoby przy życiu, zgonu, małżeństwa (w tym zdolności do zawarcia małżeństwa oraz stanu cywilnego), zarejestrowanego związku partnerskiego (w tym zdolności do zawarcia zarejestrowanego związku partnerskiego i statusu związanego z zarejestrowanym związkiem partnerskim), miejsca zamieszkania lub miejsca pobytu oraz braku wpisu do rejestru karnego, zgłoszonych przez państwa członkowskie zgodnie z art. 24 ust. 1 lit. c), dołącza się, na wniosek osoby uprawionej do otrzymania dokumentu urzędowego, wielojęzyczny standardowy formularz ustanowiony zgodnie z niniejszym rozporządzeniem.
+2. Wielojęzyczne standardowe formularze, o których mowa w ust. 1, są wydawane przez organ i są opatrzone datą wydania oraz podpisem, a także – w stosownych przypadkach – pieczęcią lub stemplem organu wydającego.
+Artykuł 8
+Stosowanie wielojęzycznych standardowych formularzy
+1. Wielojęzyczne standardowe formularze, o których mowa w art. 7 ust. 1, załączane do dokumentów urzędowych, o których mowa w tym ustępie, są stosowane jako tłumaczenie pomocnicze i nie mają żadnej autonomicznej wartości prawnej.
+2. Wielojęzyczne standardowe formularze nie stanowią:
+a)
+odpisów skróconych aktów stanu cywilnego;
+b)
+odpisów zupełnych aktów stanu cywilnego;
+c)
+wielojęzycznych odpisów skróconych aktów stanu cywilnego;
+d)
+wielojęzycznych i kodowanych odpisów skróconych aktów stanu cywilnego; ani
+e)
+wielojęzycznych i kodowanych zaświadczeń dotyczących stanu cywilnego.
+3. Wielojęzyczne standardowe formularze mogą być stosowane wyłącznie w państwie członkowskim innym niż państwo członkowskie, w którym je wydano.
 
 [The same, art. 27 (applies from 16.02.2019)]
 Artykuł 27
@@ -663,3 +838,23 @@ b)
 art. 12 i art. 24 ust. 3, które stosuje się od dnia 16 lutego 2018 r.; oraz
 c)
 art. 22 i art. 24 ust. 1, które stosuje się od dnia 16 sierpnia 2018 r.
+
+[The e-delivery act, consolidated Dz.U. 2026 poz. 3 (obwieszczenie of 29.12.2025), art. 6 (when e-delivery does not apply; ust. 2: the sender assesses the grounds of ust. 1 pkt 2), with the footnotes that fall inside]
+      Art. 6. 1. Przepisów art. 4 i art. 5 nie stosuje się w przypadkach, gdy:
+1)    podmiot wnosi o doręczenie oryginału dokumentu sporządzonego pierwotnie w postaci papierowej;
+2)    korespondencja nie może być doręczona na adres do doręczeń elektronicznych albo z wykorzystaniem publicznej
+      usługi hybrydowej ze względu na:
+      a)        brak możliwości sporządzenia i przekazania dokumentu w postaci elektronicznej wynikający z przepisów odrębnych,
+      b) brak możliwości wykorzystania publicznej usługi hybrydowej wynikający z przepisów odrębnych,
+      c)        konieczność doręczenia niepodlegającego przekształceniu dokumentu utrwalonego w postaci innej niż elektro-
+                niczna lub rzeczy,
+      d) ważny interes publiczny, w szczególności bezpieczeństwo państwa, obronność lub porządek publiczny,
+      e)        ograniczenia techniczno-organizacyjne wynikające z objętości korespondencji oraz inne przyczyny mające cha-
+                rakter techniczny;
+2)   Dodany przez art. 1 pkt 1 ustawy z dnia 21 listopada 2024 r. o zmianie ustawy o doręczeniach elektronicznych (Dz. U. poz. 1841),
+     która weszła w życie z dniem 1 stycznia 2025 r.
+3)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2025 r. poz. 620, 769, 794, 1165, 1173 i 1235.
+3)    przepisy odrębne przewidują możliwość dokonywania doręczeń z wykorzystaniem także sposobów innych niż pub-
+      liczna usługa rejestrowanego doręczenia elektronicznego lub publiczna usługa hybrydowa, w szczególności przy pomocy
+      swoich pracowników, a nadawca w konkretnych okolicznościach uzna inny sposób doręczenia za bardziej efektywny.
+      2. Istnienie przesłanek wymienionych w ust. 1 pkt 2 ocenia nadawca.
