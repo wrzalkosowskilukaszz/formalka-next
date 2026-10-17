@@ -1,0 +1,139 @@
+# gov.pl: "Zgłoś się do urzędu pracy"
+# Source: https://www.gov.pl/web/gov/zglos-sie-do-urzedu-pracy, retrieved 2026-10-17, html sha256 f6d9a14cfa29f9e3e755b59c3bfc20789e1a14e98cac98ba0ba9fc615ce556e5
+# Text of the main element; navigation removed; the page repeats its sections, the first copy is kept. Last updated 24.01.2020: it cites the act of 20.04.2004 on promoting employment, repealed by the labour market act from 1.06.2025 (that act's art. 1 footnote lists the repeal). Kept to show what people still read. Not binding.
+
+Zgłoś się do urzędu pracy
+Szukasz pracy? Możesz skorzystać z pomocy w jej szukaniu. Zgłoś się do powiatowego urzędu pracy.
+Pośrednictwo pracy to podstawowa usługa urzędu pracy. Skierowana jest do osób, które nie mają pracy lub które chcą ją zmienić. Pośrednik przedstawi ci oferty, które będą odpowiadały twoim kwalifikacjom. Przekaże ci też informacje o aktualnej i przewidywalnej sytuacji na rynku pracy. Dzięki temu możesz zaplanować swoją karierę zawodową.
+Informacje:
+Pełna rejestracja przez internet daje ci możliwość zarejestrowania się w urzędzie pracy bez wychodzenia z domu. Najpierw wypełnij ankietę. Dzięki temu system ustali twój status na rynku pracy. Od tego zależy, czy zarejestrujesz się jako osoba bezrobotna czy poszukująca pracy.
+Nie musisz zakładać konta na stronie praca.gov.pl – żeby wypełnić formularz zgłoszenia do rejestracji jako osoba bezrobotna albo poszukująca pracy. Po wypełnieniu formularza – twoje konto zostanie utworzone automatycznie.
+Każdy, kto:
+- ukończył 18 lat, ale nie osiągnął jeszcze wieku emerytalnego,
+- nie jest zatrudniony i nie wykonuje innej pracy zarobkowej,
+- jest gotowy do pracy w pełnym wymiarze czasu, który obowiązuje w danym zawodzie lub na służbie, albo do rozpoczęcia innej pracy zarobkowej. W przypadku osób z niepełnosprawnościami – co najmniej w połowie tego wymiaru,
+- nie uczy się w szkole, z wyjątkiem szkół dla dorosłych lub szkół wyższych (studia niestacjonarne),
+- NIE ma prawa do:
+- emerytury,
+- renty z tytułu niezdolności do pracy,
+- renty szkoleniowej,
+- renty socjalnej,
+- renty rodzinnej (dotyczy to renty rodzinnej, której wysokość nie przekracza połowy minimalnego wynagrodzenia za pracę),
+- nie ma prawa do emerytury albo renty z tytułu niezdolności do pracy, którą przyznała zagraniczna instytucja emerytalna lub rentowa. Dotyczy to renty i emerytury, które są w wysokości co najmniej najniższej renty i emerytury krajowej,
+- NIE pobiera (dotyczy to sytuacji po zakończeniu zatrudnienia, innej pracy zarobkowej lub prowadzenia działalności pozarolniczej):
+- nauczycielskiego świadczenia kompensacyjnego,
+- prawa do zasiłku przedemerytalnego,
+- świadczenia przedemerytalnego,
+- świadczenia rehabilitacyjnego,
+- zasiłku chorobowego,
+- zasiłku macierzyńskiego,
+- zasiłku w wysokości zasiłku macierzyńskiego (na przykład kiedy pracodawca zwolni kobietę w ciąży),
+- nie jest właścicielem lub posiadaczem samoistnym lub zależnym nieruchomości rolnej o powierzchni użytków rolnych, która przekracza 2 ha przeliczeniowe,
+- nie podlega ubezpieczeniu emerytalnemu i rentowemu z tytułu stałej pracy, bo jest współmałżonkiem lub domownikiem w gospodarstwie rolnym o powierzchni użytków rolnych, która przekracza 2 ha przeliczeniowe,
+- nie ma przychodów, które podlegają opodatkowaniu podatkiem dochodowym z działów specjalnych produkcji rolnej. Wyjątek stanowią dochody z działów specjalnych produkcji rolnej (obliczone dla ustalenia podatku dochodowego od osób fizycznych), które nie przekraczają wysokości przeciętnego dochodu z pracy w indywidualnych gospodarstwach rolnych z 2 ha przeliczeniowych. Dotyczy to również współmałżonków i osób, które mieszkają w takim gospodarstwie. Te osoby nie mogą też podlegać ubezpieczeniu emerytalnemu ani rentowemu z tytułu stałej pracy,
+- nie złożył wniosku o wpis do ewidencji działalności gospodarczej albo po złożeniu wniosku o wpis:
+- zawiesił swoją działalność gospodarczą,
+- nie rozpoczął jeszcze swojej działalności gospodarczej,
+- nie jest tymczasowo aresztowany, nie odbywa kary pozbawienia wolności. Wyjątkiem jest, kiedy odbywa karę poza zakładem karnym w systemie dozoru elektronicznego,
+- nie ma miesięcznego przychodu, który przekracza połowę minimalnego wynagrodzenia za pracę. Nie dotyczy to przychodów, które ma z odsetek lub innych przychodów od środków pieniężnych, które zgromadził na rachunkach bankowych,
+- nie pobiera zasiłku stałego (na podstawie przepisów o pomocy społecznej),
+- nie pobiera świadczenia pielęgnacyjnego, specjalnego zasiłku opiekuńczego lub dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka i utraty prawa do zasiłku dla bezrobotnych na skutek upływu ustawowego okresu jego pobierania,
+- nie pobiera świadczenia szkoleniowego, który został mu przyznany przez pracodawcę, po zakończeniu zatrudnienia,
+- nie podlega obowiązkowi ubezpieczenia społecznego, z wyjątkiem ubezpieczenia społecznego rolników (na podstawie odrębnych przepisów),
+- nie pobiera zasiłku dla opiekuna (na podstawie przepisów o ustaleniu i wypłacie zasiłków dla opiekunów).
+Każdy, kto:
+- szuka pracy, ale nie ma prawa do statusu osoby bezrobotnej, bo na przykład jest osobą zatrudnioną, ma przychody z najmu lub renty,
+- pracuje (na przykład na pełny lub niepełny etat, umowę zlecenie), ale chce zwiększyć wymiar pracy, zmienić ją lub znaleźć dodatkowe zatrudnienie.
+- dokument, który potwierdzi twoją tożsamość – na przykład dowód osobisty lub paszport,
+- oświadczenie o twoim miejscu zameldowania. Urzędnik może również poprosić cię o przyniesienie zaświadczenia o adresie zameldowania z twojego urzędu gminy,
+- dokumenty, które potwierdzą twoje wykształcenie, na przykład dyplom, świadectwo ukończenia szkoły, zaświadczenia o ukończeniu kursów i szkoleń,
+- wszystkie świadectwa pracy, które masz,
+- zaświadczenie z zakładu pracy, w którym będzie informacja o wysokości zarobków i o odprowadzonych składkach na ubezpieczenia społeczne i Fundusz Pracy w poszczególnych miesiącach – jeśli pracujesz na niepełny etat albo pracujesz lub współpracujesz z kimś na umowę zlecenie, umowę agencyjną lub inną umowę,
+- dokument, który potwierdzi, że masz przeciwwskazania do wykonywania określonych prac – jeśli nie możesz wykonywać jakichś prac (na przykład ze względów zdrowotnych).
+Urzędnik może poprosić cię o dostarczenie dodatkowych dokumentów, które dotyczą twojej aktualnej sytuacji oraz całej historii zawodowej. Sprawdź poniżej, jakie to dokumenty:
+- orzeczenie o stopniu niepełnosprawności – jeśli jesteś osobą z niepełnosprawnością i masz ustalony stopień niepełnosprawności,
+- oświadczenie, że twoja działalność gospodarcza jest wpisana do ewidencji działalności gospodarczej, w którym wskażesz termin rozpoczęcia jej prowadzenia – jeśli zamierzasz prowadzić działalność gospodarczą,
+- jeśli jesteś osobą, która zlikwidowała swoją działalność gospodarczą:
+- oświadczenie o wykreśleniu z wpisu działalności gospodarczych,
+- zaświadczenie z ZUS o okresie opłacania składek na ubezpieczenia społeczne i Fundusz Pracy z podstawą ich wymiaru w poszczególnych miesiącach za okres prowadzenia działalności gospodarczej,
+- oświadczenie, że twoja działalność gospodarcza jest wpisana do ewidencji zawieszenia działalności gospodarczej – jeśli jesteś osobą, która zawiesiła swoją działalność gospodarczą,
+- zaświadczenie z ZUS o okresach pobierania zasiłku chorobowego, macierzyńskiego lub świadczenia rehabilitacyjnego – jeśli jesteś osobą, która pobierała jeden z tych zasiłków,
+- decyzja lub zaświadczenie z ZUS o okresie pobierania renty – jeśli jesteś osobą, która pobierała rentę,
+- aktualna decyzja o wysokości renty rodzinnej – jeśli jesteś osobą, która pobierała taką rentę,
+- decyzja lub zaświadczenie o okresie otrzymywania świadczenia z ośrodka pomocy społecznej: zasiłku stałego, świadczenia pielęgnacyjnego lub dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka – jeśli jesteś osobą, która pobierała jedno z tych świadczeń,
+- zaświadczenie o powierzchni nieruchomości rolnej wyrażonej w hektarach przeliczeniowych – jeśli jesteś właścicielem, posiadaczem samoistnym lub zależnym nieruchomości rolnej. Weź je z urzędu gminy, na terenie którego znajduje się twoja nieruchomość,
+- decyzja z Kasy Rolniczego Ubezpieczenia Społecznego (KRUS), że nie podlegasz ubezpieczeniu społecznemu – jeśli mieszkasz w gospodarstwie rolnym o powierzchni użytków rolnych większych niż 2 ha przeliczeniowe,
+- świadectwo zwolnienia z zakładu karnego (ewentualnie zaświadczenie o wykonywaniu pracy w zakładzie karnym – jeśli jesteś osobą, która pracowała w czasie odbywania kary pozbawienia wolności) – jeśli jesteś osobą, która została zwolniona z zakładu karnego,
+- oświadczenie, które pozwoli ustalić, czy możesz zgłosić do ubezpieczenia zdrowotnego członków swojej rodziny – jeśli masz dzieci i chcesz je zgłosić do ubezpieczenia. Przygotuj też ich numery PESEL i skrócone akty urodzenia.
+Jeśli twoje dane lub sytuacja się zmieniły – poinformuj o tym urząd pracy. Masz na to 7 dni od dnia, w którym zaszła taka zmiana.
+- dokument, który potwierdzi twoją tożsamość, na przykład dowód osobisty lub paszport,
+- dokumenty, które potwierdzą twoje wykształcenie, na przykład dyplom, świadectwo ukończenia szkoły, czy zaświadczenia o ukończeniu kursów i szkoleń,
+- świadectwo pracy oraz inne dokumenty, które pomogą ustalić twoją sytuację, na przykład zaświadczenie o wysokości wynagrodzenia brutto z niepełnego wymiaru zatrudnienia lub umowy zlecenie z podaniem podstawy wynagrodzenia na ubezpieczenie społeczne i Fundusz Pracy,
+- dokument, który potwierdzi, że masz przeciwwskazania do wykonywania określonych prac – jeśli nie możesz wykonywać jakichś prac (na przykład ze względów zdrowotnych),
+- orzeczenie o stopniu niepełnosprawności – jeśli jesteś osobą z niepełnosprawnością.
+Jeśli twoje dane lub sytuacja się zmieniły – poinformuj o tym urząd pracy. Masz na to 7 dni od dnia, w którym zaszła taka zmiana.
+- Zeskanuj wszystkie potrzebne dokumenty. Ich listę znajdziesz w sekcji Co musisz przygotować.
+- Pamiętaj, zrób to zanim zaczniesz wypełniać formularz. Czas trwania sesji jest ograniczony. Brak aktywności przerwie wprowadzanie danych.
+- Wejdź na stronę praca.gov.pl i kliknij „Zgłoszenia do rejestracji”.
+- Wypełnij ankietę, która ustali twój status na rynku pracy.
+- Kliknij „Rejestracja w powiatowym urzędzie pracy”.
+- Wypełnij formularz.
+- Wyślij go certyfikatem kwalifikowanym albo profilem zaufanym.
+Usługa jest bezpłatna.
+Do 7 dni dostaniesz decyzję o zarejestrowaniu.
+Jeśli zarejestrujesz się w urzędzie pracy – możesz skorzystać:
+- z usług doradcy zawodowego, który pomoże ci wybrać lub zmienić zawód, kierunek kształcenia i szkolenia zawodowego,
+- z pośrednictwa pracy z obszaru Unii Europejskiej i Europejskiego Obszaru Gospodarczego (EURES, w tym usług transgranicznych),
+- ze szkoleń,
+- z przygotowania zawodowego dla dorosłych,
+- z ofert staży,
+- z ofert zatrudnienia przez pracodawcę, który zawarł umowę ze starostą (praca interwencyjna),
+- z ofert zatrudnienia w robotach publicznych,
+- z ofert zatrudnienia w pracach, które są społecznie użyteczne.
+Dodatkowo możesz skorzystać ze wsparcia finansowego, czyli:
+- z zasiłku dla bezrobotnych,
+- z dodatku aktywizacyjnego,
+- ze środków na rozpoczęcie działalności gospodarczej,
+- ze środków na rozpoczęcie działalności na zasadach, które są określone dla spółdzielni socjalnych,
+- ze zwrotu kosztów opieki nad dzieckiem do 6. roku życia lub dzieckiem niepełnosprawnym do 18. roku życia,
+- ze zwrotu kosztów przejazdu – jeśli urząd pracy na przykład skieruje cię do pracy lub na staż poza miejscem Twojego stałego zamieszkania,
+- ze zwrotu kosztów zakwaterowania – jeśli urząd pracy skieruje cię do pracy poza miejscem twojego stałego zamieszkania,
+- ze stypendium naukowego (również na studiach podyplomowych),
+- z finansowania studiów podyplomowych,
+- z finansowania kosztów egzaminów,
+- z pożyczki szkoleniowej,
+- z bonu na zasiedlenie, który da ci gwarancję zwrotu części kosztów mieszkania – jeśli dostaniesz pracę poza miejscem stałego zamieszkania,
+- z bonu szkoleniowego, który da ci gwarancję, że dostaniesz się na wybrane szkolenie,
+- z bonu stażowego, który da ci gwarancję, że dostaniesz się na wybrany staż,
+- z bonu zatrudnieniowego, który da ci gwarancję zatrudnienia u określonego pracodawcy.
+Sprawdź, dlaczego warto zarejestrować się jako osoba poszukująca pracy
+Jeśli zarejestrujesz się w urzędzie pracy – możesz skorzystać:
+- z usług doradcy zawodowego, który pomoże ci wybrać lub zmienić zawód, kierunek kształcenia i szkolenia,
+- z pośrednictwa pracy z obszaru Unii Europejskiej i Europejskiego Obszaru Gospodarczego (EURES, w tym usług transgranicznych).
+Dodatkowo, jeśli spełniasz jeden z poniższych warunków:
+- jesteś w czasie wypowiedzenia stosunku pracy (na przykład umowy o pracę, umowy zlecenia) lub stosunku służbowego (dotyczy on na przykład mianowanych żołnierzy zawodowych, funkcjonariuszy policji) z przyczyn, które dotyczą zakładu pracy,
+- jesteś osobą zatrudnioną u pracodawcy, który ogłosił upadłość lub który jest w stanie likwidacji. Nie dotyczy to likwidacji w celu prywatyzacji,
+- dostajesz świadczenie socjalne, które przysługuje na urlopie górniczym lub górniczy zasiłek socjalny,
+- uczestniczysz w zajęciach w centrum integracji społecznej lub indywidualnym programie integracji,
+- jesteś żołnierzem rezerwy,
+- pobierasz rentę szkoleniową,
+- pobierasz świadczenie szkoleniowe,
+- podlegasz ubezpieczeniu społecznemu rolników w pełnym zakresie, bo jesteś małżonkiem rolnika lub z nim mieszkasz – jeśli zamierzasz zatrudnić się, rozpocząć inną pracę zarobkową lub działalność gospodarczą poza rolnictwem,
+- jesteś cudzoziemcem,
+możesz skorzystać:
+- ze szkoleń,
+- z przygotowania zawodowego dorosłych,
+- z finansowania kosztów egzaminów,
+- z finansowania studiów podyplomowych,
+- z pożyczki szkoleniowej.
+Pełna rejestracja przez internet daje ci możliwość zarejestrowania się w urzędzie pracy bez wychodzenia z domu. Najpierw wypełnij ankietę. Dzięki temu system ustali twój status na rynku pracy. Od tego zależy, czy zarejestrujesz się jako osoba bezrobotna czy poszukująca pracy.
+Może się zdarzyć, że urzędnik odmówi ci nadania statusu osoby bezrobotnej – jeśli na przykład uzna, że nie spełniasz warunków. Możesz wtedy odwołać się do wojewody. Masz na to 14 dni od otrzymania odmowy. Odwołanie zaadresuj do wojewody, ale złóż w powiatowym urzędzie pracy. Dodatkowo do odwołania możesz dołączyć dokumenty, które potwierdzą twoje wyjaśnienie.
+Po złożeniu odwołania urząd pracy ponownie przeanalizuje twoją sprawę. Jeśli uzna, że wcześniej podjął złą decyzję – może ją zmienić i wydać nową. Ma na to 7 dni. Jeśli uzna, że nie masz racji – prześle twoje odwołanie i akta sprawy do wojewody – poinformuje cię o tym. Wojewoda w ciągu miesiąca rozpatrzy twoje odwołanie i wyda swoją decyzję.
+Jeśli nie zgadzasz się z decyzją wojewody – możesz złożyć skargę. Masz na to 30 dni od otrzymania tej decyzji. Skargę zaadresuj do wojewódzkiego sądu administracyjnego, ale złóż u wojewody.
+Jeśli chcesz dowiedzieć się więcej – zadzwoń na infolinię Centrum Informacyjnego Służb Zatrudnienia, tak zwaną Zieloną Linię. Numer telefonu to: 19524.
+Infolinia jest czynna od poniedziałku do piątku w godzinach 8.00-18.00.
+- Ustawa z dnia 20 kwietnia 2004 r. o promocji zatrudnienia i instytucjach rynku pracy (tekst jednolity — Dz.U. z 2015 r. poz. 149 z późn. zm.)
+- Rozporządzenie Ministra Pracy i Polityki Społecznej z dnia 12 listopada 2012 r. w sprawie rejestracji osób bezrobotnych i poszukujących pracy (Dz.U. z 2012 r. poz. 1299)
+- Ustawa z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne (tekst jednolity — Dz.U. z 2014 r. poz. 1114)
+- Ustawa z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (tekst jednolity — Dz.U. z 2013 r. poz. 1422)
+Ostatnia aktualizacja: 24.01.2020 15:43

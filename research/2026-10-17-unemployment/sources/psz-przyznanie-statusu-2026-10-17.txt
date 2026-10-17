@@ -1,0 +1,68 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Przyznanie statusu osoby bezrobotnej"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/przyznanie-statusu-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 cb3074a1a74f4a161a4ee1c94e8e524ebd6ce230447b8cc1804822326027ef80
+# Text of the article element; menus removed. Published 01.06.2025, modified 19.06.2026. It cites the labour market act of 20.03.2025. Not binding.
+
+Status osoby bezrobotnej możesz uzyskać, jeżeli:
+- jesteś:
+- obywatelem Polski,
+- obywatelem państwa członkowskiego Unii Europejskiej,
+- obywatelem państwa Europejskiego Obszaru Gospodarczego nienależącego do Unii Europejskiej,
+- obywatelem państwa niebędącego stronami umowy o Europejskim Obszarze Gospodarczym, który może korzystać ze swobody przepływu osób na podstawie umów zawartych przez te państwa z Unią Europejską i jej państwami członkowskimi (tj. obywatelem Islandii, Lichtensteinu, Norwegii lub Szwajcarii),
+- obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy o Wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Europejskiej Wspólnoty Energii Atomowej, oraz członkiem ich rodzin, o których mowa w art. 10 ust. 1 lit. e i f tej umowy;
+- cudzoziemcem, który:
+- posiada w Rzeczypospolitej Polskiej zezwolenie na pobyt stały,
+- posiada w Rzeczypospolitej Polskiej zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej,
+- posiada w Rzeczypospolitej Polskiej status uchodźcy,
+- korzysta z ochrony uzupełniającej w Rzeczypospolitej Polskiej,
+- posiada w Rzeczypospolitej Polskiej zgodę na pobyt ze względów humanitarnych lub zgodę pobyt tolerowany,
+- korzysta w Rzeczypospolitej Polskiej z ochrony czasowej,
+- jest stroną postępowania w sprawie udzielenia ochrony międzynarodowej, którzy posiadają zaświadczenie wydane na podstawie art. 35 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej,
+- posiada w Rzeczypospolitej Polskiej zezwolenie na pobyt czasowy udzielone w związku z okolicznościami, o których mowa w art. 127, art. 137a, lub art. 186 ust. 1 pkt 3 ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach,
+- posiada zezwolenie na pobyt czasowy, o którym mowa w art. 114 ust. 1 albo 1a albo art. 126 ust. 1 ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach, albo wizę wydaną w celu wykonywania pracy na terytorium Rzeczypospolitej Polskiej,
+- posiada w Rzeczypospolitej Polskiej wizę wydaną w celu, o którym mowa w art. 60 ust. 1 pkt 23 ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach, lub zezwolenie na pobyt czasowy udzielone w związku z okolicznościami, o których mowa w art. 186 ust. 1 pkt 9 ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach;
+- cudzoziemcem towarzyszącym na terytorium Rzeczypospolitej Polskiej cudzoziemcowi będącemu:
+- obywatelem państwa członkowskiego Unii Europejskiej,
+- obywatelem państwa Europejskiego Obszaru Gospodarczego nienależących do Unii Europejskiej,
+- obywatelem państwa niebędącego stronami umowy o Europejskim Obszarze Gospodarczym, który może korzystać ze swobody przepływu osób na podstawie umów zawartych przez te państwa z Unią Europejską i jej państwami członkowskimi (tj. obywatelem Islandii, Lichtensteinu, Norwegii lub Szwajcarii),
+- jako członek rodziny w rozumieniu art. 2 pkt 4 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin,
+- cudzoziemcem, który będąc członkiem rodziny obywatela polskiego, uzyskał zezwolenie na pobyt czasowy na terytorium Rzeczypospolitej Polskiej albo po złożeniu wniosku o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej przebywa na terytorium Rzeczypospolitej Polskiej na podstawie art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach, jeżeli bezpośrednio przed złożeniem wniosku o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej posiada zezwolenie na pobyt czasowy;
+- cudzoziemcem towarzyszącym na terytorium Rzeczypospolitej Polskiej obywatelowi polskiemu jako członek rodziny w rozumieniu art. 2 pkt 4 lit. b ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin
+oraz
+- jesteś osobą niezatrudnioną i niewykonującą innej pracy zarobkowej, nieuczącą się w szkole, z wyjątkiem osoby uczącej się w szkole dla dorosłych, branżowej szkole II stopnia w formie stacjonarnej lub zaocznej, w szkole policealnej w formie stacjonarnej lub zaocznej, lub przystępującej do egzaminów eksternistycznych z zakresu programu nauczania szkoły dla dorosłych lub branżowej szkoły II stopnia, lub kształcącej się na studiach niestacjonarnych, lub uczącej się w szkole artystycznej realizującej wyłącznie kształcenie artystyczne, niemającą stałego źródła dochodu, zdolną i gotową do podjęcia zatrudnienia w pełnym wymiarze czasu pracy obowiązującym w danym zawodzie lub w danej służbie albo innej pracy zarobkowej albo jeżeli jest osobą niepełnosprawną, zdolną i gotową do podjęcia zatrudnienia co najmniej w połowie tego wymiaru czasu pracy, zarejestrowaną w powiatowym urzędzie pracy, jeżeli:
+- ukończyłeś 18 lat,
+- nie ukończyłaś 60 lat – jeżeli jesteś kobietą lub 65 lat – jeżeli jesteś mężczyzną,
+- nie jesteś osobą wpisaną do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, zwanej dalej „CEIDG”, jako prowadząca działalność gospodarczą, z wyjątkiem sytuacji, gdy wskazana działalność jest zawieszona lub wskazany we wpisie termin podjęcia tej działalności jeszcze nie nadszedł,
+- nie jesteś osobą tymczasowo aresztowaną lub nie odbywasz kary pozbawienia wolności, z wyjątkiem kary pozbawienia wolności odbywanej poza zakładem karnym w systemie dozoru elektronicznego,
+- nie nabyłeś na podstawie ustawy z dnia 12 marca 2004 r. o pomocy społecznej prawa do zasiłku stałego,
+- nie jesteś członkiem zarządu, prokurentem, członkiem rady nadzorczej lub likwidatorem spółki kapitałowej w rozumieniu ustawy z dnia 15 września 2000 r. – Kodeks spółek handlowych,
+- nie jesteś prokurentem lub pełnomocnikiem przedsiębiorcy będącego osobą fizyczną, prowadzącego działalność gospodarczą rozumieniu ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców,
+- nie jesteś wspólnikiem spółki jawnej, partnerem lub członkiem zarządu w spółce partnerskiej, komplementariuszem w spółce komandytowej, komplementariuszem lub członkiem rady nadzorczej w spółce komandytowo–akcyjnej, prokurentem lub likwidatorem spółki osobowej w rozumieniu ustawy z dnia 15 września 2000 r. – Kodeks spółek handlowych,
+- nie jesteś dyrektorem w radzie dyrektorów, o której mowa w art. 30073 ustawy z dnia 15 września 2000 r. – Kodeks spółek handlowych,
+- nie podlegasz, na podstawie odrębnych przepisów, obowiązkowi ubezpieczeń społecznych, z wyjątkiem ubezpieczenia społecznego rolników,
+- nie podlegasz obowiązkowemu ubezpieczeniu na wypadek bezrobocia lub obowiązkowym ubezpieczeniom społecznym w:
+- państwie członkowskim Unii Europejskiej,
+- państwie Europejskiego Obszaru Gospodarczego nienależących do Unii Europejskiej,
+- państwie niebędącym stronami umowy o Europejskim Obszarze Gospodarczym, który może korzystać ze swobody przepływu osób na podstawie umów zawartych przez te państwa ze Unią Europejską i jej państwami członkowskimi (tj. Islandii, Lichtensteinu, Norwegii lub Szwajcarii),
+- nie prowadzisz działalności gospodarczej w innym niż Rzeczpospolita Polska państwie na podstawie zgłoszenia do rejestru lub bez takiego zgłoszenia, jeżeli prawo danego państwa takiego zgłoszenia nie wymaga.
+Stałe źródło dochodu będziesz miał, jeżeli:
+- nabędziesz prawo do emerytury lub renty z tytułu niezdolności do pracy, renty szkoleniowej, renty socjalnej, renty rodzinnej w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę lub świadczenia pieniężnego, o którym mowa w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia , lub renty inwalidzkiej przyznawanej na podstawie ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin lub ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin,
+- nabędziesz po ustaniu zatrudnienia, innej pracy zarobkowej, zaprzestaniu prowadzenia pozarolniczej działalności, prawa do nauczycielskiego świadczenia kompensacyjnego, zasiłku przedemerytalnego, świadczenia przedemerytalnego, świadczenia rehabilitacyjnego, zasiłku chorobowego, zasiłku macierzyńskiego lub zasiłku w wysokości zasiłku macierzyńskiego,
+- nabędziesz prawo do emerytury albo renty z tytułu niezdolności do pracy, przyznanego przez zagraniczny organ emerytalny lub rentowy, w wysokości co najmniej najniższej emerytury albo renty z tytułu niezdolności do pracy, o których mowa w ustawie z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych,
+- uzyskasz miesięcznie przychód w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę, z wyłączeniem przychodów uzyskanych z tytułu odsetek lub innych przychodów od środków pieniężnych zgromadzonych na rachunkach bankowych lub rachunkach członka spółdzielczej kasy oszczędnościowo-kredytowej,
+- nabędziesz na podstawie ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych prawo do świadczenia pielęgnacyjnego lub specjalnego zasiłku opiekuńczego,
+- nabędziesz na podstawie ustawy z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów prawa do zasiłku dla opiekuna,
+- będziesz pobierał po ustaniu zatrudnienia świadczenia szkoleniowego, o którym mowa w art. 217 ust. 6.
+Nie będzie stanowiło przeszkody do nabycia oraz posiadania statusu bezrobotnego jeżeli będziesz:
+- wolontariuszem i:
+- będziesz wykonywał świadczenie odpowiadające świadczeniu pracy na zasadach określonych w ustawie z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie,
+- przedstawisz właściwemu powiatowemu urzędowi pracy porozumienie z korzystającym;
+- praktykantem i:
+- będziesz odbywał praktykę absolwencką na zasadach określonych w ustawie z dnia 17 lipca 2009 r. o praktykach absolwenckich,
+- przedstawisz właściwemu powiatowemu urzędowi pracy umowę o praktykę absolwencką;
+- pełnił bez wynagrodzenia funkcję członka statutowych władz organizacji pozarządowej, o której mowa w ustawie z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie i przedstawisz właściwemu powiatowemu urzędowi pracy oświadczenie organizacji, w której władzach zasiadasz potwierdzające pełnioną funkcję oraz niepobieranie wynagrodzenia z tytułu jej pełnienia..
+Jeżeli zarejestrujesz się w powiatowym urzędzie pracy jako bezrobotny, to nie możesz zarejestrować się jako:
+- poszukujący pracy oraz posiadać taki statusu przez okres posiadania statusu bezrobotnego;
+- bezrobotny w innym urzędzie pracy.
+Podstawa prawna
+- ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia – art. 2 pkt 1 i 42, art. 57, art 64
+Informacje o publikacji dokumentuAutor: Departament Rynku PracyData publikacji: 01.06.2025Data modyfikacji: 19.06.2026

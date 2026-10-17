@@ -1,0 +1,60 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Utrata statusu osoby bezrobotnej"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/utrata-statusu-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 eb8a1eb8e6a5f78f142417660099b0d462006dd73c8eafc855e36fe11c2bc235
+# Text of the article element; menus removed. Published and modified 03.06.2025. It cites the labour market act of 20.03.2025. Not binding.
+
+- Status bezrobotnego przysługuje przez okres 3 lat od dnia rejestracji, z wyjątkiem sytuacji, w których zgodnie z ustawą następuje utrata statusu bezrobotnego:
+- upłynie okres 3 lat przysługiwania statusu bezrobotnego. Pozbawienie statusu bezrobotnego następuje z dniem, w którym upłynął okres przysługiwania prawa,
+- z własnej winy po skierowaniu przez powiatowy urząd pracy lub zawarciu umowy nie podjąłeś albo przerwałeś realizację formy pomocy, chyba że powodem niepodjęcia albo przerwania realizacji było podjęcie zatrudnienia, innej pracy zarobkowej lub działalności gospodarczej. Pozbawienie statusu bezrobotnego następuje od następnego dnia po dniu skierowania lub zawarciu umowy, albo od dnia przerwania realizacji, na okres 90 dni,
+- odmówisz bez uzasadnionej przyczyny propozycji prac społecznie użytecznych. Pozbawienie statusu bezrobotnego następuje od dnia odmowy na okres 90 dni,
+- otrzymałeś środki z Funduszu Pracy, Państwowego Funduszu Rehabilitacji Osób Niepełnosprawnych lub inne środki publiczne na podjęcie działalności gospodarczej lub rolniczej lub na założenie lub przystąpienie do spółdzielni socjalnej. Pozbawienie statusu bezrobotnego następuje od następnego dnia po dniu otrzymania środków,
+- otrzymałeś pożyczkę ze środków publicznych na podjęcie działalności gospodarczej lub rolniczej. Pozbawienie statusu bezrobotnego następuje od następnego dnia po dniu otrzymania pożyczki,
+- rozpocząłeś realizację indywidualnego programu zatrudnienia socjalnego lub podpisałeś kontrakt socjalny. Pozbawienie statusu bezrobotnego następuje na okres 90 dni od dnia rozpoczęcia realizacji indywidualnego programu zatrudnienia socjalnego lub podpisania kontraktu socjalnego,
+- pozostajesz niezdolny do pracy wskutek choroby lub przebywania w zakładzie lecznictwa odwykowego przez nieprzerwany okres 180 dni, przy czym za okres nieprzerwany uważa się również okresy niezdolności do pracy wskutek choroby oraz przebywania w zakładzie lecznictwa odwykowego w sytuacji, gdy każda kolejna przerwa między okresami niezdolności do pracy wynosi mniej niż 30 dni kalendarzowych. Pozbawienie statusu bezrobotnego następuje z upływem ostatniego dnia wskazanego okresu 180-dniowego,
+- nie przedstawisz zaświadczenia o niezdolności do pracy wskutek choroby. Pozbawienie statusu bezrobotnego następuje z pierwszym dniem niezdolności do pracy;
+- złożysz wniosek o pozbawienie statusu bezrobotnego. Pozbawienie statusu bezrobotnego następuje od dnia złożenia wniosku,
+- nie zawiadomisz powiatowego urzędu pracy o zamierzonym pobycie za granicą lub pobyt ten przekroczy okres 30 dni. Pozbawienie statusu bezrobotnego następuje odpowiednio z dniem pierwszego dnia pobytu za granicą lub z upływem ostatniego dnia wskazanego okresu 30-dniowego na okres 90 dni,
+- nie utrzymujesz kontaktu z powiatowym urzędem pracy co najmniej raz na 90 dni w celu potwierdzenia zainteresowania pomocą określoną w ustawie. Pozbawienie statusu bezrobotnego następuje po upływie 90 dni od dnia ostatniego kontaktu z powiatowym urzędem pracy na okres 90 dni,
+- odmówisz udziału w przygotowaniu indywidualnego planu działania lub z własnej winy przerwiesz jego realizację. Pozbawienie statusu bezrobotnego następuje od dnia odmowy albo od dnia przerwania jego realizacji, na okres 90 dni.
+- Status bezrobotnego utracisz również, jeżeli przestałeś spełniać warunki niezbędne do bycia osobą bezrobotną (wystarczy spełnienie jednego z poniższych warunków):
+- podejmiesz zatrudnienie, inną pracę zarobkową (podpiszesz np.: umowę o pracę, umowę zlecenia, umowę o dzieło, umowę agencyjną),
+- nie jesteś zdolny i gotowy do podjęcia zatrudnienia w pełnym wymiarze czasu pracy obowiązującym w danym zawodzie lub danej służbie albo innej pracy zarobkowej albo jesteś osobą niepełnosprawną, niezdolną i niegotową do podjęcia zatrudnienia w co najmniej w połowie tego wymiaru czasu pracy,
+- uczysz się w szkole, z wyjątkiem osoby uczącej się w szkole dla dorosłych, branżowej szkole II stopnia w formie stacjonarnej lub zaocznej, w szkole policealnej w formie stacjonarnej lub zaocznej, lub przystępujesz do egzaminów eksternistycznych z zakresu programu nauczania szkoły dla dorosłych lub branżowej szkoły II stopnia, lub kształcisz się na studiach niestacjonarnych, lub uczysz się w szkole artystycznej realizującej wyłącznie kształcenie artystyczne,
+- posiadasz stałe źródło dochodu:
+- nabyłeś prawa do emerytury lub renty z tytułu niezdolności do pracy, renty szkoleniowej, renty socjalnej, renty rodzinnej w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę lub świadczenia pieniężnego przysługującego członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia lub renty inwalidzkiej przyznawanej funkcjonariuszom Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzinom lub żołnierzom zawodowym oraz ich rodzinom,
+- nabyłeś po ustaniu zatrudnienia, innej pracy zarobkowej, zaprzestaniu prowadzenia pozarolniczej działalności, prawo do nauczycielskiego świadczenia kompensacyjnego, zasiłku przedemerytalnego, świadczenia przedemerytalnego, świadczenia rehabilitacyjnego, zasiłku chorobowego, zasiłku macierzyńskiego lub zasiłku w wysokości zasiłku macierzyńskiego,
+- nabyłeś prawo do emerytury albo renty z tytułu niezdolności do pracy, przyznane przez zagraniczny organ emerytalny lub rentowy, w wysokości co najmniej najniższej emerytury albo renty z tytułu niezdolności do pracy, o których mowa w ustawie z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych,
+- uzyskujesz miesięcznie przychód w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę, z wyłączeniem przychodów uzyskanych z tytułu odsetek lub innych przychodów od środków pieniężnych zgromadzonych na rachunkach bankowych lub rachunkach członka spółdzielczej kasy oszczędnościowo-kredytowej,
+- nabyłeś prawo do świadczenia pielęgnacyjnego lub specjalnego zasiłku opiekuńczego,
+- nabyłeś prawo do zasiłku dla opiekuna,
+- pobierasz po ustaniu zatrudnienia świadczenie szkoleniowe,
+- ukończyłaś 60 lat – jeżeli jesteś kobietą lub 65 lat – jeżeli jesteś mężczyzną,
+- jesteś wpisany do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, zwanej dalej „CEIDG”, jako prowadzący działalność gospodarczą rozpoczniesz prowadzenie działalności gospodarczej;
+- zgłosiłeś do CEIDG wniosek o zawieszenie wykonywania działalności gospodarczej i okres zawieszenia nadal trwa,
+- we wniosku o wpis do CEIDG określiłeś dzień podjęcia działalności gospodarczej i nie upłynął jeszcze okres do, określonego we wniosku o wpis, dnia podjęcia tej działalności,
+- zostałeś tymczasowo aresztowany lub rozpocząłeś odbywanie kary pozbawienia wolności, z wyjątkiem kary pozbawienia wolności odbywanej poza zakładem karnym w systemie dozoru elektronicznego,
+- nabyłeś na podstawie przepisów o pomocy społecznej zasiłek stały,
+- jesteś członkiem zarządu, prokurentem, członkiem rady nadzorczej lub likwidatorem spółki kapitałowej w rozumieniu Kodeksu spółek handlowych,
+- jesteś prokurentem lub pełnomocnikiem przedsiębiorcy będącego osobą fizyczną, prowadzącego działalność gospodarczą rozumieniu ustawy Prawo przedsiębiorców,
+- jesteś wspólnikiem spółki jawnej, partnerem lub członkiem zarządu w spółce partnerskiej, komplementariuszem w spółce komandytowej, komplementariuszem lub członkiem rady nadzorczej w spółce komandytowo–akcyjnej, prokurentem lub likwidatorem spółki osobowej w rozumieniu Kodeksu spółek handlowych,
+- jesteś dyrektorem w radzie dyrektorów na podstawie Kodeksu spółek handlowych,
+- podlegasz, na podstawie odrębnych przepisów, obowiązkowi ubezpieczenia społecznego, z wyjątkiem ubezpieczenia społecznego rolników,
+- podlegasz obowiązkowemu ubezpieczeniu na wypadek bezrobocia lub obowiązkowym ubezpieczeniom społecznym w:
+- państwie członkowskim Unii Europejskiej,
+- państwie Europejskiego Obszaru Gospodarczego nienależącym do Unii Europejskiej,
+- państwa niebędącym stroną umowy o Europejskim Obszarze Gospodarczym,
+- Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej,
+- prowadzi działalności gospodarczej w innym niż Rzeczpospolita Polska państwie na podstawie zgłoszenia do rejestru lub bez takiego zgłoszenia, jeżeli prawo danego państwa takiego zgłoszenia nie wymaga.
+Jeżeli jesteś kobietą, to nie zostaniesz pozbawiona statusu osoby bezrobotnej, będąc w ciąży z powodu niezdolności do pracy, związanej z ciążą, trwającej przez nieprzerwany okres 180 dni, z wyłączeniem przypadku złożenia wniosku o pozbawienie tego statusu przez kobietę w ciąży.
+Starosta nie może również pozbawić statusu osoby bezrobotnej:
+- matki dziecka,
+- ojca dziecka,
+- bezrobotnego po przysposobieniu dziecka,
+- bezrobotnego po przyjęciu przez niego dziecka na wychowanie i wystąpieniu do sądu opiekuńczego z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka lub po przyjęciu przez niego dziecka na wychowanie jako rodzina zastępcza, z wyjątkiem rodziny zastępczej zawodowej
+–z uwagi na brak zdolności i gotowości do podjęcia zatrudnienia spowodowany opieką nad tym dzieckiem przez okres, przez który przysługiwałby mu, zgodnie z odrębnymi przepisami, zasiłek macierzyński w okresie urlopu macierzyńskiego, uzupełniającego urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu rodzicielskiego oraz urlopu ojcowskiego, z wyłączeniem przypadku złożenia wniosku o pozbawienie tego statusu przez samego bezrobotnego.
+Nie zostaniesz pozbawiony statusu bezrobotnego, jeżeli uzyskasz wpis do Krajowego Rejestru Sądowego jako założyciel spółdzielni socjalnej po dniu zarejestrowania w urzędzie pracy, w związku z uwzględnieniem przez starostę jego wniosku o przyznanie środków na założenie spółdzielni socjalnej, do dnia następnego po dniu otrzymania tych środków.
+Jak ponownie możesz uzyskać status osoby bezrobotnej?
+Ponowne nabycie statusu bezrobotnego może nastąpić w wyniku ponownej rejestracji, po upływie 90 dni od dnia upływu okresu. W przypadku ponownej rejestracji okres 3 lat liczy się od początku.
+Bezrobotny zawiadamia powiatowy urząd pracy o okolicznościach powodujących utratę statusu bezrobotnego w terminie 7 dni od daty ich wystąpienia.
+Podstawa prawna
+- ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia – art. 2 pkt 1 i 42 oraz art. 63, art. 65, art. 67.
+Informacje o publikacji dokumentuAutor: Departament Rynku PracyData publikacji: 03.06.2025Data modyfikacji: 03.06.2025

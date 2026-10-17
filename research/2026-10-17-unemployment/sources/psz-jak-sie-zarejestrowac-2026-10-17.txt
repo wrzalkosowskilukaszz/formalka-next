@@ -1,0 +1,31 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Jak się zarejestrować w powiatowym urzędzie pracy jako osoba bezrobotna?"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/jak-sie-zarejestrowac-w-powiatowym-urzedzie-pracy-jako-osoba-bezrobotna, retrieved 2026-10-17, html sha256 f278a4955834f94a7151b9f4ad493850dc89c8ac0f1558869b7161d5d0946293
+# Text of the article element; menus removed. Published 03.06.2025, modified 13.05.2026. It cites the labour market act of 20.03.2025. Not binding.
+
+Jeżeli chcesz zarejestrować się jako osoba bezrobotna, to możesz:
+- zgłosić się do powiatowego urzędu pracy, właściwego ze względu na miejsce zamieszkania,
+albo
+- skorzystać z elektronicznej rejestracji.
+Rejestracja polega na wypełnieniu wniosku o dokonanie rejestracji jako osoba bezrobotna w postaci elektronicznej dostępnego na stronie www.praca.gov.pl, załączeniu do wniosku skanów wszystkich dokumentów wymaganych do rejestracji, opatrzeniu wniosku i załączników kwalifikowaym podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym.
+Status bezrobotnego nabędziesz z dniem:
+- zgłoszenia się do powiatowego urzędu pracy i po:
+a) poświadczeniu własnoręcznym podpisem przekazanych danych,
+b) złożeniu, w obecności pracownika urzędu oświadczenia o:
+- zdolności i gotowości do podjęcia zatrudnienia w pełnym wymiarze czasu pracy obowiązującym w danym zawodzie lub w danej służbie albo innej pracy zarobkowej albo jeżeli jest osobą niepełnosprawną, zdolną i gotową do podjęcia zatrudnienia co najmniej w połowie tego wymiaru czasu pracy;
+- braku stałego źródła dochodu,
+- zapoznaniu się z informacją, o warunkach zachowania statusu bezrobotnego oraz o warunkach nabycia prawa do zasiłku, w tym niezbędnych do tego dokumentach;
+albo
+- wniesieniu kompletnego wniosek o dokonanie rejestracji jako bezrobotny – w przypadku elektronicznej rejestracji.
+UWAGA: Jeżeli jesteś zarejestrowany jako osoba bezrobotna nie możesz zarejestrować się jako:
+- poszukujący pracy;
+- bezrobotny w innym urzędzie pracy.
+Szczegółowe informacje dotyczące profilu zaufanego, w tym:
+- czym jest profil zaufany,
+- kto i jak może go założyć
+znajdziesz: https://www.gov.pl/web/gov/zaloz-profil-zaufany
+Informacje dotyczące podpisu zaufanego znajdziesz:
+https://www.gov.pl/web/gov/podpisz-dokument-elektronicznie-wykorzystaj-podpis-zaufany
+Zapraszamy również do zapoznania się z instrukcją elektronicznej rejestracji przez internet oraz instrukcjami Jak założyć Profil Zaufany i Jak założyć konto użytkownika w praca.gov.pl.
+Podstawa prawna
+- ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia – art. 55 i art. 57 ust. 1, art. 60 ust. 1 i 2, art. 61 ust.1-3
+Informacje o publikacji dokumentuAutor: Departament Rynku PracyData publikacji: 03.06.2025Data modyfikacji: 13.05.2026

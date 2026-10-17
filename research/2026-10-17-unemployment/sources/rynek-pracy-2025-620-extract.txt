@@ -1,0 +1,602 @@
+# Ustawa z 20.03.2025 o rynku pracy i służbach zatrudnienia (the labour market act), Dz.U. 2025 poz. 620, in force 1.06.2025, as published; it has no consolidated text yet. With its amendments that touch the quoted articles, and the announcement of the benefit's amounts from 1.06.2026
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf, sha256 b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51; https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; https://api.sejm.gov.pl/eli/acts/DU/2026/507/text.pdf, sha256 9e0a2839034b10bf50adceaff753444db09f2f49e173950454f6dc81a09760ec; https://api.sejm.gov.pl/eli/acts/MP/2026/268/text.pdf, sha256 8178d74216a74e4a0b8d9931f8c7827afe6a276107639e73359eb8513aef6e97; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
+# Amendments (node tools/sources/touched.mjs DU/2025/620 2025-06-01 --cite 1,2,31,38,43-45,55-68,218-239, 17.10.2026): Dz.U. 2025 poz. 1746 (art. 26) and 2026 poz. 734 (art. 26, 300), 451 (art. 8) and 1123 (art. 153-156, 172, 182, 292, from 2028) touch none of the quoted articles; Dz.U. 2025 poz. 1794 art. 10 changes art. 1 ust. 3 pkt 5 and Dz.U. 2026 poz. 507 art. 11 changes art. 2 pkt 1 lit. d-e and art. 232, both quoted at the end. Dz.U. 2025 poz. 1794 art. 12, 14 and 17 are transitional rules for pending cases and the announcement; they do not change the quoted articles.
+# The amounts in art. 224 ust. 1 are indexed every 1 June (art. 228); from 1.06.2026 they are those of M.P. 2026 poz. 268 (quoted at the end; the previous announcement, M.P. 2025 poz. 510, gave the amounts from 1.06.2025).
+# The act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0): only the opening lines of art. 144, 151 and 159 ust. 1 are quoted, to name the purpose of three permits listed in RP art. 1 ust. 3 pkt 2 lit. m; their conditions are not relied on.
+
+[Art. 1 ust. 3 (to whom the act applies; pkt 5 in its original wording, changed from 27.04.2026: see the end)]
+      3. Ustawa ma zastosowanie do:
+1)    obywateli polskich poszukujących i podejmujących zatrudnienie lub inną pracę zarobkową na terytorium Rzeczypospolitej
+      Polskiej oraz pracę za granicą u pracodawców zagranicznych;
+2)    cudzoziemców poszukujących i podejmujących zatrudnienie lub inną pracę zarobkową na terytorium Rzeczypospolitej
+      Polskiej:
+      a)   obywateli państw członkowskich Unii Europejskiej,
+      b) obywateli państw Europejskiego Obszaru Gospodarczego nienależących do Unii Europejskiej,
+      c)   obywateli państw niebędących stronami umowy o Europejskim Obszarze Gospodarczym, którzy mogą korzystać
+           ze swobody przepływu osób na podstawie umów zawartych przez te państwa z Unią Europejską i jej państwami
+           członkowskimi,
+      d) obywateli Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o których mowa w art. 10 ust. 1 lit. b i d
+         Umowy o Wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej i Euro-
+         pejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm.3)), oraz członków ich
+         rodzin, o których mowa w art. 10 ust. 1 lit. e i f tej umowy,
+      e)   posiadających w Rzeczypospolitej Polskiej zezwolenie na pobyt stały,
+      f)   posiadających w Rzeczypospolitej Polskiej zezwolenie na pobyt rezydenta długoterminowego Unii Europejskiej,
+      g) posiadających w Rzeczypospolitej Polskiej status uchodźcy,
+      h) którym udzielono ochrony uzupełniającej w Rzeczypospolitej Polskiej,
+      i)   posiadających w Rzeczypospolitej Polskiej zgodę na pobyt ze względów humanitarnych lub zgodę na pobyt tolero-
+           wany,
+      j)   korzystających w Rzeczypospolitej Polskiej z ochrony czasowej,
+      k) będących stronami postępowania w sprawie udzielenia ochrony międzynarodowej, którzy posiadają zaświadczenie
+         wydane na podstawie art. 35 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium
+         Rzeczypospolitej Polskiej (Dz. U. z 2025 r. poz. 223, 389 i 619),
+      l)   posiadających w Rzeczypospolitej Polskiej zezwolenie na pobyt czasowy udzielone w związku z okolicznościami,
+           o których mowa w art. 127, art. 137a lub art. 186 ust. 1 pkt 3 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach
+           (Dz. U. z 2024 r. poz. 769, 1222 i 1688 oraz z 2025 r. poz. 619),
+      m) posiadających w Rzeczypospolitej Polskiej zezwolenie na pobyt czasowy udzielone w związku z okolicznościami,
+         o których mowa w art. 144, art. 151 ust. 1, art. 151b ust. 1, art. 159 ust. 1, art. 160, art. 161, art. 161b ust. 1,
+         art. 176, art. 186 ust. 1 pkt 1, 2, 4, 5 i 7 lub art. 187 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, lub posiada-
+         jących wizę krajową w celu odbycia studiów pierwszego stopnia, studiów drugiego stopnia lub jednolitych studiów
+         magisterskich albo kształcenia się w szkole doktorskiej, z adnotacją „student”, lub wizę krajową w celu prowa-
+         dzenia badań naukowych lub prac rozwojowych,
+      n) posiadających zezwolenie na pobyt czasowy, o którym mowa w art. 114 ust. 1 albo 1a, albo art. 126 ust. 1 ustawy
+         z dnia 12 grudnia 2013 r. o cudzoziemcach, albo wizę wydaną w celu wykonywania pracy na terytorium Rzeczy-
+         pospolitej Polskiej,
+      o) posiadających w Rzeczypospolitej Polskiej wizę wydaną w celu, o którym mowa w art. 60 ust. 1 pkt 5a ustawy
+         z dnia 12 grudnia 2013 r. o cudzoziemcach, lub zezwolenie na pobyt czasowy, o którym mowa w art. 185a ustawy
+         z dnia 12 grudnia 2013 r. o cudzoziemcach, albo przebywających na terytorium Rzeczypospolitej Polskiej w ramach
+         ruchu bezwizowego w związku z wnioskiem wpisanym do ewidencji wniosków w sprawie pracy sezonowej,
+         o której mowa w art. 73 ust. 2 ustawy z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy
+         cudzoziemcom na terytorium Rzeczypospolitej Polskiej (Dz. U. poz. 621),
+      p) posiadających w Rzeczypospolitej Polskiej wizę wydaną w celu, o którym mowa w art. 60 ust. 1 pkt 23 ustawy
+         z dnia 12 grudnia 2013 r. o cudzoziemcach, lub zezwolenie na pobyt czasowy udzielone w związku z okolicznościami,
+         o których mowa w art. 186 ust. 1 pkt 9 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach;
+3)   Zmiany wymienionej umowy zostały ogłoszone w Dz. Urz. UE L 187 z 12.06.2020, str. 12, Dz. Urz. UE L 225 z 14.07.2020, str. 53,
+     Dz. Urz. UE L 443 z 30.12.2020, str. 3, Dz. Urz. UE L 43 z 24.02.2022, str. 84, Dz. Urz. UE L 131 z 05.05.2022, str. 9, Dz. Urz.
+     UE L 102 z 17.04.2023, str. 61, Dz. Urz. UE L 184 z 21.07.2023, str. 109, Dz. Urz. UE L 2023/2471 z 07.11.2023, str. 1 oraz Dz. Urz.
+     UE L 2024/2134 z 07.08.2024.
+3)   cudzoziemców towarzyszących na terytorium Rzeczypospolitej Polskiej cudzoziemcowi, o którym mowa w pkt 2
+     lit. a–c, jako członkowie rodziny w rozumieniu art. 2 pkt 4 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium
+     Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europej-
+     skiej i członków ich rodzin (Dz. U. z 2024 r. poz. 633 i 1688 oraz z 2025 r. poz. 619);
+4)   cudzoziemców – członków rodzin cudzoziemców, o których mowa w pkt 2 lit. g–j;
+5)   cudzoziemców – członków rodzin obywateli polskich, którzy uzyskali zezwolenie na pobyt czasowy na terytorium
+     Rzeczypospolitej Polskiej albo po złożeniu wniosku o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt
+     stały lub zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej przebywają na terytorium Rzeczypospolitej
+     Polskiej na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach
+     lub na podstawie umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku o udziele-
+     nie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, jeżeli bezpośrednio przed złożeniem wniosku
+     o udzielenie zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długotermino-
+     wego Unii Europejskiej posiadali zezwolenie na pobyt czasowy;
+6)   cudzoziemców towarzyszących na terytorium Rzeczypospolitej Polskiej obywatelowi polskiemu jako członek rodziny
+     w rozumieniu art. 2 pkt 4 lit. b ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie
+     oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin.
+
+[Art. 2 pkt 1 ("bezrobotny"; lit. d-e in their original wording, changed from 14.10.2026: see the end)]
+     Art. 2. Ilekroć w ustawie jest mowa o:
+1)   bezrobotnym – oznacza to osobę, o której mowa w art. 1 ust. 3 pkt 1 lub pkt 2 lit. a–l, n oraz p, lub osobę, o której
+     mowa w art. 1 ust. 3 pkt 3, 5 lub 6, niezatrudnioną i niewykonującą innej pracy zarobkowej, nieuczącą się w szkole,
+     z wyjątkiem osoby uczącej się w szkole dla dorosłych, branżowej szkole II stopnia w formie stacjonarnej lub zaocznej,
+     w szkole policealnej w formie stacjonarnej lub zaocznej, lub przystępującej do egzaminów eksternistycznych z zakresu
+     programu nauczania szkoły dla dorosłych lub branżowej szkoły II stopnia, lub kształcącej się na studiach niestacjonar-
+     nych, lub uczącej się w szkole artystycznej realizującej wyłącznie kształcenie artystyczne, niemającą stałego źródła
+     dochodu, zdolną i gotową do podjęcia zatrudnienia w pełnym wymiarze czasu pracy obowiązującym w danym zawodzie
+     lub w danej służbie albo innej pracy zarobkowej albo jeżeli jest osobą niepełnosprawną, zdolną i gotową do podjęcia
+     zatrudnienia co najmniej w połowie tego wymiaru czasu pracy, zarejestrowaną w powiatowym urzędzie pracy, zwanym
+     dalej „PUP”, jeżeli:
+     a)   ukończyła 18 lat,
+     b) nie ukończyła 60 lat – kobieta lub 65 lat – mężczyzna,
+     c)   nie jest wpisana do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, zwanej dalej „CEIDG”, jako
+          prowadząca działalność gospodarczą albo
+     d) zgłosiła do CEIDG wniosek o zawieszenie wykonywania działalności gospodarczej i okres zawieszenia nadal
+        trwa, albo
+     e)   we wniosku o wpis do CEIDG określiła dzień podjęcia działalności gospodarczej i nie upłynął jeszcze okres do,
+          określonego we wniosku o wpis, dnia podjęcia tej działalności,
+     f)   nie jest osobą tymczasowo aresztowaną lub nie odbywa kary pozbawienia wolności, z wyjątkiem kary pozbawienia
+          wolności odbywanej poza zakładem karnym w systemie dozoru elektronicznego,
+     g) nie nabyła na podstawie ustawy z dnia 12 marca 2004 r. o pomocy społecznej (Dz. U. z 2024 r. poz. 1283 i 1572
+        oraz z 2025 r. poz. 620) prawa do zasiłku stałego,
+     h) nie jest członkiem zarządu, prokurentem, członkiem rady nadzorczej lub likwidatorem spółki kapitałowej w rozu-
+        mieniu ustawy z dnia 15 września 2000 r. – Kodeks spółek handlowych (Dz. U. z 2024 r. poz. 18 i 96),
+     i)   nie jest prokurentem lub pełnomocnikiem przedsiębiorcy będącego osobą fizyczną, prowadzącego działalność gospo-
+          darczą rozumieniu ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców (Dz. U. z 2024 r. poz. 236, 1222 i 1871
+          oraz z 2025 r. poz. 222),
+     j)   nie jest wspólnikiem spółki jawnej, partnerem lub członkiem zarządu w spółce partnerskiej, komplementariuszem
+          w spółce komandytowej, komplementariuszem lub członkiem rady nadzorczej w spółce komandytowo-akcyjnej,
+          prokurentem lub likwidatorem spółki osobowej w rozumieniu ustawy z dnia 15 września 2000 r. – Kodeks spółek
+          handlowych,
+     k) nie jest dyrektorem w radzie dyrektorów, o której mowa w art. 30073 ustawy z dnia 15 września 2000 r. – Kodeks
+        spółek handlowych,
+     l)   nie podlega, na podstawie odrębnych przepisów, obowiązkowi ubezpieczeń społecznych, z wyjątkiem ubezpie-
+          czenia społecznego rolników,
+     m) nie podlega obowiązkowemu ubezpieczeniu na wypadek bezrobocia lub obowiązkowym ubezpieczeniom społecz-
+        nym w państwach wymienionych w art. 1 ust. 3 pkt 2 lit. a–d,
+     n) nie prowadzi działalności gospodarczej w innym niż Rzeczpospolita Polska państwie na podstawie zgłoszenia do
+        rejestru lub bez takiego zgłoszenia, jeżeli prawo danego państwa takiego zgłoszenia nie wymaga;
+
+[Art. 2 pkt 24 ("poszukujący pracy")]
+24) poszukującym pracy – oznacza to osobę, o której mowa w art. 1 ust. 3, która ukończyła 18 lat i poszukuje zatrudnienia,
+    innej pracy zarobkowej lub innej formy pomocy, zarejestrowaną w PUP;
+
+[Art. 2 pkt 42 ("stałe źródło dochodu")]
+42) stałym źródle dochodu – oznacza to:
+     a)   nabycie prawa do emerytury lub renty z tytułu niezdolności do pracy, renty szkoleniowej, renty socjalnej, renty
+          rodzinnej w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę lub świadczenia pieniężnego,
+          o którym mowa w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny
+          funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza
+          służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia (Dz. U. poz. 658), zwanego dalej „świadcze-
+          niem pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych”, lub renty inwa-
+          lidzkiej przyznawanej na podstawie ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy
+          Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby
+          Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby
+          Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin
+          (Dz. U. z 2024 r. poz. 1121, 1243, 1562 i 1871) lub ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym
+          żołnierzy zawodowych oraz ich rodzin (Dz. U. z 2025 r. poz. 305),
+     b) nabycie po ustaniu zatrudnienia, innej pracy zarobkowej, zaprzestaniu prowadzenia pozarolniczej działalności,
+        prawa do nauczycielskiego świadczenia kompensacyjnego, zasiłku przedemerytalnego, świadczenia przedemerytal-
+        nego, świadczenia rehabilitacyjnego, zasiłku chorobowego, zasiłku macierzyńskiego lub zasiłku w wysokości zasiłku
+        macierzyńskiego,
+     c)   nabycie prawa do emerytury albo renty z tytułu niezdolności do pracy, przyznanego przez zagraniczny organ emerytalny
+          lub rentowy, w wysokości co najmniej najniższej emerytury albo renty z tytułu niezdolności do pracy, o których
+          mowa w ustawie z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych,
+     d) uzyskiwanie miesięcznie przychodu w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę,
+        z wyłączeniem przychodów uzyskanych z tytułu odsetek lub innych przychodów od środków pieniężnych zgro-
+        madzonych na rachunkach bankowych lub rachunkach członka spółdzielczej kasy oszczędnościowo-kredytowej,
+     e)   nabycie na podstawie ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2024 r. poz. 323, 858,
+          1615 i 1871 oraz z 2025 r. poz. 619 i 620) prawa do świadczenia pielęgnacyjnego lub specjalnego zasiłku opiekuń-
+          czego,
+     f)   nabycie na podstawie ustawy z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów (Dz. U. z 2024 r.
+          poz. 246) prawa do zasiłku dla opiekuna,
+     g) pobieranie po ustaniu zatrudnienia świadczenia szkoleniowego, o którym mowa w art. 217 ust. 6;
+
+[Art. 31 (the starosta decides; the voivode is the higher authority)]
+      Art. 31. W postępowaniu administracyjnym w sprawach związanych z wykonywaniem zadań wynikających z ustawy,
+jeżeli ustawa nie stanowi inaczej:
+1)   organem właściwym jest starosta;
+2)   organem wyższego stopnia jest wojewoda.
+
+[Art. 38 ust. 2 (a removal of status is enforced at once)]
+     2. Decyzja o pozbawieniu statusu bezrobotnego oraz decyzja o pozbawieniu statusu bezrobotnego i prawa do zasiłku
+podlega natychmiastowemu wykonaniu.
+
+[Art. 43 ust. 1-5 (the individual account on praca.gov.pl)]
+     Art. 43. 1. Indywidualne konto w systemie teleinformatycznym, o którym mowa w art. 26 ust. 1 pkt 2, zwane dalej
+„indywidualnym kontem”, może założyć:
+1)   osoba fizyczna:
+     a)    zamierzająca dokonać rejestracji jako bezrobotny albo poszukujący pracy oraz ubiegająca się o formę pomocy lub
+           korzystająca z formy pomocy,
+     b) osoba niezarejestrowana, w tym osoba bierna zawodowo;
+2)   pracodawca, przedsiębiorca, agencja zatrudnienia lub inny podmiot ubiegający się o formy pomocy lub korzystający
+     z form pomocy;
+3)   podmiot ubiegający się o wpis do rejestru agencji zatrudnienia lub o akredytację.
+       2. Starosta zapewnia w siedzibie PUP możliwość założenia indywidualnego konta, a także pomoc przy jego zakładaniu.
+    3. Starosta może pełnić funkcję punktu potwierdzającego, o którym mowa w art. 20c ust. 1 pkt 1 ustawy z dnia 17 lutego
+2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne.
+       4. Założenie i dostęp do indywidualnego konta wymagają uwierzytelnienia:
+1)     zgodnie z metodami wymienionymi w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności pod-
+       miotów realizujących zadania publiczne albo
+2)     z wykorzystaniem certyfikatu podstawowego, o którym mowa w art. 2 pkt 2 ustawy z dnia 26 maja 2023 r. o aplikacji
+       mObywatel (Dz. U. z 2024 r. poz. 1275 i 1717).
+       5. Zakładając indywidualne konto:
+1)     osoba fizyczna, o której mowa w ust. 1 pkt 1, podaje następujące dane:
+       a)   imię (imiona) i nazwisko,
+       b) miejsce zamieszkania,
+       c)   numer PESEL, a w przypadku jego braku – niepowtarzalny identyfikator nadany przez państwo członkowskie Unii
+            Europejskiej dla celów transgranicznej identyfikacji, o którym mowa w rozporządzeniu wykonawczym Komisji
+            (UE) 2015/1501 z dnia 8 września 2015 r. w sprawie ram interoperacyjności na podstawie art. 12 ust. 8 rozporzą-
+            dzenia Parlamentu Europejskiego i Rady (UE) nr 910/2014 w sprawie identyfikacji elektronicznej i usług zaufania
+            w odniesieniu do transakcji elektronicznych na rynku wewnętrznym (Dz. Urz. UE L 235 z 09.09.2015, str. 1,
+            z późn. zm.10)), albo rodzaj, serię i numer dokumentu potwierdzającego tożsamość;
+2)     osoba fizyczna, o której mowa w ust. 1 pkt 1, może podać adres elektroniczny i numer telefonu;
+3)     pracodawca, przedsiębiorca, agencja zatrudnienia lub inny podmiot, o którym mowa w ust. 1 pkt 2 i 3, podaje nastę-
+       pujące dane:
+       a)   numer identyfikacji podatkowej (NIP),
+       b) numer identyfikacyjny REGON,
+       c)   nazwę lub firmę,
+       d) adres siedziby,
+       e)   adres elektroniczny,
+       f)   numer telefonu.
+
+[Art. 44 (applications through the account; signatures)]
+      Art. 44. 1. W przypadku założenia indywidualnego konta, wnioski, w tym wnioski o udzielenie formy pomocy, wyjaśnie-
+nia, odwołania i zażalenia wnosi się za pośrednictwem indywidualnego konta. Złożenie wniosku, w tym wniosku o udzielenie
+formy pomocy, wyjaśnienia, odwołania i zażalenia za pośrednictwem indywidualnego konta następuje w chwili jego zareje-
+strowania wysłanego z tego konta.
+10)   Zmiana wymienionego rozporządzenia została ogłoszona w Dz. Urz. UE L 28 z 04.02.2016, str. 18.
+      2. Jeżeli nie ma możliwości wniesienia wniosku, w tym wniosku o udzielenie formy pomocy, wyjaśnienia, odwołania
+i zażalenia za pośrednictwem indywidualnego konta, składa się go w PUP:
+1)   w którym bezrobotny albo poszukujący pracy jest zarejestrowany;
+2)   w którym pracodawca, przedsiębiorca, agencja zatrudnienia lub inny podmiot zamierza ubiegać się o formy pomocy
+     lub korzysta z formy pomocy;
+3)   miejsca zamieszkania osoby niezarejestrowanej, w tym osoby biernej zawodowo.
+     3. Wnioski, w tym wnioski o udzielenie formy pomocy, wyjaśnienia, odwołania, zażalenia albo cyfrowe odwzorowa-
+nia dokumentów dołączane w systemie teleinformatycznym są podpisywane kwalifikowanym podpisem elektronicznym,
+podpisem zaufanym albo podpisem osobistym.
+
+[Art. 45 ust. 1-3 (letters on the account; delivered when opened or after 14 days)]
+     Art. 45. 1. W przypadku założenia indywidualnego konta, decyzje, postanowienia, zawiadomienia, wezwania, infor-
+macje, umowy oraz inne pisma, dotyczące w szczególności statusu bezrobotnego, zasiłku, stypendium, dodatku aktywiza-
+cyjnego, form pomocy albo agencji zatrudnienia są doręczane w postaci elektronicznej na indywidualne konto. Informacja
+o umieszczeniu na indywidualnym koncie decyzji, postanowienia, zawiadomienia, wezwania, informacji, umowy oraz innego
+pisma jest przesyłana na wskazany na koncie adres elektroniczny i może być przesłana na numer telefonu.
+     2. W przypadku założenia indywidualnego konta, decyzje, postanowienia, zawiadomienia, wezwania, informacje,
+umowy i inne pisma opatruje się kwalifikowanym podpisem elektronicznym, podpisem zaufanym, podpisem osobistym albo
+kwalifikowaną pieczęcią urzędu pracy oraz zamieszcza się w nich imię, nazwisko i stanowisko służbowe osoby upoważnio-
+nej do ich wydania.
+     3. Decyzje, postanowienia, zawiadomienia, wezwania, informacje i inne pisma uznaje się za doręczone:
+1)   w momencie ich odbioru na indywidualnym koncie;
+2)   po upływie 14 dni od dnia umieszczenia decyzji, postanowienia, zawiadomienia, wezwania, informacji lub innego pisma
+     na indywidualnym koncie – w przypadku ich nieodebrania.
+
+[Art. 55 (how to register; the data; the documents)]
+     Art. 55. 1. Rejestracja bezrobotnych albo poszukujących pracy następuje na wniosek.
+     2. W celu dokonania rejestracji osoba ubiegająca się o zarejestrowanie jako bezrobotny lub poszukujący pracy:
+1)   składa wniosek o rejestrację jako bezrobotny albo poszukujący pracy za pośrednictwem formularza elektronicznego
+     udostępnionego w systemie teleinformatycznym, o którym mowa w art. 26 ust. 1 pkt 2, albo
+2)   zgłasza się do PUP właściwego ze względu na miejsce zamieszkania.
+     3. Wniosek o rejestrację jako bezrobotny zawiera następujące dane:
+1)   imię (imiona) i nazwisko;
+2)   obywatelstwo albo obywatelstwa;
+3)   numer PESEL, a w przypadku jego braku – datę i miejsce urodzenia, płeć, rodzaj, serię i numer dokumentu potwier-
+     dzającego tożsamość;
+4)   stan cywilny oraz informację o posiadaniu przez małżonka statusu bezrobotnego albo poszukującego pracy;
+5)   liczbę dzieci na utrzymaniu, daty ich urodzenia oraz informację o samotnym wychowywaniu dzieci;
+6)   informację o posiadaniu Karty Dużej Rodziny, o której mowa w art. 1 ust. 1 ustawy z dnia 5 grudnia 2014 r. o Karcie
+     Dużej Rodziny;
+7)   informację o byciu opiekunem osoby niepełnosprawnej;
+8)   adres zamieszkania oraz adres do doręczeń, a także adres elektroniczny lub numer telefonu lub inne dane kontaktowe,
+     jeżeli posiada;
+9)   wykształcenie;
+10) ukończone szkoły;
+11) zawody wyuczone, zawody wykonywane lub kwalifikacje cząstkowe w rozumieniu art. 2 pkt 9 ustawy z dnia 22 grudnia
+    2015 r. o Zintegrowanym Systemie Kwalifikacji (Dz. U. z 2024 r. poz. 1606);
+12) zawód, w którym osoba ubiegająca się o zarejestrowanie jako bezrobotny chciałaby pracować i ma ku temu odpowied-
+    nie kompetencje i kwalifikacje potwierdzone stosownymi dokumentami lub udokumentowaną ciągłość pracy w okresie
+    minimum 3 miesięcy;
+13) znajomość języków obcych wraz z poziomem znajomości tych języków;
+14) posiadane uprawnienia i ukończone szkolenia zwiększające szanse na podjęcie i utrzymanie zatrudnienia, innej pracy
+    zarobkowej lub działalności gospodarczej;
+15) rodzaj i stopień niepełnosprawności, jeżeli dotyczy;
+16) okresy zatrudnienia z podaniem nazwy pracodawcy, zajmowanego stanowiska pracy, wymiaru czasu pracy i podstawy
+    wykonywania pracy;
+17) okresy wykonywania innej pracy zarobkowej i opłacania składek na ubezpieczenia społeczne z tytułu prowadzenia
+    pozarolniczej działalności;
+18) inne okresy zaliczane do okresu uprawniającego do zasiłku, o których mowa w ustawie;
+19) sposób rozwiązania ostatniego stosunku pracy albo stosunku służbowego w zakresie koniecznym do ustalenia upraw-
+    nień do zasiłku;
+20) kierunki szkoleń, którymi osoba ubiegająca się o zarejestrowanie jako bezrobotny jest zainteresowana, ewentualne za-
+    interesowanie podjęciem zatrudnienia w państwach, o których mowa w art. 1 ust. 3 pkt 2 lit. a–c, oraz informacje o goto-
+    wości do wyrażenia zgody albo jej braku na przetwarzanie danych osobowych wraz z ich zakresem na podstawie prze-
+    pisów Unii Europejskiej o sieci EURES;
+21) fakty niezbędne do ustalenia możliwości przyznania statusu bezrobotnego, o których mowa w art. 2 pkt 1 ustawy;
+22) numer rachunku płatniczego, w celu przekazywania przyznanych świadczeń;
+23) informacje niezbędne do zgłoszenia bezrobotnego lub członka jego rodziny do ubezpieczenia zdrowotnego, o których
+    mowa w art. 77 ust. 2 i 3 ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środ-
+    ków publicznych;
+24) informację o posiadanym statusie, o którym mowa w art. 1 ust. 3 pkt 2–6 – w przypadku cudzoziemca.
+     4. Wniosek o rejestrację jako poszukujący pracy zawiera:
+1)   dane, o których mowa w ust. 3 pkt 1–5, 7–17, 20 i 22;
+2)   informację o posiadanym statusie, o którym mowa w art. 1 ust. 3 – w przypadku cudzoziemca.
+    5. Osoba ubiegająca się o zarejestrowanie jako bezrobotny albo poszukujący pracy w trybie określonym w ust. 2 pkt 1
+do wniosku o rejestrację jako bezrobotny albo poszukujący pracy dołącza odwzorowanie cyfrowe:
+1)   świadectw ukończenia szkoły, dyplomów lub innych dokumentów potwierdzających kwalifikacje lub zaświadczeń
+     o ukończeniu szkolenia;
+2)   świadectw pracy i innych dokumentów niezbędnych do ustalenia jej uprawnień przysługujących na podstawie przepisów
+     ustawy;
+3)   dokumentów stwierdzających przeciwwskazania do wykonywania określonych prac, jeżeli takie posiada.
+      6. Osoba ubiegająca się o zarejestrowanie jako bezrobotny albo poszukujący pracy w trybie określonym w ust. 2 pkt 2,
+do wniosku o rejestrację jako bezrobotny albo poszukujący pracy przedkłada do wglądu pracownikowi PUP dokonującemu
+rejestracji dowód osobisty, a w przypadku jego braku – inny dokument potwierdzający tożsamość oraz dokumenty, o których
+mowa w ust. 5.
+    7. Osoba niepełnosprawna ubiegająca się o zarejestrowanie jako bezrobotny albo poszukujący pracy w trybie określo-
+nym w:
+1)   ust. 2 pkt 1, oprócz dokumentów, o których mowa w ust. 1, dołącza do wniosku o rejestrację jako bezrobotny albo
+     poszukujący pracy odwzorowanie cyfrowe dokumentów potwierdzających rodzaj i stopień niepełnosprawności;
+2)   ust. 2 pkt 2 przedkłada do wglądu pracownikowi PUP dokonującemu rejestracji dokumenty potwierdzające rodzaj
+     i stopień niepełnosprawności.
+      8. Osoba przyjeżdżająca do Rzeczypospolitej Polskiej w celu poszukiwania pracy z państw wymienionych w art. 1
+ust. 3 pkt 2 lit. a–d, pobierająca zasiłek dla bezrobotnych w jednym z tych państw, zwana dalej „osobą pobierającą zasiłek
+dla bezrobotnych z innego państwa”, do wniosku o rejestrację jako poszukujący pracy dołącza oświadczenie o zachowaniu
+na terytorium Rzeczypospolitej Polskiej prawa do zasiłku dla bezrobotnych nabytego w państwie rejestracji jako bezrobotny.
+     9. Do wniosku o rejestrację jako bezrobotny dołącza się oświadczenia o:
+1)   zdolności i gotowości do podjęcia zatrudnienia w pełnym wymiarze czasu pracy obowiązującym w danym zawodzie
+     lub w danej służbie albo innej pracy zarobkowej albo jeżeli jest osobą niepełnosprawną, zdolną i gotową do podjęcia
+     zatrudnienia co najmniej w połowie tego wymiaru czasu pracy;
+2)   braku stałego źródła dochodu.
+     10. Informacje i dane przedstawione we wniosku o rejestrację jako bezrobotny albo poszukujący pracy składa się pod
+rygorem odpowiedzialności karnej za składanie fałszywych oświadczeń. Składający oświadczenie jest obowiązany do za-
+warcia w nim klauzuli następującej treści: „Jestem świadomy odpowiedzialności karnej za złożenie fałszywego oświadczenia.”.
+Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej za składanie fałszywych oświadczeń.
+     11. W zakresie niezbędnym do ustalenia statusu i uprawnień rejestrowanych osób pracownik PUP może sporządzać
+kopie dokumentów, o których mowa w ust. 5 i ust. 7 pkt 2, oraz wykonać odwzorowanie cyfrowe dokumentów przedłożo-
+nych w postaci papierowej.
+
+[Art. 57]
+     Art. 57. 1. Rejestracja bezrobotnego w urzędzie pracy wyłącza możliwość rejestracji tej osoby jako:
+1)   poszukującego pracy oraz posiadania takiego statusu przez okres posiadania statusu bezrobotnego;
+2)   bezrobotnego w innym urzędzie pracy.
+     2. Rejestracja poszukującego pracy w urzędzie pracy wyłącza możliwość rejestracji tej osoby jako poszukującego
+pracy w innym urzędzie pracy.
+
+[Art. 60 ust. 1-2]
+     Art. 60. 1. Bezrobotny:
+1)   jest informowany o:
+     a)   warunkach zachowania statusu bezrobotnego oraz o warunkach nabycia prawa do zasiłku, w tym niezbędnych do
+          tego dokumentach,
+     b) przysługujących mu prawach i obowiązkach wynikających z ustawy oraz o formach pomocy;
+2)   składa oświadczenie o zapoznaniu się z informacją, o której mowa w pkt 1.
+      2. Składający oświadczenie, o którym mowa w ust. 1 pkt 2, jest obowiązany do zawarcia w nim klauzuli następującej
+treści: „Jestem świadomy odpowiedzialności karnej za złożenie fałszywego oświadczenia. Oświadczam, że zostałem pouczony
+o warunkach zachowania statusu bezrobotnego oraz o przysługujących mi prawach i obowiązkach wynikających z ustawy
+oraz o formach pomocy określonych w ustawie.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej za
+składanie fałszywych oświadczeń.
+
+[Art. 61 ust. 1-3 (from which day)]
+     Art. 61. 1. Rejestracji osoby ubiegającej się o zarejestrowanie jako bezrobotny albo poszukujący pracy dokonuje się
+z dniem, w którym osoba:
+1)   wniosła kompletny wniosek o dokonanie rejestracji jako bezrobotny albo poszukujący pracy – w przypadku określo-
+     nym w art. 55 ust. 2 pkt 1;
+2)   zgłosiła się do PUP – po poświadczeniu przez nią własnoręcznym podpisem przekazanych przez nią danych i złożeniu,
+     w obecności pracownika PUP oświadczeń, o których mowa w art. 55 ust. 9 i art. 60 ust. 1 pkt 2 – w przypadku określo-
+     nym w art. 55 ust. 2 pkt 2.
+    2. Rejestracji osoby ubiegającej się o zarejestrowanie jako bezrobotny albo poszukujący pracy nie dokonuje się w przy-
+padku:
+1)   odmowy przekazania wymaganych danych lub
+2)   odmowy poświadczenia przekazanych danych i oświadczenia o prawdziwości przekazanych danych oraz o zapoznaniu się
+     z warunkami zachowania statusu, w sposób określony w ust. 1 pkt 2, lub
+3)   nieopatrzenia wniosku o dokonanie rejestracji, załączonych do niego dokumentów i oświadczenia o prawdziwości
+     przekazanych danych oraz o zapoznaniu się z warunkami zachowania statusu:
+     a)   jednym z podpisów, o których mowa w art. 44 ust. 3 – w przypadku wniosku o rejestrację jako bezrobotny albo
+          poszukujący pracy złożonego w trybie określonym w art. 55 ust. 2 pkt 1,
+     b) podpisem własnoręcznym – w przypadku wniosku o rejestrację jako bezrobotny albo poszukujący pracy złożo-
+        nego w trybie określonym w art. 55 ust. 2 pkt 2.
+      3. W szczególnie uzasadnionych przypadkach starosta, mając na uwadze obiektywne okoliczności lub przeszkody
+uniemożliwiające przedłożenie kompletu dokumentów oraz przekazanie wymaganych danych, może wyrazić zgodę na re-
+jestrację jako bezrobotnego albo poszukującego pracy osoby nieposiadającej kompletu dokumentów lub która nie przekazała
+wymaganych danych.
+
+[Art. 62 ust. 1-3 (changes within 7 days)]
+     Art. 62. 1. Bezrobotny albo poszukujący pracy zawiadamia PUP:
+1)   za pośrednictwem formularza elektronicznego, udostępnionego w sposób określony w art. 55 ust. 2 pkt 1 albo
+2)   osobiście w PUP, w którym jest zarejestrowany
+– o wszelkich zmianach w danych przekazanych w trakcie rejestracji oraz w złożonych oświadczeniach, w terminie 7 dni
+od dnia ich wystąpienia.
+      2. W terminie 7 dni od dnia otrzymania zawiadomienia, o którym mowa w ust. 1, PUP wprowadza dane do systemu
+teleinformatycznego, o którym mowa w art. 26 ust. 1 pkt 2.
+     3. W przypadku gdy bezrobotny albo poszukujący pracy zamierza zmienić miejsce zamieszkania, czego skutkiem jest
+zmiana właściwości PUP, zawiadamia o tym PUP, w którym jest zarejestrowany, i wskazuje PUP właściwy ze względu na
+planowane miejsce zamieszkania. Przepis ust. 1 stosuje się odpowiednio.
+
+[Art. 63 (3 years; again after 90 days)]
+      Art. 63. 1. Status bezrobotnego przysługuje przez okres 3 lat od dnia rejestracji, z wyjątkiem sytuacji, w których zgodnie
+z ustawą następuje utrata statusu bezrobotnego.
+    2. Okres, o którym mowa w ust. 1, ulega przedłużeniu o czas niezbędny do zakończenia przez bezrobotnego formy
+pomocy.
+     3. W przypadku urodzenia dziecka przez kobietę w okresie, o którym mowa w ust. 1, okres ten ulega przedłużeniu
+o czas, przez który przysługiwałby jej, zgodnie z odrębnymi przepisami, zasiłek macierzyński.
+    4. Ponowne nabycie statusu bezrobotnego może nastąpić w wyniku ponownej rejestracji, po upływie 90 dni od dnia
+upływu okresu, o którym mowa w ust. 1–3. W przypadku ponownej rejestracji okres, o którym mowa w ust. 1, liczy się od
+początku.
+
+[Art. 65 (removal of status)]
+     Art. 65. 1. Starosta pozbawia statusu bezrobotnego bezrobotnego, który:
+1)   nie spełnia warunków, o których mowa w art. 2 pkt 1, oraz w stosunku do którego upłynął okres, o którym mowa
+     w art. 63 ust. 1–3; pozbawienie statusu bezrobotnego następuje z dniem, w którym bezrobotny przestał spełniać warunki,
+     o których mowa w art. 2 pkt 1, albo z dniem, w którym upłynął okres, o którym mowa w art. 63 ust. 1–3;
+2)   z własnej winy po skierowaniu przez PUP lub zawarciu umowy nie podjął albo przerwał realizację formy pomocy,
+     chyba że powodem niepodjęcia albo przerwania realizacji było podjęcie zatrudnienia, innej pracy zarobkowej lub działal-
+     ności gospodarczej; pozbawienie statusu bezrobotnego następuje od następnego dnia po dniu skierowania lub zawarciu
+     umowy, albo od dnia przerwania realizacji, na okres 90 dni;
+3)   odmówił bez uzasadnionej przyczyny propozycji prac społecznie użytecznych; pozbawienie statusu bezrobotnego na-
+     stępuje od dnia odmowy na okres 90 dni;
+4)   otrzymał środki z Funduszu Pracy, Państwowego Funduszu Rehabilitacji Osób Niepełnosprawnych lub inne środki
+     publiczne na podjęcie działalności gospodarczej lub rolniczej lub na założenie lub przystąpienie do spółdzielni socjal-
+     nej; pozbawienie statusu bezrobotnego następuje od następnego dnia po dniu otrzymania środków;
+5)   otrzymał pożyczkę ze środków publicznych na podjęcie działalności gospodarczej lub rolniczej, z wyłączeniem
+     pożyczki, o której mowa w art. 172 ust. 1 pkt 1 lit. a; pozbawienie statusu bezrobotnego następuje od następnego dnia
+     po dniu otrzymania pożyczki;
+6)   rozpoczął realizację indywidualnego programu zatrudnienia socjalnego, o którym mowa w art. 199 ust. 1, lub podpisał
+     kontrakt socjalny, o którym mowa w art. 198 pkt 1 lit. b; pozbawienie statusu bezrobotnego następuje na okres 90 dni
+     od dnia rozpoczęcia realizacji indywidualnego programu zatrudnienia socjalnego lub podpisania kontraktu socjalnego;
+7)   pozostaje niezdolny do pracy wskutek choroby lub przebywania w zakładzie lecznictwa odwykowego przez nieprzerwany
+     okres 180 dni, przy czym za okres nieprzerwany uważa się również okresy niezdolności do pracy wskutek choroby
+     oraz przebywania w zakładzie lecznictwa odwykowego w sytuacji, gdy każda kolejna przerwa między okresami nie-
+     zdolności do pracy wynosi mniej niż 30 dni kalendarzowych; pozbawienie statusu bezrobotnego następuje z upływem
+     ostatniego dnia wskazanego okresu 180-dniowego;
+8)   nie przedstawił zaświadczenia o niezdolności do pracy wskutek choroby, o którym mowa w art. 239 ust. 2; pozbawie-
+     nie statusu bezrobotnego następuje z pierwszym dniem niezdolności do pracy;
+9)   złożył wniosek o pozbawienie statusu bezrobotnego; pozbawienie statusu bezrobotnego następuje od dnia złożenia
+     wniosku;
+10) nie zawiadomił PUP o zamierzonym pobycie za granicą, o którym mowa w art. 229, lub pobyt ten przekroczył okres
+    30 dni; pozbawienie statusu bezrobotnego następuje odpowiednio z dniem pierwszego dnia pobytu za granicą lub
+    z upływem ostatniego dnia wskazanego okresu 30-dniowego na okres 90 dni;
+11) nie utrzymuje kontaktu z PUP co najmniej raz na 90 dni w celu potwierdzenia zainteresowania pomocą określoną
+    w ustawie; pozbawienie statusu bezrobotnego następuje po upływie 90 dni od dnia ostatniego kontaktu z PUP na okres
+    90 dni;
+12) odmówił udziału w przygotowaniu indywidualnego planu działania, zwanego dalej „IPD”, lub z własnej winy przerwał
+    jego realizację; pozbawienie statusu bezrobotnego następuje od dnia odmowy albo od dnia przerwania jego realizacji,
+    na okres 90 dni.
+     2. W przypadku gdy bezrobotnemu przyznano zasiłek, w tym na podstawie przepisów o koordynacji systemów zabez-
+pieczenia społecznego państw, o których mowa w art. 1 ust. 3 pkt 2 lit. a–d, lub państw, z którymi Rzeczpospolita Polska
+zawarła dwustronne umowy międzynarodowe o zabezpieczeniu społecznym, decyzja starosty o pozbawieniu statusu bezrobot-
+nego oznacza także pozbawienie prawa do tego zasiłku.
+
+[Art. 67]
+     Art. 67. Bezrobotny zawiadamia PUP o okolicznościach powodujących utratę statusu bezrobotnego w terminie 7 dni
+od daty ich wystąpienia.
+
+[Art. 68 ust. 1 (a job seeker's status)]
+     Art. 68. 1. Starosta pozbawia statusu poszukującego pracy poszukującego pracy, który:
+1)   nie utrzymuje kontaktu z PUP co najmniej raz na 90 dni w celu potwierdzenia zainteresowania pomocą określoną
+     w ustawie;
+2)   z własnej winy po skierowaniu przez PUP lub zawarciu umowy nie podjął albo przerwał realizację formy pomocy,
+     chyba że powodem niepodjęcia albo przerwania realizacji było podjęcie zatrudnienia, innej pracy zarobkowej lub działal-
+     ności gospodarczej;
+3)   pobierał w Rzeczypospolitej Polskiej, na zasadach określonych w oparciu o przepisy o koordynacji systemów zabez-
+     pieczenia społecznego zasiłek nabyty w państwach, o których mowa w art. 1 ust. 3 pkt 2 lit. a–d, oraz opuścił teryto-
+     rium Rzeczypospolitej Polskiej lub został pozbawiony tego zasiłku przez właściwą instytucję tego państwa;
+4)   złożył wniosek o pozbawienie statusu poszukującego pracy.
+
+[Art. 218 ust. 1 (365 days in 18 months)]
+     Art. 218. 1. Prawo do zasiłku przysługuje bezrobotnemu za każdy dzień kalendarzowy od dnia zarejestrowania się
+w PUP, z wyjątkiem art. 219 i art. 220, jeżeli w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania,
+łącznie przez okres co najmniej 365 dni:
+1)   był zatrudniony i osiągał wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego istnieje
+     obowiązek opłacania składki na Fundusz Pracy, z wyjątkiem zwolnienia ze składki kategorii osób, o których mowa
+     w art. 261–265; w okresie tym nie uwzględnia się okresów urlopów bezpłatnych trwających łącznie dłużej niż 30 dni;
+2)   wykonywał pracę na podstawie umowy o pracę nakładczą i osiągał z tego tytułu dochód w wysokości co najmniej
+     minimalnego wynagrodzenia za pracę;
+3)   świadczył usługi na podstawie umów cywilnoprawnych, w tym umowy agencyjnej, umowy zlecenia, umowy o dzieło
+     lub umowy o świadczenie usług, do której stosuje się odpowiednio przepisy o zleceniu, albo współpracował przy wy-
+     konywaniu tych umów, za które powinny być opłacone składki na ubezpieczenia społeczne i Fundusz Pracy, z wyjąt-
+     kiem art. 261, przy czym podstawę wymiaru tych składek stanowiła kwota co najmniej minimalnego wynagrodzenia
+     za pracę w przeliczeniu na okres pełnego miesiąca;
+4)   opłacał składki na ubezpieczenia społeczne i Fundusz Pracy z tytułu prowadzenia pozarolniczej działalności, z wyjąt-
+     kiem art. 261, przy czym podstawę wymiaru tych składek stanowiła kwota co najmniej minimalnego wynagrodzenia
+     za pracę;
+5)   wykonywał pracę w okresie tymczasowego aresztowania lub odbywania kary pozbawienia wolności, przy czym pod-
+     stawę wymiaru składek na ubezpieczenia społeczne i Fundusz Pracy stanowiła kwota co najmniej minimalnego wyna-
+     grodzenia za pracę;
+6)   wykonywał pracę w rolniczej spółdzielni produkcyjnej, spółdzielni kółek rolniczych lub spółdzielni usług rolniczych,
+     będąc członkiem tej spółdzielni, przy czym podstawę wymiaru składek na ubezpieczenia społeczne i Fundusz Pracy
+     stanowiła kwota co najmniej minimalnego wynagrodzenia za pracę;
+7)   opłacał składkę na Fundusz Pracy w związku z pracą za granicą u pracodawcy zagranicznego w państwie niewymie-
+     nionym w art. 1 ust. 3 pkt 2 lit. a–d, w wysokości 9,75 % przeciętnego wynagrodzenia za każdy miesiąc zatrudnienia;
+8)   był zatrudniony za granicą i przybył do Rzeczypospolitej Polskiej jako repatriant;
+9)   był zatrudniony, pełnił służbę lub wykonywał inną pracę zarobkową i osiągał wynagrodzenie lub dochód, od którego
+     istnieje obowiązek opłacania składki na Fundusz Pracy.
+
+[Art. 219 ust. 1 (no benefit after quitting)]
+     Art. 219. 1. Prawo do zasiłku nie przysługuje bezrobotnemu, który przed rejestracją w PUP:
+1)   rozwiązał ostatni stosunek pracy lub stosunek służbowy za wypowiedzeniem, chyba że rozwiązanie stosunku pracy lub
+     stosunku służbowego za wypowiedzeniem nastąpiło z powodu zmiany miejsca zamieszkania lub pracownik rozwiązał
+     umowę o pracę w trybie art. 55 § 1 i 11 ustawy z dnia 26 czerwca 1974 r. – Kodeks pracy;
+2)   spowodował rozwiązanie z własnej winy ostatniego stosunku pracy lub stosunku służbowego bez wypowiedzenia;
+3)   rozwiązał ostatni stosunek pracy zawarty na podstawie skierowania przez starostę do pracodawcy otrzymującego
+     w związku z tym skierowaniem środki z Funduszu Pracy.
+
+[Art. 220 ust. 1-2 (a later start: after a settlement, 90 days)]
+     Art. 220. 1. Prawo do zasiłku od dnia zarejestrowania w PUP nie przysługuje bezrobotnemu, który:
+1)   otrzymał odszkodowanie za skrócenie okresu wypowiedzenia umowy o pracę;
+2)   otrzymał przewidziane w odrębnych przepisach świadczenie w postaci jednorazowego ekwiwalentu pieniężnego za
+     urlop górniczy, jednorazowej odprawy socjalnej, zasiłkowej, pieniężnej po zasiłku socjalnym, jednorazowej odprawy
+     warunkowej lub odprawy pieniężnej bezwarunkowej;
+3)   odbywa odpłatną praktykę absolwencką i otrzymuje z tego tytułu miesięczne świadczenie pieniężne w wysokości prze-
+     kraczającej połowę minimalnego wynagrodzenia za pracę;
+4)   zarejestrował się jako bezrobotny w okresie, zgłoszonego do CEIDG, zawieszenia wykonywania działalności gospo-
+     darczej, jeśli okres prowadzenia tej działalności stanowi podstawę lub jest uwzględniany do nabycia prawa do zasiłku;
+5)   rozwiązał ostatni stosunek pracy lub stosunek służbowy na mocy porozumienia stron, chyba że porozumienie stron
+     nastąpiło z powodu zmiany miejsca zamieszkania lub z powodu upadłości, likwidacji pracodawcy lub zmniejszenia
+     zatrudnienia z przyczyn dotyczących zakładu pracy;
+6)   z własnej winy po skierowaniu przez PUP lub zawarciu umowy nie podjął albo przerwał realizację formy pomocy,
+     chyba że powodem niepodjęcia albo przerwania realizacji było podjęcie zatrudnienia, innej pracy zarobkowej lub działal-
+     ności gospodarczej;
+7)   odmówił bez uzasadnionej przyczyny propozycji prac społecznie użytecznych;
+8)   odmówił udziału w przygotowaniu IPD.
+     2. Bezrobotnemu, o którym mowa w ust. 1, spełniającemu warunki określone w art. 218 zasiłek przysługuje:
+1)   po upływie okresu, za który otrzymał ekwiwalent, odprawę lub odszkodowanie, o których mowa w ust. 1 pkt 1 i 2;
+2)   po zakończeniu odbywania praktyki absolwenckiej i otrzymywania z tego tytułu miesięcznie świadczenia pieniężnego
+     w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę;
+3)   po okresie 90 dni od dnia zarejestrowania się w PUP w przypadkach wymienionych w ust. 1 pkt 4 i 5;
+4)   po upływie okresu wskazanego w art. 65 ust. 1 pkt 2 – w przypadku wymienionym w ust. 1 pkt 6;
+5)   po upływie okresu wskazanego w art. 65 ust. 1 pkt 3 – w przypadku wymienionym w ust. 1 pkt 7;
+6)   po upływie okresu wskazanego w art. 65 ust. 1 pkt 12 – w przypadku wymienionym w ust. 1 pkt 8.
+
+[Art. 224 ust. 1-2 (the amounts in the act; indexed every 1 June: see the end)]
+     Art. 224. 1. Wysokość zasiłku wynosi:
+1)   1662,00 zł w okresie pierwszych 90 dni posiadania prawa do zasiłku;
+2)   1305,20 zł w okresie kolejnych dni posiadania prawa do zasiłku.
+     2. Bezrobotnemu, którego łączne okresy wymienione w art. 218 ust. 1, ust. 2 pkt 1, 2, 4 i 5 wynoszą co najmniej 20 lat,
+przysługuje zasiłek w wysokości 120 % kwoty zasiłku określonego w ust. 1.
+
+[Art. 225 ust. 1 (180 or 365 days)]
+     Art. 225. 1. Okres pobierania zasiłku wynosi:
+1)   180 dni albo
+2)   365 dni – dla bezrobotnych:
+     a)   niepełnosprawnych,
+     b) będących członkami rodzin wielodzietnych posiadających Kartę Dużej Rodziny, o której mowa w art. 1 ust. 1
+        ustawy z dnia 5 grudnia 2014 r. o Karcie Dużej Rodziny,
+     c)   powyżej 50. roku życia oraz posiadających jednocześnie co najmniej łącznie 20-letni okres wymieniony w art. 218
+          ust. 1, ust. 2 pkt 1, 2, 4 i 5,
+     d) którzy mają na utrzymaniu co najmniej jedno dziecko w wieku do 18. roku życia, a w przypadku dziecka niepełno-
+        sprawnego do 24. roku życia, jeżeli kontynuuje naukę w szkole lub uczelni i legitymuje się orzeczeniem o umiar-
+        kowanym albo znacznym stopniu niepełnosprawności, a małżonek bezrobotnego jest także bezrobotny i utracił
+        prawo do zasiłku z powodu upływu okresu jego pobierania po dniu nabycia prawa do zasiłku przez tego bezrobot-
+        nego,
+     e)   samotnie wychowujących co najmniej jedno dziecko w wieku do 18. roku życia, a w przypadku dziecka niepełno-
+          sprawnego do 24. roku życia, jeżeli kontynuuje naukę w szkole lub uczelni i legitymuje się orzeczeniem o umiar-
+          kowanym albo znacznym stopniu niepełnosprawności.
+
+[Art. 228 (indexation)]
+    Art. 228. 1. Zasiłek podlega corocznej waloryzacji z dniem 1 czerwca o średnioroczny wskaźnik cen towarów i usług
+konsumpcyjnych ogółem w poprzednim roku. Nie dokonuje się waloryzacji zasiłków, w przypadku gdy średnioroczny po-
+ziom cen towarów i usług konsumpcyjnych ogółem nie zmienił się lub uległ zmniejszeniu.
+     2. Średnioroczny wskaźnik cen towarów i usług konsumpcyjnych ogółem, o którym mowa w ust. 1, ustala się na pod-
+stawie komunikatu Prezesa Głównego Urzędu Statystycznego, ogłaszanego w Dzienniku Urzędowym Rzeczypospolitej Polskiej
+„Monitor Polski”, na podstawie art. 94 ust. 1 pkt 1 lit. a ustawy z dnia 17 grudnia 1998 r. o emeryturach i rentach z Fundu-
+szu Ubezpieczeń Społecznych.
+     3. Podwyższenie kwoty zasiłku w związku z waloryzacją, o której mowa w ust. 1, powoduje podwyższenie świadczeń,
+których wysokość uzależniona jest od wysokości zasiłku.
+    4. Minister właściwy do spraw pracy na podstawie komunikatu Prezesa Głównego Urzędu Statystycznego, o którym
+mowa w ust. 2, ogłasza, w drodze obwieszczenia w Dzienniku Urzędowym Rzeczypospolitej Polskiej „Monitor Polski”,
+kwoty zasiłków po waloryzacji.
+
+[Art. 229-232 (abroad up to 30 days; income and changes within 7 days)]
+     Art. 229. Bezrobotny, który w okresie nie dłuższym niż 30 dni przebywa za granicą, nie zostaje pozbawiony statusu
+bezrobotnego, jeżeli o zamierzonym pobycie za granicą zawiadomił PUP. Zasiłek za ten okres nie przysługuje. Całkowity
+okres zgłoszonego pobytu za granicą nie może przekroczyć łącznie 30 dni w okresie jednego roku kalendarzowego.
+     Art. 230. Bezrobotny, który nabył w Rzeczypospolitej Polskiej prawo do świadczeń z tytułu bezrobocia i udaje się do
+innego państwa, o którym mowa w art. 1 ust. 3 pkt 2 lit. a–d, w celu poszukiwania pracy, zachowuje prawo do tych świad-
+czeń na zasadach określonych w przepisach o koordynacji systemów zabezpieczenia społecznego.
+     Art. 231. 1. Bezrobotny przesyła do właściwego PUP:
+1)   oświadczenie o przychodach,
+2)   inne dokumenty niezbędne do ustalenia uprawnień do świadczeń przewidzianych w ustawie
+– w terminie 7 dni od dnia uzyskania tych przychodów, przy czym przepis art. 62 ust. 1 stosuje się odpowiednio.
+     2. Oświadczenie o przychodach jest składane pod rygorem odpowiedzialności karnej za składanie fałszywych oświad-
+czeń. Składający oświadczenie jest obowiązany do zawarcia w nim klauzuli następującej treści: „Jestem świadomy odpo-
+wiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności
+karnej za składanie fałszywych oświadczeń.
+     Art. 232. Bezrobotny zawiadamia PUP w terminie 7 dni o podjęciu zatrudnienia, innej pracy zarobkowej lub o złożeniu
+wniosku o wpis do CEIDG oraz o zaistnieniu innych okoliczności powodujących utratę prawa do zasiłku. Przepis art. 62
+stosuje się odpowiednio.
+
+[Art. 239 ust. 2 (illness: 2 and 7 days)]
+     2. Bezrobotny zawiadamia PUP o niezdolności do pracy w terminie 2 dni od dnia wystawienia zaświadczenia lekar-
+skiego, o którym mowa w art. 55 ust. 1 albo art. 55a ust. 6 albo 7 ustawy z dnia 25 czerwca 1999 r. o świadczeniach pienięż-
+nych z ubezpieczenia społecznego w razie choroby i macierzyństwa, oraz dostarcza do PUP wydruk zaświadczenia lekar-
+skiego albo zaświadczenie lekarskie, o których mowa w art. 55a ust. 6 albo 7 tej ustawy, w terminie 7 dni od dnia jego
+otrzymania.
+
+[Dz.U. 2025 poz. 1794 art. 10 (art. 1 ust. 3 pkt 5: adds art. 222a; from 27.04.2026, the date of the announcement M.P. 2026 poz. 370, its art. 19 pkt 2)]
+      Art. 10. W ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620 i 1746) w art. 1
+w ust. 3 w pkt 5 wyrazy „na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+ziemcach lub na podstawie umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku
+o udzielenie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej” zastępuje się wyrazami „na podstawie
+art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach”.
+
+[Dz.U. 2026 poz. 507 art. 11 (art. 2 pkt 1 lit. d-e, art. 232: CEIDG wording; from 14.10.2026, its art. 31 general date)]
+     Art. 11. W ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746 i 1794 oraz
+z 2026 r. poz. 451) wprowadza się następujące zmiany:
+1)   w art. 2 w pkt 1:
+     a)   w lit. d wyrazy „wniosek o zawieszenie wykonywania działalności gospodarczej” zastępuje się wyrazami „wnio-
+          sek o wpis informacji o zawieszeniu wykonywania działalności gospodarczej”,
+     b) w lit. e po wyrazach „wniosku o wpis do CEIDG” dodaje się wyrazy „z informacją o podjęciu działalności gospo-
+        darczej”;
+2)   w art. 232 po wyrazach „wniosku o wpis do CEIDG” dodaje się wyrazy „z informacją o podjęciu działalności gospo-
+     darczej”.
+
+[The act on foreigners, consolidated Dz.U. 2025 poz. 1079: the opening line of art. 144 ust. 1 (only the purpose is relied on)]
+     Art. 144. 1. Zezwolenia na pobyt czasowy w celu kształcenia się na studiach udziela się cudzoziemcowi, gdy celem
+
+[The same: the opening line of art. 151 ust. 1]
+     Art. 151. 1. Zezwolenia na pobyt czasowy w celu prowadzenia badań naukowych udziela się cudzoziemcowi będą-
+
+[The same: the opening line of art. 159 ust. 1]
+     Art. 159. 1. Zezwolenia na pobyt czasowy w celu połączenia się z rodziną udziela się cudzoziemcowi, jeżeli spełnia
+
+[M.P. 2026 poz. 268 (the amounts from 1.06.2026)]
+     Na podstawie art. 228 ust. 4 ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746
+i 1794) ogłasza się, że od dnia 1 czerwca 2026 r. wysokość zasiłku dla bezrobotnych, o którym mowa w art. 224 ust. 1 po-
+wołanej ustawy, wynosi:
+1)    1783,90 zł – w okresie pierwszych 90 dni posiadania prawa do zasiłku;
+2)    1400,90 zł – w okresie kolejnych dni posiadania prawa do zasiłku.
+                                                            Minister Rodziny, Pracy i Polityki Społecznej: A. Dziemianowicz-Bąk

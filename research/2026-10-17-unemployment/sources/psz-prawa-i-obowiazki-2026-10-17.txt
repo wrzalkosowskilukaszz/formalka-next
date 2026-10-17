@@ -1,0 +1,66 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Prawa i obowiązki osoby bezrobotnej"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/prawa-i-obowiazki-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 ce92c3ddc83873217b9102f70384a2b541ab4fced0444d2d484075a62a076165
+# Text of the article element; menus removed. Published 01.06.2025, modified 06.06.2025. It cites the labour market act of 20.03.2025. Not binding.
+
+Prawa osoby bezrobotnej
+Status bezrobotnego przysługuje Tobie przez okres 3 lat od dnia rejestracji, z wyjątkiem sytuacji, w których zgodnie z ustawą następuje utrata statusu bezrobotnego.
+Okres posiadania statusu bezrobotnego ulegnie przedłużeniu o czas niezbędny do zakończenia przez Ciebie formy pomocy.
+Jeśli zarejestrujesz się w urzędzie pracy jako bezrobotny to nie będziesz mógł zarejestrować się jako:
+- poszukujący pracy oraz posiadać takiego statusu przez okres posiadania statusu bezrobotnego;
+- bezrobotny w innym urzędzie pracy.
+Jako osoba bezrobotna masz prawo do:
+- rejestracji w PUP właściwym dla miejsca zamieszkania po przedstawieniu niezbędnych dokumentów;
+- zasiłku dla bezrobotnych, jeżeli spełnia ustawowe warunki do jego nabycia;
+- korzystania nieodpłatnie z pośrednictwa pracy na terenie kraju i za granicą oraz poradnictwa zawodowego, które jest organizowane w powiatowych i wojewódzkich urzędach pracy;
+- ubiegania się m.in. o:
+- szkolenie,
+- sfinansowanie kosztów potwierdzenia nabycia wiedzy i umiejętności lub kosztów uzyskania dokumentu potwierdzającego nabycie wiedzy,
+- sfinansowanie opłaty pobieranej za postępowanie nostryfikacyjne albo postępowanie, o którym mowa w art. 327 ust. 3 ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce,
+- bon na kształcenie ustawiczne,
+- pożyczkę edukacyjną,
+- staż,
+- bon na zasiedlenie,
+- skierowanie do podmiotów, gmin, pracodawców, przedsiębiorców na subsydiowane zatrudnienie, np. w ramach prac interwencyjnych, robót publicznych, prac społecznie użytecznych, grantu na utworzenie stanowiska pracy zdalnej, świadczenia aktywizacyjnego
+- refundację kosztów opieki nad dzieckiem i osobą zależną,
+- dofinansowanie podjęcia działalności gospodarczej,
+- pożyczkę na podjęcie działalności gospodarczej,
+- środki na założenie lub przystąpienie do spółdzielni socjalnej,
+- zwrot kosztów przejazdu lub zakwaterowania,
+- dodatek aktywizacyjny;
+- ubezpieczenia zdrowotnego, o ile nie podlegasz ubezpieczeniu zdrowotnemu z innego tytułu np. ubezpieczenie rolników w KRUS, z tytułu pobierania renty rodzinnej.
+Obowiązki osoby bezrobotnej
+Jeżeli jesteś osobą bezrobotną, zarejestrowaną w powiatowym urzędzie pracy, do Twoich obowiązków należy:
+- powiadomienie za pośrednictwem formularza elektronicznego albo osobiście w PUP, w którym jest zarejestrowany w terminie 7 dni o:
+- wszelkich zmianach w danych przekazanych w trakcie rejestracji oraz w złożonych oświadczeniach, od dnia ich wystąpienia,
+- zamiarze zmiany miejsca zamieszkania, czego skutkiem jest zmiana właściwości PUP i wskazania PUP właściwego ze względu na planowane miejsce zamieszkania;
+- zawiadomienie PUP o niezdolności do pracy w terminie 2 dni od dnia wystawienia zaświadczenia lekarskiego oraz dostarczenie do PUP tego zaświadczenia lub wydruku tego zaświadczenia w terminie 7 dni od dnia ich otrzymania;
+- powiadomienie w ciągu 7 dni PUP o podjęciu zatrudnienia, innej pracy zarobkowej (umowa - zlecenie, umowa o dzieło), bez względu na wysokość wynagrodzenia lub o złożeniu wniosku o wpis do Centralnej Ewidencji i Informacji o Działalności Gospodarczej oraz o zaistnieniu innych okoliczności powodujących utratę statusu bezrobotnego albo utratę prawa do zasiłku (np. uzyskiwania miesięcznie przychodu z innego tytułu w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę podlegającego opodatkowaniu podatkiem dochodowym od osób fizycznych);
+- przesłanie za pośrednictwem formularza elektronicznego, albo osobiście w PUP, w którym jesteś zarejestrowany:
+- oświadczenia o przychodach w terminie 7 dni od dnia ich uzyskania,
+- innych dokumentów niezbędnych do ustalenia uprawnień do świadczeń przewidzianych w ustawie;
+- zawiadomienie PUP o pobycie za granicą, którego okres łącznie nie może przekroczyć 30 dni w jednym roku kalendarzowym;
+- powiadomienie PUP o udziale w szkoleniu bez skierowania starosty, finansowanym z publicznych środków wspólnotowych i krajowych, organizowanym przez inny podmiot niż urząd, w terminie 7 dni przed rozpoczęciem szkolenia;
+- podjęcie i realizacja po skierowaniu przez PUP umowy o formę pomocy chyba, że powodem niepodjęcia albo przerwania realizacji było podjęcie zatrudnienia, innej pracy zarobkowej lub działalności gospodarczej;
+- przyjęcie propozycji prac społecznie użytecznych, chyba że odmowa ich przyjęcia była uzasadniona;
+- utrzymywanie kontaktu z PUP co najmniej raz na 90 dni w celu potwierdzenia zainteresowania pomocą określoną w ustawie;
+- wzięcie udziału w przygotowaniu indywidualnego planu działania oraz jego realizacja, w sytuacji gdy jest obowiązkowy;
+- powiadomienie PUP o odbywaniu wolontariatu lub praktyki absolwenckiej i przedstawienia zawartego porozumienia lub umowy;
+- powiadomienie o pełnieniu bez wynagrodzenia funkcji członka statutowych władz organizacji pozarządowej, o której mowa w ustawie z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie i przedstawienie właściwemu PUP oświadczenia organizacji, w której władzach zasiada, potwierdzające pełnioną przez niego funkcję i niepobieranie wynagrodzenia z tytułu jej pełnienia;
+- zwrot w ciągu 30 dni od dnia doręczenia decyzji starosty:
+- świadczenia pieniężnego wypłaconego mimo zaistnienia okoliczności powodujących ustanie prawa do jego pobierania,
+- świadczenia pieniężnego wypłaconego na podstawie nieprawdziwych oświadczeń lub sfałszowanych dokumentów albo w innych przypadkach świadomego wprowadzenia w błąd starosty przez osobę pobierającą to świadczenie,
+- kosztów badań lekarskich i psychologicznych, kosztów przejazdu, poniesionych w przypadku:
+- skierowania do formy pomocy na podstawie nieprawdziwych oświadczeń lub sfałszowanych dokumentów albo w innych przypadkach świadomego wprowadzenia w błąd starosty przez osobę lub
+- niepodjęcia lub przerwania formy pomocy z własnej winy,
+- zasiłku, stypendium lub innego świadczenia pieniężnego finansowanego z Funduszu Pracy wypłaconego za okres, za który bezrobotny nabył prawo do emerytury, świadczenia przedemerytalnego, renty z tytułu niezdolności do pracy, renty szkoleniowej, renty rodzinnej w wysokości przekraczającej połowę minimalnego wynagrodzenia za pracę, renty socjalnej, zasiłku macierzyńskiego, zasiłku w wysokości zasiłku macierzyńskiego, zasiłku chorobowego lub świadczenia rehabilitacyjnego, jeżeli organ rentowy, który przyznał świadczenie, nie dokonał jego pomniejszenia na zasadach określonych w art. 253;
+- zasiłku, stypendium lub innego świadczenia pieniężnego finansowanego z Funduszu Pracy wypłaconego osobie za okres, za który nabyła prawo do świadczenia pieniężnego przysługującego członkom rodziny funkcjonariuszy lub żołnierzy zawodowych albo prawa do renty inwalidzkiej przyznawanej na podstawie ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin lub ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin,
+- kosztów, o których mowa w art. 109 ust. 1 (tj. kosztów szkolenia, nostryfikacji, uznania kwalifikacji zawodowych, studiów podyplomowych) w przypadkach określonych w tym przepisie lub gdy sfinansowanie tych kosztów nastąpiło na podstawie nieprawdziwych oświadczeń lub sfałszowanych dokumentów albo w innych przypadkach świadomego wprowadzenia w błąd starosty przez bezrobotnego lub poszukującego pracy,
+- kosztów stażu, w przypadkach określonych w art. 120 ustawy, lub gdy sfinansowanie tych kosztów nastąpiło na podstawie nieprawdziwych oświadczeń lub sfałszowanych dokumentów albo w innych przypadkach świadomego wprowadzenia w błąd starosty przez bezrobotnego lub poszukującego pracy,
+- zasiłku wypłaconego za okres, za który w związku z orzeczeniem sądu wypłacono:
+- wynagrodzenie za czas pozostawania bez pracy lub
+- odszkodowanie z tytułu nieuzasadnionego lub naruszającego przepisy o wypowiadaniu umowy o pracę wypowiedzenia umowy o pracę, lub
+- odszkodowanie z tytułu rozwiązania umowy o pracę bez wypowiedzenia z naruszeniem przepisów o rozwiązaniu umowy o pracę w tym trybie
+- świadczenia przedemerytalnego wypłaconego w kwocie zaliczkowej, jeżeli organ rentowy odmówił wydania decyzji ustalającej wysokość emerytury w celu ustalenia wysokości świadczenia przedemerytalnego.
+Podstawa prawna
+- ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia – art. 62-65, art. 67, art. 229, art. 231, art. 246
+Informacje o publikacji dokumentuAutor: Departament Rynku PracyData publikacji: 01.06.2025Data modyfikacji: 06.06.2025
