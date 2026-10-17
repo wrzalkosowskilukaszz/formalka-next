@@ -1,5 +1,6 @@
 # Other provisions for the permanent residence and EU long-term resident map. Each block is verbatim pdftotext -layout output; page headers dropped. Retrieved 2026-10-17 from api.sejm.gov.pl.
-#   Dz.U. 2026 poz. 203, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275: art. 12 pkt 7-8, in force 5.03.2026 (its art. 54).
+#   Dz.U. 2026 poz. 203, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275: art. 12 pkt 7-9 and art. 29, in force 5.03.2026 (its art. 54).
+#   Added after the independent check of 17.10.2026 (CHECK.md), each hash matching the agent's: the stamp duty act, consolidated Dz.U. 2025 poz. 1154 (sha256 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; of its six later acts only Dz.U. 2026 poz. 912 art. 76 touches art. 7, adding pkt 3a for metropolitan unions from 31.07.2026, sha256 0f00278fd6cedc198fdf46304c9b823ae8db28be34bbc087d40a5cbbdf4f3353; none touches art. 6 or art. 7 pkt 5: touched.mjs DU/2025/1154 2025-08-11 --cite 6,7,9); Dz.U. 2026 poz. 846 (sha256 7bfabbeca53808bca583e8027b8b1e9c3c7e28c24f83fec18977ff51417b24e2); the Karta Polaka act, consolidated Dz.U. 2026 poz. 76 (sha256 03f577d46e79075e23b02c96696e5504dc57d57031f93f97ddb304f72a3146d3; no amendments, amendments.mjs 17.10.2026); the social assistance act, consolidated Dz.U. 2026 poz. 639 (sha256 cad0ccffb09f403a7d5b6901b89cba62162858096a0bb20cb76aa6b9f2cf7851); the Polish language act, consolidated Dz.U. 2026 poz. 81 (sha256 ea95ffb30d963be3bacac9a24fa547ba365ef5f3814ba1606f74bf8293c8874d; Dz.U. 2026 poz. 676 changes its art. 11a ust. 3-7, not art. 5).
 #   Dz.U. 2025 poz. 622, sha256 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a: art. 30 (its art. 6 pkt 16 gave art. 211 ust. 3 pkt 2-3 their wording from 1.07.2025, included in Dz.U. 2025 poz. 1079).
 #   Regulation of the Council of Ministers Dz.U. 2024 poz. 1044, sha256 97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c: in force 1.01.2025; no amendments (amendments.mjs, 17.10.2026).
 #   Regulation of the interior minister Dz.U. 2023 poz. 1076, sha256 dc1b647ae2cfda1d57fede746a4e383be058c8bdd2ea01b253ff9870c0eb80d4: in force 24.06.2023; no amendments (amendments.mjs, 17.10.2026).
@@ -15,6 +16,80 @@
      długoterminowego UE lub decyzji o umorzeniu postępowania w sprawie udzielenia zezwolenia na pobyt rezydenta
      długoterminowego UE, uiszczona należna opłata skarbowa za udzielenie zezwolenia na pobyt rezydenta długotermino-
      wego UE nie podlega zwrotowi.”;
+
+[Dz.U. 2026 poz. 203 art. 29 (the no-refund rules apply to stamp duty paid with an application filed from 5.03.2026)]
+     Art. 29. Przepisy art. 77c, art. 87a, art. 113c, art. 120c, art. 207b, art. 223a ustawy zmienianej w art. 12 stosuje się
+do należnej opłaty skarbowej uiszczonej w związku ze złożeniem wniosku w okresie od dnia wejścia w życie art. 12.
+
+[Dz.U. 2026 poz. 203 art. 12 pkt 9 (UoC art. 299 ust. 6a-8: 30 days after temporary protection ends)]
+9)   w art. 299:
+     a)   po ust. 6 dodaje się ust. 6a w brzmieniu:
+                „6a. Cudzoziemiec jest obowiązany opuścić terytorium Rzeczypospolitej Polskiej przed upływem 30 dni,
+          począwszy od dnia, w którym upłynął maksymalny termin korzystania z ochrony czasowej na podstawie decyzji
+          Rady Unii Europejskiej stwierdzającej masowy napływ wysiedleńców lub upłynął termin określony w przepisach
+          wydanych na podstawie art. 107 ust. 1 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na
+          terytorium Rzeczypospolitej Polskiej.”,
+      b) ust. 7 otrzymuje brzmienie:
+                 „7. Pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej w okresie, o którym mowa w ust. 6 i 6a,
+            uważa się za legalny, chyba że wniosek o przedłużenie mu wizy Schengen lub wizy krajowej lub o udzielenie mu
+            zezwolenia na pobyt czasowy, zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego
+            UE został złożony po upływie okresu pobytu uznawanego za legalny na tym terytorium.”,
+      c)    w ust. 8 wyrazy „Przepisów ust. 1, 2, 5 i 6” zastępuje się wyrazami „Przepisów ust. 1, 2 i 5–6a”;
+
+[Stamp duty act (Dz.U. 2025 poz. 1154) art. 6 (due on filing)]
+     Art. 6. 1. Obowiązek zapłaty opłaty skarbowej powstaje:
+1)   od dokonania czynności urzędowej – z chwilą dokonania zgłoszenia lub złożenia wniosku o dokonanie czynności urzędowej;
+2)   od wydania zaświadczenia – z chwilą złożenia wniosku o wydanie zaświadczenia;
+3)   od wydania zezwolenia (pozwolenia, koncesji) – z chwilą złożenia wniosku o wydanie zezwolenia (pozwolenia, koncesji);
+4)   od złożenia dokumentu stwierdzającego udzielenie pełnomocnictwa lub prokury oraz od jego odpisu, wypisu lub kopii –
+     z chwilą złożenia dokumentu w organie administracji publicznej, sądzie lub podmiocie, o którym mowa w art. 1 ust. 2;
+5)   od przedmiotu opłaty określonego w art. 2 ust. 2 – z chwilą użycia zaświadczenia w sprawie innej niż wymieniona
+     w art. 2 ust. 1.
+     2. Opłatę skarbową wpłaca się z chwilą powstania obowiązku jej zapłaty.
+
+[Stamp duty act art. 7 pkt 5 (the poverty exemption)]
+5)   osoby, które dokonując zgłoszenia lub składając wniosek o dokonanie czynności urzędowej albo wniosek o wydanie
+     zaświadczenia lub zezwolenia (pozwolenia, koncesji) albo składając dokument stwierdzający udzielenie pełnomocnictwa
+     lub prokury albo jego odpis, wypis lub kopię przedstawią zaświadczenie o korzystaniu ze świadczeń pomocy społecznej
+     z powodu ubóstwa;
+
+[Dz.U. 2026 poz. 846 art. 14 pkt 1 (a refund only on request, from 1.10.2026, its art. 35)]
+     Art. 14. W ustawie z dnia 16 listopada 2006 r. o opłacie skarbowej (Dz. U. z 2025 r. poz. 1154, 1795 i 1847) wprowa-
+dza się następujące zmiany:
+1)    w art. 9:
+      a)    ust. 2 otrzymuje brzmienie:
+                 „2. Zwrot opłaty skarbowej następuje na wniosek osoby lub jednostki, która dokonała zapłaty opłaty
+            skarbowej.”,
+      b) po ust. 2 dodaje się ust. 2a–2c w brzmieniu:
+                „2a. Jeżeli wniosek o zwrot opłaty skarbowej jest zasadny, organ podatkowy zwraca opłatę skarbową bez
+            wydawania decyzji, w terminie 2 miesięcy od dnia złożenia wniosku.
+                  2b. Organ podatkowy zwraca opłatę skarbową osobie lub jednostce, która złożyła wniosek o jej zwrot.
+                  2c. Jeżeli opłata skarbowa nie została zwrócona w terminie 2 miesięcy od dnia złożenia wniosku o jej zwrot,
+            oprocentowanie zwrotu opłaty skarbowej przysługuje od dnia złożenia wniosku, w wysokości równej wysokości
+            odsetek za zwłokę od zaległości podatkowych.”;
+
+[Karta Polaka act, consolidated Dz.U. 2026 poz. 76, art. 20 ust. 1a-3]
+    1a. Jeżeli posiadacz Karty Polaka nabył obywatelstwo polskie albo uzyskał zezwolenie na pobyt stały na terytorium
+Rzeczypospolitej Polskiej, posiadana przez niego Karta Polaka traci ważność z mocy prawa z dniem wydania dokumentu
+potwierdzającego nabycie obywatelstwa polskiego albo uzyskania zezwolenia na pobyt stały.
+    2. W przypadku, o którym mowa w ust. 1, posiadacz Karty Polaka niezwłocznie zwraca Kartę Polaka konsulowi albo
+wojewodzie, który ją wydał.
+    3. W przypadku, o którym mowa w ust. 1a, posiadacz Karty Polaka zwraca Kartę Polaka wojewodzie właściwemu ze
+względu na miejsce pobytu, nie później niż w terminie 14 dni od dnia, w którym:
+1)   doręczono mu dokument potwierdzający nabycie obywatelstwa polskiego albo
+2)   decyzja o uzyskaniu zezwolenia na pobyt stały stała się ostateczna.
+
+[Social assistance act, consolidated Dz.U. 2026 poz. 639, art. 9 ust. 1]
+     Art. 9. 1. Kryteria dochodowe podlegają weryfikacji co 3 lata, z uwzględnieniem wyniku badań progu interwencji
+socjalnej. Badania progu interwencji socjalnej dokonuje Instytut Pracy i Spraw Socjalnych.
+
+[Its art. 9 ust. 8a]
+     8a. Zweryfikowane kryteria dochodowe oraz kwoty, o których mowa w ust. 5 i 6, obowiązują od dnia 1 stycznia roku
+następującego po roku, w którym jest przeprowadzana weryfikacja.
+
+[Polish language act, consolidated Dz.U. 2026 poz. 81, art. 5 ust. 1]
+     Art. 5. 1. Podmioty wykonujące zadania publiczne na terytorium Rzeczypospolitej Polskiej dokonują wszelkich czyn-
+ności urzędowych oraz składają oświadczenia woli w języku polskim, chyba że przepisy szczególne stanowią inaczej.
 
 [Dz.U. 2025 poz. 622 art. 30 (the language documents: transitional rules)]
       Art. 30. 1. Do postępowania w sprawie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, wszczętego
