@@ -1,7 +1,9 @@
 // Lists, for each act that amended a Polish act or regulation after a given date, the articles (for a regulation, the
 // paragraphs: §) it changes, and flags the ones a source extract cites. Checking only the articles one expects missed
 // changes before (docs/solutions/2026-10-17-amendments-checked-only-for-expected-articles.md).
-// Usage: node tools/sources/touched.mjs DU/2004/2135 2025-09-26 --cite 2-4,12,50-53,66-69   (needs network and pdftotext)
+// Usage: node tools/sources/touched.mjs DU/2004/2135 2025-09-26 --cite 2-4,12,50-53,66-69 [--lookback 3]   (needs network and pdftotext)
+// It also lists the acts whose general date falls in the 3 years (--lookback) before the date but whose points apply on
+// or after it.
 // A regulation: node tools/sources/touched.mjs DU/2025/1073 2025-08-20 --cite 5,14   (the numbers are its paragraphs)
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync, readFileSync } from 'node:fs';
@@ -100,6 +102,28 @@ export function dateLabel(date, entry) {
 export function amendingAfter(meta, since) {
   return (meta.references?.['Akty zmieniające'] ?? []).filter((x) => (x.date ?? '') >= since).sort((a, b) => a.date.localeCompare(b.date));
 }
+// The acts whose general date falls in the `years` before `since`: their own points may still take effect later.
+// Dz.U. 2025 poz. 1006 (general date 9.08.2025) changes UEL art. 49a, 53 and 56 from 30.06.2026, and Dz.U. 2024
+// poz. 854 (1.07.2024) changes UEL art. 8 from a date an announcement set at 4.05.2026; amendingAfter dropped both
+// for a legal state of 10.03.2026 (research/2026-10-17-moving/sources/CHECK.md). The caller reads each one's
+// entry-into-force article with laterPoints.
+export function amendingBefore(meta, since, years = 3) {
+  const from = `${Number(since.slice(0, 4)) - years}${since.slice(4)}`;
+  return (meta.references?.['Akty zmieniające'] ?? []).filter((x) => (x.date ?? '') < since && (x.date ?? '') >= from).sort((a, b) => a.date.localeCompare(b.date));
+}
+
+const MONTHS = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
+// The dates on or after `since` that an entry-into-force article names ("z dniem 30 czerwca 2026 r."), and whether
+// some point waits for an announcement (its date is not in the act). Null when neither, so the act can be skipped.
+export function laterPoints(entry, since) {
+  if (!entry) return null;
+  const dates = [...entry.article.matchAll(/(\d{1,2}) (stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia) (\d{4}) r\./g)]
+    .map((m) => `${m[3]}-${String(MONTHS.indexOf(m[2]) + 1).padStart(2, '0')}-${m[1].padStart(2, '0')}`)
+    .filter((d) => d >= since);
+  const later = [...new Set(dates)].sort();
+  return later.length || entry.announcement ? { dates: later, announcement: entry.announcement } : null;
+}
+
 // A consolidated text (an obwieszczenie, such as DU/2025/734 for the Petty Offences Code) has no "Akty zmieniające"
 // of its own: they are on the act it consolidates ("Tekst jednolity dla aktu"). Given one, both tools printed
 // "0 amending act(s)" with no warning (correctness audit, 17.10.2026); they now list the base act's amendments.
@@ -132,22 +156,34 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   const [eli, since] = args;
   const cite = args.includes('--cite') ? citedBy(args[args.indexOf('--cite') + 1] ?? '') : null;
-  if (!eli || !since) { console.error('usage: node tools/sources/touched.mjs <ELI> <YYYY-MM-DD> [--cite 2-4,12,50]'); process.exit(2); }
+  if (!eli || !since) { console.error('usage: node tools/sources/touched.mjs <ELI> <YYYY-MM-DD> [--cite 2-4,12,50] [--lookback 3]'); process.exit(2); }
   const get = async (id) => (await fetch(`https://api.sejm.gov.pl/eli/acts/${id}`)).json();
   const { eli: base, act, note } = await actWithAmendments(eli, get);
   if (note) console.log(note);
   const changes = amendingAfter(act, since);
   console.log(`${base}: ${act.title}`);
   console.log(`${changes.length} amending act(s) in force from ${since}:`);
-  let flagged = 0;
-  for (const c of changes) {
-    const pdf = Buffer.from(await (await fetch(`https://api.sejm.gov.pl/eli/acts/${c.id}/text.pdf`)).arrayBuffer());
+  const textOf = async (id) => {
+    const pdf = Buffer.from(await (await fetch(`https://api.sejm.gov.pl/eli/acts/${id}/text.pdf`)).arrayBuffer());
     const dir = mkdtempSync(join(tmpdir(), 'touched-'));
     writeFileSync(join(dir, 'act.pdf'), pdf);
     execFileSync('pdftotext', ['-layout', join(dir, 'act.pdf'), join(dir, 'act.txt')]);
-    const text = readFileSync(join(dir, 'act.txt'), 'utf8');
+    return readFileSync(join(dir, 'act.txt'), 'utf8');
+  };
+  const years = args.includes('--lookback') ? Number(args[args.indexOf('--lookback') + 1]) : 3;
+  const earlier = [];
+  for (const c of amendingBefore(act, since, years)) {
+    const text = await textOf(c.id);
+    const later = laterPoints(entryArticle(text), since);
+    if (later) earlier.push({ ...c, text, later });
+  }
+  if (earlier.length) console.log(`${earlier.length} more with a general date in the ${years} years before ${since} but points on or after it:`);
+  let flagged = 0;
+  for (const c of [...earlier, ...changes]) {
+    const text = c.text ?? await textOf(c.id);
     const hits = touchedArticles(text, act.title);
     const entry = entryArticle(text);
+    if (c.later) c.date = `${c.date}, points ${[...c.later.dates, ...(c.later.announcement ? ['a date set by an announcement'] : [])].join(', ')}`;
     if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" or "W rozporządzeniu …" opening found; read it by hand`); flagged++; continue; }
     for (const t of appliedBy(text, hits.map((h) => h.article))) {
       const mark = cite ? t.names.filter(cite) : [];

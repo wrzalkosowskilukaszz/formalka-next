@@ -140,5 +140,5 @@ Named by the agent but not used here:
 
 ## The tools
 
-- **`touched.mjs` missed two amending acts.** Their general dates fall before the extract's legal state (10.03.2026), but some of their points apply later (Dz.U. 2025 poz. 1006 art. 4 pkt 2, 4, 5 from 30.06.2026; Dz.U. 2024 poz. 854 art. 7 from 4.05.2026 by announcement). The tool lists acts by their general date only. Neither touches a quoted article. The tool is to be changed so that it lists them (task C14), with a test and the lesson extended.
+- **`touched.mjs` missed two amending acts.** Their general dates fall before the extract's legal state (10.03.2026), but some of their points apply later (Dz.U. 2025 poz. 1006 art. 4 pkt 2, 4, 5 from 30.06.2026; Dz.U. 2024 poz. 854 art. 7 from 4.05.2026 by announcement). The tool listed acts by their general date only. Neither touches a quoted article. Both tools now also list an earlier act whose points apply on or after the date (changed in the lab, with a test; the lesson `docs/solutions/2026-10-16-consolidated-text-without-later-amendments.md` extended). Rerun on UEL, the tool lists both acts.
 - `omitted.mjs`, run on the corrected UEL extract, marks nothing. The gap the agent found sits in art. 34 ust. 3, which does not name art. 33, and in the forms of a regulation, which the tool does not read.

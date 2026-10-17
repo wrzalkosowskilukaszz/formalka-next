@@ -147,3 +147,27 @@ test('an amending act whose points have their own dates is labelled with its gen
   assert.equal(dateLabel('2026-09-12', one), 'in force 2026-09-12');
   assert.equal(dateLabel('2026-09-12', null), 'in force 2026-09-12');
 });
+
+test('an act in force before the date whose points apply after it is kept, with those dates', async () => {
+  const { amendingBefore, laterPoints } = await import('./touched.mjs');
+  const meta = { references: { 'Akty zmieniające': [
+    { id: 'DU/2022/1', date: '2022-01-01' }, { id: 'DU/2024/854', date: '2024-07-01' },
+    { id: 'DU/2025/1006', date: '2025-08-09' }, { id: 'DU/2026/507', date: '2026-10-14' },
+  ] } };
+  assert.deepEqual(amendingBefore(meta, '2026-03-10').map((x) => x.id), ['DU/2024/854', 'DU/2025/1006']);
+  assert.deepEqual(amendingBefore(meta, '2026-03-10', 5).map((x) => x.id), ['DU/2022/1', 'DU/2024/854', 'DU/2025/1006']);
+  // Dz.U. 2025 poz. 1006 art. 11, as pdftotext gives it.
+  const e1006 = entryArticle(`     Art. 11. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 3 pkt 2 lit. a i b oraz pkt 3, art. 4 pkt 2, 4 i 5 oraz art. 9, które wchodzą w życie z dniem 30 czerwca 2026 r.;
+2)   art. 6, który wchodzi w życie z dniem 17 kwietnia 2026 r.
+                                                  Prezydent Rzeczypospolitej Polskiej: K. Nawrocki`);
+  assert.deepEqual(laterPoints(e1006, '2026-03-10'), { dates: ['2026-04-17', '2026-06-30'], announcement: false });
+  assert.equal(laterPoints(e1006, '2026-07-01'), null);
+  // Dz.U. 2024 poz. 854 art. 35: some points wait for an announcement, whose date is not in the act.
+  const e854 = entryArticle(`     Art. 35. Ustawa wchodzi w życie z dniem 1 lipca 2024 r., z wyjątkiem:
+2)   art. 1 pkt 4 lit. h, pkt 10 i 33 oraz art. 7 pkt 1 lit. a, które wchodzą w życie z dniem
+     określonym w komunikacie, o którym mowa w art. 33;
+                                                  Prezydent Rzeczypospolitej Polskiej: A. Duda`);
+  assert.deepEqual(laterPoints(e854, '2026-03-10'), { dates: [], announcement: true });
+  assert.equal(laterPoints(entryArticle('Art. 5. Ustawa wchodzi w życie z dniem 1 stycznia 2025 r.'), '2026-03-10'), null);
+});
