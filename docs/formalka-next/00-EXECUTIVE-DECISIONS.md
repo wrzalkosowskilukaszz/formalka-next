@@ -205,3 +205,5 @@ The hand-coding figures below are kept for comparison.
 | `../../spikes/` | S1 case engine (`npm test`), S3 official form fill |
 | 17 | What is left to design before a beta: screens, content, system, privacy, operations, gates |
 | 18 | Formalka Next as a service: the newcomer's journey to registration and PESEL, the six functions' assumptions, testable design rules, pre-set thresholds, restrictions (branch `lab/service-plan`) |
+| 19 | Beyond registration and PESEL: the matters foreigners handle, readiness levels, waves and their gates |
+| 20 | Matter maps: the residence card, the UKR status and the CUKR card, e-government access (`maps/`), and how the matters depend on each other |
