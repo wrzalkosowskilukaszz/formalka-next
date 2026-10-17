@@ -1,8 +1,8 @@
 # node audit/2026-10-16-round2/regressions/run.mjs
-# 2026-10-17T00:30Z commit 1391408 node v22.22.0
+# 2026-10-17T00:51Z commit f667778 node v22.22.0
 
 Regressions for round 1 findings, run 2026-10-17
-Engine bundle: bfd91e33bd7ccd22; registry formalka@04057ef
+Engine bundle: eaede791ccda3d0e; registry formalka@04057ef
 Kinds: audit = the auditor's input; variant = written for this run (not blind); control = must still work.
 
 PASS  F1  control  untouched address-registration plan passes

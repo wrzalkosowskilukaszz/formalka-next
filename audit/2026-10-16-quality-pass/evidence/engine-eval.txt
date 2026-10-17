@@ -1,6 +1,6 @@
 # cd packages/case-engine && npm run eval
-# 2026-10-17T00:30Z commit 1391408 node v22.22.0
+# 2026-10-17T00:51Z commit f667778 node v22.22.0
 
 > node eval/run.ts --write
 
-18/18 pass
+24/24 pass

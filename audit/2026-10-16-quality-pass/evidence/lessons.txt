@@ -1,5 +1,5 @@
 # node --test tools/lessons/*.test.mjs; node tools/lessons/index.mjs --check
-# 2026-10-17T00:30Z commit 1391408 node v22.22.0
+# 2026-10-17T00:51Z commit f667778 node v22.22.0
 
 # Subtest: frontmatter: required keys, one-line rules, known kinds
 ok 1 - frontmatter: required keys, one-line rules, known kinds
@@ -16,5 +16,5 @@ ok 4 - docs/solutions: the index is fresh, under its limit, and every named chec
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 96.744628
+# duration_ms 92.464209
 lessons: 21, index 5790/12000 characters, 5 without an automatic check (candidates for a test or lint: 2026-10-16-asserted-the-ui-before-reading-the-diff.md, 2026-10-16-expected-answer-from-the-general-rule.md, 2026-10-16-pipe-into-head-truncated-output.md, 2026-10-16-pushing-to-a-public-lab-repo.md, 2026-10-16-read-the-whole-article.md)

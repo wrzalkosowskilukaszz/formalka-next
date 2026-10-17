@@ -1,21 +1,21 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-17T00:25Z commit 1391408 node v22.22.0
+# 2026-10-17T00:46Z commit f667778 node v22.22.0
 
-built: dist/index.html 773 KB, build d5549cffa763, engine bfd91e33bd7ccd22, formalka@04057ef
-df76390d7d5dc3ca8471650499b66c1fea6362f8914ebb568e51042d634324b7  prototype/dist/index.html
-a935e8d4ddace50dab40371ea24e1c124f20a3e2b30ebe06bd4ec1ad87d251bc  prototype/dist/artifact.html
+built: dist/index.html 774 KB, build 258b7facb228, engine eaede791ccda3d0e, formalka@04057ef
+2b8e8e641ba1b988e8a39538c1a048810a15d4ec2f392616a0099c5fdb7364f5  prototype/dist/index.html
+cc62350acfa6753fd88d0db5f85f6205f68540e2e84231062da9e1d22dd017d5  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "d5549cffa763",
+  "build": "258b7facb228",
   "registry": "formalka@04057ef",
-  "engine": "bfd91e33bd7ccd22",
+  "engine": "eaede791ccda3d0e",
   "engineBundle": {
     "file": "case-engine.browser.js",
-    "sha256": "0363274cd099c43220316f1b5d827a96ff3201962b9e8ee63fb9655d32c9a8f7"
+    "sha256": "5215000b5e5a82300e1cdf934b73c7d287965bdca00099b9a0c078879b76c50c"
   },
   "inputs": {
-    "../packages/case-engine/dist/case-engine.browser.js": "0363274cd099c432",
+    "../packages/case-engine/dist/case-engine.browser.js": "5215000b5e5a8230",
     "src/app.css": "7442467b765e7b71",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
@@ -93,7 +93,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "df76390d7d5dc3ca8471650499b66c1fea6362f8914ebb568e51042d634324b7",
-    "artifact.html": "a935e8d4ddace50dab40371ea24e1c124f20a3e2b30ebe06bd4ec1ad87d251bc"
+    "index.html": "2b8e8e641ba1b988e8a39538c1a048810a15d4ec2f392616a0099c5fdb7364f5",
+    "artifact.html": "cc62350acfa6753fd88d0db5f85f6205f68540e2e84231062da9e1d22dd017d5"
   }
 }

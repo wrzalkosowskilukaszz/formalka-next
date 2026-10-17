@@ -52,8 +52,8 @@
 | Suite | Result |
 |---|---|
 | Engine tests | 39/39 |
-| Evaluation | 18/18 |
-| Mutations | 39/39 caught |
+| Evaluation | 18/18; 24/24 on f667778 (6 residence scenarios added) |
+| Mutations | 39/39 caught; 40/40 on f667778 (one for the engine change) |
 | Prototype unit | 25/25 (4 new); 26/26 on 1391408 (5 new) |
 | e2e, reduced motion and full motion | 12/12 and 12/12 (scenario J new, G extended) |
 | Regressions (round 2) | 71/71 |
@@ -77,3 +77,25 @@
 - **Thirteen residence questions and five wave 3 questions stay open,** among them travel while waiting and how calls arrive. Work while waiting was narrowed after the report's first version: the act on employing foreigners sets the rules (finding P9). The prototype says "Nie wiem" or restricts.
 - **No reference for wave 3.** This is by plan: doc 19 keeps it at R1 until monitoring exists.
 - **The reader's answers to "czy mogę wyjechać…" and "czy mój pobyt jest legalny…"** are safe but unhelpful (COMPARISON D17). Improving them would be new behaviour, which waits for Phase 1.
+
+## 7. After the owner's second message: the next matters mapped (17.10)
+
+The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Three maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
+
+| Map | What it holds | Commit |
+|---|---|---|
+| `maps/residence-temporary.md` | Journey R0–R11, 14 loss points, 24 flow scenarios, the user flow (intake, levels, screens per stage, handoffs, a diagram), the blueprint changes it would need | 0514f2c |
+| `maps/cukr-ukr.md` | Journey U0–U9, 12 loss points, 20 scenarios, a compare card that never recommends, the 4.03.2027 window. Valid as of 17.10.2026; this goes beyond doc 19's sources-only plan for wave 3, at the owner's request | 72a1d57 |
+| `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
+
+**Found on the way:**
+- **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
+  - It has an engine test, a mutation, and evaluation scenario res-08.
+  - It is changed in the lab and not independently verified (COMPARISON D25).
+  - Production's guide has a related gap: on the paper route, paying is not a step before filing (P12).
+- **The trusted profile holds a PESEL** (act on informatization art. 20ad), and confirming it requires one in every way the act allows (art. 20c). So "no PESEL, no trusted profile, no MOS account" is now sourced, not inferred.
+- **An e-Doręczenia address for a person needs a PESEL** or an EU cross-border identifier (act on electronic deliveries art. 14). Once the address is entered, public bodies deliver there (art. 7), so an unread mailbox means missed letters.
+- **The matters form a chain:** zameldowanie or the PESEL application, then PESEL, the trusted profile, MOS and the residence card; and PESEL UKR, the trusted profile, then the CUKR card. Doc 20 §3 draws it.
+
+**Tests on f667778:** as §4, with evaluation 24/24 and mutations 40/40. Everything is pushed to `lab/quality-pass`, which is public.
+
