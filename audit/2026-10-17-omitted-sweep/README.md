@@ -20,11 +20,11 @@
 - the loan-for-use rule for the EU long-term resident's flat is in the permanent residence map (art. 219a ust. 2);
 - the exceptions to e-delivery (e-delivery act art. 6) are in the e-government sources.
 
-**Three possible additions**, none correcting a stated rule:
+**Three additions**, none correcting a stated rule (made on 17.10.2026, see Limits):
 
 | Map | Provision | What it adds |
 |---|---|---|
-| School | Prawo oświatowe art. 37 ust. 3, 5 | Two of the conditions for education outside school do not apply to a child with a special-education certificate for a moderate or severe intellectual disability |
+| School | Prawo oświatowe art. 37 ust. 3, 5 | For a child with a special-education certificate for a moderate or severe intellectual disability, education outside school needs no commitment to yearly exams, and the exams do not apply |
 | School | Prawo oświatowe art. 156 ust. 1 | A recruitment application names at most three public preschools or schools, unless the running body allows more |
 | Work | The work act art. 58 ust. 4 | Work on a seasonal permit is legal while a complete extension application is pending, until the decision is final |
 
@@ -43,4 +43,4 @@ Each changed in the lab, with a test (`tools/sources/omitted.test.mjs`):
 - The tool sees only references by number. A rule that names no quoted article (the labour market act's art. 246 and 436) is not listed, so the checking agent's reading stays.
 - Its exception words are a short list; a paragraph without one is shown only with `--all`.
 - References to another act are filtered by its title ("ustawy z dnia"); a few slip through, and some of the act's own are dropped.
-- The three additions above are not yet in the maps. They are small, and the owner decides whether the older maps are reopened.
+- The three additions above were made at the owner's request on 17.10.2026: the school README, extract and map (S2), the work README, extract and map (WS24). Changed in the lab; not independently verified.

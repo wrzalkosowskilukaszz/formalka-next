@@ -6,7 +6,7 @@ Collected on 17.10.2026 by Claude, for the map `docs/formalka-next/maps/work.md`
 
 | File | Source | Version |
 |---|---|---|
-| `wa-2025-621-art1-34-45-54-59-61-72-84-85-extract.txt` | The act on entrusting work to foreigners (WA), Dz.U. 2025 poz. 621; art. 4, 7, 10, 34, 46, 58, 62, 63 and 72 ust. 5–6 added after the check | In force 1.06.2025; no consolidated text; four amendments (next file) and two transitional rules (`other-acts-work-extract.txt`) |
+| `wa-2025-621-art1-34-45-54-59-61-72-84-85-extract.txt` | The act on entrusting work to foreigners (WA), Dz.U. 2025 poz. 621; art. 4, 7, 10, 34, 46, 58, 62, 63 and 72 ust. 5–6 added after the check; art. 58 ust. 2–8 after the sweep of 17.10.2026 | In force 1.06.2025; no consolidated text; four amendments (next file) and two transitional rules (`other-acts-work-extract.txt`) |
 | `amendments-2026-203-2025-1794-2026-734-2026-473-extract.txt` | The four amending articles and their dates | 27.04.2026 (art. 3), 5.03.2026 (art. 5a, 84), 20.06.2026 (art. 17, 68), 8.07.2026 (art. 33, 69) |
 | `regulations-2025-1617-1620-1622-2026-1072-extract.txt` | The regulations on the declaration states, work without a permit, fees, and visa-free stays | 1.12.2025; the last from 22.08.2026; no amendments |
 | `fa-2025-1079-art60-extract.txt` | The foreigners act (FA), art. 60 (visa purposes), with Dz.U. 2026 poz. 203 art. 12 pkt 2 | Consolidated 25.07.2025; pkt 22 repealed from 5.03.2026 |
@@ -78,6 +78,7 @@ Also used, from other folders: the CUKR card (special act art. 42v) and temporar
 |---|---|---|
 | What | Work for a Polish employer in the activities a regulation lists, for at most 9 months in a calendar year, counted, for those who came on a seasonal visa or visa-free with an entered application, from the first entry to the Schengen area that year after the certificate of entry was issued | WA art. 45 ust. 1, 54 ust. 1–2 |
 | Housing from the employer | For those who came on a seasonal visa or visa-free with an entered application, if the employer provides housing: a separate written contract; the rent may not be deducted from pay (a clause allowing it is void) and may not be excessive; a translation into a language the person understands before signing; the person may report housing unfit for people to the starosta | WA art. 59 ust. 1–6 |
+| Extending a seasonal permit | The starosta may extend it, for the same or another Polish employer, for those who came on a seasonal visa or visa-free with an entered application, within the 9 months a calendar year; for a person on another document, the case is not opened. While the employer's complete extension application is pending, work on the permit's terms counts as legal until the decision is final (periods of suspension at the party's request excepted); with a new employer, at most 30 days | WA art. 58 ust. 1–4, 6 |
 
 ### The contract and the person's rights
 

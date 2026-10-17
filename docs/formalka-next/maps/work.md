@@ -92,6 +92,7 @@ By what the person says about their status, never by their language.
 | WS21 | Waiting for a temporary residence permit decision, asks if they may work | W0 | Only some cases (OPEN-W4); the voivode or a lawyer | "Możesz" or "nie możesz" |
 | WS22 | Does not read Polish | All | The contract's content in an understood version is the employer's duty (art. 5 ust. 2); the PIP has Ukrainian-language lines | Machine-translated rules |
 | WS23 | A Ukrainian citizen on a visa, without temporary protection, a new job | W1 | While staying legally, the employer's 7-day notice is enough until 5.03.2029 (2026/203 art. 41; the official page); a declaration or a permit is also possible | "Potrzebujesz zezwolenia" as the only route |
+| WS24 | Seasonal work on a seasonal visa; the farm applied to extend the permit before it ended | W5 | If the application had no formal gaps, or they were filled in time, the work on the permit's terms stays legal until the decision is final; the total stays within 9 months a calendar year (WA art. 58 ust. 3–4) | A computed end date |
 
 ## 5. User flow (PROPOSED)
 

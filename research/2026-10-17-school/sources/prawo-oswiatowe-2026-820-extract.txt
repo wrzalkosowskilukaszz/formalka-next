@@ -147,7 +147,7 @@ przez uczęszczanie odpowiednio do przedszkola lub szkoły:
      nych Unii Europejskiej;
 2)   przy przedstawicielstwie dyplomatycznym innego państwa w Polsce.
 
-[Art. 37 ust. 1-2 (education outside school, by the head's decision)]
+[Art. 37 ust. 1-5 (education outside school, by the head's decision; the yearly exams, and the exception for a moderate or severe intellectual disability)]
      Art. 37. 1. Na wniosek rodziców dyrektor odpowiednio publicznego lub niepublicznego przedszkola, szkoły podsta-
 wowej i szkoły ponadpodstawowej, do której dziecko zostało przyjęte, może zezwolić, w drodze decyzji, na spełnianie przez
 dziecko odpowiednio obowiązku, o którym mowa w art. 31 ust. 4, poza przedszkolem, oddziałem przedszkolnym w szkole
@@ -161,6 +161,17 @@ szkolnego, jeżeli:
         obowiązującej na danym etapie edukacyjnym,
      c)   zobowiązanie rodziców do przystępowania w każdym roku szkolnym przez dziecko spełniające obowiązek szkolny
           lub obowiązek nauki do rocznych egzaminów klasyfikacyjnych, o których mowa w ust. 4.
+     3. Przepisu ust. 2 pkt 2 lit. c nie stosuje się w przypadku wydawania zezwolenia, o którym mowa w ust. 1, dla dzieci
+i młodzieży posiadających orzeczenie o potrzebie kształcenia specjalnego wydane ze względu na niepełnosprawność intelek-
+tualną w stopniu umiarkowanym lub znacznym.
+     4. Uczeń spełniający obowiązek szkolny lub obowiązek nauki poza szkołą uzyskuje roczne oceny klasyfikacyjne na
+podstawie rocznych egzaminów klasyfikacyjnych z zakresu części podstawy programowej obowiązującej na danym etapie
+edukacyjnym, uzgodnionej na dany rok szkolny z dyrektorem szkoły. Egzaminy klasyfikacyjne są przeprowadzane przez
+szkołę, której dyrektor zezwolił na spełnianie obowiązku szkolnego lub obowiązku nauki poza szkołą. Uczniowi takiemu
+nie ustala się oceny zachowania. Egzamin klasyfikacyjny przeprowadza się odpowiednio zgodnie z art. 44l lub art. 44wa
+ustawy o systemie oświaty i przepisami wydanymi na podstawie art. 44zb ustawy o systemie oświaty.
+    5. Przepisu ust. 4 nie stosuje się do dzieci i młodzieży posiadających orzeczenie o potrzebie kształcenia specjalnego
+wydane ze względu na niepełnosprawność intelektualną w stopniu umiarkowanym lub znacznym.
 
 [Art. 39 ust. 1-3 (the way to school: 3 or 4 km; free transport)]
      Art. 39. 1. Sieć publicznych szkół podstawowych powinna być zorganizowana w sposób umożliwiający wszystkim
@@ -371,6 +382,14 @@ składania dokumentów, do:
 podstawową do końca stycznia podaje do publicznej wiadomości kryteria brane pod uwagę w postępowaniu rekrutacyjnym
 i postępowaniu uzupełniającym oraz dokumenty niezbędne do potwierdzenia spełnienia tych kryteriów, a także liczbę punk-
 tów możliwą do uzyskania za poszczególne kryteria, zgodnie z art. 131 ust. 4–6 i art. 133 ust. 2 i 3.
+
+[Art. 156 ust. 1-2 (at most three preschools or schools, unless the running body allows more; in order of preference)]
+     Art. 156. 1. Wniosek, o którym mowa w art. 149, może być złożony do niewięcej niż trzech wybranych publicznych
+przedszkoli, publicznych innych form wychowania przedszkolnego albo publicznych szkół, chyba że organ prowadzący
+dopuści możliwość składania wniosku do więcej niż trzech wybranych publicznych przedszkoli, publicznych innych form
+wychowania przedszkolnego albo publicznych szkół.
+     2. We wniosku, o którym mowa w ust. 1, określa się kolejność wybranych publicznych przedszkoli, publicznych
+innych form wychowania przedszkolnego albo publicznych szkół w porządku od najbardziej do najmniej preferowanych.
 
 [Art. 158 ust. 1-9 (lists; the reasons in 3 days; the appeal in 3 days; the court)]
      Art. 158. 1. Wyniki postępowania rekrutacyjnego podaje się do publicznej wiadomości w formie listy kandydatów

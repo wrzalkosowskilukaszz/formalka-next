@@ -1,4 +1,4 @@
-# Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej (the work act, WA), Dz.U. 2025 poz. 621 (published 12.05.2025; in force 1.06.2025 under its art. 114). No consolidated text exists on api.sejm.gov.pl (17.10.2026). Quoted: art. 1 ust. 4, 2 pkt 2-3, 3, 4, 5, 6 ust. 1-2, 7 ust. 4, 8 ust. 1-3, 10 ust. 1, 12, 13 ust. 1, 15-25, 26 ust. 1, 30 ust. 1, 32-34, 45 ust. 1, 46, 54, 58 ust. 1, 59 (seasonal work), 61 ust. 1, 62 ust. 1, 63 ust. 1, 64-71, 72 ust. 1-2 and 5-6, 84-85. Art. 4 (whole), 7 ust. 4, 10 ust. 1, 34, 46, 58 ust. 1, 62 ust. 1, 63 ust. 1 and 72 ust. 5-6 were added after the independent check of 17.10.2026 (CHECK.md).
+# Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej (the work act, WA), Dz.U. 2025 poz. 621 (published 12.05.2025; in force 1.06.2025 under its art. 114). No consolidated text exists on api.sejm.gov.pl (17.10.2026). Quoted: art. 1 ust. 4, 2 pkt 2-3, 3, 4, 5, 6 ust. 1-2, 7 ust. 4, 8 ust. 1-3, 10 ust. 1, 12, 13 ust. 1, 15-25, 26 ust. 1, 30 ust. 1, 32-34, 45 ust. 1, 46, 54, 58, 59 (seasonal work), 61 ust. 1, 62 ust. 1, 63 ust. 1, 64-71, 72 ust. 1-2 and 5-6, 84-85. Art. 4 (whole), 7 ust. 4, 10 ust. 1, 34, 46, 58 ust. 1, 62 ust. 1, 63 ust. 1 and 72 ust. 5-6 were added after the independent check of 17.10.2026 (CHECK.md); art. 58 ust. 2-8 after the sweep of the extracts (audit/2026-10-17-omitted-sweep/README.md). No amending act touches art. 58 or 59 (touched.mjs DU/2025/621 2025-05-12 --cite 58,59).
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/621/text.pdf, retrieved 2026-10-17, sha256 10430e7128840fdd325af3131c532756a4ff9a55e86b0e9f74792c08596ba961. pdftotext -layout; page headers dropped; a footnote that falls inside a quoted block is kept.
 # Later amendments (tools/sources/touched.mjs DU/2025/621 2025-05-12 --cite 1-25,30-34,44,45,54,61-72,84,85, run on 17.10.2026): four acts; between them they change only art. 3, 17, 33, 68, 69 and 84 and add art. 5a, so the other quoted articles (including art. 59, outside the --cite list) are in force as quoted; their text and dates are in amendments-2026-203-2025-1794-2026-734-2026-473-extract.txt:
 #   Dz.U. 2026 poz. 203 art. 19 adds art. 5a (the employer's notice for a temporary protection beneficiary) and rewrites art. 84 ust. 6, from 5.03.2026;
@@ -529,12 +529,36 @@ pracy, zezwolenie może być wydane na okres legalnego pobytu, nie dłużej jedn
 kalendarzowego, liczony łącznie z okresami określonymi w poprzednio wydanych zezwoleniach na pracę sezonową dla tego
 cudzoziemca.
 
-[art. 58 ust. 1]
+[art. 58]
      Art. 58. 1. Jeżeli cudzoziemiec wjechał na terytorium Rzeczypospolitej Polskiej na podstawie wizy wydanej w celu
 wykonywania pracy sezonowej lub w ramach ruchu bezwizowego w związku z wnioskiem o wydanie zezwolenia na pracę
 sezonową wpisanym do ewidencji wniosków, starosta może wydać przedłużenie zezwolenia na pracę sezonową w celu kon-
 tynuacji pracy sezonowej przez cudzoziemca na rzecz tego samego podmiotu powierzającego pracę cudzoziemcowi lub
 w celu wykonywania pracy sezonowej na rzecz innego polskiego podmiotu powierzającego pracę cudzoziemcowi.
+     2. Jeżeli cudzoziemiec przebywa na terytorium Rzeczypospolitej Polskiej na podstawie innego dokumentu niż wiza
+wydana w celu wykonywania pracy sezonowej lub w ramach ruchu bezwizowego bez związku z wnioskiem wpisanym do
+ewidencji wniosków, starosta odmawia wszczęcia postępowania w sprawie wydania przedłużenia zezwolenia na pracę
+sezonową.
+     3. Przedłużenie zezwolenia na pracę sezonową wydaje się na okres, który łącznie z okresem pobytu cudzoziemca
+w celu wykonywania pracy sezonowej, liczonym od dnia pierwszego wjazdu na terytorium państw obszaru Schengen w da-
+nym roku kalendarzowym, nie jest dłuższy niż 9 miesięcy w ciągu roku kalendarzowego.
+     4. Jeżeli polski podmiot powierzający pracę cudzoziemcowi na podstawie zezwolenia na pracę sezonową złożył
+wniosek o przedłużenie zezwolenia na pracę sezonową dla tego cudzoziemca, a wniosek nie zawiera braków formalnych
+lub braki formalne zostały uzupełnione w terminie, pracę cudzoziemca na warunkach określonych w zezwoleniu na pracę
+sezonową uważa się za legalną od dnia złożenia wniosku do dnia, w którym decyzja w sprawie przedłużenia zezwolenia na
+pracę sezonową staje się ostateczna. Do okresów legalnej pracy nie wlicza się okresów zawieszenia postępowania na
+wniosek strony.
+    5. Przepis ust. 4 stosuje się odpowiednio, jeżeli po zakończeniu pracy na podstawie umowy o pomocy przy zbiorach
+cudzoziemiec będzie wykonywał pracę na podstawie innej umowy, a pozostałe warunki wykonywania pracy określone w ze-
+zwoleniu na pracę sezonową nie ulegną zmianie.
+     6. Jeżeli wniosek o przedłużenie zezwolenia na pracę sezonową złożył polski podmiot powierzający pracę cudzoziem-
+cowi, który nie powierzał pracy danemu cudzoziemcowi na podstawie zezwolenia na pracę sezonową w okresie bezpośred-
+nio poprzedzającym dzień złożenia wniosku, pracę tego cudzoziemca na warunkach określonych we wniosku lub korzyst-
+niejszych uważa się za legalną do dnia doręczenia decyzji starosty, nie dłużej jednak niż przez okres 30 dni liczonych od
+dnia złożenia wniosku, który nie zawiera braków formalnych.
+    7. Do przedłużenia zezwolenia na pracę sezonową na podstawie ust. 1 stosuje się odpowiednio przepisy dotyczące
+wydania zezwolenia na pracę sezonową.
+     8. Do wniosku o przedłużenie zezwolenia na pracę sezonową nie stosuje się art. 50.
 
 [art. 59]
      Art. 59. 1. Jeżeli cudzoziemiec wjechał na terytorium Rzeczypospolitej Polskiej na podstawie wizy wydanej w celu
