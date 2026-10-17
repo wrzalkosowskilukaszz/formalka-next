@@ -1,6 +1,6 @@
 # zielonalinia.gov.pl: 800+ dla obywateli Ukrainy. Zmiany od lutego 2026 r.
 # Source: https://zielonalinia.gov.pl/800-dla-obywateli-ukrainy-zmiany-od-lutego-2026-r/, retrieved 2026-10-17, html sha256 f012ccefea2b61daf9c33625ba23e6c0291d094b972e58eded7ae98d462a607d
-# Text of the page's main element from the article title, up to "Zobacz także"; navigation removed. Published 28.01.2026, "Informacje zgodne ze stanem prawnym na dzień 28 stycznia 2026"; a reprint of ZUS material. The portal says it is not a binding interpretation.
+# Text of the page's main element from the article title, up to "Zobacz także"; navigation removed; the author's name removed (17.10.2026). Published 28.01.2026, "Informacje zgodne ze stanem prawnym na dzień 28 stycznia 2026"; a reprint of ZUS material. The portal says it is not a binding interpretation.
 
 800+ dla obywateli Ukrainy. Zmiany od lutego 2026 r.
 Informacje zgodne ze stanem prawnym na dzień 28 stycznia 2026
@@ -35,7 +35,7 @@ Ten artykuł jest przedrukiem i został opublikowany za zgodą ZUS województwa 
 - ZUS województwa opolskiego.
 Uwaga! Wszystkie treści i materiały zamieszczane na portalu zielonalinia.gov.pl, opracowywane przez grupę redakcyjną, mają charakter informacyjny. Redakcja portalu dokłada wszelkich starań, aby informacje w nim zawarte były rzetelne i wiarygodne. Nie stanowią one wiążącej interpretacji przepisów prawnych.
 Data publikacji: 28 stycznia 2026
-Autor: Marta Kuczynko
+Autor: [author's name removed]
 Kategorie:
 Rynek pracy w prawie
 Udostępnij:
