@@ -1,6 +1,6 @@
-# Recognition of foreign education: Prawo o szkolnictwie wyższym i nauce (PSWN), consolidated Dz.U. 2024 poz. 1571, art. 326-328; art. 326a added by Dz.U. 2025 poz. 622 art. 10 pkt 8 (from 1.07.2025); art. 327 ust. 3 as replaced by Dz.U. 2026 poz. 203 art. 15 (from 5.03.2026); the act on the education system (USO), consolidated Dz.U. 2025 poz. 881, art. 93-93h, with Dz.U. 2025 poz. 622 art. 39 (its art. 1 from 1.07.2025); the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848) § 1-11; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2-7
-# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2024/1571 9b462ec30da489729ec6e012427f09d1467f4ebe27914cae6841f520def27b7d; DU/2025/622 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/881 3e587f0432d6950f7d8f4924787b09ecba5f9e41b575d2403b8b4ccf4b51d7e6; DU/2025/1848 d3f33ca1bca323d195b00ddd37100f4dac5fc8cd87ef3fa9eeea73817874b99d; DU/2018/1881 8477fdf2a4d9aae07aa2e95da2895edcac9904442d48a4eab25179bd6b3401a3.
-# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): PSWN after 11.09.2024, only Dz.U. 2025 poz. 622 art. 10 (adds art. 326a; its art. 39 pkt 2: from 1.07.2025) and Dz.U. 2026 poz. 203 art. 15 (art. 327 ust. 3; 5.03.2026, its general date under art. 54) touch art. 326-328. USO after 11.06.2025: none touches art. 93-93h; the consolidated text already prints Dz.U. 2025 poz. 622 art. 1's new wordings beside the old ones, with footnotes 63-83 (the new ones from 1.07.2025), and Dz.U. 2024 poz. 854 art. 3 (art. 93a pkt 1a, from 1.07.2024). The two regulations: none. Transitional rules the tool marks "read it by hand" (rerun with --header, 17.10.2026): Dz.U. 2025 poz. 622 art. 11 (the old regulation under art. 93h kept until 31.12.2025 at most; the MEN regulation of 22.12.2025 replaced it), art. 12 (quoted below: old cases and earlier decisions), art. 33 (universities' 2025/2026 admission rules) and art. 38 (a spending limit for NAWA's new task, with a mechanism that lowers its costs; it does not stop the service); Dz.U. 2023 poz. 1234 art. 74 (a notice for services; the art. 93 it names is that of the act on the education information system, which its art. 40 amends, not USO's; its art. 25 amends USO art. 11 only). These were first left out of this header.
+# Recognition of foreign education: Prawo o szkolnictwie wyższym i nauce (PSWN), consolidated Dz.U. 2024 poz. 1571, art. 22 ust. 4 (the definition of a professor's salary), 323 ust. 1 and 326-328; art. 69 ust. 2 pkt 4, 70 ust. 4a, 5 and 5a-5g and 323 ust. 1a-1d as changed by Dz.U. 2025 poz. 622 art. 10 pkt 2, 3 and 5, and art. 326a added by its art. 10 pkt 8 (all from 1.07.2025); art. 327 ust. 3 as replaced by Dz.U. 2026 poz. 203 art. 15 (from 5.03.2026); the act on the education system (USO), consolidated Dz.U. 2025 poz. 881, art. 93-93h, with Dz.U. 2025 poz. 622 art. 39 (its art. 1 from 1.07.2025); the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848) § 1-11; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2-7 and 9-15; the professor's salary regulation as changed by Dz.U. 2026 poz. 525 § 1-3; Prawo oświatowe (consolidated Dz.U. 2026 poz. 820) art. 165 ust. 5a, added by Dz.U. 2025 poz. 622 art. 7 (from 1.09.2025); the act on the professions of nurse and midwife (consolidated Dz.U. 2026 poz. 15) art. 35a ust. 1, 3 and 28
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2024/1571 9b462ec30da489729ec6e012427f09d1467f4ebe27914cae6841f520def27b7d; DU/2025/622 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/881 3e587f0432d6950f7d8f4924787b09ecba5f9e41b575d2403b8b4ccf4b51d7e6; DU/2025/1848 d3f33ca1bca323d195b00ddd37100f4dac5fc8cd87ef3fa9eeea73817874b99d; DU/2018/1881 8477fdf2a4d9aae07aa2e95da2895edcac9904442d48a4eab25179bd6b3401a3; DU/2026/525 f65142cc7d08245ea02d02024860193ab1c7af682fb2a9cfb9143b1a71a72eda; DU/2026/820 a9b6dd55618cba0dd04d675f9b52061737af98bf167d75a615fc535c57068439; DU/2026/15 6cd3064bca483cdd3603fe1e1b4082feeb37e1c7209b416abcf75c4b87ed6a58.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): PSWN after 11.09.2024, only Dz.U. 2025 poz. 622 art. 10 (adds art. 326a, and changes art. 69, 70 and 323, all quoted; its art. 39 pkt 2: from 1.07.2025) and Dz.U. 2026 poz. 203 art. 15 (art. 327 ust. 3; 5.03.2026, its general date under art. 54) touch art. 22, 69, 70, 323 or 326-328. The art. 69, 70 and 323 changes were first left out of this header; the independent check of 17.10.2026 found them. Dz.U. 2024 poz. 1897 art. 13 (from 1.01.2025, its art. 41) changes, among many others, art. 323 ust. 1 pkt 2 (agreements of universities "lub CMKP"): the quoted art. 323 ust. 1 still shows the old pkt 2; pkt 6 is unchanged; its transitional art. 32 names art. 269 only. The professor's salary regulation (Dz.U. 2018 poz. 1838, consolidated Dz.U. 2024 poz. 1407): Dz.U. 2026 poz. 525 (quoted). Prawo oświatowe after its consolidated text: Dz.U. 2026 poz. 1123 art. 19 (art. 13, 31) and Dz.U. 2026 poz. 187 art. 144 (art. 13, 14, 15, 32), not art. 165; Dz.U. 2026 poz. 203 art. 14 adds art. 165 ust. 16 pkt 3a (a curriculum for extra Polish lessons) from 1.09.2027, not ust. 5a; Dz.U. 2024 poz. 854 art. 9 (art. 165 ust. 8a) is in the consolidated text. The nursing act after its consolidated text (legal state 3.12.2025, which already holds Dz.U. 2024 poz. 854 art. 8 and Dz.U. 2025 poz. 1301 art. 8): Dz.U. 2026 poz. 203 art. 11 (art. 35a ust. 10 pkt 4 and ust. 21a repealed, from 5.03.2026) and its transitional art. 50 (art. 35a ust. 14-27 and 30-31 applied to consents under the special act), neither touching ust. 1, 3 or 28; Dz.U. 2024 poz. 854 art. 30 ust. 2: art. 35a ust. 28 and 29 do not apply to consents granted on applications filed by 24.10.2024; Dz.U. 2026 poz. 26 art. 26 (art. 4), Dz.U. 2026 poz. 986 art. 37 (art. 5a) and Dz.U. 2026 poz. 1123 art. 16 (art. 4, 5). USO after 11.06.2025: none touches art. 93-93h; the consolidated text already prints Dz.U. 2025 poz. 622 art. 1's new wordings beside the old ones, with footnotes 63-83 (the new ones from 1.07.2025), and Dz.U. 2024 poz. 854 art. 3 (art. 93a pkt 1a, from 1.07.2024). The two regulations: none. Transitional rules the tool marks "read it by hand" (rerun with --header, 17.10.2026): Dz.U. 2025 poz. 622 art. 11 (the old regulation under art. 93h kept until 31.12.2025 at most; the MEN regulation of 22.12.2025 replaced it), art. 12 (quoted below: old cases and earlier decisions), art. 33 (universities' 2025/2026 admission rules) and art. 38 (a spending limit for NAWA's new task, with a mechanism that lowers its costs; it does not stop the service); Dz.U. 2023 poz. 1234 art. 74 (a notice for services; the art. 93 it names is that of the act on the education information system, which its art. 40 amends, not USO's; its art. 25 amends USO art. 11 only). These were first left out of this header.
 # Not quoted: the act on recognising professional qualifications acquired in EU states (Dz.U. 2026 poz. 166) and the acts on each regulated profession; the NAWA act (Dz.U. 2025 poz. 1643); international agreements on recognition.
 
 [PSWN art. 326-328 (a diploma from the EU, OECD or EEA; nostrification; degrees), with the footnote that falls inside]
@@ -550,3 +550,274 @@ wymagania formalne.
     § 7. 1. Opłatę za przeprowadzenie postępowania nostryfikacyjnego wnosi się na rachunek bankowy albo w kasie uczel-
 ni nostryfikującej, w terminie określonym przez tę uczelnię.
      2. Termin, o którym mowa w ust. 1, nie może być krótszy niż 14 dni.
+
+[Dz.U. 2025 poz. 622 art. 10 pkt 2-3 (PSWN art. 69 ust. 2 pkt 4: a foreign certificate outside art. 326a ust. 1 counts for admission only when confirmed under art. 326a ust. 4; art. 70 ust. 4a, 5 and 5a-5g: B2 for non-EU foreigners; for a document outside art. 326a ust. 1, or a diploma outside art. 326 ust. 1 and not recognised, NAWA's information is required, and for first-cycle and long-cycle studies an entrance exam), from 1.07.2025 (art. 39 pkt 2); a footnote of the act falls in it]
+2)    w art. 69 w ust. 2:
+      a)   pkt 4 otrzymuje brzmienie:
+           „4) świadectwo lub inny dokument uprawniający do ubiegania się o przyjęcie na studia pierwszego stopnia lub
+                 jednolite studia magisterskie w Rzeczypospolitej Polskiej zgodnie z art. 326a ust. 1 albo świadectwo lub
+                 inny dokument, o których mowa w art. 326a ust. 3, z których wynikają uprawnienia do ubiegania się o przy-
+                 jęcie na studia pierwszego stopnia lub jednolite studia magisterskie w Rzeczypospolitej Polskiej, potwier-
+                 dzone zgodnie z art. 326a ust. 4;”,
+      b) uchyla się pkt 5 i 6;
+3)    w art. 70:
+      a)   ust. 4a i 5 otrzymują brzmienie:
+                  „4a. Uczelnia może przeprowadzić egzaminy wstępne dla osób ubiegających się o przyjęcie na studia pierw-
+           szego stopnia lub jednolite studia magisterskie na podstawie świadectwa, dyplomu lub innego dokumentu, o którym
+           mowa w art. 69 ust. 2 pkt 4 i 7, w przypadku konieczności sprawdzenia uzdolnień artystycznych, sprawności fizycz-
+           nej lub szczególnych predyspozycji do podejmowania studiów lub w zakresie nieobjętym wynikami egzaminu
+           zagranicznego lub wynikami kształcenia ujętymi na tym świadectwie, dyplomie lub dokumencie. Informacje
+           o przeprowadzeniu egzaminów wstępnych i ich zakresie uczelnia podaje do wiadomości publicznej w terminie,
+           o którym mowa w ust. 1. Wyniki egzaminu wstępnego sprawdzającego uzdolnienia artystyczne lub sprawność
+           fizyczną mogą stanowić do 100 % łącznego wyniku możliwego do uzyskania przez kandydata w toku rekrutacji.
+                  5. Przepisy ust. 3 stosuje się odpowiednio do wyników egzaminu zagranicznego lub wyników kształcenia,
+           potwierdzonych świadectwem, dyplomem lub innym dokumentem, o którym mowa w art. 69 ust. 2 pkt 4 i 7.”,
+5)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 854, 1562, 1635 i 1933 oraz z 2025 r. poz. 619
+     i 620.
+    b) po ust. 5 dodaje się ust. 5a–5g w brzmieniu:
+              „5a. W stosunku do cudzoziemców niebędących obywatelami UE w rozumieniu art. 2 pkt 3 ustawy z dnia
+       14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium
+       obywateli państw członkowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2024 r. poz. 633 i 1688 oraz
+       z 2025 r. poz. 619), ubiegających się o przyjęcie na studia pierwszego stopnia lub jednolite studia magisterskie na
+       podstawie wydanego za granicą dokumentu, który jest dokumentem potwierdzającym uprawnienie do ubiegania
+       się o przyjęcie na studia, o którym mowa w art. 326a ust. 1, uczelnia dokonuje weryfikacji znajomości języka,
+       w którym odbywa się kształcenie na studiach na określonym kierunku, poziomie i profilu, na ustalonym przez tę
+       uczelnię poziomie biegłości językowej, nie niższym niż B2.
+              5b. W stosunku do cudzoziemców ubiegających się o przyjęcie na studia pierwszego stopnia lub jednolite
+       studia magisterskie na podstawie wydanego za granicą dokumentu, który nie jest dokumentem potwierdzającym
+       uprawnienie do ubiegania się o przyjęcie na studia, o którym mowa w art. 326a ust. 1, uczelnia:
+       1)     wymaga przedstawienia w toku rekrutacji:
+              a) dokumentu wydanego za granicą przez szkołę lub instytucję edukacyjną uznawaną przez państwo,
+                   na którego terytorium lub w którego systemie edukacji działa, wraz z pisemną informacją o tym doku-
+                   mencie wydaną przez dyrektora NAWA potwierdzającą uprawnienie do ubiegania się o przyjęcie na
+                   studia albo
+              b) pisemnej informacji o tym dokumencie wydanej przez dyrektora NAWA potwierdzającej uprawnienie
+                   do ubiegania się o przyjęcie na studia – w przypadkach, o których mowa w art. 93a ustawy z dnia 7 września
+                   1991 r. o systemie oświaty;
+       2)     dokonuje weryfikacji znajomości języka, w którym odbywa się kształcenie na studiach na określonym kie-
+              runku, poziomie i profilu, na ustalonym przez tę uczelnię poziomie biegłości językowej, nie niższym niż B2;
+       3)     przeprowadza egzaminy wstępne w celu sprawdzenia:
+              a) wiedzy w zakresie niezbędnym do podjęcia studiów na określonym kierunku, poziomie i profilu lub
+              b) uzdolnień artystycznych, sprawności fizycznej lub szczególnych predyspozycji do podjęcia studiów
+                   na określonym kierunku, poziomie i profilu
+              – przy czym wyniki egzaminu wstępnego mogą stanowić do 100 % łącznego wyniku możliwego do uzyska-
+              nia przez kandydata w toku rekrutacji.
+              5c. W stosunku do cudzoziemców niebędących obywatelami UE w rozumieniu art. 2 pkt 3 ustawy z dnia
+       14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium
+       obywateli państw członkowskich Unii Europejskiej i członków ich rodzin, ubiegających się o przyjęcie na studia
+       drugiego stopnia na podstawie wydanego za granicą dyplomu ukończenia studiów, który jest dyplomem upraw-
+       niającym do kontynuacji kształcenia na studiach drugiego stopnia, o którym mowa w art. 326 ust. 1, albo został
+       uznany za dyplom równoważny odpowiedniemu polskiemu dyplomowi na podstawie umowy międzynarodowej,
+       o której mowa w art. 327 ust. 1, albo w drodze postępowania nostryfikacyjnego, uczelnia dokonuje weryfikacji
+       znajomości języka, w którym odbywa się kształcenie na studiach na określonym kierunku, poziomie i profilu,
+       na ustalonym przez tę uczelnię poziomie biegłości językowej, nie niższym niż B2.
+              5d. W stosunku do cudzoziemców ubiegających się o przyjęcie na studia drugiego stopnia na podstawie wy-
+       danego za granicą dyplomu ukończenia studiów, który nie jest dyplomem uprawniającym do kontynuacji kształ-
+       cenia na studiach drugiego stopnia, o którym mowa w art. 326 ust. 1, a także nie został uznany za dyplom równo-
+       ważny odpowiedniemu polskiemu dyplomowi na podstawie umowy międzynarodowej, o której mowa w art. 327
+       ust. 1, albo w drodze postępowania nostryfikacyjnego, uczelnia:
+       1)     wymaga przedstawienia w toku rekrutacji dyplomu ukończenia studiów wydanego za granicą przez uczelnię
+              uznawaną przez państwo, na którego terytorium lub w którego systemie szkolnictwa wyższego działa, wraz
+              z pisemną informacją o tym dyplomie wydaną przez dyrektora NAWA potwierdzającą uprawnienie do ubie-
+              gania się o przyjęcie na studia;
+       2)     dokonuje weryfikacji znajomości języka, w którym odbywa się kształcenie na studiach na określonym kie-
+              runku, poziomie i profilu, na ustalonym przez tę uczelnię poziomie biegłości językowej, nie niższym niż B2.
+              5e. Uczelnia dokonuje weryfikacji, o której mowa w ust. 5a, ust. 5b pkt 2, ust. 5c i ust. 5d pkt 2, na podstawie
+       przedstawionego przez cudzoziemca w toku rekrutacji dokumentu poświadczającego znajomość:
+       1)     języka polskiego – jeżeli kształcenie na studiach na określonym kierunku, poziomie i profilu odbywa się
+              w języku polskim,
+       2)     języka obcego – jeżeli kształcenie na studiach na określonym kierunku, poziomie i profilu odbywa się w języku
+              obcym
+       – na ustalonym przez tę uczelnię poziomie biegłości językowej, nie niższym niż B2.
+                  5f. Minister właściwy do spraw szkolnictwa wyższego i nauki określi, w drodze rozporządzenia, rodzaje
+           dokumentów, o których mowa w ust. 5e, uwzględniając konieczność zapewnienia obiektywnej weryfikacji znajo-
+           mości przez cudzoziemca języka, w którym odbywa się kształcenie na studiach na określonym kierunku, poziomie
+           i profilu, na ustalonym przez uczelnię poziomie biegłości językowej, nie niższym niż B2.
+                 5g. Informacje o:
+           1)    dokonywaniu weryfikacji, o której mowa w ust. 5a, ust. 5b pkt 2, ust. 5c i ust. 5d pkt 2, oraz dokumentach
+                 poświadczających znajomość języka, w którym odbywa się kształcenie na studiach na określonym kierunku,
+                 poziomie i profilu, o których mowa w przepisach wydanych na podstawie ust. 5f, na ustalonym przez uczel-
+                 nię poziomie biegłości językowej, nie niższym niż B2,
+           2)    wymogach, o których mowa w ust. 5b pkt 1 i ust. 5d pkt 1,
+           3)    przeprowadzeniu egzaminów wstępnych, o których mowa w ust. 5b pkt 3, oraz ich zakresie
+           – uczelnia podaje do wiadomości publicznej w terminie, o którym mowa w ust. 1.”;
+
+[Dz.U. 2025 poz. 622 art. 10 pkt 5 (PSWN art. 323 ust. 1a-1d: the admission decision for a foreigner is issued only with these documents, the B2 document and, where required, a passed entrance exam), from 1.07.2025]
+5)   w art. 323 po ust. 1 dodaje się ust. 1a–1d w brzmieniu:
+           „1a. W stosunku do cudzoziemca niebędącego obywatelem UE w rozumieniu art. 2 pkt 3 ustawy z dnia 14 lipca
+     2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw
+     członkowskich Unii Europejskiej i członków ich rodzin, ubiegającego się o przyjęcie na studia pierwszego stopnia lub
+     jednolite studia magisterskie na podstawie wydanego za granicą dokumentu, który jest dokumentem potwierdzającym
+     uprawnienie do ubiegania się o przyjęcie na studia, o którym mowa w art. 326a ust. 1, decyzję administracyjną, o której
+     mowa w ust. 1 pkt 6, wydaje się, jeżeli cudzoziemiec ten przedstawił w toku rekrutacji dokument poświadczający zna-
+     jomość języka, w którym odbywa się kształcenie na studiach na określonym kierunku, poziomie i profilu, o którym
+     mowa w przepisach wydanych na podstawie art. 70 ust. 5f, na ustalonym przez uczelnię poziomie biegłości językowej,
+     nie niższym niż B2.
+           1b. W stosunku do cudzoziemca ubiegającego się o przyjęcie na studia pierwszego stopnia lub jednolite studia
+     magisterskie na podstawie wydanego za granicą dokumentu, który nie jest dokumentem potwierdzającym uprawnienie
+     do ubiegania się o przyjęcie na studia, o którym mowa w art. 326a ust. 1, decyzję administracyjną, o której mowa
+     w ust. 1 pkt 6, wydaje się, jeżeli cudzoziemiec ten:
+     1)     przedstawił w toku rekrutacji:
+            a)   dokument wydany za granicą przez szkołę lub instytucję edukacyjną uznawaną przez państwo, na którego
+                 terytorium lub w którego systemie edukacji działa, wraz z pisemną informacją o tym dokumencie wydaną
+                 przez dyrektora NAWA potwierdzającą uprawnienie do ubiegania się o przyjęcie na studia albo
+            b) pisemną informację o tym dokumencie wydaną przez dyrektora NAWA potwierdzającą uprawnienie do
+               ubiegania się o przyjęcie na studia – w przypadkach, o których mowa w art. 93a ustawy z dnia 7 września
+               1991 r. o systemie oświaty;
+     2)     przedstawił w toku rekrutacji dokument poświadczający znajomość języka, w którym odbywa się kształcenie na
+            studiach na określonym kierunku, poziomie i profilu, o którym mowa w przepisach wydanych na podstawie art. 70
+            ust. 5f, na ustalonym przez uczelnię poziomie biegłości językowej, nie niższym niż B2;
+     3)     złożył z wynikiem pozytywnym egzamin wstępny, o którym mowa w art. 70 ust. 5b pkt 3.
+           1c. W stosunku do cudzoziemca niebędącego obywatelem UE w rozumieniu art. 2 pkt 3 ustawy z dnia 14 lipca
+     2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw
+     członkowskich Unii Europejskiej i członków ich rodzin, ubiegającego się o przyjęcie na studia drugiego stopnia na
+     podstawie wydanego za granicą dyplomu ukończenia studiów, który jest dyplomem uprawniającym do kontynuacji
+     kształcenia na studiach drugiego stopnia, o którym mowa w art. 326 ust. 1, albo został uznany za dyplom równoważny
+     odpowiedniemu polskiemu dyplomowi na podstawie umowy międzynarodowej, o której mowa w art. 327 ust. 1, albo
+     w drodze postępowania nostryfikacyjnego, decyzję administracyjną, o której mowa w ust. 1 pkt 6, wydaje się, jeżeli
+     cudzoziemiec ten przedstawił w toku rekrutacji dokument poświadczający znajomość języka, w którym odbywa się
+     kształcenie na studiach na określonym kierunku, poziomie i profilu, o którym mowa w przepisach wydanych na pod-
+     stawie art. 70 ust. 5f, na ustalonym przez uczelnię poziomie biegłości językowej, nie niższym niż B2.
+           1d. W stosunku do cudzoziemca ubiegającego się o przyjęcie na studia drugiego stopnia na podstawie wydanego
+     za granicą dyplomu ukończenia studiów, który nie jest dyplomem uprawniającym do kontynuacji kształcenia na stu-
+     diach drugiego stopnia, o którym mowa w art. 326 ust. 1, a także nie został uznany za dyplom równoważny odpowied-
+     niemu polskiemu dyplomowi na podstawie umowy międzynarodowej, o której mowa w art. 327 ust. 1, albo w drodze
+     postępowania nostryfikacyjnego, decyzję administracyjną, o której mowa w ust. 1 pkt 6, wydaje się, jeżeli cudzoziemiec
+     ten:
+     1)    przedstawił w toku rekrutacji dyplom ukończenia studiów wydany za granicą przez uczelnię uznawaną przez
+           państwo, na którego terytorium lub w którego systemie szkolnictwa wyższego działa, wraz z pisemną informacją
+           o tym dyplomie wydaną przez dyrektora NAWA potwierdzającą uprawnienie do ubiegania się o przyjęcie na
+           studia;
+     2)    przedstawił w toku rekrutacji dokument poświadczający znajomość języka, w którym odbywa się kształcenie na
+           studiach na określonym kierunku, poziomie i profilu, o którym mowa w przepisach wydanych na podstawie
+           art. 70 ust. 5f, na ustalonym przez uczelnię poziomie biegłości językowej, nie niższym niż B2.”;
+
+[PSWN art. 323 ust. 1 (the bases on which foreigners study; pkt 6, the rector's administrative decision)]
+     Art. 323. 1. Cudzoziemcy mogą podejmować i odbywać studia, kształcenie w szkołach doktorskich, studia podyplo-
+mowe, kształcenie specjalistyczne i inne formy kształcenia oraz uczestniczyć w prowadzeniu działalności naukowej lub
+w prowadzeniu kształcenia, na podstawie:
+1)     umów międzynarodowych, na zasadach określonych w tych umowach;
+2)     umów zawieranych z podmiotami zagranicznymi przez uczelnie, na zasadach określonych w tych umowach;
+3)     decyzji ministra;
+4)     decyzji dyrektora NAWA w odniesieniu do jej stypendystów;
+5)     decyzji dyrektora NCN o przyznaniu środków finansowych na realizację badań podstawowych w formie projektu
+       badawczego, stażu lub stypendium, zakwalifikowanych do finansowania w drodze konkursu;
+6)     decyzji administracyjnej rektora, dyrektora instytutu PAN, dyrektora instytutu badawczego lub dyrektora instytutu
+       międzynarodowego.
+
+[PSWN art. 22 ust. 4 (where the act defines "wynagrodzenie profesora": the minimum monthly base salary for a professor set by the art. 137 ust. 2 regulation)]
+     4. Członkowi rady uczelni, o którym mowa w art. 19 ust. 1 pkt 1, przysługuje miesięczne wynagrodzenie, którego
+wysokość nie może przekroczyć 67 % minimalnego miesięcznego wynagrodzenia zasadniczego dla profesora w uczelni
+publicznej określonego w przepisach wydanych na podstawie art. 137 ust. 2, zwanego dalej „wynagrodzeniem profesora”.
+Wysokość wynagrodzenia ustala senat.
+
+[The regulation of the Minister of Science and Higher Education of 14.04.2026 (Dz.U. 2026 poz. 525) § 1-3: the professor's salary rises from 9370 zł to 9650 zł, applied to pay due from 1.01.2026, in force the day after its publication on 16.04.2026]
+     § 1. W rozporządzeniu Ministra Nauki i Szkolnictwa Wyższego z dnia 25 września 2018 r. w sprawie wysokości
+minimalnego miesięcznego wynagrodzenia zasadniczego dla profesora w uczelni publicznej (Dz. U. z 2024 r. poz. 1407)
+w § 1 wyrazy „9370 zł” zastępuje się wyrazami „9650 zł”.
+     § 2. Wysokość minimalnego miesięcznego wynagrodzenia zasadniczego dla profesora w uczelni publicznej określona
+w § 1 rozporządzenia zmienianego w § 1, w brzmieniu nadanym niniejszym rozporządzeniem, ma zastosowanie do wyna-
+grodzenia należnego od dnia 1 stycznia 2026 r.
+      § 3. Rozporządzenie wchodzi w życie z dniem następującym po dniu ogłoszenia.
+
+[The MNiSW regulation of 28.09.2018 § 9-15 (confirming studies without a diploma: the application, documents and statement, 14 days for gaps, translations, exams or practice, 90 days, the fee)]
+    § 9. 1. Osoba ubiegająca się o potwierdzenie ukończenia studiów na określonym poziomie składa wniosek do wybranej
+uczelni, o której mowa w art. 327 ust. 4 zdanie drugie ustawy z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym
+i nauce, zwanej dalej „uczelnią potwierdzającą”.
+     2. Do wniosku, o którym mowa w ust. 1, dołącza się:
+1)    dokumenty poświadczające:
+      a) ukończenie studiów,
+      b) zaliczone zajęcia i uzyskane oceny,
+      c) złożone egzaminy,
+      d) uzyskane kwalifikacje lub uprawnienia zawodowe,
+      e) odbyte praktyki zawodowe lub zatrudnienie,
+      f) uzyskanie statusu uchodźcy lub ochrony uzupełniającej, lub posiadanie zezwolenia na pobyt czasowy udzielone
+          w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r.
+          o cudzoziemcach (Dz. U. z 2017 r. poz. 2206 i 2282 oraz z 2018 r. poz. 107, 138, 771 i 1669);
+2)    oświadczenie osoby, o której mowa w ust. 1, o:
+      a)   ukończeniu studiów, o których potwierdzenie ukończenia ubiega się,
+      b)   miejscu i dacie urodzenia.
+    3. Dokumenty, o których mowa w ust. 2 pkt 1, mogą być złożone w postaci kopii poświadczonych za zgodność z orygi-
+nałem przez uczelnię potwierdzającą.
+    § 10. 1. Datą wszczęcia postępowania w sprawie potwierdzenia ukończenia studiów na określonym poziomie jest dzień
+doręczenia wniosku uczelni potwierdzającej.
+     2. Uczelnia potwierdzająca dokonuje oceny formalnej wniosku. W przypadku stwierdzenia braków formalnych wnios-
+ku uczelnia potwierdzająca wyznacza osobie, o której mowa w § 9 ust. 1, termin, nie krótszy niż 14 dni, do jego uzupełnie-
+nia, pod rygorem pozostawienia wniosku bez rozpoznania.
+    § 11. 1. Uczelnia potwierdzająca może, po przeprowadzeniu oceny formalnej wniosku, zażądać od wnioskodawcy
+przedłożenia tłumaczenia zwykłego na język polski dokumentów, o których mowa w § 9 ust. 2 pkt 1 lit. a–e.
+    2. W szczególnie uzasadnionych przypadkach uczelnia potwierdzająca może zażądać od wnioskodawcy przedłożenia
+tłumaczenia na język polski dokumentów, o których mowa w § 9 ust. 2 pkt 1 lit. a–e, sporządzonego i poświadczonego
+przez tłumacza przysięgłego albo sporządzonego przez zagranicznego tłumacza i poświadczonego przez właściwego konsu-
+la Rzeczypospolitej Polskiej.
+    § 12. 1. Uczelnia potwierdzająca ocenia dokumenty dołączone do wniosku, o którym mowa w § 9 ust. 1, oraz na ich
+podstawie porównuje program studiów, uzyskiwane efekty uczenia się i uprawnienia zawodowe, realizowane praktyki za-
+wodowe oraz czas trwania studiów z programem studiów, uzyskiwanymi efektami uczenia się i uprawnieniami zawodowy-
+mi, realizowanymi praktykami zawodowymi oraz czasem trwania podobnych studiów prowadzonych w tej uczelni.
+    2. W przypadku stwierdzenia różnic w programie studiów, efektach uczenia się lub czasie trwania studiów uczelnia
+potwierdzająca może zobowiązać osobę, o której mowa w § 9 ust. 1, do złożenia określonych egzaminów lub odbycia prak-
+tyk zawodowych.
+    3. Uczelnia potwierdzająca określa warunki i terminy przeprowadzenia egzaminów lub odbycia praktyk zawodowych,
+o których mowa w ust. 2.
+    § 13. 1. Uczelnia potwierdzająca potwierdza albo odmawia potwierdzenia ukończenia studiów na określonym poziomie
+w terminie 90 dni od dnia złożenia wniosku spełniającego wymagania formalne.
+     2. Do terminu, o którym mowa w ust. 1, nie wlicza się okresów wyznaczonych na:
+1)    przedłożenie tłumaczenia dokumentów – w przypadkach, o których mowa w § 11;
+2)    złożenie egzaminów lub odbycie praktyk zawodowych – w przypadku, o którym mowa w § 12 ust. 2.
+   § 14. 1. Opłatę za przeprowadzenie postępowania w sprawie potwierdzenia ukończenia studiów na określonym pozio-
+mie wnosi się na rachunek bankowy albo w kasie uczelni potwierdzającej, w terminie określonym przez tę uczelnię.
+     2. Termin, o którym mowa w ust. 1, nie może być krótszy niż 14 dni.
+   § 15. Wzór zaświadczenia wydawanego po przeprowadzeniu postępowania w sprawie potwierdzenia ukończenia stu-
+diów na określonym poziomie stanowi załącznik nr 2 do rozporządzenia.
+
+[Dz.U. 2025 poz. 622 art. 7 (Prawo oświatowe art. 165 ust. 5a: a post-secondary school for a non-Polish citizen only with a Polish language certificate of at least B1), from 1.09.2025 (art. 39 pkt 3)]
+     Art. 7. W ustawie z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2024 r. poz. 737, z późn. zm.5)) w art. 165
+po ust. 5 dodaje się ust. 5a w brzmieniu:
+            „5a. Osoby, o których mowa w ust. 3 i 5, mogą korzystać z nauki w publicznych szkołach policealnych oraz nie-
+     publicznych szkołach policealnych pod warunkiem przedłożenia certyfikatu znajomości języka polskiego, o którym
+     mowa w art. 11a ust. 2 ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2024 r. poz. 1556 oraz z 2025 r.
+     poz. 622), co najmniej na poziomie biegłości językowej B1.”.
+
+[Prawo oświatowe, consolidated Dz.U. 2026 poz. 820, art. 165 ust. 5a, as it now reads]
+      5a. Osoby, o których mowa w ust. 3 i 5, mogą korzystać z nauki w publicznych szkołach policealnych oraz niepublicz-
+nych szkołach policealnych pod warunkiem przedłożenia certyfikatu znajomości języka polskiego, o którym mowa w art. 11a
+ust. 2 ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2026 r. poz. 81 i 676), co najmniej na poziomie biegłości
+językowej B1.
+
+[The act on the professions of nurse and midwife, consolidated Dz.U. 2026 poz. 15, art. 35a ust. 1 (qualifications from outside the EU: consent to practise and a right to practise for a set scope, period and place of employment, on conditions)]
+     Art. 35a. 1. Osobie, która uzyskała kwalifikacje poza terytorium państw członkowskich Unii Europejskiej, można
+udzielić zgody na wykonywanie zawodu pielęgniarki lub położnej oraz przyznać prawo wykonywania zawodu pielęgniarki
+lub położnej, na określony zakres czynności zawodowych, okres i miejsce zatrudnienia w podmiocie wykonującym działal-
+ność leczniczą, jeżeli spełnia następujące warunki:
+1)   złożyła oświadczenie, że wykazuje znajomość języka polskiego wystarczającą do wykonywania powierzonego jej za-
+     kresu czynności zawodowych;
+2)   uzyskała zaświadczenie od podmiotu wykonującego działalność leczniczą zawierające wykaz komórek organizacyj-
+     nych zakładu leczniczego i okres planowanego zatrudnienia ze wskazaniem zakresu czynności zawodowych zgodnego
+     z posiadanym wykształceniem;
+3)   ma pełną zdolność do czynności prawnych;
+4)   jej stan zdrowia pozwala na wykonywanie zawodu pielęgniarki lub położnej;
+5)   wykazuje nienaganną postawę etyczną;
+6)   ma co najmniej 3-letnie doświadczenie zawodowe jako pielęgniarka lub położna, uzyskane w okresie 5 lat bezpośred-
+     nio poprzedzających uzyskanie zaświadczenia, o którym mowa w pkt 2;
+7)   posiada dyplom pielęgniarki lub położnej, wydany w innym państwie niż państwo członkowskie Unii Europejskiej,
+     jeżeli dyplom lub jego duplikat jest zalegalizowany przez konsula Rzeczypospolitej Polskiej, właściwego dla państwa, na
+     którego terytorium lub w którego systemie szkolnictwa wydano ten dyplom, albo na dyplomie lub jego duplikacie
+     umieszczono albo dołączono do dokumentu apostille, jeżeli dyplom został wydany przez uprawniony organ właściwy
+     dla państwa będącego stroną Konwencji znoszącej wymóg legalizacji zagranicznych dokumentów urzędowych, spo-
+     rządzonej w Hadze dnia 5 października 1961 r. (Dz. U. z 2005 r. poz. 938), na którego terytorium lub w którego systemie
+     szkolnictwa wydano ten dyplom.
+
+[The same, art. 35a ust. 3 (the minister of health decides)]
+     3. Zgody określonej w ust. 1 udziela na wniosek osoby, o której mowa w ust. 1, minister właściwy do spraw zdrowia,
+w drodze decyzji administracyjnej, której nadaje się rygor natychmiastowej wykonalności. W decyzji określa się zakres
+czynności zawodowych oraz okres i miejsce udzielania świadczeń zdrowotnych wskazane w zaświadczeniu, o którym mowa
+w ust. 1 pkt 2. Minister właściwy do spraw zdrowia może odstąpić od warunku zalegalizowania dyplomu lub duplikatu oraz
+posiadania apostille dyplomu lub jego duplikatu, o którym mowa w ust. 1 pkt 7, jeżeli spełnienie tego warunku przez
+wnioskodawcę jest niemożliwe lub znacząco utrudnione.
+
+[The same, art. 35a ust. 28 (the regional council grants the right after a Polish B1 document)]
+     28.17) Okręgowa rada pielęgniarek i położnych przyznaje prawo wykonywania zawodu oraz wydaje dokument „Prawo
+wykonywania zawodu pielęgniarki” albo „Prawo wykonywania zawodu położnej”, o którym mowa w ust. 6 i 18, po przed-
+łożeniu przez wnioskodawcę dokumentu poświadczającego znajomość języka polskiego minimum na poziomie B1 wymie-
+nionego w wykazie dokumentów poświadczających znajomość języka polskiego minimum na poziomie B1, ogłoszonym
+przez ministra właściwego do spraw zdrowia w Biuletynie Informacji Publicznej.

@@ -1,0 +1,42 @@
+# NAWA (the Polish National Agency for Academic Exchange): "Świadectwo szkoły średniej"
+# Source: https://nawa.gov.pl/uznawalnosc/wydawanie-informacji-o-zagranicznych-dyplomach/swiadectwo-szkoly-sredniej, retrieved 2026-10-17, html sha256 f039ea453ac859ad2edb17f8d588f9debbb0a718456a76c4f6d616f7b1a8cde3 (the HTML changes on every request; the text does not)
+# Text of the page's main element; blank lines, empty list markers and the print link removed. The page shows no update date; its two lists are dated 24.06.2025 and 21.07.2025 and are not kept. Not binding.
+# sha256 of the text below this header (from line 5): d72731fb9d273bf59177aa31a2cd8ad10c83394df66c22d85b4dde53479cbea7.
+Świadectwo szkoły średniej
+Indywidualne informacje Dyrektora NAWA o zagranicznych świadectwach uprawniających do ubiegania się o przyjęcie na studia pierwszego stopnia lub studia jednolite, są wydawane
+- po przesłaniu kompletu dokumentów przez System SYRENA,
+- wyłącznie elektronicznie w formie dokumentu PDF podpisanego kwalifikowanym podpisem cyfrowym
+- w języku polskim
+- bezpłatnie.
+UWAGA: Jeżeli posiadasz decyzję Kuratora Oświaty o uznaniu świadectwa, możesz ubiegać się o przyjęcie na studia - nie potrzebujesz informacji Dyrektora NAWA.
+W celu uzyskania informacji o zagranicznym świadectwie:
+przed złożeniem wniosku zapoznaj się z instrukcją użytkownika Systemu SYRENA:
+SYRENA - Instrukcja Użytkownika - Świadectwo szkoły średniej
+SYRENA - User Manual - Secondary school certificate
+przygotuj wymagane dokumenty - w formacie PDF lub JPG, maksymalny rozmiar każdego pliku to 3 MB. Zwróć uwagę na krok 2 i krok 3 opisane w instrukcji, żeby prawidłowo wpisać dane dotyczące dokumentów i odpowiednio załączyć:
+świadectwo uprawniające do kontynuacji studiów, o którym chcesz uzyskać informację
+transkrypt / suplement / dodatek do ww. świadectwa – jeżeli został wydany
+dokument poprzedni – wcześniejsze świadectwo ukończenia szkoły
+tłumaczenia przysięgłe wszystkich ww. dokumentów (nie dotyczy dokumentów wydanych w językach: angielski, rosyjski, ukraiński, białoruski)
+dokument tożsamości (paszport)
+dokument potwierdzający zmianę nazwiska
+oświadczenie rodziców / opiekunów prawnych (w przypadku kandydatów niepełnoletnich)
+oświadczenie-SYRENA-PL declaration-SYRENA-EN
+w przypadku uchodźców – dokument potwierdzający status uchodźcy
+w Systemie SYRENA wypełnij formularz wniosku i dołącz skany wymaganych dokumentów,
+aby prawidłowo złożyć wniosek aktywuj indywidualny link generowany dla danej sprawy, przesłany przez System SYRENA na wskazany w formularzu adres e-mail,
+samodzielnie sprawdź status wniosku w Systemie SYRENA,
+pobierz informację o zagranicznym dyplomie - wiadomość o wydaniu informacji i możliwości jej pobrania jest przesyłana przez System SYRENA.
+W przypadku problemów technicznych zapraszamy do kontaktu przez e-mail: Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.
+Przejdź do systemu SYRENA
+UWAGA!
+Informacje Dyrektora NAWA o zagranicznych świadectwach wydawane są najszybciej jak to możliwe, biorąc pod uwagę ogromną liczbę wpływających wniosków. System SYRENA wysyła do wnioskodawcy automatyczną wiadomość o tym, że informacja jest gotowa i dostępna do pobrania.
+Indywidualna informacja Dyrektora NAWA o świadectwie potwierdza wyłącznie uprawnienia do kontynuacji nauki w Polsce.
+W sprawie uznania świadectwa do celów innych niż podjęcie studiów w Polsce należy kontaktować się z Departamentem Współpracy Międzynarodowej w Ministerstwie Edukacji Narodowej (Al. J.Ch. Szucha 25, 00-918 Warszawa, tel.: 22 34 74 312, e-mail: Ten adres pocztowy jest chroniony przed spamowaniem. Aby go zobaczyć, konieczne jest włączenie w przeglądarce obsługi JavaScript.).
+Informacja Dyrektora NAWA nie jest wymagana w przypadku świadectw z państw członkowskich UE, EFTA lub OECD oraz świadectw objętych umowami międzynarodowymi o uznawalności wykształcenia (m.in. z Chinami i Ukrainą) oraz świadectw IB i EB - dokumenty te uznane są automatycznie w celu ubiegania się o przyjęcie na studia pierwszego stopnia lub studia jednolite w polskiej uczelni (informacje o uprawnieniach do kontynuacji nauki można sprawdzić w systemie KWALIFIKATOR).
+ŚWIADECTWA UZNANE AUTOMATYCZNIE - stan na dzień 24.06.2025
+UWAGA: Informacja Dyrektora NAWA nie jest wymagana, jeżeli świadectwo zostało uznane w drodze decyzji Kuratora Oświaty.
+Informacja Dyrektora NAWA o świadectwie jest wymagana w przypadku pozostałych świadectw.
+ŚWIADECTWA Z PAŃSTW TRZECICH - stan na dzień 21.07.2025
+Zachęcamy także do zapoznania się z sekcją FAQ – najczęściej zadawane pytania https://nawa.gov.pl/uznawalnosc/faq-najczesciej-zadawane-pytania
+UWAGA: Umieszczone na stronie NAWA listy świadectw nie są listami zamkniętymi. Każdy wniosek złożony w systemie SYRENA rozpatrywany jest indywidualnie.
