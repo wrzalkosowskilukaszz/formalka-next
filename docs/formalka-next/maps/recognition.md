@@ -5,7 +5,7 @@
 **Why it matters:**
 - **Where the diploma is from decides the route.** A diploma from the EU, OECD or EFTA-EEA confirms a level of education in Poland by law (FACT, PSWN art. 326 ust. 1). Others need an international agreement or nostrification at a university (FACT, art. 327 ust. 1). People pay for nostrification (up to 50 % of a professor's salary, art. 327 ust. 6) when a free NAWA letter might have served (INFERENCE).
 - **A level of education is not a Polish title.** The title ("magister") needs an agreement or nostrification (FACT, art. 327 ust. 1–2; PAGES).
-- **School certificates changed on 1.07.2025.** For university admission, PSWN art. 326a and NAWA's information now apply (FACT). For proof of education, the school superintendent decides (FACT, USO art. 93 ust. 3, 93b).
+- **School certificates changed on 1.07.2025.** For university admission, PSWN art. 326a and NAWA's information now apply (FACT). For proof of education, the school superintendent decides (FACT, USO art. 93 ust. 3, 93b). A superintendent's decision on the right to apply for studies issued by 30.06.2025, or later in a case begun by then, may still be shown in university admission (FACT, Dz.U. 2025 poz. 622 art. 12 ust. 2–3).
 - **Refugees, people under protection, and others without documents** can have their education confirmed: studies under PSWN art. 327 ust. 3 (from 5.03.2026), schooling under USO art. 93a (FACT).
 
 **Sources:** `research/2026-10-17-recognition/sources/` (README there), cited as:

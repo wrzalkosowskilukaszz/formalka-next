@@ -19,7 +19,7 @@ Not covered:
 
 | File | Source | Version |
 |---|---|---|
-| `pswn-uso-recognition-extract.txt` | PSWN (consolidated Dz.U. 2024 poz. 1571) art. 326–328, art. 326a (Dz.U. 2025 poz. 622 art. 10 pkt 8), art. 327 ust. 3 (Dz.U. 2026 poz. 203 art. 15); USO (consolidated Dz.U. 2025 poz. 881) art. 93–93h; the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848), whole; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2–7 | Hashes, dates and amendments in its header |
+| `pswn-uso-recognition-extract.txt` | PSWN (consolidated Dz.U. 2024 poz. 1571) art. 326–328, art. 326a (Dz.U. 2025 poz. 622 art. 10 pkt 8), art. 327 ust. 3 (Dz.U. 2026 poz. 203 art. 15); USO (consolidated Dz.U. 2025 poz. 881) art. 93–93h, with Dz.U. 2025 poz. 622 art. 12 (old cases and decisions); the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848), whole; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2–7 | Hashes, dates and amendments in its header |
 | `nawa-dyplom-ue-oecd-efta-2026-10-17.txt` | NAWA, "Dyplom z państwa UE, OECD lub EFTA" | No update date shown |
 | `nawa-dyplom-z-innego-kraju-2026-10-17.txt` | NAWA, "Dyplom z innego kraju" | No update date shown |
 | `nawa-informacja-o-dyplomie-2026-10-17.txt` | NAWA, "Dyplom ukończenia studiów" (written information on a foreign diploma) | No update date shown |
@@ -65,6 +65,7 @@ Not covered:
 | Agreements | Certificates from schools recognised by their state are recognised on the terms of international agreements | USO art. 93 ust. 2 |
 | A decision | Unless agreements say otherwise, such certificates may be recognised by an administrative decision as primary, lower secondary, vocational or secondary education, or the right to continue education, except the right to apply for first-cycle or long-cycle studies (that is PSWN art. 326a) | USO art. 93 ust. 3 (wording from 1.07.2025) |
 | Without documents | When producing the original or a duplicate, or authenticating it, meets obstacles hard to remove, for a refugee or a person with subsidiary protection or a temporary permit under UoC art. 159 ust. 1 pkt 1 lit. c or d, a certificate from a state that denounced a recognition agreement, or a person harmed by armed conflict, disaster or another crisis: the education may be confirmed by decision | USO art. 93a |
+| Cases and decisions from before 1.07.2025 | A case on the recognition of secondary education and the right to apply for studies, begun and not ended by a final decision by 30.06.2025, keeps the old art. 93–93c and 93f. A final decision on that right issued by 30.06.2025, or later in such a case, stays valid and may be shown in admission to first-cycle or long-cycle studies | Dz.U. 2025 poz. 622 art. 12 |
 | Which superintendent | The one of the applicant's place of residence; without residence in Poland, the one of the seat of the institution where the certificate is to be filed | USO art. 93b ust. 1 |
 | How | The superintendent compares the foreign schooling with Polish public schools; may ask others, in particular consulates | USO art. 93c |
 | A check interview | When the certificate is not enough, the superintendent may hold an interview checking the level; for art. 93a, the interview is held unless the documents show the level | USO art. 93d–93f |

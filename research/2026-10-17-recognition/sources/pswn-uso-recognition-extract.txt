@@ -1,6 +1,6 @@
 # Recognition of foreign education: Prawo o szkolnictwie wyższym i nauce (PSWN), consolidated Dz.U. 2024 poz. 1571, art. 326-328; art. 326a added by Dz.U. 2025 poz. 622 art. 10 pkt 8 (from 1.07.2025); art. 327 ust. 3 as replaced by Dz.U. 2026 poz. 203 art. 15 (from 5.03.2026); the act on the education system (USO), consolidated Dz.U. 2025 poz. 881, art. 93-93h, with Dz.U. 2025 poz. 622 art. 39 (its art. 1 from 1.07.2025); the MEN regulation of 22.12.2025 (Dz.U. 2025 poz. 1848) § 1-11; the MNiSW regulation of 28.09.2018 (Dz.U. 2018 poz. 1881) § 2-7
 # Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2024/1571 9b462ec30da489729ec6e012427f09d1467f4ebe27914cae6841f520def27b7d; DU/2025/622 da68bfb7f2e3523f4317caa6faa71cbb66aea4da7f8a20eea5137db68feea58a; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/881 3e587f0432d6950f7d8f4924787b09ecba5f9e41b575d2403b8b4ccf4b51d7e6; DU/2025/1848 d3f33ca1bca323d195b00ddd37100f4dac5fc8cd87ef3fa9eeea73817874b99d; DU/2018/1881 8477fdf2a4d9aae07aa2e95da2895edcac9904442d48a4eab25179bd6b3401a3.
-# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): PSWN after 11.09.2024, only Dz.U. 2025 poz. 622 art. 10 (adds art. 326a; its art. 39 pkt 2: from 1.07.2025) and Dz.U. 2026 poz. 203 art. 15 (art. 327 ust. 3; 5.03.2026, its general date under art. 54) touch art. 326-328. USO after 11.06.2025: none touches art. 93-93h; the consolidated text already prints Dz.U. 2025 poz. 622 art. 1's new wordings beside the old ones, with footnotes 63-83 (the new ones from 1.07.2025), and Dz.U. 2024 poz. 854 art. 3 (art. 93a pkt 1a, from 1.07.2024). The two regulations: none.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): PSWN after 11.09.2024, only Dz.U. 2025 poz. 622 art. 10 (adds art. 326a; its art. 39 pkt 2: from 1.07.2025) and Dz.U. 2026 poz. 203 art. 15 (art. 327 ust. 3; 5.03.2026, its general date under art. 54) touch art. 326-328. USO after 11.06.2025: none touches art. 93-93h; the consolidated text already prints Dz.U. 2025 poz. 622 art. 1's new wordings beside the old ones, with footnotes 63-83 (the new ones from 1.07.2025), and Dz.U. 2024 poz. 854 art. 3 (art. 93a pkt 1a, from 1.07.2024). The two regulations: none. Transitional rules the tool marks "read it by hand" (rerun with --header, 17.10.2026): Dz.U. 2025 poz. 622 art. 11 (the old regulation under art. 93h kept until 31.12.2025 at most; the MEN regulation of 22.12.2025 replaced it), art. 12 (quoted below: old cases and earlier decisions), art. 33 (universities' 2025/2026 admission rules) and art. 38 (a spending limit for NAWA's new task, with a mechanism that lowers its costs; it does not stop the service); Dz.U. 2023 poz. 1234 art. 74 (a notice for services; the art. 93 it names is that of the act on the education information system, which its art. 40 amends, not USO's; its art. 25 amends USO art. 11 only). These were first left out of this header.
 # Not quoted: the act on recognising professional qualifications acquired in EU states (Dz.U. 2026 poz. 166) and the acts on each regulated profession; the NAWA act (Dz.U. 2025 poz. 1643); international agreements on recognition.
 
 [PSWN art. 326-328 (a diploma from the EU, OECD or EEA; nostrification; degrees), with the footnote that falls inside]
@@ -342,6 +342,36 @@ z uzyskaniem wyższego wykształcenia w Regionie Europejskim, sporządzonej w Li
 świadectwa lub innego dokumentu, o którym mowa w art. 93 ust. 3, oraz postępowania w sprawie potwierdzenia
 wykształcenia lub uprawnień do kontynuacji nauki, o którym mowa w art. 93a, a także stosowania obiektywnych
 kryteriów podczas rozpatrywania wniosków o uznanie świadectw lub innych dokumentów.85)
+
+[Dz.U. 2025 poz. 622 art. 12 (superintendent cases begun before 1.07.2025 keep the old rules; decisions on the right to apply for studies issued by 30.06.2025, or later in such a case, may still be shown in university admission)]
+     Art. 12. 1. Do postępowania w sprawie:
+1)   o uznanie świadectwa lub innego dokumentu, o których mowa w art. 93 ust. 3 ustawy zmienianej w art. 1 – w zakresie
+     dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia wyższe,
+2)   o potwierdzenie wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a ustawy zmienianej
+     w art. 1 – w zakresie dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia wyższe
+– wszczętego i niezakończonego decyzją ostateczną do dnia 30 czerwca 2025 r., stosuje się przepisy art. 93–93c i art. 93f
+ustawy zmienianej w art. 1, w brzmieniu dotychczasowym, oraz przepisy wydane na podstawie art. 93h ustawy zmienianej
+w art. 1, w brzmieniu dotychczasowym.
+     2. Decyzja ostateczna kuratora oświaty w sprawie:
+1)   uznania świadectwa lub innego dokumentu, o których mowa w art. 93 ust. 3 ustawy zmienianej w art. 1 – w zakresie
+     dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia wyższe,
+2)   potwierdzenia wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a ustawy zmienianej
+     w art. 1 – w zakresie dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia wyższe
+– wydana do dnia 30 czerwca 2025 r., pozostaje w mocy oraz może być przedstawiana w toku rekrutacji na studia pierwszego
+stopnia lub jednolite studia magisterskie.
+     3. Decyzja ostateczna kuratora oświaty w sprawie:
+1)   uznania świadectwa lub innego dokumentu, o których mowa w art. 93 ust. 3 ustawy zmienianej w art. 1 – w zakresie
+     dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia wyższe,
+2)   potwierdzenia wykształcenia lub uprawnień do kontynuacji nauki, o których mowa w art. 93a ustawy zmienianej
+     w art. 1 – w zakresie dotyczącym wykształcenia średniego oraz uprawnienia do ubiegania się o przyjęcie na studia
+     wyższe
+– wydana po dniu 30 czerwca 2025 r. w postępowaniu, o którym mowa w ust. 1, może być przedstawiana w toku rekrutacji
+na studia pierwszego stopnia lub jednolite studia magisterskie.
+     4. W postępowaniu, o którym mowa w ust. 1 pkt 2, dotyczącym osoby, o której mowa w art. 93a pkt 1a ustawy zmie-
+nianej w art. 1, uprawnienia do ubiegania się o przyjęcie na studia wyższe uzyskane w państwie, które wypowiedziało Rzeczy-
+pospolitej Polskiej umowę międzynarodową dotyczącą wzajemnego uznawania świadectw lub innych dokumentów wydanych
+za granicą, potwierdza się z uwzględnieniem treści tej umowy, w brzmieniu obowiązującym przed jej wypowiedzeniem.
+Przepis ust. 3 pkt 2 stosuje się.
 
 [The MEN regulation of 22.12.2025 § 1-11, the whole (the documents, legalisation or apostille, translations, the check interview, the commission, 200 zł per member, the fee's payment and refund; in force 1.01.2026), with its footnotes]
       § 1. Rozporządzenie określa:
