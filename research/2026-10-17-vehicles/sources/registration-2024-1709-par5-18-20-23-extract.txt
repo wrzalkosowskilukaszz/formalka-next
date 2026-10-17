@@ -1,0 +1,74 @@
+# Rozporządzenie Ministra Infrastruktury z 8.11.2024 w sprawie rejestracji i oznaczania pojazdów, wymagań dla tablic rejestracyjnych oraz wzorów innych dokumentów związanych z rejestracją pojazdów, Dz.U. 2024 poz. 1709: § 5 (translations), § 18 ust. 2-6 (the temporary permit), § 20-23 (electronic applications); and the amending regulation Dz.U. 2026 poz. 891: § 1 pkt 4, 6, 7, 8 and § 2
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2024/1709/text.pdf, sha256 2e2d5abc4f2a4c17fc87899affc571c7bbebf6451fd38e52aa80af9902c6abf6; https://api.sejm.gov.pl/eli/acts/DU/2026/891/text.pdf, sha256 5c1e2576203acc972fae27afbf1b10725852bde4f1a2f29a87ff5450d0aad787; both retrieved 2026-10-17. pdftotext -layout; footnotes and page headers left out.
+# Later amendments (tools/sources/amendments.mjs and touched.mjs DU/2024/1709 2024-11-27 --cite 5,18,20-23, run on 17.10.2026): Dz.U. 2025 poz. 939 (in force 30.07.2025; sha256 e481196f57c9867618c32be1a5d4679a98ef3ba9691474e4cdd878a8618e5582) changes § 27, 31 and 32 only; Dz.U. 2026 poz. 891 (published 3.07.2026; its § 2: in force the day after publication, so 4.07.2026, except § 1 pkt 9, one month) changes § 18 ust. 3, § 20, repeals § 21 pkt 1 and § 22, and other parts not quoted.
+# So in force on 17.10.2026: § 5 as below; § 18 ust. 3 and § 20 as given by 891; § 21 without pkt 1 (the electronic inbox); no § 22; § 23 as below.
+# Collected after the independent check of 17.10.2026 (CHECK.md), which cited these paragraphs; the lab re-read them here.
+
+[2024 poz. 1709, § 5]
+     § 5. 1. Dokumenty sporządzone w języku obcym właściciel pojazdu dołącza do wniosku o rejestrację, czasową rejestra-
+cję, wyrejestrowanie pojazdu lub zawiadomienia o zbyciu pojazdu, wraz z ich tłumaczeniem na język polski dokonanym
+przez tłumacza przysięgłego albo właściwego konsula, albo przez tłumacza przysięgłego państwa, z którego pojazd został
+sprowadzony albo w którym został zbyty.
+     2. Właściciel pojazdu nie ma obowiązku przedłożenia tłumaczenia:
+1)    dowodu rejestracyjnego wydanego przez właściwy organ państwa członkowskiego, z tym że organ rejestrujący może
+      w przypadku wątpliwości wymagać tłumaczenia danych i informacji krajowych zawartych w tym dokumencie, któ-
+      rych kody nie zostały określone w załączniku I do dyrektywy Rady 1999/37/WE z dnia 29 kwietnia 1999 r. w sprawie
+      dokumentów rejestracyjnych pojazdów (Dz. Urz. WE L 138 z 01.06.1999, str. 57, z późn. zm.5) – Dz. Urz. UE Polskie
+      wydanie specjalne, rozdz. 7, t. 4, str. 351);
+2)    świadectwa zgodności WE albo świadectwa zgodności, albo świadectwa dopuszczenia indywidualnego WE pojazdu,
+      albo świadectwa unijnego indywidualnego dopuszczenia pojazdu;
+3)    dokumentu, o którym mowa w art. 79 ust. 1 pkt 1 i 6 ustawy, wydanego w innym państwie członkowskim, jeżeli organ
+      rejestrujący posiada tłumaczenie analogicznego dokumentu z tego państwa.
+
+[2024 poz. 1709, § 18 ust. 2-6, as published]
+     2. W przypadku czasowej rejestracji pojazdu, o której mowa w art. 74 ust. 2 pkt 1 ustawy, organ rejestrujący wydaje:
+1)    pozwolenie czasowe;
+2)    zalegalizowane tablice (tablicę) rejestracyjne.
+   3. W przypadku czasowej rejestracji pojazdu, o której mowa w art. 74 ust. 2 pkt 1 ustawy, gdy nie zostały spełnione
+warunki, o których mowa w art. 74 ust. 2d ustawy, organ rejestrujący:
+1)    wydaje pozwolenie czasowe;
+2)    legalizuje dotychczasowe tablice (tablicę) rejestracyjne.
+     4. W przypadku czasowej rejestracji pojazdu, o której mowa w art. 74 ust. 2 pkt 2 ustawy, organ rejestrujący wydaje:
+1)    pozwolenie czasowe;
+2)    zalegalizowane tymczasowe tablice (tablicę) rejestracyjne.
+     5. W przypadku czasowej rejestracji pojazdu, o której mowa w art. 74 ust. 2ca ustawy, organ rejestrujący wydaje:
+1)    pozwolenie czasowe;
+2)    zalegalizowane tymczasowe tablice rejestracyjne.
+    6. Wzór i opis pozwolenia czasowego oraz oznaczenia kodów zastosowanych w tym wzorze są określone w załączniku
+nr 9 do rozporządzenia.
+
+[2024 poz. 1709, § 20-23, as published]
+    § 20. Organ rejestrujący obsługuje wnioski w sprawie rejestracji, czasowej rejestracji albo wyrejestrowania pojazdu
+wnoszone za pomocą środków komunikacji elektronicznej z zachowaniem warunków określonych w ustawie z dnia
+14 czerwca 1960 r. – Kodeks postępowania administracyjnego (Dz. U. z 2024 r. poz. 572).
+     § 21. Organ rejestrujący, obsługując wnioski, o których mowa w § 20, udostępnia:
+1)    elektroniczną skrzynkę podawczą;
+2)    informacje o:
+      a)   wymaganych dokumentach dołączanych do wniosków,
+      b)   podstawach prawnych i wymaganych opłatach związanych z wnioskami,
+      c)   numerze konta, na które mogą być wnoszone wymagane przepisami opłaty związane z wnioskami,
+      d)   formacie i wymaganej jakości zapewniającej odpowiednią czytelność elektronicznych kopii dokumentów dołą-
+           czanych do wniosków.
+    § 22. Oprogramowanie elektronicznej skrzynki podawczej lub systemu teleinformatycznego rejestracji może zapewnić
+przekazywanie danych zawartych we wniosku składanym za pomocą środków komunikacji elektronicznej do systemu tele-
+informatycznego rejestracji.
+    § 23. Do wniosku składanego za pomocą środków komunikacji elektronicznej właściciel pojazdu dołącza, zgodnie z in-
+formacją podaną przez organ rejestrujący:
+1)    dokumenty wymagane przepisami ustawy i niniejszego rozporządzenia albo ich elektroniczne kopie;
+2)    zdjęcia tablic (tablicy) rejestracyjnych;
+3)    potwierdzenie elektroniczne dokonania przelewu wymaganych opłat albo elektroniczną kopię dowodu wpłaty tych opłat.
+
+[2026 poz. 891: Warszawa, dnia 3 lipca 2026 r.; § 1 pkt 4, 6, 7, 8 and § 2]
+4)    w § 18 ust. 3 otrzymuje brzmienie:
+            „3. W przypadku czasowej rejestracji pojazdu, o której mowa w art. 74 ust. 2 pkt 1 ustawy, gdy nie zostały speł-
+      nione warunki, o których mowa w art. 74 ust. 2d ustawy, albo w przypadku czasowej rejestracji, o której mowa w art. 74
+      ust. 2g ustawy, organ rejestrujący wydaje pozwolenie czasowe.”;
+6)   § 20 otrzymuje brzmienie:
+           „§ 20. Organ rejestrujący obsługuje wnioski w sprawie rejestracji, czasowej rejestracji albo wyrejestrowania po-
+     jazdu wnoszone za pośrednictwem adresu do doręczeń elektronicznych w rozumieniu art. 2 pkt 1 ustawy z dnia 18 listo-
+     pada 2020 r. o doręczeniach elektronicznych (Dz. U. z 2026 r. poz. 3 i 507) z zachowaniem warunków określonych
+     w ustawie z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego (Dz. U. z 2025 r. poz. 1691).”;
+7)   w § 21 uchyla się pkt 1;
+8)   uchyla się § 22;
+    § 2. Rozporządzenie wchodzi w życie z dniem następującym po dniu ogłoszenia, z wyjątkiem § 1 pkt 9, który wchodzi
+w życie po upływie miesiąca od dnia ogłoszenia.

@@ -1,0 +1,21 @@
+# Two texts behind the note on the gov.pl registration page that the registration term was extended to 60 days until the COVID-19 epidemic threat or epidemic is lifted.
+# 1) Ustawa z 2.03.2020 o szczególnych rozwiązaniach związanych z zapobieganiem, przeciwdziałaniem i zwalczaniem COVID-19 …, consolidated text Dz.U. 2025 poz. 764: art. 31ia. Source: https://api.sejm.gov.pl/eli/acts/DU/2025/764/text.pdf, sha256 f4343ac06e8784603f3e63eb3b3b193e1da31a42a566a657149c75a8989c10d9.
+# 2) Rozporządzenie Ministra Zdrowia z 14.06.2023 w sprawie odwołania na obszarze Rzeczypospolitej Polskiej stanu zagrożenia epidemicznego, Dz.U. 2023 poz. 1118: § 1-2. Source: https://api.sejm.gov.pl/eli/acts/DU/2023/1118/text.pdf, sha256 3c0e07df2d79fcea1a0ef441592e3b4173bea290fc9703d63351cb5ec241b400.
+# Later amendments to the COVID act (tools/sources/touched.mjs DU/2020/374 2025-05-21 --cite 31ia, run on 17.10.2026): 2025/1806, 2026/39, 2026/635, 2026/989, 2026/1123; none touches art. 31ia.
+# Both retrieved 2026-10-17 (first by the independent check, CHECK.md; re-read by the lab). pdftotext -layout.
+# Art. 31ia names PRD art. 71 ust. 7 and art. 78 ust. 2 pkt 1 (the sale notice), not art. 73aa, which PRD has had since 1.01.2024. A title search of Dz.U. 2024-2026 on api.sejm.gov.pl ("stanu zagrożenia epidemicznego", "stanu epidemii", 17.10.2026) found no later declaration; that search is not exhaustive.
+
+[Dz.U. 2025 poz. 764, art. 31ia]
+     Art. 31ia. W okresie od dnia ogłoszenia ustawy z dnia 24 czerwca 2021 r. o zmianie ustawy o szczególnych rozwią-
+zaniach związanych z zapobieganiem, przeciwdziałaniem i zwalczaniem COVID-19, innych chorób zakaźnych oraz wywo-
+łanych nimi sytuacji kryzysowych oraz niektórych innych ustaw do dnia odwołania stanu zagrożenia epidemicznego albo
+stanu epidemii ogłoszonego z powodu COVID-19:
+1)   wydłuża się do 60 dni terminy określone w art. 71 ust. 7 i art. 78 ust. 2 pkt 1 ustawy z dnia 20 czerwca 1997 r. – Prawo
+     o ruchu drogowym;
+2)   art. 140mb ustawy, o której mowa w pkt 1, stosuje się z uwzględnieniem terminu określonego w pkt 1.
+
+[Dz.U. 2023 poz. 1118 (published 16.06.2023), § 1-2]
+    § 1. Z dniem 1 lipca 2023 r. odwołuje się na obszarze Rzeczypospolitej Polskiej stan zagrożenia epidemicznego
+w związku z zakażeniami wirusem SARS-CoV-2.
+     § 2. Z dniem 1 lipca 2023 r. traci moc rozporządzenie Ministra Zdrowia z dnia 12 maja 2022 r. w sprawie ogłoszenia
+na obszarze Rzeczypospolitej Polskiej stanu zagrożenia epidemicznego (Dz. U. poz. 1028).

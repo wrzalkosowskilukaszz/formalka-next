@@ -1,0 +1,32 @@
+# Ustawa z 14.06.1960 – Kodeks postępowania administracyjnego (KPA), consolidated text Dz.U. 2025 poz. 1691 (obwieszczenie of 7.11.2025): art. 189d-189f (setting an administrative penalty, force majeure, waiving it with a warning). PRD art. 140n ust. 6 says these do not apply to the vehicle registration penalties.
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf, retrieved 2026-10-17, sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b. pdftotext -layout.
+# Later amendments (tools/sources/touched.mjs DU/1960/168 2025-11-07 --cite 189d,189e,189f, run on 17.10.2026): none in force after the consolidated text.
+
+[art. 189d-189f]
+     Art. 189d. Wymierzając administracyjną karę pieniężną, organ administracji publicznej bierze pod uwagę:
+1)   wagę i okoliczności naruszenia prawa, w szczególności potrzebę ochrony życia lub zdrowia, ochrony mienia w znacznych
+     rozmiarach lub ochrony ważnego interesu publicznego lub wyjątkowo ważnego interesu strony oraz czas trwania tego
+     naruszenia;
+2)   częstotliwość niedopełniania w przeszłości obowiązku albo naruszania zakazu tego samego rodzaju co niedopełnienie
+     obowiązku albo naruszenie zakazu, w następstwie którego ma być nałożona kara;
+3)   uprzednie ukaranie za to samo zachowanie za przestępstwo, przestępstwo skarbowe, wykroczenie lub wykroczenie
+     skarbowe;
+4)   stopień przyczynienia się strony, na którą jest nakładana administracyjna kara pieniężna, do powstania naruszenia prawa;
+5)   działania podjęte przez stronę dobrowolnie w celu uniknięcia skutków naruszenia prawa;
+6)   wysokość korzyści, którą strona osiągnęła, lub straty, której uniknęła;
+7)   w przypadku osoby fizycznej – warunki osobiste strony, na którą administracyjna kara pieniężna jest nakładana.
+     Art. 189e. W przypadku gdy do naruszenia prawa doszło wskutek działania siły wyższej, strona nie podlega ukaraniu.
+     Art. 189f. § 1. Organ administracji publicznej, w drodze decyzji, odstępuje od nałożenia administracyjnej kary pieniężnej
+i poprzestaje na pouczeniu, jeżeli:
+1)   waga naruszenia prawa jest znikoma, a strona zaprzestała naruszania prawa lub
+2)   za to samo zachowanie prawomocną decyzją na stronę została uprzednio nałożona administracyjna kara pieniężna
+     przez inny uprawniony organ administracji publicznej lub strona została prawomocnie ukarana za wykroczenie lub
+     wykroczenie skarbowe, lub prawomocnie skazana za przestępstwo lub przestępstwo skarbowe i uprzednia kara spełnia
+     cele, dla których miałaby być nałożona administracyjna kara pieniężna.
+     § 2. W przypadkach innych niż wymienione w § 1, jeżeli pozwoli to na spełnienie celów, dla których miałaby być
+nałożona administracyjna kara pieniężna, organ administracji publicznej, w drodze postanowienia, może wyznaczyć stronie
+termin do przedstawienia dowodów potwierdzających:
+1)   usunięcie naruszenia prawa lub
+2)   powiadomienie właściwych podmiotów o stwierdzonym naruszeniu prawa, określając termin i sposób powiadomienia.
+     § 3. Organ administracji publicznej w przypadkach, o których mowa w § 2, odstępuje od nałożenia administracyjnej
+kary pieniężnej i poprzestaje na pouczeniu, jeżeli strona przedstawiła dowody, potwierdzające wykonanie postanowienia.

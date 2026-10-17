@@ -48,6 +48,37 @@ test('an act that does not amend this one gives an empty list; a bad title throw
   assert.throws(() => touchedArticles(fixture, 'Rozporządzenie Ministra'));
 });
 
+// Shaped like Dz.U. 2026 poz. 1162 and 2026 poz. 891, which amend regulations by paragraph (§).
+const regTitle = 'Rozporządzenie Ministra Infrastruktury z dnia 5 sierpnia 2025 r. w sprawie wydawania dokumentów stwierdzających uprawnienia do kierowania pojazdami';
+const regFixture = `    § 1. W rozporządzeniu Ministra Infrastruktury z dnia 5 sierpnia 2025 r. w sprawie wydawania dokumentów stwierdza-
+jących uprawnienia do kierowania pojazdami (Dz. U. poz. 1073) wprowadza się następujące zmiany:
+1)    w § 5:
+      a)    po ust. 2 dodaje się ust. 2a w brzmieniu:
+                 „2a. W przypadku złożenia oświadczenia stosuje się § 15 ust. 1 pkt 4.”,
+      c)    w ust. 6 wyrazy „art. 4 ust. 1 pkt 2 lit. a i b” zastępuje się wyrazami „art. 4 ust. 1 pkt 2 lit. b”;
+4)    w § 14 w ust. 4 wyrazy „art. 11 ust. 1 pkt 5” zastępuje się wyrazami „art. 11 ust. 1a pkt 2”;
+6)   § 20 otrzymuje brzmienie:
+           „§ 20. Organ rejestrujący obsługuje wnioski.”;
+8)    uchyla się § 22;
+9)   w załączniku nr 13 do rozporządzenia w tabeli wyrazy „x” zastępuje się wyrazami „y”;
+     § 2. Rozporządzenie wchodzi w życie z dniem 3 września 2026 r.
+`;
+
+test('a regulation: the paragraphs its amending paragraph changes, skipping quoted wording', () => {
+  const r = touchedArticles(regFixture, regTitle);
+  assert.equal(r.length, 1);
+  assert.equal(r[0].article, '§ 1');
+  assert.equal(r[0].unit, '§');
+  assert.deepEqual(r[0].changes, ['5', '14', '20', '22']);
+  assert.deepEqual(r[0].annex, ['załącznik 13']);
+  assert.equal(touchedArticles(fixture, title)[0].unit, 'art.');
+});
+
+test('a regulation of another subject or date is not matched', () => {
+  assert.deepEqual(touchedArticles(regFixture, 'Rozporządzenie Ministra Infrastruktury z dnia 8 listopada 2024 r. w sprawie rejestracji i oznaczania pojazdów'), []);
+  assert.deepEqual(touchedArticles(regFixture, 'Rozporządzenie Ministra Infrastruktury z dnia 5 sierpnia 2025 r. w sprawie egzaminowania osób'), []);
+});
+
 test('citedBy matches ranges, lettered articles and either end of a range', () => {
   const cited = citedBy('2-4,12,50a');
   assert.equal(cited('3'), true);

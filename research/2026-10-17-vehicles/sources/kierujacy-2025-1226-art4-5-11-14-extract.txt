@@ -1,6 +1,7 @@
-# Ustawa z 5.01.2011 o kierujących pojazdami (AVD), consolidated text Dz.U. 2025 poz. 1226 (obwieszczenie of 1.09.2025): art. 4 (valid licences), 5 (their scope; ust. 4: six months), 11 ust. 1-2 (who gets a licence; residence), 14 ust. 1-2f (exchanging a foreign licence)
+# Ustawa z 5.01.2011 o kierujących pojazdami (AVD), consolidated text Dz.U. 2025 poz. 1226 (obwieszczenie of 1.09.2025): art. 4 (valid licences), 5 (their scope; ust. 4: six months), 11 ust. 1-2 (who gets a licence; residence), 14 ust. 1-2f (exchanging a foreign licence), art. 2 pkt 1 (vehicle types as in PRD)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1226/text.pdf, retrieved 2026-10-17, sha256 0f639b9ec403518fc6052d0ce29181cda37e0e715b35fedc74a82ee61175b29b. pdftotext -layout.
-# Later amendments (tools/sources/touched.mjs DU/2011/151 2025-09-01 --cite 4-5,11,14, run on 17.10.2026): five acts; Dz.U. 2025 poz. 1676 changes art. 11 and 14 (amendment-2025-1676-extract.txt, with its dates). The text below is NOT the law in force on its own for those two articles.
+# Later amendments (tools/sources/touched.mjs DU/2011/151 2025-09-01 --cite 4-5,11,14, run on 17.10.2026): five acts; Dz.U. 2025 poz. 1676 changes art. 11 and 14 (amendment-2025-1676-art4-pkt7-8-extract.txt, with its dates). The text below is NOT the law in force on its own for those two articles.
+# Re-run after the check (touched.mjs DU/2011/151 2025-08-26 --cite 2,4,5,11,14,91, 17.10.2026): the same five acts; only 1676 touches a cited article (11, 14 and 91, the probation period, quoted in the 1676 extract). Art. 2 and art. 4-5 are in force as quoted.
 
 [art. 4]
      Art. 4. 1. Dokumentem stwierdzającym posiadanie uprawnienia do kierowania motorowerem, pojazdem silnikowym
@@ -38,7 +39,8 @@ odpowiednio motorowerem, pojazdem silnikowym lub zespołem pojazdów:
      b) państwa członkowskiego Unii Europejskiej, Konfederacji Szwajcarskiej lub państwa członkowskiego Europejskiego
         Porozumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym – z wyjątkiem
         kierowania ciągnikiem rolniczym.
-Dziennik Ustaw                                            –5–                                                  Poz. 1226
+
+Dziennik Ustaw                                            –5–                                                  Poz. 1226
 
      2. Pozwolenie wojskowe, o którym mowa w art. 4 ust. 1 pkt 1 lit. b, stwierdza posiadanie przez żołnierza zasadniczej
 służby wojskowej uprawnienia do kierowania odpowiednim pojazdem silnikowym, zespołem pojazdów Sił Zbrojnych Rzeczy-
@@ -151,3 +153,9 @@ do kierowania pojazdami były wydane na podstawie wymiany polskiego prawa jazdy,
 potwierdzenie uzyskania uprawnień do kierowania pojazdami na terytorium Rzeczypospolitej Polskiej, do osoby występu-
 jącej o wymianę prawa jazdy lub wydanie polskiego prawa jazdy stosuje się przepisy dotyczące przywrócenia cofniętych
 uprawnień do kierowania pojazdami.
+
+[art. 2 pkt 1] (added on 17.10.2026 after the check)
+      Art. 2. Ilekroć w ustawie jest mowa o:
+1)    kierowcy, kierującym lub o pojeździe określonego rodzaju – należy przez to rozumieć odpowiednio kierowcę, kierującego
+      lub pojazd w rozumieniu przepisów ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym (Dz. U. z 2024 r.
+      poz. 1251 oraz z 2025 r. poz. 820 i 1006);

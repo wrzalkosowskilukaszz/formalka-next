@@ -1,7 +1,7 @@
-# Rozporządzenie Ministra Infrastruktury z 5.08.2025 w sprawie wydawania dokumentów stwierdzających uprawnienia do kierowania pojazdami, Dz.U. 2025 poz. 1073: § 5 ust. 6 (a non-convention licence: a translation), § 14 ust. 1 pkt 5-7 (what the office needs for an exchange) and ust. 8-11 (confirming a non-EU licence's data)
+# Rozporządzenie Ministra Infrastruktury z 5.08.2025 w sprawie wydawania dokumentów stwierdzających uprawnienia do kierowania pojazdami, Dz.U. 2025 poz. 1073: § 5 ust. 6 (a non-convention licence: a translation), § 14 ust. 1 pkt 5-7 (what the office needs for an exchange), ust. 4 (the residence statement and a foreigner's right-of-stay document), ust. 8-11 (confirming a non-EU licence's data) and ust. 12 (who is exempt from the confirmation)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1073/text.pdf, retrieved 2026-10-17, sha256 03908567db837161ed0971e4d3ebd395ebc0b52c730a444a09ae0257e2773085. pdftotext -layout.
-# Later amendments: Dz.U. 2026 poz. 1162 (in force 3.09.2026; https://api.sejm.gov.pl/eli/acts/DU/2026/1162/text.pdf, sha256 50ca12a5c533e8bb90187cedd20e5cad4ebce54d19afcac2cb7c6fb7719c8401) changes § 5 (the residence statement under the new art. 11 ust. 1a) and § 14 ust. 12 (the exchange code); not the parts below as far as read (OPEN-V8 asks for a full comparison).
-# The regulation still speaks of licences "nieokreślone w konwencjach … art. 4 ust. 1 pkt 2 lit. a i b", while the act's art. 14 ust. 1 since 17.12.2025 speaks of the 1968 convention's model only.
+# Later amendments: Dz.U. 2026 poz. 1162 (https://api.sejm.gov.pl/eli/acts/DU/2026/1162/text.pdf, sha256 50ca12a5c533e8bb90187cedd20e5cad4ebce54d19afcac2cb7c6fb7719c8401; its § 3: in force 3.09.2026, except § 1 pkt 8 on 4.09.2026 and § 1 pkt 5 on 1.01.2027). Of the parts below it changes § 5 ust. 6 (§ 1 pkt 1 lit. c, 3.09.2026: "lit. a i b" becomes "lit. b") and § 14 ust. 4 (§ 1 pkt 4, 3.09.2026: "art. 11 ust. 1 pkt 5" becomes "art. 11 ust. 1a pkt 2"). It also changes § 5 ust. 1 and adds § 5 ust. 2a, and changes § 6, 13, 15 ust. 12 (the exchange code, 1.01.2027), 16 ust. 1, 21, 23, 27, 30, 37 and an annex, none of them quoted (tools/sources/touched.mjs DU/2025/1073 2025-08-20 --cite 5,14, run on 17.10.2026: 1162 is the only amendment). The parts below are quoted as published in 2025 poz. 1073; the 1162 points that change them are quoted at the end.
+# Since 3.09.2026 § 5 ust. 6 names only the 1968 convention (art. 4 ust. 1 pkt 2 lit. b), as the act's art. 14 ust. 1 has since 17.12.2025; § 14 ust. 1 pkt 5 and 7 still name both conventions ("lit. a i b"). The first header of this file said otherwise and named § 14 ust. 12 as the exchange code; both were wrong (found by the check of 17.10.2026, CHECK.md).
 
 [§ 5 ust. 6]
      6. Osoby ubiegające się o wymianę wydanego za granicą prawa jazdy nieokreślonego w konwencjach o ruchu drogo-
@@ -45,7 +45,8 @@ Rzeczypospolitej Polskiej. Kopia tłumaczonego dokumentu stanowi integralną cz�
      Dz. Urz. UE L 226 z 10.09.2003, str. 4, Dz. Urz. UE L 236 z 23.09.2003, str. 33, Dz. Urz. UE L 284 z 31.10.2003, str. 1, Dz. Urz. UE L 363
      z 20.12.2006, str. 344, Dz. Urz. UE L 403 z 30.12.2006, str. 18, Dz. Urz. UE L 168 z 28.06.2008, str. 36 oraz Dz. Urz. UE L 223
      z 26.08.2009, str. 26.
-﻿
+
+﻿
 Dziennik Ustaw                                              –9–                                                Poz. 1073
 
 7)   osoby ubiegającej się o wymianę wydanego za granicą prawa jazdy nieokreślonego w konwencjach o ruchu drogo-
@@ -70,3 +71,37 @@ ment wydany przez przedstawicielstwo dyplomatyczne państwa niebędącego państ
 faktycznym, przedłożonego przez osobę wnioskującą o wymianę prawa jazdy, organ wymieniający prawo jazdy może wy-
 stąpić do organu, który wydał to prawo jazdy, lub do właściwego przedstawicielstwa dyplomatycznego o potwierdzenie
 tych danych i informacji.
+
+[§ 14 ust. 4, as published in 2025 poz. 1073]
+     4. Osoba ubiegająca się o wydanie prawa jazdy składa oświadczenie o spełnianiu warunku, o którym mowa w art. 11
+ust. 1 pkt 5 ustawy, a cudzoziemiec dołącza ponadto do wniosku o wydanie prawa jazdy lub pozwolenia kopię karty pobytu,
+wizy lub innego dokumentu potwierdzającego posiadanie prawa pobytu na terytorium Rzeczypospolitej Polskiej albo za-
+świadczenie, że studiuje co najmniej od sześciu miesięcy.
+
+[§ 14 ust. 12]
+    12. Obowiązkowi potwierdzenia danych i informacji zawartych w prawie jazdy w państwie wydania oraz obowiązkowi,
+o którym mowa w § 15 ust. 9, nie podlega zagraniczne krajowe prawo jazdy:
+
+1)   osoby, która uzyskała na terytorium Rzeczypospolitej Polskiej:
+     a)   status uchodźcy,
+     b)   azyl,
+     c)   ochronę uzupełniającą,
+     d)   zgodę na pobyt ze względów humanitarnych lub zgodę na pobyt tolerowany w rozumieniu art. 348 i art. 351
+          ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2024 r. poz. 769, 1222 i 1688 oraz z 2025 r. poz. 619,
+          621 i 622);
+
+2)   wydane w państwie, na którego terytorium toczy się konflikt zbrojny; dotyczy prawa jazdy kierowcy, który przedstawi
+     organowi wydającemu prawo jazdy dowód potwierdzający uprzednie lub obecne wykonywanie pracy na stanowisku
+     kierowcy u przedsiębiorcy prowadzącego na terytorium Rzeczypospolitej Polskiej działalność gospodarczą w zakresie
+     przewozu drogowego, w szczególności oświadczenie pracodawcy lub umowę o pracę w charakterze kierowcy;
+
+3)   wydane przez Republikę Białorusi, jeżeli jego posiadacz jest obywatelem Republiki Białorusi i posiada wizę, o której
+     mowa w art. 60 ust. 1 pkt 23 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, lub zezwolenie na pobyt czasowy ze
+     względu na inne okoliczności wydane na podstawie art. 186 ust. 1 pkt 9 tej ustawy.
+
+[2026 poz. 1162: § 1 pkt 1 lit. c, § 1 pkt 4, § 3]
+      c)    w ust. 6 wyrazy „art. 4 ust. 1 pkt 2 lit. a i b” zastępuje się wyrazami „art. 4 ust. 1 pkt 2 lit. b”;
+4)    w § 14 w ust. 4 wyrazy „art. 11 ust. 1 pkt 5” zastępuje się wyrazami „art. 11 ust. 1a pkt 2”;
+     § 3. Rozporządzenie wchodzi w życie z dniem 3 września 2026 r., z wyjątkiem:
+1)    § 1 pkt 8, który wchodzi w życie z dniem 4 września 2026 r.;
+2)    § 1 pkt 5, który wchodzi w życie z dniem 1 stycznia 2027 r.
