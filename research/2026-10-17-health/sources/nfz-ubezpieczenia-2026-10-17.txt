@@ -1,0 +1,181 @@
+# NFZ: Ubezpieczenie w NFZ (Dla pacjenta)
+# Source: https://www.nfz.gov.pl/dla-pacjenta/ubezpieczenia-w-nfz/, retrieved 2026-10-17, html sha256 6d3fc4a32baceba3f2cb89c727f0d9ef4df04b948f657ae10408c2fae621d53d
+# Text of the page's main content; the menu and footer removed, the helpline line kept. The page cites older consolidated texts (Dz.U. 2022 poz. 2561) and states no date of its own: compare every rule with the act (README, "Where the page and the act differ").
+
+Ubezpieczenie w NFZ
+Konstytucja gwarantuje Ci prawo do ochrony zdrowia, jednak nie zawsze możesz mieć prawo do bezpłatnych, czyli finansowanych ze środków publicznych, świadczeń opieki zdrowotnej.
+Podstawowe akty prawne:
+- Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych (Dz. U. z 2022 r. poz. 2561, z późn. zm.);
+- Rozporządzenie Ministra Zdrowia z dnia 10 marca 2015 r. w sprawie wzorów oświadczeń o przysługującym świadczeniobiorcy prawie do świadczeń opieki zdrowotnej (Dz.U. z 2023 r. poz. 1043)
+Zgodnie z ustawą z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych prawo do świadczeń w Polsce mają osoby ubezpieczone obowiązkowo, osoby ubezpieczone dobrowolnie i inne osoby uprawnione - po spełnieniu warunków określonych w tej ustawie.
+eWUŚ (Elektroniczna Weryfikacja Uprawnień Świadczeniobiorców) to system umożliwiający natychmiastowe potwierdzenie Twojego prawa do świadczeń opieki zdrowotnej finansowanych ze środków publicznych. Informacje zgromadzone w systemie eWUŚ są aktualizowane codziennie według danych otrzymywanych m.in. z ZUS i KRUS i przedstawiają prawo pacjenta do świadczeń w dniu, w którym dokonano sprawdzenia.
+Aby potwierdzić prawo do świadczeń wystarczy, że podasz w przychodni, szpitalu czy gabinecie lekarskim swój numer PESEL oraz potwierdzisz swoją tożsamość jednym z wymienionych dokumentów:
+- dowodem osobistym;
+- paszportem;
+- prawem jazdy.
+W przypadku dzieci objętych obowiązkiem szkolnym, do ukończenia 18. (osiemnastego) roku życia, należy okazać legitymację szkolną.
+SPRAWDŹ KONIECZNIE: Co zrobić, gdy eWUŚ wyświetli nas "na czerwono"
+Dzięki Internetowemu Kontu Pacjenta masz możliwość sprawdzenia przed wizytą u lekarza swojego prawa do świadczeń. Wystarczy, że zalogujesz się do IKP i przejdziesz do zakładki Moje konto. Potwierdzenie ubezpieczenia znajdziesz w sekcji Twoje ubezpieczenie zdrowotne.
+Nie masz jeszcze konta w IKP? Zarejestruj się żeby uzyskać dostęp do swoich danych.
+Ważne! W przypadku dziecka do 3. (trzeciego) miesiąca życia, które nie ma jeszcze nadanego własnego numeru PESEL, prawo do świadczeń powinno zostać potwierdzone numerem PESEL rodzica lub opiekuna dziecka.
+Jeśli jesteś osobą, która ma prawo do świadczeń na podstawie tzw. przepisów unijnych*, Twoje prawo do świadczeń nie jest weryfikowane przez system eWUŚ.
+W takim przypadku zostaniesz poproszony o okazanie jednego z wymienionych dokumentów wydanych przez instytucję innego państwa UE/EFTA:
+- Europejskiej Karty Ubezpieczenia Zdrowotnego (EKUZ),
+- Certyfikatu Tymczasowo Zastępującego EKUZ,
+- Poświadczenia potwierdzającego prawo do świadczeń opieki zdrowotnej na terytorium Rzeczypospolitej Polskiej,
+- formularza E112/S2/S3,
+- formularza E123/DA1.
+* Przepisy określone w Rozporządzeniu Parlamentu Europejskiego i Rady (WE) nr 883/2004 z dnia 29 kwietnia 2004 r. w sprawie koordynacji systemów zabezpieczenia społecznego (Dz. U. UE. L.2004.166.1, z późn. zm.), Rozporządzeniu Parlamentu Europejskiego i Rady (WE) nr 987/2009 z dnia 16 września 2009 r., dotyczące wykonywania rozporządzenia (WE) nr 883/2004 w sprawie koordynacji systemów zabezpieczenia społecznego (Dz. U. UE. L.2009. 284.1 z późn. zm.)
+Jeśli jesteś świadczeniobiorcą i jesteś przekonany, że masz prawo do świadczeń, a system eWUŚ nie potwierdza w danym dniu Twoich uprawnień, możesz je potwierdzić za pomocą innych dokumentów, np.
+- zaświadczeniem z zakładu pracy;
+- legitymacją emeryta lub rencisty ze wskazanym nr OW NFZ;
+- aktualnym zgłoszeniem do ubezpieczenia zdrowotnego.
+Jeżeli musisz skorzystać ze świadczeń, a nie masz przy sobie takiego dokumentu, masz prawo złożyć stosowne oświadczenie o swoim prawie do świadczeń. Druk oświadczenia powinieneś otrzymać od świadczeniodawcy. Pamiętaj, ze prawidłowo wypełniony dokument musi zawierać:
+- imię i nazwisko;
+- adres zamieszkania;
+- numer PESEL (jeśli został nadany);
+- rodzaj i numer dokumentu potwierdzającego tożsamość;
+- podstawę prawną do świadczeń.
+Jeżeli jesteś przedstawicielem lub opiekunem osoby małoletniej lub nieposiadającej pełnej zdolności do czynności prawnych, oświadczenie, oprócz danych Twojego podopiecznego musi zawierać dodatkowo Twoje dane - imię i nazwisko, adres zamieszkania, numer PESEL i rodzaj dokument potwierdzającego Twoją tożsamość.
+Wzory oświadczeń wraz z instrukcją ich wypełnienia znajdziesz na tej stronie.
+Pamiętaj. Kiedy złożysz oświadczenie o posiadaniu prawa do świadczeń uprawnień, mimo że nie masz takich uprawnień, możesz zostać obciążony kosztami udzielonych Ci świadczeń opieki zdrowotnej.
+Dlaczego NFZ może nie potwierdzić Twojego prawa do świadczeń?
+Najczęstszą przyczyną niepotwierdzenia uprawnień przez NFZ jest brak zgłoszenia osoby do ubezpieczenia zdrowotnego. Może się tak zdarzyć, kiedy pracodawca nie zgłosił pracownika do ubezpieczenia zdrowotnego, albo zakład pracy zmienił formę organizacyjną.
+Innym możliwym powodem są błędy w zgłoszeniu do ubezpieczenia zdrowotnego, np. kiedy pracodawca lub pracownik błędnie wypełnił druk zgłoszenia. Przyczyną braku uprawnień może być także nieodprowadzanie składek przez osoby, które zawarły umowę o dobrowolne ubezpieczenie zdrowotne lub osoby prowadzące własną działalność gospodarczą.
+Jeżeli sytuacja dotyczy członka rodziny (dziecka, małżonka) przyczyną niepotwierdzenia uprawnienia jest najczęściej brak zgłoszenia członka rodziny do ubezpieczenia zdrowotnego. Takie sytuacje mogą mieć miejsce np. gdy jeden z małżonków nie poinformował płatnika najczęściej pracodawcy o potrzebie zgłoszenia żony, męża lub dziecka do ubezpieczenia zdrowotnego jako członka rodziny. Może się też zdarzyć, że osoba ubezpieczona zmieniła pracę i nie poinformowała nowego pracodawcy o potrzebie ponownego zgłoszenia członka rodziny do ubezpieczenia zdrowotnego albo kiedy rodzic zarejestrował się w Urzędzie Pracy i nie zgłosił dziecka do ubezpieczenia.
+Jeżeli problem z uprawnieniami dotyczy studenta, najczęstszą tego przyczyną jest brak zgłoszenia do ubezpieczenia. Takiego zgłoszenia mogą dokonać:
+- np. rodzice do ukończenia przez studiującą osobę 26 roku życia - jako członka rodziny;
+- szkoła, szkoła wyższa albo jednostka prowadząca studia doktoranckie - pod warunkiem, że zgłaszana osoba uczy się na terenie Rzeczpospolitej Polskiej, nie jest członkiem rodziny osoby ubezpieczonej i złoży oświadczenie, że nie podlega obowiązkowemu ubezpieczeniu zdrowotnemu.
+Jeżeli student był zgłoszony do ubezpieczenia, ale jednocześnie pracował, np. w czasie wakacji w ramach umowy o pracę, zostanie wyrejestrowany z ubezpieczenia. W takim przypadku, żeby korzystać ze świadczeń zdrowotnych, musi zostać ponownie do niego zgłoszony.
+Ważne! Jeżeli stwierdzisz jakieś nieprawidłowości w danych wyświetlanych na stronie, wyjaśnij je jak najszybciej u swojego płatnika składek lub ZUS.
+Jeżeli masz wątpliwości lub pytania związane z potwierdzeniem prawa do świadczeń w systemie eWUŚ, skontaktuj się z bezpłatnym numerem infolinii NFZ: 800 190 590. Numer informacyjny dla osób dzwoniących z zagranicy (+48) 22 125 66 00
+Do korzystania ze świadczeń opieki zdrowotnej finansowanych ze środków publicznych na zasadach określonych w ustawie o świadczeniach mają prawo:
+1) osoby objęte powszechnym - obowiązkowym i dobrowolnym ubezpieczeniem zdrowotnym, zwane dalej „ubezpieczonymi”,
+2) inne niż ubezpieczeni osoby posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, które posiadają obywatelstwo polskie lub uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą, lub zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz.U. z 2023 r. poz. 519), spełniające kryterium dochodowe, o którym mowa w art. 8 ustawy z dnia 12 marca 2004 r. o pomocy społecznej (Dz.U. z 2023 r. poz. 901), co do których nie stwierdzono okoliczności, o której mowa w art. 12 tej ustawy, na zasadach i w zakresie określonych dla ubezpieczonych,
+3) inne niż wymienione w pkt 1 i 2 osoby, które nie ukończyły 18. roku życia:
+a) posiadające obywatelstwo polskie lub
+b) które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą lub zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, lub
+c) pobierające rentę rodzinną, jeżeli mają miejsce zamieszkania na terytorium państwa członkowskiego Unii Europejskiej lub państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA), zwanego dalej "państwem członkowskim UE lub EFTA", lub Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, zwanego dalej "Zjednoczonym Królestwem", lub
+d) pobierające świadczenie pieniężne, o którym mowa w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia (Dz.U. poz. 658), jeżeli mają miejsce zamieszkania na terytorium państwa członkowskiego UE lub EFTA lub Zjednoczonego Królestwa,
+4)
+a) osoby pobierające świadczenie wspierające, o którym mowa w ustawie z dnia 7 lipca 2023 r. o świadczeniu wspierającym (Dz.U. poz. 1429);
+b) osoby niepodejmujące zatrudnienia lub innej pracy zarobkowej ze względu na potrzebę udzielenia wsparcia osobie pobierającej świadczenie wspierające, o których mowa w art. 6c ust. 1 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych;”
+5) inne niż wymienione w pkt 1-3 osoby posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, które są w okresie ciąży, porodu lub połogu:
+a) posiadające obywatelstwo polskie lub
+b) uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą, lub zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach - zwane dalej „świadczeniobiorcami”.
+6) Osobom nieposiadającym obywatelstwa polskiego, innym niż świadczeniobiorcy, świadczenia zdrowotne udzielane są na zasadach określonych w przepisach odrębnych i umowach międzynarodowych.
+Ubezpieczonymi są:
+1) osoby posiadające obywatelstwo państwa członkowskiego UE lub EFTA lub Zjednoczonego Królestwa, zamieszkujące na terytorium państwa członkowskiego UE lub EFTA lub Zjednoczonego Królestwa,
+2) osoby nieposiadające obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, które przebywają na terytorium Rzeczypospolitej Polskiej na podstawie wizy w celu wykonywania pracy, zezwolenia na pobyt czasowy z wyłączeniem zezwolenia udzielonego na podstawie art. 181 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, zgody na pobyt ze względów humanitarnych, zgody na pobyt tolerowany, wizy wydanej w celu przyjazdu ze względów humanitarnych, z uwagi na interes państwa lub zobowiązania międzynarodowe,
+2a) osoby, które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą albo korzystają z ochrony czasowej na jej terytorium,
+2b) osoby ubiegające się w Rzeczypospolitej Polskiej o udzielenie ochrony międzynarodowej i małżonkowie, w imieniu których występują z wnioskiem o udzielenie ochrony międzynarodowej, którzy posiadają zaświadczenie wydane na podstawie art. 35
+ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej (Dz.U. z 2022 r. poz. 1264 i 1383),
+3) osoby nieposiadające obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, legalnie zamieszkujące na terytorium innego niż Rzeczpospolita Polska państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa,
+3a) studenci i doktoranci, którzy odbywają kształcenie w Rzeczypospolitej Polskiej, absolwenci, którzy odbywają w Rzeczypospolitej Polskiej obowiązkowy staż, oraz odbywający kursy języka polskiego lub kursy przygotowawcze do podjęcia nauki w języku polskim, o których mowa w przepisach odrębnych, nieposiadający obywatelstwa państwa członkowskiego UE lub EFTA i niebędący osobami, o których mowa w ust. 1 pkt 3, jeżeli zostali uznani za osoby pochodzenia polskiego w rozumieniu przepisów o repatriacji lub posiadają ważną Kartę Polaka
+- jeżeli podlegają zgodnie z art. 66 obowiązkowi ubezpieczenia zdrowotnego albo ubezpieczają się dobrowolnie na zasadach określonych w art. 68;
+4) osoby posiadające obywatelstwo państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, niezamieszkujące na terytorium państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, jeżeli podlegają obowiązkowi ubezpieczenia zdrowotnego na terytorium Rzeczypospolitej Polskiej i są objęte:
+a) ubezpieczeniami emerytalnym i rentowymi na podstawie przepisów ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz.U. z 2023 r. poz. 1230),
+b) ubezpieczeniem społecznym rolników na podstawie przepisów ustawy z dnia 20 grudnia 1990 r. o ubezpieczeniu społecznym rolników (Dz.U. z 2023 r. poz. 208).
+1a. Ubezpieczonymi są także inne niż wymienione w ust. 1 pkt 2-3 osoby nieposiadające obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, jeżeli podlegają obowiązkowi ubezpieczenia zdrowotnego zgodnie z art. 66 ust. 1 pkt 1.
+Ubezpieczonymi są także:
+1) studenci i doktoranci, którzy odbywają kształcenie w Rzeczypospolitej Polskiej, oraz absolwenci, którzy odbywają w Rzeczypospolitej Polskiej obowiązkowy staż, nieposiadający obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa i niebędący osobami, o których mowa w ust. 1 pkt 3 i 3a,
+2) członkowie zakonów oraz alumni wyższych seminariów duchownych i teologicznych, postulanci, nowicjusze i junioryści zakonów i ich odpowiednicy, którzy nie posiadają obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa i nie są osobami, o których mowa w ust. 1 pkt 3, a przebywają na terytorium Rzeczypospolitej Polskiej na podstawie wizy, zezwolenia na pobyt czasowy, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, zgody na pobyt ze względów humanitarnych, zgody na pobyt tolerowany lub uzyskali w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą albo korzystają z ochrony czasowej na jej terytorium,
+3) odbywający staż adaptacyjny,
+4) odbywający kursy języka polskiego oraz kursy przygotowawcze do podjęcia nauki w języku polskim, o których mowa w przepisach odrębnych, nieposiadający obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa i niebędący osobami, o których mowa w ust. 1 pkt 3 i 3a
+- jeżeli ubezpieczają się dobrowolnie na zasadach określonych w art. 68;
+5) członkowie rodzin osób, o których mowa w ust. 1 pkt 1 i 3, zamieszkujący na terytorium państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, jeżeli nie są osobami podlegającymi obowiązkowi ubezpieczenia zdrowotnego, o których mowa w art. 66 ust. 1, z zastrzeżeniem art. 66 ust. 2 i 3, ani nie są osobami uprawnionymi do świadczeń opieki zdrowotnej na podstawie przepisów o koordynacji;
+6) członkowie rodzin osób, o których mowa w ust. 1 pkt 2 i 2a oraz ust. 1a, zamieszkujący na terytorium Rzeczypospolitej Polskiej, jeżeli nie są osobami podlegającymi obowiązkowi ubezpieczenia zdrowotnego, o których mowa w art. 66 ust. 1, z zastrzeżeniem art. 66 ust. 2 i 3.
+Jeśli mieszkasz w Polsce i nie jesteś objęty powszechnym ubezpieczeniem zdrowotnym, możesz nabyć prawo do świadczeń opieki zdrowotnej finansowanych ze środków publicznych, korzystając z tak zwanego "ubezpieczenia dobrowolnego".
+Jak ubezpieczyć się dobrowolnie i wysokość składki
+W celu zawarcia umowy zgłoś się do oddziału wojewódzkiego NFZ, wypełnij wniosek o objęcie dobrowolnym ubezpieczeniem zdrowotnym i podpisz dwa egzemplarze umowy. Pamiętaj o zabraniu ze sobą dokumentu tożsamości oraz dokumentu potwierdzającego ostatni okres ubezpieczenia. Może to być np. zaświadczenie z zakładu pracy potwierdzające opłacanie składek na ubezpieczenie zdrowotne, potwierdzenie dowodu wpłaty ostatniej składki na ubezpieczenie zdrowotne z tytułu prowadzenia pozarolniczej działalności gospodarczej, zaświadczenie potwierdzające fakt ubezpieczenia z urzędu pracy, itp.
+Jeżeli nie byłeś ubezpieczony przez okres powyżej 3 (trzech) miesięcy, objęcie ubezpieczeniem dobrowolnym uzależnione jest od wniesienia opłaty dodatkowej. Wysokość tej opłaty zależy od czasu, w którym nie byłeś objęty ubezpieczeniem zdrowotnym. Jeżeli przerwa w ubezpieczeniu zdrowotnym i opłacaniu składek wynosiła nieprzerwanie:
+- od 3 miesięcy do roku - opłata wynosi 20% dochodów przyjętych jako podstawa wymiaru składki.
+- powyżej roku do 2 - opłata wynosi 50% dochodów przyjętych jako podstawa wymiaru składki.
+- powyżej 2 lat do 5 lat - opłata wynosi 100% dochodów przyjętych jako podstawa wymiaru składki.
+- powyżej 5 lat do 10 lat - opłata wynosi 150% dochodów przyjętych jako podstawa wymiaru składki.
+- powyżej 10 lat - opłata wynosi 200% dochodów przyjętych jako podstawa wymiaru składki.
+W uzasadnionych przypadkach, na wniosek osoby ubezpieczającej się dyrektor oddziału wojewódzkiego NFZ może odstąpić od pobrania opłaty dodatkowej lub rozłożyć ją na raty miesięczne, jednak nie więcej niż na 12 (dwanaście) rat.
+Po zawarciu umowy udaj się do oddziału lub inspektoratu Zakładu Ubezpieczeń Społecznych, żeby złożyć właściwe druki ZUS ZZA (Zgłoszenie do ubezpieczenia zdrowotnego) i jeśli zgłaszasz członków rodziny - druk ZUS ZCNA (Zgłoszenie danych o członkach rodziny dla celów ubezpieczenia zdrowotnego).
+Ważne!!! Pamiętaj o obowiązku zgłoszenia do ubezpieczenia członków rodziny, którzy nie podlegają obowiązkowi ubezpieczenia zdrowotnego z innego tytułu. Składka nie będzie wyższa.
+Ty i członkowie rodziny zgłoszeni do ubezpieczenia uzyskujecie prawo do świadczeń z ubezpieczenia zdrowotnego z dniem określonym w umowie.
+Jeśli ubezpieczasz się dobrowolnie - podstawą wymiaru składki jest dla Ciebie kwota deklarowanego miesięcznego dochodu, nie niższa jednak od kwoty odpowiadającej przeciętnemu miesięcznemu wynagrodzeniu w sektorze przedsiębiorstw z poprzedniego kwartału, włącznie z wypłatami z zysku, ogłaszanemu przez prezesa Głównego Urzędu Statystycznego w Monitorze Polskim i podawanemu przez GUS po 15. dniu miesiąca rozpoczynającego kolejny kwartał na stronie internetowej www.stat.gov.pl.
+Dla pewnej grupy osób, które chcą się ubezpieczyć dobrowolnie, są inne podstawy wymiaru składki:
+- dla osoby zgłaszającej wolontariusza - kwota odpowiadająca minimalnemu wynagrodzeniu;
+- dla cudzoziemców - studentów i uczestników studiów doktoranckich, absolwentów, którzy odbywają w Polsce obowiązkowy staż, dla odbywających staż adaptacyjny, a także członków zakonów, alumnów wyższych seminariów duchownych i teologicznych, postulantek, nowicjuszy i juniorystów zakonów i ich odpowiedników oraz dla odbywających kursy języka polskiego lub kursy przygotowawcze do podjęcia nauki w języku polskim - kwota odpowiadająca wysokości świadczenia pielęgnacyjnego przysługującego na podstawie przepisów o świadczeniach rodzinnych.
+Druki wniosków o objęcie dobrowolnym ubezpieczeniem zdrowotnym określone zostały Zarządzeniem Prezesa NFZ Nr 150/2020/GPF
+Zgodnie z ustawą z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych prawo do świadczeń finansowanych ze środków publicznych w Polsce mają nie tylko osoby ubezpieczone obowiązkowo lub dobrowolnie, lecz również inne osoby - po spełnieniu warunków określonych w tej ustawie.
+Prawo do świadczeń mają:
+- Zgłoszeni do ubezpieczenia członkowie rodziny osoby ubezpieczonej:
+- dzieci własne, dzieci małżonka, dzieci przysposobione, wnuki, dzieci obce dla których ustanowiono opiekę lub dzieci obce w ramach rodziny zastępczej - do ukończenia przez nie 18. roku życia. Jeśli dziecko kontynuuje naukę po ukończeniu 18 lat, może być zgłoszone do ubezpieczenia jako członek rodziny, nie dłużej jednak niż do ukończenia 26. roku życia. Po tym czasie, o ile nie jest ubezpieczone z żadnego innego tytułu, powinno powiadomić szkołę lub uczelnię, która będzie zobowiązana zgłosić je do ubezpieczenia w NFZ. Dzieci posiadające orzeczenie o znacznym stopniu niepełnosprawności lub inne traktowane na równi mogą być zgłaszane do ubezpieczenia bez ograniczenia wieku;
+- małżonkowie - mąż, żona (ale nie konkubenci);
+- krewni wstępni (rodzice, dziadkowie) pozostający z ubezpieczonym we wspólnym gospodarstwie domowym.
+- Osoby uprawnione do świadczeń na podstawie przepisów o koordynacji - ubezpieczone w innym niż Polska państwie członkowskim Unii Europejskiej lub Europejskiego Porozumienia o Wolnym Handlu (EFTA), przebywające na terenie Polski.
+Świadczenia udzielane osobom wymienionym powyżej finansowane są przez NFZ.
+Ponadto uprawnionymi do korzystania ze świadczeń zdrowotnych są:
+- Osoby posiadające obywatelstwo polskie, które nie ukończyły 18. roku życia.
+- Osoby posiadające obywatelstwo polskie i miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, które są w okresie ciąży, porodu lub połogu (do 42. dnia po porodzie).
+- Osoby nieubezpieczone, spełniające kryterium dochodowe uprawniające do otrzymywania świadczeń z pomocy społecznej - na podstawie decyzji wójta (burmistrza, prezydenta) gminy właściwej ze względu na miejsce zamieszkania tej osoby.
+- Osoby, które były narażone na zakażenie poprzez kontakt z osobami zakażonymi lub materiałem zakaźnym - w zakresie badań w kierunku błonicy, cholery, czerwonki, duru brzusznego, durów rzekomych A, B i C, nagminnego porażenia dziecięcego.
+- Osoby uzależnione od alkoholu i narkotyków - w zakresie leczenia odwykowego.
+- Osoby z zaburzeniami psychicznymi - w zakresie psychiatrycznej opieki zdrowotnej.
+- Posiadacze Karty Polaka - w zakresie korzystania ze świadczeń opieki zdrowotnej w stanach nagłych, chyba że umowa międzynarodowa, w której Polska jest stroną, przewiduje zasady bardziej korzystne.
+Świadczenia udzielane osobom wymienionym powyżej finansowane są z budżetu państwa.
+Dokumentem potwierdzającym ubezpieczenie zdrowotne w przypadku niepotwierdzenia przez Ewuś jest:
+- dla osoby zatrudnionej na umowę o pracę:
+- raport miesięczny ZUS wydany przez pracodawcę + ZUS ZUA lub ZUS ZZA,
+- aktualne zaświadczenie z zakładu pracy.
+- dla osoby prowadzącej działalność gospodarczą:
+- aktualny dowód wpłaty składki na ubezpieczenie zdrowotne + ZUS ZUA (ZUS ZZA);
+- dla osoby ubezpieczonej w KRUS:
+- zaświadczenie lub legitymacja wydana i aktualnie potwierdzona przez KRUS;
+- dla emerytów i rencistów:
+- legitymacja emeryta/rencisty, z kodem oddziału OW NFZ
+- aktualne zaświadczenie z ZUS/KRUS/WBE/ZER;
+- dla osoby zarejestrowanej jako bezrobotna:
+- aktualne zaświadczenie z Urzędu Pracy;
+- dla osoby dobrowolnie ubezpieczonej:
+- umowa zawarta z NFZ wraz z aktualnym dowodem opłacenia składki zdrowotnej + potwierdzenie zgłoszenia w ZUS (ZUS ZZA);
+- dla osoby posiadającej prawo do świadczeń opieki zdrowotnej na mocy art. 54 ustawy o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych:
+- decyzja wójta (burmistrza, prezydenta) gminy wydana na określony okres;
+- dla osób pobierających zasiłek chorobowy, wypadkowy, rehabilitacyjny, macierzyński:
+zaświadczenie o wypłacaniu zasiłku lub dokument potwierdzający wypłatę świadczenia pieniężnego.
+Uwaga! Prawo do świadczeń zdrowotnych przysługuje tylko w okresie pobierania zasiłku
+- dla osób przebywających na ciągłym zwolnieniu lekarskim:
+- zaświadczenie z ZUS/KRUS informujące o ciągłości zwolnienia.
+- dla osób ubiegających się o przyznanie emerytury lub renty:
+- zaświadczenie z ZUS/KRUS potwierdzające ubieganie się o przyznanie emerytury lub renty.
+- dla członka rodziny ubezpieczonego:
+- dowód opłacenia składki przez głównego płatnika oraz zgłoszenie do ubezpieczenia członka rodziny, np. druki: ZUS ZUA lub ZZA + ZUS ZCNA (ZCZA);
+- aktualne zaświadczenie wydane przez pracodawcę;
+- zaświadczenie wydane przez ZUS o zgłoszeniu członków rodziny.
+Dodatkowo dla uczniów i studentów (pomiędzy 18 a 26 r. ż.) niezbędna jest legitymacja szkolna lub studencka/doktorancka lub zaświadczenie ze szkoły potwierdzające kontynuowanie nauki.
+- dla osoby uprawnionej do świadczeń na podstawie przepisów o koordynacji:
+- karta EKUZ,
+- poświadczenie wydane przez NFZ (w przypadku zamieszkiwania na terenie RP),
+- certyfikat zastępujący EKUZ.
+Twoje prawo do świadczeń opieki zdrowotnej finansowanych ze środków publicznych ustaje zazwyczaj po upływie 30 (trzydziestu) dni od dnia wygaśnięcia obowiązku ubezpieczenia zdrowotnego np.:
+- w przypadku ustania stosunku pracy (np. z tytułu umowy o pracę);
+- w przypadku zakończenia prowadzenia pozarolniczej działalności gospodarczej;
+- w przypadku osób zatrudnionych, pozostających na urlopie bezpłatnym.
+Jeśli jednak jesteś osobą, która:
+- ukończyła szkołę ponadpodstawową lub została skreślona z listy uczniów - prawo do świadczeń opieki zdrowotnej przysługuje Ci przez 6 (sześć) miesięcy od dnia zakończenia nauki lub skreślenia z listy uczniów;
+- ukończyła szkołę wyższą lub szkołę doktorską lub została skreślona z listy studentów - prawo do świadczeń opieki zdrowotnej przysługuje Ci przez 4 (cztery) miesiące od dnia zakończenia nauki lub skreślenia z listy studentów;
+Ważne! Jeśli Twoje prawo do świadczeń wygasło, a chcesz nadal korzystać ze świadczeń opieki zdrowotnej w ramach ubezpieczenia zdrowotnego w NFZ, musisz uzyskać inny tytuł do ubezpieczenia, np. ubezpieczyć się dobrowolnie lub zostać zgłoszonym jako członek rodziny. Jeżeli tego nie uczynisz, możesz ponieść koszty udzielonych świadczeń.
+Każdy pacjent korzystający ze świadczeń zdrowotnych finansowanych ze środków publicznych jest przyporządkowany do oddziału wojewódzkiego NFZ. Przynależność do konkretnego oddziału zależy od miejsca zamieszkania i zgłoszenia. Czasowa zmiana miejsca pobytu nie pociąga za sobą konieczności jednoczesnej zmiany oddziału Funduszu. Jeżeli jednak osoba zmienia miejsce zamieszkania na stałe, powinna powiadomić o tym płatnika składki, który dokona stosownej zmiany.
+Płatnikami składek są m.in.:
+- dla rolników i ich domowników - KRUS,
+- dla pracowników - pracodawca,
+- dla bezrobotnych - urząd pracy,
+- dla emerytów i rencistów - najczęściej ZUS lub KRUS,
+- dla uczniów i studentów, którzy nie są zgłoszeni jako członkowie rodziny lub nie podlegają ubezpieczeniu z innego tytułu i ukończyli 26 lat­ - szkoła lub uczelnia wyższa.
+Wymienione instytucje zgłaszają do ubezpieczenia zdrowotnego osoby podlegające obowiązkowemu ubezpieczeniu zdrowotnemu oraz członków ich rodzin.
+Osoby, które na przykład:
+- prowadzą pozarolniczą działalność gospodarczą,
+- ubezpieczyły się dobrowolnie,
+- są uprawnione do świadczeń alimentacyjnych na podstawie ugody sądowej lub prawomocnego orzeczenia sądu,
+zgłaszają się do ubezpieczenia zdrowotnego samodzielnie. Wszelkich zgłoszeń oraz aktualizacji dokonują w ZUS.
+Dane dotyczące zgłoszeń oraz składki na ubezpieczenie zdrowotne ZUS i KRUS przekazują do Narodowego Funduszu Zdrowia.
+Szczegółowe informacje znajdziesz w Poradniku Pacjenta
+
+Telefoniczna Informacja Pacjenta
+800 190 590

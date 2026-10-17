@@ -93,7 +93,7 @@ The law ties these rules to Ukrainian citizens and some family members (QA: "oby
 |---|---|---|---|
 | 0 | Twój status | The answers; the eligibility as "spełniasz warunki, które podałeś(-aś)", never as a guarantee | — |
 | 1 | PESEL UKR (new arrivals only) | Any municipal office; what to bring; contact data for the automatic trusted profile | Crossing + 30 days |
-| 2 | Wybór (a compare card) | UKR, CUKR and an ordinary permit side by side, from QA and the acts; "Nie wybieram za Ciebie"; legal aid | — |
+| 2 | Wybór (a compare card) | UKR, CUKR and an ordinary permit side by side, from QA and the acts; "Nie wybieram za Ciebie"; legal aid. One line on health care: on UKR, care without insurance only in four groups and in emergencies (PROT art. 112c, from 5.03.2026); with CUKR, the same access as any temporary permit holder (QA). See `maps/health-insurance.md` HS19–HS21 | — |
 | 3 | Zanim złożysz | Trusted profile or signature; register data complete (check at the municipal office) | — |
 | 4 | Opłaty | 340 zł to the city of the voivode's seat; 100 zł to the voivode; listed, not one transfer | Before filing |
 | 5 | Wniosek w MOS | Photo, both proofs, signing, UPO | **4.03.2027**, with reminders 60, 30, 14 and 7 days before |

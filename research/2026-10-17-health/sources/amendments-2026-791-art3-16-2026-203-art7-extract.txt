@@ -1,0 +1,51 @@
+# Amendments to the health care benefits act after its consolidated text (Dz.U. 2025 poz. 1461) that touch the articles in swiadczenia-2025-1461-...-extract.txt
+# Dz.U. 2026 poz. 791 (ustawa z 15.05.2026 o zmianie niektórych ustaw w związku z rozwojem usług e-zdrowia), published 16.06.2026: https://api.sejm.gov.pl/eli/acts/DU/2026/791/text.pdf, retrieved 2026-10-17, sha256 5a563e9d53c94bcec5f7c95be37636c2c59fa2eabdbb693fd138677e4b9519e5. Art. 3 and art. 16.
+#   Art. 3 is not among art. 16's exceptions, so it is in force 14 days after publication: 1.07.2026 (tools/sources/entry-dates.mjs DU/2026/791; the API gives 2026-07-01).
+# Dz.U. 2026 poz. 203 (ustawa z 23.01.2026 o wygaszeniu rozwiązań ... obywatelom Ukrainy): https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf, retrieved 2026-10-17, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275. Art. 7.
+#   Art. 7 is not among art. 54's exceptions, so it is in force 5.03.2026 (tools/sources/entry-dates.mjs DU/2026/203).
+# Dz.U. 2025 poz. 1083 (seafarers; in force 1.01.2026) is already printed in the consolidated text with footnotes; it is not repeated here.
+
+[2026/791 art. 3]
+     Art. 3. W ustawie z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicz-
+nych (Dz. U. z 2025 r. poz. 1461, 1537 i 1739 oraz z 2026 r. poz. 26 i 203) wprowadza się następujące zmiany:
+1)   uchyla się art. 49;
+2)   w art. 50:
+     a)    w ust. 1 uchyla się pkt 1,
+     b) w ust. 2 wprowadzenie do wyliczenia otrzymuje brzmienie:
+           „Świadczeniobiorca uzyskuje dostęp do świadczeń opieki zdrowotnej po spełnieniu łącznie następujących warunków:”,
+     c)    w ust. 16 pkt 1 otrzymuje brzmienie:
+           „1)    posługiwania się dokumentem potwierdzającym prawo do świadczeń opieki zdrowotnej przez osobę, która
+                  utraciła to prawo w okresie ważności tego dokumentu, albo”;
+3)   w art. 51 uchyla się ust. 3;
+4)   w art. 188e ust. 8 otrzymuje brzmienie:
+           „8. Fundusz przekazuje do systemu teleinformatycznego, o którym mowa w art. 7 ust. 1 ustawy z dnia 28 kwiet-
+     nia 2011 r. o systemie informacji w ochronie zdrowia, dane oraz informacje, o których mowa w ust. 3:
+     1)     pozwalające na dokonywanie oceny spełniania przez świadczeniobiorców kryteriów włączenia do programu
+            zdrowotnego w celu weryfikacji dopuszczalności dokonania zgłoszenia centralnego na świadczenie opieki zdro-
+            wotnej realizowane w ramach programu zdrowotnego;
+     2)     dotyczące udzielonych i planowanych świadczeń opieki zdrowotnej realizowanych w ramach programów
+            zdrowotnych obejmujących profilaktykę zdrowotną świadczeniobiorców w celu zapewnienia tym świadczenio-
+            biorcom świadczeń gwarantowanych realizowanych w ramach podstawowej opieki zdrowotnej lub programów
+            zdrowotnych.”;
+5)   uchyla się art. 240.
+
+[2026/791 art. 16]
+    Art. 16. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem art. 1 pkt 1–6 i art. 9, które
+wchodzą w życie z dniem następującym po dniu ogłoszenia.
+
+
+                                                                      Prezydent Rzeczypospolitej Polskiej: K. Nawrocki
+
+
+[2026/203 art. 7]
+     Art. 7. W ustawie z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicz-
+nych (Dz. U. z 2025 r. poz. 1461, 1537 i 1739 oraz z 2026 r. poz. 26) wprowadza się następujące zmiany:
+1)    w art. 12:
+      a)    uchyla się pkt 13,
+      b) dodaje się pkt 14 w brzmieniu:
+            „14) art. 112c ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczy-
+                 pospolitej Polskiej (Dz. U. z 2025 r. poz. 223, 389, 619, 621 i 1794 oraz z 2026 r. poz. 203).”;
+2)    w art. 50 w ust. 2 uchyla się pkt 1a;
+3)    w art. 87 w ust. 10a pkt 3a otrzymuje brzmienie:
+      „3a) informację o statusie, o którym mowa w art. 8 ust. 24a lit. d ustawy z dnia 24 września 2010 r. o ewidencji lud-
+           ności (Dz. U. z 2025 r. poz. 274, z późn. zm.6));”.

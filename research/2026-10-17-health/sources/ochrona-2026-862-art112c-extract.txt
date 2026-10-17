@@ -1,0 +1,56 @@
+# Ustawa z 13.06.2003 o udzielaniu cudzoziemcom ochrony na terytorium RP, consolidated text Dz.U. 2026 poz. 862 (obwieszczenie of 27.05.2026, legal state 18.05.2026; it includes Dz.U. 2026 poz. 203): art. 112c, health care for temporary protection beneficiaries
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf, retrieved 2026-10-17, sha256 e9f82bc0e10ff1555b941f741667ee5a97fc0b5a7fe2320f4bf785e475c70701. pdftotext -layout.
+# Added by Dz.U. 2026 poz. 203 art. 4 pkt 9 (footnote 51), in force 5.03.2026 (its art. 54, general date). Amendments after the consolidated text: none (tools/sources/amendments.mjs DU/2003/1176 2026-05-18, run on 17.10.2026).
+# Transitional rule: a citizen of Ukraine in hospital treatment under art. 37 of the special act before 5.03.2026 may continue it until discharge, but no longer than 4.03.2027 (Dz.U. 2026 poz. 203 art. 22; research/2026-10-17-ukr/sources/wygaszenie-2026-203-art20-26-45-54-extract.txt).
+
+       Art. 112c.51) 1. Beneficjenci ochrony czasowej, którzy posiadają numer PESEL ze statusem UKR:
+1)     którzy byli ofiarami tortur, gwałtu lub
+2)     do ukończenia 18. roku życia, lub
+3)     którzy posiadają zaświadczenie o zamieszkiwaniu w ośrodku zbiorowego zakwaterowania, o którym mowa w art. 112,
+       lub
+
+
+51)   Dodany przez art. 4 pkt 9 ustawy, o której mowa w odnośniku 2.
+Dziennik Ustaw                                               – 63 –                                                   Poz. 862
+
+4)   w okresie ciąży, porodu lub połogu
+– są uprawnieni na terytorium Rzeczypospolitej Polskiej do świadczeń opieki zdrowotnej udzielanych na zasadach
+i w zakresie określonym w ustawie z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków
+publicznych przysługujących osobom objętym obowiązkowym i dobrowolnym ubezpieczeniem zdrowotnym, z wyłącze-
+niem leczenia uzdrowiskowego i rehabilitacji uzdrowiskowej, leczenia niepłodności, zabiegów endoprotezoplastyki i usu-
+nięcia zaćmy oraz podania produktów leczniczych wydawanych świadczeniobiorcom w ramach programów polityki zdro-
+wotnej ministra właściwego do spraw zdrowia.
+     2. Świadczenia opieki zdrowotnej, o których mowa w ust. 1, oraz zabiegi endoprotezoplastyki, przysługują również
+cudzoziemcom, którzy odnieśli obrażenia w wyniku działań wojennych prowadzonych na terytorium państwa lub obszaru
+geograficznego, którego dotyczy decyzja Rady Unii Europejskiej stwierdzająca istnienie masowego napływu wysiedleńców,
+niespełniającym warunków, o których mowa w art. 106, i nieuprawnionym do świadczeń opieki zdrowotnej finansowanych
+ze środków publicznych na terytorium Rzeczypospolitej Polskiej na podstawie innych przepisów lub umów międzynarodo-
+wych, którzy zostali przetransportowani na terytorium Rzeczypospolitej Polskiej w celu udzielania świadczeń opieki zdro-
+wotnej.
+     3. Beneficjenci ochrony czasowej, którzy posiadają numer PESEL ze statusem UKR, znajdujący się w stanie nagłego
+zagrożenia zdrowotnego w rozumieniu art. 3 pkt 8 ustawy z dnia 8 września 2006 r. o Państwowym Ratownictwie Medycz-
+nym (Dz. U. z 2026 r. poz. 141) są uprawnieni na terytorium Rzeczypospolitej Polskiej do świadczeń opieki zdrowotnej
+udzielanych niezwłocznie w niezbędnym zakresie.
+    4. W celu uzyskania świadczenia opieki zdrowotnej, beneficjent ochrony czasowej, o którym mowa w ust. 1, jest
+obowiązany:
+1)   okazać dokument potwierdzający tożsamość i numer PESEL ze statusem UKR oraz
+2)   przedstawić – w przypadku beneficjentów ochrony czasowej, o których mowa w ust. 1:
+     a)   pkt 1 – zaświadczenie wydane przez Szefa Urzędu do Spraw Cudzoziemców potwierdzające okoliczność, o której
+          mowa w ust. 1 pkt 1,
+     b) pkt 3 – zaświadczenie o zamieszkiwaniu w ośrodku zbiorowego zakwaterowania, o którym mowa w art. 112,
+     c)   pkt 4 – dokument potwierdzający ciążę lub połóg.
+      5. Przedstawienie przez beneficjenta ochrony czasowej dokumentu potwierdzającego numer PESEL ze statusem UKR,
+nie jest wymagane w przypadku, gdy świadczeniodawca lub niebędąca świadczeniodawcą osoba uprawniona w rozumieniu
+art. 2 pkt 14 ustawy z dnia 12 maja 2011 r. o refundacji leków, środków spożywczych specjalnego przeznaczenia żywienio-
+wego oraz wyrobów medycznych (Dz. U. z 2026 r. poz. 253) uzyska potwierdzenie posiadania przez beneficjenta ochrony
+czasowej numeru PESEL ze statusem UKR w sposób określony w art. 50 ust. 3 ustawy z dnia 27 sierpnia 2004 r. o świad-
+czeniach opieki zdrowotnej finansowanych ze środków publicznych.
+    6. Koszty świadczeń opieki zdrowotnej, o których mowa w ust. 1–3, są rozliczane ze świadczeniodawcami oraz apte-
+kami przez Narodowy Fundusz Zdrowia, a finansowane z dotacji celowej z budżetu państwa udzielanej z części, której dys-
+ponentem jest minister właściwy do spraw zdrowia.
+     7. Minister właściwy do spraw zdrowia określi, w drodze rozporządzenia, sposób i tryb finansowania z budżetu pań-
+stwa świadczeń opieki zdrowotnej, o których mowa w ust. 1–3, mając na celu zapewnienie rzetelności i gospodarności wy-
+datkowania środków publicznych, w tym utrzymania wydatków w przewidzianych limitach, oraz skuteczności udzielania
+świadczeń opieki zdrowotnej.
+    8. W postępowaniu o wydanie zaświadczenia, o którym mowa w ust. 4 pkt 2, przepisy art. 68 ust. 3–5 stosuje się
+odpowiednio.

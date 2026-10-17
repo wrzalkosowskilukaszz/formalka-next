@@ -1,0 +1,689 @@
+# Ustawa z 27.08.2004 o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych, consolidated text Dz.U. 2025 poz. 1461 (obwieszczenie of 26.09.2025): art. 2-4, 5 pkt 3 and 31, 12 (opening), 50-54, 66-69, 76, 79 ust. 1-2
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf, retrieved 2026-10-17, sha256 6b1219883e69636dd4c7c7d1a864297af574db11c9a1ea1adc58f6b330b652d3. pdftotext -layout. Whole articles, footnotes kept.
+# Later amendments (tools/sources/amendments.mjs DU/2004/2135 2025-09-26, 17.10.2026): nine acts. tools/sources/touched.mjs DU/2004/2135 2025-09-26 --cite 2-5,12,49-54,66-69,76,79,81,240 lists every article each one changes; those that touch the articles below:
+#  - Dz.U. 2025 poz. 1083 art. 4 (in force 1.01.2026, its art. 8): art. 66 ust. 1 pkt 1 lit. j (seafarers), art. 68 ust. 8a repealed, new art. 69 ust. 1 and art. 81 ust. 1. The consolidated text already prints both versions with footnotes 37, 43-46; from 1.01.2026 the later version applies.
+#  - Dz.U. 2026 poz. 203 art. 7 (in force 5.03.2026, its art. 54 general date): art. 12 pkt 13 repealed (care under art. 37 of the special act for Ukrainians) and pkt 14 added (art. 112c of the protection act); art. 50 ust. 2 pkt 1a repealed.
+#  - Dz.U. 2026 poz. 791 art. 3 (in force 1.07.2026: 14 days after publication on 16.06.2026, its art. 16; art. 3 is not among the exceptions): art. 49 (the health insurance card) repealed; art. 50 ust. 1 pkt 1 repealed; art. 50 ust. 2 opening reads "Świadczeniobiorca uzyskuje dostęp do świadczeń opieki zdrowotnej po spełnieniu łącznie następujących warunków:"; art. 50 ust. 16 pkt 1 reads "posługiwania się dokumentem potwierdzającym prawo do świadczeń opieki zdrowotnej przez osobę, która utraciła to prawo w okresie ważności tego dokumentu, albo"; art. 51 ust. 3 repealed; art. 240 repealed.
+#  - The others (2025 poz. 1537, 1739; 2026 poz. 26, 972, 986, 1007) change other articles only (art. 19a-23i, 42b, 42f, 47c, 59b, 87, 87a, 97, 102, 106, 116, 132d, 154a, 159a, 188, 188e, 189b, 31lc-31o).
+# So the text below is NOT the law in force on its own: apply the three changes above. Art. 49 is omitted (repealed).
+
+[art. 2]
+     Art. 2. 1. Do korzystania ze świadczeń opieki zdrowotnej finansowanych ze środków publicznych na zasadach określo-
+nych w ustawie mają prawo:
+1)      osoby objęte powszechnym – obowiązkowym i dobrowolnym ubezpieczeniem zdrowotnym, zwane dalej „ubezpieczo-
+        nymi”,
+2)      inne niż ubezpieczeni osoby posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, które posia-
+        dają obywatelstwo polskie lub uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą, lub
+        zezwolenie na pobyt czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d
+        ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079), spełniające kryterium dochodowe,
+        o którym mowa w art. 8 ustawy z dnia 12 marca 2004 r. o pomocy społecznej (Dz. U. z 2025 r. poz. 1214), co do których
+        nie stwierdzono okoliczności, o której mowa w art. 12 tej ustawy, na zasadach i w zakresie określonych dla ubezpie-
+        czonych,
+
+
+
+1)I)   Niniejsza ustawa:
+       1) w zakresie swojej regulacji służy stosowaniu rozporządzenia Rady (UE) 2017/1939 z dnia 12 października 2017 r. wdrażającego
+           wzmocnioną współpracę w zakresie ustanowienia Prokuratury Europejskiej (Dz. Urz. UE L 283 z 31.10.2017, str. 1, Dz. Urz.
+           UE L 431 z 21.12.2020, str. 1 oraz Dz. Urz. UE L 433 z 22.12.2020, str. 80);
+       2) w zakresie swojej regulacji służy stosowaniu rozporządzenia Parlamentu Europejskiego i Rady (UE) 2021/2282 z dnia 15 grudnia
+           2021 r. w sprawie oceny technologii medycznych i zmiany dyrektywy 2011/24/UE (Dz. Urz. UE L 458 z 22.12.2021, str. 1).
+I)     Odnośnik do tytułu ustawy dodany przez art. 4 pkt 1 ustawy z dnia 24 stycznia 2025 r. o zmianie niektórych ustaw w związku z przystą-
+       pieniem Rzeczypospolitej Polskiej do wzmocnionej współpracy w zakresie Prokuratury Europejskiej (Dz. U. poz. 304), która weszła
+       w życie z dniem 27 marca 2025 r.; w brzmieniu ustalonym przez art. 2 pkt 1 ustawy z dnia 25 lipca 2025 r. o zmianie ustawy o refundacji
+       leków, środków spożywczych specjalnego przeznaczenia żywieniowego oraz wyrobów medycznych oraz ustawy o świadczeniach
+       opieki zdrowotnej finansowanych ze środków publicznych (Dz. U. poz. 1192), która weszła w życie z dniem 12 września 2025 r.
+Dziennik Ustaw                                            –6–                                                   Poz. 1461
+
+3)   inne niż wymienione w pkt 1 i 2 osoby, które nie ukończyły 18. roku życia:
+     a)   posiadające obywatelstwo polskie lub
+     b) które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą lub zezwolenie na pobyt
+        czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia
+        12 grudnia 2013 r. o cudzoziemcach, posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej, lub
+     c)   pobierające rentę rodzinną, jeżeli mają miejsce zamieszkania na terytorium państwa członkowskiego Unii Euro-
+          pejskiej lub państwa członkowskiego Europejskiego Porozumienia o Wolnym Handlu (EFTA), zwanego dalej
+          „państwem członkowskim UE lub EFTA”, lub Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+          zwanego dalej „Zjednoczonym Królestwem”, lub
+     d) pobierające świadczenie pieniężne, o którym mowa w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym
+        przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku
+        ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia (Dz. U.
+        poz. 658), jeżeli mają miejsce zamieszkania na terytorium państwa członkowskiego UE lub EFTA lub Zjednoczo-
+        nego Królestwa,
+4)   inne niż wymienione w pkt 1–3 osoby posiadające miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej,
+     które są w okresie ciąży, porodu lub połogu:
+     a)   posiadające obywatelstwo polskie lub
+     b) które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą, lub zezwolenie na pobyt
+        czasowy udzielone w związku z okolicznością, o której mowa w art. 159 ust. 1 pkt 1 lit. c lub d ustawy z dnia
+        12 grudnia 2013 r. o cudzoziemcach
+– zwane dalej „świadczeniobiorcami”.
+     2. Osobom nieposiadającym obywatelstwa polskiego, innym niż świadczeniobiorcy, świadczenia zdrowotne udzielane
+są na zasadach określonych w przepisach odrębnych i umowach międzynarodowych.
+
+[art. 3-4]
+     Art. 3. 1. Ubezpieczonymi są:
+1)   osoby posiadające obywatelstwo państwa członkowskiego UE lub EFTA lub Zjednoczonego Królestwa, zamieszkujące
+     na terytorium państwa członkowskiego UE lub EFTA lub Zjednoczonego Królestwa,
+2)   osoby nieposiadające obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, które prze-
+     bywają na terytorium Rzeczypospolitej Polskiej na podstawie wizy w celu wykonywania pracy, zezwolenia na pobyt
+     czasowy z wyłączeniem zezwolenia udzielonego na podstawie art. 181 ust. 1 ustawy z dnia 12 grudnia 2013 r. o cudzo-
+     ziemcach, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, zgody na pobyt
+     ze względów humanitarnych, zgody na pobyt tolerowany, wizy wydanej w celu przyjazdu ze względów humanitarnych,
+     z uwagi na interes państwa lub zobowiązania międzynarodowe,
+2a) osoby, które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą albo korzystają z ochrony
+    czasowej na jej terytorium,
+2b) osoby ubiegające się w Rzeczypospolitej Polskiej o udzielenie ochrony międzynarodowej i małżonkowie, w imieniu
+    których występują z wnioskiem o udzielenie ochrony międzynarodowej, którzy posiadają zaświadczenie wydane na
+    podstawie art. 35 ustawy z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej
+    Polskiej (Dz. U. z 2025 r. poz. 223, 389, 619 i 621),
+3)   osoby nieposiadające obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, legalnie
+     zamieszkujące na terytorium innego niż Rzeczpospolita Polska państwa członkowskiego UE lub EFTA, lub Zjedno-
+     czonego Królestwa,
+3a) studenci i doktoranci, którzy odbywają kształcenie w Rzeczypospolitej Polskiej, absolwenci, którzy odbywają w Rzeczy-
+    pospolitej Polskiej obowiązkowy staż, oraz odbywający kursy języka polskiego lub kursy przygotowawcze do podjęcia
+    nauki w języku polskim, o których mowa w przepisach odrębnych, nieposiadający obywatelstwa państwa członkow-
+    skiego UE lub EFTA i niebędący osobami, o których mowa w ust. 1 pkt 3, jeżeli zostali uznani za osoby pochodzenia
+    polskiego w rozumieniu przepisów o repatriacji lub posiadają ważną Kartę Polaka
+– jeżeli podlegają zgodnie z art. 66 obowiązkowi ubezpieczenia zdrowotnego albo ubezpieczają się dobrowolnie na zasadach
+określonych w art. 68;
+Dziennik Ustaw                                                   –7–                                                      Poz. 1461
+
+4)    osoby posiadające obywatelstwo państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, niezamiesz-
+      kujące na terytorium państwa członkowskiego UE lub EFTA, lub Zjednoczonego Królestwa, jeżeli podlegają obowiąz-
+      kowi ubezpieczenia zdrowotnego na terytorium Rzeczypospolitej Polskiej i są objęte:
+      a)   ubezpieczeniami emerytalnym i rentowymi na podstawie przepisów ustawy z dnia 13 października 1998 r. o systemie
+           ubezpieczeń społecznych (Dz. U. z 2025 r. poz. 350, z późn. zm.2)),
+      b) ubezpieczeniem społecznym rolników na podstawie przepisów ustawy z dnia 20 grudnia 1990 r. o ubezpieczeniu
+           społecznym rolników (Dz. U. z 2025 r. poz. 197, 620, 621 i 1160).
+      1a. Ubezpieczonymi są także inne niż wymienione w ust. 1 pkt 2–3 osoby nieposiadające obywatelstwa państwa człon-
+kowskiego UE lub EFTA, lub Zjednoczonego Królestwa, jeżeli podlegają obowiązkowi ubezpieczenia zdrowotnego zgodnie
+z art. 66 ust. 1 pkt 1.
+      2. Ubezpieczonymi są także:
+1) studenci i doktoranci, którzy odbywają kształcenie w Rzeczypospolitej Polskiej, oraz absolwenci, którzy odbywają
+      w Rzeczypospolitej Polskiej obowiązkowy staż, nieposiadający obywatelstwa państwa członkowskiego UE lub EFTA,
+      lub Zjednoczonego Królestwa i niebędący osobami, o których mowa w ust. 1 pkt 3 i 3a,
+2) członkowie zakonów oraz alumni wyższych seminariów duchownych i teologicznych, postulanci, nowicjusze i junioryści
+      zakonów i ich odpowiednicy, którzy nie posiadają obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjedno-
+      czonego Królestwa i nie są osobami, o których mowa w ust. 1 pkt 3, a przebywają na terytorium Rzeczypospolitej Pol-
+      skiej na podstawie wizy, zezwolenia na pobyt czasowy, zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta
+      długoterminowego Unii Europejskiej, zgody na pobyt ze względów humanitarnych, zgody na pobyt tolerowany lub
+      uzyskali w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą albo korzystają z ochrony czasowej
+      na jej terytorium,
+2a) (uchylony)
+3) odbywający staż adaptacyjny,
+4) odbywający kursy języka polskiego oraz kursy przygotowawcze do podjęcia nauki w języku polskim, o których mowa
+      w przepisach odrębnych, nieposiadający obywatelstwa państwa członkowskiego UE lub EFTA, lub Zjednoczonego
+      Królestwa i niebędący osobami, o których mowa w ust. 1 pkt 3 i 3a
+– jeżeli ubezpieczają się dobrowolnie na zasadach określonych w art. 68;
+5) członkowie rodzin osób, o których mowa w ust. 1 pkt 1 i 3, zamieszkujący na terytorium państwa członkowskiego UE
+      lub EFTA, lub Zjednoczonego Królestwa, jeżeli nie są osobami podlegającymi obowiązkowi ubezpieczenia zdrowot-
+      nego, o których mowa w art. 66 ust. 1, z zastrzeżeniem art. 66 ust. 2 i 3, ani nie są osobami uprawnionymi do świadczeń
+      opieki zdrowotnej na podstawie przepisów o koordynacji;
+6) członkowie rodzin osób, o których mowa w ust. 1 pkt 2 i 2a oraz ust. 1a, zamieszkujący na terytorium Rzeczypospolitej
+      Polskiej, jeżeli nie są osobami podlegającymi obowiązkowi ubezpieczenia zdrowotnego, o których mowa w art. 66 ust. 1,
+      z zastrzeżeniem art. 66 ust. 2 i 3.
+      Art. 4. Ubezpieczeniu nie podlegają, z zastrzeżeniem art. 3, cudzoziemcy przebywający na terytorium Rzeczypospolitej
+Polskiej, w tym cudzoziemcy zatrudnieni w obcych przedstawicielstwach dyplomatycznych, urzędach konsularnych, misjach,
+misjach specjalnych lub międzynarodowych instytucjach, chyba że umowy międzynarodowe ratyfikowane przez Rzeczpospolitą
+Polską stanowią inaczej.
+
+[art. 5 pkt 3 (członek rodziny)]
+3) członek rodziny – następujące osoby:
+      a) dziecko własne, dziecko małżonka, dziecko przysposobione, wnuka albo dziecko obce, dla którego ustanowiono
+           opiekę, albo dziecko obce w ramach rodziny zastępczej lub rodzinnego domu dziecka, do ukończenia przez nie
+           18 lat, a jeżeli uczy się dalej w szkole lub odbywa kształcenie w uczelni lub szkole doktorskiej – do ukończenia
+           26 lat, natomiast jeżeli posiada orzeczenie o znacznym stopniu niepełnosprawności lub inne traktowane na równi –
+           bez ograniczenia wieku,
+
+2)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2025 r. poz. 620, 622, 769, 820, 1083, 1160 i 1216.
+Dziennik Ustaw                                              –8–                                                    Poz. 1461
+
+     b) małżonka,
+     c)   wstępnych pozostających z ubezpieczonym we wspólnym gospodarstwie domowym;
+
+[art. 5 pkt 31 (przeciętne wynagrodzenie)]
+31) przeciętne wynagrodzenie – przeciętne miesięczne wynagrodzenie w sektorze przedsiębiorstw z poprzedniego kwartału,
+    włącznie z wypłatami z zysku, ogłaszane przez Prezesa Głównego Urzędu Statystycznego w Dzienniku Urzędowym
+    Rzeczypospolitej Polskiej „Monitor Polski”;
+
+[art. 12 (opening, pkt 1-13)]
+     Art. 12. Przepisy ustawy nie naruszają przepisów o świadczeniach opieki zdrowotnej udzielanych bezpłatnie bez względu
+na uprawnienia z tytułu ubezpieczenia zdrowotnego na podstawie:
+1)   (uchylony)
+1a) (uchylony)
+2)   art. 21 ust. 3 ustawy z dnia 26 października 1982 r. o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi
+     (Dz. U. z 2023 r. poz. 2151);
+3)   art. 26 ust. 5 ustawy z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii (Dz. U. z 2023 r. poz. 1939);
+4)   art. 10 ustawy z dnia 19 sierpnia 1994 r. o ochronie zdrowia psychicznego (Dz. U. z 2024 r. poz. 917);
+5)   art. 400a ust. 1 i art. 415 ust. 1 pkt 5 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach;
+6)   przepisów ustawy z dnia 5 grudnia 2008 r. o zapobieganiu oraz zwalczaniu zakażeń i chorób zakaźnych u ludzi (Dz. U.
+     z 2024 r. poz. 924 i 1897) – w przypadku świadczeń zdrowotnych związanych ze zwalczaniem chorób, zakażeń i chorób
+     zakaźnych;
+7)   przepisów ustawy z dnia 8 września 2006 r. o Państwowym Ratownictwie Medycznym;
+8)   (uchylony)
+9)   art. 6 ust. 1 pkt 5 ustawy z dnia 7 września 2007 r. o Karcie Polaka (Dz. U. z 2023 r. poz. 192 oraz z 2025 r. poz. 621);
+10) art. 16 ust. 1 i art. 25 ustawy z dnia 22 listopada 2013 r. o postępowaniu wobec osób z zaburzeniami psychicznymi
+    stwarzających zagrożenie życia, zdrowia lub wolności seksualnej innych osób (Dz. U. z 2022 r. poz. 1689);
+11) art. 20 ustawy z dnia 7 lutego 2014 r. o udziale zagranicznych funkcjonariuszy lub pracowników we wspólnych operacjach
+    lub wspólnych działaniach ratowniczych na terytorium Rzeczypospolitej Polskiej (Dz. U. z 2018 r. poz. 1802);
+12) art. 17d ustawy z dnia 9 listopada 2000 r. o repatriacji (Dz. U. z 2022 r. poz. 1105 oraz z 2025 r. poz. 620 i 921);
+13) art. 37 ustawy z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+    tego państwa (Dz. U. z 2025 r. poz. 337, 620 i 621).
+
+[art. 50-54]
+     Art. 50. 1. Świadczeniobiorca ubiegający się o udzielenie świadczenia opieki zdrowotnej jest obowiązany przedstawić:
+1)   kartę ubezpieczenia zdrowotnego – w przypadku ubezpieczonego oraz osób, do których stosuje się art. 67 ust. 4–7;
+2)   dokument, o którym mowa w art. 54 ust. 1 – w przypadku świadczeniobiorcy innego niż ubezpieczony.
+     2. Przedstawienie przez świadczeniobiorcę dokumentów, o których mowa w ust. 1, nie jest wymagane, jeżeli zostaną
+spełnione łącznie następujące warunki:
+1)   świadczeniobiorca potwierdzi swoją tożsamość przez okazanie dowodu osobistego, paszportu, prawa jazdy, legityma-
+     cji szkolnej albo przy użyciu dokumentu mObywatel, o którym mowa w art. 2 pkt 8 ustawy z dnia 26 maja 2023 r.
+     o aplikacji mObywatel (Dz. U. z 2024 r. poz. 1275 i 1717 oraz z 2025 r. poz. 1019); legitymacja szkolna może być
+     okazana jedynie przez osobę, która nie ukończyła 18. roku życia;
+1a) w przypadku osób uprawnionych na podstawie art. 37 ust. 1 ustawy wskazanej w art. 12 pkt 13, osoba uprawniona
+    może potwierdzić swoją tożsamość także przez okazanie dokumentu potwierdzającego tożsamość innego niż wymie-
+    niony w pkt 1;
+2)   świadczeniodawca lub niebędąca świadczeniodawcą osoba uprawniona w rozumieniu art. 2 pkt 14 ustawy o refundacji
+     uzyska potwierdzenie prawa do świadczeń opieki zdrowotnej osoby ubiegającej się o udzielenie świadczenia opieki
+     zdrowotnej w sposób określony w ust. 3.
+      2a. Świadczeniodawca udzielający świadczeń opieki zdrowotnej za pośrednictwem systemów teleinformatycznych
+lub systemów łączności może potwierdzać tożsamość świadczeniobiorcy, na podstawie danych przekazanych przez tego
+świadczeniobiorcę za pośrednictwem tych systemów. W razie niepotwierdzenia prawa świadczeniobiorcy do świadczeń
+opieki zdrowotnej w sposób określony w ust. 1 lub 3, świadczeniobiorca może złożyć oświadczenie o przysługującym mu
+prawie do świadczeń opieki zdrowotnej także za pośrednictwem systemów, o których mowa w zdaniu pierwszym. Przepisy
+ust. 7, 8 i 9 stosuje się odpowiednio.
+      2b. Potwierdzenie tożsamości świadczeniobiorcy oraz złożenie przez niego oświadczenia o przysługującym mu prawie
+do świadczeń opieki zdrowotnej może nastąpić przy wykorzystaniu elektronicznego konta pacjenta utworzonego w wyniku
+potwierdzenia jego tożsamości osobiście lub w sposób określony w art. 20a ust. 1 pkt 1 ustawy z dnia 17 lutego 2005 r.
+o informatyzacji działalności podmiotów realizujących zadania publiczne. Przepisy ust. 7, 8 i 9 stosuje się odpowiednio.
+     3. Prawo do świadczeń opieki zdrowotnej może zostać potwierdzone na podstawie dokumentu elektronicznego, o którym
+mowa w art. 3 pkt 2 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne,
+sporządzonego, na podstawie numeru PESEL, przez Fundusz dla świadczeniodawcy lub niebędącej świadczeniodawcą
+osoby uprawnionej w rozumieniu art. 2 pkt 14 ustawy o refundacji i przesłanego za pomocą środków komunikacji elektro-
+nicznej w rozumieniu art. 2 pkt 5 ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. z 2024 r.
+poz. 1513) z zapewnieniem integralności i poufności zawartych w nim danych oraz uwierzytelnieniem stron uprawnionych
+do przetwarzania tych danych.
+     4. Minister właściwy do spraw zdrowia, po zasięgnięciu opinii Prezesa Funduszu, określi, w drodze rozporządzenia,
+warunki, jakie muszą spełniać świadczeniodawca lub niebędąca świadczeniodawcą osoba uprawniona w rozumieniu art. 2
+pkt 14 ustawy o refundacji, występujący do Funduszu o dokument elektroniczny, o którym mowa w ust. 3, mając na uwadze
+konieczność zapewnienia integralności oraz poufności przetwarzanych danych.
+     5. Dokument elektroniczny, o którym mowa w ust. 3, zawiera imię i nazwisko oraz numer PESEL świadczeniobiorcy,
+a także informację, według stanu na dzień sporządzenia dokumentu, o prawie do świadczeń opieki zdrowotnej.
+     6. W przypadku niepotwierdzenia prawa do świadczeń opieki zdrowotnej w sposób określony w ust. 1 lub 3 świadcze-
+niobiorca po okazaniu dokumentu, o którym mowa w ust. 2 pkt 1, może przedstawić inny dokument potwierdzający prawo
+do świadczeń opieki zdrowotnej, a jeżeli takiego dokumentu nie posiada, złożyć pisemne oświadczenie o przysługującym
+mu prawie do świadczeń opieki zdrowotnej.
+     7. Świadczeniobiorca składający oświadczenie, o którym mowa w ust. 6, jest obowiązany do zawarcia w nim klauzuli
+następującej treści: „Posiadam prawo do korzystania ze świadczeń opieki zdrowotnej finansowanych ze środków publicznych.”.
+     7a. W sytuacji udzielania świadczeniobiorcy stacjonarnych albo całodobowych świadczeń opieki zdrowotnej, oświad-
+czenie, o którym mowa w ust. 6, obejmuje okres od dnia rozpoczęcia udzielania świadczenia do dnia zakończenia udzielania
+świadczenia, nie dłuższy jednak niż do końca miesiąca następującego po miesiącu rozpoczęcia udzielania świadczenia.
+W przypadku, gdy świadczenie opieki zdrowotnej trwa dłużej – świadczeniobiorca składa kolejne oświadczenie, które obej-
+muje okres nie dłuższy niż jeden miesiąc.
+Dziennik Ustaw                                              – 80 –                                                 Poz. 1461
+
+     8. Oświadczenie, o którym mowa w ust. 6, zawiera imię i nazwisko, adres zamieszkania, wskazanie podstawy prawa
+do świadczeń opieki zdrowotnej, numer PESEL oraz wskazanie dokumentu, na podstawie którego świadczeniodawca po-
+twierdził tożsamość świadczeniobiorcy, a w przypadku osób nieposiadających numeru PESEL – dane, o których mowa
+w art. 188 ust. 4 pkt 9. Świadczeniodawca albo niebędąca świadczeniodawcą osoba uprawniona w rozumieniu art. 2 pkt 14
+ustawy o refundacji potwierdza podpisem na oświadczeniu dane identyfikujące dokument, na podstawie którego potwier-
+dzono tożsamość.
+     9. W przypadku świadczeniobiorców małoletnich oraz innych osób nieposiadających pełnej zdolności do czynności
+prawnych oświadczenie, o którym mowa w ust. 6, składa przedstawiciel ustawowy albo opiekun prawny lub faktyczny w rozu-
+mieniu ustawy z dnia 6 listopada 2008 r. o prawach pacjenta i Rzeczniku Praw Pacjenta. Przepisy ust. 7 i 8 stosuje się odpo-
+wiednio.
+     10. Minister właściwy do spraw zdrowia określi, w drodze rozporządzenia, wzory oświadczeń, o których mowa
+w ust. 6 i 9, mając na względzie zapewnienie czytelności oświadczeń.
+      11. W stanach nagłych lub w przypadku, gdy ze względu na stan zdrowia nie jest możliwe złożenie oświadczenia,
+o którym mowa w ust. 6, świadczenie opieki zdrowotnej zostaje udzielone pomimo braku potwierdzenia prawa do świad-
+czeń opieki zdrowotnej w sposób wskazany w ust. 1, 3 lub 6. W takim przypadku osoba, której udzielono świadczenia opieki
+zdrowotnej, jest obowiązana do przedstawienia dokumentu potwierdzającego prawo do świadczeń opieki zdrowotnej albo
+złożenia oświadczenia, o którym mowa w ust. 6, w terminie 14 dni od dnia rozpoczęcia udzielania świadczenia opieki zdrowotnej,
+a jeżeli świadczenie to jest udzielane w oddziale szpitalnym, w terminie 7 dni od dnia zakończenia udzielania świadczenia
+opieki zdrowotnej – pod rygorem obciążenia tej osoby kosztami udzielonych jej świadczeń.
+     12. Późniejsze niż przewidziane terminami określonymi w ust. 11, jednak w okresie nie dłuższym niż 1 rok, licząc od
+dnia upływu tych terminów, przedstawienie dokumentu potwierdzającego prawo do świadczeń opieki zdrowotnej albo zło-
+żenie oświadczenia, o którym mowa w ust. 6, nie może stanowić podstawy odmowy przez świadczeniodawcę zwolnienia
+świadczeniobiorcy z obowiązku poniesienia kosztów udzielonego świadczenia opieki zdrowotnej albo zwrotu tych kosztów.
+     13. Roszczenia przysługujące na podstawie ust. 11 ulegają przedawnieniu z upływem 5 lat od dnia upływu terminów
+określonych w ust. 11.
+    14. W przypadku dzieci do ukończenia 3. miesiąca życia, które nie posiadają numeru PESEL, potwierdzenie, o którym
+mowa w ust. 3, następuje na podstawie numeru PESEL osoby obowiązanej do zgłoszenia dziecka do ubezpieczenia zdro-
+wotnego.
+     15. Fundusz nie może odmówić świadczeniodawcy sfinansowania świadczenia opieki zdrowotnej z powodu braku
+prawa do świadczeń opieki zdrowotnej osoby, która uzyskała to świadczenie, albo żądać od niebędącej świadczeniodawcą
+osoby uprawnionej w rozumieniu art. 2 pkt 14 ustawy o refundacji zwrotu kosztów świadczenia opieki zdrowotnej ponie-
+sionych przez Fundusz pomimo braku prawa do świadczeń opieki zdrowotnej osoby, która uzyskała to świadczenie na pod-
+stawie recepty wystawionej przez osobę uprawnioną, jeżeli:
+1)   w dniu udzielenia tego świadczenia potwierdził, w sposób określony w ust. 3, prawo świadczeniobiorcy do świadczeń
+     opieki zdrowotnej albo świadczeniobiorca ten w tym dniu przedstawił dokument potwierdzający prawo do świadczeń
+     opieki zdrowotnej lub złożył oświadczenie, o którym mowa w ust. 2a albo 6,
+2)   świadczeniobiorca w terminie przedstawił dokument potwierdzający prawo do świadczeń opieki zdrowotnej lub złożył
+     oświadczenie, o którym mowa w ust. 6, w przypadkach określonych w ust. 11
+– jeżeli świadczenie to zostało zrealizowane zgodnie z warunkami umowy o udzielanie świadczeń opieki zdrowotnej zawar-
+tej ze świadczeniodawcą albo zgodnie z zasadami wystawiania recept refundowanych, w przypadku gdy świadczenie zostało
+zrealizowane na podstawie takiej recepty.
+    16. W przypadku gdy świadczenie opieki zdrowotnej zostało udzielone pomimo braku prawa do świadczeń opieki
+zdrowotnej w wyniku:
+1)   posługiwania się kartą ubezpieczenia zdrowotnego albo innym dokumentem potwierdzającym prawo do świadczeń
+     opieki zdrowotnej przez osobę, która utraciła to prawo w okresie ważności karty albo innego dokumentu, albo
+1a) potwierdzenia prawa do świadczeń w sposób określony w ust. 3 osób, o których mowa w art. 52 ust. 1, albo
+2)   złożenia oświadczenia, o którym mowa w ust. 2a albo 6
+– osoba, której udzielono świadczenia opieki zdrowotnej, jest obowiązana do uiszczenia kosztów tego świadczenia, z wyłą-
+czeniem osoby, której udzielono świadczenia, o którym mowa w art. 15 ust. 2 pkt 1.
+     17. Obowiązku, o którym mowa w ust. 16, nie stosuje się do osoby, która w chwili przedstawienia innego dokumentu
+potwierdzającego prawo do świadczeń opieki zdrowotnej albo złożenia oświadczenia o przysługującym jej prawie do świad-
+czeń opieki zdrowotnej działała w usprawiedliwionym błędnym przekonaniu, że posiada prawo do świadczeń opieki zdro-
+wotnej.
+Dziennik Ustaw                                             – 81 –                                                 Poz. 1461
+
+     18. Koszty świadczeń opieki zdrowotnej udzielonych w przypadkach określonych w ust. 16, które Fundusz poniósł
+zgodnie z ust. 15, podlegają ściągnięciu w trybie przepisów o postępowaniu egzekucyjnym w administracji. Prezes Fun-
+duszu wydaje decyzję administracyjną ustalającą obowiązek poniesienia kosztów i ich wysokość oraz termin płatności.
+Do postępowania w sprawach o ustalenie poniesienia kosztów stosuje się przepisy Kodeksu postępowania administracyjnego.
+Od decyzji Prezesa Funduszu przysługuje skarga do sądu administracyjnego.
+     18a. Przepisów ust. 16 i 18 nie stosuje się w przypadku dopełnienia obowiązku, o którym mowa w art. 67 ust. 1 i 3,
+w terminie 30 dni od dnia udzielenia świadczenia albo 30 dni od dnia poinformowania przez Fundusz o wszczęciu postępo-
+wania, o którym mowa w ust. 18, jeżeli przyczyną braku prawa do świadczeń opieki zdrowotnej było niezgłoszenie do
+ubezpieczenia zdrowotnego mimo podlegania takiemu zgłoszeniu.
+      18b. W przypadku dopełnienia obowiązku określonego w art. 67 ust. 1 i 3 w terminie, o którym mowa w ust. 18a, po-
+niesione koszty świadczeń opieki zdrowotnej udzielonych w okresie, którego dotyczy ten obowiązek, nie podlegają zwrotowi.
+     19. Od kwoty należności, o których mowa w ust. 18, nalicza się odsetki ustawowe za opóźnienie, poczynając od dnia,
+w którym upłynął termin płatności tych należności.
+     20. Nie wydaje się decyzji, o której mowa w ust. 18, jeżeli od dnia, w którym zakończono udzielanie świadczenia
+opieki zdrowotnej, o którym mowa w ust. 15, upłynęło 5 lat.
+     21. Należności, o których mowa w ust. 18, ulegają przedawnieniu z upływem 5 lat, licząc od dnia, w którym decyzja
+ustalająca te należności stała się ostateczna.
+     22. Prezes Funduszu może umorzyć w całości albo w części spłatę należności ustalonej w decyzji, o której mowa w ust. 18,
+lub odroczyć spłatę tej należności, lub rozłożyć ją na raty, stosując odpowiednio zasady określone w art. 56–58 ustawy
+z dnia 27 sierpnia 2009 r. o finansach publicznych.
+     23. Prezes Funduszu nie wszczyna postępowania, jeżeli wysokość kosztów świadczeń opieki zdrowotnej udzielonych
+w przypadkach określonych w ust. 16, które Fundusz poniósł zgodnie z ust. 15, na rzecz tej samej osoby nie przekracza
+kwoty 500 zł.
+    Art. 50a. 1. Fundusz ustala podmioty, które powinny ponieść koszty rozliczonego przez Fundusz świadczenia opieki
+zdrowotnej i obciąża te podmioty kosztami, z uwzględnieniem art. 50 ust. 15 i 16.
+      2. W przypadku świadczeń opieki zdrowotnej trwających dłużej niż jeden dzień, dla których ustalono więcej niż jeden
+podmiot, który powinien ponieść koszt rozliczonego świadczenia opieki zdrowotnej, poniesiony przez Fundusz koszt tego
+świadczenia dzielony jest proporcjonalnie do czasu jego trwania. Przy ustalaniu kosztu tego świadczenia nie stosuje się
+art. 44 i art. 45 ustawy z dnia 15 kwietnia 2011 r. o działalności leczniczej.
+     3. Należności z tytułu realizacji świadczeń opieki zdrowotnej udzielanych:
+1)   ubezpieczonym,
+2)   osobom uprawnionym do świadczeń na podstawie przepisów o koordynacji,
+3)   osobom, o których mowa w art. 2 ust. 1 pkt 2–4 oraz art. 12 pkt 2–4, 6 i 9
+– świadczeniodawca może przedstawić na jednym rachunku łącznie.
+     Art. 51. 1. W celu potwierdzenia prawa do świadczeń opieki zdrowotnej przysługujących świadczeniobiorcy, zgodnie
+z przepisami o koordynacji, na terytorium innego niż Rzeczpospolita Polska państwa członkowskiego UE lub EFTA, lub
+Zjednoczonego Królestwa, Fundusz wydaje, na zasadach i w zakresie określonych w przepisach o koordynacji, Europejską
+Kartę Ubezpieczenia Zdrowotnego lub zaświadczenie o prawie do tych świadczeń.
+     2. (uchylony)
+     3. Przepisy wydane na podstawie art. 49 ust. 9 pkt 4 stosuje się odpowiednio.
+     Art. 52. 1. Osobie uprawnionej do świadczeń opieki zdrowotnej na podstawie przepisów o koordynacji, w celu korzy-
+stania z tych świadczeń z ubezpieczenia zdrowotnego na terytorium Rzeczypospolitej Polskiej, Fundusz wydaje dokument
+potwierdzający prawo do świadczeń opieki zdrowotnej, zwany dalej „poświadczeniem”.
+     2. Poświadczenie zawiera następujące dane:
+1)   imiona i nazwisko;
+2)   datę urodzenia;
+3)   numer PESEL, a w przypadku gdy osobie, o której mowa w ust. 1, nie nadano tego numeru – serię i numer paszportu
+     albo numer identyfikacyjny innego dokumentu, na podstawie którego możliwe jest ustalenie danych osobowych;
+Dziennik Ustaw                                             – 82 –                                              Poz. 1461
+
+4)   adres miejsca zamieszkania;
+5)   nazwę instytucji zagranicznej, na koszt której będą udzielane świadczenia opieki zdrowotnej;
+6)   adres miejsca zamieszkania lub pobytu na terytorium Rzeczypospolitej Polskiej;
+7)   zakres świadczeń opieki zdrowotnej przysługujących uprawnionemu w rozumieniu przepisów o koordynacji;
+8)   okres przysługiwania świadczeń opieki zdrowotnej na terytorium Rzeczypospolitej Polskiej;
+9)   numer poświadczenia.
+      3. Minister właściwy do spraw zdrowia, po zasięgnięciu opinii Prezesa Funduszu, określi, w drodze rozporządzenia,
+sposób wydawania poświadczenia oraz jego wzór, uwzględniając dane, o których mowa w ust. 2, oraz dokumenty, na pod-
+stawie których są wydawane poświadczenia, kierując się koniecznością zapewnienia dostępu do świadczeń opieki zdrowot-
+nej i rzetelnego potwierdzania prawa do tych świadczeń.
+     Art. 53. 1. Dokumentem potwierdzającym prawo do świadczeń opieki zdrowotnej osoby uprawnionej do świadczeń
+opieki zdrowotnej na podstawie przepisów o koordynacji jest poświadczenie wydawane przez Fundusz lub dokument po-
+twierdzający prawo do tych świadczeń, wystawiony przez zagraniczną instytucję właściwą.
+    1a. W przypadku wydania poświadczenia, o którym mowa w ust. 1, prawo osoby uprawnionej do świadczeń opieki
+zdrowotnej na podstawie przepisów o koordynacji może zostać potwierdzone w sposób określony w art. 50 ust. 1 lub ust. 3.
+     2. Jeżeli poświadczenie albo dokument, o których mowa w ust. 1, nie zostaną przedstawione w przypadku:
+1)   stanu nagłego,
+2)   porodu
+– przepisy art. 50 ust. 11–15 i 18–22 stosuje się odpowiednio.
+     Art. 54. 1. Dokumentem potwierdzającym prawo do świadczeń opieki zdrowotnej świadczeniobiorcy, o którym mowa
+w art. 2 ust. 1 pkt 2, jest decyzja wójta (burmistrza, prezydenta) gminy właściwej ze względu na miejsce zamieszkania
+świadczeniobiorcy, potwierdzająca to prawo.
+     2. Decyzja, o której mowa w ust. 1, powinna zawierać numer PESEL świadczeniobiorcy.
+     3. Decyzję, o której mowa w ust. 1, wydaje się po:
+1)   przedłożeniu przez świadczeniobiorcę, o którym mowa w ust. 1, dokumentów potwierdzających zamieszkiwanie na tery-
+     torium Rzeczypospolitej Polskiej oraz dokumentów potwierdzających:
+     a)   posiadanie obywatelstwa polskiego lub
+     b) posiadanie statusu uchodźcy, lub
+     c)   objęcie ochroną uzupełniającą, lub
+     d) posiadanie zezwolenia na pobyt czasowy udzielonego w związku z okolicznością, o której mowa w art. 159 ust. 1
+        pkt 1 lit. c lub d ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach;
+2)   przeprowadzeniu rodzinnego wywiadu środowiskowego;
+3)   stwierdzeniu spełniania kryterium dochodowego, o którym mowa w art. 8 ustawy z dnia 12 marca 2004 r. o pomocy
+     społecznej;
+4)   stwierdzeniu braku okoliczności, o której mowa w art. 12 ustawy z dnia 12 marca 2004 r. o pomocy społecznej, w wy-
+     niku przeprowadzenia rodzinnego wywiadu środowiskowego, o którym mowa w pkt 2.
+     4. Decyzję, o której mowa w ust. 1, wydaje się na wniosek świadczeniobiorcy, a w przypadku stanu nagłego – na wnio-
+sek świadczeniodawcy udzielającego świadczenia opieki zdrowotnej, złożony niezwłocznie po udzieleniu świadczenia.
+     5. Wójt (burmistrz, prezydent) gminy właściwej ze względu na miejsce zamieszkania świadczeniobiorcy może wszcząć
+postępowanie w celu wydania decyzji, o której mowa w ust. 1, również z urzędu lub na wniosek Funduszu.
+     6. W przypadku wydania decyzji, o której mowa w ust. 1, wójt (burmistrz, prezydent) gminy właściwej ze względu na
+miejsce zamieszkania świadczeniobiorcy jest obowiązany dostarczyć w terminie 7 dni od dnia jej wydania, kopię tej decyzji
+Funduszowi.
+Dziennik Ustaw                                                   – 83 –                                        Poz. 1461
+
+     7. Prawo do świadczeń opieki zdrowotnej na podstawie decyzji, o której mowa w ust. 1, przysługuje przez okres 90 dni
+od dnia określonego w decyzji, którym jest:
+1)     dzień złożenia wniosku,
+2)     w przypadku udzielania świadczeń w stanie nagłym – dzień udzielenia świadczenia
+– chyba że w tym okresie świadczeniobiorca zostanie objęty ubezpieczeniem zdrowotnym.
+     8. W przypadku wydania decyzji, o której mowa w ust. 1, z urzędu przez wójta (burmistrza, prezydenta) gminy właś-
+ciwej ze względu na miejsce zamieszkania świadczeniobiorcy, prawo do świadczeń opieki zdrowotnej przysługuje od dnia
+określonego w decyzji przez okres 90 dni od tego dnia.
+     9. Wójt (burmistrz, prezydent) gminy właściwej ze względu na miejsce zamieszkania świadczeniobiorcy, o którym
+mowa w art. 7 ust. 2, niezwłocznie stwierdza wygaśnięcie decyzji, o której mowa w ust. 1, w przypadku gdy w okresie,
+o którym mowa w ust. 7 i 8:
+1)     świadczeniobiorca zostanie objęty ubezpieczeniem zdrowotnym lub
+2)     w przypadku wystąpienia okoliczności, o których mowa w ust. 10.
+     10. Świadczeniobiorca, o którym mowa w art. 7 ust. 2, jest obowiązany niezwłocznie poinformować wójta (burmistrza,
+prezydenta) gminy właściwej ze względu na swoje miejsce zamieszkania o:
+1)     każdej zmianie w sytuacji dochodowej lub majątkowej;
+2)     objęciu ubezpieczeniem zdrowotnym.
+     11. Wójt (burmistrz, prezydent) gminy właściwej ze względu na miejsce zamieszkania świadczeniobiorcy może upo-
+ważnić kierownika ośrodka pomocy społecznej, a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług
+społecznych na podstawie przepisów ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług
+społecznych (Dz. U. poz. 1818 oraz z 2025 r. poz. 620) – dyrektora centrum usług społecznych, do załatwiania spraw
+i wydawania decyzji w jego imieniu dotyczących potwierdzania prawa do świadczeń opieki zdrowotnej.
+     12. Przepisów ust. 1–11 nie stosuje się do medycznych czynności ratunkowych udzielanych świadczeniobiorcom
+innym niż ubezpieczeni przez jednostki systemu, o których mowa w art. 32 ust. 1 pkt 2 ustawy z dnia 8 września 2006 r.
+o Państwowym Ratownictwie Medycznym, w warunkach pozaszpitalnych.
+
+                                                           DZIAŁ III
+                                         Zasady udzielania świadczeń opieki zdrowotnej
+
+[art. 66-69]
+       Art. 66. 1. Obowiązkowi ubezpieczenia zdrowotnego podlegają:
+1)     osoby spełniające warunki do objęcia ubezpieczeniami społecznymi lub ubezpieczeniem społecznym rolników, które są:
+       a)   pracownikami w rozumieniu ustawy o systemie ubezpieczeń społecznych,
+       b) rolnikami lub ich domownikami w rozumieniu przepisów o ubezpieczeniu społecznym rolników,
+       ba) pomocnikami rolnika w rozumieniu przepisów o ubezpieczeniu społecznym rolników,
+       c)   osobami prowadzącymi działalność pozarolniczą lub osobami z nimi współpracującymi, z wyłączeniem osób,
+            które zawiesiły wykonywanie działalności gospodarczej na podstawie przepisów ustawy z dnia 6 marca 2018 r. –
+            Prawo przedsiębiorców (Dz. U. z 2024 r. poz. 236, z późn. zm.36)) lub przepisów o ubezpieczeniach społecznych
+            lub ubezpieczeniu społecznym rolników,
+       d) osobami wykonującymi pracę nakładczą,
+       e)   osobami wykonującymi pracę na podstawie umowy agencyjnej lub umowy zlecenia albo innej umowy o świad-
+            czenie usług, do której stosuje się przepisy Kodeksu cywilnego dotyczące zlecenia lub osobami z nimi współpracu-
+            jącymi,
+       f)   osobami duchownymi,
+
+36)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 1222 i 1871 oraz z 2025 r. poz. 222, 621,
+      622, 769 i 1168.
+Dziennik Ustaw                                                    – 98 –                                                      Poz. 1461
+
+       g) członkami rolniczych spółdzielni produkcyjnych, spółdzielni kółek rolniczych lub członkami ich rodzin,
+       h) osobami pobierającymi świadczenie socjalne wypłacane w okresie urlopu oraz osobami pobierającymi zasiłek socjalny
+          wypłacany na czas przekwalifikowania zawodowego i poszukiwania nowego zatrudnienia, a także osobami pobie-
+          rającymi wynagrodzenie przysługujące w okresie korzystania ze świadczenia górniczego albo w okresie korzystania
+          ze stypendium na przekwalifikowanie, wynikające z odrębnych przepisów lub układów zbiorowych pracy,
+       i)   osobami pobierającymi świadczenie szkoleniowe wypłacane po ustaniu zatrudnienia,
+       j)37) marynarzami, o których mowa w art. 6 ust. 1 pkt 24 ustawy z dnia 13 października 1998 r. o systemie
+             ubezpieczeń społecznych;
+1a) osoby, o których mowa w art. 18 ust. 1 ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców, oraz osoby z nimi
+    współpracujące, z wyłączeniem osób, które zawiesiły wykonywanie działalności gospodarczej na podstawie przepisów
+    ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców;
+2)     żołnierze odbywający zasadniczą służbę wojskową, pełniący terytorialną służbę wojskową, zawodową służbę wojskową
+       w trakcie kształcenia, żołnierze powołani do służby w aktywnej rezerwie w dniach pełnienia tej służby, żołnierze
+       pasywnej rezerwy powołani na ćwiczenia wojskowe w dniach odbywania tych ćwiczeń lub pełniący służbę wojskową
+       w razie ogłoszenia mobilizacji i w czasie wojny – o ile nie podlegają obowiązkowi ubezpieczenia z innego tytułu;
+3)     osoby odbywające służbę zastępczą;
+4)     osoby podlegające kwalifikacji wojskowej pełniące służbę w Policji, Straży Granicznej i Służbie Ochrony Państwa;
+5)     żołnierze zawodowi;
+6)     policjanci;
+7)     funkcjonariusze Agencji Bezpieczeństwa Wewnętrznego;
+8)     funkcjonariusze Agencji Wywiadu;
+8a) funkcjonariusze Centralnego Biura Antykorupcyjnego;
+8b) funkcjonariusze Służby Kontrwywiadu Wojskowego;
+8c) funkcjonariusze Służby Wywiadu Wojskowego;
+9)     funkcjonariusze Służby Ochrony Państwa;
+10) funkcjonariusze Straży Granicznej;
+10a) funkcjonariusze Straży Marszałkowskiej;
+11) funkcjonariusze Służby Celno-Skarbowej;
+12) funkcjonariusze Służby Więziennej;
+13) funkcjonariusze Państwowej Straży Pożarnej;
+14) posłowie pobierający uposażenia poselskie oraz senatorowie pobierający uposażenie senatorskie;
+15) sędziowie i prokuratorzy;
+15a) ławnicy sądowi niepodlegający obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+16) osoby pobierające emeryturę lub rentę, osoby w stanie spoczynku pobierające uposażenie lub uposażenie rodzinne oraz
+    osoby pobierające uposażenie po zwolnieniu ze służby lub świadczenie pieniężne o takim samym charakterze;
+16a) osoby pobierające rodzicielskie świadczenie uzupełniające;
+17) uczniowie w rozumieniu przepisów o systemie oświaty niepodlegający obowiązkowi ubezpieczenia zdrowotnego z innego
+    tytułu;
+18) dzieci przebywające w placówkach pełniących funkcje resocjalizacyjne, wychowawcze lub opiekuńcze lub w domach
+    pomocy społecznej niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+19) dzieci do czasu rozpoczęcia realizacji obowiązku szkolnego nieprzebywające w placówkach, o których mowa w pkt 18,
+    niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu, z zastrzeżeniem art. 81 ust. 8 pkt 3;
+
+
+37)   Dodana przez art. 4 pkt 1 ustawy z dnia 25 lipca 2025 r. o zmianie ustawy o systemie ubezpieczeń społecznych oraz niektórych innych
+      ustaw (Dz. U. poz. 1083), która wejdzie w życie z dniem 1 stycznia 2026 r.
+Dziennik Ustaw                                                     – 99 –                                                         Poz. 1461
+
+20) studenci i doktoranci niepodlegający obowiązkowi ubezpieczenia zdrowotnego z innego tytułu, z wyłączeniem osób,
+    o których mowa w art. 3 ust. 2 pkt 1;
+20a) absolwenci, którzy odbywają w Rzeczypospolitej Polskiej obowiązkowy staż, oraz osoby odbywające kursy języka
+     polskiego lub kursy przygotowawcze do podjęcia nauki w języku polskim, o których mowa w przepisach odrębnych,
+     niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+21) alumni wyższych seminariów duchownych i teologicznych, postulanci, nowicjusze i junioryści zakonów męskich
+    i żeńskich i ich odpowiedników, z wyłączeniem osób, o których mowa w art. 3 ust. 2 pkt 2;
+22) słuchacze Krajowej Szkoły Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego;
+23) osoby pobierające stypendium sportowe po ukończeniu 15. roku życia niepodlegające obowiązkowi ubezpieczenia
+    zdrowotnego z innego tytułu;
+24) bezrobotni niepodlegający obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+24a) osoby pobierające stypendium w okresie odbywania szkolenia, stażu lub przygotowania zawodowego dorosłych,
+     na które zostały skierowane przez podmiot inny niż powiatowy urząd pracy, niepodlegające obowiązkowi ubezpieczenia
+     zdrowotnego z innego tytułu;
+24b)38) osoby pobierające stypendium w okresie odbywania szkolenia, stażu lub uczestnictwa w działaniach w zakresie re-
+     integracji społecznej, na które zostały skierowane przez powiatowy urząd pracy, niepodlegające obowiązkowi ubez-
+     pieczenia zdrowotnego z innego tytułu;
+25) osoby pobierające zasiłek przedemerytalny lub świadczenie przedemerytalne oraz osoby niepobierające zasiłku przed-
+    emerytalnego lub świadczenia przedemerytalnego z przyczyn określonych w art. 27 ust. 1 pkt 3–6 i ust. 2 ustawy z dnia
+    14 grudnia 1994 r. o zatrudnieniu i przeciwdziałaniu bezrobociu (Dz. U. z 2003 r. poz. 514, z późn. zm.39))40) niepod-
+    legające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+26) osoby pobierające zasiłek stały z pomocy społecznej niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego
+    tytułu;
+27) osoby, które uzyskały w Rzeczypospolitej Polskiej status uchodźcy lub ochronę uzupełniającą, objęte indywidualnym
+    programem integracji na podstawie przepisów o pomocy społecznej, niepodlegające obowiązkowi ubezpieczenia zdro-
+    wotnego z innego tytułu;
+28) osoby pobierające specjalny zasiłek opiekuńczy lub dodatek do zasiłku rodzinnego z tytułu samotnego wychowywania
+    dziecka i utraty prawa do zasiłku dla bezrobotnych na skutek upływu ustawowego okresu jego pobierania, przyznane
+    na podstawie przepisów o świadczeniach rodzinnych, niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego
+    tytułu;
+28a) osoby pobierające świadczenie pielęgnacyjne, przyznane na podstawie przepisów o świadczeniach rodzinnych, nie-
+     podlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+28b) osoby pobierające zasiłek dla opiekuna, przyznany na podstawie przepisów o ustaleniu i wypłacie zasiłków dla opie-
+     kunów, niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+28c) osoby pobierające świadczenie wspierające, o którym mowa w ustawie z dnia 7 lipca 2023 r. o świadczeniu wspiera-
+     jącym (Dz. U. poz. 1429 i 2760 oraz z 2025 r. poz. 619);
+28d) osoby niepodejmujące zatrudnienia lub innej pracy zarobkowej ze względu na potrzebę udzielenia wsparcia osobie
+     pobierającej świadczenie wspierające, o których mowa w art. 6c ust. 1 ustawy z dnia 13 października 1998 r. o syste-
+     mie ubezpieczeń społecznych;
+29) osoby bezdomne wychodzące z bezdomności niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+30)41) osoby objęte indywidualnym programem zatrudnienia socjalnego, o którym mowa w art. 199 ust. 1 ustawy z dnia
+      20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620), lub realizujące kontrakt socjalny, o którym
+      mowa w art. 198 pkt 1 lit. b tej ustawy, niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+
+
+38) Dodany przez art. 394 pkt 1 lit. a ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620), która weszła
+    w życie z dniem 1 czerwca 2025 r.
+39) Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2003 r. poz. 844, 1143, 1176, 1268, 1302, 1380, 1608,
+
+    1966, 2036, 2037, 2217 i 2255 oraz z 2004 r. poz. 593, 624 i 959.
+40) Ustawa utraciła moc z dniem 1 czerwca 2004 r., z wyjątkiem art. 23 ust. 1 pkt 2 lit. g, który utracił moc z dniem 30 kwietnia 2004 r.,
+
+    na podstawie art. 151 pkt 1 ustawy z dnia 20 kwietnia 2004 r. o promocji zatrudnienia i instytucjach rynku pracy (Dz. U. poz. 1001), która
+    weszła w życie z dniem 1 czerwca 2004 r.
+41) W brzmieniu ustalonym przez art. 394 pkt 1 lit. b ustawy, o której mowa w odnośniku 38.
+Dziennik Ustaw                                                  – 100 –                                                    Poz. 1461
+
+31) kombatanci i osoby represjonowane niepodlegający ubezpieczeniom społecznym w Rzeczypospolitej Polskiej lub nie-
+    pobierający emerytury lub renty;
+31a) cywilne niewidome ofiary działań wojennych, niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+31b) działacze opozycji antykomunistycznej i osoby represjonowane z powodów politycznych niepodlegający ubezpiecze-
+     niu społecznemu w Rzeczypospolitej Polskiej lub niepobierający emerytury lub renty;
+32) osoby korzystające z urlopu wychowawczego niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+32a) osoby, o których mowa w art. 6a ust. 1 ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych,
+     niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+33) osoby uprawnione do świadczeń alimentacyjnych na podstawie ugody sądowej lub prawomocnego orzeczenia sądu
+    niepodlegające obowiązkowi ubezpieczenia zdrowotnego z innego tytułu;
+34) rolnicy i ich domownicy, którzy nie podlegają ubezpieczeniu społecznemu rolników z mocy ustawy z dnia 20 grudnia
+    1990 r. o ubezpieczeniu społecznym rolników, niepodlegający obowiązkowi ubezpieczenia zdrowotnego na podstawie
+    pkt 1–33 i 35–37;
+35) członkowie rad nadzorczych posiadający miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej;
+35a) osoby powołane do pełnienia funkcji na mocy aktu powołania oraz prokurenci, które z tego tytułu pobierają wynagro-
+     dzenie podlegające opodatkowaniu podatkiem dochodowym niezależnie od kwalifikacji do źródła przychodu w rozu-
+     mieniu ustawy z dnia 26 lipca 1991 r. o podatku dochodowym od osób fizycznych (Dz. U. z 2025 r. poz. 163, z późn.
+     zm.42)), z wyłączeniem osób uzyskujących przychody, o których mowa w art. 13 pkt 5 lub 6 tej ustawy, których roczne
+     wynagrodzenie z tego tytułu nie przekracza kwoty 6000 zł;
+36) aplikanci Krajowej Szkoły Sądownictwa i Prokuratury;
+37) osoby pobierające nauczycielskie świadczenia kompensacyjne;
+38) małżonek Prezydenta Rzeczypospolitej Polskiej, o którym mowa w art. 4 pkt 19 ustawy z dnia 13 października 1998 r.
+    o systemie ubezpieczeń społecznych, niepodlegający obowiązkowi ubezpieczenia zdrowotnego z innego tytułu.
+   2. Status członka rodziny osoby ubezpieczonej zwalnia z obowiązku ubezpieczenia zdrowotnego z tytułów, o których
+mowa w ust. 1 pkt 17–20a, 26–28b, 30 i 33.
+     2a. Status członka rodziny będącego osobą uprawnioną do świadczeń opieki zdrowotnej na podstawie przepisów
+o koordynacji zwalnia z obowiązku ubezpieczenia zdrowotnego z tytułów, o których mowa w ust. 1 pkt 17–20a, 26, 27, 30 i 33.
+       3. Przepisu ust. 2 nie stosuje się do małżonków, wobec których orzeczono separację prawomocnym wyrokiem sądu.
+     Art. 67. 1. Obowiązek ubezpieczenia zdrowotnego uważa się za spełniony po zgłoszeniu do ubezpieczenia zdrowot-
+nego osoby podlegającej temu obowiązkowi zgodnie z przepisami art. 74–76 oraz opłaceniu składki w terminie i na zasa-
+dach określonych w ustawie. Obowiązek opłacenia składki nie dotyczy osób, o których mowa w art. 66 ust. 1:
+1)     pkt 2;
+2)     pkt 16, którym przyznano rentę na podstawie przepisów o zaopatrzeniu inwalidów wojennych i wojskowych oraz
+       członków ich rodzin, jak również osób, które utraciły wzrok w wyniku działań wojennych w latach 1939–1945 lub
+       eksplozji niewypałów i niewybuchów pozostałych po tych działaniach, otrzymujących dochody z tytułu emerytury lub
+       renty zwolnione z podatku dochodowego od osób fizycznych na podstawie odrębnych przepisów;
+3)     pkt 17, 18, 20, 20a i 24 – niepobierających zasiłku dla bezrobotnych lub stypendium;
+4)     pkt 25 – niepobierających zasiłku przedemerytalnego lub świadczenia przedemerytalnego;
+5)     pkt 31, 31a i 31b.
+       1a. Przepisu ust. 1 nie stosuje się do osób, o których mowa w art. 66 ust. 1 pkt 8a, oraz członków ich rodzin.
+    2. Osoba podlegająca obowiązkowi ubezpieczenia zdrowotnego po zgłoszeniu do ubezpieczenia zdrowotnego uzyskuje
+prawo do świadczeń opieki zdrowotnej.
+       3. Osoba podlegająca obowiązkowi ubezpieczenia zdrowotnego, z wyłączeniem osoby wskazanej w art. 66 ust. 1 pkt 1
+lit. ba, ma obowiązek zgłosić do ubezpieczenia zdrowotnego członków rodziny, o których mowa w art. 3 ust. 2 pkt 5 i 6. Osoby,
+które nie zgłaszają się do ubezpieczenia zdrowotnego same, informują podmiot właściwy do dokonania zgłoszenia do ubez-
+pieczenia zdrowotnego o członkach rodziny podlegających zgłoszeniu do ubezpieczenia zdrowotnego, w terminie 7 dni od
+dnia zaistnienia okoliczności powodujących konieczność dokonania zgłoszenia. Członkowie rodziny uzyskują prawo do
+świadczeń opieki zdrowotnej od dnia zgłoszenia do ubezpieczenia zdrowotnego.
+
+42)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2025 r. poz. 340, 368, 620, 680, 1022 i 1180.
+Dziennik Ustaw                                             – 101 –                                                Poz. 1461
+
+      3a. W przypadku członków rodziny do objęcia ubezpieczeniem zdrowotnym wystarczy zgłoszenie do ubezpieczenia
+zdrowotnego przez jedną osobę podlegającą obowiązkowi ubezpieczenia zdrowotnego, z tym że wnuki mogą zostać zgło-
+szone tylko w przypadku, gdy żaden z rodziców nie podlega obowiązkowi ubezpieczenia zdrowotnego na podstawie art. 66
+ust. 1 lub nie jest osobą uprawnioną do świadczeń opieki zdrowotnej na podstawie przepisów o koordynacji z tytułu wyko-
+nywania pracy lub pracy na własny rachunek albo ubezpieczeniu dobrowolnemu.
+    4. Prawo do świadczeń opieki zdrowotnej osób, o których mowa w ust. 2 i 3, ustaje po upływie 30 dni od dnia wygaśnięcia
+obowiązku ubezpieczenia zdrowotnego.
+     5. Prawo do świadczeń opieki zdrowotnej dla osób, które ukończyły:
+1)   szkołę ponadpodstawową – wygasa po upływie 6 miesięcy od dnia zakończenia nauki albo skreślenia z listy uczniów;
+2)   studia lub szkołę doktorską – wygasa po upływie 4 miesięcy od ich ukończenia albo skreślenia z listy studentów lub
+     listy doktorantów.
+     6. Osoba, o której mowa w ust. 2, pomimo wygaśnięcia obowiązku ubezpieczenia ma wraz z członkami rodziny, o których
+mowa w art. 3 ust. 2 pkt 5 i 6, prawo do świadczeń opieki zdrowotnej w okresie pobierania przez tę osobę zasiłku przyznanego
+na podstawie przepisów o ubezpieczeniu chorobowym lub wypadkowym, którego nie zalicza się do podstawy wymiaru
+składki na ubezpieczenie zdrowotne.
+     7. Osoba ubiegająca się o przyznanie emerytury lub renty pomimo wygaśnięcia obowiązku ubezpieczenia ma wraz
+z członkami rodziny, o których mowa w art. 3 ust. 2 pkt 5 i 6, prawo do świadczeń z ubezpieczenia zdrowotnego w okresie
+trwania postępowania o przyznanie tych świadczeń.
+      8. Minister właściwy do spraw zdrowia może, w drodze rozporządzenia, przedłużyć okres prawa do świadczeń opieki
+zdrowotnej osób, o których mowa w ust. 2 i 3, w przypadku ogłoszenia stanu zagrożenia epidemicznego lub stanu epidemii,
+jeżeli jest to niezbędne do zapewnienia dostępu do świadczeń opieki zdrowotnej i zapewnienia bezpieczeństwa zdrowotnego.
+     Art. 68. 1. Osoba niewymieniona w art. 66 ust. 1, pracownik przebywający na urlopie bezpłatnym, poseł do Parla-
+mentu Europejskiego wybrany w Rzeczypospolitej Polskiej lub osoba niewymieniona w art. 66 ust. 1, do której ma zasto-
+sowanie art. 11 ust. 3 lit. e rozporządzenia Parlamentu Europejskiego i Rady (WE) nr 883/2004 z dnia 29 kwietnia 2004 r.
+w sprawie koordynacji systemów zabezpieczenia społecznego lub art. SSC.10 ust. 3 lit. c protokołu w sprawie koordynacji
+systemów zabezpieczenia społecznego do umowy o handlu i współpracy między Unią Europejską i Europejską Wspólnotą
+Energii Atomowej, z jednej strony, a Zjednoczonym Królestwem Wielkiej Brytanii i Irlandii Północnej, z drugiej strony,
+może ubezpieczyć się dobrowolnie na podstawie pisemnego wniosku złożonego w Funduszu, jeżeli ma miejsce zamieszka-
+nia na terytorium Rzeczypospolitej Polskiej.
+    2. Korzystający może zgłosić wolontariusza do ubezpieczenia zdrowotnego, jeżeli nie jest on objęty ubezpieczeniem
+zdrowotnym z innego tytułu.
+      3. Osoba, o której mowa w ust. 1, jest obowiązana zgłosić do Funduszu członków rodziny, o których mowa w art. 3
+ust. 2 pkt 5 i 6, w terminie 7 dni od dnia określonego w umowie, o której mowa w ust. 5, lub od dnia zaistnienia okoliczności
+powodujących konieczność dokonania zgłoszenia.
+     4. Podstawę wymiaru składki opłacanej przez:
+1)   osobę, o której mowa w ust. 1, stanowi kwota deklarowanego miesięcznego dochodu, nie niższa jednak od kwoty od-
+     powiadającej przeciętnemu wynagrodzeniu;
+2)   korzystającego, o którym mowa w ust. 2, stanowi kwota odpowiadająca minimalnemu wynagrodzeniu;
+3)   osobę, o której mowa w art. 3 ust. 2 pkt 1–4, stanowi kwota odpowiadająca wysokości specjalnego zasiłku opiekuń-
+     czego przysługującego na podstawie przepisów o świadczeniach rodzinnych.
+     5. Osoba, o której mowa w ust. 1, zostaje objęta ubezpieczeniem zdrowotnym z dniem określonym w umowie zawartej
+przez tę osobę z Funduszem, a przestaje być nim objęta z dniem rozwiązania umowy lub po upływie miesiąca nieprzerwanej
+zaległości w opłacaniu składek.
+     6. Wolontariusz, o którym mowa w ust. 2, zostaje objęty ubezpieczeniem zdrowotnym z dniem określonym w umowie
+zawartej przez korzystającego z Funduszem, a przestaje być nim objęty z dniem rozwiązania umowy lub po upływie miesiąca
+nieprzerwanej zaległości w opłacaniu składek.
+     7. Objęcie osoby, o której mowa w ust. 1, ubezpieczeniem zdrowotnym uzależnione jest od wniesienia opłaty na
+rachunek Funduszu.
+Dziennik Ustaw                                              – 102 –                                                  Poz. 1461
+
+    8. Wysokość opłaty jest uzależniona od okresu, w którym osoba, o której mowa w ust. 1, nie była objęta ubezpieczeniem
+zdrowotnym, i wynosi:
+1)    20 % dochodów przyjętych jako podstawa wymiaru składki dla osoby, której przerwa w ubezpieczeniu zdrowotnym
+      i opłacaniu składek wynosi nieprzerwanie od 3 miesięcy do roku;
+2)    50 % dochodów przyjętych jako podstawa wymiaru składki dla osoby, której przerwa w ubezpieczeniu zdrowotnym
+      i opłacaniu składek wynosi nieprzerwanie powyżej roku do 2 lat;
+3)    100 % dochodów przyjętych jako podstawa wymiaru składki dla osoby, której przerwa w ubezpieczeniu zdrowotnym
+      i opłacaniu składek wynosi nieprzerwanie powyżej 2 lat do 5 lat;
+4)    150 % dochodów przyjętych jako podstawa wymiaru składki dla osoby, której przerwa w ubezpieczeniu zdrowotnym
+      i opłacaniu składek wynosi nieprzerwanie powyżej 5 lat do 10 lat;
+5)    200 % dochodów przyjętych jako podstawa wymiaru składki dla osoby, której przerwa w ubezpieczeniu zdrowotnym
+      i opłacaniu składek wynosi nieprzerwanie powyżej 10 lat.
+     8a.43) W przypadku marynarzy będących osobami, o których mowa w art. 3 ust. 1 pkt 1 i 2, z wyłączeniem osób prze-
+bywających na terytorium Rzeczypospolitej Polskiej na podstawie zgody na pobyt ze względów humanitarnych lub zgody
+na pobyt tolerowany, oraz w pkt 2a, z wyłączeniem osób korzystających z ochrony czasowej na terytorium Rzeczypospolitej
+Polskiej, do okresu, o którym mowa w ust. 8, nie wlicza się okresu ich zatrudnienia na statkach morskich o obcej przynależności.
+      8a. (uchylony)44)
+      9. Opłata nie dotyczy osób wymienionych w art. 3 ust. 2.
+     10. Przy obliczaniu opłaty do okresu, w którym osoba ubezpieczająca się dobrowolnie nie była ubezpieczona, dolicza
+się okres niepodlegania ubezpieczeniu zdrowotnemu na podstawie dotychczasowych przepisów.
+     11. W uzasadnionych przypadkach, na wniosek osoby, o której mowa w ust. 1, Fundusz może odstąpić od pobrania
+opłaty lub rozłożyć ją na raty miesięczne, jednak nie więcej niż na 12 rat.
+     12. Prawo do świadczeń opieki zdrowotnej osoby, o której mowa w ust. 1, i zgłoszonych do Funduszu członków jej
+rodziny, o których mowa w art. 3 ust. 2 pkt 5 i 6, oraz wolontariusza, o którym mowa w ust. 2, przysługuje od dnia objęcia
+ubezpieczeniem zdrowotnym i wygasa po upływie 30 dni od dnia ustania ubezpieczenia zdrowotnego w Funduszu.
+     Art. 69. 1.45) Obowiązek ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 1 lit. a i c–i, powstaje
+i wygasa w terminach określonych w przepisach o ubezpieczeniach społecznych.
+     1.46) Obowiązek ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 1 lit. a i c‒j, powstaje i wygasa
+w terminach określonych w przepisach o ubezpieczeniach społecznych.
+     1a. Do ubezpieczenia zdrowotnego osób, które na podstawie przepisów ustawy z dnia 6 marca 2018 r. – Prawo przed-
+siębiorców zawiesiły wykonywanie działalności gospodarczej, stosuje się odpowiednio art. 68.
+      1b. Do powstania i wygaśnięcia obowiązku ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 1a,
+stosuje się odpowiednio terminy określone w przepisach o ubezpieczeniach społecznych dla osób, o których mowa w art. 66
+ust. 1 pkt 1 lit. c.
+     2. Obowiązek ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 1 lit. b i pkt 34, powstaje od dnia
+zgłoszenia do ubezpieczenia w trybie przepisów o ubezpieczeniu społecznym rolników, a ustaje z ostatnim dniem miesiąca,
+w którym ustały okoliczności uzasadniające podleganie ubezpieczeniu.
+     2a. Obowiązek ubezpieczenia zdrowotnego osób, o których mowa w art. 66 ust. 1 pkt 1 lit. ba, powstaje od dnia
+zgłoszenia do ubezpieczenia w trybie przepisów o ubezpieczeniu społecznym rolników, a ustaje z dniem rozwiązania lub
+wygaśnięcia umowy o pomocy przy zbiorach, o której mowa w przepisach o ubezpieczeniu społecznym rolników.
+     3. Pracownik korzystający z urlopu bezpłatnego traci prawo do świadczeń z ubezpieczenia zdrowotnego po upływie
+30 dni od dnia rozpoczęcia urlopu.
+     4. Po wygaśnięciu obowiązku ubezpieczenia zdrowotnego każda osoba może ubezpieczyć się na zasadach określonych
+w art. 68.
+
+
+
+43) Obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 44.
+44) Przez art. 4 pkt 2 ustawy, o której mowa w odnośniku 37.
+45) W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 46.
+46) W brzmieniu ustalonym przez art. 4 pkt 3 ustawy, o której mowa w odnośniku 37.
+Dziennik Ustaw                                             – 103 –                                                  Poz. 1461
+
+[art. 76]
+       Art. 76. Osoby niewymienione w art. 74 i 75 do ubezpieczenia zdrowotnego zgłaszają się same.
+
+[art. 79 ust. 1-2]
+      Art. 79. 1. Składka na ubezpieczenie zdrowotne wynosi 9 % podstawy wymiaru składki, z zastrzeżeniem art. 79a,
+art. 80, art. 82 i art. 242.
+     2. Składka jest miesięczna i niepodzielna, z zastrzeżeniem art. 79a oraz art. 81 ust. 2 i 2e.

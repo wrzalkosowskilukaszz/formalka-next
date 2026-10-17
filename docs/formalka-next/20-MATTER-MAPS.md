@@ -11,6 +11,7 @@
 | [`maps/residence-temporary.md`](maps/residence-temporary.md): temporary residence permit and card | Wave 2, matter 3 | Draft reference, engine comparison (26 rows), five prototype restrictions, one engine change (R4 in progress) | 24 flow scenarios (FS1–FS24), on top of the reference's 15 cases; 9 evaluation scenarios (res-01 to res-09) | 17.10.2026 |
 | [`maps/cukr-ukr.md`](maps/cukr-ukr.md): the UKR status, PESEL UKR, the CUKR card | Wave 3, matter 7 | Sources (R1) and this map | 20 (CU1–CU20) | **17.10.2026, to be re-checked before use**; the CUKR window closes on 4.03.2027 |
 | [`maps/e-government-access.md`](maps/e-government-access.md): PESEL, the trusted profile, e-Doręczenia | Wave 4, matter 10 | Sources (R1) and this map | 12 (EG1–EG12) | 17.10.2026 |
+| [`maps/health-insurance.md`](maps/health-insurance.md): NFZ, ZUS, the voluntary NFZ agreement | Wave 4, matter 11 | Sources (R1) and this map | 27 (HS1–HS27) | 17.10.2026; the PESEL UKR rules changed on 5.03.2026 |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 
@@ -41,17 +42,24 @@ flowchart LR
   UKR[PESEL UKR<br/>30 dni od granicy] --> PZU[Profil zaufany<br/>art. 110c: automatycznie]
   PZU --> CUKR[Karta CUKR<br/>do 4.03.2027]
   UKR --> CUKR
+  PESEL --> EWUS[eWUŚ w przychodni<br/>art. 50 ust. 3: po numerze PESEL]
+  PZ --> IKP[IKP: sprawdzenie ubezpieczenia]
+  UBZ[Ubezpieczenie zdrowotne<br/>praca, rodzina albo umowa z NFZ] -->|warunek: art. 114, 144, 159| KP
+  UKR -.->|art. 112c: cztery grupy, stan nagły| UBZ
 ```
 
 **Consequences for the product (PROPOSED, the owner decides):**
 - The PESEL case should end with "what PESEL opens next", not "done".
 - The residence and CUKR cases should start with a prerequisite level, linked to the PESEL case.
 - The interviews should ask about the trusted profile (decision D4 in the overnight report).
+- The residence case's insurance condition should link to the health insurance case. The CUKR compare card should name the change in health care (PROT art. 112c; UdSC: the same access as any permit holder).
 
 ## 4. What would come next, in order
 
-1. **Health insurance** (matter 11): NFZ, ZUS and the voluntary NFZ agreement. Needs the act on health care benefits and NFZ pages. The residence conditions (insurance for study and work, art. 114, 144) make it the next link.
-2. **Civil status** (matter 14): a child born in Poland, and transcription. The CUKR rule for a child born in Poland and the PESEL for a newborn connect here.
-3. **Taxes** (matter 12). This needs a tax adviser as confirmer (doc 19 wave 5).
+1. **Civil status** (matter 14): a child born in Poland, and transcription. The CUKR rule for a child born in Poland, the PESEL for a newborn, and the newborn's first 3 months on a parent's PESEL at the clinic (health map HS12) connect here.
+2. **Taxes** (matter 12). This needs a tax adviser as confirmer (doc 19 wave 5).
+3. **Work** (matter 9): what the person must check about the employer's permit or notification. The health map's first critical moment (was the employee reported?) and the residence map's work-while-waiting note connect here.
+
+Health insurance (matter 11), first in this list on 17.10, is now mapped (§1).
 
 Each starts with sources (R1), as these did.

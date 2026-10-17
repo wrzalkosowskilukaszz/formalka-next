@@ -80,13 +80,14 @@
 
 ## 7. After the owner's second message: the next matters mapped (17.10)
 
-The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Three maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
+The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Four maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
 
 | Map | What it holds | Commit |
 |---|---|---|
 | `maps/residence-temporary.md` | Journey R0–R11, 14 loss points, 24 flow scenarios, the user flow (intake, levels, screens per stage, handoffs, a diagram), the blueprint changes it would need | 0514f2c |
 | `maps/cukr-ukr.md` | Journey U0–U9, 12 loss points, 20 scenarios, a compare card that never recommends, the 4.03.2027 window. Valid as of 17.10.2026; this goes beyond doc 19's sources-only plan for wave 3, at the owner's request | 72a1d57 |
 | `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
+| `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates | this commit |
 
 **Found on the way:**
 - **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
@@ -95,6 +96,10 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
   - Production's guide has a related gap: on the paper route, paying is not a step before filing (P12).
 - **The trusted profile holds a PESEL** (act on informatization art. 20ad), and confirming it requires one in every way the act allows (art. 20c). So "no PESEL, no trusted profile, no MOS account" is now sourced, not inferred.
 - **An e-Doręczenia address for a person needs a PESEL** or an EU cross-border identifier (act on electronic deliveries art. 14). Once the address is entered, public bodies deliver there (art. 7), so an unread mailbox means missed letters.
+- **Health care for PESEL UKR holders changed on 5.03.2026.** Without insurance, it now covers four groups (victims of torture or rape, children, residents of collective accommodation, pregnancy) and emergencies (protection act art. 112c, added by Dz.U. 2026 poz. 203). The CUKR card gives the same access as any permit holder (UdSC). The CUKR compare card now names this.
+- **The clinic confirms the right by PESEL** (act on health care benefits art. 50 ust. 3; the insurance card was repealed from 1.07.2026 by Dz.U. 2026 poz. 791). Without a PESEL, a person needs a document or the written statement, and a false statement may be billed.
+- **The NFZ page and the act differ** on the foreign students' contribution base: the page names the care benefit (świadczenie pielęgnacyjne), the act the special care allowance (specjalny zasiłek opiekuńczy, art. 68 ust. 4 pkt 3). The map states neither amount (OPEN-H1).
+- **A near-miss in my own check.** I first checked the nine later amendments of the health act only for the articles I expected to cite, and missed that Dz.U. 2026 poz. 203 changes art. 12 and art. 50. Widening the check found it before anything was written. `tools/sources/touched.mjs` now lists every article each amendment changes and flags the cited ones, with a test; lesson `docs/solutions/2026-10-17-amendments-checked-only-for-expected-articles.md`.
 - **The matters form a chain:** zameldowanie or the PESEL application, then PESEL, the trusted profile, MOS and the residence card; and PESEL UKR, the trusted profile, then the CUKR card. Doc 20 §3 draws it.
 
 **Tests on f667778:** as §4, with evaluation 24/24 and mutations 40/40. Everything is pushed to `lab/quality-pass`, which is public.
