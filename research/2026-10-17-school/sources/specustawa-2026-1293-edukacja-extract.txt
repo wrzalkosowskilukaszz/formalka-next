@@ -1,0 +1,159 @@
+# Ustawa z 12.03.2022 o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa (the special act), consolidated text Dz.U. 2026 poz. 1293 (legal state 8.09.2026, including Dz.U. 2026 poz. 203): its education articles, art. 51-57a
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2026/1293/text.pdf, sha256 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177, retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
+# Later amendments: none (node tools/sources/touched.mjs DU/2026/1293 2026-09-08 --cite 51-57a, 17.10.2026). Art. 51, 52, 54, 55, 55a, 55b ust. 1, 56, 56a and 57 apply "Do dnia 31 sierpnia 2026 r." (wording of Dz.U. 2026 poz. 203 art. 17 pkt 36-42); art. 57a to 4.03.2027; art. 55c has no end date. Art. 50-50c, 52a, 53 and 58a-63 are repealed.
+
+[Art. 51-57a (education: most rules "Do dnia 31 sierpnia 2026 r."; art. 55c has no end date; art. 57a to 4.03.2027)]
+     Art. 51. 1.100) Do dnia 31 sierpnia 2026 r. w celu zapewnienia kształcenia, wychowania i opieki nad dziećmi i uczniami
+będącymi obywatelami Ukrainy, którzy przebywają legalnie na terytorium Rzeczypospolitej Polskiej, w przypadku gdy
+przybyli na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy od dnia 24 lutego 2022 r. w związku z działaniami
+wojennymi prowadzonymi na terytorium tego państwa, mogą być tworzone inne lokalizacje prowadzenia zajęć dydaktycz-
+nych, wychowawczych i opiekuńczych podporządkowane organizacyjnie szkołom lub przedszkolom, zwane dalej „innymi
+lokalizacjami prowadzenia zajęć”. Przepisu nie stosuje się do szkół artystycznych.
+     2. Do tworzenia i likwidacji innych lokalizacji prowadzenia zajęć nie stosuje się przepisów art. 39 ust. 5a oraz art. 89
+ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe.
+      2a. Do tworzenia innych lokalizacji prowadzenia zajęć w budynkach użyteczności publicznej, o których mowa w prze-
+pisach wydanych na podstawie art. 7 ust. 2 pkt 1 ustawy z dnia 7 lipca 1994 r. – Prawo budowlane, nie stosuje się przepisów
+art. 71 tej ustawy.
+      3. W przypadku innej lokalizacji prowadzenia zajęć podporządkowanej organizacyjnie szkole podstawowej, oprócz
+klas szkoły podstawowej mogą funkcjonować oddziały przedszkolne.
+      4. Utworzenie innej lokalizacji prowadzenia zajęć podporządkowanej szkole prowadzonej przez jednostkę samorządu
+terytorialnego lub przedszkolu prowadzonemu przez jednostkę samorządu terytorialnego następuje w drodze uchwały organu
+stanowiącego tej jednostki samorządu terytorialnego, po uzyskaniu pozytywnej opinii kuratora oświaty. Opinia jest wydawana
+w terminie 7 dni od dnia otrzymania wniosku o jej wydanie. Uchwała nie podlega ogłoszeniu w wojewódzkim dzienniku
+urzędowym.
+     5. Uchwała w sprawie utworzenia innej lokalizacji prowadzenia zajęć, o której mowa w ust. 4, zawiera:
+1)   okres funkcjonowania innej lokalizacji prowadzenia zajęć;
+2)   nazwę i adres siedziby odpowiednio przedszkola lub szkoły, której będzie podporządkowana organizacyjnie inna lokali-
+     zacja prowadzenia zajęć;
+3)   adres innej lokalizacji prowadzenia zajęć;
+4)   w przypadku innej lokalizacji prowadzenia zajęć podporządkowanej organizacyjnie szkole podstawowej – informację
+     o funkcjonowaniu oddziałów przedszkolnych.
+      6. Osoba prawna inna niż jednostka samorządu terytorialnego lub osoba fizyczna prowadząca publiczne lub niepub-
+liczne przedszkole lub publiczną lub niepubliczną szkołę może utworzyć inną lokalizację prowadzenia zajęć podporządko-
+waną organizacyjnie odpowiednio temu przedszkolu lub tej szkole po zawarciu porozumienia z jednostką samorządu teryto-
+rialnego będącą odpowiednio dla tego przedszkola lub dla tej szkoły organem rejestrującym, o którym mowa w art. 2 pkt 16
+ustawy z dnia 27 października 2017 r. o finansowaniu zadań oświatowych.
+     7. Porozumienie, o którym mowa w ust. 6, zawiera w szczególności:
+1)   okres funkcjonowania innej lokalizacji prowadzenia zajęć;
+2)   nazwę i adres siedziby odpowiednio przedszkola lub szkoły, której będzie podporządkowana organizacyjnie inna lokali-
+     zacja prowadzenia zajęć;
+3)   adres innej lokalizacji prowadzenia zajęć;
+4)   w przypadku innej lokalizacji prowadzenia zajęć podporządkowanej organizacyjnie szkole podstawowej – informację
+     o funkcjonowaniu oddziałów przedszkolnych.
+     8. Do tworzenia innej lokalizacji prowadzenia zajęć, o której mowa w ust. 6, stosuje się odpowiednio art. 90a ust. 1 i 4
+lub art. 168 ust. 13 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, z tym że:
+1)   opinia kuratora oświaty, o której mowa odpowiednio w art. 88 ust. 4 pkt 1 i art. 168 ust. 5 ustawy z dnia 14 grudnia
+     2016 r. – Prawo oświatowe,
+2)   opinie komendanta powiatowego (miejskiego) Państwowej Straży Pożarnej i państwowego powiatowego inspektora
+     sanitarnego, o których mowa odpowiednio w przepisach wydanych na podstawie art. 88 ust. 6 ustawy z dnia 14 grudnia
+     2016 r. – Prawo oświatowe oraz w art. 168 ust. 4 pkt 3 lit. d tej ustawy
+– są wydawane w terminie 7 dni od dnia otrzymania wniosku o wydanie opinii.
+100) W brzmieniu ustalonym przez art. 17 pkt 36 ustawy, o której mowa w odnośniku 1.
+     9. W przypadku utworzenia innej lokalizacji prowadzenia zajęć, o której mowa w ust. 6:
+1)   złożenie wniosku o zmianę zezwolenia, o którym mowa w art. 88 ust. 4 pkt 1 ustawy z dnia 14 grudnia 2016 r. – Prawo
+     oświatowe,
+2)   zgłoszenie zmiany wpisu do ewidencji, o którym mowa w art. 168 ust. 1 ustawy z dnia 14 grudnia 2016 r. – Prawo
+     oświatowe
+– może nastąpić w każdym czasie.
+     10. Statut przedszkola lub szkoły, której jest podporządkowana organizacyjnie inna lokalizacja prowadzenia zajęć,
+ulega niezwłocznemu dostosowaniu.
+      Art. 52.101) Do dnia 31 sierpnia 2026 r. jednostka samorządu terytorialnego, na terenie której zapewnia się kształcenie,
+wychowanie i opiekę nad dziećmi i uczniami będącymi obywatelami Ukrainy, którzy przebywają legalnie na terytorium
+Rzeczypospolitej Polskiej, w przypadku gdy przybyli na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy od dnia
+24 lutego 2022 r. w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, może zorganizować tym
+dzieciom i uczniom bezpłatny transport do miejsca, w którym zapewnia się im kształcenie, wychowanie i opiekę. W przy-
+padku zorganizowania tego transportu jednostka samorządu terytorialnego jest obowiązana w czasie przewozu zapewnić
+opiekę dzieciom korzystającym z wychowania przedszkolnego oraz uczniom, którym zapewniono kształcenie, wychowanie
+i opiekę w szkole podstawowej dla dzieci i młodzieży.
+     Art. 52a. (uchylony)102)
+     Art. 53. (uchylony)102)
+     Art. 54.103) Do dnia 31 sierpnia 2026 r. do dzieci i uczniów będących obywatelami Ukrainy, którzy przebywają legal-
+nie na terytorium Rzeczypospolitej Polskiej, w przypadku gdy przybyli na terytorium Rzeczypospolitej Polskiej z terytorium
+Ukrainy od dnia 24 lutego 2022 r. w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, nie sto-
+suje się przepisów art. 37 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, z wyjątkiem dzieci i uczniów z niepełno-
+sprawnościami sprzężonymi, z których jedną z niepełnosprawności jest niepełnosprawność intelektualna, posiadających
+orzeczenie o potrzebie kształcenia specjalnego i realizujących obowiązek, o którym mowa w art. 31 ust. 4 tej ustawy, obo-
+wiązek szkolny lub obowiązek nauki w ośrodku rewalidacyjno-wychowawczym.
+     Art. 55. 1.104) Do dnia 31 sierpnia 2026 r. nauczanie w oddziale przygotowawczym, o którym mowa w art. 165 ust. 11
+ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, może być prowadzone w grupie międzyszkolnej.
+     2. W przypadkach uzasadnionych warunkami demograficznymi organ wykonawczy jednostki samorządu terytorial-
+nego będącej organem prowadzącym szkołę, w której zorganizowano oddział przygotowawczy, może kierować do tego
+oddziału uczniów innych szkół tego samego typu, prowadzonych przez tę samą jednostkę samorządu terytorialnego.
+     3. Jednostki samorządu terytorialnego prowadzące szkoły mogą zawierać porozumienia w celu kierowania przez organ
+wykonawczy jednostki samorządu terytorialnego uczniów prowadzonej przez siebie szkoły do oddziału przygotowawczego
+zorganizowanego w szkole tego samego typu prowadzonej przez inną jednostkę samorządu terytorialnego.
+    4. W przypadkach, o których mowa w ust. 2 i 3, przepisy art. 39 ust. 2–4a ustawy z dnia 14 grudnia 2016 r. – Prawo
+oświatowe stosuje się odpowiednio.
+     5. Nauczanie w oddziale przygotowawczym jest prowadzone w oparciu o realizowane w szkole programy nauczania
+z zakresu kształcenia ogólnego dostosowane pod względem zakresu treści nauczania oraz metod i form ich realizacji do
+potrzeb rozwojowych i edukacyjnych oraz możliwości psychofizycznych uczniów.
+     Art. 55a.105) Do dnia 31 sierpnia 2026 r. do słuchaczy szkół policealnych kształcących w zawodzie technik pożarnic-
+twa prowadzonych przez ministra właściwego do spraw wewnętrznych, o których mowa w przepisach wydanych na pod-
+stawie art. 49 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, którzy realizują zadania na rzecz osób, o których mowa
+w art. 1 ust. 1, nie stosuje się przepisu art. 44w ust. 2 ustawy z dnia 7 września 1991 r. o systemie oświaty do czasu zakoń-
+czenia realizacji tych zadań.
+101) W brzmieniu ustalonym przez art. 17 pkt 37 ustawy, o której mowa w odnośniku 1.
+102) Przez art. 17 pkt 38 ustawy, o której mowa w odnośniku 1.
+103) W brzmieniu ustalonym przez art. 17 pkt 39 ustawy, o której mowa w odnośniku 1.
+104) W brzmieniu ustalonym przez art. 17 pkt 40 ustawy, o której mowa w odnośniku 1.
+105) W brzmieniu ustalonym przez art. 17 pkt 41 ustawy, o której mowa w odnośniku 1.
+     Art. 55b. 1.106) Do dnia 31 sierpnia 2026 r. dodatkowa nauka języka polskiego, o której mowa w art. 165 ust. 7 ustawy
+z dnia 14 grudnia 2016 r. – Prawo oświatowe, może być prowadzona w grupie międzyszkolnej.
+    1a. W przypadku uczniów, którzy zgodnie z ust. 1, rozpoczęli w latach szkolnych 2022/2023 i 2023/2024 dodatkową
+naukę języka polskiego, prawo do tej nauki przysługuje na okres niedłuższy niż 36 miesięcy.
+      2. W przypadkach uzasadnionych warunkami demograficznymi organ wykonawczy jednostki samorządu terytorial-
+nego będącej organem prowadzącym szkołę, w której zorganizowano dodatkową naukę języka polskiego, o której mowa
+w art. 165 ust. 7 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, może kierować do tej szkoły uczniów, o których
+mowa w art. 165 ust. 7 tej ustawy, uczęszczających do innych szkół prowadzonych przez tę samą jednostkę samorządu teryto-
+rialnego w celu korzystania z dodatkowej nauki języka polskiego.
+     3. Jednostki samorządu terytorialnego prowadzące szkoły mogą zawierać porozumienia w celu kierowania przez organ
+wykonawczy jednostki samorządu terytorialnego uczniów prowadzonej przez siebie szkoły na dodatkową naukę języka
+polskiego, o której mowa w art. 165 ust. 7 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, którą zorganizowano w szkole
+prowadzonej przez inną jednostkę samorządu terytorialnego.
+    4. W przypadkach, o których mowa w ust. 2 i 3, przepisy art. 39 ust. 2–4a ustawy z dnia 14 grudnia 2016 r. – Prawo
+oświatowe stosuje się odpowiednio.
+      Art. 55c. Dyrektor przedszkola, szkoły lub placówki, a w przypadku innej formy wychowania przedszkolnego prowa-
+dzonej przez osobę prawną inną niż jednostka samorządu terytorialnego lub osobę fizyczną – osoba kierująca tą inną formą
+wychowania przedszkolnego, może, w drodze decyzji, skreślić dziecko, ucznia albo wychowanka, będących obywatelami
+Ukrainy, których pobyt na terytorium Rzeczypospolitej Polskiej jest uznawany za legalny na podstawie niniejszej ustawy
+albo którzy przebywają legalnie na terytorium Rzeczypospolitej Polskiej, w przypadku gdy przybyli na terytorium Rzeczy-
+pospolitej Polskiej z terytorium Ukrainy od dnia 24 lutego 2022 r. w związku z działaniami wojennymi prowadzonymi na
+terytorium tego państwa, z listy odpowiednio dzieci, uczniów, albo wychowanków, jeżeli dziecko, uczeń albo wychowanek:
+1)    nie zamieszkuje na obszarze gminy, w której jest położone przedszkole, inna forma wychowania przedszkolnego, szkoła
+      lub placówka, oraz
+2)    ma nieusprawiedliwioną nieobecność w okresie dwóch miesięcy na co najmniej 50 % dni zajęć odpowiednio w przedszkolu,
+      oddziale przedszkolnym w szkole podstawowej, innej formie wychowania przedszkolnego, szkole lub placówce.
+      Art. 56.107) Do dnia 31 sierpnia 2026 r. w szkole, w której utworzono dodatkowy oddział w celu zapewnienia kształce-
+nia, wychowania i opieki dzieciom i uczniom będącym obywatelami Ukrainy, których pobyt na terytorium Rzeczypospolitej
+Polskiej jest uznawany za legalny na podstawie niniejszej ustawy albo którzy przebywają legalnie na terytorium Rzeczypospolitej
+Polskiej, w przypadku gdy przybyli na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy od dnia 24 lutego 2022 r.
+w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, nauczycielowi mogą być przydzielone, za
+jego zgodą, godziny ponadwymiarowe w wymiarze wyższym niż określony w art. 35 ust. 1 ustawy z dnia 26 stycznia 1982 r. –
+Karta Nauczyciela (Dz. U. z 2026 r. poz. 515).
+      Art. 56a.108) Do dnia 31 sierpnia 2026 r. godziny ponadwymiarowe w wymiarze wyższym niż określony w art. 35
+ust. 1 ustawy z dnia 26 stycznia 1982 r. – Karta Nauczyciela mogą być przydzielone nauczycielowi języka polskiego, za jego
+zgodą, także w szkole, w której nie utworzono dodatkowego oddziału w celu zapewnienia kształcenia, wychowania i opieki
+dzieciom i uczniom będącym obywatelami Ukrainy, których pobyt na terytorium Rzeczypospolitej Polskiej jest uznawany
+za legalny na podstawie niniejszej ustawy albo którzy przebywają legalnie na terytorium Rzeczypospolitej Polskiej, w przy-
+padku gdy przybyli na terytorium Rzeczypospolitej Polskiej z terytorium Ukrainy od dnia 24 lutego 2022 r. w związku
+z działaniami wojennymi prowadzonymi na terytorium tego państwa.
+      Art. 57.109) Do dnia 31 sierpnia 2026 r. na stanowisku pomocy nauczyciela, o którym mowa w art. 165 ust. 8 ustawy
+z dnia 14 grudnia 2016 r. – Prawo oświatowe, może być zatrudniona osoba nieposiadająca obywatelstwa polskiego, jeżeli
+posiada znajomość języka polskiego w mowie i piśmie w stopniu umożliwiającym pomoc uczniowi, który nie zna języka
+polskiego albo zna go na poziomie niewystarczającym do korzystania z nauki.110) Wymogu znajomości języka polskiego potwier-
+dzonej dokumentem, o którym mowa w art. 11 ust. 3 ustawy z dnia 21 listopada 2008 r. o pracownikach samorządowych,
+nie stosuje się.
+106) Ze zmianą wprowadzoną przez art. 10 pkt 1 ustawy, o której mowa w odnośniku 6; ze zmianą wprowadzoną przez art. 17 pkt 42
+     ustawy, o której mowa w odnośniku 1.
+107) Ze zmianą wprowadzoną przez art. 10 pkt 24 ustawy, o której mowa w odnośniku 6; ze zmianą wprowadzoną przez art. 17 pkt 42
+     ustawy, o której mowa w odnośniku 1.
+108) Ze zmianą wprowadzoną przez art. 10 pkt 25 ustawy, o której mowa w odnośniku 6; ze zmianą wprowadzoną przez art. 17 pkt 42
+     ustawy, o której mowa w odnośniku 1.
+109) Ze zmianą wprowadzoną przez art. 10 pkt 24 ustawy, o której mowa w odnośniku 6.
+110) Zdanie pierwsze ze zmianą wprowadzoną przez art. 17 pkt 42 ustawy, o której mowa w odnośniku 1.
+      Art. 57a.111) Do dnia 4 marca 2027 r. na stanowisku asystenta międzykulturowego, o którym mowa w art. 165 ust. 8a
+ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe, może być zatrudniona osoba nieposiadająca obywatelstwa polskiego,
+jeżeli posiada znajomość języka polskiego w mowie i piśmie w stopniu umożliwiającym pomoc uczniowi, który nie zna
+języka polskiego albo zna go na poziomie niewystarczającym do korzystania z nauki.112) Wymogu znajomości języka polskiego
+potwierdzonej dokumentem, o którym mowa w art. 11 ust. 3 ustawy z dnia 21 listopada 2008 r. o pracownikach samorządo-
+wych, nie stosuje się.

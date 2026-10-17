@@ -1,0 +1,176 @@
+# Rozporządzenie MEN z 23.08.2017 w sprawie kształcenia osób niebędących obywatelami polskimi oraz osób będących obywatelami polskimi, które pobierały naukę w szkołach funkcjonujących w systemach oświaty innych państw: consolidated text Dz.U. 2023 poz. 2301 (obwieszczenie of 6.10.2023), with its amendment Dz.U. 2026 poz. 1139 (of 25.08.2026, published 28.08.2026, in force 14 days after publication, its § 2: 12.09.2026)
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2023/2301/text.pdf, sha256 7047c2139805cb85cc64129d38868cd8100f029d5ae3a2f3aacba2024022b998; https://api.sejm.gov.pl/eli/acts/DU/2026/1139/text.pdf, sha256 d909c6389f5b81ca6bdbc5c60ccfdf32a96e9df6912e776895477add5df5444f; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
+# Later amendments (node tools/sources/touched.mjs DU/2023/2301 2023-10-06 --cite 2-20, 17.10.2026): only Dz.U. 2026 poz. 1139, which changes § 4 (adds ust. 1 pkt 4a and ust. 2 pkt 4a), § 6 pkt 4 (post-secondary schools) and § 10 ust. 1 pkt 1 and ust. 2 (bilingual primary schools). § 4 ust. 1 pkt 1-3, ust. 2 pkt 1-2 and § 6 pkt 1-2 lit. a as quoted are unchanged. Its changes that bear on this map are quoted at the end.
+
+[§ 2 pkt 1-4 (definitions; "documents")]
+      § 2. Ilekroć w rozporządzeniu jest mowa o:
+1)    szkole za granicą – należy przez to rozumieć szkołę funkcjonującą w systemie oświaty innego państwa;
+2)    uczniu (dziecku) przybywającym z zagranicy – należy przez to rozumieć osobę niebędącą obywatelem polskim oraz
+      osobę będącą obywatelem polskim, które pobierały naukę w szkołach za granicą;
+3)    dokumentach – należy przez to rozumieć:
+      a)   świadectwo, zaświadczenie lub inny dokument stwierdzające ukończenie szkoły lub kolejnego etapu edukacji za
+           granicą lub
+      b)2) świadectwo, zaświadczenie lub inny dokument wydane przez szkołę za granicą, potwierdzające uczęszczanie
+           ucznia przybywającego z zagranicy do szkoły za granicą i wskazujące klasę lub etap edukacji, który uczeń ukoń-
+           czył w szkole za granicą, oraz dokument potwierdzający sumę lat nauki szkolnej ucznia lub pisemne oświadczenie
+           dotyczące sumy lat nauki szkolnej ucznia, złożone przez rodzica ucznia lub inną osobę sprawującą opiekę nad
+           uczniem albo pełnoletniego ucznia, jeżeli ustalenie sumy lat nauki szkolnej nie jest możliwe na podstawie świa-
+           dectwa, zaświadczenia lub innego dokumentu;
+4)    miejscu zamieszkania ucznia – należy przez to rozumieć miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej
+      ucznia przybywającego z zagranicy;
+
+[§ 3 (preschool) and § 4 ust. 1 pkt 1-3 (grade 1)]
+     § 3. 1. Dziecko przybywające z zagranicy jest przyjmowane do publicznego przedszkola, oddziału przedszkolnego
+w publicznej szkole podstawowej lub publicznej innej formy wychowania przedszkolnego na warunkach i w trybie postę-
+powania rekrutacyjnego dotyczących obywateli polskich, zgodnie z art. 130 ust. 1, art. 131, art. 149, art. 150 ust. 1, ust. 2
+pkt 1–3 i ust. 6–10, art. 152, art. 153 ust. 1 i art. 155–161 ustawy. Przepisy art. 150 ust. 3–5 ustawy stosuje się odpowiednio.
+     2. Jeżeli przyjęcie dziecka przybywającego z zagranicy do publicznego przedszkola lub oddziału przedszkolnego w pub-
+licznej szkole podstawowej odbywa się w trakcie roku szkolnego, o przyjęciu dziecka decyduje odpowiednio dyrektor
+przedszkola lub szkoły, zgodnie z art. 130 ust. 2 i 3 ustawy.
+     3. Jeżeli przyjęcie dziecka przybywającego z zagranicy do publicznej innej formy wychowania przedszkolnego od-
+bywa się w trakcie roku szkolnego, o przyjęciu dziecka decyduje dyrektor publicznego przedszkola lub publicznej szkoły
+podstawowej lub osoba kierująca publiczną inną formą wychowania przedszkolnego.
+     § 4. 1. Uczeń przybywający z zagranicy jest przyjmowany do:
+1)   klasy I publicznej szkoły podstawowej, której ustalono obwód, właściwej ze względu na miejsce zamieszkania ucznia –
+     z urzędu, zgodnie z art. 133 ust. 1 i art. 151 ust. 1 ustawy;
+2)   klasy I publicznej szkoły podstawowej innej niż właściwa ze względu na miejsce zamieszkania ucznia – jeżeli szkoła
+     dysponuje wolnymi miejscami;
+3)   klasy I oddziału międzynarodowego w publicznej szkole podstawowej ogólnodostępnej – w przypadkach, o których
+     mowa w § 10 ust. 1, na podstawie pozytywnego wyniku sprawdzianu predyspozycji językowych, o którym mowa
+     w art. 138 ust. 1 ustawy, jeżeli szkoła dysponuje wolnymi miejscami;
+
+[§ 4 ust. 2 pkt 1-2 (grades II-VIII)]
+     2. Uczeń przybywający z zagranicy jest kwalifikowany do odpowiedniej klasy oraz przyjmowany do:
+1)   klas II–VIII publicznej szkoły podstawowej, której ustalono obwód, właściwej ze względu na miejsce zamieszkania
+     ucznia – z urzędu, zgodnie z art. 133 ust. 1 i art. 151 ust. 1 ustawy, oraz na podstawie dokumentów;
+2)   klas II–VIII publicznej szkoły podstawowej innej niż właściwa ze względu na miejsce zamieszkania ucznia – na pod-
+     stawie dokumentów, jeżeli szkoła dysponuje wolnymi miejscami;
+
+[§ 6 pkt 1-2 lit. a (upper-secondary schools)]
+   § 6. Uczeń przybywający z zagranicy jest kwalifikowany do odpowiedniej klasy lub na odpowiedni semestr oraz przyj-
+mowany do:
+1)   publicznego liceum ogólnokształcącego – na podstawie dokumentów,
+2)   publicznego technikum i publicznej branżowej szkoły I stopnia – na podstawie:
+     a)   dokumentów,
+
+[§ 6, closing words]
+– jeżeli szkoła dysponuje wolnymi miejscami.
+
+[§ 11-12 (age and the parent's opinion; an interview when there are no documents)]
+     § 11.3) Uczeń przybywający z zagranicy może być kwalifikowany do odpowiedniej klasy lub na odpowiedni semestr
+lub rok kształcenia oraz przyjmowany odpowiednio do publicznej szkoły, o której mowa w § 4 ust. 2, § 5 i § 6 pkt 1, 2 i 5–8,
+oraz publicznej szkoły artystycznej lub publicznej placówki artystycznej także z uwzględnieniem wieku ucznia lub opinii
+rodzica ucznia lub innej osoby sprawującej opiekę nad uczniem albo pełnoletniego ucznia wyrażonej w formie ustnej lub
+pisemnej.
+      § 12. 1. Jeżeli uczeń przybywający z zagranicy nie może przedłożyć dokumentów, zostaje zakwalifikowany do odpo-
+wiedniej klasy lub na odpowiedni semestr lub rok kształcenia oraz przyjęty do publicznej szkoły lub publicznej placówki
+artystycznej na podstawie rozmowy kwalifikacyjnej. Przepisy § 4–8, § 10, § 11 i § 13–15 stosuje się odpowiednio.
+      2. Przepisu ust. 1 nie stosuje się do publicznej branżowej szkoły II stopnia i publicznej szkoły policealnej.
+     3. Termin rozmowy kwalifikacyjnej ustala dyrektor publicznej szkoły lub publicznej placówki artystycznej. Rozmowę
+kwalifikacyjną przeprowadza dyrektor publicznej szkoły lub publicznej placówki artystycznej, z udziałem, w razie potrzeby,
+nauczyciela lub nauczycieli.
+     4. W przypadku ucznia przybywającego z zagranicy, który nie zna języka polskiego, rozmowę kwalifikacyjną prze-
+prowadza się w języku obcym, którym posługuje się uczeń. W razie potrzeby należy zapewnić w rozmowie kwalifikacyjnej
+udział osoby władającej językiem obcym, którym posługuje się uczeń.
+
+[§ 13-15 (a refusal: reasons, the appeal committee, the court)]
+      § 13. 1.4) W przypadkach, o których mowa w § 4 ust. 1 pkt 2–5 i ust. 2 pkt 2–5, § 6, § 7 i § 8 ust. 2, uczeń przybywa-
+jący z zagranicy, po spełnieniu warunków, o których mowa odpowiednio w § 4 ust. 1 pkt 3 i 4 oraz ust. 2 pkt 2–4, § 6, § 7
+i § 8 ust. 2, jest przyjmowany do publicznej szkoły i publicznej placówki artystycznej przez dyrektora publicznej szkoły lub
+publicznej placówki artystycznej, na wniosek rodzica ucznia lub innej osoby sprawującej opiekę nad uczniem albo pełno-
+letniego ucznia.
+     2.5) W terminie 7 dni od dnia odmowy przyjęcia ucznia przybywającego z zagranicy do publicznej szkoły lub publicz-
+nej placówki artystycznej, o których mowa w § 4 ust. 1 pkt 2–5 i ust. 2 pkt 2–5, § 6, § 7 oraz § 8 ust. 2, rodzic ucznia lub
+inna osoba sprawująca opiekę nad uczniem albo pełnoletni uczeń może wystąpić do dyrektora publicznej szkoły lub publicznej
+placówki artystycznej z wnioskiem o sporządzenie uzasadnienia odmowy przyjęcia.
+     3.6) Uzasadnienie odmowy przyjęcia ucznia do publicznej szkoły lub publicznej placówki artystycznej sporządza się
+w terminie 5 dni od dnia wystąpienia przez rodzica ucznia lub inną osobę sprawującą opiekę nad uczniem albo pełnoletniego
+ucznia z wnioskiem, o którym mowa w ust. 2. Uzasadnienie zawiera przyczyny odmowy przyjęcia.
+      § 14. 1. Dyrektor publicznej szkoły lub publicznej placówki artystycznej powołuje komisję odwoławczą.
+     2. W skład komisji odwoławczej wchodzi co najmniej 3 przedstawicieli rady pedagogicznej publicznej szkoły lub pub-
+licznej placówki artystycznej.
+      3. W skład komisji odwoławczej nie może wchodzić dyrektor publicznej szkoły lub publicznej placówki artystycznej.
+      § 15. 1.7) Rodzic ucznia przybywającego z zagranicy lub inna osoba sprawująca opiekę nad tym uczniem albo pełno-
+letni uczeń przybywający z zagranicy może wnieść do komisji odwoławczej, o której mowa w § 14 ust. 1, odwołanie od
+rozstrzygnięcia dyrektora publicznej szkoły lub publicznej placówki artystycznej, w terminie 7 dni od dnia otrzymania uza-
+sadnienia.
+     2. Komisja odwoławcza, o której mowa w § 14 ust. 1, rozpatruje odwołanie w terminie 7 dni od dnia jego otrzymania.
+Na rozstrzygnięcie komisji odwoławczej służy skarga do sądu administracyjnego.
+
+[§ 16 ust. 1-5 (the preparatory class)]
+     § 16. 1. Dyrektor szkoły, w której utworzono oddział przygotowawczy, powołuje zespół kwalifikujący uczniów, o któ-
+rych mowa w art. 165 ust. 7 i 9 ustawy, do tego oddziału. W skład zespołu wchodzi dwóch nauczycieli oraz pedagog lub
+psycholog.
+      2.8) Liczba uczniów w oddziale przygotowawczym nie może przekraczać 25 uczniów.
+     3. Nauczanie w oddziale przygotowawczym jest prowadzone według realizowanych w szkole programów nauczania,
+z dostosowaniem metod i form ich realizacji do indywidualnych potrzeb rozwojowych i edukacyjnych oraz możliwości psy-
+chofizycznych uczniów.
+    4. Zajęcia edukacyjne w oddziale przygotowawczym prowadzą nauczyciele poszczególnych zajęć edukacyjnych, którzy
+mogą być wspomagani przez osobę władającą językiem kraju pochodzenia ucznia, o której mowa w art. 165 ust. 8 ustawy.
+     5. Na realizację obowiązkowych zajęć edukacyjnych w oddziale przygotowawczym przeznacza się w tygodniowym
+rozkładzie zajęć liczbę godzin:
+1)    w szkole podstawowej dla klas I–III – nie mniejszą niż 20 godzin tygodniowo;
+2)    w szkole podstawowej dla klas IV–VI – nie mniejszą niż 23 godziny tygodniowo;
+3)    w szkole podstawowej dla klas VII i VIII – nie mniejszą niż 25 godzin tygodniowo;
+4)    w szkole ponadpodstawowej – nie mniejszą niż 26 godzin tygodniowo.
+
+[§ 16 ust. 7-9]
+      7. Decyzję o skróceniu albo przedłużeniu okresu nauki ucznia w oddziale przygotowawczym, o którym mowa w art. 165
+ust. 13 ustawy, podejmuje rada pedagogiczna na wniosek uczących ucznia nauczycieli, pedagoga lub psychologa.
+      8. W przypadku przyjęcia w trakcie roku szkolnego do szkoły znacznej liczby uczniów, o których mowa w ust. 1, od-
+dział przygotowawczy może być zorganizowany także w trakcie roku szkolnego.
+     9.9) W oddziale przygotowawczym w ramach tygodniowego wymiaru godzin, o którym mowa w ust. 5, prowadzi się
+naukę języka polskiego według programu nauczania opracowanego na podstawie ramowego programu kursów nauki języka
+polskiego dla cudzoziemców, o którym mowa w przepisach wydanych na podstawie art. 92 ust. 2 ustawy z dnia 12 marca
+2004 r. o pomocy społecznej (Dz. U. z 2023 r. poz. 901, 1693 i 1938), w wymiarze nie niższym niż 6 godzin tygodniowo.
+
+[§ 17-20 (Polish lessons: at least 2 hours; catch-up classes; 5 hours in all; the language of the country of origin)]
+     § 17. 1. Dla uczniów przybywających z zagranicy, podlegających obowiązkowi szkolnemu lub obowiązkowi nauki,
+którzy nie znają języka polskiego albo znają go na poziomie niewystarczającym do korzystania z nauki, organ prowadzący
+szkołę organizuje w szkole, w której uczeń realizuje naukę zgodnie z podstawą programową kształcenia ogólnego, dodat-
+kową, bezpłatną naukę języka polskiego w formie dodatkowych zajęć lekcyjnych z języka polskiego.
+     2. Dodatkowe zajęcia lekcyjne z języka polskiego są prowadzone indywidualnie lub w grupach w wymiarze pozwala-
+jącym na opanowanie języka polskiego w stopniu umożliwiającym udział w obowiązkowych zajęciach edukacyjnych, nie
+niższym niż 2 godziny lekcyjne tygodniowo.
+     3. Tygodniowy rozkład oraz wymiar godzin dodatkowych zajęć lekcyjnych z języka polskiego ustala, w porozumieniu
+z organem prowadzącym szkołę, dyrektor szkoły, w której są organizowane te zajęcia.
+     § 18. 1. Dla uczniów wymienionych w § 17 ust. 1, w odniesieniu do których nauczyciel prowadzący zajęcia eduka-
+cyjne z danego przedmiotu stwierdzi konieczność uzupełnienia różnic programowych z tego przedmiotu, organ prowadzący
+szkołę organizuje w szkole dodatkowe zajęcia wyrównawcze z tego przedmiotu.
+     2. Dodatkowe zajęcia wyrównawcze z danego przedmiotu są prowadzone indywidualnie lub w grupach, w formie do-
+datkowych zajęć lekcyjnych z tego przedmiotu, w wymiarze 1 godziny lekcyjnej tygodniowo.
+     3. Tygodniowy rozkład dodatkowych zajęć wyrównawczych ustala, w porozumieniu z organem prowadzącym szkołę,
+dyrektor szkoły, w której są organizowane te zajęcia.
+     § 19. Łączny wymiar godzin zajęć lekcyjnych, o których mowa w § 17 ust. 2 i § 18 ust. 2, nie może być wyższy niż
+5 godzin lekcyjnych tygodniowo w odniesieniu do jednego ucznia.
+     § 20. 1. Dla uczniów niebędących obywatelami polskimi, podlegających obowiązkowi szkolnemu placówka dyploma-
+tyczna lub konsularna kraju ich pochodzenia działająca na terytorium Rzeczypospolitej Polskiej albo stowarzyszenie kultu-
+ralno-oświatowe danej narodowości mogą organizować w szkole naukę języka i kultury kraju pochodzenia, jeżeli do udziału
+w tym kształceniu zostanie zgłoszonych co najmniej 7 uczniów.
+     2. Łączny wymiar godzin nauki języka i kultury kraju pochodzenia nie może być wyższy niż 5 godzin lekcyjnych
+tygodniowo.
+   3. Dyrektor szkoły ustala w porozumieniu z placówką dyplomatyczną lub konsularną lub stowarzyszeniem, o których
+mowa w ust. 1, dni tygodnia i godziny, w których może odbywać się w szkole nauka języka i kultury kraju pochodzenia.
+
+[Dz.U. 2026 poz. 1139 § 1 pkt 1 (bilingual primary schools, grades VII-VIII)]
+     § 1. W rozporządzeniu Ministra Edukacji Narodowej z dnia 23 sierpnia 2017 r. w sprawie kształcenia osób niebędą-
+cych obywatelami polskimi oraz osób będących obywatelami polskimi, które pobierały naukę w szkołach funkcjonujących
+w systemach oświaty innych państw (Dz. U. z 2023 r. poz. 2301) wprowadza się następujące zmiany:
+1)     w § 4:
+       a)   w ust. 1 po pkt 4 dodaje się pkt 4a w brzmieniu:
+            „4a) klasy VII publicznej szkoły podstawowej dwujęzycznej – na podstawie dokumentów oraz w przypadkach,
+                 o których mowa w § 10 ust. 1, na podstawie pozytywnego wyniku sprawdzianu predyspozycji językowych,
+                 o którym mowa w art. 139 ust. 1a pkt 2 ustawy, jeżeli szkoła dysponuje wolnymi miejscami;”,
+       b) w ust. 2 po pkt 4 dodaje się pkt 4a w brzmieniu:
+            „4a) klasy VIII publicznej szkoły podstawowej dwujęzycznej – na podstawie dokumentów oraz w przypadkach,
+                 o których mowa w § 10 ust. 1, na podstawie pozytywnego wyniku sprawdzianu predyspozycji językowych,
+                 o którym mowa w art. 139 ust. 1a pkt 2 ustawy, jeżeli szkoła dysponuje wolnymi miejscami;”;
+
+[Dz.U. 2026 poz. 1139 § 1 pkt 2 lit. b (post-secondary schools: a B1 certificate)]
+     b) dodaje się lit. g w brzmieniu:
+          „g) certyfikatu znajomości języka polskiego, o którym mowa w art. 11a ust. 2 ustawy z dnia 7 października
+              1999 r. o języku polskim (Dz. U. z 2026 r. poz. 81 i 676), co najmniej na poziomie biegłości językowej B1,”;
+
+[Dz.U. 2026 poz. 1139 § 2 (in force 14 days after 28.08.2026)]
+     § 2. Rozporządzenie wchodzi w życie po upływie 14 dni od dnia ogłoszenia.
+                                                                                         Minister Edukacji: wz. K. Lubnauer

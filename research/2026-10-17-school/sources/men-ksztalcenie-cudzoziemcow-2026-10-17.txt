@@ -1,0 +1,70 @@
+# MEN (gov.pl/web/edukacja): "Informacja o kształceniu w polskim systemie oświaty osób przybywających z zagranicy"
+# Source: https://www.gov.pl/web/edukacja/informacja-o-ksztalceniu-w-polskim-systemie-oswiaty-osob-przybywajacych-z-zagranicy, retrieved 2026-10-17, html sha256 6b3c0f25d7e11295874a59a03c9400d23d22055f7e930973782033b8767a127b
+# Text of the main element; navigation removed. Last modified 08.01.2025 (first published 14.12.2023). It cites the act and the regulation in their 2020 texts; where it differs from the acts in force, the README's table says so. Not binding.
+
+Informacja o kształceniu w polskim systemie oświaty osób przybywających z zagranicy
+Nauka dzieci przybywających z zagranicy w polskim systemie edukacji
+Warunki podejmowania nauki przez osoby przybywające z zagranicy w polskich szkołach są określone przepisami:
+- art. 165 i 166 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2020 r. poz. 910) oraz rozporządzenia Ministra Edukacji Narodowej z dnia 23 sierpnia 2017 r. w sprawie kształcenia osób niebędących obywatelami polskimi oraz osób będących obywatelami polskimi, które pobierały naukę w szkołach funkcjonujących w systemach oświaty innych państw (Dz. U. z 2020 r., poz. 1283) (https://dziennikustaw.gov.pl/D2020000128301.pdf) – w odniesieniu do przedszkoli oraz szkół działających według nowego ustroju szkolnego
+oraz
+- art. 363 ustawy z dnia 14 grudnia 2016 r. – Przepisy wprowadzające ustawę – Prawo oświatowe (Dz. U. z 2017 r. poz. 60) oraz rozporządzenia Ministra Edukacji Narodowej z 9 września 2016 r. w sprawie kształcenia osób niebędących obywatelami polskimi oraz osób będących obywatelami polskimi, które pobierały naukę w szkołach funkcjonujących w systemach oświaty innych państw (Dz. U. z 2016 r. poz. 1453) (https://dziennikustaw.gov.pl/D2016000145301.pdf ) wraz z późniejszymi zmianami (Dz. U. z 2017 r. poz. 1634), (https://dziennikustaw.gov.pl/D2017000163401.pdf) (Dz. U. z 2019 r. poz. 666) (https://dziennikustaw.gov.pl/D2019000066601.pdf) – w odniesieniu do gimnazjów i szkół ponadgimnazjalnych, do czasu zakończenia kształcenia w tych szkołach.
+Uczniowie przybywający z zagranicy, zarówno obywatele polscy, jak i cudzoziemcy są przyjmowani do publicznych szkół na podstawie zagranicznych dokumentów potwierdzających uczęszczanie do szkoły za granicą bądź ukończenie kolejnego etapu kształcenia bez konieczności dokonywania ich nostryfikacji. Wyjątek stanowią publiczne szkoły branżowe II stopnia i publiczne szkoły policealne, gdzie warunkiem przyjęcia jest odpowiednio posiadanie potwierdzonego wykształcenia zasadniczego zawodowego albo wykształcenia branżowego I stopnia lub wykształcenia średniego. Zagraniczne świadectwo potwierdzające wykształcenie średnie może być w Polsce uznane z mocy prawa lub decyzją kuratora oświaty. Szczegółowe informacje są dostępne pod adresem https://www.gov.pl/web/edukacja/uznawanie-wyksztalcenia-uzyskanego-za-granica .
+W przypadku ubiegania się o przyjęcie do publicznych szkół prowadzących kształcenie zawodowe, sportowych, artystycznych czy oddziałów dwujęzycznych warunkiem przyjęcia może być spełnienie dodatkowych kryteriów.
+Dyrektor szkoły publicznej kwalifikuje ucznia przybywającego z zagranicy do odpowiedniej klasy lub na odpowiedni semestr, biorąc pod uwagę także wiek ucznia, opinię rodzica albo samego ucznia, jeśli jest on pełnoletni.
+Oddziały przygotowawcze
+Organy prowadzące szkoły publiczne i niepubliczne mogą tworzyć oddziały przygotowawcze dla uczniów przybywających z zagranicy, słabo znających lub nieznających języka polskiego. Celem wprowadzenia tej formy organizacyjnej jest wspomaganie efektywności kształcenia osób, które uczyły się w szkołach funkcjonujących w zagranicznych systemach oświaty. Nauka w oddziale przygotowawczym trwa co do zasady jeden rok szkolny, ale może być skrócona lub wydłużona nie więcej niż o jeden rok szkolny.
+Cudzoziemcy
+Uczniowie-cudzoziemcy korzystają z nauki i opieki we wszystkich typach publicznych przedszkoli i szkół do ukończenia 18 lat lub ukończenia szkoły ponadpodstawowej/ponadgimnazjalnej na warunkach dotyczących obywateli polskich.
+Cudzoziemcy korzystają na warunkach dotyczących obywateli polskich z nauki w publicznych szkołach dla dorosłych, publicznych szkołach policealnych, publicznych szkołach artystycznych, publicznych placówkach i publicznych kolegiach pracowników służb społecznych oraz z kształcenia ustawicznego w formie kwalifikacyjnych kursów zawodowych, jeśli są:
+- obywatelami pozostałych 27 państw członkowskich Unii Europejskiej, państwa członkowskiego Europejskiego Stowarzyszenia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym (Islandia, Liechtenstein, Norwegia) i Konfederacji Szwajcarskiej, a także członkami ich rodzin posiadającymi prawo pobytu lub prawo stałego pobytu;
+- osobami pochodzenia polskiego w rozumieniu przepisów o repatriacji;
+- osobami, którym na terytorium Rzeczypospolitej Polskiej udzielono:
+- zezwolenia na pobyt stały;
+- ochrony uzupełniającej oraz członkowie ich rodzin;
+- zgody na pobyt tolerowany;
+- zgody na pobyt ze względów humanitarnych oraz członkowie ich rodzin;
+- ochrony czasowej;
+- zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej;
+- zezwolenia na pobyt czasowy w związku z okolicznością, o której mowa w art. 127, art. 159 ust. 1, art. 176 lub art. 186 ust. 1 pkt 3 lub 4 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. poz. 1650);
+- osoby, którym nadano status uchodźcy oraz członkowie ich rodzin;
+- członkami rodzin osób ubiegających się o nadanie statusu uchodźcy;
+- osobami posiadającymi ważną Kartę Polaka;
+- osobami, dla których uprawnienie takie wynika z umów międzynarodowych;
+- osobami, które posiadają kartę pobytu z adnotacją „dostęp do rynku pracy”, wizę Schengen lub wizę krajową wydaną w celu wykonywania pracy na terytorium Rzeczypospolitej Polskiej;
+- stypendystami otrzymującymi stypendia Ministra Edukacji Narodowej, organu prowadzącego szkołę lub dyrektora szkoły.
+W świetle przepisu art. 165 ust. 5 ustawy – Prawo oświatowe, pozostali cudzoziemcy mogą pobierać naukę w publicznych szkołach dla dorosłych, publicznych szkołach policealnych, publicznych szkołach artystycznych, publicznych placówkach i publicznych kolegiach pracowników służb społecznych oraz korzystać z kształcenia ustawicznego w formie kwalifikacyjnych kursów zawodowych na warunkach odpłatności.
+Wysokość odpłatności oraz sposób wnoszenia opłat, uwzględniający przewidywane koszty kształcenia oraz możliwość całkowitego lub częściowego zwolnienia z tej odpłatności ustala organ prowadzący szkołę.
+Cudzoziemcy podlegający obowiązkowi szkolnemu lub obowiązkowi nauki, którzy nie znają języka polskiego albo znają go na poziomie niewystarczającym do korzystania z nauki, mają prawo do dodatkowej, bezpłatnej nauki języka polskiego w formie dodatkowych zajęć lekcyjnych z języka polskiego. Dodatkową naukę języka polskiego organizuje gmina lub powiat właściwe ze względu na miejsce zamieszkania cudzoziemca. Korzystanie przez cudzoziemców z dodatkowych zajęć z języka polskiego nie jest ograniczone czasowo.
+Cudzoziemcy mogą korzystać także z dodatkowych zajęć wyrównawczych z danego przedmiotu nauczania przez okres 12 miesięcy. Łączny wymiar dodatkowych zajęć z języka polskiego i zajęć wyrównawczych nie może przekroczyć 5 godzin tygodniowo.
+Uczniowie-cudzoziemcy podlegający obowiązkowi szkolnemu lub obowiązkowi nauki, którzy nie znają języka polskiego albo znają go na poziomie niewystarczającym do korzystania z nauki, mają prawo do pomocy udzielanej przez osobę władającą językiem kraju pochodzenia, zatrudnioną w charakterze pomocy nauczyciela przez dyrektora szkoły nie dłużej niż przez okres 12 miesięcy.
+Dla cudzoziemców podlegających obowiązkowi szkolnemu, placówka dyplomatyczna lub konsularna kraju ich pochodzenia działająca w Polsce albo stowarzyszenie kulturalno-oświatowe danej narodowości mogą organizować w szkole, w porozumieniu z dyrektorem szkoły i za zgodą organu prowadzącego, naukę języka i kultury kraju pochodzenia.
+Obywatele polscy przybywający z zagranicy
+Obywatele polscy przybywający z zagranicy podlegający obowiązkowi szkolnemu lub obowiązkowi nauki mają prawo do dodatkowej, bezpłatnej nauki języka polskiego
+w formie dodatkowych zajęć lekcyjnych z języka polskiego przez okres 12 miesięcy. Dodatkową naukę języka polskiego organizuje gmina lub powiat właściwe ze względu na miejsce zamieszkania ucznia. Uczniowie mogą także korzystać z dodatkowych zajęć wyrównawczych z danego przedmiotu nauczania przez okres 12 miesięcy. Łączny wymiar dodatkowych zajęć z języka polskiego i zajęć wyrównawczych nie może przekroczyć 5 godzin tygodniowo.
+Finansowanie
+Na zadania związane z kształceniem uczniów przybywających z zagranicy przysługuje jednostkom samorządu terytorialnego część oświatowa subwencji ogólnej. Przewidziano w niej dodatkowe wagi, obejmujące uczniów korzystających z dodatkowej nauki języka polskiego oraz uczniów oddziałów przygotowawczych. Zgodnie z rozporządzeniem Ministra Edukacji Narodowej w sprawie sposobu poddziału części oświatowej subwencji ogólnej dla jednostek samorządu terytorialnego w roku 2019 są to wagi P44=1,5 oraz P45=0,3.
+Egzaminy zewnętrzne
+Do dnia 10 września roku szkolnego, w którym mają być przeprowadzone egzaminy zewnętrzne, Dyrektor Centralnej Komisji Egzaminacyjnej w komunikacie wskazuje szczegółowe sposoby dostosowania warunków i form przeprowadzania egzaminu ósmoklasisty i egzaminu maturalnego, w przypadku zdających, którzy potrzebują takiego dostosowania. Przewidziano ułatwienia dla osób przybywających z zagranicy, które przystępują do egzaminów zewnętrznych.
+Ułatwienia dla cudzoziemców (art. 44zzr ust. 7 ustawy o systemie oświaty)
+Uczeń albo absolwent, któremu ograniczona znajomość języka polskiego utrudnia zrozumienie czytanego tekstu, może przystąpić do:
+- egzaminu ósmoklasisty, z wyjątkiem egzaminu z języka obcego nowożytnego – w warunkach i formie dostosowanych do jego potrzeb edukacyjnych oraz możliwości psychofizycznych, na podstawie pozytywnej opinii rady pedagogicznej;
+- egzaminu maturalnego, z wyjątkiem egzaminu z języka obcego nowożytnego – w warunkach dostosowanych do jego potrzeb oraz możliwości psychofizycznych, na podstawie pozytywnej opinii rady pedagogicznej.
+Dostosowanie formy egzaminu ósmoklasisty polega na przygotowaniu odrębnych arkuszy egzaminacyjnych dostosowanych do potrzeb ucznia, któremu ograniczona znajomość języka polskiego utrudnia zrozumienie czytanego tekstu.
+Dostosowanie warunków przeprowadzania egzaminu ósmoklasisty i egzaminu maturalnego polega m.in. na wykorzystaniu odpowiednich środków dydaktycznych (np. słownika dwujęzycznego), odpowiednim przedłużeniu czasu przewidzianego na przeprowadzenie tych egzaminów.
+Ułatwienia dla obywateli polskich przybywających z zagranicy (art. 44zzr ust. 6 ustawy o systemie oświaty)
+Uczeń, słuchacz albo absolwent, który w roku szkolnym, w którym przystępuje do egzaminu ósmoklasisty lub egzaminu maturalnego, był objęty pomocą psychologiczno-pedagogiczną w szkole ze względu na trudności adaptacyjne związane z wcześniejszym kształceniem za granicą, zaburzenia komunikacji językowej lub sytuację kryzysową lub traumatyczną, może przystąpić do egzaminu ósmoklasisty i egzaminu maturalnego w warunkach dostosowanych do jego potrzeb edukacyjnych oraz możliwości psychofizycznych wynikających odpowiednio z rodzaju tych trudności, zaburzeń lub sytuacji kryzysowej lub traumatycznej, na podstawie pozytywnej opinii rady pedagogicznej.
+Dostosowanie warunków przeprowadzania egzaminu ósmoklasisty i egzaminu maturalnego polega m.in. na wykorzystaniu odpowiednich środków dydaktycznych (np. słownika dwujęzycznego), odpowiednim przedłużeniu czasu przewidzianego na przeprowadzenie tych egzaminów.
+Materiały
+Przydatne materiały dotyczące wspierania uczniów przybywających z zagranicy są dostępne na stronie Ośrodka Rozwoju Edukacji (https://www.ore.edu.pl/uczen-ze-specjalnymi-potrzebami-edukacyjnymi/4365-wielokulturowosc-w-szkole-uczen-cudzoziemski) oraz Ośrodka Rozwoju Edukacji Polskiej za Granicą (http://powroty.otwartaszkola.pl/).
+Materiały dla nauczycieli pracujących w oddziałach przygotowawczych i prowadzących dodatkowe zajęcia z języka polskiego, opracowane przez Fundację im. Mikołaja Reja w ramach konkursu Ministerstwa Edukacji Narodowej na realizację zadań publicznych „Wspieranie inicjatyw edukacyjnych w szkolnym środowisku wielokulturowym” w latach 2017-18:
+- przewodnik dla nauczyciela „W polskiej szkole” oraz narzędzia do pracy
+z uczniami z doświadczeniem migracji komplementarne z podręcznikami dla klas I-III szkoły podstawowej(https://www.ore.edu.pl/2015/03/wielokulturowosc-w-szkole-uczen-cudzoziemski/) lub (http://fundacjareja.eu/w-polskiej-szkole/);
+- metodyka nauczania języka edukacji szkolnej uczniów z doświadczeniem migracji - matematyka (http://fundacjareja.eu/do-pobrania/).
+Rozporządzenie Ministra Edukacji Narodowej z dnia 18.02.2011 r. w sprawie ramowego programu kursów nauki języka polskiego dla cudzoziemców (Dz.U. Nr 61, poz. 306)
+Uznanie wykształcenia uzyskanego za granicą
+https://www.gov.pl/web/edukacja/uznawanie-wyksztalcenia-uzyskanego-za-granica
+Informacje o publikacji dokumentu
+Ostatnia modyfikacja:
+08.01.2025 13:49 Joanna Ekstowicz
+Pierwsza publikacja:
+14.12.2023 19:40 administrator gov.pl

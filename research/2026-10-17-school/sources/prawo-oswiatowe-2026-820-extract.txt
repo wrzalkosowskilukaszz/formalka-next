@@ -1,0 +1,508 @@
+# Ustawa z 14.12.2016 - Prawo oświatowe, consolidated text Dz.U. 2026 poz. 820 (obwieszczenie of 12.06.2026, legal state 7.06.2026, including Dz.U. 2025 poz. 1160 and 1837 and 2026 poz. 187, 203, 451 and 504): the duties, preschool, recruitment and the articles on foreigners
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2026/820/text.pdf, sha256 a9b6dd55618cba0dd04d675f9b52061737af98bf167d75a615fc535c57068439; https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; https://api.sejm.gov.pl/eli/acts/DU/2026/1123/text.pdf, sha256 91f6269f742ca1f013ee6152a2fec790f42104d8d22eac3fa362b34129f6085b; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
+# Later amendments (node tools/sources/touched.mjs DU/2026/820 2026-06-07 --cite 13,31,32,35-42,130-166, 17.10.2026): Dz.U. 2026 poz. 982 art. 6 (art. 136, 147, 150 ust. 2 pkt 4 lit. fa: driving categories, not quoted here); poz. 904 (art. 85-85g) and 1036 (art. 26, 68, 98-102a, 172-173), none quoted here; poz. 203 art. 14 adds art. 165 ust. 16 pkt 3a (a regulation on a Polish-lessons core curriculum) from 1.09.2027 (203 art. 54 pkt 3); poz. 1123 art. 19 pkt 2 adds art. 31 ust. 3b from 1.01.2027 and ust. 3a from 1.09.2028 (its art. 48 pkt 3 and 1), quoted at the end; poz. 187 art. 144 changes art. 13-15 and art. 32 ust. 8-9 (teachers' qualifications) from 19.05.2028, its art. 161 general date (sha256 4cc62267870a42228e9da90842c939c98134f9dffc286b4ae44738c64b0f63bd); art. 13 ust. 1 pkt 4 is printed in both wordings in the text and is not quoted, nor are art. 32 ust. 8-9. Nothing else touches the quoted articles. It is the newest consolidated text.
+# The system of education act art. 44q ust. 1a and 3b (finishing primary school), added by Dz.U. 2026 poz. 203 art. 2 pkt 1 from 5.03.2026 (its art. 54), are quoted from the amending act; the consolidated system of education act was not read (OPEN-S3).
+
+[Art. 13 ust. 1 pkt 1-3 (a public preschool: free for at least 5 hours a day)]
+           Art. 13. 1. Przedszkolem publicznym jest przedszkole, które:
+1)         realizuje programy wychowania przedszkolnego uwzględniające podstawę programową wychowania przedszkolnego;
+2)         zapewnia bezpłatne nauczanie, wychowanie i opiekę w czasie ustalonym przez organ prowadzący, niekrótszym niż
+           5 godzin dziennie;
+3)         przeprowadza rekrutację dzieci w oparciu o zasadę powszechnej dostępności;
+
+[Art. 31 ust. 1-11 (preschool from 3; the preschool year at 6; the municipality must offer a place)]
+     Art. 31. 1. Wychowanie przedszkolne obejmuje dzieci od początku roku szkolnego w roku kalendarzowym, w którym
+dziecko kończy 3 lata, do końca roku szkolnego w roku kalendarzowym, w którym dziecko kończy 7 lat. Wychowanie
+przedszkolne jest realizowane w przedszkolach, oddziałach przedszkolnych w szkołach podstawowych oraz w innych for-
+mach wychowania przedszkolnego.
+     2. W przypadku dzieci posiadających orzeczenie o potrzebie kształcenia specjalnego wychowaniem przedszkolnym
+może być objęte dziecko w wieku powyżej 7 lat, niedłużej jednak niż do końca roku szkolnego w roku kalendarzowym,
+w którym dziecko kończy 9 lat. Obowiązek szkolny tych dzieci odracza się zgodnie z art. 38.
+    3. W szczególnie uzasadnionych przypadkach wychowaniem przedszkolnym może także zostać objęte dziecko, które
+ukończyło 2,5 roku.
+     4. Dziecko w wieku 6 lat jest obowiązane odbyć roczne przygotowanie przedszkolne w przedszkolu, oddziale przed-
+szkolnym w szkole podstawowej lub w innej formie wychowania przedszkolnego.
+     5. Obowiązek, o którym mowa w ust. 4, rozpoczyna się z początkiem roku szkolnego w roku kalendarzowym, w którym
+dziecko kończy 6 lat. W przypadku dziecka, o którym mowa w ust. 2, obowiązek ten rozpoczyna się z początkiem roku
+szkolnego poprzedzającego rok szkolny, w którym dziecko rozpocznie spełnianie obowiązku szkolnego.
+     6. Dzieci w wieku 3–5 lat mają prawo do korzystania z wychowania przedszkolnego w przedszkolu, oddziale przed-
+szkolnym w szkole podstawowej lub innej formie wychowania przedszkolnego.
+    7. Dziecko uzyskuje prawo, o którym mowa w ust. 6, z początkiem roku szkolnego w roku kalendarzowym, w którym
+kończy 3 lata.
+     8. Zapewnienie warunków do spełniania obowiązku, o którym mowa w ust. 4, oraz realizacji prawa, o którym mowa
+w ust. 6, jest zadaniem własnym gminy.
+    9. Zadanie, o którym mowa w ust. 8, jest wykonywane przez gminę przez zapewnienie dziecku możliwości korzystania
+z wychowania przedszkolnego w:
+1)   publicznym przedszkolu, oddziale przedszkolnym w publicznej szkole podstawowej lub publicznej innej formie wycho-
+     wania przedszkolnego, prowadzonych przez gminę, lub
+2)   publicznym przedszkolu, oddziale przedszkolnym w publicznej szkole podstawowej lub publicznej innej formie wycho-
+     wania przedszkolnego, prowadzonych przez inną osobę prawną lub osobę fizyczną, położonych na obszarze gminy, lub
+3)   niepublicznym przedszkolu, o którym mowa w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych, oddziale
+     przedszkolnym w niepublicznej szkole podstawowej, o którym mowa w art. 19 ust. 1 ustawy o finansowaniu zadań
+     oświatowych, lub niepublicznej innej formie wychowania przedszkolnego, o której mowa w art. 21 ust. 1 ustawy o finan-
+     sowaniu zadań oświatowych, położonych na obszarze gminy.
+     10. Jeżeli liczba dzieci, którym gmina ma obowiązek zapewnić możliwość korzystania z wychowania przedszkolnego,
+zamieszkałych na obszarze danej gminy, zgłoszonych podczas postępowania rekrutacyjnego do publicznego przedszkola,
+oddziału przedszkolnego w publicznej szkole podstawowej, publicznej innej formy wychowania przedszkolnego, niepub-
+licznego przedszkola, o którym mowa w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych, oddziału przedszkolnego
+w niepublicznej szkole podstawowej, o którym mowa w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych, lub nie-
+publicznej innej formy wychowania przedszkolnego, o której mowa w art. 21 ust. 1 ustawy o finansowaniu zadań oświato-
+wych, przewyższy liczbę miejsc w tym przedszkolu, tym oddziale przedszkolnym lub tej innej formie wychowania przed-
+szkolnego, dyrektor przedszkola lub dyrektor szkoły podstawowej informuje o nieprzyjęciu dziecka do przedszkola, od-
+działu przedszkolnego w szkole podstawowej lub innej formy wychowania przedszkolnego wójta (burmistrza, prezydenta
+miasta). W tym przypadku wójt (burmistrz, prezydent miasta) jest obowiązany pisemnie, niepóźniej niż przed rozpoczęciem
+postępowania uzupełniającego, wskazać rodzicom inne publiczne przedszkole, oddział przedszkolny w publicznej szkole
+podstawowej albo publiczną inną formę wychowania przedszkolnego, albo niepubliczne przedszkole, o którym mowa
+w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych, oddział przedszkolny w niepublicznej szkole podstawowej,
+o którym mowa w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych, albo niepubliczną inną formę wychowania
+przedszkolnego, o której mowa w art. 21 ust. 1 ustawy o finansowaniu zadań oświatowych, które mogą przyjąć dziecko.
+Czas pracy wskazanego przez wójta (burmistrza, prezydenta miasta) innego publicznego przedszkola, oddziału przedszkol-
+nego w publicznej szkole podstawowej, publicznej innej formy wychowania przedszkolnego, niepublicznego przedszkola,
+o którym mowa w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych, oddziału przedszkolnego w niepublicznej szkole
+podstawowej, o którym mowa w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych, albo niepublicznej innej formy
+wychowania przedszkolnego, o której mowa w art. 21 ust. 1 ustawy o finansowaniu zadań oświatowych, powinien być
+zbliżony do czasu pracy odpowiednio przedszkola, oddziału przedszkolnego w szkole podstawowej lub innej formy wycho-
+wania przedszkolnego, o przyjęcie do których ubiegali się rodzice dziecka.
+     11. Wójt (burmistrz, prezydent miasta) w przypadku, o którym mowa w ust. 10, w miarę możliwości wskazuje odpo-
+wiednio publiczne przedszkole, oddział przedszkolny w publicznej szkole podstawowej, publiczną inną formę wychowania
+przedszkolnego, niepubliczne przedszkole, o którym mowa w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych,
+oddział przedszkolny w niepublicznej szkole podstawowej, o którym mowa w art. 19 ust. 1 ustawy o finansowaniu zadań
+oświatowych, albo niepubliczną inną formę wychowania przedszkolnego, o której mowa w art. 21 ust. 1 ustawy o finanso-
+waniu zadań oświatowych, położone najbliżej przedszkola, oddziału przedszkolnego w szkole podstawowej albo innej formy
+wychowania przedszkolnego, o przyjęcie do których ubiegali się rodzice dziecka.
+
+[Art. 32 ust. 3-5 (the way to preschool for children of 5 and 6: 3 km; free transport)]
+      3. Sieć publicznych przedszkoli i oddziałów przedszkolnych w publicznych szkołach podstawowych, wraz z publicz-
+nymi przedszkolami, oddziałami przedszkolnymi w publicznych szkołach podstawowych i publicznymi innymi formami
+wychowania przedszkolnego, prowadzonymi przez osoby prawne niebędące jednostkami samorządu terytorialnego lub
+osoby fizyczne, publicznymi innymi formami wychowania przedszkolnego, prowadzonymi przez gminę, niepublicznymi
+przedszkolami, o których mowa w art. 17 ust. 1 ustawy o finansowaniu zadań oświatowych, oddziałami przedszkolnymi
+w niepublicznych szkołach podstawowych, o których mowa w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych,
+oraz niepublicznymi innymi formami wychowania przedszkolnego, o których mowa w art. 21 ust. 1 ustawy o finansowaniu
+zadań oświatowych, powinna zapewniać dzieciom, o których mowa w art. 31 ust. 1, zamieszkałym na obszarze gminy,
+możliwość korzystania z wychowania przedszkolnego. Droga dziecka spełniającego obowiązek, o którym mowa w art. 31
+ust. 4, i dziecka pięcioletniego z domu do publicznego przedszkola, oddziału przedszkolnego w publicznej szkole podsta-
+wowej, publicznej innej formy wychowania przedszkolnego, niepublicznego przedszkola, o którym mowa w art. 17 ust. 1
+ustawy o finansowaniu zadań oświatowych, oddziału przedszkolnego w niepublicznej szkole podstawowej, o którym mowa
+w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych, albo niepublicznej innej formy wychowania przedszkolnego,
+o której mowa w art. 21 ust. 1 ustawy o finansowaniu zadań oświatowych, w których gmina zapewniła tym dzieciom warunki
+spełniania tego obowiązku oraz realizacji prawa do korzystania z wychowania przedszkolnego, nie powinna przekraczać 3 km.
+       4. (uchylony)47)
+      5. Jeżeli droga, o której mowa w ust. 3, przekracza 3 km, obowiązkiem gminy jest zapewnienie bezpłatnego transportu
+i opieki w czasie przewozu dziecka albo zwrot kosztów przejazdu dziecka i opiekuna środkami komunikacji publicznej,
+jeżeli dowożenie zapewniają rodzice.
+47)   Przez art. 1 pkt 8 ustawy, o której mowa w odnośniku 1.
+
+[Art. 35 (education compulsory to 18; school duty from the year the child turns 7)]
+       Art. 35. 1. Nauka jest obowiązkowa do ukończenia 18. roku życia.
+    2. Obowiązek szkolny dziecka rozpoczyna się z początkiem roku szkolnego w roku kalendarzowym, w którym dziecko
+kończy 7 lat, oraz trwa do ukończenia szkoły podstawowej, niedłużej jednak niż do ukończenia 18. roku życia.
+48)   W tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 49.
+49)   W brzmieniu ustalonym przez art. 144 pkt 4 ustawy, o której mowa w odnośniku 9.
+
+[Art. 36 ust. 1-10 (an earlier start; a deferral; abroad or at an embassy school)]
+     Art. 36. 1. Na wniosek rodziców naukę w szkole podstawowej może także rozpocząć dziecko, które w danym roku
+kalendarzowym kończy 6 lat.
+     2. Dyrektor szkoły podstawowej przyjmuje dziecko, o którym mowa w ust. 1, jeżeli dziecko:
+1)   korzystało z wychowania przedszkolnego w roku szkolnym poprzedzającym rok szkolny, w którym ma rozpocząć
+     naukę w szkole podstawowej, albo
+2)   posiada opinię o możliwości rozpoczęcia nauki w szkole podstawowej, wydaną przez publiczną poradnię psychologiczno-
+     -pedagogiczną albo niepubliczną poradnię psychologiczno-pedagogiczną założoną zgodnie z art. 168 oraz zatrudniającą
+     pracowników posiadających kwalifikacje określone dla pracowników publicznych poradni psychologiczno-pedagogicznych.
+     3. Dziecko, które zostało wcześniej przyjęte do szkoły podstawowej, jest zwolnione z obowiązku, o którym mowa
+w art. 31 ust. 4.
+    4. Dyrektor publicznej szkoły podstawowej, w obwodzie której dziecko mieszka, na wniosek rodziców, odracza roz-
+poczęcie spełniania przez dziecko obowiązku szkolnego o jeden rok szkolny.
+     5. Wniosek, o którym mowa w ust. 4, składa się w roku kalendarzowym, w którym dziecko kończy 7 lat, niepóźniej niż
+do dnia 31 sierpnia. Odroczenie dotyczy roku szkolnego, w którym dziecko ma rozpocząć spełnianie obowiązku szkolnego.
+     6. Do wniosku, o którym mowa w ust. 4, dołącza się opinię, z której wynika potrzeba odroczenia spełniania przez
+dziecko obowiązku szkolnego w danym roku szkolnym, wydaną przez publiczną poradnię psychologiczno-pedagogiczną
+albo niepubliczną poradnię psychologiczno-pedagogiczną, założoną zgodnie z art. 168 oraz zatrudniającą pracowników
+posiadających kwalifikacje określone dla pracowników publicznych poradni psychologiczno-pedagogicznych.
+     7. Dziecko, któremu odroczono rozpoczęcie spełniania obowiązku szkolnego zgodnie z ust. 4, kontynuuje przygoto-
+wanie przedszkolne w przedszkolu, oddziale przedszkolnym w szkole podstawowej lub w innej formie wychowania przed-
+szkolnego. Przepisy art. 32 ust. 3 i 5 stosuje się odpowiednio.
+     8. Obowiązek szkolny spełnia się przez uczęszczanie do szkoły podstawowej publicznej albo niepublicznej.
+     9. Po ukończeniu szkoły podstawowej obowiązek nauki spełnia się przez:
+1)   uczęszczanie do publicznej lub niepublicznej szkoły ponadpodstawowej;
+2)   realizowanie, zgodnie z odrębnymi przepisami, przygotowania zawodowego u pracodawcy.
+     10. Obowiązek, o którym mowa w art. 31 ust. 4, obowiązek szkolny i obowiązek nauki mogą być spełniane również
+przez uczęszczanie odpowiednio do przedszkola lub szkoły:
+1)   za granicą, w tym na podstawie umów międzynarodowych lub porozumień o współpracy bezpośredniej zawieranych
+     przez szkoły, jednostki samorządu terytorialnego i organy administracji rządowej lub w ramach programów edukacyj-
+     nych Unii Europejskiej;
+2)   przy przedstawicielstwie dyplomatycznym innego państwa w Polsce.
+
+[Art. 37 ust. 1-2 (education outside school, by the head's decision)]
+     Art. 37. 1. Na wniosek rodziców dyrektor odpowiednio publicznego lub niepublicznego przedszkola, szkoły podsta-
+wowej i szkoły ponadpodstawowej, do której dziecko zostało przyjęte, może zezwolić, w drodze decyzji, na spełnianie przez
+dziecko odpowiednio obowiązku, o którym mowa w art. 31 ust. 4, poza przedszkolem, oddziałem przedszkolnym w szkole
+podstawowej lub inną formą wychowania przedszkolnego i obowiązku szkolnego lub obowiązku nauki poza szkołą.
+     2. Zezwolenie, o którym mowa w ust. 1, może być wydane przed rozpoczęciem roku szkolnego albo w trakcie roku
+szkolnego, jeżeli:
+1)   (uchylony)
+2)   do wniosku o wydanie zezwolenia dołączono:
+     a)   (uchylona)
+     b) oświadczenie rodziców o zapewnieniu dziecku warunków umożliwiających realizację podstawy programowej
+        obowiązującej na danym etapie edukacyjnym,
+     c)   zobowiązanie rodziców do przystępowania w każdym roku szkolnym przez dziecko spełniające obowiązek szkolny
+          lub obowiązek nauki do rocznych egzaminów klasyfikacyjnych, o których mowa w ust. 4.
+
+[Art. 39 ust. 1-3 (the way to school: 3 or 4 km; free transport)]
+     Art. 39. 1. Sieć publicznych szkół podstawowych powinna być zorganizowana w sposób umożliwiający wszystkim
+dzieciom spełnianie obowiązku szkolnego, z uwzględnieniem ust. 2.
+     2. Droga dziecka z domu do szkoły nie może przekraczać:
+1)   3 km – w przypadku uczniów klas I–IV szkół podstawowych;
+2)   4 km – w przypadku uczniów klas V–VIII szkół podstawowych.
+     3. Jeżeli droga dziecka z domu do szkoły, w której obwodzie dziecko mieszka:
+1)   przekracza odległości wymienione w ust. 2, obowiązkiem gminy jest zapewnienie bezpłatnego transportu i opieki
+     w czasie przewozu dziecka albo zwrot kosztów przejazdu dziecka środkami komunikacji publicznej, jeżeli dowożenie
+     zapewniają rodzice, a do ukończenia przez dziecko 7 lat – także zwrot kosztów przejazdu opiekuna dziecka środkami
+     komunikacji publicznej;
+2)   nie przekracza odległości wymienionych w ust. 2, gmina może zorganizować bezpłatny transport, zapewniając opiekę
+     w czasie przewozu.
+
+[Art. 39 ust. 5-5aa (the municipality sets the districts by street)]
+     5. Rada gminy, z uwzględnieniem ust. 1 i 2, ustala plan sieci publicznych szkół podstawowych prowadzonych przez
+gminę, a także określa granice obwodów publicznych szkół podstawowych, z wyjątkiem specjalnych, mających siedzibę na
+obszarze gminy.50) W przypadku publicznych szkół podstawowych prowadzonych przez inne organy, określenie granic ich
+obwodów następuje w uzgodnieniu z tymi organami. Uchwała rady gminy podlega ogłoszeniu w wojewódzkim dzienniku
+urzędowym.
+     5a.51) W uchwale, o której mowa w ust. 5 i 7, wskazuje się adresy siedzib szkół, o których mowa w ust. 5 i 7, oraz
+adresy innych lokalizacji prowadzenia zajęć dydaktycznych, wychowawczych i opiekuńczych.
+      5aa.52) Publicznej szkole podstawowej, w tym szkole, o której mowa w art. 95 ust. 2 i 3, obwód ustala się w uchwale,
+o której mowa w ust. 5, określając w szczególności nazwy miejscowości, a w miastach – nazwy ulic lub ich części, należą-
+cych do jej obwodu. Publicznej szkole podstawowej prowadzonej przez osobę prawną niebędącą jednostką samorządu tery-
+torialnego lub osobę fizyczną nie ustala się obwodu, chyba że osoba ta wystąpi z takim wnioskiem. Obwód publicznej szkoły
+podstawowej ustala się tak, aby:
+1)    obowiązkowe zajęcia edukacyjne w poszczególnych oddziałach tej szkoły, w miarę możliwości, rozpoczynały się na
+      pierwszej albo na drugiej godzinie lekcyjnej w tej szkole oraz
+2)    miejsce zamieszkania każdego ucznia należało do obwodu wyłącznie jednej publicznej szkoły podstawowej.
+
+[Art. 40 ust. 1 (the parents' duties)]
+     Art. 40. 1. Rodzice dziecka podlegającego obowiązkowi szkolnemu są obowiązani do:
+1)   dopełnienia czynności związanych ze zgłoszeniem dziecka do szkoły;
+2)   zapewnienia regularnego uczęszczania dziecka na zajęcia szkolne;
+3)   zapewnienia dziecku warunków umożliwiających przygotowywanie się do zajęć;
+4)   informowania, w terminie do dnia 30 września każdego roku, dyrektora szkoły podstawowej, w obwodzie której
+     dziecko mieszka, o realizacji obowiązku szkolnego spełnianego w sposób określony w art. 36 ust. 10 lub 11.
+
+[Art. 41 (who checks the duty)]
+     Art. 41. 1. Dyrektorzy publicznych szkół podstawowych kontrolują spełnianie obowiązku szkolnego przez dzieci za-
+mieszkałe w obwodach tych szkół, a gmina kontroluje spełnianie obowiązku nauki przez młodzież zamieszkałą na terenie
+tej gminy, w tym odpowiednio:
+1)   kontrolują wykonywanie obowiązków, o których mowa w art. 40 ust. 1 pkt 1, 2 i 4, a także współdziałają z rodzicami
+     w realizacji obowiązków, o których mowa w art. 40 ust. 1 pkt 3 i ust. 3;
+2)   prowadzą ewidencję spełniania obowiązku szkolnego oraz obowiązku nauki.
+    2. Wójt gminy (burmistrz, prezydent miasta) jest obowiązany przekazywać dyrektorom publicznych szkół podstawo-
+wych na obszarze gminy informacje o aktualnym stanie i zmianach w ewidencji dzieci i młodzieży w wieku 3–18 lat.
+
+[Art. 42 (enforcement; 50 % unexcused absence in a month)]
+     Art. 42. 1. Niespełnianie obowiązku, o którym mowa w art. 31 ust. 4, obowiązku szkolnego lub obowiązku nauki pod-
+lega egzekucji w trybie przepisów o postępowaniu egzekucyjnym w administracji.
+    2. Przez niespełnienie obowiązku, o którym mowa w art. 31 ust. 4, obowiązku szkolnego lub obowiązku nauki należy
+rozumieć nieusprawiedliwioną nieobecność w okresie jednego miesiąca na co najmniej 50 %:
+1)   dni zajęć w przedszkolu, oddziale przedszkolnym w szkole podstawowej, innej formie wychowania przedszkolnego,
+     szkole podstawowej, szkole ponadpodstawowej lub placówce;
+2)   zajęć w przypadku spełniania obowiązku nauki w sposób określony w art. 36 ust. 9 pkt 2 i w przepisach wydanych
+     na podstawie art. 36 ust. 16.
+
+[Art. 130 ust. 1-6 (recruitment; during the year, the head decides; the district school admits by law)]
+     Art. 130. 1. Dzieci, młodzież oraz osoby pełnoletnie przyjmuje się odpowiednio do publicznych przedszkoli, oddzia-
+łów przedszkolnych w publicznych szkołach podstawowych, publicznych innych form wychowania przedszkolnego i pub-
+licznych placówek, o których mowa w art. 2 pkt 3–5 i 8, do klas I szkół wszystkich typów oraz klas wstępnych, o których
+mowa w art. 25 ust. 3, po przeprowadzeniu postępowania rekrutacyjnego.
+      2. O przyjęciu dziecka do publicznego przedszkola, oddziału przedszkolnego w publicznej szkole podstawowej i pub-
+licznej innej formy wychowania przedszkolnego oraz dzieci, młodzieży i osób pełnoletnich do publicznych szkół wszystkich
+typów, w tym do klas I, klas wstępnych, o których mowa w art. 25 ust. 3, oraz do publicznych placówek, o których mowa
+w art. 2 pkt 3, 4 i 8, w trakcie roku szkolnego, decyduje odpowiednio dyrektor przedszkola lub szkoły, a w przypadku publicz-
+nej innej formy wychowania przedszkolnego prowadzonej przez osobę prawną inną niż jednostka samorządu terytorialnego
+lub osobę fizyczną także osoba kierująca tą inną formą wychowania przedszkolnego, z wyjątkiem przypadków przyjęcia
+dzieci i młodzieży zamieszkałych w obwodzie publicznej szkoły podstawowej, które są przyjmowane z urzędu.
+    3. Jeżeli przyjęcie ucznia, o którym mowa w ust. 2, wymaga przeprowadzenia zmian organizacyjnych pracy szkoły
+powodujących dodatkowe skutki finansowe, dyrektor szkoły może przyjąć ucznia po uzyskaniu zgody organu prowadzącego.
+     4. Postępowanie rekrutacyjne jest prowadzone na wniosek rodzica kandydata lub na wniosek kandydata pełnoletniego,
+o którym mowa w art. 149.
+     5. Do klasy I publicznej szkoły podstawowej, której ustalono obwód, dzieci i młodzież zamieszkałe w tym obwodzie
+przyjmuje się z urzędu.
+     6. Dziecko, któremu organ wykonawczy gminy wskazał, jako miejsce realizacji obowiązkowego rocznego przygoto-
+wania przedszkolnego, oddział przedszkolny w szkole podstawowej innej niż szkoła, w obwodzie której dziecko mieszka,
+na wniosek rodziców, jest przyjmowane do klasy I tej szkoły podstawowej bez przeprowadzania postępowania rekrutacyjnego.
+
+[Art. 131 ust. 1-7 (preschool: the municipality's residents first; the criteria)]
+     Art. 131. 1. Do publicznego przedszkola, oddziału przedszkolnego w publicznej szkole podstawowej lub publicznej
+innej formy wychowania przedszkolnego przyjmuje się kandydatów zamieszkałych na obszarze danej gminy.
+     2. W przypadku większej liczby kandydatów spełniających warunek, o którym mowa w ust. 1, niż liczba wolnych
+miejsc w publicznym przedszkolu, oddziale przedszkolnym w publicznej szkole podstawowej lub publicznej innej formie wycho-
+wania przedszkolnego, na pierwszym etapie postępowania rekrutacyjnego są brane pod uwagę łącznie następujące kryteria:
+1)   wielodzietność rodziny kandydata;
+2)   niepełnosprawność kandydata;
+3)   niepełnosprawność jednego z rodziców kandydata;
+4)   niepełnosprawność obojga rodziców kandydata;
+5)   niepełnosprawność rodzeństwa kandydata;
+6)   samotne wychowywanie kandydata w rodzinie;
+7)   objęcie kandydata pieczą zastępczą.
+     3. Kryteria, o których mowa w ust. 2, mają jednakową wartość.
+     4. W przypadku równorzędnych wyników uzyskanych na pierwszym etapie postępowania rekrutacyjnego lub jeżeli po
+zakończeniu tego etapu dane publiczne przedszkole, oddział przedszkolny w danej publicznej szkole podstawowej albo dana
+publiczna inna forma wychowania przedszkolnego nadal dysponuje wolnymi miejscami, na drugim etapie postępowania
+rekrutacyjnego są brane pod uwagę kryteria określone przez organ prowadzący, z uwzględnieniem zapewnienia jak najpeł-
+niejszej realizacji potrzeb dziecka i jego rodziny, zwłaszcza potrzeb rodziny, w której rodzice albo rodzic samotnie wycho-
+wujący kandydata muszą pogodzić obowiązki zawodowe z obowiązkami rodzinnymi, oraz lokalnych potrzeb społecznych.
+Organ prowadzący określa dokumenty niezbędne do potwierdzenia tych kryteriów.
+     5. Na drugim etapie postępowania rekrutacyjnego może być brane pod uwagę kryterium dochodu na osobę w rodzinie
+kandydata. Kryterium dochodu określa organ prowadzący w stosunku procentowym do kwoty, o której mowa w art. 5 ust. 1
+ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208 oraz z 2026 r. poz. 203). Speł-
+nianie tego kryterium jest potwierdzane oświadczeniem rodzica kandydata.
+     6. Organ prowadzący określa niewięcej niż 6 kryteriów, o których mowa w ust. 4 i 5, oraz przyznaje każdemu kryte-
+rium określoną liczbę punktów, przy czym każde kryterium może mieć różną wartość.
+      7. Kandydaci zamieszkali poza obszarem danej gminy mogą być przyjęci do publicznego przedszkola, oddziału przed-
+szkolnego w publicznej szkole podstawowej lub publicznej innej formy wychowania przedszkolnego na terenie tej gminy,
+jeżeli po przeprowadzeniu postępowania rekrutacyjnego zgodnie z ust. 1–6, dana gmina nadal dysponuje wolnymi miej-
+scami w tym przedszkolu, tym oddziale przedszkolnym w publicznej szkole podstawowej lub tej innej formie wychowania
+przedszkolnego. W przypadku większej liczby kandydatów zamieszkałych poza obszarem danej gminy przeprowadza się
+postępowanie rekrutacyjne. Przepisy ust. 2–6 stosuje się odpowiednio.
+
+[Art. 133 ust. 1-2 (grade 1: the district school on notification; others by recruitment)]
+     Art. 133. 1. Do klasy I publicznej szkoły podstawowej, której ustalono obwód, przyjmuje się na podstawie zgłoszenia
+rodziców dzieci i młodzież zamieszkałe w tym obwodzie.
+     2. Kandydaci zamieszkali poza obwodem publicznej szkoły podstawowej mogą być przyjęci do klasy I po przeprowadze-
+niu postępowania rekrutacyjnego, jeżeli dana publiczna szkoła podstawowa nadal dysponuje wolnymi miejscami. W postę-
+powaniu rekrutacyjnym są brane pod uwagę kryteria określone przez organ prowadzący, z uwzględnieniem zapewnienia jak
+najpełniejszej realizacji potrzeb dziecka i jego rodziny oraz lokalnych potrzeb społecznych, oraz może być brane pod uwagę
+kryterium dochodu na osobę w rodzinie kandydata, o którym mowa w art. 131 ust. 5. Przepisy art. 131 ust. 9 i 10 stosuje się.
+
+[Art. 149 (to whom the application goes) and pkt 1]
+     Art. 149. Wniosek o przyjęcie do publicznego przedszkola, oddziału przedszkolnego w publicznej szkole podstawo-
+wej, publicznej innej formy wychowania przedszkolnego, publicznej szkoły, publicznej placówki, na zajęcia w publicznej
+placówce oświatowo-wychowawczej, na kształcenie ustawiczne w formach pozaszkolnych lub kwalifikacyjny kurs zawo-
+dowy, składa się odpowiednio do dyrektora:
+1)   wybranego publicznego przedszkola lub wybranej publicznej szkoły, a w przypadku wyboru oddziału przedszkolnego
+     w publicznej szkole podstawowej lub publicznej innej formy wychowania przedszkolnego – odpowiednio do dyrektora
+     publicznego przedszkola lub publicznej szkoły podstawowej;
+
+[Art. 150 ust. 1 pkt 1-5 (the application: a passport number if there is no PESEL)]
+     Art. 150. 1. Wniosek, o którym mowa w art. 149, zawiera:
+1)   imię, nazwisko, datę urodzenia oraz numer PESEL kandydata, a w przypadku braku numeru PESEL – serię i numer
+     paszportu lub innego dokumentu potwierdzającego tożsamość;
+2)   imiona i nazwiska rodziców kandydata, a w przypadku kandydata pełnoletniego – imiona rodziców;
+3)   adres miejsca zamieszkania rodziców i kandydata, a w przypadku kandydata pełnoletniego – adres miejsca zamieszka-
+     nia kandydata;
+4)   adres poczty elektronicznej i numery telefonów rodziców kandydata, a w przypadku kandydata pełnoletniego – adres
+     poczty elektronicznej i numer telefonu kandydata, o ile je posiadają;
+5)   wskazanie kolejności wybranych publicznych przedszkoli, oddziału przedszkolnego w publicznej szkole podstawowej,
+     publicznych innych form wychowania przedszkolnego albo publicznych szkół w porządku od najbardziej do najmniej
+     preferowanych;
+
+[Art. 151 (the notification to the district school)]
+     Art. 151. 1. Zgłoszenie, o którym mowa w art. 133 ust. 1, zawiera:
+1)   imię, nazwisko, datę urodzenia oraz numer PESEL kandydata, a w przypadku braku numeru PESEL – serię i numer
+     paszportu lub innego dokumentu potwierdzającego tożsamość;
+2)   imiona i nazwiska rodziców kandydata;
+3)   adres poczty elektronicznej i numery telefonów rodziców kandydata – o ile je posiadają.
+     2. Do zgłoszenia dołącza się oświadczenie o miejscu zamieszkania rodziców kandydata i kandydata.
+     3. Oświadczenie, o którym mowa w ust. 2, składa się pod rygorem odpowiedzialności karnej za składanie fałszywych
+oświadczeń. Składający oświadczenie jest obowiązany do zawarcia w nim klauzuli następującej treści: „Jestem świadomy
+odpowiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzial-
+ności karnej za składanie fałszywych oświadczeń.
+
+[Art. 153 ust. 1-2 (preschool recruitment each year; the declaration to continue)]
+     Art. 153. 1. Postępowanie rekrutacyjne do publicznych przedszkoli, oddziałów przedszkolnych w publicznych szkołach
+podstawowych i publicznych innych form wychowania przedszkolnego przeprowadza się co roku na kolejny rok szkolny
+na wolne miejsca w publicznym przedszkolu, w oddziale przedszkolnym w publicznej szkole podstawowej lub w publicznej
+innej formie wychowania przedszkolnego.
+     2. Rodzice dzieci przyjętych do danego publicznego przedszkola, danego oddziału przedszkolnego w publicznej szkole
+podstawowej lub danej publicznej innej formy wychowania przedszkolnego corocznie składają na kolejny rok szkolny
+deklarację o kontynuowaniu wychowania przedszkolnego w tym przedszkolu, tym oddziale przedszkolnym w publicznej
+szkole podstawowej lub tej innej formie wychowania przedszkolnego, w terminie 7 dni poprzedzających termin rozpoczęcia
+postępowania rekrutacyjnego, określony zgodnie z art. 154 ust. 1 pkt 1, ust. 3 i 6.
+
+[Art. 154 ust. 1 pkt 1 (the dates are set by the running body by the end of January)]
+     Art. 154. 1. Terminy przeprowadzania postępowania rekrutacyjnego i postępowania uzupełniającego, w tym terminy
+składania dokumentów, do:
+1)117) publicznych przedszkoli, oddziałów przedszkolnych w publicznych szkołach podstawowych, publicznych innych form
+      wychowania przedszkolnego, klas I publicznych szkół podstawowych, a także klas wyższych niż klasa I publicznych
+      szkół i oddziałów, o których mowa w art. 137 ust. 1, oddziałów dwujęzycznych, o których mowa w art. 139 ust. 1, oraz
+      szkół, o których mowa w art. 139 ust. 1a – określa do końca stycznia organ prowadzący odpowiednio publiczne przed-
+      szkole, publiczną inną formę wychowania przedszkolnego lub publiczną szkołę podstawową;
+
+[Art. 154 ust. 3 (the criteria published by the end of January)]
+      3. Organ prowadzący publiczne przedszkole, publiczną inną formę wychowania przedszkolnego lub publiczną szkołę
+podstawową do końca stycznia podaje do publicznej wiadomości kryteria brane pod uwagę w postępowaniu rekrutacyjnym
+i postępowaniu uzupełniającym oraz dokumenty niezbędne do potwierdzenia spełnienia tych kryteriów, a także liczbę punk-
+tów możliwą do uzyskania za poszczególne kryteria, zgodnie z art. 131 ust. 4–6 i art. 133 ust. 2 i 3.
+
+[Art. 158 ust. 1-9 (lists; the reasons in 3 days; the appeal in 3 days; the court)]
+     Art. 158. 1. Wyniki postępowania rekrutacyjnego podaje się do publicznej wiadomości w formie listy kandydatów
+zakwalifikowanych i kandydatów niezakwalifikowanych, zawierającej imiona i nazwiska kandydatów oraz informację o za-
+kwalifikowaniu albo niezakwalifikowaniu kandydata do danego publicznego przedszkola, oddziału przedszkolnego w pub-
+licznej szkole podstawowej, publicznej innej formy wychowania przedszkolnego, publicznej szkoły, publicznej placówki,
+na zajęcia w publicznej placówce oświatowo-wychowawczej, na kształcenie ustawiczne w formach pozaszkolnych lub na
+kwalifikacyjny kurs zawodowy.
+     2. Komisja rekrutacyjna przyjmuje kandydata do danego publicznego przedszkola, oddziału przedszkolnego w pub-
+licznej szkole podstawowej, publicznej innej formy wychowania przedszkolnego, publicznej szkoły, publicznej placówki,
+na zajęcia w publicznej placówce oświatowo-wychowawczej, na kształcenie ustawiczne w formach pozaszkolnych lub na
+kwalifikacyjny kurs zawodowy, jeżeli w wyniku postępowania rekrutacyjnego kandydat został zakwalifikowany oraz złożył
+wymagane dokumenty.
+119) Ze zmianą wprowadzoną przez art. 1 pkt 27 ustawy, o której mowa w odnośniku 1.
+     3. Komisja rekrutacyjna podaje do publicznej wiadomości listę kandydatów przyjętych i kandydatów nieprzyjętych
+do danego publicznego przedszkola, oddziału przedszkolnego w publicznej szkole podstawowej, publicznej innej formy
+wychowania przedszkolnego, publicznej szkoły, publicznej placówki, na zajęcia w publicznej placówce oświatowo-wycho-
+wawczej, na kształcenie ustawiczne w formach pozaszkolnych lub na kwalifikacyjny kurs zawodowy. Lista zawiera imiona
+i nazwiska kandydatów przyjętych i kandydatów nieprzyjętych lub informację o liczbie wolnych miejsc.
+      4. Listy, o których mowa w ust. 1 i 3, podaje się do publicznej wiadomości poprzez umieszczenie w widocznym miejscu
+w siedzibie danego publicznego przedszkola, publicznej innej formy wychowania przedszkolnego, publicznej szkoły lub
+publicznej placówki. Listy zawierają imiona i nazwiska kandydatów uszeregowane w kolejności alfabetycznej oraz najniż-
+szą liczbę punktów, która uprawnia do przyjęcia.
+    5. Dzień podania do publicznej wiadomości listy, o której mowa w ust. 3, jest określany w formie adnotacji umiesz-
+czonej na tej liście, opatrzonej podpisem przewodniczącego komisji rekrutacyjnej.
+      6. W terminie 3 dni od dnia podania do publicznej wiadomości listy kandydatów przyjętych i kandydatów nieprzyję-
+tych, rodzic kandydata lub kandydat pełnoletni może wystąpić do komisji rekrutacyjnej z wnioskiem o sporządzenie uza-
+sadnienia odmowy przyjęcia kandydata do danego publicznego przedszkola, oddziału przedszkolnego w publicznej szkole
+podstawowej, publicznej innej formy wychowania przedszkolnego, publicznej szkoły, publicznej placówki, na zajęcia w pub-
+licznej placówce oświatowo-wychowawczej, na kwalifikacyjny kurs zawodowy lub na kształcenie ustawiczne w formach
+pozaszkolnych.
+      7. Uzasadnienie sporządza się w terminie 3 dni od dnia wystąpienia przez rodzica kandydata lub kandydata pełno-
+letniego z wnioskiem, o którym mowa w ust. 6. Uzasadnienie zawiera przyczyny odmowy przyjęcia, w tym najniższą liczbę
+punktów, która uprawniała do przyjęcia, oraz liczbę punktów, którą kandydat uzyskał w postępowaniu rekrutacyjnym.
+     8. Rodzic kandydata lub kandydat pełnoletni może wnieść do dyrektora publicznego przedszkola, publicznej szkoły
+lub publicznej placówki odwołanie od rozstrzygnięcia komisji rekrutacyjnej, w terminie 3 dni od dnia otrzymania uzasadnienia.
+     9. Dyrektor publicznego przedszkola, publicznej szkoły lub publicznej placówki rozpatruje odwołanie od rozstrzyg-
+nięcia komisji rekrutacyjnej, o którym mowa w ust. 8, w terminie 3 dni od dnia otrzymania odwołania. Na rozstrzygnięcie
+dyrektora danego publicznego przedszkola, publicznej szkoły lub publicznej placówki służy skarga do sądu administracyjnego.
+
+[Art. 165 ust. 1-15 (foreigners: on the terms of Polish citizens; Polish lessons; an assistant; the preparatory class)]
+     Art. 165. 1. Osoby niebędące obywatelami polskimi korzystają z nauki i opieki w publicznych przedszkolach lub publicz-
+nych innych formach wychowania przedszkolnego, a także w niepublicznych przedszkolach, o których mowa w art. 17 ust. 1
+ustawy o finansowaniu zadań oświatowych, oddziałach przedszkolnych w niepublicznych szkołach podstawowych, o których
+mowa w art. 19 ust. 1 ustawy o finansowaniu zadań oświatowych, i niepublicznych innych formach wychowania przed-
+szkolnego, o których mowa w art. 21 ust. 1 ustawy o finansowaniu zadań oświatowych, a podlegające obowiązkowi szkol-
+nemu, korzystają z nauki i opieki w publicznych szkołach podstawowych, publicznych szkołach artystycznych oraz w publicz-
+nych placówkach, w tym placówkach artystycznych, na warunkach dotyczących obywateli polskich.
+     2. Osoby niebędące obywatelami polskimi, podlegające obowiązkowi nauki, korzystają z nauki i opieki w publicznych
+szkołach ponadpodstawowych na warunkach dotyczących obywateli polskich do ukończenia 18 lat lub ukończenia szkoły
+ponadpodstawowej.
+     3. Na warunkach dotyczących obywateli polskich z nauki w publicznych szkołach dla dorosłych, publicznych branżo-
+wych szkołach II stopnia, publicznych szkołach policealnych, publicznych szkołach artystycznych, publicznych placówkach
+i publicznych kolegiach pracowników służb społecznych oraz z kształcenia ustawicznego w formie kwalifikacyjnych kur-
+sów zawodowych korzystają:
+1)   obywatele państw członkowskich Unii Europejskiej, państwa członkowskiego Europejskiego Stowarzyszenia o Wolnym
+     Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej, a także
+     członkowie ich rodzin posiadający prawo pobytu lub prawo stałego pobytu;
+2)   osoby pochodzenia polskiego w rozumieniu przepisów o repatriacji;
+3)   osoby, którym udzielono zezwolenia na pobyt stały na terytorium Rzeczypospolitej Polskiej;
+4)   osoby posiadające ważną Kartę Polaka;
+5)   osoby, dla których uprawnienie takie wynika z umów międzynarodowych;
+6)   osoby, którym nadano status uchodźcy, oraz członkowie ich rodzin;
+7)   osoby posiadające zgodę na pobyt tolerowany;
+8)   osoby, którym udzielono zgody na pobyt ze względów humanitarnych, oraz członkowie ich rodzin;
+9)   osoby, którym udzielono ochrony uzupełniającej, oraz członkowie ich rodzin;
+10) osoby korzystające z ochrony czasowej na terytorium Rzeczypospolitej Polskiej;
+11) osoby, którym na terytorium Rzeczypospolitej Polskiej udzielono zezwolenia na pobyt rezydenta długoterminowego
+    Unii Europejskiej;
+12) osoby, którym na terytorium Rzeczypospolitej Polskiej udzielono zezwolenia na pobyt czasowy w związku z okolicz-
+    nością, o której mowa w art. 127, art. 137a, art. 159 ust. 1, art. 176 lub art. 186 ust. 1 pkt 3 lub 4 ustawy z dnia 12 grudnia
+    2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203);
+13) osoby, które ubiegają się o udzielenie ochrony międzynarodowej, oraz członkowie ich rodzin;
+14) osoby, które posiadają kartę pobytu z adnotacją „dostęp do rynku pracy”, wizę Schengen lub wizę krajową wydaną
+    w celu wykonywania pracy na terytorium Rzeczypospolitej Polskiej.
+     4. Za członków rodzin osób, o których mowa w ust. 3:
+1)   pkt 1 – uważa się osoby, o których mowa w art. 2 pkt 4 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczy-
+     pospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej
+     i członków ich rodzin (Dz. U. z 2025 r. poz. 1164 i 1794);
+2)   pkt 6, 8, 9 i 13 – uważa się małżonka oraz małoletnie dzieci tych osób niepozostające w związku małżeńskim i będące
+     na ich utrzymaniu, a w przypadku małoletnich osób, o których mowa w pkt 6 i 9, także ich wstępnego w linii prostej
+     lub osobę pełnoletnią odpowiedzialną za małoletniego zgodnie z prawem obowiązującym w Rzeczypospolitej Polskiej.
+     5. Osoby niebędące obywatelami polskimi niewymienione w ust. 3 mogą korzystać z nauki w publicznych szkołach
+dla dorosłych, publicznych szkołach policealnych, publicznych szkołach artystycznych, publicznych placówkach i publicz-
+nych kolegiach pracowników służb społecznych oraz z kształcenia ustawicznego w formie kwalifikacyjnych kursów zawo-
+dowych:
+1)   jako stypendyści otrzymujący stypendium przyznane przez ministra właściwego do spraw oświaty i wychowania;
+2)   jako stypendyści otrzymujący stypendium przyznane przez organ prowadzący szkołę lub placówkę, przez dyrektora
+     szkoły lub placówki;
+3)   na warunkach odpłatności.
+      5a. Osoby, o których mowa w ust. 3 i 5, mogą korzystać z nauki w publicznych szkołach policealnych oraz niepublicz-
+nych szkołach policealnych pod warunkiem przedłożenia certyfikatu znajomości języka polskiego, o którym mowa w art. 11a
+ust. 2 ustawy z dnia 7 października 1999 r. o języku polskim (Dz. U. z 2026 r. poz. 81 i 676), co najmniej na poziomie biegłości
+językowej B1.
+     6. Wysokość odpłatności za korzystanie z nauki w publicznych szkołach, placówkach i kolegiach pracowników służb
+społecznych oraz za kształcenie ustawiczne w formie kwalifikacyjnych kursów zawodowych, o której mowa w ust. 5 pkt 3,
+oraz sposób wnoszenia opłat ustala organ prowadzący, uwzględniając przewidywane koszty kształcenia lub koszty udziela-
+nych świadczeń oraz możliwość całkowitego lub częściowego zwolnienia z tej odpłatności.
+     7. Osoby niebędące obywatelami polskimi, podlegające obowiązkowi szkolnemu lub obowiązkowi nauki, które nie
+znają języka polskiego albo znają go na poziomie niewystarczającym do korzystania z nauki, mają prawo do dodatkowej,
+bezpłatnej nauki języka polskiego niedłużej niż przez okres 24 miesięcy. Dodatkową naukę języka polskiego dla tych osób
+organizuje organ prowadzący szkołę.
+     8. Osoby, o których mowa w ust. 7, mają prawo do pomocy udzielanej przez osobę władającą językiem kraju pocho-
+dzenia, zatrudnioną w charakterze pomocy nauczyciela przez dyrektora szkoły. Pomocy tej udziela się niedłużej niż przez
+okres 12 miesięcy.
+   8a. W szkole może być zatrudniony asystent międzykulturowy. Asystent międzykulturowy udziela osobom, o których
+mowa w ust. 7, pomocy w kontaktach ze środowiskiem szkolnym, a także współdziała z ich rodzicami oraz ze szkołą.
+     9. Uprawnienie, o którym mowa w ust. 7, przysługuje także osobom będącym obywatelami polskimi, podlegającym
+obowiązkowi szkolnemu lub obowiązkowi nauki, które nie znają języka polskiego albo znają go na poziomie niewystarcza-
+jącym do korzystania z nauki; osoby te korzystają z uprawnienia, o którym mowa w ust. 7, niedłużej niż przez okres 24 miesięcy.
+     10. Osoby, o których mowa w ust. 7 i 9, mogą korzystać z dodatkowych zajęć wyrównawczych w zakresie przedmio-
+tów nauczania organizowanych przez organ prowadzący szkołę, niedłużej jednak niż przez okres 12 miesięcy.
+     11. Dla osób, o których mowa w ust. 7 i 9, które wymagają dostosowania procesu kształcenia do ich potrzeb i możli-
+wości edukacyjnych, a także dostosowania formy organizacyjnej wspomagającej efektywność ich kształcenia, organ prowa-
+dzący szkołę może zorganizować oddział przygotowawczy w szkole, w której te osoby realizują naukę zgodnie z podstawą
+programową kształcenia ogólnego.
+      12. Do oddziału przygotowawczego, na wniosek rodzica, za zgodą organu prowadzącego szkołę, w której utworzono
+ten oddział, w ramach posiadanych środków, mogą uczęszczać uczniowie innej szkoły, z uwzględnieniem przepisów art. 39
+ust. 2–4a.
+     13. Okres nauki ucznia w oddziale przygotowawczym trwa do końca roku szkolnego, w którym uczeń został zakwali-
+fikowany do oddziału przygotowawczego, z tym że okres ten w zależności od postępów w nauce ucznia i jego potrzeb edu-
+kacyjnych może zostać skrócony albo przedłużony, niedłużej niż o jeden rok szkolny.
+     14. Oddziału przygotowawczego nie organizuje się w szkołach artystycznych, szkołach specjalnych, szkołach dla
+dorosłych, szkołach policealnych i branżowych szkołach II stopnia.
+     15. Dla osób niebędących obywatelami polskimi, podlegających obowiązkowi szkolnemu, placówka dyplomatyczna
+lub konsularna kraju ich pochodzenia działająca w Polsce albo stowarzyszenie kulturalno-oświatowe danej narodowości
+mogą organizować w szkole, w porozumieniu z dyrektorem szkoły i za zgodą organu prowadzącego, naukę języka i kultury
+kraju pochodzenia. Szkoła udostępnia nieodpłatnie pomieszczenia i pomoce dydaktyczne.
+
+[Art. 166 (another school named for the Polish-language learners)]
+      Art. 166. 1. W przypadkach uzasadnionych warunkami demograficznymi, jeżeli przyjęcie osób, o których mowa w art. 165
+ust. 7 i 9, podlegających obowiązkowi szkolnemu wymaga przeprowadzenia zmian organizacyjnych pracy szkoły, w której
+obwodzie te osoby mieszkają, organ wykonawczy jednostki samorządu terytorialnego prowadzącej szkołę podstawową
+może wskazać jako miejsce realizacji obowiązku szkolnego:
+1)    inną publiczną szkołę podstawową prowadzoną przez tę jednostkę samorządu terytorialnego;
+2)    publiczną szkołę podstawową prowadzoną przez inną jednostkę samorządu terytorialnego, po zawarciu porozumienia
+      z tą jednostką samorządu terytorialnego.
+     2. W przypadku braku możliwości wskazania jako miejsca realizacji obowiązku szkolnego szkół, o których mowa
+w ust. 1, na wniosek organu wykonawczego jednostki samorządu terytorialnego prowadzącej szkołę podstawową, w której
+obwodzie mieszkają osoby, o których mowa w art. 165 ust. 7 i 9, kurator oświaty wskazuje szkołę podstawową, w której te
+osoby będą realizować obowiązek szkolny.
+     3. W przypadkach, o których mowa w ust. 1 i 2, przepisów art. 130 ust. 2 i 5 nie stosuje się, a przepisy art. 39 ust. 2–4a
+stosuje się odpowiednio.
+120) Dodany przez art. 14 ustawy z dnia 23 stycznia 2026 r. o wygaszeniu rozwiązań wynikających z ustawy o pomocy obywatelom
+     Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa oraz o zmianie niektórych innych ustaw (Dz. U. poz. 203),
+     która weszła w życie z dniem 5 marca 2026 r.; wejdzie w życie z dniem 1 września 2027 r.
+
+[Dz.U. 2026 poz. 203 art. 2 pkt 1 (the system of education act art. 44q ust. 1a, 3b: finishing primary school; from 5.03.2026)]
+     Art. 2. W ustawie z dnia 7 września 1991 r. o systemie oświaty (Dz. U. z 2025 r. poz. 881 i 1019) wprowadza się
+następujące zmiany:
+1)    w art. 44q:
+      a)   po ust. 1 dodaje się ust. 1a w brzmieniu:
+                 „1a. Uczeń, o którym mowa w art. 165 ust. 1 ustawy – Prawo oświatowe, kończy szkołę podstawową, jeżeli:
+           1)    w wyniku klasyfikacji końcowej, na którą składają się roczne oceny klasyfikacyjne z obowiązkowych zajęć
+                 edukacyjnych, ustalone w klasie programowo najwyższej oraz roczne oceny klasyfikacyjne z obowiązko-
+                 wych zajęć edukacyjnych, których realizacja zakończyła się w klasach programowo niższych, które ten uczeń
+                 realizował w czasie nauki w Polsce, uzyskał pozytywne oceny klasyfikacyjne, o których mowa w przepisach
+                 wydanych na podstawie art. 44zb;
+           2)    przystąpił ponadto do egzaminu ósmoklasisty, z zastrzeżeniem art. 44zw, art. 44zx i art. 44zz ust. 2.”,
+      b) po ust. 3a dodaje się ust. 3b w brzmieniu:
+                „3b. Uczeń, o którym mowa w art. 165 ust. 1 ustawy – Prawo oświatowe, który nie spełnił warunków, o których
+         mowa w ust. 1a, powtarza ostatnią klasę szkoły podstawowej i przystępuje w roku szkolnym, w którym powtarza
+         tę klasę, do egzaminu ósmoklasisty.”;
+
+[Dz.U. 2026 poz. 1123 art. 19 pkt 2 (art. 31 ust. 3a from 1.09.2028, ust. 3b from 1.01.2027: not yet in force)]
+2)    w art. 31 po ust. 3 dodaje się ust. 3a i 3b w brzmieniu:
+           „3a. Dzieci w wieku od ukończenia 2,5. roku życia do ukończenia 3. roku życia mogą zostać objęte wychowa-
+      niem przedszkolnym, jeżeli informacje o przedszkolu, oddziale przedszkolnym w szkole podstawowej lub innej formie
+      wychowania przedszkolnego, w których sprawowana jest opieka nad dzieckiem w wieku od ukończenia 2,5. roku życia
+      do ukończenia 3. roku życia, zostały wpisane do rejestru instytucji opieki nad dziećmi w wieku do lat 3, o którym
+      mowa w art. 47i ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.
+            3b. Zapewniając wychowanie przedszkolne dzieciom w wieku od ukończenia 2,5. roku życia do ukończenia
+      3. roku życia podmiot prowadzący przedszkole, oddział przedszkolny w szkole podstawowej lub inną formę wycho-
+      wania przedszkolnego może uwzględniać standardy opieki określone w przepisach wydanych na podstawie art. 6c
+      ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.”.
