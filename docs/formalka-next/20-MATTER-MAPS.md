@@ -26,6 +26,7 @@
 | [`maps/recognition.md`](maps/recognition.md): recognition of a foreign diploma or school certificate | Wave 6, matter 22 | Sources (R1) and this map; **not yet checked by the separate agent** | 10 (QS1–QS10) | 17.10.2026; school certificates changed on 1.07.2025 |
 | [`maps/invitation.md`](maps/invitation.md): inviting a foreigner to Poland | Wave 6, matter 23 | Sources (R1) and this map; **not yet checked by the separate agent** | 5 (IS1–IS5) | 17.10.2026 |
 | [`maps/certificates.md`](maps/certificates.md): the KRK certificate and an apostille | Wave 6, matter 24 | Sources (R1) and this map; **not yet checked by the separate agent** | 8 (CS1–CS8) | 17.10.2026; ECRIS-TCN expected in 2027; the 2023 online regulation moved to 30.06.2027 |
+| [`maps/voters.md`](maps/voters.md): EU and UK citizens in the register of voters | Wave 6, matter 25 | Sources (R1) and this map; **not yet checked by the separate agent** | 6 (VS1–VS6) | 17.10.2026; entry only on application (Code art. 19a) |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 

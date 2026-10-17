@@ -1,0 +1,39 @@
+# gov.pl: Sprawdź, kto może wziąć udział w wyborach
+# Source: https://www.gov.pl/web/gov/sprawdz-kto-moze-wziac-udzial-w-wyborach, retrieved 2026-10-17, html sha256 5f130a4bc018f0ad02a8e77dab0ea7579bb800e61d62d5d34da90d066e9a621e
+# Text of the page's main element, all its tabs; blank lines removed. Its service cards show "Ostatnia aktualizacja" 28.03.2024 11:57. Not binding.
+# sha256 of the text below this header (from line 5): 16b0d3653f3c9037bd3880c4df4ec62376d3753e46cbc597653372f6727e32e0.
+Gov.pl
+Zmień stały obwód głosowania lub dopisz się do CRW
+Sprawdź, kto może wziąć udział w wyborach
+Sprawdź, kto może wziąć udział w wyborach
+Sprawdź, w jakich wyborach może zagłosować obywatel:
+Polski,
+Unii Europejskiej, jeśli nie jest obywtaelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej.
+Informacje:
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Wybory do Sejmu i Senatu Rzeczypospolitej
+TAK
+NIE
+NIE
+Wybory Prezydenta Rzeczypospolitej
+TAK
+NIE
+NIE
+Wybory do Parlamentu Europejskiego
+TAK
+TAK
+NIE
+Wybory do rady gminy i wybory wójta
+TAK
+TAK
+TAK
+Wybory do rady powiatu i sejmiku województwa
+TAK
+NIE
+NIE
+Ostatnia aktualizacja: 28.03.2024 11:57
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Cyfryzacji

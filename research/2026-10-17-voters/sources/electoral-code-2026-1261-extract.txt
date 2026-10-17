@@ -1,0 +1,344 @@
+# EU citizens in the register of voters: the Electoral Code, consolidated Dz.U. 2026 poz. 1261 (obwieszczenie of 1.09.2026, legal state 25.08.2026), art. 10, 11 § 1-3, 18 § 1-2, 18a § 3-4, 18b § 1, 18d, 19 § 1-2, 19a, 20, 22, 23, 26 § 1-9, 28 § 1-6, 32b, 36, 52 § 1-2; Dz.U. 2023 poz. 497 art. 11 and 14; the Prime Minister's notices Dz.U. 2023 poz. 1513 and 1514; the act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 17 ust. 1 pkt 2a
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2026/1261 6d38ef42e121d1e0209b068828c1545e6363a4515861c4476a2fb29dbebd48b6; DU/2023/497 fdd07eecb152d3f2c652444ca2322a74ef12dbc13a6f157066e40efcb99b468e; DU/2023/1514 e6cc34ac6a6cfaa8bcb969d783ab62ce9295f741054229d6bb1fdbefdbd370c0; DU/2023/1513 6a0644bc503e3009e9ed636a891e63f48c1a461a6e7d548ea1683aaee748f1de; DU/2026/384 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb.
+# Later amendments (node tools/sources/touched.mjs, 17.10.2026, with a 4-year lookback to reach Dz.U. 2023 poz. 497): the Code after 25.08.2026: Dz.U. 2026 poz. 178 art. 1 (art. 209-217, 265, 296, 303-304, 343, by the API from 18.02.2027; none quoted) and its transitional art. 2-3 (art. 103d; not quoted); Dz.U. 2024 poz. 1907 art. 193 (art. 30, 108, 494, 497, some points from 1.01.2027; none quoted). Dz.U. 2023 poz. 497 art. 1 gave the quoted articles their wording (in the consolidated text); its transitional rules: art. 10 (until the register started, UK citizens' passport number for the PESEL; part B of the old register), art. 11 and 14 (quoted), art. 12 (repeated, early and by-elections during the local term in which it came into force, the one that ended in 2024 (INFERENCE): the old rules, with exceptions), art. 13 (the old regulations under art. 25 and 33 kept until the art. 32a and 32b ones), art. 15 (the Prime Minister's notices; those of pkt 7 and 9 are quoted) and art. 17 (the electoral commissioners' lustration). The Code's consolidated text prints no point as not yet in force for the quoted articles.
+# Dates: the Central Register of Voters runs from 4.08.2023 (Dz.U. 2023 poz. 1513), and the online application of art. 19a § 5 from 1.09.2023 (Dz.U. 2023 poz. 1514). No time limit before an election is set for an art. 19a application; the wójt decides in 5 days (art. 20 § 1), and the list of voters is drawn up from the register as it stands on the third day before the election (art. 26 § 9).
+# Not quoted: the regulation with the application forms (art. 32b), whose model the gov.pl page links; Directive 93/109/EC and 94/80/EC (the EU rules behind art. 10); the international agreement with the United Kingdom behind UK citizens' local voting rights (not read); the election calendar (each election's order sets its dates).
+
+[Electoral Code art. 10 (who may vote: an EU citizen in the European Parliament elections and, with a UK citizen, in the gmina council and wójt elections, living permanently in Poland or the gmina; who may not)]
+     Art. 10. § 1. Prawo wybierania (czynne prawo wyborcze) ma:
+1)   w wyborach do Sejmu i do Senatu oraz w wyborach Prezydenta Rzeczypospolitej – obywatel polski, który najpóźniej
+     w dniu głosowania kończy 18 lat;
+2)   w wyborach do Parlamentu Europejskiego w Rzeczypospolitej Polskiej – obywatel polski, który najpóźniej w dniu
+     głosowania kończy 18 lat oraz obywatel Unii Europejskiej niebędący obywatelem polskim, który najpóźniej w dniu
+     głosowania kończy 18 lat, oraz stale zamieszkuje na terytorium Rzeczypospolitej Polskiej;
+3)   w wyborach do organów stanowiących jednostek samorządu terytorialnego:
+     a)   rady gminy – obywatel polski, obywatel Unii Europejskiej niebędący obywatelem polskim oraz obywatel Zjedno-
+          czonego Królestwa Wielkiej Brytanii i Irlandii Północnej, który najpóźniej w dniu głosowania kończy 18 lat, oraz
+          stale zamieszkuje na obszarze tej gminy,
+     b) rady powiatu i sejmiku województwa – obywatel polski, który najpóźniej w dniu głosowania kończy 18 lat, oraz
+        stale zamieszkuje na obszarze, odpowiednio, tego powiatu i województwa;
+4)   w wyborach wójta w danej gminie – osoba mająca prawo wybierania do rady tej gminy.
+     § 2. Nie ma prawa wybierania osoba:
+1)   pozbawiona praw publicznych prawomocnym orzeczeniem sądu;
+2)   pozbawiona praw wyborczych prawomocnym orzeczeniem Trybunału Stanu;
+3)   ubezwłasnowolniona prawomocnym orzeczeniem sądu.
+
+[Electoral Code art. 11 § 1-3 (who may stand: pkt 4, the European Parliament, 21 years and 5 years' permanent residence in Poland or another EU state; pkt 5, councils; pkt 6, wójt, Polish citizens only; § 3, a ban in the home state)]
+     Art. 11. § 1. Prawo wybieralności (bierne prawo wyborcze) ma:
+1)   w wyborach do Sejmu – obywatel polski mający prawo wybierania w tych wyborach, który najpóźniej w dniu wyborów
+     kończy 21 lat;
+2)   w wyborach do Senatu – obywatel polski mający prawo wybierania w tych wyborach, który najpóźniej w dniu wybo-
+     rów kończy 30 lat;
+3)   w wyborach Prezydenta Rzeczypospolitej – obywatel polski, który najpóźniej w dniu wyborów kończy 35 lat i korzysta
+     z pełni praw wyborczych do Sejmu;
+4)   w wyborach do Parlamentu Europejskiego w Rzeczypospolitej Polskiej – osoba mająca prawo wybierania w tych wy-
+     borach, która najpóźniej w dniu głosowania kończy 21 lat, i od co najmniej 5 lat stale zamieszkuje w Rzeczypospolitej
+     Polskiej lub na terytorium innego państwa członkowskiego Unii Europejskiej;
+5)   w wyborach do organów stanowiących jednostek samorządu terytorialnego – osoba mająca prawo wybierania tych
+     organów;
+6)   w wyborach wójta – obywatel polski mający prawo wybierania w tych wyborach, który najpóźniej w dniu głosowania
+     kończy 25 lat, z tym że kandydat nie musi stale zamieszkiwać na obszarze gminy, w której kandyduje.
+     § 2. Nie ma prawa wybieralności w wyborach osoba:
+1)   skazana prawomocnym wyrokiem na karę pozbawienia wolności za przestępstwo umyślne ścigane z oskarżenia pub-
+     licznego lub umyślne przestępstwo skarbowe, z tym że w przypadku wyborów, o których mowa w § 1 pkt 6, skazana
+     prawomocnym wyrokiem sądu za umyślne przestępstwo ścigane z oskarżenia publicznego lub umyślne przestępstwo
+     skarbowe;
+2)   wobec której wydano prawomocne orzeczenie sądu stwierdzające utratę prawa wybieralności, o którym mowa w art. 21a
+     ust. 2a ustawy z dnia 18 października 2006 r. o ujawnianiu informacji o dokumentach organów bezpieczeństwa państwa
+     z lat 1944–1990 oraz treści tych dokumentów (Dz. U. z 2025 r. poz. 1519).
+    § 3. Prawa wybieralności nie ma obywatel Unii Europejskiej niebędący obywatelem polskim oraz obywatel Zjedno-
+czonego Królestwa Wielkiej Brytanii i Irlandii Północnej, pozbawiony prawa wybieralności odpowiednio w państwie człon-
+kowskim Unii Europejskiej, którego jest obywatelem, albo w Zjednoczonym Królestwie Wielkiej Brytanii i Irlandii Północnej.
+
+[Electoral Code art. 18 § 1-2 (the Central Register of Voters; it confirms the right to vote)]
+     Art. 18. § 1. Centralny Rejestr Wyborców obejmuje:
+1)   osoby, którym przysługuje prawo wybierania;
+2)   osoby, które ukończyły 17 lat;
+3)   osoby niemające prawa wybierania z powodów wskazanych w art. 10 § 2;
+4)   informacje o stałych obwodach głosowania i okręgach wyborczych.
+     § 2. Centralny Rejestr Wyborców potwierdza prawo wybierania.
+
+[Electoral Code art. 18a § 3-4 (part B: EU and UK citizens entitled to vote, their data; others only by their registered address)]
+     § 3. W Centralnym Rejestrze Wyborców w części B gromadzi się dane obywateli Unii Europejskiej niebędących oby-
+watelami polskimi oraz dane obywateli Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, uprawnionych do
+korzystania z praw wyborczych w Rzeczypospolitej Polskiej w zakresie obejmującym:
+1)   imię (imiona);
+2)   nazwisko;
+3)   numer ewidencyjny PESEL;
+4)   datę urodzenia;
+5)   obywatelstwo;
+6)   numer paszportu lub innego dokumentu stwierdzającego tożsamość;
+7)   adres stałego zamieszkania zarejestrowany w związku ze złożeniem wniosku w trybie określonym w art. 19a;
+8)   adres przebywania zarejestrowany w związku ze złożeniem wniosku w trybie określonym w art. 28, art. 28a, art. 34,
+     art. 35 lub w związku z ujęciem danego wyborcy w wykazie sporządzanym na podstawie art. 29;
+9)   informację o pozbawieniu prawa wybierania z powodów wskazanych w art. 10 § 2, okres pozbawienia prawa wybie-
+     rania, oznaczenie sądu, sygnaturę akt, datę wydania oraz datę uprawomocnienia się orzeczenia, na podstawie którego
+     nastąpiło pozbawienie prawa wybierania;
+10) informację o okręgu wyborczym właściwym w wyborach do Parlamentu Europejskiego w Rzeczypospolitej Polskiej
+    i w wyborach do rad gmin;
+11) informację o obwodzie głosowania właściwym zgodnie z adresem stałego zamieszkania wskazanym we wniosku, o którym
+    mowa w § 19a;
+12) informację o obwodzie głosowania, w którym wyborca ma zostać ujęty w spisie wyborców sporządzonym dla danych
+    wyborów, jeżeli jest to obwód inny niż wskazany w pkt 11;
+13) informację o zgłoszeniu chęci głosowania w wyborach do Parlamentu Europejskiego przeprowadzanych przez inne
+    państwo członkowskie Unii Europejskiej.
+     § 4. W Centralnym Rejestrze Wyborców w części dotyczącej mieszkańców przetwarza się dane obywateli polskich,
+którzy nie ukończyli 17 lat, oraz obywateli Unii Europejskiej niebędących obywatelami polskimi i obywateli Zjednoczonego
+Królestwa Wielkiej Brytanii i Irlandii Północnej nieujętych w części B rejestru, w zakresie obejmującym adres zameldowa-
+nia na pobyt stały.
+
+[Electoral Code art. 18b § 1 (the wójt enters part B's data)]
+   Art. 18b. § 1. Dane, o których mowa w art. 18a § 1 pkt 6 oraz § 3 pkt 1–7, są wprowadzane do Centralnego Rejestru
+Wyborców przez wójta bezpośrednio w systemie teleinformatycznym.
+
+[Electoral Code art. 18d (part B's data removed: death, loss of the EU or UK citizenship, an application to be struck off)]
+     Art. 18d. § 1. Dane, o których mowa w art. 18a § 3, usuwa się niezwłocznie w przypadku:
+1)   śmierci;
+2)   utraty obywatelstwa państwa członkowskiego Unii Europejskiej innego niż Rzeczpospolita Polska lub obywatelstwa
+     Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej;
+3)   złożenia wniosku o skreślenie z Centralnego Rejestru Wyborców.
+      § 2. Usunięcie danych w przypadkach, o których mowa w § 1 pkt 1 lub 2, następuje na podstawie przekazanej przez
+rejestr PESEL informacji o zarejestrowaniu zdarzenia zgodnie z art. 10 ust. 3 ustawy z dnia 24 września 2010 r. o ewidencji
+ludności.
+     § 3. W przypadku zmiany danych, o których mowa w art. 18a § 3 pkt 1–6, w rejestrze PESEL następuje ich automatyczna
+aktualizacja w Centralnym Rejestrze Wyborców.
+
+[Electoral Code art. 19 § 1-2 (one permanent district only; Polish citizens in part A ex officio by their registered permanent address)]
+     Art. 19. § 1. W Centralnym Rejestrze Wyborców można być ujętym tylko w jednym stałym obwodzie głosowania.
+     § 2. W Centralnym Rejestrze Wyborców w części A wyborcy zameldowani na pobyt stały na obszarze danej gminy są
+z urzędu ujmowani w stałym obwodzie głosowania właściwym dla adresu zameldowania na pobyt stały.
+
+[Electoral Code art. 19a (the EU or UK citizen's application to be entered in a permanent voting district: content, without a PESEL, paper or online, striking off, discrepancies)]
+     Art. 19a. § 1. W Centralnym Rejestrze Wyborców w części B wyborcy stale zamieszkali na obszarze gminy są ujmo-
+wani w stałym obwodzie głosowania właściwym dla adresu stałego zamieszkania, jeżeli złożą w tej sprawie wniosek do
+urzędu gminy właściwego dla miejsca zamieszkania.
+     § 2. We wniosku, o którym mowa w § 1, zamieszcza się: nazwisko, imię (imiona), obywatelstwo, numer paszportu lub
+innego dokumentu stwierdzającego tożsamość wnioskodawcy, numer ewidencyjny PESEL wnioskodawcy oraz oświadczenie
+co do adresu stałego zamieszkania.
+    § 3. Wyborca, we wniosku, o którym mowa w § 1, może zamieścić adres poczty elektronicznej lub numer telefonu
+komórkowego oraz informację o wyrażeniu zgody na przekazanie danych do rejestru danych kontaktowych osób fizycznych.
+     § 4. Jeżeli w chwili złożenia wniosku, o którym mowa w § 1, wnioskodawca nie ma nadanego numeru ewidencyjnego
+PESEL, w celu nadania numeru ewidencyjnego PESEL wniosek zawiera dodatkowo dane, o których mowa w art. 8 pkt 9 i 24a
+ustawy z dnia 24 września 2010 r. o ewidencji ludności, oraz, jeżeli są dostępne, dane, o których mowa w art. 8 pkt 3–5, 7,
+8, 12 i 13 tej ustawy.
+     § 5. Wniosek, o którym mowa w § 1, może zostać złożony na piśmie utrwalonym w postaci:
+1)   papierowej, opatrzonym własnoręcznym podpisem;
+2)   elektronicznej, opatrzonym kwalifikowanym podpisem elektronicznym albo podpisem zaufanym, przy użyciu usługi
+     elektronicznej udostępnionej przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu wnioskodawcy
+     w sposób określony w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizu-
+     jących zadania publiczne.
+     § 6. Wyborca, którego dane są zamieszczone w Centralnym Rejestrze Wyborców w części B, może na swój wniosek
+złożony do urzędu gminy właściwego dla miejsca zamieszkania zostać skreślony z Centralnego Rejestru Wyborców.
+    § 7. We wniosku, o którym mowa w § 6, zamieszcza się: nazwisko, imię (imiona) oraz numer ewidencyjny PESEL
+wnioskodawcy.
+     § 8. Wniosek, o którym mowa w § 6, może zostać złożony na piśmie utrwalonym w postaci:
+1)   papierowej, opatrzonym własnoręcznym podpisem;
+2)   elektronicznej, opatrzonym kwalifikowanym podpisem elektronicznym albo podpisem zaufanym, przy wykorzystaniu
+     środków komunikacji elektronicznej, na zasadach określonych w ustawie z dnia 17 lutego 2005 r. o informatyzacji
+     działalności podmiotów realizujących zadania publiczne.
+     § 9. W przypadku rozbieżności danych we wniosku, o którym mowa w § 1, z danymi w rejestrze PESEL wójt wyjaśnia
+rozbieżności w terminie 7 dni.
+     § 10. Przepisy § 1–9 stosuje się odpowiednio do wyborcy nigdzie niezamieszkałego, przebywającego stale na obszarze
+gminy, z zastrzeżeniem, że wyborca ten w miejsce adresu stałego zamieszkania podaje adres, pod którym będzie możliwe
+skontaktowanie się z nim przez pracowników urzędu gminy.
+
+[Electoral Code art. 20 (the wójt's decision in 5 days; a complaint to the district court in 3 days)]
+     Art. 20. § 1. Decyzję o ujęciu lub o odmowie ujęcia w stałym obwodzie głosowania wydaje wójt w terminie 5 dni od
+dnia wniesienia wniosku, o którym mowa w art. 19 § 3 i art. 19a § 1, lub w terminie 5 dni od dnia wyjaśnienia rozbieżności
+w trybie określonym w art. 19a § 9.
+     § 2. Wójt przed wydaniem decyzji, o której mowa w § 1, jest obowiązany sprawdzić, czy osoba wnosząca wniosek
+o ujęcie w stałym obwodzie głosowania spełnia warunki stałego zamieszkania pod adresem wskazanym we wniosku.
+     § 3. Decyzja uwzględniająca wniosek skutkuje ujęciem wyborcy w stałym obwodzie głosowania. Decyzję o odmowie
+ujęcia w stałym obwodzie głosowania, wraz z uzasadnieniem, niezwłocznie doręcza się wnioskodawcy.
+     § 4. Od decyzji w sprawie odmowy ujęcia w stałym obwodzie głosowania przysługuje prawo wniesienia skargi do
+właściwego miejscowo sądu rejonowego. Skargę wnosi się za pośrednictwem wójta w terminie 3 dni od dnia doręczenia
+decyzji. Wójt przekazuje sądowi niezwłocznie skargę wraz z decyzją i aktami sprawy. Wójt może też niezwłocznie zmienić
+albo uchylić swoją decyzję, jeżeli uzna skargę w całości za zasadną.
+     § 5. Sąd rozpoznaje skargę, o której mowa w § 4, w postępowaniu nieprocesowym, w terminie 3 dni od dnia jej dorę-
+czenia. Odpis postanowienia sądu doręcza się osobie, która wniosła skargę, oraz wójtowi. Od postanowienia sądu nie przy-
+sługuje środek prawny.
+
+[Electoral Code art. 22 (a complaint about the register: 3 days to decide; then the court)]
+     Art. 22. § 1. Wyborca może wnieść do właściwego miejscowo wójta reklamację na nieprawidłowości w Centralnym
+Rejestrze Wyborców, jeżeli nie został on ujęty w Centralnym Rejestrze Wyborców lub nie ujęto go w żadnym obwodzie
+głosowania albo został on nieprawidłowo ujęty w obwodzie głosowania.
+     § 2. Reklamację wnosi się:
+1)   ustnie do protokołu,
+2)   na piśmie utrwalonym w postaci:
+     a)   papierowej, opatrzonym własnoręcznym podpisem,
+     b) elektronicznej, opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo podpisem oso-
+        bistym przy wykorzystaniu środków komunikacji elektronicznej, na zasadach określonych w ustawie z dnia 17 lutego
+        2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne
+– do urzędu gminy właściwego ze względu na miejsce zameldowania na pobyt stały lub zamieszkania.
+     § 3. Wójt jest obowiązany rozpatrzyć reklamację w terminie 3 dni od dnia jej wniesienia i wydać decyzję w sprawie.
+     § 4. W celu rozpatrzenia reklamacji dane wyborcy wnoszącego reklamację mogą być sprawdzane w rejestrze PESEL.
+     § 5. Decyzję, wraz z uzasadnieniem, doręcza się niezwłocznie wyborcy wnoszącemu reklamację.
+     § 6. Na decyzję nieuwzględniającą reklamacji lub powodującą skreślenie z obwodu głosowania wyborca wnoszący
+reklamację może wnieść, w terminie 3 dni od dnia doręczenia decyzji, skargę za pośrednictwem wójta do właściwego miej-
+scowo sądu rejonowego. Przepisy art. 20 § 4 i 5 stosuje się odpowiednio.
+
+[Electoral Code art. 23 (part B's data sent to the home state before the European Parliament elections)]
+     Art. 23. § 1. Dane o obywatelach Unii Europejskiej niebędących obywatelami polskimi, korzystających z praw
+wyborczych w Rzeczypospolitej Polskiej w związku ze zgłoszeniem wniosku, o którym mowa w art. 19a § 1, minister
+właściwy do spraw informatyzacji przekazuje właściwym organom państw członkowskich Unii Europejskiej niepóźniej niż
+na 5 dni przed dniem wyborów do Parlamentu Europejskiego w Rzeczypospolitej Polskiej.
+     § 2. Dane przekazywane w trybie § 1 obejmują dane, o których mowa w art. 18a § 3 pkt 1, 2 i 4–6.
+     § 3. Minister właściwy do spraw informatyzacji przesyła właściwemu organowi państwa członkowskiego Unii Euro-
+pejskiej informację o skreśleniu z Centralnego Rejestru Wyborców osoby, o ile przesłał uprzednio do tego organu informację,
+o której mowa w § 1.
+      § 4. Minister właściwy do spraw informatyzacji przekazuje właściwym organom państw członkowskich Unii Europej-
+skiej, na ich wniosek, dane dotyczące obywateli polskich chcących korzystać z praw wyborczych na terytorium innego
+państwa członkowskiego Unii Europejskiej, w zakresie niezbędnym do korzystania z tych praw.
+     § 5. Informacje, o których mowa w § 1–4, przesyła się przy wykorzystaniu środków komunikacji elektronicznej.
+
+[Electoral Code art. 26 § 1-9 (the list of voters for each election: parts A and B; its state on the third day before the election)]
+      Art. 26. § 1. Wyborcę, któremu przysługuje prawo wybierania, ujmuje się w spisie wyborców sporządzanym w Cen-
+tralnym Rejestrze Wyborców w stałym obwodzie głosowania, w którym dana osoba jest ujęta z urzędu lub na wniosek.
+    § 2. Spis wyborców jest sporządzany i aktualizowany przez gminę jako zadanie zlecone odrębnie na każde zarządzone
+wybory, z zastrzeżeniem art. 34 § 1 i art. 35 § 1.
+     § 3. Spis wyborców służy do przeprowadzania głosowania w wyborach, które zostały zarządzone.
+     § 4. Wyborca może być ujęty tylko w jednym spisie wyborców.
+     § 5. Spis wyborców składa się z:
+1)   części A – w wyborach do Sejmu i do Senatu, w wyborach Prezydenta Rzeczypospolitej oraz w wyborach do rad
+     powiatów i sejmików województw;
+2)   części A i części B – w wyborach do Parlamentu Europejskiego w Rzeczypospolitej Polskiej, w wyborach do rad gmin
+     oraz w wyborach wójtów.
+     § 6. W spisie wyborców, w części A, zamieszcza się dane obywateli polskich w zakresie:
+1)   nazwiska;
+2)   imienia (imion);
+3)   numeru ewidencyjnego PESEL;
+4)   adresu zamieszkania.
+     § 7. W spisie wyborców, w części B, zamieszcza się dane obywateli Unii Europejskiej niebędących obywatelami pol-
+skimi, uprawnionych do korzystania z praw wyborczych w wyborach, które zostały zarządzone w Rzeczypospolitej Polskiej,
+w zakresie:
+1)   nazwiska;
+2)   imienia (imion);
+3)   numeru ewidencyjnego PESEL;
+4)   obywatelstwa;
+5)   adresu zamieszkania.
+     § 8. W wyborach do rad gmin i w wyborach wójtów przepis § 7 stosuje się odpowiednio również do obywateli
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, uprawnionych do korzystania z praw wyborczych w Rzeczy-
+pospolitej Polskiej.
+    § 9. Spis wyborców sporządza się niepóźniej niż w drugim dniu przed dniem wyborów w dwóch egzemplarzach w for-
+mie wydruku, oddzielnie dla każdego obwodu głosowania. Po upływie trzeciego dnia przed dniem wyborów spis sporzą-
+dzany w Centralnym Rejestrze Wyborców sporządza się według stanu na trzeci dzień przed dniem wyborów.
+
+[Electoral Code art. 28 § 1-6 (a one-time change of the place of voting: from the 44th to the 3rd day before; not in local elections)]
+     Art. 28. § 1. Wyborca może zmienić miejsce głosowania w danych wyborach. Wniosek w sprawie zmiany miejsca
+głosowania składa w okresie od 44 dnia przed dniem wyborów do 3 dnia przed dniem wyborów.
+    § 2. Przepisu § 1 nie stosuje się w wyborach do organów stanowiących jednostek samorządu terytorialnego oraz
+w wyborach wójtów.
+     § 3. W wyborach uzupełniających do Senatu przepis § 1 ma zastosowanie tylko do wyborców stale zamieszkałych na
+obszarze okręgu wyborczego, w którym przeprowadza się wybory uzupełniające.
+     § 4. Wniosek, o którym mowa w § 1, może zostać złożony na piśmie utrwalonym w postaci:
+1)   papierowej, opatrzonym własnoręcznym podpisem do urzędu gminy właściwego dla wybranego stałego obwodu gło-
+     sowania na obszarze gminy, w której wyborca przebywać będzie w dniu wyborów;
+2)   elektronicznej, opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym,
+     przy użyciu usługi elektronicznej udostępnionej przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu
+     tej osoby w sposób określony w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów
+     realizujących zadania publiczne.
+    § 5. Wniosek, o którym mowa w § 1, zawiera nazwisko, imię (imiona), obywatelstwo, numer ewidencyjny PESEL
+wnioskodawcy i adres przebywania w dniu wyborów.
+     § 6. Złożenie wniosku o zmianę miejsca głosowania skutkuje ujęciem wyborcy w spisie w obwodzie głosowania właści-
+wym dla adresu przebywania i skreśleniem ze spisu w stałym obwodzie głosowania właściwym dla adresu zameldowania
+na pobyt stały lub adresu stałego zamieszkania.
+
+[Electoral Code art. 32b (the forms set by regulation)]
+     Art. 32b. Minister właściwy do spraw wewnętrznych, po zasięgnięciu opinii Państwowej Komisji Wyborczej, określi,
+w drodze rozporządzenia:
+1)   wzór wniosku o ujęcie w obwodzie głosowania, o którym mowa w art. 19 § 3,
+2)   wzór wniosku o ujęcie w obwodzie głosowania, o którym mowa w art. 19a § 1,
+3)   wzór wniosku o skreślenie wyborcy z Centralnego Rejestru Wyborców, o którym mowa w art. 19a § 6,
+4)   wzór wniosku o zmianę miejsca głosowania, o którym mowa w art. 28 § 1,
+5)   wzór zaświadczenia o prawie do głosowania oraz sposób ewidencjonowania tych zaświadczeń
+– uwzględniając zakres danych wymaganych we wnioskach i w zaświadczeniu oraz konieczność zabezpieczenia zaświad-
+czenia przed sfałszowaniem.
+
+[Electoral Code art. 36 (seeing one's own data: online, or on request from the wójt, at the latest on the 5th day before an election; whether one is on the list)]
+     Art. 36. § 1. Osobie, której dane są przetwarzane w Centralnym Rejestrze Wyborców, umożliwia się wgląd do rejestru
+w zakresie danych, o których mowa w art. 18a § 1 i 3, dotyczących tej osoby, przy użyciu usługi elektronicznej udostępnionej
+przez ministra właściwego do spraw informatyzacji, po uwierzytelnieniu tej osoby w sposób określony w art. 20a ust. 1 ustawy
+z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne, z zastrzeżeniem § 2.
+     § 2. Zakres udostępnianych danych o osobie, o której mowa w § 1, w okresie od 44 dnia przed dniem wyborów do dnia
+wyborów ulega rozszerzeniu o dane przetwarzane w spisie wyborców, ze wskazaniem obwodu, w którym spis został spo-
+rządzony.
+     § 3. Osobie, której dane są przetwarzane w Centralnym Rejestrze Wyborców, umożliwia się pobranie z Centralnego
+Rejestru Wyborców informacji o danych przetwarzanych w tym rejestrze, zawierającej dane określone w § 1 lub 2. Pobranie
+informacji następuje przy użyciu usługi elektronicznej udostępnionej przez ministra właściwego do spraw informatyzacji,
+po uwierzytelnieniu w sposób określony w art. 20a ust. 1 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności
+podmiotów realizujących zadania publiczne.
+     § 4. Informacja pobrana przy użyciu usługi, o której mowa w § 3, jest opatrywana zaawansowaną pieczęcią elektro-
+niczną ministra właściwego do spraw informatyzacji opartą na kwalifikowanym certyfikacie pieczęci elektronicznej.
+     § 5. Osobie, której dane są przetwarzane w Centralnym Rejestrze Wyborców, na wniosek tej osoby złożony na piśmie
+utrwalonym w postaci:
+1)   papierowej, opatrzonym własnoręcznym podpisem,
+2)   elektronicznej, opatrzonym kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym
+     przy wykorzystaniu środków komunikacji elektronicznej, na zasadach określonych w ustawie z dnia 17 lutego 2005 r.
+     o informatyzacji działalności podmiotów realizujących zadania publiczne
+– wójt obowiązany jest udostępnić informację zawierającą dane określone w § 1 lub 2, zwaną dalej „informacją o danych”.
+     § 6. W przypadku zarządzonych wyborów wniosek o udostępnienie informacji o danych może być złożony niepóźniej
+niż do 5 dnia przed dniem wyborów.
+     § 7. Informacja o danych jest udostępniana, w zależności od żądania wnioskodawcy, na piśmie utrwalonym w postaci
+papierowej, opatrzonym własnoręcznym podpisem lub w postaci elektronicznej, opatrzonym kwalifikowanym podpisem
+elektronicznym, podpisem zaufanym albo podpisem osobistym.
+     § 8. Informacja o danych może mieć postać wydruku z systemu teleinformatycznego.
+     § 9. W okresie od 44 dnia przed dniem wyborów do 5 dnia przed dniem wyborów każdy wyborca może złożyć pisemny
+wniosek utrwalony w postaci papierowej i opatrzony własnoręcznym podpisem w urzędzie gminy, w której spis wyborców
+został sporządzony, o udzielenie informacji, czy został w spisie ujęty.
+    § 10. Udostępnianie informacji, o której mowa w § 9, następuje przez udzielenie informacji, że osoba wskazana
+we wniosku jest ujęta w spisie wyborców lub nie figuruje w spisie. Na żądanie wnioskodawcy udzielona informacja jest
+potwierdzana przez wójta na piśmie utrwalonym w postaci papierowej, opatrzonym własnoręcznym podpisem.
+     § 11. Przepisy § 9 i 10 stosuje się odpowiednio do innych organów, które sporządziły spis wyborców.
+
+[Electoral Code art. 52 § 1-2 (an identity document at the polling station)]
+     Art. 52. § 1. Przed przystąpieniem do głosowania wyborca okazuje obwodowej komisji wyborczej dokument umożli-
+wiający stwierdzenie jego tożsamości.
+     § 2. Po wykonaniu czynności, o której mowa w § 1, wyborca otrzymuje od komisji kartę do głosowania właściwą dla
+przeprowadzanych wyborów, opatrzoną jej pieczęcią. Wyborca potwierdza otrzymanie karty do głosowania własnym pod-
+pisem w przeznaczonej na to rubryce spisu wyborców.
+
+[Dz.U. 2023 poz. 497 art. 11 (no online application until the day the Prime Minister's notice sets)]
+      Art. 11. Do dnia określonego w komunikacie Prezesa Rady Ministrów wydanym na podstawie art. 15 ust. 1 pkt 9
+nie stosuje się:
+1)   przepisu art. 19 § 7 ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości złożenia
+     wniosku o ujęcie w stałym obwodzie głosowania w Centralnym Rejestrze Wyborców przy użyciu usługi elektronicz-
+     nej, o której mowa w tym przepisie;
+2)   przepisu art. 19a § 5 ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości złożenia
+     wniosku o ujęcie w stałym obwodzie głosowania w Centralnym Rejestrze Wyborców przy użyciu usługi elektronicznej,
+     o której mowa w tym przepisie;
+3)   przepisu art. 36 § 1 ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości wglądu
+     do Centralnego Rejestru Wyborców przy użyciu usługi elektronicznej, o której mowa w tym przepisie;
+4)   przepisu art. 36 § 3 ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości pobrania
+     z Centralnego Rejestru Wyborców informacji o danych przetwarzanych w tym rejestrze przy użyciu usługi elektronicznej,
+     o której mowa w tym przepisie;
+5)   przepisu art. 53b § 2 ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości zgło-
+     szenia zamiaru głosowania korespondencyjnego przy użyciu usługi elektronicznej, o której mowa w tym przepisie;
+6)   przepisu art. 56 § 2b ustawy zmienianej w art. 1 w brzmieniu nadanym niniejszą ustawą w zakresie możliwości wystą-
+     pienia z wnioskiem o sporządzenie pełnomocnictwa do głosowania przy użyciu usługi elektronicznej, o której mowa
+     w tym przepisie.
+
+[Dz.U. 2023 poz. 497 art. 14 (an EU or UK citizen in the old register without a PESEL files the art. 19a application)]
+     Art. 14. Obywatel państwa członkowskiego Unii Europejskiej lub Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii
+Północnej, który został dopisany do rejestru wyborców na podstawie przepisów dotychczasowych i któremu nie został
+nadany numer PESEL, w celu ujęcia go w stałym obwodzie głosowania składa wniosek, o którym mowa w art. 19a § 1 ustawy
+zmienianej w art. 1.
+
+[The Prime Minister's notice of 3.08.2023 (Dz.U. 2023 poz. 1514): the online application of art. 19a § 5 from 1.09.2023]
+     Na podstawie art. 15 ust. 1 pkt 9 ustawy z dnia 26 stycznia 2023 r. o zmianie ustawy – Kodeks wyborczy oraz niektórych
+innych ustaw (Dz. U. poz. 497) ogłasza się, co następuje:
+     Termin uruchomienia usług, o których mowa w:
+1)   art. 36 § 1 i 3 ustawy z dnia 5 stycznia 2011 r. – Kodeks wyborczy (Dz. U. z 2022 r. poz. 1277 i 2418 oraz z 2023 r.
+     poz. 497), określa się na dzień 4 sierpnia 2023 r.;
+2)   art. 19 § 7, art. 19a § 5, art. 53b § 2 i art. 56 § 2b ustawy z dnia 5 stycznia 2011 r. – Kodeks wyborczy, określa się na
+     dzień 1 września 2023 r.
+
+[The Prime Minister's notice of 3.08.2023 (Dz.U. 2023 poz. 1513): the Central Register of Voters from 4.08.2023]
+     Na podstawie art. 15 ust. 1 pkt 7 ustawy z dnia 26 stycznia 2023 r. o zmianie ustawy – Kodeks wyborczy oraz niektórych
+innych ustaw (Dz. U. poz. 497) ogłasza się, co następuje:
+     Termin uruchomienia Centralnego Rejestru Wyborców określa się na dzień 4 sierpnia 2023 r.
+
+[The act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 17 ust. 1 pkt 2a (a PESEL ex officio after a positive decision on the art. 19a application)]
+2a) organ gminy właściwy do realizacji wniosku obywatela państwa członkowskiego Unii Europejskiej lub Zjednoczonego
+    Królestwa Wielkiej Brytanii i Irlandii Północnej o ujęcie w stałym obwodzie głosowania w Centralnym Rejestrze
+    Wyborców, po wydaniu pozytywnej decyzji w tej sprawie w trybie określonym w przepisach ustawy z dnia 5 stycznia
+    2011 r. – Kodeks wyborczy;

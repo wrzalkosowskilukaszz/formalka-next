@@ -1,0 +1,78 @@
+# gov.pl: Sprawdź swoje dane w Centralnym Rejestrze Wyborców
+# Source: https://www.gov.pl/web/gov/sprawdz-swoje-dane-w-centralnym-rejestrze-wyborcow2, retrieved 2026-10-17, html sha256 7cd796f62c4ed9b5c4e5bf9bd3c9b91d9f1cee4799705e16dbb04731d71f4cf9
+# Text of the page's main element, all its tabs; blank lines removed. Its service cards show "Ostatnia aktualizacja" 31.12.2025 10:01. Not binding.
+# sha256 of the text below this header (from line 5): 3466bf62ea652df82986988c475a02a6c2498aab8aaafb6d1c6d51d24ad34d25.
+Gov.pl
+Sprawdź swoje dane w Centralnym Rejestrze Wyborców
+Sprawdź swoje dane w Centralnym Rejestrze Wyborców
+Chcesz wiedzieć, jakie twoje dane są przetwarzane w Centralnym Rejestrze Wyborców (CRW)?
+Możesz to sprawdzić online lub zamówić informację w urzędzie.
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet
+Tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+SPRAWDŹ SWOJE DANE ONLINE
+Informacje:
+Przez internet
+W urzędzie
+Kto może sprawdzić dane
+Każda osoba, której dane osobowe są przetwarzane w CRW.
+W CRW są przetwarzane dane osobowe obywateli:
+polskich, którzy ukończyli 17 lat,
+państw Unii Europejskiej (innych niż Polska) i Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, jeżeli złożyli wniosek o dopisanie ich do Centralnego Rejestru Wyborców.
+Co musisz przygotować
+Dane logowania do profilu zaufanego: login i hasło, e-dowód lub aplikację mObywatel.
+Tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedź się, jak uzyskać adres do e-Doręczeń u publicznego dostawcy usługi
+Co musisz zrobić
+Zaloguj się do mObywatela w przeglądarce.
+Wybierz skrzynkę do e-Doręczeń, za pomocą której chcesz skorzystać z usługi.
+Wybierz sekcję Twoje dane, a następnie Centralny Rejestr Wyborców.
+Możesz zamówić dane z rejestru. Otrzymasz je na swoją skrzynkę do e-Doręczeń.
+Kiedy możesz sprawdzić dane
+Kiedy chcesz.
+Sprawdzaj dane zawsze, kiedy zmieniasz miejsce głosowania. W danych pojawi się aktualna informacja o miejscu głosowania.
+Ile zapłacisz
+Usługa jest bezpłatna.
+Czym jest Centralny Rejestr Wyborców
+Centralny Rejestr Wyborców (CRW) to rejestr w systemie teleinformatycznym, który został utworzony na podstawie Kodeksu wyborczego.
+W rejestrze są dane o wszystkich wyborcach – zarówno o obywatelach polskich, jak i cudzoziemcach uprawnionych do głosowania w Polsce.
+Rejestr służy do:
+przygotowania wyborów i referendów,
+ustalania liczby wyborców,
+sporządzania spisów wyborców.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy (t.j. Dz.U. 2022 poz. 1277 ze zm.)
+Kto może otrzymać informację
+Każda osoba, której dane osobowe są przetwarzane w CRW.
+W CRW są przetwarzane dane osobowe obywateli:
+polskich, którzy ukończyli 17 lat,
+państw Unii Europejskiej (innych niż Polska) i Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, jeżeli złożyli wniosek o dopisanie ich do Centralnego Rejestru Wyborców.
+Co musisz przygotować
+dokument tożsamości (dowód osobisty lub paszport),
+wniosek o informację − podaj we wniosku swoje dane:
+nazwisko,
+imię (imiona),
+numer PESEL.
+Co musisz zrobić
+Napisz i podpisz wniosek. Więcej informacji znajdziesz w sekcji Co musisz przygotować.
+Złóż wniosek.
+Wybierz 1 z 3 możliwości:
+złóż wniosek osobiście,
+wyślij go pocztą – do urzędu, który wybierzesz,
+dołącz jako skan do pisma ogólnego – dowiedz się, jak wysłać pismo ogólne.
+Kiedy możesz złożyć wniosek
+Na 5 dni przed dniem wyborów.
+Gdzie składasz wniosek
+W urzędzie gminy, który wybierzesz.
+Ile zapłacisz
+Nic
+Czym jest Centralny Rejestr Wyborców
+Centralny Rejestr Wyborców (CRW) to rejestr w systemie teleinformatycznym, który został utworzony na podstawie Kodeksu wyborczego.
+W rejestrze są dane o wszystkich wyborcach – zarówno o obywatelach polskich, jak i cudzoziemcach uprawnionych do głosowania w Polsce.
+Rejestr służy do:
+przygotowania wyborów i referendów,
+ustalania liczby wyborców,
+sporządzania spisów wyborców.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy (t.j. Dz.U. 2022 poz. 1277 ze zm.)
+Ostatnia aktualizacja: 31.12.2025 10:01
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Cyfryzacji

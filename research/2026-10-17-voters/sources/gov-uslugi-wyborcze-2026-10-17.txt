@@ -1,0 +1,136 @@
+# gov.pl: Sprawdź, z jakiej usługi wyborczej możesz skorzystać
+# Source: https://www.gov.pl/web/gov/sprawdz-z-jakiej-uslugi-wyborczej-mozesz-skorzystac, retrieved 2026-10-17, html sha256 e1978a727ff965acec040fe054d2acbcb9eea40d139dfc58268fac82e98f8c15
+# Text of the page's main element, all its tabs; blank lines removed. Its service cards show "Ostatnia aktualizacja" 28.03.2024 11:57. Not binding.
+# sha256 of the text below this header (from line 5): a4a2d1ecddb39627516c583774f7623f418c415ef841b144c02b877c1a94f189.
+Gov.pl
+Zmień stały obwód głosowania lub dopisz się do CRW
+Sprawdź, z jakiej usługi wyborczej możesz skorzystać
+Sprawdź, z jakiej usługi wyborczej możesz skorzystać
+Chcesz wiedzieć, z jakich usług wyborczych możesz skorzystać w poszczególnych wyborach? Sprawdź, z jakich usług możesz skorzystać jako obywatel:
+Polski,
+Unii Europejskiej, który nie jest obywatelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej.
+Informacje:
+Wybory do Sejmu i Senatu
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Zaświadczenie o prawie do głosowania
+TAK
+NIE
+NIE
+Jednorazowa zmiana miejsca glosowania
+TAK
+NIE
+NIE
+Zmiana stałego obwodu głosowania
+TAK
+NIE
+NIE
+Głosowanie korespondencyjne
+TAK
+NIE
+NIE
+Głosowanie przez pełnomocnika
+TAK
+NIE
+NIE
+Wybory Prezydenta Rzeczypospolitej
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Zaświadczenie o prawie do głosowania
+TAK
+NIE
+NIE
+Jednorazowa zmiana miejsca glosowania
+TAK
+NIE
+NIE
+Zmiana stałego obwodu głosowania
+TAK
+NIE
+NIE
+Głosowanie korespondencyjne
+TAK
+NIE
+NIE
+Głosowanie przez pełnomocnika
+TAK
+NIE
+NIE
+Wybory do Parlamentu Europejskiego
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Zaświadczenie o prawie do głosowania
+TAK
+TAK
+NIE
+Jednorazowa zmiana miejsca glosowania
+TAK
+TAK
+NIE
+Zmiana stałego obwodu głosowania
+TAK
+TAK
+NIE
+Głosowanie korespondencyjne
+TAK
+TAK
+NIE
+Głosowanie przez pełnomocnika
+TAK
+TAK
+NIE
+Wybory do rady gminy i wybory wójta
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Zaświadczenie o prawie do głosowania
+NIE
+NIE
+NIE
+Jednorazowa zmiana miejsca glosowania
+NIE
+NIE
+NIE
+Zmiana stałego obwodu głosowania
+TAK
+TAK
+TAK
+Głosowanie korespondencyjne
+TAK
+TAK
+TAK
+Głosowanie przez pełnomocnika
+TAK
+TAK
+TAK
+Wybory do rady powiatu i sejmiku województwa
+Obywatel Polski
+Obywatel Unii Europejskiej, który nie jest obywatelem Polski
+Obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej
+Zaświadczenie o prawie do głosowania
+NIE
+NIE
+NIE
+Jednorazowa zmiana miejsca glosowania
+NIE
+NIE
+NIE
+Zmiana stałego obwodu głosowania
+TAK
+NIE
+NIE
+Głosowanie korespondencyjne
+TAK
+NIE
+NIE
+Głosowanie przez pełnomocnika
+TAK
+NIE
+NIE
+Ostatnia aktualizacja: 28.03.2024 11:57
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Cyfryzacji

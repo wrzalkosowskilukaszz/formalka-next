@@ -1,0 +1,278 @@
+# gov.pl: Zmień stały obwód głosowania lub dopisz się do CRW
+# Source: https://www.gov.pl/web/gov/zmien-obwod-glosowania-lub-dopisz-sie-do-crw, retrieved 2026-10-17, html sha256 319b32bd8227eaa941b5d30553895cfc113d0ece99f843d0ef14410904aebee3
+# Text of the page's main element, all its tabs; blank lines removed. Its service cards show "Ostatnia aktualizacja" 01.09.2026 09:31. Not binding.
+# sha256 of the text below this header (from line 5): c24aa7cbc5dcf8c1b185fab4aa624c10c56a7748739ecb690843b2b5f8a4e58a.
+Gov.pl
+Zmień stały obwód głosowania lub dopisz się do CRW
+Zmień stały obwód głosowania lub dopisz się do CRW
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet.
+Tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń.
+Odpowiedz na kilka prostych pytań.
+Otrzymasz odpowiednie informacje.
+START
+Chcę
+Wybierz pierwszą odpowiedź, jeśli chcesz zawsze głosować w gminie, w której mieszkasz, ale nie masz meldunku.
+Wybierz drugą odpowiedź, jeśli nie masz obywatelstwa polskiego, ale mieszkasz w Polsce i jesteś obywatelem UE, Wielkiej Brytanii i Irlandii Północnej.
+zmienić stały obwód głosowania
+dopisać się do Centralnego Rejestru Wyborców - CRW
+WSTECZ
+DALEJ
+Chcesz zmienić stały obwód głosowania lub dopisać się do Centralnego Rejestru Wyborców (CRW)?
+Sprawdź, jak to zrobić.
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez internet
+Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+Aby zmienić stały obwód głosowania, musisz mieszkać w danym miejscu na stałe. Urząd będzie to weryfikował.
+Jeśli:
+będziesz głosować za granicą, przejdź do usługi Złóż wniosek o dopisanie do spisu wyborców za granicą,
+chcesz zmienić jednorazowo miejsce głosowania, przejdź do usługi Zmień jednorazowo miejsce głosowania.
+ZŁÓŻ WNIOSEK
+Informacje:
+Przez internet
+W urzędzie
+Jeżeli:
+mieszkasz na stałe w innej gminie, niż masz meldunek i
+chcesz w niej głosować w każdych wyborach,
+złóż wniosek o zmianę stałego obwodu głosowania. Będziesz głosować w gminie, w której mieszkasz, a nie w gminie, w której masz zameldowanie na pobyt stały.
+Jeżeli chcesz zmienić tymczasowo, na jeden raz, miejsce głosowania w wyborach i referendach ogólnopolskich (ale nie samorządowych i lokalnych), skorzystaj z usługi Zmień jednorazowo miejsce głosowania.
+Jeżeli chcesz głosować za granicą tylko podczas tych wyborów, dopisz się do spisu wyborców za granicą.
+Kto może złożyć
+Każdy, kto spełnia wszystkie poniższe warunki:
+ma polskie obywatelstwo,
+stale mieszka na terenie gminy bez zameldowania na pobyt stały,
+może głosować, czyli:
+w dniu wyborów ma ukończone 18 lat,
+ma prawo wybierania (czynne prawo wyborcze).
+Masz czynne prawo wyborcze, jeśli:
+masz ukończone 18 lat,
+sąd ani Trybunał Stanu nie orzekły, że pozbawiają cię praw wyborczych,
+nie ubezwłasnowolniono cię.
+Jeśli jesteś osobą z niepełnosprawnością i chcesz zmienić obwód głosowania na taki, który jest dostosowany do twoich potrzeb, skontaktuj się z urzędem gminy. Tam uzyskasz informacje na temat obwodów dostosowanych do potrzeb osób z niepełnosprawnościami.
+Co musisz przygotować
+dane do logowania przez login.gov.pl (może to być na przykład login z hasłem do profilu zaufanego lub e-dowód),
+Dodatkowe informacje na temat sposobów logowania znajdziesz na stronie informacyjnej login.gov.pl.
+telefon komórkowy lub dane do innego sposobu logowania na profil zaufany, na przykład e-dowód.
+Pamiętaj, że wniosek online możesz złożyć tylko przez e-Doręczenia. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+Do wniosku możesz dodać załącznik – na przykład:
+umowę najmu mieszkania,
+oświadczenie właściciela mieszkania, w którym mieszkasz,
+rachunek za prąd, na którym są twoje dane,
+umowę o pracę,
+kartę mieszkańca.
+Jeśli nie wiesz, jaki załącznik dodać, skontaktuj się z urzędem gminy, w której mieszkasz, lub sprawdź informacje na jego stronie internetowej. To urząd decyduje o tym, jak sprawdzi, gdzie mieszkasz.
+Sprawdź, jak założyć profil zaufany lub jak korzystać z e-dowodu.
+Co musisz zrobić
+Kliknij Złóż wniosek.
+System przekieruje cię na stronę login.gov.pl. Wybierz sposób logowania.
+Podaj swój adres stałego miejsca zamieszkania i zaznacz oświadczenie, że mieszkasz pod tym adresem na stałe.
+Sprawdź wniosek i podpisz go elektronicznie.
+Status swojej sprawy sprawdzisz w sekcji Twoje sprawy.
+Kiedy składasz
+W dowolnym momencie, ale pamiętaj, że urząd ma 5 dni, aby rozpatrzyć twój wniosek. Jeśli odwołasz się od jego decyzji i złożysz skargę, urząd będzie potrzebował więcej czasu, aby ją rozpatrzyć.
+Jeśli zmieniłeś(-aś) stały obwód głosowania, ale chcesz powrócić do obwodu zgodnego z miejscem zameldowania na pobyt stały, zgłoś się do urzędu gminy właściwego dla zmienionego obwodu głosowania.
+Gdzie składasz
+Online, w urzędzie gminy, na terenie której mieszkasz na stałe.
+Ile zapłacisz
+Usługa jest bezpłatna.
+Informacje dodatkowe
+Jesteś obywatelem:
+Polski,
+Unii Europejskiej, który nie jest obywatelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+sprawdź dodatkowe informacje:
+w jakich wyborach możesz wziąć udział,
+z jakich usług wyborczych możesz skorzystać w poszczególnych wyborach.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy
+Jeżeli:
+mieszkasz na stałe w innej gminie, niż masz meldunek i
+chcesz w niej głosować w każdych wyborach,
+złóż wniosek o zmianę stałego obwodu głosowania. Będziesz głosować w gminie, w której mieszkasz, a nie w gminie, w której masz zameldowanie na pobyt stały.
+Jeżeli chcesz zmienić tymczasowo, na jeden raz, miejsce głosowania w wyborach i referendach ogólnopolskich (ale nie samorządowych i lokalnych), skorzystaj z usługi Zmień jednorazowo miejsce głosowania.
+Jeżeli chcesz głosować za granicą tylko podczas tych wyborów, dopisz się do spisu wyborców za granicą.
+Kto może złożyć
+Każdy, kto spełnia wszystkie poniższe warunki:
+ma polskie obywatelstwo,
+stale mieszka na terenie gminy bez zameldowania na pobyt stały,
+może głosować, czyli:
+w dniu wyborów ma ukończone 18 lat,
+ma prawo wybierania (czynne prawo wyborcze).
+Masz czynne prawo wyborcze, jeśli:
+masz ukończone 18 lat,
+sąd ani Trybunał Stanu nie orzekły, że pozbawiają cię praw wyborczych,
+nie ubezwłasnowolniono cię.
+Jeśli jesteś osobą z niepełnosprawnością i chcesz zmienić obwód głosowania na taki, który jest dostosowany do twoich potrzeb, skontaktuj się z urzędem gminy. Tam uzyskasz informacje na temat obwodów dostosowanych do potrzeb osób z niepełnosprawnościami.
+Co musisz przygotować
+dokument tożsamości – na przykład dowód osobisty lub paszport,
+wniosek o dopisanie do stałego obwodu głosowania, właściwego dla adresu stałego zamieszkania (wzór wniosku o ujęcie w stałym obwodzie głosowania, plik .pdf, 21 MB). Podaj we wniosku swoje dane:
+nazwisko,
+imię (imiona),
+numer PESEL,
+oświadczenie dotyczące adresu stałego zamieszkania.
+Co musisz zrobić
+Wniosek wypełnisz w urzędzie gminy. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Złóż wniosek w urzędzie gminy. Szczegóły znajdziesz w sekcji Gdzie składasz.
+Kiedy składasz
+W dowolnym momencie, ale pamiętaj, że urząd ma 5 dni, aby rozpatrzyć twój wniosek. Jeśli odwołasz się od jego decyzji i złożysz skargę, urząd będzie potrzebował więcej czasu, aby ją rozpatrzyć.
+Jeśli zmieniłeś(-aś) stały obwód głosowania, ale chcesz powrócić do obwodu zgodnego z miejscem zameldowania na pobyt stały, zgłoś się do urzędu gminy właściwego dla zmienionego obwodu głosowania.
+Gdzie składasz
+W urzędzie gminy, na terenie której mieszkasz na stałe.
+Ile zapłacisz
+Nic
+Informacje dodatkowe
+Informacje:
+kto może wziąć udział w poszczególnych wyborach ze względu na obywatelsto, znajdziesz w karcie
+z jakich usług wyborczych mogą skorzystać obywatele:
+Polski,
+Unii Europejskiej, któzy nie są obywatelami Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+znajdziesz w karcie
+Informacje dodatkowe
+Jesteś obywatelem:
+Polski,
+Unii Europejskiej, który nie jest obywatelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+sprawdź dodatkowe informacje:
+w jakich wyborach możesz wziąć udział,
+z jakich usług wyborczych możesz skorzystać w poszczególnych wyborach.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy
+Ostatnia aktualizacja: 01.09.2026 09:31
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Cyfryzacji
+Informacje:
+Przez internet
+W urzędzie
+Jesteś obywatelem Unii Europejskiej (UE), ale nie masz polskiego obywatelstwa? Jesteś obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej?
+Jeśli chcesz głosować w Polsce, dopisz się do Centralnego Rejestru Wyborców.
+Kto może złożyć
+Każdy, kto:
+jest obywatelem kraju UE innego niż Polska lub jest obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+będzie głosować w Polsce,
+stale mieszka na terenie danej gminy,
+może głosować, czyli ma czynne prawo wyborcze.
+Masz czynne prawo wyborcze, jeśli:
+masz ukończone 18 lat,
+sąd ani Trybunał Stanu nie orzekły, że pozbawiają cię praw wyborczych,
+nie ubezwłasnowolniono cię.
+Co musisz przygotować
+dane do logowania przez login.gov.pl (może to być na przykład login z hasłem do profilu zaufanego lub e-dowód),
+Dodatkowe informacje na temat sposobów logowania znajdziesz na stronie informacyjnej login.gov.pl.
+Pamiętaj, że wniosek online możesz złożyć tylko przez e-Doręczenia. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+Co musisz zrobić
+Kliknij Złóż wniosek.
+System przekieruje cię na stronę login.gov.pl. Wybierz sposób logowania.
+Podaj swój adres stałego miejsca zamieszkania i zaznacz oświadczenie, że mieszkasz pod tym adresem na stałe.
+Sprawdź wniosek i podpisz go elektronicznie.
+Status swojej sprawy sprawdzisz w sekcji Twoje sprawy.
+Kiedy składasz
+W dowolnym momencie, ale pamiętaj, że urząd ma 5 dni, aby rozpatrzyć twój wniosek.
+Jeśli pojawią się wątpliwości, urząd ma 7 dni, aby je wyjaśnić, a następnie 5 dni, aby rozpatrzyć twój wniosek.
+Gdzie składasz
+Online, w urzędzie gminy, na terenie której mieszkasz na stałe.
+Ile zapłacisz
+Usługa jest bezpłatna.
+Czym jest Centralny Rejestr Wyborców
+Centralny Rejestr Wyborców (CRW) to rejestr w systemie teleinformatycznym, który został utworzony na podstawie Kodeksu wyborczego.
+W rejestrze są dane o wszystkich wyborcach – zarówno o obywatelach polskich, jak i cudzoziemcach uprawnionych do głosowania w Polsce.
+Rejestr służy do:
+przygotowania wyborów i referendów,
+ustalania liczby wyborców,
+sporządzania spisów wyborców.
+Informacje dodatkowe
+Jesteś obywatelem:
+Polski,
+Unii Europejskiej, który nie jest obywatelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+sprawdź dodatkowe informacje:
+w jakich wyborach możesz wziąć udział,
+z jakich usług wyborczych możesz skorzystać w poszczególnych wyborach.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy
+Jesteś obywatelem Unii Europejskiej (UE), ale nie masz polskiego obywatelstwa? Jesteś obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej?
+Jeśli chcesz głosować w Polsce, dopisz się do Centralnego Rejestru Wyborców.
+Kto może złożyć
+Każdy, kto:
+jest obywatelem kraju UE innego niż Polska lub jest obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+będzie głosować w Polsce,
+stale mieszka na terenie danej gminy,
+może głosować, czyli masz czynne prawo wyborcze.
+Masz czynne prawo wyborcze, jeśli:
+masz ukończone 18 lat,
+sąd ani Trybunał Stanu nie orzekły, że pozbawiają cię praw wyborczych,
+nie ubezwłasnowolniono cię.
+Co musisz przygotować
+dokument tożsamości − na przykład paszport,
+wniosek o dopisanie do Centralnego Rejestru Wyborców (wzór wniosku o ujęcie w stałym obwodzie, .pdf, 21 MB) − podaj we wniosku swoje dane:
+nazwisko,
+imię (imiona),
+obywatelstwo,
+numer PESEL,
+numer paszportu lub innego dokumentu tożsamości wnioskodawcy,
+oświadczenie dotyczące adresu stałego zamieszkania.
+Jeśli nie masz numeru PESEL, podaj dodatkowe informacje:
+płeć,
+status cudzoziemca:
+UE − jeśli masz obywatelstwo UE,
+CUE − jeśli nie masz obywatelstwa UE, ale jesteś członkiem rodziny obywatela UE,
+NUE − jeśli nie spełniasz wymagań dla UE ani CUE,
+dane rodziców:
+imię (imiona) i nazwisko rodowe matki,
+numer PESEL matki (jeśli ma PESEL),
+imię (imiona) i nazwisko rodowe ojca,
+numer PESEL ojca (jeśli ma PESEL),
+twoje dane:
+data urodzenia,
+miejsce urodzenia,
+stan cywilny (kawaler/panna lub żonaty/zamężna),
+oznaczenie aktu urodzenia,
+oznaczenie urzędu stanu cywilnego, w którym został sporządzony twój akt urodzenia,
+dane twojego małżonka lub twojej małżonki:
+imię (imiona) i nazwisko rodowe,
+numer PESEL (jeśli ma PESEL),
+data zawarcia związku małżeńskiego,
+dane dotyczące małżeństwa:
+oznaczenie aktu małżeństwa,
+oznaczenie urzędu stanu cywilnego, w którym został sporządzony akt małżeństwa,
+dane o rozwiązaniu małżeństwa:
+data rozwiązania związku małżeńskiego,
+sygnatura akt i oznaczenie sądu, który rozwiązał małżeństwo,
+sygnatura akt i oznaczenie sądu, który ustalił nieistnienie małżeństwa,
+sygnatura akt i oznaczenie sądu, który unieważnił małżeństwo,
+dane o zgonie małżonka lub małżonki:
+data zgonu albo data znalezienia zwłok,
+oznaczenie aktu zgonu,
+oznaczenie urzędu stanu cywilnego, w którym sporządzono akt zgonu.
+Co musisz zrobić
+Wniosek wypełnisz w urzędzie gminy. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+Złóż wniosek w urzędzie gminy. Szczegóły znajdziesz w sekcji Gdzie składasz.
+Kiedy składasz
+W dowolnym momencie, ale pamiętaj, że urząd ma 5 dni, aby rozpatrzyć twój wniosek.
+Jeśli pojawią się wątpliwości, urząd ma 7 dni, aby je wyjaśnić, a następnie 5 dni, aby rozpatrzyć twój wniosek.
+Gdzie składasz
+W urzędzie gminy, na terenie której mieszkasz na stałe.
+Ile zapłacisz
+Usługa jest bezpłatna.
+Czym jest Centralny Rejestr Wyborców
+Centralny Rejestr Wyborców (CRW) to rejestr w systemie teleinformatycznym, który został utworzony na podstawie Kodeksu wyborczego.
+W rejestrze są dane o wszystkich wyborcach – zarówno o obywatelach polskich, jak i cudzoziemcach uprawnionych do głosowania w Polsce.
+Rejestr służy do:
+przygotowania wyborów i referendów,
+ustalania liczby wyborców,
+sporządzania spisów wyborców.
+Informacje dodatkowe
+Jesteś obywatelem:
+Polski,
+Unii Europejskiej, który nie jest obywatelem Polski,
+Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej,
+sprawdź dodatkowe informacje:
+w jakich wyborach możesz wziąć udział,
+z jakich usług wyborczych możesz skorzystać w poszczególnych wyborach.
+Podstawa prawna
+Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy
+Ostatnia aktualizacja: 01.09.2026 09:31
+Instytucja odpowiedzialna za usługę: Ministerstwo Cyfryzacji
+Instytucja odpowiedzialna za dokument: Ministerstwo Cyfryzacji
+Twoje odpowiedzi
+Chcę
+Zmień odpowiedź
+Zacznij od początku
