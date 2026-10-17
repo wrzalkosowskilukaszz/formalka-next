@@ -81,7 +81,8 @@ export function omitted(actText, extractText) {
   const quoted = new Set();
   const partial = [];
   for (const u of all) {
-    const inExtract = u.paras.map((p) => p.text.length > 0 && ext.includes(keyOf(p.text)));
+    // A repealed or very short paragraph ("(uchylony)") is found anywhere, so it does not make its article quoted.
+    const inExtract = u.paras.map((p) => p.text.length >= 30 && !isRepealed(p.text) && ext.includes(keyOf(p.text)));
     if (!inExtract.some(Boolean)) continue;
     quoted.add(u.id);
     const missing = u.paras.filter((p, i) => !inExtract[i] && p.text && !isRepealed(p.text))

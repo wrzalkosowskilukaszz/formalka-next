@@ -59,8 +59,8 @@ test('a reference closed by another act\'s title is not the act\'s own', () => {
 });
 
 test('a regulation is read by its paragraphs (§)', () => {
-  const reg = '§ 5. 1. Dyrektor przyjmuje ucznia.\n2. Nie stosuje się § 6.\n§ 6. Przepis § 5 ust. 1 stosuje się z wyjątkiem klasy I.\n§ 7. Inny.\n';
-  const r = omitted(reg, '§ 5. 1. Dyrektor przyjmuje ucznia.');
+  const reg = '§ 5. 1. Dyrektor szkoły przyjmuje ucznia przybywającego z zagranicy.\n2. Nie stosuje się § 6.\n§ 6. Przepis § 5 ust. 1 stosuje się z wyjątkiem klasy I.\n§ 7. Inny.\n';
+  const r = omitted(reg, '§ 5. 1. Dyrektor szkoły przyjmuje ucznia przybywającego z zagranicy.');
   assert.equal(r.unit, '§');
   assert.deepEqual(r.partial[0], { id: '5', missing: [{ n: '2', exception: 'Nie stosuje się', head: 'Nie stosuje się § 6.' }] });
   assert.deepEqual(r.referring.map((x) => [x.id, x.names, x.exception]), [['6', ['5'], 'z wyjątkiem']]);
@@ -70,4 +70,9 @@ test('a shared opening does not make another article quoted', () => {
   const t = '     Art. 8e. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) wzór wniosku o świadczenie.\n     Art. 24d. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) sposób przekazywania informacji.\n';
   const r = omitted(t, 'Art. 8e. Minister właściwy do spraw wewnętrznych określi, w drodze rozporządzenia: 1) wzór wniosku o świadczenie.');
   assert.deepEqual(r.quoted, ['8e']);
+});
+
+test('a repealed paragraph does not make its article quoted', () => {
+  const t = '     Art. 3. 1. (uchylony)\n     2. Świadczeniodawca prowadzi wykaz oczekujących na udzielenie świadczenia.\n     Art. 4. 1. (uchylony)\n';
+  assert.deepEqual(omitted(t, 'Art. 9. 1. (uchylony)').quoted, []);
 });
