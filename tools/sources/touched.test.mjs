@@ -1,7 +1,7 @@
 // The amended-articles reader, on a fixture shaped like pdftotext output. Run: node --test tools/sources/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { touchedArticles, citedBy } from './touched.mjs';
+import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy } from './touched.mjs';
 
 const title = 'Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych';
 const fixture = `     Art. 6. W ustawie z dnia 24 września 2010 r. o ewidencji ludności w art. 8 dodaje się pkt 24b.
@@ -87,4 +87,37 @@ test('citedBy matches ranges, lettered articles and either end of a range', () =
   assert.equal(cited('50a'), true);
   assert.equal(cited('1–3'), true);
   assert.equal(cited('23c–23i'), false);
+});
+
+test('a consolidated text is resolved to its base act, whose amendments are listed; a bare obwieszczenie throws', async () => {
+  const meta = {
+    'DU/2025/734': { type: 'Obwieszczenie', title: 'Obwieszczenie … Kodeks wykroczeń', references: { 'Tekst jednolity dla aktu': [{ id: 'DU/1971/114' }] } },
+    'DU/1971/114': { type: 'Ustawa', title: 'Kodeks wykroczeń', references: { 'Akty zmieniające': [
+      { id: 'DU/2025/1872', date: '2026-01-29' }, { id: 'DU/2025/1814', date: '2026-01-02' }, { id: 'DU/2024/1', date: '2024-05-01' }] } },
+    'DU/2000/1': { type: 'Obwieszczenie', title: 'Obwieszczenie bez aktu', references: {} },
+  };
+  const get = async (id) => meta[id];
+  const r = await actWithAmendments('DU/2025/734', get);
+  assert.equal(r.eli, 'DU/1971/114');
+  assert.match(r.note, /consolidated text of DU\/1971\/114/);
+  assert.deepEqual(amendingAfter(r.act, '2025-06-02').map((x) => x.id), ['DU/2025/1814', 'DU/2025/1872']);
+  assert.equal((await actWithAmendments('DU/1971/114', get)).note, null);
+  await assert.rejects(actWithAmendments('DU/2000/1', get), /names no base act/);
+});
+
+test('transitional articles that apply the amended act are found, with the articles they name', () => {
+  const text = `     Art. 19. W ustawie z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom
+wprowadza się zmiany: 1) po art. 5 dodaje się art. 5a w brzmieniu: „Art. 5a. 1. Nowy przepis, ustawy zmienianej w art. 2.”;
+     Art. 40. Jeżeli podmiot złożył powiadomienie przed dniem wejścia w życie niniejszej ustawy, zgodnie z przepisami art. 22
+ustawy zmienianej w art. 17, stosuje się przepisy art. 22 ust. 1 tej ustawy.
+      Art. 41. W okresie 3 lat od dnia wejścia w życie niniejszej ustawy do obywateli Ukrainy przebywających legalnie na
+terytorium Rzeczypospolitej Polskiej stosuje się odpowiednio przepisy art. 3 ust. 1 pkt 12 i art. 5a ustawy zmienianej w art. 19.
+      Art. 42. Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i niezakończonych
+przed dniem wejścia w życie art. 19 stosuje się przepisy dotychczasowe.
+      Art. 54. Ustawa wchodzi w życie z dniem 5 marca 2026 r.
+`;
+  assert.deepEqual(appliedBy(text, ['Art. 19']), [{ article: 'Art. 41', names: ['3', '5a'] }, { article: 'Art. 42', names: [] }]);
+  // It may over-list: art. 19 here is the amending act's own article. The output says to read each hit by hand.
+  assert.deepEqual(appliedBy(text, ['Art. 17']), [{ article: 'Art. 40', names: ['22'] }, { article: 'Art. 42', names: ['19'] }]);
+  assert.deepEqual(appliedBy(text, ['Art. 54']).map((x) => x.article), ['Art. 42']);
 });

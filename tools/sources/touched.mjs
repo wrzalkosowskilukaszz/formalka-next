@@ -52,6 +52,28 @@ export function touchedArticles(text, actTitle) {
   return found;
 }
 
+// Articles of the amending act that do not change the act but apply it: transitional rules naming "ustawy zmienianej
+// w art. 19" (or "rozporządzenia zmienianego w § 1"). Dz.U. 2026 poz. 203 art. 41 extends the work act's art. 3 ust. 1
+// pkt 12 and art. 5a to Ukrainians without temporary protection for 3 years; the reader listed only art. 19's changes,
+// so the work map missed it (research/2026-10-17-work/sources/CHECK.md). Each hit is listed with the articles it names.
+export function appliedBy(text, amending) {
+  const flat = flatten(text);
+  const ids = new Set(amending.map((a) => a.replace(/^(Art\.|§) /, '')));
+  const heads = [...flat.matchAll(/(?:^| )(Art\.|§) (\d+[a-z]*)\. (?=[A-ZŁŚŻŹĆ0-9„(])/g)];
+  const out = new Map();
+  // "w ustawach zmienianych niniejszą ustawą" covers every amended act (Dz.U. 2025 poz. 1794 art. 12).
+  for (const ref of flat.matchAll(/(?:ustaw\S* zmienian\S* w art\.|rozporządzeni\S* zmienian\S* w §) (\d+[a-z]*)\b|ustaw\S* zmienian\S* niniejszą ustawą/g)) {
+    if (ref[1] && !ids.has(ref[1])) continue;
+    const at = heads.filter((h) => h.index < ref.index).pop();
+    if (!at || ids.has(at[2])) continue;
+    const end = heads.find((h) => h.index > at.index && h[1] === at[1])?.index ?? flat.length;
+    const body = flat.slice(at.index, end);
+    const named = [...body.matchAll(at[1] === '§' ? /§ (\d+[a-z]*)/g : /\bart\. (\d+[a-z]*)/g)].map((x) => x[1]).filter((n) => n !== at[2] && !ids.has(n));
+    out.set(`${at[1]} ${at[2]}`, [...new Set([...(out.get(`${at[1]} ${at[2]}`) ?? []), ...named])]);
+  }
+  return [...out].map(([article, names]) => ({ article, names }));
+}
+
 // "2-4,12,50a" -> a predicate on an article id such as "3", "50a" or a range "23c–23i" (either end counts).
 export function citedBy(list) {
   const set = new Set();
@@ -63,15 +85,31 @@ export function citedBy(list) {
   return (id) => id.split(/[–-]/).some((end) => set.has(end));
 }
 
+// The acts that amended an act after a date, from its api.sejm.gov.pl metadata, oldest first.
+export function amendingAfter(meta, since) {
+  return (meta.references?.['Akty zmieniające'] ?? []).filter((x) => (x.date ?? '') >= since).sort((a, b) => a.date.localeCompare(b.date));
+}
+// A consolidated text (an obwieszczenie, such as DU/2025/734 for the Petty Offences Code) has no "Akty zmieniające"
+// of its own: they are on the act it consolidates ("Tekst jednolity dla aktu"). Given one, both tools printed
+// "0 amending act(s)" with no warning (correctness audit, 17.10.2026); they now list the base act's amendments.
+export async function actWithAmendments(eli, get) {
+  const meta = await get(eli);
+  const base = meta.references?.['Tekst jednolity dla aktu']?.[0]?.id;
+  if (base) return { eli: base, act: await get(base), note: `${eli} is a consolidated text of ${base}; listing the amendments of ${base}.` };
+  if (meta.type === 'Obwieszczenie') throw new Error(`${eli} is an obwieszczenie that names no base act; give the base act's ELI`);
+  return { eli, act: meta, note: null };
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   const [eli, since] = args;
   const cite = args.includes('--cite') ? citedBy(args[args.indexOf('--cite') + 1] ?? '') : null;
   if (!eli || !since) { console.error('usage: node tools/sources/touched.mjs <ELI> <YYYY-MM-DD> [--cite 2-4,12,50]'); process.exit(2); }
   const get = async (id) => (await fetch(`https://api.sejm.gov.pl/eli/acts/${id}`)).json();
-  const act = await get(eli);
-  const changes = (act.references?.['Akty zmieniające'] ?? []).filter((x) => (x.date ?? '') >= since).sort((a, b) => a.date.localeCompare(b.date));
-  console.log(`${eli}: ${act.title}`);
+  const { eli: base, act, note } = await actWithAmendments(eli, get);
+  if (note) console.log(note);
+  const changes = amendingAfter(act, since);
+  console.log(`${base}: ${act.title}`);
   console.log(`${changes.length} amending act(s) in force from ${since}:`);
   let flagged = 0;
   for (const c of changes) {
@@ -79,8 +117,14 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const dir = mkdtempSync(join(tmpdir(), 'touched-'));
     writeFileSync(join(dir, 'act.pdf'), pdf);
     execFileSync('pdftotext', ['-layout', join(dir, 'act.pdf'), join(dir, 'act.txt')]);
-    const hits = touchedArticles(readFileSync(join(dir, 'act.txt'), 'utf8'), act.title);
+    const text = readFileSync(join(dir, 'act.txt'), 'utf8');
+    const hits = touchedArticles(text, act.title);
     if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" or "W rozporządzeniu …" opening found; read it by hand`); flagged++; continue; }
+    for (const t of appliedBy(text, hits.map((h) => h.article))) {
+      const mark = cite ? t.names.filter(cite) : [];
+      flagged += cite ? 1 : 0;
+      console.log(`- ${c.id} ${t.article} applies the amended act (a transitional rule; its own date may differ): names ${t.names.join(', ') || 'no article'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}  <- read it by hand`);
+    }
     for (const h of hits) {
       const mark = cite ? h.changes.filter(cite) : [];
       flagged += mark.length + (cite ? h.annex.length : 0);

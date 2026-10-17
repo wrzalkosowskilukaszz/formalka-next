@@ -2,7 +2,7 @@
 rule: After listing the later amendments, list every article each one changes (node tools/sources/touched.mjs <ELI> <date> --cite <articles>), not only the articles you expect to have changed.
 kind: legal-source
 files: [research/**, audit/**/reference/**, docs/formalka-next/maps/**]
-check: tools/sources/touched.mjs::flags amending articles that touch the cited articles
+check: tools/sources/touched.mjs::flags amending articles that touch the cited articles, and transitional articles that apply the amended act
 date: 2026-10-17
 commits: []
 ---
@@ -20,3 +20,5 @@ commits: []
 **Found in use (17.10, civil status sources).** The first version failed on short titles ("o cudzoziemcach") and on titles that amending acts write with a dash ("– Prawo o aktach…", "– Kodeks…"). Both are changed in the lab, with tests; not independently verified.
 
 **Found in use (17.10, vehicle sources).** The tool threw "not an act title" for regulations, so the amendment of the licence documents regulation (Dz.U. 2026 poz. 1162) was read by hand, and only for the points expected. The extract header then said 1162 did not change the quoted parts, when it changes the quoted § 5 ust. 6 and § 14 ust. 4. A separate checking agent found it (`research/2026-10-17-vehicles/sources/CHECK.md`). The tool now reads regulations too, listing the paragraphs (§) each amending paragraph changes, with tests; changed in the lab, not independently verified. It may over-list a paragraph named in a footnote that falls inside the amending text.
+
+**Found in use (17.10, the work map).** The checking agent found a rule no tool listed: Dz.U. 2026 poz. 203 art. 41 extends the work act's art. 3 ust. 1 pkt 12 and art. 5a to Ukrainian citizens staying legally without temporary protection, for 3 years from 5.03.2026. It changes no wording; it applies "ustawy zmienianej w art. 19". The same holds for Dz.U. 2025 poz. 1794 art. 12 and 14 (the old wording for cases opened earlier). `touched.mjs` now also lists such articles ("applies the amended act … read it by hand"), with a test. Run on the work act, it lists 203 art. 41 and 1794 art. 12, 14 and 17.
