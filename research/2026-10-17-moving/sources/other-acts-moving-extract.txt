@@ -1,0 +1,113 @@
+# Other acts for the moving map, read after the independent check of 17.10.2026: the special act on aid to Ukrainian citizens (consolidated Dz.U. 2026 poz. 1293) art. 42m and 42q; the act on foreigners (UoC, consolidated Dz.U. 2025 poz. 1079) art. 108 ust. 1-2, 244 ust. 4 and 245 ust. 3-4, with Dz.U. 2025 poz. 1794 art. 1 pkt 14 lit. a; the informatization act (consolidated Dz.U. 2026 poz. 1241) art. 20a ust. 1 and 20c ust. 1; the e-delivery act (consolidated Dz.U. 2026 poz. 3) art. 147 ust. 2; the forms regulation (consolidated Dz.U. 2022 poz. 2070) § 1-3 and one note of its annex 3
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout (the regulation: pdftotext -raw); page headers dropped; footnotes kept where they fall. sha256: DU/2026/1293 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177; DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1794 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; DU/2026/1241 d57ff9c488b88b26a9b2841bf6f71ca684848a845c7c82bb1ae4512ea232f54d; DU/2026/3 47f3509d15ca7b371f2a84824922bbd573803b769b3093992250f5efcff458c1; DU/2022/2070 30d18c8133b0fb26d376467b35e28ce9b7e429c874fb4eee5f577e134ac173dd.
+# Dates: the special act art. 42c-42w apply from 4.05.2026 (M.P. 2026 poz. 371; research/2026-10-17-ukr/sources/specustawa-2026-1293-art42c-42x-cukr-extract.txt). UoC art. 108 ust. 1 pkt 1 in the wording of Dz.U. 2025 poz. 1794 art. 1 pkt 14 lit. a applies from 27.04.2026 (its art. 17 ust. 1 pkt 1 and 19 pkt 2; M.P. 2026 poz. 370); the consolidated Dz.U. 2025 poz. 1079 prints the earlier wording (the stamp). The forms regulation: no amendment after its consolidated text (tools/sources/amendments.mjs DU/2022/2070 2022-09-05, on 17.10.2026; its only amendment, Dz.U. 2020 poz. 930, is in the consolidated text).
+# Later amendments (node tools/sources/touched.mjs, 17.10.2026): the informatization act after its legal state of 6.08.2026, only Dz.U. 2020 poz. 2320 art. 105 (art. 3, 16 and 19a, from 1.10.2029); the e-delivery act after 1.12.2025, only Dz.U. 2026 poz. 507 art. 10 (art. 152); UoC art. 244-245 and the special act art. 42m and 42q: none (UoC: Dz.U. 2025 poz. 1794 art. 1 pkt 47 changes only art. 244 ust. 3; the special act: research/2026-10-17-ukr/sources/).
+# The forms' own notes are partly in a font whose text layer pdftotext garbles; the README quotes them as read on the rendered pages 5, 8, 12 and 14 of Dz.U. 2022 poz. 2070. Only the annex 3 note below has a clean text layer.
+
+[The special act art. 42m (a CUKR card shows no registered address), from 4.05.2026]
+      Art. 42m. W karcie pobytu wydanej w przypadku, o którym mowa w art. 42c lub art. 42d:
+1)    umieszcza się adnotację „Poprzednio posiadacz ochrony czasowej”;
+2)    umieszcza się informację o udzieleniu jej posiadaczowi zezwolenia na pobyt czasowy;
+3)    nie umieszcza się adresu zameldowania na pobyt stały lub czasowy.
+
+[The special act art. 42q (who exchanges a CUKR card), from 4.05.2026]
+   Art. 42q. 1. Kartę pobytu wydaną w przypadku, o którym mowa w art. 42c lub art. 42d, wymienia lub odmawia jej
+wymiany wojewoda właściwy ze względu na miejsce pobytu obywatela Ukrainy.
+    2. Odmowa wymiany karty pobytu wydanej w przypadku, o którym mowa w art. 42c lub art. 42d, następuje w drodze
+decyzji.
+     3. Szef Urzędu do Spraw Cudzoziemców jest organem wyższego stopnia w rozumieniu przepisów ustawy z dnia
+14 czerwca 1960 r. – Kodeks postępowania administracyjnego w stosunku do wojewody w sprawie wymiany karty pobytu
+wydanej w przypadku, o którym mowa w art. 42c lub art. 42d.
+
+[UoC art. 108 ust. 1-2 (a stay while a timely temporary permit application runs), as printed in Dz.U. 2025 poz. 1079]
+    Art. 108. 1. Jeżeli termin na złożenie wniosku o udzielenie cudzoziemcowi zezwolenia na pobyt czasowy został za-
+chowany i wniosek nie zawiera braków formalnych lub braki formalne zostały uzupełnione w terminie:
+1)   wojewoda umieszcza w dokumencie podróży cudzoziemca odcisk stempla potwierdzającego złożenie wniosku o udzie-
+     lenie zezwolenia na pobyt czasowy;
+2)   pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia,
+     w którym decyzja w sprawie udzielenia zezwolenia na pobyt czasowy stanie się ostateczna.
+      2. Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi zezwo-
+lenia na pobyt czasowy na wniosek strony.
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 14 lit. a (art. 108 ust. 1 pkt 1: a certificate instead of the stamp), from 27.04.2026]
+14) w art. 108:
+    a)    w ust. 1 pkt 1 otrzymuje brzmienie:
+          „1)   wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie zezwolenia
+                na pobyt czasowy;”,
+
+[UoC art. 244 ust. 4 (no address on the card when a temporary stay over 2 months was not registered)]
+    4. W karcie pobytu nie umieszcza się danych, o których mowa w ust. 1 pkt 3, gdy cudzoziemiec nie zameldował się
+w miejscu pobytu czasowego trwającego ponad 2 miesiące.
+
+[UoC art. 245 ust. 3-4 (who exchanges a residence card: the voivode of the place of stay; for a humanitarian stay, the Border Guard)]
+     3. Kartę pobytu wymienia lub odmawia jej wymiany wojewoda właściwy ze względu na miejsce pobytu cudzoziemca.
+     4. Kartę pobytu w przypadku cudzoziemca, któremu udzielono zgody na pobyt ze względów humanitarnych, wymienia
+lub odmawia jej wymiany komendant oddziału Straży Granicznej lub komendant placówki Straży Granicznej, właściwy ze
+względu na miejsce pobytu cudzoziemca.
+
+[The informatization act art. 20a ust. 1 (the means of logging in to an online public service)]
+     Art. 20a. 1. Uwierzytelnienie użytkownika systemu teleinformatycznego podmiotu publicznego, w którym udostęp-
+niane są usługi online, wymaga użycia:
+1)   środka identyfikacji elektronicznej wydanego w systemie identyfikacji elektronicznej przyłączonym do węzła krajowego
+     identyfikacji elektronicznej, o którym mowa w art. 21a ust. 1 pkt 2 lit. a ustawy z dnia 5 września 2016 r. o usługach
+     zaufania oraz identyfikacji elektronicznej (Dz. U. z 2024 r. poz. 1725 oraz z 2026 r. poz. 252), lub
+2)   środka identyfikacji elektronicznej wydanego w notyfikowanym systemie identyfikacji elektronicznej, lub
+3)   danych weryfikowanych za pomocą kwalifikowanego certyfikatu podpisu elektronicznego, jeżeli te dane pozwalają
+     na identyfikację i uwierzytelnienie wymagane w celu realizacji usługi online.
+
+[The informatization act art. 20c ust. 1 (every way of confirming a trusted profile needs a PESEL: in pkt 1 lit. b the person must hold one)]
+     Art. 20c. 1. Potwierdzenia profilu zaufanego, które polega na weryfikacji zgodności danych zawartych we wniosku
+o jego wydanie ze stanem faktycznym, oraz unieważnienia profilu zaufanego dokonuje:
+1)   punkt potwierdzający profil zaufany na podstawie:
+     a)   dowodu osobistego albo paszportu zawierającego:
+          – imię (imiona),
+          – nazwisko,
+          – numer PESEL, albo
+     b) innego dokumentu tożsamości, jeżeli umożliwia on jednoznaczne potwierdzenie tożsamości osoby wnioskującej
+        o potwierdzenie profilu zaufanego posiadającej numer PESEL;
+2)   samodzielnie osoba fizyczna przy wykorzystaniu kwalifikowanego podpisu elektronicznego, w przypadku gdy kwali-
+     fikowany certyfikat podpisu elektronicznego zawiera dane obejmujące co najmniej:
+     a)   imię (imiona),
+     b) nazwisko,
+     c)   numer PESEL;
+3)   samodzielnie osoba fizyczna przy nieodpłatnym wykorzystaniu środka identyfikacji elektronicznej stosowanego do
+     uwierzytelniania w systemie teleinformatycznym banku krajowego lub innego przedsiębiorcy spełniającym warunki,
+     o których mowa w art. 20d pkt 1, o ile środek ten potwierdza dane obejmujące co najmniej:
+     a)   imię (imiona),
+     b) nazwisko,
+     c)   numer PESEL;
+4)   samodzielnie osoba fizyczna przy wykorzystaniu profilu osobistego.
+
+[The e-delivery act art. 147 ust. 2 (ePUAP counted as registered e-delivery until 31.12.2025)]
+     2.23) Doręczenie korespondencji nadanej przez osobę fizyczną lub podmiot niebędący podmiotem publicznym, będące
+użytkownikami konta w ePUAP, do podmiotu publicznego posiadającego elektroniczną skrzynkę podawczą w ePUAP,
+w ramach usługi udostępnianej w ePUAP, jest równoważne w skutkach prawnych z doręczeniem przy wykorzystaniu pu-
+blicznej usługi rejestrowanego doręczenia elektronicznego do dnia 31 grudnia 2025 r.
+
+[The forms regulation § 1-3 (the six forms and two certificates; filled in in Polish)]
+§ 1. Rozporządzenie określa:
+1) wzór i sposób wypełniania formularza zgłoszenia pobytu stałego;
+2) wzór i sposób wypełniania formularza zgłoszenia pobytu czasowego;
+3) wzór i sposób wypełniania formularza zgłoszenia wymeldowania z miejsca pobytu stałego;
+4) wzór i sposób wypełniania formularza zgłoszenia wymeldowania z miejsca pobytu czasowego;
+5) wzór i sposób wypełniania formularza zgłoszenia wyjazdu poza granice Rzeczypospolitej Polskiej;
+6) wzór i sposób wypełniania formularza zgłoszenia powrotu z wyjazdu poza granice Rzeczypospolitej Polskiej;
+7) wzór zaświadczenia o zameldowaniu na pobyt stały;
+8) wzór zaświadczenia o zameldowaniu na pobyt czasowy.
+§ 2. 1. Wzór formularza zgłoszenia pobytu stałego jest określony w załączniku nr 1 do rozporządzenia.
+2. Wzór formularza zgłoszenia pobytu czasowego jest określony w załączniku nr 2 do rozporządzenia.
+3. Wzór formularza zgłoszenia wymeldowania z miejsca pobytu stałego jest określony w załączniku nr 3 do rozporzą-
+dzenia.
+4. Wzór formularza zgłoszenia wymeldowania z miejsca pobytu czasowego jest określony w załączniku nr 4 do rozpo-
+rządzenia.
+5. Wzór formularza zgłoszenia wyjazdu poza granice Rzeczypospolitej Polskiej jest określony w załączniku nr 5 do
+rozporządzenia.
+6. Wzór formularza zgłoszenia powrotu z wyjazdu poza granice Rzeczypospolitej Polskiej trwającego dłużej niż 6 miesięcy
+jest określony w załączniku nr 6 do rozporządzenia.
+7. Wzór zaświadczenia o zameldowaniu na pobyt stały jest określony w załączniku nr 7 do rozporządzenia.
+8. Wzór zaświadczenia o zameldowaniu na pobyt czasowy jest określony w załączniku nr 8 do rozporządzenia.
+§ 3. Formularze, o których mowa w § 2, wypełnia się w języku polskim.
+
+[Its annex 3, form EL/WPS/2 (deregistering a permanent stay), the note at the top (page 10)]
+Jeśli wyjeżdżasz za granicę na stałe, wypełnij tylko formularz Zgłoszenie wyjazdu poza granice Rzeczypospolitej Polskiej.
+W ten sposób zostaniesz wymeldowany z obu miejsc pobytu: stałego i czasowego. / If you go abroad permanently, complete only
