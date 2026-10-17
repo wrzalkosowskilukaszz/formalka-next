@@ -1,16 +1,16 @@
 # node prototype/build.mjs && node prototype/test/e2e.mjs (reduced motion, 390x844, light and dark; E also at 1280x900)
-# 2026-10-17T01:14Z commit 7ce207e node v22.22.0
+# 2026-10-17T06:28Z commit 48cf1d4 node v22.22.0
 
-ok   A-citizenship-words (8.4 s)
+ok   A-citizenship-words (8.7 s)
 ok   B-registration-warsaw (10.4 s)
-ok   C-personas-and-handoff (7.1 s)
+ok   C-personas-and-handoff (7.2 s)
 ok   D-route-and-office (7.8 s)
-ok   E-lock-screen-and-desktop (8.1 s)
+ok   E-lock-screen-and-desktop (7.7 s)
 ok   F-study-mode (4.1 s)
-ok   Z1-reflow-320 (2.7 s)
-ok   Z2-text-200 (2.6 s)
-ok   G-waiting-for-office (2.6 s)
-ok   J-residence-scope (2.3 s)
+ok   Z1-reflow-320 (2.6 s)
+ok   Z2-text-200 (2.8 s)
+ok   G-waiting-for-office (2.7 s)
+ok   J-residence-scope (2.2 s)
 ok   H-home-input-open (0.7 s)
 ok   I-correct-an-answer (4.7 s)
 12/12 scenarios passed

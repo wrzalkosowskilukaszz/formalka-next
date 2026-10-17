@@ -1,5 +1,5 @@
 # node --test tools/sources/*.test.mjs
-# 2026-10-17T01:19Z commit 7ce207e node v22.22.0
+# 2026-10-17T06:33Z commit 48cf1d4 node v22.22.0
 
 # Subtest: returns the last entry-into-force article with its exceptions, across page breaks
 ok 1 - returns the last entry-into-force article with its exceptions, across page breaks
@@ -7,15 +7,19 @@ ok 1 - returns the last entry-into-force article with its exceptions, across pag
 ok 2 - an act with one date has no exceptions; text without the article returns null
 # Subtest: lists the articles an amending article changes, skipping quoted wording and stopping at the next article
 ok 3 - lists the articles an amending article changes, skipping quoted wording and stopping at the next article
+# Subtest: a change to the annex is listed apart, with its part and paragraph
+ok 4 - a change to the annex is listed apart, with its part and paragraph
+# Subtest: short titles and titles with a dash match the amending wording
+ok 5 - short titles and titles with a dash match the amending wording
 # Subtest: an act that does not amend this one gives an empty list; a bad title throws
-ok 4 - an act that does not amend this one gives an empty list; a bad title throws
+ok 6 - an act that does not amend this one gives an empty list; a bad title throws
 # Subtest: citedBy matches ranges, lettered articles and either end of a range
-ok 5 - citedBy matches ranges, lettered articles and either end of a range
-# tests 5
+ok 7 - citedBy matches ranges, lettered articles and either end of a range
+# tests 7
 # suites 0
-# pass 5
+# pass 7
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 97.00237
+# duration_ms 82.411228

@@ -88,7 +88,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 | `maps/cukr-ukr.md` | Journey U0–U9, 12 loss points, 20 scenarios, a compare card that never recommends, the 4.03.2027 window. Valid as of 17.10.2026; this goes beyond doc 19's sources-only plan for wave 3, at the owner's request | 72a1d57 |
 | `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
 | `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates | 7ce207e |
-| `maps/civil-status.md` and its sources (`research/2026-10-17-civil/sources/`), after the owner's "Działaj dalej, stan cywilny" | Birth B0–B5, marriage M0–M5, death D0–D2, foreign records F0–F1; 24 loss points, 25 scenarios; a birth case, a marriage case, a calm death page; no chosen names or laws, no computed dates | this commit |
+| `maps/civil-status.md` and its sources (`research/2026-10-17-civil/sources/`), after the owner's "Działaj dalej, stan cywilny" | Birth B0–B5, marriage M0–M5, death D0–D2, foreign records F0–F1; 24 loss points, 25 scenarios; a birth case, a marriage case, a calm death page; no chosen names or laws, no computed dates | 48cf1d4 |
 
 **Found on the way:**
 - **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
@@ -106,5 +106,5 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 - **A near-miss in my own check.** I first checked the nine later amendments of the health act only for the articles I expected to cite, and missed that Dz.U. 2026 poz. 203 changes art. 12 and art. 50. Widening the check found it before anything was written. `tools/sources/touched.mjs` now lists every article each amendment changes and flags the cited ones, with a test; lesson `docs/solutions/2026-10-17-amendments-checked-only-for-expected-articles.md`.
 - **The matters form a chain:** zameldowanie or the PESEL application, then PESEL, the trusted profile, MOS and the residence card; and PESEL UKR, the trusted profile, then the CUKR card. Doc 20 §3 draws it.
 
-**Tests on 7ce207e** (after the health map and the new source tool): as §4, with evaluation 24/24, mutations 40/40 and the source tools 5/5 (`audit/2026-10-16-quality-pass/evidence/`). Everything is pushed to `lab/quality-pass`, which is public.
+**Tests on 48cf1d4** (after the civil status map and the source tool's changes): as §4, with evaluation 24/24, mutations 40/40 and the source tools 7/7 (`audit/2026-10-16-quality-pass/evidence/`). Everything is pushed to `lab/quality-pass`, which is public.
 
