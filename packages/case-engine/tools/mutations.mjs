@@ -18,6 +18,8 @@ export const MUTATIONS = [
   { id: "verify-source-not-compared", file: "src/verify.ts", what: "a swapped source or altered quote passes the content check (round 2 regressions)",
     find: "const src = (x: { ruleRef: string; quotes: Quote[] }) => `${x.ruleRef}|${JSON.stringify(x.quotes)}`;", replace: "const src = (x: { ruleRef: string; quotes: Quote[] }) => (x ? \"\" : \"\");" },
   // The planner
+  { id: "planner-required-event-implies-nothing", file: "src/planner.ts", what: "a granted decision leaves the paper route's card locked behind a conditional call (residence D25)",
+    find: "if (req && lastEvent(state, req.event)?.outcome === req.outcome) mark(l.id);", replace: ";" },
   { id: "planner-prerequisite-not-blocking", file: "src/planner.ts", what: "a prerequisite case doesn't block submission",
     find: "if (l.submits) deps.push(...firstLevelDeps, ...docLevels", replace: "if (l.submits) deps.push(...docLevels" },
   { id: "planner-engine-picks-route", file: "src/planner.ts", what: "the engine picks a route for the person",

@@ -386,6 +386,13 @@ function settleStates(bp: Blueprint, levels: PlanLevel[], state: CaseState) {
     for (const d of byId.get(id)?.dependsOn ?? []) if (!implied.has(d)) { implied.add(d); mark(d); }
   };
   for (const l of levels) if (l.completesWith && lastEvent(state, l.completesWith)) mark(l.id);
+  // So does the event a level requires, with its outcome (a granted decision): the office decided on an
+  // application whose steps came first. The paper route of the residence card has no decision level, so
+  // without this the card waited on a conditional call for missing papers (residence COMPARISON D25).
+  for (const l of levels) {
+    const req = bp.levels.find((x) => x.id === l.id)?.requires;
+    if (req && lastEvent(state, req.event)?.outcome === req.outcome) mark(l.id);
+  }
   const done = (l: PlanLevel): boolean => {
     if (l.order === 0) return l.state === "done";
     if (implied.has(l.id)) return true;

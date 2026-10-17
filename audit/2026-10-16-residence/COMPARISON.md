@@ -37,6 +37,8 @@ Reading the engine's notes found four provisions the draft had missed: art. 225c
 | D22 | Business (RC13) | An employer's attachment only for board, partner or proxy work (art. 106 ust. 2) | The employer's attachment for every business purpose, without a condition | Over-requirement | Low–medium: a sole trader looks for an employer | Finding P10 |
 | D23 | Traineeship or volunteering (RC12) | The organiser's attachment; 340 zł | The same | Agreement | — | — |
 | D24 | Seasonal work (RC14) | 170 zł | 170 zł | Agreement on the fee; nothing else compared (OPEN-R15) | — | — |
+| D25 | The card after a granted decision on the paper route (RC4, found by evaluation scenario res-08 on 17.10) | The card follows the decision (on application, art. 229 ust. 4) | The card stayed locked: "Najpierw: Wezwanie z urzędu", a conditional call for missing papers that may never come. The paper route has no decision level, so nothing implied the earlier steps | **Disagreement (lab engine)** | Medium: the person waits for a call that is not coming | Changed in the lab's engine: the event a level requires (a granted decision) now implies the steps before it, as a recorded later step already did. Engine test, mutation `planner-required-event-implies-nothing`, scenario res-08 |
+| D26 | Paying on the paper route | The fee comes before filing (the registry's own step title says so) | The paper filing step does not depend on paying, so "Opłaty" stays open after the application was filed and decided | Stale to-do | Low | Finding P12 |
 
 ## 2. Restrictions in the prototype, and the test that fails without each
 
@@ -65,6 +67,7 @@ The rest of the suite ran after these changes: unit tests 26/26; e2e 12/12 in bo
 | P9 | Nothing on work while the case is pending, although the act on employing foreigners sets when it is allowed (added 17.10) | Act of 20.03.2025 art. 3 ust. 1 pkt 18, ust. 3 pkt 2, as amended by Dz.U. 2025 poz. 1794 art. 11 |
 | P10 | The employer's attachment is required for every business purpose; the act requires it only for board, partner or proxy work (added 17.10) | UOC art. 106 ust. 2 as amended |
 | P11 | A short stay gets both stamp duties (85 zł and 340 zł) at once; they are alternatives by reason and need a condition (added 17.10) | Stamp duty act, part III item 2a |
+| P12 | On the paper route the filing step does not depend on paying, although the payment step's title says to pay before filing (added 17.10) | Production's guide, steps `paper-pay` and `paper-attachments` |
 
 ## 4. What this does not settle
 

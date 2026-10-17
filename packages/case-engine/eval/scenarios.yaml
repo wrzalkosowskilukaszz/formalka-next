@@ -95,6 +95,59 @@
   expect:
     levelIds: [route, documents, payment, who-files, filing, summons, card]
     forbidden: ["Złóż wniosek w systemie MOS", "Zaświadczenie o złożeniu"]
+# Wave 2 comparison (audit/2026-10-16-residence/COMPARISON.md): the rows where the engine and the draft
+# reference agree, held by scenarios so a registry or engine change that breaks them shows here.
+- id: res-04-internship
+  blueprint: residence-card
+  text: "Mam staż w fundacji w Warszawie i potrzebuję zezwolenia na pobyt."
+  facts: { pobyt_czasowy.purpose: internship }
+  place: { teryt: "1465011", name: Warszawa }
+  expect:
+    fees: [[stamp-duty, 340], [card, 100]]
+    tasks: { documents: [internship-attachment] }
+    offices: { summons: [uw-mazowiecki] }
+- id: res-05-seasonal
+  blueprint: residence-card
+  text: "Pracuję sezonowo przy zbiorach i chcę zezwolenie na pobyt."
+  facts: { pobyt_czasowy.purpose: seasonal }
+  expect:
+    fees: [[stamp-duty-seasonal, 170], [card, 100]]
+- id: res-06-family-in-poland
+  blueprint: residence-card
+  text: "Jestem żoną Polaka, mieszkamy w Warszawie, mam wizę."
+  facts: { pobyt_czasowy.purpose: family }
+  place: { teryt: "1465011", name: Warszawa }
+  expect:
+    fees: [[stamp-duty, 340], [card, 100]]
+    notes: { route: [legal-stay-while-pending, decision-time-suspended, file-in-legal-stay, card-fee-relief] }
+    forbidden: ["Gdy wniosek dotyczy osoby za granicą"]
+- id: res-07-mos-outage
+  blueprint: residence-card
+  text: "W ostatnim dniu mojego legalnego pobytu MOS nie działał, naprawili go w poniedziałek 30 listopada."
+  facts: { pobyt_czasowy.purpose: work }
+  events:
+    - { type: system_restored, date: "2026-11-30", by: user }
+  expect:
+    deadlines: { outage: "2026-12-03" }
+- id: res-08-family-abroad-card-on-application
+  blueprint: residence-card
+  text: "Żona dostała zezwolenie na pobyt, wniosek składałem, gdy była jeszcze za granicą. Co z kartą?"
+  facts: { pobyt_czasowy.purpose: family_abroad }
+  events:
+    - { type: filing, date: "2026-07-01", by: user }
+    - { type: decision_delivered, date: "2026-10-14", outcome: granted, by: user }
+  expect:
+    levels: { card: available }
+    tasks: { card: [paper-card] }
+- id: res-09-refused-no-card
+  blueprint: residence-card
+  text: "Dostałem odmowę zezwolenia na pobyt."
+  facts: { pobyt_czasowy.purpose: work }
+  events:
+    - { type: filing, date: "2026-09-01", by: user }
+    - { type: decision_delivered, date: "2026-10-27", outcome: refused, by: user }
+  expect:
+    levelIds: [route, documents, payment, attachment, filing, confirmation, summons, decision]
 - id: addr-01-non-eu-warsaw
   blueprint: address-registration
   text: "Przeprowadziłem się do Warszawy 28 października, jestem z Indii. Jak się zameldować?"

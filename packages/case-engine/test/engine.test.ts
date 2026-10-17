@@ -314,6 +314,14 @@ test("residence card: the purpose picks MOS or paper; documents are needed to su
   assert.ok(abroad.levels.flatMap((l) => l.tasks).every((t) => !/mos/i.test(t.id)), "no MOS step on the paper path");
   for (const p of [work, abroad]) assert.equal(validatePlan(p, reg, S({})).ok, true);
   assert.equal(nextQuestion(RES, reg, S({}), 0), "pobyt_czasowy.purpose");
+  // A granted decision implies the steps before the card, also on the paper route, which has no decision
+  // level: the card is not held back by a conditional call for missing papers (COMPARISON D25).
+  const decided = (outcome: string) => planCase(RES, reg, S({ "pobyt_czasowy.purpose": "family_abroad" }, {
+    events: [{ id: "f", type: "filing", date: "2026-07-01", by: "user" }, { id: "d", type: "decision_delivered", date: "2026-10-14", outcome, by: "user" }] }));
+  const granted = decided("granted");
+  assert.equal(granted.levels.find((l) => l.id === "card")!.state, "available");
+  assert.deepEqual([granted.levels.find((l) => l.id === "summons")!.state, granted.levels.find((l) => l.id === "summons")!.implied], ["done", true]);
+  assert.equal(decided("refused").levels.find((l) => l.id === "card"), undefined, "no card level after a refusal");
 });
 
 test("offices: only from the registry's office layer, by the user's city; visit messages carry them", () => {
