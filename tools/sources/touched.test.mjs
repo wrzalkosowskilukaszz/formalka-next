@@ -1,7 +1,7 @@
 // The amended-articles reader, on a fixture shaped like pdftotext output. Run: node --test tools/sources/*.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy, latestConsolidated, dateLabel } from './touched.mjs';
+import { touchedArticles, citedBy, amendingAfter, actWithAmendments, appliedBy, latestConsolidated, dateLabel, notInHeader } from './touched.mjs';
 import { entryArticle } from './entry-dates.mjs';
 
 const title = 'Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych';
@@ -180,4 +180,19 @@ test('an act in force before the date whose points apply after it is kept, with 
                                                   Prezydent Rzeczypospolitej Polskiej: A. Duda`);
   assert.deepEqual(laterPoints(e854, '2026-03-10'), { dates: [], announcement: true });
   assert.equal(laterPoints(entryArticle('Art. 5. Ustawa wchodzi w życie z dniem 1 stycznia 2025 r.'), '2026-03-10'), null);
+});
+
+test('notInHeader: a flagged change counts as named only with its act and article', () => {
+  const header = `# Later amendments: the FE act adds Dz.U. 2025 poz. 1794 art. 6 (art. 4 ust. 2 pkt 5, already printed) and its art. 12 (old rules) and 14 (the stamp). PP adds Dz.U. 2025 poz. 769 art. 24 (art. 28-70, none quoted) and art. 40-42 and 46. The CEIDG act: Dz.U. 2026 poz. 507 (its art. 8 adds ust. 9; its art. 29 is quoted).
+# The regulation: Dz.U. 2026 poz. 12 § 2.`;
+  const items = [
+    { id: 'DU/2025/1794', article: 'Art. 6' }, { id: 'DU/2025/1794', article: 'Art. 12' }, { id: 'DU/2025/1794', article: 'Art. 14' },
+    { id: 'DU/2025/1794', article: 'Art. 17' }, // not named: the business header's miss
+    { id: 'DU/2025/769', article: 'Art. 41' }, // inside a range
+    { id: 'DU/2025/769', article: 'Art. 35' }, // only inside "(art. 28-70 …)", the amended act's articles
+    { id: 'DU/2026/507', article: 'Art. 29' }, { id: 'DU/2026/507', article: 'Art. 14' }, // 507 names no art. 14
+    { id: 'DU/2026/12', article: '§ 2' }, { id: 'DU/2026/13', article: null },
+  ];
+  assert.deepEqual(notInHeader(header, items).map((x) => `${x.id} ${x.article}`),
+    ['DU/2025/1794 Art. 17', 'DU/2025/769 Art. 35', 'DU/2026/507 Art. 14', 'DU/2026/13 null']);
 });

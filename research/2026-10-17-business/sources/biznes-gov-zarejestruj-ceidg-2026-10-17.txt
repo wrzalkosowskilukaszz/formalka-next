@@ -1,0 +1,162 @@
+# biznes.gov.pl: "Zarejestruj działalność gospodarczą w CEIDG"
+# Source: https://www.biznes.gov.pl/pl/portal/ou736, retrieved 2026-10-17, html sha256 020113d311b14765aabf42692060d99ff651642bd02d1ee5d6588c07656b81ca (the HTML carries a session token, so it differs on each fetch; rely on the text hash)
+# Text of the page's main element; blank lines removed, and the page-rating form at its end. The page shows "Opublikowano 03.11.2011"; its HTML metadata gives a modification time of 2026-05-12. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# sha256 of the text below this header (from line 5): 53ec367fffe9af4a04926ee84a656021193879c95705a5b8237d1d0339ab9ad6.
+Zadaj pytanie
+Wybierz sposób złożenia wniosku
+Zamknij
+Od 1 listopada 2026 roku wniosek o rejestrację działalności w CEIDG złożysz wyłącznie elektronicznie. Wyjątek dotyczy wniosku małoletniego przedsiębiorcy – taki wniosek można złożyć tylko w urzędzie miasta lub gminy albo wysłać pocztą.
+Złóż przez BIZNES.GOV.PL
+opis usługi
+Rejestry
+usługa online
+Zakładanie firmy jednoosobowej
+Zarejestruj działalność gospodarczą w CEIDG
+Opublikowano
+03.11.2011
+Chcesz rozpocząć prowadzenie działalności gospodarczej jako indywidualny przedsiębiorca? Złóż wniosek o wpis do Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG).
+Jak załatwić sprawę
+Od 1 listopada 2026 roku wniosek o rejestrację działalności w CEIDG złożysz wyłącznie elektronicznie. Wyjątek dotyczy wniosku małoletniego przedsiębiorcy – taki wniosek można złożyć tylko w urzędzie miasta lub gminy albo wysłać pocztą.
+Załatw online
+Sprawę można załatwić:
+podczas wizyty w urzędzie
+listownie
+elektronicznie
+Co powinieneś wiedzieć i kto może skorzystać z usługi
+Co to jest CEIDG
+Centralna Ewidencja i Informacja o Działalności Gospodarczej (CEIDG) to rejestr firm, który zawiera informacje o przedsiębiorcach prowadzących jednoosobową działalność gospodarczą w Polsce. Jeśli chcesz prowadzić taką działalność, musisz się zarejestrować w CEIDG.
+W rejestrze znajdują się wyłącznie wpisy przedsiębiorców, którzy:
+prowadzą jednoosobową działalność gospodarczą
+są wspólnikami spółek cywilnych osób fizycznych.
+Co musisz wiedzieć przed wypełnieniem wniosku o wpis do CEIDG
+Jeśli zależy ci na sprawnym i szybkim załatwieniu sprawy, przed rozpoczęciem wypełnienia wniosku przygotuj niezbędne dane.
+We wniosku o wpis do CEIDG musisz podać:
+imię, nazwisko, imiona rodziców, datę i miejsce urodzenia
+rodzaj, serię i numer dokumentu tożsamości
+PESEL, jeśli masz obywatelstwo polskie lub został ci nadany
+wszystkie posiadane obywatelstwa
+numer NIP i REGON, jeśli zostały nadane
+adres zamieszkania oraz inne adresy związane z zakładaną działalnością gospodarczą
+adres e-mail, jeśli go masz
+numer telefonu i adres strony internetowej, jeśli chcesz je podać
+dane potrzebne do utworzenia adresu do e-Doręczeń albo adres do e-Doręczeń utworzony u kwalifikowanego dostawcy
+nazwę zakładanej działalności gospodarczej – musi zawierać twoje imię i nazwisko
+nazwę skróconą
+kody PKD – dopasuj je do rodzaju twojej działalności i wybierz kod przeważający
+liczbę pracowników, których planujesz zatrudnić
+datę rozpoczęcia działalności
+informacje o ubezpieczeniu w ZUS, KRUS lub za granicą
+dane urzędu skarbowego właściwego ze względu na miejsce twojego zamieszkania.
+CEIDG udostępni twoje dane kontaktowe tylko wtedy, gdy wyrazisz na to zgodę. Jeżeli we wpisie są opublikowane dane kontaktowe należące do innej osoby, osoba ta może wystąpić do ministra właściwego do spraw gospodarki o ich niepublikowanie w CEIDG
+Dokument tożsamości to: dowód osobisty, paszport albo mDowód (dokument mObywatel).
+Ważne! Jeśli nie masz nadanego numeru PESEL, zaznacz „nie posiadam numeru PESEL”. Jeśli już wcześniej nadano ci NIP i REGON, możesz podać je wypełniając formularz. Jeśli ich nie posiadasz, złożony formularz będzie jednocześnie wnioskiem o ich nadanie. NIP i REGON zostaną uzupełnione w twoim wpisie automatycznie, a sprawdzisz je w wyszukiwarce CEIDG po zarejestrowaniu firmy.
+Od 1 listopada 2026 roku, jeśli jesteś osobą zagraniczną i składasz wniosek o wpis do CEIDG, musisz mieć numer PESEL. Jeśli nie nadano ci numeru PESEL, musisz mieć niepowtarzalny identyfikator nadany przez państwo członkowskie Unii Europejskiej do identyfikacji transgranicznej.
+Wraz z wnioskiem składasz oświadczenie – dotyczące braku zakazu całkowitego wykonywania działalności gospodarczej oraz posiadania tytułu własności do nieruchomości, których adresy są wpisywane do CEIDG.
+Wniosek małoletniego przedsiębiorcy
+Jeśli przedsiębiorcą jest osoba małoletnia, wniosek składa przedstawiciel ustawowy wskazany do jej reprezentowania. Taki wniosek można złożyć wyłącznie w urzędzie miasta lub gminy albo wysłać pocztą. Podpis na wniosku wysłanym pocztą musi poświadczyć notariusz.
+Przedstawiciel ustawowy składa wraz z wnioskiem oświadczenia, że:
+jest przedstawicielem ustawowym małoletniego i ma prawo go reprezentować
+przedstawiciele ustawowi uzgodnili, kto będzie reprezentował małoletniego, albo że rozstrzygnął o tym sąd opiekuńczy
+nie został pozbawiony władzy rodzicielskiej, a jego władza rodzicielska nie została zawieszona ani ograniczona.
+Co możesz załatwić wraz z wnioskiem o wpis do CEIDG
+Składając wniosek o wpis do CEIDG przez Biznes.gov.pl albo w urzędzie, możesz:
+złożyć oświadczenie o formie opłacania podatku dochodowego oraz dołączyć zgłoszenie rejestracyjne albo aktualizacyjne do VAT
+zgłosić się do ZUS jako ubezpieczony. Dodatkowo możesz zgłosić do ubezpieczenia członków swojej rodziny oraz pracowników twojej firmy i członków ich rodzin. Jeśli jesteś rolnikiem, możesz złożyć odpowiednie oświadczenie dla KRUS
+podać informację o rachunkach bankowych związanych z prowadzoną działalnością gospodarczą. Jako przedsiębiorca masz obowiązek poinformować o otwarciu i zamknięciu każdego rachunku bankowego związanego z prowadzoną działalnością gospodarczą
+złożyć wniosek o opublikowanie w CEIDG informacji o pełnomocniku lub prokurencie. Opublikowanie takiej informacji jest równoznaczne w skutkach z udzieleniem pełnomocnictwa na piśmie. Pełnomocnictwo ustanowione w CEIDG nie upoważnia do działania w sprawach podatkowych.
+Kiedy powinieneś załatwić sprawę
+Przed rozpoczęciem wykonywania działalności gospodarczej.
+Gdzie załatwisz sprawę
+Usługę można zrealizować w:
+urzędy miast lub gmin
+urzędy dzielnicowe m.st. Warszawy
+urzędy miast na prawach powiatu
+Wniosek o wpis do CEIDG możesz złożyć przez internet.
+Jeśli jednak chcesz załatwić tę sprawę w urzędzie, skorzystaj z pomocy dowolnego urzędu miasta lub gminy. Aby znaleźć najbliższy urząd, wpisz miejscowość, w której mieszkasz.
+Miejsce realizacji usługi
+Wybierz lokalizację
+Wybierz lokalizację
+Aby dowiedzieć się gdzie zrealizować usługę, podaj
+dowolne miejsce.
+Wybierz instytucję
+Nie znaleźliśmy instytucji realizujących tą usługę dla podanej lokalizacji..
+Dane wybranej instytucji
+Co zrobić krok po kroku
+1. Złóż wniosek o wpis do rejestru
+Wniosek o wpis do CEIDG możesz złożyć na 3 sposoby
+Online - przez internet
+na Biznes.gov.pl
+Wejdź na stronę główną serwisu i wybierz usługę "Zarejestruj działalność gospodarczą". Zaloguj się przez Login.gov.pl. Jeśli to twoje pierwsze logowanie system przeprowadzi cię przez proces zakładania konta. Przejdziesz do kreatora wniosku – zaznacz opcje, które cię dotyczą lub wpisz dane, o które zapyta kreator. System przygotuje wniosek o wpis do CEIDG oraz zgłoszenie płatnika składek na ubezpieczenie społeczne i zdrowotne do ZUS/KRUS, zgłoszenie do GUS (numer REGON) i do urzędu skarbowego (numer NIP). Podpisz wniosek profilem zaufanym, podpisem kwalifikowanym lub podpisem osobistym.
+Jeżeli równocześnie z wnioskiem o wpis do CEIDG chcesz złożyć zgłoszenie do ubezpieczeń w ZUS lub zgłoszenie rejestracyjne VAT-R, to po wypełnieniu wniosku CEIDG wybierz przycisk “Chcę kontynuować” i wypełnij właściwe pola.
+Ważne! Jeśli składasz wniosek o wpis do CEIDG przez internet, nie możesz skorzystać z pełnomocnika.
+w aplikacji mObywatel
+Zaloguj się w aplikacji i wejdź do usługi Firma. Na stronie „Załóż firmę” wybierz przycisk „Złóż wniosek”. Przejdziesz do kreatora wniosku – zaznacz opcje, które cię dotyczą lub wpisz dane, o które zapyta kreator. System przygotuje wniosek o wpis do CEIDG oraz zgłoszenie płatnika składek na ubezpieczenie społeczne i zdrowotne do ZUS/KRUS, zgłoszenie do GUS (numer REGON) i do urzędu skarbowego (numer NIP). Podpisz wniosek profilem zaufanym.
+Ważne! Nie wszystkie formalności załatwisz w aplikacji mObywatel. Zarejestruj firmę przez Biznes.gov.pl, jeśli chcesz podać więcej niż jedno stałe miejsce prowadzenia działalności, wskazać zagraniczne ubezpieczenie społeczne lub zagraniczny adres do korespondencji. Przejdź na Biznes.gov.pl także, jeśli chcesz zarejestrować się jako podatnik VAT lub zgłosić do ubezpieczeń w ZUS siebie lub pracowników.
+przez stronę wybranych banków i biur rachunkowych
+PKO BP (serwis iPKO)
+Bank Pekao
+mBank
+ING
+Santander Bank Polska
+Millennium
+Credit Agricole Bank Polska
+Alior Bank
+VeloBank
+inFakt
+ING Usługi dla Biznesu
+Ważne! Za pośrednictwem banku lub biura rachunkowego zarejestrujesz jedynie działalność. Pozostałe formalności, takie jak rejestracja w ZUS lub rejestracja jako podatnik VAT możesz załatwić w urzędzie albo online poprzez eZUS lub Portal Podatkowy.
+W urzędzie
+Wniosek możesz złożyć osobiście w dowolnym urzędzie miasta lub gminy. Urzędnik potwierdzi przyjęcie wniosku i najpóźniej następnego dnia wprowadzi dane z wniosku do systemu CEIDG. W urzędzie musisz potwierdzić swoją tożsamość, dlatego nie zapomnij zabrać ze sobą dowodu osobistego lub innego dokumentu potwierdzającego tożsamość
+Masz do wyboru 3 sposoby przygotowania wniosku:
+wypełnij kreator wniosku i wyślij go bez podpisu elektronicznego. Po weryfikacji wniosku otrzymasz e-mailem kod do podpisania wniosku w urzędzie. Z tym kodem i dokumentem tożsamości udaj się do urzędu miasta lub gminy, w ciągu 7 dni. Urzędnik odnajdzie twój wniosek w CEIDG, wydrukuje, da ci do podpisania i potwierdzi złożenie wniosku w systemie
+wypełnij formularz, który dostaniesz w urzędzie i podpisz własnoręcznie
+pobierz wniosek ze strony Biznes.gov.pl/ceidg, wypełnij, wydrukuj i podpisz własnoręcznie w urzędzie.
+Wniosek o wpis do CEIDG w urzędzie może również złożyć pełnomocnik ustanowiony na zasadach ogólnych. Dowiedz się więcej na temat pełnomocnictwa przy rejestracji działalności.
+Jeżeli równocześnie z wnioskiem o wpis do CEIDG chcesz złożyć zgłoszenie do ubezpieczeń w ZUS lub dokonać zgłoszenia rejestracyjnego lub aktualizacyjnego VAT-R to zaznacz odpowiednie pozycje w kreatorze. Kreator wniosku wygeneruje następnie właściwe pola do uzupełniania danych.
+Pocztą
+Wypełniony wniosek możesz wysłać listem poleconym. W takim przypadku powinien być on opatrzony własnoręcznym podpisem wnioskodawcy poświadczonym przez notariusza.
+Dokumenty
+1.
+Wniosek o wpis do Centralnej Ewidencji i Informacji o Działalności Gospodarczej
+Pobierz:
+Instrukcja wypełnienia wniosku CEIDG-1
+(Otwarcie okna w nowej karcie)
+format
+PDF
+Wzór wniosku o wpis do Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG-1)
+(Otwarcie okna w nowej karcie)
+format
+PDF
+Dokument możesz złożyć jako:
+Oryginał, Dokument elektroniczny
+Termin
+Przed rozpoczęciem wykonywania działalności gospodarczej.
+2. Urząd sprawdzi twój wniosek
+Jeżeli wniosek złożony online jest niepoprawny, poinformuje cię o tym system teleinformatyczny.
+Jeżeli wniosek złożony osobiście lub listem poleconym w wybranym urzędzie miasta lub gminy jest niepoprawny, urząd niezwłocznie wezwie cię do skorygowania lub uzupełnienia wniosku we wskazanym zakresie - w terminie 7 dni roboczych od otrzymania wezwania.
+3. Zostaniesz wpisany do CEIDG
+Wpis w CEIDG z danymi twojej firmy pojawi się nie później niż następnego dnia roboczego po dniu złożenia wniosku. Działalność gospodarczą możesz podjąć już w dniu złożenia wniosku o wpis do CEIDG.
+CEIDG prześle twoje dane do urzędu skarbowego, który nada twojej firmie NIP oraz poinformuje GUS, ZUS (lub KRUS) o wpisie twojej firmy do CEIDG i o nadanym numerze NIP.
+Termin
+Nie później niż następnego dnia roboczego po dniu wpływu wniosku do CEIDG.
+Ile zapłacisz
+Złożenie wniosku o wpis do CEIDG jest BEZPŁATNE!
+Ile będziesz czekać
+Wpis jest dokonywany z chwilą zamieszczenia danych w CEIDG, nie później niż następnego dnia roboczego po dniu wpływu wniosku o wpis.
+Warto wiedzieć
+Inne obowiązki po rejestracji firmy w CEIDG
+Po rejestracji firmy staniesz się płatnikiem składek w ZUS i podatnikiem w urzędzie skarbowym. Zgłoś się do ubezpieczeń w ZUS w ciągu 7 dni od daty rozpoczęcia działalności.
+Jeśli podczas rejestracji wybierzesz publiczną usługę e-Doręczeń, po otrzymaniu informacji o utworzeniu adresu aktywuj skrzynkę. Adres zostanie wpisany do bazy adresów elektronicznych po aktywacji.
+Jeśli będziesz podatnikiem VAT, najpóźniej w dniu poprzedzającym dzień rozpoczęcia sprzedaży towarów lub świadczenia usług objętych VAT zarejestruj się jako podatnik VAT. Druk zgłoszeniowy VAT-R możesz też złożyć we właściwym urzędzie skarbowym albo dołączyć do wniosku o rejestrację w CEIDG. Pamiętaj! Zgłoszenie VAT-R mogą złożyć tylko osoby, które mają już numer NIP.
+Jeśli prowadzisz działalność wymagającą uzyskania koncesji, zezwolenia, licencji lub specjalnego pozwolenia, zgłoś swoją firmę do odpowiedniego rejestru. Dowiedz się więcej na temat działalności regulowanej.
+Twój wpis w CEIDG
+Dane dotyczące twojej działalności gospodarczej będą dostępne w bazie przedsiębiorców. Dzięki temu w każdej chwili będziesz mieć do nich wygodny dostęp oraz możliwość ich aktualizowania. Każdy zainteresowany, na przykład klient czy urząd znajdzie tam twój wpis, dzięki czemu nie będziesz potrzebować zaświadczenia potwierdzającego, że twoja firma znajduje się w rejestrze.
+Dowiedz się więcej na temat:
+aktualizowania danych w CEIDG
+sprawdzania danych przedsiębiorców w CEIDG.
+Spółka cywilna
+Jeśli chcesz założyć spółkę cywilną, dowiedz się więcej na temat dodatkowych obowiązków związanych z rejestracją.
+Podstawa prawna
+Ustawa z dnia 6 marca 2018 r. o Centralnej Ewidencji i Informacji o Działalności Gospodarczej i Punkcie Informacji dla Przedsiębiorcy
+Ustawa z dnia 6 marca 2018 r. - Prawo przedsiębiorców
+Instytucja odpowiedzialna: Ministerstwo Rozwoju i Technologii

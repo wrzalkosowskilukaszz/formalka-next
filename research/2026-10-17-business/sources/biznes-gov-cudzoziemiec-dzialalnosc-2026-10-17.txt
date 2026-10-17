@@ -1,6 +1,6 @@
 # biznes.gov.pl: "Jaką działalność gospodarczą może w Polsce prowadzić cudzoziemiec"
-# Source: https://www.biznes.gov.pl/pl/portal/00806, retrieved 2026-10-17, html sha256 4fc9b051b59bcfd382c71e2ddf77685b3255df828b5d5dbcb738331da7677bc6
-# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 22.09.2021" and no update date. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# Source: https://www.biznes.gov.pl/pl/portal/00806, retrieved 2026-10-17, html sha256 4fc9b051b59bcfd382c71e2ddf77685b3255df828b5d5dbcb738331da7677bc6 (the HTML carries a session token, so it differs on each fetch; rely on the text hash)
+# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 22.09.2021" and no update date; its HTML metadata (article:modified_time, and a commented-out "Zaktualizowano") gives 23.07.2026. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
 # sha256 of the text below this header (from line 5): f300c4c36fc73d638871f2a65f3705f6d0a741ee08f58f4effbe147e7ac750da.
 Jaką działalność gospodarczą może w Polsce prowadzić cudzoziemiec
 Opublikowano:

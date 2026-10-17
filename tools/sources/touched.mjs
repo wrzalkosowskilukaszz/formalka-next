@@ -5,6 +5,7 @@
 // It also lists the acts whose general date falls in the 3 years (--lookback) before the date but whose points apply on
 // or after it.
 // A regulation: node tools/sources/touched.mjs DU/2025/1073 2025-08-20 --cite 5,14   (the numbers are its paragraphs)
+// --header <extract>: fails (exit 1) when the extract's header (its "#" lines) does not name a flagged change.
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -92,6 +93,32 @@ export function citedBy(list) {
   return (id) => id.split(/[–-]/).map(key).filter(Boolean).some((k) => ranges.some(([lo, hi]) => before(lo, k) && before(k, hi)));
 }
 
+// The flagged changes an extract's header does not name. Each item is an amending act's ELI and its article ("Art. 14",
+// "§ 2", or null when the act's opening was not found). An item counts as named when the header has "poz. <its
+// position>" followed, before the next "poz. <number>", by "art." or "§" with that number in a list or range ("art. 12
+// and 14", "art. 12 (a note) and 14", "art. 40-42 and 46"). A parenthesis that opens with "art." lists the amended act's articles, not the
+// amending act's, so it is skipped. The tool's output said "read it by hand" for Dz.U. 2025 poz. 1794 art. 12 and 14,
+// and the header named neither (research/2026-10-17-business/sources/CHECK.md).
+export function notInHeader(header, items) {
+  const named = (pos, art) => {
+    const at = [...header.matchAll(new RegExp(`poz\\.\\s*${pos}(?!\\d)`, 'g'))];
+    if (!art) return at.length > 0;
+    const [unit, num] = art.startsWith('§') ? ['§', art.replace(/^§\s*/, '')] : ['art.', art.replace(/^Art\.\s*/i, '')];
+    return at.some((m) => {
+      let w = header.slice(m.index + m[0].length);
+      const next = w.search(/poz\.\s*\d/);
+      w = (next < 0 ? w : w.slice(0, next)).replace(/\(\s*art\.[^()]*\)/gi, ' ');
+      const lists = unit === '§' ? w.matchAll(/§\s*([\d\s,a-z–-]+(?:\s*(?:and|i|oraz|or)\s*[\d]+[a-z]*)*)/g)
+        : w.matchAll(/\bart\.\s*(\d+[a-z]*(?:\s*\([^()]*\))?(?:\s*(?:[-–,]|and|i|oraz|or)\s*\d+[a-z]*(?:\s*\([^()]*\))?)*)/gi);
+      return [...lists].some((l) => {
+        const list = l[1].replace(/\([^()]*\)/g, ' ').replace(/\s*(?:and|i|oraz|or)\s*/g, ',').replace(/\s*[–-]\s*/g, '-').replace(/\s+/g, '').replace(/[^\da-z,-]/g, '');
+        try { return citedBy(list.split(',').filter((x) => /^\d/.test(x)).join(','))(num); } catch { return false; }
+      });
+    });
+  };
+  return items.filter((x) => !named(x.id.split('/')[2], x.article));
+}
+
 // The date to print for an amending act: the API's date is only its general date. Dz.U. 2026 poz. 1123 is "in force
 // 2028-01-01", yet the point that adds Prawo oświatowe art. 31 ust. 3b takes effect on 1.01.2027 and ust. 3a on
 // 1.09.2028; an extract header quoted the general date (research/2026-10-17-school/sources/README.md).
@@ -160,7 +187,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   const [eli, since] = args;
   const cite = args.includes('--cite') ? citedBy(args[args.indexOf('--cite') + 1] ?? '') : null;
-  if (!eli || !since) { console.error('usage: node tools/sources/touched.mjs <ELI> <YYYY-MM-DD> [--cite 2-4,12,50] [--lookback 3]'); process.exit(2); }
+  if (!eli || !since) { console.error('usage: node tools/sources/touched.mjs <ELI> <YYYY-MM-DD> [--cite 2-4,12,50] [--lookback 3] [--header <extract>]'); process.exit(2); }
   const get = async (id) => (await fetch(`https://api.sejm.gov.pl/eli/acts/${id}`)).json();
   const { eli: base, act, note } = await actWithAmendments(eli, get);
   if (note) console.log(note);
@@ -183,24 +210,37 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
   if (earlier.length) console.log(`${earlier.length} more with a general date in the ${years} years before ${since} but points on or after it:`);
   let flagged = 0;
+  const items = [];
   for (const c of [...earlier, ...changes]) {
     const text = c.text ?? await textOf(c.id);
     const hits = touchedArticles(text, act.title);
     const entry = entryArticle(text);
     if (c.later) c.date = `${c.date}, points ${[...c.later.dates, ...(c.later.announcement ? ['a date set by an announcement'] : [])].join(', ')}`;
-    if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" or "W rozporządzeniu …" opening found; read it by hand`); flagged++; continue; }
+    if (!hits.length) { console.log(`- ${c.id} (in force ${c.date}): no "W ustawie z dnia …" or "W rozporządzeniu …" opening found; read it by hand`); flagged++; items.push({ id: c.id, article: null }); continue; }
+    // For --header: an act's transitional rules count when one names a cited article, or when the act changes one.
+    const touchesCited = cite && hits.some((h) => h.changes.some(cite) || h.annex.length);
     for (const t of appliedBy(text, hits.map((h) => h.article))) {
       const mark = cite ? t.names.filter(cite) : [];
       flagged += cite ? 1 : 0;
+      if (mark.length || touchesCited) items.push({ id: c.id, article: t.article });
       console.log(`- ${c.id} ${t.article} applies the amended act (a transitional rule; its own date may differ): names ${t.names.join(', ') || 'no article'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}  <- read it by hand`);
     }
     for (const h of hits) {
       const mark = cite ? h.changes.filter(cite) : [];
       flagged += mark.length + (cite ? h.annex.length : 0);
+      if (mark.length || (cite && h.annex.length)) items.push({ id: c.id, article: h.article });
       const annex = h.annex.length ? `; ${h.annex.join(', ')}${cite ? '  <- annex: compare with the cited parts by hand' : ''}` : '';
       const own = mark.length && (entry?.exceptions || entry?.announcement) ? `  <- quote the cited point's own date: node tools/sources/entry-dates.mjs ${c.id}` : '';
       console.log(`- ${c.id} (${dateLabel(c.date, entry)}) ${h.article}: ${h.unit} ${h.changes.join(', ') || '(none named)'}${mark.length ? `  <- cited: ${mark.join(', ')}` : ''}${annex}${own}`);
     }
   }
   if (cite) console.log(flagged ? '\nSome changes touch cited articles: read them and list them in the extract header.' : '\nNo change touches the cited articles.');
+  if (args.includes('--header')) {
+    const file = args[args.indexOf('--header') + 1];
+    const header = readFileSync(file, 'utf8').split('\n').filter((l) => l.startsWith('#')).join('\n');
+    const missing = notInHeader(header, items);
+    for (const m of missing) console.log(`NOT IN THE HEADER of ${file}: ${m.id}${m.article ? ` ${m.article}` : ''}`);
+    if (missing.length) process.exitCode = 1;
+    else console.log(`The header of ${file} names every flagged change.`);
+  }
 }

@@ -1,0 +1,54 @@
+# biznes.gov.pl: "CEIDG dla przedsiębiorców"
+# Source: https://www.biznes.gov.pl/pl/portal/03155, retrieved 2026-10-17, html sha256 2cae52f284da607f0bf27ccd589536904b5f3e3a1af28432b46aecf5faf9738c (the HTML carries a session token, so it differs on each fetch; rely on the text hash)
+# Text of the page's main element; blank lines removed, and the page-rating form at its end. The page shows no publication or update date; its HTML metadata gives no modification time. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# sha256 of the text below this header (from line 5): 8a08ae0156c7d07502b84d9e6274aa71126d56fb4a0853de839a2c5ff51a26f0.
+CEIDG dla przedsiębiorców
+Na tej stronie znajdziesz porady i informacje oraz pobierzesz aktualne formularze i instrukcje. Pamiętaj, że wysłanie wniosku do CEIDG jest bezpłatne.
+Pomoc konsultanta
+Jeśli potrzebujesz pomocy zapytaj konsultanta Centrum Pomocy
+Wyślij wniosek elektroniczny do CEIDG
+To naprawdę proste! Załatwiaj sprawy urzędowe bez wychodzenia z domu. Odpowiedz na pytania a wniosek CEIDG-1 zostanie utworzony automatycznie. Dowiedz się jak zarejestrować firmę w CEIDG na Biznes.gov.pl
+Zarejestruj działalność gospodarczą
+Możesz utworzyć wniosek i sprawdzić go w urzędzie przed wysłaniem lub podpisać i wysłać przez internet.
+ZAREJESTRUJ FIRMĘ
+Zmień dane firmy
+Zmień dane firmy w CEIDG, zawieś, wznów lub zamknij działalność gospodarczą.
+ZMIEŃ DANE W CEIDG
+Pomoc dla składających wniosek CEIDG w urzędzie
+Rejestracja działalności gospodarczej w CEIDG
+Zmiana danych w CEIDG
+Zawieszenie działalności gospodarczej
+Wyszukiwarka kodów PKD
+Zakończenie działalności gospodarczej
+Wznowienie działalności gospodarczej
+Pliki do pobrania
+Aktualnie obowiązujące dokumenty
+Wzór formularza CEIDG-1PDF
+Załącznik CEIDG-OPPDF
+Załącznik CEIDG-OPSPDF
+Załącznik CEIDG-ZSPDF
+Załącznik CEIDG-MWPDF
+Załącznik CEIDG-RDPDF
+Załącznik CEIDG-POPRPDF
+Załącznik CEIDG-RBPDF
+Załącznik CEIDG-ADPDF
+Załącznik CEIDG-SCPDF
+Załącznik ZUS-ZUAPDF
+Instrukcja wypełniania formularza ZUS-ZUAPDF
+Załącznik ZUS-ZZAPDF
+Instrukcja wypełniania formularza ZUS-ZZAPDF
+Załącznik ZUS-ZCNAPDF
+Instrukcja wypełniania formularza ZUS-ZCNAPDF
+Załącznik ZUS-ZIUAPDF
+Instrukcja wypełniania formularza ZUS-ZIUAPDF
+Załącznik ZUS-ZWUAPDF
+Instrukcja wypełniania formularza ZUS-ZWUAPDF
+Klauzula RODO na podstawie art. 14PDF
+Dokumenty archiwalne (obowiązywały do 13.10.2026 r.)
+Wzór formularza CEIDG-1PDF
+Instrukcja wypełnienia wniosku CEIDG-1PDF
+Załącznik CEIDG-MWPDF
+Załącznik CEIDG-RDPDF
+Załącznik CEIDG-POPRPDF
+Załącznik CEIDG-PNPDF
+Załącznik CEIDG-ZSPDF

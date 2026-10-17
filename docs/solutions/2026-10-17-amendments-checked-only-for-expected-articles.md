@@ -1,8 +1,8 @@
 ---
-rule: After listing the later amendments, list every article each one changes (node tools/sources/touched.mjs <ELI> <date> --cite <articles>), not only the articles you expect to have changed.
+rule: List every article each later amendment changes, not only the expected ones, and name each flagged one in the header (node tools/sources/touched.mjs <ELI> <date> --cite <articles> --header <extract>).
 kind: legal-source
 files: [research/**, audit/**/reference/**, docs/formalka-next/maps/**]
-check: tools/sources/touched.mjs::flags amending articles that touch the cited articles, and transitional articles that apply the amended act
+check: tools/sources/touched.mjs::flags amending articles that touch the cited articles, and transitional articles that apply the amended act; --header <extract> fails when the extract's header does not name a flagged change (tools/sources/touched.test.mjs)
 date: 2026-10-17
 commits: []
 ---
@@ -24,3 +24,5 @@ commits: []
 **Found in use (17.10, the work map).** The checking agent found a rule no tool listed: Dz.U. 2026 poz. 203 art. 41 extends the work act's art. 3 ust. 1 pkt 12 and art. 5a to Ukrainian citizens staying legally without temporary protection, for 3 years from 5.03.2026. It changes no wording; it applies "ustawy zmienianej w art. 19". The same holds for Dz.U. 2025 poz. 1794 art. 12 and 14 (the old wording for cases opened earlier). `touched.mjs` now also lists such articles ("applies the amended act … read it by hand"), with a test. Run on the work act, it lists 203 art. 41 and 1794 art. 12, 14 and 17.
 
 **Found in use (17.10, the recognition map).** `--cite 93-93j` flagged nothing although Dz.U. 2025 poz. 622 art. 1 changes art. 93, 93a, 93b, 93c, 93f and 93h: a range with a lettered end was read as one odd id and matched nothing, without a word. Three earlier runs had such ranges (`1-24d` for the Karta Polaka act, `225a-225i` for the act on foreigners, `51-57a` for the special act). The tool now reads lettered ranges and throws on a part it cannot read, with a test; changed in the lab, not independently verified. Rerun on 17.10: the Karta Polaka act has no amendment since its consolidated text; the other two flag only acts their sources and checks already cover (`research/2026-10-17-school/sources/CHECK.md`, `research/2026-10-17-permanent/sources/`).
+
+**Found in use (17.10, the business map).** The tool listed Dz.U. 2025 poz. 1794 art. 12, 14 and 17 for the FE act as "read it by hand" (art. 14 keeps the stamp wording of FE art. 4 ust. 2 pkt 5 for older EU long-term resident cases), and Dz.U. 2025 poz. 769 art. 35 for PP. The extract header named none of them; the separate checking agent found it (`research/2026-10-17-business/sources/CHECK.md`). The output was read, but nothing made sure each flagged line reached the header. `touched.mjs --header <extract>` now fails when the header does not name a flagged change: "poz. <position>" followed by "art." (or "§") with its number, before the next "poz.". It counts the transitional rules of an act that changes a cited article, and those that name one. With a test; changed in the lab, not independently verified. Run on the business extract, it also found Dz.U. 2026 poz. 507 art. 17–21, 23–28 and 30, and Dz.U. 2025 poz. 1794 art. 13, 16 and 18, unnamed; all were read and are now listed (none changes a quoted rule).

@@ -1,6 +1,6 @@
 # biznes.gov.pl: "Jak obywatel Ukrainy może założyć w Polsce firmę"
-# Source: https://www.biznes.gov.pl/pl/portal/001466, retrieved 2026-10-17, html sha256 02d8640c65851d4afbbed5f4c3f6a52bcac1efce8712919d453f050bc1f01cec
-# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 07.03.2022" and no update date. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# Source: https://www.biznes.gov.pl/pl/portal/001466, retrieved 2026-10-17, html sha256 02d8640c65851d4afbbed5f4c3f6a52bcac1efce8712919d453f050bc1f01cec (the HTML carries a session token, so it differs on each fetch; rely on the text hash)
+# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 07.03.2022" and no update date; its HTML metadata (article:modified_time, and a commented-out "Zaktualizowano") gives 19.05.2026. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
 # sha256 of the text below this header (from line 5): 69715960ac3c1bb54de3c98a23529b99dd98249eaa8cd7c3a7e5792556f886cb.
 Jak obywatel Ukrainy może założyć w Polsce firmę
 Opublikowano:

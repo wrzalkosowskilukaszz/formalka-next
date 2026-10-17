@@ -1,6 +1,6 @@
 # biznes.gov.pl: "Działalność nierejestrowa i inne rodzaje działalności, których nie trzeba rejestrować"
-# Source: https://www.biznes.gov.pl/pl/portal/00115, retrieved 2026-10-17, html sha256 a8d14b5809d1d6199e7bc63c5cd9a524023cfa8adab0778cd9c6bbc8c34776c0
-# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 26.06.2021" and no update date. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
+# Source: https://www.biznes.gov.pl/pl/portal/00115, retrieved 2026-10-17, html sha256 a8d14b5809d1d6199e7bc63c5cd9a524023cfa8adab0778cd9c6bbc8c34776c0 (the HTML carries a session token, so it differs on each fetch; rely on the text hash)
+# Text of the page's main element; navigation, blank lines and empty list markers removed. The page shows "Opublikowano: 26.06.2021" and no update date; its HTML metadata (article:modified_time, and a commented-out "Zaktualizowano") gives 05.05.2026. Not binding. Licence: CC BY-NC-ND 4.0 PL (the portal's footer); quoted unchanged.
 # sha256 of the text below this header (from line 5): 58b6ae56ef5074e2088935a1acf219d405c7a4226ba15a241bad25f18eaaffeb.
 Działalność nierejestrowa i inne rodzaje działalności, których nie trzeba rejestrować
 Opublikowano:

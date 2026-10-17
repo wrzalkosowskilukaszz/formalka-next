@@ -1,8 +1,8 @@
-# Business registration by a foreigner: the act on foreign entrepreneurs (FE act), consolidated Dz.U. 2026 poz. 1313 (obwieszczenie of 2.10.2026, legal state 22.09.2026, with Dz.U. 2026 poz. 507), art. 3 pkt 5-6 and 4; the CEIDG act, consolidated Dz.U. 2026 poz. 30 (obwieszczenie of 7.01.2026), art. 3, 5 ust. 1 pkt 1 and 5, 8, 10, 12 ust. 1, 13, 29 ust. 1-2; the act changing it, Dz.U. 2026 poz. 507; Prawo przedsiębiorców (PP), consolidated Dz.U. 2025 poz. 1480 (obwieszczenie of 20.10.2025), art. 2-5, 17 ust. 1, 18; the special act on aid to Ukrainian citizens, its former art. 23 (Dz.U. 2025 poz. 337) and art. 42 ust. 12a (Dz.U. 2026 poz. 1293); the winding-down act Dz.U. 2026 poz. 203, art. 17 pkt 10 and 42; the act on foreigners (UoC), Dz.U. 2025 poz. 1079, art. 186 ust. 1; the 2026 minimum wage, Dz.U. 2025 poz. 1242
-# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2026/1313 7c02b428bbf4e7c00bc0e291ec77c9873e40e316b83e63fe3cba31feeac1430d; DU/2026/30 6c713744a8c2a3e9f4b1a10c1bb6030f829ab5e0de8186a9263a4c88ffc11ff4; DU/2026/507 9e0a2839034b10bf50adceaff753444db09f2f49e173950454f6dc81a09760ec; DU/2025/1480 b3f1be4daa4cf8cb12755a3d52889ed1b722c8f6fd76d311d37ba9e8d7e555ef; DU/2025/337 dd1ec03d2ba1110e0bf4217d9081594c72d11f8e67216a0882e788586124b1c0; DU/2026/1293 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1242 bf547c5f5d601c33296c2ffbf646f6582dbd896d113640bca73f56743f5fb8b9.
-# Later amendments (node tools/sources/touched.mjs, 17.10.2026): the FE act after 22.09.2026, only Dz.U. 2026 poz. 507 (its art. 8 adds art. 4 ust. 9 from 1.11.2026, already printed; its art. 29 is a transitional rule, quoted). The CEIDG act after 7.01.2026: Dz.U. 2026 poz. 507 art. 1 (its points touch every quoted article; the ones that do are quoted below with their dates) and Dz.U. 2026 poz. 734 art. 3 (art. 48 and 48a, not quoted). PP after 20.10.2025: Dz.U. 2025 poz. 1168 art. 5 (the quarterly limit from 1.01.2026, already printed), poz. 1826 (art. 21) and poz. 1795 (art. 62), not quoted, and Dz.U. 2026 poz. 507 art. 7 (art. 5 ust. 2 and 4, art. 17 ust. 1), quoted. The special act's art. 23: no change after Dz.U. 2025 poz. 337 until its repeal (Dz.U. 2026 poz. 203 art. 17 pkt 10, from 5.03.2026 under its art. 54, which research/2026-10-17-ukr/sources/wygaszenie-2026-203-art20-26-45-54-extract.txt quotes). UoC art. 186: no change after Dz.U. 2025 poz. 1079 (Dz.U. 2025 poz. 1794 changes art. 108, 206 and 222a, which FE art. 4 ust. 2 pkt 5 names in their new wording). Rerun with the tool's 3-year lookback for earlier acts whose points apply later (17.10.2026): the FE act adds Dz.U. 2025 poz. 1794 art. 6 (art. 4 ust. 2 pkt 5, from 27.04.2026, already printed with footnote 3); PP adds Dz.U. 2025 poz. 769 art. 24 (art. 28-70, from 1.01.2026, none quoted); the CEIDG act adds none.
-# Dates of Dz.U. 2026 poz. 507 (its art. 31, quoted at the end; node tools/sources/entry-dates.mjs DU/2026/507): the general date is 14.10.2026 (6 months after publication); art. 1 pkt 4 lit. a tiret 1 (CEIDG art. 5 ust. 1 pkt 1), pkt 43 lit. a, art. 8, 22 and 29 from 1.11.2026; art. 1 pkt 7 (CEIDG art. 8), pkt 8 and pkt 9 lit. d-h (art. 10 ust. 4-9) from 1.11.2028. So on 17.10.2026 CEIDG art. 3 ust. 2a-2b, art. 10 ust. 1-3 (new words), art. 12 ust. 1 (new common part) and art. 29 (new wording) apply, and art. 8 and art. 10 ust. 4-9 apply as printed in Dz.U. 2026 poz. 30. Its art. 13-16 (quoted) end the paper filing of a new business after 31.10.2026.
-# Quoted in other extracts: the special act art. 42c-42w (the CUKR card; art. 42w, business on Polish terms) in research/2026-10-17-ukr/sources/specustawa-2026-1293-art42c-42x-cukr-extract.txt; the act on population records art. 7 ust. 2 and 16 ust. 2 (a PESEL on application for a person obliged to have one) in research/2026-10-16-service/sources/uel-2026-384-pesel-certificates-extract.txt. Not quoted: the FE act preamble's Dz.U. 2025 poz. 621 art. 112 (art. 4 ust. 3a does not apply to shares taken before 1.06.2025).
+# Business registration by a foreigner: the act on foreign entrepreneurs (FE act), consolidated Dz.U. 2026 poz. 1313 (obwieszczenie of 2.10.2026, legal state 22.09.2026, with Dz.U. 2026 poz. 507), art. 3 pkt 5-6 and 4, and its obwieszczenie's Dz.U. 2025 poz. 1794 art. 12 and 14; the CEIDG act, consolidated Dz.U. 2026 poz. 30 (obwieszczenie of 7.01.2026), art. 3, 5 ust. 1 pkt 1 and 5, 6, 6a, 7, 8, 10, 12 ust. 1, 13, 14, 15 ust. 1, 29 ust. 1-2, and its obwieszczenie's e-delivery act art. 152 ust. 1; the act changing it, Dz.U. 2026 poz. 507; Prawo przedsiębiorców (PP), consolidated Dz.U. 2025 poz. 1480 (obwieszczenie of 20.10.2025), art. 2-5, 17 ust. 1, 18, 44 ust. 3; the special act on aid to Ukrainian citizens, its former art. 23 (Dz.U. 2025 poz. 337) and art. 42 ust. 12a (Dz.U. 2026 poz. 1293); the winding-down act Dz.U. 2026 poz. 203, art. 17 pkt 10 and 42; the act on foreigners (UoC), Dz.U. 2025 poz. 1079, art. 186 ust. 1 and 206 ust. 2, and Dz.U. 2025 poz. 1794 art. 1 pkt 32 lit. a and 39 (art. 206 ust. 1 pkt 1, 222a ust. 1) and art. 19 pkt 2, with M.P. 2026 poz. 370; the act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 18 ust. 1-1a; the minimum wage in 2026 (Dz.U. 2025 poz. 1242) and 2027 (Dz.U. 2026 poz. 1213)
+# Sources, retrieved 2026-10-17 from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf (M.P. too); pdftotext -layout; page headers dropped; footnotes kept where they fall. sha256: DU/2026/1313 7c02b428bbf4e7c00bc0e291ec77c9873e40e316b83e63fe3cba31feeac1430d; DU/2026/30 6c713744a8c2a3e9f4b1a10c1bb6030f829ab5e0de8186a9263a4c88ffc11ff4; DU/2026/507 9e0a2839034b10bf50adceaff753444db09f2f49e173950454f6dc81a09760ec; DU/2025/1480 b3f1be4daa4cf8cb12755a3d52889ed1b722c8f6fd76d311d37ba9e8d7e555ef; DU/2025/337 dd1ec03d2ba1110e0bf4217d9081594c72d11f8e67216a0882e788586124b1c0; DU/2026/1293 49648f140730f652a3dc37d480e5c72096f9f540ff75ae8e41c20679b66f4177; DU/2026/203 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; DU/2025/1079 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0; DU/2025/1242 bf547c5f5d601c33296c2ffbf646f6582dbd896d113640bca73f56743f5fb8b9; DU/2025/1794 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; MP/2026/370 f4b7223353479968b7083516cf62ad9414e4c032803b6cb56d9400193448b85e; DU/2026/1213 552c00bd370cde16dc9675baf06885e8c40bc62b54f017a956bbb2f0d46ca43e; DU/2026/384 16ad0c30f3a26aa1e91f4e2b46e3a71146bbf2da755af030c58cd67dec39abfb.
+# Later amendments (node tools/sources/touched.mjs, 17.10.2026): the FE act after 22.09.2026, only Dz.U. 2026 poz. 507 (its art. 8 adds art. 4 ust. 9 from 1.11.2026, already printed; its art. 29 is a transitional rule, quoted). The CEIDG act after 7.01.2026: Dz.U. 2026 poz. 507 art. 1 (its points touch every quoted article; the ones that do are quoted below with their dates) and Dz.U. 2026 poz. 734 art. 3 (art. 48 and 48a, not quoted). PP after 20.10.2025: Dz.U. 2025 poz. 1168 art. 5 (the quarterly limit from 1.01.2026, already printed), poz. 1826 (art. 21) and poz. 1795 (art. 62), not quoted, and Dz.U. 2026 poz. 507 art. 7 (art. 5 ust. 2 and 4, art. 17 ust. 1), quoted. The special act's art. 23: no change after Dz.U. 2025 poz. 337 until its repeal (Dz.U. 2026 poz. 203 art. 17 pkt 10, from 5.03.2026 under its art. 54, which research/2026-10-17-ukr/sources/wygaszenie-2026-203-art20-26-45-54-extract.txt quotes). UoC art. 186: no change after Dz.U. 2025 poz. 1079 (Dz.U. 2025 poz. 1794 changes art. 108, 206 and 222a, which FE art. 4 ust. 2 pkt 5 names in their new wording). For the UoC, Dz.U. 2025 poz. 1794 also has the transitional art. 13 (student visas and permits in progress), 16 (Ukrainian citizens' pending art. 42 ust. 13 cases) and 18 (old regulations kept up to 6 months), besides art. 12, 14 and 17: none changes a rule quoted here. Rerun with the tool's 3-year lookback for earlier acts whose points apply later (17.10.2026): the FE act adds Dz.U. 2025 poz. 1794 art. 6 (art. 4 ust. 2 pkt 5, from 27.04.2026, already printed with footnote 3) and three transitional rules of 1794 the tool marks "read it by hand": art. 12 (cases begun before a point's date keep the old rules) and art. 14 (an EU long-term resident case begun before 27.04.2026, where the person has the stamp, keeps the old wording of FE art. 4 ust. 2 pkt 5), both printed in the FE obwieszczenie and quoted below, and art. 17 (the notice; M.P. 2026 poz. 370, quoted). PP adds Dz.U. 2025 poz. 769 art. 24 (art. 28-70, from 1.01.2026, none quoted) and its transitional art. 35 (tax identification for those in unregistered activity: tax, not quoted), art. 40-42 and 46 (art. 47-71a, not quoted). The CEIDG act adds none. The CEIDG act's transitional rules that the tool marks "read it by hand": Dz.U. 2026 poz. 507 art. 13-16, 22 and 29 (quoted below) and art. 17-21, 23-28 and 30 (old entries' data, REGON and NIP corrections, civil partnerships, succession management, tax and VAT cases in progress: none is about a new registration; not quoted). These transitional rules were first left out of this header; the independent check of 17.10.2026 found them.
+# Dates of Dz.U. 2026 poz. 507 (its art. 31, quoted at the end; node tools/sources/entry-dates.mjs DU/2026/507): the general date is 14.10.2026 (6 months after publication on 13.04.2026); art. 1 pkt 2 lit. a (CEIDG art. 3 ust. 1a, mObywatel) from 21.04.2026 (7 days); art. 1 pkt 4 lit. a tiret 1 (CEIDG art. 5 ust. 1 pkt 1), pkt 43 lit. a, art. 8, 22 and 29 from 1.11.2026; art. 1 pkt 1, pkt 2 lit. c, pkt 4 lit. b tirets 1 and 6, pkt 5 (CEIDG art. 6), 7 (art. 8), 8, pkt 9 lit. d-h (art. 10 ust. 4-9), pkt 13 lit. b-d, f and g, and others listed in art. 31 pkt 4 from 1.11.2028. So on 17.10.2026 these apply with the general date: CEIDG art. 3 ust. 2a-2b; art. 5 ust. 1 pkt 6, 6b and 7, ust. 2 pkt 3, 5, 17a-17d and 20a, ust. 3-4 (pkt 4 lit. a tirets 2-4, lit. b tirets 2-5, lit. c-d); art. 7 ust. 1a-1b and ust. 2 (pkt 6, quoted); art. 10 ust. 1-3 (new words); art. 12 ust. 1 (new common part); art. 15 ust. 1 and 4a (pkt 13 lit. a and e, quoted); art. 29 (new wording); art. 66a-66d (pkt 54, quoted); and the e-delivery act art. 152 (art. 10, quoted). CEIDG art. 6 and 8 and art. 10 ust. 4-9 apply as printed in Dz.U. 2026 poz. 30. Its art. 13-16 (quoted) end the paper filing of a new business after 31.10.2026, except an application naming a minor's legal representative, which is filed only on paper until 31.10.2028 (art. 16).
+# Quoted in other extracts: the special act art. 42c-42w (the CUKR card; art. 42w, business on Polish terms) in research/2026-10-17-ukr/sources/specustawa-2026-1293-art42c-42x-cukr-extract.txt; the act on population records art. 7 ust. 2 and 16 ust. 2 (a PESEL on application for a person obliged to have one) in research/2026-10-16-service/sources/uel-2026-384-pesel-certificates-extract.txt; UoC art. 108 ust. 1-2 (with ust. 2: no legal stay while the case is suspended at the party's request; art. 206 ust. 2, quoted below, says the same for permanent residence) and Dz.U. 2025 poz. 1794 art. 1 pkt 14 lit. a (the certificate instead of the stamp, from 27.04.2026) in research/2026-10-17-moving/sources/other-acts-moving-extract.txt. Not quoted: the FE act preamble's Dz.U. 2025 poz. 621 art. 112 (art. 4 ust. 3a does not apply to shares taken before 1.06.2025).
 
 [FE act art. 3 pkt 5-6 (a foreign person; a member state: the EU and the EEA states of EFTA, other than Poland)]
 5)       osoba zagraniczna:
@@ -86,6 +86,48 @@ interoperacyjności na podstawie art. 12 ust. 8 rozporządzenia Parlamentu Europ
 w sprawie identyfikacji elektronicznej i usług zaufania w odniesieniu do transakcji elektronicznych na rynku wewnętrz-
 nym (Dz. Urz. UE L 235 z 09.09.2015, str. 1, z późn. zm.6)).
 
+[The FE obwieszczenie, pkt 2 ppkt 3: Dz.U. 2025 poz. 1794 art. 12 (pending cases keep the old rules) and art. 14 (an EU long-term resident case begun before 27.04.2026, with a stamp: the old wording of FE art. 4 ust. 2 pkt 5)]
+3)   art. 12, art. 14, art. 17 i art. 19 ustawy z dnia 21 listopada 2025 r. o zmianie ustawy o cudzoziemcach oraz niektórych
+     innych ustaw (Dz. U. poz. 1794), które stanowią:
+            „Art. 12. Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i nie-
+     zakończonych przed dniem wejścia w życie art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–49, 50 i 52, art. 2, art. 5–7, art. 8 pkt 1
+     lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz art. 18 ust. 1 i 2 stosuje się przepisy dotychczasowe.”
+          „Art. 14. W przypadku gdy postępowanie w sprawie udzielenia zezwolenia na pobyt rezydenta długoterminowego
+     Unii Europejskiej zostało wszczęte przed dniem wejścia w życie art. 1 pkt 39 i cudzoziemiec, który ubiega się o udzie-
+     lenie tego zezwolenia, posiada w swoim dokumencie podróży odcisk stempla, który potwierdza złożenie wniosku
+     o udzielenie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, przepisy art. 43 ust. 3 ustawy zmie-
+     nianej w art. 5 w zakresie dotyczącym odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na
+     pobyt rezydenta długoterminowego Unii Europejskiej, art. 4 ust. 2 pkt 5 ustawy zmienianej w art. 6, art. 1 ust. 3 pkt 5
+     ustawy zmienianej w art. 10 oraz art. 3 ust. 1 pkt 18 i ust. 3 pkt 2 ustawy zmienianej w art. 11 stosuje się w brzmieniu
+     dotychczasowym.”
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 32 lit. a (UoC art. 206 ust. 1 pkt 1: a certificate instead of the stamp for permanent residence), from 27.04.2026; the same for art. 108 ust. 1 pkt 1 (pkt 14 lit. a) is quoted in research/2026-10-17-moving/sources/other-acts-moving-extract.txt]
+32) w art. 206:
+     a)   w ust. 1 pkt 1 otrzymuje brzmienie:
+          „1)   wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie zezwolenia
+                na pobyt stały;”,
+
+[Dz.U. 2025 poz. 1794 art. 1 pkt 39, the opening of UoC art. 222a ust. 1 (the EU long-term resident application: a certificate; a legal stay until the decision is final), from 27.04.2026]
+39) po art. 222 dodaje się art. 222a–222g w brzmieniu:
+           „Art. 222a. 1. Jeżeli wniosek o udzielenie cudzoziemcowi zezwolenia na pobyt rezydenta długoterminowego UE
+     został złożony w czasie jego legalnego pobytu na terytorium Rzeczypospolitej Polskiej i nie zawiera braków formal-
+     nych lub braki formalne zostały uzupełnione w terminie:
+     1)   wojewoda wydaje cudzoziemcowi zaświadczenie potwierdzające złożenie wniosku o udzielenie mu zezwolenia
+          na pobyt rezydenta długoterminowego UE;
+     2)   pobyt cudzoziemca na terytorium Rzeczypospolitej Polskiej uważa się za legalny od dnia złożenia wniosku do dnia,
+          w którym decyzja w sprawie udzielenia mu zezwolenia na pobyt rezydenta długoterminowego UE stanie się
+          ostateczna.
+
+[Dz.U. 2025 poz. 1794 art. 19 pkt 2 (these points from the day the notice of art. 17 sets)]
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+
+[M.P. 2026 poz. 370 (the notice), its pkt 4 and its date (pkt 1 lists UoC art. 108 ust. 1 pkt 1, 206 ust. 1 pkt 1 and 222a-222g)]
+4)    art. 4 ust. 2 pkt 5 ustawy z dnia 6 marca 2018 r. o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób
+      zagranicznych w obrocie gospodarczym na terytorium Rzeczypospolitej Polskiej (Dz. U. z 2025 r. poz. 89, 619, 621
+      i 1794),
+– określa się na 27 kwietnia 2026 r.
+
 [CEIDG art. 3 ust. 1-2 (the electronic form)]
       Art. 3. 1. Przekazywanie danych i informacji do CEIDG oraz przekazywanie danych i informacji z CEIDG odbywa
 się za pośrednictwem systemu teleinformatycznego CEIDG lub za pośrednictwem innego, zintegrowanego z nim systemu
@@ -130,7 +172,7 @@ czonego na stronie internetowej CEIDG.
                        elektronicznych na rynku wewnętrznym (Dz. Urz. UE L 235 z 09.09.2015, str. 1, z późn. zm.2));”,
 2)   Zmiany wymienionego rozporządzenia zostały ogłoszone w Dz. Urz. UE L 28 z 04.02.2016, str. 18.
 
-[CEIDG art. 6 ust. 1-3 (the entry by the next working day; the application also covers REGON, the NIP and ZUS or KRUS), as printed; Dz.U. 2026 poz. 507 art. 1 pkt 5 changes art. 6 from 1.11.2028]
+[CEIDG art. 6 (the entry by the next working day; ust. 3, what the application always includes: REGON, the tax identification, the contribution payer notification; ust. 4, what may be attached: the insurance registration, VAT, the tax form; ust. 9, attachments become part of the application), as printed, with its footnotes 3-6; Dz.U. 2026 poz. 507 art. 1 pkt 5 changes art. 6 from 1.11.2028]
      Art. 6. 1. Wpis do CEIDG polega na wprowadzeniu do systemu teleinformatycznego danych podlegających wpisowi.
 Wpis do CEIDG jest dokonany z chwilą zamieszczenia danych w CEIDG, niepóźniej niż w dniu roboczym następującym
 po dniu wpływu do CEIDG wniosku o wpis, z wyjątkiem art. 10 ust. 5 i 6.
@@ -144,6 +186,53 @@ CEIDG jest również wykreślenie przedsiębiorcy albo zmiana wpisu.
 3)    zgłoszenia płatnika składek albo jego zmiany w rozumieniu przepisów o systemie ubezpieczeń społecznych albo zgło-
       szenia oświadczenia o kontynuowaniu ubezpieczenia społecznego rolników w rozumieniu przepisów o ubezpieczeniu
       społecznym rolników.
+3)   Ze zmianą wprowadzoną przez art. 9 pkt 2 ustawy, o której mowa w odnośniku 2.
+      4. Do wniosku o wpis do CEIDG przedsiębiorca może dołączyć:
+1)    w przypadku przedsiębiorcy będącego płatnikiem składek:
+      a)   zgłoszenie do ubezpieczeń społecznych i do ubezpieczenia zdrowotnego albo do ubezpieczenia zdrowotnego,
+      b) zgłoszenie do ubezpieczenia zdrowotnego członków rodziny,
+      c)   zmianę danych wykazanych w zgłoszeniach, o których mowa w lit. a i b,
+      d) zgłoszenie wyrejestrowania z ubezpieczeń, o których mowa w lit. a i b;
+2)    zgłoszenie rejestracyjne lub aktualizacyjne, o których mowa w przepisach o podatku od towarów i usług;
+3)    żądanie przyjęcia oświadczenia o wyborze przez przedsiębiorcę formy opodatkowania podatkiem dochodowym od
+      osób fizycznych albo rezygnacji z wybranej formy opodatkowania lub informacji o zmianach we wniosku o zastoso-
+      wanie karty podatkowej lub likwidacji prowadzonej działalności opodatkowanej w formie karty podatkowej;
+4)    (uchylony)
+5)    (uchylony)
+6)    żądanie przyjęcia zawiadomienia o zamiarze prowadzenia ksiąg rachunkowych.
+     5. Zmiany danych wykazanych w zgłoszeniu do ubezpieczeń społecznych, o których mowa w art. 36 ust. 14 ustawy
+z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2025 r. poz. 350, z późn. zm.4)), dokonuje się
+wyłącznie w sposób wskazany w przepisach tej ustawy.
+      6. W przypadku, o którym mowa w ust. 4 pkt 1, przedsiębiorca wraz z wnioskiem o wpis do CEIDG przekazuje dane
+do sporządzenia zgłoszeń lub zmiany danych wykazanych w zgłoszeniach, wymagane przepisami ustawy z dnia 13 paź-
+dziernika 1998 r. o systemie ubezpieczeń społecznych lub ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdro-
+wotnej finansowanych ze środków publicznych (Dz. U. z 2025 r. poz. 1461, 1537 i 1739), inne niż te, o których mowa w art. 5
+ust. 1 i 2.
+     7. W przypadkach, o których mowa w ust. 3 pkt 2, zastosowanie mają terminy, o których mowa w ustawie z dnia
+13 października 1995 r. o zasadach ewidencji i identyfikacji podatników i płatników (Dz. U. z 2025 r. poz. 237, 769 i 820).
+     8. W przypadkach, o których mowa w ust. 4 pkt 3 i 6, zastosowanie mają terminy określone w ustawie z dnia 26 lipca
+1991 r. o podatku dochodowym od osób fizycznych (Dz. U. z 2025 r. poz. 163, z późn. zm.5)), w ustawie z dnia 20 listopada
+1998 r. o zryczałtowanym podatku dochodowym od niektórych przychodów osiąganych przez osoby fizyczne (Dz. U.
+z 2025 r. poz. 843) oraz w ustawie z dnia 29 września 1994 r. o rachunkowości (Dz. U. z 2023 r. poz. 120, z późn. zm.6)).
+     9. Dołączone do wniosku o wpis żądania, zgłoszenia, wnioski i zmiany, o których mowa w ust. 4, stają się integralną
+częścią wniosku o wpis do CEIDG.
+
+[CEIDG art. 6a (the data for an e-delivery address, given through CEIDG), with its footnote 7 (from 1.01.2025) below]
+    Art. 6a.7) 1. Wnioskodawca za pośrednictwem systemu teleinformatycznego CEIDG wskazuje dane niezbędne do
+utworzenia adresu do doręczeń elektronicznych bądź wpisu adresu do doręczeń elektronicznych powiązanego z kwalifiko-
+waną usługą rejestrowanego doręczenia elektronicznego do bazy adresów elektronicznych.
+    2. W przypadku gdy wnioskodawca składający wniosek o wpis do CEIDG posiada adres do doręczeń elektronicznych
+wpisany do bazy adresów elektronicznych oraz dane, o których mowa w ust. 1, są aktualne, przepisu ust. 1 nie stosuje się.
+7)   Dodany przez art. 141 pkt 2 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych (Dz. U. poz. 2320, z 2021 r. poz. 1135,
+     z 2022 r. poz. 1002 i 2754, z 2023 r. poz. 1860 i 2699 oraz z 2024 r. poz. 1841); wszedł w życie z dniem 1 stycznia 2025 r.
+
+[The CEIDG obwieszczenie, pkt 2 ppkt 1: the e-delivery act art. 152 ust. 1 (from 1.01.2025, an e-delivery address or its data with a CEIDG application); Dz.U. 2026 poz. 507 art. 10 (quoted below) limits it to an application "z informacją o podjęciu działalności gospodarczej" from 14.10.2026]
+          „Art. 152. 1. Podmioty niepubliczne składające wniosek o wpis do Centralnej Ewidencji i Informacji o Działal-
+     ności Gospodarczej od dnia 1 stycznia 2025 r. są obowiązane do przekazania:
+     1)   danych niezbędnych do utworzenia adresu do doręczeń w ramach publicznej usługi rejestrowanego doręczenia
+          elektronicznego albo
+     2)   adresu do doręczeń elektronicznych powiązanego z kwalifikowaną usługą rejestrowanego doręczenia elektronicz-
+          nego oraz danych niezbędnych w celu wpisania tego adresu do bazy adresów elektronicznych.
 
 [CEIDG art. 7 ust. 1 pkt 1-2 (the statements filed with an application)]
      Art. 7. 1. Wraz z wnioskiem o wpis do CEIDG, z wyjątkiem wniosku o wykreślenie przedsiębiorcy, składa się oświad-
@@ -151,6 +240,20 @@ czenia o:
 1)    podejmowaniu lub wykonywaniu określonej działalności gospodarczej nieobjętej żadnym z zakazów, o którym mowa
       w art. 5 ust. 2 pkt 13–15, wydanym wobec osoby, której wpis dotyczy;
 2)    posiadaniu tytułu prawnego do nieruchomości, których adresy są wpisywane do CEIDG.
+
+[Dz.U. 2026 poz. 507 art. 1 pkt 6 (CEIDG art. 7 ust. 1a-1b: a minor's representative's statements; ust. 2 now covers them), from 14.10.2026]
+6)   w art. 7:
+     a)   po ust. 1 dodaje się ust. 1a i 1b w brzmieniu:
+                 „1a. Wraz z wnioskiem o wpis do CEIDG małoletniego, osoba składająca ten wniosek składa oświadczenie,
+          że jest przedstawicielem ustawowym małoletniego oraz że jest uprawniona do jego reprezentowania.
+                 1b. Wraz z wnioskiem o wpis do CEIDG małoletniego składa się oświadczenia, że:
+          1)     przedstawiciele ustawowi małoletniego doszli do porozumienia i ustalili, który z nich będzie reprezentował
+                 małoletniego, albo że zostało wydane rozstrzygnięcie sądu opiekuńczego, o którym mowa w art. 97 § 2
+                 ustawy z dnia 25 lutego 1964 r. – Kodeks rodzinny i opiekuńczy (Dz. U. z 2026 r. poz. 236);
+          2)     przedstawiciel ustawowy, który będzie reprezentował małoletniego, nie jest pozbawiony władzy rodziciel-
+                 skiej albo jego władza rodzicielska nie uległa zawieszeniu, albo ograniczeniu na podstawie odpowiednio
+                 art. 107 i art. 110–112 ustawy z dnia 25 lutego 1964 r. – Kodeks rodzinny i opiekuńczy.”,
+     b) w ust. 2 w zdaniu pierwszym wyrazy „w ust. 1” zastępuje się wyrazami „w ust. 1–1b”;
 
 [CEIDG art. 8 (online or on paper at any municipality; a passport without a PESEL; ust. 8, the status document), as printed; Dz.U. 2026 poz. 507 art. 1 pkt 7 replaces it from 1.11.2028, and its art. 14-16 stop the paper filing of a new business after 31.10.2026]
      Art. 8. 1. Jeżeli wniosek o wpis do CEIDG został złożony z wykorzystaniem formularza elektronicznego, o którym
@@ -271,6 +374,22 @@ niem przepisów art. 8 ust. 8 oraz art. 10 ust. 2 pkt 3–6.
               „b) w przypadku zmiany danych, o których mowa w art. 5 ust. 2 pkt 1 i 3–5”,
            – w pkt 2 wyrazy „jego wykreślenie z CEIDG” zastępuje się wyrazami „wykreślenie przedsiębiorcy z CEIDG”,
 
+[Dz.U. 2026 poz. 507 art. 1 pkt 13 lit. e (art. 15 ust. 4a: a minor's representative files), from 14.10.2026]
+     e)   po ust. 4 dodaje się ust. 4a w brzmieniu:
+              „4a. W przypadku gdy przedsiębiorcą jest małoletni obowiązki dotyczące złożenia wniosku o wpis do
+          CEIDG, o którym mowa w ust. 1, wykonuje przedstawiciel ustawowy, o którym mowa w art. 5 ust. 2 pkt 3.”,
+     f)   ust. 5 otrzymuje brzmienie:
+                „5. Zarządca sukcesyjny jest obowiązany złożyć wniosek o zmianę wpisu w CEIDG w terminie 7 dni od
+          dnia zmiany danych, o których mowa w art. 5 ust. 1 pkt 6–8.”,
+     g) dodaje się ust. 7 i 8 w brzmieniu:
+                „7. Zarządca sukcesyjny ujawniony we wpisie, wobec którego uprawomocniło się orzeczenie o zakazach,
+          o których mowa w art. 8 ust. 2 ustawy z dnia 5 lipca 2018 r. o zarządzie sukcesyjnym przedsiębiorstwem osoby
+          fizycznej i innych ułatwieniach związanych z sukcesją przedsiębiorstw, składa wniosek o zmianę wpisu w CEIDG
+          obejmującą wykreślenie jego danych, o których mowa w art. 5 ust. 2 pkt 18 i 19, chyba że wykreślenie danych
+          nastąpiło na podstawie art. 32a ust. 1 albo decyzji administracyjnej, o której mowa w art. 32a ust. 3.
+                8. Do wniosku o zmianę wpisu w CEIDG składanego przez zarządcę sukcesyjnego stosuje się odpowiednio
+          przepisy art. 7 ust. 1 pkt 2 i ust. 2, art. 8 ust. 1a i 6, art. 10 ust. 1, ust. 2 pkt 1–5 i 7, ust. 4, 5 i 7, art. 12 i art. 13.”;
+
 [CEIDG art. 29 ust. 1-2 (deletion by the minister's decision; pkt 2, the loss of the right under the FE act)]
     Art. 29. 1. Przedsiębiorca podlega wykreśleniu z CEIDG z urzędu, w drodze decyzji administracyjnej ministra właś-
 ciwego do spraw gospodarki, w przypadku:
@@ -293,6 +412,41 @@ na stronie internetowej CEIDG niezwłocznie, niepóźniej niż w terminie 3 dni 
           ewidencji i wykazu w sprawach cudzoziemców prowadzonym na podstawie ustawy z dnia 12 grudnia 2013 r.
           o cudzoziemcach (Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203) oraz w rejestrach Zakładu Ubezpie-
           czeń Społecznych lub Kasy Rolniczego Ubezpieczenia Społecznego.”;
+
+[Dz.U. 2026 poz. 507 art. 1 pkt 54 (CEIDG art. 66a-66d, until 31.10.2028; art. 66b: a municipality converting an FE art. 4 ust. 2 person's paper application attaches the status document's scan), from 14.10.2026]
+54) po dziale III dodaje się dział IIIa w brzmieniu:
+                                                              „Dział IIIa
+                                                         Przepisy epizodyczne
+             Art. 66a. Do dnia 31 października 2028 r. organ gminy, w przypadku gdy czynności, o których mowa w art. 8
+      ust. 4, wykonują upoważnieni pracownicy, jest obowiązany niezwłocznie przekazywać do CEIDG drogą elektroniczną:
+      1)     imiona i nazwiska tych osób;
+      2)     informacje o cofnięciu upoważnień dla tych osób.
+            Art. 66b. Do dnia 31 października 2028 r. upoważnieni pracownicy organu gminy, którzy przekształcają na po-
+      stać dokumentu elektronicznego wniosek o wpis do CEIDG osoby, o której mowa w art. 4 ust. 2 ustawy z dnia 6 marca
+      2018 r. o zasadach uczestnictwa przedsiębiorców zagranicznych i innych osób zagranicznych w obrocie gospodarczym
+      na terytorium Rzeczypospolitej Polskiej:
+      1)     złożony w wybranym urzędzie gminy albo
+      2)     wysłany przesyłką rejestrowaną w rozumieniu art. 3 pkt 23 ustawy z dnia 23 listopada 2012 r. – Prawo pocztowe
+             na adres wybranego urzędu gminy
+      – dołączają do tego wniosku odwzorowanie cyfrowe dokumentu potwierdzającego aktualny status tej osoby.
+            Art. 66c. Do dnia 31 października 2028 r. zarządca sukcesyjny jest obowiązany złożyć wniosek o zmianę wpisu
+      w CEIDG w terminie 7 dni od dnia zmiany danych obejmujących numer identyfikacji podatkowej (NIP) oraz numer
+      identyfikacyjny REGON spółki cywilnej, o ile przedsiębiorca zawarł umowę takiej spółki.
+            Art. 66d. Do dnia 31 października 2028 r. CEIDG przekazuje do Centralnego Rejestru Podmiotów – Krajowej
+      Ewidencji Podatników, Głównego Urzędu Statystycznego, Zakładu Ubezpieczeń Społecznych, Kasy Rolniczego
+      Ubezpieczenia Społecznego oraz podmiotów, o których mowa w art. 44 ust. 3, drogą elektroniczną, dane, o których
+      mowa w art. 5 ust. 2 pkt 2, oraz zmiany tych danych niepóźniej niż w dniu roboczym następującym po dniu uzyskania
+      tych danych lub ich zmiany.”.
+
+[Dz.U. 2026 poz. 507 art. 10 (the e-delivery act art. 152), from 14.10.2026; the act's footnote 5 falls inside it]
+      Art. 10. W ustawie z dnia 18 listopada 2020 r. o doręczeniach elektronicznych (Dz. U. z 2026 r. poz. 3) w art. 152:
+1)    w ust. 1 we wprowadzeniu do wyliczenia po wyrazach „wniosek o wpis do Centralnej Ewidencji i Informacji o Dzia-
+      łalności Gospodarczej” dodaje się wyrazy „z informacją o podjęciu działalności gospodarczej”;
+2)    w ust. 2 we wprowadzeniu do wyliczenia wyrazy „wniosek o zmianę wpisu” zastępuje się wyrazami „wniosek o zmianę
+      wpisu w Centralnej Ewidencji i Informacji o Działalności Gospodarczej, wniosek o wpis informacji o zawieszeniu
+      wykonywania działalności gospodarczej lub wniosek o wpis informacji o wznowieniu wykonywania działalności gos-
+      podarczej”.
+5)   Zmiany wymienionego rozporządzenia zostały ogłoszone w Dz. Urz. UE L 28 z 04.02.2016, str. 18.
 
 [Dz.U. 2026 poz. 507 art. 7 (PP art. 5 ust. 2 and 4, art. 17 ust. 1: "z informacją o podjęciu działalności gospodarczej"), from 14.10.2026]
       Art. 7. W ustawie z dnia 6 marca 2018 r. – Prawo przedsiębiorców (Dz. U. z 2025 r. poz. 1480, 1795 i 1826) użyte
@@ -459,6 +613,28 @@ zezwolenia albo wpisu do rejestru działalności regulowanej, do działalności 
 [The minimum wage in 2026, Dz.U. 2025 poz. 1242 § 1]
      § 1. Od dnia 1 stycznia 2026 r. ustala się minimalne wynagrodzenie za pracę w wysokości 4806 zł.
 
+[The minimum wage in 2027, Dz.U. 2026 poz. 1213 § 1]
+     § 1. Od dnia 1 stycznia 2027 r. ustala się minimalne wynagrodzenie za pracę w wysokości 4950 zł.
+
+[The act on population records (UEL), consolidated Dz.U. 2026 poz. 384, art. 18 ust. 1-1a (a PESEL application at any municipality, on paper; in person for a non-EU, non-EEA, non-Swiss, non-UK foreigner), with its footnote 14 (ust. 1a from 1.01.2026)]
+    Art. 18. 1. Wniosek o nadanie numeru PESEL osoba, o której mowa w art. 7 ust. 2, składa na piśmie utrwalonym
+w postaci papierowej, opatrzonym własnoręcznym podpisem do dowolnego organu gminy.
+    1a.14) Jeżeli osoba, której dotyczy wniosek o nadanie numeru PESEL, określona w art. 7 ust. 2, jest cudzoziemcem nie-
+będącym:
+1)    obywatelem państwa członkowskiego Unii Europejskiej, obywatelem państwa członkowskiego Europejskiego Poro-
+      zumienia o Wolnym Handlu (EFTA) – strony umowy o Europejskim Obszarze Gospodarczym, obywatelem Konfede-
+      racji Szwajcarskiej bądź członkiem jego rodziny,
+2)    obywatelem Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b
+      lub d Umowy o wystąpieniu Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej z Unii Europejskiej
+      i Europejskiej Wspólnoty Energii Atomowej (Dz. Urz. UE L 29 z 31.01.2020, str. 7, z późn. zm.15)), bądź członkiem
+      jego rodziny, o którym mowa w art. 10 ust. 1 lit. e lub f tej umowy
+– wymagane jest jej osobiste stawiennictwo, z wyjątkiem dzieci urodzonych na terytorium Rzeczypospolitej Polskiej.
+
+[UEL footnote 14]
+14) Dodany przez art. 6 pkt 1 ustawy z dnia 12 września 2025 r. o zmianie niektórych ustaw w celu weryfikacji prawa do świadczeń na
+    rzecz rodziny dla cudzoziemców oraz o warunkach pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+    tego państwa (Dz. U. poz. 1301), która weszła w życie z dniem 30 września 2025 r.; wszedł w życie z dniem 1 stycznia 2026 r.
+
 [The special act, consolidated Dz.U. 2025 poz. 337: its former art. 23 (Ukrainian citizens' business on Polish terms, with a PESEL), repealed from 5.03.2026]
       Art. 23. 1. Obywatele Ukrainy, których pobyt na terytorium Rzeczypospolitej Polskiej uznaje się za legalny na pod-
 stawie niniejszej ustawy lub ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach, mogą podejmować i wykonywać działal-
@@ -490,6 +666,10 @@ darczej i Punkcie Informacji dla Przedsiębiorcy (Dz. U. z 2026 r. poz. 30) stos
 w celu prowadzenia działalności gospodarczej nie stosuje się art. 142 ust. 1 pkt 3 ustawy z dnia 12 grudnia 2013 r. o cudzo-
 ziemcach, jeżeli o udzielenie tego zezwolenia ubiega się obywatel Ukrainy, który wykonuje działalność gospodarczą na pod-
 stawie wpisu do Centralnej Ewidencji i Informacji o Działalności Gospodarczej.
+
+[UoC art. 206 ust. 2 (no legal stay under ust. 1 pkt 2 while a permanent residence case is suspended at the party's request), as printed]
+      2. Przepisu ust. 1 pkt 2 nie stosuje się w razie zawieszenia postępowania w sprawie udzielenia cudzoziemcowi zezwo-
+lenia na pobyt stały na wniosek strony.
 
 [UoC art. 186 ust. 1 pkt 1-7 (FE art. 4 ust. 2 pkt 1 lit. c names its pkt 3, 4 and 7)]
      Art. 186. 1. Zezwolenia na pobyt czasowy ze względu na inne okoliczności udziela się cudzoziemcowi, jeżeli:
