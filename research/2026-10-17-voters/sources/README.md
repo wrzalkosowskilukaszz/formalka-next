@@ -30,7 +30,7 @@ Not covered:
 | The gmina council and the wójt | A citizen of another EU state, or of the United Kingdom, who is 18 at the latest on election day and lives permanently in the gmina may vote for its council and its wójt | Code art. 10 § 1 pkt 3 lit. a, pkt 4 |
 | Not | The Sejm, the Senate, the President, district and regional councils: Polish citizens only | Code art. 10 § 1 pkt 1, pkt 3 lit. b |
 | Who may not vote | A person deprived of public rights by a court, of electoral rights by the State Tribunal, or legally incapacitated | Code art. 10 § 2 |
-| Standing | The European Parliament: a voter there who is 21 and has lived permanently in Poland or another EU state for at least 5 years; councils: a voter for them; the wójt: Polish citizens only | Code art. 11 § 1 pkt 4–6 |
+| Standing | The European Parliament: a voter there who turns 21 at the latest on election day and has lived permanently in Poland or another EU state for at least 5 years; councils: a voter for them; the wójt: Polish citizens only | Code art. 11 § 1 pkt 4–6 |
 | A ban at home | An EU or UK citizen deprived of the right to stand in their own state may not stand | Code art. 11 § 3 |
 
 ### The register
@@ -63,7 +63,7 @@ Not covered:
 
 | Point | Page | Act |
 |---|---|---|
-| Online | "Pamiętaj, że wniosek online możesz złożyć tylko przez e-Doręczenia" and log in through login.gov.pl (trusted profile or e-dowód) | Art. 19a § 5 names the signature, not e-Doręczenia; the e-Doręczenia requirement is the page's (PAGES; OPEN-V2) |
+| Online | "Pamiętaj, że wniosek online możesz złożyć tylko przez e-Doręczenia" and log in through login.gov.pl (trusted profile or e-dowód); "Od 1 stycznia 2026 r. tę sprawę załatwisz już tylko za pośrednictwem e-Doręczeń" | Art. 19a § 5 names the signature, not e-Doręczenia; the e-Doręczenia requirement is the page's (PAGES; OPEN-V2) |
 | Without a PESEL | A list of extra data: sex, the status UE / CUE / NUE, the parents', birth, civil status and spouse's data | Art. 19a § 4 names UEL art. 8 pkt 9 and 24a and, if available, pkt 3–5, 7, 8, 12 and 13 (the page's list was not matched item by item) |
 | Times | "urząd ma 5 dni"; with doubts, "7 dni, aby je wyjaśnić, a następnie 5 dni" | Matches art. 19a § 9 and 20 § 1 |
 | When | "W dowolnym momencie" | The act sets no last day for an art. 19a application; the list follows the register's state on the 3rd day before (art. 26 § 9) |
