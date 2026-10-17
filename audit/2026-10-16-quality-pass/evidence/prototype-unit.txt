@@ -1,5 +1,5 @@
 # node --test prototype/test/*.test.mjs
-# 2026-10-17T00:09Z commit f1a64d1 node v22.22.0
+# 2026-10-17T00:25Z commit 1391408 node v22.22.0
 
 # Subtest: D1: app.css uses tokens only (colour, type, radius, motion, layers)
 ok 1 - D1: app.css uses tokens only (colour, type, radius, motion, layers)
@@ -13,49 +13,51 @@ ok 4 - the card fee relief says whom it is for (art. 237 ust. 1)
 ok 5 - a statement ending in a colon gets its quotes; a whole sentence and a paraphrase stay as they are
 # Subtest: the residence scope names what the case does not cover, and states no rule of its own
 ok 6 - the residence scope names what the case does not cover, and states no rule of its own
+# Subtest: two stamp duties for one permit are listed, never added up (residence COMPARISON D21)
+ok 7 - two stamp duties for one permit are listed, never added up (residence COMPARISON D21)
 # Subtest: norm folds Polish letters and punctuation
-ok 7 - norm folds Polish letters and punctuation
+ok 8 - norm folds Polish letters and punctuation
 # Subtest: polarity: yes, no and "Nie wiem"; strict mode for approval cards
-ok 8 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
+ok 9 - polarity: yes, no and "Nie wiem"; strict mode for approval cards
 # Subtest: audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
-ok 9 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
+ok 10 - audit F5: a hedged yes is asked back; a yes that also says "nie" is not read
 # Subtest: yes or no questions: a bare word is taken, a sentence is asked back
-ok 10 - yes or no questions: a bare word is taken, a sentence is asked back
+ok 11 - yes or no questions: a bare word is taken, a sentence is asked back
 # Subtest: options with words: the matching one, or the tied ones to choose from
-ok 11 - options with words: the matching one, or the tied ones to choose from
+ok 12 - options with words: the matching one, or the tied ones to choose from
 # Subtest: the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
-ok 12 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
+ok 13 - the same words read the same against the options that speak to the person ("Mieszkasz…", "masz")
 # Subtest: whose case: someone else is named first; otherwise the person speaks of themselves
-ok 13 - whose case: someone else is named first; otherwise the person speaks of themselves
+ok 14 - whose case: someone else is named first; otherwise the person speaks of themselves
 # Subtest: what it does not follow stays unknown; questions about the question are recognised
-ok 14 - what it does not follow stays unknown; questions about the question are recognised
+ok 15 - what it does not follow stays unknown; questions about the question are recognised
 # Subtest: days and hours in words (the clock starts on Monday 19.10.2026)
-ok 15 - days and hours in words (the clock starts on Monday 19.10.2026)
+ok 16 - days and hours in words (the clock starts on Monday 19.10.2026)
 # Subtest: day and hour chips: a typed day or hour picks its chip; another one is reported
-ok 16 - day and hour chips: a typed day or hour picks its chip; another one is reported
+ok 17 - day and hour chips: a typed day or hour picks its chip; another one is reported
 # Subtest: "Jak poszło?" in the person's words
-ok 17 - "Jak poszło?" in the person's words
+ok 18 - "Jak poszło?" in the person's words
 # Subtest: audit F7: personal numbers are masked before the person's words are shown
-ok 18 - audit F7: personal numbers are masked before the person's words are shown
+ok 19 - audit F7: personal numbers are masked before the person's words are shown
 # Subtest: case intents: a case that is part of another named case gives way to it
-ok 19 - case intents: a case that is part of another named case gives way to it
+ok 20 - case intents: a case that is part of another named case gives way to it
 # Subtest: an answer that fits no option: the reply reasons over the words, never picks for the person
-ok 20 - an answer that fits no option: the reply reasons over the words, never picks for the person
+ok 21 - an answer that fits no option: the reply reasons over the words, never picks for the person
 # Subtest: waiting for the office: the need is read from the words, not as a new application
-ok 21 - waiting for the office: the need is read from the words, not as a new application
+ok 22 - waiting for the office: the need is read from the words, not as a new application
 # Subtest: correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
-ok 22 - correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
+ok 23 - correcting a confirmed answer: what it touches, and typed corrections only with verbatim evidence
 # Subtest: round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
-ok 23 - round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
+ok 24 - round 2 reference D7: an open-reading deadline on a day off warns, and the date stays
 # Subtest: study scope: the groups left out are named, not guessed
-ok 24 - study scope: the groups left out are named, not guessed
+ok 25 - study scope: the groups left out are named, not guessed
 # Subtest: round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
-ok 25 - round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
-# tests 25
+ok 26 - round 2 regressions: a passive or uncertain filing is never read as filed; a year is never lost
+# tests 26
 # suites 0
-# pass 25
+# pass 26
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 197.395183
+# duration_ms 167.117347

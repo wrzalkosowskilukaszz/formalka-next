@@ -14,7 +14,7 @@
 | Wave 2 sources | The act on foreigners and its 2026 amendment, by point and date; the MOS account and outage rules; KPA; fees; the UdSC and voivode pages | d323266, 97a78b7, 2c301c3, 6bf5b74, f1a64d1 |
 | Draft reference | `audit/2026-10-16-residence/RESIDENCE-REFERENCE-DRAFT.md`: rules, fees, deadlines with their basis, eleven fictional cases with what a plan must never say, thirteen open questions with a restriction each, a reviewer sheet | 6bf5b74, f1a64d1 |
 | Engine comparison | `audit/2026-10-16-residence/COMPARISON.md`: twenty rows. Agreement on fees, offices, channel, the outage rule, the card, the time limits. Gaps on reminders, the MOS account, the refusal, the end of the purpose. One wording problem: the Polish legal-stay note drops its conditions | f1a64d1 |
-| Restrictions in the prototype | Five, each with a test that fails without it. See §2 | f1a64d1, and the fifth in the last commit |
+| Restrictions in the prototype | Five, each with a test that fails without it. See §2 | f1a64d1, 1391408 |
 | Evidence | All suites, on the commit (§4) | cc82317 |
 | Wave 3 sources | `research/2026-10-17-ukr/sources/`: temporary protection (where it moved in 2026), PESEL UKR, the CUKR card and UdSC's questions and answers on it, the winding-down act's dates. No reference, as doc 19 plans | 43ebc87, 744cee3 |
 | Open questions narrowed | Work while waiting (the act on employing foreigners, art. 3; finding P9); how calls and the card pickup date arrive at the Mazowiecki office (its e-Doręczenia page, which also starts with "Uzyskaj numer PESEL") | c387219 |
@@ -47,14 +47,14 @@
   Each was checked in the primary text before the draft changed (its §9). Two lessons record the misses.
 - A single e2e run failed by 1 px (1281 > 1280) right after the desktop resize, with no element past the edge. The page check now has the same 1 px tolerance as the element checks. Five later full runs passed.
 
-## 4. Tests on f1a64d1 (`audit/2026-10-16-quality-pass/evidence/`)
+## 4. Tests on f1a64d1, and again on 1391408 after the fee fix (`audit/2026-10-16-quality-pass/evidence/`)
 
 | Suite | Result |
 |---|---|
 | Engine tests | 39/39 |
 | Evaluation | 18/18 |
 | Mutations | 39/39 caught |
-| Prototype unit | 25/25 (4 new); 26/26 after the fee fix (see the last evidence run) |
+| Prototype unit | 25/25 (4 new); 26/26 on 1391408 (5 new) |
 | e2e, reduced motion and full motion | 12/12 and 12/12 (scenario J new, G extended) |
 | Regressions (round 2) | 71/71 |
 | Lint, design rules, docs lint, lessons index | Clean |

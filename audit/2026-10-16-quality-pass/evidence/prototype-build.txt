@@ -1,13 +1,13 @@
 # node prototype/build.mjs (twice) and dist/manifest.json
-# 2026-10-17T00:09Z commit f1a64d1 node v22.22.0
+# 2026-10-17T00:25Z commit 1391408 node v22.22.0
 
-built: dist/index.html 773 KB, build d82f7adf347e, engine bfd91e33bd7ccd22, formalka@04057ef
-89863629f12ba36d4707efa7998dfb2c80bb1f1b87cc913576980f22673ada70  prototype/dist/index.html
-fbee16ed33ec0334ecbee38e73f5c536a3d663063bc74a8afafc544c323fd0b4  prototype/dist/artifact.html
+built: dist/index.html 773 KB, build d5549cffa763, engine bfd91e33bd7ccd22, formalka@04057ef
+df76390d7d5dc3ca8471650499b66c1fea6362f8914ebb568e51042d634324b7  prototype/dist/index.html
+a935e8d4ddace50dab40371ea24e1c124f20a3e2b30ebe06bd4ec1ad87d251bc  prototype/dist/artifact.html
 two builds identical: yes
 
 {
-  "build": "d82f7adf347e",
+  "build": "d5549cffa763",
   "registry": "formalka@04057ef",
   "engine": "bfd91e33bd7ccd22",
   "engineBundle": {
@@ -19,14 +19,14 @@ two builds identical: yes
     "src/app.css": "7442467b765e7b71",
     "src/index.html": "753d83420b45f36f",
     "src/js/00-base.js": "cde2713eab99c647",
-    "src/js/10-cases.js": "7d174a2fcb44e8ba",
+    "src/js/10-cases.js": "e51c0ddef702c625",
     "src/js/20-chat.js": "c2e3018c1c4ef134",
     "src/js/25-shell.js": "452f89eb93f0b312",
     "src/js/30-intake.js": "33ca8bfd60d1f2a8",
     "src/js/32-correct.js": "4f80cd0b250c4766",
     "src/js/35-understand.js": "ba84560dcb1bd11a",
-    "src/js/40-case.js": "0d4a3c0d703fceeb",
-    "src/js/45-guide.js": "75ec4d2a0ad1d9ec",
+    "src/js/40-case.js": "0c23f82b6b80f567",
+    "src/js/45-guide.js": "66818553b20689b0",
     "src/js/46-waiting.js": "0afbf8e222506b14",
     "src/js/50-time.js": "73209c257a57c3b3",
     "src/js/60-screens.js": "e08a5a080298a1d6",
@@ -93,7 +93,7 @@ two builds identical: yes
     "vendor/icons/x.svg": "7397b15e1fa66eaf"
   },
   "outputs": {
-    "index.html": "89863629f12ba36d4707efa7998dfb2c80bb1f1b87cc913576980f22673ada70",
-    "artifact.html": "fbee16ed33ec0334ecbee38e73f5c536a3d663063bc74a8afafc544c323fd0b4"
+    "index.html": "df76390d7d5dc3ca8471650499b66c1fea6362f8914ebb568e51042d634324b7",
+    "artifact.html": "a935e8d4ddace50dab40371ea24e1c124f20a3e2b30ebe06bd4ec1ad87d251bc"
   }
 }
