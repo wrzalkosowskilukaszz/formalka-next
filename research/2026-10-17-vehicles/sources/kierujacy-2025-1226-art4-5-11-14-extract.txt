@@ -1,6 +1,6 @@
-# Ustawa z 5.01.2011 o kierujących pojazdami, consolidated text Dz.U. 2025 poz. 1226 (obwieszczenie of 1.09.2025): art. 4 (which licences are valid), art. 5 (their scope; ust. 4: six months), art. 14 ust. 1-2e (exchanging a foreign licence)
+# Ustawa z 5.01.2011 o kierujących pojazdami (AVD), consolidated text Dz.U. 2025 poz. 1226 (obwieszczenie of 1.09.2025): art. 4 (valid licences), 5 (their scope; ust. 4: six months), 11 ust. 1-2 (who gets a licence; residence), 14 ust. 1-2f (exchanging a foreign licence)
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1226/text.pdf, retrieved 2026-10-17, sha256 0f639b9ec403518fc6052d0ce29181cda37e0e715b35fedc74a82ee61175b29b. pdftotext -layout.
-# Later amendments (tools/sources/touched.mjs DU/2011/151 2025-09-01 --cite 4-5,14, run on 17.10.2026): five acts; one touches these articles: Dz.U. 2025 poz. 1676 art. 4 pkt 8 (published 2.12.2025; its art. 22 pkt 2: in force 14 days after publication, so 17.12.2025). In art. 14 ust. 1 the extra condition (the theory part of the state exam and a certified translation) now applies when the foreign licence "nie jest zgodne ze wzorem i zakresem danych wymaganych w konwencji o ruchu drogowym, o której mowa w art. 4 ust. 1 pkt 2 lit. b" (the Vienna convention), and a new ust. 1a allows exchanging an expired foreign licence after its data are confirmed. Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1676/text.pdf, sha256 2fe188c01ce4018fde03bb6e5b679064eeca41d3a84c490248387205d9c19e19.
+# Later amendments (tools/sources/touched.mjs DU/2011/151 2025-09-01 --cite 4-5,11,14, run on 17.10.2026): five acts; Dz.U. 2025 poz. 1676 changes art. 11 and 14 (amendment-2025-1676-extract.txt, with its dates). The text below is NOT the law in force on its own for those two articles.
 
 [art. 4]
      Art. 4. 1. Dokumentem stwierdzającym posiadanie uprawnienia do kierowania motorowerem, pojazdem silnikowym
@@ -85,7 +85,35 @@ dzień uzyskania pozytywnego wyniku egzaminu państwowego, o którym mowa w art.
 w postaci, o której mowa w art. 182a § 1 ustawy z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy (Dz. U. z 2025 r.
 poz. 911).
 
-[art. 14 ust. 1-2d]
+[art. 11 ust. 1-2]
+     Art. 11. 1. Prawo jazdy jest wydawane osobie, która:
+1)   osiągnęła minimalny wiek wymagany do kierowania pojazdami odpowiedniej kategorii;
+2)   uzyskała orzeczenie:
+     a)   lekarskie o braku przeciwwskazań zdrowotnych do kierowania pojazdem,
+     b) psychologiczne o braku przeciwwskazań psychologicznych do kierowania pojazdem – nie dotyczy prawa jazdy
+        kategorii AM, A1, A2, A, B1, B, B+E lub T;
+3)   odbyła szkolenie wymagane do uzyskania prawa jazdy danej kategorii;
+4)   zdała egzamin państwowy wymagany do uzyskania prawa jazdy odpowiedniej kategorii;
+5)   uprzedzona o odpowiedzialności karnej za zeznanie nieprawdy lub zatajenie prawdy oświadcza, że jej miejsce zamiesz-
+     kania znajduje się na terytorium Rzeczypospolitej Polskiej, przy czym że:
+     a)   przebywa na terytorium Rzeczypospolitej Polskiej co najmniej przez 185 dni w każdym roku kalendarzowym:
+          – ze względu na swoje więzi osobiste i zawodowe albo
+          – z zamiarem stałego pobytu wyłącznie ze względu na swoje więzi osobiste, albo
+     b) przebywa regularnie na terytorium Rzeczypospolitej Polskiej ze względu na swoje więzi osobiste, a jednocześnie,
+        że ze względu na swoje więzi zawodowe kolejno przebywa w co najmniej dwóch państwach członkowskich Unii
+        Europejskiej, albo
+     c)   przebywa nieregularnie na terytorium Rzeczypospolitej Polskiej ze względu na swoje więzi osobiste, ponieważ
+          przebywa w innym państwie członkowskim Unii Europejskiej w celu wypełniania zadania o określonym czasie
+          trwania, albo
+     d) przebywa na terytorium innego państwa ze względu na podjęte w tym państwie studia lub naukę w szkole;
+6)   uprzedzona o odpowiedzialności karnej za zeznanie nieprawdy lub zatajenie prawdy oświadcza, że:
+     a)   nie został orzeczony w stosunku do niej, prawomocnym wyrokiem sądu, zakaz prowadzenia pojazdów mechanicznych,
+     b) nie ma zatrzymanego prawa jazdy ani pozwolenia na kierowanie tramwajem,
+     c)   nie ma cofniętego uprawnienia do kierowania pojazdami.
+     2. Osoba, która nie ukończyła 18 lat, może uzyskać prawo jazdy kategorii AM, A1, B1 lub T za pisemną zgodą rodzica
+lub opiekuna.
+
+[art. 14 ust. 1-2f]
      Art. 14. 1. Osoba posiadająca ważne krajowe prawo jazdy wydane za granicą może, na swój wniosek, otrzymać prawo
 jazdy odpowiedniej kategorii, za opłatą, o której mowa w art. 10 ust. 1, po zwrocie zagranicznego dokumentu organowi
 wydającemu prawo jazdy. Jeżeli prawo jazdy wydane za granicą nie jest określone w konwencjach o ruchu drogowym, o których
@@ -114,3 +142,12 @@ dłużenia tego prawa jazdy lub zgłoszenia jego zatrzymania lub utraty.
 prawa jazdy wydanego przez państwo członkowskie Unii Europejskiej, Konfederację Szwajcarską lub państwo członkowskie
 Europejskiego Porozumienia o Wolnym Handlu (EFTA) – stronę umowy o Europejskim Obszarze Gospodarczym następuje
 wyłącznie w drodze teletransmisji przy użyciu Europejskiej Sieci Praw Jazdy.
+     2e. Wymianie nie podlega zagraniczne prawo jazdy w przypadku:
+1)   braku możliwości potwierdzenia danych w nim zawartych;
+2)   uzyskania informacji, że uprawnienia w nim wskazane zostały cofnięte.
+      2f. W przypadku, o którym mowa w ust. 2e, lub w przypadku jeżeli osoba zgłosi informację, że cofnięto jej uprawnienia
+do kierowania pojazdami poza granicami Rzeczypospolitej Polskiej, po stwierdzeniu, że cofnięte za granicą uprawnienia
+do kierowania pojazdami były wydane na podstawie wymiany polskiego prawa jazdy, a osoba posiada w aktach kierowcy
+potwierdzenie uzyskania uprawnień do kierowania pojazdami na terytorium Rzeczypospolitej Polskiej, do osoby występu-
+jącej o wymianę prawa jazdy lub wydanie polskiego prawa jazdy stosuje się przepisy dotyczące przywrócenia cofniętych
+uprawnień do kierowania pojazdami.

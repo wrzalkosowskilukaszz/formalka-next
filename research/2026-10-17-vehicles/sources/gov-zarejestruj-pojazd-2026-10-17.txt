@@ -1,0 +1,145 @@
+# gov.pl: Zarejestruj pojazd
+# Source: https://www.gov.pl/web/gov/zarejestruj-pojazd, retrieved 2026-10-17, html sha256 1c0d52087f0c97de0a33d01654ba7d324401021f4fc191122a114e850d46f803
+# Text of the page's main content; navigation removed; repeated blocks of its question-and-answer variants kept once. The page says it was last updated 07.04.2025.
+
+Zarejestruj pojazd
+Kupujesz samochód albo inny pojazd? Pamiętaj, żeby każdy kupiony pojazd - zarówno nowy z salonu, jak i używany - zarejestrować w urzędzie. Sprawdź, jak to zrobić
+Informacje:
+- właściciel pojazdu. Jeśli pojazd ma współwłaścicieli – wszyscy powinni być obecni podczas rejestracji,
+- osoba, która może reprezentować firmę (właściciel lub pełnomocnik) – jeśli pojazd jest własnością firmy,
+- osoba albo przedstawiciel firmy, któremu pojazd powierzyła zagraniczna osoba fizyczna lub prawna.
+Sprawę możesz załatwić również przez pełnomocnika. Dowiedz się w urzędzie, jak załatwić sprawę przez pełnomocnika.
+- wniosek o rejestrację pojazdu – otwórz plik w nowym oknie – pobierz i wypełnij w domu albo zrób to w urzędzie,
+- dokument, który potwierdzi, że jesteś właścicielem pojazdu, na przykład umowa sprzedaży lub faktura VAT za zakup pojazdu. Jeśli obcokrajowiec albo firma zagraniczna powierzyła ci pojazd – złóż dokument, który to potwierdzi,
+- dotychczasowe tablice rejestracyjne pojazdu. Jeśli pojazd nie ma tablic albo jeśli tablice trzeba zwrócić do kraju, z którego pojazd jest sprowadzony – wystarczy twoje oświadczenie, w którym napiszesz, że pojazd nie ma tablic albo że tablice rejestracyjne trzeba zwrócić do kraju, z którego pojazd jest sprowadzony,
+- potwierdzenia wszystkich opłat,
+- zaświadczenie o pozytywnym wyniku badania technicznego. Zaświadczenie wydaje uprawniony diagnosta na stacji kontroli pojazdów. Pamiętaj, że wynik badania musi być pozytywny. Pojazd bez ważnego badania technicznego nie może poruszać się po drogach,
+- dowód rejestracyjny,
+- dowód odprawy celnej. Dokument weź z urzędu celnego.
+Pamiętaj – dokumenty w języku obcym dołącz do wniosku wraz z ich tłumaczeniem na język polski. Nie musisz tłumaczyć tylko dowodu rejestracyjnego, który został wydany w państwie UE w zakresie zawierającym kody ujednolicone na poziomie Unii Europejskiej. Dokumenty musi przetłumaczyć tłumacz przysięgły albo polski konsul. Jeżeli w Polsce nie ma tłumacza przysięgłego danego języka, tłumaczenie może zrobić tłumacz przysięgły z państwa, z którego pojazd został sprowadzony.
+Pamiętaj – to, jakie dokumenty trzeba załączyć do wniosku, zależy od charakteru sprawy i decyzji starosty, który jest organem właściwym do rejestracji pojazdu. Starosta może zażądać innego dokumentu niż wyżej wymienione.
+- Przed rejestracją ubezpiecz pojazd (kup ubezpieczenie OC). Pamiętaj, że pojazd bez ważnego ubezpieczenia OC nie może poruszać się po drogach.
+- Zbierz wszystkie potrzebne dokumenty – listę znajdziesz w sekcji Co musisz przygotować.
+- Zrób wszystkie potrzebne opłaty – szczegóły znajdziesz w sekcji Ile zapłacisz.
+- Złóż dokumenty w urzędzie. Dokumenty możesz:
+- złożyć bezpośrednio w urzędzie,
+- wysłać pocztą,
+- złożyć przez internet – jeśli w urzędzie jest taka możliwość. Sprawdź na stronie internetowej urzędu, czy ma elektroniczną skrzynkę podawczą i jakie ma wymagania, żeby złożyć wniosek o rejestrację pojazdu przez internet.
+Urzędnik zarejestruje twój pojazd czasowo na 30 dni. Szczegóły znajdziesz w sekcji Jak wygląda proces rejestracji.
+Masz na to 30 dni od sprowadzenia pojazdu do Polski. Po tym terminie nie możesz się nim poruszać po drogach.
+Pamiętaj, że nie możesz poruszać się po drogach pojazdem, który nie jest zarejestrowany.
+W wydziale komunikacji urzędu właściwego dla twojego miejsca stałego (siedziby) lub czasowego zamieszkania. Może być to:
+- urząd starostwa powiatowego,
+- urząd miasta – jeśli mieszkasz w mieście na prawach powiatu,
+- urząd dzielnicy – jeśli mieszkasz w Warszawie.
+Opłaty w urzędzie:
+- 66,50 zł – opłata za dowód rejestracyjny i komplet znaków legalizacyjnych,
+- 13,50 zł – opłata za pozwolenie czasowe,
+- opłaty za tablice rejestracyjne:
+- 80 zł – samochodowe,
+- 40 zł – motocyklowe,
+- 30 zł – motorowerowe,
+- 1 000 zł – indywidualne.
+Możesz zapłacić:
+- w kasie urzędu, w którym rejestrujesz pojazd,
+- przelewem na konto urzędu, w którym rejestrujesz pojazd.
+Rejestracja czasowa
+Podczas pierwszej wizyty urzędnik zarejestruje twój pojazd czasowo na 30 dni. Przez ten czas sprawdzi informacje o pojeździe i zapewni produkcję dowodu rejestracyjnego. Ty natomiast dostaniesz od urzędnika pozwolenie czasowe i tablice rejestracyjne, które pozwolą ci swobodnie poruszać się po drogach.
+Zazwyczaj urzędnik od razu rejestruje pojazd na 30 dni.
+Właściwa rejestracja
+W ciągu 30 dni kalendarzowych urzędnik zarejestruje pojazd na stałe, a ty dostaniesz właściwe dokumenty. Pamiętaj, że czasowa rejestracja obowiązuje 30 dni. Jeśli urząd w tym czasie nie zarejestruje pojazdu na stałe – idź do urzędu, żeby wydłużył czasową rejestrację na kolejne 14 dni. Jeśli minie termin czasowej rejestracji – a twój pojazd wciąż nie będzie zarejestrowany na stałe – nie możesz poruszać się nim po drogach. Zazwyczaj urzędy informują, że pojazd jest już zarejestrowany na stałe i można odebrać dowód rejestracyjny.
+Pamiętaj, że urzędnik może odmówić ci rejestracji pojazdu (na przykład, gdy nie złożysz wszystkich dokumentów albo złożysz kopię jakiegoś dokumentu zamiast oryginału). Decyzję urzędnika dostaniesz pisemnie. Możesz się od niej odwołać do samorządowego kolegium odwoławczego. Informację o tym, jak się odwołać, znajdziesz w decyzji, którą dostaniesz od urzędnika.
+Ustawa z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym (Dz. U. z 2024 r. poz. 1251)
+Ostatnia aktualizacja: 07.04.2025 08:57
+Instytucja odpowiedzialna za usługę: Ministerstwo Infrastruktury
+Instytucja odpowiedzialna za dokument: Ministerstwo Infrastruktury
+- osoba która może reprezentować firmę (właściciel lub pełnomocnik) – jeśli pojazd jest własnością firmy,
+- dokument, który potwierdzi pozytywny wynik badania technicznego pojazdu – JEDEN z poniższych:
+- zaświadczenie o pozytywnym wyniku badania technicznego. Zaświadczenie wydaje uprawniony diagnosta na stacji kontroli pojazdów,
+Jeśli rejestrujesz pojazd z kierownicą po prawej stronie, czyli przystosowany do ruchu lewostronnego, musisz mieć zaświadczenie o pozytywnym wyniku badania technicznego.
+- dowód rejestracyjny pojazdu wydany przez właściwą instytucją państwa członkowskiego, w którym będzie wpis potwierdzający wykonanie oraz termin badania technicznego,
+- inny dokument, który potwierdzi wykonanie oraz termin ważności badania technicznego. Musi on być wydany przez uprawnioną instytucję państwa członkowskiego, która może wykonywać badania techniczne.
+Pojazd bez ważnego badania technicznego nie może poruszać się po drogach!
+- tylko w przypadku:
+- samochodów osobowych,
+- pojazdów rodzaju „samochodowy inny” (czterokołowiec lub czterokołowiec lekki),
+- samochodów ciężarowych („furgon”, „furgon/podest”, „ciężarowo-osobowy”, „terenowy”, „wielozadaniowy” lub „van”) lub
+- samochodów specjalnych
+JEDEN z wymienionych poniżej dokumentów dotyczących akcyzy:
+- dokument, który potwierdzi zapłatę akcyzy za pojazd w Polsce,
+- dokument, który potwierdzi, że nie ma obowiązku zapłaty akcyzy na terytorium danego kraju, w szczególności zaświadczenie stwierdzające zwolnienie z akcyzy,
+- zaświadczenie stwierdzające zwolnienie od akcyzy,
+- oświadczenie salonu sprzedaży, że salon ten posiada oryginał lub kopię dokumentu, który potwierdzi zapłatę akcyzy w Polsce.
+Pamiętaj – dokumenty w języku obcym dołącz do wniosku wraz z ich tłumaczeniem na język polski. Nie musisz tłumaczyć tylko dowodu rejestracyjnego, który został wydany w państwie UE w zakresie zawierającym kody ujednolicone na poziomie Unii Europejskiej. Dokumenty musi przetłumaczyć tłumacz przysięgły albo polski konsul, z państwa z którego pojazd został sprowadzony. Jeżeli w Polsce nie ma tłumacza przysięgłego danego języka, tłumaczenie może zrobić tłumacz przysięgły z państwa, z którego pojazd został sprowadzony.
+- Zbierz wszystkie potrzebne dokumenty – listę dokumentów znajdziesz w sekcji Co musisz przygotować.
+- Zrób wszystkie potrzebne opłaty – informacje o opłatach znajdziesz w sekcji Ile zapłacisz.
+- złożyć przez internet – jeśli w urzędzie jest taka możliwość. Sprawdź na stronie internetowej urzędu, czy ma elektroniczną skrzynkę podawczą i jakie ma warunki.
+Urzędnik zarejestruje twój pojazd czasowo na 30 dni. Więcej informacji na ten temat znajdziesz w sekcji Jak wygląda proces rejestracji.
+Od 1 lipca 2021 r. wydłużono termin na zarejestrowanie pojazdu do 60 dni.
+Wydłużony termin będzie obowiązywał do dnia odwołania stanu zagrożenia epidemicznego albo stanu epidemii ogłoszonego z powodu COVID-19.
+- 66,50 zł – opłata za dowód rejestracyjny, komplet znaków legalizacyjnych,
+Zazwyczaj urzędnik od razu rejestruje pojazd na 30 dni. W wyjątkowych sytuacjach może to potrwać dłużej, ale maksymalnie 14 dni.
+W ciągu 30 dni kalendarzowych urzędnik zarejestruje pojazd na stałe, a ty dostaniesz właściwe dokumenty. Pamiętaj, że czasowa rejestracja obowiązuje 30 dni. Jeśli urząd w tym czasie nie zarejestruje pojazdu na stałe, musisz iść do urzędu, żeby wydłużył czasową rejestrację na kolejne 14 dni. Jeśli minie termin czasowej rejestracji – a twój pojazd wciąż nie będzie zarejestrowany na stałe – nie możesz poruszać się nim po drogach. Zazwyczaj urzędy informują, że pojazd jest już zarejestrowany na stałe i można odebrać dowód rejestracyjny.
+- osoba, która może reprezentować firmę (właściciel lub pełnomocnik) – jeśli pojazd jest własnością firmy.
+- dokument, który potwierdzi, że jesteś właścicielem pojazdu, na przykład umowa kupna/sprzedaży lub faktura VAT za zakup pojazdu,
+- dotychczasowe tablice rejestracyjne pojazdu,
+- dowód rejestracyjny. W dowodzie musi być wpis o ważnym badaniu technicznym. Jeśli minął termin badania technicznego – wykonaj badanie techniczne na stacji kontroli pojazdów i złóż w urzędzie zaświadczenie o jego pozytywnym wyniku.
+Masz na to 30 dni od dnia nabycia pojazdu (na przykład kupna albo darowizny).
+- 1 000 zł – indywidualne,
+Możesz zachować dotychczasowy numer rejestracyjny, w tym tablice rejestracyjne, jeżeli:
+- pojazd był już zarejestrowany na terytorium Rzeczypospolitej Polskiej,
+- ma tablice rejestracyjne zgodne z przepisami,
+- tablice są utrzymane w należytym stanie i czytelne.
+Wszystkie opłaty zrób przed złożeniem dokumentów. Zachowaj potwierdzenie opłat i złóż je wraz z innymi dokumentami do urzędu.
+- dokument, który potwierdzi, że jesteś właścicielem pojazdu, na przykład umowa kupna/sprzedaży lub faktura VAT za zakup pojazdu. Jeśli obcokrajowiec albo firma zagraniczna powierzyła ci pojazd, złóż dokument, który to potwierdzi,
+- świadectwo zgodności (wymienione w ustawie – Prawo o ruchu drogowym), wraz z oświadczeniem, które będzie zawierać dane i informacje o pojeździe, które są potrzebne do rejestracji pojazdu,
+- dowód odprawy celnej przywozowej - jeśli pojazd jest sprowadzony z państwa, które nie należy do Unii Europejskiej,
+- jeśli pojazd jest sprowadzony z innego państwa Unii Europejskiej i jest to:
+- samochód osobowy,
+- pojazd rodzaju „samochodowy inny” (czterokołowiec lub czterokołowiec lekki),
+- samochód ciężarowy („furgon”, „furgon/podest”, „ciężarowo-osobowy”, „terenowy”, „wielozadaniowy” lub „van”) lub
+- samochód specjalny,
+JEDEN z wymienionych poniżej dokumentów doyczących akcyzy:
+- dokument, który potwierdzi, brak obowiązku zapłaty akcyzy na terytorium kraju, w szczególności zaświadczenie stwierdzające zwolnienie z akcyzy,
+- Przed rejestracją ubezpiecz pojazd (ubezpieczenie OC). Pamiętaj, że pojazd bez ważnego ubezpieczenia OC nie może poruszać się po drogach.
+- jeśli kupujesz pojazd w polskim salonie – zarejestruj go zanim wyjedziesz z salonu,
+- jeśli sprowadzasz pojazd z zagranicy – masz 30 dni na jego zarejestrowanie.
+W ciągu 30 dni kalendarzowych urzędnik zarejestruje pojazd na stałe, a ty dostaniesz właściwe dokumenty. Pamiętaj, że czasowa rejestracja obowiązuje 30 dni. Jeśli urząd w tym czasie nie zarejestruje pojazdu na stałe, musisz iść do urzędu, żeby wydłużył czasową rejestrację na kolejne 14 dni. Jeśli minie termin czasowej rejestracji — a twój pojazd wciąż nie będzie zarejestrowany na stałe – nie możesz poruszać się nim po drogach. Zazwyczaj urzędy informują, że pojazd jest już zarejestrowany na stałe i można odebrać dowód rejestracyjny.
+- Ustawa z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym (Dz. U. z 2024 r. poz. 1251)
+- Ustawa z dnia 14 kwietnia 2023 r. o systemach homologacji pojazdów oraz ich wyposażenia (Dz. U. poz. 919)
+- dokument, który potwierdzi, że jesteś właścicielem pojazdu, na przykład umowa kupna/sprzedaży lub faktura VAT za zakup pojazdu. Jeśli obcokrajowiec albo firma zagraniczna powierzyła ci pojazd, dostarcz dokument, który to potwierdzi,
+- świadectwo zgodności (wymienione w ustawie – Prawo o ruchu drogowym), wraz z oświadczeniem, które będzie zawierać dane i informacje o pojeździe, które są potrzebne do rejestracji pojazdu.
+Zarejestruj pojazd zanim wyjedziesz z salonu.
+- jeśli pojazd jest sprowadzony z państwa, które nie należy do Unii Europejskiej – dowód odprawy celnej przywozowej,
+- samochodów specjalnych,
+- dokument, który potwierdzi, że nie ma obowiązku zapłaty akcyzy na terytorium kraju, w szczególności zaświadczenie stwierdzające zwolnienie z akcyzy,
+Pamiętaj, że urzędnik może odmówić ci rejestracji pojazdu (gdy na przykład nie złożysz wszystkich dokumentów albo złożysz kopię jakiegoś dokumentu zamiast oryginału). Decyzję urzędnika dostaniesz pisemnie. Możesz się od niej odwołać do samorządowego kolegium odwoławczego. Informację o tym, jak się odwołać, znajdziesz w decyzji, którą dostaniesz od urzędnika.
+- wniosek o rejestrację pojazdu – otwórz plik w nowym oknie – pobierz i wypełnij w domu albo zrób w urzędzie,
+- dokument, który potwierdzi, że jesteś właścicielem pojazdu, na przykład umowa kupna/sprzedaży lub faktura VAT za zakup pojazdu. Jeśli jakaś osoba albo firma zagraniczna powierzyła ci pojazd, dostarcz dokument, który to potwierdzi,
+- dotychczasowe tablice rejestracyjne pojazdu. Jeśli pojazd nie ma tablic albo jeśli tablice trzeba zwrócić do kraju, z którego pojazd jest sprowadzony – wystarczy twoje pisemne oświadczenie, w którym napiszesz, że pojazd nie ma tablic albo że tablice rejestracyjne trzeba zwrócić do kraju, z którego pojazd jest sprowadzony. Gdy składasz oświadczenie, zapewniasz, że masz świadomość odpowiedzialności karnej za składanie fałszywych zeznań,
+- oświadczenie salonu sprzedaży, że salon ten posiada oryginał lub kopię dokumentu, który potwierdzi zapłatę akcyzy w Polsce,
+- dowód odprawy celnej przywozowej – jeśli pojazd jest sprowadzony z państwa, które nie należy do Unii Europejskiej,
+- zaświadczenie z badania, które potwierdzi zgodność pojazdu zabytkowego z warunkami technicznymi oraz protokół oceny stanu technicznego pojazdu ze stacji kontroli pojazdów,
+- dowód rejestracyjny – jeśli pojazd był wcześniej zarejestrowany. Jeśli nie masz dowodu rejestracyjnego – wystarczy twoje oświadczenie, w którym napiszesz, że pojazd nie ma dowodu rejestracyjnego,
+- dokument, który potwierdzi, że pojazd jest zabytkowy – JEDEN z poniższych:
+- kopia decyzji wpisania pojazdu do rejestru zabytków. Kopia musi być uwierzytelniona przez urząd odpowiedzialny za rejestr zabytków albo Wojewódzkiego Konserwatora Zabytków,
+- dokument, który potwierdzi, że pojazd jest wpisany do wojewódzkiej ewidencji zabytków,
+- dokument, który potwierdzi, że pojazd jest wpisany do inwentarza muzealiów.
+Masz na to 30 dni od kupna albo sprowadzenia pojazdu do Polski.
+- 100 zł – do samochodów zabytkowych,
+- 50 zł – do motocykli zabytkowych,
+Możesz zachować dotychczasowy numer rejestracyjny, w tym tablic rejestracyjnych, jeżeli:
+Pamiętaj, że urzędnik może odmówić ci rejestracji pojazdu (gdy na przykład nie dostarczysz wszystkich dokumentów albo dostarczysz kopię jakiegoś dokumentu zamiast oryginału). Decyzję urzędnika dostaniesz pisemnie. Możesz się od niej odwołać do samorządowego kolegium odwoławczego. Informację o tym, jak się odwołać, znajdziesz w decyzji, którą dostaniesz od urzędnika.
+- oświadczenie, że jesteś właścicielem zespołów oraz części, z których zbudowano pojazd. Oświadczenie napisz samodzielnie,
+- świadectwo krajowego indywidualnego dopuszczenia pojazdu. Taki dokument dostaniesz od Transportowego Dozoru Technicznego. Dowiedz się, jak uzyskać świadectwo krajowego indywidualnego dopuszczenia pojazdu.
+Zarejestruj pojazd zanim wyjedziesz na drogę.
+Zazwyczaj urzędnik dokonuje czasowej rejestracji od razu.
+W ciągu 30 dni kalendarzowych urzędnik zarejestruje pojazd na stałe, a ty dostaniesz właściwe dokumenty. Pamiętaj, że czasowa rejestracja obowiązuje 30 dni. Jeśli urząd w tym czasie nie zarejestruje pojazdu na stałe, musisz iść do urzędu, żeby wydłużył czasową rejestrację na kolejne 14 dni. Jeśli minie termin czasowej rejestracji, a twój pojazd wciąż nie będzie zarejestrowany na stałe – nie możesz poruszać się nim po drogach. Zazwyczaj urzędy informują, że pojazd jest już zarejestrowany na stałe i można odebrać dowód rejestracyjny.
+Twoje odpowiedzi
+Jaki pojazd chcesz zarejestrować?
+Zmień odpowiedź
+Skąd pochodzi pojazd?
+Skąd pojazd został sprowadzony?
+Czy pojazd ma homologację?
+Jaką homologację ma pojazd?
+Zacznij od początku

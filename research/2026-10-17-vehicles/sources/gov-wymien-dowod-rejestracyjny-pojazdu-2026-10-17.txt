@@ -1,0 +1,89 @@
+# gov.pl: Powrót
+# Source: https://www.gov.pl/web/gov/wymien-dowod-rejestracyjny-pojazdu, retrieved 2026-10-17, html sha256 8009f430b78dd6a4034579037a727f0b43465321d6af96e0094ebe6b9941ec7b
+# Text of the page's main content; navigation removed; repeated blocks of its question-and-answer variants kept once. The page says it was last updated 19.01.2022.
+
+Powrót
+Wymień dowód rejestracyjny pojazdu
+Nie masz już miejsca na wpisanie kolejnego terminu badania technicznego w dowodzie rejestracyjnym? Twoje dane osobowe lub adresowe uległy zmianie? Wymień dowód rejestracyjny pojazdu. Sprawdź, jak to zrobić.
+Informacje:
+- Możesz wymienić dowód rejestracyjny pojazdu w przypadku, kiedy nie ma w nim już miejsca na pieczątki ze stacji kontroli pojazdów. Nie masz jednak takiego obowiązku.
+- Jeśli w czasie, w którym czekasz na wydanie wtórnika dowodu rejestracyjnego, chcesz poruszać się pojazdem – możesz złożyć wniosek o wydanie pozwolenia czasowego. Pozwolenie to jest ważne 30 dni. W szczególnych przypadkach okres ten może zostać przedłużony o 14 dni.
+- właściciel lub współwłaściciel pojazdu,
+- osoby prawne,
+- przedsiębiorcy,
+- spółki cywilne.
+- dane potrzebne do wypełnienia wniosku:
+- miejscowość,
+- nazwisko i imię,
+- PESEL,
+- adres,
+- telefon,
+- seria i numer dowodu rejestracyjnego,
+- dane pojazdu: marka, typ, rodzaj, numer rejestracyjny,
+- dowód wniesienia (uiszczenia) opłaty,
+- dotychczasowy dowód rejestracyjny,
+- karta pojazdu, jeżeli była wydana,
+- zaświadczenie lub odpis z rejestru badania technicznego pojazdu z określonym terminem następnego badania technicznego,
+- dokument tożsamości:
+- osoba fizyczna: dowód osobisty,
+- osoby prawne: dokumenty, które upoważniają do reprezentowania podmiotu oraz dowód osobisty,
+- osoby prowadzące działalność gospodarczą oraz spółki cywilne:
+- dokument tożsamości – dla każdej osoby fizycznej, na którą jest zarejestrowany pojazd lub upoważnienia w razie ich nieobecności,
+- umowa spółki zarejestrowana w Urzędzie Skarbowym – w przypadku spółki cywilnej,
+- umowa obowiązkowego ubezpieczenia OC (do wglądu),
+- oświadczenie współwłaściciela, że działa za zgodą większości współwłaścicieli (jeśli pojazd ma współwłaścicieli),
+- pełnomocnictwo (oryginał lub urzędowo poświadczony odpis) wraz z dowodem uiszczenia opłaty skarbowej (w przypadku ustanowienia pełnomocnika).
+- Wypełnij wniosek. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Złóż dokumenty w odpowiednim urzędzie. Szczegóły znajdziesz w sekcji Gdzie składasz.
+- Poczekaj na odpowiedź z urzędu. Szczegóły znajdziesz w sekcji Ile będziesz czekać.
+- Odbierz dowód rejestracyjny. Szczegóły znajdziesz w sekcji Informacje dodatkowe.
+W urzędzie miasta lub starostwie powiatowym – właściwym dla twojego miejsca zamieszkania.
+- Za wymianę dowodu:
+- bez pozwolenia czasowego – 54,50 zł – gdy badania techniczne w są ważne co najmniej 1 miesiąc,
+- z pozwoleniem czasowym – 73,50 zł.
+- Opłata skarbowa za złożenie dokumentu stwierdzającego udzielenie pełnomocnictwa lub prokury albo jego odpisu, wypisu lub kopii: 17 zł od każdego stosunku pełnomocnictwa. Z opłaty zwolnione są pełnomocnictwa udzielane:
+- małżonkowi,
+- wstępnemu,
+- zstępnemu lub rodzeństwu albo
+- gdy mocodawcą jest podmiot zwolniony od opłaty skarbowej.
+- Opłatę wpłać na konto właściwego urzędu:
+- przelewem,
+- przekazem pocztowym lub
+- bezpośrednio w kasie.
+- Opłatę wnieś najpóźniej w dniu składania wniosku.
+Do miesiąca.
+Jeśli wraz z wnioskiem o wymianę dowodu rejestracyjnego pojazdu składasz wniosek o wydanie pozwolenia czasowego – pozwolenie czasowe dostaniesz od razu.
+- Dowód rejestracyjny otrzymasz po uprzednim zwrocie pozwolenia czasowego i okazaniu potwierdzenia zawarcia umowy ubezpieczenia OC.
+- Dokument możesz odebrać:
+- osobiście,
+- przez pełnomocnika za okazaniem dowodu osobistego lub
+- na poczcie za potwierdzeniem odbioru (na twój koszt).
+- Informacje o przebiegu sprawy otrzymasz:
+- w urzędzie,
+- na stronie info car. Na dole strony wpisz: numer rejestracyjny pojazdu i 5 ostatnich znaków numeru nadwozia.
+- Ustawa z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (Dz. U. z 2021, poz. 450 t. j. z późn. zm.);
+- Rozporządzenie Ministra Infrastruktury z dnia 11 grudnia 2017r. w sprawie rejestracji i oznaczania pojazdów oraz wymagań dla tablic rejestracyjnych (tekst jednolity Dz. U. z 2017 r. poz. 2355);
+- Instrukcja w sprawie rejestracji pojazdu stanowiąca załącznik nr 1 do rozporządzenie Ministra Infrastruktury z dnia 27 września 2003 r. w sprawie szczegółowych czynności organów w sprawach związanych z dopuszczeniem pojazdu do ruchu oraz wzorów dokumentów w tych sprawach (tekst jednolity Dz. U. z 2016 r. poz. 1088);
+- Rozporządzenie Ministra Infrastruktury z dnia 9 maja 2016 r. w sprawie wysokości opłat za wydanie dowodu rejestracyjnego, pozwolenia czasowego i tablic (tablicy) rejestracyjnych pojazdów (Dz. U. 2016 r. poz. 689);
+- Rozporządzenie Ministra Spraw Wewnętrznych z dnia 25 maja 2015 r. w sprawie opłaty ewidencyjnej stanowiącej przychód Funduszu – Centralna Ewidencja Pojazdów i Kierowców (Dz.U.2015 r. poz.681);
+- Wyślij dokumenty do odpowiedniego urzędu urzędu. Szczegóły znajdziesz w sekcji Gdzie składasz.
+Na adres urzędu miasta lub starostwa powiatowego właściwego dla twojego miejsca zamieszkania – najlepiej listem poleconym.
+Ostatnia aktualizacja: 19.01.2022 10:08
+- Jeśli zmienisz adres zamieszkania, masz obowiązek powiadomić o tym urząd.
+- Jeśli w czasie, w którym czekasz na wydanie dowodu rejestracyjnego, chcesz poruszać się pojazdem –możesz złożyć wniosek o wydanie pozwolenia czasowego. Pozwolenie to jest ważne 30 dni. W szczególnych przypadkach okres ten może zostać przedłużony o 14 dni.
+- kartę pojazdu, jeżeli była wydana,
+W terminie 30 dni od zmiany adresu zamieszkania.
+W urzędzie miasta lub starostwie powiatowym właściwym dla twojego miejsca zamieszkania.
+- Opłata za wydanie nowego dowodu rejestracyjnego: 54,50 zł.
+- Opłatę wpłać na konto urzędu:
+- osobiście
+- w urzędzie
+- Ustawa z dnia 20 czerwca 1997 r. - Prawo o ruchu drogowym (Dz. U. z 2021, poz. 450 t. j. z późn. zm.);
+- Rozporządzenie Ministra Spraw Wewnętrznych z dnia 25 maja 2015 r. w sprawie opłaty ewidencyjnej stanowiącej przychód Funduszu - Centralna Ewidencja Pojazdów i Kierowców (Dz.U.2015 r. poz.681);
+- dane pojazdu: marka, typ, rodzaj, numer rejestracyjny.
+- Wyślij dokumenty do odpowiedniego urzędu. Szczegóły znajdziesz w sekcji Gdzie składasz.
+Na adres urzędu miasta lub starostwa powiatowego właściwego dla twojego miejsca zamieszkania – najlepiej listem polceonym.
+Twoje odpowiedzi
+Z jakiego powodu wymieniasz dowód rejestracyjny?
+Zmień odpowiedź
+Zacznij od początku

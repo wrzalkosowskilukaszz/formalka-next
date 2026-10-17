@@ -1,0 +1,50 @@
+# Fees. (1) Rozporządzenie Ministra Infrastruktury z 4.08.2022 w sprawie wysokości opłat za wydanie dowodu rejestracyjnego, pozwolenia czasowego i zalegalizowanych tablic (tablicy) rejestracyjnych oraz ich wtórników, consolidated text Dz.U. 2025 poz. 553 (obwieszczenie of 16.04.2025): § 2-4. (2) Rozporządzenie Ministra Infrastruktury z 9.07.2025 w sprawie wysokości opłat za wydanie dokumentów stwierdzających uprawnienia do kierowania pojazdami, Dz.U. 2025 poz. 953: § 1.
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2025/553/text.pdf, sha256 7436d6643bf9a6b6e9067d6b451c1848f7db8ea061bb405b068b44b5a5d7674d; https://api.sejm.gov.pl/eli/acts/DU/2025/953/text.pdf, sha256 9af7275443bada7a6dcc830010d235cb7620d8f625628341bd45cbc7c7e929a8; retrieved 2026-10-17.
+# Later amendments: none for either (tools/sources/amendments.mjs DU/2022/1848 2025-04-16 and DU/2025/953 2025-07-17, run on 17.10.2026).
+# Not included: the fee to the vehicle and driver records fund that offices add per document (the gov.pl pages show 54,50 zł and 73,50 zł, so about 0,50 zł per document); its regulation is not collected (OPEN-V3).
+
+[2025/553 § 2-4]
+           § 2. Organ rejestrujący pobiera opłatę za wydanie dowodu rejestracyjnego albo jego wtórnika – 54,00 zł.
+
+           § 3. 1. Za wydanie pozwolenia czasowego albo jego wtórnika organ rejestrujący pobiera opłatę:
+1)         w przypadku, o którym mowa w art. 74 ust. 2 pkt 1 ustawy – 13,50 zł;
+2)3) w przypadku, o którym mowa w art. 74 ust. 2 pkt 2 albo ust. 2ca ustawy – 18,50 zł.
+     2. Za wydanie pozwolenia czasowego w przypadku złożenia wniosku, o którym mowa w art. 74a ust. 9 zdanie pierwsze
+ustawy, albo za wydanie wtórnika tego pozwolenia organ rejestrujący pobiera opłatę w wysokości określonej w ust. 1 pkt 2.
+
+           § 4. 1. Organ rejestrujący pobiera opłatę za wydanie:
+1)         tablic rejestracyjnych samochodowych albo ich wtórnika – 80,00 zł;
+2)         tablicy rejestracyjnej motocyklowej albo jej wtórnika – 40,00 zł;
+3)         tablicy rejestracyjnej motorowerowej albo jej wtórnika – 30,00 zł;
+4)         tablic rejestracyjnych indywidualnych – 1000,00 zł;
+5)         tablic rejestracyjnych zabytkowych samochodowych albo ich wtórnika – 100,00 zł;
+6)         tablic rejestracyjnych zabytkowych jednorzędowych zmniejszonych – 100,00 zł;
+7)         tablicy rejestracyjnej motocyklowej zabytkowej albo jej wtórnika – 50,00 zł;
+8)         tablicy rejestracyjnej motorowerowej zabytkowej albo jej wtórnika – 40,00 zł;
+9)         kompletu nalepek legalizacyjnych na tablice rejestracyjne albo wtórnika tych nalepek – 12,50 zł.
+     2. Za wydanie wtórnika tablic rejestracyjnych indywidualnych organ rejestrujący pobiera opłatę w wysokości określonej
+w ust. 1 pkt 1 albo 2.
+           3. Za wydanie:
+1)         jednej tablicy rejestracyjnej, o której mowa w ust. 1 pkt 1 i 4–6, organ rejestrujący pobiera odpowiednio opłatę w wy-
+           sokości 50 % opłaty określonej w tych przepisach;
+
+
+1)        Na dzień ogłoszenia obwieszczenia w Dzienniku Ustaw Rzeczypospolitej Polskiej działem administracji rządowej – transport kieruje
+          Minister Infrastruktury, na podstawie § 1 ust. 2 pkt 3 rozporządzenia Prezesa Rady Ministrów z dnia 18 grudnia 2023 r. w sprawie
+          szczegółowego zakresu działania Ministra Infrastruktury (Dz. U. poz. 2725).
+2)        W brzmieniu ustalonym przez § 1 pkt 1 rozporządzenia Ministra Infrastruktury z dnia 29 października 2024 r. zmieniającego rozpo-
+          rządzenie w sprawie wysokości opłat za wydanie dowodu rejestracyjnego, pozwolenia czasowego i zalegalizowanych tablic (tablicy)
+          rejestracyjnych oraz ich wtórników (Dz. U. poz. 1710), które weszło w życie z dniem 30 listopada 2024 r.
+3)        Ze zmianą wprowadzoną przez § 1 pkt 2 rozporządzenia, o którym mowa w odnośniku 2.
+Dziennik Ustaw                                                      –3–                                                           Poz. 553
+
+2)    wtórnika jednej tablicy rejestracyjnej, o której mowa w ust. 1 pkt 1, 5 i 6, organ rejestrujący pobiera odpowiednio
+      opłatę w wysokości 50 % opłaty określonej w tych przepisach;
+3)    wtórnika jednej tablicy rejestracyjnej indywidualnej będącej tablicą samochodową organ rejestrujący pobiera opłatę
+      w wysokości 50 % opłaty określonej w ust. 1 pkt 1.
+
+[2025/953 § 1]
+      § 1. Wysokość opłaty za wydanie:
+1)    prawa jazdy – wynosi 100 zł;
+2)    międzynarodowego prawa jazdy – wynosi 35 zł;
+3)    pozwolenia na kierowanie tramwajem – wynosi 30 zł.

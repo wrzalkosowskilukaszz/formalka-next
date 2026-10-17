@@ -1,0 +1,96 @@
+# gov.pl: Zgłoś zbycie lub nabycie pojazdu, na przykład sprzedaż, kupno, darowiznę
+# Source: https://www.gov.pl/web/gov/zglos-zbycie-lub-nabycie-pojazdu-na-przyklad-sprzedaz-kupno-darowizne, retrieved 2026-10-17, html sha256 4371e3140de23703d5b5f45d69e64bd61b8fe9a7d82af57508930121d92f139f
+# Text of the page's main content; navigation removed; repeated blocks of its question-and-answer variants kept once. The page says it was last updated 14.01.2026.
+
+Zgłoś zbycie lub nabycie pojazdu, na przykład sprzedaż, kupno, darowiznę
+Kupujesz lub sprzedajesz samochód? Przekazujesz go jako darowiznę komuś z rodziny? Gdy już sprzedasz lub przekażesz samochód, powiadom o tym urząd. Sprawdź, jak zgłosić zbycie lub nabycie pojazdu.
+Nabycie pojazdu musisz zgłosić, jeśli kupiłeś(-aś) pojazd przed 1 stycznia 2024 r.
+Jeśli kupisz pojazd po 1 stycznia 2024 r., nie musisz tego zgłaszać, ale masz obowiązek go zarejestrować.
+Pojazd zarejestrujesz w urzędzie. Szczegółowe informacje znajdziesz na stronie Zarejestruj pojazd.
+Ważna zmiana w sposobie załatwiania spraw urzędowych przez Internet
+Tę sprawę możesz załatwić też przez e-Doręczenia. Dowiedz się, jak uzyskać adres do e-Doręczeń.
+Informacje:
+Złóż wniosek
+Jeśli chcesz złożyć wniosek przez Internet – potrzebujesz profilu zaufanego lub certyfikatu kwalifikowanego. Pozwalają one potwierdzić twoją tożsamość.
+Sprawdź, jak założyć profil zaufany
+Zbycie pojazdu zarejestrowanego zgłasza dotychczasowy właściciel pojazdu, który na przykład sprzedał pojazd albo darował go innej osobie.
+Osoba, która tego nie zrobi w ciągu 30 dni – może zapłacić karę w wysokości 250 zł.
+- dane nabywcy pojazdu,
+- skan lub zdjęcie dokumentu, który potwierdza zbycie pojazdu, na przykład umowę kupna-sprzedaży pojazdu albo albo umowę darowizny pojazdu.
+- Przygotuj skan lub zdjęcie dokumentu, który potwierdza zbycie pojazdu zarejestrowanego, na przykład skan umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+- Kliknij: WYŚLIJ ZGŁOSZENIE.
+- Przeniesiesz się na stronę login.gov.pl. Wybierz sposób logowania.
+- Przeniesiesz się do usługi mój Pojazd, w której zobaczysz swoje pojazdy. Przy właściwym pojeździe kliknij Zgłoś zbycie pojazdu.
+Uwaga! Jeśli nie widzisz pojazdu, który chcesz zgłosić - przejdź do innej usługi.
+- Jeśli pojazd ma więcej właścicieli, zaznacz oświadczenie, że działasz za ich zgodą.
+- Podaj datę zbycia pojazdu.
+- Sprawdź lub uzupełnij swoje dane.
+- Podaj dane nabywcy. Szczegóły znajdziesz w sekcji Co musisz przygotować .
+- Dołącz skan dokumentu, który potwierdza zbycie pojazdu.
+- Wybierz urząd, do którego wyślesz zgłoszenie. Szczegóły znajdziesz w sekcji Gdzie zgłaszasz.
+- Sprawdź formularz zgłoszenia i podpisz elektronicznie podpisem zaufanym lub certyfikatem kwalifikowanym.
+- Wyślij. Wyświetli się komunikat, że twoje zawiadomienie zostało wysłane. Na swoją skrzynkę (ePUAP lub e-Doręczenia) dostaniesz urzędowe poświadczenie przedłożenia (UPP). Nie dostaniesz innego dokumentu urzędowego, który potwierdza złożenie zgłoszenia.
+Do 30 dni kalendarzowych od dnia zbycia pojazdu, czyli na przykład od podpisania umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+Do wydziału komunikacji urzędu właściwego dla twojego miejsca zamieszkania. Może być to:
+- starostwo powiatowe,
+- urząd miasta – jeśli mieszkasz w mieście na prawach powiatu,
+- urząd dzielnicy – jeśli mieszkasz w Warszawie.
+Usługa jest bezpłatna.
+Zgłoszenie zostanie zarejestrowane od razu, gdy pismo trafi do urzędu. Nie dostaniesz jednak oddzielnego dokumentu urzędowego, który to potwierdzi.
+Ustawa z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym (art. 73aa i art. 140mb)
+Sprawę możesz też załatwić przez pełnomocnika. Dowiedz się w urzędzie, jak to zrobić.
+- zawiadomienie o zbyciu pojazdu, które dostaniesz w urzędzie starostwa powiatowego albo w urzędzie miasta. Urzędy często też udostępniają dokument na swojej stronie internetowej,
+- dowód osobisty lub paszport,
+- jeśli jesteś cudzoziemcem – kartę pobytu,
+- kopię dokumentu, który potwierdza zbycie pojazdu, na przykład umowę kupna-sprzedaży pojazdu albo umowę darowizny pojazdu.
+- Przygotuj potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Zgłoś zbycie pojazdu. Szczegóły znajdziesz w sekcji Gdzie zgłaszasz.
+Masz 2 możliwości:
+- zanieś dokumenty do urzędu,
+- wyślij dokumenty pocztą.
+Do 30 dni kalendarzowych od dnia zbycia lub nabycia pojazdu, czyli na przykład podpisania umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+W wydziale komunikacji urzędu właściwego dla twojego miejsca zamieszkania. Może być to:
+Zazwyczaj urzędnicy przyjmują od razu zgłoszenia o zbyciu lub nabyciu pojazdu.
+Jeśli jest taka potrzeba – na przykład jeśli brakuje dokumentów albo urzędnik musi sprawdzić sprawę – może to potrwać dłużej.
+Jeśli zgłaszasz zbycie w urzędzie – urzędnik umieści na dokumencie, który potwierdza zbycie lub nabycie pojazdu, urzędową adnotację. To potwierdzi twoje zgłoszenie. Nie dostaniesz oddzielnego dokumentu urzędowego.
+Ostatnia aktualizacja: 14.01.2026 11:53
+Instytucja odpowiedzialna za usługę: Ministerstwo Infrastruktury
+Zbycie pojazdu niezarejestrowanego zgłasza dotychczasowy właściciel pojazdu, który na przykład sprzedał pojazd albo darował go innej osobie.
+- dane pojazdu, którego zbycie zgłaszasz:
+- markę, typ (jeśli jest), model – te dane znajdziesz na przykład w dowodzie rejestracyjnym, umowie kupna-sprzedaży lub na fakturze VAT,
+- numer identyfikacyjny (numer VIN albo numer nadwozia, podwozia, ramy) – znajdziesz go na przykład w dowodzie rejestracyjnym, umowie kupna-sprzedaży lub na fakturze VAT,
+- dotychczasowy numer rejestracyjny,
+- skan lub zdjęcie dokumentu, który potwierdza zbycie pojazdu, na przykład umowę kupna-sprzedaży pojazdu albo umowę darowizny pojazdu.
+- Przygotuj skan lub zdjęcie dokumentu, który potwierdza zbycie pojazdu niezarejestrowanego, na przykład skan umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+- Wpisz dane pojazdu. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Podaj dane nabywcy.
+- Dołącz skan dokumentu, który potwierdza zbycie pojazdu. Szczegóły znajdziesz w sekcji Co musisz przygotować.
+- Wyślij. Wyświetli się komunikat, że twoje zgłoszenie zostało wysłane. Na swoją skrzynkę (ePUAP lub e-Doręczenia) dostaniesz urzędowe poświadczenie przedłożenia (UPP). Nie dostaniesz innego dokumentu urzędowego, który potwierdza złożenie zgłoszenia.
+Zapraszamy do urzędu.
+Jeśli zgłaszasz zbycie w urzędzie – urzędnik umieści na dokumencie, który potwierdza zbycie pojazdu, urzędową adnotację. To potwierdzi twoje zgłoszenie. Nie dostaniesz oddzielnego dokumentu urzędowego.
+Nabycie pojazdu zgłasza nowy właściciel pojazdu, jeśli kupił pojazd przed 1 stycznia 2024 r.
+Osoba, która tego nie zrobi – może zapłacić karę w wysokości od 200 do 1000 złotych.
+- dane pojazdu, którego nabycie zgłaszasz:
+- markę, typ (jeśli jest), model – te dane znajdziesz na przykład w dowodzie rejestracyjnym: – w części oznaczonej literą D (oznaczenia: D.1 – marka pojazdu, D.2 – typ pojazdu, D.3 – model pojazdu).
+- numer identyfikacyjny (numer VIN albo numer nadwozia, podwozia, ramy) – znajdziesz go na przykład w dowodzie rejestracyjnym – w części oznaczonej literą E,
+- dane zbywcy pojazdu,
+- skan lub zdjęcie dokumentu, który potwierdza nabycie pojazdu, na przykład umowę kupna-sprzedaży pojazdu albo zbycie lub nabycie pojazdu albo umowę darowizny pojazdu.
+- Przygotuj skan lub zdjęcie dokumentu, który potwierdza nabycie pojazdu, na przykład skan umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+- Podaj datę nabycia pojazdu.
+- Podaj dane zbywcy.
+- Dołącz skan dokumentu, który potwierdza nabycie pojazdu.
+Do 30 dni kalendarzowych od dnia nabycia pojazdu, czyli na przykład od podpisania umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+Jeśli nie zarejestrujesz pojazdu w terminie 30 dni, starosta nałoży karę administracyjną w wysokości 500 zł. Jeśli właścicielem jest przedsiębiorca, który prowadzi działalność w zakresie obrotu pojazdami i nie złoży wniosku o rejestrację w ciągu 90 dni, kara administracyjna wyniesie 1000 zł.
+Sprawę możesz też załatwić przez pełnomocnika. dowiedz się w urzędzie, jak to zrobić.
+- zawiadomienie o nabyciu pojazdu, które dostaniesz w urzędzie starostwa powiatowego albo w urzędzie miasta. Urzędy często też udostępniają dokument na swojej stronie internetowej,
+- kopię dokumentu, który potwierdza nabycie pojazdu, na przykład umowę kupna-sprzedaży pojazdu albo umowę darowizny pojazdu.
+- Zgłoś nabycie pojazdu. Szczegóły znajdziesz w sekcji Gdzie zgłaszasz.
+Do 30 dni kalendarzowych od dnia nabycia pojazdu, czyli na przykład podpisania umowy kupna-sprzedaży pojazdu albo umowy darowizny pojazdu.
+Zazwyczaj urzędnicy przyjmują zgłoszenia o nabyciu lub nabyciu pojazdu od razu.
+Jeśli jest taka potrzeba – na przykład jeśli brakuje jakichś dokumentów albo urzędnik musi sprawdzić sprawę – może to potrwać dłużej.
+Jeśli zgłaszasz nabycie w urzędzie – urzędnik umieści na dokumencie, który potwierdza zbycie lub nabycie pojazdu, urzędową adnotację. To potwierdzi twoje zgłoszenie. Nie dostaniesz oddzielnego dokumentu urzędowego.
+Twoje odpowiedzi
+Co chcesz zgłosić
+Zmień odpowiedź
+Czy pojazd jest zarejestrowany na ciebie
+Zacznij od początku

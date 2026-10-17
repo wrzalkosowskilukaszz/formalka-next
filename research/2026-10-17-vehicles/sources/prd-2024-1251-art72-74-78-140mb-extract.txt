@@ -1,0 +1,238 @@
+# Ustawa z 20.06.1997 – Prawo o ruchu drogowym (PRD), consolidated text Dz.U. 2024 poz. 1251 (obwieszczenie of 21.06.2024): art. 72 ust. 1-2a (documents), 73 ust. 1-1a (who registers; keeping plates), 73aa (the 30 days), 74 ust. 1-3 and 5 (temporary registration), 78 ust. 1-2b (a sale; changed data), 140mb (penalties)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2024/1251/text.pdf, retrieved 2026-10-17, sha256 de6c1f33e4c8cc9079f6307ea5c559d07013539a9985e6f8d63a792d2371fccb. pdftotext -layout.
+# Later amendments (tools/sources/touched.mjs DU/1997/602 2024-06-21 --cite 71-74,73aa,78,140mb,140n, run on 17.10.2026): ten acts. Dz.U. 2025 poz. 1734 changes art. 72, 73, 73aa, 74 and 140mb (its text and dates: amendment-2025-1734-extract.txt). Dz.U. 2025 poz. 1843 only adds art. 140mc after art. 140mb. The others touch other articles.
+# So the text below is NOT the law in force on its own: apply the 1734 changes by their dates.
+
+[art. 72 ust. 1-2a]
+      Art. 72. 1. Rejestracji dokonuje się na podstawie:
+1)    dowodu własności pojazdu lub dokumentu potwierdzającego powierzenie pojazdu, o którym mowa w art. 73 ust. 5;
+2)    (uchylony)
+3)32) jednego z dokumentów:
+      a)   świadectwa zgodności WE wraz z oświadczeniem zawierającym dane i informacje o pojeździe niezbędne do reje-
+           stracji i ewidencji pojazdu,
+      b) świadectwa zgodności wraz z oświadczeniem zawierającym dane i informacje o pojeździe niezbędne do rejestracji
+         i ewidencji pojazdu,
+      c)   świadectwa zgodności, o którym mowa w art. 27 ust. 1 pkt 2 ustawy z dnia 14 kwietnia 2023 r. o systemach homo-
+           logacji pojazdów oraz ich wyposażenia, wraz z oświadczeniem zawierającym dane i informacje o pojeździe nie-
+           zbędne do rejestracji i ewidencji pojazdu,
+      d) dopuszczenia jednostkowego pojazdu wraz z oświadczeniem zawierającym dane i informacje o pojeździe nie-
+         zbędne do rejestracji i ewidencji pojazdu,
+      e)   świadectwa krajowego indywidualnego dopuszczenia pojazdu, o którym mowa w art. 2 ust. 1 pkt 33 ustawy z dnia
+           14 kwietnia 2023 r. o systemach homologacji pojazdów oraz ich wyposażenia, wraz z oświadczeniem zawierają-
+           cym dane i informacje o pojeździe niezbędne do rejestracji i ewidencji pojazdu,
+      f)   uznania dopuszczenia jednostkowego pojazdu,
+
+30) Przez art. 2 pkt 1 lit. a ustawy z dnia 7 lipca 2023 r. o zmianie niektórych ustaw w celu ograniczania niektórych skutków kradzieży
+    tożsamości (Dz. U. poz. 1394), która weszła w życie z dniem 22 lipca 2023 r.
+31) Przez art. 2 pkt 1 lit. b ustawy, o której mowa w odnośniku 30; weszła w życie z dniem 1 stycznia 2024 r.
+32) W brzmieniu ustalonym przez art. 72 pkt 7 lit. a ustawy, o której mowa w odnośniku 3.
+Dziennik Ustaw                                            – 62 –                                                Poz. 1251
+
+     g) uznania świadectwa krajowego indywidualnego dopuszczenia pojazdu, o którym mowa w art. 64 ust. 1 ustawy
+        z dnia 14 kwietnia 2023 r. o systemach homologacji pojazdów oraz ich wyposażenia,
+     h) świadectwa dopuszczenia indywidualnego WE pojazdu,
+     i)   świadectwa unijnego indywidualnego dopuszczenia pojazdu, o którym mowa w art. 2 ust. 1 pkt 32 ustawy z dnia
+          14 kwietnia 2023 r. o systemach homologacji pojazdów oraz ich wyposażenia, wraz z oświadczeniem zawierają-
+          cym dane i informacje o pojeździe niezbędne do rejestracji i ewidencji pojazdu
+     – jeżeli są wymagane; świadectwa zgodności WE, świadectwa zgodności oraz oświadczenia zawierające dane i infor-
+     macje o pojeździe niezbędne do rejestracji i ewidencji pojazdu mogą być podpisane podpisem odbitym sposobem
+     mechanicznym;
+4)   zaświadczenia o pozytywnym wyniku badania technicznego pojazdu, jeżeli jest wymagane albo dowodu rejestracyj-
+     nego pojazdu lub innego dokumentu wydanego przez właściwy organ państwa członkowskiego, potwierdzającego wyko-
+     nanie oraz termin ważności badania technicznego;
+5)   dowodu rejestracyjnego, jeżeli pojazd był zarejestrowany;
+6)   dowodu odprawy celnej przywozowej, jeżeli pojazd został sprowadzony z terytorium państwa niebędącego państwem
+     członkowskim Unii Europejskiej i jest rejestrowany po raz pierwszy;
+6a) dokumentu potwierdzającego zapłatę akcyzy na terytorium kraju albo dokumentu potwierdzającego brak obowiązku
+    zapłaty akcyzy na terytorium kraju albo zaświadczenia stwierdzającego zwolnienie od akcyzy, w rozumieniu przepi-
+    sów o podatku akcyzowym, jeżeli samochód osobowy, pojazd rodzaju „samochodowy inny”, podrodzaj „czterokoło-
+    wiec” (kategoria homologacyjna L7e) lub podrodzaj „czterokołowiec lekki” (kategoria homologacyjna L6e), samochód
+    ciężarowy (kategoria homologacyjna N1), podrodzaj „furgon”, „furgon/podest”, „ciężarowo-osobowy”, „terenowy”,
+    „wielozadaniowy” lub „van” lub samochód specjalny (kategoria homologacyjna M1 i N1), został sprowadzony z tery-
+    torium państwa członkowskiego Unii Europejskiej i jest rejestrowany po raz pierwszy.
+7)   (uchylony)
+8)   (uchylony)
+9)   (uchylony)
+     1a. (uchylony)
+     1b. W przypadku nabycia od wyspecjalizowanego salonu sprzedaży, w rozumieniu przepisów o podatku akcyzowym,
+samochodu osobowego lub pojazdu, o którym mowa w ust. 1 pkt 6a, dokument potwierdzający zapłatę akcyzy na terytorium
+kraju, dokument potwierdzający brak obowiązku zapłaty akcyzy na terytorium kraju albo zaświadczenie stwierdzające zwol-
+nienie od akcyzy samochodu osobowego może być zastąpione oświadczeniem wyspecjalizowanego salonu sprzedaży, że
+posiada odpowiednio oryginał lub kopię dokumentu potwierdzającego zapłatę akcyzy na terytorium kraju, oryginał lub kopię
+dokumentu potwierdzającego brak obowiązku zapłaty akcyzy na terytorium kraju od tego samochodu osobowego lub
+pojazdu albo oryginał lub kopię zaświadczenia stwierdzającego zwolnienie od akcyzy samochodu osobowego.
+     2. Wymagania ust. 1 nie dotyczą:
+1)   pojazdu, który był już zarejestrowany na terytorium Rzeczypospolitej Polskiej – w zakresie ust. 1 pkt 3;
+1a) pojazdu, który był już zarejestrowany na terytorium Rzeczypospolitej Polskiej i od ostatniej rejestracji nie nastąpiła
+    zmiana właściciela tego pojazdu, w przypadku gdy przerejestrowanie pojazdu jest dokonywane na wniosek właściciela
+    tego pojazdu w związku ze zmianą jego miejsca zamieszkania (siedziby) – w zakresie dowodu własności pojazdu,
+    o którym mowa w ust. 1 pkt 1;
+2)   pojazdu zakupionego po przepadku na rzecz Skarbu Państwa lub na rzecz jednostki samorządu terytorialnego – w za-
+     kresie ust. 1 pkt 5;
+3)   pojazdu zakupionego od Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu
+     Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Krajowej
+     Administracji Skarbowej lub Sił Zbrojnych Rzeczypospolitej Polskiej – w zakresie ust. 1 pkt 5;
+4)   (uchylony)
+5)   pojazdu wycofanego czasowo z ruchu – w zakresie ust. 1 pkt 5; w tym przypadku zamiast dowodu rejestracyjnego
+     wymaga się przedstawienia decyzji o czasowym wycofaniu pojazdu z ruchu;
+Dziennik Ustaw                                                     – 63 –                                          Poz. 1251
+
+6)     (uchylony)
+7)     pojazdu wyrejestrowanego, o którym mowa w art. 79 ust. 4 pkt 3 – w przypadku powtórnej rejestracji – w zakresie
+       ust. 1 pkt 5;
+8)     pojazdu, o którym mowa w art. 81 ust. 4 pkt 1 – w zakresie ust. 1 pkt 4.
+      2a. W przypadku pojazdu sprowadzanego z terytorium państwa niebędącego państwem członkowskim zamiast dowodu
+rejestracyjnego, o którym mowa w ust. 1 pkt 5, dopuszcza się przedstawienie innego dokumentu stwierdzającego rejestrację
+pojazdu, wydanego przez organ właściwy do rejestracji pojazdów w tym państwie.
+
+[art. 73 ust. 1-1a]
+     Art. 73. 1. Rejestracji pojazdu dokonuje, na wniosek właściciela pojazdu, starosta właściwy ze względu na miejsce
+jego stałego zamieszkania (siedzibę) lub czasowego zamieszkania, wydając decyzję o rejestracji pojazdu, dowód rejestra-
+cyjny i zalegalizowane tablice (tablicę) rejestracyjne.
+      1a. Składający wniosek o rejestrację pojazdu może wnioskować o zachowanie dotychczasowego numeru rejestracyj-
+nego, w tym tablic (tablicy) rejestracyjnych, jeżeli pojazd był już zarejestrowany na terytorium Rzeczypospolitej Polskiej
+i posiada tablice (tablicę) rejestracyjne zgodne z przepisami wydanymi na podstawie art. 76 ust. 1 pkt 1 lit. a oraz utrzymane
+w należytym stanie i czytelne. W takim przypadku starosta, dokonując rejestracji pojazdu, wydaje decyzję o rejestracji
+pojazdu i dowód rejestracyjny oraz dokonuje legalizacji dotychczasowych tablic (tablicy) rejestracyjnych. Jeżeli tablice
+(tablica) rejestracyjne nie są zgodne z przepisami wydanymi na podstawie art. 76 ust. 1 pkt 1 lit. a albo nie są utrzymane
+w należytym stanie, albo nie są czytelne, stosuje się przepis ust. 1.
+
+[art. 73aa]
+       Art. 73aa.35) 1. Właściciel pojazdu jest obowiązany złożyć wniosek o jego rejestrację w terminie 30 dni od dnia:
+1)     nabycia pojazdu na terytorium Rzeczypospolitej Polskiej;
+2)     dopuszczenia do obrotu przez organ Krajowej Administracji Skarbowej pojazdu sprowadzonego z terytorium państwa
+       niebędącego państwem członkowskim Unii Europejskiej;
+3)     sprowadzenia pojazdu na terytorium Rzeczypospolitej Polskiej z terytorium państwa członkowskiego Unii Europej-
+       skiej.
+     2. W przypadku nabycia pojazdu, o którym mowa w ust. 1 pkt 1, w drodze spadku termin, o którym mowa w ust. 1,
+biegnie od dnia prawomocnego orzeczenia sądu o stwierdzeniu nabycia spadku albo sporządzenia aktu poświadczenia
+dziedziczenia.
+      3. W przypadku gdy właścicielem pojazdu, o którym mowa w ust. 1, jest przedsiębiorca prowadzący na terytorium
+Rzeczypospolitej Polskiej działalność gospodarczą w zakresie obrotu pojazdami, obowiązany jest do złożenia wniosku o reje-
+strację pojazdu, o którym mowa w ust. 1, w terminie 90 dni.
+    4. Przepisu ust. 1 nie stosuje się do podmiotu uprawnionego, o którym mowa w art. 80s ust. 2, w odniesieniu do pojaz-
+dów, dla których ten podmiot uprawniony posiada ważną decyzję o profesjonalnej rejestracji pojazdów.
+      5. Przepisów ust. 1 i 3 nie stosuje się w przypadku, gdy właścicielem nowego pojazdu jest przedsiębiorca prowadzący
+na terytorium Rzeczypospolitej Polskiej działalność gospodarczą w zakresie obrotu pojazdami lub produkcji pojazdów.
+     6. Przepisu ust. 1 pkt 1 nie stosuje się w przypadku, gdy przed upływem terminów, o których mowa w ust. 1 albo 3,
+właścicielowi pojazdu nabytego i zarejestrowanego na terytorium Rzeczypospolitej Polskiej zostały wydane:
+1)     zaświadczenie o demontażu pojazdu, o którym mowa w:
+       a)   art. 79 ust. 2,
+       b) art. 24 ust. 1 pkt 2 albo art. 33 ust. 3 ustawy z dnia 20 stycznia 2005 r. o recyklingu pojazdów wycofanych z eks-
+          ploatacji (Dz. U. z 2020 r. poz. 2056);
+2)     zaświadczenie o przyjęciu niekompletnego pojazdu, o którym mowa w art. 25 ust. 1 albo art. 33 ust. 3 ustawy z dnia
+       20 stycznia 2005 r. o recyklingu pojazdów wycofanych z eksploatacji.
+     7. Przepisu ust. 1 pkt 1 nie stosuje się w przypadku, gdy właściciel pojazdu nabytego na terytorium Rzeczypospolitej
+Polskiej dokona zbycia tego pojazdu przed upływem terminów, o których mowa w ust. 1 albo 3.
+
+[art. 74 ust. 1-5]
+     Art. 74. 1. Czasowej rejestracji pojazdu dokonuje, w przypadkach określonych w ust. 2, organ rejestrujący właściwy
+ze względu na miejsce stałego zamieszkania (siedzibę) lub czasowego zamieszkania właściciela pojazdu, wydając decyzję
+o czasowej rejestracji pojazdu, pozwolenie czasowe i zalegalizowane tablice (tablicę) rejestracyjne.
+
+
+
+38)   Część wspólna w tym brzmieniu obowiązuje do wejścia w życie zmiany, o której mowa w odnośniku 39.
+39)   Część wspólna ze zmianą wprowadzoną przez art. 1 pkt 1 ustawy z dnia 28 kwietnia 2022 r. o zmianie niektórych ustaw w związku
+      z rozwojem publicznych systemów teleinformatycznych (Dz. U. poz. 1002); wejdzie w życie z dniem wdrożenia rozwiązań technicznych
+      umożliwiających organom rejestrującym realizację zadań związanych z rejestracją pojazdów, czasową rejestracją, czasowym wy-
+      cofaniem z ruchu, wyrejestrowaniem, profesjonalną rejestracją pojazdów i prowadzeniem rejestru przedsiębiorców prowadzących
+      stacje kontroli pojazdów w systemie teleinformatycznym obsługującym centralną ewidencję pojazdów, o której mowa w art. 80a ust. 1
+      ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym (Dz. U. z 2024 r. poz. 1251), zwaną dalej „centralną ewidencją pojazdów”.
+      Minister właściwy do spraw informatyzacji w porozumieniu z ministrem właściwym do spraw transportu na podstawie art. 12 ust. 1
+      ustawy wymienionej jako pierwsza w zdaniu pierwszym ogłasza w Dzienniku Ustaw Rzeczypospolitej Polskiej komunikat określający
+      termin oraz zakres wdrożenia, o którym mowa w zdaniu pierwszym.
+Dziennik Ustaw                                                   – 69 –                                                 Poz. 1251
+
+     1a. W przypadku, o którym mowa w ust. 2 pkt 2 lit. b, czasowej rejestracji może dokonać również organ rejestrujący
+właściwy ze względu na miejsce zakupu pojazdu lub jego odbioru na terytorium Rzeczypospolitej Polskiej.
+       2. Czasowej rejestracji dokonuje się:
+1)     z urzędu – po złożeniu wniosku o rejestrację pojazdu;
+2)     na wniosek właściciela pojazdu – w celu umożliwienia:
+       a)   wywozu pojazdu za granicę,
+       b) przejazdu pojazdu z miejsca jego zakupu lub odbioru na terytorium Rzeczypospolitej Polskiej,
+       c)   przejazdu pojazdu związanego z koniecznością dokonania jego badania technicznego lub naprawy.
+3)     (uchylony)
+      2a. Czasowej rejestracji, o której mowa w ust. 2 pkt 1, można dokonać pomimo braku dołączonych do wniosku o reje-
+strację dokumentów, o których mowa w art. 72 ust. 1 pkt 6 i 6a. Dokumenty te powinny zostać złożone przed wydaniem
+dowodu rejestracyjnego.
+      2b. Czasowej rejestracji pojazdu dokonuje się warunkowo, jeżeli właściciel pojazdu złoży oświadczenie, że w okresie od
+tej rejestracji do wydania dowodu rejestracyjnego nie nastąpi zmiana w zakresie własności pojazdu.
+     2c. Przepisów ust. 2a i 2b nie stosuje się w przypadku wniosku o rejestrację pojazdu złożonego przez salon sprzedaży
+pojazdów samochodowych, przyczep lub motorowerów lub uprawnionego przedstawiciela tego salonu, o którym mowa
+w art. 73c ust. 1 pkt 1.
+     2ca.40) Czasowej rejestracji samochodu osobowego przeznaczonego do zawodów sportowych dokonuje się na wniosek
+właściciela pojazdu, w celu dopuszczenia do ruchu drogowego na czas trwania imprez organizowanych przez polski związek
+sportowy w rozumieniu przepisów ustawy z dnia 25 czerwca 2010 r. o sporcie, na wyznaczonych drogach umożliwiających
+dojazd, o których mowa w art. 65a ust. 3 pkt 3 lit. j.
+     2d. Organ rejestrujący nie dokonuje czasowej rejestracji, o której mowa w ust. 2 pkt 1, w przypadku gdy są spełnione
+jednocześnie następujące warunki:
+1)     pojazd był ostatnio zarejestrowany na terytorium Rzeczypospolitej Polskiej, a właściciel pojazdu albo podmiot, o którym
+       mowa w art. 73 ust. 2 i 5, składając wniosek o rejestrację pojazdu, wnioskują o zachowanie dotychczasowego numeru
+       rejestracyjnego;
+2)     organ rejestrujący pozytywnie zweryfikował w dniu złożenia wniosku o rejestrację pojazdu dane zawarte w dotych-
+       czasowym dowodzie rejestracyjnym w centralnej ewidencji pojazdów;
+3)     w dotychczasowym dowodzie rejestracyjnym jest miejsce na dokonanie przez organ rejestrujący adnotacji o treści:
+       „W dniu ... złożono wniosek o rejestrację pojazdu w ...” oraz wpisanie daty i nazwy urzędu obsługującego organ
+       dokonujący adnotacji.
+       2e. W przypadku, o którym mowa w ust. 2d, organ rejestrujący:
+1)     dokonuje legalizacji dotychczasowych tablic (tablicy) rejestracyjnych;
+2)     wydaje decyzję o rejestracji pojazdu i dowód rejestracyjny.
+     2f. Właściciel pojazdu albo podmiot, o którym mowa w art. 73 ust. 2 i 5, są obowiązani odebrać decyzję o rejestracji
+pojazdu i dowód rejestracyjny w terminie 30 dni od dnia złożenia wniosku o rejestrację pojazdu.
+     3. Czasowej rejestracji dokonuje się na okres nieprzekraczający 30 dni. Termin ten może być jednorazowo przedłużony
+o 14 dni w celu wyjaśnienia spraw związanych z rejestracją pojazdu.
+     3a.41) Czasowej rejestracji, o której mowa w ust. 2ca, dokonuje się na okres wynikający z terminu badania technicz-
+nego, o którym mowa w art. 81 ust. 11b.
+       4. (uchylony)
+     5. Po upływie terminu czasowej rejestracji tablice rejestracyjne zwraca się do organu, który je wydał, z wyjątkiem
+przypadku, o którym mowa w ust. 2 pkt 2 lit. a.
+
+40)   Dodany przez art. 4 pkt 4 lit. a ustawy, o której mowa w odnośniku 22; weszła w życie z dniem 1 czerwca 2024 r.
+41)   Dodany przez art. 4 pkt 4 lit. b ustawy, o której mowa w odnośniku 22; weszła w życie z dniem 1 czerwca 2024 r.
+Dziennik Ustaw                                             – 70 –                                                 Poz. 1251
+
+     6. W przypadku gdy właściciel pojazdu zamierza skorzystać z wyrejestrowania pojazdu z urzędu, o którym mowa
+w art. 79 ust. 3b, składając wniosek o czasową rejestrację pojazdu, o którym mowa w ust. 2 pkt 2 lit. a, składa oświadczenie,
+że pojazd zostanie wywieziony za granicę. Oświadczenie to składa się pod rygorem odpowiedzialności karnej za składanie
+fałszywych oświadczeń. Składający oświadczenie jest obowiązany do zawarcia w nim klauzuli następującej treści: „Jestem
+świadomy odpowiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o od-
+powiedzialności karnej za składanie fałszywych oświadczeń.
+
+[art. 78 ust. 1-2b]
+      Art. 78. 1. W razie przeniesienia na inną osobę własności pojazdu zarejestrowanego, dotychczasowy właściciel prze-
+kazuje nowemu właścicielowi dowód rejestracyjny oraz zaświadczenie o przeprowadzonym badaniu technicznym pojazdu,
+jeżeli w dowodzie rejestracyjnym nie jest określony aktualny termin ważności badania technicznego.
+Dziennik Ustaw                                                    – 77 –                                                     Poz. 1251
+
+     1a. W razie przeniesienia na inną osobę własności pojazdu czasowo wycofanego z ruchu dotychczasowy właściciel
+przekazuje nowemu właścicielowi decyzję o czasowym wycofaniu pojazdu.
+     2.49) Właściciel pojazdu zarejestrowanego na terytorium Rzeczypospolitej Polskiej jest obowiązany zawiadomić w ter-
+minie nieprzekraczającym 30 dni starostę o:
+1)     zbyciu pojazdu;
+2)     zmianie stanu faktycznego wymagającej zmiany danych zamieszczonych w dowodzie rejestracyjnym.
+    2a.50) Zawiadomienia, o którym mowa w ust. 2 pkt 1, właściciel pojazdu dokonuje u starosty właściwego ze względu
+na miejsce zamieszkania (siedzibę) lub czasowego zamieszkania, a jeżeli właścicielem jest przedsiębiorstwo wielozakła-
+dowe lub inny podmiot, w skład którego wchodzą wydzielone jednostki organizacyjne – u starosty właściwego ze względu
+na miejsce rejestracji pojazdu.
+    2b.50) W przypadku współwłasności pojazdu dla skuteczności zawiadomienia o zbyciu pojazdu wystarczającym jest
+zawiadomienie przez jednego ze współwłaścicieli pojazdu.
+       3. (uchylony)
+
+[art. 140mb]
+      Art. 140mb.173) 1. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu w termi-
+nie, o którym mowa w art. 73aa ust. 1, nie złoży tego wniosku w terminie, podlega karze pieniężnej w wysokości 500 zł.
+   2. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu w terminie, o którym
+mowa w art. 73aa ust. 3, nie złoży tego wniosku w terminie, podlega karze pieniężnej w wysokości 1000 zł.
+     3. Kto będąc właścicielem pojazdu obowiązanym do złożenia wniosku o rejestrację pojazdu pomimo wezwania nie
+uzupełnia braków złożonego wniosku w wyznaczonym terminie, podlega karze pieniężnej, o której mowa odpowiednio
+w ust. 1 albo 2.
+      4. Kary pieniężnej, o której mowa w ust. 3, nie nakłada się, jeżeli termin na uzupełnienie braków złożonego wniosku
+o rejestrację pojazdu upływa odpowiednio przed upływem terminu, o którym mowa w art. 73aa ust. 1 albo 3.
+     5. W przypadku niezłożenia wniosku o rejestrację pojazdu w terminie 180 dni od dnia, o którym mowa odpowiednio
+w art. 73aa ust. 1 albo 2, karę pieniężną, o której mowa:
+1)   w ust. 1, nakłada się w wysokości 1000 zł;
+2)   w ust. 2, nakłada się w wysokości 2000 zł.
+      6. Kto będąc właścicielem pojazdu zarejestrowanego na terytorium Rzeczypospolitej Polskiej wbrew przepisowi
+art. 78 ust. 2 pkt 1 nie zawiadamia starosty o zbyciu pojazdu w terminie, podlega karze pieniężnej w wysokości 250 zł.
+     7. Kary pieniężne współwłaściciele pojazdu ponoszą solidarnie.

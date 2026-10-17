@@ -80,7 +80,7 @@
 
 ## 7. After the owner's second message: the next matters mapped (17.10)
 
-The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Five maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
+The owner asked for the next matters "w pełni zmapowane, z wielokrotnością scenariuszy, przemyślanym user flow". Six maps, all design documents, nothing built. The index is doc 20 (`docs/formalka-next/20-MATTER-MAPS.md`).
 
 | Map | What it holds | Commit |
 |---|---|---|
@@ -89,6 +89,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 | `maps/e-government-access.md` and its sources | Journey E0–E5, 8 loss points, 12 scenarios; the user flow as a prerequisite level inside other cases | 0fff2af |
 | `maps/health-insurance.md` and its sources (`research/2026-10-17-health/sources/`) | Journey H0–H6 with a PESEL UKR stage, 16 loss points plus 2 for PESEL UKR, 27 scenarios; a case of its own and a linked task in the residence and CUKR cases; no amounts, no promises of cover, no computed dates | 7ce207e |
 | `maps/civil-status.md` and its sources (`research/2026-10-17-civil/sources/`), after the owner's "Działaj dalej, stan cywilny" | Birth B0–B5, marriage M0–M5, death D0–D2, foreign records F0–F1; 24 loss points, 25 scenarios; a birth case, a marriage case, a calm death page; no chosen names or laws, no computed dates | 48cf1d4 |
+| `maps/vehicles-licence.md` and its sources (`research/2026-10-17-vehicles/sources/`), after the owner's "Działaj, pojazdy i prawo jazdy" | Vehicle V0–V5, licence L0–L4; 15 loss points, 20 scenarios; fees listed and never summed; every FACT being checked by a separate agent (`.claude/agents/official-fact-checker.md`; results to follow in `CHECK.md`) | 1st commit of the map |
 
 **Found on the way:**
 - **The scenarios found an engine bug.** On the paper route (family reunification from abroad), a granted decision left the card locked behind a conditional call for missing papers. The planner now treats a required event (a granted decision) as implying the steps before it, as a recorded later step already did.
@@ -100,6 +101,7 @@ The owner asked for the next matters "w pełni zmapowane, z wielokrotnością sc
 - **Health care for PESEL UKR holders changed on 5.03.2026.** Without insurance, it now covers four groups (victims of torture or rape, children, residents of collective accommodation, pregnancy) and emergencies (protection act art. 112c, added by Dz.U. 2026 poz. 203). The CUKR card gives the same access as any permit holder (UdSC). The CUKR compare card now names this.
 - **The clinic confirms the right by PESEL** (act on health care benefits art. 50 ust. 3; the insurance card was repealed from 1.07.2026 by Dz.U. 2026 poz. 791). Without a PESEL, a person needs a document or the written statement, and a false statement may be billed.
 - **The NFZ page and the act differ** on the foreign students' contribution base: the page names the care benefit (świadczenie pielęgnacyjne), the act the special care allowance (specjalny zasiłek opiekuńczy, art. 68 ust. 4 pkt 3). The map states neither amount (OPEN-H1).
+- **The road traffic act changed under the map's feet:** Dz.U. 2025 poz. 1734 changes registration in three steps (24.12.2025, 10.06.2026, 18.01.2027), and the act on drivers changed on 17.12.2025 and 3.09.2026 (Dz.U. 2025 poz. 1676). gov.pl's registration page still carries a COVID-era note about 60 days; the act says 30.
 - **Registering a birth online needs e-Doręczenia** since 1.01.2026, per gov.pl, and so a PESEL and a trusted profile. Parents without them report in person.
 - **The office registers a newborn's address only for children of Polish citizens** (act on population records art. 29); gov.pl's opening sentence says it does for everyone. Foreign parents register the child themselves, which brings wave 1 back. The child's own residence title (foreigners act art. 160 pkt 2, 195) is not in the residence map yet.
 - **The source tool had two gaps,** found while using it: short act titles and titles with a dash did not match, and annex changes showed as "(none named)". Both are changed in the lab, with tests.

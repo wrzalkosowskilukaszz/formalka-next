@@ -1,0 +1,72 @@
+# Rozporządzenie Ministra Infrastruktury z 5.08.2025 w sprawie wydawania dokumentów stwierdzających uprawnienia do kierowania pojazdami, Dz.U. 2025 poz. 1073: § 5 ust. 6 (a non-convention licence: a translation), § 14 ust. 1 pkt 5-7 (what the office needs for an exchange) and ust. 8-11 (confirming a non-EU licence's data)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1073/text.pdf, retrieved 2026-10-17, sha256 03908567db837161ed0971e4d3ebd395ebc0b52c730a444a09ae0257e2773085. pdftotext -layout.
+# Later amendments: Dz.U. 2026 poz. 1162 (in force 3.09.2026; https://api.sejm.gov.pl/eli/acts/DU/2026/1162/text.pdf, sha256 50ca12a5c533e8bb90187cedd20e5cad4ebce54d19afcac2cb7c6fb7719c8401) changes § 5 (the residence statement under the new art. 11 ust. 1a) and § 14 ust. 12 (the exchange code); not the parts below as far as read (OPEN-V8 asks for a full comparison).
+# The regulation still speaks of licences "nieokreślone w konwencjach … art. 4 ust. 1 pkt 2 lit. a i b", while the act's art. 14 ust. 1 since 17.12.2025 speaks of the 1968 convention's model only.
+
+[§ 5 ust. 6]
+     6. Osoby ubiegające się o wymianę wydanego za granicą prawa jazdy nieokreślonego w konwencjach o ruchu drogo-
+wym, o których mowa w art. 4 ust. 1 pkt 2 lit. a i b ustawy, dodatkowo przedkładają kopię posiadanego prawa jazdy wraz
+z tłumaczeniem na język polski, sporządzonym lub poświadczonym przez tłumacza przysięgłego lub właściwego konsula
+Rzeczypospolitej Polskiej. Kopia tłumaczonego dokumentu stanowi integralną część przedkładanego tłumaczenia.
+
+[§ 14 ust. 1 pkt 5-7]
+5)    osoby ubiegającej się o wymianę prawa jazdy wydanego za granicą przez państwo członkowskie Unii Europejskiej,
+      państwo – stronę konwencji o ruchu drogowym, o których mowa w art. 4 ust. 1 pkt 2 lit. a i b ustawy, lub odpowiada-
+      jącego wzorowi prawa jazdy określonemu w tych konwencjach po otrzymaniu od osoby:
+      a)    wniosku o wydanie prawa jazdy lub pozwolenia,
+      b)    dowodu uiszczenia opłaty za wydanie prawa jazdy,
+      c)    fotografii, o której mowa w § 5 ust. 1 pkt 3,
+      d)    kopii posiadanego prawa jazdy wraz z tłumaczeniem na język polski sporządzonym lub poświadczonym przez
+            tłumacza przysięgłego lub właściwego konsula Rzeczypospolitej Polskiej; dokumenty te są również wymagane
+            od osoby ubiegającej się o wymianę prawa jazdy wydanego za granicą, jeżeli z przepisów wydanych na podstawie
+            art. 14 ust. 4 ustawy lub z umów międzynarodowych wynika wzajemna wymiana praw jazdy bez wymogu spraw-
+            dzania kwalifikacji; nie wymaga się tłumaczenia na język polski prawa jazdy wydanego zgodnie z wzorem okreś-
+            lonym w załączniku 1 do dyrektywy nr 2006/126/WE Parlamentu Europejskiego i Rady z dnia 20 grudnia 2006 r.
+            w sprawie praw jazdy (przekształcenie) (Dz. Urz. UE L 403 z 30.12.2006, str. 18, z późn. zm.3)) oraz w załączni-
+            kach 1 i 1a do dyrektywy Rady 91/439/EWG z dnia 29 lipca 1991 r. w sprawie praw jazdy (Dz. Urz. WE L 237
+            z 24.08.1991, str. 1, z późn. zm.4) – Dz. Urz. UE Polskie wydanie specjalne, rozdz. 7, t. 1, str. 317); do dokonanego
+            tłumaczenia dołącza się w sposób trwały kopię przetłumaczonego dokumentu;
+
+6)    osoby ubiegającej się o wymianę prawa jazdy wydanego za granicą przez państwo członkowskie Unii Europejskiej,
+      Konfederacji Szwajcarskiej lub państwo członkowskie Europejskiego Porozumienia o Wolnym Handlu (EFTA) –
+      stronę umowy o Europejskim Obszarze Gospodarczym, którego termin ważności upłynął, po otrzymaniu od osoby:
+      a)    dokumentów, o których mowa w pkt 5, oraz
+      b)    dokumentów wymaganych do przedłużenia terminu ważności prawa jazdy;
+
+3)
+     Zmiany wymienionej dyrektywy zostały ogłoszone w Dz. Urz. UE L 223 z 26.08.2009, str. 31, Dz. Urz. UE L 314 z 29.11.2011,
+     str. 31, Dz. Urz. UE L 321 z 20.11.2012, str. 54, Dz. Urz. UE L 158 z 10.06.2013, str. 356, Dz. Urz. UE L 261 z 03.10.2013, str. 29,
+     Dz. Urz. UE L 194 z 02.07.2014, str. 10, Dz. Urz. UE L 107 z 25.04.2015, str. 68, Dz. Urz. UE L 126 z 14.05.2016, str. 85, Dz. Urz.
+     UE L 183 z 08.07.2016, str. 59, Dz. Urz. UE L 112 z 02.05.2018, str. 29, Dz. Urz. UE L 165 z 02.07.2018, str. 35 oraz Dz. Urz. UE L 141
+     z 05.05.2020, str. 9.
+4)
+     Zmiany wymienionej dyrektywy zostały ogłoszone w Dz. Urz. WE C 241 z 28.08.1994, str. 21, Dz. Urz. WE L 337 z 24.12.1994,
+     str. 86, Dz. Urz. WE L 235 z 17.09.1996, str. 1, Dz. Urz. WE L 150 z 07.06.1997, str. 41, Dz. Urz. WE L 237 z 21.09.2000, str. 45,
+     Dz. Urz. UE L 226 z 10.09.2003, str. 4, Dz. Urz. UE L 236 z 23.09.2003, str. 33, Dz. Urz. UE L 284 z 31.10.2003, str. 1, Dz. Urz. UE L 363
+     z 20.12.2006, str. 344, Dz. Urz. UE L 403 z 30.12.2006, str. 18, Dz. Urz. UE L 168 z 28.06.2008, str. 36 oraz Dz. Urz. UE L 223
+     z 26.08.2009, str. 26.
+﻿
+Dziennik Ustaw                                              –9–                                                Poz. 1073
+
+7)   osoby ubiegającej się o wymianę wydanego za granicą prawa jazdy nieokreślonego w konwencjach o ruchu drogo-
+     wym, o których mowa w art. 4 ust. 1 pkt 2 lit. a i b ustawy, po otrzymaniu za pośrednictwem ośrodka egzaminowania
+     dokumentów, o których mowa w pkt 1;
+
+[§ 14 ust. 8-11]
+    8. W przypadku wymiany prawa jazdy wydanego przez państwo niebędące państwem członkowskim Unii Europejskiej
+organ wymieniający prawo jazdy występuje do organu, który wydał to prawo jazdy, lub do przedstawicielstwa dyploma-
+tycznego państwa, w którym to prawo jazdy zostało wydane, o potwierdzenie danych i informacji zawartych w prawie jazdy.
+Potwierdzenie danych i informacji może być dokonane przez organ wymieniający prawo jazdy za pośrednictwem portalu
+państwa, które wydało prawo jazdy, jeżeli administracja tego państwa poinformowała o możliwości potwierdzania za po-
+średnictwem tego portalu danych i informacji zawartych w prawie jazdy.
+
+    9. Potwierdzenie danych i informacji zawartych w prawie jazdy może przedłożyć osoba wnioskująca o wymianę prawa
+jazdy.
+
+   10. Za potwierdzenie danych i informacji zawartych w prawie jazdy, o którym mowa w ust. 8, uznaje się również doku-
+ment wydany przez przedstawicielstwo dyplomatyczne państwa niebędącego państwem członkowskim Unii Europejskiej.
+
+    11. W przypadku wątpliwości co do zgodności potwierdzenia danych i informacji zawartych w prawie jazdy ze stanem
+faktycznym, przedłożonego przez osobę wnioskującą o wymianę prawa jazdy, organ wymieniający prawo jazdy może wy-
+stąpić do organu, który wydał to prawo jazdy, lub do właściwego przedstawicielstwa dyplomatycznego o potwierdzenie
+tych danych i informacji.
