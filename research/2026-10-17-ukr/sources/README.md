@@ -8,7 +8,7 @@ The act of 23.01.2026 (Dz.U. 2026 poz. 203, in force 5.03.2026 with exceptions) 
 - the CUKR card (art. 42c–42x, from 4.05.2026);
 - the suspension of the voivode's time limits until 4.03.2027 (art. 100d), which applies to every foreigner, in proceedings before a voivode (`research/2026-10-16-residence/sources/`).
 
-**Since then (FACT, UdSC 06.08.2026):** the EU extended temporary protection to 4.03.2028 (Council Implementing Decision (EU) 2026/1912, in force 5.08.2026), and since 5.08.2026 grants it to new arrivals only if they have met their military obligations in Ukraine. No Polish act changed for this.
+**Since then (FACT, UdSC 06.08.2026):** the EU extended temporary protection to 4.03.2028 (Council Implementing Decision (EU) 2026/1912, art. 1; its Polish text is in `eu-2026-1912-pl-2026-10-17.txt`), and grants it to new arrivals only if they have met their military obligations in Ukraine (art. 2). From when, and who is excepted, differs between the decision's text and UdSC's page (OPEN-C12 in the map). No Polish act changed for this.
 
 ## Files
 
@@ -21,6 +21,7 @@ The act of 23.01.2026 (Dz.U. 2026 poz. 203, in force 5.03.2026 with exceptions) 
 | `udsc-cukr-procedura-2026-10-17.txt` | UdSC, "Informacja dotycząca procedury wydania karty pobytu CUKR" | Retrieved 17.10.2026; no date of its own beyond the parent title "04.05.2026 r." |
 | `udsc-cukr-qa-2026-10-17.txt` | UdSC, "Pytania i odpowiedzi - karta pobytu CUKR" (over 60 questions) | Retrieved 17.10.2026; no date of its own beyond the parent title "04.05.2026 r."; its end date for the status is outdated |
 | `udsc-przedluzenie-ochrony-czasowej-2028-2026-10-17.txt` | UdSC, "Przedłużenie ochrony czasowej do 4 marca 2028 r." | Dated 06.08.2026; added after the check |
+| `eu-2026-1912-pl-2026-10-17.txt` | Council Implementing Decision (EU) 2026/1912, Polish text, art. 1–3 | Published 4.8.2026; added on 17.10.2026 after the 800+ map's check read it; a corrigendum not read |
 | `other-acts-ukr-extract.txt` | Added after the check: the special act's former art. 1 ust. 2 (the family-member definition) and its repeal; W203 art. 17 pkt 27, 30–31, art. 23, 32 and 41; M.P. 2026 poz. 371; the special act art. 42g; the act on population records art. 8 pkt 24a; the card fee regulation § 5 | Each with its hash in the header |
 
 Each file names its URL and SHA-256. The PDFs are not committed.
@@ -31,7 +32,7 @@ Each file names its URL and SHA-256. The PDFs are not committed.
 |---|---|---|
 | Legal stay | A temporary protection beneficiary who came legally in the period of the EU Council decision stays legally from entry for as long as that decision is in force, unless the act says otherwise; also a child born in Poland to a beneficiary | Protection act art. 106 ust. 1–2 |
 | Who is not covered | Holders of a residence permit, refugee or subsidiary protection, tolerated or humanitarian stay; applicants for international protection; protection in another EU state; EU citizens; small border traffic | Protection act art. 109a |
-| PESEL with the UKR status | On application at any municipal office, **within 30 days of crossing the Polish border**. Since 5.08.2026 temporary protection is granted to new arrivals only if they have met their military obligations in Ukraine, with proof where relevant; not for those protected on and before 4.08.2026 without a break | Protection act art. 110a ust. 1–2; act on population records art. 44a; UdSC 06.08.2026 |
+| PESEL with the UKR status | On application at any municipal office, **within 30 days of crossing the Polish border**. Temporary protection is granted to new arrivals only if they have met their military obligations in Ukraine, with proof where relevant; not for those already protected without a break. The decision's text: from 31.07.2026, those protected on or before 30.07.2026 excepted; UdSC's page: from 5.08.2026, those protected on and before 4.08.2026; a corrigendum was not read (OPEN-C12) | Protection act art. 110a ust. 1–2; act on population records art. 44a; EU 2026/1912 art. 2–3; UdSC 06.08.2026 |
 | When protection ends | Among others: no PESEL application within those 30 days; **leaving Poland for more than 30 days**; a written renunciation; a residence permit or another status; an application for international protection; protection in another EU state; Polish or EU citizenship. It ends on the day of the event. After an application for international protection, it resumes once the decision named in art. 38 ust. 4 or art. 52 ust. 1 is final (added after the check of 17.10.2026) | Protection act art. 109b ust. 1–3 |
 | Work | Without a work permit, under the act of 20.03.2025; business under the act of 6.03.2018 | Protection act art. 116 |
 | CUKR card: who | A Ukrainian citizen ("Obywatelowi Ukrainy") with the UKR status on 4.06.2025, on the day of the application, and unbroken for at least 365 days; a child born in Poland under art. 42d. The former art. 1 ust. 2, which counted a non-Ukrainian spouse and minor children as "obywatel Ukrainy", was repealed from 5.03.2026 (W203 art. 17 pkt 1); UdSC still names family members, for a lawyer | Special act art. 42c–42d; UdSC adds that the status must also be current on the day the card is issued |
@@ -48,6 +49,7 @@ Each file names its URL and SHA-256. The PDFs are not committed.
   - its notes `ukr-deadline` and `ukr-deadline-missed` quote the protection act Dz.U. 2026 poz. 862, the same 30 days (art. 110a ust. 2);
   - production's guide is consistent with these sources on that point (INFERENCE, not an independent review);
   - its note `ukr-military` already quotes UdSC's page on the extension to 4.03.2028 and the military-obligations condition, which these sources had missed.
+  - that note gives UdSC's dates (from 5.08.2026; protected on and before 4.08.2026). The decision's Polish text, read later on 17.10.2026, gives 31.07.2026 and 30.07.2026 (OPEN-C12). A finding for production, which the lab does not change.
 - **The residence guide in `reference/`:**
   - `wait-cukr-ends-case` quotes art. 42i;
   - `decision-time-suspended` quotes art. 100d;
@@ -58,7 +60,7 @@ Each file names its URL and SHA-256. The PDFs are not committed.
 
 | Id | Question |
 |---|---|
-| OPEN-U1 | Narrowed: the end date is 4.03.2028 (UdSC 06.08.2026). The EU decision's own text could not be read (EUR-Lex returned an empty body on 17.10.2026) |
+| OPEN-U1 | Closed: the end date is 4.03.2028 (EU 2026/1912 art. 1, read on 17.10.2026 through publications.europa.eu; EUR-Lex itself returned an empty body). Its art. 2 dates are OPEN-C12 in the map |
 | OPEN-U2 | Closed: art. 8 pkt 24a is now in `other-acts-ukr-extract.txt` |
 | OPEN-U3 | Closed: Dz.U. 2026 poz. 1206 art. 20 changes only art. 23m and 49a of the act on population records, from 11.01.2027 |
 | OPEN-U4 | The Ukrainian version of UdSC's CUKR pages (gov.pl/web/udsc-ua/cukr), and gov.pl's PESEL UKR page. Not collected. The Polish Q&A is in this folder |

@@ -14,7 +14,7 @@
 
 **Limits:**
 - It is a second reading by the same kind of tool, not a migration lawyer's review.
-- The EU decision itself could not be read: EUR-Lex returned HTTP 202 with an empty body for its HTML, PDF and ELI addresses. The extension and the new condition rest on UdSC's page of 06.08.2026 and the Ministry of Family's material of 14.09.2026. For the wording, the agent read the Commission's proposal COM(2026) 345 (Council document ST 11011/26).
+- The EU decision itself could not be read: EUR-Lex returned HTTP 202 with an empty body for its HTML, PDF and ELI addresses. Later on 17.10.2026 its Polish text was read through publications.europa.eu content negotiation (`eu-2026-1912-pl-2026-10-17.txt`): art. 1 confirms 4.03.2028; art. 2–3 give other dates than UdSC's page (OPEN-C12 in the map; production's `ukr-military` note quotes UdSC's). The extension and the new condition rest on UdSC's page of 06.08.2026 and the Ministry of Family's material of 14.09.2026. For the wording, the agent read the Commission's proposal COM(2026) 345 (Council document ST 11011/26).
 
 **The app:** the prototype has no UKR or CUKR case, so none of the findings is in what it shows. Its PESEL case shows production's registry notes on UKR. One of them, `ukr-military`, already quotes UdSC's page on the extension to 4.03.2028; this folder had missed it.
 

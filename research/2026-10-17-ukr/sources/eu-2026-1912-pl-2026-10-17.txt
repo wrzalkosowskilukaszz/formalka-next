@@ -1,0 +1,20 @@
+# Council Implementing Decision (EU) 2026/1912 of 30.07.2026 extending temporary protection (Polish text): its title and art. 1-3
+# Source: https://publications.europa.eu/resource/celex/32026D1912 (content negotiation, Accept-Language: pol), served as cellar 96a1d41c-8fd5-11f1-9262-01aa75ed71a1.0018.03/DOC_1; retrieved 2026-10-17, xhtml sha256 34114fa9c22a6d35fe14c075d65d5106ebfe9a8aa265e048d62699e7d27abc1c (the same as the checking agent's of 17.10.2026). EUR-Lex itself returned HTTP 202 with an empty body.
+# Published in OJ L on 4.8.2026. A corrigendum exists (OJ L 2026/90680, found by a search on 17.10.2026; its Polish text could not be fetched: EUR-Lex returned an empty body). UdSC's page of 06.08.2026 gives 5.08.2026 and 4.08.2026 for the military-obligations rule; this text gives 31.07.2026 and 30.07.2026. Which is current: OPEN-C12.
+
+DECYZJA WYKONAWCZA RADY (UE) 2026/1912
+z dnia 30 lipca 2026 r.
+w sprawie przedłużenia tymczasowej ochrony wprowadzonej decyzją wykonawczą (UE) 2022/382
+RADA UNII EUROPEJSKIEJ,
+
+PRZYJMUJE NINIEJSZĄ DECYZJĘ:
+Artykuł 1
+Tymczasową ochronę udzielaną wysiedleńcom z Ukrainy, o których mowa w art. 2 decyzji wykonawczej (UE) 2022/382, przedłużoną decyzjami wykonawczymi (UE) 2023/2409, (UE) 2024/1836 i (UE) 2025/1460, przedłuża się na kolejny okres jednego roku, do dnia 4 marca 2028 r.
+Artykuł 2
+Bez uszczerbku dla prawa Unii i praw podstawowych tymczasową ochronę, o której mowa w art. 2 decyzji wykonawczej (UE) 2022/382, i która została przedłużona, odpowiednio, art. 1 decyzji wykonawczej (UE) 2025/1460 lub art. 1 niniejszej decyzji, przyznaje się jedynie tym osobom, które wypełniły swoje obowiązki wojskowe w Ukrainie, po przedstawieniu, w stosownych przypadkach, odpowiedniego dowodu.
+Niniejsza decyzja nie ma zastosowania do osób korzystających z tymczasowej ochrony w danym państwie członkowskim przed dniem 30 lipca 2026 r. lub w tym dniu i nieprzerwanie zachowujących taki status w danym państwie członkowskim po tym dniu.
+Artykuł 3
+Niniejsza decyzja wchodzi w życie następnego dnia po jej opublikowaniu w Dzienniku Urzędowym Unii Europejskiej.
+Niniejszą decyzję stosuje się od dnia 5 marca 2027 r., z wyjątkiem art. 2, który stosuje się od dnia 31 lipca 2026 r.
+Sporządzono w Brukseli dnia 30 lipca 2026 r.
+

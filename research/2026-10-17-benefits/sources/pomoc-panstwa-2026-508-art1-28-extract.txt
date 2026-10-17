@@ -1,7 +1,8 @@
 # Ustawa z 11.02.2016 o pomocy państwa w wychowywaniu dzieci (the 800+ act), consolidated text Dz.U. 2026 poz. 508 (obwieszczenie of 27.03.2026, legal state 16.03.2026, including Dz.U. 2025 poz. 619 and 1301 and 2026 poz. 203), with Dz.U. 2025 poz. 1301 art. 14 and 29
 # Sources: https://api.sejm.gov.pl/eli/acts/DU/2026/508/text.pdf, sha256 af5e19f5fc01e6590e99f679a6f0d9768f3f7c74d908b8bc49ab74c8fd4148a7; https://api.sejm.gov.pl/eli/acts/DU/2025/1301/text.pdf, sha256 8e5bc3966f0c2c82fbac93ed4b5f075e44326fbceb899922826ecc086df14cfb; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
 # Later amendments: none after 16.03.2026 (node tools/sources/amendments.mjs DU/2026/508 2026-03-01 lists only Dz.U. 2026 poz. 203, which the text includes; 17.10.2026). It is the newest consolidated text.
-# Dates (1301 art. 29, node tools/sources/entry-dates.mjs DU/2025/1301): its art. 9 pkt 1 and 3-5 (art. 1 ust. 2a-2g, 13, 21 ust. 1a, 23 ust. 1a-1b and 3a) apply from 1.02.2026; art. 9 pkt 2 (art. 2 pkt 1a, 8a) from 30.09.2025. By 1301 art. 14 the changed rules apply first to the period from 1.06.2026; earlier periods keep the old rules. Art. 1 ust. 2 pkt 2 lit. ca, 18 ust. 2e and 23 ust. 3b-3g are from Dz.U. 2026 poz. 203 art. 13, in force 5.03.2026.
+# Dates (1301 art. 29, node tools/sources/entry-dates.mjs DU/2025/1301), corrected after the independent check of 17.10.2026: 1301 art. 9 pkt 1 (art. 1 ust. 2a-2g), pkt 3 (art. 13 ust. 3), pkt 4 (art. 14) and pkt 5 (art. 21 ust. 1a) apply from 1.02.2026; art. 9 pkt 2 (art. 2 pkt 1a, 8a) from 30.09.2025. By 1301 art. 14 the changed rules apply first to the period from 1.06.2026; earlier periods keep the old rules. Art. 1 ust. 2 pkt 2 lit. ca, 18 ust. 2e and 23 ust. 3a-3g are from Dz.U. 2026 poz. 203 art. 13, in force 5.03.2026; for lit. ca the act applies from 5.03.2026 to the period from 5.03.2026 (203 art. 30), and art. 23 ust. 3a applies to lit. c-f first for the period from 1.06.2026 (203 art. 31). Art. 23 ust. 1a-1b predate both acts.
+# Transitional and other provisions added after the check, each read here: Dz.U. 2026 poz. 203 art. 30, 31, 43 ust. 1; Dz.U. 2025 poz. 1301 art. 10 pkt 13 and 23; the social insurance system act, consolidated Dz.U. 2026 poz. 199 (sha256 b009d5bc5749dba7bab8c391c56f6241f8c6cf53dc0870c5a5200003de6466e9; touched.mjs found no later change to art. 6), art. 6 ust. 1; Prawo oświatowe, consolidated Dz.U. 2026 poz. 820 (sha256 a9b6dd55618cba0dd04d675f9b52061737af98bf167d75a615fc535c57068439; art. 31 changes only from 1.01.2028 by Dz.U. 2026 poz. 1123 art. 19, art. 36 not changed), art. 31 ust. 4-5 and 36 ust. 4-7. Dz.U. 2026 poz. 203 sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275.
 
 [Art. 1 (who; the conditions for foreigners, ust. 2a-2g from 1.02.2026)]
      Art. 1. 1. Ustawa określa warunki nabywania prawa do świadczenia wychowawczego oraz zasady przyznawania i wy-
@@ -389,7 +390,7 @@ wychowawczego oraz wypłata przysługującego świadczenia wychowawczego następ
      6. Podmiot realizujący świadczenie wychowawcze jest obowiązany poinformować osoby ubiegające się o to świadczenie
 o terminach składania wniosków, o których mowa w ust. 4 i 5.
 
-[Art. 23 (refusal, withholding, resumption; ust. 3a-3g from 1.02.2026 or 5.03.2026)]
+[Art. 23 (refusal, withholding, resumption; ust. 3a-3g added by Dz.U. 2026 poz. 203 art. 13 pkt 9, from 5.03.2026)]
      Art. 23. 1. Zakład Ubezpieczeń Społecznych odmawia przyznania prawa do świadczenia wychowawczego, jeżeli
 osoba ubiegająca się o to świadczenie uniemożliwi przeprowadzenie wywiadu, o którym mowa w art. 15 ust. 1, lub nie
 udzieli podczas tego wywiadu wyjaśnień co do okoliczności objętych wywiadem.
@@ -441,7 +442,7 @@ tego świadczenia.
        5. (uchylony)
        6. (uchylony)
 
-[Art. 25 ust. 1-2 (undue benefit)]
+[Art. 25 ust. 1-3 (undue benefit)]
        Art. 25. 1. Osoba, która pobrała nienależnie świadczenie wychowawcze, jest obowiązana do jego zwrotu.
        2. Za nienależnie pobrane świadczenie wychowawcze uważa się:
 1)     (uchylony)
@@ -453,6 +454,26 @@ tego świadczenia.
 5)     świadczenie wychowawcze wypłacone osobie innej niż osoba, której świadczenie zostało przyznane, z przyczyn nie-
        zależnych od Zakładu Ubezpieczeń Społecznych;
 6)     świadczenie wychowawcze wypłacone mimo braku prawa do tego świadczenia.
+      2a. Za nienależnie pobrane świadczenie wychowawcze nie uznaje się świadczenia przyznanego rodzicowi, opiekunowi
+prawnemu dziecka albo opiekunowi faktycznemu dziecka, który zmarł, pobranego przez rodzica, opiekuna prawnego dziecka
+albo opiekuna faktycznego dziecka, którym zostało ustalone prawo do świadczenia wychowawczego na podstawie art. 18
+ust. 2b.
+     3. Od kwot nienależnie pobranego świadczenia wychowawczego, o którym mowa w ust. 2 pkt 2, 5 i 6, są naliczane
+odsetki ustawowe za opóźnienie, chyba że przyznanie świadczenia wychowawczego było następstwem błędu Zakładu Ubez-
+pieczeń Społecznych.
+     3a. W przypadkach gdy nienależnie pobrane świadczenie wychowawcze wynika z decyzji tymczasowej wydanej
+na podstawie przepisów o koordynacji systemów zabezpieczenia społecznego, przepisu ust. 3 nie stosuje się.
+
+[Art. 25 ust. 6]
+     6. Decyzja o ustaleniu i zwrocie nienależnie pobranego świadczenia wychowawczego nie jest wydawana, jeżeli od
+terminu jego pobrania upłynęło więcej niż 2 lata.
+
+[Art. 25 ust. 10]
+     10.26) Zakład Ubezpieczeń Społecznych może odstąpić od żądania zwrotu kwoty nienależnie pobranego świadczenia
+wychowawczego łącznie z odsetkami w całości lub w części, odroczyć termin płatności albo rozłożyć na raty, jeżeli zachodzą
+szczególnie uzasadnione okoliczności dotyczące sytuacji rodziny. Do nienależnie pobranego świadczenia wychowawczego
+stosuje się odpowiednio art. 84 ust. 8a–8e ustawy z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych.
+26)   Ze zmianą wprowadzoną przez art. 9 pkt 6 ustawy, o której mowa w odnośniku 5.
 
 [Art. 28 (KPA; the higher authority is the President of ZUS; the administrative court)]
     Art. 28. 1. W sprawach nieuregulowanych w niniejszej ustawie stosuje się przepisy ustawy z dnia 14 czerwca 1960 r. –
@@ -465,6 +486,120 @@ powaniu przed sądami administracyjnymi (Dz. U. z 2026 r. poz. 143) jest właśc
 na którego obszarze właściwości ma miejsce zamieszkania osoba ubiegająca się o świadczenie wychowawcze lub osoba
 pobierająca świadczenie wychowawcze.
      4. Przepisu ust. 3 nie stosuje się do spraw, o których mowa w art. 16.
+
+[Dz.U. 2026 poz. 203 art. 30-31 (lit. ca from 5.03.2026; art. 23 ust. 3a first for the period from 1.06.2026)]
+    Art. 30. W stosunku do osób, o których mowa w art. 1 ust. 2 pkt 2 lit. ca ustawy zmienianej w art. 13, przepisy ustawy
+zmienianej w art. 13 w brzmieniu nadanym:
+1)   ustawą z dnia 12 września 2025 r. o zmianie niektórych ustaw w celu weryfikacji prawa do świadczeń na rzecz rodziny
+     dla cudzoziemców oraz o warunkach pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa (Dz. U. poz. 1301) oraz
+2)   niniejszą ustawą
+– stosuje się od dnia 5 marca 2026 r. do spraw o ustalenie prawa do świadczenia wychowawczego na okres od dnia
+5 marca 2026 r.
+      Art. 31. W stosunku do osób, o których mowa w art. 1 ust. 2 pkt 2 lit. c, d, e i f ustawy zmienianej w art. 13, przepisy
+art. 23 ust. 3a ustawy zmienianej w art. 13 mają zastosowanie po raz pierwszy przy ustalaniu prawa do świadczenia wycho-
+wawczego na okres, który rozpocznie się dnia 1 czerwca 2026 r.
+
+[Dz.U. 2026 poz. 203 art. 43 ust. 1 (benefits granted under the special act until 4.03.2026)]
+     Art. 43. 1. Świadczenia przyznane na okres do dnia 4 marca 2026 r. na podstawie art. 26 ustawy zmienianej w art. 17
+przysługują osobie uprawnionej do zakończenia okresu świadczeniowego lub zasiłkowego, na który prawo do nich zostało
+ustalone pod warunkiem, że osoba ta jest cudzoziemcem, którego pobyt na terytorium Rzeczypospolitej Polskiej uznaje się
+za legalny na podstawie art. 106 ust. 1 ustawy zmienianej w art. 4 w brzmieniu nadanym niniejszą ustawą, i legitymuje się
+numerem PESEL ze statusem UKR oraz spełnione są warunki określone odpowiednio w ustawie zmienianej w art. 5
+w brzmieniu nadanym niniejszą ustawą oraz w ustawie zmienianej w art. 13 w brzmieniu nadanym niniejszą ustawą.
+
+[Dz.U. 2025 poz. 1301 art. 10 pkt 13 (the special act art. 26: the work condition for PESEL UKR holders from 1.02.2026, art. 29 pkt 2; art. 26-27e repealed from 5.03.2026 by Dz.U. 2026 poz. 203 art. 17 pkt 13)]
+13) w art. 26:
+      a)   w ust. 1 w pkt 2 wyrazy „albo obowiązki te zostały mu odroczone” zastępuje się wyrazami „albo obowiązki te
+           zostały mu odroczone, albo dziecko realizuje obowiązek nauki przez uczęszczanie do uczelni należącej do pol-
+           skiego systemu szkolnictwa wyższego, na kwalifikacyjny kurs zawodowy albo na praktykę absolwencką, o której
+           mowa w ustawie z dnia 17 lipca 2009 r. o praktykach absolwenckich (Dz. U. z 2018 r. poz. 1244 oraz z 2025 r.
+           poz. 620), zgodnie z art. 36 ust. 12 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe”,
+      b) po ust. 1 dodaje się ust. 1a i 1b w brzmieniu:
+               „1a. Świadczenie, o którym mowa w ust. 1 pkt 2, przysługuje, jeżeli wnioskodawca spełnia warunki, o których
+           mowa w art. 1 ust. 2a lub 2b ustawy z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci.
+                  1b. Przepisu ust. 1a nie stosuje się do opiekunów małoletnich obywateli Ukrainy, o których mowa w art. 251,
+           jeżeli wniosek został złożony w trybie określonym w ust. 4b.”,
+      c)   po ust. 3bc dodaje się ust. 3bd w brzmieniu:
+                 „3bd. Realizację przez dziecko obowiązku nauki przez uczęszczanie do uczelni należącej do polskiego systemu
+           szkolnictwa wyższego, na kwalifikacyjny kurs zawodowy albo na praktykę absolwencką, o której mowa w ustawie
+           z dnia 17 lipca 2009 r. o praktykach absolwenckich, osoba ubiegająca się o świadczenie wychowawcze lub je po-
+           bierająca potwierdza zaświadczeniem wydanym przez uczelnię, organizatora kwalifikacyjnego kursu zawodowego
+           albo praktyki absolwenckiej.”;
+
+[Dz.U. 2025 poz. 1301 art. 23]
+     Art. 23. 1. Prawo do świadczeń, o których mowa w art. 26 ust. 1 pkt 2 ustawy zmienianej w art. 10, w brzmieniu dotych-
+czasowym, przysługuje do dnia 31 stycznia 2026 r.
+     2. Osoby pobierające świadczenie, o którym mowa w ust. 1, od 1 lutego 2026 r. mogą złożyć wniosek o ustalenie
+prawa do świadczenia, o którym mowa w art. 26 ust. 1 pkt 2 ustawy zmienianej w art. 10, w brzmieniu nadanym niniejszą
+ustawą.
+
+[Social insurance system act, consolidated Dz.U. 2026 poz. 199, art. 6 ust. 1 pkt 1-9c (the titles art. 2 pkt 1a lit. a-b name)]
+     Art. 6. 1. Obowiązkowo ubezpieczeniom emerytalnemu i rentowym podlegają, z zastrzeżeniem art. 8 i 9, osoby fizyczne,
+które na obszarze Rzeczypospolitej Polskiej są:
+1)    pracownikami, z wyłączeniem prokuratorów;
+2)    osobami wykonującymi pracę nakładczą;
+3)    członkami rolniczych spółdzielni produkcyjnych i spółdzielni kółek rolniczych, zwanymi dalej „członkami spół-
+      dzielni”;
+4)    osobami wykonującymi pracę na podstawie umowy agencyjnej lub umowy zlecenia albo innej umowy o świadczenie
+      usług, do której zgodnie z Kodeksem cywilnym stosuje się przepisy dotyczące zlecenia, zwanymi dalej „zleceniobior-
+      cami”, oraz osobami z nimi współpracującymi, z zastrzeżeniem ust. 4;
+5)    osobami prowadzącymi pozarolniczą działalność oraz osobami z nimi współpracującymi;
+5a) osobami współpracującymi z osobami fizycznymi, o których mowa w art. 18 ust. 1 ustawy z dnia 6 marca 2018 r. –
+    Prawo przedsiębiorców;
+5)   Dodany przez art. 4 pkt 1 ustawy z dnia 5 sierpnia 2025 r. o uchyleniu ustawy o Centralnej Informacji Emerytalnej (Dz. U. poz. 1216),
+     która weszła w życie z dniem 18 września 2025 r.
+6)   Dodany przez art. 1 pkt 1 ustawy z dnia 18 grudnia 2025 r. o zmianie ustawy o systemie ubezpieczeń społecznych oraz niektórych
+     innych ustaw (Dz. U. z 2026 r. poz. 26), która wejdzie w życie z dniem 13 kwietnia 2026 r.
+6)   posłami i senatorami pobierającymi uposażenie oraz posłami do Parlamentu Europejskiego, o których mowa w art. 1
+     ust. 1 ustawy z dnia 30 lipca 2004 r. o uposażeniu posłów do Parlamentu Europejskiego wybranych w Rzeczypospolitej
+     Polskiej, zwanymi dalej „posłami i senatorami”;
+7)   osobami pobierającymi stypendium sportowe, zwanymi dalej „stypendystami sportowymi”;
+7a) pobierającymi stypendium słuchaczami Krajowej Szkoły Administracji Publicznej im. Prezydenta Rzeczypospolitej
+    Polskiej Lecha Kaczyńskiego;
+7b) otrzymującymi stypendium doktoranckie doktorantami;
+8)   osobami wykonującymi odpłatnie pracę, na podstawie skierowania do pracy, w czasie odbywania kary pozbawienia
+     wolności lub tymczasowego aresztowania;
+9)7) osobami pobierającymi zasiłek dla bezrobotnych, świadczenie integracyjne lub stypendium w okresie odbywania
+     szkolenia, stażu lub uczestnictwa w zleconych przez starostę działaniach w zakresie reintegracji społecznej, na które
+     zostały skierowane przez powiatowy urząd pracy, zwanymi dalej „bezrobotnymi”;
+9a) osobami pobierającymi stypendium w okresie odbywania szkolenia, stażu lub przygotowania zawodowego dorosłych,
+    na które zostały skierowane przez inne niż powiatowy urząd pracy podmioty kierujące na szkolenie, staż lub przygotowanie
+    zawodowe dorosłych, zwanymi dalej „osobami pobierającymi stypendium”;
+9b) (uchylony)8)
+9c)9) osobami niepełnosprawnymi zarejestrowanymi w powiatowym urzędzie pracy jako poszukujące pracy niepozostające
+      w zatrudnieniu pobierającymi stypendium na podstawie ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach za-
+      trudnienia (Dz. U. poz. 620, 1746 i 1794) w okresie odbywania szkolenia lub stażu, na które zostały skierowane przez
+      powiatowy urząd pracy;
+
+[Its art. 6 ust. 1 pkt 19-21]
+19) osobami przebywającymi na urlopach wychowawczych lub pobierającymi zasiłek macierzyński albo zasiłek w wyso-
+    kości zasiłku macierzyńskiego;
+20) osobami pobierającymi świadczenia socjalne wypłacane w okresie urlopu oraz osobami pobierającymi zasiłek socjalny
+    wypłacany na czas przekwalifikowania zawodowego i poszukiwania nowego zatrudnienia, a także osobami pobierają-
+    cymi wynagrodzenie przysługujące w okresie korzystania ze świadczenia górniczego albo w okresie korzystania ze stypen-
+    dium na przekwalifikowanie, wynikające z odrębnych przepisów lub układów zbiorowych pracy;
+21) osobami pobierającymi świadczenie szkoleniowe wypłacane po ustaniu zatrudnienia;
+
+[Prawo oświatowe, consolidated Dz.U. 2026 poz. 820, art. 31 ust. 4-5]
+     4. Dziecko w wieku 6 lat jest obowiązane odbyć roczne przygotowanie przedszkolne w przedszkolu, oddziale przed-
+szkolnym w szkole podstawowej lub w innej formie wychowania przedszkolnego.
+     5. Obowiązek, o którym mowa w ust. 4, rozpoczyna się z początkiem roku szkolnego w roku kalendarzowym, w którym
+dziecko kończy 6 lat. W przypadku dziecka, o którym mowa w ust. 2, obowiązek ten rozpoczyna się z początkiem roku
+szkolnego poprzedzającego rok szkolny, w którym dziecko rozpocznie spełnianie obowiązku szkolnego.
+
+[Its art. 36 ust. 4-7 (a deferral: asked in the year the child turns 7; the child continues preschool)]
+    4. Dyrektor publicznej szkoły podstawowej, w obwodzie której dziecko mieszka, na wniosek rodziców, odracza roz-
+poczęcie spełniania przez dziecko obowiązku szkolnego o jeden rok szkolny.
+     5. Wniosek, o którym mowa w ust. 4, składa się w roku kalendarzowym, w którym dziecko kończy 7 lat, niepóźniej niż
+do dnia 31 sierpnia. Odroczenie dotyczy roku szkolnego, w którym dziecko ma rozpocząć spełnianie obowiązku szkolnego.
+     6. Do wniosku, o którym mowa w ust. 4, dołącza się opinię, z której wynika potrzeba odroczenia spełniania przez
+dziecko obowiązku szkolnego w danym roku szkolnym, wydaną przez publiczną poradnię psychologiczno-pedagogiczną
+albo niepubliczną poradnię psychologiczno-pedagogiczną, założoną zgodnie z art. 168 oraz zatrudniającą pracowników
+posiadających kwalifikacje określone dla pracowników publicznych poradni psychologiczno-pedagogicznych.
+     7. Dziecko, któremu odroczono rozpoczęcie spełniania obowiązku szkolnego zgodnie z ust. 4, kontynuuje przygoto-
+wanie przedszkolne w przedszkolu, oddziale przedszkolnym w szkole podstawowej lub w innej formie wychowania przed-
+szkolnego. Przepisy art. 32 ust. 3 i 5 stosuje się odpowiednio.
 
 [Dz.U. 2025 poz. 1301 art. 14 (the new rules apply first to the period from 1.06.2026)]
      Art. 14. Przepisy ustawy zmienianej w art. 9, w brzmieniu nadanym niniejszą ustawą, mają zastosowanie po raz pierw-

@@ -2,7 +2,7 @@
 
 **Status:** a lab map by Claude, 17.10.2026. It is not independent, and nothing in it is built or shown to people. Wave 3 of doc 19. Checked by the separate checking agent on 17.10.2026, at the owner's request (`research/2026-10-17-ukr/sources/CHECK.md`); the corrections are changed in the lab, not independently verified.
 - Doc 19 kept wave 3 at sources only, because the rules move fast. The owner asked for this map on 17.10. **It is valid as of 17.10.2026 and must be re-checked against the sources before any use.**
-- **Temporary protection now runs to 4.03.2028** (Council Implementing Decision (EU) 2026/1912, in force 5.08.2026, per UdSC's page of 06.08.2026; the EU text itself could not be read). The UdSC CUKR Q&A still says the status ends on 4.03.2027.
+- **Temporary protection now runs to 4.03.2028** (Council Implementing Decision (EU) 2026/1912 art. 1, read on 17.10.2026: "do dnia 4 marca 2028 r."; `eu-2026-1912-pl-2026-10-17.txt`). The UdSC CUKR Q&A still says the status ends on 4.03.2027.
 - **4.03.2027 for CUKR** is UdSC's date to file by ("będziesz mógł złożyć do 04.03.2027 r."). The act, art. 42x, does not close filing on that date: it makes the stay legal for those who file by then. Whether filing will be possible after 4.03.2027, now that the status runs longer, is OPEN-C8. The app treats 4.03.2027 as the safe date, attributed to UdSC.
 
 **Sources:** `research/2026-10-17-ukr/sources/`, cited as:
@@ -23,7 +23,7 @@ The CUKR card is for a Ukrainian citizen: art. 42c begins "Obywatelowi Ukrainy".
 
 | What the person says | Route |
 |---|---|
-| "Przyjechałem niedawno z Ukrainy, nie mam PESEL" | PESEL UKR at any municipal office within 30 days of crossing the border (PROT art. 110a; UEL art. 44a). Since 5.08.2026 temporary protection is granted only to those who have met their military obligations in Ukraine, with proof where relevant, except people protected in Poland on and before 4.08.2026 without a break (EXT). The app names the condition and hands off; it never judges it |
+| "Przyjechałem niedawno z Ukrainy, nie mam PESEL" | PESEL UKR at any municipal office within 30 days of crossing the border (PROT art. 110a; UEL art. 44a). Temporary protection is now granted only to those who have met their military obligations in Ukraine, with proof where relevant, except people already protected in Poland without a break. The dates differ: the decision's text gives art. 2 "od dnia 31 lipca 2026 r." and the exception for those protected "przed dniem 30 lipca 2026 r. lub w tym dniu"; UdSC's page gives 5.08.2026 and 4.08.2026; a corrigendum exists and could not be read (OPEN-C12). The app names the condition and hands off; it never judges it |
 | "Mam PESEL UKR" | Living under the status, and the choice about the CUKR card (§2, U3) |
 | "Miałem UKR, ale dostałem kartę pobytu (zwykłą)" | The status ended (PROT art. 109b ust. 1 pkt 4); no CUKR (QA). Points to the residence map |
 | "Mój status zmienił się na NUE" | The status was changed on 1.09.2026 for people with a PESEL given on a statement who did not confirm their identity by 31.08.2026; their legal stay under art. 106 ended (W203 art. 25). What they can do now is OPEN-C1: a lawyer or NGO |
@@ -33,7 +33,7 @@ The CUKR card is for a Ukrainian citizen: art. 42c begins "Obywatelowi Ukrainy".
 
 | Stage | Goal | Steps (phone / **off the phone**) | Basis (FACT) | Where people get lost |
 |---|---|---|---|---|
-| **U0** Crossing the border | Keep the protection | Phone: record the crossing date. **Off: apply for PESEL UKR at any municipal office** | Within 30 days of crossing, or the protection ends (PROT art. 110a ust. 2, 109b ust. 1 pkt 1). The military-obligations condition for new arrivals since 5.08.2026 (EXT) | **UL1:** the 30 days pass |
+| **U0** Crossing the border | Keep the protection | Phone: record the crossing date. **Off: apply for PESEL UKR at any municipal office** | Within 30 days of crossing, or the protection ends (PROT art. 110a ust. 2, 109b ust. 1 pkt 1). The military-obligations condition for new arrivals (EU 2026/1912 art. 2; its date is OPEN-C12) | **UL1:** the 30 days pass |
 | **U1** PESEL UKR at the office | Complete register data | **Off: in person, on paper: passport, a photo, fingerprints (not under 6), signature specimen (from 12); contact data and consent give an automatic trusted profile** | PROT art. 110a, 110c; UEL art. 44a ust. 3, 6, 9, 11, 19 | **UL2:** data left incomplete: later, MOS blocks the CUKR application and does not say why (QA) |
 | **U2** Living under the status | Stay legal | Phone: the rules that end the status. **Off: work (the employer notifies the labour office within 7 days)** | Legal stay (PROT art. 106); work without a permit (art. 116); the employer's notice (act on employing foreigners art. 5a, from W203); the status ends after more than 30 days abroad (art. 109b ust. 1 pkt 2) | **UL3:** a trip of more than 30 days ends the status. **UL4:** an identity confirmation was due (W203 art. 25–26; OPEN-C2 for new travel documents) |
 | **U3** The choice | Decide between staying on the status, the CUKR card, or an ordinary permit | Phone: the facts side by side, never a recommendation | QA (the comparison); SA art. 42i (a pending temporary residence permit case started on the person's application ends by law when a CUKR application is filed; a permanent or long-term-resident case does not); W203 art. 45 (some ordinary permits are open to status holders) | **UL5:** filing CUKR while not eligible, after a temporary residence case was pending: both are lost (QA warns) |
@@ -164,8 +164,9 @@ flowchart TD
 | OPEN-C4 | Closed after the check: the card fee regulation § 2 and § 5 (100 zł; 200 zł or 300 zł only for a culpable loss or damage) |
 | OPEN-C5 | How a person checks their own status (mObywatel, a certificate); not in our sources |
 | OPEN-C6 | Whether the special act's art. 100d suspension applies to CUKR card cases; not stated |
-| OPEN-C7 | Narrowed: protection runs to 4.03.2028 under the EU decision 2026/1912 (UdSC 06.08.2026); the EU text itself could not be read |
+| OPEN-C7 | Closed: protection runs to 4.03.2028 (EU 2026/1912 art. 1, read on 17.10.2026 through publications.europa.eu) |
 | OPEN-C8 | Whether a CUKR application will be possible after 4.03.2027 (UdSC's filing date), now that the status runs to 4.03.2028 |
 | OPEN-C9 | Whether a family member without Ukrainian citizenship can still get the CUKR card, after the repeal of the old art. 1 ust. 2 |
 | OPEN-C10 | Whether the stamp duty act's exemptions (art. 7 pkt 5; annex part III ust. 2 column 4) apply to the art. 42s duty |
 | OPEN-C11 | Whether the employer must notify work by a CUKR holder (W203 art. 41 against the official reading) |
+| OPEN-C12 | From when the military-obligations rule applies, and who is excepted: the decision's text says 31.07.2026 and "przed dniem 30 lipca 2026 r. lub w tym dniu", UdSC's page 5.08.2026 and 4.08.2026; a corrigendum (OJ L 2026/90680) could not be read. Found by the 800+ map's check, 17.10.2026 |
