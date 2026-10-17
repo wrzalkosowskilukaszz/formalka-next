@@ -48,6 +48,7 @@ KP below is the Karta Polaka act as in force on 17.10.2026; REG is the regulatio
 | Fees | None, consular fees included | KP art. 12 ust. 3 |
 | The checks | The head of the Internal Security Agency reports within 30 days on security grounds; the decision follows within 30 days of that report or of the 30 days' end | KP art. 19a |
 | Refusal | Among others: the conditions not met; false data or documents; repatriation of the person or ancestors; Polish citizenship or permanent residence; defence, security or public order; acting against Poland or human rights | KP art. 19 |
+| No suspension | The special act's suspension of the voivodes' time limits to 4.03.2027 lists residence permits only (art. 100d ust. 1), not the Karta Polaka or its settlement benefit. A permanent residence application on the card's ground is suspended (`maps/permanent-residence.md`) | The special act art. 100d ust. 1 (`research/2026-10-16-residence/sources/`) |
 | Appeal | To the Council for Polish Affairs Abroad ("Rada do Spraw Polaków poza Granicami Kraju"), filed through the consul or the voivode within 30 days of delivery | KP art. 9 ust. 2–3, 21 |
 | The procedure | The administrative procedure code; for consuls, the consular law | KP art. 4 |
 
