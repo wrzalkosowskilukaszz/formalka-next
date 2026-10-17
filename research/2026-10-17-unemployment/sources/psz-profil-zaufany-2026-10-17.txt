@@ -1,0 +1,20 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl), "Rejestracja w urzędzie": "Profil zaufany"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/rejestracja-w-urzedzie/profil-zaufany, retrieved 2026-10-17, html sha256 8fdb23ac2958326d0f599c2f9c1fd7f2bad1b3aa0108baffda6805fa7f1e3f27
+# Text of the article element; menus and images removed. Published and modified 24.03.2020, before the labour market act. Not binding.
+# sha256 of the text below this header (from line 5): 7789b7d4f31626d6d2b1dcaf757a7e3d3e11e9bde2a75ae061ec3482cc8a6a58. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
+- Profil Zaufany to potwierdzony zestaw danych, które jednoznacznie identyfikują osobę w usługach elektronicznych udostępnianych przez urzędy. Te dane to imię (imiona), nazwisko, data urodzenia oraz numer PESEL. Profil Zaufany jest tak zabezpieczony, aby nikt – poza jego właścicielem – nie mógł go użyć.
+- Za pomocą Profilu Zaufanego można skutecznie potwierdzić swoją tożsamość w systemach teleinformatycznych administracji publicznej. Oprócz tego podpisem potwierdzonym Profilem Zaufanym można opatrzyć wnioski wraz z załącznikami wnoszone w postaci elektronicznej np. poprzez Praca.gov.pl do urzędów pracy oraz urzędów wojewódzkich.
+- Profil Zaufany zakładany jest nieodpłatnie.
+- Profil Zaufany jest ważny przez 3 lata. Przed upływem jego terminu ważności można samodzielnie przedłużyć jego ważność na kolejne 3 lata.
+- Profil Zaufany możemy założyć samodzielnie, bez wychodzenia z domu, za pomocą np. internetowego konta bankowego, konta w systemie Envelo Poczty Polskiej, dowodu osobistego z warstwą elektroniczną lub kwalifikowanego podpisu elektronicznego.
+- Profil Zaufany możemy również założyć przez Internet i potwierdzić go w trakcie wizyty w Punkcie Potwierdzającym, których wykaz znajduje się na stronie https://pz.gov.pl/pz/confirmationPointAddressesList.
+- Aby samodzielnie założyć Profil Zaufany za pomocą internetowego konta bankowego wchodzimy na stronę https://pz.gov.pl/pz/ i wybieramy funkcję Zarejestruj się.
+- Wybieramy sposób uzyskania Profilu Zaufanego - Banki i inni dostawcy.
+- Wskazujemy swojego dostawcę tożsamości np. bank, w którym posiadamy konto internetowe.
+- Dalsze kroki uzależnione są od funkcjonalności danego internetowego konta bankowego. Przykładowo wybierając mBANK, po prawnym logowaniu, należy: przejść do zakładki E-urząd, wybrać Zarejestruj Profil Zaufany, sprawdzić poprawność danych, zanotować identyfikator Profilu Zaufanego, zaakceptować i zatwierdzić rejestrację.
+- Poprawność rejestracji Profilu Zaufanego sprawdzamy wchodząc ponownie na stronę https://pz.gov.pl/pz/ i wybierając Zaloguj się.
+- Więcej informacji dotyczących zakładania Profilu Zaufanego można znaleźć na stronach: Załóż Profil Zaufany i Profil Zaufany.
+Załączniki
+Instrukcja jak założyć Profil Zaufany.pdf
+385 KB
+Informacje o publikacji dokumentuAutor: Departament InformatykiData publikacji: 24.03.2020Data modyfikacji: 24.03.2020

@@ -1,6 +1,7 @@
 # The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Utrata statusu osoby bezrobotnej"
 # Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/utrata-statusu-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 eb8a1eb8e6a5f78f142417660099b0d462006dd73c8eafc855e36fe11c2bc235
 # Text of the article element; menus removed. Published and modified 03.06.2025. It cites the labour market act of 20.03.2025. Not binding.
+# sha256 of the text below this header (from line 5): c49cf35feb9c486b5460ec8fb1d9f24f9d377e4e7ebcdf940192cc6d82a8fa5f. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
 
 - Status bezrobotnego przysługuje przez okres 3 lat od dnia rejestracji, z wyjątkiem sytuacji, w których zgodnie z ustawą następuje utrata statusu bezrobotnego:
 - upłynie okres 3 lat przysługiwania statusu bezrobotnego. Pozbawienie statusu bezrobotnego następuje z dniem, w którym upłynął okres przysługiwania prawa,

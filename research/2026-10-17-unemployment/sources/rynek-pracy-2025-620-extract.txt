@@ -1,8 +1,10 @@
-# Ustawa z 20.03.2025 o rynku pracy i służbach zatrudnienia (the labour market act), Dz.U. 2025 poz. 620, in force 1.06.2025, as published; it has no consolidated text yet. With its amendments that touch the quoted articles, and the announcement of the benefit's amounts from 1.06.2026
-# Sources: https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf, sha256 b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51; https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; https://api.sejm.gov.pl/eli/acts/DU/2026/507/text.pdf, sha256 9e0a2839034b10bf50adceaff753444db09f2f49e173950454f6dc81a09760ec; https://api.sejm.gov.pl/eli/acts/MP/2026/268/text.pdf, sha256 8178d74216a74e4a0b8d9931f8c7827afe6a276107639e73359eb8513aef6e97; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall.
-# Amendments (node tools/sources/touched.mjs DU/2025/620 2025-06-01 --cite 1,2,31,38,43-45,55-68,218-239, 17.10.2026): Dz.U. 2025 poz. 1746 (art. 26) and 2026 poz. 734 (art. 26, 300), 451 (art. 8) and 1123 (art. 153-156, 172, 182, 292, from 2028) touch none of the quoted articles; Dz.U. 2025 poz. 1794 art. 10 changes art. 1 ust. 3 pkt 5 and Dz.U. 2026 poz. 507 art. 11 changes art. 2 pkt 1 lit. d-e and art. 232, both quoted at the end. Dz.U. 2025 poz. 1794 art. 12, 14 and 17 are transitional rules for pending cases and the announcement; they do not change the quoted articles.
-# The amounts in art. 224 ust. 1 are indexed every 1 June (art. 228); from 1.06.2026 they are those of M.P. 2026 poz. 268 (quoted at the end; the previous announcement, M.P. 2025 poz. 510, gave the amounts from 1.06.2025).
-# The act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0): only the opening lines of art. 144, 151 and 159 ust. 1 are quoted, to name the purpose of three permits listed in RP art. 1 ust. 3 pkt 2 lit. m; their conditions are not relied on.
+# Ustawa z 20.03.2025 o rynku pracy i służbach zatrudnienia (the labour market act), Dz.U. 2025 poz. 620, in force 1.06.2025, as published; it has no consolidated text yet. With its amendments that touch the quoted articles, its transitional rules, the announcement of the benefit's amounts from 1.06.2026, and the KPA articles on the appeal
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf, sha256 b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51; https://api.sejm.gov.pl/eli/acts/DU/2025/1794/text.pdf, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11; https://api.sejm.gov.pl/eli/acts/MP/2026/370/text.pdf, sha256 f4b7223353479968b7083516cf62ad9414e4c032803b6cb56d9400193448b85e; https://api.sejm.gov.pl/eli/acts/DU/2026/507/text.pdf, sha256 9e0a2839034b10bf50adceaff753444db09f2f49e173950454f6dc81a09760ec; https://api.sejm.gov.pl/eli/acts/DU/2026/203/text.pdf, sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; https://api.sejm.gov.pl/eli/acts/DU/2025/1691/text.pdf (KPA, consolidated), sha256 152f0830dee854451929d1482ecb83e9d053bc7b339973f78cfe0ea98fca348b; https://api.sejm.gov.pl/eli/acts/MP/2026/268/text.pdf, sha256 8178d74216a74e4a0b8d9931f8c7827afe6a276107639e73359eb8513aef6e97; retrieved 2026-10-17. pdftotext -layout; page headers dropped; footnotes kept where they fall; "[...]" marks an omission inside a block.
+# Amendments (node tools/sources/touched.mjs DU/2025/620 2025-06-01 --cite 1,2,31,32,34,35,38,39,43-45,55-68,218-239,246,432,433,436, 17.10.2026): Dz.U. 2025 poz. 1746 (art. 26), 2026 poz. 734 (art. 26, 300), 451 (art. 8) and 1123 art. 26 (art. 153-156, 172, 182, 292, from 1.01.2028) touch none of the quoted articles. Dz.U. 2025 poz. 1794 art. 10 changes art. 1 ust. 3 pkt 5 and Dz.U. 2026 poz. 507 art. 11 changes art. 2 pkt 1 lit. d-e and art. 232, both quoted at the end. 1794 art. 10 applies from 27.04.2026: its art. 19 pkt 2 sends it to the art. 17 announcement, M.P. 2026 poz. 370, which names the act's art. 1 ust. 3 pkt 5 (its pkt 6) and sets 27.04.2026.
+# Transitional rules (quoted): 1794 art. 12 keeps the old rules for cases begun and not ended before its points took effect; 1794 art. 14 keeps art. 1 ust. 3 pkt 5 in its old wording for a long-term resident case begun earlier when the passport carries the stamp of that application. 1794 art. 17 names articles of the act on foreigners (222, 228, 246 and others), not of this act; only its announcement concerns this act. Dz.U. 2026 poz. 451 art. 28 concerns opinions under art. 8 only. The act's own art. 432 ust. 6, 433 ust. 6-7 and 436 ust. 1-3 are quoted.
+# The amounts in art. 224 ust. 1 are indexed every 1 June (art. 228; not when prices did not rise, art. 228 ust. 1); from 1.06.2026 they are those of M.P. 2026 poz. 268 (quoted at the end; the previous announcement, M.P. 2025 poz. 510, gave the amounts from 1.06.2025).
+# The act on foreigners (UoC), consolidated Dz.U. 2025 poz. 1079 (https://api.sejm.gov.pl/eli/acts/DU/2025/1079/text.pdf, sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0): only the opening lines of art. 144, 151 and 159 ust. 1 are quoted, to name the purpose of three permits listed in RP art. 1 ust. 3 pkt 2 lit. m; their conditions are not relied on. Dz.U. 2025 poz. 1794 art. 1 pkt 23 repealed art. 144 ust. 1 pkt 1 lit. a from 27.04.2026 (its art. 19 pkt 2); the opening line is unchanged.
+# KPA (Dz.U. 2025 poz. 1691, the consolidated text with changes published before 3.11.2025): node tools/sources/touched.mjs DU/2025/1691 2025-11-03 --cite 129,130 finds no amending act (17.10.2026).
 
 [Art. 1 ust. 3 (to whom the act applies; pkt 5 in its original wording, changed from 27.04.2026: see the end)]
       3. Ustawa ma zastosowanie do:
@@ -154,9 +156,50 @@ jeżeli ustawa nie stanowi inaczej:
 1)   organem właściwym jest starosta;
 2)   organem wyższego stopnia jest wojewoda.
 
+[Art. 32 ust. 1 (the voivodeship's tasks): the opening and pkt 11]
+     Art. 32. 1. Do zadań samorządu województwa w zakresie aktywności zawodowej, wspierania zatrudnienia oraz rynku
+pracy należy:
+[...]
+11) realizowanie zadań wynikających z koordynacji systemów zabezpieczenia społecznego państw, o których mowa
+    w art. 1 ust. 3 pkt 2 lit. a–d, oraz państw, z którymi Rzeczpospolita Polska zawarła dwustronne umowy międzynaro-
+    dowe o zabezpieczeniu społecznym, w zakresie świadczeń dla bezrobotnych, w szczególności:
+     a)   pełnienie funkcji instytucji właściwej oraz innych instytucji określonych przepisami o koordynacji systemów za-
+          bezpieczenia społecznego, z wyłączeniem instytucji łącznikowej, wymienionej w art. 20 ust. 1 pkt 1, w tym przyj-
+          mowanie i rozpatrywanie wniosków o wydanie odpowiednich dokumentów i zaświadczeń w sprawach świadczeń
+          z tytułu bezrobocia,
+     b) wydawanie decyzji w sprawach wymienionych w art. 35 ust. 1–3;
+
+[Art. 34 ust. 2 (coordination matters: the higher authority)]
+      2. W postępowaniu administracyjnym w sprawach, o których mowa w art. 32 ust. 1 pkt 11, organem wyższego stopnia
+jest minister właściwy do spraw zabezpieczenia społecznego.
+
+[Art. 35 ust. 1 (the marshal decides where periods in another state matter)]
+        Art. 35. 1. W sprawach dotyczących koordynacji systemów zabezpieczenia społecznego państw, o których mowa
+w art. 1 ust. 3 pkt 2 lit. a–d, oraz państw, z którymi Rzeczpospolita Polska zawarła dwustronne umowy międzynarodowe
+o zabezpieczeniu społecznym, w zakresie świadczeń dla bezrobotnych, marszałek województwa rozstrzyga, w drodze decyzji,
+z wyjątkiem przypadku, o którym mowa w art. 223, o przyznaniu albo odmowie przyznania prawa do zasiłku, jeżeli okres
+ubezpieczenia, zatrudnienia lub pracy na własny rachunek spełniony przez bezrobotnego w innym państwie członkowskim
+Unii Europejskiej, państwie, o którym mowa w art. 1 ust. 3 pkt 2 lit. b–d, lub państwie, z którym Rzeczpospolita Polska za-
+warła dwustronną umowę międzynarodową o zabezpieczeniu społecznym, w zakresie świadczeń dla bezrobotnych, ma lub
+mógłby mieć wpływ na nabycie, ustalenie wysokości lub okres pobierania zasiłku, o którym mowa w art. 225 ust. 1 pkt 2
+lit. c.
+
+[Art. 38 ust. 1 (the district's tasks): the opening and pkt 14 lit. a-b (the decisions on the status)]
+     Art. 38. 1. Do zadań samorządu powiatu w zakresie aktywności zawodowej, wspierania zatrudnienia oraz rynku pracy
+należy:
+[...]
+14) wydawanie decyzji o:
+       a)   przyznaniu statusu bezrobotnego,
+       b) odmowie przyznania statusu bezrobotnego oraz utracie statusu bezrobotnego,
+
 [Art. 38 ust. 2 (a removal of status is enforced at once)]
      2. Decyzja o pozbawieniu statusu bezrobotnego oraz decyzja o pozbawieniu statusu bezrobotnego i prawa do zasiłku
 podlega natychmiastowemu wykonaniu.
+
+[Art. 39 ust. 2 (the office's director may act for the starosta)]
+     2. Starosta może, w formie pisemnej, upoważnić dyrektora PUP lub na jego wniosek innych pracowników tego urzędu,
+do załatwiania w imieniu starosty spraw, w tym do wydawania decyzji, postanowień oraz zaświadczeń w trybie przepisów
+ustawy z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego.
 
 [Art. 43 ust. 1-5 (the individual account on praca.gov.pl)]
      Art. 43. 1. Indywidualne konto w systemie teleinformatycznym, o którym mowa w art. 26 ust. 1 pkt 2, zwane dalej
@@ -420,6 +463,26 @@ pieczenia społecznego państw, o których mowa w art. 1 ust. 3 pkt 2 lit. a–d
 zawarła dwustronne umowy międzynarodowe o zabezpieczeniu społecznym, decyzja starosty o pozbawieniu statusu bezrobot-
 nego oznacza także pozbawienie prawa do tego zasiłku.
 
+[Art. 66 (when the status may not be removed)]
+     Art. 66. 1. Starosta nie może pozbawić statusu bezrobotnego z przyczyny, o której mowa w art. 65 ust. 1 pkt 7, kobiety
+w ciąży z powodu niezdolności do pracy związanej z ciążą trwającej przez nieprzerwany okres 180 dni, z wyłączeniem przy-
+padku złożenia wniosku o pozbawienie tego statusu przez kobietę w ciąży.
+     2. Starosta nie może pozbawić statusu bezrobotnego:
+1)   matki dziecka albo
+2)   ojca dziecka,
+3)   bezrobotnego po przysposobieniu dziecka,
+4)   bezrobotnego po przyjęciu przez niego dziecka na wychowanie i wystąpieniu do sądu opiekuńczego z wnioskiem
+     o wszczęcie postępowania w sprawie przysposobienia dziecka lub po przyjęciu przez niego dziecka na wychowanie
+     jako rodzina zastępcza, z wyjątkiem rodziny zastępczej zawodowej
+– z uwagi na brak zdolności i gotowości do podjęcia zatrudnienia spowodowany opieką nad tym dzieckiem przez okres,
+przez który przysługiwałby mu, zgodnie z odrębnymi przepisami, zasiłek macierzyński w okresie urlopu macierzyńskiego,
+uzupełniającego urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu rodzicielskiego oraz urlopu
+ojcowskiego, z wyłączeniem przypadku złożenia wniosku o pozbawienie tego statusu przez samego bezrobotnego.
+     3. Starosta nie może pozbawić statusu bezrobotnego bezrobotnego będącego członkiem założycielem spółdzielni, która
+została wpisana do Krajowego Rejestru Sądowego po dniu zarejestrowania bezrobotnego w PUP, w związku z uwzględnie-
+niem przez starostę jego wniosku o przyznanie środków na założenie spółdzielni socjalnej, do dnia następnego po dniu
+otrzymania tych środków.
+
 [Art. 67]
      Art. 67. Bezrobotny zawiadamia PUP o okolicznościach powodujących utratę statusu bezrobotnego w terminie 7 dni
 od daty ich wystąpienia.
@@ -435,6 +498,16 @@ od daty ich wystąpienia.
      pieczenia społecznego zasiłek nabyty w państwach, o których mowa w art. 1 ust. 3 pkt 2 lit. a–d, oraz opuścił teryto-
      rium Rzeczypospolitej Polskiej lub został pozbawiony tego zasiłku przez właściwą instytucję tego państwa;
 4)   złożył wniosek o pozbawienie statusu poszukującego pracy.
+
+[Art. 72 (who may use the forms of help)]
+     Art. 72. 1. Z form pomocy mogą korzystać na zasadach określonych w ustawie:
+1)   osoby, o których mowa w art. 1 ust. 3 pkt 1, pkt 2 lit. a–j oraz l oraz pkt 3, 5 i 6;
+2)   osoby, o których mowa w art. 1 ust. 3 pkt 2 lit. k, m, n oraz p – z wyłączeniem prawa do świadczeń określonych
+     w art. 111 i art. 234 ust. 1.
+     2. Na zasadach określonych w ustawie osoby, o których mowa w art. 1 ust. 3 pkt 2 lit. o, mogą korzystać z form po-
+mocy określonych w ustawie dotyczących pracy sezonowej w rozumieniu art. 6 ust. 1 pkt 4 ustawy z dnia 20 marca 2025 r.
+o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej, z wyłączeniem
+prawa do świadczeń określonych w art. 111 i art. 234 ust. 1.
 
 [Art. 218 ust. 1 (365 days in 18 months)]
      Art. 218. 1. Prawo do zasiłku przysługuje bezrobotnemu za każdy dzień kalendarzowy od dnia zarejestrowania się
@@ -465,7 +538,12 @@ w PUP, z wyjątkiem art. 219 i art. 220, jeżeli w okresie 18 miesięcy bezpośr
 9)   był zatrudniony, pełnił służbę lub wykonywał inną pracę zarobkową i osiągał wynagrodzenie lub dochód, od którego
      istnieje obowiązek opłacania składki na Fundusz Pracy.
 
-[Art. 219 ust. 1 (no benefit after quitting)]
+[Art. 218 ust. 5 (a period counts once)]
+     5. Okresy wymienione w ust. 1 i 2, które stanowiły już raz podstawę do nabycia prawa do zasiłku, nie mogą być po-
+nownie uwzględnione do 365 dni, o których mowa w ust. 1, z wyjątkiem nabycia prawa do zasiłku na okres uzupełniający
+w trybie art. 226 ust. 3.
+
+[Art. 219 (no benefit after quitting by notice; the exceptions)]
      Art. 219. 1. Prawo do zasiłku nie przysługuje bezrobotnemu, który przed rejestracją w PUP:
 1)   rozwiązał ostatni stosunek pracy lub stosunek służbowy za wypowiedzeniem, chyba że rozwiązanie stosunku pracy lub
      stosunku służbowego za wypowiedzeniem nastąpiło z powodu zmiany miejsca zamieszkania lub pracownik rozwiązał
@@ -473,6 +551,8 @@ w PUP, z wyjątkiem art. 219 i art. 220, jeżeli w okresie 18 miesięcy bezpośr
 2)   spowodował rozwiązanie z własnej winy ostatniego stosunku pracy lub stosunku służbowego bez wypowiedzenia;
 3)   rozwiązał ostatni stosunek pracy zawarty na podstawie skierowania przez starostę do pracodawcy otrzymującego
      w związku z tym skierowaniem środki z Funduszu Pracy.
+    2. Przepisu ust. 1 nie stosuje się w przypadku gdy ostatni stosunek pracy lub stosunek służbowy nie stanowi podstawy
+nabycia prawa do zasiłku.
 
 [Art. 220 ust. 1-2 (a later start: after a settlement, 90 days)]
      Art. 220. 1. Prawo do zasiłku od dnia zarejestrowania w PUP nie przysługuje bezrobotnemu, który:
@@ -508,7 +588,7 @@ w PUP, z wyjątkiem art. 219 i art. 220, jeżeli w okresie 18 miesięcy bezpośr
      2. Bezrobotnemu, którego łączne okresy wymienione w art. 218 ust. 1, ust. 2 pkt 1, 2, 4 i 5 wynoszą co najmniej 20 lat,
 przysługuje zasiłek w wysokości 120 % kwoty zasiłku określonego w ust. 1.
 
-[Art. 225 ust. 1 (180 or 365 days)]
+[Art. 225 (180 or 365 days; longer after a birth; shortened)]
      Art. 225. 1. Okres pobierania zasiłku wynosi:
 1)   180 dni albo
 2)   365 dni – dla bezrobotnych:
@@ -525,6 +605,12 @@ przysługuje zasiłek w wysokości 120 % kwoty zasiłku określonego w ust. 1.
      e)   samotnie wychowujących co najmniej jedno dziecko w wieku do 18. roku życia, a w przypadku dziecka niepełno-
           sprawnego do 24. roku życia, jeżeli kontynuuje naukę w szkole lub uczelni i legitymuje się orzeczeniem o umiar-
           kowanym albo znacznym stopniu niepełnosprawności.
+     2. W przypadku urodzenia dziecka przez kobietę pobierającą zasiłek w okresie, o którym mowa w ust. 1, lub w ciągu
+30 dni po jego zakończeniu, okres ten ulega przedłużeniu o okres, przez który przysługiwałby jej, zgodnie z odrębnymi
+przepisami, zasiłek macierzyński.
+     3. Okres pobierania zasiłku, o którym mowa w ust. 1 i 2, ulega skróceniu o okres zatrudnienia w ramach prac interwen-
+cyjnych, robót publicznych, odbywania szkolenia oraz stażu, przypadających na okres, w którym przysługiwałby zasiłek,
+oraz o okresy nieprzysługiwania zasiłku, o których mowa w art. 220 ust. 1 i 2 oraz art. 229.
 
 [Art. 228 (indexation)]
     Art. 228. 1. Zasiłek podlega corocznej waloryzacji z dniem 1 czerwca o średnioroczny wskaźnik cen towarów i usług
@@ -559,12 +645,44 @@ karnej za składanie fałszywych oświadczeń.
 wniosku o wpis do CEIDG oraz o zaistnieniu innych okoliczności powodujących utratę prawa do zasiłku. Przepis art. 62
 stosuje się odpowiednio.
 
-[Art. 239 ust. 2 (illness: 2 and 7 days)]
+[Art. 239 ust. 2-3 (illness: 2 and 7 days; a late certificate accepted)]
      2. Bezrobotny zawiadamia PUP o niezdolności do pracy w terminie 2 dni od dnia wystawienia zaświadczenia lekar-
 skiego, o którym mowa w art. 55 ust. 1 albo art. 55a ust. 6 albo 7 ustawy z dnia 25 czerwca 1999 r. o świadczeniach pienięż-
 nych z ubezpieczenia społecznego w razie choroby i macierzyństwa, oraz dostarcza do PUP wydruk zaświadczenia lekar-
 skiego albo zaświadczenie lekarskie, o których mowa w art. 55a ust. 6 albo 7 tej ustawy, w terminie 7 dni od dnia jego
 otrzymania.
+    3. W uzasadnionych przypadkach starosta może wyrazić zgodę na dostarczenie zaświadczenia po przekroczeniu ter-
+minu, o którym mowa w ust. 2.
+
+[Art. 246 ust. 1-2 pkt 1-2 (repaying an undue benefit)]
+     Art. 246. 1. Osoba, która pobrała nienależne świadczenie pieniężne, jest obowiązana do zwrotu w terminie 30 dni od
+dnia doręczenia decyzji starosty w przedmiocie obowiązku zwrotu nienależnie pobranego świadczenia pieniężnego, kwoty
+otrzymanego świadczenia wraz z przekazaną od tego świadczenia zaliczką na podatek dochodowy od osób fizycznych oraz
+składką na ubezpieczenie zdrowotne.
+     2. Za nienależnie pobrane świadczenie pieniężne uważa się:
+1)   świadczenie pieniężne wypłacone mimo zaistnienia okoliczności powodujących ustanie prawa do jego pobierania, jeżeli
+     pobierający to świadczenie był pouczony o tych okolicznościach;
+2)   świadczenie pieniężne wypłacone na podstawie nieprawdziwych oświadczeń lub sfałszowanych dokumentów albo
+     w innych przypadkach świadomego wprowadzenia w błąd starosty przez osobę pobierającą to świadczenie;
+
+[Art. 432 ust. 6 (old praca.gov.pl accounts)]
+     6. Konta założone na portalu www.praca.gov.pl stają się indywidualnymi kontami.
+
+[Art. 433 ust. 6-7 (transitional: a loss under the old act; the 3 years from 1.06.2025)]
+     6. W przypadku osoby, która utraciła status bezrobotnego albo poszukującego pracy na podstawie ustawy uchylanej
+w art. 460 na wskazany w tej ustawie okres, ponowne nabycie statusu bezrobotnego albo poszukującego pracy może nastą-
+pić w wyniku ponownej rejestracji, po upływie okresu wskazanego w ustawie uchylanej w art. 460, przy spełnieniu warun-
+ków wynikających z niniejszej ustawy.
+     7. W stosunku do osób posiadających status bezrobotnego w dniu wejścia w życie ustawy okres, o którym mowa
+w art. 63 ust. 1, liczy się od dnia wejścia w życie ustawy.
+
+[Art. 436 ust. 1-3 (benefits granted under the old act)]
+    Art. 436. 1. Zasiłki, stypendia i dodatki aktywizacyjne przyznane przed dniem wejścia w życie ustawy są wypłacane
+w wysokości i przez okresy wynikające z dotychczasowych przepisów.
+     2. Osoby, będące w dniu wejścia w życie niniejszej ustawy w okresie nieprzysługiwania zasiłku dla bezrobotnych,
+o którym mowa w art. 75 ust. 1 i 2 ustawy uchylanej w art. 460, nabywają prawo do zasiłku w wysokości i na okresy wyni-
+kające z dotychczasowych przepisów.
+     3. Zasiłki przyznane na podstawie ustawy uchylanej w art. 460 podlegają waloryzacji na podstawie niniejszej ustawy.
 
 [Dz.U. 2025 poz. 1794 art. 10 (art. 1 ust. 3 pkt 5: adds art. 222a; from 27.04.2026, the date of the announcement M.P. 2026 poz. 370, its art. 19 pkt 2)]
       Art. 10. W ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620 i 1746) w art. 1
@@ -572,6 +690,34 @@ w ust. 3 w pkt 5 wyrazy „na podstawie art. 108 ust. 1 pkt 2 lub art. 206 ust. 
 ziemcach lub na podstawie umieszczonego w dokumencie podróży odcisku stempla, który potwierdza złożenie wniosku
 o udzielenie zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej” zastępuje się wyrazami „na podstawie
 art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach”.
+
+[Dz.U. 2025 poz. 1794 art. 12 (pending cases: the old rules)]
+      Art. 12. Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i niezakoń-
+czonych przed dniem wejścia w życie art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–49, 50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c,
+art. 10, art. 11, art. 13, art. 14 oraz art. 18 ust. 1 i 2 stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2025 poz. 1794 art. 14 (a long-term resident case begun earlier, with a stamp: art. 1 ust. 3 pkt 5 in its old wording)]
+      Art. 14. W przypadku gdy postępowanie w sprawie udzielenia zezwolenia na pobyt rezydenta długoterminowego Unii
+Europejskiej zostało wszczęte przed dniem wejścia w życie art. 1 pkt 39 i cudzoziemiec, który ubiega się o udzielenie tego
+zezwolenia, posiada w swoim dokumencie podróży odcisk stempla, który potwierdza złożenie wniosku o udzielenie zezwo-
+lenia na pobyt rezydenta długoterminowego Unii Europejskiej, przepisy art. 43 ust. 3 ustawy zmienianej w art. 5 w zakresie
+dotyczącym odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na pobyt rezydenta długotermi-
+nowego Unii Europejskiej, art. 4 ust. 2 pkt 5 ustawy zmienianej w art. 6, art. 1 ust. 3 pkt 5 ustawy zmienianej w art. 10 oraz
+art. 3 ust. 1 pkt 18 i ust. 3 pkt 2 ustawy zmienianej w art. 11 stosuje się w brzmieniu dotychczasowym.
+
+[Dz.U. 2025 poz. 1794 art. 19 pkt 1-2 (entry into force)]
+     Art. 19. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)   art. 9 i art. 17, które wchodzą w życie z dniem następującym po dniu ogłoszenia;
+2)   art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c, art. 10, art. 11, art. 13, art. 14 oraz
+     art. 18 ust. 1 i 2, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 17;
+
+[M.P. 2026 poz. 370 (the announcement under 1794 art. 17 ust. 1): the opening, pkt 6 and the date]
+      Dzień wdrożenia rozwiązań technicznych umożliwiających stosowanie przepisów:
+[...]
+6)    art. 1 ust. 3 pkt 5 ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746 i 1794
+      oraz z 2026 r. poz. 451),
+[...]
+– określa się na 27 kwietnia 2026 r.
 
 [Dz.U. 2026 poz. 507 art. 11 (art. 2 pkt 1 lit. d-e, art. 232: CEIDG wording; from 14.10.2026, its art. 31 general date)]
      Art. 11. W ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746 i 1794 oraz
@@ -592,6 +738,25 @@ z 2026 r. poz. 451) wprowadza się następujące zmiany:
 
 [The same: the opening line of art. 159 ust. 1]
      Art. 159. 1. Zezwolenia na pobyt czasowy w celu połączenia się z rodziną udziela się cudzoziemcowi, jeżeli spełnia
+
+[Dz.U. 2026 poz. 203 art. 41 (Ukrainians staying legally without temporary protection: the work act art. 3 ust. 1 pkt 12 and 5a apply; the act in force 5.03.2026, its art. 54)]
+      Art. 41. W okresie 3 lat od dnia wejścia w życie niniejszej ustawy do obywateli Ukrainy przebywających legalnie na
+terytorium Rzeczypospolitej Polskiej, którzy nie korzystają z ochrony czasowej w Rzeczypospolitej Polskiej, stosuje się
+odpowiednio przepisy art. 3 ust. 1 pkt 12 i art. 5a ustawy zmienianej w art. 19.
+
+[KPA, consolidated Dz.U. 2025 poz. 1691: art. 129 (the appeal: through the deciding authority, 14 days)]
+    Art. 129. § 1. Odwołanie wnosi się do właściwego organu odwoławczego za pośrednictwem organu, który wydał
+decyzję.
+     § 2. Odwołanie wnosi się w terminie czternastu dni od dnia doręczenia decyzji stronie, a gdy decyzja została ogłoszona
+ustnie – od dnia jej ogłoszenia stronie.
+       § 3. Przepisy szczególne mogą przewidywać inne terminy do wniesienia odwołania.
+
+[KPA art. 130 § 1-3 (no enforcement before the appeal ends, unless by law)]
+       Art. 130. § 1. Przed upływem terminu do wniesienia odwołania decyzja nie ulega wykonaniu.
+       § 2. Wniesienie odwołania w terminie wstrzymuje wykonanie decyzji.
+       § 3. Przepisów § 1 i 2 nie stosuje się w przypadkach, gdy:
+1)     decyzji został nadany rygor natychmiastowej wykonalności (art. 108);
+2)     decyzja podlega natychmiastowemu wykonaniu z mocy ustawy.
 
 [M.P. 2026 poz. 268 (the amounts from 1.06.2026)]
      Na podstawie art. 228 ust. 4 ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (Dz. U. poz. 620, 1746

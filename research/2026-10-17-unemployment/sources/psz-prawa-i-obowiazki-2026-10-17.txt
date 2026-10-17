@@ -1,6 +1,7 @@
 # The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Prawa i obowiązki osoby bezrobotnej"
 # Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/prawa-i-obowiazki-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 ce92c3ddc83873217b9102f70384a2b541ab4fced0444d2d484075a62a076165
 # Text of the article element; menus removed. Published 01.06.2025, modified 06.06.2025. It cites the labour market act of 20.03.2025. Not binding.
+# sha256 of the text below this header (from line 5): 89ce70aa90874311f3bfdb8cddbf6a5fe2c2901562f0ec76cd9c56d7911fda5c. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
 
 Prawa osoby bezrobotnej
 Status bezrobotnego przysługuje Tobie przez okres 3 lat od dnia rejestracji, z wyjątkiem sytuacji, w których zgodnie z ustawą następuje utrata statusu bezrobotnego.

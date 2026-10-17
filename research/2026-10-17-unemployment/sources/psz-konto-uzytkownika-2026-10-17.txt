@@ -1,0 +1,39 @@
+# The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl), "Rejestracja w urzędzie": "Konto użytkownika"
+# Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/rejestracja-w-urzedzie/konto-uzytkownika, retrieved 2026-10-17, html sha256 84b064ec9ec73e44095a040e08b93ab7212f2406d5d91eb41e8b169ab4f0a7a0
+# Text of the article element; menus and images removed. Published 24.03.2020, modified 06.06.2023, before the labour market act (in force 1.06.2025). Not binding.
+# sha256 of the text below this header (from line 5): 172a7a855b192ef739930aab52c2f87550632ec8e0c94b73c7745a9c9e08f0e2. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
+Praca.gov.pl umożliwia Urzędom Wojewódzkim, Wojewódzkim Urzędom Pracy i Powiatowym Urzędom Pracy świadczenie usług elektronicznych na rzecz osób bezrobotnych i poszukujących pracy, pracodawców oraz podmiotów powierzającym cudzoziemcom wykonywanie pracy na terytorium Rzeczypospolitej Polskiej. Użytkownicy dysponujący Profilem Zaufanym lub kwalifikowanym podpisem elektronicznym mają możliwość założenia konta w Praca.gov.pl oraz wnoszenia wniosków wraz z załącznikami w postaci elektronicznej. Na konto użytkownika w Praca.gov.pl kierowane są również informacje zwrotne, pisma w sprawie i decyzje z urzędów.
+1. Rejestracja konta klienta Praca.gov.pl
+W celu założenia konta użytkownika Praca.gov.pl wejdź na stronę https://www.praca.gov.pl i wybierz funkcję "Zaloguj się".
+2. Następnie wybierz „Załóż konto"
+3. Wybór metody rejestracji konta klienta Praca.gov.pl
+Zarejestrować można się za pomocą jednej z metod:
+- za pomocą kwalifikowanego podpisu elektronicznego "Załóż konto i zweryfikuj kwalifikowanym podpisem elektronicznym". Od momentu podpisania konta, użytkownik będzie mógł się zalogować i korzystać z usług oraz zasobów oferowanych przez system Praca.gov.pl.
+- za pomocą login.gov.pl "Załóż konto i zweryfikuj przez login.gov.pl". Po uwierzytelnieniu się Profilem Zaufanym klient zostanie przekierowany do portalu praca.gov.pl, gdzie będzie kontynuował zakładanie konta zweryfikowanego.
+Należy wybrać odpowiednią metodę weryfikacji i nacisnąć przycisk „Załóż konto"
+4. Logowanie się za pomocą kwalifikowanego podpisu elektronicznego.
+Aby korzystać z certyfikatu kwalifikowanego w praca.gov.pl, certyfikat musi być wydany w kraju Unii Europejskiej. Sam certyfikat musi mieć zapisane dane identyfikacyjne osoby „PNO", kraj wydania i wartość np.: PNODE-12345678901. Informacje o tym, że certyfikat musi zawierać PNO przekazuje się wydawcy certyfikatu podczas jego zamawiania.
+Po wybraniu opcji rejestracji za pomocą kwalifikowanego podpisu elektronicznego użytkownik proszony jest o podpisanie oświadczenia: "Proszę o przydzielenie dostępu lub rejestrację w systemie Praca.gov.pl przy użyciu certyfikatu". Treść podpisywanego oświadczenia można zobaczyć wybierając przycisk "Wyświetl treść podpisywanego oświadczenia". Poniżej umieszczono podgląd oświadczenia.
+W oknie Rejestracja certyfikatem kwalifikowanym należy nacisnąć przycisk "Podpisz oświadczenie". Uruchomi to aplikację do składania podpisu elektronicznego:
+Po kliknięciu "Podpisz" uruchomi się wewnętrzny moduł podpisu elektronicznego z prośbą o podanie kodu PIN.
+Po poprawnym podpisaniu następuje automatyczne uruchomienie formularza rejestracji nowego konta zweryfikowanego. Dane osobowe, które zostały na formularzu zasilone danymi z certyfikatu, są wyszarzone (nieedytowalne).
+W sekcji dotyczącej danych kontaktowych należy podać adres e-mail oraz telefon (opcjonalnie). W sekcji Dane konta należy uzupełnić pola: login oraz ustawić hasło, a w sekcji Inne informacje wskazać rolę w jakiej konto będzie używane. Można zaznaczyć więcej niż jedną rolę. Przed naciśnięciem przycisku "Zatwierdź" należy przeczytać Regulamin korzystania z www.praca.gov.pl i potwierdzić jego akceptację.
+Przycisk "Zatwierdź" uruchamia proces rejestracji i weryfikacji konta. Od tego momentu można się już zalogować i korzystać z usług oraz zasobów oferowanych przez system Praca.gov.pl.
+UWAGA:
+Jeżeli dla podanego numeru PESEL istnieje już założone konto w systemie i ma ono status "Aktywne" pojawi się błąd rejestracji konta:
+5. Logowanie się do Profilu Zaufanego
+Zostaniesz przekierowany na stronę https://login.gov.pl, gdzie należy zalogować się korzystając z danych autoryzacyjnych (tj. login i hasło) posiadanego konta Profilu Zaufanego.
+Po wybraniu opcji rejestracji za pomocą login.gov.pl, następuje automatyczne przejście do okna portalu login.gov.pl.
+W przypadku wybrania „Profil zaufany" uruchomione zostanie okno jak poniżej z możliwością logowania za pomocą loginu i hasła lub bankowości elektronicznej czy też certyfikatu kwalifikowanego.
+Po uwierzytelnieniu się klient zostanie przekierowany do systemu Praca.gov.pl, gdzie następuje automatyczne uruchomienie formularza rejestracji nowego konta zweryfikowanego. Dane osobowe, które zostały na formularzu zasilone danymi z login.gov.pl, są wyszarzone (nieedytowalne).
+W sekcji Dane kontaktowe należy podać adres e-mail oraz telefon (opcjonalnie).
+W sekcji Dane konta należy uzupełnić pola: login oraz ustawić hasło, a w sekcji Inne informacje wskazać rolę w jakiej konto będzie używane. Można zaznaczyć więcej niż jedną rolę.
+Przed naciśnięciem przycisku "Zatwierdź" należy przeczytać Regulamin korzystania z Praca.gov.pl i potwierdzić jego akceptację.
+Przycisk "Zatwierdź" uruchamia proces rejestracji i weryfikacji konta.
+Po założeniu konta przez login.gov.pl zostanie wyświetlony komunikat potwierdzający poprawne zarejestrowanie konta. Od tego momentu można się już zalogować i korzystać z usług oraz zasobów oferowanych przez system Praca.gov.pl.
+UWAGA:
+Jeżeli dla podanego numeru PESEL istnieje już założone konto w systemie i ma ono status "Aktywne" pojawi się błąd rejestracji konta:
+Załączniki
+Instrukcja jak założyć konto w Praca_gov_pl_v2.pdf
+1131 KB
+Informacje o publikacji dokumentuAutor: Departament InformatykiData publikacji: 24.03.2020Data modyfikacji: 06.06.2023

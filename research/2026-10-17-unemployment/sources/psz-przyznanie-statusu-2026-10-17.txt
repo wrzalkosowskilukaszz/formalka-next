@@ -1,6 +1,7 @@
 # The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Przyznanie statusu osoby bezrobotnej"
 # Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/przyznanie-statusu-osoby-bezrobotnej, retrieved 2026-10-17, html sha256 cb3074a1a74f4a161a4ee1c94e8e524ebd6ce230447b8cc1804822326027ef80
 # Text of the article element; menus removed. Published 01.06.2025, modified 19.06.2026. It cites the labour market act of 20.03.2025. Not binding.
+# sha256 of the text below this header (from line 5): 30bd9a2551dea88e981363458bb83430ed638d991c79391e6fc0d28709612e40. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
 
 Status osoby bezrobotnej możesz uzyskać, jeżeli:
 - jesteś:

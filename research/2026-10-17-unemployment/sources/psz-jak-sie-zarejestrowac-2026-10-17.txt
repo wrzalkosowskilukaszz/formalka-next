@@ -1,6 +1,7 @@
 # The Ministry of Family, Labour and Social Policy, public employment services portal (psz.praca.gov.pl): "Jak się zarejestrować w powiatowym urzędzie pracy jako osoba bezrobotna?"
 # Source: https://psz.praca.gov.pl/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/jak-sie-zarejestrowac-w-powiatowym-urzedzie-pracy-jako-osoba-bezrobotna, retrieved 2026-10-17, html sha256 f278a4955834f94a7151b9f4ad493850dc89c8ac0f1558869b7161d5d0946293
 # Text of the article element; menus removed. Published 03.06.2025, modified 13.05.2026. It cites the labour market act of 20.03.2025. Not binding.
+# sha256 of the text below this header (from line 5): f007c2c3201ab4e59fbf15c56cda769dae867dcd5629d59da3ed302c8087f842. The HTML's hash differs between fetches (the page's script markup changes), so check the text.
 
 Jeżeli chcesz zarejestrować się jako osoba bezrobotna, to możesz:
 - zgłosić się do powiatowego urzędu pracy, właściwego ze względu na miejsce zamieszkania,

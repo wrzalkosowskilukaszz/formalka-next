@@ -1,8 +1,8 @@
 ---
-rule: When an amendment rewrites one paragraph, read the whole article in the consolidated text before stating the rule; the exceptions often sit in a later paragraph.
+rule: Before stating a rule from an article, read the whole article and the articles that name it (node tools/sources/omitted.mjs <ELI> <extract>); the exceptions often sit in a later paragraph.
 kind: legal-source
-files: [audit/*-residence/**, audit/**/reference/**, research/**]
-check: none: a reading practice; the engine comparison caught it first, and the separate fact-checking agent (.claude/agents/official-fact-checker.md, its step 4) caught it again on 17.10
+files: [audit/*-residence/**, audit/**/reference/**, research/**, docs/formalka-next/maps/**]
+check: tools/sources/omitted.mjs::lists the paragraphs a quoted article leaves out and the articles that name a quoted one, marking exception words (tools/sources/omitted.test.mjs); the separate checking agent still reads each claim
 date: 2026-10-16
 commits: []
 ---
@@ -13,3 +13,5 @@ commits: []
 **Fix.** The reference cites art. 229 ust. 2 and 4 together, and RC4 says the card is on application (correction K4).
 
 **Found again (17.10.2026, the health and civil status maps).** The separate checking agent found the same gap in other articles, though each extract already held the whole article: the municipality's decision gives the right for 90 days only (health act art. 54 ust. 7), primary care is not billed after a statement made without the right (art. 50 ust. 16, the closing words), and a child with a severe disability is family with no age limit (art. 5 pkt 3 lit. a). A condition inside the cited paragraph itself was also missed: transcription is mandatory only with an earlier Polish record (civil status records act art. 104 ust. 5). So quoting the whole article is not enough: each claim has to be read against the rest of its article. The agent is now run on every map before it is relied on (`research/*/sources/CHECK.md`); it is not an automatic check.
+
+**Found again (17.10.2026, the unemployment map).** The map quoted art. 65, 219 ust. 1 and 225 ust. 1 of the labour market act and missed art. 66 (no removal for a pregnancy-related illness), 219 ust. 2 (the notice rule does not apply when the last job is not the basis of the right), 225 ust. 3 (a shorter benefit period) and 433 ust. 7. The checking agent found them. A third time is a pattern, so there is now a check: `node tools/sources/omitted.mjs <ELI> <extract>` lists the paragraphs a quoted article leaves out and the articles that name a quoted one, marking those with an exception word. Run on the extract as first committed (213ea9a), it lists art. 218 ust. 5, 219 ust. 2, 225 ust. 2–3, 35 ust. 1, 66 ust. 1 and 433 ust. 7. It does not see a rule that names no quoted article (art. 246, 436), so the agent's reading stays.
