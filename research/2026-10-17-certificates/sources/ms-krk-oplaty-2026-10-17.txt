@@ -1,0 +1,111 @@
+# Krajowy Rejestr Karny: Opłaty
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/oplaty, retrieved 2026-10-17, html sha256 c694c7c9f7c307e2e677fc2bc616efd50f8429c53a32b90c4823c4c63d456af6
+# Text of the page's main element; blank lines removed. The page shows no publication or update date. Not binding.
+# sha256 of the text below this header (from line 5): 8faeba72cc77e726d986ad9a0cf2c0099b553edec9b9a5cc1296e9919185f04d.
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą tradycyjną
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+Pełnomocnictwo
+Jak poprawnie wypełnić wniosek/zapytanie
+Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego
+Opłaty
+Materiały do pobrania
+Akty Prawne
+Pytania i odpowiedzi
+Opłaty
+Za wydanie zaświadczeń drogą tradycyjną
+Za udzielenie informacji z Krajowego Rejestru Karnego pobiera się opłatę w wysokości:
+30 zł – za informację o osobie;
+30 zł – za informację o podmiocie zbiorowym.
+Opłatę uiszcza się w jeden z następujących sposobów:
+na rachunek bankowy Ministerstwa Sprawiedliwości;
+w formie znaków opłaty sądowej (E-znak);
+gotówką w kasie Ministerstwa Sprawiedliwości;
+w kasie sądu.
+Ad. 1. Na rachunek bankowy Ministerstwa Sprawiedliwości
+PL 77 1010 1010 0400 1922 3100 0000
+Narodowy Bank Polski
+Oddział Okręgowy Warszawa
+Plac Powstańców Warszawy 4
+00-950 Warszawa
+(SWIFT (kod BIC) NBPLPLPW dla przelewów zagranicznych)
+Pamiętaj!
+W tytule przelewu należy wskazać imię i nazwisko osoby lub nazwę podmiotu, których dotyczyć ma informacja z Krajowego Rejestru Karnego oraz datę oznaczoną we wniosku lub zapytaniu jako datę wystawienia.
+Aby dołączyć potwierdzenie wniesienia opłaty do składanego formularza zapytania o udzielenie informacji o osobie.
+Ad. 2. W formie znaków opłaty sądowej
+E-znaki są generowane w systemie e-Płatności. Mogą być samodzielnie drukowane lub przedstawiane do skasowania na ekranie urządzeń mobilnych.
+E-znaki są możliwe do nabycia:
+na stronie systemu e-Płatności (portal e-Płatności), pod adresem https://oplaty.ms.gov.pl;
+w kasach sądowych (wydruk na etykietach samoprzylepnych).
+Portal e-Płatności (https://oplaty.ms.gov.pl), niezależnie od możliwości nabycia elektronicznych znaków opłaty sądowej, umożliwia bezpośrednie dokonania zakupu E-znaku z wykorzystaniem natychmiastowych przelewów internetowych (pay-by-link) oraz kart kredytowych.
+Jeśli kupiłeś E-znak, pamiętaj!
+Aby dołączyć znak opłaty sądowej do formularza zapytania, gdy ubiegasz się o zaświadczenie tradycyjną drogą pocztową.
+O umożliwieniu okazania E-znaku na urządzeniu mobilnym przy ubieganiu się o zaświadczenie osobiście.
+Materiały
+Instrukcja zakupu e-znaku opłaty sądowej
+E-OPŁATY​_2a4.pdf
+0.15MB
+E-KRK
+Opłata za udzielenie informacji o osobie fizycznej oraz o podmiocie zbiorowym wynosi 20 zł.
+Opłaty wykonujemy tylko i wyłącznie poprzez elektroniczny system płatności DotPay udostępniony przez stronę e-KRK.
+Opłaty dokonane poza systemem DotPay uniemożliwią uzyskanie zaświadczenia drogą elektroniczną.
+Za wydanie wielojęzycznego standardowego formularza
+Za wydanie wielojęzycznego standardowego formularza pobiera się opłatę w wysokości 17 zł.
+Opłatę uiszcza się w jeden z następujących sposobów:
+na rachunek bankowy Ministerstwa Sprawiedliwości;
+w formie znaków opłaty sądowej (E-znak);
+gotówką w kasie Ministerstwa Sprawiedliwości;
+gotówką w kasie sądu.
+Opłaty za uzyskanie formularza drogą elektroniczną poprzez stronę e-KRK dokonuje się wyłącznie za pomocą mechanizmów płatności udostępnionych na e-Platformie.
+Ad. 1. Opłaty dokonywane na rachunek bankowy Ministerstwa Sprawiedliwości:
+PL 77 1010 1010 0400 1922 3100 0000
+Narodowy Bank Polski
+Oddział Okręgowy Warszawa
+Plac Powstańców Warszawy 4
+00-950 Warszawa
+(SWIFT (kod BIC) NBPLPLPW dla przelewów zagranicznych)
+Pamiętaj!
+W tytule przelewu należy wskazać imię i nazwisko osoby, których dotyczyć ma informacja z Krajowego Rejestru Karnego oraz datę oznaczoną we wniosku o wydanie formularza jako datę wystawienia.
+Aby dołączyć potwierdzenie wniesienia opłaty do składanego formularza zapytania.
+Ad. 2. Opłaty dokonywane w formie znaków opłaty sądowej:
+E-znaki są generowane w systemie e-Płatności. Mogą być samodzielnie drukowane lub przedstawiane do skasowania na ekranie urządzeń mobilnych.
+E-znaki są możliwe do nabycia:
+na stronie systemu e-Płatności (portal e-Płatności), pod adresem https://oplaty.ms.gov.pl;
+w kasach sądowych (wydruk na etykietach samoprzylepnych).
+Portal e-Płatności (https://oplaty.ms.gov.pl), niezależnie od możliwości nabycia elektronicznych znaków opłaty sądowej, umożliwia bezpośrednie dokonania zakupu E-znaku z wykorzystaniem natychmiastowych przelewów internetowych (pay-by-link) oraz kart kredytowych.
+Jeśli kupiłeś E-znak, pamiętaj!
+Aby dołączyć znak opłaty sądowej do formularza zapytania, gdy ubiegasz się o zaświadczenie i wielojęzyczny standardowy formularz drogą pocztową.
+O umożliwieniu okazania E-znaku na urządzeniu mobilnym przy ubieganiu się o zaświadczenie osobiście.
+Materiały
+Instrukcja zakupu e-znaku opłaty sądowej
+E-OPŁATY​_2a4.pdf
+0.15MB
+Opłata za pełnomocnictwo
+Od złożenia dokumentu stwierdzającego udzielenie pełnomocnictwa pobierana jest opłata skarbowa w wysokości 17 zł. Wpłaty należy dokonać na rachunek bankowy urzędu miasta/gminy/dzielnicy właściwego terytorialnie dla organu, do którego składane jest pełnomocnictwo. W przypadku, gdy dokumenty kierowane są bezpośrednio do Biura Informacyjnego Krajowego Rejestru Karnego przy ulicy Czerniakowskiej 100 opłatę należy wnieść na konto:
+Urząd Miasta Stołecznego Warszawy
+Centrum Obsługi Podatnika
+21 1030 1508 0000 0005 5000 0070
+NIP 525-22-48-481
+Dla płatności opłaty skarbowej dokonywanej z zagranicy:
+KOD SWIFT: CITIPLPX
+IBAN PL 21 1030 1508 0000 0005 5000 0070
+Pamiętaj!
+Dowód wniesienia opłaty należy dołączyć do pełnomocnictwa (podstawa prawna: ustawa z dnia 16 listopada 2006 r. o opłacie skarbowej).
+Udzielenie pełnomocnictwa członkowi najbliższej rodziny, tj. małżonkowi, wstępnemu, zstępnemu lub rodzeństwu jest zwolnione z opłaty skarbowej.
+Zwrot opłaty
+Zwrot opłaty przysługuje:
+jeżeli osoba składająca zapytanie o udzielenie informacji o osobie/udzielenie informacji o podmiocie zbiorowym zrezygnuje z uzyskania informacji z Krajowego Rejestru Karnego przed jej wydaniem;
+w przypadku wystąpienia nadpłaty.
+W celu uzyskania zwrotu wniesionej opłaty należy wypełnić „wniosek o zwrot opłaty” przesłać listownie na adres Biura Informacyjnego Krajowego Rejestru Karnego ul. Czerniakowska 100, 00-454 Warszawa, bądź drogą elektroniczną na adres b-krk@ms.gov.pl.
+Pamiętaj!
+Znaki opłaty sądowej (E-znaki) nie podlegają zwrotom, jeżeli nie zostały wykorzystane (płatność nie została pobrana).
+Zwrot opłaty realizowany jest w terminie do 3 miesięcy.
+W przypadku wnioskowania o zwrot wniesionej za uzyskanie zaświadczenia opłaty pamiętaj o:
+wskazaniu powodu ubiegania się o zwrot wniesionej opłaty;
+wskazaniu numeru rachunku bankowego, na który ma zostać dokonany zwrot opłaty;
+wskazaniu numeru telefonu kontaktowego.
+Materiały
+Wniosek o zwrot opłaty
+wniosek​_o​_zwrot​_oplaty.pdf
+0.18MB

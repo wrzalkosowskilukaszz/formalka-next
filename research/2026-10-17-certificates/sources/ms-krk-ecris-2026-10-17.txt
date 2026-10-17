@@ -1,0 +1,28 @@
+# Krajowy Rejestr Karny: Uzyskiwanie informacji za pośrednictwem systemu ECRIS
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/uzyskiwanie-informacji-za-posrednictwem-systemu-informatycznego-ecris, retrieved 2026-10-17, html sha256 1c90e15b15f0bbed5cb0ad8189133281fb5e62c5cecf8ca0a1ec6511b957e430
+# Text of the page's main element; blank lines removed. The page shows no publication or update date. Not binding.
+# sha256 of the text below this header (from line 5): bd591d9e8ac2999d113e9ee29f044bd68180b66f8665870392c76428d8f17e41.
+Krajowy Rejestr Karny
+Załatw sprawę
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą tradycyjną
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+Pełnomocnictwo
+Jak poprawnie wypełnić wniosek/zapytanie
+Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego
+Opłaty
+Materiały do pobrania
+Akty Prawne
+Pytania i odpowiedzi
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+WIELKA BRYTANIA – UZYSKIWANIE DANYCH
+W związku z wyjściem Wielkiej Brytanii z Unii Europejskiej, uprzejmie informujemy, że Biuro nie pośredniczy w uzyskiwaniu informacji z rejestru brytyjskiego w przypadku wniosków składanych przez obywateli innych krajów niż Wielkiej Brytanii.
+W przypadku gdy obywatel Zjednoczonego Królestwa wystąpi do Biura z wnioskiem o udzielenie informacji z polskiego rejestru karnego występowanie z wnioskiem do Strony brytyjskiej pozostaje bez zmian - Biuro składa wniosek do brytyjskiego organu centralnego o udzielenie informacji z jego rejestru karnego i dołącza pozyskaną informację do informacji o osobie udzielonej przez Biuro.
+System ECRIS (Europejski system przekazywania informacji z rejestrów karanych) został stworzony na podstawie decyzji ramowej Rady 2009/315/WSiSW z dnia 26 lutego 2009 r. w sprawie organizacji wymiany informacji pochodzących z rejestru karnego pomiędzy państwami członkowskimi oraz treści tych informacji.
+Biuro informacyjne Krajowego Rejestru Karnego pośredniczy w uzyskaniu informacji z rejestrów zagranicznych za pośrednictwem systemu informatycznego ECRIS dla obywateli państw członkowskich Unii Europejskiej.
+Każdemu obywatelowi Rzeczypospolitej Polskiej lub innego państwa członkowskiego Unii Europejskiej oraz każdej osobie, która mieszka lub mieszkała w jednym z tych państw, przysługuje prawo do złożenia do Rejestru wniosku o wystąpienie z zapytaniem o informację dotyczącą jego osoby zawartą w rejestrze karnym innego państwa członkowskiego Unii Europejskiej, jeżeli jest lub była obywatelem państwa, do którego kierowane jest zapytanie, lub mieszka albo mieszkała na jego terytorium.
+W formularzu wniosku o udzielenie informacji o osobie niezbędne jest wówczas wskazanie, że osoba ta mieszka lub mieszkała we wskazanym państwie UE.
+W przypadku osoby będącej obywatelem państwa członkowskiego UE, która chce uzyskać informację z rejestru zagranicznego państwa innego niż jej państwo obywatelstwa, niezbędne jest wskazanie we wniosku, że mieszka lub mieszkała w państwie członkowskim, do którego jest skierowany wniosek.
+Termin realizacji zaświadczenia w przypadku uzyskania danych z rejestrów zagranicznych ulega wydłużeniu o czas niezbędny na uzyskanie z nich informacji. Termin ten wynosi do 20 dni roboczych – art. 6 ust.1 pkt 12 ustawy z dnia 24 maja 2000 r. o Krajowym Rejestrze Karnym (Dz. U. z 2019 r. poz. 1158 oraz z 2021 r. poz. 187).

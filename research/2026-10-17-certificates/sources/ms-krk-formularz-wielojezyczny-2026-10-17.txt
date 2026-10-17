@@ -1,0 +1,81 @@
+# Krajowy Rejestr Karny: Wydawanie wielojęzycznych standardowych formularzy
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/wydawanie-wielojezycznych-standardowych-formularzy-jako-zalacznikow-do-zaswiadczen-z-krajowego-rejestru-karnego2, retrieved 2026-10-17, html sha256 c728a8245ea3e99076bd94881d3f55865e8cc9feb57e9c813d1bbabc5d6bcb32
+# Text of the page's main element; blank lines removed; the editors' names removed from its publication record and change history. First published 07.06.2022 (its publication record). Not binding.
+# sha256 of the text below this header (from line 5): 4a5be6ee917a6df37446b4c158a89cf7044caece3a03183cac19bd485da7e536.
+Krajowy Rejestr Karny
+Załatw sprawę
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą tradycyjną
+Uzyskiwanie informacji z Krajowego Rejestru Karnego drogą elektroniczną
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+Uzyskiwanie informacji za pośrednictwem systemu informatycznego ECRIS
+Pełnomocnictwo
+Jak poprawnie wypełnić wniosek/zapytanie
+Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego
+Opłaty
+Materiały do pobrania
+Akty Prawne
+Pytania i odpowiedzi
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+W związku z wejściem w życie Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/1191 z dnia 6 lipca 2016 r. w sprawie promowania swobodnego przepływu obywateli poprzez uproszczenie wymogów dotyczących przedkładania określonych dokumentów urzędowych w Unii Europejskiej i zmieniającego rozporządzenie (UE) nr 1024/2012, od dnia 16 lutego 2019 r. możliwe jest zawnioskowanie o wydanie wielojęzycznego standardowego formularza (dalej: formularz) jako załącznika do zaświadczenia z Krajowego Rejestru Karnego.
+W dniu 24 maja 2019 r. weszła w życie ustawa z dnia 4 kwietnia 2019 r. o przedkładaniu niektórych dokumentów urzędowych w państwach członkowskich Unii Europejskiej (Dz. U. poz. 860), która dookreśliła stosowanie niektórych przepisów rozporządzenia UE.
+Kto może uzyskać formularz wielojęzyczny?
+Formularz przeznaczony jest dla obywateli polskich, którzy mają zamiar przedłożyć w innych państwach UE zaświadczenia z Krajowego Rejestru Karnego stwierdzające niekaralność. Formularz jest wydawany na wniosek osoby zainteresowanej tylko do informacji o niefigurowaniu danych tej osoby w Kartotece karnej Krajowego Rejestru Karnego.
+Gdzie można uzyskać formularz?
+O wydanie formularza osoba fizyczna posiadająca obywatelstwo polskie może zawnioskować osobiście lub przez pełnomocnika ustanowionego na piśmie:
+w Punktach Informacyjnych Krajowego Rejestru Karnego przy sądach powszechnych na terenie kraju;
+w Biurze Informacyjnym Krajowego Rejestru Karnego w Warszawie (ul. Czerniakowska 100, 00-454 Warszawa);
+lub przez system e-KRK zakładając swoje konto na e-Platformie Ministerstwa Sprawiedliwości na stronie ekrk.ms.gov.pl.
+Opłata
+Za wydanie formularza wielojęzycznego pobiera się opłatę w wysokości 17 zł.
+Opłatę uiszcza się w jeden z następujących sposobów:
+na rachunek bankowy Ministerstwa Sprawiedliwości (ten sam, na który należy wnosić opłaty za zaświadczenia z Krajowego Rejestru Karnego);
+w formie znaków opłaty sądowej (E-znak);
+gotówką w kasie Ministerstwa Sprawiedliwości;
+gotówką w kasie sądu.
+Opłaty za uzyskanie formularza drogą elektroniczną dokonuje się wyłącznie za pomocą mechanizmów płatności udostępnionych na e-KRK.
+Pamiętaj!
+Wielojęzyczny standardowy formularz jest tylko tłumaczeniem pomocniczym wydanego zaświadczenia na wybrany język urzędowy Unii Europejskiej.
+Wielojęzyczny standardowy formularz wydawany jest jedynie dla obywateli polskich.
+Jeśli potrzebujesz tłumaczenia zaświadczenia z Krajowego Rejestru Karnego w innym języku może być ono dokonane jedynie przez tłumacza przysięgłego. Wszelkie tego rodzaju tłumaczenia dokonywane są na własną rękę przez osobę zainteresowaną.
+Biuro Informacyjne Krajowego Rejestru Karnego nie pośredniczy w przekazywaniu dokumentów do Ministerstwa Spraw Zagranicznych celem uzyskania przez wnioskodawcę poświadczenia apostille (więcej informacji o tym jak uzyskać apostille pod tym linkiem: https://www.gov.pl/web/dyplomacja/apostille).
+Informacje dodatkowe:
+Wniosek o wydanie formularza wielojęzycznego można złożyć:
+wraz z wnioskiem o wydanie zaświadczenia z Krajowego Rejestru Karnego;
+po jego wydaniu.
+W przypadku wystąpienia z wnioskiem po wydaniu zaświadczenia z Krajowego Rejestru Karnego, wnioskodawca jest obowiązany przedłożyć wydane już zaświadczenie. Wniosek należy złożyć do organu, który wydał zaświadczenie.
+Wniosek o wydanie formularza składany razem z wnioskiem o wydanie zaświadczenia z Krajowego Rejestru Karnego zawiera:
+imię i nazwisko osoby składającej wniosek;
+numer PESEL, a jeżeli nie został nadany – datę urodzenia osoby składającej wniosek;
+wskazanie języka urzędowego UE, w jakim, obok języka polskiego, ma być sporządzony wielojęzyczny formularz;
+opcjonalnie adres do korespondencji osoby składającej wniosek;
+określenie nazwy lub rodzaju dokumentu urzędowego, do którego ma być załączony wielojęzyczny formularz (w przypadku KRK to zaświadczenie);
+imię i nazwisko osoby, której dotyczy zaświadczenie, do którego ma być załączony wielojęzyczny formularz.
+Do wniosku należy załączyć dowód wniesienia opłaty za wydanie formularza wielojęzycznego w kwocie 17 zł.
+Wniosek o wydanie formularza składany po wydaniu zaświadczenia z Krajowego Rejestru Karnego zawiera:
+imię i nazwisko osoby składającej wniosek;
+numer PESEL, a jeżeli nie został nadany – datę urodzenia osoby składającej wniosek;
+wskazanie języka urzędowego UE, w jakim, obok języka polskiego, ma być sporządzony wielojęzyczny formularz;
+opcjonalnie adres do korespondencji osoby składającej wniosek;
+datę sporządzenia zaświadczenia, do którego ma być załączony wielojęzyczny formularz.
+Do wniosku należy załączyć dowód wniesienia opłaty za wydanie formularza wielojęzycznego w kwocie 17 zł.
+Pełnomocnik
+Jeżeli wniosek o wydanie wielojęzycznego standardowego formularza wnosi pełnomocnik ustanowiony na piśmie, pełnomocnictwo powinno obejmować również upoważnienie w zakresie wydania formularza wielojęzycznego.
+Materiały
+Wzór wniosku o wydanie formularza jednocześnie z zaświadczeniem KRK
+Wzór​_wniosku​_o​_wydanie​_formularza​_jednocześnie​_z​_zaświadczeniem​_KRK​_(1).pdf
+0.06MB
+Wzór wniosku o wydanie formularza po wydaniu zaświadczenia KRK
+Wzór​_wniosku​_o​_wydanie​_formularza​_po​_wydaniu​_zaświadczenia​_KRK​_(1).pdf
+0.06MB
+Informacje o publikacji dokumentu
+Pierwsza publikacja: 07.06.2022 10:53 [editor's name removed]
+Wytwarzający/ Odpowiadający: [name removed]
+Pokaż historię zmian
+Tytuł
+Wersja
+Dane zmiany / publikacji
+Wydawanie wielojęzycznych standardowych formularzy jako załączników do zaświadczeń z Krajowego Rejestru Karnego
+1.0
+07.06.2022 10:53 [editor's name removed]
+Aby uzyskać archiwalną wersję należy skontaktować się z Redakcją BIP

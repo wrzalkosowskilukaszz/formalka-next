@@ -1,0 +1,14 @@
+# Krajowy Rejestr Karny: e-Doręczenia nie mają zastosowania
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/e-doreczenia-nie-maja-zastosowania-do-wnioskow-i-zapytan-o-udzielenie-informacji-z-krajowego-rejestru-karnego, retrieved 2026-10-17, html sha256 7d64a36f72391f37948410a48c3684212aca1e5ecd27b9d72f4f8d7cc417d9c6
+# Text of the page's main element; blank lines removed. The page shows no publication or update date. Not binding.
+# sha256 of the text below this header (from line 5): 2003ba9091d54a127f0a6dd73616e764d8682e1604737a62d8678f79d5384cba.
+Krajowy Rejestr Karny
+Dostęp
+e-Doręczenia nie mają zastosowania do wniosków i zapytań o udzielenie informacji z Krajowego Rejestru Karnego
+Informacje dotyczące sali obsługi
+Ministerstwo Sprawiedliwości ostrzega
+System e-KRK pytania i odpowiedzi
+USTAWA KAMILKA - UZYSKIWANIE ZAŚWIADCZEŃ O NIEKARALNOŚCI
+e-Doręczenia nie mają zastosowania do wniosków i zapytań o udzielenie informacji z Krajowego Rejestru Karnego
+e-Doręczenia nie mają zastosowania do wniosków i zapytań o udzielenie informacji z Krajowego Rejestru Karnego
+Informujemy, iż zgodnie z art. 6 ust. 1 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych (Dz. U. z 2024 r. poz. 1045) e-Doręczenia nie mają zastosowania do informacji z Krajowego Rejestru Karnego uzyskiwanych na podstawie ustawy z dnia 24 maja 2000 r. o Krajowym Rejestrze Karnym (Dz. U. z 2024 r. poz. 276).

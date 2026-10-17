@@ -1,0 +1,665 @@
+# Certificates for other procedures: the act on the National Criminal Register (KRK), consolidated Dz.U. 2024 poz. 276 (obwieszczenie of 20.02.2024), art. 4 ust. 1 pkt 5-5a, 7 ust. 1-1a, 19 ust. 1-4, 19a, 20 ust. 1-1d, 23-24; its amendment Dz.U. 2026 poz. 421 (art. 1 pkt 4, 6, 8, 17-19; art. 7, 9, 10); the Commission's ECRIS report as registered by the Council (ST 11076/26); the MS regulations on KRK fees (consolidated Dz.U. 2024 poz. 1339) § 3-9, on giving KRK information (consolidated Dz.U. 2024 poz. 1817) § 2, 3, 5, 8, 12, and on KRK information online (Dz.U. 2021 poz. 728) § 4, 9, 13, 20, with the 2023 regulation (Dz.U. 2023 poz. 2469) § 24-25 and the four acts that moved its start (Dz.U. 2024 poz. 279 and 1396, 2025 poz. 721, 2026 poz. 716); the act on counteracting sexual offences and protecting minors, consolidated Dz.U. 2026 poz. 110, art. 21; the stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part II items 5-6 and part IV; the Hague Convention of 5.10.1961 (Dz.U. 2005 nr 112 poz. 938) art. 1-6 and the government statement of 27.04.2005 (poz. 939); Regulation (EU) 2016/1191 art. 1, 2, 4, 27
+# Sources, retrieved 2026-10-17: the acts from https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf; ST 11076/26 from https://data.consilium.europa.eu/doc/document/ST-11076-2026-INIT/en/pdf; Regulation 2016/1191 (Polish, OJ L 200 of 26.7.2016) as XHTML from http://publications.europa.eu/resource/celex/32016R1191 (EUR-Lex itself answered 202 with no content). pdftotext -layout; page headers dropped; footnotes kept where they fall. The 2005 Dz.U. texts are set in three (poz. 938) and two (poz. 939) columns in an old font that pdftotext garbles; the Polish column was cut with pdftotext -x 0 -W 215 (poz. 939: -W 290, page 1) and decoded with the table ∏ł ´ę àą Êś ˝ż ƒń ¸Ł ÂŚ ˚Ż êź ÑĄ ¢Ę çć ¡Ń; the quoted lines are those of the decoded column. sha256: DU/2024/276 e2c08b0fe87c640ef8d650cb483d216188760a1562d115eba98fb46fa5234e73; DU/2026/421 131a2d442f9f70634576122bb49662dcef6f84c11b3a43860be5917fc70128b3; ST 11076/26 INIT dfd7cd62c2b8f72ddf5ecbdf8a0e0c3db92ccfdbc42575d46ce1f9eed655c9d0; DU/2024/1339 c30150cbccc5e9e56f669ba9f0e6aab5c5beb6929c075a18f1fbdcc15ba38b70; DU/2024/1817 92a506ea5fc592e7a353692bbd60ebaaf6a1846c056d612717e11b85f0b7319c; DU/2021/728 6e54163086265ea3078d658e20600a44b271cbe3b9bb7b98f117d019d2fce3d7; DU/2023/2469 c5040ee5bffbc108a41a5fc568b9def275dedd33a6a60cd807af2fee426c37fc; DU/2024/279 0e8083e8b2e3f1901cc871c36c2ef414f9a124f8ebf4da18b966a9ebefa4d826; DU/2024/1396 b6b6721eb5c91b94efe55ba387257672faa507319512f39c8c1dcb04567da0fe; DU/2025/721 ebf5b69663e795b78c9103f2c8285026956e894c57798ca5b56c5c04c1ba0596; DU/2026/716 4d0c9fa31918dd1d39ba4a811327d7416b11536285b1e970358ef5bb01bff3d7; DU/2026/110 e5df724167e178f354fafb95b96741095e684df1c2cd3844d34c369551c7f942; DU/2025/1154 fedc2319bca74759d01fde3546137eda57263d5f9a63b36b59da781fc53fb2ac; DU/2005/938 292d96c4d76d0db5379b4bd5c01273c1ef0f35b7a8ffbf43306becb9bdb2d748; DU/2005/939 1b69167f483b4a6b61383517af4859f49d264fc5ee52bbb2411a64dffec9e882; Regulation 2016/1191 XHTML 4e2d3232119952f2bbdc21d92c5a7ea35c30a3882c7bdafb9163ea81c106edb7.
+# Later amendments (node tools/sources/touched.mjs with the 3-year lookback, 17.10.2026): the KRK act after 19.02.2024: Dz.U. 2026 poz. 421 art. 1 (its points touch art. 1a, 2, 4, 4a, 4b, 6, 6a, 7, 11, 12-14, 19, 20, 23, 24; the ones on the quoted articles are quoted, with their dates) and its transitional art. 7 and 9 (quoted); Dz.U. 2025 poz. 1235 art. 37 (art. 4 ust. 1 pkt 5, 6, 6a and 19 ust. 1a, from 12.07.2026: entities, the public procurement certification body; its art. 37 pkt 1, on art. 4 ust. 1 pkt 5, was itself given new words by Dz.U. 2026 poz. 421 art. 6 from 12.07.2026, so from that day pkt 5 reads "na wniosek podmiotów, o których mowa w art. 6 ust. 1 pkt 1–10b, oraz osoby, o której mowa w art. 7 ust. 1a"; not quoted); Dz.U. 2026 poz. 252 art. 10 (art. 6 ust. 1 pkt 10c, from 3.04.2026: cybersecurity entities; not quoted); Dz.U. 2026 poz. 760 art. 37 (art. 12, 12c: Eurodac; not quoted); Dz.U. 2023 poz. 497 art. 4 (art. 6, from 31.03.2023, in the consolidated text). The act of 2016 after 12.01.2026: Dz.U. 2026 poz. 421 art. 5 (art. 7 and 12) and poz. 187 art. 143 (art. 22j, by the API from 19.05.2028): neither touches art. 21. The fee regulation after 29.08.2024 and the information regulation after 20.11.2024: none. The 2021 regulation: none. The 2023 regulation after 31.07.2025: Dz.U. 2026 poz. 716 § 1 (§ 25), quoted. The stamp duty act after 1.08.2025, none changing part II items 5-6 or part IV: Dz.U. 2023 poz. 1688 art. 26 (part I item 51) and its transitional art. 64; Dz.U. 2025 poz. 921 art. 2 (art. 2, 30, part I); Dz.U. 2025 poz. 1847 art. 3 (art. 29, part I) and its transitional art. 10; Dz.U. 2025 poz. 1795 art. 116 (part III item 44); Dz.U. 2026 poz. 1206 art. 14 (part III item 17, from 11.01.2027); Dz.U. 2026 poz. 846 art. 14 (art. 9-10, from 1.10.2026) and its transitional art. 31-32; Dz.U. 2026 poz. 875 art. 9 (art. 1, from 1.01.2027). The convention: its executive acts are the government statements of 2005 (poz. 939 and 2122).
+# Dates: Dz.U. 2026 poz. 421 was published on 30.03.2026 and is in force from 14.04.2026 (14 days, its art. 10), except art. 1 pkt 4 lit. a tiret 2, lit. c and d, pkt 16 lit. b and pkt 17 lit. c (among them KRK art. 20 ust. 1da-1db for third-country nationals), from the day ECRIS-TCN starts as the Commission decides under Regulation (EU) 2019/816 art. 35 ust. 4, and art. 6, from 12.07.2026. No such Commission decision was found; the Commission's report of 19.06.2026 (COM(2026) 284, quoted) expects ECRIS-TCN to start in 2027. The information regulation of 2015 rests on KRK art. 21, so Dz.U. 2026 poz. 421 art. 9 ust. 1 keeps it until a new one, at most until 14.04.2027 (12 months, a computation). The 2023 online regulation was to apply from 1.03.2024; four amendments moved its start, now to 30.06.2027 (quoted), so its § 24, which repeals the 2021 regulation, has not yet taken effect (INFERENCE). The Sejm API lists the 2021 regulation as repealed on 1.03.2024 and the 2023 one as in force from that day; the texts quoted here do not support that. The convention is in force for Poland from 14.08.2005 (the statement of 27.04.2005). Regulation 2016/1191 applies from 16.02.2019 (its art. 27); whether it was amended since was not checked: EUR-Lex did not answer.
+# Not quoted: KRK art. 6 (the bodies that may ask; Dz.U. 2026 poz. 421 art. 1 pkt 6 lit. a and c, poz. 252 and 2025 poz. 1235 change it); the act of 2019 on presenting certain public documents in EU states (Dz.U. 2019 poz. 860; the MS page names it); the acts behind the other apostille authorities (NAWA, the education ministry and superintendents, the culture ministry), which the MSZ page names; the list of the convention's parties today (the 2005 statements list them as they stood then; the depositary's list was not read).
+
+[KRK art. 4 ust. 1, its opening and pkt 5-5a (the bureau asks EU registers on a person's request), as printed; Dz.U. 2026 poz. 421 art. 1 pkt 4 lit. a replaces them from 14.04.2026 (quoted below)]
+      Art. 4. 1. Do zadań biura informacyjnego należy:
+[KRK art. 4 ust. 1 pkt 5-5a, as printed]
+5)    występowanie na wniosek podmiotów, o których mowa w art. 6 ust. 1 pkt 1–10 oraz w art. 7 ust. 1 i 1a, do organów
+      centralnych państw członkowskich Unii Europejskiej z zapytaniem o udzielenie informacji o skazaniu z rejestrów kar-
+      nych tych państw zgodnie z prawem państwa, do którego kierowany jest wniosek;
+5a) występowanie do organów centralnych państw członkowskich Unii Europejskiej, zgodnie z prawem danego państwa
+    członkowskiego Unii Europejskiej, z zapytaniem o udzielenie informacji z rejestru karnego tego państwa o osobie
+    będącej jego obywatelem, w przypadku gdy osoba ta złożyła wniosek o udzielenie informacji z Rejestru;
+
+[KRK art. 7 ust. 1-1a (everyone may obtain their own data; queries to other EU registers), as printed; Dz.U. 2026 poz. 421 art. 1 pkt 8 gives ust. 1a a new wording from 14.04.2026 (quoted below)]
+     Art. 7. 1. Każdemu przysługuje prawo do uzyskania informacji, czy jego dane osobowe zgromadzone są w Rejestrze.
+Osobie, której dane osobowe znajdują się w zbiorach danych zgromadzonych w Rejestrze, na jej wniosek, udostępnia się
+informację o treści wszystkich zapisów dotyczących tej osoby.
+      1a. Każdemu obywatelowi Rzeczypospolitej Polskiej lub innego państwa członkowskiego Unii Europejskiej oraz każdej
+osobie, która mieszka lub mieszkała w jednym z tych państw, przysługuje prawo do złożenia do Rejestru wniosku o wystąpienie
+z zapytaniem o informację dotyczącą jego osoby zawartą w rejestrze karnym innego państwa członkowskiego Unii Euro-
+pejskiej, jeżeli jest lub była obywatelem państwa, do którego kierowane jest zapytanie, lub mieszka albo mieszkała na jego
+terytorium.
+
+[KRK art. 19 ust. 1-4 (who asks; on paper or online; the request's data, a passport number without a PESEL; the signature online; 14 days to fill gaps), as printed]
+    Art. 19. 1. Informacji o osobie na podstawie zgromadzonych w Rejestrze danych osobowych udziela się na zapytanie
+podmiotów wymienionych w art. 6 ust. 1 lub na wniosek osoby, o której mowa w art. 7 ust. 1.
+     1a. Informacji o podmiocie zbiorowym na podstawie danych o tym podmiocie zgromadzonych w Rejestrze udziela się na
+zapytanie podmiotów wymienionych w art. 6 ust. 1 pkt 1, 4–9 i 11 lub na wniosek podmiotu, o którym mowa w art. 7 ust. 2.
+     1aa. Podmioty wymienione w art. 6 ust. 1 pkt 4–7 i 8 mogą uzyskiwać informacje o osobie i informacje o podmiocie
+zbiorowym na podstawie danych zgromadzonych w Rejestrze także na żądanie.
+      1b. Zapytania i wnioski, o których mowa w ust. 1 i 1a, mogą być składane pisemnie albo za pośrednictwem systemu
+teleinformatycznego, a żądania, o których mowa w ust. 1aa, są składane za pośrednictwem systemu teleinformatycznego.
+     1c. Przepisu ust. 1b nie stosuje się do zapytań przekazywanych do Rejestru za pośrednictwem systemu ECRIS.
+     2. Zapytanie o udzielenie informacji o osobie powinno zawierać:
+1)   nazwisko, w tym także przybrane, imiona, nazwisko rodowe, datę i miejsce urodzenia, imiona rodziców, nazwisko
+     rodowe matki, miejsce zamieszkania, obywatelstwo oraz numer PESEL, a w przypadku jego nieposiadania przez
+     osobę, której zapytanie dotyczy, numer paszportu albo innego dokumentu stwierdzającego tożsamość;
+2)   określenie rodzaju i zakresu danych o osobie, które mają być przedmiotem informacji;
+3)   wskazanie postępowania, w związku z którym zachodzi potrzeba uzyskania danych o osobie;
+4)   nazwę podmiotu kierującego zapytanie;
+5)   datę wystawienia;
+6)   podpis sędziego, prokuratora albo uprawnionej osoby lub organu podmiotu kierującego zapytanie.
+     2a. Zapytanie o udzielenie informacji o podmiocie zbiorowym powinno zawierać:
+1)   oznaczenie podmiotu zbiorowego oraz jego siedziby;
+2)   określenie rodzaju i zakresu danych o podmiocie zbiorowym, które mają być przedmiotem informacji;
+3)   wskazanie postępowania, w związku z którym zachodzi potrzeba uzyskania danych o podmiocie zbiorowym;
+4)   nazwę podmiotu kierującego zapytanie;
+5)   datę wystawienia;
+6)   podpis sędziego, prokuratora albo uprawnionej osoby lub organu podmiotu kierującego zapytanie.
+    2b. Przepisu ust. 2 nie stosuje się do zapytań przekazywanych przez właściwe organy państw obcych. Zapytanie takie
+powinno zawierać dane pozwalające na identyfikację osoby, której ono dotyczy.
+     2c. Zapytanie o udzielenie informacji o osobie oraz zapytanie o udzielenie informacji o podmiocie zbiorowym składane
+za pośrednictwem systemu teleinformatycznego opatruje się kwalifikowanym podpisem elektronicznym, podpisem zaufa-
+nym albo podpisem osobistym.
+      3. Wniosek osoby, o której mowa w art. 7 ust. 1, o udzielenie informacji z Rejestru zawiera: nazwisko, w tym także
+przybrane, imiona, nazwisko rodowe, datę i miejsce urodzenia, imiona rodziców, nazwisko rodowe matki, miejsce zamieszkania,
+obywatelstwo oraz numer PESEL i podpis wnioskodawcy. W przypadku nieposiadania numeru PESEL wniosek powinien zawie-
+rać numer paszportu albo innego dokumentu stwierdzającego tożsamość. Wniosek podmiotu zbiorowego, o którym mowa
+w art. 7 ust. 2, zawiera oznaczenie tego podmiotu i jego adres oraz podpis osoby uprawnionej do reprezentowania wniosko-
+dawcy. Jeżeli we wniosku nie określono rodzaju i zakresu danych, które mają być przedmiotem informacji, informacja ta zawiera
+odpis wszystkich zapisów dotyczących wnioskodawcy zamieszczonych na kartach rejestracyjnych i zawiadomieniach.
+    3a. Wniosek osoby, o której mowa w art. 7 ust. 1, o udzielenie informacji z Rejestru oraz wniosek podmiotu zbioro-
+wego, o którym mowa w art. 7 ust. 2, składany za pośrednictwem systemu teleinformatycznego opatruje się kwalifikowanym
+podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym.
+     4. Jeżeli zapytanie lub wniosek nie spełniają wymogów, o których mowa w ust. 2, 2a, 2c, 3 lub 3a, wzywa się pytającego lub
+wnioskodawcę do usunięcia braków w terminie 14 dni, z pouczeniem, że nieusunięcie braków spowoduje pozostawienie
+zapytania lub wniosku bez rozpoznania, chyba że braki dotyczą wyłącznie okoliczności, o których mowa w ust. 2 pkt 1,
+a tożsamość osoby, której zapytanie dotyczy, nie budzi wątpliwości.
+
+[KRK art. 19a (filed online, delivered online)]
+     Art. 19a. 1. W przypadku złożenia zapytania lub wniosku za pośrednictwem systemu teleinformatycznego informacja
+o osobie i informacja o podmiocie zbiorowym oraz inne pisma w postępowaniu toczącym się na podstawie tego zapytania
+lub wniosku są składane i doręczane za pośrednictwem systemu teleinformatycznego. Przepisy art. 19 ust. 2c, 3a i 4 stosuje się
+odpowiednio.
+     2. W przypadku doręczenia za pośrednictwem systemu teleinformatycznego pismo uznaje się za doręczone z datą
+wskazaną w elektronicznym potwierdzeniu odbioru korespondencji, a przy braku takiego potwierdzenia doręczenie uznaje się
+za skuteczne z upływem 14 dni od daty umieszczenia pisma w systemie teleinformatycznym.
+
+[KRK art. 20 ust. 1-1d (what the information holds; "nie figuruje"; foreign convictions; for an EU citizen, also the register of the state of citizenship), as printed]
+     Art. 20. 1. Informacja o osobie, sporządzona na podstawie danych osobowych zgromadzonych w Rejestrze, udzielana na
+zapytanie lub wniosek, zawiera:
+1)   dane identyfikujące osobę – nazwisko, w tym także przybrane, imiona, nazwisko rodowe, datę i miejsce urodzenia,
+     imiona rodziców, obywatelstwo, nazwisko rodowe matki, miejsce zamieszkania, zawód wyuczony, a także numer
+     PESEL;
+2)   dane osobowe w zakresie objętym zapytaniem lub wnioskiem albo stwierdzenie, że osoba nie figuruje w Rejestrze;
+3)   datę wydania;
+4)   nazwisko i imię oraz podpis osoby upoważnionej do jej wydania;
+5)   pieczęć urzędową.
+     1a. Jeżeli przepis szczególny, na podstawie którego udzielana jest informacja z Rejestru, zawiera wymóg niekaralności
+w określonym zakresie, informacja z Rejestru o skazaniach, o których mowa w art. 1 ust. 2 pkt 4, jest udzielana w zakresie
+wskazanym w tym przepisie szczególnym wyłącznie na podstawie danych przekazanych do Rejestru przez właściwe organy
+państw obcych. W takim przypadku biuro informacyjne nie dokonuje oceny, czy czyn, za który nastąpiło skazanie, stanowi
+według prawa polskiego czyn karalny, przestępstwo czy wykroczenie oraz czy został popełniony umyślnie czy nieumyślnie,
+chyba że okoliczności te można ustalić na podstawie przekazanych informacji dotyczących rodzaju popełnionego czynu,
+jego kwalifikacji prawnej lub rodzaju orzeczonej kary.
+     1b. Przepis ust. 1a stosuje się odpowiednio, jeżeli podmiot składający wniosek lub zapytanie sam określił zakres
+żądanej informacji z Rejestru, bez istnienia w tym względzie szczególnej podstawy prawnej.
+      1c. W przypadku zastrzeżenia przez organ centralny państwa członkowskiego Unii Europejskiej w zawiadomieniu,
+o którym mowa w art. 11 ust. 1 pkt 4, że przekazana informacja może być wykorzystywana wyłącznie dla celów prowadzo-
+nego postępowania karnego, informacja o osobie sporządzona dla celów innych niż postępowanie karne nie zawiera danych
+o skazaniach, o których mowa w art. 1 ust. 2 pkt 4. W takim przypadku w informacji o osobie, udzielanej właściwym orga-
+nom państw obcych, wskazuje się fakt zgłoszenia takiego zastrzeżenia, państwo, którego organ centralny zgłosił zastrzeże-
+nie, oraz sąd, który wydał wyrok skazujący, i datę jego wydania, jak również sygnaturę akt sprawy, jeżeli jest znana.
+     1d. Informacja o osobie sporządzona na wniosek osoby, o której mowa w art. 7 ust. 1, będącej obywatelem państwa
+członkowskiego Unii Europejskiej innego niż Rzeczpospolita Polska zawiera dane zgromadzone w Rejestrze oraz w rejestrze
+karnym państwa obywatelstwa wnioskodawcy, uzyskane na podstawie art. 4 ust. 1 pkt 5a.
+
+[KRK art. 23-24 (the information is a certificate under KPA division VII; the fee and its exemptions; the regulation on the amount), as printed]
+    Art. 23. Informacja o osobie, o której mowa w art. 20 ust. 1–1e, oraz informacja o podmiocie zbiorowym, o której
+mowa w art. 20 ust. 2, bez względu na sposób jej udzielenia, stanowi zaświadczenie w rozumieniu przepisów działu VII
+Kodeksu postępowania administracyjnego.
+     Art. 24. 1. Za wydanie z Rejestru informacji o osobie pobiera się opłatę stanowiącą dochód budżetu państwa. Od uisz-
+czenia opłaty zwolnione są podmioty wymienione w art. 6 ust. 1 pkt 1–9 i 11 oraz organy centralne państw członkowskich
+Unii Europejskiej występujące o wydanie informacji dla celów prowadzonego postępowania karnego lub administracyjnego.
+     1a. Od uiszczenia opłaty za wydanie z Rejestru informacji o osobie zwolnieni są także będący wolontariuszami kandydaci
+na kierowników wypoczynku lub wychowawców wypoczynku, obowiązani do przedstawienia informacji organizatorowi
+wypoczynku na podstawie art. 92p ust. 8 pkt 1 ustawy z dnia 7 września 1991 r. o systemie oświaty (Dz. U. z 2022 r. poz. 2230
+oraz z 2023 r. poz. 1234 i 2005).
+    2. Za wydanie z Rejestru informacji o podmiocie zbiorowym pobiera się opłatę stanowiącą dochód budżetu państwa.
+Od uiszczenia opłaty zwolnione są podmioty wymienione w art. 6 ust. 1 pkt 1, 4–9 i 11.
+     2a. Nie pobiera się opłaty od wydania ponownej informacji z Rejestru, o której mowa w art. 21b.
+   3. Minister Sprawiedliwości określi, w drodze rozporządzenia, wysokość oraz sposób uiszczania i zwrotu opłat, o których
+mowa w ust. 1 i 2, mając na uwadze faktyczne koszty wydania informacji, w zależności od sposobu jej udzielenia.
+
+[Dz.U. 2026 poz. 421 (published 30.03.2026), art. 1, its opening]
+     Art. 1. W ustawie z dnia 24 maja 2000 r. o Krajowym Rejestrze Karnym (Dz. U. z 2024 r. poz. 276, z 2025 r. poz. 1235
+oraz z 2026 r. poz. 252) wprowadza się następujące zmiany:
+
+[Dz.U. 2026 poz. 421 art. 1 pkt 4 lit. a tirets 1-2 (KRK art. 4 ust. 1 pkt 4-5c): tiret 1 from 14.04.2026; tiret 2 (pkt 5b-5c) from the day ECRIS-TCN starts (art. 10 pkt 1); the act's footnote 3 falls inside]
+4)    w art. 4:
+      a)   w ust. 1:
+            – pkt 4–5a otrzymują brzmienie:
+              „4) niezwłoczne przekazywanie właściwym organom państw obcych informacji o wyrokach skazujących
+                    wydanych przez sądy polskie wobec obywateli tych państw, informacji o późniejszych zmianach doty-
+                    czących wyroków skazujących lub o usunięciu informacji o wyrokach skazujących, które zostały zgro-
+                    madzone w Rejestrze;
+              5)    występowanie na wniosek podmiotów, o których mowa w art. 6 ust. 1 pkt 1–10a, oraz osoby, o której
+                    mowa w art. 7 ust. 1a, do organów centralnych państw członkowskich Unii Europejskiej z zapytaniem
+                    o udzielenie informacji z rejestrów karnych tych państw;
+              5a) występowanie do organów centralnych państw członkowskich Unii Europejskiej z zapytaniem o udzie-
+                    lenie informacji z rejestru karnego tego państwa o osobie będącej jego obywatelem, w przypadku gdy
+                    osoba ta złożyła wniosek o udzielenie informacji z Rejestru;”,
+            – po pkt 5a dodaje się pkt 5b i 5c w brzmieniu:
+              „5b) występowanie z zapytaniem o udzielenie informacji o osobie do organów centralnych państw członkow-
+                   skich Unii Europejskiej, które posiadają informacje zawarte w rejestrach karnych na temat danej osoby,
+                   w przypadku trafienia, o którym mowa w art. 7 ust. 7 rozporządzenia 2019/816, gdy:
+                       a)   osoba będąca obywatelem państwa trzeciego lub obywatelem państwa członkowskiego Unii Euro-
+                            pejskiej, który posiada także co najmniej jedno obywatelstwo państwa trzeciego, złożyła wniosek
+                            o udzielenie informacji z Rejestru,
+                       b) podmiot, o którym mowa w art. 6 ust. 1 pkt 1–10a, w celach, o których mowa w art. 7 ust. 1 rozpo-
+                          rządzenia 2019/816, złożył zapytanie o udzielenie informacji o osobie będącej:
+                            – obywatelem państwa trzeciego lub obywatelem państwa członkowskiego Unii Europejskiej,
+                              który posiada co najmniej jedno obywatelstwo państwa trzeciego, i nie odstąpił od skorzystania
+                              z systemu ECRIS-TCN,
+                            – obywatelem państwa członkowskiego Unii Europejskiej i zawnioskował o skorzystanie z sys-
+                              temu ECRIS-TCN;
+3)   Zmiany wymienionego rozporządzenia zostały ogłoszone w Dz. Urz. UE L 135 z 22.05.2019, str. 85, Dz. Urz. UE L 248 z 13.07.2021,
+     str. 1, Dz. Urz. UE L 249 z 14.07.2021, str. 7 oraz Dz. Urz. UE L 2024/1352 z 22.05.2024.
+             5c)      wysyłanie do systemu ECRIS-TCN zapytania, o którym mowa w art. 7 ust. 4 rozporządzenia 2019/816,
+                      jeżeli wystąpił o to podmiot określony w art. 6 ust. 1 pkt 1–10a, wraz z zapytaniem o udzielenie infor-
+                      macji o osobie;”,
+
+[Dz.U. 2026 poz. 421 art. 1 pkt 6 lit. b (KRK art. 6 ust. 1b-1c: 10 and 20 working days for answers to EU central authorities), from 14.04.2026]
+     b) po ust. 1a dodaje się ust. 1b i 1c w brzmieniu:
+                „1b. Informacje w odpowiedzi na zapytanie organów, o których mowa w ust. 1 pkt 12, przekazuje się w ter-
+          minie nieprzekraczającym 10 dni roboczych od dnia otrzymania zapytania. W przypadku gdy biuro informacyjne
+          wystąpi do organu centralnego państwa członkowskiego Unii Europejskiej o dodatkowe dane niezbędne do iden-
+          tyfikacji osoby, informacje przekazuje się w terminie 10 dni roboczych od dnia otrzymania dodatkowych danych.
+                1c. W przypadku gdy zapytanie organu, o którym mowa w ust. 1 pkt 12, zostało złożone w celu udzielenia
+          przez organy centralne państw członkowskich Unii Europejskiej informacji osobie fizycznej na jej temat, biuro infor-
+          macyjne udziela odpowiedzi w terminie nieprzekraczającym 20 dni roboczych od dnia otrzymania zapytania.”,
+
+[Dz.U. 2026 poz. 421 art. 1 pkt 8 (KRK art. 7 ust. 1a, new wording), from 14.04.2026]
+8)   w art. 7 ust. 1a otrzymuje brzmienie:
+           „1a. Osobie, która jest lub była obywatelem państwa członkowskiego Unii Europejskiej lub mieszka albo miesz-
+     kała na jego terytorium, przysługuje prawo do złożenia do Rejestru wniosku o wystąpienie z zapytaniem do organu
+     centralnego innego państwa członkowskiego o udzielenie informacji zawartej w rejestrze karnym tego państwa na jej
+     temat, pod warunkiem że osoba ta mieszka albo mieszkała w państwie członkowskim, do którego zapytanie ma być
+     skierowane, lub jest albo była jego obywatelem.”;
+
+[Dz.U. 2026 poz. 421 art. 1 pkt 17 lit. c-d, 18 and 19 (KRK art. 20 ust. 1da-1db, for third-country nationals, from the day ECRIS-TCN starts; art. 20 ust. 1f, art. 23 and art. 24, from 14.04.2026)]
+     c)   po ust. 1d dodaje się ust. 1da i 1db w brzmieniu:
+                 „1da. Informacja o osobie sporządzona na wniosek osoby, o której mowa w art. 7 ust. 1, będącej obywate-
+          lem państwa trzeciego lub obywatelem państwa członkowskiego Unii Europejskiej, który posiada co najmniej
+          jedno obywatelstwo państwa trzeciego, zawiera dane zgromadzone w Rejestrze oraz w rejestrach karnych państw
+          członkowskich Unii Europejskiej, które posiadają informacje na temat tej osoby, uzyskane na podstawie art. 4
+          ust. 1 pkt 5b. W przypadku, o którym mowa w art. 7 ust. 8 rozporządzenia 2019/816, biuro informacyjne infor-
+          muje wnioskodawcę o nieodnalezieniu w systemie ECRIS-TCN wpisów na jego temat.
+                1db. Przepis ust. 1da stosuje się odpowiednio do udzielanej informacji na zapytanie o udzielenie informacji
+          o osobie w celach, o których mowa w art. 7 ust. 1 rozporządzenia 2019/816, dotyczące osoby będącej obywatelem
+          państwa trzeciego lub obywatelem państwa członkowskiego Unii Europejskiej, który posiada co najmniej jedno
+          obywatelstwo państwa trzeciego, a także na zapytanie o udzielenie informacji o osobie będącej obywatelem państwa
+          członkowskiego Unii Europejskiej w przypadku, o którym mowa w art. 4 ust. 1 pkt 5c.”,
+     d) w ust. 1f wyrazy „obcych innym niż organy centralne państw członkowskich Unii Europejskiej” zastępuje się
+        wyrazem „trzecich”;
+18) w art. 23 wyrazy „art. 20 ust. 1–1e” zastępuje się wyrazami „art. 20 ust. 1”;
+19) w art. 24:
+     a)   w ust. 1 zdanie drugie otrzymuje brzmienie:
+          „Od uiszczenia opłaty są zwolnione podmioty wymienione w art. 6 ust. 1 pkt 1–9 i 11–13.”,
+     b) w ust. 2 wyrazy „art. 6 ust. 1 pkt 1, 4–9 i 11” zastępuje się wyrazami „art. 6 ust. 1 pkt 1, 4–9, 11 i 13”.
+
+[Dz.U. 2026 poz. 421 art. 7 (requests filed before 14.04.2026: the old rules)]
+    Art. 7. Do zapytań i wniosków o udzielenie informacji z Krajowego Rejestru Karnego złożonych przed dniem wejścia
+w życie niniejszej ustawy oraz do udzielanej na nie informacji stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2026 poz. 421 art. 9 ust. 1 (the regulations under KRK art. 21 stay in force until new ones, at most 12 months from 14.04.2026)]
+     Art. 9. 1. Dotychczasowe przepisy wykonawcze wydane na podstawie art. 12 ust. 3 i art. 21 ustawy zmienianej w art. 1
+zachowują moc do dnia wejścia w życie nowych przepisów wykonawczych wydanych na podstawie art. 12 ust. 3 i art. 21
+ustawy zmienianej w art. 1, niedłużej jednak niż przez 12 miesięcy od dnia wejścia w życie niniejszej ustawy.
+
+[Dz.U. 2026 poz. 421 art. 10 (entry into force: 14 days after publication; some points from the day ECRIS-TCN starts, set by a Commission decision; art. 6 from 12.07.2026)]
+      Art. 10. Ustawa wchodzi w życie po upływie 14 dni od dnia ogłoszenia, z wyjątkiem:
+1)    art. 1 pkt 4 lit. a tiret drugie, lit. c i d, pkt 16 lit. b i pkt 17 lit. c, które wchodzą w życie z dniem uruchomienia systemu
+      ECRIS-TCN określonym w decyzji Komisji Europejskiej zgodnie z art. 35 ust. 4 rozporządzenia Parlamentu Europej-
+      skiego i Rady (UE) 2019/816 z dnia 17 kwietnia 2019 r. ustanawiającego scentralizowany system służący do ustalania
+      państw członkowskich posiadających informacje o wyrokach skazujących wydanych wobec obywateli państw trzecich
+      i bezpaństwowców (ECRIS-TCN) na potrzeby uzupełnienia europejskiego systemu przekazywania informacji z rejestrów
+      karnych oraz zmieniającego rozporządzenie (UE) 2018/1726 (Dz. Urz. UE L 135 z 22.05.2019, str. 1, z późn. zm.6));
+2)    art. 6, który wchodzi w życie z dniem 12 lipca 2026 r.
+
+[Council document ST 11076/26 (24.06.2026), covering the Commission report COM(2026) 284 on exchanges through ECRIS: the expected start of ECRIS-TCN]
+                                                       Brussels, 24 June 2026
+No. Cion doc.:        COM(2026) 284 final
+    This report has been adopted ahead of the entry into operation of the ECRIS-TCN system,
+    which will supplement ECRIS with an efficient mechanism for the exchange of information
+        Exchanges concerning third-country nationals remain limited in number (88 000 - 7%
+        of all requests), although they are expected to increase with the entry into operation of
+        ECRIS-TCN in 2027.
+
+[The MS regulation of 18.06.2014 on KRK fees, consolidated Dz.U. 2024 poz. 1339, § 3-9 (30 zł; 20 zł online; how to pay; the refund), with its footnote 1]
+      § 3. 1. Wysokość opłaty za wydanie informacji o osobie albo o podmiocie zbiorowym z Rejestru wynosi 30 złotych.
+    2. Wysokość opłaty za wydanie informacji o osobie albo o podmiocie zbiorowym z Rejestru w przypadku złożenia
+wniosku lub zapytania za pośrednictwem systemu teleinformatycznego wynosi 20 złotych.
+     § 4. 1. Opłatę za wydanie informacji o osobie lub o podmiocie zbiorowym z Rejestru, zwaną dalej „opłatą”, wnosi się
+w formie znaków opłaty sądowej, gotówką w kasie Ministerstwa Sprawiedliwości lub sądu albo na wskazany rachunek
+bankowy Ministerstwa Sprawiedliwości.
+    2. Numer rachunku bankowego, o którym mowa w ust. 1, Ministerstwo Sprawiedliwości udostępnia i aktualizuje
+w Biuletynie Informacji Publicznej na swojej stronie podmiotowej.
+      § 5.1) 1. Wnoszący opłatę w formie znaków opłaty sądowej dołącza do wniosku lub zapytania albo przedstawia pra-
+cownikowi przyjmującemu wniosek lub zapytanie znak opłaty sądowej wygenerowany w systemie teleinformatycznym Mi-
+nisterstwa Sprawiedliwości obsługującym znaki opłaty sądowej.
+      2. Skasowanie znaku opłaty sądowej przez pracownika upoważnionego do wydania informacji o osobie lub o podmio-
+cie zbiorowym odbywa się w systemie teleinformatycznym Ministerstwa Sprawiedliwości obsługującym znaki opłaty sądo-
+wej, przez nadanie znakowi opłaty sądowej statusu „wykorzystany” po udzieleniu informacji.
+      3. Znak opłaty sądowej może być skasowany jeden raz.
+    4. Po skasowaniu znaku opłaty sądowej nośnik informacji, na którym ten znak został zapisany, jest zwracany wnoszą-
+cemu opłatę wraz z udzieloną informacją z Rejestru.
+    5. Pracownik upoważniony do wydania informacji o osobie lub o podmiocie zbiorowym, po udzieleniu informacji,
+zamieszcza na wniosku lub zapytaniu podpis oraz adnotację, w której stwierdza wysokość i datę pobrania opłaty.
+    § 6. 1. W przypadku wniesienia opłaty w kasie Ministerstwa Sprawiedliwości lub sądu albo na wskazany rachunek
+bankowy Ministerstwa Sprawiedliwości do wniosku lub zapytania dołącza się dowód uiszczenia opłaty.
+1)   W brzmieniu ustalonym przez § 1 rozporządzenia Ministra Sprawiedliwości z dnia 18 marca 2016 r. zmieniającego rozporządzenie
+     w sprawie opłat za wydanie informacji z Krajowego Rejestru Karnego (Dz. U. poz. 390 i 947), które weszło w życie z dniem 1 stycz-
+     nia 2017 r.
+      2. Oryginalny dowód wniesienia opłaty, po potwierdzeniu na nim faktu udzielenia informacji, podlega zwrotowi.
+     3. Dowód wniesienia opłaty w formie kopii lub wydruku, po potwierdzeniu na nim faktu udzielenia informacji, nie
+podlega zwrotowi.
+     4. W przypadku wnoszenia opłaty na rachunek bankowy Ministerstwa Sprawiedliwości w tytule wpłaty należy wska-
+zać imię i nazwisko osoby lub nazwę podmiotu zbiorowego, których dotyczyć ma informacja z Rejestru, oraz datę ozna-
+czoną we wniosku lub zapytaniu jako data wystawienia.
+    5. Pracownik upoważniony do wydania informacji o osobie lub o podmiocie zbiorowym, po udzieleniu informacji,
+zamieszcza na wniosku lub na zapytaniu adnotację, w której stwierdza wysokość i datę pobrania opłaty, oraz podpis.
+      § 7. 1. Opłatę za wniosek lub zapytanie, złożone za pośrednictwem systemu teleinformatycznego, wnosi się wyłącznie
+za pomocą mechanizmów gwarantujących zainicjowanie procedury nieodwracalnego opłacenia wniosku lub zapytania
+i identyfikację wnoszącego opłatę, udostępnionych przez system teleinformatyczny obsługujący elektroniczne wydawanie
+informacji o osobie lub o podmiocie zbiorowym z Rejestru.
+     2. W przypadku gdy system teleinformatyczny nie zapewnia możliwości wniesienia opłaty w sposób określony
+w ust. 1, do wniosku lub zapytania złożonego za pośrednictwem systemu teleinformatycznego należy dołączyć dowód uisz-
+czenia opłaty na wskazany rachunek bankowy Ministerstwa Sprawiedliwości w formacie pliku Portable Document Format
+(PDF).
+     § 8. 1. W przypadku równoczesnego złożenia więcej niż jednego wniosku lub zapytania podlegających opłacie, do-
+puszczalne jest jednoczesne uiszczenie sumy opłat od poszczególnych wniosków lub zapytań.
+      2. Przepis § 6 ust. 4 stosuje się odpowiednio.
+     § 9. 1. Opłata, wniesiona za wniosek lub zapytanie pozostawione bez rozpoznania na podstawie art. 19 ust. 4 ustawy
+z dnia 24 maja 2000 r. o Krajowym Rejestrze Karnym, podlega zwrotowi.
+      2. Zwrotu opłaty dokonuje się odpowiednio do sposobu jej uiszczenia.
+     3. Jeżeli zwrot opłaty w sposób określony w ust. 2 jest utrudniony albo niemożliwy, zwrotu dokonuje się na wskazany
+przez wnioskodawcę rachunek bankowy.
+
+[The MS regulation of 7.07.2015 on giving KRK information, consolidated Dz.U. 2024 poz. 1817, § 2 ust. 1 (where to file)]
+   § 2. 1. Zapytanie lub wniosek o udzielenie informacji z Rejestru kieruje się do Biura Informacyjnego Krajowego Rejestru
+Karnego, zwanego dalej „biurem informacyjnym”, lub do punktów informacyjnych Rejestru przy sądach powszechnych.
+
+[The same, § 3 ust. 1 (the data from the identity document)]
+    § 3. 1. W zapytaniu lub wniosku o udzielenie informacji o osobie dane osobowe podaje się na podstawie dowodu osobi-
+stego lub innego dokumentu stwierdzającego tożsamość, a w razie ich braku – innego dokumentu zawierającego te dane.
+
+[The same, § 5 (collecting in person)]
+    § 5. Osobie uprawnionej, która osobiście składa zapytanie lub wniosek w biurze informacyjnym lub punkcie informa-
+cyjnym Rejestru, informację z Rejestru wydaje się po okazaniu przez nią dowodu osobistego lub innego dokumentu pozwa-
+lającego na ustalenie jej tożsamości, a jeżeli nie jest to osoba, która podpisała zapytanie lub wniosek, także dokumentów
+potwierdzających jej uprawnienie do odbioru informacji z Rejestru.
+
+[The same, § 8 (an EU citizen: the bureau first asks the register of the state of citizenship)]
+    § 8. W przypadku złożenia wniosku o udzielenie informacji z Rejestru przez osobę będącą obywatelem państwa człon-
+kowskiego Unii Europejskiej innego niż Rzeczpospolita Polska, przed udzieleniem informacji występuje się z zapytaniem
+o informację o wnioskodawcy z rejestru karnego państwa, którego obywatelem jest wnioskodawca.
+
+[The same, § 12 ust. 1-2 (a record: the form; none: "NIE FIGURUJE" on the request)]
+    § 12. 1. Jeżeli dane osobowe osoby, której dotyczy zapytanie lub wniosek, są zgromadzone w Rejestrze, informacji
+o osobie udziela się na formularzu, o którym mowa w § 11 pkt 3. Do informacji załącza się zapytanie lub wniosek.
+     2. Jeżeli dane osobowe osoby, której dotyczy zapytanie lub wniosek:
+1)    nie są zgromadzone w Rejestrze,
+2)    są zgromadzone w Rejestrze, z zastrzeżeniem, o którym mowa w art. 20 ust. 1c ustawy, przy czym skazanie objęte
+      zastrzeżeniem jest jedynym skazaniem osoby, której dotyczy zapytanie lub wniosek
+– informacji o osobie udziela się poprzez zwrócenie zapytania lub wniosku opatrzonego adnotacją „NIE FIGURUJE” wraz
+ze wskazaniem rodzaju danych określonych w zapytaniu lub wniosku.
+
+[The MS regulation of 12.04.2021 on KRK information online (Dz.U. 2021 poz. 728), § 4 ust. 1 (the user account: a PESEL "o ile został nadany")]
+     § 4. 1. Założenie w systemie teleinformatycznym konta użytkownika wymaga podania przez użytkownika:
+1)   imienia i nazwiska;
+2)   numeru PESEL, o ile został nadany;
+3)   identyfikatora użytkownika;
+4)   hasła;
+5)   adresu poczty elektronicznej.
+
+[The same, § 9 (the steps online: sign in, fill in, sign electronically, pay)]
+     § 9. Złożenia wniosku poprzez konto użytkownika dokonuje się kolejno przez:
+1)   uwierzytelnienie użytkownika na koncie użytkownika;
+2)   wypełnienie zapytania lub wniosku;
+3)   opatrzenie zapytania lub wniosku podpisem elektronicznym użytkownika;
+4)   wniesienie opłaty za pomocą mechanizmu udostępnianego w systemie teleinformatycznym zapewniającego identyfi-
+     kację wnoszącego opłatę.
+
+[The same, § 13 (information from a non-EU state's register)]
+     § 13. 1. Informacja z rejestru karnego państwa obcego niebędącego państwem członkowskim Unii Europejskiej
+udzielona na zapytanie lub wniosek jest przekazywana jako załącznik do pisma sporządzonego w formacie XML, opatrzo-
+nego kwalifikowanym podpisem elektronicznym przez pracownika biura informacyjnego.
+     2. W przypadku gdy rejestr karny państwa obcego odmówił udzielenia informacji, powiadomienie o tym fakcie jest
+dołączane do informacji z Rejestru bądź przekazywane jako odrębny dokument.
+
+[The same, § 20 (in force the day after publication; published 20.04.2021)]
+     § 20. Rozporządzenie wchodzi w życie z dniem następującym po dniu ogłoszenia.
+
+[The MS regulation of 23.10.2023 on KRK information online (Dz.U. 2023 poz. 2469), § 24-25 as published (it repeals the 2021 regulation on its entry into force)]
+      § 24. Traci moc rozporządzenie Ministra Sprawiedliwości z dnia 12 kwietnia 2021 r. w sprawie sposobu i trybu udzie-
+lania informacji o osobach oraz o podmiotach zbiorowych z Krajowego Rejestru Karnego, udzielanych za pośrednictwem
+systemu teleinformatycznego, sposobu zakładania konta użytkownika i konta instytucjonalnego dla informacji udzielanych
+na zapytanie lub wniosek oraz zakresu informacji o osobie lub o podmiocie zbiorowym udzielanej na żądanie (Dz. U. poz. 728).
+     § 25. Rozporządzenie wchodzi w życie z dniem 1 marca 2024 r.
+
+[Dz.U. 2024 poz. 279 (27.02.2024): § 1, the change to § 25 of the 2023 regulation, and § 2]
+poz. 2469) w § 25 wyrazy „1 marca 2024 r.” zastępuje się wyrazami „1 października 2024 r.”.
+     § 2. Rozporządzenie wchodzi w życie z dniem 1 marca 2024 r.
+
+[Dz.U. 2024 poz. 1396 (16.09.2024): § 1, the change to § 25 of the 2023 regulation, and § 2]
+oraz z 2024 r. poz. 279) w § 25 wyrazy „1 października 2024 r.” zastępuje się wyrazami „30 czerwca 2025 r.”.
+     § 2. Rozporządzenie wchodzi w życie z dniem 1 października 2024 r.
+
+[Dz.U. 2025 poz. 721 (29.05.2025): § 1, the change to § 25 of the 2023 regulation, and § 2]
+oraz z 2024 r. poz. 279 i 1396) w § 25 wyrazy „30 czerwca 2025 r.” zastępuje się wyrazami „30 czerwca 2026 r.”.
+     § 2. Rozporządzenie wchodzi w życie z dniem 30 czerwca 2025 r.
+
+[Dz.U. 2026 poz. 716 (26.05.2026): § 1, the change to § 25 of the 2023 regulation, and § 2]
+poz. 1109) w § 25 wyrazy „30 czerwca 2026 r.” zastępuje się wyrazami „30 czerwca 2027 r.”.
+     § 2. Rozporządzenie wchodzi w życie z dniem 30 czerwca 2026 r.
+
+[The act of 13.05.2016 on counteracting sexual offences and protecting minors, consolidated Dz.U. 2026 poz. 110, art. 21 (before work with children: the KRK information; a foreign citizen also the register of the state of citizenship and of the states of residence in the last 20 years)]
+     Art. 21. 1. Przed nawiązaniem z osobą stosunku pracy lub przed dopuszczeniem osoby do innej działalności związanej
+z wychowaniem, edukacją, wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem duchowym, upra-
+wianiem sportu lub realizacją innych zainteresowań przez małoletnich, lub z opieką nad nimi na pracodawcy lub innym
+organizatorze takiej działalności oraz na osobie, z którą ma być nawiązany stosunek pracy lub która ma być dopuszczona
+do takiej działalności, ciążą obowiązki określone w ust. 2–8.
+     2. Pracodawca lub inny organizator uzyskuje informacje, czy dane osoby, o której mowa w ust. 1, są zamieszczone
+w Rejestrze z dostępem ograniczonym lub w Rejestrze osób, w stosunku do których Państwowa Komisja do spraw przeciw-
+działania wykorzystaniu seksualnemu małoletnich poniżej lat 15 wydała postanowienie o wpisie w Rejestrze.
+     3. Osoba, o której mowa w ust. 1, przedkłada pracodawcy lub innemu organizatorowi informację z Krajowego Rejestru
+Karnego w zakresie przestępstw określonych w rozdziale XIX i XXV Kodeksu karnego, w art. 189a i art. 207 Kodeksu
+karnego oraz w ustawie z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii (Dz. U. z 2023 r. poz. 1939), lub za odpowia-
+dające tym przestępstwom czyny zabronione określone w przepisach prawa obcego.
+     4. Osoba, o której mowa w ust. 1, posiadająca obywatelstwo innego państwa niż Rzeczpospolita Polska, ponadto przed-
+kłada pracodawcy lub innemu organizatorowi informację z rejestru karnego państwa obywatelstwa uzyskiwaną do celów
+działalności zawodowej lub wolontariackiej związanej z kontaktami z dziećmi.
+     5. Osoba, o której mowa w ust. 1, składa pracodawcy lub innemu organizatorowi oświadczenie o państwie lub pań-
+stwach, w których zamieszkiwała w ciągu ostatnich 20 lat, innych niż Rzeczpospolita Polska i państwo obywatelstwa, oraz
+jednocześnie przedkłada pracodawcy lub innemu organizatorowi informację z rejestrów karnych tych państw uzyskiwaną
+do celów działalności zawodowej lub wolontariackiej związanej z kontaktami z dziećmi.
+    6. Jeżeli prawo państwa, o którym mowa w ust. 4 lub 5, nie przewiduje wydawania informacji do celów działalności
+zawodowej lub wolontariackiej związanej z kontaktami z dziećmi, przedkłada się informację z rejestru karnego tego państwa.
+     7. W przypadku gdy prawo państwa, z którego ma być przedłożona informacja, o której mowa w ust. 4–6, nie prze-
+widuje jej sporządzenia lub w danym państwie nie prowadzi się rejestru karnego, osoba, o której mowa w ust. 1, składa
+pracodawcy lub innemu organizatorowi oświadczenie o tym fakcie wraz z oświadczeniem, że nie była prawomocnie skazana
+w tym państwie za czyny zabronione odpowiadające przestępstwom określonym w rozdziale XIX i XXV Kodeksu karnego,
+w art. 189a i art. 207 Kodeksu karnego oraz w ustawie z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii oraz nie
+wydano wobec niej innego orzeczenia, w którym stwierdzono, iż dopuściła się takich czynów zabronionych, oraz że nie ma
+obowiązku wynikającego z orzeczenia sądu, innego uprawnionego organu lub ustawy stosowania się do zakazu zajmowania
+wszelkich lub określonych stanowisk, wykonywania wszelkich lub określonych zawodów albo działalności, związanych
+z wychowaniem, edukacją, wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem duchowym,
+uprawianiem sportu lub realizacją innych zainteresowań przez małoletnich, lub z opieką nad nimi.
+     8. Oświadczenia, o których mowa w ust. 5 i 7, składane są pod rygorem odpowiedzialności karnej za złożenie fałszy-
+wego oświadczenia. Składający oświadczenie jest obowiązany do zawarcia w nim klauzuli następującej treści: „Jestem
+świadomy odpowiedzialności karnej za złożenie fałszywego oświadczenia”. Klauzula ta zastępuje pouczenie organu o od-
+powiedzialności karnej za złożenie fałszywego oświadczenia.
+      9. Informacje, o których mowa w ust. 2, pracodawca lub inny organizator utrwala w formie wydruku i załącza do akt
+osobowych pracownika albo dokumentacji dotyczącej osoby dopuszczonej do działalności związanej z wychowaniem, edu-
+kacją, wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem duchowym, uprawianiem sportu lub
+realizacją innych zainteresowań przez małoletnich, lub z opieką nad nimi. Informacje oraz oświadczenia, o których mowa
+w ust. 3–7, pracodawca lub inny organizator załącza do akt osobowych pracownika albo dokumentacji dotyczącej osoby
+dopuszczonej do takiej działalności.
+      10. Wykonanie obowiązków, o których mowa w ust. 1–8, nie jest wymagane przed dopuszczeniem do działalności
+związanej z wychowaniem, edukacją, wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem ducho-
+wym, uprawianiem sportu lub realizacją innych zainteresowań przez małoletnich, lub z opieką nad nimi, członka rodziny
+małoletniego, lub osoby znanej osobiście rodzicowi małoletniego albo przedstawicielowi ustawowemu małoletniego, gdy
+jest ona wykonywana w stosunku do małoletniego dziecka, którego rodzic albo przedstawiciel ustawowy są dopuszczają-
+cymi do działalności.
+     11. Przez członka rodziny, o którym mowa w ust. 10, należy rozumieć osobę spokrewnioną albo osobę niespokrew-
+nioną, pozostającą w faktycznym związku oraz wspólnie zamieszkującą i gospodarującą.
+
+[The stamp duty act, consolidated Dz.U. 2025 poz. 1154, annex part II (the heading) and items 5-6 (legalisation 26 zł; an apostille 60 zł)]
+      II.         Wydanie zaświadczenia
+                 5.    Legalizacja dokumentu                               26 zł
+                 6.    Wydanie Apostille, o której mowa                    60 zł
+                       w Konwencji znoszącej wymóg
+                       legalizacji zagranicznych dokumentów
+                       urzędowych, sporządzonej w Hadze dnia
+                       5 października 1961 r. (Dz. U. z 2005 r.
+                       poz. 938)
+
+[The same, annex part IV (a power of attorney: 17 zł; its first exemptions, among them one given to a spouse, ascendant, descendant or sibling)]
+  IV.        Złożenie dokumentu
+             Dokument stwierdzający udzielenie                       17 zł       dokument stwierdzający
+             pełnomocnictwa lub prokury oraz jego odpis,                         udzielenie pełnomocnictwa
+             wypis lub kopia – od każdego stosunku                               oraz jego odpis, wypis lub kopia:
+             pełnomocnictwa (prokury)                                            1) poświadczony notarialnie
+                                                                                      lub przez uprawniony organ,
+                                                                                      upoważniające do odbioru
+                                                                                      dokumentów
+                                                                                 2) w sprawach:
+                                                                                      a) karnych, karnych
+                                                                                            skarbowych
+                                                                                            i dyscyplinarnych
+                                                                                            oraz w sprawach
+                                                                                            o wykroczenia
+                                                                                      b) cywilnych, w których
+                                                                                            mocodawcy
+                                                                                            przysługuje zwolnienie
+                                                                                            od kosztów sądowych
+                                                                                 3)   jeżeli pełnomocnictwo
+                                                                                      udzielane jest małżonkowi,
+                                                                                      wstępnemu, zstępnemu
+                                                                                      lub rodzeństwu
+
+[The Hague Convention of 5.10.1961 abolishing legalisation (Dz.U. 2005 nr 112 poz. 938), art. 1-6, the Polish column of the three-column page, decoded]
+             Artykuł 1
+    Niniejsza konwencja będzie
+miała zastosowanie do dokumen-
+tów urzędowych, które zostały spo-
+rządzone na terytorium jednego
+z Umawiających się Państw i które
+mają być przedłożone na terytorium
+innego Umawiającego się Państwa.
+     Dla celów niniejszej konwencji
+za dokumenty urzędowe uważa
+się:
+ a) dokumenty pochodzące od or-
+    ganu lub urzędnika sądowego,
+    włączając w to dokumenty po-
+    chodzące od prokuratora, se-
+    kretarza sądowego lub urzęd-
+    nika dokonującego doręczeń
+    („huissier de justice”);
+ b) dokumenty administracyjne;
+ c) akty notarialne;
+ d) urzędowe       zaświadczenia
+    umieszczane na dokumentach
+    podpisanych przez osoby dzia-
+    łające w charakterze prywat-
+@@page 2
+    nym, takie jak urzędowe za-
+    świadczenia stwierdzające za-
+    rejestrowanie dokumentu lub
+    fakt jego istnienia w określonej
+    dacie oraz urzędowe i notarial-
+    ne poświadczenia podpisów.
+    Jednakże niniejsza konwencja
+nie będzie miała zastosowania do:
+ a) dokumentów sporządzonych
+    przez przedstawicieli dyploma-
+    tycznych lub urzędników kon-
+    sularnych;
+ b) dokumentów       administracyj-
+    nych dotyczących bezpośred-
+    nio transakcji handlowych lub
+    operacji celnych.
+             Artykuł 2
+    Każde Umawiające się Pań-
+stwo zwolni z legalizacji dokumen-
+ty, do których ma zastosowanie ni-
+niejsza konwencja i które mają być
+przedłożone na jego terytorium.
+Dla celów niniejszej konwencji le-
+galizacja oznacza jedynie czyn-
+ność, poprzez którą przedstawiciel
+dyplomatyczny lub urzędnik kon-
+sularny państwa, w którym doku-
+ment ma być przedłożony, po-
+świadcza autentyczność podpisu,
+charakter, w jakim działała osoba
+podpisująca dokument, i, w razie
+potrzeby, tożsamość pieczęci lub
+stempla, którym jest on opatrzony.
+             Artykuł 3
+    Jedyną czynnością, która może
+być wymagana w celu poświad-
+czenia autentyczności podpisu,
+charakteru, w jakim działała osoba,
+która podpisała dokument, oraz,
+w razie potrzeby, tożsamości pie-
+częci lub stempla, którym opatrzo-
+ny jest dokument, jest dołączenie
+apostille określonej w artykule 4,
+wydanej przez właściwy organ
+Państwa, z którego dokument po-
+chodzi.
+    Jednakże czynność wymienio-
+na w poprzednim ustępie nie może
+być wymagana, gdy ustawy, inne
+przepisy prawne lub praktyka obo-
+wiązująca w Państwie, w którym
+dokument jest przedłożony, lub
+umowa między dwoma lub większą
+liczbą Umawiających się Państw,
+zniosły lub uprościły legalizację lub
+zwolniły taki dokument z legalizacji.
+@@page 3
+             Artykuł 4
+    Apostille, o której mowa w arty-
+kule 3 ustęp 1, będzie umieszczona
+na samym dokumencie lub będzie
+do niego dołączona; powinna być
+ona sporządzona według wzoru za-
+łączonego do niniejszej konwencji.
+    Może być ona jednakże sporzą-
+dzona w języku urzędowym wyda-
+jącego ją organu. Standardowe
+zwroty w niej zawarte mogą być
+sporządzone również w drugim ję-
+zyku. Tytuł „Apostille (Convention
+de La Haye du 5 octobre 1961)” po-
+zostawiony będzie w języku fran-
+cuskim.
+             Artykuł 5
+   Apostille wydana będzie na
+wniosek osoby, która podpisała
+dokument, bądź jego posiadacza.
+    Po prawidłowym wypełnieniu
+poświadczać ona będzie autentycz-
+ność podpisu, charakter, w jakim
+działała osoba, która podpisała do-
+kument, oraz, w razie potrzeby,
+tożsamość pieczęci lub stempla,
+którym dokument jest opatrzony.
+   Podpis, pieczęć lub stempel na
+apostille zwolnione są z wszelkie-
+go poświadczania.
+             Artykuł 6
+    Każde Umawiające się Pań-
+stwo wyznaczy, w nawiązaniu do
+ich urzędowych funkcji, organy,
+które są właściwe do wydawania
+apostille, o której mowa w artyku-
+le 3 ustęp 1.
+    Powiadomi ono o takim wyzna-
+czeniu Ministerstwo Spraw Zagra-
+nicznych Niderlandów w czasie
+składania dokumentu ratyfikacyj-
+nego lub przystąpienia lub oświad-
+czenia o rozszerzeniu. Powiadomi
+ono również o każdej zmianie wy-
+znaczonych organów.
+
+[The government statement of 27.04.2005 on the convention's force (Dz.U. 2005 nr 112 poz. 939), its first column, decoded: in force for Poland from 14.08.2005; the Ministry of Foreign Affairs designated for all public documents]
+    Podaje się niniejszym do wiadomości, że na pod-
+stawie ustawy z dnia 22 lipca 2004 r. o ratyfikacji Kon-
+wencji znoszącej wymóg legalizacji zagranicznych do-
+kumentów urzędowych, sporządzonej w Hadze dnia
+5 października 1961 r. (Dz. U. Nr 194, poz. 1980), Prezy-
+dent Rzeczypospolitej Polskiej dnia 15 października
+2004 r. ratyfikował wyżej wymienioną konwencję.
+Zgodnie z artykułem 12 ustęp 1 konwencji dokument
+przystąpienia złożono w Ministerstwie Spraw Zagra-
+nicznych Królestwa Niderlandów, jako depozytariu-
+szowi, dnia 17 listopada 2004 r.
+   Zgodnie z artykułem 11 ustęp 1 konwencji weszła
+ona w życie dnia 24 stycznia 1965 r., a w stosunku do
+Rzeczypospolitej Polskiej zgodnie z artykułem 12
+ustęp 4 wchodzi w życie dnia 14 sierpnia 2005 r.
+   Przy składaniu dokumentu przystąpienia złożono
+następujące oświadczenie:
+   „Stosownie do artykułu 6 ustęp 1 konwencji,
+Rzeczpospolita Polska wyznacza Ministerstwo Spraw
+Zagranicznych jako władzę właściwą do wydawania
+poświadczenia, o którym mowa w artykule 3 ustęp 1
+konwencji, w odniesieniu do wszelkich dokumentów
+urzędowych.”
+
+[Regulation (EU) 2016/1191, OJ L 200 of 26.7.2016 (Polish text), art. 1-2 (the scope: lit. m, no criminal record, only for a document issued to an EU citizen by the state of citizenship); footnote markers dropped]
+Artykuł 1
+Przedmiot
+1. W odniesieniu do określonych dokumentów urzędowych wydawanych przez organy państwa członkowskiego, które to dokumenty muszą zostać przedłożone organom innego państwa członkowskiego, niniejsze rozporządzenie przewiduje system:
+a)
+zwolnienia z legalizacji lub podobnej czynności; oraz
+b)
+uproszczenia innych formalności.
+Z zastrzeżeniem akapitu pierwszego, niniejsze rozporządzenie nie uniemożliwia korzystania przez zainteresowaną osobę z innych, stosowanych w państwie członkowskim systemów dotyczących legalizacji lub podobnej czynności.
+2. Niniejsze rozporządzenie ustanawia również wielojęzyczne standardowe formularze, które mają być stosowane jako tłumaczenie pomocnicze załączane do dokumentów urzędowych dotyczących urodzenia, pozostawania osoby przy życiu, zgonu, małżeństwa (w tym zdolności do zawarcia małżeństwa oraz stanu cywilnego), zarejestrowanego związku partnerskiego (w tym zdolności do zawarcia zarejestrowanego związku partnerskiego i statusu związanego z zarejestrowanym związkiem partnerskim), miejsca zamieszkania lub miejsca pobytu oraz braku wpisu do rejestru karnego.
+Artykuł 2
+Zakres stosowania
+1. Niniejsze rozporządzenie ma zastosowanie do dokumentów urzędowych wydawanych przez organy państwa członkowskiego zgodnie z jego prawem krajowym, które to dokumenty muszą zostać przedłożone organom innego państwa członkowskiego i których głównym celem jest stwierdzenie co najmniej jednego z następujących faktów:
+a)
+urodzenie;
+b)
+pozostawanie osoby przy życiu;
+c)
+zgon;
+d)
+imię i nazwisko;
+e)
+małżeństwo, w tym zdolność do zawarcia małżeństwa oraz stan cywilny;
+f)
+rozwód, separacja prawna lub unieważnienie małżeństwa;
+g)
+zarejestrowany związek partnerski, w tym zdolność do zawarcia zarejestrowanego związku partnerskiego i status związany z zarejestrowanym związkiem partnerskim;
+h)
+rozwiązanie związku partnerskiego, separacja prawna lub unieważnienie zarejestrowanego związku partnerskiego;
+i)
+pochodzenie dziecka;
+j)
+przysposobienie;
+k)
+miejsce zamieszkania lub miejsce pobytu;
+l)
+obywatelstwo;
+m)
+brak wpisu do rejestru karnego, pod warunkiem że dokumenty urzędowe dotyczące tego faktu są wydawane obywatelowi Unii przez organy państwa członkowskiego, którego jest obywatelem.
+2. Niniejsze rozporządzenie ma również zastosowanie do dokumentów urzędowych, których przedstawienia można wymagać od obywateli Unii mających miejsce zamieszkania w państwie członkowskim, którego nie są obywatelami, jeżeli wyrażą wolę głosowania lub kandydowania w wyborach do Parlamentu Europejskiego lub w wyborach lokalnych w państwie członkowskim, w którym mają miejsce zamieszkania, na warunkach określonych odpowiednio w dyrektywie 93/109/WE i dyrektywie Rady 94/80/WE
+.
+3. Niniejsze rozporządzenie nie ma zastosowania do:
+a)
+dokumentów urzędowych wydawanych przez organy państwa trzeciego; i
+b)
+poświadczonych kopii dokumentów, o których mowa w lit. a), sporządzonych przez organy państwa członkowskiego.
+4. Niniejsze rozporządzenie nie ma zastosowania do uznawania w państwie członkowskim skutków prawnych związanych z treścią dokumentów urzędowych wydawanych przez organy innego państwa członkowskiego.
+
+[The same, art. 4 (exempt from legalisation and the apostille)]
+Artykuł 4
+Zwolnienie z legalizacji i podobnej czynności
+Dokumenty urzędowe objęte niniejszym rozporządzeniem oraz ich kopie poświadczone za zgodność z oryginałem zwalnia się z wszelkich form legalizacji i podobnej czynności.
+
+[The same, art. 27 (applies from 16.02.2019)]
+Artykuł 27
+Wejście w życie
+1. Niniejsze rozporządzenie wchodzi w życie dwudziestego dnia po jego opublikowaniu w
+Dzienniku Urzędowym Unii Europejskiej
+.
+2. Niniejsze rozporządzenie stosuje się od dnia 16 lutego 2019 r., z wyjątkiem:
+a)
+art. 24 ust. 2, który stosuje się od dnia 16 lutego 2017 r.;
+b)
+art. 12 i art. 24 ust. 3, które stosuje się od dnia 16 lutego 2018 r.; oraz
+c)
+art. 22 i art. 24 ust. 1, które stosuje się od dnia 16 sierpnia 2018 r.

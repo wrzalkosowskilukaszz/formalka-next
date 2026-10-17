@@ -1,0 +1,34 @@
+# Krajowy Rejestr Karny: Ustawa Kamilka – uzyskiwanie zaświadczeń o niekaralności
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/ustawa-kamilka-uzyskiwanie-zaswiadczen-o-niekaralnosci, retrieved 2026-10-17, html sha256 c5b9150842c93241be78afb02913ef49dea25fd568aee0936f8de19f25816ece
+# Text of the page's main element; blank lines removed. The page shows the date 07.02.2024. Not binding.
+# sha256 of the text below this header (from line 5): b9a60c4b8152411a7f1fed3531926b3a6c5301d8b54a6ec67465482c4c6eb7d2.
+Krajowy Rejestr Karny
+Dostęp
+USTAWA KAMILKA - UZYSKIWANIE ZAŚWIADCZEŃ O NIEKARALNOŚCI
+Powrót
+USTAWA KAMILKA - UZYSKIWANIE ZAŚWIADCZEŃ O NIEKARALNOŚCI
+07.02.2024
+Od dnia 15 lutego 2024 r. zmianie ulegają przepisy dotyczące obowiązku przedstawiania przyszłemu pracodawcy lub przyszłemu organizatorowi przed dopuszczeniem osoby do działalności związanej z: wychowaniem, edukacją, wypoczynkiem, leczeniem, świadczeniem porad psychologicznych, rozwojem duchowym, uprawianiem sportu lub realizacją innych zainteresowań przez małoletnich lub opieką nad nimi przez przyszłych pracowników lub osoby mające być dopuszczone do ww. działalności zaświadczeń o niekaralności za określone typy przestępstw.
+Zgodnie z art. 21 ust. 3 Ustawy z dnia 13 maja 2016 r. o przeciwdziałaniu zagrożeniom przestępczością na tle seksualnym i ochronie małoletnich ustawodawca wskazuje, że informacja z Krajowego Rejestru Karnego przedkładana będzie w zakresie przestępstw określonych w rozdziale XIX i XXV Kodeksu karnego (w tym przestępstwa przeciwko wolności seksualnej i obyczajności), w art. 189a i art. 207 Kodeksu karnego oraz w ustawie z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii (Dz. U. z 2023 r. poz. 1939 oraz z 2022 r. poz. 2600), lub za odpowiadające tym przestępstwom czyny zabronione określone w przepisach prawa obcego.
+Szczegółowe informacje o uzyskiwaniu informacji z Krajowego Rejestru Karnego przez obywateli polskich oraz Unii Europejskiej zamieszczone są na stronie internetowej Ministerstwa Sprawiedliwości w zakładkach:
+https://www.gov.pl/web/krajowy-rejestr-karny/uzyskanie-informacji-z-krajowego-rejestru-karnego-droga-tradycyjna
+oraz
+https://www.gov.pl/web/krajowy-rejestr-karny/uzyskiwanie-informacji-z-krajowego-rejestru-karnego-droga-elektroniczna3
+W przypadku osób posiadających obywatelstwo innego państwa niż Polska, przepisy nakładają obowiązek przedłożenia pracodawcy lub innemu organizatorowi informacji z rejestru karnego państwa obywatelstwa uzyskiwaną do celów działalności zawodowej lub wolontariackiej związanej z kontaktami z dziećmi.
+Szczegółowe informacje o uzyskiwaniu informacji z Krajowego Rejestru Karnego przez te osoby zamieszczone są na stronie internetowej Ministerstwa Sprawiedliwości w zakładce: https://www.gov.pl/web/krajowy-rejestr-karny/uzyskiwanie-informacji-za-posrednictwem-systemu-informatycznego-ecris Biuro Informacyjne Krajowego Rejestru Karnego pośredniczy w uzyskaniu informacji z rejestrów zagranicznych za pośrednictwem systemu informatycznego ECRIS tylko w przypadku obywateli polskich lub państw członkowskich Unii Europejskiej.
+Jeśli przyszły pracownik lub osoba mająca być dopuszczoną do ww. działalności w okresie ostatnich 20 lat mieszkała w państwie lub państwach innych niż Rzeczpospolita Polska i państwo obywatelstwa ma ona obowiązek nie tylko poinformować, w którym państwie czy państwach przebywała, ale także załączyć wyciąg z rejestrów karnych uzyskiwanych do celów działalności zawodowej lub wolontariackiej związanej z kontaktami z dziećmi, jakie obowiązują w krajach (kraju) jej przebywania.
+W sytuacji, gdy dane państwo nie prowadzi tego typu rejestru osoba dopuszczana do pracy z małoletnimi składa pracodawcy oświadczenie stwierdzające ten fakt oraz potwierdzające niekaralność tej osoby za przestępstwa wymienione w powyższych przepisach. Biuro Informacyjne Krajowego Rejestru Karnego nie pośredniczy w składaniu ww. oświadczeń.
+Pytania i odpowiedzi.
+Jaki formularz będzie wymagany do złożenia wniosku o informację z Krajowego Rejestru Karnego w zakresie przestępstw określonych w rozdziale XIX i XXV Kodeksu karnego, w art. 189a i art. 207 Kodeksu karnego oraz w ustawie z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii (Dz. U. z 2023 r. poz. 1939 oraz z 2022 r. poz. 2600)?
+Jest to formularz zapytania o udzielenie informacji o osobie z Krajowego Rejestru Karnego.
+Formularz dostępny pod linkiem: Materiały do pobrania - Krajowy Rejestr Karny - Portal Gov.pl (www.gov.pl)
+W jaki sposób powinien być wypełniony formularz zapytania o udzielenie informacji o osobie, tak aby informacja z Krajowego Rejestru Karnego obejmowała wyłącznie czyny zabronione wskazane w art. 21 ust. 3 Ustawy z dnia 13 maja 2016 r. o przeciwdziałaniu zagrożeniom przestępczością na tle seksualnym i ochronie małoletnich?
+W punkcie 13 ww. formularza o nazwie „Zakres danych, które mają być przedmiotem informacji o osobie” należy wskazać:
+art. 21 ust. 3 ustawy z dnia 13 maja 2016 r. o przeciwdziałaniu zagrożeniom
+przestępczością na tle seksualnym i ochronie małoletnich (Dz. U. z 2024 r. poz. 560).
+Natomiast w punkcie 12 ww. formularza o nazwie „Rodzaj danych, które mają być przedmiotem informacji o osobie” należy zaznaczyć: Kartotekę karną oraz Kartotekę nieletnich.
+Czy uzyskanie zaświadczenia w powyższym zakresie będzie podlegało zwolnieniu z konieczności wniesienia opłaty?
+Wysokość pobieranych opłaty określa Rozporządzenie Ministra Sprawiedliwości z dnia 18 czerwca 2014 r. w sprawie opłat za wydanie informacji z Krajowego Rejestru Karnego. Opłata wynosi 30 zł w przypadku złożenia zapytania w postaci nieelektronicznej lub 20 zł w przypadku złożenia zapytania w postaci elektronicznej.
+Szczegółowe informacje o wysokości oraz sposobie wnoszenia opłat zamieszczone są na stronie internetowej Ministerstwa Sprawiedliwości w zakładkach:
+https://www.gov.pl/web/krajowy-rejestr-karny/oplaty
+Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego - Krajowy Rejestr Karny - Portal Gov.pl (www.gov.pl)

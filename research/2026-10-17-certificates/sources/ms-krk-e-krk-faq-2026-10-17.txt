@@ -1,0 +1,33 @@
+# Krajowy Rejestr Karny: System e-KRK pytania i odpowiedzi
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/system-e-krk-pytania-i-odpowiedzi, retrieved 2026-10-17, html sha256 9745c0a0b07d04e1fc66bacf212100c46da588d9409ae631235d95d44c6844c9
+# Text of the page's main element; blank lines removed. The page shows no publication or update date. Not binding.
+# sha256 of the text below this header (from line 5): e2ead31b0590c07ceb394b206e35553889bef055fda196933fe1482f2c41883d.
+Krajowy Rejestr Karny
+Dostęp
+System e-KRK pytania i odpowiedzi
+Powrót
+System e-KRK pytania i odpowiedzi
+Co oznaczają poszczególne statusy wniosków/zapytań w systemie e-KRK?:
+Zweryfikowany – Twój wniosek/zapytanie został zapisany na Twoim koncie użytkownika systemu e-KRK.
+Dokument należy podpisać wybierając drugą ikonę od lewej strony w kolumnie "Akcje" - "Podpisz" (status wniosku/zapytania wówczas zmieni się na „podpisany”).
+Podpisany – Twój wniosek/zapytanie został przez Ciebie poprawnie podpisany. Po podpisaniu dokumentu system przekieruje Cię na stronę ekrk.ms.gov.pl i zaproponuje opłacenie oraz wysłanie podpisanego dokumentu.
+Opłacony – Twój wniosek/zapytanie został opłacony, aby go wysłać celem udzielenia odpowiedzi należy nacisnąć ikonę „samolocika” w kolumnie „Akcje”
+Wysłany – Twój wniosek/zapytanie został wysłany do realizacji. Zajmujemy się nim, należy oczekiwać odpowiedzi w terminie 7 dni.
+Odpowiedź do pobrania- odpowiedź na Twój wniosek/zapytanie już jest przygotowana i możesz ją odebrać. Znajdziesz ją w zakładce „Odpowiedzi”.
+Formularz do pobrania – Oczekuje do pobrania formularz wielojęzyczny. Znajduje się on w zakładce „Odpowiedzi”.
+Wezwanie brakowe – otrzymałeś pismo z naszego Bura, w którym prosimy Cię o korektę Twojego wniosku/zapytania. Pismo jest do pobrania w zakładce „Odpowiedzi”.
+Jak dokonać opłaty?
+By dokonać opłaty należy wybrać ikonę "dolara", strona przekieruje Cię do podsumowania opłaty.
+Jeśli jesteś zwolniony z konieczności wniesienie opłaty skieruj swój wniosek do opracowania w naszym Biurze wybierając ikonę "samolocika" w kolumnie „Akcje”. Pamiętaj, że fakt zwolnienia z opłaty musisz potwierdzić załączając w systemie e-KRK odpowiedni dokument (więcej na ten temat na naszej stronie internetowej w zakładce Warunki wydawania bezpłatnej informacji z Krajowego Rejestru Karnego).
+Otrzymałeś odpowiedź przez system e-KRK. Jak należy ją pobrać?
+Po wybraniu opcji "Pobierz w formacie .zip" należy potwierdzić odebranie dokumentu poprzez jego podpisanie.
+Po poprawnym podpisaniu należy ponownie nacisnąć na ikonę "Pobierz w formacie .zip" na urządzenie zostanie pobrany folder skompresowany .zip z odpowiedzią.
+Otrzymałeś pismo z naszego Biura czyli wezwanie brakowe. Jak poprawić wniosek/zapytanie?
+Wezwanie brakowe należy uzupełnić w terminie 14 dni od dnia jego otrzymania pod rygorem pozostawienia wniosku/zapytania bez rozpoznania.
+Pobrać odpowiedź w formacie .zip by sprawdzić co należy poprawić w dokumencie.
+Wybrać ikonkę oznaczoną strzałką skierowaną w prawo i kliknąć lewym przyciskiem myszki komputerowej, wówczas pojawi się napis „popraw” i system wyświetli edytowalny formularz wniosku/zapytania.
+Dokonać korekty w danych.
+Podpisać poprawiony dokument.
+Wysłać wniosek – wówczas nastąpi przejście do listy wniosków i zapytań.
+Wybrać ostatnią ikonkę oznaczoną jako parasolka: „wyślij”.
+W omawianym przypadku nie należy ponownie dokonywać opłaty lub ponownie dołączać dokument potwierdzający fakt zwolnienia z obowiązku wniesienia opłaty.

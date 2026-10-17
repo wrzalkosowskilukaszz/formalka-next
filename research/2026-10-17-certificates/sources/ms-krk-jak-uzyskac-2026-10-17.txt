@@ -1,0 +1,21 @@
+# Krajowy Rejestr Karny: Jak mogę uzyskać zaświadczenie z KRK
+# Source: https://www.gov.pl/web/krajowy-rejestr-karny/jak-moge-uzyskac-zaswiadczenie-z-krajowego-rejestru-karnego-zaswiadczenie-o-niekaralnosci, retrieved 2026-10-17, html sha256 a66048925e94e05cc6af83e3e4b81000d58382ae74ce136bb37122d9ecb47439
+# Text of the page's main element; blank lines removed. The page shows no publication or update date. Not binding.
+# sha256 of the text below this header (from line 5): 3a9d826bac5483c749f346a2fd2ae0ae819fa689a9f817fcb2f596dbc2533e55.
+Krajowy Rejestr Karny
+Załatw sprawę
+Pytania i odpowiedzi
+Jak mogę uzyskać zaświadczenie z Krajowego Rejestru Karnego (zaświadczenie o niekaralności)?
+Powrót
+Jak mogę uzyskać zaświadczenie z Krajowego Rejestru Karnego (zaświadczenie o niekaralności)?
+Drogą elektroniczną (dostęp do e-KRK: https://www.ekrk.ms.gov.pl).
+Osobiście w jednym z Punktów Informacyjnych Krajowego Rejestru Karnego albo w Biurze Informacyjnym Krajowego Rejestru Karnego przy ul. Czerniakowskiej 100 w Warszawie, bądź upoważniając osobę trzecią, która zgłosi się do Punktu Informacyjnego Krajowego Rejestru Karnego albo do siedziby Biura z pisemnym pełnomocnictwem oraz wypełnionym i podpisanym zapytaniem/wnioskiem.
+Można wysłać podpisany i opłacony formularz pocztą do wybranego Punktu Informacyjnego Krajowego Rejestru Karnego albo do siedziby Biura. W tym celu należy pobrać ze strony Ministerstwa Sprawiedliwości formularz „zapytanie o udzielenie informacji o osobie”/”zapytanie o udzielenie informacji o podmiocie zbiorowym” oraz uiścić opłatę. Opłatę za zaświadczenie można wnieść: przelewem na konto Ministerstwa Sprawiedliwości (numer konta poniżej), w formie znaku opłaty sądowej, zakupionego np. w najbliższym sądzie albo gotówką w kasie dowolnego sądu. W tytule przelewu należy wskazać datę wystawienia oraz imię i nazwisko osoby albo nazwę podmiotu zbiorowego, których dotyczyć ma informacja z Rejestru. Do zapytania/wniosku należy dołączyć potwierdzenie dokonania płatności.
+Ministerstwo Sprawiedliwości, Al. Ujazdowskie 11, 00-950 Warszawa
+NBP O/O Warszawa
+PL 77 1010 1010 0400 1922 3100 0000
+Narodowy Bank Polski
+Oddział Okręgowy Warszawa
+Plac Powstańców Warszawy 4
+00-950 Warszawa
+(SWIFT (kod BIC) NBPLPLPW dla przelewów zagranicznych)
