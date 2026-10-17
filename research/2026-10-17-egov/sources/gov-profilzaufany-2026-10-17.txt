@@ -1,0 +1,38 @@
+# gov.pl: profilzaufany
+# Source: https://www.gov.pl/web/profilzaufany, retrieved 2026-10-17, html sha256 b57b11c4c613ec8b0fea559193968b58d95b10b48d87d27affdef13629c727a6
+# Text of the page's main element; navigation removed.
+
+Załatwiaj sprawy urzędowe przez Internet!
+Profil zaufany (PZ) to bezpłatne i bezpieczne narzędzie, dzięki któremu możesz załatwiać sprawy urzędowe bez wychodzenia z domu. Profil zaufany założysz za darmo i to zaledwie w kilka chwil. To naprawdę proste.
+Załóż profil zaufany
+Masz już profil zaufany? Zaloguj się, aby móc zarządzać swoim kontem.
+Zaloguj się
+Informujemy, że w nocy z soboty na niedzielę (17/18.10.2026) w godz. 20:00–07:00 mogą wystąpić czasowe niedostępności systemów profil zaufany, węzeł krajowy i usług podpisu. Przepraszamy za utrudnienia.
+Profil zaufany jest środkiem identyfikacji elektronicznej. Dzięki niemu możesz potwierdzić swoją tożsamość w Internecie oraz podpisać dokument podpisem elektronicznym, jeśli jest to niezbędne do załatwienia twojej sprawy.
+Twój podpis elektroniczny
+Profil zaufany umożliwia elektroniczne podpisywanie dokumentów. Dzięki temu możesz złożyć np.: podanie, wniosek, odwołanie czy skargę bez konieczności drukowania dokumentu, jego ręcznego podpisywania i skanowania. Podpis elektroniczny ma taką samą wagę jak podpis odręczny.
+Twój login
+Dzięki profilowi zaufanemu zalogujesz się do systemów informatycznych administracji publicznej, takich jak: Platforma Usług Elektronicznych Zakładu Ubezpieczeń Społecznych (PUE ZUS), Internetowe Konto Pacjenta (IKP), e-Urząd Skarbowy itd.
+złożysz wniosek i podpiszesz dokument online
+zarejestrujesz działalność gospodarczą
+uzyskasz odpis aktu stanu cywilnego (urodzenia, małżeństwa, zgonu)
+zgłosisz utratę lub zniszczenie dowodu osobistego
+złożysz wniosek o wydanie wtórnika prawa jazdy
+wystąpisz o Europejską Kartę Ubezpieczenia Zdrowotnego (EKUZ)
+złożysz wniosek o świadczenie 800+
+złożysz PIT
+sprawdzisz liczbę swoich punktów karnych
+Zobacz wszystkie
+Internetowe Konto Pacjenta (IKP)
+Przez IKP możesz np. złożyć wniosek o wydanie EKUZ, sprawdzić swoje e-recepty, odebrać e-skierowanie.
+Elektroniczna Platforma Usług Administracji Publicznej (ePUAP)
+Przez ePUAP możesz np. złożyć wniosek o dowód osobisty, uzyskać odpis aktu stanu cywilnego, zgłosić urodzenie dziecka.
+Platforma Usług Elektronicznych Zakładu Ubezpieczeń Społecznych (PUE ZUS)
+Przez PUE ZUS możesz np. umówić się na wizytę w ZUS, zgłosić pracownika do ubezpieczeń, sprawdzić wysokość swojej emerytury.
+biznes.gov.pl
+Przez biznes.gov.pl możesz np. założyć firmę, wznowić lub zawiesić działalność gospodarczą.
+Empatia Portal Informacyjno-Usługowy MRPiPS
+Przez portal Empatia możesz np. złożyć wniosek o świadczenie rodzinne, wychowawcze, świadczenie z pomocy społecznej.
+e-Urząd Skarbowy
+Przez e-Urząd Skarbowy możesz np. rozliczyć podatek PIT, CIT, VAT, uzyskać informacje o akcyzie, cle lub podatkach.
+Zobacz wszystkie

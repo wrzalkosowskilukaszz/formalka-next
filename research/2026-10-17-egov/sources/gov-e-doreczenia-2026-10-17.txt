@@ -1,0 +1,38 @@
+# gov.pl: e-doreczenia
+# Source: https://www.gov.pl/web/e-doreczenia, retrieved 2026-10-17, html sha256 9601f37b7fc3866d494f9c99c8371ed4e3eadbbbb581536370ea3da246e5b90e
+# Text of the page's main element; navigation removed.
+
+e-Doręczenia w aplikacji mObywatel
+Odbieraj i wysyłaj pisma urzędowe wygodnie w telefonie – szybko, bezpiecznie i bez wychodzenia z domu.
+Załóż skrzynkę do e-Doręczeń
+Dowiedz się więcej
+Szanowni Państwo,
+Centralny Ośrodek Informatyki informuje o planowanej niedostępności usługi e-Doręczeń 17 października (sobota) w godzinach 23.00-00.00.
+Dodatkowo, w nocy z soboty na niedzielę 17/18.10.2026 r. w godzinach 20:00–07:00 mogą wystąpić krótkie przerwy w dostępności usługi.
+Poczta Polska S.A. informuje o planowanej niedostępności systemu e-Doręczeń na środowisku PROD w 18.10.2026 r (niedziela) w godzinach 15:00-20:00 (przerwa może zostać skrócona).
+Przepraszamy za niedogodności.
+Uzyskaj adres do e-Doręczeń
+Przejdź do swojej skrzynki
+Zobacz materiały szkoleniowe
+e-Doręczenia to elektroniczny odpowiednik listu poleconego za potwierdzeniem odbioru. Dzięki tej usłudze podmioty publiczne, obywatele i firmy mogą korzystać z wygodnych i bezpiecznych doręczeń elektronicznych. Są one równoważne prawnie tradycyjnej przesyłce poleconej za potwierdzeniem odbioru.
+Jeśli chcesz poznać szczegóły dotyczące usługi to więcej informacji znajdziesz w zakładce o e-Doręczeniach.
+Dla obywatela
+List polecony z urzędu można odebrać przez Internet – bez awizo i kolejek na poczcie
+Dla przedsiębiorcy
+Firma zarejestrowana w KRS lub CEiDG ma obowiązek korzystać z e-Doręczeń zgodnie z harmonogramem
+Dla podmiotu publicznego
+Od 1 stycznia 2025 r. urzędy i inne podmioty publiczne mają obowiązek korzystania z e-Doręczeń
+Dla zawodów zaufania publicznego
+Od 1 stycznia 2025 r. osoby wykonujące zawody zaufania publicznego mają obowiązek posiadania skrzynki do e-Doręczeń
+16.10.2026
+Dołącz do Programu Ambasadorskiego e-Doręczeń i wspieraj mieszkańców w cyfrowej komunikacji z urzędem
+01.10.2026
+Webinar o e-Doręczeniach dla podmiotów publicznych - październik 2026
+16.09.2026
+e-Doręczenia: 1 października 2026 r. ważny termin dla przedsiębiorców z CEIDG
+04.09.2026
+Wrześniowy webinar o e-Doręczeniach dla podmiotów publicznych
+Jeśli masz pytania lub wątpliwości dotyczące usługi e-Doręczeń, możesz też skorzystać z formularza zgłoszeniowego lub zadzwonić na infolinię.
+Najczęściej zadawane pytania
+Pomoc i kontakt
+Zgłoś problem z logowaniem profilem zaufanym

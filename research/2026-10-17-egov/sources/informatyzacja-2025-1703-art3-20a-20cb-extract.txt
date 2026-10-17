@@ -1,0 +1,162 @@
+# Ustawa z 17.02.2005 o informatyzacji działalności podmiotów realizujących zadania publiczne, consolidated text Dz.U. 2025 poz. 1703 (obwieszczenie of 7.11.2025): art. 3 pkt 14 (profil zaufany), art. 20a (authentication), art. 20ad-20cb (the trusted profile's data, the trusted signature, how a profile is confirmed)
+# Source: https://api.sejm.gov.pl/eli/acts/DU/2025/1703/text.pdf, retrieved 2026-10-17, sha256 f4bf652d1f7481c3f95652bad75f63874a4c64a55969175d6f7a054b84d423a9. pdftotext -layout.
+# Later amendments (tools/sources/amendments.mjs DU/2005/565 2025-11-07, 17.10.2026): Dz.U. 2025 poz. 1301 (repeals art. 13aa only), 2026 poz. 160 (adds art. 4aa, changes art. 19ac), 2020 poz. 2320 (from 1.10.2029). None changes the articles below (their texts read on 17.10.2026).
+
+[art. 3 pkt 14]
+14) profil zaufany – środek identyfikacji elektronicznej zawierający zestaw danych identyfikujących i opisujących osobę
+    fizyczną, która posiada pełną albo ograniczoną zdolność do czynności prawnych, który został wydany w sposób, o którym
+    mowa w art. 20c albo art. 20cb;
+14a) podpis zaufany – podpis elektroniczny, którego autentyczność i integralność są zapewniane przy użyciu pieczęci elek-
+
+[art. 20a]
+     Art. 20a. 1. Uwierzytelnienie użytkownika systemu teleinformatycznego podmiotu publicznego, w którym udostęp-
+niane są usługi online, wymaga użycia:
+1)    środka identyfikacji elektronicznej wydanego w systemie identyfikacji elektronicznej przyłączonym do węzła krajowego
+      identyfikacji elektronicznej, o którym mowa w art. 21a ust. 1 pkt 2 lit. a ustawy z dnia 5 września 2016 r. o usługach
+      zaufania oraz identyfikacji elektronicznej (Dz. U. z 2024 r. poz. 1725), lub
+2)    środka identyfikacji elektronicznej wydanego w notyfikowanym systemie identyfikacji elektronicznej, lub
+3)    danych weryfikowanych za pomocą kwalifikowanego certyfikatu podpisu elektronicznego, jeżeli te dane pozwalają
+      na identyfikację i uwierzytelnienie wymagane w celu realizacji usługi online.
+    1a. Uwierzytelnianie z wykorzystaniem środków identyfikacji elektronicznej, o których mowa w ust. 1 pkt 1 i 2,
+zapewnia się adekwatnie do wymaganego poziomu bezpieczeństwa, o którym mowa w art. 25 ustawy z dnia 5 września
+2016 r. o usługach zaufania oraz identyfikacji elektronicznej.
+     2. Podmiot publiczny, który używa do realizacji zadań publicznych systemu teleinformatycznego, może umożliwiać
+użytkownikowi uwierzytelnienie w tym systemie także przez zastosowanie innych technologii.
+      3. Minister właściwy do spraw informatyzacji określi, w drodze rozporządzenia:
+1)    szczegółowe warunki organizacyjne i techniczne, które powinien spełniać system teleinformatyczny służący do wydania
+      certyfikatu oraz stosowania technologii, o których mowa w ust. 2, w tym:
+      a)   zakres i okres przechowywania danych w systemie,
+      b) obowiązki informacyjne, do których zobowiązany jest administrator systemu
+2)    (uchylony)
+– biorąc pod uwagę konieczność zapewnienia bezpieczeństwa i pewności w procesie identyfikacji oraz poufności kluczo-
+wych elementarnych czynności.
+
+[art. 20ad-20cb]
+     Art. 20ad. 1. Profil zaufany zawiera dane identyfikujące osobę fizyczną obejmujące:
+1)   imię (imiona);
+2)   nazwisko;
+3)   datę urodzenia;
+4)   numer PESEL.
+     2. W procedurze potwierdzania profilu zaufanego dane, o których mowa w ust. 1, są weryfikowane automatycznie
+z danymi zawartymi w rejestrze PESEL.
+     3. W przypadku zmiany w rejestrze PESEL danych, o których mowa w ust. 1, jest dokonywana automatyczna aktualizacja
+tych danych zawartych w profilu zaufanym.
+     4. Aktualizacja danych zawartych w profilu zaufanym, o której mowa w ust. 3, nie powoduje unieważnienia profilu
+zaufanego.
+    4a. W przypadku gdy w rejestrze PESEL został odnotowany zgon osoby posiadającej profil zaufany, profil zaufany tej
+osoby jest automatycznie unieważniany.
+     5. Profil zaufany może zawierać inne dane niż wymienione w ust. 1, w szczególności identyfikator oraz dane wyko-
+rzystywane w procesach uwierzytelniania i autoryzacji realizowanych przy użyciu profilu zaufanego.
+     Art. 20ae. 1.17) Podpis zaufany wywołuje skutki prawne, jeżeli został utworzony lub złożony w okresie ważności
+środka identyfikacji elektronicznej, o którym mowa w art. 20aa ust. 1 pkt 1.
+    2. Dane w postaci elektronicznej opatrzone podpisem zaufanym są równoważne pod względem skutków prawnych
+dokumentowi opatrzonemu podpisem własnoręcznym, chyba że przepisy odrębne stanowią inaczej.
+     2a. Opatrzenie danych podpisem zaufanym wywołuje skutek, o którym mowa w ust. 1, również w stosunku do dostaw-
+ców usług telekomunikacyjnych w rozumieniu art. 2 pkt 40 lit. a ustawy z dnia 12 lipca 2024 r. – Prawo komunikacji
+elektronicznej, w zakresie, o którym mowa w art. 296 ust. 3 pkt 2 lit. e tej ustawy, jeżeli obie strony wyrażą na to zgodę.
+     3. Nie można odmówić ważności i skuteczności podpisowi zaufanemu tylko na tej podstawie, że istnieje w postaci
+elektronicznej.
+     Art. 20b. (uchylony)
+     Art. 20c. 1. Potwierdzenia profilu zaufanego, które polega na weryfikacji zgodności danych zawartych we wniosku
+o jego wydanie ze stanem faktycznym, oraz unieważnienia profilu zaufanego dokonuje:
+1)   punkt potwierdzający profil zaufany na podstawie:
+     a)   dowodu osobistego albo paszportu zawierającego:
+          – imię (imiona),
+          – nazwisko,
+          – numer PESEL, albo
+     b) innego dokumentu tożsamości, jeżeli umożliwia on jednoznaczne potwierdzenie tożsamości osoby wnioskującej
+        o potwierdzenie profilu zaufanego posiadającej numer PESEL;
+2)   samodzielnie osoba fizyczna przy wykorzystaniu kwalifikowanego podpisu elektronicznego, w przypadku gdy kwali-
+     fikowany certyfikat podpisu elektronicznego zawiera dane obejmujące co najmniej:
+     a)   imię (imiona),
+     b) nazwisko,
+     c)   numer PESEL;
+
+3)     samodzielnie osoba fizyczna przy nieodpłatnym wykorzystaniu środka identyfikacji elektronicznej stosowanego do
+       uwierzytelniania w systemie teleinformatycznym banku krajowego lub innego przedsiębiorcy spełniającym warunki,
+       o których mowa w art. 20d pkt 1, o ile środek ten potwierdza dane obejmujące co najmniej:
+       a)   imię (imiona),
+       b) nazwisko,
+       c)   numer PESEL;
+4)     samodzielnie osoba fizyczna przy wykorzystaniu profilu osobistego.
+    1a. Przedłużenie ważności profilu zaufanego może nastąpić w sposób, o którym mowa w ust. 1 pkt 1, 2 i 4, albo przy
+wykorzystaniu profilu zaufanego.
+       2. Funkcję punktu potwierdzającego pełni:
+1)     konsul;
+2)     naczelnik urzędu skarbowego;
+3)     wojewoda;
+4)     Zakład Ubezpieczeń Społecznych;
+5)     Narodowy Fundusz Zdrowia.
+      2a. Narodowy Fundusz Zdrowia może nadać uprawnienia do potwierdzania w swoim imieniu profilu zaufanego lekarzowi
+podstawowej opieki zdrowotnej, pielęgniarce podstawowej opieki zdrowotnej, położnej podstawowej opieki zdrowotnej
+realizującym zadania w zakresie podstawowej opieki zdrowotnej dla świadczeniodawcy, który udziela świadczeń opieki zdro-
+wotnej w ramach umowy o udzielanie świadczeń opieki zdrowotnej z zakresu podstawowej opieki zdrowotnej, oraz osobie
+zatrudnionej u tego świadczeniodawcy pod warunkiem, że co najmniej imię, nazwisko i numer PESEL tej osoby zostały
+przekazane do Narodowego Funduszu Zdrowia w ramach zawartej umowy.
+      2b. Osoba posiadająca uprawnienia do potwierdzania profilu zaufanego, o której mowa w ust. 2a, może potwierdzić
+profil zaufany wyłącznie świadczeniobiorcy, który w deklaracji wyboru, o której mowa w art. 10 ust. 1 ustawy z dnia 27 paździer-
+nika 2017 r. o podstawowej opiece zdrowotnej (Dz. U. z 2025 r. poz. 515), wskazał świadczeniodawcę, w ramach którego
+działa osoba potwierdzająca profil zaufany.
+     2c. Narodowy Fundusz Zdrowia niezwłocznie odbiera uprawnienia do potwierdzania profilu zaufanego w przypadku
+ustania okoliczności, o których mowa w ust. 2a.
+      2d. Minister właściwy do spraw informatyzacji może udostępnić rozwiązanie techniczne przeznaczone do przekazy-
+wania informacji o zdarzeniach, o których mowa w ust. 2a i 2b, pomiędzy systemem teleinformatycznym Narodowego
+Funduszu Zdrowia, w którym znajdują się dane o świadczeniodawcach udzielających świadczeń z zakresu podstawowej
+opieki zdrowotnej, na podstawie zawartej z Narodowym Funduszem Zdrowia umowy o udzielanie świadczeń z zakresu
+podstawowej opieki zdrowotnej, a systemem, o którym mowa w art. 20aa ust. 1, zapewniające automatyczną weryfikację
+i aktualizację uprawnień do potwierdzania profilu zaufanego.
+      2e. W przypadku, o którym mowa w ust. 2a, dokumenty w postaci papierowej w zakresie potwierdzania, przedłużania
+i unieważniania profilu zaufanego w sposób i przez okres określony w przepisach wydanych na podstawie art. 20d przecho-
+wuje i archiwizuje świadczeniodawca.
+       3. Funkcję punktu potwierdzającego, za zgodą ministra właściwego do spraw informatyzacji, może pełnić:
+1)     podmiot publiczny inny niż wymieniony w ust. 2;
+2)     bank krajowy, o którym mowa w art. 4 ust. 1 pkt 1 ustawy z dnia 29 sierpnia 1997 r. – Prawo bankowe (Dz. U. z 2024 r.
+       poz. 1646, z późn. zm.87));
+3)     operator pocztowy, o którym mowa w art. 3 pkt 12 ustawy z dnia 23 listopada 2012 r. – Prawo pocztowe (Dz. U. z 2025 r.
+       poz. 366, 820 i 1456);
+4)     oddział instytucji kredytowej, o którym mowa w art. 4 ust. 1 pkt 18 ustawy z dnia 29 sierpnia 1997 r. – Prawo bankowe;
+5)     spółdzielcza kasa oszczędnościowo-kredytowa, o której mowa w ustawie z dnia 5 listopada 2009 r. o spółdzielczych
+       kasach oszczędnościowo-kredytowych (Dz. U. z 2025 r. poz. 379, 820, 1069, 1170 i 1191).
+
+87)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 1685 i 1863 oraz z 2025 r. poz. 146, 222,
+      525, 769, 820, 1069, 1170, 1191 i 1216.
+
+    4. Zgody, o której mowa w ust. 3, udziela się na wniosek podmiotów, o których mowa w ust. 3, po spełnieniu warun-
+ków określonych w przepisach wydanych na podstawie art. 20d pkt 1.
+      5. Operator pocztowy może złożyć wniosek, o którym mowa w ust. 4, nie wcześniej niż w roku następującym po roku,
+w którym po raz pierwszy przedłożył Prezesowi Urzędu Komunikacji Elektronicznej sprawozdanie, o którym mowa w art. 43
+ust. 1 ustawy z dnia 23 listopada 2012 r. – Prawo pocztowe.
+     6. Minister właściwy do spraw informatyzacji może sprawdzać, czy podmiot pełniący funkcję punktu potwierdzającego
+spełnia warunki określone w przepisach wydanych na podstawie art. 20d pkt 1.
+     7. Minister właściwy do spraw informatyzacji cofa zgodę, o której mowa w ust. 3, w przypadku gdy podmiot pełniący
+funkcję punktu potwierdzającego nie spełnia warunków określonych w przepisach wydanych na podstawie art. 20d pkt 1.
+      8. Minister właściwy do spraw informatyzacji, na wniosek banku krajowego lub innego przedsiębiorcy, udziela zgody
+na nieodpłatne wykorzystywanie środków identyfikacji elektronicznej stosowanych do uwierzytelniania w systemie tele-
+informatycznym banku krajowego lub innego przedsiębiorcy do potwierdzania profilu zaufanego w sposób, o którym mowa
+w ust. 1 pkt 3, oraz do uwierzytelnień i autoryzacji związanych z jego wykorzystaniem po spełnieniu przez bank krajowy
+lub innego przedsiębiorcę warunków, o których mowa w przepisach wydanych na podstawie art. 20d pkt 1.
+   9. Minister właściwy do spraw informatyzacji może sprawdzać, czy bank krajowy lub inny przedsiębiorca, o którym
+mowa w ust. 8, spełnia warunki, o których mowa w przepisach wydanych na podstawie art. 20d pkt 1.
+      10. Minister właściwy do spraw informatyzacji cofa zgodę, o której mowa w ust. 8, w przypadku gdy bank krajowy
+lub inny przedsiębiorca nie spełnia warunków określonych w przepisach wydanych na podstawie art. 20d pkt 1.
+     Art. 20ca. (uchylony)
+      Art. 20cb. 1. Minister właściwy do spraw informatyzacji może udostępnić usługę online służącą do potwierdzania
+profilu zaufanego przy użyciu metody, o której mowa w ust. 2.
+     2. W celu potwierdzenia tożsamości osoby wnioskującej o potwierdzenie profilu zaufanego przeprowadza się wideo-
+identyfikację wnioskodawcy polegającą na:
+1)   porównaniu wizerunku wnioskodawcy udostępnianego przez niego w czasie rzeczywistym za pośrednictwem trans-
+     misji audiowizualnej z wizerunkiem tego wnioskodawcy pobranym z Rejestru Dowodów Osobistych, o którym mowa
+     w ustawie z dnia 6 sierpnia 2010 r. o dowodach osobistych, oraz
+2)   weryfikacji danych zawartych w warstwie graficznej dowodu osobistego albo paszportu wnioskodawcy okazanego
+     przez niego w czasie rzeczywistym za pośrednictwem transmisji audiowizualnej, oraz
+3)   w uzasadnionych przypadkach – weryfikacji wiedzy wnioskodawcy przy wykorzystaniu danych dotyczących wniosko-
+     dawcy zgromadzonych w rejestrach publicznych lub w systemach teleinformatycznych.
+     3. Potwierdzanie profilu zaufanego przy użyciu metody, o której mowa w ust. 2, realizuje minister właściwy do spraw
+informatyzacji.
+     4. Minister właściwy do spraw informatyzacji może upoważnić do potwierdzania profilu zaufanego przy użyciu metody,
+o której mowa w ust. 2, jednostkę podległą lub nadzorowaną.
+     5. Z transmisji, o której mowa w ust. 2 pkt 1, sporządza się nagranie audiowizualne. Nagranie sporządza i przechowuje
+przez 6 lat od dnia jego sporządzenia podmiot, który potwierdza profil zaufany przy użyciu metody, o której mowa w ust. 2.
+     6. Minister właściwy do spraw informatyzacji może zawiesić lub zaprzestać świadczenia usługi, o której mowa
+w ust. 1, w przypadku zaistnienia okoliczności, które mogłyby wpływać na bezpieczeństwo metody potwierdzania tożsamości
+stosowanej w ramach tej usługi, i informuje o tym na swojej stronie podmiotowej w Biuletynie Informacji Publicznej.

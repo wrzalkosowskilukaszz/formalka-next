@@ -1,0 +1,126 @@
+# Ustawa z 18.11.2020 o doręczeniach elektronicznych, consolidated text Dz.U. 2024 poz. 1045 (obwieszczenie of 21.06.2024): art. 4-5 (how public bodies deliver), art. 9-10 (who must, who may have an address), art. 14-15 (a natural person's application), with the changes of Dz.U. 2024 poz. 1841
+# Sources: https://api.sejm.gov.pl/eli/acts/DU/2024/1045/text.pdf (sha256 5efb3b1381a7f02be4e7103c05e6d7796ffa40f5e5c053859661311604506b3d); https://api.sejm.gov.pl/eli/acts/DU/2024/1841/text.pdf (sha256 9923cf74ea8d6a749b37078d104f5f136216ac0c531c8417ef5611d3fde0b4d3); retrieved 2026-10-17. pdftotext -layout.
+# Later amendments (amendments.mjs DU/2020/2320 2024-06-21): Dz.U. 2024 poz. 1841 (from 1.01.2025; its points on art. 11, 14 and 15 are quoted at the end), 2026 poz. 507 (from 14.10.2026; changes art. 152 only).
+
+     Art. 4. 1. Podmiot publiczny doręcza korespondencję wymagającą uzyskania potwierdzenia jej nadania lub odbioru
+z wykorzystaniem publicznej usługi rejestrowanego doręczenia elektronicznego na adres do doręczeń elektronicznych wpi-
+sany do bazy adresów elektronicznych.
+     2. W przypadku gdy adres do doręczeń elektronicznych podmiotu niepublicznego nie został wpisany do bazy adresów
+elektronicznych, doręczenie korespondencji następuje na adres do doręczeń elektronicznych, z którego podmiot niepub-
+liczny nadał korespondencję.
+    Art. 5. Podmiot publiczny doręcza korespondencję wymagającą uzyskania potwierdzenia jej nadania lub odbioru
+z wykorzystaniem publicznej usługi hybrydowej w przypadku:
+1)   braku możliwości doręczenia korespondencji na adres do doręczeń elektronicznych zgodnie z art. 4 albo
+2)   gdy posiada on wiedzę, że osoba fizyczna posiadająca adres do doręczeń elektronicznych została pozbawiona wolności.
+[...]
+     Art. 9. 1. Do posiadania adresu do doręczeń elektronicznych wpisanego do bazy adresów elektronicznych, powiąza-
+nego z publiczną usługą rejestrowanego doręczenia elektronicznego albo kwalifikowaną usługą rejestrowanego doręczenia
+elektronicznego jest obowiązany:
+1)3) adwokat wykonujący zawód;
+2)3) radca prawny wykonujący zawód;
+3)3) doradca podatkowy wykonujący zawód;
+4)3) doradca restrukturyzacyjny wykonujący zawód;
+5)3) rzecznik patentowy wykonujący zawód;
+6)3) notariusz wykonujący zawód;
+7)    (uchylony)4)
+8)3) podmiot niepubliczny wpisany do rejestru przedsiębiorców, o którym mowa w art. 1 ust. 2 pkt 1 ustawy z dnia
+     20 sierpnia 1997 r. o Krajowym Rejestrze Sądowym (Dz. U. z 2023 r. poz. 685, 825 i 1705 oraz z 2024 r. poz. 619);
+9)5) podmiot niepubliczny wpisany do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, o której
+     mowa w art. 2 ustawy z dnia 6 marca 2018 r. o Centralnej Ewidencji i Informacji o Działalności Gospodarczej
+     i Punkcie Informacji dla Przedsiębiorcy (Dz. U. z 2022 r. poz. 541).
+    2. Przepisu ust. 1 nie stosuje się do osób, o których mowa w ust. 1 pkt 1–7, w przypadkach niewykonywania zawodu,
+zawieszenia prawa do wykonywania zawodu, zawieszenia w czynnościach zawodowych, zawieszenia w czynnościach służ-
+bowych, zawieszenia stosunku pracy lub zawieszenia praw wynikających z licencji.
+     Art. 10. Podmiot niepubliczny inny niż określony w art. 9 ust. 1 może posiadać adres do doręczeń elektronicznych
+powiązany z publiczną usługą rejestrowanego doręczenia elektronicznego albo kwalifikowaną usługą rejestrowanego
+doręczenia elektronicznego.
+
+                                                         Rozdział 2
+                                   Adres do doręczeń elektronicznych i skrzynka doręczeń
+[...]
+     Art. 14. 1. Wniosek o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego
+doręczenia elektronicznego dla podmiotu niepublicznego będącego osobą fizyczną zawiera następujące dane:
+1)    imię i nazwisko;
+2)7) firmę – w przypadku osoby fizycznej będącej przedsiębiorcą wpisanym do Centralnej Ewidencji i Informacji o Dzia-
+     łalności Gospodarczej albo tytuł zawodowy – w przypadku osoby fizycznej będącej adwokatem, radcą prawnym,
+     doradcą podatkowym, doradcą restrukturyzacyjnym, notariuszem lub rzecznikiem patentowym;
+3)    numer identyfikacyjny REGON, jeżeli został nadany – w przypadku osoby fizycznej będącej przedsiębiorcą wpisanym
+      do Centralnej Ewidencji i Informacji o Działalności Gospodarczej;
+4)    numer identyfikacji podatkowej (NIP), jeżeli został nadany, lub informację o jego unieważnieniu lub uchyleniu –
+      w przypadku osoby fizycznej będącej przedsiębiorcą wpisanym do Centralnej Ewidencji i Informacji o Działalności
+      Gospodarczej;
+5)    adres do korespondencji – w przypadku osoby fizycznej niebędącej przedsiębiorcą wpisanym do Centralnej Ewidencji
+      i Informacji o Działalności Gospodarczej;
+
+
+6)   Zmiana wymienionego rozporządzenia została ogłoszona w Dz. Urz. UE L 28 z 04.02.2016, str. 18.
+7)   Ze zmianą wprowadzoną przez art. 29 pkt 2 ustawy, o której mowa w odnośniku 4.
+
+6)    adres do doręczeń – w przypadku osoby fizycznej będącej przedsiębiorcą wpisanym do Centralnej Ewidencji i Informacji
+      o Działalności Gospodarczej;
+7)    numer PESEL, a jeżeli nie został nadany – niepowtarzalny identyfikator nadany przez państwo członkowskie Unii
+      Europejskiej dla celów transgranicznej identyfikacji, o którym mowa w rozporządzeniu wykonawczym Komisji 2015/1501;
+8)    adres poczty elektronicznej, na który zostanie przesłana informacja o utworzeniu adresu do doręczeń elektronicznych
+      oraz o sposobie aktywacji skrzynki doręczeń;
+9)    imię i nazwisko administratora skrzynki doręczeń, jego adres poczty elektronicznej oraz numer PESEL, a jeżeli nie
+      został nadany – niepowtarzalny identyfikator nadany przez państwo członkowskie Unii Europejskiej dla celów trans-
+      granicznej identyfikacji, o którym mowa w rozporządzeniu wykonawczym Komisji 2015/1501 – w przypadku wyzna-
+      czenia administratora skrzynki doręczeń.
+     2. Wniosek o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego dorę-
+czenia elektronicznego dla podmiotu niepublicznego niebędącego osobą fizyczną zawiera następujące dane:
+1)    nazwę lub firmę, pod którą podmiot działa;
+2)    numer identyfikacji REGON, jeżeli został nadany;
+3)    numer identyfikacji podatkowej (NIP), jeżeli został nadany, lub informację o jego unieważnieniu lub uchyleniu;
+4)    numer KRS, jeżeli został nadany;
+5)    oznaczenie formy prawnej;
+6)    siedzibę i adres;
+7)    adres do korespondencji;
+8)    imię i nazwisko administratora skrzynki doręczeń, jego adres poczty elektronicznej oraz numer PESEL, a jeżeli nie
+      został nadany – niepowtarzalny identyfikator nadany przez państwo członkowskie Unii Europejskiej dla celów trans-
+      granicznej identyfikacji, o którym mowa w rozporządzeniu wykonawczym Komisji 2015/1501.
+     3. Wniosek o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego dorę-
+czenia elektronicznego dla podmiotu niepublicznego opatruje się:
+1)    kwalifikowanym podpisem elektronicznym, podpisem zaufanym albo podpisem osobistym – w przypadku wniosku
+      składanego przez podmiot niepubliczny będący osobą fizyczną;
+2)    kwalifikowaną pieczęcią elektroniczną podmiotu lub kwalifikowanym podpisem elektronicznym, podpisem zaufanym
+      albo podpisem osobistym osoby fizycznej uprawnionej do złożenia wniosku – w przypadku wniosku składanego przez
+      podmiot niepubliczny niebędący osobą fizyczną;
+3)    kwalifikowaną pieczęcią elektroniczną podmiotu lub kwalifikowanym podpisem elektronicznym osoby fizycznej
+      uprawnionej do złożenia wniosku – w przypadku wniosku składanego przez podmiot niepubliczny niebędący osobą
+      fizyczną i mający siedzibę w Unii Europejskiej, Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej.
+     Art. 15. 1. Wniosek o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego
+doręczenia elektronicznego jest składany z wykorzystaniem usługi online udostępnianej przez:
+1)    ministra właściwego do spraw gospodarki – dla podmiotów określonych w art. 9 ust. 1 pkt 8 i 9;
+2)    ministra właściwego do spraw informatyzacji – dla pozostałych podmiotów.
+     2. Do wniosku o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego
+doręczenia elektronicznego dołącza się:
+1)    dokument potwierdzający reprezentację podmiotu publicznego lub podmiotu niepublicznego,
+2)    pełnomocnictwo do złożenia wniosku w imieniu podmiotu publicznego lub podmiotu niepublicznego, jeżeli pełno-
+      mocnik został ustanowiony
+– albo ich kopię potwierdzoną za zgodność z oryginałem przez wnioskodawcę albo przez notariusza, albo przez pełno-
+mocnika wnioskodawcy będącego adwokatem, radcą prawnym, rzecznikiem patentowym lub doradcą podatkowym, jeżeli
+wniosek nie został opatrzony kwalifikowaną pieczęcią elektroniczną.8)
+
+
+8)   Część wspólna ze zmianą wprowadzoną przez art. 29 pkt 3 ustawy, o której mowa w odnośniku 4.
+
+    3. Przepisu ust. 2 nie stosuje się, jeżeli stwierdzenie reprezentacji albo pełnomocnictwa jest możliwe na podstawie
+wykazu lub innego rejestru, do którego minister właściwy do spraw informatyzacji ma dostęp drogą elektroniczną.
+     4. Jeżeli we wniosku nie wskazano adresu wnioskodawcy i nie ma możliwości ustalenia tego adresu na podstawie
+posiadanych danych, minister właściwy do spraw informatyzacji pozostawia wniosek bez rozpoznania.
+     5. Jeżeli wniosek nie spełnia innych wymagań ustalonych w przepisach prawa lub zawiera nieprawidłowe dane, minister
+właściwy do spraw informatyzacji wzywa wnioskodawcę do usunięcia braków w wyznaczonym terminie, nie krótszym niż
+7 dni, z pouczeniem, że nieusunięcie tych braków spowoduje pozostawienie wniosku bez rozpoznania.
+     6. Po utworzeniu adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego doręczenia elektro-
+nicznego minister właściwy do spraw informatyzacji przesyła niezwłocznie informację o jego utworzeniu na adres poczty
+elektronicznej administratora skrzynki doręczeń, jeżeli został wskazany, a w przypadku podmiotu niepublicznego będącego
+osobą fizyczną – także na adres poczty elektronicznej wnioskodawcy wskazany we wniosku.
+     7. Minister właściwy do spraw informatyzacji:
+1)   wpisuje adres do doręczeń elektronicznych powiązany z publiczną usługą rejestrowanego doręczenia elektronicznego
+     do bazy adresów elektronicznych po aktywacji adresu do doręczeń elektronicznych;
+2)   przesyła informację o wpisie na adres do doręczeń elektronicznych, którego dotyczy wpis.
+     8. Przesłanie informacji, o której mowa w ust. 7 pkt 2, nie podlega opłacie.
+[Dz.U. 2024 poz. 1841, art. 1 pkt 2, 5, 6]
+2) w art. 11 pkt 2 otrzymuje brzmienie: „2) automatycznie po otrzymaniu przez ministra właściwego do spraw informatyzacji, za pośrednictwem systemu teleinformatycznego: a) o którym mowa w art. 3a ust. 1 ustawy z dnia 20 sierpnia 1997 r. o Krajowym Rejestrze Sądowym albo w art. 3 ust. 1 ustawy z dnia 6 marca 2018 r. o Centralnej Ewidencji i Informacji o Działalności Gospodarczej i Punkcie Informacji dla Przedsiębiorcy – danych przekazanych w związku z wnioskiem o wpis do Krajowego Rejestru Sądowego albo do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, b) operatora wyznaczonego – danych, o których mowa w art. 14 ust. 1 i 2, w przypadku podmiotów niepublicznych.”;
+5) w art. 14 dodaje się ust. 4 w brzmieniu: „4. Minister właściwy do spraw informatyzacji udostępnia usługę sieciową umożliwiającą przekazanie przez operatora wyznaczonego danych, o których mowa w ust. 1 i 2, za pomocą bezpośredniej wymiany danych między systemem teleinformatycznym operatora wyznaczonego a bazą adresów elektronicznych.”;
+6) w art. 15 po ust. 1 dodaje się ust. 1a w brzmieniu: „1a. Wniosek o utworzenie adresu do doręczeń elektronicznych powiązanego z publiczną usługą rejestrowanego doręczenia elektronicznego może być złożony z wykorzystaniem usługi online udostępnianej przez operatora wyznaczonego – dla podmiotów niepublicznych.”;
