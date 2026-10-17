@@ -1,0 +1,147 @@
+# Other acts for the school map, added after the independent check of 17.10.2026; each provision re-read here from our own download
+# Sources (retrieved 2026-10-17; pdftotext -layout; page headers dropped): the system of education act, consolidated Dz.U. 2025 poz. 881 (https://api.sejm.gov.pl/eli/acts/DU/2025/881/text.pdf, sha256 3e587f0432d6950f7d8f4924787b09ecba5f9e41b575d2403b8b4ccf4b51d7e6; touched.mjs DU/2025/881 2025-06-01 --cite 44q,44zw,44zx,44zz,44zzr: only Dz.U. 2026 poz. 203 art. 2 touches art. 44q, from 5.03.2026, quoted in the Prawo oświatowe extract); Dz.U. 2026 poz. 203 (sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275; art. 47-49 from 5.03.2026, its art. 54); the regulation of 21.03.2022 on Ukrainian pupils, issued under the special act art. 59: its amendments Dz.U. 2024 poz. 1302 (sha256 73a220f3c70b38d260614424cadfce677b82f0073c0fd52cc190464b90de1417), 2025 poz. 1195 (sha256 ed45291e24bccca79c9c80bf504fb6011bfe4c9c11e288d9e42f86391f474954) and 2026 poz. 245 (sha256 cccc32caa8a27a2a9afc002fb43822a42902221108cbecd724bcbcfcc0f95bd6); the regulation itself (consolidated Dz.U. 2023 poz. 2094, sha256 2ad2698ded3bf6466256bf03e795d180692a1d0c860dba6878f133275c8c7c0d) kept force only to 31.08.2026 (203 art. 49 ust. 2); the act on financing educational tasks, consolidated Dz.U. 2026 poz. 650 (sha256 9d629ac722118979357fa2c5ed5254b6e3412377881793ffea67dc8b1ea4c308; no later amendments, amendments.mjs 17.10.2026); the civil code, consolidated Dz.U. 2026 poz. 795 (sha256 c341c7d96481f12a21e3b41deb69a84cab9322bd9888d3e6406dab9e09eeef91; the only later act, Dz.U. 2026 poz. 507 from 1.11.2028, concerns business registration).
+# The amendment Dz.U. 2025 poz. 1324, which moved § 11ac's end date to 4.03.2026 before poz. 245 moved it to 31.08.2026, was not read here (INFERENCE from poz. 245's wording "4 marca 2026 r.").
+
+[The system of education act, consolidated Dz.U. 2025 poz. 881, art. 44q ust. 1 pkt 1-2]
+     Art. 44q. 1. Uczeń kończy szkołę podstawową lub szkołę ponadpodstawową, jeżeli:
+1)   w wyniku klasyfikacji końcowej otrzymał ze wszystkich obowiązkowych zajęć edukacyjnych oraz zajęć z języka
+     mniejszości narodowej, mniejszości etnicznej lub języka regionalnego pozytywne końcowe oceny klasyfikacyjne,
+     o których mowa w przepisach wydanych na podstawie art. 44zb;
+2)   w przypadku szkoły podstawowej – przystąpił ponadto do egzaminu ósmoklasisty, z zastrzeżeniem art. 44zw, art. 44zx
+     i art. 44zz ust. 2;
+
+[Its art. 44q ust. 3]
+     3. Uczeń szkoły podstawowej, który nie spełnił warunków, o których mowa w ust. 1, powtarza ostatnią klasę szkoły
+podstawowej i przystępuje w roku szkolnym, w którym powtarza tę klasę, do egzaminu ósmoklasisty.
+
+[Its art. 44zw (exemptions from the eighth-grade exam: disability, health)]
+      Art. 44zw. 1. Uczeń posiadający orzeczenie o potrzebie kształcenia specjalnego wydane ze względu na niepełnospraw-
+ność intelektualną w stopniu umiarkowanym lub znacznym lub niepełnosprawności sprzężone, gdy jedną z niepełnosprawności
+jest niepełnosprawność intelektualna w stopniu umiarkowanym lub znacznym, nie przystępuje do egzaminu ósmoklasisty.
+     2. Uczeń posiadający orzeczenie o potrzebie kształcenia specjalnego wydane ze względu na niepełnosprawności sprzę-
+żone inne niż wymienione w ust. 1 może być zwolniony przez dyrektora okręgowej komisji egzaminacyjnej z obowiązku
+przystąpienia do egzaminu ósmoklasisty, na wniosek rodziców pozytywnie zaopiniowany przez dyrektora szkoły.
+     3. (uchylony)
+     4. W szczególnych przypadkach zdrowotnych, uniemożliwiających uczniowi lub słuchaczowi przystąpienie do egza-
+minu ósmoklasisty, dyrektor okręgowej komisji egzaminacyjnej, na udokumentowany wniosek dyrektora szkoły, może
+zwolnić ucznia lub słuchacza z obowiązku przystąpienia do tego egzaminu. Dyrektor szkoły składa wniosek w porozumieniu
+z rodzicami ucznia lub ze słuchaczem.
+
+[Its art. 44zx ust. 1 (laureates and finalists)]
+      Art. 44zx. 1. Laureat i finalista olimpiady przedmiotowej wymienionej w wykazie, o którym mowa w art. 44zzzw,
+oraz laureat konkursu przedmiotowego o zasięgu wojewódzkim lub ponadwojewódzkim, przeprowadzanego zgodnie z prze-
+pisami wydanymi na podstawie art. 22 ust. 2 pkt 8, organizowanych z zakresu jednego z przedmiotów objętych egzaminem
+ósmoklasisty, są zwolnieni z egzaminu ósmoklasisty z tego przedmiotu.
+
+[Its art. 44zz ust. 2]
+     2. W szczególnych przypadkach losowych lub zdrowotnych, uniemożliwiających przystąpienie do egzaminu ósmoklasisty
+z danego przedmiotu lub przedmiotów w terminie dodatkowym, dyrektor okręgowej komisji egzaminacyjnej, na udokumen-
+towany wniosek dyrektora szkoły, może zwolnić ucznia lub słuchacza z obowiązku przystąpienia do egzaminu ósmoklasisty
+z danego przedmiotu lub przedmiotów. Dyrektor szkoły składa wniosek w porozumieniu z rodzicami ucznia lub ze słuchaczem.
+
+[Its art. 44zzr ust. 6-9 (exam accommodations, including for limited Polish)]
+     6. Uczeń, słuchacz albo absolwent, który w roku szkolnym, w którym przystępuje do egzaminu ósmoklasisty lub
+egzaminu maturalnego, był objęty pomocą psychologiczno-pedagogiczną w szkole ze względu na trudności adaptacyjne
+związane z wcześniejszym kształceniem za granicą, zaburzenia komunikacji językowej lub sytuację kryzysową lub
+traumatyczną, może przystąpić do egzaminu ósmoklasisty i egzaminu maturalnego w warunkach dostosowanych do jego
+potrzeb edukacyjnych oraz możliwości psychofizycznych wynikających odpowiednio z rodzaju tych trudności, zaburzeń
+lub sytuacji kryzysowej lub traumatycznej, na podstawie pozytywnej opinii rady pedagogicznej.
+    7. Uczeń albo absolwent, o którym mowa w art. 165 ust. 1 i 2 ustawy – Prawo oświatowe, któremu ograniczona zna-
+jomość języka polskiego utrudnia zrozumienie czytanego tekstu, może przystąpić do:
+1)   egzaminu ósmoklasisty, z wyjątkiem egzaminu ósmoklasisty z języka obcego nowożytnego w warunkach i formie
+     dostosowanych do jego potrzeb edukacyjnych oraz możliwości psychofizycznych wynikających z tego ograniczenia,
+     na podstawie pozytywnej opinii rady pedagogicznej;
+2)   egzaminu maturalnego, z wyjątkiem egzaminu maturalnego z języka obcego nowożytnego, języka łacińskiego, języka
+     mniejszości narodowej, mniejszości etnicznej lub języka regionalnego – w warunkach dostosowanych do jego potrzeb
+     edukacyjnych oraz możliwości psychofizycznych wynikających z tego ograniczenia, na podstawie pozytywnej opinii
+     rady pedagogicznej.
+     8. Dostosowanie formy egzaminu ósmoklasisty i egzaminu maturalnego, o którym mowa w ust. 1, polega na przygo-
+towaniu odrębnych arkuszy egzaminacyjnych dostosowanych do rodzaju niepełnosprawności ucznia lub absolwenta niepeł-
+nosprawnego, z tym że nie przygotowuje się odrębnych arkuszy egzaminacyjnych dla absolwentów posiadających orzecze-
+nie o potrzebie kształcenia specjalnego wydane ze względu na niepełnosprawność intelektualną w stopniu lekkim.
+     9. Dostosowanie formy egzaminu ósmoklasisty, o którym mowa w ust. 7 pkt 1, polega na przygotowaniu odrębnych
+arkuszy egzaminacyjnych dostosowanych do potrzeb ucznia, któremu ograniczona znajomość języka polskiego utrudnia
+zrozumienie czytanego tekstu.
+
+[Dz.U. 2026 poz. 203 art. 47-49 (extra locations continue; pending cases; the regulations under the special act art. 59 kept to 31.08.2026)]
+      Art. 47. Inne lokalizacje prowadzenia zajęć dydaktycznych, wychowawczych i opiekuńczych, utworzone na podstawie
+art. 51 ustawy zmienianej w art. 17, funkcjonują do końca okresu określonego odpowiednio w:
+1)   uchwale, o której mowa w art. 51 ust. 4 tej ustawy – w przypadku innej lokalizacji prowadzenia zajęć podporządko-
+     wanej szkole prowadzonej przez jednostkę samorządu terytorialnego lub przedszkolu prowadzonemu przez jednostkę
+     samorządu terytorialnego;
+2)   porozumieniu, o którym mowa w art. 51 ust. 6 tej ustawy – w przypadku innej lokalizacji prowadzenia zajęć podpo-
+     rządkowanej szkole prowadzonej przez osobę prawną inną niż jednostka samorządu terytorialnego lub osobę fizyczną
+     lub przedszkolu prowadzonemu przez osobę prawną inną niż jednostka samorządu terytorialnego lub osobę fizyczną.
+     Art. 48. W sprawach utworzenia innych lokalizacji prowadzenia zajęć dydaktycznych, wychowawczych i opiekuńczych,
+na podstawie art. 51 ustawy zmienianej w art. 17, wszczętych i niezakończonych do dnia 31 sierpnia 2026 r., stosuje się
+przepisy art. 51 ustawy zmienianej w art. 17 w brzmieniu dotychczasowym.
+     Art. 49. 1. Dotychczasowe przepisy wykonawcze, wydane na podstawie art. 10 ust. 5 ustawy zmienianej w art. 17,
+zachowują moc do dnia wejścia w życie przepisów wykonawczych wydanych na podstawie art. 110d ust. 7 ustawy zmie-
+nianej w art. 4, jednak niedłużej niż przez 6 miesięcy od dnia wejścia w życie niniejszej ustawy.
+     2. Dotychczasowe przepisy wykonawcze, wydane na podstawie art. 59 ustawy zmienianej w art. 17, zachowują moc
+do dnia 31 sierpnia 2026 r. oraz mogą być zmieniane.
+
+[The regulation of 21.03.2022 on Ukrainian pupils (consolidated Dz.U. 2023 poz. 2094): its § 11ab, added by Dz.U. 2024 poz. 1302 (4 hours, 2024/2025 only)]
+           § 11ab. 1. W roku szkolnym 2024/2025 dodatkowe zajęcia lekcyjne z języka polskiego, o których mowa w § 17
+    ust. 1 rozporządzenia z dnia 23 sierpnia 2017 r., dla uczniów będących obywatelami Ukrainy, o których mowa w § 1,
+    są prowadzone indywidualnie lub w grupach liczących nie więcej niż 15 uczniów, w wymiarze pozwalającym na opa-
+    nowanie języka polskiego w stopniu umożliwiającym udział w obowiązkowych zajęciach edukacyjnych, nie niższym
+    niż 4 godziny lekcyjne tygodniowo.
+          2. W roku szkolnym 2024/2025 w przypadku uczniów będących obywatelami Ukrainy, o których mowa w § 1,
+    przepisu § 19 rozporządzenia z dnia 23 sierpnia 2017 r. nie stosuje się.”;
+
+[Its § 15 as worded by Dz.U. 2024 poz. 1302 (online Ukrainian schooling: only the final class in 2024/2025)]
+12) § 15 otrzymuje brzmienie:
+          „§ 15. Uczniowie będący obywatelami Ukrainy, o których mowa w § 1, którzy w roku szkolnym 2024/2025 po-
+    bierają naukę w ostatniej klasie szkoły funkcjonującej w ukraińskim systemie oświaty z wykorzystaniem metod i tech-
+    nik kształcenia na odległość, której ukończenie umożliwia przystąpienie do ukraińskiego egzaminu maturalnego, i za-
+    mierzają przystąpić do ukraińskiego egzaminu maturalnego w 2025 r., nie podlegają obowiązkowi nauki, o którym
+    mowa w ustawie z dnia 14 grudnia 2016 r. – Prawo oświatowe. Rodzic lub osoba sprawująca opiekę nad uczniem
+    składa do gminy właściwej ze względu na miejsce pobytu ucznia oświadczenie o pobieraniu przez ucznia nauki w ukraiń-
+    skim systemie oświaty oraz zamiarze przystąpienia do ukraińskiego egzaminu maturalnego w 2025 r.”.
+
+[Dz.U. 2024 poz. 1302 § 2]
+    § 2. Rozporządzenie wchodzi w życie z dniem 31 sierpnia 2024 r.
+
+[Its § 11ac, added by Dz.U. 2025 poz. 1195 (2 hours, groups of 15; from 1.09.2025)]
+2)    po § 11ab dodaje się § 11ac w brzmieniu:
+             „§ 11ac. 1. Do dnia 30 września 2025 r. dodatkowe zajęcia lekcyjne z języka polskiego, o których mowa w § 17
+      ust. 1 rozporządzenia z dnia 23 sierpnia 2017 r., dla uczniów będących obywatelami Ukrainy, o których mowa w § 1,
+      są prowadzone indywidualnie lub w grupach liczących nie więcej niż 15 uczniów, w wymiarze pozwalającym na opa-
+      nowanie języka polskiego w stopniu umożliwiającym udział w obowiązkowych zajęciach edukacyjnych, nie niższym
+      niż 2 godziny lekcyjne tygodniowo.
+            2. Do dnia 30 września 2025 r. w przypadku uczniów będących obywatelami Ukrainy, o których mowa w § 1,
+      przepisu § 19 rozporządzenia z dnia 23 sierpnia 2017 r. nie stosuje się.”;
+3)    w § 13 wyrazy „w latach szkolnych 2021/2022–2024/2025” zastępuje się wyrazami „do dnia 30 września 2025 r.”.
+      § 2. Rozporządzenie wchodzi w życie z dniem 1 września 2025 r.
+
+[Dz.U. 2026 poz. 245 (§ 11ac and others extended to 31.08.2026)]
+     § 1. W rozporządzeniu Ministra Edukacji i Nauki z dnia 21 marca 2022 r. w sprawie organizacji kształcenia, wycho-
+wania i opieki dzieci i młodzieży będących obywatelami Ukrainy (Dz. U. z 2023 r. poz. 2094, z 2024 r. poz. 1302 oraz z 2025 r.
+poz. 1195 i 1324) w § 6, § 6a, § 11ac ust. 1 i 2, § 12, § 13, § 14 ust. 1 i § 14a ust. 1 wyrazy „4 marca 2026 r.” zastępuje się
+wyrazami „31 sierpnia 2026 r.”.
+      § 2. Rozporządzenie wchodzi w życie z dniem 5 marca 2026 r.
+
+[The act on financing educational tasks, consolidated Dz.U. 2026 poz. 650, art. 52 ust. 1-4 (the preschool fee beyond the free hours: at most 1 zł an hour, indexed)]
+    Art. 52. 1. Rada gminy określa wysokość opłat za korzystanie z wychowania przedszkolnego uczniów objętych wycho-
+waniem przedszkolnym do końca roku szkolnego w roku kalendarzowym, w którym kończą 6 lat, w prowadzonym przez
+gminę:
+1)   publicznym przedszkolu i oddziale przedszkolnym w publicznej szkole podstawowej, w czasie przekraczającym wymiar
+     zajęć, o którym mowa w art. 13 ust. 1 pkt 2 ustawy – Prawo oświatowe;
+2)   publicznej innej formie wychowania przedszkolnego w czasie przekraczającym czas bezpłatnego nauczania, wycho-
+     wania i opieki ustalony dla publicznych przedszkoli na podstawie art. 13 ust. 2 ustawy – Prawo oświatowe.
+     2. Rada gminy może określić warunki częściowego lub całkowitego zwolnienia z opłat, o których mowa w ust. 1.
+     3. Wysokość opłaty, o której mowa w ust. 1, nie może być wyższa niż 1 zł za każdą rozpoczętą godzinę faktycznego
+pobytu dziecka w przedszkolu, oddziale przedszkolnym w szkole podstawowej oraz innej formie wychowania przedszkolnego.
+     4. Maksymalna wysokość opłaty, o której mowa w ust. 3, podlega waloryzacji. Waloryzacja dokonywana po raz pierwszy
+polega na pomnożeniu kwoty opłaty, o której mowa w ust. 3, przez wskaźnik waloryzacji i zaokrągleniu w dół do pełnych
+groszy. Kolejne waloryzacje wysokości opłaty polegają na pomnożeniu kwoty opłaty z roku, w którym była dokonywana
+ostatnia waloryzacja, przez wskaźnik waloryzacji i zaokrągleniu w dół do pełnych groszy. Waloryzacji dokonuje się od dnia
+1 września roku kalendarzowego, w którym ogłoszono wysokość wskaźnika waloryzacji ustalonego zgodnie z ust. 5 lub 6.
+
+[The civil code, consolidated Dz.U. 2026 poz. 795, art. 25 and 26 § 1 (residence)]
+    Art. 25. Miejscem zamieszkania osoby fizycznej jest miejscowość, w której osoba ta przebywa z zamiarem stałego
+pobytu.
+     Art. 26. § 1. Miejscem zamieszkania dziecka pozostającego pod władzą rodzicielską jest miejsce zamieszkania rodziców
+albo tego z rodziców, któremu wyłącznie przysługuje władza rodzicielska lub któremu zostało powierzone wykonywanie
+władzy rodzicielskiej.

@@ -1,0 +1,128 @@
+# The education superintendent in Opole (kuratorium.opole.pl): "Zmiany w zasadach organizacji kształcenia i wsparcia uczniów z Ukrainy od 1 września 2026 r.", with the attached letter of the Minister of Education of 29.06.2026 (ref. DWM-WOPGM.473.156.2026.BP)
+# Sources: https://www.kuratorium.opole.pl/zmiany-w-zasadach-organizacji-ksztalcenia-i-wsparcia-uczniow-z-ukrainy-od-1-wrzesnia-2026-r/, html sha256 18e7082aaee91b0413419857cd1b0d7aff52967a887e4277e019df6be03fc626; https://dokumenty.men.gov.pl/List-Minister-Edukacji-Barbary-Nowackiej-6a450671a2b67.pdf, sha256 54bdc35859b95b744f8ecb434acb0e339c98d4748bafca7b8ee66f28b53ba1b3; retrieved 2026-10-17. Found by the independent check of 17.10.2026 and re-read here.
+# The page's text (published 6.07.2026), without its record of editors; then the letter (pdftotext -layout), without its contact lines. Not binding: a letter cannot change the acts.
+
+[The page]
+6 lipca 2026
+Zmiany w zasadach organizacji kształcenia i wsparcia uczniów z Ukrainy od 1 września 2026 r.
+Od 1 września 2026 r. wszyscy uczniowie z Ukrainy zostają włączeni w ogólny system kształcenia cudzoziemców w Polsce. Podlegać oni będą standardowym przepisom prawa oświatowego.
+
+[The letter]
+Barbara Nowacka
+DWM-WOPGM.473.156.2026.BP
+Warszawa, 29 czerwca 2026 r.
+Szanowni Państwo Kuratorzy,
+Szanowni Państwo Dyrektorzy,
+Szanowni Państwo Nauczyciele,
+Szanowni Państwo Przedstawiciele Organów Prowadzących Szkoły,
+Dotyczy: zmian w zasadach organizacji kształcenia i wsparcia uczniów z Ukrainy od dnia
+1 września 2026 r.
+Rok szkolny 2025/2026 jest ostatnim okresem, w którym obowiązują specjalne regulacje
+dotyczące edukacji dzieci przybywających z Ukrainy w związku z działaniami wojennymi na
+terytorium tego państwa. Odchodzimy od przepisów przejściowych wprowadzonych:
+1) ustawą z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem
+   zbrojnym na terytorium tego państwa (Dz. U. z 2025 r. poz. 337 z późn. zm.),
+2) rozporządzeniem Ministra Edukacji i Nauki z dnia 21 marca 2022 r. w sprawie organizacji
+     kształcenia, wychowania i opieki dzieci i młodzieży będących obywatelami Ukrainy
+     (Dz. U. z 2023 r. poz. 2094 z późn. zm.).
+Od 1 września 2026 r. wszyscy uczniowie z Ukrainy zostają włączeni w ogólny system
+kształcenia cudzoziemców w Polsce. Podlegać oni będą standardowym przepisom prawa
+oświatowego:
+1) art. 165 ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe (Dz. U. z 2026 r. poz. 820),
+2) rozporządzenia Ministra Edukacji Narodowej z dnia 23 sierpnia 2017 r. w sprawie
+     kształcenia osób niebędących obywatelami polskimi oraz osób będących obywatelami
+     polskimi, które pobierały naukę w szkołach funkcjonujących w systemach oświaty
+     innych państw (tj. Dz. U. z 2023 r. poz. 2301 z późn.zm.).
+Mając na uwadze konieczność prawidłowego zapewnienia ciągłości wsparcia uczniów
+z Ukrainy, przypominam o kluczowych obowiązkach i uprawnieniach uczniów wynikających
+z ww. aktów prawnych.
+Uczniowie z Ukrainy podlegający obowiązkowi szkolnemu lub obowiązkowi nauki, którzy nie
+znają języka polskiego albo znają go na poziomie niewystarczającym do korzystania z nauki,
+będą mają prawo do:
+1) dodatkowej, bezpłatnej nauki języka polskiego w wymiarze nie niższym niż 2 godz.
+    tygodniowo, nie dłużej niż przez okres 24 miesięcy. Dodatkową naukę języka polskiego
+    dla tych osób organizuje organ prowadzący szkołę;
+2) pomocy udzielanej przez osobę władającą językiem kraju pochodzenia, zatrudnioną
+   w charakterze pomocy nauczyciela przez dyrektora szkoły. Pomocy tej udziela się nie
+   dłużej niż przez okres 12 miesięcy.
+Ponadto:
+1) dla uczniów, którzy wymagają dostosowania procesu kształcenia do ich potrzeb
+   i możliwości edukacyjnych, a także dostosowania formy organizacyjnej wspomagającej
+   efektywność ich kształcenia, organ prowadzący szkołę może zorganizować oddział
+   przygotowawczy w szkole, w której te osoby realizują naukę zgodnie z podstawą
+   programową kształcenia ogólnego,
+2) uczniowie mogą korzystać z dodatkowych zajęć wyrównawczych w zakresie
+   przedmiotów nauczania organizowanych przez organ prowadzący szkołę, nie dłużej
+   jednak niż przez okres 12 miesięcy,
+3) w szkole może być zatrudniony asystent międzykulturowy, którego zadaniem jest
+   wspieranie procesu integracji, pomoc w komunikacji na linii szkoła-dom oraz
+   rozwiązywanie problemów adaptacyjnych.
+Stosownie do art. 17 pkt 43 ustawy z dnia 23 stycznia 2026 r. o wygaszeniu rozwiązań
+wynikających z ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na
+terytorium tego państwa oraz o zmianie niektórych innych ustaw (Dz.U. z 2026 r. poz. 203),
+do 4 marca 2027 r. wydłużono stosowanie przepisu, zgodnie z którym na stanowisku
+asystenta międzykulturowego może być zatrudniona osoba nieposiadająca obywatelstwa
+polskiego, jeżeli posiada znajomość języka polskiego w mowie i piśmie
+w stopniu umożliwiającym pomoc uczniowi, który nie zna języka polskiego albo zna go na
+poziomie niewystarczającym do korzystania z nauki. Do tego czasu, od osoby tej nie wymaga
+się znajomości języka polskiego potwierdzonej dokumentem.
+Jednocześnie, dla osób niebędących obywatelami polskimi, podlegających obowiązkowi
+szkolnemu, placówka dyplomatyczna lub konsularna kraju ich pochodzenia działająca
+w Polsce albo stowarzyszenie kulturalno-oświatowe danej narodowości mogą organizować
+w szkole, w porozumieniu z dyrektorem szkoły i za zgodą organu prowadzącego, naukę
+języka i kultury kraju pochodzenia. Szkoła udostępnia nieodpłatnie pomieszczenia i pomoce
+dydaktyczne.
+Informuję także, że w art. 165 ust. 16 ustawy – Prawo oświatowe dodano pkt 3a, zgodnie
+z którym minister właściwy do spraw oświaty i wychowania w porozumieniu
+z ministrem właściwym do spraw kultury i ochrony dziedzictwa narodowego określi,
+w drodze rozporządzenia, podstawę programową dodatkowej nauki języka polskiego,
+z uwzględnieniem ogólnych i szczegółowych wymagań edukacyjnych dotyczących wiedzy
+i umiejętności z języka polskiego, a także warunków i sposobu realizacji tej podstawy
+programowej. Przepis ten wejdzie w życie 1 września 2027 r. Instytut Badań Edukacyjnych -
+Państwowy Instytut Badawczy Państwowy, na zlecenie MEN, prowadzi już prace w tym
+zakresie. O szczegółach i wytycznych w tym zakresie będziemy Państwa informować na
+bieżąco.
+Ponadto, do ustawy z dnia 7 września 1991 r. o systemie oświaty (Dz. U. z 2025 r. poz. 881
+z późn.zm.) wprowadzono docelowe rozwiązanie regulujące w sposób szczególny warunki
+ukończenia szkoły podstawowej przez uczniów przybyłych do Polski z innych krajów.
+Dotyczy ono przypadków niezrealizowania przez uczniów wszystkich przedmiotów,
+z uwagi na ich realizowanie w klasach programowo niższych, które w Polsce zostały przez
+tych uczniów pominięte.
+Jednocześnie rok szkolny 2026/2027 będzie kolejnym okresem realizacji rządowego
+programu wyrównywania szans edukacyjnych dzieci i młodzieży „Przyjazna szkoła” 1.
+Głównym jego celem jest wsparcie szkół, w których pobierają naukę uczniowie i uczennice
+z Ukrainy, poprzez stworzenie warunków, w których całe społeczności szkolne czują się
+bezpiecznie, a dzieci i młodzież mogą budować przyjazne relacje rówieśnicze oraz rozwijać
+swoją wiedzę, umiejętności i kompetencje.
+Program finansowany jest z projektu pn. „Wsparcie edukacji formalnej dzieci i młodzieży
+z Ukrainy w programie FERS”, realizowanego w ramach Programu Fundusze Europejskie dla
+Rozwoju Społecznego 2021–2027 (FERS), działanie 04.17 „Szkoła dla wszystkich”.
+Finansowanie działań przewidzianych w Programie obejmuje wszystkie województwa
+w Polsce i odbywa się w ramach trzech modułów:
+Moduł 1. - Pomoc asystenta - dofinansowanie zatrudnienia asystentów 2, a tym samym
+zapewnienie pomocy w procesie integracji i adaptacji środowiska szkolnego,
+Moduł 2. - Dobrostan społeczności szkolnej - dofinansowanie różnorodnych form wsparcia
+kierowanych do uczniów i uczennic, ich rodziców oraz kadr systemu oświaty, w tym działania
+służące wzmocnieniu profilaktyki zaburzeń zdrowia psychicznego oraz wzmocnieniu
+wsparcia psychologiczno-pedagogicznego dla przedstawicieli środowiska szkolnego,
+Moduł 3. - Doskonalenie kadr systemu oświaty – dofinansowanie działań mających na celu
+podniesienie kompetencji zawodowych kadr systemu oświaty w celu skutecznej integracji
+uczniów i uczennic z doświadczeniem migracji lub uchodźstwa, zapewnienia im równych
+szans edukacyjnych oraz budowania otwartego i wspierającego środowiska szkolnego.
+W realizację programu zaangażowani są wojewodowie, kuratorzy oświaty, instytucje
+podległe Ministerstwu – Ośrodek Rozwoju Edukacji (ORE) i Instytut Badań Edukacyjnych
+Państwowy Instytut Badawczy (IBE PIB), a także organizacje pozarządowe.
+Zachęcam Państwa do aktywnego uczestnictwa w programie. Udział w nim może przynieść
+długofalowe korzyści całej społeczności szkolnej.
+1
+   uchwała nr 60 Rady Ministrów z dnia 11 lipca 2025 r. w sprawie Rządowego programu wyrównywania szans edukacyjnych dzieci i młodzieży
+,,Przyjazna szkoła” w latach 2025-2027 (Monitor Polski 2025 r. poz. 648) oraz rozporządzenie Rady Ministrów z dnia 11 lipca 2025 r.
+2
+    Asystenci, o których mowa w art. 165 ust. 8a ustawy z dnia 14 grudnia 2016 r. – Prawo oświatowe.
+Dziękuję za Państwa codzienną, pełną oddania pracę, profesjonalizm oraz konsekwentne
+budowanie bezpiecznego, pełnego szacunku i otwartości środowiska szkolnego. Życzę, aby
+te letnie miesiące były dla Państwa pełne spokoju, słońca i radości.
+Z wyrazami szacunku
+Barbara Nowacka
+Minister Edukacji
+/ – podpisano cyfrowo/

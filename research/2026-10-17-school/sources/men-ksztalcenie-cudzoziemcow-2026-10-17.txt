@@ -1,6 +1,6 @@
 # MEN (gov.pl/web/edukacja): "Informacja o kształceniu w polskim systemie oświaty osób przybywających z zagranicy"
 # Source: https://www.gov.pl/web/edukacja/informacja-o-ksztalceniu-w-polskim-systemie-oswiaty-osob-przybywajacych-z-zagranicy, retrieved 2026-10-17, html sha256 6b3c0f25d7e11295874a59a03c9400d23d22055f7e930973782033b8767a127b
-# Text of the main element; navigation removed. Last modified 08.01.2025 (first published 14.12.2023). It cites the act and the regulation in their 2020 texts; where it differs from the acts in force, the README's table says so. Not binding.
+# Text of the main element; navigation removed. Last modified 08.01.2025 (first published 14.12.2023). It cites the act and the regulation in their 2020 texts; where it differs from the acts in force, the README's table says so. The page's publication record (dates and its editor's name) is left out; the dates are above. Not binding.
 
 Informacja o kształceniu w polskim systemie oświaty osób przybywających z zagranicy
 Nauka dzieci przybywających z zagranicy w polskim systemie edukacji
@@ -63,8 +63,3 @@ z uczniami z doświadczeniem migracji komplementarne z podręcznikami dla klas I
 Rozporządzenie Ministra Edukacji Narodowej z dnia 18.02.2011 r. w sprawie ramowego programu kursów nauki języka polskiego dla cudzoziemców (Dz.U. Nr 61, poz. 306)
 Uznanie wykształcenia uzyskanego za granicą
 https://www.gov.pl/web/edukacja/uznawanie-wyksztalcenia-uzyskanego-za-granica
-Informacje o publikacji dokumentu
-Ostatnia modyfikacja:
-08.01.2025 13:49 Joanna Ekstowicz
-Pierwsza publikacja:
-14.12.2023 19:40 administrator gov.pl

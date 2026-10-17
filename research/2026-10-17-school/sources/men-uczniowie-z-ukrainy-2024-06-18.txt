@@ -1,6 +1,6 @@
 # MEN (gov.pl/web/edukacja): "Uczniowie z Ukrainy w polskich szkołach. Ważne informacje dla rodziców"
 # Source: https://www.gov.pl/web/edukacja/uczniowie-z-ukrainy-w-polskich-szkolach-wazne-informacje-dla-rodzicow, retrieved 2026-10-17, html sha256 dd0d09dfbfe995259281d25b64951e2810d92c00a4dced3e94afd6004513180b
-# Text of the main element; navigation removed; the Polish part only (the page repeats it in Ukrainian and Russian). Dated 18.06.2024. It describes the special act's rules from 1.09.2024, most of which ended on 31.08.2026 (special-act extract). Kept to show what parents may still read; not binding.
+# Text of the main element; navigation removed; the Polish part only (the page repeats it in Ukrainian and Russian). Dated 18.06.2024. It describes the rules of 2024/2025 from the special act and from the regulation of 21.03.2022 on Ukrainian pupils (its § 11ab: 4 hours; § 15: online schooling for final classes), which ended on 31.08.2026; the Polish-exam exemption (the special act art. 58b) was repealed from 5.03.2026 (corrected after the independent check; other-acts and special-act extracts). Kept to show what parents may still read; not binding.
 
 Uczniowie z Ukrainy w polskich szkołach. Ważne informacje dla rodziców / Учні з України в польських школах. Важлива інформація для батьків
 18.06.2024
