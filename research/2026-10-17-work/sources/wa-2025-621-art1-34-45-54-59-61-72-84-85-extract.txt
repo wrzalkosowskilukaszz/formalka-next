@@ -1,4 +1,4 @@
-# Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej (the work act, WA), Dz.U. 2025 poz. 621 (published 12.05.2025; in force 1.06.2025 under its art. 114). No consolidated text exists on api.sejm.gov.pl (17.10.2026). Quoted: art. 1 ust. 4, 2 pkt 2-3, 3, 4 ust. 2, 5, 6 ust. 1-2, 8 ust. 1-3, 12, 13 ust. 1, 15-25, 26 ust. 1, 30 ust. 1, 32-33, 45 ust. 1, 54, 59 (seasonal work), 61 ust. 1, 64-71, 72 ust. 1-2, 84-85.
+# Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej (the work act, WA), Dz.U. 2025 poz. 621 (published 12.05.2025; in force 1.06.2025 under its art. 114). No consolidated text exists on api.sejm.gov.pl (17.10.2026). Quoted: art. 1 ust. 4, 2 pkt 2-3, 3, 4, 5, 6 ust. 1-2, 7 ust. 4, 8 ust. 1-3, 10 ust. 1, 12, 13 ust. 1, 15-25, 26 ust. 1, 30 ust. 1, 32-34, 45 ust. 1, 46, 54, 58 ust. 1, 59 (seasonal work), 61 ust. 1, 62 ust. 1, 63 ust. 1, 64-71, 72 ust. 1-2 and 5-6, 84-85. Art. 4 (whole), 7 ust. 4, 10 ust. 1, 34, 46, 58 ust. 1, 62 ust. 1, 63 ust. 1 and 72 ust. 5-6 were added after the independent check of 17.10.2026 (CHECK.md).
 # Source: https://api.sejm.gov.pl/eli/acts/DU/2025/621/text.pdf, retrieved 2026-10-17, sha256 10430e7128840fdd325af3131c532756a4ff9a55e86b0e9f74792c08596ba961. pdftotext -layout; page headers dropped; a footnote that falls inside a quoted block is kept.
 # Later amendments (tools/sources/touched.mjs DU/2025/621 2025-05-12 --cite 1-25,30-34,44,45,54,61-72,84,85, run on 17.10.2026): four acts; between them they change only art. 3, 17, 33, 68, 69 and 84 and add art. 5a, so the other quoted articles (including art. 59, outside the --cite list) are in force as quoted; their text and dates are in amendments-2026-203-2025-1794-2026-734-2026-473-extract.txt:
 #   Dz.U. 2026 poz. 203 art. 19 adds art. 5a (the employer's notice for a temporary protection beneficiary) and rewrites art. 84 ust. 6, from 5.03.2026;
@@ -6,6 +6,7 @@
 #   Dz.U. 2026 poz. 734 art. 5 rewrites art. 17 ust. 1 pkt 2 and art. 68 ust. 1 pkt 2 (the contract may go through a second system), from 20.06.2026;
 #   Dz.U. 2026 poz. 473 art. 8 adds art. 33 ust. 2 pkt 3 and art. 69 pkt 5 (no new permit or declaration when an employment contract replaces a civil contract, or the labour inspection finds an employment relationship), from 8.07.2026.
 # So the text below is NOT the law in force on its own for art. 3, 17, 33, 68, 69 and 84: apply those changes by their dates.
+# Transitional rules in the amending acts (touched.mjs lists them since 18565c6; text in other-acts-work-extract.txt): Dz.U. 2026 poz. 203 art. 41 applies art. 3 ust. 1 pkt 12 and art. 5a to Ukrainian citizens staying legally without temporary protection, for 3 years from 5.03.2026; Dz.U. 2025 poz. 1794 art. 12 and 14 keep the old wording of art. 3 ust. 1 pkt 18 and ust. 3 pkt 2 for cases opened earlier. The articles added after the check (touched.mjs --cite 4,7,10,34,46,58,62,63,72) are changed by no amendment.
 
 [art. 1 ust. 4]
       4. Ustawy nie stosuje się do:
@@ -194,9 +195,27 @@ celami polityki migracyjnej, określi, w drodze rozporządzenia, państwa:
 1)    których obywateli mogą dotyczyć oświadczenia o powierzeniu pracy cudzoziemcowi;
 2)    których obywateli mogą dotyczyć przepisy art. 53 i art. 56.
 
-[art. 4 ust. 2]
+[art. 4]
+     Art. 4. 1. Podmiot powierzający pracę cudzoziemcowi pozyskuje od cudzoziemca jego dane osobowe, o których mowa
+w art. 9 ust. 1 pkt 3 albo art. 62 ust. 1 pkt 2, oraz kopie dokumentów zawierających te dane w celu potwierdzenia jego toż-
+samości i uzyskania lub potwierdzenia uprawnienia do jego zatrudnienia.
      2. Podmiot powierzający pracę cudzoziemcowi żąda od cudzoziemca przedstawienia przed rozpoczęciem pracy waż-
 nego dokumentu uprawniającego do pobytu na terytorium Rzeczypospolitej Polskiej.
+     3. Podmiot powierzający pracę cudzoziemcowi może żądać od cudzoziemca przedstawienia dokumentu uprawniają-
+cego do pobytu na terytorium Rzeczypospolitej Polskiej przez okres wykonywania pracy przez cudzoziemca.
+     4. Podmiot powierzający pracę cudzoziemcowi przechowuje kopie dokumentów uprawniających do pobytu na tery-
+torium Rzeczypospolitej Polskiej przez cały okres wykonywania pracy przez cudzoziemca oraz przez okres, o którym
+mowa w ust. 6.
+      5. Przepisów ust. 2–4 nie stosuje się do cudzoziemca, o którym mowa w art. 3 ust. 1 pkt 1–5.
+     6. Podmiot powierzający pracę cudzoziemcowi przetwarza dane osobowe cudzoziemca przez okres wykonywania
+pracy przez cudzoziemca, a także przez okres 2 lat, licząc od końca roku kalendarzowego, w którym stosunek prawny
+będący podstawą zatrudnienia cudzoziemca uległ rozwiązaniu lub wygasł, chyba że odrębne przepisy przewidują dłuższy
+okres przechowywania dokumentacji dotyczącej zatrudnienia.
+     7. Podmiot powierzający pracę cudzoziemcowi przetwarza dane osobowe cudzoziemca w sposób zapewniający ich
+bezpieczeństwo, w tym ochronę przed niedozwolonym lub niezgodnym z prawem przetwarzaniem oraz przypadkową utratą,
+zniszczeniem lub uszkodzeniem.
+4)   Zmiany tekstu jednolitego wymienionej ustawy zostały ogłoszone w Dz. U. z 2024 r. poz. 854, 1562, 1635 i 1933 oraz z 2025 r.
+     poz. 619 i 620.
 
 [art. 5]
     Art. 5. 1. Powierzenie pracy cudzoziemcowi wymaga zawarcia z cudzoziemcem umowy w formie pisemnej przed
@@ -231,12 +250,19 @@ terytorium Rzeczypospolitej Polskiej na podstawie umowy z polskim podmiotem powi
 a w przypadku kierowania tego cudzoziemca przez podmiot powierzający pracę cudzoziemcowi do innego podmiotu – na
 podstawie umowy z agencją pracy tymczasowej.
 
+[art. 7 ust. 4]
+     4. Przepisów art. 37 ustawy z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego nie stosuje się
+w sprawach wydania zezwolenia na pracę, o którym mowa w art. 26, art. 35, art. 40 i art. 45.
+
 [art. 8 ust. 1-3]
      Art. 8. 1. Zezwolenie na pracę wydaje się na wniosek podmiotu powierzającego pracę cudzoziemcowi.
      2. Wniosek o wydanie zezwolenia na pracę oraz dokumenty dotyczące wniosku składa się za pomocą systemu tele-
 informatycznego, o którym mowa w art. 26 ust. 1 pkt 7 lit. b ustawy z dnia 20 marca 2025 r. o rynku pracy i służbach zatrud-
 nienia.
      3. Wniosek złożony w inny sposób niż określony w ust. 2 pozostawia się bez rozpoznania.
+
+[art. 10 ust. 1]
+     Art. 10. 1. Podmiot powierzający pracę cudzoziemcowi wnosi opłatę za każdy wniosek o wydanie zezwolenia na pracę.
 
 [art. 12-13 ust. 1]
      Art. 12. W postępowaniu o wydanie lub uchylenie zezwolenia na pracę:
@@ -467,6 +493,15 @@ skiego podmiotu powierzającego pracę cudzoziemcowi nie są wymagane, jeżeli:
 2)   zwiększono wymiar czasu pracy określony w zezwoleniu na pracę nie więcej niż do pełnego wymiaru czasu pracy,
      przy jednoczesnym proporcjonalnym zwiększeniu wynagrodzenia.
 
+[art. 34]
+    Art. 34. 1. Zezwolenie na pracę cudzoziemca na rzecz polskiego podmiotu powierzającego pracę cudzoziemcowi
+wydaje się na czas określony, nie dłuższy niż 1 rok, jeżeli:
+1)   wniosek o wydanie zezwolenia na pracę jest złożony przez polski podmiot powierzający pracę cudzoziemcowi prowa-
+     dzący działalność gospodarczą przez okres krótszy niż 1 rok lub
+2)   czas pracy nie będzie przekraczał 1/2 pełnego wymiaru czasu pracy lub 20 godzin tygodniowo.
+     2. Zezwolenie na pracę cudzoziemca w charakterze pracownika tymczasowego wydaje się na czas nie dłuższy niż
+określony przepisami art. 20 ustawy z dnia 9 lipca 2003 r. o zatrudnianiu pracowników tymczasowych.
+
 [art. 45 ust. 1]
      Art. 45. 1. Zezwolenie na pracę sezonową wydaje się, jeżeli:
 1)   podmiotem powierzającym pracę cudzoziemcowi jest polski podmiot powierzający pracę cudzoziemcowi;
@@ -476,6 +511,10 @@ skiego podmiotu powierzającego pracę cudzoziemcowi nie są wymagane, jeżeli:
 3)   praca będzie wykonywana przez cudzoziemca w zakresie działalności określonych w przepisach wydanych na podsta-
      wie ust. 2;
 4)   praca będzie wykonywana przez cudzoziemca w okresie nieprzekraczającym 9 miesięcy w roku kalendarzowym.
+
+[art. 46]
+     Art. 46. Zezwolenie na pracę sezonową wydaje starosta właściwy ze względu na siedzibę lub miejsce stałego pobytu
+polskiego podmiotu powierzającego pracę cudzoziemcowi.
 
 [art. 54]
      Art. 54. 1. Zezwolenie na pracę sezonową wydaje się na czas określony, który nie może być dłuższy niż 9 miesięcy
@@ -489,6 +528,13 @@ Rzeczypospolitej Polskiej na innej podstawie niż określona w ust. 2, z którą
 pracy, zezwolenie może być wydane na okres legalnego pobytu, nie dłużej jednak niż na okres 9 miesięcy w ciągu roku
 kalendarzowego, liczony łącznie z okresami określonymi w poprzednio wydanych zezwoleniach na pracę sezonową dla tego
 cudzoziemca.
+
+[art. 58 ust. 1]
+     Art. 58. 1. Jeżeli cudzoziemiec wjechał na terytorium Rzeczypospolitej Polskiej na podstawie wizy wydanej w celu
+wykonywania pracy sezonowej lub w ramach ruchu bezwizowego w związku z wnioskiem o wydanie zezwolenia na pracę
+sezonową wpisanym do ewidencji wniosków, starosta może wydać przedłużenie zezwolenia na pracę sezonową w celu kon-
+tynuacji pracy sezonowej przez cudzoziemca na rzecz tego samego podmiotu powierzającego pracę cudzoziemcowi lub
+w celu wykonywania pracy sezonowej na rzecz innego polskiego podmiotu powierzającego pracę cudzoziemcowi.
 
 [art. 59]
      Art. 59. 1. Jeżeli cudzoziemiec wjechał na terytorium Rzeczypospolitej Polskiej na podstawie wizy wydanej w celu
@@ -522,6 +568,51 @@ o powierzeniu pracy cudzoziemcowi, jeżeli:
      24 miesiące, oraz
 6)   dzień rozpoczęcia pracy wskazany w złożonym oświadczeniu o powierzeniu pracy cudzoziemcowi nastąpi nie później
      niż 6 miesięcy od dnia złożenia tego oświadczenia.
+
+[art. 62 ust. 1]
+    Art. 62. 1. W oświadczeniu o powierzeniu pracy cudzoziemcowi polski podmiot powierzający pracę cudzoziemcowi
+zamieszcza:
+1)   informacje dotyczące polskiego podmiotu powierzającego pracę cudzoziemcowi:
+     a)   nazwę albo imię (imiona) i nazwisko,
+     b) adres siedziby albo miejsca pobytu stałego,
+     c)   numer telefonu oraz adres do doręczeń,
+     d) numer identyfikacji podatkowej (NIP) i numer identyfikacyjny REGON – w przypadku polskiego podmiotu
+        powierzającego pracę cudzoziemcowi prowadzącego działalność gospodarczą,
+     e)   numer PESEL – w przypadku osoby fizycznej,
+     f)   numer wpisu do rejestru podmiotów prowadzących agencje zatrudnienia – w przypadku oświadczenia dotyczącego
+          pracownika tymczasowego,
+     g) rodzaj działalności, w zakresie której cudzoziemiec będzie wykonywał pracę, określony według klasyfikacji usta-
+        lonej w przepisach wydanych na podstawie art. 40 ust. 2 ustawy z dnia 29 czerwca 1995 r. o statystyce publicznej,
+     h) oświadczenie o zapoznaniu się z przepisami dotyczącymi zasad powierzenia wykonywania pracy cudzoziemcom;
+2)   informacje dotyczące cudzoziemca:
+     a)   imię (imiona) i nazwisko,
+     b) obywatelstwo,
+     c)   nazwę, serię, numer, datę wydania i datę ważności dokumentu podróży,
+     d) numer wizy lub karty pobytu oraz okres ważności tego dokumentu, jeżeli przebywa na terytorium Rzeczypospo-
+        litej Polskiej,
+     e)   podstawę prawną pobytu na terytorium Rzeczypospolitej Polskiej oraz przewidywanego sposobu wykorzystania
+          oświadczenia o powierzeniu pracy cudzoziemcowi wpisanego do ewidencji oświadczeń,
+     f)   numer PESEL albo w przypadku osób nieposiadających tego numeru – datę urodzenia i płeć;
+3)   dane dotyczące pracy oferowanej cudzoziemcowi:
+     a)   zawód zgodny z klasyfikacją zawodów i specjalności na potrzeby rynku pracy,
+     b) stanowisko lub rodzaj pracy,
+     c)   miejsce wykonywania pracy,
+     d) okres pracy oznaczony datami,
+     e)   rodzaj umowy stanowiącej podstawę wykonywania pracy,
+     f)   najniższe wynagrodzenie, jakie będzie otrzymywać cudzoziemiec, określone stawką godzinową lub miesięczną,
+     g) wymiar czasu pracy lub liczbę godzin pracy w tygodniu lub w miesiącu;
+4)   dane dotyczące pracodawcy użytkownika, jeżeli oświadczenie o powierzeniu pracy cudzoziemcowi dotyczy pracy
+     cudzoziemca w charakterze pracownika tymczasowego:
+     a)   nazwę albo imię (imiona) i nazwisko,
+     b) adres pobytu stałego albo siedziby,
+     c)   numer identyfikacji podatkowej (NIP) i numer identyfikacyjny REGON – w przypadku podmiotu prowadzącego
+          działalność gospodarczą,
+     d) numer PESEL – w przypadku osoby fizycznej,
+     e)   rodzaj działalności według klasyfikacji określonej w przepisach wydanych na podstawie art. 40 ust. 2 ustawy
+          z dnia 29 czerwca 1995 r. o statystyce publicznej.
+
+[art. 63 ust. 1]
+     Art. 63. 1. Oświadczenie o powierzeniu pracy cudzoziemcowi składa się wraz z opłatą.
 
 [art. 64-71]
      Art. 64. 1. Starosta właściwy ze względu na siedzibę lub miejsce pobytu stałego polskiego podmiotu powierzającego
@@ -670,6 +761,15 @@ o pracę.
      miotów realizujących zadania publiczne (Dz. U. z 2024 r. poz. 1557 i 1717) albo
 2)   z wykorzystaniem certyfikatu podstawowego, o którym mowa w art. 2 pkt 2 ustawy z dnia 26 maja 2023 r. o aplikacji
      mObywatel (Dz. U. z 2024 r. poz. 1275 i 1717).
+
+[art. 72 ust. 5-6]
+       5. Organ właściwy w sprawach zezwoleń na pracę lub oświadczeń o powierzeniu pracy cudzoziemcowi jest obowią-
+zany do zapewnienia w lokalu urzędu pomocy przy zakładaniu indywidualnego konta oraz składaniu wniosków, o których
+mowa w art. 8 ust. 2, oświadczeń, o których mowa w art. 61 ust. 1, środków zaskarżenia, o których mowa w art. 8 ust. 4
+i art. 67 ust. 3, oraz powiadomień, o których mowa w art. 18 ust. 2, art. 19 i art. 70 ust. 1 i 2.
+     6. Organ właściwy w sprawach zezwoleń na pracę lub oświadczeń o powierzeniu pracy cudzoziemcowi może pełnić
+funkcję punktu potwierdzającego, o którym mowa w art. 20c ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności
+podmiotów realizujących zadania publiczne.
 
 [art. 84-85]
      Art. 84. 1. Kto nielegalnie powierza pracę cudzoziemcowi,

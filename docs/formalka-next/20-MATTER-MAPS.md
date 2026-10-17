@@ -14,7 +14,7 @@
 | [`maps/health-insurance.md`](maps/health-insurance.md): NFZ, ZUS, the voluntary NFZ agreement | Wave 4, matter 11 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-health/sources/CHECK.md`) | 27 (HS1–HS27) | 17.10.2026; the PESEL UKR rules changed on 5.03.2026 |
 | [`maps/civil-status.md`](maps/civil-status.md): a birth, a marriage, a death, a foreign record | Wave 4, matter 14 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-civil/sources/CHECK.md`) | 25 (CS1–CS25) | 17.10.2026 |
 | [`maps/vehicles-licence.md`](maps/vehicles-licence.md): registering a vehicle, plates, a sale, a foreign licence | Wave 4, matter 15 | Sources (R1) and this map; its facts checked once by a separate agent and corrected (`research/2026-10-17-vehicles/sources/CHECK.md`) | 21 (VS1–VS21) | 17.10.2026; the road traffic act changes again on 18.01.2027 |
-| [`maps/work.md`](maps/work.md): may I work here, on what basis, and what the employer must do | Wave 5, matter 9 | Sources (R1) and this map; the independent check of its facts is to be run | 22 (WS1–WS22) | 17.10.2026; the visa-free rule changed on 22.08.2026 |
+| [`maps/work.md`](maps/work.md): may I work here, on what basis, and what the employer must do | Wave 5, matter 9 | Sources (R1) and this map, checked by the separate agent on 17.10 (`research/2026-10-17-work/sources/CHECK.md`) | 23 (WS1–WS23) | 17.10.2026; the visa-free rules changed in August 2026; the Ukrainian transitional rule runs to 5.03.2029 |
 
 Wave 1 (address registration and PESEL) is mapped in doc 18 §3.
 

@@ -1,0 +1,100 @@
+# Other acts for the work map, added after the independent check of 17.10.2026 (research/2026-10-17-work/sources/CHECK.md). Each block is verbatim pdftotext -layout output; page headers dropped. Retrieved 2026-10-17 from api.sejm.gov.pl (https://api.sejm.gov.pl/eli/acts/<ELI>/text.pdf).
+#   Dz.U. 2026 poz. 203 (the act phasing out the Ukrainian special act; amends the work act in its art. 19), sha256 98b590c659b96b72c36f35e58532512e352dd5618f5351940a64f32173655275. In force 5.03.2026 (art. 54); art. 40 and 41 are not among its exceptions. tools/sources/amendments.mjs DU/2026/203 2026-03-05: no amendments.
+#   Dz.U. 2025 poz. 1794, sha256 dd0580964c31c5d14805b0560aa3346d7ca5b57b1b56d3574861a2f3cd96be11. Art. 12 and 14 keep the old rules for cases opened before the changed provisions took effect (for the work act's art. 3: before 27.04.2026, M.P. 2026 poz. 370). No amendments.
+#   Dz.U. 2026 poz. 1086 (a regulation of the Minister of Foreign Affairs under the foreigners act art. 58b), sha256 292059211cd09a218453d0f404f449164d26ab5992f89ff69e4b3a0bb76a911c. Published 12.08.2026; in force on publication (§ 5); the visa requirement from 15.08.2026 (§ 3). No amendments.
+#   The Petty Offences Code, consolidated Dz.U. 2025 poz. 734 (base act DU/1971/114), sha256 9b19003c54df6c872b0045a0f2944057dac9b38348e4c3ae7adae80b083c11f4. Later amendments (touched.mjs DU/1971/114 2025-06-02 --cite 24,48): Dz.U. 2025 poz. 1814 and 1872 change only art. 24 § 1a; poz. 1818, 1676 and 2015/1634 do not touch art. 24 or 48. So art. 24 § 1 and art. 48 are in force as quoted.
+#   The protection act, consolidated Dz.U. 2026 poz. 862 (base act DU/2003/1176), sha256 e9f82bc0e10ff1555b941f741667ee5a97fc0b5a7fe2320f4bf785e475c70701. No amendments after its legal state of 18.05.2026.
+#   The foreigners act, consolidated Dz.U. 2025 poz. 1079 (base act DU/2013/1650), sha256 2d3492f82ae1a1ab936667bf4fac1a8544adf4d166db0d6904145bc6d74ad4e0. Later amendments (touched.mjs DU/2013/1650 2025-07-25 --cite 116,302): Dz.U. 2025 poz. 1794 changes art. 302 ust. 1 pkt 8 only; art. 116 and art. 302 ust. 1 pkt 4 are in force as quoted.
+#   The act of 15.06.2012 on the effects of entrusting work to foreigners staying illegally, consolidated Dz.U. 2025 poz. 1567 (base act DU/2012/769; changes published before 7.11.2025), sha256 194ceb9d221fd7cbf841ed914544319e1625d4ce249eea88908f4d6fd0a515c4. No later amendments.
+# Footnote markers printed in the text (such as "58)" or "168)") are the consolidated text's own notes on earlier amendments.
+
+[Dz.U. 2026 poz. 203 art. 40-41]
+     Art. 40. Jeżeli podmiot powierzający pracę cudzoziemcowi złożył powiadomienie o powierzeniu pracy obywatelowi
+Ukrainy przed dniem wejścia w życie niniejszej ustawy, zgodnie z przepisami art. 22 ustawy zmienianej w art. 17, stosuje się
+przepisy art. 22 ust. 1 tej ustawy.
+      Art. 41. W okresie 3 lat od dnia wejścia w życie niniejszej ustawy do obywateli Ukrainy przebywających legalnie na
+terytorium Rzeczypospolitej Polskiej, którzy nie korzystają z ochrony czasowej w Rzeczypospolitej Polskiej, stosuje się
+odpowiednio przepisy art. 3 ust. 1 pkt 12 i art. 5a ustawy zmienianej w art. 19.
+
+[Dz.U. 2026 poz. 203 art. 54]
+     Art. 54. Ustawa wchodzi w życie z dniem 5 marca 2026 r., z wyjątkiem:
+1)   art. 17 pkt 3 lit. d tiret drugie i pkt 51 w zakresie uchylenia art. 110, które wchodzą w życie z dniem 1 stycznia 2027 r.;
+2)   art. 17 pkt 46 i 51 w zakresie uchylenia art. 113, które wchodzą w życie z dniem 5 marca 2027 r.;
+3)   art. 14, który wchodzi w życie z dniem 1 września 2027 r.;
+4)   art. 17 pkt 22–31, które wchodzą w życie z dniem określonym w komunikacie, o którym mowa w art. 33 ustawy z dnia
+     15 maja 2024 r. o zmianie ustawy o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium
+     tego państwa oraz niektórych innych ustaw (Dz. U. poz. 854).
+
+[Dz.U. 2025 poz. 1794 art. 12]
+      Art. 12. Do postępowań w sprawach uregulowanych w ustawach zmienianych niniejszą ustawą wszczętych i niezakoń-
+czonych przed dniem wejścia w życie art. 1 pkt 3–5, 8–41, 44 lit. b, pkt 47–49, 50 i 52, art. 2, art. 5–7, art. 8 pkt 1 lit. b oraz c,
+art. 10, art. 11, art. 13, art. 14 oraz art. 18 ust. 1 i 2 stosuje się przepisy dotychczasowe.
+
+[Dz.U. 2025 poz. 1794 art. 14]
+      Art. 14. W przypadku gdy postępowanie w sprawie udzielenia zezwolenia na pobyt rezydenta długoterminowego Unii
+Europejskiej zostało wszczęte przed dniem wejścia w życie art. 1 pkt 39 i cudzoziemiec, który ubiega się o udzielenie tego
+zezwolenia, posiada w swoim dokumencie podróży odcisk stempla, który potwierdza złożenie wniosku o udzielenie zezwo-
+lenia na pobyt rezydenta długoterminowego Unii Europejskiej, przepisy art. 43 ust. 3 ustawy zmienianej w art. 5 w zakresie
+dotyczącym odcisku stempla, który potwierdza złożenie wniosku o udzielenie zezwolenia na pobyt rezydenta długotermi-
+nowego Unii Europejskiej, art. 4 ust. 2 pkt 5 ustawy zmienianej w art. 6, art. 1 ust. 3 pkt 5 ustawy zmienianej w art. 10 oraz
+art. 3 ust. 1 pkt 18 i ust. 3 pkt 2 ustawy zmienianej w art. 11 stosuje się w brzmieniu dotychczasowym.
+
+[Dz.U. 2026 poz. 1086 § 1-5]
+     § 1. Rozporządzenie określa wyjątki od zwolnienia z obowiązku wizowego wobec cudzoziemców, o których mowa
+w art. 6 ust. 3 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2018/1806 z dnia 14 listopada 2018 r. wymieniającego
+państwa trzecie, których obywatele muszą posiadać wizy podczas przekraczania granic zewnętrznych, oraz te, których oby-
+watele są zwolnieni z tego wymogu (tekst jednolity) (Dz. Urz. UE L 303 z 28.11.2018, str. 39, z późn. zm.), zwanego dalej
+„rozporządzeniem 2018/1806”.
+    § 2. Wyjątek od zwolnienia z obowiązku wizowego, o którym mowa w art. 6 ust. 3 rozporządzenia 2018/1806, stosuje się
+wobec obywateli:
+1)     Gruzji,
+2)     Republiki Kolumbii,
+3)     Boliwariańskiej Republiki Wenezueli
+– wjeżdżających na terytorium Rzeczypospolitej Polskiej w związku z powierzeniem im pracy w rozumieniu art. 2 pkt 9 ustawy
+z dnia 20 marca 2025 r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej
+Polskiej (Dz. U. poz. 621 i 1794 oraz z 2026 r. poz. 203, 473 i 734).
+       § 3. Wyjątek od zwolnienia z obowiązku wizowego, o którym mowa w § 2, wchodzi w życie z dniem 15 sierpnia 2026 r.
+     § 4. Do obywateli państw wskazanych w § 2, którzy przekroczyli granicę Rzeczypospolitej Polskiej przed dniem wejścia
+w życie wyjątku od zwolnienia z obowiązku wizowego określonym w § 3, stosuje się przepisy dotychczasowe.
+       § 5. Rozporządzenie wchodzi w życie z dniem ogłoszenia.
+
+[Petty Offences Code art. 24 § 1]
+     Art. 24. § 1. Grzywnę wymierza się w wysokości od 20 do 5000 złotych, chyba że ustawa stanowi inaczej.
+
+[Petty Offences Code art. 48]
+      Art. 48. Przepisy części ogólnej Kodeksu wykroczeń stosuje się do wykroczeń przewidzianych w innych ustawach,
+jeżeli ustawy te nie zawierają przepisów odmiennych.
+
+[Protection act art. 34 ust. 1-2]
+     Art. 34. 1. Załatwienie sprawy dotyczącej udzielenia ochrony międzynarodowej, z wyłączeniem przypadków, o których
+mowa w art. 39 ust. 1, następuje w terminie 6 miesięcy od dnia złożenia wniosku o udzielenie ochrony międzynarodowej
+na formularzu.
+       2. Termin, o którym mowa w ust. 1, może być przedłużony do 15 miesięcy, w przypadku gdy:
+1)     sprawa jest szczególnie skomplikowana;
+2)     z wnioskami o udzielenie ochrony międzynarodowej występuje w krótkich odstępach czasu duża liczba cudzoziemców
+       i uniemożliwia to rozpoznanie wniosku o udzielenie ochrony międzynarodowej w terminie 6 miesięcy;
+3)     wnioskodawca nie wykonuje obowiązków, o których mowa w art. 41.
+
+[Foreigners act art. 116 (opening)]
+    Art. 116. Poza przypadkami, o których mowa w art. 99, odmawia się wszczęcia postępowania w sprawie udzielenia
+cudzoziemcowi zezwolenia na pobyt czasowy i pracę, gdy w dniu składania wniosku o udzielenie mu tego zezwolenia:
+
+[Foreigners act art. 116 pkt 5]
+5)58) przebywa na terytorium Rzeczypospolitej Polskiej na podstawie wizy wydanej w celu, o którym mowa w art. 60 ust. 1
+      pkt 1–3, 7, 9–11, 14–16 lub 18, lub
+
+[Foreigners act art. 302 ust. 1 (opening)]
+     Art. 302. 1. Decyzję o zobowiązaniu cudzoziemca do powrotu wydaje się cudzoziemcowi, gdy:
+
+[Foreigners act art. 302 ust. 1 pkt 4]
+4)168) wykonuje lub w dniu wszczęcia kontroli legalności wykonywania pracy prowadzonej przez uprawniony do tego organ
+      wykonywał pracę bez odpowiedniego zezwolenia na pracę lub oświadczenia o powierzeniu pracy cudzoziemcowi
+      wpisanego do ewidencji oświadczeń, lub
+
+[Act of 15.06.2012 art. 4 ust. 1-2]
+     Art. 4. 1. Cudzoziemcowi przebywającemu na terytorium Rzeczypospolitej Polskiej bez ważnego dokumentu upraw-
+niającego do pobytu, któremu powierzono wykonywanie pracy, przysługuje roszczenie o wypłatę zaległego wynagrodzenia
+i związanych z nim świadczeń.
+     2. W przypadku powierzenia wykonywania pracy cudzoziemcowi na podstawie stosunku pracy, przy dochodzeniu za-
+ległego wynagrodzenia i związanych z nim świadczeń, domniemywa się istnienie stosunku pracy przez okres 3 miesięcy,
+chyba że pracodawca lub cudzoziemiec dowiodą innego okresu zatrudnienia.
